@@ -8,22 +8,34 @@ const labsList = () => (
 	<StaticQuery
 		query={graphql`
 			query ProjectsQuery {
-				allProjectsJson {
-					nodes {
-						title
-						description
-					}
-				}
-				allDweetsJson {
-					nodes {
-						id
-					}
-				}
 				allAtomEntry {
 					nodes {
 						title
 						date(formatString: "YYYY-MM-DD")
 						link
+					}
+				}
+				allMarkdownRemark {
+					edges {
+						node {
+							excerpt
+							frontmatter {
+								layout
+								tldr
+								topTitle
+							}
+							fields {
+								slug
+								title
+								date
+							}
+						}
+					}
+				}
+				allProjectsJson {
+					nodes {
+						title
+						description
 					}
 				}
 				dweets0 {
@@ -42,19 +54,66 @@ const labsList = () => (
 		`}
 		render={({
 			allAtomEntry: {nodes: commits},
-			allDweetsJson: {nodes: dweets},
 			allProjectsJson: {nodes: projects},
+			allMarkdownRemark: {edges: posts},
 			dweets0: {results: d0},
 			dweets1: {results: d1},
 		}) => (
 			<ul>
-				{[...d0, ...d1].map(({id__normalized, link}) => (
-					<li>
+				<li key="0">
+					The firehose currently has{' '}
+					<strong>
+						{posts.length +
+							d0.length +
+							d1.length +
+							projects.length +
+							commits.length}
+					</strong>{' '}
+					entries from <strong>4</strong> sources.
+				</li>
+				<li>
+					<ul>
+						<li>Potential other sources:</li>
+						<li>Instagram</li>
+						<li>Github</li>
+						<li>Codepen</li>
+						<li>Glitch</li>
+						<li>Hackster</li>
+						<li>Galleries</li>
+						<li>SFPC tumblr</li>
+						<li>Creative code tumblr</li>
+						<li>Are.na</li>
+						<li>Increase project node types</li>
+					</ul>
+				</li>
+				{posts.map(
+					(
+						{
+							node: {
+								excerpt,
+								frontmatter: {layout, tldr, toptitle},
+								fields: {slug, title, date},
+							},
+						},
+						i
+					) => (
+						<li key={`post${i}`}>
+							<a href={slug}>
+								<h2>{title}</h2>
+							</a>
+							<p>{tldr}</p>
+							<p>Written on {date}</p>
+							<p>{excerpt}</p>
+						</li>
+					)
+				)}
+				{[...d0, ...d1].map(({id__normalized, link}, i) => (
+					<li key={`dweet${i}`}>
 						<a href={link}>Dweet {id__normalized}</a>
 					</li>
 				))}
-				{commits.map(({title, date, link}) => (
-					<li>
+				{commits.map(({title, date, link}, i) => (
+					<li key={`commit${i}`}>
 						<a href={link}>
 							<h1>
 								{title} ({date})
@@ -62,19 +121,15 @@ const labsList = () => (
 						</a>
 					</li>
 				))}
-				{dweets.map(({id}) => (
-					<li key={id}>
-						<h2>Dweet {id}</h2>
-					</li>
-				))}
 				{projects
 					.filter(({todo}) => !todo)
-					.map(({title, description}) => (
-						<li key={title}>
+					.map(({title, description}, i) => (
+						<li key={`project${i}`}>
 							<h2>{title}</h2>
 							{description &&
-								description.map(paragraph => (
+								description.map((paragraph, i) => (
 									<p
+										key={i}
 										dangerouslySetInnerHTML={{
 											__html: paragraph,
 										}}

@@ -27,13 +27,22 @@ module.exports = {
 				icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
 			},
 		},
-		`gatsby-transformer-json`,
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: `${__dirname}/src/posts/`,
+				name: `posts`,
+			},
+		},
+		`gatsby-transformer-remark`,
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
 				path: `${__dirname}/src/data/`,
+				name: `data`,
 			},
 		},
+		`gatsby-transformer-json`,
 		{
 			resolve: `gatsby-source-atom`,
 			options: {
