@@ -15,12 +15,12 @@ export default ({children, className = ''}) => {
 		if (!el) return;
 
 		const {width, height, y} = el.getBBox();
-		const newSize = [width, height].map(Math.floor);
+		const newSize = [width, height];
 		setYAccumulator(yAccumulator - y);
 		if (newSize.some((d, i) => size[d] !== i)) {
 			setSize(newSize);
 		}
-	}, [children, windowWidth, ...size]);
+	}, [children, windowWidth]);
 
 	return (
 		<svg
