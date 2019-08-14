@@ -1,0 +1,16 @@
+body {
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: sans-serif;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+a[target='_blank'] {
+	cursor: alias;
+}
+a[target='_blank']::after {
+	content: '➚';
+}

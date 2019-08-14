@@ -5,20 +5,6 @@
 	--header-width: 500px;
 }
 
-/* TODO(riley): Make a common CSS file for this sort of thing */
-a[target='_blank'] {
-	cursor: alias;
-}
-a[target='_blank']::after {
-	content: '➚';
-}
-body {
-	margin: 0;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	font-family: sans-serif;
-}
-
 .homepage-top {
 	display: grid;
 	grid-template-columns: [header] 500px [main] 1fr; /* TODO(riley): --header-width */
