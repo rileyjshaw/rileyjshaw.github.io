@@ -256,7 +256,8 @@ var collatz = (function() {
 		memoized = memo[cur];
 
 		// throw past values into memo
-		for (l = _len = past.length; l--; ) memo[past[l]] = _len - l + memoized;
+		for (l = _len = past.length; l--; )
+			memo[past[l]] = _len - l + memoized;
 
 		return past.length + memoized;
 	};

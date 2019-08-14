@@ -1,11 +1,9 @@
 import React from 'react';
-import {Link, useStaticQuery, graphql} from 'gatsby';
+import {useStaticQuery, graphql} from 'gatsby';
+
 import sortingMethods from '../util/sorting-methods';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-
-import '../components/lab-grid.css';
+import '../components/firehose.css';
 
 class Firehose extends React.Component {
 	constructor(props) {
@@ -358,7 +356,7 @@ class Firehose extends React.Component {
 	}
 }
 
-const FirehoseWrapper = props => {
+export default props => {
 	const {
 		allAtomEntry: {nodes: commits},
 		allMarkdownRemark: {edges: posts},
@@ -502,13 +500,3 @@ const FirehoseWrapper = props => {
 
 	return <Firehose nodes={nodes} tags={tags} {...props} />;
 };
-
-const SecondPage = () => (
-	<Layout>
-		<SEO title="FIREHOSE DEMO" />
-		<FirehoseWrapper />
-		<Link to="/">Go back to the homepage</Link>
-	</Layout>
-);
-
-export default SecondPage;

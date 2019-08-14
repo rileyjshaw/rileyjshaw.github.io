@@ -420,7 +420,9 @@
 	},
 	{
 		"title": "average-color",
-		"description": ["Returns the average color from a list of HSL arrays."],
+		"description": [
+			"Returns the average color from a list of HSL arrays."
+		],
 		"date": "2016-06-16",
 		"tags": ["app", "reusable"],
 		"coolness": 30,

@@ -1,0 +1,107 @@
+:root {
+	--logo-width: 80px;
+	--logo-padding: 20px;
+	--stroke-width: 10px;
+	--header-width: 500px;
+}
+
+/* TODO(riley): Make a common CSS file for this sort of thing */
+a[target='_blank'] {
+	cursor: alias;
+}
+a[target='_blank']::after {
+	content: '➚';
+}
+body {
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: sans-serif;
+}
+
+.homepage-top {
+	display: grid;
+	grid-template-columns: [header] 500px [main] 1fr; /* TODO(riley): --header-width */
+}
+
+.title-stretch {
+	margin: 0;
+	padding: 0 0 30px;
+	line-height: 0;
+	font-size: 120px;
+	overflow: hidden;
+	text-align: right;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.title-stretch .title-j {
+	max-width: 50%;
+	margin: -0.4em -0.26em -0.2em 0;
+}
+
+.title-stretch .title-shaw {
+	margin-top: -0.5em;
+}
+
+.todo-maybe-header-element {
+	position: sticky;
+	grid-column: header;
+	top: 0;
+	bottom: 0;
+	max-height: 100vh;
+	overflow: auto;
+	border-right: 1px solid #000;
+	padding: 0 12px;
+}
+
+.todo-maybe-header-element a {
+	color: #000;
+}
+
+.todo-some-better-name {
+	grid-column: main;
+	grid-row: 1;
+	padding: 0 110px;
+}
+
+.currently {
+	list-style: none;
+}
+
+.currently li {
+	border: 4px solid black;
+	height: 200px;
+	width: 300px;
+	margin-right: 60px;
+}
+
+.content-ughhh {
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+
+blockquote {
+	position: relative;
+	color: #fff;
+	background: #000;
+	margin: 0;
+	height: 100vh;
+	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+blockquote p {
+	margin: 0;
+}
+
+@media (max-width: 1200px) {
+	/* TODO(riley): Would love to have this based on --header-width, eg. (max-width: calc(var(--header-width) * 2.5)) */
+	.content-ughhh {
+		flex-direction: column !important;
+	}
+}
