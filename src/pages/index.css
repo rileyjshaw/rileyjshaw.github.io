@@ -14,7 +14,7 @@
 	position: relative;
 }
 
-.title svg {
+.title > * {
 	mix-blend-mode: multiply;
 	width: 100%;
 	overflow: visible;
@@ -22,10 +22,6 @@
 }
 
 .title text {
-	font-family: inherit;
-	font-size: 1rem;
-	font-weight: inherit;
-	text-anchor: middle;
 	fill: currentcolor;
 }
 
@@ -72,12 +68,8 @@
 }
 
 .title-stretch .title-j {
-	max-width: 50%;
-	margin: -0.4em -0.26em -0.2em 0;
-}
-
-.title-stretch .title-shaw {
-	margin-top: -0.5em;
+	font-size: 320px;
+	margin: 0.36em 0 0.28em;
 }
 
 .todo-maybe-header-element {
@@ -102,6 +94,11 @@
 	font-size: 18px;
 	line-height: 1.3;
 	font-weight: bold;
+}
+
+.about-stub .md-wrapper,
+.about-stub p {
+	display: inline;
 }
 
 .todo-some-better-name {

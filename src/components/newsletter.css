@@ -1,5 +1,23 @@
-.newsletter-form {
-	border: 1px solid #ccc;
-	padding: 3px;
-	text-align: center;
+.newsletter-form,
+.newsletter-form input {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.newsletter-form .bottom-row {
+	margin: 12px 0;
+	height: 60px;
+	display: flex;
+}
+
+.newsletter-form input[type='text'] {
+	flex-grow: 1;
+	padding: 4px 12px;
+}
+
+.newsletter-form input[type='submit'] {
+	background: #000;
+	color: #fff;
+	border: 0;
+	cursor: pointer;
 }

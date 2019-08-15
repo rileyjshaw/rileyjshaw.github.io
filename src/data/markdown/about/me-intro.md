@@ -1,0 +1,1 @@
+I am an artist, engineer, and educator. My work has been featured on NPR, the CBC, HuffPost, Canadian Business, and elsewhere. I volunteer at [Repair Matters](http://repairmatters.ca/) and [Canada Learning Code](https://www.canadalearningcode.ca/), and am slowly developing my thoughts on [what digital literacy means on today's Internet](https://github.com/miseryco/curriculum).

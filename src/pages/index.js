@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Link} from 'gatsby';
+import {Link, useStaticQuery} from 'gatsby';
 
 import SEO from '../components/seo';
 import Firehose from '../components/firehose';
@@ -11,28 +11,42 @@ import Newsletter from '../components/newsletter';
 import './index.css';
 
 const IndexPage = () => {
+	const {aboutIntro} = useStaticQuery(graphql`
+		{
+			aboutIntro: file(relativePath: {eq: "about/me-intro.md"}) {
+				childMarkdownRemark {
+					html
+				}
+			}
+		}
+	`);
+
 	return (
 		<>
 			<SEO title="Home" />
 			<main>
 				<div className="homepage-top">
 					<div className="todo-maybe-header-element">
-						<StretchTitle>
-							<Fit>Welcome to the digital sediment of</Fit>
-							<Fit className="title-riley">Riley</Fit>
-							<Fit className="title-j">J</Fit>
-							<Fit className="title-shaw">Shaw</Fit>
-						</StretchTitle>
+						<div>
+							<StretchTitle>
+								<Fit>Welcome to the digital sediment of</Fit>
+								<Fit className="title-riley">Riley</Fit>
+								<p className="title-j">J</p>
+								<Fit className="title-shaw">Shaw</Fit>
+							</StretchTitle>
+							<div className="about-stub">
+								<div
+									className="md-wrapper"
+									dangerouslySetInnerHTML={{
+										__html:
+											aboutIntro.childMarkdownRemark
+												.html,
+									}}
+								/>{' '}
+								<Link to="/about">More →</Link>
+							</div>
+						</div>
 						<Newsletter />
-						<p className="about-stub">
-							I am an artist, engineer, and educator. My work has
-							been featured on NPR, the CBC, HuffPost, Canadian
-							Business, and elsewhere. I volunteer at Repair
-							Matters and Canada Learning Code, and am slowly
-							developing my thoughts on what digital literacy
-							means on today's Internet.{' '}
-							<Link to="/about">More →</Link>
-						</p>
 						<ul style={{display: 'none'}}>
 							<li>
 								<ExternalLink to="https://github.com/rileyjshaw">

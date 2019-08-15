@@ -32,15 +32,14 @@ module.exports = {
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
-				path: `${__dirname}/src/posts/`,
-				name: `posts`,
+				path: `${__dirname}/src/data/markdown/`,
+				name: `markdown`,
 			},
 		},
-		`gatsby-transformer-remark`,
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
-				path: `${__dirname}/src/data/`,
+				path: `${__dirname}/src/data/json/`,
 				name: `data`,
 			},
 		},
@@ -112,6 +111,12 @@ module.exports = {
 						options: {
 							target: `_blank`,
 							rel: `noopener noreferrer`,
+						},
+					},
+					{
+						resolve: 'gatsby-remark-embed-markdown',
+						options: {
+							directory: `${__dirname}/src/data/markdown/`,
 						},
 					},
 				],

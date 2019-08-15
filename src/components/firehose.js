@@ -371,7 +371,7 @@ export default props => {
 		dweets0: {results: d0},
 		dweets1: {results: d1},
 	} = useStaticQuery(graphql`
-		query MegaQuery {
+		{
 			allTagsJson {
 				nodes {
 					name
@@ -387,7 +387,10 @@ export default props => {
 				}
 			}
 
-			allMarkdownRemark {
+			allMarkdownRemark(
+				filter: {fileAbsolutePath: {regex: "/\/posts\/.*\\.md$/"}}
+				sort: {fields: [fields___date], order: DESC}
+			) {
 				edges {
 					node {
 						excerpt
@@ -399,7 +402,7 @@ export default props => {
 						fields {
 							slug
 							title
-							date
+							date(formatString: "YYYY-MM-DD")
 						}
 					}
 				}
