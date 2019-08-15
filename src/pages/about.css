@@ -1,0 +1,16 @@
+blockquote {
+	position: relative;
+	color: #fff;
+	background: #000;
+	margin: 0;
+	height: 100vh;
+	font-size: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+blockquote p {
+	margin: 0;
+}

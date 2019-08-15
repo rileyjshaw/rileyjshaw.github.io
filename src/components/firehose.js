@@ -323,6 +323,7 @@ class Firehose extends React.Component {
 					</li>
 					<li>
 						Github (https://api.github.com/users/rileyjshaw/repos)
+						ADD ALL PULL REQUESTS!!
 					</li>
 					<li>
 						Gists (https://api.github.com/users/rileyjshaw/gists)
@@ -342,8 +343,12 @@ class Firehose extends React.Component {
 					<li>
 						<strike>Sorting</strike>
 					</li>
-					<li>A few more sources?</li>
-					<li>Main page layout</li>
+					<li>
+						<strike>A few more sources?</strike>
+					</li>
+					<li>
+						<strong>Main page layout</strong>
+					</li>
 					<li>Lazy-loading</li>
 					<li>Blog / etc links</li>
 					<li>
