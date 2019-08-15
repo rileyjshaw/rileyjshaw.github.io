@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Link, useStaticQuery} from 'gatsby';
+import {Link, useStaticQuery, graphql} from 'gatsby';
 
 import SEO from '../components/seo';
 import Firehose from '../components/firehose';

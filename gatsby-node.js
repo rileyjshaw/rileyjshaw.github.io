@@ -6,7 +6,7 @@ exports.createPages = async ({actions, graphql, reporter}) => {
 	const blogPostTemplate = path.resolve(`src/templates/post.js`);
 	// TODO(riley): Import this query from a common place.
 	const result = await graphql(`
-		query PageQuery {
+		{
 			allMarkdownRemark(
 				filter: {fileAbsolutePath: {regex: "//posts/.*.md$/"}}
 				sort: {fields: [fields___date], order: DESC}

@@ -3,7 +3,7 @@ layout: post
 title: Escher Sketch!
 tags:
     - gallery
-tldr: I made some pictures using <a href="https://levskaya.github.io/eschersketch/">Escher Sketch</a>.
+tldr: I made some pictures using <a target="_blank" rel="noopener noreferrer" href="https://levskaya.github.io/eschersketch/">Escher Sketch</a>.
 ---
 
 I just had a blast playing with [Anselm Levskaya](https://github.com/levskaya)'s [Escher Sketch](https://levskaya.github.io/eschersketch/) project!
