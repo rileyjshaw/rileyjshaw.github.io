@@ -6,7 +6,7 @@ import Firehose from '../components/firehose';
 import SEO from '../components/seo';
 
 const SecondPage = () => (
-	<Layout>
+	<Layout colors={['#0f0', '#000']}>
 		<SEO title="FIREHOSE DEMO" />
 		<Firehose />
 		<Link to="/">Go back to the homepage</Link>

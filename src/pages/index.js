@@ -210,7 +210,7 @@ const IndexPage = () => {
 				</div>
 			</main>
 			<Firehose />
-			<Link to="/firehose-demo">Go to page 2</Link>
+			<Link to="/firehose">Go to page 2</Link>
 		</>
 	);
 };

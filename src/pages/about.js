@@ -7,6 +7,7 @@ import './about.css';
 
 export default () => (
 	<Layout colors={['#ff0', '#000']}>
+		<SEO title="About" />
 		<StaticQuery
 			query={graphql`
 				{
