@@ -1,0 +1,47 @@
+.page-header {
+	background: #ff0;
+	color: #000;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.page-header a {
+	text-decoration: none;
+	color: #000;
+	height: 100%;
+	line-height: 60px;
+}
+
+.page-header .home-link {
+	margin: 0;
+	font-size: 18px;
+}
+
+.page-header h1,
+.page-header ul,
+.page-header li {
+	height: 100%;
+}
+
+.page-header ul {
+	list-style: none;
+	display: flex;
+	align-items: stretch;
+}
+
+.page-header li a {
+	padding: 0 1em;
+	display: inline-block;
+}
+
+.page-header li a:last-child {
+	padding-right: 2em;
+}
+
+.page-header a:hover {
+	background: #f00;
+}
