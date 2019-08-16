@@ -3,7 +3,7 @@ import {Link, StaticQuery, graphql} from 'gatsby';
 
 import './header.css';
 
-const Header = () => (
+const Header = ({colors}) => (
 	<StaticQuery
 		query={graphql`
 			{
@@ -15,7 +15,10 @@ const Header = () => (
 			}
 		`}
 		render={({site}) => (
-			<header className="page-header">
+			<header
+				className="page-header"
+				style={{background: colors[0], color: colors[1]}}
+			>
 				<h1 className="home-link">
 					<Link to="/">{site.siteMetadata.title}</Link>
 				</h1>

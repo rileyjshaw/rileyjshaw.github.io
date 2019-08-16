@@ -2,15 +2,15 @@ import React from 'react';
 import {Link, graphql} from 'gatsby';
 
 import SEO from '../components/seo';
+import Layout from '../components/layout';
 
 class BlogIndex extends React.Component {
 	render() {
 		const {data} = this.props;
 		const posts = data.allMarkdownRemark.edges;
-		console.log(posts);
 
 		return (
-			<>
+			<Layout colors={['#00f', '#fff']}>
 				<SEO title="All posts" />
 				{posts.map(({node: post}) => {
 					const title = post.frontmatter.title || post.fields.slug;
@@ -35,7 +35,7 @@ class BlogIndex extends React.Component {
 						</article>
 					);
 				})}
-			</>
+			</Layout>
 		);
 	}
 }

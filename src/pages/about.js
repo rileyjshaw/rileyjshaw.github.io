@@ -6,7 +6,7 @@ import Layout from '../components/layout';
 import './about.css';
 
 export default () => (
-	<Layout>
+	<Layout colors={['#ff0', '#000']}>
 		<StaticQuery
 			query={graphql`
 				{
