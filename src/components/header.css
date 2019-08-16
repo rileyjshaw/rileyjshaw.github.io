@@ -3,28 +3,10 @@
 	color: #000;
 	height: 60px;
 	display: flex;
-	align-items: center;
+	align-items: stretch;
 	justify-content: space-between;
 	text-transform: uppercase;
 	font-weight: bold;
-}
-
-.page-header a {
-	text-decoration: none;
-	color: #000;
-	height: 100%;
-	line-height: 60px;
-}
-
-.page-header .home-link {
-	margin: 0;
-	font-size: 18px;
-}
-
-.page-header h1,
-.page-header ul,
-.page-header li {
-	height: 100%;
 }
 
 .page-header ul {
@@ -33,15 +15,33 @@
 	align-items: stretch;
 }
 
-.page-header li a {
-	padding: 0 1em;
-	display: inline-block;
+.page-header .home-link {
+	margin: 0;
+	font-size: 18px;
 }
 
-.page-header li a:last-child {
-	padding-right: 2em;
+.page-header a {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	text-decoration: none;
+	color: inherit;
+	padding: 0 1em;
+}
+
+.page-header a.hidden {
+	display: none;
 }
 
 .page-header a:hover {
 	background: #f00;
+	text-decoration: underline;
+}
+
+.page-header .home-link a {
+	padding-left: 2em;
+}
+
+.page-header li:last-child a {
+	padding-right: 2em;
 }

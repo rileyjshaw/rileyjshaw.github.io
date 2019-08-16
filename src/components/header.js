@@ -21,19 +21,29 @@ const Header = () => (
 				</h1>
 				<ul>
 					<li>
-						<Link to="/">/ home</Link>
+						<Link to="/" activeClassName="hidden">
+							/ home
+						</Link>
 					</li>
 					<li>
-						<Link to="/about">/ about</Link>
+						<Link to="/about" activeClassName="hidden">
+							/ about
+						</Link>
 					</li>
 					<li>
-						<Link to="/blog">/ blog</Link>
+						<Link to="/blog" activeClassName="hidden">
+							/ blog
+						</Link>
 					</li>
 					<li>
-						<Link to="/firehose">/ firehose</Link>
+						<Link to="/firehose" activeClassName="hidden">
+							/ firehose
+						</Link>
 					</li>
 					<li>
-						<Link to="/subscribe">/ subscribe</Link>
+						<Link to="/subscribe" activeClassName="hidden">
+							/ subscribe
+						</Link>
 					</li>
 				</ul>
 			</header>
