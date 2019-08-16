@@ -1,17 +1,23 @@
-import React, {cloneElement, isValidElement, useState, useEffect} from 'react';
+import React, {cloneElement, isValidElement, useRef} from 'react';
 
-import {useMousePosition, useWindowSize} from '../util/hooks';
+import {useMousePosition, useWindowSize, useOnScreen} from '../util/hooks';
 
 const cloneElementTree = el =>
 	React.Children.map(el, child =>
 		isValidElement(child) && child.props
-			? cloneElement(child, cloneElementTree(child.props.children))
-			: child
+			? cloneElement(
+					child,
+					null,
+					cloneElementTree(child.props.children)[0] // HACK(riley)
+			  )
+			: [child]
 	);
 
 export default ({children}) => {
+	const ref = useRef(null);
+	const onScreen = useOnScreen(ref);
 	const mousePosition = useMousePosition(
-		typeof window !== 'undefined' && window
+		typeof window !== 'undefined' && onScreen && window
 	);
 	const windowCenter = useWindowSize().map(d => d / 2);
 
@@ -34,7 +40,7 @@ export default ({children}) => {
 	});
 
 	return (
-		<h1 className="title-stretch">
+		<h1 className="title-stretch" ref={ref}>
 			<div className="title">
 				<div className="c" style={offsets[0]}>
 					{children}

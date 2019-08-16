@@ -7,6 +7,7 @@ import Fit from '../components/fit';
 import ExternalLink from '../components/external-link';
 import StretchTitle from '../components/stretch-title';
 import Newsletter from '../components/newsletter';
+import CycleText from '../components/cycle-text';
 
 import './index.css';
 
@@ -29,7 +30,7 @@ const IndexPage = () => {
 					<div className="todo-maybe-header-element">
 						<div>
 							<StretchTitle>
-								<Fit>Welcome to the digital sediment of</Fit>
+								<Fit>Welcome to the digital landfill of</Fit>
 								<Fit className="title-riley">Riley</Fit>
 								<p className="title-j">J</p>
 								<Fit className="title-shaw">Shaw</Fit>
@@ -43,7 +44,9 @@ const IndexPage = () => {
 												.html,
 									}}
 								/>{' '}
-								<Link to="/about">More →</Link>
+								<Link to="/about">
+									More <CycleText text="➬➱➯➫–" />
+								</Link>
 							</div>
 						</div>
 						<Newsletter />

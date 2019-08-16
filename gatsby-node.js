@@ -30,18 +30,13 @@ exports.createPages = async ({actions, graphql, reporter}) => {
 			}
 		}
 	`);
-	console.log('WE GOT IT 1');
 
 	// Handle errors
 	if (result.errors) {
-		console.log(result);
 		reporter.panicOnBuild(`Error while running GraphQL query.`);
 		return;
 	}
-	console.log('WE GOT IT 2');
-	console.log(result.data.allMarkdownRemark.edges.length);
 	result.data.allMarkdownRemark.edges.forEach(({node}) => {
-		console.log(`creating a page for ${node.fields.slug}`);
 		createPage({
 			path: node.fields.slug,
 			component: blogPostTemplate,
