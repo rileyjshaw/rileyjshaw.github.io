@@ -1,12 +1,17 @@
 import React from 'react';
 
-import Header from './header';
+import {useIdle} from '../util/hooks';
 
-const Layout = ({children, colors}) => {
+import Header from './header';
+import Blocker from './blocker';
+
+const Layout = ({children, noHeader, colors}) => {
+	const idle = useIdle(5000);
 	return (
 		<>
-			<Header colors={colors} />
-			<main>{children}</main>
+			{noHeader || <Header colors={colors} />}
+			{idle && <Blocker />}
+			<main style={{background: idle ? 'red' : 'none'}}>{children}</main>
 		</>
 	);
 };

@@ -1,0 +1,14 @@
+.idle-blocker {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: #000;
+	color: #fff;
+	z-index: 1;
+}

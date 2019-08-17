@@ -41,20 +41,23 @@ export function useDebounce(value, delay) {
 
 // setInterval with auto drift-correction and dynamic callback / timing props.
 export function useInterval(cb, ms, oneShot) {
-	const callback = useRef();
-	useEffect(() => (callback.current = cb), [cb]);
+	const savedCallback = useRef();
+	useEffect(() => {
+		savedCallback.current = cb;
+	}, [cb]);
 	useEffect(() => {
 		if (typeof ms === 'number') {
 			function tick(lastNow) {
 				let now = performance.now();
-				let drift = ms + lastNow - now;
+				const drift = ms + lastNow - now;
 				now += drift;
 				if (!oneShot)
-					interval = setTimeout(tick, Math.max(0, drift + ms), now);
-				callback.current();
+					timeoutId = setTimeout(tick, Math.max(0, ms + drift), now);
+				savedCallback.current();
 			}
-			let interval = setTimeout(tick, ms, performance.now());
-			return () => clearInterval(interval);
+			let timeoutId = setTimeout(tick, ms, performance.now());
+			// TODO(riley): Is this going to try to clear the first timeoutId?
+			return () => clearTimeout(timeoutId);
 		}
 	}, [ms]);
 }
@@ -78,4 +81,41 @@ export function useOnScreen(ref, rootMargin = '0px') {
 		};
 	}, []);
 	return isIntersecting;
+}
+
+const interactionEventNames = [
+	'mousemove',
+	'keydown',
+	'wheel',
+	'DOMMouseScroll',
+	'mouseWheel',
+	'mousedown',
+	'touchstart',
+	'touchmove',
+	'MSPointerDown',
+	'MSPointerMove',
+];
+export function useIdle(delay) {
+	if (typeof window === 'undefined') return false;
+	const [isIdle, setIdle] = useState(false);
+	const [idleTimeout, setIdleTimeout] = useState(null);
+	const handleInteraction = () => {
+		setIdle(false);
+		setIdleTimeout(idleTimeout => {
+			window.clearTimeout(idleTimeout);
+			return window.setTimeout(() => setIdle(true), delay);
+		});
+	};
+	useEffect(() => {
+		interactionEventNames.forEach(name =>
+			window.addEventListener(name, handleInteraction)
+		);
+		return () => {
+			window.clearTimeout(idleTimeout);
+			interactionEventNames.forEach(name =>
+				window.removeEventListener(name, handleInteraction)
+			);
+		};
+	}, []);
+	return isIdle;
 }
