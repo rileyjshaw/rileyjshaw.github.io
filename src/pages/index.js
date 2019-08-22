@@ -40,8 +40,7 @@ const IndexPage = () => {
 							{/* <Fit className="title-riley">Riley</Fit>
 							<p className="title-j">J</p>
 							<Fit className="title-shaw">Shaw</Fit> */}
-							<Fit>riley</Fit>
-							<Fit>shaw</Fit>
+							<Fit>rileyjshaw</Fit>
 						</StretchTitle>
 						<div className="about-stub">
 							<div
@@ -66,7 +65,7 @@ const IndexPage = () => {
 					<div className="selected-works-container">
 						<h2>
 							Selected works{' '}
-							<Link to="/explorer">(explore all)</Link>
+							<Link to="/explore">(explore all)</Link>
 						</h2>
 						<ul className="selected-works">
 							{Array.from({length: 20}, (_, i) => (

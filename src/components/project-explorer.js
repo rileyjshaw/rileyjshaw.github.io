@@ -4,12 +4,12 @@ import {useStaticQuery, graphql} from 'gatsby';
 import sortingMethods from '../util/sorting-methods';
 import formatProps from '../util/format-props';
 
-import FirehoseAddons from './firehose-addons';
+import GridOrnaments from './grid-ornaments';
 import ContentNode from './content-node';
 
-import '../components/firehose.css';
+import '../components/project-explorer.css';
 
-class Firehose extends React.Component {
+class ProjectExplorer extends React.Component {
 	constructor(props) {
 		super(props);
 
@@ -240,7 +240,7 @@ class Firehose extends React.Component {
 					sources.
 				</p>
 				<ul className="lab-grid">
-					<FirehoseAddons />
+					<GridOrnaments />
 					{nodes.map(node => (
 						<ContentNode {...node} />
 					))}
@@ -377,5 +377,5 @@ export default props => {
 		})),
 	].map(formatProps);
 
-	return <Firehose nodes={nodes} tags={tags} {...props} />;
+	return <ProjectExplorer nodes={nodes} tags={tags} {...props} />;
 };

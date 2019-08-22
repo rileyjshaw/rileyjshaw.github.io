@@ -40,8 +40,8 @@ const Header = ({colors}) => (
 							</Link>
 						</li>
 						<li>
-							<Link to="/firehose" activeClassName="hidden">
-								/ firehose
+							<Link to="/explore" activeClassName="hidden">
+								/ explore
 							</Link>
 						</li>
 						<li>

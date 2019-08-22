@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'gatsby';
 
 import {ExternalLink} from '../components/auto-link';
 

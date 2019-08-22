@@ -68,7 +68,7 @@
 	grid-column: 5 / -1;
 }
 
-/* TODO(riley): This should share styles with firehose. */
+/* TODO(riley): This should share styles with explore grid. */
 .selected-works {
 	margin: 0;
 	padding: 0;

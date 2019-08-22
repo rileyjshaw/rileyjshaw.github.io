@@ -2,7 +2,7 @@ import React from 'react';
 
 import TextGrid from '../components/text-grid';
 import CycleText from '../components/cycle-text';
-import '../components/firehose-addons.css';
+import '../components/grid-ornaments.css';
 
 export default () => (
 	<>
