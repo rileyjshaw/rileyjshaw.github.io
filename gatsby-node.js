@@ -19,6 +19,7 @@ exports.createPages = async ({actions, graphql, reporter}) => {
 							layout
 							tldr
 							topTitle
+							tags
 						}
 						fields {
 							slug

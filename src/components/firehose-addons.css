@@ -1,0 +1,51 @@
+.doingreat-grid {
+	grid-area: 9 / 2 / span 1 / span 1;
+	justify-items: stretch;
+	text-align: center;
+	font-weight: bold;
+	color: #0f0;
+	background: #00f;
+}
+
+.doingreat-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.doingreat-item:nth-child(even) {
+	color: #00f;
+	background: #0f0;
+}
+
+.wavebump-item,
+.droplet-item,
+.circles-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wavebump-item,
+.droplet-item {
+	font-size: 100px;
+}
+
+.wavebump-item {
+	grid-area: 7 / -4 / span 1 / span 1;
+	color: #ff0;
+	background: #f00;
+}
+
+.droplet-item {
+	grid-area: 27 / 4 / span 1 / span 1;
+	color: #0ff;
+	background: #00f;
+}
+
+.circles-grid {
+	grid-area: 8 / 4 / span 1 / span 1;
+	place-self: stretch;
+	color: #f0f;
+	background: #00f;
+}

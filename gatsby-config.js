@@ -106,7 +106,7 @@ module.exports = {
 			resolve: `gatsby-transformer-remark`,
 			options: {
 				plugins: [
-					`gatsby-remark-prismjs`,
+					`gatsby-remark-autolink-headers`,
 					{
 						resolve: `gatsby-remark-external-links`,
 						options: {
@@ -120,6 +120,7 @@ module.exports = {
 							directory: `${__dirname}/src/data/markdown/`,
 						},
 					},
+					`gatsby-remark-prismjs`,
 				],
 			},
 		},
