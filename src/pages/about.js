@@ -1,13 +1,14 @@
 import React from 'react';
 import {StaticQuery, graphql} from 'gatsby';
 
+import {colors} from '../util/constants';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 import './about.css';
 
 export default () => (
-	<Layout colors={['#ff0', '#000']}>
+	<Layout colors={[colors.yellow, colors.black]}>
 		<SEO title="About" />
 		<StaticQuery
 			query={graphql`

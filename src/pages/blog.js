@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link, graphql} from 'gatsby';
 
+import {colors} from '../util/constants';
 import SEO from '../components/seo';
 import Layout from '../components/layout';
 
@@ -10,7 +11,7 @@ class BlogIndex extends React.Component {
 		const posts = data.allMarkdownRemark.edges;
 
 		return (
-			<Layout colors={['#00f', '#fff']}>
+			<Layout colors={[colors.blue, colors.white]}>
 				<SEO title="All posts" />
 				{posts.map(({node: post}) => {
 					const title = post.frontmatter.title || post.fields.slug;
@@ -56,6 +57,7 @@ export const pageQuery = graphql`
 						layout
 						tldr
 						topTitle
+						tags
 					}
 					fields {
 						slug

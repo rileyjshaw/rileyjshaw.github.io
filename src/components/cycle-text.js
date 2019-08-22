@@ -1,8 +1,9 @@
-import React, {useState, useRef} from 'react';
+import React, {useState} from 'react';
+import {useInView} from 'react-intersection-observer';
 
-import {useInterval, useOnScreen} from '../util/hooks';
+import {useInterval} from '../util/hooks';
 
-import './cycle-text.css';
+import TextGrid from './text-grid';
 
 /* Fun strings:
 ▁▂▃▅▆▇▇▆▅▃▂▁
@@ -13,39 +14,34 @@ import './cycle-text.css';
 */
 
 export default ({
-	text,
+	children: text,
 	ms = 300,
-	size: [xSize, ySize] = [1, 1],
-	className = '',
-	...rest
+	size = [1, 1],
+	classPrefix = 'cycle-text',
 }) => {
-	const ref = useRef(null);
+	const [xSize, ySize] = size;
 	const n = xSize * ySize;
 	const [index, setIndex] = useState(0);
-	const onScreen = useOnScreen(ref);
+	const [ref, inView] = useInView({threshold: 0});
+	useInterval(() => setIndex(index + 1), inView ? ms : null);
 
-	useInterval(() => setIndex(index + 1), onScreen ? ms : null);
-	return n === 1 ? (
-		<span ref={ref}>{text[index % text.length]}</span>
-	) : (
-		<div
-			{...rest}
-			className={`${className} cycle-text-grid`}
-			style={{
-				gridTemplate: `repeat(${ySize}, 1fr) / repeat(${xSize}, 1fr)`,
-			}}
-			ref={ref}
-		>
-			{Array.from({length: n}, (_, i) => (
-				<span key={i}>
-					{
-						text[
-							Math.floor(index / Math.pow(text.length, i)) %
-								text.length
-						]
-					}
-				</span>
-			))}
-		</div>
+	if (n === 1)
+		return (
+			<span ref={ref} className={`${classPrefix}-item`}>
+				{text[index % text.length]}
+			</span>
+		);
+
+	return (
+		<TextGrid size={size} classPrefix={classPrefix} ref={ref}>
+			{Array.from(
+				{length: n},
+				(_, i) =>
+					text[
+						Math.floor(index / Math.pow(text.length, i)) %
+							text.length
+					]
+			).join('')}
+		</TextGrid>
 	);
 };

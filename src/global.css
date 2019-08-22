@@ -1,12 +1,27 @@
+:root {
+	--white: #fff;
+	--red: #ff4136;
+	--green: #2ecc40;
+	--blue: #0074d9;
+	--cyan: #00bcd4;
+	--magenta: #e91e63;
+	--yellow: #ffdc00;
+	--black: #030401;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 body {
 	margin: 0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-family: sans-serif;
+	color: var(--black);
 }
-ul {
-	margin: 0;
-	padding: 0;
+a {
+	color: var(--blue);
 }
 a[target='_blank'] {
 	cursor: alias;

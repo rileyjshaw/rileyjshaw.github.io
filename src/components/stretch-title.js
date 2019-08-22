@@ -1,6 +1,7 @@
 import React, {cloneElement, isValidElement, useRef} from 'react';
+import {useInView} from 'react-intersection-observer';
 
-import {useMousePosition, useWindowSize, useOnScreen} from '../util/hooks';
+import {useMousePosition, useWindowSize} from '../util/hooks';
 
 const cloneElementTree = el =>
 	React.Children.map(el, child =>
@@ -14,10 +15,9 @@ const cloneElementTree = el =>
 	);
 
 export default ({children}) => {
-	const ref = useRef(null);
-	const onScreen = useOnScreen(ref);
+	const [ref, inView] = useInView({threshold: 1});
 	const mousePosition = useMousePosition(
-		typeof window !== 'undefined' && onScreen && window
+		typeof window !== 'undefined' && inView && window
 	);
 	const windowCenter = useWindowSize().map(d => d / 2);
 

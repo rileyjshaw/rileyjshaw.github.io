@@ -1,13 +1,14 @@
 import React from 'react';
 import {graphql} from 'gatsby';
 
+import {colors} from '../util/constants';
 import Layout from '../components/layout';
 
 export default function Template({data}) {
 	const {markdownRemark} = data;
 	const {fields, html} = markdownRemark;
 	return (
-		<Layout colors={['#00f', '#fff']}>
+		<Layout colors={[colors.blue, colors.white]}>
 			<div className="blog-post-container">
 				<div className="blog-post">
 					<h1>{fields.title}</h1>

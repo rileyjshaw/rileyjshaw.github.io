@@ -1,10 +1,11 @@
 .doingreat-grid {
-	grid-area: 9 / 2 / span 1 / span 1;
+	grid-area: 9 / 2 / span 1 / span 3;
 	justify-items: stretch;
 	text-align: center;
 	font-weight: bold;
-	color: #0f0;
-	background: #00f;
+	color: var(--green);
+	background: var(--blue);
+	place-self: stretch;
 }
 
 .doingreat-item {
@@ -14,8 +15,8 @@
 }
 
 .doingreat-item:nth-child(even) {
-	color: #00f;
-	background: #0f0;
+	color: var(--blue);
+	background: var(--green);
 }
 
 .wavebump-item,
@@ -24,6 +25,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	place-self: stretch;
 }
 
 .wavebump-item,
@@ -32,20 +34,21 @@
 }
 
 .wavebump-item {
-	grid-area: 7 / -4 / span 1 / span 1;
-	color: #ff0;
-	background: #f00;
+	grid-area: 7 / -4 / span 1 / span 3;
+	color: var(--yellow);
+	background: var(--red);
 }
 
 .droplet-item {
-	grid-area: 27 / 4 / span 1 / span 1;
-	color: #0ff;
-	background: #00f;
+	grid-area: 27 / 4 / span 1 / span 3;
+	color: var(--cyan);
+	background: var(--blue);
 }
 
 .circles-grid {
-	grid-area: 8 / 4 / span 1 / span 1;
 	place-self: stretch;
-	color: #f0f;
-	background: #00f;
+	grid-area: 8 / 4 / span 1 / span 3;
+	font-size: 36px;
+	color: var(--magenta);
+	background: var(--blue);
 }

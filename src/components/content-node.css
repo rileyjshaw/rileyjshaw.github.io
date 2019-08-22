@@ -1,0 +1,98 @@
+.content-node {
+	position: relative;
+	padding: 16px 12px;
+	border: 2px solid var(--black);
+	box-shadow: 3px 3px var(--black);
+}
+.content-node:active {
+	transform: translate(3px, 3px);
+	box-shadow: 0px 0px var(--black);
+}
+/* TODO(riley): Share these styles and bring link style out to root node. */
+/* TODO(riley): Move this into a semantic element, since it means something. */
+.content-node .content-type {
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	height: 24px;
+	background: var(--white);
+	border: 2px solid var(--black);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	padding: 0 12px;
+	color: var(--black);
+	font-weight: bold;
+}
+.content-node time,
+.content-node h2 {
+}
+.content-node h2 {
+	margin-bottom: 0;
+}
+.content-node :not(h2) a {
+	position: relative;
+}
+.content-node h2 a::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.content-node h2 a[target='_blank']::after {
+	position: absolute;
+	top: -2px;
+	right: -2px;
+	height: 24px;
+	width: 24px;
+	background: var(--white);
+	border: 2px solid var(--black);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	color: var(--black);
+}
+.content-node time {
+	font-size: 12px;
+	color: #aaa;
+	display: block;
+}
+.content-node.span-2 {
+	grid-column-end: span 2;
+}
+.content-node.span-3 {
+	grid-column-end: span 3;
+}
+.content-node.span-4 {
+	grid-column-end: span 4;
+}
+.content-node.span-5 {
+	grid-column-end: span 5;
+}
+.content-node.span-6 {
+	grid-column-end: span 6;
+}
+.content-node .tags {
+	list-style: none;
+}
+.content-node .tags {
+	margin: -8px 0 0;
+	padding: 0;
+}
+.content-node .tags li {
+	height: 20px;
+	line-height: 20px;
+	border-radius: 10px;
+	background: var(--black);
+	color: var(--white);
+	font-size: 12px;
+	display: inline-block;
+	padding: 0 12px;
+	margin-right: 16px;
+	margin-top: 8px;
+	letter-spacing: 2px;
+}

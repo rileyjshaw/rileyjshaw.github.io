@@ -2,6 +2,10 @@ import React from 'react';
 import {useStaticQuery, graphql} from 'gatsby';
 
 import sortingMethods from '../util/sorting-methods';
+import formatProps from '../util/format-props';
+
+import FirehoseAddons from './firehose-addons';
+import ContentNode from './content-node';
 
 import '../components/firehose.css';
 
@@ -16,9 +20,7 @@ class Firehose extends React.Component {
 			sortIdx: 0,
 			ascending: false,
 			filterType: 'any',
-			tagStates: props.tags.map(
-				tag => tag.name === 'starred' || tag.name === 'online'
-			),
+			tagStates: Array.from(props.tags).fill(0),
 		};
 
 		this.state = {
@@ -39,7 +41,6 @@ class Firehose extends React.Component {
 		const checkedTagNames = tags
 			.filter((_, i) => state.tagStates[i])
 			.map(tag => tag.name);
-
 		const filteredByType = checkedTypeNames.length
 			? nodes.filter(node =>
 					checkedTypeNames.some(type => node.type === type)
@@ -120,81 +121,6 @@ class Firehose extends React.Component {
 	handleAscendingChange = e => {
 		this.setState({ascending: e.target.checked}, this.refreshDisplayNodes);
 	};
-
-	renderNode(node) {
-		let inner;
-		let className;
-
-		switch (node.type) {
-			case 'dweet':
-				inner = <a href={node.link}>Dweet {node.id__normalized}</a>;
-				break;
-			case 'post':
-				className = 'span-2';
-				inner = (
-					<>
-						<a href={node.slug}>
-							<h2>{node.title}</h2>
-						</a>
-						<p>{node.frontmatter.tldr}</p>
-						<p>Written on {node.date}</p>
-						<p>{node.excerpt}</p>
-					</>
-				);
-				break;
-			case 'commit':
-				className = 'span-2';
-				inner = (
-					<a href={node.link}>
-						<h1>
-							{node.title} ({node.date})
-						</h1>
-					</a>
-				);
-				break;
-			case 'project':
-				if (node.tags.includes('starred')) className = 'span-2';
-				inner = (
-					<>
-						<a href={node.href}>
-							<h2>{node.title}</h2>
-						</a>
-						{node.description &&
-							node.description.map((paragraph, i) => (
-								<p
-									key={i}
-									dangerouslySetInnerHTML={{
-										__html: paragraph,
-									}}
-								/>
-							))}
-					</>
-				);
-				break;
-			case 'arenaChannel':
-				inner = (
-					<>
-						<a href={`https://are.na/riley-shaw/${node.slug}`}>
-							<h2>
-								{node.title} {node.date}
-							</h2>
-						</a>
-						{node.description && <p>{node.description}</p>}
-						<p>
-							An are.na channel with {node.length} blocks. Last
-							updated {node.updated_at.slice(0, 10)}.
-						</p>
-					</>
-				);
-				break;
-		}
-
-		return (
-			<li key={node.id} className={className}>
-				{inner}
-			</li>
-		);
-	}
 
 	render() {
 		const {tags} = this.props;
@@ -306,55 +232,18 @@ class Firehose extends React.Component {
 					</fieldset>
 				</fieldset>
 				<p>
-					The firehose currently has <strong>{nodes.length}</strong>{' '}
-					entries from{' '}
+					Found <strong>{nodes.length}</strong> entries from{' '}
 					<strong>
 						{this.state.typeStates.reduce((a, b) => a + b) ||
 							this.state.typeStates.length}
 					</strong>{' '}
 					sources.
 				</p>
-				<ul className="lab-grid">{nodes.map(this.renderNode)}</ul>
-				<ul>
-					<li>Potential other sources:</li>
-					<li>
-						Instagram
-						(https://www.gatsbyjs.org/packages/gatsby-source-instagram/)
-					</li>
-					<li>
-						Github (https://api.github.com/users/rileyjshaw/repos)
-						ADD ALL PULL REQUESTS!!
-					</li>
-					<li>
-						Gists (https://api.github.com/users/rileyjshaw/gists)
-					</li>
-					<li>
-						Codepen
-						(https://blog.codepen.io/documentation/api/rss-feeds/)
-					</li>
-					<li>Glitch ()</li>
-					<li>Hackster</li>
-					<li>Galleries</li>
-					<li>SFPC tumblr (https://sfpc.rileyjshaw.com/rss)</li>
-					<li>Creative code tumblr</li>
-					<li>Increase project node types</li>
-					<li></li>
-					<li>TODO:</li>
-					<li>
-						<strike>Sorting</strike>
-					</li>
-					<li>
-						<strike>A few more sources?</strike>
-					</li>
-					<li>
-						<strong>Main page layout</strong>
-					</li>
-					<li>Lazy-loading</li>
-					<li>Blog / etc links</li>
-					<li>
-						Optimize images:
-						https://www.gatsbyjs.org/packages/gatsby-image/
-					</li>
+				<ul className="lab-grid">
+					<FirehoseAddons />
+					{nodes.map(node => (
+						<ContentNode {...node} />
+					))}
 				</ul>
 			</>
 		);
@@ -384,6 +273,7 @@ export default props => {
 					title
 					date(formatString: "YYYY-MM-DD")
 					link
+					description
 				}
 			}
 
@@ -398,6 +288,7 @@ export default props => {
 							layout
 							tldr
 							topTitle
+							tags
 						}
 						fields {
 							slug
@@ -459,33 +350,20 @@ export default props => {
 		// TODO(riley): Better way of handling tags!!!!
 		...arenaChannels
 			.filter(c => c.published && c.status !== 'private' && c.length > 5)
-			.map(c => {
-				const {created_at, id__normalized, ...rest} = c;
-				return {
-					...rest,
-					type: 'arenaChannel',
-					id: `arena-${id__normalized}`,
-					date: created_at.slice(0, 10),
-					tags: ['online'],
-				};
-			}),
+			.map(c => ({
+				...c,
+				type: 'arenaChannel',
+			})),
 		...commits.map((c, i) => ({
 			...c,
 			type: 'commit',
 			id: `commit-${i}`,
 			tags: ['online', 'instructional'],
 		})),
-		...posts.map((p, i) => {
-			// Move all `fields` properties to the top level.
-			const {fields, ...rest} = p.node;
-			return {
-				...fields,
-				...rest,
-				type: 'post',
-				id: `post-${i}`,
-				tags: ['instructional'],
-			};
-		}),
+		...posts.map(p => ({
+			...p,
+			type: 'post',
+		})),
 		...projects
 			.filter(({todo}) => !todo)
 			.map((p, i) => ({
@@ -493,18 +371,11 @@ export default props => {
 				type: 'project',
 				id: `project-${i}`,
 			})),
-		...[...d0, ...d1].map(d => {
-			const {posted, ...rest} = d;
-			return {
-				...rest,
-				date: posted.slice(0, 10),
-				type: 'dweet',
-				title: `Dweet ${d.id__normalized}`,
-				id: `dweet-${d.id__normalized}`,
-				tags: ['online', 'golf'],
-			};
-		}),
-	];
+		...[...d0, ...d1].map(d => ({
+			...d,
+			type: 'dweet',
+		})),
+	].map(formatProps);
 
 	return <Firehose nodes={nodes} tags={tags} {...props} />;
 };

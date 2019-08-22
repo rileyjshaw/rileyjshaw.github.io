@@ -7,7 +7,14 @@
 	font-weight: bold;
 }
 
+.page-header .site-nav,
 .page-header ul {
+	height: 100%;
+}
+
+.page-header ul {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 	display: flex;
 	align-items: stretch;
@@ -32,7 +39,7 @@
 }
 
 .page-header a:hover {
-	background: #f00;
+	background: var(--red);
 	text-decoration: underline;
 }
 

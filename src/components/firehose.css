@@ -1,16 +1,12 @@
 .lab-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-	grid-gap: 10px;
-	grid-auto-flow: dense;
+	grid-template-columns: repeat(auto-fit, minmax(60px, max-content));
+	justify-content: space-around;
+	align-items: center;
+	grid-gap: 30px;
+	grid-auto-flow: row dense;
 	list-style: none;
 	width: 100%;
-}
-
-.lab-grid li {
-	border: 1px solid #000;
-}
-
-.lab-grid .span-2 {
-	grid-column-end: span 2;
+	margin: 0;
+	padding: 0;
 }

@@ -2,12 +2,82 @@
 	--logo-width: 80px;
 	--logo-padding: 20px;
 	--stroke-width: 10px;
-	--header-width: 500px;
+}
+
+.homepage-top,
+.selected-works {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+	/* align-content:	 space-evenly; */
+	grid-gap: 60px;
+	grid-auto-flow: row dense;
+	/* grid-auto-rows: minmax(50px, auto); */
 }
 
 .homepage-top {
-	display: grid;
-	grid-template-columns: [header] 500px [main] 1fr; /* TODO(riley): --header-width */
+	padding-right: 60px;
+}
+
+.selected-works-container {
+	padding-bottom: 60px;
+}
+
+.header-background {
+	position: relative;
+	grid-column: 1 / span 4;
+	grid-row: 1 / -1;
+	height: 100%;
+}
+
+.header-background .triangle-bg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.todo-maybe-header-element {
+	position: sticky;
+	z-index: 1;
+	grid-column: 1 / span 4;
+	grid-row-start: 1;
+	top: 0;
+	bottom: 0;
+	height: 100vh;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	overflow-x: hidden;
+}
+
+.todo-maybe-header-element > * {
+	padding: 0 12px;
+}
+
+.todo-maybe-header-element a {
+	color: var(--black);
+}
+
+.todo-maybe-header-element .newsletter-form {
+	margin-top: auto;
+}
+
+.selected-works-container {
+	grid-column: 5 / -1;
+}
+
+/* TODO(riley): This should share styles with firehose. */
+.selected-works {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.selected-works li {
+	height: 200px;
+	grid-column: span 3;
 }
 
 .title {
@@ -33,7 +103,7 @@
 
 .title .c {
 	position: relative;
-	color: #0ff;
+	color: var(--cyan);
 	left: -14px;
 }
 
@@ -45,49 +115,32 @@
 }
 
 .title .m {
-	color: #f0f;
+	color: var(--magenta);
 	top: 4px;
 	left: 4px;
 }
 
 .title .y {
-	color: #ff0;
+	color: var(--yellow);
 	top: -8px;
 	left: 0px;
 }
 
 .title-stretch {
 	margin: 0;
+	flex-shrink: 0;
 	padding: 0 0 30px;
 	line-height: 0;
 	font-size: 120px;
 	overflow: hidden;
 	text-align: right;
 	text-transform: uppercase;
-	color: #000;
+	color: var(--black);
 }
 
 .title-stretch .title-j {
 	font-size: 320px;
 	margin: 0.36em 0 0.28em;
-}
-
-.todo-maybe-header-element {
-	position: sticky;
-	grid-column: header;
-	top: 0;
-	bottom: 0;
-	max-height: 100vh;
-	overflow: auto;
-	border-right: 1px solid #000;
-	padding: 0 12px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.todo-maybe-header-element a {
-	color: #000;
 }
 
 .about-stub {
@@ -113,7 +166,7 @@
 }
 
 .currently li {
-	border: 4px solid black;
+	border: 4px solid var(--black);
 	height: 200px;
 	width: 300px;
 	margin-right: 60px;

@@ -16,8 +16,8 @@
 }
 
 .newsletter-form input[type='submit'] {
-	background: #000;
-	color: #fff;
+	background: var(--black);
+	color: var(--white);
 	border: 0;
 	cursor: pointer;
 }
