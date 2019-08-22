@@ -1,8 +1,8 @@
 import React from 'react';
 
-import TextGrid from '../components/text-grid';
-import CycleText from '../components/cycle-text';
-import '../components/grid-ornaments.css';
+import TextGrid from './text-grid';
+import CycleText from './cycle-text';
+import './grid-ornaments.css';
 
 export default () => (
 	<>

@@ -7,7 +7,7 @@ import formatProps from '../util/format-props';
 import GridOrnaments from './grid-ornaments';
 import ContentNode from './content-node';
 
-import '../components/project-explorer.css';
+import './project-explorer.css';
 
 class ProjectExplorer extends React.Component {
 	constructor(props) {
