@@ -2,12 +2,10 @@ import React from 'react';
 import {useStaticQuery, graphql} from 'gatsby';
 
 import sortingMethods from '../util/sorting-methods';
-import formatProps from '../util/format-props';
+import allProjectsQuery from '../util/all-projects-query';
 
 import GridOrnaments from './grid-ornaments';
-import ContentNode from './content-node';
-
-import './project-explorer.css';
+import ContentGrid from './content-grid';
 
 class ProjectExplorer extends React.Component {
 	constructor(props) {
@@ -239,12 +237,9 @@ class ProjectExplorer extends React.Component {
 					</strong>{' '}
 					sources.
 				</p>
-				<ul className="lab-grid">
+				<ContentGrid nodes={nodes}>
 					<GridOrnaments />
-					{nodes.map(node => (
-						<ContentNode {...node} />
-					))}
-				</ul>
+				</ContentGrid>
 			</>
 		);
 	}
@@ -252,13 +247,7 @@ class ProjectExplorer extends React.Component {
 
 export default props => {
 	const {
-		allAtomEntry: {nodes: commits},
-		allMarkdownRemark: {edges: posts},
-		allProjectsJson: {nodes: projects},
 		allTagsJson: {nodes: tags},
-		arenaChannels: {channels: arenaChannels},
-		dweets0: {results: d0},
-		dweets1: {results: d1},
 	} = useStaticQuery(graphql`
 		{
 			allTagsJson {
@@ -267,115 +256,10 @@ export default props => {
 					readable
 				}
 			}
-
-			allAtomEntry {
-				nodes {
-					title
-					date(formatString: "YYYY-MM-DD")
-					link
-					description
-				}
-			}
-
-			allMarkdownRemark(
-				filter: {fileAbsolutePath: {regex: "/\/posts\/.*\\.md$/"}}
-				sort: {fields: [fields___date], order: DESC}
-			) {
-				edges {
-					node {
-						excerpt
-						frontmatter {
-							layout
-							tldr
-							topTitle
-							tags
-						}
-						fields {
-							slug
-							title
-							date(formatString: "YYYY-MM-DD")
-						}
-					}
-				}
-			}
-
-			allProjectsJson {
-				nodes {
-					title
-					description
-					todo
-					tags
-					date
-					coolness
-					href
-				}
-			}
-
-			arenaChannels {
-				channels {
-					id__normalized
-					title
-					created_at
-					updated_at
-					published
-					slug
-					length
-					status
-					metadata {
-						description
-					}
-				}
-			}
-
-			dweets0 {
-				results {
-					id__normalized
-					link
-					posted
-				}
-			}
-
-			dweets1 {
-				results {
-					id__normalized
-					link
-					posted
-				}
-			}
 		}
 	`);
 
-	const nodes = [
-		// TODO(riley): Better IDs?
-		// TODO(riley): Better way of handling tags!!!!
-		...arenaChannels
-			.filter(c => c.published && c.status !== 'private' && c.length > 5)
-			.map(c => ({
-				...c,
-				type: 'arenaChannel',
-			})),
-		...commits.map((c, i) => ({
-			...c,
-			type: 'commit',
-			id: `commit-${i}`,
-			tags: ['online', 'instructional'],
-		})),
-		...posts.map(p => ({
-			...p,
-			type: 'post',
-		})),
-		...projects
-			.filter(({todo}) => !todo)
-			.map((p, i) => ({
-				...p,
-				type: 'project',
-				id: `project-${i}`,
-			})),
-		...[...d0, ...d1].map(d => ({
-			...d,
-			type: 'dweet',
-		})),
-	].map(formatProps);
-
-	return <ProjectExplorer nodes={nodes} tags={tags} {...props} />;
+	return (
+		<ProjectExplorer nodes={allProjectsQuery()} tags={tags} {...props} />
+	);
 };

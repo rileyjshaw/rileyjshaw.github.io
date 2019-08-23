@@ -2,23 +2,18 @@ import React from 'react';
 import {Link, useStaticQuery, graphql} from 'gatsby';
 
 import {colors} from '../util/constants';
+import allProjectsQuery from '../util/all-projects-query';
 import SEO from '../components/seo';
 import Fit from '../components/fit';
 import StretchTitle from '../components/stretch-title';
 import Newsletter from '../components/newsletter';
 import CycleText from '../components/cycle-text';
 import Layout from '../components/layout';
-import SkewBg from '../components/skew-bg';
+import ContentGrid from '../components/content-grid';
 
 import './index.css';
 
-// TODO(riley): Only here for testing, remove l8r.
-const colorful = (() => {
-	const {black, white, ...colorful} = colors;
-	return Object.values(colorful);
-})();
-const randomRgb = () => colorful[Math.floor(Math.random() * colorful.length)];
-const IndexPage = () => {
+const IndexPage = ({starredProjects = []}) => {
 	const {aboutIntro} = useStaticQuery(graphql`
 		{
 			aboutIntro: file(relativePath: {eq: "about/me-intro.md"}) {
@@ -67,18 +62,7 @@ const IndexPage = () => {
 							Selected works{' '}
 							<Link to="/explore">(explore all)</Link>
 						</h2>
-						<ul className="selected-works">
-							{Array.from({length: 20}, (_, i) => (
-								<li
-									key={i}
-									style={{
-										background: randomRgb(),
-									}}
-								>
-									Sample text.
-								</li>
-							))}
-						</ul>
+						<ContentGrid nodes={starredProjects} />
 					</div>
 				</div>
 				<blockquote>Here's a big quote...</blockquote>
@@ -87,4 +71,10 @@ const IndexPage = () => {
 	);
 };
 
-export default IndexPage;
+export default () => {
+	const starredProjects = allProjectsQuery().filter(project =>
+		project.tags.includes('starred')
+	);
+
+	return <IndexPage starredProjects={starredProjects} />;
+};

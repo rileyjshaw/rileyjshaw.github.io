@@ -1,4 +1,4 @@
-.lab-grid {
+.content-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(60px, max-content));
 	justify-content: space-around;

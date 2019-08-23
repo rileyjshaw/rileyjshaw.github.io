@@ -98,17 +98,6 @@ export default props => {
 };
 
 /*
-
-case 'commit':
-	className = 'span-2';
-	inner = (
-		<a href={node.link}>
-			<h1>
-				{node.title} ({node.date})
-			</h1>
-		</a>
-	);
-	break;
 case 'project':
 	if (node.tags.includes('starred')) className = 'span-2';
 */
