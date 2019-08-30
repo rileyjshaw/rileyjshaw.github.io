@@ -45,11 +45,10 @@
 	top: 0;
 	bottom: 0;
 	height: 100vh;
-	overflow: auto;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	overflow-x: hidden;
+	overflow: visible;
 }
 
 .todo-maybe-header-element > * {
@@ -132,15 +131,19 @@
 	padding: 0 0 30px;
 	line-height: 0;
 	font-size: 120px;
-	overflow: hidden;
+	overflow: visible;
 	text-align: right;
 	text-transform: uppercase;
 	color: var(--black);
+	font-family: 'Arial Black';
 }
 
+.title-stretch .title-riley {
+	margin-top: -46px;
+}
 .title-stretch .title-j {
 	font-size: 320px;
-	margin: 0.36em 0 0.28em;
+	margin: 0.28em 0 0.26em;
 }
 
 .about-stub {

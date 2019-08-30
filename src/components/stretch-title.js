@@ -14,6 +14,7 @@ const cloneElementTree = el =>
 			: [child]
 	);
 
+const INTENSITY = 7;
 export default ({children}) => {
 	const [ref, inView] = useInView({threshold: 1});
 	const mousePosition = useMousePosition(
@@ -21,6 +22,7 @@ export default ({children}) => {
 	);
 	const windowCenter = useWindowSize().map(d => d / 2);
 
+	// TODO(riley): Fix this so it's not affected by scrolling.
 	const angle = Math.atan2(
 		mousePosition[1] - windowCenter[1],
 		mousePosition[0] - windowCenter[0]
@@ -34,8 +36,8 @@ export default ({children}) => {
 	const offsets = Array.from({length: 3}, (_, i) => {
 		const a = angle + (i * Math.PI * 2) / 3;
 		return {
-			top: magnitude * Math.sin(a),
-			left: magnitude * Math.cos(a),
+			top: magnitude * Math.sin(a) * INTENSITY,
+			left: magnitude * Math.cos(a) * INTENSITY,
 		};
 	});
 

@@ -32,10 +32,10 @@ const IndexPage = ({starredProjects = []}) => {
 					<div className="todo-maybe-header-element">
 						<StretchTitle>
 							<Fit>Welcome to the digital landfill of</Fit>
-							{/* <Fit className="title-riley">Riley</Fit>
+							<Fit className="title-riley">Riley</Fit>
 							<p className="title-j">J</p>
-							<Fit className="title-shaw">Shaw</Fit> */}
-							<Fit>rileyjshaw</Fit>
+							<Fit className="title-shaw">Shaw</Fit>
+							{/* <Fit>rileyjshaw</Fit> */}
 						</StretchTitle>
 						<div className="about-stub">
 							<div

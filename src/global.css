@@ -17,7 +17,7 @@ body {
 	margin: 0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	font-family: sans-serif;
+	font-family: Arial, “Helvetica Neue”, Helvetica, sans-serif;
 	color: var(--black);
 }
 a {
@@ -28,4 +28,8 @@ a[target='_blank'] {
 }
 a[target='_blank']::after {
 	content: '➚';
+}
+p {
+	font-family: Georgia, Palatino, ” Palatino Linotype”, Times,
+		“Times New Roman”, serif;
 }
