@@ -3,6 +3,11 @@
 	padding: 16px 12px;
 	border: 2px solid var(--black);
 	box-shadow: 3px 3px var(--black);
+	background: var(--white);
+	visibility: hidden;
+}
+.content-node.measured {
+	visibility: visible;
 }
 .content-node:active {
 	transform: translate(3px, 3px);
@@ -31,7 +36,7 @@
 .content-node h2 {
 	margin-bottom: 0;
 }
-.content-node :not(h2) a {
+.content-node :not(h2) > a {
 	position: relative;
 }
 .content-node h2 a::before {
@@ -80,9 +85,17 @@
 	list-style: none;
 }
 .content-node .tags {
-	margin: -8px 0 0;
-	padding: 0;
+	margin: auto 0 0;
+	padding: 16px 0 0;
 }
+
+.content-node.measured .inner {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
 .content-node .tags li {
 	height: 20px;
 	line-height: 20px;

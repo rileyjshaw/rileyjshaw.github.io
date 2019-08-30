@@ -43,7 +43,10 @@ const formatters = {
 			},
 			type: 'post',
 			link: slug,
-			id: `post`,
+			id: `POST_${slug
+				.slice(6)
+				.toUpperCase()
+				.replace(/-/g, '_')}`,
 			tags: ['instructional'],
 		};
 	},

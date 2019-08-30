@@ -1,4 +1,4 @@
-import {useState, useEffect, useRef} from 'react';
+import {useState, useEffect, useRef, useLayoutEffect} from 'react';
 
 export function useWindowSize(cb) {
 	const initialSize =
@@ -60,6 +60,16 @@ export function useInterval(cb, ms, oneShot) {
 			return () => clearTimeout(timeoutId);
 		}
 	}, [ms]);
+}
+
+// TODO(riley): Improve this then replace all useDimensions() calls.
+export function useBB() {
+	const ref = useRef();
+	const [bb, setBB] = useState({});
+	useLayoutEffect(() => {
+		setBB(ref.current.getBoundingClientRect());
+	}, [ref.current]);
+	return [ref, bb];
 }
 
 const interactionEventNames = [

@@ -1,12 +1,34 @@
 .content-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(60px, max-content));
+	grid-auto-rows: 100px;
 	justify-content: space-around;
-	align-items: center;
+	align-items: stretch;
 	grid-gap: 30px;
 	grid-auto-flow: row dense;
 	list-style: none;
 	width: 100%;
 	margin: 0;
-	padding: 0;
+	padding: 30px;
+	background: var(--blue);
+}
+/* TODO(riley): Move this into a smarter file. */
+.go-up {
+	height: 100vh;
+	width: 100vw;
+	background: var(--yellow);
+	font-size: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.go-up a {
+	color: var(--black);
+	text-decoration: none;
+	transform: rotate(-90deg);
+}
+footer {
+	background: var(--green);
+	height: 120px;
 }

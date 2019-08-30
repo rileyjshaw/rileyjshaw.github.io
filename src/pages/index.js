@@ -46,7 +46,10 @@ const IndexPage = ({starredProjects = []}) => {
 								}}
 							/>{' '}
 							<Link to="/about">
-								More&nbsp;<CycleText>➬➱➯➫–</CycleText>
+								More&nbsp;
+								<CycleText OuterElement="span">
+									➬➱➯➫–
+								</CycleText>
 							</Link>
 						</div>
 						<Newsletter className="homepage-newsletter" />

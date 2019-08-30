@@ -2,11 +2,18 @@ import React from 'react';
 
 export default React.forwardRef(
 	(
-		{children, size: [xSize, ySize], classPrefix = 'text-grid', ...rest},
+		{
+			children,
+			size: [xSize, ySize],
+			classPrefix = 'text-grid',
+			className = '',
+			OuterElement = 'div',
+			...rest
+		},
 		ref
 	) => (
-		<div
-			className={`${classPrefix}-grid`}
+		<OuterElement
+			className={`${className} ${classPrefix}-grid`}
 			style={{
 				display: 'grid',
 				gridTemplate: `repeat(${ySize}, 1fr) / repeat(${xSize}, 1fr)`,
@@ -22,6 +29,6 @@ export default React.forwardRef(
 					{letter}
 				</span>
 			))}
-		</div>
+		</OuterElement>
 	)
 );

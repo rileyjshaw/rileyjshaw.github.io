@@ -1,4 +1,5 @@
 import React from 'react';
+import useDimensions from 'react-use-dimensions';
 
 import AutoLink, {ExternalLink} from './auto-link';
 
@@ -84,15 +85,31 @@ export default props => {
 	const {type, title, date, link, id} = props;
 	if (!contentTypes[type]) return null;
 	const {className = '', readableType, Inner} = contentTypes[type];
+
+	// TODO(riley): Remove fudge.
+	// 62px = gap (30px) + padding (16px * 2) + fudge (20px).
+	const [ref, {height}] = useDimensions({liveMeasure: false});
+	const span = Math.ceil((height + 82) / 130);
+
 	return (
-		<li className={`${className} content-node`} key={id}>
+		<li
+			className={`${className} ${
+				height ? 'measured ' : ' '
+			}content-node`}
+			key={id}
+			style={height && {gridRowEnd: `span ${span}`}}
+		>
 			{/* Note: might be able to make this more semantic. Sources:
 			https://stackoverflow.com/questions/12866008/html5-semantic-markup-for-blog-post-tags-and-categories
 			https://html.spec.whatwg.org/multipage/links.html#link-type-tag */}
-			<div className="content-type">{readableType}</div>
-			<h2>{link ? <AutoLink to={link}>{title}</AutoLink> : title}</h2>
-			<time dateTime={date}>{date.replace(/-/g, '.')}</time>
-			<Inner {...props} />
+			<div className="inner" ref={ref}>
+				<div className="content-type">{readableType}</div>
+				<h2>
+					{link ? <AutoLink to={link}>{title}</AutoLink> : title}
+				</h2>
+				<time dateTime={date}>{date.replace(/-/g, '.')}</time>
+				<Inner {...props} />
+			</div>
 		</li>
 	);
 };

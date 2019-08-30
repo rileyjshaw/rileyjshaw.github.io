@@ -18,6 +18,8 @@ export default ({
 	ms = 300,
 	size = [1, 1],
 	classPrefix = 'cycle-text',
+	className = '',
+	OuterElement = 'div',
 }) => {
 	const [xSize, ySize] = size;
 	const n = xSize * ySize;
@@ -27,13 +29,22 @@ export default ({
 
 	if (n === 1)
 		return (
-			<span ref={ref} className={`${classPrefix}-item`}>
+			<OuterElement
+				ref={ref}
+				className={`${className} ${classPrefix}-item`}
+			>
 				{text[index % text.length]}
-			</span>
+			</OuterElement>
 		);
 
 	return (
-		<TextGrid size={size} classPrefix={classPrefix} ref={ref}>
+		<TextGrid
+			size={size}
+			classPrefix={classPrefix}
+			className={className}
+			ref={ref}
+			OuterElement={OuterElement}
+		>
 			{Array.from(
 				{length: n},
 				(_, i) =>
