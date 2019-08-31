@@ -35,7 +35,7 @@ const IndexPage = ({starredProjects = []}) => {
 							<Fit className="title-riley">Riley</Fit>
 							<p className="title-j">J</p>
 							<Fit className="title-shaw">Shaw</Fit>
-							{/* <Fit>rileyjshaw</Fit> */}
+							<Fit className="title-rileyjshaw">rileyjshaw</Fit>
 						</StretchTitle>
 						<div className="about-stub">
 							<div

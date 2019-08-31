@@ -7,15 +7,10 @@
 .homepage-top,
 .selected-works {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
 	/* align-content:	 space-evenly; */
-	grid-gap: 60px;
+	grid-gap: 30px;
 	grid-auto-flow: row dense;
-	/* grid-auto-rows: minmax(50px, auto); */
-}
-
-.homepage-top {
-	padding-right: 60px;
 }
 
 .selected-works-container {
@@ -49,6 +44,7 @@
 	flex-direction: column;
 	flex-wrap: wrap;
 	overflow: visible;
+	max-width: 100%;
 }
 
 .todo-maybe-header-element > * {
@@ -126,6 +122,7 @@
 }
 
 .title-stretch {
+	width: 100%;
 	margin: 0;
 	flex-shrink: 0;
 	padding: 0 0 30px;
@@ -175,15 +172,27 @@
 	margin-right: 60px;
 }
 
-.content-ughhh {
-	display: flex;
-	width: 100%;
-	align-items: center;
+.title-rileyjshaw {
+	display: none;
 }
+@media only screen and (max-width: 800px) {
+	.todo-maybe-header-element {
+		position: static;
+		flex-direction: row;
+		height: auto;
+	}
 
-@media (max-width: 1200px) {
-	/* TODO(riley): Would love to have this based on --header-width, eg. (max-width: calc(var(--header-width) * 2.5)) */
-	.content-ughhh {
-		flex-direction: column !important;
+	.title-riley,
+	.title-j,
+	.title-shaw,
+	.newsletter-form {
+		display: none;
+	}
+	.title-rileyjshaw {
+		display: block;
+	}
+	.todo-maybe-header-element,
+	.selected-works-container {
+		grid-column: 1 / -1;
 	}
 }
