@@ -78,7 +78,7 @@ const IndexPage = ({starredProjects = []}) => {
 
 export default () => {
 	const starredProjects = allProjectsQuery().filter(project =>
-		project.tags.includes('starred')
+		project.tags?.includes('starred')
 	);
 
 	return <IndexPage starredProjects={starredProjects} />;
