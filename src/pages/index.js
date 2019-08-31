@@ -10,6 +10,7 @@ import Newsletter from '../components/newsletter';
 import CycleText from '../components/cycle-text';
 import Layout from '../components/layout';
 import ContentGrid from '../components/content-grid';
+import GoUp from '../components/go-up';
 
 import './index.css';
 
@@ -69,6 +70,7 @@ const IndexPage = ({starredProjects = []}) => {
 					</div>
 				</div>
 				<blockquote>Here's a big quote...</blockquote>
+				<GoUp />
 			</main>
 		</Layout>
 	);

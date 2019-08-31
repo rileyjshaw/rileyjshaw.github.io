@@ -1,0 +1,15 @@
+.go-up {
+	height: 100vh;
+	width: 100vw;
+	background: var(--yellow);
+	font-size: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.go-up span {
+	color: var(--black);
+	transform: rotate(-90deg);
+	cursor: n-resize;
+}

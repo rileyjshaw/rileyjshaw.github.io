@@ -20,6 +20,7 @@ export default ({
 	classPrefix = 'cycle-text',
 	className = '',
 	OuterElement = 'div',
+	...rest
 }) => {
 	const [xSize, ySize] = size;
 	const n = xSize * ySize;
@@ -32,6 +33,7 @@ export default ({
 			<OuterElement
 				ref={ref}
 				className={`${className} ${classPrefix}-item`}
+				{...rest}
 			>
 				{text[index % text.length]}
 			</OuterElement>
@@ -44,6 +46,7 @@ export default ({
 			className={className}
 			ref={ref}
 			OuterElement={OuterElement}
+			{...rest}
 		>
 			{Array.from(
 				{length: n},
