@@ -37,12 +37,12 @@ export const CommitBlogContent = ({description, tags}) => (
 		{tags && <Tags tags={tags} />}
 	</>
 );
-export const ArenaChannelContent = ({description, length, updated_at}) => (
+export const ArenaChannelContent = ({description, length, updatedAt}) => (
 	<>
 		{description && <p>{description}</p>}
 		<p>
 			An Are.na channel with {length} blocks. Last updated{' '}
-			{updated_at.slice(0, 10)}.
+			{updatedAt.slice(0, 10)}.
 		</p>
 	</>
 );
@@ -77,12 +77,12 @@ const contentTypes = {
 };
 
 // Each content type needs:
-//   "id":
+//   "uid":
 //   "type":
 //   "title":
 //   "date":
 export default props => {
-	const {type, title, date, link, id} = props;
+	const {type, title, date, link, uid} = props;
 	if (!contentTypes[type]) return null;
 	const {className = '', readableType, Inner} = contentTypes[type];
 
@@ -96,7 +96,7 @@ export default props => {
 			className={`${className} ${
 				height ? 'measured ' : ' '
 			}content-node`}
-			key={id}
+			key={uid}
 			style={height && {gridRowEnd: `span ${span}`}}
 		>
 			{/* Note: might be able to make this more semantic. Sources:

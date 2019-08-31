@@ -4,23 +4,11 @@ import formatProps from './format-props';
 
 export default () => {
 	const {
-		allAtomEntry: {nodes: commits},
 		allMarkdownRemark: {edges: posts},
 		allProjectsJson: {nodes: projects},
-		arenaChannels: {channels: arenaChannels},
-		dweets0: {results: d0},
-		dweets1: {results: d1},
+		allScrapedProjectsFormattedJson: {nodes: scraped},
 	} = useStaticQuery(graphql`
 		{
-			allAtomEntry {
-				nodes {
-					title
-					date(formatString: "YYYY-MM-DD")
-					link
-					description
-				}
-			}
-
 			allMarkdownRemark(
 				filter: {fileAbsolutePath: {regex: "/\/posts\/.*\\.md$/"}}
 				sort: {fields: [fields___date], order: DESC}
@@ -55,55 +43,21 @@ export default () => {
 				}
 			}
 
-			arenaChannels {
-				channels {
-					id__normalized
+			allScrapedProjectsFormattedJson {
+				nodes {
+					uid
+					type
 					title
-					created_at
-					updated_at
-					published
-					slug
-					length
-					status
-					metadata {
-						description
-					}
-				}
-			}
-
-			dweets0 {
-				results {
-					id__normalized
+					date
 					link
-					posted
-				}
-			}
-
-			dweets1 {
-				results {
-					id__normalized
-					link
-					posted
+					description
+					updatedAt
 				}
 			}
 		}
 	`);
 
 	return [
-		// TODO(riley): Better IDs?
-		// TODO(riley): Better way of handling tags!!!!
-		...arenaChannels
-			.filter(c => c.published && c.status !== 'private' && c.length > 5)
-			.map(c => ({
-				...c,
-				type: 'arenaChannel',
-			})),
-		...commits.map((c, i) => ({
-			...c,
-			type: 'commit',
-			id: `commit-${i}`,
-			tags: ['online', 'instructional'],
-		})),
 		...posts.map(p => ({
 			...p,
 			type: 'post',
@@ -113,11 +67,8 @@ export default () => {
 			.map((p, i) => ({
 				...p,
 				type: 'project',
-				id: `project-${i}`,
+				uid: `PROJECT_${p.title.toUpperCase().replace(/[- ]/g, '_')}`,
 			})),
-		...[...d0, ...d1].map(d => ({
-			...d,
-			type: 'dweet',
-		})),
+		...scraped,
 	].map(formatProps);
 };

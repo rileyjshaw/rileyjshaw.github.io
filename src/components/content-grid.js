@@ -7,7 +7,7 @@ import './content-grid.css';
 export default ({children, nodes}) => (
 	<ul className="content-grid">
 		{nodes.map(node => (
-			<ContentNode {...node} />
+			<ContentNode key={node.uid} {...node} />
 		))}
 		{children}
 	</ul>

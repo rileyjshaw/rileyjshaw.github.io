@@ -34,7 +34,7 @@
 .content-node h2 {
 }
 .content-node h2 {
-	margin-bottom: 0;
+	margin-bottom: 3px;
 }
 .content-node :not(h2) > a {
 	position: relative;
