@@ -136,7 +136,7 @@
 }
 
 .title-stretch .title-riley {
-	margin-top: -46px;
+	margin-top: -30px;
 }
 .title-stretch .title-j {
 	font-size: 320px;
@@ -172,24 +172,14 @@
 	margin-right: 60px;
 }
 
-.title-rileyjshaw {
-	display: none;
-}
 @media only screen and (max-width: 800px) {
 	.todo-maybe-header-element {
 		position: static;
 		flex-direction: row;
 		height: auto;
 	}
-
-	.title-riley,
-	.title-j,
-	.title-shaw,
 	.newsletter-form {
 		display: none;
-	}
-	.title-rileyjshaw {
-		display: block;
 	}
 	.todo-maybe-header-element,
 	.selected-works-container {
