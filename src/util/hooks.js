@@ -3,19 +3,17 @@ import {useState, useEffect, useRef, useLayoutEffect} from 'react';
 export function useWindowSize(cb) {
 	const initialSize =
 		typeof window !== 'undefined'
-			? [window.innerWidth, window.innerHeight, window.scrollY]
+			? [window.innerWidth, window.innerHeight]
 			: [0, 0];
 	const [size, setSize] = useState(initialSize);
 	const debouncedSize = useDebounce(size, 300);
 	useEffect(() => {
 		const handleResize = () =>
-			setSize([window.innerWidth, window.innerHeight, window.scrollY]);
+			setSize([window.innerWidth, window.innerHeight]);
 		window.addEventListener('resize', handleResize);
-		window.addEventListener('scroll', handleResize);
 		cb && cb(size);
 		return () => {
 			window.removeEventListener('resize', handleResize);
-			window.removeEventListener('scroll', handleResize);
 		};
 	}, debouncedSize);
 	return debouncedSize;
@@ -24,14 +22,12 @@ export function useWindowSize(cb) {
 export function useMousePosition(el) {
 	const [mousePosition, setMousePosition] = useState([null, null]);
 	// TODO(riley): Will this work for anything other than window?
-	const handleMouseMove = e => setMousePosition([e.pageX, e.pageY]);
+	const handleMouseMove = e => setMousePosition([e.clientX, e.clientY]);
 	useEffect(() => {
 		if (el) {
 			el.addEventListener('mousemove', handleMouseMove, false);
-			el.addEventListener('scroll', handleMouseMove, false);
 			return () => {
 				el.removeEventListener('mousemove', handleMouseMove);
-				el.removeEventListener('scroll', handleMouseMove);
 			};
 		}
 	}, [el]);

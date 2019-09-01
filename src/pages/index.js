@@ -12,6 +12,7 @@ import CycleText from '../components/cycle-text';
 import Layout from '../components/layout';
 import ContentGrid from '../components/content-grid';
 import GoUp from '../components/go-up';
+import {ExternalLink} from '../components/auto-link';
 
 import './index.css';
 

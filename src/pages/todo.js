@@ -96,6 +96,9 @@ export default () => (
 			</li>
 		</ul>
 		<ul>
+			<li>Add scroll to sidebar on index page if it's short and wide</li>
+		</ul>
+		<ul>
 			<li>Potential other sources:</li>
 			<li>
 				Instagram

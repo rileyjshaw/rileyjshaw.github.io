@@ -69,6 +69,7 @@
 }
 
 .selected-works-container {
+	background: var(--blue);
 	grid-column: 5 / -1;
 }
 
