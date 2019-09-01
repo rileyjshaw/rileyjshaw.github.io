@@ -33,6 +33,8 @@ const IndexPage = ({starredProjects = []}) => {
 		<Layout root={true} noHeader={true}>
 			<SEO title="Home" />
 			<main>
+				{/* TODO(riley): yikes - get rid of this div. */}
+				<div className="border-helper" />
 				<div className="homepage-top">
 					<div className="todo-maybe-header-element">
 						<StretchTitle>
