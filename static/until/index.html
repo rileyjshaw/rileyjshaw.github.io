@@ -1,204 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>s o o n</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/until_hack/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/until_hack/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/until_hack/favicon-16x16.png">
-  <link rel="manifest" href="/images/until_hack/site.webmanifest">
-  <link rel="mask-icon" href="/images/until_hack/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="/images/until_hack/favicon.ico">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="msapplication-TileColor" content="#9f00a7">
-  <meta name="msapplication-config" content="/images/until_hack/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="apple-mobile-web-app-title" content="until">
-  <meta name="application-name" content="until">
-</head>
-<body>
-  <link href="https://fonts.googleapis.com/css?family=Heebo:800&text=0123456789%3a" rel="stylesheet">
-  <script src="//cdn.jsdelivr.net/sweep/1.2.2/sweep.min.js"></script>
-  <style>
-    html {
-      height: 100%;
-    }
+	<head>
+		<meta charset="UTF-8" />
+		<title>s o o n</title>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/images/until_hack/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/images/until_hack/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/images/until_hack/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/images/until_hack/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="/images/until_hack/safari-pinned-tab.svg"
+			color="#5bbad5"
+		/>
+		<link rel="shortcut icon" href="/images/until_hack/favicon.ico" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="msapplication-TileColor" content="#9f00a7" />
+		<meta
+			name="msapplication-config"
+			content="/images/until_hack/browserconfig.xml"
+		/>
+		<meta name="theme-color" content="#ffffff" />
+		<meta name="apple-mobile-web-app-title" content="until" />
+		<meta name="application-name" content="until" />
+	</head>
+	<body>
+		<link
+			href="https://fonts.googleapis.com/css?family=Heebo:800&text=0123456789%3a"
+			rel="stylesheet"
+		/>
+		<script src="//cdn.jsdelivr.net/sweep/1.2.2/sweep.min.js"></script>
+		<style>
+			html {
+				height: 100%;
+			}
 
-    body {
-      background: #f0f8ff;
-      background: radial-gradient(#fff, #c0c8cf) 100% 100%;
-    }
+			body {
+				background: #f0f8ff;
+				background: radial-gradient(#fff, #c0c8cf) 100% 100%;
+			}
 
-    h1, p {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin: 0;
-      padding: 0.2em 0.6em;
-      /*border: 8px solid;*/
-      font: 800 72px Heebo, sans-serif;
-      text-align: center;
-      letter-spacing: 6px;
-      /*box-shadow: 5px 10px 12px -4px #bdc5cc;*/
-      transform: translate(-50%, -50%);
-    }
+			h1,
+			p {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin: 0;
+				padding: 0.2em 0.6em;
+				/*border: 8px solid;*/
+				font: 800 72px Heebo, sans-serif;
+				text-align: center;
+				letter-spacing: 6px;
+				/*box-shadow: 5px 10px 12px -4px #bdc5cc;*/
+				transform: translate(-50%, -50%);
+			}
 
-    h1 {
-      text-shadow: 1px 2px 6px #fff, 0 0 0 rgba(32, 16, 32, 0.2), 1px 2px 6px #fff;
-    }
+			h1 {
+				text-shadow: 1px 2px 6px #fff, 0 0 0 rgba(32, 16, 32, 0.2),
+					1px 2px 6px #fff;
+			}
 
-    p {
-      text-shadow: 1px 4px 6px #f0f8ff;
-      filter: blur(8px);
-    }
+			p {
+				text-shadow: 1px 4px 6px #f0f8ff;
+				filter: blur(8px);
+			}
 
-    .hidden {
-      visibility: hidden;
-    }
+			.hidden {
+				visibility: hidden;
+			}
 
-    .hearts {
-      pointer-events: none;
-    }
+			.hearts {
+				pointer-events: none;
+			}
 
-    .heart {
-      position: fixed;
-      top: 0;
-      left: 0;
-    }
-  </style>
-  <a href="#">
-    <h1 class="hidden"></h1>
-    <p class="hidden"></p>
-  </a>
-  <div class="hearts"></div>
-  <script>
-    (function () {
-      var SECONDS_PER_MINUTE = 60;
-      var SECONDS_PER_HOUR = SECONDS_PER_MINUTE * 60;
-      var SECONDS_PER_DAY = SECONDS_PER_HOUR * 24;
-      var TIMEZONE_OFFSETS = {
-        PST: -8,
-        PDT: -7,
-        EST: -5,
-        EDT: -4,
-      };
+			.heart {
+				position: fixed;
+				top: 0;
+				left: 0;
+			}
+		</style>
+		<a href="#">
+			<h1 class="hidden"></h1>
+			<p class="hidden"></p>
+		</a>
+		<div class="hearts"></div>
+		<script>
+			(function() {
+				var SECONDS_PER_MINUTE = 60;
+				var SECONDS_PER_HOUR = SECONDS_PER_MINUTE * 60;
+				var SECONDS_PER_DAY = SECONDS_PER_HOUR * 24;
+				var TIMEZONE_OFFSETS = {
+					PST: -8,
+					PDT: -7,
+					EST: -5,
+					EDT: -4,
+				};
 
-      var a = document.querySelector('a');
-      var b = document.querySelector('h1');
-      var c = document.querySelector('p');
+				var a = document.querySelector('a');
+				var b = document.querySelector('h1');
+				var c = document.querySelector('p');
 
-      // EDIT ME!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-      a.href = 'https://duckduckgo.com/?q=AC+103&t=ffab&ia=flights'  //     !!!
-      var year = 2019;  // Literal.                                         !!!
-      var month = 6;    // [0, 11].                                         !!!
-      var day = 16;     // Literal, [1, 31].                                !!!
-      var hour = 10;    // [0, 23].                                         !!!
-      var minute = 4;   // [0, 59].                                         !!!
-      var timezone = TIMEZONE_OFFSETS.PDT;  //                              !!!
-      // OK YOU CAN STOP EDITING NOW!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+				// EDIT ME!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+				a.href = 'https://duckduckgo.com/?q=AC+103&t=ffab&ia=flights'; //  !!!
+				var year = 2019; // Literal.                                       !!!
+				var month = 6; // [0, 11].                                         !!!
+				var day = 16; // Literal, [1, 31].                                 !!!
+				var hour = 10; // [0, 23].                                         !!!
+				var minute = 4; // [0, 59].                                        !!!
+				var timezone = TIMEZONE_OFFSETS.PDT; //                            !!!
+				// OK YOU CAN STOP EDITING NOW!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-      // If the time zone offset makes the hour negative or above 23, the date
-      // object deals with under/overflowing days/hours. We're safe.
-      var soon = Date.UTC(year, month, day, hour - timezone, minute);
-      var time = null;
-      var showing = false;
+				// If the time zone offset makes the hour negative or above 23, the date
+				// object deals with under/overflowing days/hours. We're safe.
+				var soon = Date.UTC(year, month, day, hour - timezone, minute);
+				var time = null;
+				var showing = false;
 
-      function pad(n, minLength) {
-          var padLength = Math.max(minLength - ('' + n).length, 0);
-          return new Array(padLength).fill(0).join('') + n;
-      }
+				function pad(n, minLength) {
+					var padLength = Math.max(minLength - ('' + n).length, 0);
+					return new Array(padLength).fill(0).join('') + n;
+				}
 
-      function durationFromSeconds(totalSeconds) {
-          var days = Math.floor(totalSeconds / SECONDS_PER_DAY);
-          var hours = Math.floor((totalSeconds % SECONDS_PER_DAY) / SECONDS_PER_HOUR);
-          var minutes = Math.floor((totalSeconds % SECONDS_PER_HOUR) / SECONDS_PER_MINUTE);
-          var seconds = Math.floor(totalSeconds % SECONDS_PER_MINUTE);
+				function durationFromSeconds(totalSeconds) {
+					var days = Math.floor(totalSeconds / SECONDS_PER_DAY);
+					var hours = Math.floor(
+						(totalSeconds % SECONDS_PER_DAY) / SECONDS_PER_HOUR
+					);
+					var minutes = Math.floor(
+						(totalSeconds % SECONDS_PER_HOUR) / SECONDS_PER_MINUTE
+					);
+					var seconds = Math.floor(
+						totalSeconds % SECONDS_PER_MINUTE
+					);
 
-          return {days, hours, minutes, seconds};
-      }
+					return {days, hours, minutes, seconds};
+				}
 
-      function formatTimeDisplay(totalSeconds) {
-          if (totalSeconds <= 0) {
-            return ':)';
-          }
+				function formatTimeDisplay(totalSeconds) {
+					if (totalSeconds <= 0) {
+						return ':)';
+					}
 
-          var {days, hours, minutes, seconds} = durationFromSeconds(totalSeconds);
-          var paddedMinutes = pad(minutes, 2);
-          var paddedSeconds = pad(seconds, 2);
+					var {days, hours, minutes, seconds} = durationFromSeconds(
+						totalSeconds
+					);
+					var paddedMinutes = pad(minutes, 2);
+					var paddedSeconds = pad(seconds, 2);
 
-          return (days
-            ? days + ':' + hours + ':' + paddedMinutes + ':'
-            : hours
-              ? hours + ':' + paddedMinutes + ':'
-              : minutes
-                ? minutes + ':'
-                : ''
-          ) + paddedSeconds;
-      }
+					return (
+						(days
+							? days + ':' + hours + ':' + paddedMinutes + ':'
+							: hours
+							? hours + ':' + paddedMinutes + ':'
+							: minutes
+							? minutes + ':'
+							: '') + paddedSeconds
+					);
+				}
 
-      function cycleGen (el, opacity, space) {
-        return function cycle () {
-          sweep(el, ['color'/*, 'border-color'*/], 'hsla(150, 1, .6, ' + opacity + ')', 'hsla(151, 1, .6, ' + opacity + ')', {
-            direction: -1,
-            duration: 40000,
-            callback: cycle,
-            space: space
-          });
-        }
-      }
+				function cycleGen(el, opacity, space) {
+					return function cycle() {
+						sweep(
+							el,
+							['color' /*, 'border-color'*/],
+							'hsla(150, 1, .6, ' + opacity + ')',
+							'hsla(151, 1, .6, ' + opacity + ')',
+							{
+								direction: -1,
+								duration: 40000,
+								callback: cycle,
+								space: space,
+							}
+						);
+					};
+				}
 
-      cycleGen(b, 0.4, 'HUSL')();
-      cycleGen(c, 0.6, 'HSL')();
+				cycleGen(b, 0.4, 'HUSL')();
+				cycleGen(c, 0.6, 'HSL')();
 
-      var stepHearts = (function () {
-        var container = document.querySelector('.hearts');
-        var hearts = [];
-        var H = window.innerHeight;
-        var W = window.innerWidth;
+				var stepHearts = (function() {
+					var container = document.querySelector('.hearts');
+					var hearts = [];
+					var H = window.innerHeight;
+					var W = window.innerWidth;
 
-        return function stepHearts (remaining) {
-          if (remaining >= 0 && Math.random() >= 0.5 + Math.min(remaining / SECONDS_PER_DAY / 10, 0.98) * 0.5) {
-            var el = document.createElement('span');
-            el.textContent = Math.random() < 0.99 ? '💖' : '👽';
-            el.className = 'heart';
-            var heart = {
-              age: 0,
-              x: Math.random() * W,
-              xOffset: Math.random() * 2 * Math.PI,
-              el: el,
-            };
-            hearts.push(heart);
-            container.appendChild(el);
-          }
-          hearts = hearts.filter(function (heart) {
-            var x = heart.x + Math.sin(heart.age / 30 + heart.xOffset) * 150;
-            var y = heart.age * 4 - 20;
-            if (y > H) {
-              container.removeChild(heart.el);
-              return false;
-            }
-            heart.el.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
-            ++heart.age;
-            return true;
-          });
-        };
-      })();
+					return function stepHearts(remaining) {
+						if (
+							remaining >= 0 &&
+							Math.random() >=
+								0.5 +
+									Math.min(
+										remaining / SECONDS_PER_DAY / 10,
+										0.98
+									) *
+										0.5
+						) {
+							var el = document.createElement('span');
+							el.textContent =
+								Math.random() < 0.99 ? '💖' : '👽';
+							el.className = 'heart';
+							var heart = {
+								age: 0,
+								x: Math.random() * W,
+								xOffset: Math.random() * 2 * Math.PI,
+								el: el,
+							};
+							hearts.push(heart);
+							container.appendChild(el);
+						}
+						hearts = hearts.filter(function(heart) {
+							var x =
+								heart.x +
+								Math.sin(heart.age / 30 + heart.xOffset) * 150;
+							var y = heart.age * 4 - 20;
+							if (y > H) {
+								container.removeChild(heart.el);
+								return false;
+							}
+							heart.el.style.transform =
+								'translate3d(' + x + 'px, ' + y + 'px, 0)';
+							++heart.age;
+							return true;
+						});
+					};
+				})();
 
-      return function timer () {
-        var remaining = Math.floor((soon - new Date().getTime()) / 1000);
-        stepHearts(Math.max(remaining, 0));
-        var now = formatTimeDisplay(remaining);
-        if (time !== now) {
-          b.textContent = c.textContent = now;
-          if (!showing) {
-            b.className = c.className = '';
-            showing = true;
-          }
-        }
-        time = now;
-        requestAnimationFrame(timer);
-      };
-    })()();
-  </script>
-</body>
+				return function timer() {
+					var remaining = Math.floor(
+						(soon - new Date().getTime()) / 1000
+					);
+					stepHearts(Math.max(remaining, 0));
+					var now = formatTimeDisplay(remaining);
+					if (time !== now) {
+						b.textContent = c.textContent = now;
+						if (!showing) {
+							b.className = c.className = '';
+							showing = true;
+						}
+					}
+					time = now;
+					requestAnimationFrame(timer);
+				};
+			})()();
+		</script>
+	</body>
 </html>
