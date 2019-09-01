@@ -20,9 +20,9 @@ export default ({children}) => {
 	const mousePosition = useMousePosition(
 		typeof window !== 'undefined' && inView && window
 	);
-	const windowCenter = useWindowSize().map(d => d / 2);
+	const [windowWidth, windowHeight, windowScroll] = useWindowSize();
+	const windowCenter = [windowWidth / 2, windowScroll + windowHeight / 2];
 
-	// TODO(riley): Fix this so it's not affected by scrolling.
 	const angle = Math.atan2(
 		mousePosition[1] - windowCenter[1],
 		mousePosition[0] - windowCenter[0]

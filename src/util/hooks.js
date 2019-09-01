@@ -3,16 +3,20 @@ import {useState, useEffect, useRef, useLayoutEffect} from 'react';
 export function useWindowSize(cb) {
 	const initialSize =
 		typeof window !== 'undefined'
-			? [window.innerWidth, window.innerHeight]
+			? [window.innerWidth, window.innerHeight, window.scrollY]
 			: [0, 0];
 	const [size, setSize] = useState(initialSize);
 	const debouncedSize = useDebounce(size, 300);
 	useEffect(() => {
 		const handleResize = () =>
-			setSize([window.innerWidth, window.innerHeight]);
+			setSize([window.innerWidth, window.innerHeight, window.scrollY]);
 		window.addEventListener('resize', handleResize);
+		window.addEventListener('scroll', handleResize);
 		cb && cb(size);
-		return () => window.removeEventListener('resize', handleResize);
+		return () => {
+			window.removeEventListener('resize', handleResize);
+			window.removeEventListener('scroll', handleResize);
+		};
 	}, debouncedSize);
 	return debouncedSize;
 }
@@ -24,7 +28,11 @@ export function useMousePosition(el) {
 	useEffect(() => {
 		if (el) {
 			el.addEventListener('mousemove', handleMouseMove, false);
-			return () => el.removeEventListener('mousemove', handleMouseMove);
+			el.addEventListener('scroll', handleMouseMove, false);
+			return () => {
+				el.removeEventListener('mousemove', handleMouseMove);
+				el.removeEventListener('scroll', handleMouseMove);
+			};
 		}
 	}, [el]);
 	return mousePosition;
