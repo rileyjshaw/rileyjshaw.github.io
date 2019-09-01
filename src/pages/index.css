@@ -13,26 +13,16 @@
 	grid-auto-flow: row dense;
 }
 
+.homepage-top {
+	background: var(--blue);
+}
+
 .selected-works-container {
 	padding-bottom: 60px;
 }
 
-.header-background {
-	position: relative;
-	grid-column: 1 / span 4;
-	grid-row: 1 / -1;
-	height: 100%;
-}
-
-.header-background .triangle-bg {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-}
-
 .todo-maybe-header-element {
+	margin-top: -20px;
 	position: sticky;
 	z-index: 1;
 	grid-column: 1 / span 4;
@@ -45,6 +35,7 @@
 	flex-wrap: wrap;
 	overflow: visible;
 	max-width: 100%;
+	background: var(--white);
 }
 
 .todo-maybe-header-element > * {
@@ -69,7 +60,6 @@
 }
 
 .selected-works-container {
-	background: var(--blue);
 	grid-column: 5 / -1;
 }
 
@@ -80,18 +70,28 @@
 	list-style: none;
 }
 
+.selected-works-container > h2 {
+	box-sizing: border-box;
+	border: 2px solid var(--black);
+	box-shadow: 3px 3px var(--black);
+	background: var(--cyan);
+	margin: 30px 0;
+	padding: 10px 20px;
+	display: inline-block;
+}
+
+.content-grid {
+	margin-top: -30px;
+	padding-left: 0;
+}
+
 .selected-works li {
 	height: 200px;
 	grid-column: span 3;
 }
 
-.title {
-	position: relative;
-}
-
 .title > * {
 	mix-blend-mode: multiply;
-	width: 100%;
 	overflow: visible;
 	max-height: 100%;
 }
@@ -131,9 +131,10 @@
 	left: 0px;
 }
 
-.title-stretch {
-	width: 100%;
-	margin: 0;
+.title {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
 	flex-shrink: 0;
 	padding: 0 0 30px;
 	line-height: 0;
@@ -145,13 +146,14 @@
 	font-family: 'Arial Black';
 }
 
-.title-stretch .title-riley {
+.title .title-riley {
 	margin-top: -30px;
 }
 
-.title-stretch .title-j {
+.title .title-j {
 	font-size: 320px;
-	margin: 0.28em 0 0.26em;
+	margin: 0.24em 0 0.18em;
+	transform: rotate(90deg) translate(-50px);
 }
 
 .about-stub {
@@ -175,13 +177,18 @@
 .currently {
 	display: flex;
 	list-style: none;
+	padding: 0;
+	justify-content: space-between;
+	margin: 0 0 30px;
 }
 
 .currently li {
-	border: 4px solid var(--black);
+	border: 2px solid var(--black);
+	box-shadow: 3px 3px var(--black);
 	height: 200px;
-	width: 300px;
-	margin-right: 60px;
+	margin-right: 30px;
+	flex: 1 1 0;
+	background: var(--white);
 }
 
 @media only screen and (max-width: 800px) {

@@ -42,17 +42,15 @@ export default ({children}) => {
 	});
 
 	return (
-		<h1 className="title-stretch" ref={ref}>
-			<div className="title">
-				<div className="c" style={offsets[0]}>
-					{children}
-				</div>
-				<div className="m" style={offsets[1]}>
-					{cloneElementTree(children)}
-				</div>
-				<div className="y" style={offsets[2]}>
-					{cloneElementTree(children)}
-				</div>
+		<h1 className="title" ref={ref}>
+			<div className="c" style={offsets[0]}>
+				{children}
+			</div>
+			<div className="m" style={offsets[1]}>
+				{cloneElementTree(children)}
+			</div>
+			<div className="y" style={offsets[2]}>
+				{cloneElementTree(children)}
 			</div>
 		</h1>
 	);
