@@ -146,14 +146,22 @@
 	font-family: 'Arial Black';
 }
 
+.title .title-welcome {
+	margin-bottom: -14px;
+}
+
 .title .title-riley {
 	margin-top: -30px;
 }
 
 .title .title-j {
 	font-size: 320px;
-	margin: 0.24em 0 0.18em;
+	margin: 0.26em 0 0.16em;
 	transform: rotate(90deg) translate(-50px);
+}
+
+.title-rileyjshaw {
+	margin-top: -0.14em;
 }
 
 .about-stub {
@@ -213,5 +221,9 @@
 	.todo-maybe-header-element,
 	.selected-works-container {
 		grid-column: 1 / -1;
+	}
+
+	.title {
+		margin-top: 44px;
 	}
 }

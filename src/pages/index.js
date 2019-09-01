@@ -38,7 +38,8 @@ const IndexPage = ({starredProjects = []}) => {
 				<div className="homepage-top">
 					<div className="todo-maybe-header-element">
 						<StretchTitle>
-							<Fit>Welcome to the digital landfill of</Fit>
+							<Fit className="title-welcome">Welcome to the</Fit>
+							<Fit className="title-landfill">e-landfill of</Fit>
 							{/* Keep this up to date with the media query. */}
 							{windowWidth > 800 ? (
 								[
