@@ -206,6 +206,10 @@
 	margin-right: 30px;
 	flex: 1 1 0;
 	background: var(--white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font: 96px 'Arial Black';
 }
 
 .currently li:last-child {
