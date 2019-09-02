@@ -76,7 +76,7 @@ class ProjectExplorer extends React.Component {
 				let j = Math.floor(Math.random() * (i + 1));
 				[sorted[i], sorted[j]] = [sorted[j], sorted[i]];
 			}
-			return sorted;
+			return {nodes: sorted};
 		});
 	};
 
