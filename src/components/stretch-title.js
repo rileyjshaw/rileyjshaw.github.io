@@ -14,7 +14,7 @@ const cloneElementTree = el =>
 			: [child]
 	);
 
-const INTENSITY = 7;
+const INTENSITY = 2;
 export default ({children}) => {
 	const [ref, inView] = useInView({threshold: 0});
 	const mousePosition = useMousePosition(

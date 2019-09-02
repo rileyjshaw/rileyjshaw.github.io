@@ -32,10 +32,10 @@
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
 	overflow: visible;
 	max-width: 100%;
 	background: var(--white);
+	border: 16px solid var(--black);
 }
 
 .todo-maybe-header-element > * {
@@ -78,6 +78,20 @@
 	margin: 30px 0;
 	padding: 10px 20px;
 	display: inline-block;
+	animation: tilt 60s ease-in-out infinite alternate;
+}
+
+.selected-works-container > h2:nth-of-type(even) {
+	animation-direction: alternate-reverse;
+}
+
+@keyframes tilt {
+	from {
+		transform: rotate(-5deg);
+	}
+	to {
+		transform: rotate(5deg);
+	}
 }
 
 .content-grid {
@@ -155,9 +169,9 @@
 }
 
 .title .title-j {
-	font-size: 320px;
-	margin: 0.26em 0 0.16em;
-	transform: rotate(90deg) translate(-50px);
+	font-size: 240px;
+	margin: 0 0 0.42em;
+	transform: rotate(90deg);
 }
 
 .title-rileyjshaw {
@@ -169,6 +183,7 @@
 	font-size: 18px;
 	line-height: 1.3;
 	font-weight: bold;
+	text-align: justify;
 }
 
 .about-stub .md-wrapper,
@@ -176,18 +191,12 @@
 	display: inline;
 }
 
-.todo-some-better-name {
-	grid-column: main;
-	grid-row: 1;
-	padding: 0 110px;
-}
-
 .currently {
 	display: flex;
 	list-style: none;
 	padding: 0;
 	justify-content: space-between;
-	margin: 0 0 30px;
+	margin: 0 30px 30px 0;
 }
 
 .currently li {
@@ -197,6 +206,10 @@
 	margin-right: 30px;
 	flex: 1 1 0;
 	background: var(--white);
+}
+
+.currently li:last-child {
+	margin: 0;
 }
 
 .border-helper {
@@ -212,18 +225,32 @@
 @media only screen and (max-width: 800px) {
 	.todo-maybe-header-element {
 		position: static;
-		flex-direction: row;
 		height: auto;
+		min-height: 95vh;
+		padding-bottom: 30px;
 	}
 	.newsletter-form {
-		display: none;
+		padding-top: 60px;
 	}
 	.todo-maybe-header-element,
 	.selected-works-container {
 		grid-column: 1 / -1;
 	}
 
+	.selected-works-container {
+		padding-left: 30px;
+	}
+
 	.title {
 		margin-top: 44px;
+	}
+
+	.currently {
+		flex-direction: column;
+	}
+
+	.currently li {
+		margin: 0 0 30px;
+		flex: 0 1 auto;
 	}
 }
