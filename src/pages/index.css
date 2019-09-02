@@ -159,7 +159,8 @@
 	text-align: right;
 	text-transform: uppercase;
 	color: var(--black);
-	font-family: 'Arial Black';
+	font-weight: 900;
+	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 }
 
 .title .title-riley {
@@ -207,7 +208,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font: 96px 'Arial Black';
+	font-size: 96px;
+	font-weight: 900;
+	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 }
 
 .currently li:last-child {

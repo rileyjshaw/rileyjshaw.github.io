@@ -3,7 +3,8 @@
 }
 
 .project-explorer .filters {
-	font-family: 'Arial Black';
+	font-weight: 900;
+	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 }
 
 .project-explorer .filters header {
@@ -92,6 +93,8 @@
 
 .project-explorer .result-details {
 	color: var(--white);
-	font: 24px 'Arial Black';
+	font-size: 24px;
+	font-weight: 900;
+	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	margin: 0 0 30px;
 }
