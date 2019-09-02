@@ -13,6 +13,7 @@ import Layout from '../components/layout';
 import ContentGrid from '../components/content-grid';
 import GoUp from '../components/go-up';
 import {ExternalLink} from '../components/auto-link';
+import BigQuote from '../components/big-quote';
 
 import './index.css';
 
@@ -107,7 +108,7 @@ const IndexPage = ({starredProjects = []}) => {
 						<ContentGrid nodes={starredProjects} />
 					</div>
 				</div>
-				<blockquote>Here's a big quote...</blockquote>
+				<BigQuote>Here's a big quote...</BigQuote>
 				<GoUp />
 			</main>
 		</Layout>

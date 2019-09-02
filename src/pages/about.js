@@ -4,11 +4,10 @@ import {StaticQuery, graphql} from 'gatsby';
 import {colors} from '../util/constants';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-
-import './about.css';
+import BigQuote from '../components/big-quote';
 
 export default () => (
-	<Layout colors={[colors.yellow, colors.black]}>
+	<Layout colors={[colors.yellow, colors.black]} className="about">
 		<SEO title="About" />
 		<StaticQuery
 			query={graphql`
@@ -27,25 +26,22 @@ export default () => (
 			`}
 			render={({me, site}) => (
 				<>
-					<blockquote cite="https://www.versobooks.com/books/3002-new-dark-age">
-						<p>
-							If we do not understand how complex technologies
-							function, how systems of technologies interconnect,
-							and how systems of systems interact, then we are
-							powerless within them, and their potential is more
-							easily captured by selfish elites and inhuman
-							corporations… this understanding cannot be limited
-							to the practicalities of how things work: it must
-							be extended to how things came to be, and how they
-							continue to function in the world in ways that are
-							often invisible and interwoven. What is required is
-							not understanding, but literacy.
-						</p>
-						<footer>
-							—James Bridle, <cite>New Dark Age</cite>
-						</footer>
-						<p>Scroll down arrow goes here!</p>
-					</blockquote>
+					<BigQuote
+						cite="https://www.versobooks.com/books/3002-new-dark-age"
+						source={['James Bridle, ', <cite>New Dark Age</cite>]}
+					>
+						If we do not understand how complex technologies
+						function, how systems of technologies interconnect, and
+						how systems of systems interact, then we are powerless
+						within them, and their potential is more easily
+						captured by selfish elites and inhuman corporations…
+						this understanding cannot be limited to the
+						practicalities of how things work: it must be extended
+						to how things came to be, and how they continue to
+						function in the world in ways that are often invisible
+						and interwoven. What is required is not understanding,
+						but literacy.
+					</BigQuote>
 					<div
 						dangerouslySetInnerHTML={{
 							__html: me.childMarkdownRemark.html,

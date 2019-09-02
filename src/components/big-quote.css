@@ -1,4 +1,4 @@
-blockquote {
+blockquote.big-quote {
 	position: relative;
 	color: var(--white);
 	background: var(--black);
@@ -11,6 +11,6 @@ blockquote {
 	justify-content: center;
 }
 
-blockquote p {
+blockquote.big-quote p {
 	margin: 0;
 }
