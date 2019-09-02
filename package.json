@@ -38,7 +38,8 @@
     "gh-pages": "^2.1.1",
     "prettier": "^1.18.2",
     "request": "^2.88.0",
-    "request-promise-native": "^1.0.7"
+    "request-promise-native": "^1.0.7",
+    "tumblr.js": "^2.0.2"
   },
   "keywords": [
     "rileyjshaw"

@@ -1,15 +1,17 @@
 'use strict';
 
 // USAGE: (from project's root directory)
-// npx babel-node project-scraper/scrape-projects.js
+// npx babel-node project-scraper/scrape-projects.js && npm run format
 
 require('dotenv').config();
 
+const util = require('util');
+const fs = require('fs');
+const tumblr = require('tumblr.js');
 const feedRead = require('davefeedread');
 const request = require('request-promise-native');
-const fs = require('fs');
 
-const raw = {}; // Raw is completely overwritten, but we keep formatted.
+const raw = {}; // Raw is completely overwritten, but we append to formatted.
 const formatted = JSON.parse(
 	fs.readFileSync(
 		'./project-scraper/_generated/scraped-projects-formatted.json'
@@ -71,37 +73,80 @@ async function getArena() {
 		});
 }
 
-async function getCommitBlog() {
+function getCommitBlog() {
 	const url = 'http://rileyjshaw.commit--blog.com/feed';
-	feedRead.parseUrl(url, 15, (err, feed) => {
-		raw.commitBlog = feed.items;
-		feed.items.forEach(commit => {
-			const uid = idify(
-				`COMMIT_${commit.guid.slice(commit.guid.lastIndexOf('/') + 1)}`
-			);
-			const index = formatted.findIndex(d => d.uid === uid);
-			const result = {
-				uid,
-				type: 'commit',
-				title: commit.title,
-				date: `${commit.date.getFullYear()}-${commit.date.getMonth()}-${commit.date.getDate()}`,
-				link: commit.link,
-				description: commit.description,
-			};
-			if (index !== -1) formatted[index] = result;
-			else formatted.push(result);
+	return util
+		.promisify(feedRead.parseUrl)(url, 15)
+		.then(feed => {
+			raw.commitBlog = feed.items;
+			feed.items.forEach(commit => {
+				const uid = idify(
+					`COMMIT_${commit.guid.slice(
+						commit.guid.lastIndexOf('/') + 1
+					)}`
+				);
+				const index = formatted.findIndex(d => d.uid === uid);
+				const result = {
+					uid,
+					type: 'commit',
+					title: commit.title,
+					date: `${commit.date.getFullYear()}-${commit.date.getMonth()}-${commit.date.getDate()}`,
+					link: commit.link,
+					description: commit.description,
+				};
+				if (index !== -1) formatted[index] = result;
+				else formatted.push(result);
+			});
 		});
-	});
 }
 
-Promise.all([getDweets(), getArena(), getCommitBlog()]).then(() => {
-	fs.writeFileSync(
-		'./project-scraper/_generated/scraped-projects-raw.json',
-		JSON.stringify(raw)
-	);
-	fs.writeFileSync(
-		'./project-scraper/_generated/scraped-projects-formatted.json',
-		JSON.stringify(formatted)
-	);
-	console.log('Done.');
-});
+function getSFPCTumblr() {
+	const client = tumblr.createClient({
+		consumer_key: process.env.TUMBLR_SECRET_KEY,
+	});
+
+	let allPosts = [];
+	return (function getPage(queryParams = {}) {
+		return util
+			.promisify(client.blogPosts)('sfpc.tumblr.com', queryParams)
+			.then(({posts, total_posts, _links: {next: {query_params}}}) => {
+				allPosts = allPosts.concat(posts);
+				if (query_params.offset < total_posts) {
+					return getPage(query_params);
+				} else {
+					raw.sfpcTumblr = allPosts;
+					allPosts.forEach(post => {
+						const uid = idify(`SFPC_TUMBLR_${post.id}`);
+						const index = formatted.findIndex(
+							post => post.uid === uid
+						);
+						const result = {
+							uid,
+							type: 'tumblr',
+							title: post.title || post.summary,
+							date: post.date.slice(0, 10),
+							link: post.post_url,
+							contentType: post.type,
+							body: post.body,
+						};
+						if (index !== -1) formatted[index] = result;
+						else formatted.push(result);
+					});
+				}
+			});
+	})();
+}
+
+Promise.all([getDweets(), getArena(), getCommitBlog(), getSFPCTumblr()]).then(
+	() => {
+		fs.writeFileSync(
+			'./project-scraper/_generated/scraped-projects-raw.json',
+			JSON.stringify(raw)
+		);
+		fs.writeFileSync(
+			'./project-scraper/_generated/scraped-projects-formatted.json',
+			JSON.stringify(formatted)
+		);
+		console.log('Done.');
+	}
+);

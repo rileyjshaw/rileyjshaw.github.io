@@ -53,6 +53,8 @@ export default () => {
 					description
 					updatedAt
 					length
+					contentType
+					body
 				}
 			}
 		}

@@ -23,6 +23,8 @@ export const ArenaChannelContent = ({description, length, updatedAt}) => (
 		</p>
 	</>
 );
+export const TumblrBlogContent = ({body}) =>
+	body && <div dangerouslySetInnerHTML={{__html: body}} />;
 
 export default {
 	dweet: {
@@ -45,10 +47,15 @@ export default {
 		readableType: 'Are.na channel',
 		Inner: ArenaChannelContent,
 	},
-	// TODO(riley): Merge with `post`.
+	// TODO(riley): Merge both of these with `post`.
 	commit: {
 		className: 'span-6 commit-blog',
-		readableType: 'Blog post',
+		readableType: 'Commit blog post',
 		Inner: CommitBlogContent,
+	},
+	tumblr: {
+		className: 'span-6 tumblr-blog',
+		readableType: 'SFPC blog post',
+		Inner: TumblrBlogContent,
 	},
 };
