@@ -64,6 +64,7 @@ async function getArena() {
 				link: `https://are.na/riley-shaw/${channel.slug}`,
 				description: channel.metadata?.description,
 				updatedAt: channel.updated_at.slice(0, 10),
+				length: channel.length,
 			};
 			if (index !== -1) formatted[index] = result;
 			else formatted.push(result);

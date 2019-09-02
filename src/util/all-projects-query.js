@@ -52,6 +52,7 @@ export default () => {
 					link
 					description
 					updatedAt
+					length
 				}
 			}
 		}
