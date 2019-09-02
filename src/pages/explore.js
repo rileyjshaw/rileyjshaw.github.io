@@ -9,7 +9,7 @@ import GoUp from '../components/go-up';
 import './explore.css';
 
 const ExplorePage = () => (
-	<Layout colors={[colors.green, colors.black]} className="explore">
+	<Layout colors={[colors.green, colors.black]} noHeader className="explore">
 		<SEO title="Project explorer" />
 		<ProjectExplorer />
 		<GoUp />

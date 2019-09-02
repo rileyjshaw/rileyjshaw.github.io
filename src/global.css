@@ -16,6 +16,7 @@
 body {
 	margin: 0;
 	border: 16px solid var(--black);
+	min-height: 100vh;
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;

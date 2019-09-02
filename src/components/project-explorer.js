@@ -147,7 +147,7 @@ class ProjectExplorer extends React.Component {
 								}))
 							}
 						>
-							{this.state.drawerOpen ? 'Hide' : 'Show'}
+							{this.state.drawerOpen ? 'Hide' : 'Show'} filters
 						</button>
 					</header>
 					{this.state.drawerOpen && (
