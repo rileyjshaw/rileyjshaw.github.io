@@ -6,8 +6,10 @@ import ProjectExplorer from '../components/project-explorer';
 import SEO from '../components/seo';
 import GoUp from '../components/go-up';
 
+import './explore.css';
+
 const ExplorePage = () => (
-	<Layout colors={[colors.green, colors.black]}>
+	<Layout colors={[colors.green, colors.black]} className="explore">
 		<SEO title="Project explorer" />
 		<ProjectExplorer />
 		<GoUp />

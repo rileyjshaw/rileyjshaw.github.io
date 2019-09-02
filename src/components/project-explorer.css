@@ -1,0 +1,98 @@
+.project-explorer {
+	padding: 30px;
+}
+
+.project-explorer .filters {
+	font-family: 'Arial Black';
+}
+
+.project-explorer .filters header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+.project-explorer .filters header svg {
+	fill: var(--white);
+	height: 30px;
+	margin-right: 12px;
+}
+
+.project-explorer .filters h1 {
+	margin: 0;
+	color: var(--white);
+}
+
+.project-explorer .filters header button {
+	margin: 0 0 0 auto;
+}
+
+.project-explorer .controls {
+	display: grid;
+	grid-template-columns: [legends] auto [inputs] 1fr [cancel] auto;
+}
+
+.project-explorer .filters fieldset {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+.project-explorer .filters fieldset fieldset {
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	grid-column: 1/-1;
+}
+
+.project-explorer .filters legend {
+	float: left;
+	color: var(--white);
+	font-size: 24px;
+	grid-column: legends;
+	line-height: 47px; /* HACK(riley): Matches the button size. */
+}
+
+.project-explorer .filters input {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.project-explorer .filters label,
+.project-explorer .filters button {
+	font-size: 16px;
+	cursor: pointer;
+	box-sizing: border-box;
+	border: 2px solid var(--black);
+	box-shadow: 3px 3px var(--black);
+	background: var(--cyan);
+	margin: 0 0 30px 16px;
+	padding: 10px 20px;
+	display: inline-block;
+}
+
+.project-explorer .filters button {
+	font-family: inherit;
+}
+
+.project-explorer .filters :checked + label,
+.project-explorer .filters button:active {
+	transform: translate(3px, 3px);
+	box-shadow: none;
+	border-color: var(--white);
+	/* box-shadow: 0 0 2px var(--white); */
+}
+
+.project-explorer .result-details {
+	color: var(--white);
+	font: 24px 'Arial Black';
+	margin: 0 0 30px;
+}

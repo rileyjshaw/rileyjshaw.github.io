@@ -25,11 +25,6 @@ const Header = ({colors}) => (
 				<nav className="site-nav">
 					<ul>
 						<li>
-							<Link to="/" activeClassName="hidden">
-								/ home
-							</Link>
-						</li>
-						<li>
 							<Link to="/about" activeClassName="hidden">
 								/ about
 							</Link>

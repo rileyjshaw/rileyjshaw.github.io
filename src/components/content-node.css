@@ -11,7 +11,7 @@
 }
 .content-node:active {
 	transform: translate(3px, 3px);
-	box-shadow: 0px 0px var(--black);
+	box-shadow: none;
 }
 /* TODO(riley): Share these styles and bring link style out to root node. */
 /* TODO(riley): Move this into a semantic element, since it means something. */
@@ -47,6 +47,13 @@
 	left: 0;
 	right: 0;
 }
+.content-node h2 a:hover::before,
+.content-node h2 a:focus::before {
+	box-shadow: 3px 3px var(--green);
+}
+.content-node h2 a:active::before {
+	box-shadow: none;
+}
 .content-node h2 a[target='_blank']::after {
 	position: absolute;
 	top: -2px;
@@ -60,6 +67,9 @@
 	align-items: center;
 	font-size: 24px;
 	color: var(--black);
+}
+.content-node time::before {
+	content: '0';
 }
 .content-node time {
 	font-size: 12px;
