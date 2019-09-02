@@ -36,6 +36,7 @@
 	max-width: 100%;
 	background: var(--white);
 	border: 16px solid var(--black);
+	border-left: 0;
 }
 
 .todo-maybe-header-element > * {
@@ -217,27 +218,21 @@
 	margin: 0;
 }
 
-.border-helper {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	background: var(--black);
-	height: 16px;
-	z-index: 2;
-}
-
 @media only screen and (max-width: 800px) {
 	.todo-maybe-header-element {
 		position: static;
 		height: auto;
 		padding-bottom: 30px;
 		border-width: 0 0 16px 0;
+		margin-top: 0;
 	}
 	.newsletter-form {
 		padding-top: 60px;
 		width: 80%;
 		margin: auto auto 0;
+	}
+	.newsletter-form .bottom-row {
+		margin-bottom: 0;
 	}
 	.todo-maybe-header-element,
 	.selected-works-container {
@@ -264,5 +259,12 @@
 	.currently li {
 		margin: 0 0 30px;
 		flex: 0 1 auto;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	body,
+	.todo-maybe-header-element {
+		border: 0;
 	}
 }
