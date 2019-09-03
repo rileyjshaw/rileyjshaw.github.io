@@ -25,6 +25,9 @@ export const ArenaChannelContent = ({description, length, updatedAt}) => (
 );
 export const TumblrBlogContent = ({body}) =>
 	body && <div dangerouslySetInnerHTML={{__html: body}} />;
+export const IconContent = ({image, title}) => (
+	<img src={image} alt={`${title} icon`} />
+);
 
 export default {
 	doodle: {
@@ -49,6 +52,11 @@ export default {
 		className: 'span-3 arena-channel',
 		readableType: 'Are.na channel',
 		Inner: ArenaChannelContent,
+	},
+	icon: {
+		className: 'span-2 icon',
+		readableType: 'Icon',
+		Inner: IconContent,
 	},
 	// TODO(riley): Merge both of these with `post`.
 	commit: {

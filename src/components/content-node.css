@@ -116,3 +116,9 @@
 	margin-top: 8px;
 	letter-spacing: 2px;
 }
+
+.content-node.icon img {
+	height: 42px;
+	width: 42px;
+	margin: auto;
+}

@@ -55,6 +55,7 @@ export default () => {
 					length
 					contentType
 					body
+					image
 				}
 			}
 		}
