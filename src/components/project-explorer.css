@@ -7,28 +7,6 @@
 	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 }
 
-.project-explorer .filters header {
-	display: flex;
-	align-items: center;
-	margin-bottom: 30px;
-}
-
-.project-explorer .filters header svg {
-	fill: var(--white);
-	height: 30px;
-	margin-right: 12px;
-}
-
-.project-explorer .filters h1 {
-	margin: 0;
-	color: var(--white);
-}
-
-.project-explorer .filters h1 sup {
-	font-size: 0.5em;
-	margin-left: 6px;
-}
-
 .project-explorer .filters header button {
 	margin: 0 0 0 auto;
 }

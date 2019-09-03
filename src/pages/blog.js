@@ -4,6 +4,7 @@ import {Link, graphql} from 'gatsby';
 import {colors} from '../util/constants';
 import SEO from '../components/seo';
 import Layout from '../components/layout';
+import PagePicker from '../components/page-picker';
 
 class BlogIndex extends React.Component {
 	render() {
@@ -13,6 +14,7 @@ class BlogIndex extends React.Component {
 		return (
 			<Layout colors={[colors.blue, colors.white]}>
 				<SEO title="All posts" />
+				<PagePicker page="blog" />
 				{posts.map(({node: post}) => {
 					const title = post.frontmatter.title || post.fields.slug;
 

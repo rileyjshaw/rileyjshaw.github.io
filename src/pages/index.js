@@ -14,8 +14,10 @@ import ContentGrid from '../components/content-grid';
 import GoUp from '../components/go-up';
 import {ExternalLink} from '../components/auto-link';
 import BigQuote from '../components/big-quote';
+import PagePicker, {pages} from '../components/page-picker';
 
 import './index.css';
+import UpTo from '../components/up-to';
 
 const IndexPage = ({starredProjects = []}) => {
 	const {aboutIntro} = useStaticQuery(graphql`
@@ -34,7 +36,10 @@ const IndexPage = ({starredProjects = []}) => {
 		<Layout root={true} noHeader={true}>
 			<SEO title="Home" />
 			<main>
-				<div className="homepage-top">
+				<div
+					className="homepage-top"
+					style={{background: pages.home.color}}
+				>
 					<div className="todo-maybe-header-element">
 						<StretchTitle>
 							<Fit className="title-welcome">Welcome to the</Fit>
@@ -78,29 +83,8 @@ const IndexPage = ({starredProjects = []}) => {
 						<Newsletter className="homepage-newsletter" />
 					</div>
 					<div className="selected-works-container">
-						<h2>What I'm up to</h2>
-						<ul className="currently">
-							<li>
-								{/* I'm redoing my website. This is a work in
-								progress, big time. */}
-								1
-							</li>
-							<li>
-								{/* I'm creating a massive MIDI controller for
-								music and games. */}
-								2
-							</li>
-							<li>
-								{/* I'm working with Canada Learning Code as an
-								instructor and mentor. My next class is{' '}
-								<ExternalLink to="https://www.canadalearningcode.ca/experiences/vancouver-chapter-girls-learning-code-gamemaking-and-circuitry-with-scratch-makey-makey/">
-									Gamemaking and Circuitry with Scratch &
-									MaKey MaKey
-								</ExternalLink>
-								. */}
-								3
-							</li>
-						</ul>
+						<PagePicker page="home" />
+						<UpTo />
 						<h2>
 							Selected works{' '}
 							<Link to="/explore">(explore all)</Link>
@@ -108,7 +92,7 @@ const IndexPage = ({starredProjects = []}) => {
 						<ContentGrid nodes={starredProjects} />
 					</div>
 				</div>
-				<BigQuote>Here's a big quote...</BigQuote>
+				<BigQuote />
 				<GoUp />
 			</main>
 		</Layout>

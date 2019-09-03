@@ -5,9 +5,12 @@ import {colors} from '../util/constants';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import BigQuote from '../components/big-quote';
+import PagePicker, {pages} from '../components/page-picker';
+import UpTo from '../components/up-to';
+import GoUp from '../components/go-up';
 
 export default () => (
-	<Layout colors={[colors.yellow, colors.black]} className="about">
+	<Layout className="about" noHeader>
 		<SEO title="About" />
 		<StaticQuery
 			query={graphql`
@@ -25,10 +28,26 @@ export default () => (
 				}
 			`}
 			render={({me, site}) => (
-				<>
+				<div style={{background: pages.about.color}}>
+					<PagePicker page="about" />
+					<div
+						dangerouslySetInnerHTML={{
+							__html: me.childMarkdownRemark.html,
+						}}
+					/>
+					<UpTo />
+					<div
+						dangerouslySetInnerHTML={{
+							__html: site.childMarkdownRemark.html,
+						}}
+					/>
 					<BigQuote
 						cite="https://www.versobooks.com/books/3002-new-dark-age"
-						source={['James Bridle, ', <cite>New Dark Age</cite>]}
+						source={
+							<>
+								James Bridle, <cite>New Dark Age</cite>
+							</>
+						}
 					>
 						If we do not understand how complex technologies
 						function, how systems of technologies interconnect, and
@@ -42,17 +61,8 @@ export default () => (
 						and interwoven. What is required is not understanding,
 						but literacy.
 					</BigQuote>
-					<div
-						dangerouslySetInnerHTML={{
-							__html: me.childMarkdownRemark.html,
-						}}
-					/>
-					<div
-						dangerouslySetInnerHTML={{
-							__html: site.childMarkdownRemark.html,
-						}}
-					/>
-				</>
+					<GoUp />
+				</div>
 			)}
 		/>
 	</Layout>

@@ -30,16 +30,14 @@
 	color: var(--black);
 	font-weight: bold;
 }
-.content-node time,
-.content-node h2 {
-}
-.content-node h2 {
+.content-node h3 {
+	font-size: 1.5em;
 	margin-bottom: 3px;
 }
-.content-node :not(h2) > a {
+.content-node :not(h3) > a {
 	position: relative;
 }
-.content-node h2 a::before {
+.content-node h3 a::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -47,14 +45,14 @@
 	left: 0;
 	right: 0;
 }
-.content-node h2 a:hover::before,
-.content-node h2 a:focus::before {
+.content-node h3 a:hover::before,
+.content-node h3 a:focus::before {
 	box-shadow: 3px 3px var(--green);
 }
-.content-node h2 a:active::before {
+.content-node h3 a:active::before {
 	box-shadow: none;
 }
-.content-node h2 a[target='_blank']::after {
+.content-node h3 a[target='_blank']::after {
 	position: absolute;
 	top: -2px;
 	right: -2px;

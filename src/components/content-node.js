@@ -34,9 +34,9 @@ export default props => {
 			https://html.spec.whatwg.org/multipage/links.html#link-type-tag */}
 			<div className="inner" ref={ref}>
 				<div className="content-type">{readableType}</div>
-				<h2>
+				<h3>
 					{link ? <AutoLink to={link}>{title}</AutoLink> : title}
-				</h2>
+				</h3>
 				<time dateTime={date}>{date.replace(/-/g, '.')}</time>
 				<Inner {...props} />
 				{tags && (

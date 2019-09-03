@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Riley Shaw <i@rileyjshaw.com>",
   "dependencies": {
+    "@svgr/webpack": "^4.3.2",
     "dotenv": "^8.1.0",
     "gatsby": "^2.15.2",
     "gatsby-image": "^2.2.16",
@@ -12,6 +13,7 @@
     "gatsby-plugin-offline": "^3.0.1",
     "gatsby-plugin-react-helmet": "^3.1.6",
     "gatsby-plugin-sharp": "^2.2.19",
+    "gatsby-plugin-svgr": "^2.0.2",
     "gatsby-remark-autolink-headers": "^2.1.9",
     "gatsby-remark-embed-markdown": "0.0.4",
     "gatsby-remark-external-links": "0.0.4",

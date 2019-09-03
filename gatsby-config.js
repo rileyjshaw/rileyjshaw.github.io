@@ -71,6 +71,19 @@ module.exports = {
 				],
 			},
 		},
+		{
+			resolve: 'gatsby-plugin-svgr',
+			options: {
+				prettier: true,
+				svgo: true,
+				svgoConfig: {
+					plugins: {
+						removeViewBox: true,
+						cleanupIDs: true,
+					},
+				},
+			},
+		},
 		// TODO(riley)
 		// this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.dev/offline

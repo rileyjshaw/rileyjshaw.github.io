@@ -13,10 +13,6 @@
 	grid-auto-flow: row dense;
 }
 
-.homepage-top {
-	background: var(--blue);
-}
-
 .selected-works-container {
 	padding-bottom: 60px;
 }
@@ -71,7 +67,7 @@
 	list-style: none;
 }
 
-.selected-works-container > h2 {
+.selected-works-container h2 {
 	box-sizing: border-box;
 	border: 2px solid var(--black);
 	box-shadow: 3px 3px var(--black);
@@ -82,7 +78,7 @@
 	animation: tilt 60s ease-in-out infinite alternate;
 }
 
-.selected-works-container > h2:nth-of-type(even) {
+.selected-works-container h2:nth-of-type(even) {
 	animation-direction: alternate-reverse;
 }
 
@@ -191,33 +187,6 @@
 	display: inline;
 }
 
-.currently {
-	display: flex;
-	list-style: none;
-	padding: 0;
-	justify-content: space-between;
-	margin: 0 30px 30px 0;
-}
-
-.currently li {
-	border: 2px solid var(--black);
-	box-shadow: 3px 3px var(--black);
-	height: 200px;
-	margin-right: 30px;
-	flex: 1 1 0;
-	background: var(--white);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 96px;
-	font-weight: 900;
-	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
-}
-
-.currently li:last-child {
-	margin: 0;
-}
-
 @media only screen and (max-width: 800px) {
 	.todo-maybe-header-element {
 		position: static;
@@ -250,15 +219,6 @@
 	.about-stub {
 		width: 80%;
 		margin: 0 auto;
-	}
-
-	.currently {
-		flex-direction: column;
-	}
-
-	.currently li {
-		margin: 0 0 30px;
-		flex: 0 1 auto;
 	}
 }
 
