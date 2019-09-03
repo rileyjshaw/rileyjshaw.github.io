@@ -1,13 +1,14 @@
 import React from 'react';
 import {StaticQuery, graphql} from 'gatsby';
 
-import {colors} from '../util/constants';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import BigQuote from '../components/big-quote';
 import PagePicker, {pages} from '../components/page-picker';
 import UpTo from '../components/up-to';
 import GoUp from '../components/go-up';
+
+import './about.css';
 
 export default () => (
 	<Layout className="about" noHeader>
@@ -28,19 +29,24 @@ export default () => (
 				}
 			`}
 			render={({me, site}) => (
-				<div style={{background: pages.about.color}}>
-					<PagePicker page="about" />
-					<div
-						dangerouslySetInnerHTML={{
-							__html: me.childMarkdownRemark.html,
-						}}
-					/>
-					<UpTo />
-					<div
-						dangerouslySetInnerHTML={{
-							__html: site.childMarkdownRemark.html,
-						}}
-					/>
+				<div
+					className="about-page"
+					style={{background: pages.about.color}}
+				>
+					<div className="about-me">
+						<PagePicker page="about" />
+						<div
+							dangerouslySetInnerHTML={{
+								__html: me.childMarkdownRemark.html,
+							}}
+						/>
+						<UpTo />
+						<div
+							dangerouslySetInnerHTML={{
+								__html: site.childMarkdownRemark.html,
+							}}
+						/>
+					</div>
 					<BigQuote
 						cite="https://www.versobooks.com/books/3002-new-dark-age"
 						source={
