@@ -54,7 +54,7 @@ export default {
 		Inner: ArenaChannelContent,
 	},
 	icon: {
-		className: 'span-2 icon',
+		className: 'span-3 icon',
 		readableType: 'Icon',
 		Inner: IconContent,
 	},
