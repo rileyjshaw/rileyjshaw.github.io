@@ -90,7 +90,7 @@ function getCommitBlog() {
 					uid,
 					type: 'commit',
 					title: commit.title,
-					date: `${commit.date.getFullYear()}-${commit.date.getMonth()}-${commit.date.getDate()}`,
+					date: commit.date.toISOString().slice(0, 10),
 					link: commit.link,
 					description: commit.description,
 				};

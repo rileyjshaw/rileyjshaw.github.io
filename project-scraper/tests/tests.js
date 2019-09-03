@@ -6,10 +6,13 @@ projects.every(p => p.uid && p.title && p.date && p.link);
 // Ensure unique IDs are unique.
 projects.map(p => p.uid).every((uid, i, uids) => uids.indexOf(uid) === i);
 
+// Ensure dates are formatted properly.
+projects.every(({date}) => date.length === 10);
+
 // Ensure there aren't any unnecessarily included empty fields.
 projects.every(p => p.description?.length && p.tags?.length);
 
-// Ensure all tests are defined.
+// Ensure all tags are defined.
 const definedTags = [];
 projects.every(tags => tags?.every(tag => definedTags.includes(tag)));
 
