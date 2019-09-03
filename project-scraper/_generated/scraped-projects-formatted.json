@@ -979,5 +979,13 @@
 		"date": "2012-06-09",
 		"link": "https://thenounproject.com/term/no-trash/3164",
 		"image": "https://static.thenounproject.com/png/3164-84.png"
+	},
+	{
+		"uid": "COMMIT_64AE2FF80E019071AFF32CFAD9A06BE0883B544B",
+		"type": "commit",
+		"title": "Add pagination to the blog!",
+		"date": "2019-09-03",
+		"link": "http://rileyjshaw.commit--blog.com/rileyjshaw/rileyjshaw-new/64ae2ff80e019071aff32cfad9a06be0883b544b",
+		"description": "<p>This is an exciting commit for the new site. It collects blog posts<br>\nfrom multiple sources (for now: rileyjshaw.commit--blog.com,<br>\n<a href=\"https://sfpc.rileyjshaw.com\" rel=\"nofollow\">https://sfpc.rileyjshaw.com</a>, and <a href=\"https://rileyjshaw.com/blog\" rel=\"nofollow\">https://rileyjshaw.com/blog</a>), orders<br>\nthem by date, and paginates them into a nice on-site list.</p>\n<p>In the past, my blog has always seemed stale and outdated. By allowing<br>\nit to gobble content from across the web, I can point it to whatever<br>\nplatform I'm currently publishing on!</p>\n<p>This commit is going to show up as a post on my blog, which feels<br>\nrather meta.</p>"
 	}
 ]
