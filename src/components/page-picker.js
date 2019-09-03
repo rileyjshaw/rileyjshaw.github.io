@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import {Link} from 'gatsby';
 
 import {ReactComponent as Planet} from '../../content/images/planet.svg';
+import {ReactComponent as Keyboard} from '../../content/images/keyboard.svg';
+import {ReactComponent as Rss} from '../../content/images/rss.svg';
 
 import './page-picker.css';
 
@@ -29,13 +31,13 @@ const pages = {
 		link: '/explore',
 	},
 	blog: {
-		Icon: Planet,
+		Icon: Keyboard,
 		title: 'Blog',
 		color: 'var(--green)',
 		link: '/blog',
 	},
 	subscribe: {
-		Icon: Planet,
+		Icon: Rss,
 		title: 'Subscribe',
 		color: 'var(--cyan)',
 		link: '/subscribe',
