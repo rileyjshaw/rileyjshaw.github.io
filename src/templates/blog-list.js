@@ -4,6 +4,7 @@ import {Link, graphql} from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import PagePicker, {pages} from '../components/page-picker';
+import AutoLink from '../components/auto-link';
 
 import './blog-list.css';
 
@@ -52,14 +53,14 @@ export default class BlogList extends React.Component {
 									<article className="blog-post">
 										<header>
 											<h3>
-												<Link
+												<AutoLink
 													to={
 														post.link ||
 														post.fields?.slug
 													}
 												>
 													{title}
-												</Link>
+												</AutoLink>
 											</h3>
 											<small>
 												{post.date ||
