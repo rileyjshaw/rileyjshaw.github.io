@@ -19,10 +19,17 @@
 	padding: 0;
 }
 
+.page-picker .icon {
+	height: 30px;
+	width: 30px;
+	margin-right: 0.5em;
+	display: flex;
+}
+
 .page-picker svg {
 	fill: var(--white);
-	height: 30px;
-	margin-right: 0.5em;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .page-picker .page-title {
