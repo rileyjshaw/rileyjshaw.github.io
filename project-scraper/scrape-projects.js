@@ -93,7 +93,7 @@ function getCommitBlog() {
 					title: commit.title,
 					date: commit.date.toISOString().slice(0, 10),
 					link: commit.link,
-					description: commit.description,
+					description: commit.description?.replace(/<br>\n/g, ' '),
 				};
 				if (index !== -1) formatted[index] = result;
 				else formatted.push(result);
