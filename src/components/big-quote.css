@@ -17,7 +17,13 @@
 	margin-top: 120px;
 }
 
+.big-quote.no-refresh::after {
+	content: '';
+	margin-bottom: 120px;
+}
+
 .big-quote::before,
+.big-quote::after,
 .big-quote button {
 	height: 60px;
 	width: 60px;

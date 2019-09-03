@@ -66,27 +66,33 @@ const quotes = [
 export {quotes};
 
 export default props => {
+	let showRefreshButton = false;
 	const [quoteIndex, setQuoteIndex] = useState(
 		Math.floor(Math.random() * quotes.length)
 	);
 	if (!props.children) {
 		props = quotes[quoteIndex];
+		showRefreshButton = true;
 	}
 	const {children, cite, source} = props;
 	return (
-		<div className="big-quote">
+		<div className={`big-quote ${showRefreshButton ? '' : 'no-refresh'}`}>
 			<blockquote cite={cite}>
 				<p>{children}</p>
 				{source && <footer>– {source}</footer>}
 			</blockquote>
-			<button
-				className="refresh"
-				onClick={() =>
-					setQuoteIndex(prevIndex => (prevIndex + 1) % quotes.length)
-				}
-			>
-				<Repeat />
-			</button>
+			{showRefreshButton && (
+				<button
+					className="refresh"
+					onClick={() =>
+						setQuoteIndex(
+							prevIndex => (prevIndex + 1) % quotes.length
+						)
+					}
+				>
+					<Repeat />
+				</button>
+			)}
 		</div>
 	);
 };
