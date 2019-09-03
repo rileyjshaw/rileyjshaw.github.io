@@ -9,7 +9,10 @@ import './blog-list.css';
 
 export default class BlogList extends React.Component {
 	render() {
-		const {data} = this.props;
+		const {
+			data,
+			pageContext: {currentPage, numPages},
+		} = this.props;
 
 		// TODO(riley): Unfortunate that we're re-sorting this client-side
 		//              instead of collecting + sorting it with GraphQL.
@@ -21,6 +24,12 @@ export default class BlogList extends React.Component {
 				new Date(b.date || b.fields.date) -
 				new Date(a.date || a.fields.date)
 		);
+
+		const isFirst = currentPage === 1;
+		const isLast = currentPage === numPages;
+		const prevPage =
+			!isFirst && `/blog${currentPage > 2 ? `/${currentPage - 1}` : ''}`;
+		const nextPage = !isLast && `/blog/${currentPage + 1}`;
 
 		return (
 			<Layout noHeader>
@@ -74,6 +83,16 @@ export default class BlogList extends React.Component {
 							);
 						})}
 					</ul>
+					{!isFirst && (
+						<Link to={prevPage} rel="prev">
+							← Previous Page
+						</Link>
+					)}
+					{!isLast && (
+						<Link to={nextPage} rel="next">
+							Next Page →
+						</Link>
+					)}
 				</div>
 			</Layout>
 		);
