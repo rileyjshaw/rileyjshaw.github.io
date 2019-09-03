@@ -1,0 +1,34 @@
+.blog-list {
+	padding: 30px;
+}
+
+.blog-list .blog-posts {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.blog-list .blog-post {
+	position: relative;
+	padding: 16px 12px;
+	border: 2px solid var(--black);
+	box-shadow: 3px 3px var(--black);
+	background: var(--white);
+	margin-bottom: 30px;
+}
+
+/* TODO(riley): Transfer all styles in a better way. Currently unused: */
+.blog-list .blog-post.external::before {
+	position: absolute;
+	top: -2px;
+	right: -2px;
+	height: 24px;
+	width: 24px;
+	background: var(--white);
+	border: 2px solid var(--black);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	color: var(--black);
+}

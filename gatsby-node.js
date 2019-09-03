@@ -1,9 +1,11 @@
-const path = require(`path`);
-const {createFilePath} = require(`gatsby-source-filesystem`);
+const path = require('path');
+const {createFilePath} = require('gatsby-source-filesystem');
 
 exports.createPages = async ({actions, graphql, reporter}) => {
 	const {createPage} = actions;
-	const blogPostTemplate = path.resolve(`src/templates/post.js`);
+	const blogListTemplate = path.resolve('src/templates/blog-list.js');
+	const blogPostTemplate = path.resolve('src/templates/post.js');
+
 	// TODO(riley): Import this query from a common place.
 	const result = await graphql(`
 		{
@@ -29,6 +31,15 @@ exports.createPages = async ({actions, graphql, reporter}) => {
 					}
 				}
 			}
+
+			allScrapedProjectsFormattedJson(
+				filter: {type: {in: ["tumblr", "commit"]}}
+				limit: 1000
+			) {
+				nodes {
+					date
+				}
+			}
 		}
 	`);
 
@@ -37,9 +48,51 @@ exports.createPages = async ({actions, graphql, reporter}) => {
 		reporter.panicOnBuild(`Error while running GraphQL query.`);
 		return;
 	}
-	result.data.allMarkdownRemark.edges.forEach(({node}) => {
+	const internalPosts = result.data.allMarkdownRemark.edges.map(e => e.node);
+	const externalPosts = result.data.allScrapedProjectsFormattedJson.nodes;
+	const allPosts = internalPosts
+		.map(p => ({
+			type: 'internal',
+			date: p.fields.date,
+		}))
+		.concat(
+			externalPosts.map(p => ({
+				type: 'external',
+				date: p.date,
+			}))
+		)
+		.sort((a, b) => new Date(b.date) - new Date(a.date));
+	const postsPerPage = 5;
+	const numPages = Math.ceil(allPosts.length / postsPerPage);
+
+	// Create paginated blog listings in the pattern /blog, /blog/1, etc.
+	let internalSkip = 0;
+	let externalSkip = 0;
+	for (let page = 0; page < numPages; ++page) {
+		const internalLimit = allPosts
+			.slice(page * postsPerPage, (page + 1) * postsPerPage)
+			.filter(p => p.type === 'internal').length;
+		const externalLimit = postsPerPage - internalLimit;
 		createPage({
-			path: node.fields.slug,
+			path: `/blog${page ? `/${page + 1}` : ''}`,
+			component: blogListTemplate,
+			context: {
+				internalLimit,
+				internalSkip,
+				externalLimit,
+				externalSkip,
+				numPages,
+				currentPage: page + 1,
+			},
+		});
+		internalSkip += internalLimit;
+		externalSkip += externalLimit;
+	}
+
+	// Create a post page for each internal post.
+	internalPosts.forEach(post => {
+		createPage({
+			path: post.fields.slug,
 			component: blogPostTemplate,
 		});
 	});
@@ -49,7 +102,7 @@ exports.onCreateNode = ({node, getNode, actions}) => {
 	const {createNodeField} = actions;
 
 	if (
-		node.internal.type === `MarkdownRemark` &&
+		node.internal.type === 'MarkdownRemark' &&
 		node.fileAbsolutePath.includes('/posts/')
 	) {
 		let {title} = node.frontmatter;
@@ -59,7 +112,7 @@ exports.onCreateNode = ({node, getNode, actions}) => {
 			/^\/([\d]{4}-[\d]{2}-[\d]{2})-{1}(.+)\/$/
 		);
 
-		createNodeField({node, name: `slug`, value: `/blog/${slug}`});
+		createNodeField({node, name: 'slug', value: `/blog/${slug}`});
 
 		if (!title) {
 			title =
@@ -68,7 +121,7 @@ exports.onCreateNode = ({node, getNode, actions}) => {
 		}
 
 		// Save the date and title for later use.
-		createNodeField({node, name: `title`, value: title});
-		createNodeField({node, name: `date`, value: date});
+		createNodeField({node, name: 'title', value: title});
+		createNodeField({node, name: 'date', value: date});
 	}
 };

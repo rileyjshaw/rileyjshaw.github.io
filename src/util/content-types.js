@@ -45,7 +45,7 @@ export default {
 	},
 	post: {
 		className: 'span-6 post',
-		readableType: 'Blog post',
+		readableType: 'Old blog post',
 		Inner: PostContent,
 	},
 	arenaChannel: {
