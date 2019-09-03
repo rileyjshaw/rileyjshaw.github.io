@@ -979,11 +979,11 @@
 		"image": "https://static.thenounproject.com/png/3164-84.png"
 	},
 	{
-		"uid": "COMMIT_64AE2FF80E019071AFF32CFAD9A06BE0883B544B",
+		"uid": "COMMIT_13F32FB1219D29A61032646BE13DCFE602A595F5",
 		"type": "commit",
 		"title": "Add pagination to the blog!",
 		"date": "2019-09-03",
-		"link": "http://rileyjshaw.commit--blog.com/rileyjshaw/rileyjshaw-new/64ae2ff80e019071aff32cfad9a06be0883b544b",
-		"description": "<p>This is an exciting commit for the new site. It collects blog posts from multiple sources (for now: rileyjshaw.commit--blog.com, <a href=\"https://sfpc.rileyjshaw.com\" rel=\"nofollow\">https://sfpc.rileyjshaw.com</a>, and <a href=\"https://rileyjshaw.com/blog\" rel=\"nofollow\">https://rileyjshaw.com/blog</a>), orders them by date, and paginates them into a nice on-site list.</p>\n<p>In the past, my blog has always seemed stale and outdated. By allowing it to gobble content from across the web, I can point it to whatever platform I'm currently publishing on!</p>\n<p>This commit is going to show up as a post on my blog, which feels rather meta.</p>"
+		"link": "http://rileyjshaw.commit--blog.com/rileyjshaw/rileyjshaw-new/13f32fb1219d29a61032646be13dcfe602a595f5",
+		"description": "<p>This is an exciting commit for the new site. It collects blog posts from multiple sources (for now: <a href=\"http://rileyjshaw.commit--blog.com\" rel=\"nofollow\">http://rileyjshaw.commit--blog.com</a>, <a href=\"https://sfpc.rileyjshaw.com\" rel=\"nofollow\">https://sfpc.rileyjshaw.com</a>, and <a href=\"https://rileyjshaw.com/blog\" rel=\"nofollow\">https://rileyjshaw.com/blog</a>), orders them by date, and paginates them into a nice on-site list.</p>\n<p>In the past, my blog has always seemed stale and outdated. By allowing it to gobble content from across the web, I can point it to whatever platform I'm currently publishing on!</p>\n<p>This commit is going to show up as a post on my blog, which feels rather meta.</p>"
 	}
 ]
