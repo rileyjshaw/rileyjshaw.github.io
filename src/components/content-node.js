@@ -12,8 +12,8 @@ import './content-node.css';
 //   "title":
 //   "date":
 export default props => {
-	const {type, title, date, link, uid, tags, render} = props;
-	if (render) return render;
+	const {type, title, date, link, uid, tags, rendered} = props;
+	if (rendered) return rendered;
 
 	if (!contentTypes[type]) return null;
 	const {className = '', readableType, Inner} = contentTypes[type];
@@ -25,9 +25,8 @@ export default props => {
 
 	return (
 		<li
-			className={`${className} ${
-				height ? 'measured ' : ' '
-			}content-node`}
+			className={`${className} ${height ? '' : 'un'}measured
+			content-node`}
 			key={uid}
 			style={height && {gridRowEnd: `span ${span}`}}
 		>

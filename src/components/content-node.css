@@ -4,10 +4,9 @@
 	border: 2px solid var(--black);
 	box-shadow: 3px 3px var(--black);
 	background: var(--white);
-	visibility: hidden;
 }
-.content-node.measured {
-	visibility: visible;
+.content-node.unmeasured {
+	visibility: hidden;
 }
 .content-node:active {
 	transform: translate(3px, 3px);

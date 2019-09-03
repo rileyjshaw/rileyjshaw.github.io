@@ -324,10 +324,10 @@ export default props => {
 	`);
 
 	const nodes = allProjectsQuery().concat(
-		gridDoodles.map((render, i) => ({
+		gridDoodles.map((rendered, i) => ({
 			uid: `DOODLE_${i}`,
 			type: 'doodle',
-			render,
+			rendered,
 		}))
 	);
 
