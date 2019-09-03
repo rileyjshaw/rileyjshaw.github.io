@@ -12,7 +12,9 @@ import './content-node.css';
 //   "title":
 //   "date":
 export default props => {
-	const {type, title, date, link, uid, tags} = props;
+	const {type, title, date, link, uid, tags, render} = props;
+	if (render) return render;
+
 	if (!contentTypes[type]) return null;
 	const {className = '', readableType, Inner} = contentTypes[type];
 

@@ -27,6 +27,9 @@ export const TumblrBlogContent = ({body}) =>
 	body && <div dangerouslySetInnerHTML={{__html: body}} />;
 
 export default {
+	doodle: {
+		readableType: 'Doodle',
+	},
 	dweet: {
 		className: 'span-2 dweet',
 		readableType: 'Dweet',

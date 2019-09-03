@@ -5,7 +5,7 @@ import sortingMethods from '../util/sorting-methods';
 import allProjectsQuery from '../util/all-projects-query';
 import contentTypes from '../util/content-types';
 
-import GridOrnaments from './grid-ornaments';
+import gridDoodles from './grid-doodles';
 import ContentGrid from './content-grid';
 import PagePicker from './page-picker';
 
@@ -17,7 +17,8 @@ class ProjectExplorer extends React.Component {
 
 		const initialState = {
 			typeStates: this.getNodeTypes().map(
-				type => type === 'project' || type === 'post'
+				type =>
+					type === 'project' || type === 'post' || type === 'doodle'
 			),
 			sortIdx: 0,
 			ascending: false,
@@ -44,11 +45,18 @@ class ProjectExplorer extends React.Component {
 		const checkedTagNames = tags
 			.filter((_, i) => state.tagStates[i])
 			.map(tag => tag.name);
-		const filteredByType = checkedTypeNames.length
+		const [doodles, filteredByType] = (checkedTypeNames.length
 			? nodes.filter(node =>
 					checkedTypeNames.some(type => node.type === type)
 			  )
-			: nodes;
+			: nodes
+		).reduce(
+			(partitions, node) => {
+				partitions[node.type === 'doodle' ? 0 : 1].push(node);
+				return partitions;
+			},
+			[[], []]
+		);
 		const filtered = checkedTagNames.length
 			? filteredByType.filter(node =>
 					checkedTagNames[
@@ -58,7 +66,14 @@ class ProjectExplorer extends React.Component {
 			: filteredByType;
 		const sorted = sortFn(filtered);
 		const ordered = state.ascending ? sorted : sorted.reverse();
-
+		// Insert doodles into a random position.
+		doodles.forEach(doodle =>
+			ordered.splice(
+				Math.floor(Math.random() * ordered.length),
+				0,
+				doodle
+			)
+		);
 		return ordered;
 	}
 
@@ -288,9 +303,7 @@ class ProjectExplorer extends React.Component {
 					</strong>{' '}
 					sources:
 				</p>
-				<ContentGrid nodes={nodes}>
-					<GridOrnaments />
-				</ContentGrid>
+				<ContentGrid nodes={nodes} />
 			</div>
 		);
 	}
@@ -310,7 +323,13 @@ export default props => {
 		}
 	`);
 
-	return (
-		<ProjectExplorer nodes={allProjectsQuery()} tags={tags} {...props} />
+	const nodes = allProjectsQuery().concat(
+		gridDoodles.map((render, i) => ({
+			uid: `DOODLE_${i}`,
+			type: 'doodle',
+			render,
+		}))
 	);
+
+	return <ProjectExplorer nodes={nodes} tags={tags} {...props} />;
 };
