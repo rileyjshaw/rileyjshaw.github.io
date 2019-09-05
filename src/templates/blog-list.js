@@ -8,97 +8,100 @@ import AutoLink from '../components/auto-link';
 
 import './blog-list.css';
 
-export default class BlogList extends React.Component {
-	render() {
-		const {
-			data,
-			pageContext: {currentPage, numPages},
-		} = this.props;
+const urlFrom = page => `/blog${page === 1 ? '' : `/${page}`}`;
 
-		// TODO(riley): Unfortunate that we're re-sorting this client-side
-		//              instead of collecting + sorting it with GraphQL.
-		const posts = [
-			...data.allMarkdownRemark.edges.map(({node}) => node),
-			...data.allScrapedProjectsFormattedJson.nodes,
-		].sort(
-			(a, b) =>
-				new Date(b.date || b.fields.date) -
-				new Date(a.date || a.fields.date)
-		);
+export default ({data, pageContext: {currentPage, numPages}}) => {
+	// TODO(riley): Unfortunate that we're re-sorting this client-side instead
+	//              of collecting + sorting it with GraphQL.
+	const posts = [
+		...data.allMarkdownRemark.edges.map(({node}) => node),
+		...data.allScrapedProjectsFormattedJson.nodes,
+	].sort(
+		(a, b) =>
+			new Date(b.date || b.fields.date) -
+			new Date(a.date || a.fields.date)
+	);
 
-		const isFirst = currentPage === 1;
-		const isLast = currentPage === numPages;
-		const prevPage =
-			!isFirst && `/blog${currentPage > 2 ? `/${currentPage - 1}` : ''}`;
-		const nextPage = !isLast && `/blog/${currentPage + 1}`;
+	const isFirst = currentPage === 1;
+	const isLast = currentPage === numPages;
+	const prevPage = !isFirst && urlFrom(currentPage - 1);
+	const nextPage = !isLast && urlFrom(currentPage + 1);
+	const nearbyPages = Array.from({length: numPages}, (_, i) => i + 1)
+		.splice(Math.min(Math.max(0, currentPage - 4), numPages - 7), 7)
+		.map(page => (
+			<Link
+				key={page}
+				to={urlFrom(page)}
+				className={page === currentPage ? 'current-page' : ''}
+			>
+				{page}
+			</Link>
+		));
 
-		return (
-			<Layout noHeader>
-				<SEO title="All posts" />
-				<div
-					className="blog-list"
-					style={{background: pages.blog.color}}
-				>
-					<PagePicker page="blog" />
+	return (
+		<Layout noHeader>
+			<SEO title="All posts" />
+			<div className="blog-list" style={{background: pages.blog.color}}>
+				<PagePicker page="blog" />
 
-					<ul className="blog-posts">
-						{posts.map(post => {
-							const title =
-								post.title ||
-								post.frontmatter?.title ||
-								post.fields?.slug;
+				<ul className="blog-posts">
+					{posts.map(post => {
+						const title =
+							post.title ||
+							post.frontmatter?.title ||
+							post.fields?.slug;
 
-							return (
-								<li key={post.uid || post.fields?.slug}>
-									<article className="blog-post">
-										<header>
-											<h3>
-												<AutoLink
-													to={
-														post.link ||
-														post.fields?.slug
-													}
-												>
-													{title}
-												</AutoLink>
-											</h3>
-											<small>
-												{post.date ||
-													post.fields?.date}
-											</small>
-										</header>
-										<section>
-											<p
-												dangerouslySetInnerHTML={{
-													__html:
-														post.body ||
-														post.description ||
-														post.frontmatter
-															?.tldr ||
-														post.excerpt,
-												}}
-											/>
-										</section>
-									</article>
-								</li>
-							);
-						})}
-					</ul>
+						return (
+							<li key={post.uid || post.fields?.slug}>
+								<article className="blog-post">
+									<header>
+										<h3>
+											<AutoLink
+												to={
+													post.link ||
+													post.fields?.slug
+												}
+											>
+												{title}
+											</AutoLink>
+										</h3>
+										<small>
+											{post.date || post.fields?.date}
+										</small>
+									</header>
+									<section>
+										<p
+											dangerouslySetInnerHTML={{
+												__html:
+													post.body ||
+													post.description ||
+													post.frontmatter?.tldr ||
+													post.excerpt,
+											}}
+										/>
+									</section>
+								</article>
+							</li>
+						);
+					})}
+				</ul>
+				<div className="page-navigation">
 					{!isFirst && (
 						<Link to={prevPage} rel="prev">
-							← Previous Page
+							⬅
 						</Link>
 					)}
+					{nearbyPages}
 					{!isLast && (
 						<Link to={nextPage} rel="next">
-							Next Page →
+							➡
 						</Link>
 					)}
 				</div>
-			</Layout>
-		);
-	}
-}
+			</div>
+		</Layout>
+	);
+};
 
 // TODO(riley): Standardize this format.
 // TODO(riley): Figure out proper excerpts for here and the /explore page.

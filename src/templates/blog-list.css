@@ -32,3 +32,22 @@
 	font-size: 24px;
 	color: var(--black);
 }
+
+.blog-list .page-navigation {
+	display: flex;
+	justify-content: center;
+	padding: 1.5em 0;
+}
+
+.blog-list .page-navigation a {
+	font-size: 16px;
+	margin: 0 0.5em;
+	font-family: 'Arial';
+	font-weight: bold;
+	color: var(--blue);
+	text-decoration: none;
+}
+
+.blog-list .page-navigation .current-page {
+	color: var(--yellow);
+}
