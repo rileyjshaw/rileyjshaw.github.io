@@ -7,16 +7,21 @@ require('dotenv').config();
 
 const util = require('util');
 const fs = require('fs');
+const url = require('url');
 const tumblr = require('tumblr.js');
 const feedRead = require('davefeedread');
 const request = require('request-promise-native');
 const OAuth = require('oauth');
+const {JSDOM} = require('jsdom');
 
 const raw = {}; // Raw is completely overwritten, but we append to formatted.
 const formatted = JSON.parse(
 	fs.readFileSync(
 		'./project-scraper/_generated/scraped-projects-formatted.json'
 	)
+);
+const quotes = JSON.parse(
+	fs.readFileSync('./project-scraper/_generated/scraped-quotes.json')
 );
 
 const idify = uid => uid.toUpperCase().replace(/-/g, '_');
@@ -118,26 +123,70 @@ function getSFPCTumblr() {
 					raw.sfpcTumblr = allPosts;
 					allPosts.forEach(post => {
 						const uid = idify(`SFPC_TUMBLR_${post.id}`);
-						const index = formatted.findIndex(
-							post => post.uid === uid
-						);
-						const result = {
-							uid,
-							type: 'tumblr',
-							title: post.title || post.summary,
-							date: post.date.slice(0, 10),
-							link: post.post_url,
-							contentType: post.type,
-							body: post.body,
-						};
-						if (index !== -1) formatted[index] = result;
-						else formatted.push(result);
+						switch (post.type) {
+							case 'quote':
+								const quoteIndex = quotes.findIndex(
+									post => post.uid === uid
+								);
+								const sourceDoc = new JSDOM(post.source).window
+									.document;
+								const sourceAnchor = sourceDoc.querySelector(
+									'a'
+								);
+								let sourceLink = sourceAnchor?.href;
+								if (
+									sourceLink?.startsWith(
+										'https://t.umblr.com/redirect'
+									)
+								) {
+									sourceLink = url.parse(sourceLink, true)
+										.query.z;
+								}
+								const quoteResult = {
+									uid,
+									text: post.text,
+									source:
+										sourceAnchor.textContent ||
+										sourceDoc.querySelector('*')
+											?.textContent,
+									sourceLink,
+									date: post.date.slice(0, 10),
+									link: post.post_url,
+								};
+								if (quoteIndex !== -1)
+									quotes[quoteIndex] = quoteResult;
+								else quotes.push(quoteResult);
+								return;
+							// TODO(riley): Should I handle these?
+							case 'chat':
+							case 'link':
+							case 'photo':
+							case 'video':
+							case 'audio':
+								return;
+							case 'text':
+								const textIndex = formatted.findIndex(
+									post => post.uid === uid
+								);
+								const textResult = {
+									uid,
+									type: 'tumblr',
+									date: post.date.slice(0, 10),
+									link: post.post_url,
+									contentType: post.type,
+									title: post.title || post.summary,
+									body: post.body,
+								};
+								if (textIndex !== -1)
+									formatted[textIndex] = textResult;
+								else formatted.push(textResult);
+						}
 					});
 				}
 			});
 	})();
 }
-
+getSFPCTumblr();
 function getIcons() {
 	const auth = new OAuth.OAuth(
 		'https://api.thenounproject.com',
@@ -194,6 +243,10 @@ Promise.all([
 	fs.writeFileSync(
 		'./project-scraper/_generated/scraped-projects-formatted.json',
 		JSON.stringify(formatted)
+	);
+	fs.writeFileSync(
+		'./project-scraper/_generated/scraped-quotes.json',
+		JSON.stringify(quotes)
 	);
 	console.log('Done.');
 });
