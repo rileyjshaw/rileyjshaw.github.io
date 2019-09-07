@@ -10,6 +10,7 @@ import './blog-list.css';
 
 const urlFrom = page => `/blog${page === 1 ? '' : `/${page}`}`;
 
+// TODO(riley): Style with same stylesheet as blog posts.
 export default ({data, pageContext: {currentPage, numPages}}) => {
 	// TODO(riley): Unfortunate that we're re-sorting this client-side instead
 	//              of collecting + sorting it with GraphQL.
@@ -46,37 +47,34 @@ export default ({data, pageContext: {currentPage, numPages}}) => {
 
 				<ul className="blog-posts">
 					{posts.map(post => {
+						const uid = post.uid || post.fields?.slug;
 						const title =
 							post.title ||
 							post.frontmatter?.title ||
 							post.fields?.slug;
+						const link = post.link || post.fields?.slug;
+						const date = post.date || post.fields?.date;
+						const description =
+							post.description ||
+							post.frontmatter?.tldr ||
+							post.excerpt ||
+							post.body;
 
 						return (
-							<li key={post.uid || post.fields?.slug}>
-								<article className="blog-post">
+							<li className="blog-post" key={uid}>
+								<article className={post.more && 'excerpt'}>
 									<header>
 										<h3>
-											<AutoLink
-												to={
-													post.link ||
-													post.fields?.slug
-												}
-											>
+											<AutoLink to={link}>
 												{title}
 											</AutoLink>
 										</h3>
-										<small>
-											{post.date || post.fields?.date}
-										</small>
+										<small>{date}</small>
 									</header>
 									<section>
-										<p
+										<div
 											dangerouslySetInnerHTML={{
-												__html:
-													post.body ||
-													post.description ||
-													post.frontmatter?.tldr ||
-													post.excerpt,
+												__html: description,
 											}}
 										/>
 									</section>
@@ -144,15 +142,11 @@ export const blogListQuery = graphql`
 		) {
 			nodes {
 				uid
-				type
 				title
 				date
 				link
 				description
-				updatedAt
-				length
-				contentType
-				body
+				more
 			}
 		}
 	}

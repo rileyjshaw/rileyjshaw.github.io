@@ -25,7 +25,35 @@ const quotes = JSON.parse(
 );
 
 const idify = uid => uid.toUpperCase().replace(/-/g, '_');
+const excerptify = body => {
+	if (!body) return {};
 
+	const {els: excerpt, charCount, more} = Array.from(
+		JSDOM.fragment(body).children
+	)
+		// Strip unwanted elements.
+		.filter(el => !['IMG'].includes(el.nodeName))
+		// Limit the excerpt to 700 characters.
+		.reduce(
+			({charCount, els}, el) => {
+				if (charCount > 700) return {charCount, els, more: true};
+				return {
+					charCount: charCount + el.textContent.length,
+					els: [...els, el],
+					more: false,
+				};
+			},
+			{charCount: 0, els: [], more: false}
+		);
+
+	// Never end on a header.
+	while (excerpt[excerpt.length - 1]?.nodeName.startsWith('H')) {
+		charCount -= excerpt.pop().textContent.length;
+	}
+
+	// TODO(riley): Use charCount to slice the textContent of the final node?
+	return {description: excerpt.map(el => el.outerHTML).join(''), more};
+};
 async function getDweets() {
 	let url = 'https://www.dwitter.net/api/dweets/?author=rileyjshaw';
 	let dweets = [];
@@ -92,14 +120,17 @@ function getCommitBlog() {
 					)}`
 				);
 				const index = formatted.findIndex(d => d.uid === uid);
+				const body = commit.description?.replace(/<br>\n/g, ' ');
 				const result = {
 					uid,
 					type: 'commit',
 					title: commit.title,
 					date: commit.date.toISOString().slice(0, 10),
 					link: commit.link,
-					description: commit.description?.replace(/<br>\n/g, ' '),
+					body,
+					...excerptify(body),
 				};
+
 				if (index !== -1) formatted[index] = result;
 				else formatted.push(result);
 			});
@@ -128,8 +159,7 @@ function getSFPCTumblr() {
 								const quoteIndex = quotes.findIndex(
 									post => post.uid === uid
 								);
-								const sourceDoc = new JSDOM(post.source).window
-									.document;
+								const sourceDoc = JSDOM.fragment(post.source);
 								const sourceAnchor = sourceDoc.querySelector(
 									'a'
 								);
@@ -186,7 +216,7 @@ function getSFPCTumblr() {
 			});
 	})();
 }
-getSFPCTumblr();
+
 function getIcons() {
 	const auth = new OAuth.OAuth(
 		'https://api.thenounproject.com',
@@ -229,24 +259,27 @@ function getIcons() {
 		});
 }
 
-Promise.all([
-	getDweets(),
-	getArena(),
-	getCommitBlog(),
-	getSFPCTumblr(),
-	getIcons(),
-]).then(() => {
-	fs.writeFileSync(
-		'./project-scraper/_generated/scraped-projects-raw.json',
-		JSON.stringify(raw)
-	);
-	fs.writeFileSync(
-		'./project-scraper/_generated/scraped-projects-formatted.json',
-		JSON.stringify(formatted)
-	);
-	fs.writeFileSync(
-		'./project-scraper/_generated/scraped-quotes.json',
-		JSON.stringify(quotes)
-	);
-	console.log('Done.');
-});
+function getAll() {
+	Promise.all([
+		getDweets(),
+		getArena(),
+		getCommitBlog(),
+		getSFPCTumblr(),
+		getIcons(),
+	]).then(() => {
+		fs.writeFileSync(
+			'./project-scraper/_generated/scraped-projects-raw.json',
+			JSON.stringify(raw)
+		);
+		fs.writeFileSync(
+			'./project-scraper/_generated/scraped-projects-formatted.json',
+			JSON.stringify(formatted)
+		);
+		fs.writeFileSync(
+			'./project-scraper/_generated/scraped-quotes.json',
+			JSON.stringify(quotes)
+		);
+		console.log('Done.');
+	});
+}
+getAll();
