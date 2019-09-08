@@ -6,7 +6,6 @@ tags:
     - css
     - javascript
     - web
-tldr: Color transitions on the web leave something to be desired but with a bit of elbow grease we can make them awesome again.
 ---
 
 **UPDATE 2014-06-25**: _I created a library called [sweep.js](http://rileyjshaw.com/sweep/) that addresses this problem._

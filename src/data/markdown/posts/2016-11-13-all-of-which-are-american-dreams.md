@@ -5,7 +5,6 @@ tags:
     - build
     - web
     - tools
-tldr: I wrote some scripts which let you view someone else's Twitter feed.
 ---
 
 Title lifted from <a href="https://youtu.be/4smim2MNvF8" target="_blank">"Know Your Enemy"</a>.

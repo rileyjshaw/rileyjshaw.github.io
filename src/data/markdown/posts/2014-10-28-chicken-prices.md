@@ -4,7 +4,6 @@ title: 'Riddle: chicken prices'
 tags:
     - math
     - riddle
-tldr: 'I wrote a comment on Hacker News that people liked.'
 ---
 
 Someone posted a riddle to [Hacker News](https://news.ycombinator.com/item?id=8486278) a few days ago:

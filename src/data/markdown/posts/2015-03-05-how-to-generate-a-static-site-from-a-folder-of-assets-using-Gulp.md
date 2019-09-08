@@ -4,7 +4,6 @@ tags:
     - howto
     - web
 title: How to generate a static site from a folder of assets using Gulp
-tldr: Learn how to create a static site with internal links based on a directory of files of any type.
 ---
 
 ## An entirely skippable preface

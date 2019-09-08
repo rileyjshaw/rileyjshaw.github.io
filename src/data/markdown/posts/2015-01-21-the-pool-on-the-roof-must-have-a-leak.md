@@ -4,7 +4,6 @@ tags:
     - security
     - life
     - web
-tldr: I joined Open Whisper Systems to pitch in on the TextSecure Chrome extension. It was the experience of a lifetime.
 ---
 
 _This post was originally published on the [Open Whisper Systems blog](https://whispersystems.org/blog/the-pool-on-the-roof-must-have-a-leak/)._

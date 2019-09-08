@@ -6,7 +6,6 @@ tags:
     - security
     - css
     - build
-tldr: 'Some shady CSS tricks form like Voltron to discover your darkest secrets.'
 ---
 
 **UPDATE 2015-01-21**: _Since writing this post, Chrome and FF have changed their alpha-blending functions. Demos likely won't work anymore. This is good news!!_

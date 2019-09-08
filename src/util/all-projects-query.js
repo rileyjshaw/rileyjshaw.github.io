@@ -18,7 +18,6 @@ export default () => {
 						excerpt
 						frontmatter {
 							layout
-							tldr
 							topTitle
 							tags
 						}

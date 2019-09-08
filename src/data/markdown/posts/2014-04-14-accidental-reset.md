@@ -3,7 +3,6 @@ layout: post
 tags:
     - hardware
     - quote
-tldr: Sometimes, all you need is a small rubber washer.
 ---
 
 From page 33 of the [Apple II User's Guide](http://www.librarything.com/work/52052):

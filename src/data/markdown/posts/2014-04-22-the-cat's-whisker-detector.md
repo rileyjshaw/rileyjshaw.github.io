@@ -6,7 +6,6 @@ tags:
     - hardware
     - history
     - physics
-tldr: "A history lesson: the cat's-whisker radio was the first commercial semiconductor device. It sparked an industry that fundamentally changed the way we communicate."
 ---
 
 Semiconductors are important. They allow us to make transistors[^1], which allow us to make integrated circuits, which allow us to build calculators and flight control systems and iPads.

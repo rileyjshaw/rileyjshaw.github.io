@@ -4,7 +4,6 @@ title: I have a new blog
 tags:
     - life
     - meta
-tldr: This website is old; for more recent news check out <a target="_blank" rel="noopener noreferrer" href="https://sfpc.rileyjshaw.com">my SFPC blog</a>.
 ---
 
 I made this website in early 2014 to document projects I worked on at [Hacker School](https://www.recurse.com/). Though I've changed a lot since then and worked on all sorts of problems, the site hasn't updated to reflect that.

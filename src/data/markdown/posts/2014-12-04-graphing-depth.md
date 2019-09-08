@@ -4,7 +4,6 @@ tags:
     - math
     - hobby
     - build
-tldr: "On a beautiful summer's afternoon while all the other children were playing outside I made pictures out of procedural hobby math."
 ---
 
 There's something magical about a procedure that just works. Even if you don't understand _why_ it works, having a set of steps that will always get you to the same destination feels nice. In life there are few patterns that consistently produce the same outcome. But in math? Hoo boy…

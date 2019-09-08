@@ -5,7 +5,6 @@ tags:
     - education
     - life
     - web
-tldr: I work at Khan Academy now and I like it here.
 ---
 
 _**EDIT:** I no-longer work at Khan Academy, and most of these systems have changed drastically since 2015._

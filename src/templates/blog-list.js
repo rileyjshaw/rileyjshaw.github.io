@@ -55,10 +55,7 @@ export default ({data, pageContext: {currentPage, numPages}}) => {
 						const link = post.link || post.fields?.slug;
 						const date = post.date || post.fields?.date;
 						const description =
-							post.description ||
-							post.frontmatter?.tldr ||
-							post.excerpt ||
-							post.body;
+							post.description || post.excerpt || post.body;
 
 						return (
 							<li className="blog-post" key={uid}>
@@ -121,7 +118,6 @@ export const blogListQuery = graphql`
 					excerpt
 					frontmatter {
 						layout
-						tldr
 						topTitle
 						tags
 					}

@@ -6,11 +6,8 @@ export const ProjectContent = ({description}) =>
 	description.map((d, i) => (
 		<p key={i} dangerouslySetInnerHTML={{__html: d}} />
 	));
-export const PostContent = ({excerpt, frontmatter: {tldr}}) => (
-	<>
-		{tldr && <p dangerouslySetInnerHTML={{__html: tldr}} />}
-		<p dangerouslySetInnerHTML={{__html: excerpt}} />
-	</>
+export const PostContent = ({excerpt}) => (
+	<p dangerouslySetInnerHTML={{__html: excerpt}} />
 );
 export const CommitBlogContent = ({description}) =>
 	description && <div dangerouslySetInnerHTML={{__html: description}} />;

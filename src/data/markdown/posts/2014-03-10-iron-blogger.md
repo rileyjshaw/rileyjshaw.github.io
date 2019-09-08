@@ -5,7 +5,6 @@ tags:
     - build
     - web
     - hackerschool
-tldr: I made a blog and if I don't use it once a week I have to pay someone five bucks.
 ---
 
 A few days ago a fellow Hacker-Schooler proposed Iron Blogger to our batch. The rules are simple:

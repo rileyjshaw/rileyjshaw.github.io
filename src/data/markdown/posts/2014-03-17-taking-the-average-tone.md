@@ -5,7 +5,6 @@ tags:
     - python
     - lisp
     - math
-tldr: Beautiful songs create ugly sounds when you take their mean fundamental frequency, and that's really obvious.
 ---
 
 Today I wanted to see what the average frequency of a song would sound like with no spectrum analysis or separation. I had a hunch that it would end up sounding like garbage, and I was totally right.

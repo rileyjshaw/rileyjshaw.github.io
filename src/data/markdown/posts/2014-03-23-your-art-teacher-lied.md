@@ -3,7 +3,6 @@ layout: post
 tags:
     - color
     - rant
-tldr: The primary colors are <em>not</em> red, yellow, and blue. Even if they were, they wouldn't be the <em>only</em> primary colors.
 ---
 
 Guess what? Chemistry isn't the only high school course built on a _foundation of lies_. In art class we're taught that the primary colors are red, yellow, and blue. Not only is it wrong to say that there are three true primary colors, but if we _were_ to pick three, we'd pick a better combination.

@@ -4,7 +4,6 @@ tags:
     - c
     - db
     - quote
-tldr: Zed A. Shaw rocks, and if you're not malloc-ing you're a weakling.
 ---
 
 From [Learn C The Hard Way](https://c.learncodethehardway.org/book/introduction.html):
