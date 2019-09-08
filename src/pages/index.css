@@ -68,7 +68,6 @@
 }
 
 .selected-works-container h2 {
-	box-sizing: border-box;
 	border: 2px solid var(--black);
 	box-shadow: 3px 3px var(--black);
 	background: var(--cyan);

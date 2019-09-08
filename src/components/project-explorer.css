@@ -53,7 +53,6 @@
 .project-explorer .filters button {
 	font-size: 16px;
 	cursor: pointer;
-	box-sizing: border-box;
 	border: 2px solid var(--black);
 	box-shadow: 3px 3px var(--black);
 	background: var(--cyan);
