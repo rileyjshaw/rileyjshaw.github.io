@@ -36,7 +36,7 @@
 .content-node :not(h3) > a {
 	position: relative;
 }
-.content-node h3 a::before {
+/* .content-node h3 a::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -50,7 +50,7 @@
 }
 .content-node h3 a:active::before {
 	box-shadow: none;
-}
+} */
 .content-node h3 a[target='_blank']::after {
 	position: absolute;
 	top: -2px;
