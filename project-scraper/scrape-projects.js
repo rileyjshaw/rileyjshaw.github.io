@@ -28,23 +28,30 @@ const idify = uid => uid.toUpperCase().replace(/-/g, '_');
 const excerptify = body => {
 	if (!body) return {};
 
-	const {els: excerpt, charCount, more} = Array.from(
-		JSDOM.fragment(body).children
-	)
-		// Strip unwanted elements.
-		.filter(el => !['IMG'].includes(el.nodeName))
+	function processNode(node) {
+		if (['IMG'].includes(node.nodeName) || node.textContent.length === 0) {
+			node.remove();
+		}
+
+		Array.from(node.children).forEach(processNode);
+		return node;
+	}
+	const processed = Array.from(
+		processNode(JSDOM.fragment(body)).children
+	).reduce(
 		// Limit the excerpt to 700 characters.
-		.reduce(
-			({charCount, els}, el) => {
-				if (charCount > 700) return {charCount, els, more: true};
-				return {
-					charCount: charCount + el.textContent.length,
-					els: [...els, el],
-					more: false,
-				};
-			},
-			{charCount: 0, els: [], more: false}
-		);
+		({charCount, els}, el) => {
+			if (charCount > 700) return {charCount, els, more: true};
+			return {
+				charCount: charCount + el.textContent.length,
+				els: [...els, el],
+				more: false,
+			};
+		},
+		{charCount: 0, els: [], more: false}
+	);
+	const {els: excerpt, more} = processed;
+	let {charCount} = processed;
 
 	// Never end on a header.
 	while (excerpt[excerpt.length - 1]?.nodeName.startsWith('H')) {
@@ -206,6 +213,7 @@ function getSFPCTumblr() {
 									contentType: post.type,
 									title: post.title || post.summary,
 									body: post.body,
+									...excerptify(post.body),
 								};
 								if (textIndex !== -1)
 									formatted[textIndex] = textResult;
