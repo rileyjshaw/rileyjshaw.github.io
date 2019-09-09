@@ -1,52 +1,44 @@
 .page-header {
-	height: 60px;
-	display: flex;
 	align-items: stretch;
+	display: flex;
+	font-weight: bold;
+	height: 60px;
 	justify-content: space-between;
 	text-transform: uppercase;
-	font-weight: bold;
 }
-
 .page-header .site-nav,
 .page-header ul {
 	height: 100%;
 }
-
 .page-header ul {
+	align-items: stretch;
+	display: flex;
+	list-style: none;
 	margin: 0;
 	padding: 0;
-	list-style: none;
-	display: flex;
-	align-items: stretch;
 }
-
 .page-header .home-link {
-	margin: 0;
 	font-size: 18px;
+	margin: 0;
 }
-
 .page-header a {
-	display: flex;
 	align-items: center;
-	height: 100%;
-	text-decoration: none;
 	color: inherit;
+	display: flex;
+	height: 100%;
 	padding: 0 1em;
+	text-decoration: none;
 }
-
 .page-header a.hidden {
 	display: none;
 }
-
 .page-header a:hover {
 	background: var(--red);
 	text-decoration: underline;
 }
-
 .page-header .home-link a {
 	padding-left: 2em;
 }
-
 .page-header li:last-child a {
 	padding-right: 2em;
 }

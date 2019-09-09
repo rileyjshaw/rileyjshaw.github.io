@@ -3,21 +3,18 @@
 	font-size: 18px;
 	font-weight: bold;
 }
-
 .newsletter-form .bottom-row {
-	margin: 12px 0;
-	height: 60px;
 	display: flex;
+	height: 60px;
+	margin: 12px 0;
 }
-
-.newsletter-form input[type='text'] {
+.newsletter-form input[type="text"] {
 	flex-grow: 1;
 	padding: 4px 12px;
 }
-
-.newsletter-form input[type='submit'] {
+.newsletter-form input[type="submit"] {
 	background: var(--black);
-	color: var(--white);
 	border: 0;
+	color: var(--white);
 	cursor: pointer;
 }

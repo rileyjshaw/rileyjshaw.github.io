@@ -1,13 +1,13 @@
 .content-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(60px, max-content));
-	grid-auto-rows: 100px;
-	justify-content: space-around;
 	align-items: stretch;
-	grid-gap: 30px;
+	display: grid;
 	grid-auto-flow: row dense;
+	grid-auto-rows: 100px;
+	grid-gap: 30px;
+	grid-template-columns: repeat(auto-fit, minmax(60px, max-content));
+	justify-content: space-around;
 	list-style: none;
-	width: 100%;
 	margin: 0;
 	padding: 30px;
+	width: 100%;
 }

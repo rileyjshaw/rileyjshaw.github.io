@@ -1,43 +1,33 @@
 .project-explorer {
 	padding: 30px;
 }
-
 .project-explorer .filters {
+	font-family: var(--font-stack-heading);
 	font-weight: 900;
-	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 }
-
-.project-explorer .filters header button {
-	margin: 0 0 0 auto;
-}
-
 .project-explorer .controls {
 	display: grid;
 	grid-template-columns: [legends] auto [inputs] 1fr [cancel] auto;
 }
-
 .project-explorer .filters fieldset {
-	margin: 0;
 	border: 0;
+	margin: 0;
 	padding: 0;
 }
-
 .project-explorer .filters fieldset fieldset {
-	padding: 0;
+	align-items: center;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
 	grid-column: 1/-1;
+	padding: 0;
 }
-
 .project-explorer .filters legend {
-	float: left;
 	color: var(--white);
+	float: left;
 	font-size: 24px;
 	grid-column: legends;
 	line-height: 47px; /* HACK(riley): Matches the button size. */
 }
-
 .project-explorer .filters input {
 	border: 0;
 	clip: rect(0 0 0 0);
@@ -48,35 +38,34 @@
 	position: absolute;
 	width: 1px;
 }
-
 .project-explorer .filters label,
 .project-explorer .filters button {
-	font-size: 16px;
-	cursor: pointer;
+	background: var(--cyan);
 	border: 2px solid var(--black);
 	box-shadow: 3px 3px var(--black);
-	background: var(--cyan);
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
 	margin: 0 0 30px 16px;
 	padding: 10px 20px;
-	display: inline-block;
 }
-
 .project-explorer .filters button {
 	font-family: inherit;
 }
-
+.project-explorer .filters header button {
+	margin: 0 0 0 auto;
+}
 .project-explorer .filters :checked + label,
 .project-explorer .filters button:active {
-	transform: translate(3px, 3px);
-	box-shadow: none;
 	border-color: var(--white);
+	box-shadow: none;
+	transform: translate(3px, 3px);
 	/* box-shadow: 0 0 2px var(--white); */
 }
-
 .project-explorer .result-details {
 	color: var(--white);
+	font-family: var(--font-stack-heading);
 	font-size: 24px;
 	font-weight: 900;
-	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
 	margin: 0 0 30px;
 }

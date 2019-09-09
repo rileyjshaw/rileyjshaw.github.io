@@ -3,78 +3,63 @@
 	margin: 0;
 	padding: 0;
 }
-
 .palette-test-tool .title {
-	padding: 0;
-	margin: 1rem 18px 0;
 	border-bottom: var(--black) 1px solid;
+	margin: 1rem 18px 0;
+	padding: 0;
 }
-
 .palette-test-tool .subtitle {
-	display: block;
 	color: var(--black);
-	margin: 6px 18px 2rem;
+	display: block;
 	font-weight: bold;
+	margin: 6px 18px 2rem;
 	text-decoration: none;
 }
-
-.palette-tests {
-}
-
-.palette-test {
-}
-
 .list-name {
-	position: sticky;
-	top: 0rem;
-	display: inline-flex;
 	align-items: center;
-	height: 2rem;
-	padding: 0 0.2rem;
-	transform: translate(0, 1rem);
-	margin: 0 18px;
-	bottom: 18px;
-	z-index: 1;
 	background: var(--white);
+	bottom: 18px;
+	display: inline-flex;
+	height: 2rem;
+	margin: 0 18px;
+	padding: 0 0.2rem;
+	position: sticky;
+	top: 0;
+	transform: translate(0, 1rem);
+	z-index: 1;
 }
-
 .color-list {
-	position: relative;
+	display: flex;
 	height: 100vh;
+	position: relative;
 	width: 100vw;
-	display: flex;
 }
-
 .color-item {
-	flex-grow: 1;
-	display: flex;
-	justify-content: center;
 	align-items: center;
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
 	position: relative;
 }
-
 .color-item input {
 	background: none;
 	border: 0;
-	text-align: center;
-	font-weight: bold;
-	font-size: 42px;
 	display: inline-block;
+	font-size: 42px;
+	font-weight: bold;
 	max-width: 12vw;
+	text-align: center;
 }
-
 .color-item svg {
-	position: absolute;
-	top: 0;
-	right: 0;
 	bottom: 0;
 	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
-
 .multiply-test svg {
 	mix-blend-mode: multiply;
 }
-
 .screen-test svg {
 	mix-blend-mode: screen;
 }

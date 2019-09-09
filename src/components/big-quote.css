@@ -1,51 +1,44 @@
 .big-quote {
-	position: relative;
-	color: var(--white);
+	align-items: center;
 	background: var(--black);
-	margin: 0;
-	min-height: 100vh;
-	font-size: 30px;
+	color: var(--white);
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	font-family: var(--font-stack-serif);
+	font-size: 30px;
 	justify-content: space-between;
-	font-family: Georgia;
+	margin: 0;
+	min-height: 100vh;
+	position: relative;
 }
-
 .big-quote::before {
-	content: '';
+	content: "";
 	margin-top: 120px;
 }
-
 .big-quote.no-refresh::after {
-	content: '';
+	content: "";
 	margin-bottom: 120px;
 }
-
 .big-quote::before,
 .big-quote::after,
 .big-quote button {
 	height: 60px;
 	width: 60px;
 }
-
 .big-quote blockquote {
-	max-width: 60%;
 	margin: 0 auto;
+	max-width: 60%;
 }
-
 .big-quote p {
 	margin: 0 0 30px;
 }
-
 .big-quote footer {
 	text-align: right;
 }
-
 .big-quote button {
-	border: 0;
-	fill: var(--white);
 	background: none;
+	border: 0;
 	cursor: pointer;
+	fill: var(--white);
 	margin-bottom: 120px;
 }

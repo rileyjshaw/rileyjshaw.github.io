@@ -3,80 +3,65 @@
 	--logo-padding: 20px;
 	--stroke-width: 10px;
 }
-
 .homepage-top,
 .selected-works {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+	grid-auto-flow: row dense;
 	/* align-content:	 space-evenly; */
 	grid-gap: 30px;
-	grid-auto-flow: row dense;
+	grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
 }
-
 .selected-works-container {
+	grid-column: 5 / -1;
 	padding-bottom: 60px;
 }
-
 .todo-maybe-header-element {
-	margin-top: -20px;
-	position: sticky;
-	z-index: 1;
-	grid-column: 1 / span 4;
-	grid-row-start: 1;
-	top: 0;
-	bottom: 0;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	overflow: visible;
-	max-width: 100%;
 	background: var(--white);
 	border: 16px solid var(--black);
 	border-left: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	grid-column: 1 / span 4;
+	grid-row-start: 1;
+	height: 100vh;
+	margin-top: -20px;
+	max-width: 100%;
+	overflow: visible;
+	position: sticky;
+	top: 0;
+	z-index: 1;
 }
-
 .todo-maybe-header-element > * {
 	padding: 0 12px;
 }
-
 .todo-maybe-header-element a {
 	color: var(--black);
 }
-
 .todo-maybe-header-element .newsletter-form {
 	margin-top: auto;
 }
-
-.todo-maybe-header-element .newsletter-form input[type='text'] {
+.todo-maybe-header-element .newsletter-form input[type="text"] {
 	width: 0;
 }
-
 .todo-maybe-header-element .newsletter-form label {
-	font-family: Georgia, Palatino, ” Palatino Linotype”, Times,
-		“Times New Roman”, serif;
+	font-family: var(--font-stack-serif);
 }
-
-.selected-works-container {
-	grid-column: 5 / -1;
-}
-
 /* TODO(riley): This should share styles with explore grid. */
 .selected-works {
+	list-style: none;
 	margin: 0;
 	padding: 0;
-	list-style: none;
 }
-
 .selected-works-container h2 {
+	animation: tilt 60s ease-in-out infinite alternate;
+	background: var(--cyan);
 	border: 2px solid var(--black);
 	box-shadow: 3px 3px var(--black);
-	background: var(--cyan);
+	display: inline-block;
 	margin: 30px 0;
 	padding: 10px 20px;
-	display: inline-block;
-	animation: tilt 60s ease-in-out infinite alternate;
 }
-
 .selected-works-container h2:nth-of-type(even) {
 	animation-direction: alternate-reverse;
 }
@@ -89,98 +74,83 @@
 		transform: rotate(5deg);
 	}
 }
-
 .content-grid {
 	margin-top: -30px;
 	padding-left: 0;
 }
-
 .selected-works li {
-	height: 200px;
 	grid-column: span 3;
+	height: 200px;
 }
-
 .title > * {
+	max-height: 100%;
 	mix-blend-mode: multiply;
 	overflow: visible;
-	max-height: 100%;
 }
-
 .title text {
 	fill: currentcolor;
 }
-
 .title .c,
 .title .m,
 .title .y {
-	will-change: left, top;
 	display: flex;
 	flex-direction: column;
+	will-change: left, top;
 }
-
 .title .c {
-	position: relative;
 	color: var(--cyan);
 	left: -14px;
+	position: relative;
 }
-
 .title .m,
 .title .y {
+	left: 0;
 	position: absolute;
 	top: 0;
-	left: 0;
 }
-
 .title .m {
 	color: var(--magenta);
-	top: 4px;
 	left: 4px;
+	top: 4px;
 }
-
 .title .y {
 	color: var(--yellow);
+	left: 0;
 	top: -8px;
-	left: 0px;
 }
-
 .title {
-	position: relative;
-	width: 80%;
-	margin: 0 auto;
+	color: var(--black);
 	flex-shrink: 0;
-	padding: 0 0 30px;
-	line-height: 0;
+	font-family: var(--font-stack-heading);
 	font-size: 120px;
+	font-weight: 900;
+	line-height: 0;
+	margin: 0 auto;
 	overflow: visible;
+	padding: 0 0 30px;
+	position: relative;
 	text-align: right;
 	text-transform: uppercase;
-	color: var(--black);
-	font-weight: 900;
-	font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+	width: 80%;
 }
-
 .title .title-riley {
 	margin-top: -20px;
 }
-
 .title .title-j {
 	font-size: 240px;
 	margin: 0.04em 0 0.4em;
 	transform: rotate(90deg);
 }
-
 .title-rileyjshaw {
 	margin-top: -10px;
 }
-
 .about-stub {
-	width: 100%;
 	font-size: 18px;
-	line-height: 1.3;
 	font-weight: bold;
+	line-height: 1.3;
 	text-align: justify;
+	width: 100%;
 }
-
 .about-stub .md-wrapper,
 .about-stub p {
 	display: inline;
@@ -188,16 +158,16 @@
 
 @media only screen and (max-width: 800px) {
 	.todo-maybe-header-element {
-		position: static;
-		height: auto;
-		padding-bottom: 30px;
 		border-width: 0 0 16px 0;
+		height: auto;
 		margin-top: 0;
+		padding-bottom: 30px;
+		position: static;
 	}
 	.newsletter-form {
+		margin: auto auto 0;
 		padding-top: 60px;
 		width: 80%;
-		margin: auto auto 0;
 	}
 	.newsletter-form .bottom-row {
 		margin-bottom: 0;
@@ -206,18 +176,15 @@
 	.selected-works-container {
 		grid-column: 1 / -1;
 	}
-
 	.selected-works-container {
 		padding-left: 30px;
 	}
-
 	.title {
 		margin-top: 30px;
 	}
-
 	.about-stub {
-		width: 80%;
 		margin: 0 auto;
+		width: 80%;
 	}
 }
 

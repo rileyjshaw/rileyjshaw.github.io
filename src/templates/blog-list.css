@@ -1,67 +1,58 @@
 .blog-list {
 	padding: 30px;
 }
-
 .blog-list .blog-posts {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-
 .blog-list .blog-post {
-	position: relative;
-	padding: 16px 12px;
+	background: var(--white);
 	border: 2px solid var(--black);
 	box-shadow: 3px 3px var(--black);
-	background: var(--white);
 	margin-bottom: 30px;
+	padding: 16px 12px;
+	position: relative;
 }
-
 .blog-list article {
 	position: relative;
 }
-
 .blog-list article.excerpt::after {
-	content: '';
-	display: block;
-	width: 100%;
-	height: 90px;
 	background: linear-gradient(transparent, var(--white));
-	position: absolute;
 	bottom: 0;
+	content: "";
+	display: block;
+	height: 90px;
+	position: absolute;
+	width: 100%;
 }
-
 /* TODO(riley): Transfer all styles in a better way. Currently unused: */
 .blog-list .blog-post.external::before {
-	position: absolute;
-	top: -2px;
-	right: -2px;
-	height: 24px;
-	width: 24px;
+	align-items: center;
 	background: var(--white);
 	border: 2px solid var(--black);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 24px;
 	color: var(--black);
+	display: flex;
+	font-size: 24px;
+	height: 24px;
+	justify-content: center;
+	position: absolute;
+	right: -2px;
+	top: -2px;
+	width: 24px;
 }
-
 .blog-list .page-navigation {
 	display: flex;
 	justify-content: center;
 	padding: 1.5em 0;
 }
-
 .blog-list .page-navigation a {
-	font-size: 16px;
-	margin: 0 0.5em;
-	font-family: 'Arial';
-	font-weight: bold;
 	color: var(--blue);
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0 0.5em;
 	text-decoration: none;
 }
-
 .blog-list .page-navigation .current-page {
 	color: var(--yellow);
 }
