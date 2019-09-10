@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link, useStaticQuery, graphql} from 'gatsby';
 
-import {colors} from '../util/constants';
 import {useWindowSize} from '../util/hooks';
 import allProjectsQuery from '../util/all-projects-query';
 import SEO from '../components/seo';
@@ -12,7 +11,6 @@ import CycleText from '../components/cycle-text';
 import Layout from '../components/layout';
 import ContentGrid from '../components/content-grid';
 import GoUp from '../components/go-up';
-import {ExternalLink} from '../components/auto-link';
 import BigQuote from '../components/big-quote';
 import PagePicker, {pages} from '../components/page-picker';
 
@@ -33,7 +31,7 @@ const IndexPage = ({starredProjects = []}) => {
 	const [windowWidth] = useWindowSize();
 
 	return (
-		<Layout root={true} noHeader={true}>
+		<Layout root>
 			<SEO title="Home" />
 			<main>
 				<div

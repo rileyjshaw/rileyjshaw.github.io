@@ -11,7 +11,7 @@ import GoUp from '../components/go-up';
 import './about.css';
 
 export default () => (
-	<Layout className="about" noHeader>
+	<Layout className="about">
 		<SEO title="About" />
 		<StaticQuery
 			query={graphql`

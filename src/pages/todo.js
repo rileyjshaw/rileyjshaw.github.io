@@ -117,7 +117,12 @@ export default () => (
 				https://www.gatsbyjs.org/packages/gatsby-image/
 			</li>
 			<li>Lazy-loading</li>
-			<li>Blog excerpts for each type</li>
+			<li>
+				<strike>Blog excerpts for each type</strike>
+			</li>
+			<li>
+				<strike>RSS feeds</strike>
+			</li>
 			<li>Consolidate shared styles (eg. node component)</li>
 			<li>Markdown styles for blog + about page</li>
 		</ul>

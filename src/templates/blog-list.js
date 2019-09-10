@@ -40,7 +40,7 @@ export default ({data, pageContext: {currentPage, numPages}}) => {
 		));
 
 	return (
-		<Layout noHeader>
+		<Layout>
 			<SEO title="All posts" />
 			<div className="blog-list" style={{background: pages.blog.color}}>
 				<PagePicker page="blog" />
