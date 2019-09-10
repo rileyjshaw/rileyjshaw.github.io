@@ -47,15 +47,13 @@ export default ({data, pageContext: {currentPage, numPages}}) => {
 
 				<ul className="blog-posts">
 					{posts.map(post => {
-						const uid = post.uid || post.fields?.slug;
+						const uid = post.uid || post.fields?.uid;
 						const title =
 							post.title ||
 							post.frontmatter?.title ||
 							post.fields?.slug;
 						const link = post.link || post.fields?.slug;
 						const date = post.date || post.fields?.date;
-						const description =
-							post.description || post.excerpt || post.body;
 
 						return (
 							<li className="blog-post" key={uid}>
@@ -71,7 +69,7 @@ export default ({data, pageContext: {currentPage, numPages}}) => {
 									<section>
 										<div
 											dangerouslySetInnerHTML={{
-												__html: description,
+												__html: post.description,
 											}}
 										/>
 									</section>
@@ -99,7 +97,6 @@ export default ({data, pageContext: {currentPage, numPages}}) => {
 };
 
 // TODO(riley): Standardize this format.
-// TODO(riley): Figure out proper excerpts for here and the /explore page.
 export const blogListQuery = graphql`
 	query blogListQuery(
 		$internalLimit: Int!
@@ -115,13 +112,15 @@ export const blogListQuery = graphql`
 		) {
 			edges {
 				node {
-					excerpt
+					description
+					more
 					frontmatter {
 						layout
 						topTitle
 						tags
 					}
 					fields {
+						uid
 						slug
 						title
 						date(formatString: "YYYY-MM-DD")

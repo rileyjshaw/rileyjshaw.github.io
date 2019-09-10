@@ -291,3 +291,9 @@ function getAll() {
 	});
 }
 getAll();
+
+module.exports = {
+	idify,
+	excerptify,
+	getAll,
+};

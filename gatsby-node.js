@@ -1,5 +1,7 @@
+require(`@babel/register`);
 const path = require('path');
 const {createFilePath} = require('gatsby-source-filesystem');
+const {idify, excerptify} = require('./project-scraper/scrape-projects');
 
 exports.createPages = async ({actions, graphql, reporter}) => {
 	const {createPage} = actions;
@@ -122,5 +124,48 @@ exports.onCreateNode = ({node, getNode, actions}) => {
 		// Save the date and title for later use.
 		createNodeField({node, name: 'title', value: title});
 		createNodeField({node, name: 'date', value: date});
+
+		const uid = idify(`POST_${slug}`);
+		createNodeField({node, name: 'uid', value: uid});
 	}
 };
+
+// TODO(riley): Consider making a strict typedef for projects, eg:
+// exports.createSchemaCustomization = ({actions}) => {
+// 	const {createTypes} = actions;
+// 	const typeDefs = `
+// 		type ScrapedProjectsFormattedJson implements Node @dontInfer {
+// 			title: String!
+// 			date: Date!
+// 			...
+// 		}
+// 	`;
+// 	createTypes(typeDefs);
+// };
+
+exports.createResolvers = ({createResolvers}) =>
+	createResolvers({
+		// HACK(riley): Currently, excerptify is called twice for each node.
+		MarkdownRemark: {
+			description: {
+				type: 'String',
+				resolve: async (source, args, _, info) => {
+					const resolver = info.schema
+						.getType('MarkdownRemark')
+						.getFields().html.resolve;
+					const html = await resolver(source, args);
+					return excerptify(html).description;
+				},
+			},
+			more: {
+				type: 'Boolean',
+				resolve: async (source, args, _, info) => {
+					const resolver = info.schema
+						.getType('MarkdownRemark')
+						.getFields().html.resolve;
+					const html = await resolver(source, args);
+					return excerptify(html).more;
+				},
+			},
+		},
+	});
