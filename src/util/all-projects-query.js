@@ -1,13 +1,31 @@
-import {useStaticQuery} from 'gatsby';
+import {useStaticQuery, graphql} from 'gatsby';
 
 import formatProps from './format-props';
 
-export default () => {
-	const {
-		allMarkdownRemark: {edges: posts},
-		allProjectsJson: {nodes: projects},
-		allScrapedProjectsFormattedJson: {nodes: scraped},
-	} = useStaticQuery(graphql`
+export function format({
+	allMarkdownRemark: {edges: posts} = {edges: []},
+	allProjectsJson: {nodes: projects} = {nodes: []},
+	allScrapedProjectsFormattedJson: {nodes: scraped} = {nodes: []},
+}) {
+	return [
+		...posts.map(p => ({
+			...p,
+			type: 'post',
+		})),
+		...projects
+			.filter(({todo}) => !todo)
+			.map((p, i) => ({
+				...p,
+				type: 'project',
+				uid: `PROJECT_${p.title.toUpperCase().replace(/[- ]/g, '_')}`,
+			})),
+		...scraped,
+	].map(formatProps);
+}
+
+export default () =>
+	format(
+		useStaticQuery(graphql`
 		{
 			allMarkdownRemark(
 				filter: {fileAbsolutePath: {regex: "/\/posts\/.*\\.md$/"}}
@@ -58,20 +76,5 @@ export default () => {
 				}
 			}
 		}
-	`);
-
-	return [
-		...posts.map(p => ({
-			...p,
-			type: 'post',
-		})),
-		...projects
-			.filter(({todo}) => !todo)
-			.map((p, i) => ({
-				...p,
-				type: 'project',
-				uid: `PROJECT_${p.title.toUpperCase().replace(/[- ]/g, '_')}`,
-			})),
-		...scraped,
-	].map(formatProps);
-};
+	`)
+	);

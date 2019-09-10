@@ -125,7 +125,7 @@ exports.onCreateNode = ({node, getNode, actions}) => {
 		createNodeField({node, name: 'title', value: title});
 		createNodeField({node, name: 'date', value: date});
 
-		const uid = idify(`POST_${slug}`);
+		const uid = idify(`POST_${slug.toUpperCase().replace(/-/g, '_')}`);
 		createNodeField({node, name: 'uid', value: uid});
 	}
 };

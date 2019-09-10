@@ -3,7 +3,7 @@ const formatters = {
 		return {...data, link: href};
 	},
 	post: function formatPost(data) {
-		// Move all `fields` properties to the top level.
+		// Move all `fields` properties to the top level and sort tags.
 		const {
 			fields: {slug, ...fields},
 			frontmatter,
@@ -18,10 +18,6 @@ const formatters = {
 			},
 			type: 'post',
 			link: slug,
-			uid: `POST_${slug
-				.slice(6)
-				.toUpperCase()
-				.replace(/-/g, '_')}`,
 			tags: ['instructional'],
 		};
 	},
