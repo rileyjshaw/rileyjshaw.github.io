@@ -48,10 +48,7 @@ export default ({data, pageContext: {currentPage, numPages}}) => {
 				<ul className="blog-posts">
 					{posts.map(post => {
 						const uid = post.uid || post.fields?.uid;
-						const title =
-							post.title ||
-							post.frontmatter?.title ||
-							post.fields?.slug;
+						const title = post.title || post.fields?.title;
 						const link = post.link || post.fields?.slug;
 						const date = post.date || post.fields?.date;
 
