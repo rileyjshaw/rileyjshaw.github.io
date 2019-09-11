@@ -126,14 +126,14 @@
 	position: relative;
 	text-align: right;
 	text-transform: uppercase;
-	width: 80%;
+	width: 90%;
 }
 .title .title-riley {
 	margin-top: -20px;
 }
 .title .title-j {
 	font-size: 240px;
-	margin: 0.04em 0 0.4em;
+	margin: -0.1em 0 0.48em;
 	transform: rotate(90deg);
 }
 .title-rileyjshaw {

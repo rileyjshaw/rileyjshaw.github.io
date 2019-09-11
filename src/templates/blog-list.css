@@ -49,12 +49,11 @@
 }
 .blog-list .page-navigation {
 	display: flex;
+	font-size: var(--font-scale-2);
 	justify-content: center;
 	padding: 1.5em 0;
 }
 .blog-list .page-navigation a {
-	color: var(--blue);
-	font-size: 16px;
 	font-weight: bold;
 	margin: 0 0.5em;
 	text-decoration: none;
