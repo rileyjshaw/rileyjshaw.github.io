@@ -58,8 +58,27 @@ const excerptify = body => {
 		charCount -= excerpt.pop().textContent.length;
 	}
 
+	// There should never be a H1 in the excerpt. If there is, demote all
+	// headings.
+	let description;
+	if (excerpt.some(el => el.nodeName === 'H1')) {
+		description = excerpt
+			.map(el => {
+				if (!el.nodeName.startsWith('H')) return el.outerHTML;
+
+				// Increment heading numbers. Eg, <H1> => <H2>.
+				return el.outerHTML.replace(
+					/<(\/?)H([1-5])>/gi,
+					(_, slash, n) => `<${slash}h${parseInt(n) + 1}>`
+				);
+			})
+			.join('');
+	} else {
+		description = excerpt.map(el => el.outerHTML).join('');
+	}
+
 	// TODO(riley): Use charCount to slice the textContent of the final node?
-	return {description: excerpt.map(el => el.outerHTML).join(''), more};
+	return {description, more};
 };
 async function getDweets() {
 	let url = 'https://www.dwitter.net/api/dweets/?author=rileyjshaw';
