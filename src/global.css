@@ -11,6 +11,17 @@
 	--font-stack-serif: Georgia, Palatino, "Palatino Linotype", Times,
 		"Times New Roman", serif;
 	--font-stack-heading: "Arial Black", "Arial Bold", Gadget, sans-serif;
+	--font-scale--3: 0.512em;
+	--font-scale--2: 0.64em;
+	--font-scale--1: 0.8em;
+	--font-scale-0: 1em;
+	--font-scale-1: 1.25em;
+	--font-scale-2: 1.563em;
+	--font-scale-3: 1.953em;
+	--font-scale-4: 2.441em;
+	--font-scale-5: 3.052em;
+
+	font: 18px var(--font-stack-sans);
 }
 *,
 *::before,
@@ -20,7 +31,6 @@
 body {
 	border: 16px solid var(--black);
 	color: var(--black);
-	font-family: var(--font-stack-sans);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	margin: 0;
@@ -35,6 +45,29 @@ a[target="_blank"] {
 a[target="_blank"]::after {
 	content: "➚";
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: var(--font-stack-heading);
+	line-height: 1.15;
+	margin: 2.75rem 0 1rem;
+}
+h1 {
+	font-size: var(--font-scale-4);
+}
+h2 {
+	font-size: var(--font-scale-2);
+}
+h3,
+h4 {
+	font-size: var(--font-scale-1);
+}
 p {
 	font-family: var(--font-stack-serif);
+	margin-bottom: var(--font-scale-1);
+}
+ul {
+	list-style: disc;
 }

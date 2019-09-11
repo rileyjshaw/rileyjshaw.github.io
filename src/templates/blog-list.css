@@ -10,9 +10,13 @@
 	background: var(--white);
 	border: 2px solid var(--black);
 	box-shadow: 3px 3px var(--black);
+	font-size: var(--font-scale-0);
 	margin-bottom: 30px;
 	padding: 16px 12px;
 	position: relative;
+}
+.blog-list h1 {
+	margin-top: 0;
 }
 .blog-list article {
 	position: relative;
@@ -23,9 +27,10 @@
 	content: "";
 	display: block;
 	height: 90px;
+	left: 0;
 	pointer-events: none;
 	position: absolute;
-	width: 100%;
+	right: 0;
 }
 /* TODO(riley): Transfer all styles in a better way. Currently unused: */
 .blog-list .blog-post.external::before {

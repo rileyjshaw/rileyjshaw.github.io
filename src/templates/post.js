@@ -1,22 +1,38 @@
 import React from 'react';
-import {graphql} from 'gatsby';
+import {Link, graphql} from 'gatsby';
 
+import SEO from '../components/seo';
 import Layout from '../components/layout';
+
+import './post.css';
 
 export default function Template({data}) {
 	const {markdownRemark} = data;
 	const {fields, html} = markdownRemark;
 	return (
-		<Layout>
-			<div className="blog-post-container">
-				<div className="blog-post">
-					<h1>{fields.title}</h1>
-					<h2>{fields.date}</h2>
-					<div
-						className="blog-post-content"
-						dangerouslySetInnerHTML={{__html: html}}
-					/>
-				</div>
+		<Layout root>
+			<div className="blog-post-page">
+				<SEO title={fields.title} />
+				<header className="top-nav" role="banner">
+					<nav role="navigation">
+						<h1>
+							<Link to="/">Riley Shaw</Link>
+						</h1>{' '}
+						/ <Link to="/blog">Blog</Link> / {fields.title}
+					</nav>
+				</header>
+				<main>
+					<article className="blog-post-content" role="article">
+						<header>
+							<h1>{fields.title}</h1>
+							<time>Posted {fields.date}</time>
+						</header>
+						<div
+							className="blog-post-markdown"
+							dangerouslySetInnerHTML={{__html: html}}
+						/>
+					</article>
+				</main>
 			</div>
 		</Layout>
 	);

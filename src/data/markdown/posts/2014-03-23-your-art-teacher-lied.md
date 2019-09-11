@@ -35,10 +35,10 @@ When we perceive a chair as red it's because the chair is absorbing all waveleng
 
 <figure>
   <img src="/images/red-chair.svg" width="80px" alt="Red chair">
-  <figcaption>This chair looks red because it only reflects red light<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></figcaption>
+  <figcaption>This chair looks red because it only reflects red light<sup id="fnref:1"><a href="#fn:1" class="footnote-ref">1</a></sup></figcaption>
 </figure>
 
-<span style="display:none">Dummy footnote generator[^1]</span>
+<span style="display:none">Stand-in footnote generator[^1]</span>
 
 Just as RGB produces a great gamut for light sources, **C**yan **M**agenta and **Y**ellow are great for printed materials. Adding the three together forms black since no light will be reflected from the mixture; that's why we call this a _subtractive_ color model. Since ink is expensive and making black from scratch wastes a lot of ink, printers usually include separate black ink as well, which is where the **K** in CMYK comes from[^2].
 
@@ -57,7 +57,7 @@ Your art teacher, though... they lied to you for _no good reason!_ There are onl
 
 -   Teachers are concerned that their students won't grasp fancy color names like _magenta_ and _cyan_, and thus stick with the monosyllabic _red_ and _blue_.
 -   Teachers are trying to provide historical context from before scientific color theory so that students can better understand classical palettes. In reality, it was very uncommon for painters to mix their colors from the primaries, starting instead with a focused palette and more than three base colors.
--   Though I'm still on a hunt for conclusive studies, [color-blindness could be a consideration](#added20140324).
+-   Though I'm still on a hunt for conclusive studies, [color-blindness could be a consideration](#2014-03-24).
 
 <figure>
   <img src="/images/named-color-wheel.svg" width="360px" alt="RGB / CMY color wheel">
@@ -71,7 +71,7 @@ Art teachers are propagating a millenium-old lie that sounds like it could be th
 
 ## Addendums
 
-### 2014-03-24 {#added20140324}
+### 2014-03-24
 
 Fellow hacker-schooler [Alex Clemmer](http://www.nullspace.io/) made a great point that since red-green color-blindness is more common than blue-yellow color-blindness, the RYB space may be more accessible. Though most people with RG color-blindness can still differentiate between cyan and magenta, I'm going to try to scape up some comparative accessibility studies.
 

@@ -6,6 +6,7 @@ import SEO from '../components/seo';
 import PagePicker, {pages} from '../components/page-picker';
 import AutoLink from '../components/auto-link';
 
+import './post.css';
 import './blog-list.css';
 
 const urlFrom = page => `/blog${page === 1 ? '' : `/${page}`}`;
@@ -54,14 +55,20 @@ export default ({data, pageContext: {currentPage, numPages}}) => {
 
 						return (
 							<li className="blog-post" key={uid}>
-								<article className={post.more && 'excerpt'}>
+								<article
+									className={`blog-post-content${
+										post.more ? ' excerpt' : ''
+									}`}
+								>
 									<header>
-										<h3>
+										<h1>
 											<AutoLink to={link}>
 												{title}
 											</AutoLink>
-										</h3>
-										<small>{date}</small>
+										</h1>
+										<time dateTime={date}>
+											{date.replace(/-/g, '.')}
+										</time>
 									</header>
 									<section>
 										<div
