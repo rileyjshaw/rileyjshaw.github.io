@@ -1,8 +1,5 @@
 'use strict';
 
-// USAGE: (from project's root directory)
-// npx babel-node project-scraper/scrape-projects.js && npm run format
-
 require('dotenv').config();
 
 const util = require('util');
@@ -309,7 +306,6 @@ function getAll() {
 		console.log('Done.');
 	});
 }
-getAll();
 
 module.exports = {
 	idify,

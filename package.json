@@ -63,8 +63,9 @@
     "deploy": "npm run format && gatsby build && gh-pages -d public",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\" && stylelint \"src/**/*.css\" --fix",
+	"scrape": "npx babel-node project-scraper/run-scraper.js && npm run format",
+	"serve": "gatsby serve",
     "start": "npm run develop",
-    "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {

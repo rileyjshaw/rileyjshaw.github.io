@@ -1,7 +1,7 @@
 require(`@babel/register`);
 const path = require('path');
 const {createFilePath} = require('gatsby-source-filesystem');
-const {idify, excerptify} = require('./project-scraper/scrape-projects');
+const {idify, excerptify} = require('./project-scraper/scraper-utils');
 
 exports.createPages = async ({actions, graphql, reporter}) => {
 	const {createPage} = actions;
