@@ -124,7 +124,7 @@ draw(kaprekar, 1000, 1000);
 results in a plot of total cycle depth for the Kaprekar Routine for the range [0, 1M). Each pixel represents an integer, with 0 in the top left corner and 999999 in the bottom right. Dark pixels represent a high depth at that number; the max depth for this range is shockingly low at 19.
 
 <figure>
-  <img src="/images/kaprekar.png" alt="Total cycle depth for the Kaprekar Routine in the range [0, 1M)">
+  <img src="../../../../content/images/blog/kaprekar.png" alt="Total cycle depth for the Kaprekar Routine in the range [0, 1M)">
   <figcaption>Kaprekar Routine Depths: [0, 1M). <a href="http://codepen.io/rileyjshaw/pen/hipBu">View code</a></figcaption>
 </figure>
 
@@ -137,7 +137,7 @@ Since numbers with fewer digits reach their stopping condition sooner, a light b
 Mathmetician Stanislaw Ulam made an interesting discovery while doodling during the presentation of a &ldquo;long and very boring paper&rdquo;. He started by writing the natural numbers in a rectangular spiral with 1 in the center:
 
 <figure>
-  <img src="/images/ulam-howto-1.svg" alt="Ulam Spiral">
+  <img src="../../../../content/images/blog/ulam-howto-1.svg" alt="Ulam Spiral">
   <figcaption>Ulam Spiral: [1, 50)</figcaption>
 </figure>
 
@@ -177,7 +177,7 @@ function drawUlam(maxVal, fn) {
 By replacing the drawing function in our Kaprekar depth example with <code class="language-javascript">drawUlam()</code> we get the following graph for the range [0, 998k):
 
 <figure>
-	<img src="/images/kaprekar-ulam.png" alt="Total cycle depth for the Kaprekar Routine in the range [0, 998k) drawn in an Ulam Spiral">
+	<img src="../../../../content/images/blog/kaprekar-ulam.png" alt="Total cycle depth for the Kaprekar Routine in the range [0, 998k) drawn in an Ulam Spiral">
 	<figcaption>Ulam Spiral of Kaprekar Routine depths: [0, 998k). <a href="http://codepen.io/rileyjshaw/pen/gixuE">View code</a></figcaption>
 </figure>
 
@@ -266,7 +266,7 @@ var collatz = (function() {
 Replacing the <code class="language-javascript">kaprekar()</code> function in our first example with <code class="language-javascript">collatz()</code> yields the following graph:
 
 <figure>
-	<img src="/images/collatz.png" alt="Total cycle depth for the Collatz Conjecture in the range (0, 1M]">
+	<img src="../../../../content/images/blog/collatz.png" alt="Total cycle depth for the Collatz Conjecture in the range (0, 1M]">
 	<figcaption>Collatz Conjecture depths: (0, 1M]. <a href="http://codepen.io/rileyjshaw/pen/hayod">View code</a></figcaption>
 </figure>
 
@@ -275,7 +275,7 @@ The banding that's observed is interesting; it looks almost like cloth grain. Th
 Using the <code class="language-javascript">ulam()</code> drawing function, we get:
 
 <figure>
-	<img src="/images/collatz-ulam.png" alt="Total cycle depth for the Collatz Conjecture in the range (0, 998k] drawn in an Ulam Spiral">
+	<img src="../../../../content/images/blog/collatz-ulam.png" alt="Total cycle depth for the Collatz Conjecture in the range (0, 998k] drawn in an Ulam Spiral">
 	<figcaption>Ulam Spiral of Collatz Conjecture depths: (0, 998k]. <a href="http://codepen.io/rileyjshaw/pen/fihEm">View code</a></figcaption>
 </figure>
 
@@ -298,14 +298,14 @@ Have fun!
     <div>The Ulam Spiral story doesn't end with a different drawing function. The presentation that he was sitting in on must have been really boring, because Ulam started circling prime numbers on his spiral:
 
     <figure>
-      <img src="/images/ulam-howto-2.svg" alt="Ulam Spiral with prime numbers shown">
+      <img src="../../../../content/images/blog/ulam-howto-2.svg" alt="Ulam Spiral with prime numbers shown">
       <figcaption>Ulam Spiral with prime numbers shown: [1, 50)</figcaption>
     </figure>
 
     He noticed that the primes tended to line up along certain diagonal lines more than others. This isn't evident in the small grid above, but we can repurpose our old code to generate a larger grid. If we replace the <code class="language-javascript">kaprekar()</code> function with a function that only returns a color if the number is prime, we can visualize Ulam's diagonal primes:
 
     <figure>
-      <img src="/images/ulam.png" alt="Prime numbers in the range [0, 1M) drawn in an Ulam Spiral">
+      <img src="../../../../content/images/blog/ulam.png" alt="Prime numbers in the range [0, 1M) drawn in an Ulam Spiral">
       <figcaption>Ulam Spiral with prime numbers shown: [0, 988k). <a href="http://codepen.io/rileyjshaw/pen/gaHhn">View code</a></figcaption>
     </figure></div>
 

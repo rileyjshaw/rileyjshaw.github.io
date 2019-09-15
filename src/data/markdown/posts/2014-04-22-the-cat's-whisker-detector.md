@@ -24,7 +24,7 @@ In 1874, German physicist Ferdinand Braun created a diode out of a metal point a
 In 1901, Jagadis Chandra Bose patented the use of a crystal rectifier for detecting radio waves. At about the same time, G.W. Pickard started documenting crystal rectification properties. He filed his own patent in 1906 for a thin wire pressed against [a crystal](http://en.wikipedia.org/wiki/Galena). Sound familiar? Pickard branded it as the “cat’s-whisker detector”[^2], creating the first commercially available semiconductor device. It recovered information from modulated telegraphy radio waves. Later, during World War I it gained popularity as an AM audio signal demodulator.
 
 <figure>
-  <img src="/images/cats-whisker-1.jpg" alt="Precision Cat's Whisker Detector" width="445">
+  <img src="../../../../content/images/blog/cats-whisker-1.jpg" alt="Precision Cat's Whisker Detector" width="445">
   <figcaption>Precision Cat's Whisker Detector</figcaption>
 </figure>
 

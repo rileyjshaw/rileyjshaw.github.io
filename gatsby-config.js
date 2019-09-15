@@ -76,6 +76,7 @@ module.exports = {
 			resolve: `gatsby-transformer-remark`,
 			options: {
 				plugins: [
+					`gatsby-remark-copy-linked-files`,
 					`gatsby-remark-autolink-headers`,
 					{
 						resolve: `gatsby-remark-external-links`,
@@ -85,12 +86,20 @@ module.exports = {
 						},
 					},
 					{
-						resolve: 'gatsby-remark-embed-markdown',
+						resolve: `gatsby-remark-embed-markdown`,
 						options: {
 							directory: `${__dirname}/src/data/markdown/`,
 						},
 					},
 					`gatsby-remark-prismjs`,
+					{
+						resolve: `gatsby-remark-images`,
+						options: {
+							// TODO(riley): Ensure this is always true.
+							maxWidth: 675,
+							backgroundColor: `none`,
+						},
+					},
 				],
 			},
 		},

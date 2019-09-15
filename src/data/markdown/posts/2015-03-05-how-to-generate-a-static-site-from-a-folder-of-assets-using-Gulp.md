@@ -36,7 +36,7 @@ Gulp is a task runner that lets you automate some of the more mundane parts of y
 For the sake of simplicity, we'll base our output's structure on the demos' filenames[^2]. I opted for `chapterNum.demoNum_demoName`[^3], but anything that can be sorted is fine.
 
 <figure>
-  <img src="/images/standardized-filenames.png" alt="Standardized filenames" width="600px">
+  <img src="../../../../content/images/blog/standardized-filenames.png" alt="Standardized filenames" width="600px">
 </figure>
 
 ### Step 2: Read the files into Gulp

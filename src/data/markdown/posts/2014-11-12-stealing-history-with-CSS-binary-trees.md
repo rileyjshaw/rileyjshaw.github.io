@@ -22,17 +22,17 @@ Though <code class="language-javascript">getComputedStyle</code> is a dead-end, 
 
 I saw the demo above while working on an unrelated game. The game asked players to hit the spacebar when a box turned red.
 
-<figure><img src="/images/reaction1.png" width="120px" alt="Interface for a simple reaction game"></figure>
+<figure><img src="../../../../content/images/blog/reaction1.png" width="120px" alt="Interface for a simple reaction game"></figure>
 
 _"Hey"_, I thought to myself, _"this game could be so much more sneaky!"_
 
 I swapped the box out for a stack of links and styled <code class="language-css">:visited</code> to <code class="language-css">background-color:red</code>. It was totally evil and awesome and ready to go!
 
-<figure><img src="/images/reaction2.png" alt="Score displaying with red background" width="120"></figure>
+<figure><img src="../../../../content/images/blog/reaction2.png" alt="Score displaying with red background" width="120"></figure>
 
 ...almost.
 
-<figure><img src="/images/reaction3.png" alt="Score displaying with white background" width="120"></figure>
+<figure><img src="../../../../content/images/blog/reaction3.png" alt="Score displaying with white background" width="120"></figure>
 
 Since I didn't know when the square was red I was _always_ displaying a score, even on misfires. I'd broken the game.
 
@@ -41,7 +41,7 @@ Since I didn't know when the square was red I was _always_ displaying a score, e
 Another popular history-sniffing trick is to hide non-<code class="language-css">:visited</code> links by making them appear the same color as the background. [This paper][i still know what you visited last summer] shows some clever examples, as does [this game][defend your spaceship!]. By simply flipping this technique we can hide score text over the white non-<code class="language-css">:visited</code> links. For extra fanciness, we add a red text layer to indicate failure.
 
 <figure>
-  <img src="/images/reaction4.png" alt="Text blending in with same-colored backgrounds" width="482">
+  <img src="../../../../content/images/blog/reaction4.png" alt="Text blending in with same-colored backgrounds" width="482">
   <figcaption>White and red text are appropriately hidden on their respective backgrounds</figcaption>
 </figure>
 
@@ -91,7 +91,7 @@ color: white
 </code></pre>
 
 <p>See the Pen <a href='http://codepen.io/rileyjshaw/pen/CjiKf/'>n-input OR gate in CSS</a> by Riley Shaw (<a href='http://codepen.io/rileyjshaw'>@rileyjshaw</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-</div><script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</div><script async src="https://assets.codepen.io/assets/embed/ei.js"></script>
 
 An OR gate is "on" if any of its inputs are "on". We can use this to probe n links[^3] at once by stacking them together. Now if a user sees red and hits the spacebar we know that one of the links in the group has been visited.
 
