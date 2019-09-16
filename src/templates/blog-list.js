@@ -29,7 +29,7 @@ export default ({data, pageContext: {currentPage, numPages}}) => {
 	const prevPage = !isFirst && urlFrom(currentPage - 1);
 	const nextPage = !isLast && urlFrom(currentPage + 1);
 	const nearbyPages = Array.from({length: numPages}, (_, i) => i + 1)
-		.splice(Math.min(Math.max(0, currentPage - 4), numPages - 7), 7)
+		.splice(Math.min(Math.max(0, currentPage - 3), numPages - 5), 5)
 		.map(page => (
 			<Link
 				key={page}

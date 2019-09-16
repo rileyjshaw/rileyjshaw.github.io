@@ -24,7 +24,7 @@
 .blog-list article.excerpt::after {
 	background: linear-gradient(transparent, var(--white));
 	bottom: 0;
-	content: "";
+	content: '';
 	display: block;
 	height: 90px;
 	left: 0;
@@ -51,12 +51,14 @@
 	align-items: center;
 	display: flex;
 	font-size: var(--font-scale-2);
-	justify-content: center;
+	justify-content: space-between;
+	margin: auto;
+	max-width: 100%;
 	padding: 1.5em 0;
+	width: 12em;
 }
 .blog-list .page-navigation a {
 	font-weight: bold;
-	margin: 0 0.5em;
 	text-decoration: none;
 }
 .blog-list .page-navigation .current-page {
