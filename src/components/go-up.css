@@ -11,5 +11,11 @@
 .go-up span {
 	color: var(--black);
 	cursor: n-resize;
-	transform: rotate(-90deg);
+	transform: translate(-10%, 0) rotate(-90deg);
+}
+/* TODO(riley): Share these breakpoints. */
+@media only screen and (max-width: 800px) {
+	.go-up {
+		font-size: 300px;
+	}
 }
