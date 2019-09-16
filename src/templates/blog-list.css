@@ -48,6 +48,7 @@
 	width: 24px;
 }
 .blog-list .page-navigation {
+	align-items: center;
 	display: flex;
 	font-size: var(--font-scale-2);
 	justify-content: center;

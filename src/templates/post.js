@@ -29,7 +29,10 @@ export default function Template({data}) {
 						</header>
 						<div
 							className="blog-post-markdown"
-							dangerouslySetInnerHTML={{__html: html}}
+							// HACK(riley): Replace this in a remark plugin.
+							dangerouslySetInnerHTML={{
+								__html: html.replace(/↩/g, '↩&#xFE0E;'),
+							}}
 						/>
 					</article>
 				</main>

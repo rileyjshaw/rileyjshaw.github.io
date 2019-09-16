@@ -85,13 +85,13 @@ export default ({data, pageContext: {currentPage, numPages}}) => {
 				<div className="page-navigation">
 					{!isFirst && (
 						<Link to={prevPage} rel="prev">
-							⬅
+							⬅&#xFE0E;
 						</Link>
 					)}
 					{nearbyPages}
 					{!isLast && (
 						<Link to={nextPage} rel="next">
-							➡
+							➡&#xFE0E;
 						</Link>
 					)}
 				</div>
