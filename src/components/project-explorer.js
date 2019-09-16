@@ -252,7 +252,7 @@ class ProjectExplorer extends React.Component {
 									checked={this.state.filterType === 'any'}
 									onChange={this.handleFilterTypeChange}
 								/>
-								<label htmlFor="labs-filter-any">ANY</label>
+								<label htmlFor="labs-filter-any">Any</label>
 								|
 								<input
 									type="radio"
@@ -262,7 +262,7 @@ class ProjectExplorer extends React.Component {
 									checked={this.state.filterType === 'all'}
 									onChange={this.handleFilterTypeChange}
 								/>
-								<label htmlFor="labs-filter-all">ALL</label>
+								<label htmlFor="labs-filter-all">All</label>
 							</div>
 							<legend>Of:</legend>
 							<div className="inputs">
