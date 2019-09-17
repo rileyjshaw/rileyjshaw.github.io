@@ -69,5 +69,5 @@
 	text-align: right;
 }
 .blog-post-content cite::before {
-	content: '– ';
+	content: "– ";
 }

@@ -39,12 +39,12 @@
 .content-node :not(h1) > a {
 	position: relative;
 }
-.content-node h1 a[target='_blank']::after {
+.content-node h1 a[target="_blank"]::after {
 	align-items: center;
 	background: var(--white);
 	border: 2px solid var(--black);
 	color: var(--black);
-	content: '\279A';
+	content: "\279A";
 	display: flex;
 	font-size: 24px;
 	height: 24px;
@@ -55,14 +55,14 @@
 	width: 24px;
 }
 .content-node time::before {
-	content: '0';
+	content: "0";
 }
 .content-node .subheading {
 	display: block;
 	font: bold italic var(--font-scale--2) var(--font-stack-sans);
 }
-.content-node .subheading a[target='_blank']::after {
-	content: '\279A';
+.content-node .subheading a[target="_blank"]::after {
+	content: "\279A";
 }
 .content-node p {
 	margin-bottom: 0;
@@ -117,7 +117,7 @@
 .excerpt::after {
 	background: linear-gradient(rgba(var(--whitergb), 0), var(--white));
 	bottom: 0;
-	content: '';
+	content: "";
 	display: block;
 	height: 90px;
 	left: 0;
