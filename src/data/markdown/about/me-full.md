@@ -6,14 +6,4 @@ Throughout my career, I have focused on accessibility, mentorship, and community
 
 I have the dubious honor of being recognized as one of Canada's 30 Under 30 developers.
 
-You can also find me at:
-
--   [GitHub](https://github.com/rileyjshaw)
--   [Twitter](https://twitter.com/rileyjshaw)
--   [Linkedin](https://www.linkedin.com/in/rileyjshaw/)
--   [Codepen](https://codepen.io/rileyjshaw)
--   [Glitch](https://glitch.com/@rileyjshaw)
--   [Are.na](https://www.are.na/riley-shaw)
--   [commit--blog](http://rileyjshaw.commit--blog.com/)
--   [Instagram](https://www.instagram.com/rileyjshaw)
--   [Dwitter](https://www.dwitter.net/u/rileyjshaw)
+If you care to follow along, please [subscribe to my website](/subscribe).
