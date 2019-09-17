@@ -83,6 +83,7 @@ export default props => {
 			</blockquote>
 			{showRefreshButton && (
 				<button
+					aria-label="Load new quote"
 					className="refresh"
 					onClick={() =>
 						setQuoteIndex(
