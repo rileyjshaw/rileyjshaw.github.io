@@ -1,7 +1,7 @@
 import React from 'react';
 import useDimensions from 'react-use-dimensions';
 
-import AutoLink from './auto-link';
+import AutoLink, {ExternalLink} from './auto-link';
 import contentTypes from '../util/content-types';
 
 import './content-node.css';
@@ -12,7 +12,7 @@ import './content-node.css';
 //   "title":
 //   "date":
 export default props => {
-	const {type, title, date, link, uid, tags, rendered} = props;
+	const {type, title, date, link, repo, uid, tags, rendered} = props;
 	if (rendered) return rendered;
 
 	if (!contentTypes[type]) return null;
@@ -39,7 +39,20 @@ export default props => {
 					<h1>
 						{link ? <AutoLink to={link}>{title}</AutoLink> : title}
 					</h1>
-					<time dateTime={date}>{date.replace(/-/g, '.')}</time>
+					<div className="subheading">
+						<time dateTime={date}>{date.replace(/-/g, '.')}</time>
+						{repo && (
+							<>
+								{' '}
+								• From repository{' '}
+								<ExternalLink
+									to={`https://github.com/${repo}`}
+								>
+									{repo}
+								</ExternalLink>
+							</>
+						)}
+					</div>
 				</header>
 				<main>
 					<Inner {...props} />

@@ -68,6 +68,7 @@ export default () =>
 					title
 					date
 					link
+					repo
 					description
 					updatedAt
 					length

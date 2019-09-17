@@ -4,7 +4,7 @@ import {Link, graphql} from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import PagePicker, {pages} from '../components/page-picker';
-import AutoLink from '../components/auto-link';
+import AutoLink, {ExternalLink} from '../components/auto-link';
 
 import '../components/content-node.css';
 import './post.css';
@@ -53,6 +53,7 @@ export default ({data, pageContext: {currentPage, numPages}}) => {
 						const title = post.title || post.fields?.title;
 						const link = post.link || post.fields?.slug;
 						const date = post.date || post.fields?.date;
+						const {repo} = post;
 
 						return (
 							<li className="blog-post content-node" key={uid}>
@@ -67,9 +68,23 @@ export default ({data, pageContext: {currentPage, numPages}}) => {
 												{title}
 											</AutoLink>
 										</h1>
-										<time dateTime={date}>
-											{date.replace(/-/g, '.')}
-										</time>
+
+										<div className="subheading">
+											<time dateTime={date}>
+												{date.replace(/-/g, '.')}
+											</time>
+											{repo && (
+												<>
+													{' '}
+													• From repository{' '}
+													<ExternalLink
+														to={`https://github.com/${repo}`}
+													>
+														{repo}
+													</ExternalLink>
+												</>
+											)}
+										</div>
 									</header>
 									<section
 										dangerouslySetInnerHTML={{
@@ -143,6 +158,7 @@ export const blogListQuery = graphql`
 				title
 				date
 				link
+				repo
 				description
 				more
 			}

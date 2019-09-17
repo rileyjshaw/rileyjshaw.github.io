@@ -150,6 +150,9 @@ function getCommitBlog() {
 					title: commit.title,
 					date: commit.date.toISOString().slice(0, 10),
 					link: commit.link,
+					repo: commit.link.match(
+						/commit--blog\.com\/([^/]*\/[^/]*)/
+					)[1],
 					body,
 					...excerptify(body),
 				};

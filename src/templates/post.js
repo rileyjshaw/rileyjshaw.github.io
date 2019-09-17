@@ -25,7 +25,9 @@ export default function Template({data}) {
 					<article className="blog-post-content" role="article">
 						<header>
 							<h1>{fields.title}</h1>
-							<time>Posted {fields.date}</time>
+							<div className="subheading">
+								<time>Posted {fields.date}</time>
+							</div>
 						</header>
 						<div
 							className="blog-post-markdown"
