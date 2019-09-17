@@ -36,7 +36,7 @@
 .todo-maybe-header-element .newsletter-form {
 	margin-top: auto;
 }
-.todo-maybe-header-element .newsletter-form input[type="text"] {
+.todo-maybe-header-element .newsletter-form input[type='text'] {
 	width: 0;
 }
 .todo-maybe-header-element .newsletter-form label {

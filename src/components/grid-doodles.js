@@ -9,14 +9,14 @@ export default [
 	<TextGrid
 		size={[3, 3]}
 		classPrefix="doingreat"
-		className="content-node"
+		className="content-node doodle"
 		OuterElement="li"
 	>
 		DOINGREAT
 	</TextGrid>,
 	<CycleText
 		classPrefix="wavebump"
-		className="content-node"
+		className="content-node doodle"
 		ms={50}
 		OuterElement="li"
 	>
@@ -24,7 +24,7 @@ export default [
 	</CycleText>,
 	<CycleText
 		classPrefix="droplet"
-		className="content-node"
+		className="content-node doodle"
 		ms={150}
 		OuterElement="li"
 	>
@@ -32,17 +32,17 @@ export default [
 	</CycleText>,
 	<CycleText
 		classPrefix="circles"
-		className="content-node"
+		className="content-node doodle"
 		ms={100}
 		size={[2, 2]}
 		OuterElement="li"
 	>
 		◯⦿◉◎
 	</CycleText>,
-	<li className="content-node snowman">☃</li>,
+	<li className="content-node snowman doodle">☃</li>,
 	<CycleText
 		classPrefix="wavebump"
-		className="content-node tall"
+		className="content-node tall doodle"
 		ms={400}
 		OuterElement="li"
 	>

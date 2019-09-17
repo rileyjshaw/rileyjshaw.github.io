@@ -11,14 +11,17 @@ import PagePicker from './page-picker';
 
 import './project-explorer.css';
 
-class ProjectExplorer extends React.Component {
+class ProjectExplorer extends React.PureComponent {
 	constructor(props) {
 		super(props);
 
+		const nodeTypes = Array.from(
+			new Set(this.props.nodes.map(n => n.type))
+		);
 		const initialState = {
-			typeStates: this.getNodeTypes().map(
-				type =>
-					type === 'project' || type === 'post' || type === 'doodle'
+			nodeTypes,
+			typeStates: nodeTypes.map(
+				type => type === 'project' || type === 'doodle'
 			),
 			sortIdx: 0,
 			ascending: false,
@@ -33,13 +36,12 @@ class ProjectExplorer extends React.Component {
 		};
 	}
 
-	getNodeTypes = () => {
-		return Array.from(new Set(this.props.nodes.map(n => n.type)));
-	};
+	// HACK(riley): Better to not use state and memoize this on `props.nodes`.
+	getNodeTypes = (state = this.state) => state.nodeTypes;
 
 	getDisplayNodes(state, {tags, nodes}) {
 		const {sortFn} = sortingMethods[state.sortIdx];
-		const checkedTypeNames = this.getNodeTypes().filter(
+		const checkedTypeNames = this.getNodeTypes(state).filter(
 			(_, i) => state.typeStates[i]
 		);
 		const checkedTagNames = tags
@@ -82,8 +84,6 @@ class ProjectExplorer extends React.Component {
 			nodes: this.getDisplayNodes(state, props),
 		}));
 	};
-
-	reorderDisplayNodes = () => {};
 
 	shuffleDisplayNodes = () => {
 		this.setState(({nodes}) => {
@@ -169,36 +169,26 @@ class ProjectExplorer extends React.Component {
 						children need to be direct descendents of the grid… */}
 							<legend>Show:</legend>
 							<div className="inputs">
-								{this.getNodeTypes(this.props).map(
-									(type, i) => (
-										<Fragment key={type}>
-											<input
-												type="checkbox"
-												name={`labs-types-${type}`}
-												id={`labs-types-${type}`}
-												value={type}
-												checked={
-													this.state.typeStates[i]
-												}
-												onChange={e =>
-													this.handleTypeStateChange(
-														e,
-														i
-													)
-												}
-											/>
-											<label
-												htmlFor={`labs-types-${type}`}
-											>
-												{
-													contentTypes[type]
-														.readableType
-												}
-												s
-											</label>
-										</Fragment>
-									)
-								)}
+								{this.getNodeTypes().map((type, i) => (
+									<Fragment key={type}>
+										<input
+											type="checkbox"
+											name={`labs-types-${type}`}
+											id={`labs-types-${type}`}
+											value={type}
+											checked={this.state.typeStates[i]}
+											onChange={e =>
+												this.handleTypeStateChange(
+													e,
+													i
+												)
+											}
+										/>
+										<label htmlFor={`labs-types-${type}`}>
+											{contentTypes[type].readableType}s
+										</label>
+									</Fragment>
+								))}
 							</div>
 							<button
 								className="labs-clear-types"

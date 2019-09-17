@@ -8,6 +8,7 @@
 }
 .blog-list .blog-post {
 	margin-bottom: 30px;
+	padding-bottom: 30px;
 }
 .blog-list .blog-post h1 {
 	font-size: var(--font-scale-4);

@@ -8,11 +8,11 @@
 	height: 60px;
 	margin: 12px 0;
 }
-.newsletter-form input[type="text"] {
+.newsletter-form input[type='text'] {
 	flex-grow: 1;
 	padding: 4px 12px;
 }
-.newsletter-form input[type="submit"] {
+.newsletter-form input[type='submit'] {
 	background: var(--black);
 	border: 0;
 	color: var(--white);

@@ -12,11 +12,11 @@
 	position: relative;
 }
 .big-quote::before {
-	content: "";
+	content: '';
 	margin-top: 120px;
 }
 .big-quote.no-refresh::after {
-	content: "";
+	content: '';
 	margin-bottom: 120px;
 }
 .big-quote::before,

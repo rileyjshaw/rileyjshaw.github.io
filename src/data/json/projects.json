@@ -104,7 +104,7 @@
 	{
 		"title": "Rainbobble",
 		"description": [
-			"Rainbow remix of <a href=\"http://codepen.io/rileyjshaw/full/ozjEoK/\" target=\"blank\" rel=\"noopener noreferrer\">Bubble</a>."
+			"Rainbow remix of <a href=\"http://codepen.io/rileyjshaw/full/ozjEoK/\" target=\"_blank\" rel=\"noopener noreferrer\">Bubble</a>."
 		],
 		"date": "2017-11-25",
 		"tags": ["online", "pretty"],
@@ -546,7 +546,7 @@
 	{
 		"title": "Shell or something",
 		"description": [
-			"Stumbled upon this on my way to making <a href=\"http://codepen.io/rileyjshaw/full/YqbGKK/\" target=\"blank\" rel=\"noopener noreferrer\">swirls</a>."
+			"Stumbled upon this on my way to making <a href=\"http://codepen.io/rileyjshaw/full/YqbGKK/\" target=\"_blank\" rel=\"noopener noreferrer\">swirls</a>."
 		],
 		"date": "2016-05-16",
 		"tags": ["online", "pretty"],
@@ -568,7 +568,7 @@
 	{
 		"title": "Jittery visualizer v3",
 		"description": [
-			"V1 -&gt; V2 contained the <em>tiniest</em> tweak perceptually (smooth line all 'round), but it was a technical challenge. V2 -&gt; V3 contains the tiniest code tweaks, but is perceptually very different. Uses canvas transform logic from <a href=\"http://codepen.io/rileyjshaw/pen/ONrdoM\" target=\"blank\" rel=\"noopener noreferrer\">zonin'</a>."
+			"V1 -&gt; V2 contained the <em>tiniest</em> tweak perceptually (smooth line all 'round), but it was a technical challenge. V2 -&gt; V3 contains the tiniest code tweaks, but is perceptually very different. Uses canvas transform logic from <a href=\"http://codepen.io/rileyjshaw/pen/ONrdoM\" target=\"_blank\" rel=\"noopener noreferrer\">zonin'</a>."
 		],
 		"date": "2016-05-05",
 		"tags": ["online", "pretty", "music"],
@@ -622,7 +622,7 @@
 	{
 		"title": "Jittery visualizer v2",
 		"description": [
-			"Added a linear ramp and smoothing function to v1 to make the lowest frequency bin match up with the highest frequency bin in both position and derivative. The effect is a continuous circle, versus the <a href=\"http://codepen.io/rileyjshaw/full/ogVNgW/\" target=\"blank\" rel=\"noopener noreferrer\">\"speech-bubble\" notch effect of v1</a>."
+			"Added a linear ramp and smoothing function to v1 to make the lowest frequency bin match up with the highest frequency bin in both position and derivative. The effect is a continuous circle, versus the <a href=\"http://codepen.io/rileyjshaw/full/ogVNgW/\" target=\"_blank\" rel=\"noopener noreferrer\">\"speech-bubble\" notch effect of v1</a>."
 		],
 		"date": "2016-04-28",
 		"tags": ["starred", "online", "pretty", "music"],
@@ -1380,7 +1380,7 @@
 	{
 		"title": "Typographic HUSL sweep",
 		"description": [
-			"Since I made a fancy headline for <a href=\"http://codepen.io/rileyjshaw/full/OPNvzN/\" target=\"blank\" rel=\"noopener noreferrer\">Terra</a> I figured it was only fair to make one for <a href=\"/sweep\">sweep</a>.",
+			"Since I made a fancy headline for <a href=\"http://codepen.io/rileyjshaw/full/OPNvzN/\" target=\"_blank\" rel=\"noopener noreferrer\">Terra</a> I figured it was only fair to make one for <a href=\"/sweep\">sweep</a>.",
 			"Never used."
 		],
 		"date": "2014-12-14",
@@ -1543,7 +1543,7 @@
 	{
 		"title": "Material design ripple effect",
 		"description": [
-			"Needed this for <a href=\"http://play.tappy.pw\" target=\"blank\" rel=\"noopener noreferrer\">tappy</a> before there were 1000 libraries to choose from."
+			"Needed this for <a href=\"http://play.tappy.pw\" target=\"_blank\" rel=\"noopener noreferrer\">tappy</a> before there were 1000 libraries to choose from."
 		],
 		"date": "2014-10-12",
 		"tags": ["online", "pretty", "reusable"],
@@ -2493,7 +2493,7 @@
 	{
 		"title": "Terminal display",
 		"description": [
-			"Used to promote <a href=\"http://qhack.ca\" target=\"blank\" rel=\"noopener noreferrer\">\"hack nights\" at my university</a>."
+			"Used to promote <a href=\"http://qhack.ca\" target=\"_blank\" rel=\"noopener noreferrer\">\"hack nights\" at my university</a>."
 		],
 		"date": "2012-10-23",
 		"tags": ["online", "reusable"],

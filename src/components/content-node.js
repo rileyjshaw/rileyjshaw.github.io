@@ -11,7 +11,7 @@ import './content-node.css';
 //   "type":
 //   "title":
 //   "date":
-export default props => {
+export default React.memo(props => {
 	const {type, title, date, link, repo, uid, tags, rendered} = props;
 	if (rendered) return rendered;
 
@@ -25,7 +25,10 @@ export default props => {
 
 	return (
 		<li
-			className={`${className} ${height ? '' : 'un'}measured
+			className={`${className} ${type
+				.split(/(?=[A-Z])/)
+				.join('-')
+				.toLowerCase()} ${height ? '' : ''}measured
 			content-node`}
 			key={uid}
 			style={height && {gridRowEnd: `span ${span}`}}
@@ -54,9 +57,7 @@ export default props => {
 						)}
 					</div>
 				</header>
-				<main>
-					<Inner {...props} />
-				</main>
+				<Inner {...props} />
 				{tags && (
 					<footer>
 						<ul className="tags">
@@ -69,7 +70,7 @@ export default props => {
 			</div>
 		</li>
 	);
-};
+});
 
 /*
 case 'project':

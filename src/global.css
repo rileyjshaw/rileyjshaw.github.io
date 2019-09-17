@@ -8,12 +8,12 @@
 	--magenta: #e91e63;
 	--yellow: #ffdc00;
 	--black: #030401;
-	--font-stack-sans: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	--font-stack-serif: Georgia, Palatino, "Palatino Linotype", Times,
-		"Times New Roman", serif;
-	--font-stack-heading: "Arial Black", "Arial Bold", Gadget, sans-serif;
-	--font-stack-mono: "Courier New", Courier, "Lucida Sans Typewriter",
-		"Lucida Typewriter", monospace;
+	--font-stack-sans: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	--font-stack-serif: Georgia, Palatino, 'Palatino Linotype', Times,
+		'Times New Roman', serif;
+	--font-stack-heading: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+	--font-stack-mono: 'Courier New', Courier, 'Lucida Sans Typewriter',
+		'Lucida Typewriter', monospace;
 	--font-scale--5: 0.328em;
 	--font-scale--4: 0.41em;
 	--font-scale--3: 0.512em;
@@ -43,12 +43,12 @@ body {
 a {
 	color: var(--blue);
 }
-a[target="_blank"] {
+a[target='_blank'] {
 	cursor: alias;
 }
-a[target="_blank"]::after {
+a[target='_blank']::after {
 	/* Thin non-breaking space and an arrow. */
-	content: "\202F\279A";
+	content: '\202F\279A';
 	font-family: var(--font-stack-serif);
 }
 h1,

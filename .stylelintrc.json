@@ -4,7 +4,7 @@
 	"rules": {
 		"prettier/prettier": true,
 		"indentation": "tab",
-		"string-quotes": "double",
+		"string-quotes": "single",
 		"no-duplicate-selectors": true,
 		"color-hex-case": "lower",
 		"color-hex-length": "short",

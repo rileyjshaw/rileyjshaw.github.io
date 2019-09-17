@@ -34,6 +34,7 @@ export default () =>
 				edges {
 					node {
 						more
+						description
 						frontmatter {
 							layout
 							topTitle

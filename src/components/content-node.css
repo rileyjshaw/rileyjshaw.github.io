@@ -2,8 +2,12 @@
 	background: var(--white);
 	border: 2px solid var(--black);
 	box-shadow: 3px 3px var(--black);
+	grid-row-end: span 4;
 	padding: 0 12px 16px;
 	position: relative;
+}
+.content-node.doodle {
+	padding: 0;
 }
 .content-node.unmeasured {
 	visibility: hidden;
@@ -39,12 +43,12 @@
 .content-node :not(h1) > a {
 	position: relative;
 }
-.content-node h1 a[target="_blank"]::after {
+.content-node h1 a[target='_blank']::after {
 	align-items: center;
 	background: var(--white);
 	border: 2px solid var(--black);
 	color: var(--black);
-	content: "\279A";
+	content: '\279A';
 	display: flex;
 	font-size: 24px;
 	height: 24px;
@@ -55,14 +59,19 @@
 	width: 24px;
 }
 .content-node time::before {
-	content: "0";
+	content: '0';
 }
 .content-node .subheading {
 	display: block;
 	font: bold italic var(--font-scale--2) var(--font-stack-sans);
 }
-.content-node .subheading a[target="_blank"]::after {
-	content: "\279A";
+.content-node .subheading a[target='_blank']::after {
+	content: '\279A';
+}
+.content-node main {
+	flex-basis: 0;
+	flex-grow: 1;
+	overflow: hidden;
 }
 .content-node p {
 	margin-bottom: 0;
@@ -88,7 +97,7 @@
 .content-node .tags {
 	list-style: none;
 	margin: 0;
-	padding: 16px 0 0;
+	padding: 0;
 }
 .content-node.measured .inner {
 	display: flex;
@@ -114,10 +123,13 @@
 	margin: auto;
 	width: 42px;
 }
+.excerpt {
+	position: relative;
+}
 .excerpt::after {
 	background: linear-gradient(rgba(var(--whitergb), 0), var(--white));
 	bottom: 0;
-	content: "";
+	content: '';
 	display: block;
 	height: 90px;
 	left: 0;
