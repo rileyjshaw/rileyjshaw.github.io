@@ -7,45 +7,17 @@
 	padding: 0;
 }
 .blog-list .blog-post {
-	background: var(--white);
-	border: 2px solid var(--black);
-	box-shadow: 3px 3px var(--black);
-	font-size: var(--font-scale-0);
 	margin-bottom: 30px;
-	padding: 16px 12px;
-	position: relative;
 }
-.blog-list h1 {
+.blog-list .blog-post h1 {
+	font-size: var(--font-scale-4);
+	margin-top: var(--font-scale--2);
+}
+.blog-list .blog-post section {
+	padding-top: 1em;
+}
+.blog-list .blog-post section > :first-child {
 	margin-top: 0;
-}
-.blog-list article {
-	position: relative;
-}
-.blog-list article.excerpt::after {
-	background: linear-gradient(transparent, var(--white));
-	bottom: 0;
-	content: '';
-	display: block;
-	height: 90px;
-	left: 0;
-	pointer-events: none;
-	position: absolute;
-	right: 0;
-}
-/* TODO(riley): Transfer all styles in a better way. Currently unused: */
-.blog-list .blog-post.external::before {
-	align-items: center;
-	background: var(--white);
-	border: 2px solid var(--black);
-	color: var(--black);
-	display: flex;
-	font-size: 24px;
-	height: 24px;
-	justify-content: center;
-	position: absolute;
-	right: -2px;
-	top: -2px;
-	width: 24px;
 }
 .blog-list .page-navigation {
 	align-items: center;

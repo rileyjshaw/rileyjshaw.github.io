@@ -35,17 +35,23 @@ export default props => {
 			https://html.spec.whatwg.org/multipage/links.html#link-type-tag */}
 			<div className="inner" ref={ref}>
 				<div className="content-type">{readableType}</div>
-				<h3>
-					{link ? <AutoLink to={link}>{title}</AutoLink> : title}
-				</h3>
-				<time dateTime={date}>{date.replace(/-/g, '.')}</time>
-				<Inner {...props} />
+				<header>
+					<h1>
+						{link ? <AutoLink to={link}>{title}</AutoLink> : title}
+					</h1>
+					<time dateTime={date}>{date.replace(/-/g, '.')}</time>
+				</header>
+				<main>
+					<Inner {...props} />
+				</main>
 				{tags && (
-					<ul className="tags">
-						{tags.map(tag => (
-							<li key={tag}>{tag}</li>
-						))}
-					</ul>
+					<footer>
+						<ul className="tags">
+							{tags.map(tag => (
+								<li key={tag}>{tag}</li>
+							))}
+						</ul>
+					</footer>
 				)}
 			</div>
 		</li>

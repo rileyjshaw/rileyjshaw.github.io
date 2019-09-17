@@ -33,13 +33,14 @@ export default () =>
 			) {
 				edges {
 					node {
-						excerpt
+						more
 						frontmatter {
 							layout
 							topTitle
 							tags
 						}
 						fields {
+							uid
 							slug
 							title
 							date(formatString: "YYYY-MM-DD")
@@ -73,6 +74,7 @@ export default () =>
 					contentType
 					body
 					image
+					more
 				}
 			}
 		}

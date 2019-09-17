@@ -146,20 +146,20 @@ class ProjectExplorer extends React.Component {
 
 		return (
 			<div className="project-explorer">
+				<PagePicker page="explore">
+					<button
+						onClick={() =>
+							this.setState(({drawerOpen}) => ({
+								drawerOpen: !drawerOpen,
+							}))
+						}
+					>
+						{this.state.drawerOpen
+							? 'Hide filters ▲'
+							: 'Show filters ▼'}
+					</button>
+				</PagePicker>
 				<div className="filters">
-					<PagePicker page="explore">
-						<button
-							onClick={() =>
-								this.setState(({drawerOpen}) => ({
-									drawerOpen: !drawerOpen,
-								}))
-							}
-						>
-							{this.state.drawerOpen
-								? 'Hide filters ▲'
-								: 'Show filters ▼'}
-						</button>
-					</PagePicker>
 					{this.state.drawerOpen && (
 						<fieldset className="controls">
 							{/* TODO(riley): Once display: contents or display:

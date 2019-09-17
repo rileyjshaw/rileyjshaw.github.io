@@ -1,11 +1,8 @@
 .project-explorer {
 	padding: 30px;
 }
-.project-explorer .filters {
-	font-family: var(--font-stack-heading);
-	font-weight: 900;
-}
 .project-explorer .controls {
+	align-items: start;
 	display: grid;
 	grid-template-columns: [legends] auto [inputs] 1fr [cancel] auto;
 }
@@ -21,10 +18,11 @@
 	grid-column: 1/-1;
 	padding: 0;
 }
-.project-explorer .filters legend {
+.project-explorer .filters legend,
+.project-explorer .result-details {
 	color: var(--white);
 	float: left;
-	font-size: 24px;
+	font: 900 var(--font-scale-1) var(--font-stack-heading);
 	grid-column: legends;
 	line-height: 47px; /* HACK(riley): Matches the button size. */
 }
@@ -38,6 +36,7 @@
 	position: absolute;
 	width: 1px;
 }
+.page-picker-wrapper button,
 .project-explorer .filters label,
 .project-explorer .filters button {
 	background: var(--cyan);
@@ -45,12 +44,9 @@
 	box-shadow: 3px 3px var(--black);
 	cursor: pointer;
 	display: inline-block;
-	font-size: 16px;
+	font: 900 var(--font-scale--1) var(--font-stack-heading);
 	margin: 0 0 30px 16px;
 	padding: 10px 20px;
-}
-.project-explorer .filters button {
-	font-family: inherit;
 }
 .project-explorer .filters header button {
 	margin: 0 0 0 auto;
@@ -61,11 +57,4 @@
 	box-shadow: none;
 	transform: translate(3px, 3px);
 	/* box-shadow: 0 0 2px var(--white); */
-}
-.project-explorer .result-details {
-	color: var(--white);
-	font-family: var(--font-stack-heading);
-	font-size: 24px;
-	font-weight: 900;
-	margin: 0 0 30px;
 }

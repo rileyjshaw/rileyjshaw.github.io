@@ -295,7 +295,7 @@ Have fun!
 [^4]: A neologism, as far as I can tell. "Stopping time" is likely more appropriate.
 [^5]:
 
-    <div>The Ulam Spiral story doesn't end with a different drawing function. The presentation that he was sitting in on must have been really boring, because Ulam started circling prime numbers on his spiral:
+    The Ulam Spiral story doesn't end with a different drawing function. The presentation that he was sitting in on must have been really boring, because Ulam started circling prime numbers on his spiral:
 
     <figure>
       <img src="../../../../content/images/blog/ulam-howto-2.svg" alt="Ulam Spiral with prime numbers shown">
@@ -307,8 +307,8 @@ Have fun!
     <figure>
       <img src="../../../../content/images/blog/ulam.png" alt="Prime numbers in the range [0, 1M) drawn in an Ulam Spiral">
       <figcaption>Ulam Spiral with prime numbers shown: [0, 988k). <a href="http://codepen.io/rileyjshaw/pen/gaHhn">View code</a></figcaption>
-    </figure></div>
+    </figure>
 
-[^6]: The Collatz Conjecture has more aliases than your favorite rapper. You might know it as: the 3n + 1 conjecture, the Ulam conjecture, Kakutani's problem, the Thwaites conjecture, Hasse's algorithm, the Syracuse problem, the hailstone sequence, hailstone numbers, or wondrous numbers.
+[^6]: The Collatz Conjecture has many names. You might know it as: the 3n + 1 conjecture, the Ulam conjecture, Kakutani's problem, the Thwaites conjecture, Hasse's algorithm, the Syracuse problem, the hailstone sequence, hailstone numbers, or wondrous numbers.
 [^7]: Five if you count the footnotes!
-[^8]: This is classically known as [function composition](<http://en.wikipedia.org/wiki/Function_composition_(computer_science)>).
+[^8]: This is known as [function composition](<http://en.wikipedia.org/wiki/Function_composition_(computer_science)>).

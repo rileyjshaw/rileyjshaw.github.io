@@ -1,5 +1,6 @@
 :root {
 	--white: #fff;
+	--whitergb: 255, 255, 255;
 	--red: #ff4136;
 	--green: #2ecc40;
 	--blue: #0074d9;
@@ -11,6 +12,8 @@
 	--font-stack-serif: Georgia, Palatino, "Palatino Linotype", Times,
 		"Times New Roman", serif;
 	--font-stack-heading: "Arial Black", "Arial Bold", Gadget, sans-serif;
+	--font-stack-mono: "Courier New", Courier, "Lucida Sans Typewriter",
+		"Lucida Typewriter", monospace;
 	--font-scale--5: 0.328em;
 	--font-scale--4: 0.41em;
 	--font-scale--3: 0.512em;
@@ -31,7 +34,6 @@
 	box-sizing: border-box;
 }
 body {
-	border: 16px solid var(--black);
 	color: var(--black);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -45,7 +47,9 @@ a[target="_blank"] {
 	cursor: alias;
 }
 a[target="_blank"]::after {
-	content: "➚";
+	/* Thin non-breaking space and an arrow. */
+	content: "\202F\279A";
+	font-family: var(--font-stack-serif);
 }
 h1,
 h2,
@@ -61,18 +65,29 @@ h1 {
 	margin: var(--font-scale--1) 0 var(--font-scale--4);
 }
 h2 {
-	font-size: var(--font-scale-2);
-	margin: var(--font-scale-1) 0 var(--font-scale--2);
+	font-size: var(--font-scale-3);
+	margin: var(--font-scale-0) 0 var(--font-scale--2);
 }
 h3,
 h4 {
 	font-size: var(--font-scale-1);
 	margin: var(--font-scale-2) 0 var(--font-scale--1);
 }
-p {
+p,
+li {
 	font-family: var(--font-stack-serif);
+}
+p {
 	margin-bottom: var(--font-scale-1);
 }
 ul {
 	list-style: disc;
+}
+code,
+pre {
+	font-family: var(--font-stack-mono);
+	overflow: auto;
+}
+pre {
+	font-size: var(--font-scale--1);
 }

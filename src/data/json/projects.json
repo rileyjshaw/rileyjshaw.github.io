@@ -53,7 +53,7 @@
 		"title": "typing lazy (desktop only)",
 		"description": [
 			"Try touch-typing an English word without moving your fingers from their resting position on the keyboard.",
-			"This was a proof-of-concept for a keyboard glove, which was implemented in hardware by <a href=\"https://github.com/rileyjshaw/english-words-directory-trie\" target=\"blank\" rel=\"noopener noreferrer\">mapping the trie to a directory tree</a>."
+			"This was a proof-of-concept for a keyboard glove, which was implemented in hardware by <a href=\"https://github.com/rileyjshaw/english-words-directory-trie\" target=\"_blank\" rel=\"noopener noreferrer\">mapping the trie to a directory tree</a>."
 		],
 		"date": "2019-03-10",
 		"href": "https://typing-lazy.glitch.me/",
@@ -64,7 +64,7 @@
 	{
 		"title": "CA finder",
 		"description": [
-			"Caution: it flashes! <a href=\"https://glitch.com/edit/#!/ca-finder?path=README.md:1:0\" target=\"blank\" rel=\"noopener noreferrer\">Controls listed in the README.</a>"
+			"Caution: it flashes! <a href=\"https://glitch.com/edit/#!/ca-finder?path=README.md:1:0\" target=\"_blank\" rel=\"noopener noreferrer\">Controls listed in the README.</a>"
 		],
 		"date": "2019-03-09",
 		"tags": ["online", "game", "pretty"],

@@ -6,6 +6,7 @@ import SEO from '../components/seo';
 import PagePicker, {pages} from '../components/page-picker';
 import AutoLink from '../components/auto-link';
 
+import '../components/content-node.css';
 import './post.css';
 import './blog-list.css';
 
@@ -54,7 +55,7 @@ export default ({data, pageContext: {currentPage, numPages}}) => {
 						const date = post.date || post.fields?.date;
 
 						return (
-							<li className="blog-post" key={uid}>
+							<li className="blog-post content-node" key={uid}>
 								<article
 									className={`blog-post-content${
 										post.more ? ' excerpt' : ''
@@ -70,13 +71,11 @@ export default ({data, pageContext: {currentPage, numPages}}) => {
 											{date.replace(/-/g, '.')}
 										</time>
 									</header>
-									<section>
-										<div
-											dangerouslySetInnerHTML={{
-												__html: post.description,
-											}}
-										/>
-									</section>
+									<section
+										dangerouslySetInnerHTML={{
+											__html: post.description,
+										}}
+									></section>
 								</article>
 							</li>
 						);

@@ -6,11 +6,13 @@ export const ProjectContent = ({description}) =>
 	description.map((d, i) => (
 		<p key={i} dangerouslySetInnerHTML={{__html: d}} />
 	));
-export const PostContent = ({excerpt}) => (
-	<p dangerouslySetInnerHTML={{__html: excerpt}} />
-);
-export const CommitBlogContent = ({description}) =>
-	description && <div dangerouslySetInnerHTML={{__html: description}} />;
+export const PostContent = ({description, more}) =>
+	description ? (
+		<div
+			className={more && 'excerpt'}
+			dangerouslySetInnerHTML={{__html: description}}
+		/>
+	) : null;
 export const ArenaChannelContent = ({description, length, updatedAt}) => (
 	<>
 		{description && <p>{description}</p>}
@@ -20,8 +22,6 @@ export const ArenaChannelContent = ({description, length, updatedAt}) => (
 		</p>
 	</>
 );
-export const TumblrBlogContent = ({body}) =>
-	body && <div dangerouslySetInnerHTML={{__html: body}} />;
 export const IconContent = ({image, title}) => (
 	<img src={image} alt={`${title} icon`} />
 );
@@ -55,15 +55,14 @@ export default {
 		readableType: 'Icon',
 		Inner: IconContent,
 	},
-	// TODO(riley): Merge both of these with `post`.
 	commit: {
 		className: 'span-6 commit-blog',
 		readableType: 'Commit blog post',
-		Inner: CommitBlogContent,
+		Inner: PostContent,
 	},
 	tumblr: {
 		className: 'span-6 tumblr-blog',
 		readableType: 'SFPC blog post',
-		Inner: TumblrBlogContent,
+		Inner: PostContent,
 	},
 };
