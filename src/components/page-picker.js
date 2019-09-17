@@ -39,16 +39,10 @@ const pages = {
 		color: 'var(--cyan)',
 		link: '/blog',
 	},
-	another: {
-		Icon: Repeat,
-		title: 'Another',
-		color: 'var(--green)',
-		link: '/blog',
-	},
 	subscribe: {
 		Icon: Rss,
 		title: 'Subscribe',
-		color: 'var(--yellow)',
+		color: 'var(--green)',
 		link: '/subscribe',
 	},
 };
