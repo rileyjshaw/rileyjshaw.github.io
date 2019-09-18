@@ -40,6 +40,7 @@
     "@babel/plugin-proposal-optional-chaining": "^7.6.0",
     "@babel/register": "^7.6.0",
     "babel-preset-gatsby": "^0.2.13",
+    "copyright-header": "^0.4.6",
     "davefeedread": "^0.5.9",
     "eslint-plugin-react-hooks": "^2.0.1",
     "gh-pages": "^2.1.1",
@@ -58,7 +59,7 @@
   "keywords": [
     "rileyjshaw"
   ],
-  "license": "CC BY-NC-SA 4.0",
+  "license": "GNU GPLv3",
   "scripts": {
     "build": "gatsby build",
     "deploy": "npm run format && gatsby build && gh-pages -d public",
