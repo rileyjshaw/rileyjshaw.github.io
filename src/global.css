@@ -26,7 +26,8 @@
 	--font-scale-4: 2.441em;
 	--font-scale-5: 3.052em;
 
-	font: 18px var(--font-stack-sans);
+	font-family: var(--font-stack-sans);
+	font-size: 18px;
 }
 *,
 *::before,

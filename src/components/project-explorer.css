@@ -23,7 +23,9 @@
 .project-explorer .result-details {
 	color: var(--white);
 	float: left;
-	font: 900 var(--font-scale-1) var(--font-stack-heading);
+	font-family: var(--font-stack-heading);
+	font-size: var(--font-scale-1);
+	font-weight: 900;
 	grid-column: legends;
 	line-height: 47px; /* HACK(riley): Matches the button size. */
 }
@@ -48,7 +50,9 @@
 	box-shadow: 3px 3px var(--black);
 	cursor: pointer;
 	display: inline-block;
-	font: 900 var(--font-scale--1) var(--font-stack-heading);
+	font-family: var(--font-stack-heading);
+	font-size: var(--font-scale--1);
+	font-weight: 900;
 	margin: 0 0 30px 16px;
 	padding: 10px 20px;
 }

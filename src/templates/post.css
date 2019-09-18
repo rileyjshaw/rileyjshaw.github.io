@@ -4,7 +4,7 @@
 }
 .top-nav h1 {
 	display: inline;
-	font: inherit;
+	font-family: inherit;
 	font-weight: bold;
 }
 .blog-post-page {
@@ -26,7 +26,10 @@
 }
 /* TODO(riley): Duplicate. */
 .blog-post-content header .subheading {
-	font: bold italic var(--font-scale--2) var(--font-stack-sans);
+	font-family: var(--font-stack-sans);
+	font-size: var(--font-scale--2);
+	font-style: italic;
+	font-weight: bold;
 	margin-left: 0.2em;
 }
 .blog-post-content .footnote-ref {

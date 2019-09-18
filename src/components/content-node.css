@@ -22,7 +22,9 @@
 	border: 2px solid var(--black);
 	color: var(--black);
 	display: flex;
-	font: 900 var(--font-scale--1) var(--font-stack-heading);
+	font-family: var(--font-stack-heading);
+	font-size: var(--font-scale--1);
+	font-weight: 900;
 	height: 24px;
 	justify-content: center;
 	left: -2px;
@@ -61,7 +63,10 @@
 }
 .content-node .subheading {
 	display: block;
-	font: bold italic var(--font-scale--2) var(--font-stack-sans);
+	font-family: var(--font-stack-sans);
+	font-size: var(--font-scale--2);
+	font-style: italic;
+	font-weight: bold;
 }
 .content-node .subheading a[target='_blank']::after {
 	content: '\279A';

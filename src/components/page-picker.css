@@ -33,7 +33,8 @@
 	align-items: center;
 	color: var(--white);
 	display: flex;
-	font: 2em var(--font-stack-heading);
+	font-family: var(--font-stack-heading);
+	font-size: 2em;
 	margin: 0;
 	padding: 12px 2em 12px 0.5em;
 	position: relative;
