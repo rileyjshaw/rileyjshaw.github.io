@@ -1,8 +1,9 @@
 .project-explorer {
+	min-height: 100vh;
 	padding: 30px;
 }
 .project-explorer .controls {
-	align-items: start;
+	align-items: flex-start;
 	display: grid;
 	grid-template-columns: [legends] auto [inputs] 1fr [cancel] auto;
 }
@@ -35,6 +36,9 @@
 	padding: 0;
 	position: absolute;
 	width: 1px;
+}
+.page-picker-wrapper button {
+	margin: 0;
 }
 .page-picker-wrapper button,
 .project-explorer .filters label,

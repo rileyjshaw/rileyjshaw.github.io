@@ -28,7 +28,7 @@ export default React.memo(props => {
 			className={`${className} ${type
 				.split(/(?=[A-Z])/)
 				.join('-')
-				.toLowerCase()} ${height ? '' : ''}measured
+				.toLowerCase()} ${height ? '' : 'un'}measured
 			content-node`}
 			key={uid}
 			style={height && {gridRowEnd: `span ${span}`}}

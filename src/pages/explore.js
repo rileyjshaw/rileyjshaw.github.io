@@ -12,7 +12,6 @@ const ExplorePage = () => (
 		<SEO title="Project explorer" />
 		<ProjectExplorer />
 		<GoUp />
-		<footer></footer>
 	</Layout>
 );
 

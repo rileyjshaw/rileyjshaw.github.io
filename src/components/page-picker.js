@@ -60,7 +60,7 @@ export default ({page, children}) => {
 					<div className="icon">
 						<Icon />
 					</div>
-					{title}
+					<span>{title}</span>
 					<span className="arrow">{open ? '▲' : '▼'}</span>
 				</h1>
 				{open && (

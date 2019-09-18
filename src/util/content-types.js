@@ -27,7 +27,7 @@ export const ArenaChannelContent = ({description, length, updatedAt}) => (
 );
 export const IconContent = ({image, title}) => (
 	<main>
-		<img src={image} alt={`${title} icon`} />
+		<img src={image} width={84} height={84} alt={`${title} icon`} />
 	</main>
 );
 
