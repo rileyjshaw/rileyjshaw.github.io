@@ -11,3 +11,16 @@
 	max-width: 90%;
 	width: 36em;
 }
+.about-page .timeline {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.about-page .timeline li {
+	margin: 0;
+	position: relative;
+}
+.about-page .timeline .logo {
+	height: 42px !important;
+	width: 42px !important;
+}

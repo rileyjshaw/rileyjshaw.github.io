@@ -10,12 +10,12 @@ export default () => (
 			<li>
 				{/* I'm redoing my website. This is a work in
 								progress, big time. */}
-				1
+				work
 			</li>
 			<li>
 				{/* I'm creating a massive MIDI controller for
 								music and games. */}
-				2
+				in
 			</li>
 			<li>
 				{/* I'm working with Canada Learning Code as an
@@ -25,7 +25,7 @@ export default () => (
 									MaKey MaKey
 								</ExternalLink>
 								. */}
-				3
+				progress
 			</li>
 		</ul>
 	</div>

@@ -13,7 +13,7 @@
 	display: flex;
 	flex: 1 1 0;
 	font-family: var(--font-stack-heading);
-	font-size: 96px;
+	font-size: var(--font-scale-4);
 	font-weight: 900;
 	height: 200px;
 	justify-content: center;

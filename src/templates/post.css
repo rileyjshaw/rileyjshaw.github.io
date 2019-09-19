@@ -4,7 +4,7 @@
 }
 .top-nav h1 {
 	display: inline;
-	font-family: inherit;
+	font: inherit;
 	font-weight: bold;
 }
 .blog-post-page {
@@ -31,6 +31,13 @@
 	font-style: italic;
 	font-weight: bold;
 	margin-left: 0.2em;
+}
+.blog-post-content ol,
+.blog-post-content ul {
+	margin: var(--font-scale-1) 0;
+}
+.blog-post-content li {
+	margin-bottom: var(--font-scale--2);
 }
 .blog-post-content .footnote-ref {
 	color: inherit;
@@ -73,4 +80,8 @@
 }
 .blog-post-content cite::before {
 	content: '– ';
+}
+.blog-post-content hr {
+	border: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.3);
 }

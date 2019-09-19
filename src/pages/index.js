@@ -20,7 +20,7 @@ import UpTo from '../components/up-to';
 const IndexPage = ({starredProjects = []}) => {
 	const {aboutIntro} = useStaticQuery(graphql`
 		{
-			aboutIntro: file(relativePath: {eq: "about/me-intro.md"}) {
+			aboutIntro: file(relativePath: {eq: "about/me_intro.md"}) {
 				childMarkdownRemark {
 					html
 				}
