@@ -76,12 +76,6 @@ module.exports = {
 			resolve: `gatsby-transformer-remark`,
 			options: {
 				plugins: [
-					{
-						resolve: `gatsby-remark-embed-markdown`,
-						options: {
-							directory: `${__dirname}/src/data/markdown/`,
-						},
-					},
 					`gatsby-remark-copy-linked-files`,
 					`gatsby-remark-autolink-headers`,
 					{
