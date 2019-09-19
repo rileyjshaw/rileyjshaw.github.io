@@ -159,6 +159,11 @@ class ProjectExplorer extends React.PureComponent {
 							: 'Show filters ▼'}
 					</button>
 				</PagePicker>
+				<p className="result-details">
+					Hi! I'm still developing this part of the website, so I
+					apologize if it crashes your browser. Enjoy!
+				</p>
+				<br />
 				<div className="filters">
 					{this.state.drawerOpen && (
 						<fieldset className="controls">

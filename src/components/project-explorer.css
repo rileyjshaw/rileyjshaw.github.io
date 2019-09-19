@@ -22,12 +22,14 @@
 .project-explorer .filters legend,
 .project-explorer .result-details {
 	color: var(--white);
-	float: left;
 	font-family: var(--font-stack-heading);
 	font-size: var(--font-scale-1);
 	font-weight: 900;
 	grid-column: legends;
 	line-height: 47px; /* HACK(riley): Matches the button size. */
+}
+.project-explorer .filters legend {
+	float: left; /* Oh no. */
 }
 .project-explorer .filters input {
 	border: 0;
