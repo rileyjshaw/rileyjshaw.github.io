@@ -21,7 +21,7 @@
 }
 .big-quote::before,
 .big-quote::after,
-.big-quote button {
+.big-quote .refresh {
 	height: 60px;
 	width: 60px;
 }
@@ -35,7 +35,7 @@
 .big-quote footer {
 	text-align: right;
 }
-.big-quote button {
+.big-quote .refresh {
 	background: none;
 	border: 0;
 	cursor: pointer;

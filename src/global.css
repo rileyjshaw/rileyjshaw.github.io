@@ -28,6 +28,7 @@
 
 	font-family: var(--font-stack-sans);
 	font-size: 18px;
+	scroll-behavior: smooth;
 }
 *,
 *::before,

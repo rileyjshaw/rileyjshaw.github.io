@@ -76,13 +76,17 @@ export default props => {
 	}
 	const {children, cite, source} = props;
 	return (
-		<div className={`big-quote ${showRefreshButton ? '' : 'no-refresh'}`}>
+		<div
+			className={`big-quote ${showRefreshButton ? '' : 'no-refresh'}`}
+			id={showRefreshButton && 'big-quote'}
+		>
 			<blockquote cite={cite}>
 				<p>{children}</p>
 				{source && <footer>– {source}</footer>}
 			</blockquote>
 			{showRefreshButton && (
-				<button
+				<a
+					href="#big-quote"
 					aria-label="Load new quote"
 					className="refresh"
 					onClick={() =>
@@ -92,7 +96,7 @@ export default props => {
 					}
 				>
 					<Repeat />
-				</button>
+				</a>
 			)}
 		</div>
 	);
