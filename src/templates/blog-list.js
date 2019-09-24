@@ -96,6 +96,7 @@ export default ({data, pageContext: {currentPage, numPages}}) => {
 						);
 					})}
 				</ul>
+				{/* TODO(riley): Consider replacing arrows with - and + in final design. */}
 				<div className="page-navigation">
 					{!isFirst && (
 						<Link to={prevPage} rel="prev">

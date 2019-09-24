@@ -13,6 +13,7 @@ export function format({
 			type: 'post',
 		})),
 		...projects
+			// TODO(riley): Filter the TODOs in GraphQL.
 			.filter(({todo}) => !todo)
 			.map((p, i) => ({
 				...p,

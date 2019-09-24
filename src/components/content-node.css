@@ -2,6 +2,7 @@
 	background: var(--white);
 	border: 2px solid var(--black);
 	box-shadow: 3px 3px var(--black);
+	color: var(--black);
 	grid-row-end: span 4;
 	max-width: 100%;
 	min-width: 60px; /* HACK(riley): Hardcoded to column width. */

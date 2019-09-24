@@ -1,24 +1,56 @@
-import React from 'react';
-import {Link, useStaticQuery, graphql} from 'gatsby';
+import React, {useState} from 'react';
+import {useStaticQuery, graphql, Link} from 'gatsby';
 
-import {useWindowSize} from '../util/hooks';
 import allProjectsQuery from '../util/all-projects-query';
-import SEO from '../components/seo';
-import Fit from '../components/fit';
-import StretchTitle from '../components/stretch-title';
-import Newsletter from '../components/newsletter';
-import CycleText from '../components/cycle-text';
-import Layout from '../components/layout';
-import ContentGrid from '../components/content-grid';
-import GoUp from '../components/go-up';
 import BigQuote from '../components/big-quote';
-import PagePicker, {pages} from '../components/page-picker';
+import ContentGrid from '../components/content-grid';
+import CycleText from '../components/cycle-text';
+import Fit from '../components/fit-4';
+import GoUp from '../components/go-up';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import SiteNav from '../components/site-nav';
+import RgbSplitter from '../components/rgb-splitter';
 
 import './index.css';
-import UpTo from '../components/up-to';
+
+const Shard = ({children}) => {
+	const [[rA, rB, rC, rD]] = useState([
+		Math.random(),
+		Math.random(),
+		Math.random(),
+		Math.random(),
+	]);
+	return (
+		<Fit
+			text={children}
+			style={{position: 'relative', marginBottom: '-0.25em'}}
+		>
+			{rA < 0.5 && (
+				<span
+					className="shard"
+					aria-hidden="true"
+					style={{
+						[`border${
+							rA < 0.25 ? 'Right' : 'Left'
+						}`]: '90vw solid #000',
+						borderBottom: `${rB * 0.4}em solid transparent`,
+						borderTop: `${rC * 0.4}em solid transparent`,
+						bottom: `${rD}em`,
+					}}
+				/>
+			)}
+		</Fit>
+	);
+};
 
 const IndexPage = ({starredProjects = []}) => {
-	const {aboutIntro} = useStaticQuery(graphql`
+	// TODO(riley): Get starred projects from here.
+	const {
+		aboutIntro: {
+			childMarkdownRemark: {html},
+		},
+	} = useStaticQuery(graphql`
 		{
 			aboutIntro: file(relativePath: {eq: "about/me_intro.md"}) {
 				childMarkdownRemark {
@@ -28,49 +60,33 @@ const IndexPage = ({starredProjects = []}) => {
 		}
 	`);
 
-	const [windowWidth] = useWindowSize();
-
 	return (
 		<Layout root>
 			<SEO title="Home" />
-			<main>
-				<div
-					className="homepage-top"
-					style={{background: pages.home.color}}
-				>
-					<div className="todo-maybe-header-element">
-						<StretchTitle>
-							<Fit className="title-welcome">Welcome to the</Fit>
-							<Fit className="title-landfill">
-								digital landfill of
-							</Fit>
-							{/* Keep this up to date with the media query. */}
-							{windowWidth > 800 ? (
-								[
-									<Fit className="title-riley" key="r">
-										Riley
-									</Fit>,
-									<p className="title-j" key="j">
-										J
-									</p>,
-									<Fit className="title-shaw" key="s">
-										Shaw
-									</Fit>,
-								]
-							) : (
-								<Fit className="title-rileyjshaw">
-									rileyjshaw
-								</Fit>
-							)}
-						</StretchTitle>
+			<header className="page-header">
+				<RgbSplitter El="h1" className="title">
+					{/* <Shard>As your eyes adjust, you discover that</Shard>
+			<span className="visuallyhidden"> </span> */}
+					<Shard>you’re in the digital</Shard>
+					<span className="visuallyhidden"> </span>
+					<Shard>landfill of</Shard>
+					<span className="visuallyhidden"> </span>
+					<Shard>Riley J.</Shard>
+					<span className="visuallyhidden"> </span>
+					<Shard>Shaw</Shard>
+				</RgbSplitter>
+				<SiteNav />
+			</header>
+			<main className="main-content">
+				<div className="section main-about">
+					<div className="row">
+						<h2>Welcome</h2>
 						<div className="about-stub">
 							<div
 								className="md-wrapper"
-								dangerouslySetInnerHTML={{
-									__html:
-										aboutIntro.childMarkdownRemark.html,
-								}}
-							/>{' '}
+								dangerouslySetInnerHTML={{__html: html}}
+							/>
+							&nbsp;
 							<Link to="/about">
 								More&nbsp;
 								<CycleText OuterElement="span" ms={100}>
@@ -78,16 +94,20 @@ const IndexPage = ({starredProjects = []}) => {
 								</CycleText>
 							</Link>
 						</div>
-						<Newsletter className="homepage-newsletter" />
 					</div>
-					<div className="selected-works-container">
-						<PagePicker page="home" />
-						<UpTo />
-						<h2>
-							Selected works{' '}
-							<Link to="/explore">(explore all)</Link>
-						</h2>
-						<ContentGrid nodes={starredProjects} />
+				</div>
+				{/* Include News, Newsletter? */}
+				<div className="section main-projects">
+					<div className="row">
+						<div>
+							<h2>Selected works</h2>
+							<Link className="explore-link" to="/explore">
+								(explore all)
+							</Link>
+						</div>
+						<div>
+							<ContentGrid nodes={starredProjects} />
+						</div>
 					</div>
 				</div>
 				<BigQuote />
@@ -101,6 +121,5 @@ export default () => {
 	const starredProjects = allProjectsQuery().filter(project =>
 		project.tags?.includes('starred')
 	);
-
 	return <IndexPage starredProjects={starredProjects} />;
 };

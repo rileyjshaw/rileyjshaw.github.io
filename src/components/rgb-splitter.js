@@ -1,21 +1,21 @@
-import React, {cloneElement, isValidElement, useRef} from 'react';
+import React, {cloneElement, isValidElement} from 'react';
 import {useInView} from 'react-intersection-observer';
 
 import {useMousePosition, useWindowSize} from '../util/hooks';
 
-const cloneElementTree = el =>
-	React.Children.map(el, child =>
+const deepCloneChildren = (children, propsFn = null) =>
+	React.Children.map(children, child =>
 		isValidElement(child) && child.props
 			? cloneElement(
 					child,
-					null,
-					cloneElementTree(child.props.children)[0] // HACK(riley)
+					propsFn?.(child),
+					...deepCloneChildren(child.props.children)
 			  )
-			: [child]
+			: child
 	);
 
-const INTENSITY = 2;
-export default ({children}) => {
+const INTENSITY = 1;
+export default ({children, El = 'div', className, style}) => {
 	const [ref, inView] = useInView({threshold: 0});
 	const mousePosition = useMousePosition(
 		typeof window !== 'undefined' && inView && window
@@ -42,16 +42,26 @@ export default ({children}) => {
 	});
 
 	return (
-		<h1 className="title" ref={ref}>
-			<div className="c" style={offsets[0]}>
+		<El
+			style={style}
+			ref={ref}
+			className={`rgb-splitter ${className ? className : ''}`}
+		>
+			<div className="r" style={offsets[0]}>
 				{children}
 			</div>
-			<div className="m" style={offsets[1]}>
-				{cloneElementTree(children)}
+			<div className="g" style={offsets[1]} aria-hidden="true">
+				{deepCloneChildren(children, el => {
+					if (typeof el.props?.children === 'string') {
+						return {
+							offset: Math.random() + 'px',
+						};
+					}
+				})}
 			</div>
-			<div className="y" style={offsets[2]}>
-				{cloneElementTree(children)}
+			<div className="b" style={offsets[2]} aria-hidden="true">
+				{deepCloneChildren(children)}
 			</div>
-		</h1>
+		</El>
 	);
 };

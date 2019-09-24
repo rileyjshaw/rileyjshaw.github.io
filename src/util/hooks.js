@@ -67,13 +67,44 @@ export function useInterval(cb, ms, oneShot) {
 }
 
 // TODO(riley): Improve this then replace all useDimensions() calls.
-export function useBB() {
+// Usage: useDomMethod(domMethod: string)
+// Eg: useDomMethod('getBoundingClientRect');
+export function useDomMethod(domMethod) {
 	const ref = useRef();
-	const [bb, setBB] = useState({});
+	const [result, setResult] = useState({});
 	useLayoutEffect(() => {
-		setBB(ref.current.getBoundingClientRect());
+		setResult(ref.current[domMethod]());
 	}, [ref.current]);
-	return [ref, bb];
+	return [ref, result];
+}
+
+export function useKeyPress(targetKey, onDown, onUp) {
+	const [keyPressed, setKeyPressed] = useState(false);
+
+	function downHandler({key}) {
+		if (key === targetKey && !keyPressed) {
+			setKeyPressed(true);
+			onDown?.();
+		}
+	}
+
+	const upHandler = ({key}) => {
+		if (key === targetKey && keyPressed) {
+			setKeyPressed(false);
+			onUp?.();
+		}
+	};
+
+	useEffect(() => {
+		window.addEventListener('keydown', downHandler);
+		window.addEventListener('keyup', upHandler);
+		return () => {
+			window.removeEventListener('keydown', downHandler);
+			window.removeEventListener('keyup', upHandler);
+		};
+	}, []);
+
+	return keyPressed;
 }
 
 const interactionEventNames = [

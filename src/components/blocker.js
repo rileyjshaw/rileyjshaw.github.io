@@ -18,8 +18,8 @@ export default () => {
 		.padStart(2, '0')}${hour < 12 ? 'am' : 'pm'}`;
 	return (
 		<div className="idle-blocker">
-			<p>Get off the internet.</p>
-			<p>It's already {time}.</p>
+			<p>It is now: {time}.</p>
+			<p>You have been on the Internet for: too long.</p>
 		</div>
 	);
 };
