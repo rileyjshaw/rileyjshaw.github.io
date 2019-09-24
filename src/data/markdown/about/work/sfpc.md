@@ -1,6 +1,6 @@
 ### School for Poetic Computation
 
-I attended the [School for Poetic Computation](https://sfpc.io) in early 2019, where I [kept a blog](https://sfpc.rileyjshaw.com/). My goal was to focus on:
+I attended the [School for Poetic Computation](https://sfpc.io) in early 2018, where I [kept a blog](https://sfpc.rileyjshaw.com/). My goal was to focus on:
 
 -   Education and the reinforcement of class structures
 -   Deletion, permanence, and consistency
