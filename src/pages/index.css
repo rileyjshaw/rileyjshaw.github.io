@@ -1,8 +1,10 @@
 .page-header {
-	animation: color-cycle 60s infinite;
-	background: var(--red);
 	padding-top: 30px;
 	position: relative;
+}
+.cycle-bg {
+	animation: color-cycle 60s infinite;
+	background: var(--red);
 }
 @keyframes color-cycle {
 	0% {

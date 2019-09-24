@@ -17,7 +17,7 @@ import './about.css';
 export default () => (
 	<Layout className="about" root>
 		<SEO title="About" />
-		<header className="page-header">
+		<header className="page-header cycle-bg">
 			<RgbSplitter El="h1" className="title">
 				<Shard>About</Shard>
 			</RgbSplitter>

@@ -1,10 +1,12 @@
 import React from 'react';
 import {Link, graphql} from 'gatsby';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import PagePicker, {pages} from '../components/page-picker';
 import AutoLink, {ExternalLink} from '../components/auto-link';
+import Layout from '../components/layout';
+import RgbSplitter from '../components/rgb-splitter';
+import SEO from '../components/seo';
+import Shard from '../components/shard';
+import SiteNav from '../components/site-nav';
 
 import '../components/content-node.css';
 import './post.css';
@@ -42,11 +44,15 @@ export default ({data, pageContext: {currentPage, numPages}}) => {
 		));
 
 	return (
-		<Layout>
+		<Layout root>
 			<SEO title="All posts" />
-			<div className="blog-list" style={{background: pages.blog.color}}>
-				<PagePicker page="blog" />
-
+			<header className="page-header blog-list-page-header">
+				<RgbSplitter El="h1" className="title">
+					<Shard>Blog</Shard>
+				</RgbSplitter>
+				<SiteNav />
+			</header>
+			<main className="blog-list">
 				<ul className="blog-posts">
 					{posts.map(post => {
 						const uid = post.uid || post.fields?.uid;
@@ -110,7 +116,7 @@ export default ({data, pageContext: {currentPage, numPages}}) => {
 						</Link>
 					)}
 				</div>
-			</div>
+			</main>
 		</Layout>
 	);
 };
