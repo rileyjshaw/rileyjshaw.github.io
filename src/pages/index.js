@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {useStaticQuery, graphql, Link} from 'gatsby';
 
 import allProjectsQuery from '../util/all-projects-query';
@@ -11,38 +11,9 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import SiteNav from '../components/site-nav';
 import RgbSplitter from '../components/rgb-splitter';
+import Shard from '../components/shard';
 
 import './index.css';
-
-const Shard = ({children}) => {
-	const [[rA, rB, rC, rD]] = useState([
-		Math.random(),
-		Math.random(),
-		Math.random(),
-		Math.random(),
-	]);
-	return (
-		<Fit
-			text={children}
-			style={{position: 'relative', marginBottom: '-0.25em'}}
-		>
-			{rA < 0.5 && (
-				<span
-					className="shard"
-					aria-hidden="true"
-					style={{
-						[`border${
-							rA < 0.25 ? 'Right' : 'Left'
-						}`]: '90vw solid #000',
-						borderBottom: `${rB * 0.4}em solid transparent`,
-						borderTop: `${rC * 0.4}em solid transparent`,
-						bottom: `${rD}em`,
-					}}
-				/>
-			)}
-		</Fit>
-	);
-};
 
 const IndexPage = ({starredProjects = []}) => {
 	// TODO(riley): Get starred projects from here.

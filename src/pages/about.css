@@ -1,5 +1,8 @@
 .about-page {
+	background: var(--black);
+	color: var(--white);
 	font-size: var(--font-scale-1);
+	overflow: hidden;
 }
 .about-page .page-picker-wrapper {
 	font-size: var(--font-scale--1);
@@ -10,6 +13,9 @@
 	margin: auto;
 	max-width: 90%;
 	width: 36em;
+}
+.about-page .currently {
+	color: var(--black);
 }
 .about-page .timeline {
 	list-style: none;

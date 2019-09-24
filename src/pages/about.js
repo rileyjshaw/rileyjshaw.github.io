@@ -4,17 +4,25 @@ import {StaticQuery, graphql} from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import BigQuote from '../components/big-quote';
-import PagePicker, {pages} from '../components/page-picker';
 import UpTo from '../components/up-to';
 import GoUp from '../components/go-up';
 import {ExternalLink} from '../components/auto-link';
+import RgbSplitter from '../components/rgb-splitter';
+import Shard from '../components/shard';
+import SiteNav from '../components/site-nav';
 
 import '../templates/post.css';
 import './about.css';
 
 export default () => (
-	<Layout className="about">
+	<Layout className="about" root>
 		<SEO title="About" />
+		<header className="page-header">
+			<RgbSplitter El="h1" className="title">
+				<Shard>About</Shard>
+			</RgbSplitter>
+			<SiteNav />
+		</header>
 		<StaticQuery
 			query={graphql`
 				{
@@ -132,11 +140,7 @@ export default () => (
 				listn,
 				site,
 			}) => (
-				<div
-					className="about-page"
-					style={{background: pages.about.color}}
-				>
-					<PagePicker page="about" />
+				<div className="about-page">
 					<div className="about-me blog-post-content">
 						<div
 							dangerouslySetInnerHTML={{
