@@ -21,7 +21,7 @@ export default () => {
 			>
 				{open ? '✖' : <MenuIcon />}
 			</button>
-			<ul id="menu" hidden={!open}>
+			<ul id="menu" hidden={!open} onClick={() => setOpen(o => !o)}>
 				<li>
 					<Link to="/">
 						<Wrap>Home</Wrap>
@@ -33,7 +33,7 @@ export default () => {
 					</Link>
 				</li>
 				<li>
-					<Link to="/projects">
+					<Link to="/explore">
 						<Wrap>Projects</Wrap>
 					</Link>
 				</li>
