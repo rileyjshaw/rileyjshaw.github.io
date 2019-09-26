@@ -58,6 +58,7 @@
 	animation: fly-in 1s cubic-bezier(0.57, 0.21, 0.69, 1.25); /* Only actually takes half this time. */
 	border-radius: 0 1000px 1000px 0;
 	box-sizing: content-box;
+	display: flex;
 	flex-grow: 1;
 	padding-left: 10%;
 	padding-right: 100%;
@@ -99,10 +100,10 @@
 	align-items: center;
 	color: var(--white);
 	display: flex;
+	flex-grow: 1;
 	font-family: var(--font-stack-heading);
 	font-size: 42px;
 	font-weight: 700;
-	height: 100%;
 	justify-content: center;
 	text-decoration: none;
 	width: 100%;
@@ -169,6 +170,9 @@
 		height: 36px;
 		transition: none;
 		width: 36px;
+	}
+	.site-nav button.open {
+		position: fixed;
 	}
 	.site-nav button svg {
 		height: 100%;

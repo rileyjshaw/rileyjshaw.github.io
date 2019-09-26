@@ -35,6 +35,7 @@ const IndexPage = ({starredProjects = []}) => {
 		<Layout root>
 			<SEO title="Home" />
 			<header className="page-header index-page-header">
+				<SiteNav />
 				<RgbSplitter El="h1" className="title">
 					{/* <Shard>As your eyes adjust, you discover that</Shard>
 			<span className="visuallyhidden"> </span> */}
@@ -46,7 +47,6 @@ const IndexPage = ({starredProjects = []}) => {
 					<span className="visuallyhidden"> </span>
 					<Shard>Shaw</Shard>
 				</RgbSplitter>
-				<SiteNav />
 			</header>
 			<main className="main-content">
 				<div className="section main-about">
