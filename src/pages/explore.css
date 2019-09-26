@@ -1,3 +1,9 @@
 .explore {
 	background: var(--blue);
 }
+.project-explorer-page-header {
+	background: var(--cyan);
+}
+.project-explorer-page-header::after {
+	border-right-color: var(--blue) !important;
+}

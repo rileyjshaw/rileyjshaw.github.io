@@ -1,26 +1,33 @@
 import React from 'react';
 import {Link} from 'gatsby';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import Newsletter from '../components/newsletter';
-import PagePicker, {pages} from '../components/page-picker';
-import GoUp from '../components/go-up';
 import {UncontrolledLink, ExternalLink} from '../components/auto-link';
+import GoUp from '../components/go-up';
+import Layout from '../components/layout';
+import Newsletter from '../components/newsletter';
+import RgbSplitter from '../components/rgb-splitter';
+import SEO from '../components/seo';
+import Shard from '../components/shard';
+import SiteNav from '../components/site-nav';
+import BigQuote from '../components/big-quote';
 
 import './subscribe.css';
 
 export default () => (
-	<Layout className="subscribe-page">
+	<Layout root className="subscribe-page">
 		<SEO title="Subscribe" />
-		<div style={{background: pages.subscribe.color}} className="inner">
-			<PagePicker page="subscribe" />
+		<header className="page-header subscribe-page-header">
+			<RgbSplitter El="h1" className="title">
+				<Shard>Feeds</Shard>
+			</RgbSplitter>
+			<SiteNav />
+		</header>
+		<div className="inner">
 			<Newsletter />
-			<p>
-				Each index page on my website has its own RSS feed, which I've{' '}
-				<Link to="/blog/todo">written about here</Link> (todo):
-			</p>
+			<hr />
+			<p>This website also has RSS feeds for more frequent updates:</p>
 			<dl>
+				{/*
 				<dt>
 					<UncontrolledLink to="/index.xml">
 						Index feed (todo)
@@ -43,7 +50,7 @@ export default () => (
 				<dd>
 					Updates on <Link to="/about">what I'm up to</Link>.
 				</dd>
-
+				*/}
 				<dt>
 					<UncontrolledLink to="/blog.xml">
 						Blog feed
@@ -62,14 +69,14 @@ export default () => (
 					New projects in the{' '}
 					<Link to="/explore">project explorer</Link>.
 				</dd>
-
+				{/*
 				<dt>
 					<UncontrolledLink to="/subscribe.xml">
 						RSS feed feed (todo)
 					</UncontrolledLink>
 				</dt>
 				<dd>A list of feeds available from this page. So meta.</dd>
-
+				*/}
 				<dt>
 					<UncontrolledLink to="/firehose.xml">
 						Firehose feed
@@ -79,7 +86,7 @@ export default () => (
 					<em>All</em> updates from the above feeds.
 				</dd>
 			</dl>
-
+			<hr />
 			<p>You can also find me on:</p>
 			<ul>
 				<li>
@@ -129,6 +136,7 @@ export default () => (
 				</li>
 			</ul>
 		</div>
+		<BigQuote quoteIndex={0} />
 		<GoUp />
 	</Layout>
 );

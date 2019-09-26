@@ -6,10 +6,11 @@ import Blocker from './blocker';
 
 const Layout = ({children, root, className = ''}) => {
 	const idle = useIdle(60000 * 10);
+	const El = root ? 'div' : 'main';
 	return (
 		<>
 			{idle && <Blocker />}
-			{root ? children : <main className={className}>{children}</main>}
+			<El className={className}>{children}</El>
 		</>
 	);
 };

@@ -67,12 +67,14 @@ export {quotes};
 
 export default props => {
 	let showRefreshButton = false;
-	const [quoteIndex, setQuoteIndex] = useState(
+	let [quoteIndex, setQuoteIndex] = useState(
 		Math.floor(Math.random() * quotes.length)
 	);
 	if (!props.children) {
+		if (typeof props.quoteIndex === 'number')
+			quoteIndex = props.quoteIndex;
+		else showRefreshButton = true;
 		props = quotes[quoteIndex];
-		showRefreshButton = true;
 	}
 	const {children, cite, source} = props;
 	return (

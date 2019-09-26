@@ -31,6 +31,11 @@
 .project-explorer .filters legend {
 	float: left; /* Oh no. */
 }
+.project-explorer .warning {
+	text-align: center;
+	text-decoration: underline;
+	text-decoration-style: wavy;
+}
 .project-explorer .filters input {
 	border: 0;
 	clip: rect(0 0 0 0);
@@ -41,10 +46,10 @@
 	position: absolute;
 	width: 1px;
 }
-.page-picker-wrapper button {
+.project-explorer-hide-filters {
 	margin: 0;
 }
-.page-picker-wrapper button,
+.project-explorer-hide-filters,
 .project-explorer .filters label,
 .project-explorer .filters button {
 	background: var(--cyan);

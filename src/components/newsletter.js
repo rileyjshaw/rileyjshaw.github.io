@@ -2,7 +2,7 @@ import React from 'react';
 
 import './newsletter.css';
 
-export default () => (
+export const Form = () => (
 	<form
 		className="newsletter-form"
 		action="https://tinyletter.com/changelog"
@@ -19,10 +19,7 @@ export default () => (
 			}
 		}}
 	>
-		<label
-			htmlFor="newsletter-email"
-			style={{fontSize: 18, fontWeight: 'bold'}}
-		>
+		<label htmlFor="newsletter-email">
 			Subscribe to my newsletter for major updates:
 		</label>
 		<div className="bottom-row">
@@ -36,4 +33,11 @@ export default () => (
 			<input type="submit" value="Subscribe" />
 		</div>
 	</form>
+);
+
+export default () => (
+	<div className="newsletter">
+		<Form />
+		<p>My newsletter dispatches infrequent updates on what I'm up to.</p>
+	</div>
 );

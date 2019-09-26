@@ -130,6 +130,7 @@
 	margin: auto;
 	width: 42px;
 }
+/* TODO(riley): This interferes with the top right link square. */
 .excerpt {
 	position: relative;
 }

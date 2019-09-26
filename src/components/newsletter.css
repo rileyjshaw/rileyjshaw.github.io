@@ -1,12 +1,23 @@
 .newsletter-form,
 .newsletter-form input {
-	font-size: 18px;
+	font-family: var(--font-stack-serif);
 	font-weight: bold;
+}
+.newsletter-form {
+	margin-bottom: var(--font-scale-3);
+}
+.newsletter-form label {
+	display: block;
+	font-size: var(--font-scale-1);
+	margin-bottom: var(--font-scale--1);
+}
+.newsletter-form input {
+	font-size: var(--font-scale--1);
 }
 .newsletter-form .bottom-row {
 	display: flex;
 	height: 60px;
-	margin: 12px 0;
+	margin: var(--font-scale--1) 0;
 }
 .newsletter-form input[type='text'] {
 	flex-grow: 1;
@@ -17,4 +28,5 @@
 	border: 0;
 	color: var(--white);
 	cursor: pointer;
+	font-family: var(--font-stack-sans);
 }

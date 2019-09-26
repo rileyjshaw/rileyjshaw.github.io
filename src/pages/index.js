@@ -34,7 +34,7 @@ const IndexPage = ({starredProjects = []}) => {
 	return (
 		<Layout root>
 			<SEO title="Home" />
-			<header className="page-header cycle-bg">
+			<header className="page-header index-page-header">
 				<RgbSplitter El="h1" className="title">
 					{/* <Shard>As your eyes adjust, you discover that</Shard>
 			<span className="visuallyhidden"> </span> */}

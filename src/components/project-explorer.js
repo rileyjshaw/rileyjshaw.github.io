@@ -8,7 +8,6 @@ import contentTypes from '../util/content-types';
 
 import gridDoodles from './grid-doodles';
 import ContentGrid from './content-grid';
-import PagePicker from './page-picker';
 
 import './project-explorer.css';
 
@@ -147,24 +146,23 @@ class ProjectExplorer extends React.PureComponent {
 
 		return (
 			<div className="project-explorer">
-				<PagePicker page="explore">
-					<button
-						onClick={() =>
-							this.setState(({drawerOpen}) => ({
-								drawerOpen: !drawerOpen,
-							}))
-						}
-					>
-						{this.state.drawerOpen
-							? 'Hide filters ▲'
-							: 'Show filters ▼'}
-					</button>
-				</PagePicker>
-				<p className="result-details">
+				<p className="result-details warning">
 					Hi! I'm still developing this part of the website, so I
 					apologize if it crashes your browser. Enjoy!
 				</p>
-				<br />
+
+				<button
+					className="project-explorer-hide-filters"
+					onClick={() =>
+						this.setState(({drawerOpen}) => ({
+							drawerOpen: !drawerOpen,
+						}))
+					}
+				>
+					{this.state.drawerOpen
+						? 'Hide filters ▲'
+						: 'Show filters ▼'}
+				</button>
 				<div className="filters">
 					{this.state.drawerOpen && (
 						<fieldset className="controls">

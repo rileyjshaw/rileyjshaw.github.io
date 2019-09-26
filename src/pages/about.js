@@ -208,26 +208,7 @@ export default () => (
 							}}
 						/>
 					</div>
-					<BigQuote
-						cite="https://www.versobooks.com/books/3002-new-dark-age"
-						source={
-							<>
-								James Bridle, <cite>New Dark Age</cite>
-							</>
-						}
-					>
-						If we do not understand how complex technologies
-						function, how systems of technologies interconnect, and
-						how systems of systems interact, then we are powerless
-						within them, and their potential is more easily
-						captured by selfish elites and inhuman corporations…
-						this understanding cannot be limited to the
-						practicalities of how things work: it must be extended
-						to how things came to be, and how they continue to
-						function in the world in ways that are often invisible
-						and interwoven. What is required is not understanding,
-						but literacy.
-					</BigQuote>
+					<BigQuote quoteIndex={4} />
 					<GoUp />
 				</div>
 			)}
