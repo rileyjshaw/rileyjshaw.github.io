@@ -38,6 +38,10 @@ export const Form = () => (
 export default () => (
 	<div className="newsletter">
 		<Form />
-		<p>My newsletter dispatches infrequent updates on what I'm up to.</p>
+		<p>
+			My newsletter dispatches brief, infrequent updates about what I'm
+			working on, where I live, or things that I'm especially excited
+			about.
+		</p>
 	</div>
 );
