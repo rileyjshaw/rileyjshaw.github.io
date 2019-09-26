@@ -130,11 +130,10 @@
 	margin: auto;
 	width: 42px;
 }
-/* TODO(riley): This interferes with the top right link square. */
-.excerpt {
+.excerpt section {
 	position: relative;
 }
-.excerpt::after {
+.excerpt section::after {
 	background: linear-gradient(rgba(var(--whitergb), 0), var(--white));
 	bottom: 0;
 	content: '';
