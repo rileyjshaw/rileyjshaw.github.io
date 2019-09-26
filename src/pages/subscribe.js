@@ -17,16 +17,16 @@ export default () => (
 	<Layout root className="subscribe-page">
 		<SEO title="Subscribe" />
 		<header className="page-header subscribe-page-header">
+			<SiteNav />
 			<RgbSplitter El="h1" className="title">
 				<Shard>Feeds</Shard>
 			</RgbSplitter>
-			<SiteNav />
 		</header>
 		<div className="inner">
 			<Newsletter />
 			<hr />
 			<p>This website also has RSS feeds for more frequent updates:</p>
-			<dl>
+			<dl className="rss-feeds">
 				{/*
 				<dt>
 					<UncontrolledLink to="/index.xml">

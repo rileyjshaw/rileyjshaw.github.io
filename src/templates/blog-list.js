@@ -47,10 +47,10 @@ export default ({data, pageContext: {currentPage, numPages}}) => {
 		<Layout root>
 			<SEO title="All posts" />
 			<header className="page-header blog-list-page-header">
+				<SiteNav />
 				<RgbSplitter El="h1" className="title">
 					<Shard>Blog</Shard>
 				</RgbSplitter>
-				<SiteNav />
 			</header>
 			<main className="blog-list">
 				<ul className="blog-posts">

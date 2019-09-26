@@ -18,10 +18,10 @@ export default () => (
 	<Layout className="about" root>
 		<SEO title="About" />
 		<header className="page-header cycle-bg">
+			<SiteNav />
 			<RgbSplitter El="h1" className="title">
 				<Shard>About</Shard>
 			</RgbSplitter>
-			<SiteNav />
 		</header>
 		<StaticQuery
 			query={graphql`

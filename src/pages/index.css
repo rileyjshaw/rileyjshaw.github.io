@@ -5,7 +5,6 @@
 	border-right-color: var(--yellow) !important;
 }
 .page-header {
-	padding-top: 30px;
 	position: relative;
 }
 .cycle-bg {
@@ -54,6 +53,7 @@
 .title .r,
 .title .g,
 .title .b {
+	margin-top: 30px;
 	mix-blend-mode: screen;
 	width: 100%;
 	will-change: left, top;

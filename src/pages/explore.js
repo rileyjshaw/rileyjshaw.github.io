@@ -15,10 +15,10 @@ const ExplorePage = () => (
 	<Layout className="explore">
 		<SEO title="Project explorer" />
 		<header className="page-header project-explorer-page-header">
+			<SiteNav />
 			<RgbSplitter El="h1" className="title">
 				<Shard>Projects</Shard>
 			</RgbSplitter>
-			<SiteNav />
 		</header>
 		<ProjectExplorer />
 		<BigQuote quoteIndex={3} />
