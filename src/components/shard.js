@@ -24,7 +24,7 @@ export default ({children}) => {
 						}`]: '90vw solid #000',
 						borderBottom: `${rB * 0.4}em solid transparent`,
 						borderTop: `${rC * 0.4}em solid transparent`,
-						bottom: `${rD}em`,
+						bottom: `${rD / 2}em`,
 					}}
 				/>
 			)}
