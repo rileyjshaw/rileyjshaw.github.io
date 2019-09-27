@@ -1,0 +1,25 @@
+.page-not-found,
+.page-not-found body,
+.page-not-found #___gatsby,
+.page-not-found #gatsby-focus-wrapper {
+	height: 100%;
+}
+.page-not-found #gatsby-focus-wrapper {
+	background: var(--cyan);
+	display: flex;
+	flex-direction: column;
+}
+.page-not-found header {
+	background: #000;
+	justify-self: flex-start;
+}
+.page-not-found header::after {
+	border-right-color: var(--cyan);
+}
+.page-not-found main {
+	background: var(--white);
+	border: 1px solid var(--black);
+	box-shadow: 4px 4px var(--black);
+	margin: auto;
+	padding: var(--font-scale-1) var(--font-scale-2);
+}

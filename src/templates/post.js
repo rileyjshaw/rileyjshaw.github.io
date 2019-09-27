@@ -10,35 +10,33 @@ export default function Template({data}) {
 	const {markdownRemark} = data;
 	const {fields, html} = markdownRemark;
 	return (
-		<Layout root>
-			<div className="blog-post-page">
-				<SEO title={fields.title} />
-				<header className="top-nav" role="banner">
-					<nav role="navigation">
-						<h1>
-							<Link to="/">Riley Shaw</Link>
-						</h1>{' '}
-						/ <Link to="/blog">Blog</Link> / {fields.title}
-					</nav>
-				</header>
-				<main>
-					<article className="blog-post-content" role="article">
-						<header>
-							<h1>{fields.title}</h1>
-							<div className="subheading">
-								<time>Posted {fields.date}</time>
-							</div>
-						</header>
-						<div
-							className="blog-post-markdown"
-							// HACK(riley): Replace this in a remark plugin.
-							dangerouslySetInnerHTML={{
-								__html: html.replace(/↩/g, '↩&#xFE0E;'),
-							}}
-						/>
-					</article>
-				</main>
-			</div>
+		<Layout>
+			<SEO title={fields.title} className="blog-post-page" />
+			<header className="top-nav" role="banner">
+				<nav role="navigation">
+					<h1>
+						<Link to="/">Riley Shaw</Link>
+					</h1>{' '}
+					/ <Link to="/blog">Blog</Link> / {fields.title}
+				</nav>
+			</header>
+			<main>
+				<article className="blog-post-content" role="article">
+					<header>
+						<h1>{fields.title}</h1>
+						<div className="subheading">
+							<time>Posted {fields.date}</time>
+						</div>
+					</header>
+					<div
+						className="blog-post-markdown"
+						// HACK(riley): Replace this in a remark plugin.
+						dangerouslySetInnerHTML={{
+							__html: html.replace(/↩/g, '↩&#xFE0E;'),
+						}}
+					/>
+				</article>
+			</main>
 		</Layout>
 	);
 }

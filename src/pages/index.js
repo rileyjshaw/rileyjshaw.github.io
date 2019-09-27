@@ -32,7 +32,7 @@ const IndexPage = ({starredProjects = []}) => {
 	`);
 
 	return (
-		<Layout root>
+		<Layout>
 			<SEO title="Home" />
 			<header className="page-header index-page-header">
 				<SiteNav />

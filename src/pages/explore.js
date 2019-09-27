@@ -12,8 +12,8 @@ import BigQuote from '../components/big-quote';
 import './explore.css';
 
 const ExplorePage = () => (
-	<Layout className="explore">
-		<SEO title="Project explorer" />
+	<Layout>
+		<SEO title="Project explorer" className="explore" />
 		<header className="page-header project-explorer-page-header">
 			<SiteNav />
 			<RgbSplitter El="h1" className="title">

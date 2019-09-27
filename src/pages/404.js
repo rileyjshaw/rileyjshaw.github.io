@@ -1,13 +1,68 @@
 import React from 'react';
+import {Link} from 'gatsby';
 
+import {ExternalLink} from '../components/auto-link';
+import {Time} from '../components/blocker';
 import Layout from '../components/layout';
+import RgbSplitter from '../components/rgb-splitter';
 import SEO from '../components/seo';
+import Shard from '../components/shard';
+import SiteNav from '../components/site-nav';
 
-const NotFoundPage = () => (
+import './404.css';
+
+const NotFoundPage = ({location}) => (
 	<Layout>
-		<SEO title="404: Not found" />
-		<h1>NOT FOUND</h1>
-		<p>You just hit a route that doesn&#39;t exist.</p>
+		<SEO title="404: Not found" className="page-not-found" />
+		<header className="page-header">
+			<SiteNav />
+			<RgbSplitter El="h1" className="title">
+				<Shard>Page not found</Shard>
+			</RgbSplitter>
+		</header>
+		<main className="404-main">
+			<p>
+				You tried to load a page that doesn't exist. Here are some
+				things you can do:
+			</p>
+			<ul>
+				<li>
+					<p>
+						Check if the link works on my{' '}
+						<ExternalLink
+							to={`https://old.rileyjshaw.com${location.pathname}`}
+						>
+							old website
+						</ExternalLink>
+						.
+					</p>
+					<li>
+						<p>
+							Search for{' '}
+							<ExternalLink
+								to={`https://duckduckgo.com/?q=rileyjshaw${location.pathname.replace(
+									/[/ _-]/g,
+									'+'
+								)}`}
+							>
+								related keywords online
+							</ExternalLink>
+							.
+						</p>
+					</li>
+					<li>
+						<p>
+							Start over from <Link to="/">the home page</Link>.
+						</p>
+					</li>
+					<li>
+						<p>
+							Get off the Internet. It's already <Time />.
+						</p>
+					</li>
+				</li>
+			</ul>
+		</main>
 	</Layout>
 );
 

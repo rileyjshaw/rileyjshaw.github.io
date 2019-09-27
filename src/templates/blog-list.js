@@ -44,7 +44,7 @@ export default ({data, pageContext: {currentPage, numPages}}) => {
 		));
 
 	return (
-		<Layout root>
+		<Layout>
 			<SEO title="All posts" />
 			<header className="page-header blog-list-page-header">
 				<SiteNav />

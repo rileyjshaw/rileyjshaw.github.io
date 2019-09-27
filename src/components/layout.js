@@ -4,13 +4,12 @@ import {useIdle} from '../util/hooks';
 
 import Blocker from './blocker';
 
-const Layout = ({children, root, className = ''}) => {
+const Layout = ({children}) => {
 	const idle = useIdle(60000 * 10);
-	const El = root ? 'div' : 'main';
 	return (
 		<>
 			{idle && <Blocker />}
-			<El className={className}>{children}</El>
+			{children}
 		</>
 	);
 };

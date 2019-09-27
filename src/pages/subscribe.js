@@ -14,8 +14,8 @@ import BigQuote from '../components/big-quote';
 import './subscribe.css';
 
 export default () => (
-	<Layout root className="subscribe-page">
-		<SEO title="Subscribe" />
+	<Layout>
+		<SEO title="Subscribe" className="subscribe-page" />
 		<header className="page-header subscribe-page-header">
 			<SiteNav />
 			<RgbSplitter El="h1" className="title">

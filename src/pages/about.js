@@ -15,8 +15,8 @@ import '../templates/post.css';
 import './about.css';
 
 export default () => (
-	<Layout className="about" root>
-		<SEO title="About" />
+	<Layout>
+		<SEO title="About" className="about" />
 		<header className="page-header cycle-bg">
 			<SiteNav />
 			<RgbSplitter El="h1" className="title">
