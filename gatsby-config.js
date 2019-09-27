@@ -97,19 +97,7 @@ module.exports = {
 				],
 			},
 		},
-		{
-			resolve: 'gatsby-plugin-svgr',
-			options: {
-				prettier: true,
-				svgo: true,
-				svgoConfig: {
-					plugins: {
-						removeViewBox: true,
-						cleanupIDs: true,
-					},
-				},
-			},
-		},
+		`gatsby-plugin-svgr`,
 		// TODO(riley): So much redundancy between here, gatsby-node, and
 		//              all-projects-query. Do better!
 		{

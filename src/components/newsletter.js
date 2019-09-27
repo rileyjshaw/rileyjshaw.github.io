@@ -40,8 +40,7 @@ export default () => (
 		<Form />
 		<p>
 			My newsletter dispatches brief, infrequent updates about what I'm
-			working on, where I live, or things that I'm especially excited
-			about.
+			working on, where I live, or whatever I'm especially excited about.
 		</p>
 	</div>
 );
