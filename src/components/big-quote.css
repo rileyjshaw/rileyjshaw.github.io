@@ -5,7 +5,7 @@
 	display: flex;
 	flex-direction: column;
 	font-family: var(--font-stack-serif);
-	font-size: 30px;
+	font-size: var(--font-scale-2);
 	justify-content: space-between;
 	margin: 0;
 	min-height: 100vh;
@@ -27,10 +27,12 @@
 }
 .big-quote blockquote {
 	margin: 0 auto;
-	max-width: 60%;
+	max-width: var(--w-md);
+	width: 90%;
 }
 .big-quote p {
 	margin: 0 0 30px;
+	text-align: justify;
 }
 .big-quote footer {
 	text-align: right;
@@ -41,4 +43,10 @@
 	cursor: pointer;
 	fill: var(--white);
 	margin-bottom: 120px;
+}
+/* TODO(riley): Share these breakpoints. */
+@media only screen and (max-width: 800px) {
+	.big-quote {
+		font-size: var(--font-scale-0);
+	}
 }
