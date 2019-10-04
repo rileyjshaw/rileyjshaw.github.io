@@ -27,7 +27,7 @@
 		],
 		"date": "2019-06-01",
 		"coolness": 36,
-		"href": "https://marqueee.glitch.me/",
+		"link": "https://marqueee.glitch.me/",
 		"tags": ["online", "reusable"],
 		"lastTagged": 1564772210294
 	},
@@ -36,7 +36,7 @@
 		"description": ["A garden of emoji that slowly climbs your screen."],
 		"date": "2019-03-17",
 		"coolness": 41,
-		"href": "https://txt-flowers.glitch.me/",
+		"link": "https://txt-flowers.glitch.me/",
 		"tags": ["online", "pretty"],
 		"lastTagged": 1564773945787
 	},
@@ -45,7 +45,7 @@
 		"description": ["An ascii rock garden. Rake with touch / mouse."],
 		"date": "2019-03-17",
 		"coolness": 41,
-		"href": "https://ascii-garden.glitch.me/",
+		"link": "https://ascii-garden.glitch.me/",
 		"tags": ["online", "pretty"],
 		"lastTagged": 1564773957386
 	},
@@ -56,7 +56,7 @@
 			"This was a proof-of-concept for a keyboard glove, which was implemented in hardware by <a href=\"https://github.com/rileyjshaw/english-words-directory-trie\" target=\"_blank\" rel=\"noopener noreferrer\">mapping the trie to a directory tree</a>."
 		],
 		"date": "2019-03-10",
-		"href": "https://typing-lazy.glitch.me/",
+		"link": "https://typing-lazy.glitch.me/",
 		"tags": ["starred", "online", "external"],
 		"lastTagged": 1564775565269,
 		"coolness": 80
@@ -69,14 +69,14 @@
 		"date": "2019-03-09",
 		"tags": ["online", "game", "pretty"],
 		"coolness": 76,
-		"href": "https://ca-finder.glitch.me/",
+		"link": "https://ca-finder.glitch.me/",
 		"lastTagged": 1552433253008
 	},
 	{
 		"title": "smudge",
 		"description": ["Created in 99B of Javascript."],
 		"coolness": 10,
-		"href": "https://codepen.io/rileyjshaw/pen/rdQxOa",
+		"link": "https://codepen.io/rileyjshaw/pen/rdQxOa",
 		"date": "2018-04-06",
 		"tags": ["online", "golf"],
 		"lastTagged": 1564608355968
@@ -89,7 +89,7 @@
 		"date": "2018-01-10",
 		"tags": ["starred", "app", "music", "external"],
 		"coolness": 70,
-		"href": "https://github.com/rileyjshaw/huertbeat",
+		"link": "https://github.com/rileyjshaw/huertbeat",
 		"lastTagged": 1564608357834
 	},
 	{
@@ -98,7 +98,7 @@
 		"date": "2017-12-14",
 		"tags": ["app", "music", "external"],
 		"coolness": 70,
-		"href": "https://github.com/rileyjshaw/huemidity",
+		"link": "https://github.com/rileyjshaw/huemidity",
 		"lastTagged": 1564608358786
 	},
 	{
@@ -109,7 +109,7 @@
 		"date": "2017-11-25",
 		"tags": ["online", "pretty"],
 		"coolness": 52,
-		"href": "https://codepen.io/rileyjshaw/full/VrBZoK/",
+		"link": "https://codepen.io/rileyjshaw/full/VrBZoK/",
 		"lastTagged": 1564608361275
 	},
 	{
@@ -121,7 +121,7 @@
 		"date": "2017-10-07",
 		"tags": ["extinct", "starred", "online", "pretty"],
 		"coolness": 70,
-		"href": "/canvas/",
+		"link": "/canvas/",
 		"lastTagged": 1565142493873
 	},
 	{
@@ -133,7 +133,7 @@
 		"date": "2017-09-30",
 		"tags": ["online", "pretty"],
 		"coolness": 33,
-		"href": "https://photo-experiment.glitch.me",
+		"link": "https://photo-experiment.glitch.me",
 		"lastTagged": 1564624404415
 	},
 	{
@@ -144,7 +144,7 @@
 		"date": "2017-05-29",
 		"tags": ["external"],
 		"coolness": 60,
-		"href": "https://github.com/rileyjshaw/hologram",
+		"link": "https://github.com/rileyjshaw/hologram",
 		"lastTagged": 1564608370682
 	},
 	{
@@ -152,7 +152,7 @@
 		"date": "2017-04-18",
 		"tags": ["online", "pretty"],
 		"coolness": 50,
-		"href": "https://codepen.io/rileyjshaw/details/gWamKx/",
+		"link": "https://codepen.io/rileyjshaw/details/gWamKx/",
 		"lastTagged": 1564608372846
 	},
 	{
@@ -163,7 +163,7 @@
 		"date": "2017-03-27",
 		"tags": ["reusable"],
 		"coolness": 62,
-		"href": "https://github.com/Khan/fuzzy-match-utils",
+		"link": "https://github.com/Khan/fuzzy-match-utils",
 		"lastTagged": 1564608377140
 	},
 	{
@@ -171,7 +171,7 @@
 		"date": "2017-03-01",
 		"tags": ["online", "reusable", "golf"],
 		"coolness": 59,
-		"href": "http://codepen.io/rileyjshaw/pen/BWjZZV/?editors=1100",
+		"link": "http://codepen.io/rileyjshaw/pen/BWjZZV/?editors=1100",
 		"lastTagged": 1564608379885
 	},
 	{
@@ -183,7 +183,7 @@
 		"date": "2017-02-27",
 		"tags": ["online", "reusable"],
 		"coolness": 56,
-		"href": "/sorta/",
+		"link": "/sorta/",
 		"lastTagged": 1564608381908
 	},
 	{
@@ -192,7 +192,7 @@
 		"date": "2017-02-26",
 		"tags": ["reusable"],
 		"coolness": 30,
-		"href": "https://github.com/rileyjshaw/node-timsort-async",
+		"link": "https://github.com/rileyjshaw/node-timsort-async",
 		"lastTagged": 1564608382989
 	},
 	{
@@ -201,7 +201,7 @@
 		"date": "2017-01-17",
 		"tags": ["starred", "online", "app"],
 		"coolness": 80,
-		"href": "/write",
+		"link": "/write",
 		"lastTagged": 1564608384406
 	},
 	{
@@ -212,7 +212,7 @@
 		"date": "2017-01-05",
 		"tags": ["online", "app"],
 		"coolness": 10,
-		"href": "/color-screen/",
+		"link": "/color-screen/",
 		"lastTagged": 1564608387197
 	},
 	{
@@ -224,7 +224,7 @@
 		"date": "2016-12-27",
 		"tags": ["starred", "online", "instructional"],
 		"coolness": 90,
-		"href": "https://crypto.christmas/",
+		"link": "https://crypto.christmas/",
 		"lastTagged": 1564608389110
 	},
 	{
@@ -232,7 +232,7 @@
 		"date": "2016-12-25",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 47,
-		"href": "https://codepen.io/rileyjshaw/full/mOZrye/",
+		"link": "https://codepen.io/rileyjshaw/full/mOZrye/",
 		"lastTagged": 1564608390236
 	},
 	{
@@ -243,7 +243,7 @@
 		"date": "2016-11-13",
 		"tags": ["instructional"],
 		"coolness": 60,
-		"href": "https://gist.github.com/rileyjshaw/fab2c01b9bb85e598fffba130ca28d0a",
+		"link": "https://gist.github.com/rileyjshaw/fab2c01b9bb85e598fffba130ca28d0a",
 		"lastTagged": 1564608392569
 	},
 	{
@@ -251,7 +251,7 @@
 		"date": "2016-10-31",
 		"tags": ["online", "pretty"],
 		"coolness": 44,
-		"href": "http://codepen.io/rileyjshaw/pen/GjVZYq",
+		"link": "http://codepen.io/rileyjshaw/pen/GjVZYq",
 		"lastTagged": 1564608396287
 	},
 	{
@@ -262,7 +262,7 @@
 		"date": "2016-10-27",
 		"tags": ["starred", "online", "golf"],
 		"coolness": 80,
-		"href": "https://gist.github.com/rileyjshaw/216af3d73b16e35d462ea5a29da4bcd4",
+		"link": "https://gist.github.com/rileyjshaw/216af3d73b16e35d462ea5a29da4bcd4",
 		"lastTagged": 1564608398380
 	},
 	{
@@ -271,7 +271,7 @@
 		"date": "2016-10-24",
 		"tags": ["online", "pretty"],
 		"coolness": 32,
-		"href": "http://codepen.io/rileyjshaw/pen/ozmymE/",
+		"link": "http://codepen.io/rileyjshaw/pen/ozmymE/",
 		"lastTagged": 1564608401800
 	},
 	{
@@ -280,7 +280,7 @@
 		"date": "2016-10-04",
 		"tags": ["online", "pretty"],
 		"coolness": 34,
-		"href": "http://codepen.io/rileyjshaw/pen/bwYRbw",
+		"link": "http://codepen.io/rileyjshaw/pen/bwYRbw",
 		"lastTagged": 1564608403981
 	},
 	{
@@ -292,7 +292,7 @@
 		"date": "2016-10-04",
 		"tags": ["online", "app", "pretty"],
 		"coolness": 36,
-		"href": "http://codepen.io/rileyjshaw/pen/jrayWL",
+		"link": "http://codepen.io/rileyjshaw/pen/jrayWL",
 		"lastTagged": 1564608405055
 	},
 	{
@@ -300,7 +300,7 @@
 		"date": "2016-10-03",
 		"tags": ["online", "pretty"],
 		"coolness": 30,
-		"href": "http://codepen.io/rileyjshaw/full/ZpXPYR/",
+		"link": "http://codepen.io/rileyjshaw/full/ZpXPYR/",
 		"lastTagged": 1564608406264
 	},
 	{
@@ -311,7 +311,7 @@
 		"date": "2016-09-28",
 		"tags": ["starred", "online", "game"],
 		"coolness": 86,
-		"href": "http://codepen.io/rileyjshaw/pen/YGQVqK?editors=1000",
+		"link": "http://codepen.io/rileyjshaw/pen/YGQVqK?editors=1000",
 		"lastTagged": 1564608407776
 	},
 	{
@@ -319,7 +319,7 @@
 		"date": "2016-09-26",
 		"tags": ["online", "pretty"],
 		"coolness": 55,
-		"href": "http://codepen.io/rileyjshaw/full/mAmRNa/",
+		"link": "http://codepen.io/rileyjshaw/full/mAmRNa/",
 		"lastTagged": 1564608408933
 	},
 	{
@@ -328,7 +328,7 @@
 		"date": "2016-09-26",
 		"tags": ["online", "pretty"],
 		"coolness": 82,
-		"href": "http://codepen.io/rileyjshaw/full/YGVKgV/",
+		"link": "http://codepen.io/rileyjshaw/full/YGVKgV/",
 		"lastTagged": 1564608411208
 	},
 	{
@@ -337,7 +337,7 @@
 		"date": "2016-09-10",
 		"tags": ["online", "pretty"],
 		"coolness": 52,
-		"href": "http://codepen.io/rileyjshaw/full/ozjEoK/",
+		"link": "http://codepen.io/rileyjshaw/full/ozjEoK/",
 		"lastTagged": 1564608412735
 	},
 	{
@@ -345,7 +345,7 @@
 		"date": "2016-08-29",
 		"tags": ["online", "pretty", "golf", "external"],
 		"coolness": 40,
-		"href": "http://www.lexaloffle.com/bbs/?tid=27569",
+		"link": "http://www.lexaloffle.com/bbs/?tid=27569",
 		"lastTagged": 1564608416268
 	},
 	{
@@ -356,7 +356,7 @@
 		"date": "2016-08-28",
 		"tags": ["starred", "online", "game", "music", "golf", "external"],
 		"coolness": 80,
-		"href": "http://www.lexaloffle.com/bbs/?tid=27571",
+		"link": "http://www.lexaloffle.com/bbs/?tid=27571",
 		"lastTagged": 1564608417415
 	},
 	{
@@ -364,7 +364,7 @@
 		"date": "2016-08-23",
 		"tags": ["online", "app", "pretty"],
 		"coolness": 59,
-		"href": "http://codepen.io/rileyjshaw/full/YWbbGJ/",
+		"link": "http://codepen.io/rileyjshaw/full/YWbbGJ/",
 		"lastTagged": 1564608420432
 	},
 	{
@@ -372,7 +372,7 @@
 		"date": "2016-08-08",
 		"tags": ["online", "pretty"],
 		"coolness": 40,
-		"href": "http://codepen.io/rileyjshaw/full/WxYkmW/",
+		"link": "http://codepen.io/rileyjshaw/full/WxYkmW/",
 		"lastTagged": 1564608422097
 	},
 	{
@@ -381,7 +381,7 @@
 		"date": "2016-08-08",
 		"tags": ["online", "pretty"],
 		"coolness": 46,
-		"href": "http://codepen.io/rileyjshaw/full/kXQXAo/",
+		"link": "http://codepen.io/rileyjshaw/full/kXQXAo/",
 		"lastTagged": 1564608423548
 	},
 	{
@@ -392,7 +392,7 @@
 		"date": "2016-08-08",
 		"tags": ["online", "pretty"],
 		"coolness": 50,
-		"href": "http://codepen.io/rileyjshaw/full/pbQEoA/",
+		"link": "http://codepen.io/rileyjshaw/full/pbQEoA/",
 		"lastTagged": 1564608428261
 	},
 	{
@@ -403,7 +403,7 @@
 		"date": "2016-06-19",
 		"tags": ["app", "music", "reusable"],
 		"coolness": 40,
-		"href": "https://github.com/rileyjshaw/flubber",
+		"link": "https://github.com/rileyjshaw/flubber",
 		"lastTagged": 1564707806856
 	},
 	{
@@ -415,7 +415,7 @@
 		"date": "2016-06-17",
 		"tags": ["starred", "app", "game", "music", "reusable", "external"],
 		"coolness": 80,
-		"href": "https://github.com/rileyjshaw/virtuoso",
+		"link": "https://github.com/rileyjshaw/virtuoso",
 		"lastTagged": 1564707810842
 	},
 	{
@@ -426,7 +426,7 @@
 		"date": "2016-06-16",
 		"tags": ["app", "reusable"],
 		"coolness": 30,
-		"href": "https://github.com/rileyjshaw/average-color",
+		"link": "https://github.com/rileyjshaw/average-color",
 		"lastTagged": 1564707813397
 	},
 	{
@@ -434,7 +434,7 @@
 		"date": "2016-06-15",
 		"tags": ["online", "pretty"],
 		"coolness": 65,
-		"href": "http://codepen.io/rileyjshaw/full/Meeedv",
+		"link": "http://codepen.io/rileyjshaw/full/Meeedv",
 		"lastTagged": 1564707815578
 	},
 	{
@@ -445,7 +445,7 @@
 		"date": "2016-06-15",
 		"tags": ["online", "pretty"],
 		"coolness": 65,
-		"href": "http://codepen.io/rileyjshaw/full/RRajov/",
+		"link": "http://codepen.io/rileyjshaw/full/RRajov/",
 		"lastTagged": 1564707816646
 	},
 	{
@@ -456,7 +456,7 @@
 		"date": "2016-06-05",
 		"tags": ["pretty", "music", "reusable", "external"],
 		"coolness": 54,
-		"href": "https://github.com/rileyjshaw/synthesia",
+		"link": "https://github.com/rileyjshaw/synthesia",
 		"lastTagged": 1564707820422
 	},
 	{
@@ -467,7 +467,7 @@
 		"date": "2016-06-03",
 		"tags": ["online", "pretty"],
 		"coolness": 30,
-		"href": "http://codepen.io/collection/DmZZVV/",
+		"link": "http://codepen.io/collection/DmZZVV/",
 		"lastTagged": 1564707822822
 	},
 	{
@@ -476,7 +476,7 @@
 		"date": "2016-06-01",
 		"tags": ["online", "pretty"],
 		"coolness": 64,
-		"href": "http://codepen.io/rileyjshaw/pen/aZzKGa",
+		"link": "http://codepen.io/rileyjshaw/pen/aZzKGa",
 		"lastTagged": 1564707825199
 	},
 	{
@@ -488,7 +488,7 @@
 		"date": "2016-05-28",
 		"tags": ["starred", "music", "reusable", "external"],
 		"coolness": 60,
-		"href": "https://github.com/rileyjshaw/keyboard-keyboard",
+		"link": "https://github.com/rileyjshaw/keyboard-keyboard",
 		"lastTagged": 1564707826462
 	},
 	{
@@ -499,7 +499,7 @@
 		"date": "2016-05-28",
 		"tags": ["starred", "golf", "online", "game", "external"],
 		"coolness": 50,
-		"href": "https://github.com/rileyjshaw/typing-for-two",
+		"link": "https://github.com/rileyjshaw/typing-for-two",
 		"lastTagged": 1564707830808
 	},
 	{
@@ -508,7 +508,7 @@
 		"date": "2016-05-24",
 		"tags": ["online", "pretty"],
 		"coolness": 60,
-		"href": "http://codepen.io/rileyjshaw/full/ZOzGKq/",
+		"link": "http://codepen.io/rileyjshaw/full/ZOzGKq/",
 		"lastTagged": 1564707834778
 	},
 	{
@@ -517,7 +517,7 @@
 		"date": "2016-05-22",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 30,
-		"href": "http://codepen.io/rileyjshaw/pen/PNMZVG?editors=1100",
+		"link": "http://codepen.io/rileyjshaw/pen/PNMZVG?editors=1100",
 		"lastTagged": 1564707836594
 	},
 	{
@@ -529,7 +529,7 @@
 		"date": "2016-05-18",
 		"tags": ["starred", "online", "pretty"],
 		"coolness": 97,
-		"href": "http://codepen.io/collection/nYWPBp/",
+		"link": "http://codepen.io/collection/nYWPBp/",
 		"lastTagged": 1564707838057
 	},
 	{
@@ -540,7 +540,7 @@
 		"date": "2016-05-16",
 		"tags": ["online", "pretty"],
 		"coolness": 50,
-		"href": "http://codepen.io/rileyjshaw/full/YqbGKK/",
+		"link": "http://codepen.io/rileyjshaw/full/YqbGKK/",
 		"lastTagged": 1564707839982
 	},
 	{
@@ -551,7 +551,7 @@
 		"date": "2016-05-16",
 		"tags": ["online", "pretty"],
 		"coolness": 20,
-		"href": "http://codepen.io/rileyjshaw/full/RamaYJ/",
+		"link": "http://codepen.io/rileyjshaw/full/RamaYJ/",
 		"lastTagged": 1564707841219
 	},
 	{
@@ -562,7 +562,7 @@
 		"date": "2016-05-12",
 		"tags": ["starred", "app", "reusable"],
 		"coolness": 81,
-		"href": "https://github.com/rileyjshaw/literate-theme",
+		"link": "https://github.com/rileyjshaw/literate-theme",
 		"lastTagged": 1564707843448
 	},
 	{
@@ -573,7 +573,7 @@
 		"date": "2016-05-05",
 		"tags": ["online", "pretty", "music"],
 		"coolness": 84,
-		"href": "http://codepen.io/rileyjshaw/full/NNeoMR/",
+		"link": "http://codepen.io/rileyjshaw/full/NNeoMR/",
 		"lastTagged": 1564707845485
 	},
 	{
@@ -584,7 +584,7 @@
 		"date": "2016-05-05",
 		"tags": ["online", "pretty", "reusable"],
 		"coolness": 56,
-		"href": "http://codepen.io/rileyjshaw/pen/ONrdoM",
+		"link": "http://codepen.io/rileyjshaw/pen/ONrdoM",
 		"lastTagged": 1564707846623
 	},
 	{
@@ -595,7 +595,7 @@
 		"date": "2016-05-05",
 		"tags": ["online", "pretty"],
 		"coolness": 39,
-		"href": "http://codepen.io/rileyjshaw/full/bpOoyW/",
+		"link": "http://codepen.io/rileyjshaw/full/bpOoyW/",
 		"lastTagged": 1564707847474
 	},
 	{
@@ -604,7 +604,7 @@
 		"date": "2016-05-04",
 		"tags": ["online", "pretty"],
 		"coolness": 39,
-		"href": "http://codepen.io/rileyjshaw/full/BKvWBP/",
+		"link": "http://codepen.io/rileyjshaw/full/BKvWBP/",
 		"lastTagged": 1564707848382
 	},
 	{
@@ -616,7 +616,7 @@
 		"date": "2016-05-03",
 		"tags": ["starred", "online", "pretty"],
 		"coolness": 70,
-		"href": "http://codepen.io/rileyjshaw/full/xVQBLG/",
+		"link": "http://codepen.io/rileyjshaw/full/xVQBLG/",
 		"lastTagged": 1564707849539
 	},
 	{
@@ -627,7 +627,7 @@
 		"date": "2016-04-28",
 		"tags": ["starred", "online", "pretty", "music"],
 		"coolness": 80,
-		"href": "http://codepen.io/rileyjshaw/full/oxaxqX/",
+		"link": "http://codepen.io/rileyjshaw/full/oxaxqX/",
 		"lastTagged": 1564707851729
 	},
 	{
@@ -636,7 +636,7 @@
 		"date": "2016-04-28",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 50,
-		"href": "http://codepen.io/rileyjshaw/full/LNgLBj",
+		"link": "http://codepen.io/rileyjshaw/full/LNgLBj",
 		"lastTagged": 1564707852961
 	},
 	{
@@ -645,7 +645,7 @@
 		"date": "2016-04-26",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 69,
-		"href": "http://codepen.io/collection/XGpwzE/",
+		"link": "http://codepen.io/collection/XGpwzE/",
 		"lastTagged": 1564707853866
 	},
 	{
@@ -654,7 +654,7 @@
 		"date": "2016-04-25",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 69,
-		"href": "http://codepen.io/collection/nmyQRj/",
+		"link": "http://codepen.io/collection/nmyQRj/",
 		"lastTagged": 1564707854423
 	},
 	{
@@ -663,7 +663,7 @@
 		"date": "2016-04-16",
 		"tags": ["starred", "online", "app", "pretty"],
 		"coolness": 74,
-		"href": "http://codepen.io/rileyjshaw/full/eZrzbK/",
+		"link": "http://codepen.io/rileyjshaw/full/eZrzbK/",
 		"lastTagged": 1564707857033
 	},
 	{
@@ -671,7 +671,7 @@
 		"date": "2016-04-13",
 		"tags": ["online", "pretty"],
 		"coolness": 34,
-		"href": "http://codepen.io/rileyjshaw/pen/bpvwxQ",
+		"link": "http://codepen.io/rileyjshaw/pen/bpvwxQ",
 		"lastTagged": 1564707861136
 	},
 	{
@@ -682,7 +682,7 @@
 		"date": "2016-04-11",
 		"tags": ["online", "pretty"],
 		"coolness": 60,
-		"href": "http://codepen.io/rileyjshaw/pen/vGdgWG",
+		"link": "http://codepen.io/rileyjshaw/pen/vGdgWG",
 		"lastTagged": 1564707862027
 	},
 	{
@@ -691,7 +691,7 @@
 		"date": "2016-04-11",
 		"tags": ["online", "pretty"],
 		"coolness": 54,
-		"href": "http://codepen.io/collection/DmyjQv/",
+		"link": "http://codepen.io/collection/DmyjQv/",
 		"lastTagged": 1564707863361
 	},
 	{
@@ -699,7 +699,7 @@
 		"date": "2016-04-10",
 		"tags": ["online", "pretty"],
 		"coolness": 70,
-		"href": "http://codepen.io/collection/DRPBqZ/",
+		"link": "http://codepen.io/collection/DRPBqZ/",
 		"lastTagged": 1564707864470
 	},
 	{
@@ -708,7 +708,7 @@
 		"date": "2016-04-04",
 		"tags": ["online", "pretty"],
 		"coolness": 60,
-		"href": "http://codepen.io/rileyjshaw/pen/ONxKVd?editors=0010",
+		"link": "http://codepen.io/rileyjshaw/pen/ONxKVd?editors=0010",
 		"lastTagged": 1564707866386
 	},
 	{
@@ -719,7 +719,7 @@
 		"date": "2016-04-04",
 		"tags": ["online", "pretty"],
 		"coolness": 70,
-		"href": "http://codepen.io/rileyjshaw/full/mPBZNj/",
+		"link": "http://codepen.io/rileyjshaw/full/mPBZNj/",
 		"lastTagged": 1564707868594
 	},
 	{
@@ -728,7 +728,7 @@
 		"date": "2016-04-04",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 55,
-		"href": "http://codepen.io/rileyjshaw/pen/ZWXdBN",
+		"link": "http://codepen.io/rileyjshaw/pen/ZWXdBN",
 		"lastTagged": 1564707869979
 	},
 	{
@@ -736,7 +736,7 @@
 		"date": "2016-04-03",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 28,
-		"href": "http://codepen.io/rileyjshaw/full/QNqPZE/",
+		"link": "http://codepen.io/rileyjshaw/full/QNqPZE/",
 		"lastTagged": 1564707871449
 	},
 	{
@@ -747,7 +747,7 @@
 		"date": "2016-03-30",
 		"tags": ["online", "pretty"],
 		"coolness": 68,
-		"href": "http://codepen.io/rileyjshaw/pen/oxewYe/?editors=0010",
+		"link": "http://codepen.io/rileyjshaw/pen/oxewYe/?editors=0010",
 		"lastTagged": 1564707873027
 	},
 	{
@@ -756,7 +756,7 @@
 		"date": "2016-03-29",
 		"tags": ["online", "pretty"],
 		"coolness": 66,
-		"href": "http://codepen.io/collection/DYwLBM/",
+		"link": "http://codepen.io/collection/DYwLBM/",
 		"lastTagged": 1564707874575
 	},
 	{
@@ -764,7 +764,7 @@
 		"date": "2016-03-28",
 		"tags": ["online", "pretty"],
 		"coolness": 60,
-		"href": "http://s.codepen.io/rileyjshaw/debug/BKZOwz",
+		"link": "http://s.codepen.io/rileyjshaw/debug/BKZOwz",
 		"lastTagged": 1564707875762
 	},
 	{
@@ -773,7 +773,7 @@
 		"date": "2016-03-28",
 		"tags": ["online", "pretty"],
 		"coolness": 64,
-		"href": "http://codepen.io/rileyjshaw/pen/oxwVNw",
+		"link": "http://codepen.io/rileyjshaw/pen/oxwVNw",
 		"lastTagged": 1564707876975
 	},
 	{
@@ -781,7 +781,7 @@
 		"date": "2016-03-28",
 		"tags": ["online", "pretty"],
 		"coolness": 60,
-		"href": "http://codepen.io/rileyjshaw/pen/Ragqyq",
+		"link": "http://codepen.io/rileyjshaw/pen/Ragqyq",
 		"lastTagged": 1564707878597
 	},
 	{
@@ -793,7 +793,7 @@
 		"date": "2016-03-28",
 		"tags": ["online", "pretty"],
 		"coolness": 82,
-		"href": "http://codepen.io/rileyjshaw/full/eZRLaP",
+		"link": "http://codepen.io/rileyjshaw/full/eZRLaP",
 		"lastTagged": 1564707880139
 	},
 	{
@@ -804,7 +804,7 @@
 		"date": "2016-03-23",
 		"tags": ["online", "pretty", "instructional"],
 		"coolness": 20,
-		"href": "http://codepen.io/rileyjshaw/full/remdxj/",
+		"link": "http://codepen.io/rileyjshaw/full/remdxj/",
 		"lastTagged": 1564707884368
 	},
 	{
@@ -813,7 +813,7 @@
 		"date": "2016-03-17",
 		"tags": ["online", "pretty"],
 		"coolness": 20,
-		"href": "http://codepen.io/rileyjshaw/full/yOgKvp/",
+		"link": "http://codepen.io/rileyjshaw/full/yOgKvp/",
 		"lastTagged": 1564707886487
 	},
 	{
@@ -824,7 +824,7 @@
 		"date": "2016-03-14",
 		"tags": ["online", "pretty"],
 		"coolness": 71,
-		"href": "http://codepen.io/rileyjshaw/full/dMpmRY/",
+		"link": "http://codepen.io/rileyjshaw/full/dMpmRY/",
 		"lastTagged": 1564707888292
 	},
 	{
@@ -833,7 +833,7 @@
 		"date": "2016-03-14",
 		"tags": ["online", "pretty"],
 		"coolness": 70,
-		"href": "http://codepen.io/rileyjshaw/full/reMdZE/",
+		"link": "http://codepen.io/rileyjshaw/full/reMdZE/",
 		"lastTagged": 1564707889498
 	},
 	{
@@ -844,7 +844,7 @@
 		"date": "2016-03-13",
 		"tags": ["online", "pretty"],
 		"coolness": 74,
-		"href": "http://codepen.io/rileyjshaw/full/mPrXxb/",
+		"link": "http://codepen.io/rileyjshaw/full/mPrXxb/",
 		"lastTagged": 1564707890990
 	},
 	{
@@ -856,7 +856,7 @@
 		"date": "2016-03-13",
 		"tags": ["online", "pretty"],
 		"coolness": 75,
-		"href": "http://codepen.io/rileyjshaw/pen/dMpJre",
+		"link": "http://codepen.io/rileyjshaw/pen/dMpJre",
 		"lastTagged": 1564707892058
 	},
 	{
@@ -868,7 +868,7 @@
 		"date": "2016-03-11",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 36,
-		"href": "http://codepen.io/rileyjshaw/full/yOJzoP/",
+		"link": "http://codepen.io/rileyjshaw/full/yOJzoP/",
 		"lastTagged": 1564707893272
 	},
 	{
@@ -880,7 +880,7 @@
 		"date": "2016-03-08",
 		"tags": ["online", "reusable", "golf"],
 		"coolness": 50,
-		"href": "http://codepen.io/rileyjshaw/pen/vGLvVo",
+		"link": "http://codepen.io/rileyjshaw/pen/vGLvVo",
 		"lastTagged": 1564707894644
 	},
 	{
@@ -892,7 +892,7 @@
 		"date": "2016-03-07",
 		"tags": ["online", "pretty"],
 		"coolness": 42,
-		"href": "http://codepen.io/rileyjshaw/full/Rarobr/",
+		"link": "http://codepen.io/rileyjshaw/full/Rarobr/",
 		"lastTagged": 1564707895541
 	},
 	{
@@ -901,7 +901,7 @@
 		"date": "2016-03-06",
 		"tags": ["starred", "online", "pretty"],
 		"coolness": 79,
-		"href": "http://codepen.io/rileyjshaw/full/PNPVmK/",
+		"link": "http://codepen.io/rileyjshaw/full/PNPVmK/",
 		"lastTagged": 1564707896427
 	},
 	{
@@ -910,7 +910,7 @@
 		"date": "2016-03-06",
 		"tags": ["online", "instructional"],
 		"coolness": 40,
-		"href": "http://codepen.io/rileyjshaw/details/ONyGxM/",
+		"link": "http://codepen.io/rileyjshaw/details/ONyGxM/",
 		"lastTagged": 1564707897855
 	},
 	{
@@ -921,7 +921,7 @@
 		"date": "2016-03-05",
 		"tags": ["online", "pretty"],
 		"coolness": 78,
-		"href": "http://codepen.io/rileyjshaw/full/MyaGbE/",
+		"link": "http://codepen.io/rileyjshaw/full/MyaGbE/",
 		"lastTagged": 1564707898615
 	},
 	{
@@ -932,7 +932,7 @@
 		"date": "2016-02-26",
 		"tags": ["online", "reusable", "golf"],
 		"coolness": 66,
-		"href": "http://codepen.io/rileyjshaw/pen/wGwOWz",
+		"link": "http://codepen.io/rileyjshaw/pen/wGwOWz",
 		"lastTagged": 1564707901096
 	},
 	{
@@ -944,7 +944,7 @@
 		"date": "2016-02-25",
 		"tags": ["starred", "online", "pretty"],
 		"coolness": 78,
-		"href": "http://codepen.io/collection/XWQERV/",
+		"link": "http://codepen.io/collection/XWQERV/",
 		"lastTagged": 1564707904033
 	},
 	{
@@ -955,7 +955,7 @@
 		"date": "2016-02-24",
 		"tags": ["online", "pretty", "reusable", "golf"],
 		"coolness": 44,
-		"href": "http://codepen.io/rileyjshaw/details/obKdzW",
+		"link": "http://codepen.io/rileyjshaw/details/obKdzW",
 		"lastTagged": 1564707904919
 	},
 	{
@@ -967,7 +967,7 @@
 		"date": "2016-02-23",
 		"tags": ["online", "pretty", "music"],
 		"coolness": 88,
-		"href": "http://codepen.io/rileyjshaw/pen/RrXjGa",
+		"link": "http://codepen.io/rileyjshaw/pen/RrXjGa",
 		"lastTagged": 1564707906457
 	},
 	{
@@ -977,7 +977,7 @@
 		],
 		"date": "2016-02-22",
 		"coolness": 70,
-		"href": "https://github.com/askew1312/render",
+		"link": "https://github.com/askew1312/render",
 		"tags": ["external", "app", "game"],
 		"lastTagged": 1564765055195
 	},
@@ -989,7 +989,7 @@
 		"date": "2016-01-06",
 		"tags": ["online", "music", "reusable", "golf"],
 		"coolness": 60,
-		"href": "http://tympanus.net/Development/LineMenuStyles/#Titania",
+		"link": "http://tympanus.net/Development/LineMenuStyles/#Titania",
 		"lastTagged": 1564707907104
 	},
 	{
@@ -999,9 +999,9 @@
 			"From the project page: \"there is confusion in the mixed layers of metaphors. This is not an obfuscated code repository; not really. In some ways, it is the opposite.\""
 		],
 		"date": "2015-12-31",
-		"tags": ["starred", "golf"],
+		"tags": ["starred", "golf", "pretty"],
 		"coolness": 80,
-		"href": "https://raw.githubusercontent.com/eliawry/poetics/master/whoami.py",
+		"link": "https://raw.githubusercontent.com/eliawry/poetics/master/whoami.py",
 		"lastTagged": 1564707910272
 	},
 	{
@@ -1012,7 +1012,7 @@
 		"date": "2015-12-20",
 		"tags": ["browserextension"],
 		"coolness": 50,
-		"href": "https://github.com/rileyjshaw/easy-inbox-zero",
+		"link": "https://github.com/rileyjshaw/easy-inbox-zero",
 		"lastTagged": 1564707914672
 	},
 	{
@@ -1021,7 +1021,7 @@
 		"date": "2015-12-15",
 		"tags": ["online", "pretty"],
 		"coolness": 44,
-		"href": "http://codepen.io/rileyjshaw/full/dGGGZZ",
+		"link": "http://codepen.io/rileyjshaw/full/dGGGZZ",
 		"lastTagged": 1564707916616
 	},
 	{
@@ -1030,7 +1030,7 @@
 		"date": "2015-12-15",
 		"tags": ["online", "pretty"],
 		"coolness": 30,
-		"href": "http://codepen.io/rileyjshaw/full/bEEVra/",
+		"link": "http://codepen.io/rileyjshaw/full/bEEVra/",
 		"lastTagged": 1564707917359
 	},
 	{
@@ -1041,7 +1041,7 @@
 		"date": "2015-12-15",
 		"tags": ["online", "pretty"],
 		"coolness": 44,
-		"href": "http://codepen.io/rileyjshaw/full/MKKKvw/",
+		"link": "http://codepen.io/rileyjshaw/full/MKKKvw/",
 		"lastTagged": 1564708718062
 	},
 	{
@@ -1053,7 +1053,7 @@
 		"date": "2015-12-12",
 		"tags": ["online", "pretty"],
 		"coolness": 50,
-		"href": "https://github.com/rileyjshaw/pride-and-prejudice",
+		"link": "https://github.com/rileyjshaw/pride-and-prejudice",
 		"lastTagged": 1564708720327
 	},
 	{
@@ -1065,7 +1065,7 @@
 		"date": "2015-11-15",
 		"tags": ["browserextension"],
 		"coolness": 50,
-		"href": "https://github.com/rileyjshaw/boom",
+		"link": "https://github.com/rileyjshaw/boom",
 		"lastTagged": 1564708725840
 	},
 	{
@@ -1077,7 +1077,7 @@
 		"date": "2015-10-29",
 		"tags": ["music", "golf"],
 		"coolness": 100,
-		"href": "https://github.com/rileyjshaw/tony-montana",
+		"link": "https://github.com/rileyjshaw/tony-montana",
 		"lastTagged": 1564708730063
 	},
 	{
@@ -1086,7 +1086,7 @@
 		"date": "2015-10-29",
 		"tags": ["starred", "browserextension"],
 		"coolness": 80,
-		"href": "https://github.com/rileyjshaw/dark-theme-everywhere",
+		"link": "https://github.com/rileyjshaw/dark-theme-everywhere",
 		"lastTagged": 1564708732408
 	},
 	{
@@ -1095,7 +1095,7 @@
 		"date": "2015-10-12",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 80,
-		"href": "http://codepen.io/rileyjshaw/full/vNgJPQ/",
+		"link": "http://codepen.io/rileyjshaw/full/vNgJPQ/",
 		"lastTagged": 1564708733322
 	},
 	{
@@ -1107,7 +1107,7 @@
 		"date": "2015-09-13",
 		"tags": ["starred", "game", "extinct"],
 		"coolness": 84,
-		"href": "https://github.com/rileyjshaw/xoxo-bingo",
+		"link": "https://github.com/rileyjshaw/xoxo-bingo",
 		"lastTagged": 1564708738919
 	},
 	{
@@ -1117,7 +1117,7 @@
 		],
 		"date": "2015-09-10",
 		"coolness": 39,
-		"href": "https://rings.glitch.me/",
+		"link": "https://rings.glitch.me/",
 		"tags": ["online", "pretty"],
 		"lastTagged": 1564708715719
 	},
@@ -1129,7 +1129,7 @@
 		"date": "2015-09-07",
 		"tags": ["reusable"],
 		"coolness": 89,
-		"href": "https://github.com/rileyjshaw/.supermac",
+		"link": "https://github.com/rileyjshaw/.supermac",
 		"lastTagged": 1564708739903
 	},
 	{
@@ -1141,7 +1141,7 @@
 		"date": "2015-08-20",
 		"tags": ["online", "reusable", "instructional", "golf"],
 		"coolness": 70,
-		"href": "http://codepen.io/rileyjshaw/pen/eNwGjw",
+		"link": "http://codepen.io/rileyjshaw/pen/eNwGjw",
 		"lastTagged": 1564708741980
 	},
 	{
@@ -1153,7 +1153,7 @@
 		"date": "2015-06-13",
 		"tags": ["starred", "game", "external"],
 		"coolness": 92,
-		"href": "https://github.com/rileyjshaw/touchtone-math-facts",
+		"link": "https://github.com/rileyjshaw/touchtone-math-facts",
 		"lastTagged": 1564708744196
 	},
 	{
@@ -1165,7 +1165,7 @@
 		"date": "2015-06-06",
 		"tags": ["online", "pretty"],
 		"coolness": 76,
-		"href": "http://codepen.io/rileyjshaw/pen/zGwNzw",
+		"link": "http://codepen.io/rileyjshaw/pen/zGwNzw",
 		"lastTagged": 1564708744959
 	},
 	{
@@ -1176,7 +1176,7 @@
 		"date": "2015-05-10",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 40,
-		"href": "http://codepen.io/rileyjshaw/pen/bdEvaQ",
+		"link": "http://codepen.io/rileyjshaw/pen/bdEvaQ",
 		"lastTagged": 1564708746328
 	},
 	{
@@ -1187,7 +1187,7 @@
 		"date": "2015-05-05",
 		"tags": ["browserextension"],
 		"coolness": 70,
-		"href": "https://chrome.google.com/webstore/detail/window-shopper-log-any-pa/mhfpgolappjpepejmfpomfpemdidpkng",
+		"link": "https://chrome.google.com/webstore/detail/window-shopper-log-any-pa/mhfpgolappjpepejmfpomfpemdidpkng",
 		"lastTagged": 1564708751214
 	},
 	{
@@ -1198,7 +1198,7 @@
 		"date": "2015-04-30",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 21,
-		"href": "http://codepen.io/rileyjshaw/pen/Nqqxaj?editors=001",
+		"link": "http://codepen.io/rileyjshaw/pen/Nqqxaj?editors=001",
 		"lastTagged": 1564708753213
 	},
 	{
@@ -1207,7 +1207,7 @@
 		"date": "2015-03-29",
 		"tags": ["online", "pretty", "music"],
 		"coolness": 30,
-		"href": "http://codepen.io/rileyjshaw/full/VYRPzy/",
+		"link": "http://codepen.io/rileyjshaw/full/VYRPzy/",
 		"lastTagged": 1564708754661
 	},
 	{
@@ -1219,7 +1219,7 @@
 		"date": "2015-03-26",
 		"tags": ["online", "pretty", "music"],
 		"coolness": 80,
-		"href": "http://codepen.io/collection/DkNEVG/",
+		"link": "http://codepen.io/collection/DkNEVG/",
 		"lastTagged": 1564708755914
 	},
 	{
@@ -1230,7 +1230,7 @@
 		"date": "2015-03-13",
 		"tags": ["online", "reusable", "golf"],
 		"coolness": 32,
-		"href": "http://codepen.io/rileyjshaw/pen/OPBBGK?editors=110",
+		"link": "http://codepen.io/rileyjshaw/pen/OPBBGK?editors=110",
 		"lastTagged": 1564708757219
 	},
 	{
@@ -1242,7 +1242,7 @@
 		"date": "2015-03-03",
 		"tags": ["starred", "online", "pretty", "music"],
 		"coolness": 69,
-		"href": "http://codepen.io/rileyjshaw/pen/OPwROr?editors=001",
+		"link": "http://codepen.io/rileyjshaw/pen/OPwROr?editors=001",
 		"lastTagged": 1564708758541
 	},
 	{
@@ -1250,7 +1250,7 @@
 		"date": "2015-03-02",
 		"tags": ["online", "pretty"],
 		"coolness": 70,
-		"href": "http://codepen.io/collection/XGogPm/",
+		"link": "http://codepen.io/collection/XGogPm/",
 		"lastTagged": 1564708759832
 	},
 	{
@@ -1261,7 +1261,7 @@
 		"date": "2015-03-01",
 		"tags": ["online", "pretty"],
 		"coolness": 65,
-		"href": "https://www.khanacademy.org/computer-programming/fluid-simulation/6333748830011392",
+		"link": "https://www.khanacademy.org/computer-programming/fluid-simulation/6333748830011392",
 		"lastTagged": 1564708761419
 	},
 	{
@@ -1270,7 +1270,7 @@
 		"date": "2015-02-20",
 		"tags": ["online", "game"],
 		"coolness": 65,
-		"href": "/orbit",
+		"link": "/orbit",
 		"lastTagged": 1564708766604
 	},
 	{
@@ -1279,7 +1279,7 @@
 		"date": "2015-02-19",
 		"tags": ["starred", "online", "game", "reusable", "instructional"],
 		"coolness": 81,
-		"href": "/challenger",
+		"link": "/challenger",
 		"lastTagged": 1564708774349
 	},
 	{
@@ -1288,7 +1288,7 @@
 		"date": "2015-02-08",
 		"tags": ["online", "pretty", "reusable"],
 		"coolness": 10,
-		"href": "http://codepen.io/collection/nYwRVL/",
+		"link": "http://codepen.io/collection/nYwRVL/",
 		"lastTagged": 1564708775492
 	},
 	{
@@ -1299,7 +1299,7 @@
 		"date": "2015-02-01",
 		"tags": ["online", "pretty"],
 		"coolness": 43,
-		"href": "http://codepen.io/rileyjshaw/full/zxEGxK/",
+		"link": "http://codepen.io/rileyjshaw/full/zxEGxK/",
 		"lastTagged": 1564708777392
 	},
 	{
@@ -1310,7 +1310,7 @@
 		"date": "2015-01-29",
 		"tags": ["starred", "app", "external"],
 		"coolness": 71,
-		"href": "https://apps.getpebble.com/en_US/application/54cadfd211e375bdc5000048",
+		"link": "https://apps.getpebble.com/en_US/application/54cadfd211e375bdc5000048",
 		"lastTagged": 1564708780643
 	},
 	{
@@ -1322,7 +1322,7 @@
 		"date": "2015-01-18",
 		"tags": ["online", "pretty", "reusable", "golf"],
 		"coolness": 21,
-		"href": "http://codepen.io/rileyjshaw/full/emWJPW/",
+		"link": "http://codepen.io/rileyjshaw/full/emWJPW/",
 		"lastTagged": 1564708782164
 	},
 	{
@@ -1330,7 +1330,7 @@
 		"date": "2015-01-15",
 		"tags": ["online", "pretty"],
 		"coolness": 28,
-		"href": "http://codepen.io/rileyjshaw/details/vExWpe/",
+		"link": "http://codepen.io/rileyjshaw/details/vExWpe/",
 		"lastTagged": 1564708785074
 	},
 	{
@@ -1342,7 +1342,7 @@
 		"date": "2015-01-12",
 		"tags": ["online", "pretty", "reusable", "golf"],
 		"coolness": 33,
-		"href": "http://codepen.io/rileyjshaw/full/LExqQE/",
+		"link": "http://codepen.io/rileyjshaw/full/LExqQE/",
 		"lastTagged": 1564708783154
 	},
 	{
@@ -1354,7 +1354,7 @@
 		"date": "2015-01-08",
 		"tags": ["starred", "online"],
 		"coolness": 82,
-		"href": "http://hackers.cool/~rileyjshaw/",
+		"link": "http://hackers.cool/~rileyjshaw/",
 		"lastTagged": 1564708786127
 	},
 	{
@@ -1365,7 +1365,7 @@
 		"date": "2014-12-21",
 		"tags": ["online", "reusable"],
 		"coolness": 72,
-		"href": "/tinyterm",
+		"link": "/tinyterm",
 		"lastTagged": 1564708788771
 	},
 	{
@@ -1374,7 +1374,7 @@
 		"date": "2014-12-16",
 		"tags": ["online", "reusable"],
 		"coolness": 72,
-		"href": "https://github.com/rileyjshaw/tinyterm",
+		"link": "https://github.com/rileyjshaw/tinyterm",
 		"lastTagged": 1564708789475
 	},
 	{
@@ -1386,7 +1386,7 @@
 		"date": "2014-12-14",
 		"tags": ["online", "pretty"],
 		"coolness": 80,
-		"href": "http://codepen.io/rileyjshaw/full/jEqvLp/",
+		"link": "http://codepen.io/rileyjshaw/full/jEqvLp/",
 		"lastTagged": 1564708791130
 	},
 	{
@@ -1395,7 +1395,7 @@
 		"date": "2014-12-11",
 		"tags": ["online", "pretty"],
 		"coolness": 8,
-		"href": "http://codepen.io/rileyjshaw/details/ByKKyG/",
+		"link": "http://codepen.io/rileyjshaw/details/ByKKyG/",
 		"lastTagged": 1564708791889
 	},
 	{
@@ -1404,7 +1404,7 @@
 		"date": "2014-12-09",
 		"tags": ["starred", "online", "app", "reusable"],
 		"coolness": 78,
-		"href": "http://fingerprint.tappy.pw/",
+		"link": "http://fingerprint.tappy.pw/",
 		"lastTagged": 1564708792923
 	},
 	{
@@ -1415,7 +1415,7 @@
 		"date": "2014-11-29",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 5,
-		"href": "http://codepen.io/rileyjshaw/full/gbapBa/",
+		"link": "http://codepen.io/rileyjshaw/full/gbapBa/",
 		"lastTagged": 1564708794443
 	},
 	{
@@ -1426,7 +1426,7 @@
 		"date": "2014-11-23",
 		"tags": ["starred", "online", "music", "reusable"],
 		"coolness": 77,
-		"href": "http://tappy.pw",
+		"link": "http://tappy.pw",
 		"lastTagged": 1564708795522
 	},
 	{
@@ -1438,7 +1438,7 @@
 		"date": "2014-11-22",
 		"tags": ["online", "reusable", "golf"],
 		"coolness": 60,
-		"href": "http://codepen.io/rileyjshaw/pen/oggBxz",
+		"link": "http://codepen.io/rileyjshaw/pen/oggBxz",
 		"lastTagged": 1564708797294
 	},
 	{
@@ -1449,7 +1449,7 @@
 		"date": "2014-11-13",
 		"tags": ["starred", "online", "pretty", "reusable"],
 		"coolness": 75,
-		"href": "http://codepen.io/rileyjshaw/full/raNLdL/",
+		"link": "http://codepen.io/rileyjshaw/full/raNLdL/",
 		"lastTagged": 1564708799379
 	},
 	{
@@ -1457,7 +1457,7 @@
 		"date": "2014-11-10",
 		"tags": ["online", "golf"],
 		"coolness": 30,
-		"href": "http://codepen.io/rileyjshaw/full/bNbxjg",
+		"link": "http://codepen.io/rileyjshaw/full/bNbxjg",
 		"lastTagged": 1564708801217
 	},
 	{
@@ -1468,7 +1468,7 @@
 		"date": "2014-11-08",
 		"tags": ["online", "pretty", "reusable"],
 		"coolness": 23,
-		"href": "http://codepen.io/rileyjshaw/full/azoLwb/",
+		"link": "http://codepen.io/rileyjshaw/full/azoLwb/",
 		"lastTagged": 1564708803286
 	},
 	{
@@ -1476,7 +1476,7 @@
 		"date": "2014-11-08",
 		"tags": ["online", "pretty", "reusable"],
 		"coolness": 23,
-		"href": "http://codepen.io/rileyjshaw/full/pvzdzX/",
+		"link": "http://codepen.io/rileyjshaw/full/pvzdzX/",
 		"lastTagged": 1564708804489
 	},
 	{
@@ -1485,7 +1485,7 @@
 		"date": "2014-11-04",
 		"tags": ["online", "reusable", "instructional"],
 		"coolness": 12,
-		"href": "http://codepen.io/rileyjshaw/full/chaJe/",
+		"link": "http://codepen.io/rileyjshaw/full/chaJe/",
 		"lastTagged": 1564708805462
 	},
 	{
@@ -1497,7 +1497,7 @@
 		"date": "2014-11-03",
 		"tags": ["starred", "online", "game", "extinct"],
 		"coolness": 80,
-		"href": "https://github.com/rileyjshaw/tic-attack-toe",
+		"link": "https://github.com/rileyjshaw/tic-attack-toe",
 		"lastTagged": 1564708806792
 	},
 	{
@@ -1516,7 +1516,7 @@
 			"golf"
 		],
 		"coolness": 90,
-		"href": "/visited-vectors/reaction",
+		"link": "/visited-vectors/reaction",
 		"lastTagged": 1564708809571
 	},
 	{
@@ -1528,7 +1528,7 @@
 		"date": "2014-10-15",
 		"tags": ["online", "game", "pretty"],
 		"coolness": 83,
-		"href": "/racer",
+		"link": "/racer",
 		"lastTagged": 1564708811317
 	},
 	{
@@ -1537,7 +1537,7 @@
 		"date": "2014-10-13",
 		"tags": ["starred", "online", "game", "pretty", "music"],
 		"coolness": 76,
-		"href": "http://play.tappy.pw/",
+		"link": "http://play.tappy.pw/",
 		"lastTagged": 1564708812602
 	},
 	{
@@ -1548,7 +1548,7 @@
 		"date": "2014-10-12",
 		"tags": ["online", "pretty", "reusable"],
 		"coolness": 13,
-		"href": "http://codepen.io/rileyjshaw/pen/uiJqo",
+		"link": "http://codepen.io/rileyjshaw/pen/uiJqo",
 		"lastTagged": 1564708813922
 	},
 	{
@@ -1559,7 +1559,7 @@
 		"date": "2014-10-12",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 45,
-		"href": "http://codepen.io/rileyjshaw/pen/EdAeq",
+		"link": "http://codepen.io/rileyjshaw/pen/EdAeq",
 		"lastTagged": 1564624409730
 	},
 	{
@@ -1570,7 +1570,7 @@
 		"date": "2014-10-12",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 50,
-		"href": "http://codepen.io/rileyjshaw/pen/tmGxj",
+		"link": "http://codepen.io/rileyjshaw/pen/tmGxj",
 		"lastTagged": 1564624415014
 	},
 	{
@@ -1581,7 +1581,7 @@
 		"date": "2014-10-12",
 		"tags": ["starred", "online", "pretty", "golf"],
 		"coolness": 45,
-		"href": "http://codepen.io/rileyjshaw/pen/enfkc",
+		"link": "http://codepen.io/rileyjshaw/pen/enfkc",
 		"lastTagged": 1564624420398
 	},
 	{
@@ -1593,7 +1593,7 @@
 		"date": "2014-10-04",
 		"tags": ["starred", "online", "pretty", "reusable"],
 		"coolness": 81,
-		"href": "http://codepen.io/rileyjshaw/full/pIFly/",
+		"link": "http://codepen.io/rileyjshaw/full/pIFly/",
 		"lastTagged": 1564624423924
 	},
 	{
@@ -1602,7 +1602,7 @@
 		"date": "2014-09-16",
 		"tags": ["app", "reusable"],
 		"coolness": 55,
-		"href": "https://github.com/rileyjshaw/domains",
+		"link": "https://github.com/rileyjshaw/domains",
 		"lastTagged": 1564624426575
 	},
 	{
@@ -1611,7 +1611,7 @@
 		"date": "2014-09-15",
 		"tags": ["starred", "online", "app", "extinct", "external"],
 		"coolness": 83,
-		"href": "https://github.com/neerajwahi/pairjam",
+		"link": "https://github.com/neerajwahi/pairjam",
 		"lastTagged": 1564624438020
 	},
 	{
@@ -1620,7 +1620,7 @@
 		"date": "2014-09-14",
 		"tags": ["golf", "online", "pretty", "reusable"],
 		"coolness": 30,
-		"href": "http://codepen.io/rileyjshaw/full/DplJB",
+		"link": "http://codepen.io/rileyjshaw/full/DplJB",
 		"lastTagged": 1564624447769
 	},
 	{
@@ -1629,7 +1629,7 @@
 		"date": "2014-09-12",
 		"tags": ["golf", "online", "pretty", "reusable"],
 		"coolness": 14,
-		"href": "http://codepen.io/rileyjshaw/pen/iIjcp/",
+		"link": "http://codepen.io/rileyjshaw/pen/iIjcp/",
 		"lastTagged": 1564624440228
 	},
 	{
@@ -1638,7 +1638,7 @@
 		"date": "2014-09-12",
 		"tags": ["golf", "online", "pretty", "reusable"],
 		"coolness": 9,
-		"href": "http://codepen.io/rileyjshaw/pen/zIpqi/",
+		"link": "http://codepen.io/rileyjshaw/pen/zIpqi/",
 		"lastTagged": 1564624442669
 	},
 	{
@@ -1647,7 +1647,7 @@
 		"date": "2014-09-07",
 		"tags": ["online"],
 		"coolness": 10,
-		"href": "/face",
+		"link": "/face",
 		"lastTagged": 1564624445152
 	},
 	{
@@ -1660,7 +1660,7 @@
 		"date": "2014-09-01",
 		"tags": ["online", "pretty"],
 		"coolness": 16,
-		"href": "http://codepen.io/rileyjshaw/full/JvdrG/",
+		"link": "http://codepen.io/rileyjshaw/full/JvdrG/",
 		"lastTagged": 1564624449407
 	},
 	{
@@ -1669,7 +1669,7 @@
 		"date": "2014-08-25",
 		"tags": ["starred", "app", "golf", "pretty", "browserextension"],
 		"coolness": 60,
-		"href": "https://chrome.google.com/webstore/detail/placid-tab/mjcblgoejhkkkhgeadejhkpldglnfmcj",
+		"link": "https://chrome.google.com/webstore/detail/placid-tab/mjcblgoejhkkkhgeadejhkpldglnfmcj",
 		"lastTagged": 1564624451247
 	},
 	{
@@ -1680,7 +1680,7 @@
 		"date": "2014-08-15",
 		"tags": ["starred", "online", "pretty", "music"],
 		"coolness": 70,
-		"href": "/linescapes",
+		"link": "/linescapes",
 		"lastTagged": 1564708815678
 	},
 	{
@@ -1692,7 +1692,7 @@
 		"date": "2014-07-31",
 		"tags": ["starred", "online", "pretty", "instructional"],
 		"coolness": 80,
-		"href": "http://codepen.io/collection/amDJo/",
+		"link": "http://codepen.io/collection/amDJo/",
 		"lastTagged": 1564708820940
 	},
 	{
@@ -1703,7 +1703,7 @@
 		"date": "2014-07-03",
 		"tags": ["extinct", "browserextension"],
 		"coolness": 30,
-		"href": "https://github.com/rileyjshaw/reduce-background-flicker",
+		"link": "https://github.com/rileyjshaw/reduce-background-flicker",
 		"lastTagged": 1564708822603
 	},
 	{
@@ -1715,7 +1715,7 @@
 		"date": "2014-06-26",
 		"tags": ["online", "extinct", "reusable", "instructional", "golf"],
 		"coolness": 60,
-		"href": "http://codepen.io/rileyjshaw/pen/CjiKf",
+		"link": "http://codepen.io/rileyjshaw/pen/CjiKf",
 		"lastTagged": 1564708823299
 	},
 	{
@@ -1726,7 +1726,7 @@
 		"date": "2014-05-31",
 		"tags": ["app"],
 		"coolness": 85,
-		"href": "https://github.com/Queens-Hacks/thoughtboard",
+		"link": "https://github.com/Queens-Hacks/thoughtboard",
 		"lastTagged": 1564708825898
 	},
 	{
@@ -1737,7 +1737,7 @@
 		"date": "2014-05-20",
 		"tags": ["online", "game", "pretty", "reusable"],
 		"coolness": 85,
-		"href": "/glorious-pattern-matcher/",
+		"link": "/glorious-pattern-matcher/",
 		"lastTagged": 1564708826658
 	},
 	{
@@ -1748,7 +1748,7 @@
 		"date": "2014-05-19",
 		"tags": ["online", "app", "reusable"],
 		"coolness": 41,
-		"href": "https://github.com/rileyjshaw/filesupply",
+		"link": "https://github.com/rileyjshaw/filesupply",
 		"lastTagged": 1564708828018
 	},
 	{
@@ -1757,7 +1757,7 @@
 		"date": "2014-05-09",
 		"tags": ["online", "pretty"],
 		"coolness": 30,
-		"href": "http://codepen.io/rileyjshaw/full/acjvs/",
+		"link": "http://codepen.io/rileyjshaw/full/acjvs/",
 		"lastTagged": 1564708829946
 	},
 	{
@@ -1768,7 +1768,7 @@
 		"date": "2014-05-07",
 		"tags": ["app", "external"],
 		"coolness": 68,
-		"href": "https://github.com/rileyjshaw/wind-alarm",
+		"link": "https://github.com/rileyjshaw/wind-alarm",
 		"lastTagged": 1564708846185
 	},
 	{
@@ -1781,7 +1781,7 @@
 		"date": "2014-04-29",
 		"tags": ["online", "game", "extinct", "external"],
 		"coolness": 78,
-		"href": "https://github.com/ben-eath/the-surf-ace",
+		"link": "https://github.com/ben-eath/the-surf-ace",
 		"lastTagged": 1564708847602
 	},
 	{
@@ -1793,7 +1793,7 @@
 		"date": "2014-04-28",
 		"tags": ["online", "reusable", "golf"],
 		"coolness": 57,
-		"href": "http://codepen.io/rileyjshaw/full/olzJI/",
+		"link": "http://codepen.io/rileyjshaw/full/olzJI/",
 		"lastTagged": 1564708851648
 	},
 	{
@@ -1805,7 +1805,7 @@
 		"date": "2014-04-24",
 		"tags": ["online", "pretty", "reusable", "golf"],
 		"coolness": 18,
-		"href": "http://codepen.io/rileyjshaw/full/dBygE",
+		"link": "http://codepen.io/rileyjshaw/full/dBygE",
 		"lastTagged": 1564708854160
 	},
 	{
@@ -1814,7 +1814,7 @@
 		"date": "2014-04-24",
 		"tags": ["online", "app", "reusable"],
 		"coolness": 24,
-		"href": "http://codepen.io/rileyjshaw/full/BvKni",
+		"link": "http://codepen.io/rileyjshaw/full/BvKni",
 		"lastTagged": 1564708856993
 	},
 	{
@@ -1822,7 +1822,7 @@
 		"date": "2014-04-17",
 		"tags": ["online", "pretty"],
 		"coolness": 12,
-		"href": "http://codepen.io/rileyjshaw/full/dihjv/",
+		"link": "http://codepen.io/rileyjshaw/full/dihjv/",
 		"lastTagged": 1564708864040
 	},
 	{
@@ -1833,7 +1833,7 @@
 		"date": "2014-04-14",
 		"tags": ["app", "game", "instructional"],
 		"coolness": 20,
-		"href": "/fastdraw",
+		"link": "/fastdraw",
 		"lastTagged": 1564708862840
 	},
 	{
@@ -1842,7 +1842,7 @@
 		"date": "2014-03-24",
 		"tags": ["starred", "online", "pretty", "reusable"],
 		"coolness": 60,
-		"href": "/sweep",
+		"link": "/sweep",
 		"lastTagged": 1564708866431
 	},
 	{
@@ -1853,7 +1853,7 @@
 		"date": "2014-03-19",
 		"tags": ["starred", "online", "app", "pretty", "extinct"],
 		"coolness": 70,
-		"href": "https://github.com/rileyjshaw/boxes",
+		"link": "https://github.com/rileyjshaw/boxes",
 		"lastTagged": 1564708867142
 	},
 	{
@@ -1864,7 +1864,7 @@
 		"date": "2014-03-19",
 		"tags": ["starred", "online", "app", "game", "extinct"],
 		"coolness": 65,
-		"href": "https://github.com/rileyjshaw/own-this-website",
+		"link": "https://github.com/rileyjshaw/own-this-website",
 		"lastTagged": 1564708868615
 	},
 	{
@@ -1873,7 +1873,7 @@
 		"date": "2014-03-17",
 		"tags": ["app"],
 		"coolness": 37,
-		"href": "https://github.com/rileyjshaw/tiny-tcp",
+		"link": "https://github.com/rileyjshaw/tiny-tcp",
 		"lastTagged": 1564708870888
 	},
 	{
@@ -1882,7 +1882,7 @@
 		"date": "2014-03-17",
 		"tags": ["online", "golf"],
 		"coolness": 11,
-		"href": "http://codepen.io/rileyjshaw/pen/Klvon?editors=0100",
+		"link": "http://codepen.io/rileyjshaw/pen/Klvon?editors=0100",
 		"lastTagged": 1564708872623
 	},
 	{
@@ -1893,7 +1893,7 @@
 		"date": "2014-03-17",
 		"tags": ["music", "instructional"],
 		"coolness": 20,
-		"href": "https://github.com/rileyjshaw/mean-tone",
+		"link": "https://github.com/rileyjshaw/mean-tone",
 		"lastTagged": 1564708879145
 	},
 	{
@@ -1904,7 +1904,7 @@
 		"date": "2014-03-13",
 		"tags": ["external"],
 		"coolness": 86,
-		"href": "https://github.com/rileyjshaw/important-people",
+		"link": "https://github.com/rileyjshaw/important-people",
 		"lastTagged": 1564708882272
 	},
 	{
@@ -1913,7 +1913,7 @@
 		"date": "2014-03-13",
 		"tags": ["online", "game"],
 		"coolness": 5,
-		"href": "/2048",
+		"link": "/2048",
 		"lastTagged": 1564708885721
 	},
 	{
@@ -1922,7 +1922,7 @@
 		"date": "2014-03-12",
 		"tags": ["music", "reusable"],
 		"coolness": 72,
-		"href": "https://github.com/rileyjshaw/composer",
+		"link": "https://github.com/rileyjshaw/composer",
 		"lastTagged": 1564708887783
 	},
 	{
@@ -1933,7 +1933,7 @@
 		"date": "2014-03-09",
 		"tags": ["starred", "online", "pretty", "reusable", "instructional"],
 		"coolness": 86,
-		"href": "/terra",
+		"link": "/terra",
 		"lastTagged": 1564708889063
 	},
 	{
@@ -1942,7 +1942,7 @@
 		"date": "2014-02-28",
 		"tags": ["online", "app"],
 		"coolness": 52,
-		"href": "http://ushld.com",
+		"link": "http://ushld.com",
 		"lastTagged": 1564708889861
 	},
 	{
@@ -1951,7 +1951,7 @@
 		"date": "2014-02-15",
 		"tags": ["online"],
 		"coolness": 1,
-		"href": "http://codepen.io/rileyjshaw/details/pcKCj/",
+		"link": "http://codepen.io/rileyjshaw/details/pcKCj/",
 		"lastTagged": 1564708891840
 	},
 	{
@@ -1960,7 +1960,7 @@
 		"date": "2014-02-13",
 		"tags": ["online", "game"],
 		"coolness": 26,
-		"href": "http://codepen.io/rileyjshaw/pen/CErAF",
+		"link": "http://codepen.io/rileyjshaw/pen/CErAF",
 		"lastTagged": 1564708893630
 	},
 	{
@@ -1969,7 +1969,7 @@
 		"date": "2014-01-13",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 20,
-		"href": "http://codepen.io/rileyjshaw/full/sDrLJ/",
+		"link": "http://codepen.io/rileyjshaw/full/sDrLJ/",
 		"lastTagged": 1564708920950
 	},
 	{
@@ -1980,7 +1980,7 @@
 		"date": "2014-01-03",
 		"tags": ["online", "reusable", "golf"],
 		"coolness": 4,
-		"href": "http://codepen.io/rileyjshaw/full/uvcyE/",
+		"link": "http://codepen.io/rileyjshaw/full/uvcyE/",
 		"lastTagged": 1564708922967
 	},
 	{
@@ -1992,7 +1992,7 @@
 		"date": "2014-01-03",
 		"tags": ["online", "pretty", "reusable", "golf"],
 		"coolness": 40,
-		"href": "http://codepen.io/rileyjshaw/full/waeqK",
+		"link": "http://codepen.io/rileyjshaw/full/waeqK",
 		"lastTagged": 1564708924925
 	},
 	{
@@ -2000,7 +2000,7 @@
 		"date": "2014-01-03",
 		"tags": ["online", "pretty", "reusable", "golf"],
 		"coolness": 24,
-		"href": "http://codepen.io/rileyjshaw/full/KdFAg/",
+		"link": "http://codepen.io/rileyjshaw/full/KdFAg/",
 		"lastTagged": 1564708926590
 	},
 	{
@@ -2011,7 +2011,7 @@
 		"date": "2013-12-29",
 		"tags": ["online", "app", "pretty"],
 		"coolness": 40,
-		"href": "/watercolor/",
+		"link": "/watercolor/",
 		"lastTagged": 1564708930039
 	},
 	{
@@ -2020,7 +2020,7 @@
 		"date": "2013-12-27",
 		"tags": ["online", "reusable", "golf"],
 		"coolness": 16,
-		"href": "http://codepen.io/rileyjshaw/details/GlBHC/",
+		"link": "http://codepen.io/rileyjshaw/details/GlBHC/",
 		"lastTagged": 1564708931950
 	},
 	{
@@ -2029,7 +2029,7 @@
 		"date": "2013-12-21",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 24,
-		"href": "http://codepen.io/rileyjshaw/pen/bzeqL?editors=0010",
+		"link": "http://codepen.io/rileyjshaw/pen/bzeqL?editors=0010",
 		"lastTagged": 1564708933870
 	},
 	{
@@ -2037,7 +2037,7 @@
 		"date": "2013-12-19",
 		"tags": ["online", "pretty", "reusable"],
 		"coolness": 9,
-		"href": "http://codepen.io/rileyjshaw/full/ufEIH",
+		"link": "http://codepen.io/rileyjshaw/full/ufEIH",
 		"lastTagged": 1564708935022
 	},
 	{
@@ -2046,7 +2046,7 @@
 		"date": "2013-12-19",
 		"tags": ["online", "golf", "pretty"],
 		"coolness": 29,
-		"href": "http://codepen.io/rileyjshaw/pen/blCIq/",
+		"link": "http://codepen.io/rileyjshaw/pen/blCIq/",
 		"lastTagged": 1564708936373
 	},
 	{
@@ -2055,7 +2055,7 @@
 		"date": "2013-12-15",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 13,
-		"href": "http://codepen.io/rileyjshaw/details/rEhdF/",
+		"link": "http://codepen.io/rileyjshaw/details/rEhdF/",
 		"lastTagged": 1564708937835
 	},
 	{
@@ -2063,7 +2063,7 @@
 		"date": "2013-12-08",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 2,
-		"href": "http://codepen.io/rileyjshaw/full/fondm",
+		"link": "http://codepen.io/rileyjshaw/full/fondm",
 		"lastTagged": 1564708938863
 	},
 	{
@@ -2072,7 +2072,7 @@
 		"date": "2013-12-08",
 		"tags": ["online", "pretty", "reusable", "golf"],
 		"coolness": 26,
-		"href": "http://codepen.io/rileyjshaw/pen/inyzb",
+		"link": "http://codepen.io/rileyjshaw/pen/inyzb",
 		"lastTagged": 1564708939620
 	},
 	{
@@ -2081,7 +2081,7 @@
 		"date": "2013-12-03",
 		"tags": ["online", "pretty"],
 		"coolness": 35,
-		"href": "http://codepen.io/rileyjshaw/full/wKvfk",
+		"link": "http://codepen.io/rileyjshaw/full/wKvfk",
 		"lastTagged": 1564708940474
 	},
 	{
@@ -2089,7 +2089,7 @@
 		"date": "2013-12-03",
 		"tags": ["online", "pretty"],
 		"coolness": 29,
-		"href": "http://codepen.io/rileyjshaw/full/LhFfw",
+		"link": "http://codepen.io/rileyjshaw/full/LhFfw",
 		"lastTagged": 1564708941375
 	},
 	{
@@ -2098,7 +2098,7 @@
 		"date": "2013-12-03",
 		"tags": ["online", "pretty"],
 		"coolness": 32,
-		"href": "http://codepen.io/rileyjshaw/details/fzhDk/",
+		"link": "http://codepen.io/rileyjshaw/details/fzhDk/",
 		"lastTagged": 1564708942431
 	},
 	{
@@ -2110,7 +2110,7 @@
 		"date": "2013-12-03",
 		"tags": ["online", "reusable"],
 		"coolness": 20,
-		"href": "http://codepen.io/rileyjshaw/details/ruGFo/",
+		"link": "http://codepen.io/rileyjshaw/details/ruGFo/",
 		"lastTagged": 1564708943908
 	},
 	{
@@ -2121,7 +2121,7 @@
 		"date": "2013-11-29",
 		"tags": ["online", "golf"],
 		"coolness": 38,
-		"href": "http://codepen.io/rileyjshaw/pen/bCkBo",
+		"link": "http://codepen.io/rileyjshaw/pen/bCkBo",
 		"lastTagged": 1564708944793
 	},
 	{
@@ -2129,7 +2129,7 @@
 		"date": "2013-11-26",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 32,
-		"href": "http://codepen.io/rileyjshaw/full/zwxCv/",
+		"link": "http://codepen.io/rileyjshaw/full/zwxCv/",
 		"lastTagged": 1564708946139
 	},
 	{
@@ -2137,7 +2137,7 @@
 		"date": "2013-11-25",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 27,
-		"href": "http://codepen.io/rileyjshaw/details/gLcoi/",
+		"link": "http://codepen.io/rileyjshaw/details/gLcoi/",
 		"lastTagged": 1564708948573
 	},
 	{
@@ -2146,16 +2146,16 @@
 		"date": "2013-11-25",
 		"tags": ["online", "pretty", "reusable", "golf"],
 		"coolness": 54,
-		"href": "http://codepen.io/rileyjshaw/pen/HBDtd",
+		"link": "http://codepen.io/rileyjshaw/pen/HBDtd",
 		"lastTagged": 1564708950723
 	},
 	{
-		"title": "CSS slope illusion in &lt;140 characters",
+		"title": "CSS slope illusion in <140 characters",
 		"description": ["Are the base lines straight or at an angle?"],
 		"date": "2013-11-20",
 		"tags": ["starred", "online", "pretty", "golf"],
 		"coolness": 55,
-		"href": "http://codepen.io/rileyjshaw/pen/vzwsu/",
+		"link": "http://codepen.io/rileyjshaw/pen/vzwsu/",
 		"lastTagged": 1564708953257
 	},
 	{
@@ -2164,7 +2164,7 @@
 		"date": "2013-11-20",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 29,
-		"href": "http://codepen.io/rileyjshaw/full/gtLGi/",
+		"link": "http://codepen.io/rileyjshaw/full/gtLGi/",
 		"lastTagged": 1564708955045
 	},
 	{
@@ -2173,7 +2173,7 @@
 		"date": "2013-11-20",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 40,
-		"href": "http://codepen.io/rileyjshaw/pen/mcaCi",
+		"link": "http://codepen.io/rileyjshaw/pen/mcaCi",
 		"lastTagged": 1564708957259
 	},
 	{
@@ -2181,7 +2181,7 @@
 		"date": "2013-11-20",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 20,
-		"href": "http://codepen.io/rileyjshaw/pen/GDmeF",
+		"link": "http://codepen.io/rileyjshaw/pen/GDmeF",
 		"lastTagged": 1564708958327
 	},
 	{
@@ -2189,7 +2189,7 @@
 		"date": "2013-11-15",
 		"tags": ["online", "pretty", "reusable"],
 		"coolness": 25,
-		"href": "http://codepen.io/rileyjshaw/full/jdyqC",
+		"link": "http://codepen.io/rileyjshaw/full/jdyqC",
 		"lastTagged": 1564708960068
 	},
 	{
@@ -2198,7 +2198,7 @@
 		"date": "2013-11-15",
 		"tags": ["starred", "online", "pretty", "golf"],
 		"coolness": 70,
-		"href": "http://codepen.io/rileyjshaw/pen/yenLw",
+		"link": "http://codepen.io/rileyjshaw/pen/yenLw",
 		"lastTagged": 1564708963195
 	},
 	{
@@ -2207,7 +2207,7 @@
 		"date": "2013-11-11",
 		"tags": ["starred", "online", "pretty", "golf"],
 		"coolness": 80,
-		"href": "http://codepen.io/rileyjshaw/full/zGnlq",
+		"link": "http://codepen.io/rileyjshaw/full/zGnlq",
 		"lastTagged": 1564708963876
 	},
 	{
@@ -2216,7 +2216,7 @@
 		"date": "2013-11-11",
 		"tags": ["starred", "online", "game"],
 		"coolness": 83,
-		"href": "/2p-snake",
+		"link": "/2p-snake",
 		"lastTagged": 1564708965315
 	},
 	{
@@ -2224,7 +2224,7 @@
 		"date": "2013-11-08",
 		"tags": ["online", "pretty", "reusable", "golf"],
 		"coolness": 37,
-		"href": "http://codepen.io/rileyjshaw/full/bHsJf",
+		"link": "http://codepen.io/rileyjshaw/full/bHsJf",
 		"lastTagged": 1564708964427
 	},
 	{
@@ -2233,7 +2233,7 @@
 		"date": "2013-11-08",
 		"tags": ["online"],
 		"coolness": 9,
-		"href": "http://codepen.io/rileyjshaw/full/KcILg/",
+		"link": "http://codepen.io/rileyjshaw/full/KcILg/",
 		"lastTagged": 1564708964844
 	},
 	{
@@ -2241,7 +2241,7 @@
 		"date": "2013-11-03",
 		"tags": ["online", "reusable", "golf"],
 		"coolness": 30,
-		"href": "http://codepen.io/rileyjshaw/details/LIwdc/",
+		"link": "http://codepen.io/rileyjshaw/details/LIwdc/",
 		"lastTagged": 1564708965846
 	},
 	{
@@ -2250,7 +2250,7 @@
 		"date": "2013-10-31",
 		"tags": ["online", "reusable", "golf"],
 		"coolness": 33,
-		"href": "http://codepen.io/rileyjshaw/full/FBsmA/",
+		"link": "http://codepen.io/rileyjshaw/full/FBsmA/",
 		"lastTagged": 1564708966191
 	},
 	{
@@ -2261,7 +2261,7 @@
 		"date": "2013-10-29",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 18,
-		"href": "http://codepen.io/rileyjshaw/full/HdeEF",
+		"link": "http://codepen.io/rileyjshaw/full/HdeEF",
 		"lastTagged": 1564708966698
 	},
 	{
@@ -2272,7 +2272,7 @@
 		"date": "2013-10-28",
 		"tags": ["starred", "online", "pretty", "reusable", "golf"],
 		"coolness": 63,
-		"href": "http://codepen.io/collection/EJveu",
+		"link": "http://codepen.io/collection/EJveu",
 		"lastTagged": 1564708967302
 	},
 	{
@@ -2281,7 +2281,7 @@
 		"date": "2013-10-28",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 36,
-		"href": "http://codepen.io/rileyjshaw/details/AgGbs",
+		"link": "http://codepen.io/rileyjshaw/details/AgGbs",
 		"lastTagged": 1564708967845
 	},
 	{
@@ -2289,7 +2289,7 @@
 		"date": "2013-10-28",
 		"tags": ["online", "pretty", "reusable"],
 		"coolness": 23,
-		"href": "http://codepen.io/rileyjshaw/full/wEJzg/",
+		"link": "http://codepen.io/rileyjshaw/full/wEJzg/",
 		"lastTagged": 1564708968360
 	},
 	{
@@ -2298,7 +2298,7 @@
 		"date": "2013-10-28",
 		"tags": ["online"],
 		"coolness": 25,
-		"href": "http://codepen.io/rileyjshaw/details/eAEya/",
+		"link": "http://codepen.io/rileyjshaw/details/eAEya/",
 		"lastTagged": 1564708969001
 	},
 	{
@@ -2307,7 +2307,7 @@
 		"date": "2013-10-28",
 		"tags": ["online", "pretty", "reusable"],
 		"coolness": 16,
-		"href": "http://codepen.io/rileyjshaw/full/dIniD",
+		"link": "http://codepen.io/rileyjshaw/full/dIniD",
 		"lastTagged": 1564708969478
 	},
 	{
@@ -2316,7 +2316,7 @@
 		"date": "2013-10-23",
 		"tags": ["online", "reusable"],
 		"coolness": 14,
-		"href": "http://codepen.io/rileyjshaw/full/IkfJn/",
+		"link": "http://codepen.io/rileyjshaw/full/IkfJn/",
 		"lastTagged": 1564708969978
 	},
 	{
@@ -2324,7 +2324,7 @@
 		"date": "2013-10-23",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 22,
-		"href": "http://codepen.io/rileyjshaw/details/zFdyq/",
+		"link": "http://codepen.io/rileyjshaw/details/zFdyq/",
 		"lastTagged": 1564708971928
 	},
 	{
@@ -2336,7 +2336,7 @@
 		"date": "2013-10-13",
 		"tags": ["starred", "online", "instructional", "golf"],
 		"coolness": 50,
-		"href": "http://codepen.io/rileyjshaw/pen/cKiDn?editors=0010",
+		"link": "http://codepen.io/rileyjshaw/pen/cKiDn?editors=0010",
 		"lastTagged": 1564708974879
 	},
 	{
@@ -2345,7 +2345,7 @@
 		"date": "2013-10-09",
 		"tags": ["online", "reusable", "golf"],
 		"coolness": 22,
-		"href": "http://codepen.io/rileyjshaw/pen/DmCyc",
+		"link": "http://codepen.io/rileyjshaw/pen/DmCyc",
 		"lastTagged": 1564708975996
 	},
 	{
@@ -2354,7 +2354,7 @@
 		"date": "2013-10-08",
 		"tags": ["online", "reusable", "golf"],
 		"coolness": 21,
-		"href": "http://codepen.io/rileyjshaw/full/ABzsc",
+		"link": "http://codepen.io/rileyjshaw/full/ABzsc",
 		"lastTagged": 1564708976938
 	},
 	{
@@ -2366,7 +2366,7 @@
 		"date": "2013-09-29",
 		"tags": ["online", "pretty", "reusable", "golf"],
 		"coolness": 14,
-		"href": "http://codepen.io/rileyjshaw/pen/Ijtgr",
+		"link": "http://codepen.io/rileyjshaw/pen/Ijtgr",
 		"lastTagged": 1564708977786
 	},
 	{
@@ -2375,7 +2375,7 @@
 		"date": "2013-09-18",
 		"tags": ["instructional"],
 		"coolness": 66,
-		"href": "https://github.com/rileyjshaw/git-cheatsheet",
+		"link": "https://github.com/rileyjshaw/git-cheatsheet",
 		"lastTagged": 1564708978237
 	},
 	{
@@ -2387,7 +2387,7 @@
 		"date": "2013-09-12",
 		"tags": ["pretty", "music", "reusable"],
 		"coolness": 16,
-		"href": "https://github.com/rileyjshaw/basic_visualizer",
+		"link": "https://github.com/rileyjshaw/basic_visualizer",
 		"lastTagged": 1564708981557
 	},
 	{
@@ -2396,7 +2396,7 @@
 		"date": "2013-09-06",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 27,
-		"href": "http://codepen.io/rileyjshaw/details/GsotD/",
+		"link": "http://codepen.io/rileyjshaw/details/GsotD/",
 		"lastTagged": 1564708985741
 	},
 	{
@@ -2409,7 +2409,7 @@
 		"date": "2013-08-31",
 		"tags": ["online", "pretty", "extinct", "reusable", "golf"],
 		"coolness": 74,
-		"href": "http://codepen.io/rileyjshaw/full/ebokj/",
+		"link": "http://codepen.io/rileyjshaw/full/ebokj/",
 		"lastTagged": 1564708989446
 	},
 	{
@@ -2420,7 +2420,7 @@
 		"date": "2013-08-27",
 		"tags": ["online", "pretty", "reusable", "golf"],
 		"coolness": 42,
-		"href": "http://codepen.io/rileyjshaw/full/jDCty/",
+		"link": "http://codepen.io/rileyjshaw/full/jDCty/",
 		"lastTagged": 1564708991379
 	},
 	{
@@ -2429,7 +2429,7 @@
 		"date": "2013-07-13",
 		"tags": ["online", "reusable", "golf"],
 		"coolness": 24,
-		"href": "http://codepen.io/rileyjshaw/pen/dAFiu",
+		"link": "http://codepen.io/rileyjshaw/pen/dAFiu",
 		"lastTagged": 1564708992197
 	},
 	{
@@ -2440,7 +2440,7 @@
 		"date": "2013-04-02",
 		"tags": ["online", "app", "extinct", "external"],
 		"coolness": 30,
-		"href": "/portfolio/old/instaframedemo/",
+		"link": "/portfolio/old/instaframedemo/",
 		"lastTagged": 1564708997115
 	},
 	{
@@ -2449,7 +2449,7 @@
 		"date": "2013-03-25",
 		"tags": ["online", "pretty", "reusable", "golf"],
 		"coolness": 60,
-		"href": "/portfolio/old/peekdemo.html",
+		"link": "/portfolio/old/peekdemo.html",
 		"lastTagged": 1564709001360
 	},
 	{
@@ -2461,7 +2461,7 @@
 		"date": "2013-03-22",
 		"tags": ["starred", "app", "pretty", "external"],
 		"coolness": 50,
-		"href": "http://youtu.be/zQ5tKU3z1fc",
+		"link": "http://youtu.be/zQ5tKU3z1fc",
 		"lastTagged": 1564709003258
 	},
 	{
@@ -2470,7 +2470,7 @@
 		"date": "2013-03-02",
 		"tags": ["app", "external"],
 		"coolness": 85,
-		"href": "https://github.com/uniphil/FitHub",
+		"link": "https://github.com/uniphil/FitHub",
 		"lastTagged": 1564708999688
 	},
 	{
@@ -2479,7 +2479,7 @@
 		"date": "2013-02-05",
 		"tags": ["game"],
 		"coolness": 30,
-		"href": "https://github.com/rileyjshaw/jumble-puzzle",
+		"link": "https://github.com/rileyjshaw/jumble-puzzle",
 		"lastTagged": 1564709005490
 	},
 	{
@@ -2487,7 +2487,7 @@
 		"date": "2012-10-30",
 		"tags": ["online", "pretty", "music", "reusable", "golf"],
 		"coolness": 12,
-		"href": "http://codepen.io/rileyjshaw/full/xdfeC",
+		"link": "http://codepen.io/rileyjshaw/full/xdfeC",
 		"lastTagged": 1564709007492
 	},
 	{
@@ -2498,7 +2498,7 @@
 		"date": "2012-10-23",
 		"tags": ["online", "reusable"],
 		"coolness": 23,
-		"href": "http://codepen.io/rileyjshaw/full/FLpJk/",
+		"link": "http://codepen.io/rileyjshaw/full/FLpJk/",
 		"lastTagged": 1564709012522
 	},
 	{
@@ -2509,7 +2509,7 @@
 		"date": "2012-06-22",
 		"tags": ["online", "golf"],
 		"coolness": 14,
-		"href": "http://codepen.io/rileyjshaw/pen/iGjgs",
+		"link": "http://codepen.io/rileyjshaw/pen/iGjgs",
 		"lastTagged": 1564709008266
 	},
 	{
@@ -2518,7 +2518,7 @@
 		"date": "2012-01-05",
 		"tags": ["online", "pretty", "golf"],
 		"coolness": 24,
-		"href": "/portfolio/old/cssonly/infiniteye.html",
+		"link": "/portfolio/old/cssonly/infiniteye.html",
 		"lastTagged": 1564709009404
 	},
 	{
@@ -2529,7 +2529,7 @@
 		"date": "2011-11-26",
 		"tags": ["online", "pretty", "reusable", "golf"],
 		"coolness": 11,
-		"href": "http://codepen.io/rileyjshaw/details/fKmuI",
+		"link": "http://codepen.io/rileyjshaw/details/fKmuI",
 		"lastTagged": 1564709010796
 	},
 	{
@@ -2537,7 +2537,7 @@
 		"date": "2010-06-22",
 		"tags": ["online", "reusable"],
 		"coolness": 15,
-		"href": "http://codepen.io/rileyjshaw/details/dzLwm/",
+		"link": "http://codepen.io/rileyjshaw/details/dzLwm/",
 		"lastTagged": 1564709014386
 	}
 ]

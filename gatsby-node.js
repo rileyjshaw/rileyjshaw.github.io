@@ -33,7 +33,7 @@ exports.createPages = async ({actions, graphql, reporter}) => {
 				}
 			}
 
-			allScrapedProjectsFormattedJson(
+			allCombinedProjectsJson(
 				filter: {type: {in: ["tumblr", "commit"]}}
 				limit: 1000
 			) {
@@ -50,7 +50,7 @@ exports.createPages = async ({actions, graphql, reporter}) => {
 		return;
 	}
 	const internalPosts = result.data.allMarkdownRemark.edges.map(e => e.node);
-	const externalPosts = result.data.allScrapedProjectsFormattedJson.nodes;
+	const externalPosts = result.data.allCombinedProjectsJson.nodes;
 	const allPosts = internalPosts
 		.map(p => ({
 			type: 'internal',
@@ -130,18 +130,21 @@ exports.onCreateNode = ({node, getNode, actions}) => {
 	}
 };
 
-// TODO(riley): Consider making a strict typedef for projects, eg:
-// exports.createSchemaCustomization = ({actions}) => {
-// 	const {createTypes} = actions;
-// 	const typeDefs = `
-// 		type ScrapedProjectsFormattedJson implements Node @dontInfer {
-// 			title: String!
-// 			date: Date!
-// 			...
-// 		}
-// 	`;
-// 	createTypes(typeDefs);
-// };
+// TODO(riley): Flesh this out.
+exports.createSchemaCustomization = ({actions}) => {
+	const {createTypes} = actions;
+	const typeDefs = `
+		# TODO(riley): Consider merging description and descriptionList.
+		# https://github.com/graphql/graphql-spec/issues/215
+		type CombinedProjectsJson implements Node {
+			title: String
+			description: String
+			descriptionList: [String]
+		}
+	`;
+
+	createTypes(typeDefs);
+};
 
 exports.createResolvers = ({createResolvers}) =>
 	createResolvers({

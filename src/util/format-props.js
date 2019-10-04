@@ -1,7 +1,4 @@
 const formatters = {
-	project: function formatProject({href, ...data}) {
-		return {...data, link: href};
-	},
 	post: function formatPost(data) {
 		// Move all `fields` properties to the top level and sort tags.
 		const {

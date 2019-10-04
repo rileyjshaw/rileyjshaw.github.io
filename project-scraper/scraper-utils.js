@@ -287,7 +287,7 @@ function getIcons() {
 }
 
 function getAll() {
-	Promise.all([
+	return Promise.all([
 		getDweets(),
 		getArena(),
 		getCommitBlog(),
@@ -306,7 +306,6 @@ function getAll() {
 			'./project-scraper/_generated/scraped-quotes.json',
 			JSON.stringify(quotes)
 		);
-		console.log('Done.');
 	});
 }
 

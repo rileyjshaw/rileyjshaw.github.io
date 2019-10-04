@@ -697,119 +697,136 @@
 		"type": "dweet",
 		"title": "No. 15311",
 		"date": "2019-08-06",
-		"link": "https://www.dwitter.net/d/15311"
+		"link": "https://www.dwitter.net/d/15311",
+		"tags": ["golf", "online"]
 	},
 	{
 		"uid": "DWEET_15308",
 		"type": "dweet",
 		"title": "No. 15308",
 		"date": "2019-08-06",
-		"link": "https://www.dwitter.net/d/15308"
+		"link": "https://www.dwitter.net/d/15308",
+		"tags": ["golf", "online"]
 	},
 	{
 		"uid": "DWEET_15303",
 		"type": "dweet",
 		"title": "No. 15303",
 		"date": "2019-08-06",
-		"link": "https://www.dwitter.net/d/15303"
+		"link": "https://www.dwitter.net/d/15303",
+		"tags": ["golf", "online"]
 	},
 	{
 		"uid": "DWEET_15271",
 		"type": "dweet",
 		"title": "No. 15271",
 		"date": "2019-08-03",
-		"link": "https://www.dwitter.net/d/15271"
+		"link": "https://www.dwitter.net/d/15271",
+		"tags": ["golf", "online"]
 	},
 	{
 		"uid": "DWEET_15270",
 		"type": "dweet",
 		"title": "No. 15270",
 		"date": "2019-08-03",
-		"link": "https://www.dwitter.net/d/15270"
+		"link": "https://www.dwitter.net/d/15270",
+		"tags": ["golf", "online"]
 	},
 	{
 		"uid": "DWEET_2621",
 		"type": "dweet",
 		"title": "No. 2621",
 		"date": "2017-04-27",
-		"link": "https://www.dwitter.net/d/2621"
+		"link": "https://www.dwitter.net/d/2621",
+		"tags": ["golf", "online"]
 	},
 	{
 		"uid": "DWEET_2619",
 		"type": "dweet",
 		"title": "No. 2619",
 		"date": "2017-04-27",
-		"link": "https://www.dwitter.net/d/2619"
+		"link": "https://www.dwitter.net/d/2619",
+		"tags": ["golf", "online"]
 	},
 	{
 		"uid": "DWEET_2618",
 		"type": "dweet",
 		"title": "No. 2618",
 		"date": "2017-04-27",
-		"link": "https://www.dwitter.net/d/2618"
+		"link": "https://www.dwitter.net/d/2618",
+		"tags": ["golf", "online"]
 	},
 	{
 		"uid": "DWEET_2617",
 		"type": "dweet",
 		"title": "No. 2617",
 		"date": "2017-04-27",
-		"link": "https://www.dwitter.net/d/2617"
+		"link": "https://www.dwitter.net/d/2617",
+		"tags": ["golf", "online"]
 	},
 	{
 		"uid": "DWEET_2613",
 		"type": "dweet",
 		"title": "No. 2613",
 		"date": "2017-04-27",
-		"link": "https://www.dwitter.net/d/2613"
+		"link": "https://www.dwitter.net/d/2613",
+		"tags": ["golf", "online"]
 	},
 	{
 		"uid": "DWEET_2610",
 		"type": "dweet",
 		"title": "No. 2610",
 		"date": "2017-04-26",
-		"link": "https://www.dwitter.net/d/2610"
+		"link": "https://www.dwitter.net/d/2610",
+		"tags": ["golf", "online"]
 	},
 	{
 		"uid": "DWEET_2609",
 		"type": "dweet",
 		"title": "No. 2609",
 		"date": "2017-04-26",
-		"link": "https://www.dwitter.net/d/2609"
+		"link": "https://www.dwitter.net/d/2609",
+		"tags": ["golf", "online"]
 	},
 	{
 		"uid": "DWEET_2608",
 		"type": "dweet",
 		"title": "No. 2608",
 		"date": "2017-04-26",
-		"link": "https://www.dwitter.net/d/2608"
+		"link": "https://www.dwitter.net/d/2608",
+		"tags": ["golf", "online"]
 	},
 	{
 		"uid": "DWEET_2605",
 		"type": "dweet",
 		"title": "No. 2605",
 		"date": "2017-04-26",
-		"link": "https://www.dwitter.net/d/2605"
+		"link": "https://www.dwitter.net/d/2605",
+		"tags": ["golf", "online"]
 	},
 	{
 		"uid": "DWEET_2603",
 		"type": "dweet",
 		"title": "No. 2603",
 		"date": "2017-04-26",
-		"link": "https://www.dwitter.net/d/2603"
+		"link": "https://www.dwitter.net/d/2603",
+		"tags": ["golf", "online"]
 	},
 	{
 		"uid": "DWEET_2602",
 		"type": "dweet",
 		"title": "No. 2602",
 		"date": "2017-04-26",
-		"link": "https://www.dwitter.net/d/2602"
+		"link": "https://www.dwitter.net/d/2602",
+		"tags": ["golf", "online"]
 	},
 	{
 		"uid": "DWEET_2601",
 		"type": "dweet",
 		"title": "No. 2601",
 		"date": "2017-04-26",
-		"link": "https://www.dwitter.net/d/2601"
+		"link": "https://www.dwitter.net/d/2601",
+		"tags": ["golf", "online"]
 	},
 	{
 		"uid": "COMMIT_5EFE71827C2575CBD09DC30669E9C1A63FC625DB",
@@ -832,5 +849,3050 @@
 		"body": "<p>Adds the following resources:</p>\n<ul>\n<li>\"<a href=\"https://humanetech.com/podcast/\" rel=\"nofollow\">Your Undivided Attention</a>\" (podcast)</li>\n<li>\"<a href=\"https://www.carbonite.com/podcasts/breach\" rel=\"nofollow\">Breach</a>\" (podcast)</li>\n<li>\"<a href=\"https://irlpodcast.org\" rel=\"nofollow\">IRL</a>\" (podcast)</li>\n<li>\"<a href=\"https://www.bbc.co.uk/programmes/m000458m\" rel=\"nofollow\">New Ways of Seeing</a>\" (podcast)</li>\n<li>\"<a href=\"https://stealthisshow.com\" rel=\"nofollow\">Steal This Show</a>\" (podcast)</li>\n<li>\"<a href=\"http://www.sarawb.com/technically-wrong\" rel=\"nofollow\">Technically Wrong</a>\" (book)</li>\n<li>\"<a href=\"https://mitpress.mit.edu/books/protocol\" rel=\"nofollow\">Protocol</a>\" (book)</li>\n<li>\"<a href=\"https://www.penguinrandomhouse.com/books/600671/how-to-do-nothing-by-jenny-odell/9781612197494\" rel=\"nofollow\">How to Do Nothing</a>\" (book)</li>\n</ul>",
 		"description": "<p>Adds the following resources:</p><ul>\n<li>\"<a href=\"https://humanetech.com/podcast/\" rel=\"nofollow\">Your Undivided Attention</a>\" (podcast)</li>\n<li>\"<a href=\"https://www.carbonite.com/podcasts/breach\" rel=\"nofollow\">Breach</a>\" (podcast)</li>\n<li>\"<a href=\"https://irlpodcast.org\" rel=\"nofollow\">IRL</a>\" (podcast)</li>\n<li>\"<a href=\"https://www.bbc.co.uk/programmes/m000458m\" rel=\"nofollow\">New Ways of Seeing</a>\" (podcast)</li>\n<li>\"<a href=\"https://stealthisshow.com\" rel=\"nofollow\">Steal This Show</a>\" (podcast)</li>\n<li>\"<a href=\"http://www.sarawb.com/technically-wrong\" rel=\"nofollow\">Technically Wrong</a>\" (book)</li>\n<li>\"<a href=\"https://mitpress.mit.edu/books/protocol\" rel=\"nofollow\">Protocol</a>\" (book)</li>\n<li>\"<a href=\"https://www.penguinrandomhouse.com/books/600671/how-to-do-nothing-by-jenny-odell/9781612197494\" rel=\"nofollow\">How to Do Nothing</a>\" (book)</li>\n</ul>",
 		"more": false
+	},
+	{
+		"title": "Marqueee",
+		"date": "2019-06-01",
+		"coolness": 36,
+		"link": "https://marqueee.glitch.me/",
+		"tags": ["online", "reusable"],
+		"lastTagged": 1564772210294,
+		"descriptionList": [
+			"A quick experiment to render efficient \"ticker tape\" on a canvas.",
+			"Used as part of an online treasure hunt I made."
+		],
+		"type": "project",
+		"uid": "PROJECT_MARQUEEE"
+	},
+	{
+		"title": "txt flowers",
+		"date": "2019-03-17",
+		"coolness": 41,
+		"link": "https://txt-flowers.glitch.me/",
+		"tags": ["online", "pretty"],
+		"lastTagged": 1564773945787,
+		"descriptionList": [
+			"A garden of emoji that slowly climbs your screen."
+		],
+		"type": "project",
+		"uid": "PROJECT_TXT_FLOWERS"
+	},
+	{
+		"title": "ascii garden",
+		"date": "2019-03-17",
+		"coolness": 41,
+		"link": "https://ascii-garden.glitch.me/",
+		"tags": ["online", "pretty"],
+		"lastTagged": 1564773957386,
+		"descriptionList": ["An ascii rock garden. Rake with touch / mouse."],
+		"type": "project",
+		"uid": "PROJECT_ASCII_GARDEN"
+	},
+	{
+		"title": "typing lazy (desktop only)",
+		"date": "2019-03-10",
+		"link": "https://typing-lazy.glitch.me/",
+		"tags": ["external", "online", "starred"],
+		"lastTagged": 1564775565269,
+		"coolness": 80,
+		"descriptionList": [
+			"Try touch-typing an English word without moving your fingers from their resting position on the keyboard.",
+			"This was a proof-of-concept for a keyboard glove, which was implemented in hardware by <a href=\"https://github.com/rileyjshaw/english-words-directory-trie\" target=\"_blank\" rel=\"noopener noreferrer\">mapping the trie to a directory tree</a>."
+		],
+		"type": "project",
+		"uid": "PROJECT_TYPING_LAZY_(DESKTOP_ONLY)"
+	},
+	{
+		"title": "CA finder",
+		"date": "2019-03-09",
+		"tags": ["game", "online", "pretty"],
+		"coolness": 76,
+		"link": "https://ca-finder.glitch.me/",
+		"lastTagged": 1552433253008,
+		"descriptionList": [
+			"Caution: it flashes! <a href=\"https://glitch.com/edit/#!/ca-finder?path=README.md:1:0\" target=\"_blank\" rel=\"noopener noreferrer\">Controls listed in the README.</a>"
+		],
+		"type": "project",
+		"uid": "PROJECT_CA_FINDER"
+	},
+	{
+		"title": "smudge",
+		"coolness": 10,
+		"link": "https://codepen.io/rileyjshaw/pen/rdQxOa",
+		"date": "2018-04-06",
+		"tags": ["golf", "online"],
+		"lastTagged": 1564608355968,
+		"descriptionList": ["Created in 99B of Javascript."],
+		"type": "project",
+		"uid": "PROJECT_SMUDGE"
+	},
+	{
+		"title": "Huertbeat",
+		"date": "2018-01-10",
+		"tags": ["app", "external", "music", "starred"],
+		"coolness": 70,
+		"link": "https://github.com/rileyjshaw/huertbeat",
+		"lastTagged": 1564608357834,
+		"descriptionList": [
+			"Pulse available Philips hue lights to whatever is playing on Spotify."
+		],
+		"type": "project",
+		"uid": "PROJECT_HUERTBEAT"
+	},
+	{
+		"title": "Huemidity",
+		"date": "2017-12-14",
+		"tags": ["app", "external", "music"],
+		"coolness": 70,
+		"link": "https://github.com/rileyjshaw/huemidity",
+		"lastTagged": 1564608358786,
+		"descriptionList": [
+			"Control your Philips Hue lights with MIDI triggers."
+		],
+		"type": "project",
+		"uid": "PROJECT_HUEMIDITY"
+	},
+	{
+		"title": "Rainbobble",
+		"date": "2017-11-25",
+		"tags": ["online", "pretty"],
+		"coolness": 52,
+		"link": "https://codepen.io/rileyjshaw/full/VrBZoK/",
+		"lastTagged": 1564608361275,
+		"descriptionList": [
+			"Rainbow remix of <a href=\"http://codepen.io/rileyjshaw/full/ozjEoK/\" target=\"_blank\" rel=\"noopener noreferrer\">Bubble</a>."
+		],
+		"type": "project",
+		"uid": "PROJECT_RAINBOBBLE"
+	},
+	{
+		"title": "canvas",
+		"date": "2017-10-07",
+		"tags": ["extinct", "online", "pretty", "starred"],
+		"coolness": 70,
+		"link": "/canvas/",
+		"lastTagged": 1565142493873,
+		"descriptionList": [
+			"THIRTY-EIGHT rough visual experiments in alphabetical order.",
+			"Each experiment was built using a web tool I created in the spirit of OpenFrameworks and TouchDesigner. I wanted libraries close at hand with a simple API for drawing to &lt;canvas&gt;, SVG, etc."
+		],
+		"type": "project",
+		"uid": "PROJECT_CANVAS"
+	},
+	{
+		"title": "Photo experiment",
+		"date": "2017-09-30",
+		"tags": ["online", "pretty"],
+		"coolness": 33,
+		"link": "https://photo-experiment.glitch.me",
+		"lastTagged": 1564624404415,
+		"descriptionList": [
+			"Combines two images by alternating them row-by-row.",
+			"Each row is placed to line up visually with the row above it, which causes a subtle shearing effect."
+		],
+		"type": "project",
+		"uid": "PROJECT_PHOTO_EXPERIMENT"
+	},
+	{
+		"title": "hologram",
+		"date": "2017-05-29",
+		"tags": ["external"],
+		"coolness": 60,
+		"link": "https://github.com/rileyjshaw/hologram",
+		"lastTagged": 1564608370682,
+		"descriptionList": [
+			"Cuts a hologram out of acrylic using the Hacklab TO laser cutter."
+		],
+		"type": "project",
+		"uid": "PROJECT_HOLOGRAM"
+	},
+	{
+		"title": "the camera rotates with the minute hand (animated)",
+		"date": "2017-04-18",
+		"tags": ["online", "pretty"],
+		"coolness": 50,
+		"link": "https://codepen.io/rileyjshaw/details/gWamKx/",
+		"lastTagged": 1564608372846,
+		"type": "project",
+		"uid": "PROJECT_THE_CAMERA_ROTATES_WITH_THE_MINUTE_HAND_(ANIMATED)"
+	},
+	{
+		"title": "Fuzzy Match Utils",
+		"date": "2017-03-27",
+		"tags": ["reusable"],
+		"coolness": 62,
+		"link": "https://github.com/Khan/fuzzy-match-utils",
+		"lastTagged": 1564608377140,
+		"descriptionList": [
+			"A collection of string matching algorithms designed with React Select in mind."
+		],
+		"type": "project",
+		"uid": "PROJECT_FUZZY_MATCH_UTILS"
+	},
+	{
+		"title": "Multi-line lists with item separators (CSS only)",
+		"date": "2017-03-01",
+		"tags": ["golf", "online", "reusable"],
+		"coolness": 59,
+		"link": "http://codepen.io/rileyjshaw/pen/BWjZZV/?editors=1100",
+		"lastTagged": 1564608379885,
+		"type": "project",
+		"uid": "PROJECT_MULTI_LINE_LISTS_WITH_ITEM_SEPARATORS_(CSS_ONLY)"
+	},
+	{
+		"title": "Sorta",
+		"date": "2017-02-27",
+		"tags": ["online", "reusable"],
+		"coolness": 56,
+		"link": "/sorta/",
+		"lastTagged": 1564608381908,
+		"descriptionList": [
+			"Manually sort a list of items using Timsort.",
+			"Abandoned UI experiment; seeing a large list is useful for large sets. Also, quicksort would work better here."
+		],
+		"type": "project",
+		"uid": "PROJECT_SORTA"
+	},
+	{
+		"title": "Node-TimSort Async",
+		"date": "2017-02-26",
+		"tags": ["reusable"],
+		"coolness": 30,
+		"link": "https://github.com/rileyjshaw/node-timsort-async",
+		"lastTagged": 1564608382989,
+		"descriptionList": [
+			"Asynchronous TimSort implementation for Node.js."
+		],
+		"type": "project",
+		"uid": "PROJECT_NODE_TIMSORT_ASYNC"
+	},
+	{
+		"title": "write",
+		"date": "2017-01-17",
+		"tags": ["app", "online", "starred"],
+		"coolness": 80,
+		"link": "/write",
+		"lastTagged": 1564608384406,
+		"descriptionList": ["A chill place to write things."],
+		"type": "project",
+		"uid": "PROJECT_WRITE"
+	},
+	{
+		"title": "Color screen",
+		"date": "2017-01-05",
+		"tags": ["app", "online"],
+		"coolness": 10,
+		"link": "/color-screen/",
+		"lastTagged": 1564608387197,
+		"descriptionList": [
+			"Full-screen hex, hsl, and rgb color picker & converter"
+		],
+		"type": "project",
+		"uid": "PROJECT_COLOR_SCREEN"
+	},
+	{
+		"title": "Crypto Christmas",
+		"date": "2016-12-27",
+		"tags": ["instructional", "online", "starred"],
+		"coolness": 90,
+		"link": "https://crypto.christmas/",
+		"lastTagged": 1564608389110,
+		"descriptionList": [
+			"Improve your online privacy and security over the 12 days of Cryptmas.",
+			"I was interviewed for this work by NPR, the CBC, and PCMag."
+		],
+		"type": "project",
+		"uid": "PROJECT_CRYPTO_CHRISTMAS"
+	},
+	{
+		"title": "CSSANDY CANE",
+		"date": "2016-12-25",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 47,
+		"link": "https://codepen.io/rileyjshaw/full/mOZrye/",
+		"lastTagged": 1564608390236,
+		"type": "project",
+		"uid": "PROJECT_CSSANDY_CANE"
+	},
+	{
+		"title": "ditter",
+		"date": "2016-11-13",
+		"tags": ["instructional"],
+		"coolness": 60,
+		"link": "https://gist.github.com/rileyjshaw/fab2c01b9bb85e598fffba130ca28d0a",
+		"lastTagged": 1564608392569,
+		"descriptionList": [
+			"Create a private Twitter list out of someone else's feed so you can read it."
+		],
+		"type": "project",
+		"uid": "PROJECT_DITTER"
+	},
+	{
+		"title": "Black hole sun",
+		"date": "2016-10-31",
+		"tags": ["online", "pretty"],
+		"coolness": 44,
+		"link": "http://codepen.io/rileyjshaw/pen/GjVZYq",
+		"lastTagged": 1564608396287,
+		"type": "project",
+		"uid": "PROJECT_BLACK_HOLE_SUN"
+	},
+	{
+		"title": "RileyJShaw.???",
+		"date": "2016-10-27",
+		"tags": ["golf", "online", "starred"],
+		"coolness": 80,
+		"link": "https://gist.github.com/rileyjshaw/216af3d73b16e35d462ea5a29da4bcd4",
+		"lastTagged": 1564608398380,
+		"descriptionList": [
+			"A single program that outputs my name when you run it through three separate programming languages."
+		],
+		"type": "project",
+		"uid": "PROJECT_RILEYJSHAW.???"
+	},
+	{
+		"title": "Vintage",
+		"date": "2016-10-24",
+		"tags": ["online", "pretty"],
+		"coolness": 32,
+		"link": "http://codepen.io/rileyjshaw/pen/ozmymE/",
+		"lastTagged": 1564608401800,
+		"descriptionList": ["wallpaper..?"],
+		"type": "project",
+		"uid": "PROJECT_VINTAGE"
+	},
+	{
+		"title": "Flutter",
+		"date": "2016-10-04",
+		"tags": ["online", "pretty"],
+		"coolness": 34,
+		"link": "http://codepen.io/rileyjshaw/pen/bwYRbw",
+		"lastTagged": 1564608403981,
+		"descriptionList": [
+			"If you make a pin out of this please send me one."
+		],
+		"type": "project",
+		"uid": "PROJECT_FLUTTER"
+	},
+	{
+		"title": "Superformula explorer",
+		"date": "2016-10-04",
+		"tags": ["app", "online", "pretty"],
+		"coolness": 36,
+		"link": "http://codepen.io/rileyjshaw/pen/jrayWL",
+		"lastTagged": 1564608405055,
+		"descriptionList": [
+			"\"...the formula can be used to describe many complex shapes and curves that are found in nature. Gielis <em>holds a patent</em> related to the synthesis of patterns generated by the superformula.\"",
+			":facepalm:"
+		],
+		"type": "project",
+		"uid": "PROJECT_SUPERFORMULA_EXPLORER"
+	},
+	{
+		"title": "Black lotus",
+		"date": "2016-10-03",
+		"tags": ["online", "pretty"],
+		"coolness": 30,
+		"link": "http://codepen.io/rileyjshaw/full/ZpXPYR/",
+		"lastTagged": 1564608406264,
+		"type": "project",
+		"uid": "PROJECT_BLACK_LOTUS"
+	},
+	{
+		"title": "Cyber pilot (with controls)",
+		"date": "2016-09-28",
+		"tags": ["game", "online", "starred"],
+		"coolness": 86,
+		"link": "http://codepen.io/rileyjshaw/pen/YGQVqK?editors=1000",
+		"lastTagged": 1564608407776,
+		"descriptionList": [
+			"Play this one in a small window. Arrow keys to move around."
+		],
+		"type": "project",
+		"uid": "PROJECT_CYBER_PILOT_(WITH_CONTROLS)"
+	},
+	{
+		"title": "Blinds (with type)",
+		"date": "2016-09-26",
+		"tags": ["online", "pretty"],
+		"coolness": 55,
+		"link": "http://codepen.io/rileyjshaw/full/mAmRNa/",
+		"lastTagged": 1564608408933,
+		"type": "project",
+		"uid": "PROJECT_BLINDS_(WITH_TYPE)"
+	},
+	{
+		"title": "Ring",
+		"date": "2016-09-26",
+		"tags": ["online", "pretty"],
+		"coolness": 82,
+		"link": "http://codepen.io/rileyjshaw/full/YGVKgV/",
+		"lastTagged": 1564608411208,
+		"descriptionList": ["It was left here by the aliens."],
+		"type": "project",
+		"uid": "PROJECT_RING"
+	},
+	{
+		"title": "Bubble",
+		"date": "2016-09-10",
+		"tags": ["online", "pretty"],
+		"coolness": 52,
+		"link": "http://codepen.io/rileyjshaw/full/ozjEoK/",
+		"lastTagged": 1564608412735,
+		"descriptionList": ["Follows your mouse."],
+		"type": "project",
+		"uid": "PROJECT_BUBBLE"
+	},
+	{
+		"title": "Cyclic CA (PICO-8)",
+		"date": "2016-08-29",
+		"tags": ["external", "golf", "online", "pretty"],
+		"coolness": 40,
+		"link": "http://www.lexaloffle.com/bbs/?tid=27569",
+		"lastTagged": 1564608416268,
+		"type": "project",
+		"uid": "PROJECT_CYCLIC_CA_(PICO_8)"
+	},
+	{
+		"title": "w h a t",
+		"date": "2016-08-28",
+		"tags": ["external", "game", "golf", "music", "online", "starred"],
+		"coolness": 80,
+		"link": "http://www.lexaloffle.com/bbs/?tid=27571",
+		"lastTagged": 1564608417415,
+		"descriptionList": [
+			"Short narrative experiment written for the PICO-8 fantasy console."
+		],
+		"type": "project",
+		"uid": "PROJECT_W_H_A_T"
+	},
+	{
+		"title": "ASCII animator",
+		"date": "2016-08-23",
+		"tags": ["app", "online", "pretty"],
+		"coolness": 59,
+		"link": "http://codepen.io/rileyjshaw/full/YWbbGJ/",
+		"lastTagged": 1564608420432,
+		"type": "project",
+		"uid": "PROJECT_ASCII_ANIMATOR"
+	},
+	{
+		"title": "Sun",
+		"date": "2016-08-08",
+		"tags": ["online", "pretty"],
+		"coolness": 40,
+		"link": "http://codepen.io/rileyjshaw/full/WxYkmW/",
+		"lastTagged": 1564608422097,
+		"type": "project",
+		"uid": "PROJECT_SUN"
+	},
+	{
+		"title": "Blinds",
+		"date": "2016-08-08",
+		"tags": ["online", "pretty"],
+		"coolness": 46,
+		"link": "http://codepen.io/rileyjshaw/full/kXQXAo/",
+		"lastTagged": 1564608423548,
+		"descriptionList": ["It resizes!"],
+		"type": "project",
+		"uid": "PROJECT_BLINDS"
+	},
+	{
+		"title": "Blinkers",
+		"date": "2016-08-08",
+		"tags": ["online", "pretty"],
+		"coolness": 50,
+		"link": "http://codepen.io/rileyjshaw/full/pbQEoA/",
+		"lastTagged": 1564608428261,
+		"descriptionList": [
+			"Threw this together to help with color inspiration for another project."
+		],
+		"type": "project",
+		"uid": "PROJECT_BLINKERS"
+	},
+	{
+		"title": "Flubber",
+		"date": "2016-06-19",
+		"tags": ["app", "music", "reusable"],
+		"coolness": 40,
+		"link": "https://github.com/rileyjshaw/flubber",
+		"lastTagged": 1564707806856,
+		"descriptionList": [
+			"Nobody's perfect! Takes a MIDI file and messes up a few of the notes."
+		],
+		"type": "project",
+		"uid": "PROJECT_FLUBBER"
+	},
+	{
+		"title": "Virtuoso",
+		"date": "2016-06-17",
+		"tags": ["app", "external", "game", "music", "reusable", "starred"],
+		"coolness": 80,
+		"link": "https://github.com/rileyjshaw/virtuoso",
+		"lastTagged": 1564707810842,
+		"descriptionList": [
+			"Play a .mid file at your own speed using a MIDI keyboard!",
+			"Works best with MIDI keyboards, but you can use your computer keyboard too."
+		],
+		"type": "project",
+		"uid": "PROJECT_VIRTUOSO"
+	},
+	{
+		"title": "average-color",
+		"date": "2016-06-16",
+		"tags": ["app", "reusable"],
+		"coolness": 30,
+		"link": "https://github.com/rileyjshaw/average-color",
+		"lastTagged": 1564707813397,
+		"descriptionList": [
+			"Returns the average color from a list of HSL arrays."
+		],
+		"type": "project",
+		"uid": "PROJECT_AVERAGE_COLOR"
+	},
+	{
+		"title": "Plaster swirls, thicker",
+		"date": "2016-06-15",
+		"tags": ["online", "pretty"],
+		"coolness": 65,
+		"link": "http://codepen.io/rileyjshaw/full/Meeedv",
+		"lastTagged": 1564707815578,
+		"type": "project",
+		"uid": "PROJECT_PLASTER_SWIRLS,_THICKER"
+	},
+	{
+		"title": "Plaster swirls, sort of",
+		"date": "2016-06-15",
+		"tags": ["online", "pretty"],
+		"coolness": 65,
+		"link": "http://codepen.io/rileyjshaw/full/RRajov/",
+		"lastTagged": 1564707816646,
+		"descriptionList": [
+			"I've got plaster swirls on my ceiling. This began as a recreation of that and turned into something else."
+		],
+		"type": "project",
+		"uid": "PROJECT_PLASTER_SWIRLS,_SORT_OF"
+	},
+	{
+		"title": "Synthesia",
+		"date": "2016-06-05",
+		"tags": ["external", "music", "pretty", "reusable"],
+		"coolness": 54,
+		"link": "https://github.com/rileyjshaw/synthesia",
+		"lastTagged": 1564707820422,
+		"descriptionList": [
+			"Synthesizer synesthesia. Turn MIDI notes into colors."
+		],
+		"type": "project",
+		"uid": "PROJECT_SYNTHESIA"
+	},
+	{
+		"title": "Spokes, etc",
+		"date": "2016-06-03",
+		"tags": ["online", "pretty"],
+		"coolness": 30,
+		"link": "http://codepen.io/collection/DmZZVV/",
+		"lastTagged": 1564707822822,
+		"descriptionList": [
+			"Geometric patterns created from straight lines cutting through a circle."
+		],
+		"type": "project",
+		"uid": "PROJECT_SPOKES,_ETC"
+	},
+	{
+		"title": "Spotlight",
+		"date": "2016-06-01",
+		"tags": ["online", "pretty"],
+		"coolness": 64,
+		"link": "http://codepen.io/rileyjshaw/pen/aZzKGa",
+		"lastTagged": 1564707825199,
+		"descriptionList": ["Move your mouse/finger. Remix of \"filings\"."],
+		"type": "project",
+		"uid": "PROJECT_SPOTLIGHT"
+	},
+	{
+		"title": "Keyboard keyboard",
+		"date": "2016-05-28",
+		"tags": ["external", "music", "reusable", "starred"],
+		"coolness": 60,
+		"link": "https://github.com/rileyjshaw/keyboard-keyboard",
+		"lastTagged": 1564707826462,
+		"descriptionList": [
+			"Use a MIDI keyboard as your laptop keyboard.",
+			"Hard press = UPPERCASE, soft press = lowercase."
+		],
+		"type": "project",
+		"uid": "PROJECT_KEYBOARD_KEYBOARD"
+	},
+	{
+		"title": "Typing for two",
+		"date": "2016-05-28",
+		"tags": ["external", "game", "golf", "online", "starred"],
+		"coolness": 50,
+		"link": "https://github.com/rileyjshaw/typing-for-two",
+		"lastTagged": 1564707830808,
+		"descriptionList": [
+			"A competitive typing tutor. Two players type different paragraphs on the same keyboard, simultaneously."
+		],
+		"type": "project",
+		"uid": "PROJECT_TYPING_FOR_TWO"
+	},
+	{
+		"title": "Free",
+		"date": "2016-05-24",
+		"tags": ["online", "pretty"],
+		"coolness": 60,
+		"link": "http://codepen.io/rileyjshaw/full/ZOzGKq/",
+		"lastTagged": 1564707834778,
+		"descriptionList": ["Poster? Coaster?"],
+		"type": "project",
+		"uid": "PROJECT_FREE"
+	},
+	{
+		"title": "Falling",
+		"date": "2016-05-22",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 30,
+		"link": "http://codepen.io/rileyjshaw/pen/PNMZVG?editors=1100",
+		"lastTagged": 1564707836594,
+		"descriptionList": ["Looping CSS animation."],
+		"type": "project",
+		"uid": "PROJECT_FALLING"
+	},
+	{
+		"title": "Single line tiling",
+		"date": "2016-05-18",
+		"tags": ["online", "pretty", "starred"],
+		"coolness": 97,
+		"link": "http://codepen.io/collection/nYWPBp/",
+		"lastTagged": 1564707838057,
+		"descriptionList": [
+			"Tiling patterns from a single spiral with a fixed modulation signal.",
+			"Though the line's formula stays consistent as it spirals out, the tile grid doesn't increase in size."
+		],
+		"type": "project",
+		"uid": "PROJECT_SINGLE_LINE_TILING"
+	},
+	{
+		"title": "swirls",
+		"date": "2016-05-16",
+		"tags": ["online", "pretty"],
+		"coolness": 50,
+		"link": "http://codepen.io/rileyjshaw/full/YqbGKK/",
+		"lastTagged": 1564707839982,
+		"descriptionList": [
+			"Abandoned background generator. Pattern is played out."
+		],
+		"type": "project",
+		"uid": "PROJECT_SWIRLS"
+	},
+	{
+		"title": "Shell or something",
+		"date": "2016-05-16",
+		"tags": ["online", "pretty"],
+		"coolness": 20,
+		"link": "http://codepen.io/rileyjshaw/full/RamaYJ/",
+		"lastTagged": 1564707841219,
+		"descriptionList": [
+			"Stumbled upon this on my way to making <a href=\"http://codepen.io/rileyjshaw/full/YqbGKK/\" target=\"_blank\" rel=\"noopener noreferrer\">swirls</a>."
+		],
+		"type": "project",
+		"uid": "PROJECT_SHELL_OR_SOMETHING"
+	},
+	{
+		"title": "Literate theme",
+		"date": "2016-05-12",
+		"tags": ["app", "reusable", "starred"],
+		"coolness": 81,
+		"link": "https://github.com/rileyjshaw/literate-theme",
+		"lastTagged": 1564707843448,
+		"descriptionList": [
+			"A CLI tool to update your favorite text editor theme. Emphasizes comments and mutes everything else."
+		],
+		"type": "project",
+		"uid": "PROJECT_LITERATE_THEME"
+	},
+	{
+		"title": "Jittery visualizer v3",
+		"date": "2016-05-05",
+		"tags": ["music", "online", "pretty"],
+		"coolness": 84,
+		"link": "http://codepen.io/rileyjshaw/full/NNeoMR/",
+		"lastTagged": 1564707845485,
+		"descriptionList": [
+			"V1 -&gt; V2 contained the <em>tiniest</em> tweak perceptually (smooth line all 'round), but it was a technical challenge. V2 -&gt; V3 contains the tiniest code tweaks, but is perceptually very different. Uses canvas transform logic from <a href=\"http://codepen.io/rileyjshaw/pen/ONrdoM\" target=\"_blank\" rel=\"noopener noreferrer\">zonin'</a>."
+		],
+		"type": "project",
+		"uid": "PROJECT_JITTERY_VISUALIZER_V3"
+	},
+	{
+		"title": "zonin'",
+		"date": "2016-05-05",
+		"tags": ["online", "pretty", "reusable"],
+		"coolness": 56,
+		"link": "http://codepen.io/rileyjshaw/pen/ONrdoM",
+		"lastTagged": 1564707846623,
+		"descriptionList": [
+			"Efficiently scales and rotates canvas image data <em>seemingly</em> in-place using two overlapping canvas elements."
+		],
+		"type": "project",
+		"uid": "PROJECT_ZONIN'"
+	},
+	{
+		"title": "Dandelion",
+		"date": "2016-05-05",
+		"tags": ["online", "pretty"],
+		"coolness": 39,
+		"link": "http://codepen.io/rileyjshaw/full/bpOoyW/",
+		"lastTagged": 1564707847474,
+		"descriptionList": [
+			"Independently oscillating points that form a greater picture together."
+		],
+		"type": "project",
+		"uid": "PROJECT_DANDELION"
+	},
+	{
+		"title": "Have you seen my ship?",
+		"date": "2016-05-04",
+		"tags": ["online", "pretty"],
+		"coolness": 39,
+		"link": "http://codepen.io/rileyjshaw/full/BKvWBP/",
+		"lastTagged": 1564707848382,
+		"descriptionList": ["It's hard to see the ship... :/"],
+		"type": "project",
+		"uid": "PROJECT_HAVE_YOU_SEEN_MY_SHIP?"
+	},
+	{
+		"title": "Circling circles",
+		"date": "2016-05-03",
+		"tags": ["online", "pretty", "starred"],
+		"coolness": 70,
+		"link": "http://codepen.io/rileyjshaw/full/xVQBLG/",
+		"lastTagged": 1564707849539,
+		"descriptionList": [
+			"Very simple rule applied to a bunch of particles for a smooth ripple effect.",
+			"Changing the timing function on this one is extremely satisfying."
+		],
+		"type": "project",
+		"uid": "PROJECT_CIRCLING_CIRCLES"
+	},
+	{
+		"title": "Jittery visualizer v2",
+		"date": "2016-04-28",
+		"tags": ["music", "online", "pretty", "starred"],
+		"coolness": 80,
+		"link": "http://codepen.io/rileyjshaw/full/oxaxqX/",
+		"lastTagged": 1564707851729,
+		"descriptionList": [
+			"Added a linear ramp and smoothing function to v1 to make the lowest frequency bin match up with the highest frequency bin in both position and derivative. The effect is a continuous circle, versus the <a href=\"http://codepen.io/rileyjshaw/full/ogVNgW/\" target=\"_blank\" rel=\"noopener noreferrer\">\"speech-bubble\" notch effect of v1</a>."
+		],
+		"type": "project",
+		"uid": "PROJECT_JITTERY_VISUALIZER_V2"
+	},
+	{
+		"title": "Stepping down a corridor",
+		"date": "2016-04-28",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 50,
+		"link": "http://codepen.io/rileyjshaw/full/LNgLBj",
+		"lastTagged": 1564707852961,
+		"descriptionList": ["Trying out CSS animation steps()."],
+		"type": "project",
+		"uid": "PROJECT_STEPPING_DOWN_A_CORRIDOR"
+	},
+	{
+		"title": "slant + swap + shift",
+		"date": "2016-04-26",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 69,
+		"link": "http://codepen.io/collection/XGpwzE/",
+		"lastTagged": 1564707853866,
+		"descriptionList": ["Playing with bg gradient dots, CSS only."],
+		"type": "project",
+		"uid": "PROJECT_SLANT_+_SWAP_+_SHIFT"
+	},
+	{
+		"title": "sway + swell + spin",
+		"date": "2016-04-25",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 69,
+		"link": "http://codepen.io/collection/nmyQRj/",
+		"lastTagged": 1564707854423,
+		"descriptionList": ["Playing with bg gradient stripes, CSS only."],
+		"type": "project",
+		"uid": "PROJECT_SWAY_+_SWELL_+_SPIN"
+	},
+	{
+		"title": "Typelab",
+		"date": "2016-04-16",
+		"tags": ["app", "online", "pretty", "starred"],
+		"coolness": 74,
+		"link": "http://codepen.io/rileyjshaw/full/eZrzbK/",
+		"lastTagged": 1564707857033,
+		"descriptionList": [
+			"Repeatedly apply a set of transformations to text."
+		],
+		"type": "project",
+		"uid": "PROJECT_TYPELAB"
+	},
+	{
+		"title": "b+w",
+		"date": "2016-04-13",
+		"tags": ["online", "pretty"],
+		"coolness": 34,
+		"link": "http://codepen.io/rileyjshaw/pen/bpvwxQ",
+		"lastTagged": 1564707861136,
+		"type": "project",
+		"uid": "PROJECT_B+W"
+	},
+	{
+		"title": "XOR profile card",
+		"date": "2016-04-11",
+		"tags": ["online", "pretty"],
+		"coolness": 60,
+		"link": "http://codepen.io/rileyjshaw/pen/vGdgWG",
+		"lastTagged": 1564707862027,
+		"descriptionList": [
+			"Accidentally discovered this 2d water effect by stacking sine waves. Simple but convincing!"
+		],
+		"type": "project",
+		"uid": "PROJECT_XOR_PROFILE_CARD"
+	},
+	{
+		"title": "Function cards",
+		"date": "2016-04-11",
+		"tags": ["online", "pretty"],
+		"coolness": 54,
+		"link": "http://codepen.io/collection/DmyjQv/",
+		"lastTagged": 1564707863361,
+		"descriptionList": ["Simple visualizations of sinusoidal functions."],
+		"type": "project",
+		"uid": "PROJECT_FUNCTION_CARDS"
+	},
+	{
+		"title": "Desire paths: remixes",
+		"date": "2016-04-10",
+		"tags": ["online", "pretty"],
+		"coolness": 70,
+		"link": "http://codepen.io/collection/DRPBqZ/",
+		"lastTagged": 1564707864470,
+		"type": "project",
+		"uid": "PROJECT_DESIRE_PATHS:_REMIXES"
+	},
+	{
+		"title": "filings",
+		"date": "2016-04-04",
+		"tags": ["online", "pretty"],
+		"coolness": 60,
+		"link": "http://codepen.io/rileyjshaw/pen/ONxKVd?editors=0010",
+		"lastTagged": 1564707866386,
+		"descriptionList": ["Cliché vector \"field\" \"diagram\"."],
+		"type": "project",
+		"uid": "PROJECT_FILINGS"
+	},
+	{
+		"title": "Desire paths",
+		"date": "2016-04-04",
+		"tags": ["online", "pretty"],
+		"coolness": 70,
+		"link": "http://codepen.io/rileyjshaw/full/mPBZNj/",
+		"lastTagged": 1564707868594,
+		"descriptionList": [
+			"Remix of ~~~ using angles &amp; moving agents instead of absolute positions."
+		],
+		"type": "project",
+		"uid": "PROJECT_DESIRE_PATHS"
+	},
+	{
+		"title": "Look closer",
+		"date": "2016-04-04",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 55,
+		"link": "http://codepen.io/rileyjshaw/pen/ZWXdBN",
+		"lastTagged": 1564707869979,
+		"descriptionList": ["CSS-only typography experiment."],
+		"type": "project",
+		"uid": "PROJECT_LOOK_CLOSER"
+	},
+	{
+		"title": "Gems",
+		"date": "2016-04-03",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 28,
+		"link": "http://codepen.io/rileyjshaw/full/QNqPZE/",
+		"lastTagged": 1564707871449,
+		"type": "project",
+		"uid": "PROJECT_GEMS"
+	},
+	{
+		"title": "Lattice 3",
+		"date": "2016-03-30",
+		"tags": ["online", "pretty"],
+		"coolness": 68,
+		"link": "http://codepen.io/rileyjshaw/pen/oxewYe/?editors=0010",
+		"lastTagged": 1564707873027,
+		"descriptionList": [
+			"A tricker, more generalized case of Lattice implemented on a trangular grid."
+		],
+		"type": "project",
+		"uid": "PROJECT_LATTICE_3"
+	},
+	{
+		"title": "Lattice",
+		"date": "2016-03-29",
+		"tags": ["online", "pretty"],
+		"coolness": 66,
+		"link": "http://codepen.io/collection/DYwLBM/",
+		"lastTagged": 1564707874575,
+		"descriptionList": ["Lines + circles."],
+		"type": "project",
+		"uid": "PROJECT_LATTICE"
+	},
+	{
+		"title": "Flexin' donut",
+		"date": "2016-03-28",
+		"tags": ["online", "pretty"],
+		"coolness": 60,
+		"link": "http://s.codepen.io/rileyjshaw/debug/BKZOwz",
+		"lastTagged": 1564707875762,
+		"type": "project",
+		"uid": "PROJECT_FLEXIN'_DONUT"
+	},
+	{
+		"title": "~~~",
+		"date": "2016-03-28",
+		"tags": ["online", "pretty"],
+		"coolness": 64,
+		"link": "http://codepen.io/rileyjshaw/pen/oxwVNw",
+		"lastTagged": 1564707876975,
+		"descriptionList": ["Blend modes + simplex noise."],
+		"type": "project",
+		"uid": "PROJECT_~~~"
+	},
+	{
+		"title": "Blips",
+		"date": "2016-03-28",
+		"tags": ["online", "pretty"],
+		"coolness": 60,
+		"link": "http://codepen.io/rileyjshaw/pen/Ragqyq",
+		"lastTagged": 1564707878597,
+		"type": "project",
+		"uid": "PROJECT_BLIPS"
+	},
+	{
+		"title": "Cyber pilot",
+		"date": "2016-03-28",
+		"tags": ["online", "pretty"],
+		"coolness": 82,
+		"link": "http://codepen.io/rileyjshaw/full/eZRLaP",
+		"lastTagged": 1564707880139,
+		"descriptionList": [
+			"Title screen born of nostalgia for the pictures we used to draw on oscilloscopes.",
+			"n͖͙͍͔o̴̰̤͈͙̘̥w͉̮ ̩w̺̘i̠̲͉̘̪t̟̜͉͓͈͞h̩͚̺̕ ̧͉̹̮̠ͅm̻̰͔̜͚o̲̥̘r̶͕̟͇͇̟̭e̠ ̩̺̖̟g̪̬̰̺̟̪͈͜l͇͉͚̬͞i̡ṭ̠̲̰̦ͅc̨̣ͅh̰̲̯̺͕̼͈͜e̷͕̜͎̱s̢̩"
+		],
+		"type": "project",
+		"uid": "PROJECT_CYBER_PILOT"
+	},
+	{
+		"title": "Canvas compositing operations",
+		"date": "2016-03-23",
+		"tags": ["instructional", "online", "pretty"],
+		"coolness": 20,
+		"link": "http://codepen.io/rileyjshaw/full/remdxj/",
+		"lastTagged": 1564707884368,
+		"descriptionList": [
+			"A quick look into some of the options for context.globalCompositeOperation."
+		],
+		"type": "project",
+		"uid": "PROJECT_CANVAS_COMPOSITING_OPERATIONS"
+	},
+	{
+		"title": "snowballs!",
+		"date": "2016-03-17",
+		"tags": ["online", "pretty"],
+		"coolness": 20,
+		"link": "http://codepen.io/rileyjshaw/full/yOgKvp/",
+		"lastTagged": 1564707886487,
+		"descriptionList": ["Async/await ftw"],
+		"type": "project",
+		"uid": "PROJECT_SNOWBALLS!"
+	},
+	{
+		"title": "Stormy green (ripples)",
+		"date": "2016-03-14",
+		"tags": ["online", "pretty"],
+		"coolness": 71,
+		"link": "http://codepen.io/rileyjshaw/full/dMpmRY/",
+		"lastTagged": 1564707888292,
+		"descriptionList": [
+			"A version of Stormy Green that doesn't drift out of phase."
+		],
+		"type": "project",
+		"uid": "PROJECT_STORMY_GREEN_(RIPPLES)"
+	},
+	{
+		"title": "Stormy green",
+		"date": "2016-03-14",
+		"tags": ["online", "pretty"],
+		"coolness": 70,
+		"link": "http://codepen.io/rileyjshaw/full/reMdZE/",
+		"lastTagged": 1564707889498,
+		"descriptionList": ["Sine waves shifting sinusoidally."],
+		"type": "project",
+		"uid": "PROJECT_STORMY_GREEN"
+	},
+	{
+		"title": "┋┋┋",
+		"date": "2016-03-13",
+		"tags": ["online", "pretty"],
+		"coolness": 74,
+		"link": "http://codepen.io/rileyjshaw/full/mPrXxb/",
+		"lastTagged": 1564707890990,
+		"descriptionList": [
+			"Variations on \"Stone\" with controlled line angles across the circle."
+		],
+		"type": "project",
+		"uid": "PROJECT_┋┋┋"
+	},
+	{
+		"title": "Stone",
+		"date": "2016-03-13",
+		"tags": ["online", "pretty"],
+		"coolness": 75,
+		"link": "http://codepen.io/rileyjshaw/pen/dMpJre",
+		"lastTagged": 1564707892058,
+		"descriptionList": [
+			"Sphere effect arising from random lines across a circle.",
+			"I'm sure someone else discovered this effect long before I did."
+		],
+		"type": "project",
+		"uid": "PROJECT_STONE"
+	},
+	{
+		"title": "Arcs",
+		"date": "2016-03-11",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 36,
+		"link": "http://codepen.io/rileyjshaw/full/yOJzoP/",
+		"lastTagged": 1564707893272,
+		"descriptionList": [
+			"A little doodle with a lot of circles.",
+			"Could be done far more efficiently by scaling / translating a fixed amount of concentric circles, but math-ing it was more fun :)"
+		],
+		"type": "project",
+		"uid": "PROJECT_ARCS"
+	},
+	{
+		"title": "Smart-splitting window panes (CSS only)",
+		"date": "2016-03-08",
+		"tags": ["golf", "online", "reusable"],
+		"coolness": 50,
+		"link": "http://codepen.io/rileyjshaw/pen/vGLvVo",
+		"lastTagged": 1564707894644,
+		"descriptionList": [
+			"If the window is wider than it is tall, it'll split into columns. Otherwise, it'll give you two rows.",
+			"This layout was rather difficult before flexbox came along."
+		],
+		"type": "project",
+		"uid": "PROJECT_SMART_SPLITTING_WINDOW_PANES_(CSS_ONLY)"
+	},
+	{
+		"title": "Rows of 'em",
+		"date": "2016-03-07",
+		"tags": ["online", "pretty"],
+		"coolness": 42,
+		"link": "http://codepen.io/rileyjshaw/full/Rarobr/",
+		"lastTagged": 1564707895541,
+		"descriptionList": [
+			"There's nothing like driving by a field of trees in the passenger seat.",
+			"Super quick demo trying (failing, mostly) to capture the perspective effect."
+		],
+		"type": "project",
+		"uid": "PROJECT_ROWS_OF_'EM"
+	},
+	{
+		"title": "Astronomie & Astrophysique",
+		"date": "2016-03-06",
+		"tags": ["online", "pretty", "starred"],
+		"coolness": 79,
+		"link": "http://codepen.io/rileyjshaw/full/PNPVmK/",
+		"lastTagged": 1564707896427,
+		"descriptionList": ["Small canvas demo using Lissajous curves."],
+		"type": "project",
+		"uid": "PROJECT_ASTRONOMIE_&_ASTROPHYSIQUE"
+	},
+	{
+		"title": "Bell curves",
+		"date": "2016-03-06",
+		"tags": ["instructional", "online"],
+		"coolness": 40,
+		"link": "http://codepen.io/rileyjshaw/details/ONyGxM/",
+		"lastTagged": 1564707897855,
+		"descriptionList": ["Hey! It's a normal distribution!"],
+		"type": "project",
+		"uid": "PROJECT_BELL_CURVES"
+	},
+	{
+		"title": "Groovy!",
+		"date": "2016-03-05",
+		"tags": ["online", "pretty"],
+		"coolness": 78,
+		"link": "http://codepen.io/rileyjshaw/full/MyaGbE/",
+		"lastTagged": 1564707898615,
+		"descriptionList": [
+			"Animated lava lamps with simple non-rectangular collision detection and metaballs for wax clumps."
+		],
+		"type": "project",
+		"uid": "PROJECT_GROOVY!"
+	},
+	{
+		"title": "NoJS edge-adaptive tooltip",
+		"date": "2016-02-26",
+		"tags": ["golf", "online", "reusable"],
+		"coolness": 66,
+		"link": "http://codepen.io/rileyjshaw/pen/wGwOWz",
+		"lastTagged": 1564707901096,
+		"descriptionList": [
+			"CSS Flexbox solution to prevent tooltips from overflowing their container at the edges."
+		],
+		"type": "project",
+		"uid": "PROJECT_NOJS_EDGE_ADAPTIVE_TOOLTIP"
+	},
+	{
+		"title": "Mechanical waves",
+		"date": "2016-02-25",
+		"tags": ["online", "pretty", "starred"],
+		"coolness": 78,
+		"link": "http://codepen.io/collection/XWQERV/",
+		"lastTagged": 1564707904033,
+		"descriptionList": [
+			"Possible header for \"Mechanical waves and sound\" for Khan Academy's new content redesign.",
+			"Includes a few variations."
+		],
+		"type": "project",
+		"uid": "PROJECT_MECHANICAL_WAVES"
+	},
+	{
+		"title": "Fadey text backdrop",
+		"date": "2016-02-24",
+		"tags": ["golf", "online", "pretty", "reusable"],
+		"coolness": 44,
+		"link": "http://codepen.io/rileyjshaw/details/obKdzW",
+		"lastTagged": 1564707904919,
+		"descriptionList": [
+			"CSS technique to make a semi-transparent background fade in perfectly with its box-shadow."
+		],
+		"type": "project",
+		"uid": "PROJECT_FADEY_TEXT_BACKDROP"
+	},
+	{
+		"title": "Joy Division: Unknown Pleasures",
+		"date": "2016-02-23",
+		"tags": ["music", "online", "pretty"],
+		"coolness": 88,
+		"link": "http://codepen.io/rileyjshaw/pen/RrXjGa",
+		"lastTagged": 1564707906457,
+		"descriptionList": [
+			"Iconic album art, animated with a Gaussian function and some simplex noise.",
+			"Drag your mouse over it, and click for something special."
+		],
+		"type": "project",
+		"uid": "PROJECT_JOY_DIVISION:_UNKNOWN_PLEASURES"
+	},
+	{
+		"title": "render",
+		"date": "2016-02-22",
+		"coolness": 70,
+		"link": "https://github.com/askew1312/render",
+		"tags": ["app", "external", "game"],
+		"lastTagged": 1564765055195,
+		"descriptionList": [
+			"A color-theory game completed as a bonus project for Khan Academy's 2016 Hackathon. Built with a friend using Unity 3D."
+		],
+		"type": "project",
+		"uid": "PROJECT_RENDER"
+	},
+	{
+		"title": "Titania",
+		"date": "2016-01-06",
+		"tags": ["golf", "music", "online", "reusable"],
+		"coolness": 60,
+		"link": "http://tympanus.net/Development/LineMenuStyles/#Titania",
+		"lastTagged": 1564707907104,
+		"descriptionList": [
+			"Contribution to the publication \"Codrops\" for their Line Menu Styles collection."
+		],
+		"type": "project",
+		"uid": "PROJECT_TITANIA"
+	},
+	{
+		"title": "whoami.py",
+		"date": "2015-12-31",
+		"tags": ["golf", "pretty", "starred"],
+		"coolness": 80,
+		"link": "https://raw.githubusercontent.com/eliawry/poetics/master/whoami.py",
+		"lastTagged": 1564707910272,
+		"descriptionList": [
+			"My contribution to a collection of poems.",
+			"From the project page: \"there is confusion in the mixed layers of metaphors. This is not an obfuscated code repository; not really. In some ways, it is the opposite.\""
+		],
+		"type": "project",
+		"uid": "PROJECT_WHOAMI.PY"
+	},
+	{
+		"title": "Easy Inbox Zero",
+		"date": "2015-12-20",
+		"tags": ["browserextension"],
+		"coolness": 50,
+		"link": "https://github.com/rileyjshaw/easy-inbox-zero",
+		"lastTagged": 1564707914672,
+		"descriptionList": [
+			"A browser extension that removes the unread count from your Gmail inbox and title bar."
+		],
+		"type": "project",
+		"uid": "PROJECT_EASY_INBOX_ZERO"
+	},
+	{
+		"title": "Eye sea",
+		"date": "2015-12-15",
+		"tags": ["online", "pretty"],
+		"coolness": 44,
+		"link": "http://codepen.io/rileyjshaw/full/dGGGZZ",
+		"lastTagged": 1564707916616,
+		"descriptionList": ["These used to be pokéballs."],
+		"type": "project",
+		"uid": "PROJECT_EYE_SEA"
+	},
+	{
+		"title": "Gotta catch 'em all",
+		"date": "2015-12-15",
+		"tags": ["online", "pretty"],
+		"coolness": 30,
+		"link": "http://codepen.io/rileyjshaw/full/bEEVra/",
+		"lastTagged": 1564707917359,
+		"descriptionList": ["Riffing on pokéball wave."],
+		"type": "project",
+		"uid": "PROJECT_GOTTA_CATCH_'EM_ALL"
+	},
+	{
+		"title": "Pokéball wave",
+		"date": "2015-12-15",
+		"tags": ["online", "pretty"],
+		"coolness": 44,
+		"link": "http://codepen.io/rileyjshaw/full/MKKKvw/",
+		"lastTagged": 1564708718062,
+		"descriptionList": [
+			"Animated demo written alongside a new programmer who was really into Pokémon."
+		],
+		"type": "project",
+		"uid": "PROJECT_POKÉBALL_WAVE"
+	},
+	{
+		"title": "Pride and Prejudice (webkit only)",
+		"date": "2015-12-12",
+		"tags": ["online", "pretty"],
+		"coolness": 50,
+		"link": "https://github.com/rileyjshaw/pride-and-prejudice",
+		"lastTagged": 1564708720327,
+		"descriptionList": [
+			"Pride and Prejudice in its entirety, sorted by the visual weight of its characters.",
+			"I was hoping for a more convincing gradient; the weight calculation could use some work."
+		],
+		"type": "project",
+		"uid": "PROJECT_PRIDE_AND_PREJUDICE_(WEBKIT_ONLY)"
+	},
+	{
+		"title": "boom!",
+		"date": "2015-11-15",
+		"tags": ["browserextension"],
+		"coolness": 50,
+		"link": "https://github.com/rileyjshaw/boom",
+		"lastTagged": 1564708725840,
+		"descriptionList": [
+			"A cross-browser WebExtension to declutter busy pages and make them readable again.",
+			"Written originally as a bookmarklet in 2013."
+		],
+		"type": "project",
+		"uid": "PROJECT_BOOM!"
+	},
+	{
+		"title": "Tony Montana",
+		"date": "2015-10-29",
+		"tags": ["golf", "music"],
+		"coolness": 100,
+		"link": "https://github.com/rileyjshaw/tony-montana",
+		"lastTagged": 1564708730063,
+		"descriptionList": [
+			"Nothing gonna stop you, there's nothing that strong ♫",
+			"An excuse to write git push it to-the-limit into the console."
+		],
+		"type": "project",
+		"uid": "PROJECT_TONY_MONTANA"
+	},
+	{
+		"title": "Dark Theme Everywhere",
+		"date": "2015-10-29",
+		"tags": ["browserextension", "starred"],
+		"coolness": 80,
+		"link": "https://github.com/rileyjshaw/dark-theme-everywhere",
+		"lastTagged": 1564708732408,
+		"descriptionList": ["A forcefully applied dark theme for the web."],
+		"type": "project",
+		"uid": "PROJECT_DARK_THEME_EVERYWHERE"
+	},
+	{
+		"title": "Pond",
+		"date": "2015-10-12",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 80,
+		"link": "http://codepen.io/rileyjshaw/full/vNgJPQ/",
+		"lastTagged": 1564708733322,
+		"descriptionList": ["An ASCII art pond ripple animation."],
+		"type": "project",
+		"uid": "PROJECT_POND"
+	},
+	{
+		"title": "XOXO Bingo",
+		"date": "2015-09-13",
+		"tags": ["extinct", "game", "starred"],
+		"coolness": 84,
+		"link": "https://github.com/rileyjshaw/xoxo-bingo",
+		"lastTagged": 1564708738919,
+		"descriptionList": [
+			"Bingo cards generated from the attendance list of XOXOFest. The first person to meet enough attendees \"won\" the party.",
+			"Built hastily between speakers on the last day of the festival; requires login with Twitter to protect attendees' identity."
+		],
+		"type": "project",
+		"uid": "PROJECT_XOXO_BINGO"
+	},
+	{
+		"title": "Rings",
+		"date": "2015-09-10",
+		"coolness": 39,
+		"link": "https://rings.glitch.me/",
+		"tags": ["online", "pretty"],
+		"lastTagged": 1564708715719,
+		"descriptionList": [
+			"A quick visual built during lunch, inspired by the base of the lunch table."
+		],
+		"type": "project",
+		"uid": "PROJECT_RINGS"
+	},
+	{
+		"title": ".supermac",
+		"date": "2015-09-07",
+		"tags": ["reusable"],
+		"coolness": 89,
+		"link": "https://github.com/rileyjshaw/.supermac",
+		"lastTagged": 1564708739903,
+		"descriptionList": [
+			"A collection of dotfiles that I use + some scripts to keep 'em in sync."
+		],
+		"type": "project",
+		"uid": "PROJECT_.SUPERMAC"
+	},
+	{
+		"title": "A responsive one-line header",
+		"date": "2015-08-20",
+		"tags": ["golf", "instructional", "online", "reusable"],
+		"coolness": 70,
+		"link": "http://codepen.io/rileyjshaw/pen/eNwGjw",
+		"lastTagged": 1564708741980,
+		"descriptionList": [
+			"Maintains its default font-size until it is too wide to fit on the page. If it starts overflowing, it will adjust to take up 100% of the page width.",
+			"Requires a bit of JS on page load. Just CSS and SVG after that."
+		],
+		"type": "project",
+		"uid": "PROJECT_A_RESPONSIVE_ONE_LINE_HEADER"
+	},
+	{
+		"title": "Touchtone math facts",
+		"date": "2015-06-13",
+		"tags": ["external", "game", "starred"],
+		"coolness": 92,
+		"link": "https://github.com/rileyjshaw/touchtone-math-facts",
+		"lastTagged": 1564708744196,
+		"descriptionList": [
+			"A math facts app that you can play from a payphone.",
+			"Call +1.480.360.MATH (6284) from the US, <s>+1.647.360.MATH (6284) from Canada</s>."
+		],
+		"type": "project",
+		"uid": "PROJECT_TOUCHTONE_MATH_FACTS"
+	},
+	{
+		"title": "Solar static",
+		"date": "2015-06-06",
+		"tags": ["online", "pretty"],
+		"coolness": 76,
+		"link": "http://codepen.io/rileyjshaw/pen/zGwNzw",
+		"lastTagged": 1564708744959,
+		"descriptionList": [
+			"A visual demo using typed arrays.",
+			"Creates a shadow based on mouse position."
+		],
+		"type": "project",
+		"uid": "PROJECT_SOLAR_STATIC"
+	},
+	{
+		"title": "SpeeDOMeter",
+		"date": "2015-05-10",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 40,
+		"link": "http://codepen.io/rileyjshaw/pen/bdEvaQ",
+		"lastTagged": 1564708746328,
+		"descriptionList": [
+			"A speedometer that travels through time with Doc Brown."
+		],
+		"type": "project",
+		"uid": "PROJECT_SPEEDOMETER"
+	},
+	{
+		"title": "Window Shopper",
+		"date": "2015-05-05",
+		"tags": ["browserextension"],
+		"coolness": 70,
+		"link": "https://chrome.google.com/webstore/detail/window-shopper-log-any-pa/mhfpgolappjpepejmfpomfpemdidpkng",
+		"lastTagged": 1564708751214,
+		"descriptionList": [
+			"A Chrome extension: count and list all page-defined global variables."
+		],
+		"type": "project",
+		"uid": "PROJECT_WINDOW_SHOPPER"
+	},
+	{
+		"title": "Sliding radio button menu",
+		"date": "2015-04-30",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 21,
+		"link": "http://codepen.io/rileyjshaw/pen/Nqqxaj?editors=001",
+		"lastTagged": 1564708753213,
+		"descriptionList": [
+			"A sliding menu concept using just radio buttons and CSS."
+		],
+		"type": "project",
+		"uid": "PROJECT_SLIDING_RADIO_BUTTON_MENU"
+	},
+	{
+		"title": "Waveform visualizer",
+		"date": "2015-03-29",
+		"tags": ["music", "online", "pretty"],
+		"coolness": 30,
+		"link": "http://codepen.io/rileyjshaw/full/VYRPzy/",
+		"lastTagged": 1564708754661,
+		"descriptionList": ["Boring minimal audio visualizer."],
+		"type": "project",
+		"uid": "PROJECT_WAVEFORM_VISUALIZER"
+	},
+	{
+		"title": "Jittery shapes",
+		"date": "2015-03-26",
+		"tags": ["music", "online", "pretty"],
+		"coolness": 80,
+		"link": "http://codepen.io/collection/DkNEVG/",
+		"lastTagged": 1564708755914,
+		"descriptionList": [
+			"Animated shapes with wavelike edges.",
+			"Includes an audio visualizer built with the Web Audio API."
+		],
+		"type": "project",
+		"uid": "PROJECT_JITTERY_SHAPES"
+	},
+	{
+		"title": "Internal link offset (sticky header)",
+		"date": "2015-03-13",
+		"tags": ["golf", "online", "reusable"],
+		"coolness": 32,
+		"link": "http://codepen.io/rileyjshaw/pen/OPBBGK?editors=110",
+		"lastTagged": 1564708757219,
+		"descriptionList": [
+			"Sticky headers cover internally-linked content by default. The most robust solutions I've seen use JS, but these 4 lines of CSS seem to do the trick."
+		],
+		"type": "project",
+		"uid": "PROJECT_INTERNAL_LINK_OFFSET_(STICKY_HEADER)"
+	},
+	{
+		"title": "Shepard-Risset Glissando",
+		"date": "2015-03-03",
+		"tags": ["music", "online", "pretty", "starred"],
+		"coolness": 69,
+		"link": "http://codepen.io/rileyjshaw/pen/OPwROr?editors=001",
+		"lastTagged": 1564708758541,
+		"descriptionList": [
+			"Auditory illusion of a tone that continually descends in pitch. It has been described as a \"sonic barber's pole\".",
+			"Implemented with the Web Audio API using custom oscillators."
+		],
+		"type": "project",
+		"uid": "PROJECT_SHEPARD_RISSET_GLISSANDO"
+	},
+	{
+		"title": "terra.js demos",
+		"date": "2015-03-02",
+		"tags": ["online", "pretty"],
+		"coolness": 70,
+		"link": "http://codepen.io/collection/XGogPm/",
+		"lastTagged": 1564708759832,
+		"type": "project",
+		"uid": "PROJECT_TERRA.JS_DEMOS"
+	},
+	{
+		"title": "Fluid simulation",
+		"date": "2015-03-01",
+		"tags": ["online", "pretty"],
+		"coolness": 65,
+		"link": "https://www.khanacademy.org/computer-programming/fluid-simulation/6333748830011392",
+		"lastTagged": 1564708761419,
+		"descriptionList": [
+			"Jeff Thomas's Fluid Simulation, ported to Khan Academy's CS platform."
+		],
+		"type": "project",
+		"uid": "PROJECT_FLUID_SIMULATION"
+	},
+	{
+		"title": "Orbit",
+		"date": "2015-02-20",
+		"tags": ["game", "online"],
+		"coolness": 65,
+		"link": "/orbit",
+		"lastTagged": 1564708766604,
+		"descriptionList": [
+			"A game: hit space over the red dots to earn points."
+		],
+		"type": "project",
+		"uid": "PROJECT_ORBIT"
+	},
+	{
+		"title": "Challenger",
+		"date": "2015-02-19",
+		"tags": ["game", "instructional", "online", "reusable", "starred"],
+		"coolness": 81,
+		"link": "/challenger",
+		"lastTagged": 1564708774349,
+		"descriptionList": ["Pop-up programming challenges in your browser."],
+		"type": "project",
+		"uid": "PROJECT_CHALLENGER"
+	},
+	{
+		"title": "drawRotatedRect",
+		"date": "2015-02-08",
+		"tags": ["online", "pretty", "reusable"],
+		"coolness": 10,
+		"link": "http://codepen.io/collection/nYwRVL/",
+		"lastTagged": 1564708775492,
+		"descriptionList": ["Two versions of a canvas util function."],
+		"type": "project",
+		"uid": "PROJECT_DRAWROTATEDRECT"
+	},
+	{
+		"title": "Meta Letters",
+		"date": "2015-02-01",
+		"tags": ["online", "pretty"],
+		"coolness": 43,
+		"link": "http://codepen.io/rileyjshaw/full/zxEGxK/",
+		"lastTagged": 1564708777392,
+		"descriptionList": [
+			"The letters [A-z], composed of smaller versions of themselves."
+		],
+		"type": "project",
+		"uid": "PROJECT_META_LETTERS"
+	},
+	{
+		"title": "28 Hour Day",
+		"date": "2015-01-29",
+		"tags": ["app", "external", "starred"],
+		"coolness": 71,
+		"link": "https://apps.getpebble.com/en_US/application/54cadfd211e375bdc5000048",
+		"lastTagged": 1564708780643,
+		"descriptionList": [
+			"A Pebble watchface that divides the week into six 28-hour days instead of the standard 24/7."
+		],
+		"type": "project",
+		"uid": "PROJECT_28_HOUR_DAY"
+	},
+	{
+		"title": "Slidey menu",
+		"date": "2015-01-18",
+		"tags": ["golf", "online", "pretty", "reusable"],
+		"coolness": 21,
+		"link": "http://codepen.io/rileyjshaw/full/emWJPW/",
+		"lastTagged": 1564708782164,
+		"descriptionList": [
+			"A quick ~10m demo to demonstrate some animation concepts.",
+			"Probably doesn't work cross-browser."
+		],
+		"type": "project",
+		"uid": "PROJECT_SLIDEY_MENU"
+	},
+	{
+		"title": "Rainbow text",
+		"date": "2015-01-15",
+		"tags": ["online", "pretty"],
+		"coolness": 28,
+		"link": "http://codepen.io/rileyjshaw/details/vExWpe/",
+		"lastTagged": 1564708785074,
+		"type": "project",
+		"uid": "PROJECT_RAINBOW_TEXT"
+	},
+	{
+		"title": "Flexbox chat interface",
+		"date": "2015-01-12",
+		"tags": ["golf", "online", "pretty", "reusable"],
+		"coolness": 33,
+		"link": "http://codepen.io/rileyjshaw/full/LExqQE/",
+		"lastTagged": 1564708783154,
+		"descriptionList": [
+			"Responsive chat interface using CSS flexbox.",
+			"Created as a proof of concept for TextSecure's browser extension layout."
+		],
+		"type": "project",
+		"uid": "PROJECT_FLEXBOX_CHAT_INTERFACE"
+	},
+	{
+		"title": "Hackers.cool",
+		"date": "2015-01-08",
+		"tags": ["online", "starred"],
+		"coolness": 82,
+		"link": "http://hackers.cool/~rileyjshaw/",
+		"lastTagged": 1564708786127,
+		"descriptionList": [
+			"Retro command line emulator using my TinyTerm library.",
+			"Type \"help\" for command list."
+		],
+		"type": "project",
+		"uid": "PROJECT_HACKERS.COOL"
+	},
+	{
+		"title": "Console",
+		"date": "2014-12-21",
+		"tags": ["online", "reusable"],
+		"coolness": 72,
+		"link": "/tinyterm",
+		"lastTagged": 1564708788771,
+		"descriptionList": [
+			"Functional JavaScript terminal using my TinyTerm library."
+		],
+		"type": "project",
+		"uid": "PROJECT_CONSOLE"
+	},
+	{
+		"title": "Tinyterm",
+		"date": "2014-12-16",
+		"tags": ["online", "reusable"],
+		"coolness": 72,
+		"link": "https://github.com/rileyjshaw/tinyterm",
+		"lastTagged": 1564708789475,
+		"descriptionList": ["A tiny in-browser terminal."],
+		"type": "project",
+		"uid": "PROJECT_TINYTERM"
+	},
+	{
+		"title": "Typographic HUSL sweep",
+		"date": "2014-12-14",
+		"tags": ["online", "pretty"],
+		"coolness": 80,
+		"link": "http://codepen.io/rileyjshaw/full/jEqvLp/",
+		"lastTagged": 1564708791130,
+		"descriptionList": [
+			"Since I made a fancy headline for <a href=\"http://codepen.io/rileyjshaw/full/OPNvzN/\" target=\"_blank\" rel=\"noopener noreferrer\">Terra</a> I figured it was only fair to make one for <a href=\"/sweep\">sweep</a>.",
+			"Never used."
+		],
+		"type": "project",
+		"uid": "PROJECT_TYPOGRAPHIC_HUSL_SWEEP"
+	},
+	{
+		"title": "Newspaper column",
+		"date": "2014-12-11",
+		"tags": ["online", "pretty"],
+		"coolness": 8,
+		"link": "http://codepen.io/rileyjshaw/details/ByKKyG/",
+		"lastTagged": 1564708791889,
+		"descriptionList": ["Web typography experiment: drop cap + justify."],
+		"type": "project",
+		"uid": "PROJECT_NEWSPAPER_COLUMN"
+	},
+	{
+		"title": "Fingerprint",
+		"date": "2014-12-09",
+		"tags": ["app", "online", "reusable", "starred"],
+		"coolness": 78,
+		"link": "http://fingerprint.tappy.pw/",
+		"lastTagged": 1564708792923,
+		"descriptionList": ["In-browser keystroke dynamics demo using Tappy."],
+		"type": "project",
+		"uid": "PROJECT_FINGERPRINT"
+	},
+	{
+		"title": "Tilted type",
+		"date": "2014-11-29",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 5,
+		"link": "http://codepen.io/rileyjshaw/full/gbapBa/",
+		"lastTagged": 1564708794443,
+		"descriptionList": [
+			"Web typography experiment using CSS transforms and SVG."
+		],
+		"type": "project",
+		"uid": "PROJECT_TILTED_TYPE"
+	},
+	{
+		"title": "Tappy",
+		"date": "2014-11-23",
+		"tags": ["music", "online", "reusable", "starred"],
+		"coolness": 77,
+		"link": "http://tappy.pw",
+		"lastTagged": 1564708795522,
+		"descriptionList": [
+			"A JavaScript library for recording and comparing rhythms"
+		],
+		"type": "project",
+		"uid": "PROJECT_TAPPY"
+	},
+	{
+		"title": "Multi-level spoilers",
+		"date": "2014-11-22",
+		"tags": ["golf", "online", "reusable"],
+		"coolness": 60,
+		"link": "http://codepen.io/rileyjshaw/pen/oggBxz",
+		"lastTagged": 1564708797294,
+		"descriptionList": [
+			"UI pattern for nested spoilers.",
+			"Demo involved patching Adobe Web Platform's balance-text polyfill."
+		],
+		"type": "project",
+		"uid": "PROJECT_MULTI_LEVEL_SPOILERS"
+	},
+	{
+		"title": "Folding tutorial concept",
+		"date": "2014-11-13",
+		"tags": ["online", "pretty", "reusable", "starred"],
+		"coolness": 75,
+		"link": "http://codepen.io/rileyjshaw/full/raNLdL/",
+		"lastTagged": 1564708799379,
+		"descriptionList": [
+			"UI experiment for line-by-line tutorials. Annotations can be turned off to expose a complete code example."
+		],
+		"type": "project",
+		"uid": "PROJECT_FOLDING_TUTORIAL_CONCEPT"
+	},
+	{
+		"title": "My website fits in a favicon",
+		"date": "2014-11-10",
+		"tags": ["golf", "online"],
+		"coolness": 30,
+		"link": "http://codepen.io/rileyjshaw/full/bNbxjg",
+		"lastTagged": 1564708801217,
+		"type": "project",
+		"uid": "PROJECT_MY_WEBSITE_FITS_IN_A_FAVICON"
+	},
+	{
+		"title": "Text fade-in effect",
+		"date": "2014-11-08",
+		"tags": ["online", "pretty", "reusable"],
+		"coolness": 23,
+		"link": "http://codepen.io/rileyjshaw/full/azoLwb/",
+		"lastTagged": 1564708803286,
+		"descriptionList": [
+			"A bit of an anti-pattern, but people seemed to like it."
+		],
+		"type": "project",
+		"uid": "PROJECT_TEXT_FADE_IN_EFFECT"
+	},
+	{
+		"title": "Text fly-in effect",
+		"date": "2014-11-08",
+		"tags": ["online", "pretty", "reusable"],
+		"coolness": 23,
+		"link": "http://codepen.io/rileyjshaw/full/pvzdzX/",
+		"lastTagged": 1564708804489,
+		"type": "project",
+		"uid": "PROJECT_TEXT_FLY_IN_EFFECT"
+	},
+	{
+		"title": "Moore / Von Neumann neighborhoods",
+		"date": "2014-11-04",
+		"tags": ["instructional", "online", "reusable"],
+		"coolness": 12,
+		"link": "http://codepen.io/rileyjshaw/full/chaJe/",
+		"lastTagged": 1564708805462,
+		"descriptionList": ["Utils for <a href=\"/terra\">Terra</a>."],
+		"type": "project",
+		"uid": "PROJECT_MOORE_/_VON_NEUMANN_NEIGHBORHOODS"
+	},
+	{
+		"title": "Tic Attack Toe",
+		"date": "2014-11-03",
+		"tags": ["extinct", "game", "online", "starred"],
+		"coolness": 80,
+		"link": "https://github.com/rileyjshaw/tic-attack-toe",
+		"lastTagged": 1564708806792,
+		"descriptionList": [
+			"Rapidfire, turnless tic-tac-toe with a custom websocket lobby.",
+			"Inspired by Kung-Fu Chess."
+		],
+		"type": "project",
+		"uid": "PROJECT_TIC_ATTACK_TOE"
+	},
+	{
+		"title": "Reaction",
+		"date": "2014-10-27",
+		"tags": [
+			"extinct",
+			"game",
+			"golf",
+			"instructional",
+			"online",
+			"starred"
+		],
+		"coolness": 90,
+		"link": "/visited-vectors/reaction",
+		"lastTagged": 1564708809571,
+		"descriptionList": [
+			"Reaction game that steals your history*. It exploits alpha-rounding to create an n-input OR gate for CSS :visited states, then probes links in sequential binary trees.",
+			"*This is a proof-of-concept and won't actually steal anything."
+		],
+		"type": "project",
+		"uid": "PROJECT_REACTION"
+	},
+	{
+		"title": "Racer",
+		"date": "2014-10-15",
+		"tags": ["game", "online", "pretty"],
+		"coolness": 83,
+		"link": "/racer",
+		"lastTagged": 1564708811317,
+		"descriptionList": [
+			"3D race-to-the-finish game.",
+			"Built with a custom raycaster / collision engine."
+		],
+		"type": "project",
+		"uid": "PROJECT_RACER"
+	},
+	{
+		"title": "Tappy game",
+		"date": "2014-10-13",
+		"tags": ["game", "music", "online", "pretty", "starred"],
+		"coolness": 76,
+		"link": "http://play.tappy.pw/",
+		"lastTagged": 1564708812602,
+		"descriptionList": ["Tap the rhythm of the lyrics displayed."],
+		"type": "project",
+		"uid": "PROJECT_TAPPY_GAME"
+	},
+	{
+		"title": "Material design ripple effect",
+		"date": "2014-10-12",
+		"tags": ["online", "pretty", "reusable"],
+		"coolness": 13,
+		"link": "http://codepen.io/rileyjshaw/pen/uiJqo",
+		"lastTagged": 1564708813922,
+		"descriptionList": [
+			"Needed this for <a href=\"http://play.tappy.pw\" target=\"_blank\" rel=\"noopener noreferrer\">tappy</a> before there were 1000 libraries to choose from."
+		],
+		"type": "project",
+		"uid": "PROJECT_MATERIAL_DESIGN_RIPPLE_EFFECT"
+	},
+	{
+		"title": "Funky wallpaper in 106B of JavaScript",
+		"date": "2014-10-12",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 45,
+		"link": "http://codepen.io/rileyjshaw/pen/EdAeq",
+		"lastTagged": 1564624409730,
+		"descriptionList": [
+			"Warning: contains a blocking loop that may cause browsers to hang briefly."
+		],
+		"type": "project",
+		"uid": "PROJECT_FUNKY_WALLPAPER_IN_106B_OF_JAVASCRIPT"
+	},
+	{
+		"title": "Funky wallpaper with blur effect in 111B of JavaScript",
+		"date": "2014-10-12",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 50,
+		"link": "http://codepen.io/rileyjshaw/pen/tmGxj",
+		"lastTagged": 1564624415014,
+		"descriptionList": [
+			"Warning: contains a blocking loop that may cause browsers to hang briefly."
+		],
+		"type": "project",
+		"uid": "PROJECT_FUNKY_WALLPAPER_WITH_BLUR_EFFECT_IN_111B_OF_JAVASCRIPT"
+	},
+	{
+		"title": "Film-grain effect in 117B of JavaScript",
+		"date": "2014-10-12",
+		"tags": ["golf", "online", "pretty", "starred"],
+		"coolness": 45,
+		"link": "http://codepen.io/rileyjshaw/pen/enfkc",
+		"lastTagged": 1564624420398,
+		"descriptionList": [
+			"Warning: contains a blocking loop that may cause browsers to hang briefly."
+		],
+		"type": "project",
+		"uid": "PROJECT_FILM_GRAIN_EFFECT_IN_117B_OF_JAVASCRIPT"
+	},
+	{
+		"title": "Super slinky",
+		"date": "2014-10-04",
+		"tags": ["online", "pretty", "reusable", "starred"],
+		"coolness": 81,
+		"link": "http://codepen.io/rileyjshaw/full/pIFly/",
+		"lastTagged": 1564624423924,
+		"descriptionList": [
+			"No jQuery dependency, section progress shown in headers, click to scroll, resizable with scrollbar on window. Inspired by Slinky.js and DesignWall.",
+			"Currently doesn't work on iOS &lt; 8 since they mess with scroll events. If you use this in production, look into iScroll."
+		],
+		"type": "project",
+		"uid": "PROJECT_SUPER_SLINKY"
+	},
+	{
+		"title": "Short domain finder",
+		"date": "2014-09-16",
+		"tags": ["app", "reusable"],
+		"coolness": 55,
+		"link": "https://github.com/rileyjshaw/domains",
+		"lastTagged": 1564624426575,
+		"descriptionList": ["Search for emoji domains and short domains."],
+		"type": "project",
+		"uid": "PROJECT_SHORT_DOMAIN_FINDER"
+	},
+	{
+		"title": "Pairjam",
+		"date": "2014-09-15",
+		"tags": ["app", "external", "extinct", "online", "starred"],
+		"coolness": 83,
+		"link": "https://github.com/neerajwahi/pairjam",
+		"lastTagged": 1564624438020,
+		"descriptionList": ["Realtime web-based collaborative coding."],
+		"type": "project",
+		"uid": "PROJECT_PAIRJAM"
+	},
+	{
+		"title": "Everything button",
+		"date": "2014-09-14",
+		"tags": ["golf", "online", "pretty", "reusable"],
+		"coolness": 30,
+		"link": "http://codepen.io/rileyjshaw/full/DplJB",
+		"lastTagged": 1564624447769,
+		"descriptionList": ["Initial pass at the menu system for Pairjam."],
+		"type": "project",
+		"uid": "PROJECT_EVERYTHING_BUTTON"
+	},
+	{
+		"title": "CSS tab bar",
+		"date": "2014-09-12",
+		"tags": ["golf", "online", "pretty", "reusable"],
+		"coolness": 14,
+		"link": "http://codepen.io/rileyjshaw/pen/iIjcp/",
+		"lastTagged": 1564624440228,
+		"descriptionList": ["For Pairjam."],
+		"type": "project",
+		"uid": "PROJECT_CSS_TAB_BAR"
+	},
+	{
+		"title": "Expanding user circles",
+		"date": "2014-09-12",
+		"tags": ["golf", "online", "pretty", "reusable"],
+		"coolness": 9,
+		"link": "http://codepen.io/rileyjshaw/pen/zIpqi/",
+		"lastTagged": 1564624442669,
+		"descriptionList": ["For Pairjam.", "Bad interaction tbh."],
+		"type": "project",
+		"uid": "PROJECT_EXPANDING_USER_CIRCLES"
+	},
+	{
+		"title": "Face",
+		"date": "2014-09-07",
+		"tags": ["online"],
+		"coolness": 10,
+		"link": "/face",
+		"lastTagged": 1564624445152,
+		"descriptionList": ["Displays a random ASCII face."],
+		"type": "project",
+		"uid": "PROJECT_FACE"
+	},
+	{
+		"title": "\"Points\" color palette",
+		"date": "2014-09-01",
+		"tags": ["online", "pretty"],
+		"coolness": 16,
+		"link": "http://codepen.io/rileyjshaw/full/JvdrG/",
+		"lastTagged": 1564624449407,
+		"descriptionList": [
+			"Hacked together an app with a rainbow interface. Threw this page together to see how things looked together.",
+			"100% for personal use so...",
+			"¯\\_(ツ)_/¯"
+		],
+		"type": "project",
+		"uid": "PROJECT_\"POINTS\"_COLOR_PALETTE"
+	},
+	{
+		"title": "Placid tab",
+		"date": "2014-08-25",
+		"tags": ["app", "browserextension", "golf", "pretty", "starred"],
+		"coolness": 60,
+		"link": "https://chrome.google.com/webstore/detail/placid-tab/mjcblgoejhkkkhgeadejhkpldglnfmcj",
+		"lastTagged": 1564624451247,
+		"descriptionList": ["A minimal New Tab page for Chrome"],
+		"type": "project",
+		"uid": "PROJECT_PLACID_TAB"
+	},
+	{
+		"title": "Linescapes",
+		"date": "2014-08-15",
+		"tags": ["music", "online", "pretty", "starred"],
+		"coolness": 70,
+		"link": "/linescapes",
+		"lastTagged": 1564708815678,
+		"descriptionList": [
+			"An audiovisual experiment that generates landscapes from sound waves."
+		],
+		"type": "project",
+		"uid": "PROJECT_LINESCAPES"
+	},
+	{
+		"title": "Graphing depth",
+		"date": "2014-07-31",
+		"tags": ["instructional", "online", "pretty", "starred"],
+		"coolness": 80,
+		"link": "http://codepen.io/collection/amDJo/",
+		"lastTagged": 1564708820940,
+		"descriptionList": [
+			"Pretty images from math.",
+			"Supports my <a href=\"/blog/graphing-depth/\">blog post</a> of the same name."
+		],
+		"type": "project",
+		"uid": "PROJECT_GRAPHING_DEPTH"
+	},
+	{
+		"title": "Reduce Background Flicker",
+		"date": "2014-07-03",
+		"tags": ["browserextension", "extinct"],
+		"coolness": 30,
+		"link": "https://github.com/rileyjshaw/reduce-background-flicker",
+		"lastTagged": 1564708822603,
+		"descriptionList": [
+			"A Chrome extension to preserve the background color between page loads."
+		],
+		"type": "project",
+		"uid": "PROJECT_REDUCE_BACKGROUND_FLICKER"
+	},
+	{
+		"title": "n-input OR gate in CSS",
+		"date": "2014-06-26",
+		"tags": ["extinct", "golf", "instructional", "online", "reusable"],
+		"coolness": 60,
+		"link": "http://codepen.io/rileyjshaw/pen/CjiKf",
+		"lastTagged": 1564708823299,
+		"descriptionList": [
+			"Used to work. Doesn't anymore.",
+			"Part of <a href=\"/blog/stealing-history-with-CSS-binary-trees/\">\"Stealing history with CSS binary trees\"</a>."
+		],
+		"type": "project",
+		"uid": "PROJECT_N_INPUT_OR_GATE_IN_CSS"
+	},
+	{
+		"title": "Thoughtboard",
+		"date": "2014-05-31",
+		"tags": ["app"],
+		"coolness": 85,
+		"link": "https://github.com/Queens-Hacks/thoughtboard",
+		"lastTagged": 1564708825898,
+		"descriptionList": [
+			"Democratic billboard for sharing the pulse of a community. Popular thoughts will be displayed on the billboard for all to see."
+		],
+		"type": "project",
+		"uid": "PROJECT_THOUGHTBOARD"
+	},
+	{
+		"title": "Glorious pattern matcher",
+		"date": "2014-05-20",
+		"tags": ["game", "online", "pretty", "reusable"],
+		"coolness": 85,
+		"link": "/glorious-pattern-matcher/",
+		"lastTagged": 1564708826658,
+		"descriptionList": [
+			"Takes a series of characters and a series of words and checks if they match the same sequence. Words need not be delimited."
+		],
+		"type": "project",
+		"uid": "PROJECT_GLORIOUS_PATTERN_MATCHER"
+	},
+	{
+		"title": "filesupply",
+		"date": "2014-05-19",
+		"tags": ["app", "online", "reusable"],
+		"coolness": 41,
+		"link": "https://github.com/rileyjshaw/filesupply",
+		"lastTagged": 1564708828018,
+		"descriptionList": [
+			"WebRTC file sharing concept thrown together in ~40 minutes (or your pizza's free!)"
+		],
+		"type": "project",
+		"uid": "PROJECT_FILESUPPLY"
+	},
+	{
+		"title": "A disco badass",
+		"date": "2014-05-09",
+		"tags": ["online", "pretty"],
+		"coolness": 30,
+		"link": "http://codepen.io/rileyjshaw/full/acjvs/",
+		"lastTagged": 1564708829946,
+		"descriptionList": ["How I like to think of myself."],
+		"type": "project",
+		"uid": "PROJECT_A_DISCO_BADASS"
+	},
+	{
+		"title": "Wind alarm",
+		"date": "2014-05-07",
+		"tags": ["app", "external"],
+		"coolness": 68,
+		"link": "https://github.com/rileyjshaw/wind-alarm",
+		"lastTagged": 1564708846185,
+		"descriptionList": [
+			"Only wakes you up if the wind is howling. An alarm for kiteboarders."
+		],
+		"type": "project",
+		"uid": "PROJECT_WIND_ALARM"
+	},
+	{
+		"title": "Ben Eath: Surf Ace",
+		"date": "2014-04-29",
+		"tags": ["external", "extinct", "game", "online"],
+		"coolness": 78,
+		"link": "https://github.com/ben-eath/the-surf-ace",
+		"lastTagged": 1564708847602,
+		"descriptionList": [
+			"A multiplayer shark-frenzy controlled with your phone.",
+			"Created with friends at Hacker School. I was in charge of the mobile + WebSocket controller framework and the server.",
+			"This used to be on Chrome Experiments but it's offline now :("
+		],
+		"type": "project",
+		"uid": "PROJECT_BEN_EATH:_SURF_ACE"
+	},
+	{
+		"title": "Key Generator",
+		"date": "2014-04-28",
+		"tags": ["golf", "online", "reusable"],
+		"coolness": 57,
+		"link": "http://codepen.io/rileyjshaw/full/olzJI/",
+		"lastTagged": 1564708851648,
+		"descriptionList": [
+			"A super-efficient memoized key generator in JavaScript.",
+			"Lowercase alphanumeric, length [1, 198)."
+		],
+		"type": "project",
+		"uid": "PROJECT_KEY_GENERATOR"
+	},
+	{
+		"title": "Thin diagonal stripes",
+		"date": "2014-04-24",
+		"tags": ["golf", "online", "pretty", "reusable"],
+		"coolness": 18,
+		"link": "http://codepen.io/rileyjshaw/full/dBygE",
+		"lastTagged": 1564708854160,
+		"descriptionList": [
+			"CSS gradient rule for thin diagonal lines.",
+			"Cross-device, cross-browser."
+		],
+		"type": "project",
+		"uid": "PROJECT_THIN_DIAGONAL_STRIPES"
+	},
+	{
+		"title": "Mirror",
+		"date": "2014-04-24",
+		"tags": ["app", "online", "reusable"],
+		"coolness": 24,
+		"link": "http://codepen.io/rileyjshaw/full/BvKni",
+		"lastTagged": 1564708856993,
+		"descriptionList": ["Small demo of live translation synchronization."],
+		"type": "project",
+		"uid": "PROJECT_MIRROR"
+	},
+	{
+		"title": "Pyramid",
+		"date": "2014-04-17",
+		"tags": ["online", "pretty"],
+		"coolness": 12,
+		"link": "http://codepen.io/rileyjshaw/full/dihjv/",
+		"lastTagged": 1564708864040,
+		"type": "project",
+		"uid": "PROJECT_PYRAMID"
+	},
+	{
+		"title": "Fastdraw",
+		"date": "2014-04-14",
+		"tags": ["app", "game", "instructional"],
+		"coolness": 20,
+		"link": "/fastdraw",
+		"lastTagged": 1564708862840,
+		"descriptionList": [
+			"Checks how quickly you can navigate to other sites in a new tab. Only works in Firefox."
+		],
+		"type": "project",
+		"uid": "PROJECT_FASTDRAW"
+	},
+	{
+		"title": "Sweep",
+		"date": "2014-03-24",
+		"tags": ["online", "pretty", "reusable", "starred"],
+		"coolness": 60,
+		"link": "/sweep",
+		"lastTagged": 1564708866431,
+		"descriptionList": [
+			"A JavaScript library for smoother color transitions"
+		],
+		"type": "project",
+		"uid": "PROJECT_SWEEP"
+	},
+	{
+		"title": "Tiny boxes",
+		"date": "2014-03-19",
+		"tags": ["app", "extinct", "online", "pretty", "starred"],
+		"coolness": 70,
+		"link": "https://github.com/rileyjshaw/boxes",
+		"lastTagged": 1564708867142,
+		"descriptionList": [
+			"Chat through happenstance. The interface adapts to meet demand."
+		],
+		"type": "project",
+		"uid": "PROJECT_TINY_BOXES"
+	},
+	{
+		"title": "Own this website",
+		"date": "2014-03-19",
+		"tags": ["app", "extinct", "game", "online", "starred"],
+		"coolness": 65,
+		"link": "https://github.com/rileyjshaw/own-this-website",
+		"lastTagged": 1564708868615,
+		"descriptionList": [
+			"An experimental online game of King of the Hill, on this very website."
+		],
+		"type": "project",
+		"uid": "PROJECT_OWN_THIS_WEBSITE"
+	},
+	{
+		"title": "Tiny TCP",
+		"date": "2014-03-17",
+		"tags": ["app"],
+		"coolness": 37,
+		"link": "https://github.com/rileyjshaw/tiny-tcp",
+		"lastTagged": 1564708870888,
+		"descriptionList": ["Really little chat server written in Node.js."],
+		"type": "project",
+		"uid": "PROJECT_TINY_TCP"
+	},
+	{
+		"title": "Pursuit",
+		"date": "2014-03-17",
+		"tags": ["golf", "online"],
+		"coolness": 11,
+		"link": "http://codepen.io/rileyjshaw/pen/Klvon?editors=0100",
+		"lastTagged": 1564708872623,
+		"descriptionList": ["CSS animation with no additional HTML or JS."],
+		"type": "project",
+		"uid": "PROJECT_PURSUIT"
+	},
+	{
+		"title": "Mean tone",
+		"date": "2014-03-17",
+		"tags": ["instructional", "music"],
+		"coolness": 20,
+		"link": "https://github.com/rileyjshaw/mean-tone",
+		"lastTagged": 1564708879145,
+		"descriptionList": [
+			"Supporting code for my \"Taking the average tone\" blog post."
+		],
+		"type": "project",
+		"uid": "PROJECT_MEAN_TONE"
+	},
+	{
+		"title": "Important people",
+		"date": "2014-03-13",
+		"tags": ["external"],
+		"coolness": 86,
+		"link": "https://github.com/rileyjshaw/important-people",
+		"lastTagged": 1564708882272,
+		"descriptionList": [
+			"Scrapes Wikipedia to find the most important births and deaths of each year by word count."
+		],
+		"type": "project",
+		"uid": "PROJECT_IMPORTANT_PEOPLE"
+	},
+	{
+		"title": "1125899906842624",
+		"date": "2014-03-13",
+		"tags": ["game", "online"],
+		"coolness": 5,
+		"link": "/2048",
+		"lastTagged": 1564708885721,
+		"descriptionList": ["A terrible clone of a terrible clone of a game."],
+		"type": "project",
+		"uid": "PROJECT_1125899906842624"
+	},
+	{
+		"title": "Composer",
+		"date": "2014-03-12",
+		"tags": ["music", "reusable"],
+		"coolness": 72,
+		"link": "https://github.com/rileyjshaw/composer",
+		"lastTagged": 1564708887783,
+		"descriptionList": ["Generate frequencies, chords, and songs."],
+		"type": "project",
+		"uid": "PROJECT_COMPOSER"
+	},
+	{
+		"title": "terra",
+		"date": "2014-03-09",
+		"tags": ["instructional", "online", "pretty", "reusable", "starred"],
+		"coolness": 86,
+		"link": "/terra",
+		"lastTagged": 1564708889063,
+		"descriptionList": [
+			"A JavaScript library for simple biological simulations and cellular automata."
+		],
+		"type": "project",
+		"uid": "PROJECT_TERRA"
+	},
+	{
+		"title": "Ushld",
+		"date": "2014-02-28",
+		"tags": ["app", "online"],
+		"coolness": 52,
+		"link": "http://ushld.com",
+		"lastTagged": 1564708889861,
+		"descriptionList": [
+			"Tell people on the internet what they should do."
+		],
+		"type": "project",
+		"uid": "PROJECT_USHLD"
+	},
+	{
+		"title": "Strobe",
+		"date": "2014-02-15",
+		"tags": ["online"],
+		"coolness": 1,
+		"link": "http://codepen.io/rileyjshaw/details/pcKCj/",
+		"lastTagged": 1564708891840,
+		"descriptionList": ["Boring."],
+		"type": "project",
+		"uid": "PROJECT_STROBE"
+	},
+	{
+		"title": "Space avoiders",
+		"date": "2014-02-13",
+		"tags": ["game", "online"],
+		"coolness": 26,
+		"link": "http://codepen.io/rileyjshaw/pen/CErAF",
+		"lastTagged": 1564708893630,
+		"descriptionList": ["Thx Mary :)"],
+		"type": "project",
+		"uid": "PROJECT_SPACE_AVOIDERS"
+	},
+	{
+		"title": "Nite versions",
+		"date": "2014-01-13",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 20,
+		"link": "http://codepen.io/rileyjshaw/full/sDrLJ/",
+		"lastTagged": 1564708920950,
+		"descriptionList": ["Recreating Soulwax's album art in CSS."],
+		"type": "project",
+		"uid": "PROJECT_NITE_VERSIONS"
+	},
+	{
+		"title": "CSS gradient blocker",
+		"date": "2014-01-03",
+		"tags": ["golf", "online", "reusable"],
+		"coolness": 4,
+		"link": "http://codepen.io/rileyjshaw/full/uvcyE/",
+		"lastTagged": 1564708922967,
+		"descriptionList": [
+			"Using a repeating pattern to give the illusion of semi-transparency."
+		],
+		"type": "project",
+		"uid": "PROJECT_CSS_GRADIENT_BLOCKER"
+	},
+	{
+		"title": "Zig-zag text effect",
+		"date": "2014-01-03",
+		"tags": ["golf", "online", "pretty", "reusable"],
+		"coolness": 40,
+		"link": "http://codepen.io/rileyjshaw/full/waeqK",
+		"lastTagged": 1564708924925,
+		"descriptionList": [
+			"CSS only.",
+			"Fun with gradients and background-clip: text."
+		],
+		"type": "project",
+		"uid": "PROJECT_ZIG_ZAG_TEXT_EFFECT"
+	},
+	{
+		"title": "Gradient patterns",
+		"date": "2014-01-03",
+		"tags": ["golf", "online", "pretty", "reusable"],
+		"coolness": 24,
+		"link": "http://codepen.io/rileyjshaw/full/KdFAg/",
+		"lastTagged": 1564708926590,
+		"type": "project",
+		"uid": "PROJECT_GRADIENT_PATTERNS"
+	},
+	{
+		"title": "Watercolor",
+		"date": "2013-12-29",
+		"tags": ["app", "online", "pretty"],
+		"coolness": 40,
+		"link": "/watercolor/",
+		"lastTagged": 1564708930039,
+		"descriptionList": [
+			"Uses Chrome's canvas compositing algorithm (circa 2013) to simulate watercolor painting in the browser."
+		],
+		"type": "project",
+		"uid": "PROJECT_WATERCOLOR"
+	},
+	{
+		"title": "Simple slide-out footer",
+		"date": "2013-12-27",
+		"tags": ["golf", "online", "reusable"],
+		"coolness": 16,
+		"link": "http://codepen.io/rileyjshaw/details/GlBHC/",
+		"lastTagged": 1564708931950,
+		"descriptionList": ["Slide-out footer with semantic markup."],
+		"type": "project",
+		"uid": "PROJECT_SIMPLE_SLIDE_OUT_FOOTER"
+	},
+	{
+		"title": "Canvas spectrum",
+		"date": "2013-12-21",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 24,
+		"link": "http://codepen.io/rileyjshaw/pen/bzeqL?editors=0010",
+		"lastTagged": 1564708933870,
+		"descriptionList": ["lol these variable names..."],
+		"type": "project",
+		"uid": "PROJECT_CANVAS_SPECTRUM"
+	},
+	{
+		"title": "No Vacancy 404 concept",
+		"date": "2013-12-19",
+		"tags": ["online", "pretty", "reusable"],
+		"coolness": 9,
+		"link": "http://codepen.io/rileyjshaw/full/ufEIH",
+		"lastTagged": 1564708935022,
+		"type": "project",
+		"uid": "PROJECT_NO_VACANCY_404_CONCEPT"
+	},
+	{
+		"title": "COS logo",
+		"date": "2013-12-19",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 29,
+		"link": "http://codepen.io/rileyjshaw/pen/blCIq/",
+		"lastTagged": 1564708936373,
+		"descriptionList": [
+			"Recreating a popular clothing brand's logo in CSS."
+		],
+		"type": "project",
+		"uid": "PROJECT_COS_LOGO"
+	},
+	{
+		"title": "3D text!",
+		"date": "2013-12-15",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 13,
+		"link": "http://codepen.io/rileyjshaw/details/rEhdF/",
+		"lastTagged": 1564708937835,
+		"descriptionList": ["BYOG (glasses)."],
+		"type": "project",
+		"uid": "PROJECT_3D_TEXT!"
+	},
+	{
+		"title": "Cheshire Cat Loader",
+		"date": "2013-12-08",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 2,
+		"link": "http://codepen.io/rileyjshaw/full/fondm",
+		"lastTagged": 1564708938863,
+		"type": "project",
+		"uid": "PROJECT_CHESHIRE_CAT_LOADER"
+	},
+	{
+		"title": "Vanishify",
+		"date": "2013-12-08",
+		"tags": ["golf", "online", "pretty", "reusable"],
+		"coolness": 26,
+		"link": "http://codepen.io/rileyjshaw/pen/inyzb",
+		"lastTagged": 1564708939620,
+		"descriptionList": ["Sass vanishing point mixin."],
+		"type": "project",
+		"uid": "PROJECT_VANISHIFY"
+	},
+	{
+		"title": "Chamber",
+		"date": "2013-12-03",
+		"tags": ["online", "pretty"],
+		"coolness": 35,
+		"link": "http://codepen.io/rileyjshaw/full/wKvfk",
+		"lastTagged": 1564708940474,
+		"descriptionList": ["Random mutations of a polyhedron."],
+		"type": "project",
+		"uid": "PROJECT_CHAMBER"
+	},
+	{
+		"title": "3D flower",
+		"date": "2013-12-03",
+		"tags": ["online", "pretty"],
+		"coolness": 29,
+		"link": "http://codepen.io/rileyjshaw/full/LhFfw",
+		"lastTagged": 1564708941375,
+		"type": "project",
+		"uid": "PROJECT_3D_FLOWER"
+	},
+	{
+		"title": "Ball",
+		"date": "2013-12-03",
+		"tags": ["online", "pretty"],
+		"coolness": 32,
+		"link": "http://codepen.io/rileyjshaw/details/fzhDk/",
+		"lastTagged": 1564708942431,
+		"descriptionList": ["Simple animation in three.js."],
+		"type": "project",
+		"uid": "PROJECT_BALL"
+	},
+	{
+		"title": "Speedy scroll",
+		"date": "2013-12-03",
+		"tags": ["online", "reusable"],
+		"coolness": 20,
+		"link": "http://codepen.io/rileyjshaw/details/ruGFo/",
+		"lastTagged": 1564708943908,
+		"descriptionList": [
+			"Block pointer events on scroll to reach 60fps.",
+			"A follow-up article has since been written to show more robust techniques."
+		],
+		"type": "project",
+		"uid": "PROJECT_SPEEDY_SCROLL"
+	},
+	{
+		"title": "Minimal fizzbuzz",
+		"date": "2013-11-29",
+		"tags": ["golf", "online"],
+		"coolness": 38,
+		"link": "http://codepen.io/rileyjshaw/pen/bCkBo",
+		"lastTagged": 1564708944793,
+		"descriptionList": [
+			"Two very small implementations of Fizzbuzz: one in JavaScript (74B) and one in Stylus (126B)."
+		],
+		"type": "project",
+		"uid": "PROJECT_MINIMAL_FIZZBUZZ"
+	},
+	{
+		"title": "Crazy chemicals",
+		"date": "2013-11-26",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 32,
+		"link": "http://codepen.io/rileyjshaw/full/zwxCv/",
+		"lastTagged": 1564708946139,
+		"type": "project",
+		"uid": "PROJECT_CRAZY_CHEMICALS"
+	},
+	{
+		"title": "10 colors that faded away",
+		"date": "2013-11-25",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 27,
+		"link": "http://codepen.io/rileyjshaw/details/gLcoi/",
+		"lastTagged": 1564708948573,
+		"type": "project",
+		"uid": "PROJECT_10_COLORS_THAT_FADED_AWAY"
+	},
+	{
+		"title": "Flower power",
+		"date": "2013-11-25",
+		"tags": ["golf", "online", "pretty", "reusable"],
+		"coolness": 54,
+		"link": "http://codepen.io/rileyjshaw/pen/HBDtd",
+		"lastTagged": 1564708950723,
+		"descriptionList": ["Sass flower with variable number of petals."],
+		"type": "project",
+		"uid": "PROJECT_FLOWER_POWER"
+	},
+	{
+		"title": "CSS slope illusion in <140 characters",
+		"date": "2013-11-20",
+		"tags": ["golf", "online", "pretty", "starred"],
+		"coolness": 55,
+		"link": "http://codepen.io/rileyjshaw/pen/vzwsu/",
+		"lastTagged": 1564708953257,
+		"descriptionList": ["Are the base lines straight or at an angle?"],
+		"type": "project",
+		"uid": "PROJECT_CSS_SLOPE_ILLUSION_IN_<140_CHARACTERS"
+	},
+	{
+		"title": "Focus",
+		"date": "2013-11-20",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 29,
+		"link": "http://codepen.io/rileyjshaw/full/gtLGi/",
+		"lastTagged": 1564708955045,
+		"descriptionList": ["Linear gradient, animation, and background-clip"],
+		"type": "project",
+		"uid": "PROJECT_FOCUS"
+	},
+	{
+		"title": "Wacky static 2: TV edition",
+		"date": "2013-11-20",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 40,
+		"link": "http://codepen.io/rileyjshaw/pen/mcaCi",
+		"lastTagged": 1564708957259,
+		"descriptionList": ["Used this as my 404 page for a while."],
+		"type": "project",
+		"uid": "PROJECT_WACKY_STATIC_2:_TV_EDITION"
+	},
+	{
+		"title": "Wacky static",
+		"date": "2013-11-20",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 20,
+		"link": "http://codepen.io/rileyjshaw/pen/GDmeF",
+		"lastTagged": 1564708958327,
+		"type": "project",
+		"uid": "PROJECT_WACKY_STATIC"
+	},
+	{
+		"title": "Yummy loader",
+		"date": "2013-11-15",
+		"tags": ["online", "pretty", "reusable"],
+		"coolness": 25,
+		"link": "http://codepen.io/rileyjshaw/full/jdyqC",
+		"lastTagged": 1564708960068,
+		"type": "project",
+		"uid": "PROJECT_YUMMY_LOADER"
+	},
+	{
+		"title": "Planets",
+		"date": "2013-11-15",
+		"tags": ["golf", "online", "pretty", "starred"],
+		"coolness": 70,
+		"link": "http://codepen.io/rileyjshaw/pen/yenLw",
+		"lastTagged": 1564708963195,
+		"descriptionList": ["Pure Sass animated solar system."],
+		"type": "project",
+		"uid": "PROJECT_PLANETS"
+	},
+	{
+		"title": "Sass animation grid",
+		"date": "2013-11-11",
+		"tags": ["golf", "online", "pretty", "starred"],
+		"coolness": 80,
+		"link": "http://codepen.io/rileyjshaw/full/zGnlq",
+		"lastTagged": 1564708963876,
+		"descriptionList": ["Collection of Sass animations."],
+		"type": "project",
+		"uid": "PROJECT_SASS_ANIMATION_GRID"
+	},
+	{
+		"title": "2p Snake",
+		"date": "2013-11-11",
+		"tags": ["game", "online", "starred"],
+		"coolness": 83,
+		"link": "/2p-snake",
+		"lastTagged": 1564708965315,
+		"descriptionList": [
+			"Snake for 2 players on the same keyboard?! Saucy."
+		],
+		"type": "project",
+		"uid": "PROJECT_2P_SNAKE"
+	},
+	{
+		"title": "Sticky CSS transitions",
+		"date": "2013-11-08",
+		"tags": ["golf", "online", "pretty", "reusable"],
+		"coolness": 37,
+		"link": "http://codepen.io/rileyjshaw/full/bHsJf",
+		"lastTagged": 1564708964427,
+		"type": "project",
+		"uid": "PROJECT_STICKY_CSS_TRANSITIONS"
+	},
+	{
+		"title": "Fifty shades of grey",
+		"date": "2013-11-08",
+		"tags": ["online"],
+		"coolness": 9,
+		"link": "http://codepen.io/rileyjshaw/full/KcILg/",
+		"lastTagged": 1564708964844,
+		"descriptionList": ["Ha."],
+		"type": "project",
+		"uid": "PROJECT_FIFTY_SHADES_OF_GREY"
+	},
+	{
+		"title": "Multiple hover events in CSS",
+		"date": "2013-11-03",
+		"tags": ["golf", "online", "reusable"],
+		"coolness": 30,
+		"link": "http://codepen.io/rileyjshaw/details/LIwdc/",
+		"lastTagged": 1564708965846,
+		"type": "project",
+		"uid": "PROJECT_MULTIPLE_HOVER_EVENTS_IN_CSS"
+	},
+	{
+		"title": "FS video + blocking tiles",
+		"date": "2013-10-31",
+		"tags": ["golf", "online", "reusable"],
+		"coolness": 33,
+		"link": "http://codepen.io/rileyjshaw/full/FBsmA/",
+		"lastTagged": 1564708966191,
+		"descriptionList": ["Recreating a nice hover effect in CSS."],
+		"type": "project",
+		"uid": "PROJECT_FS_VIDEO_+_BLOCKING_TILES"
+	},
+	{
+		"title": "Infinite burger",
+		"date": "2013-10-29",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 18,
+		"link": "http://codepen.io/rileyjshaw/full/HdeEF",
+		"lastTagged": 1564708966698,
+		"descriptionList": [
+			"Pure Sass hamburger. Sesame-seed bun, lettuce, tomato, fresh cheddar, and infinity perfectly cooked Angus beef patties."
+		],
+		"type": "project",
+		"uid": "PROJECT_INFINITE_BURGER"
+	},
+	{
+		"title": "Long-shadow input series",
+		"date": "2013-10-28",
+		"tags": ["golf", "online", "pretty", "reusable", "starred"],
+		"coolness": 63,
+		"link": "http://codepen.io/collection/EJveu",
+		"lastTagged": 1564708967302,
+		"descriptionList": [
+			"An attempt to give flat buttons some depth. Collection of inputs including radio buttons, checkboxes, and text inputs."
+		],
+		"type": "project",
+		"uid": "PROJECT_LONG_SHADOW_INPUT_SERIES"
+	},
+	{
+		"title": "Long-shadow cards",
+		"date": "2013-10-28",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 36,
+		"link": "http://codepen.io/rileyjshaw/details/AgGbs",
+		"lastTagged": 1564708967845,
+		"descriptionList": ["Each one's only a single element."],
+		"type": "project",
+		"uid": "PROJECT_LONG_SHADOW_CARDS"
+	},
+	{
+		"title": "Flat shadow mouse tracker",
+		"date": "2013-10-28",
+		"tags": ["online", "pretty", "reusable"],
+		"coolness": 23,
+		"link": "http://codepen.io/rileyjshaw/full/wEJzg/",
+		"lastTagged": 1564708968360,
+		"type": "project",
+		"uid": "PROJECT_FLAT_SHADOW_MOUSE_TRACKER"
+	},
+	{
+		"title": "DNS error easter egg",
+		"date": "2013-10-28",
+		"tags": ["online"],
+		"coolness": 25,
+		"link": "http://codepen.io/rileyjshaw/details/eAEya/",
+		"lastTagged": 1564708969001,
+		"descriptionList": ["Hover over \"DNS\"."],
+		"type": "project",
+		"uid": "PROJECT_DNS_ERROR_EASTER_EGG"
+	},
+	{
+		"title": "Typographic loader",
+		"date": "2013-10-28",
+		"tags": ["online", "pretty", "reusable"],
+		"coolness": 16,
+		"link": "http://codepen.io/rileyjshaw/full/dIniD",
+		"lastTagged": 1564708969478,
+		"descriptionList": ["Loading bar concept."],
+		"type": "project",
+		"uid": "PROJECT_TYPOGRAPHIC_LOADER"
+	},
+	{
+		"title": "Custom carat",
+		"date": "2013-10-23",
+		"tags": ["online", "reusable"],
+		"coolness": 14,
+		"link": "http://codepen.io/rileyjshaw/full/IkfJn/",
+		"lastTagged": 1564708969978,
+		"descriptionList": ["Ugly implementation of something pretty."],
+		"type": "project",
+		"uid": "PROJECT_CUSTOM_CARAT"
+	},
+	{
+		"title": "Single element kabamm",
+		"date": "2013-10-23",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 22,
+		"link": "http://codepen.io/rileyjshaw/details/zFdyq/",
+		"lastTagged": 1564708971928,
+		"type": "project",
+		"uid": "PROJECT_SINGLE_ELEMENT_KABAMM"
+	},
+	{
+		"title": "Worst practices",
+		"date": "2013-10-13",
+		"tags": ["golf", "instructional", "online", "starred"],
+		"coolness": 50,
+		"link": "http://codepen.io/rileyjshaw/pen/cKiDn?editors=0010",
+		"lastTagged": 1564708974879,
+		"descriptionList": [
+			"Some Javascript that I threw together for a friend to 1) solve his problem, 2) explain some hacky JS tricks, and 3) attempt to show him that they aren't always great to use since they obfuscate your code.",
+			"There's actually some cool stuff going on in here, so I've commented it thoroughly."
+		],
+		"type": "project",
+		"uid": "PROJECT_WORST_PRACTICES"
+	},
+	{
+		"title": "Shadowfy",
+		"date": "2013-10-09",
+		"tags": ["golf", "online", "reusable"],
+		"coolness": 22,
+		"link": "http://codepen.io/rileyjshaw/pen/DmCyc",
+		"lastTagged": 1564708975996,
+		"descriptionList": ["Sass 3D text-shadow mixin."],
+		"type": "project",
+		"uid": "PROJECT_SHADOWFY"
+	},
+	{
+		"title": "ASCII loaders",
+		"date": "2013-10-08",
+		"tags": ["golf", "online", "reusable"],
+		"coolness": 21,
+		"link": "http://codepen.io/rileyjshaw/full/ABzsc",
+		"lastTagged": 1564708976938,
+		"descriptionList": [
+			"Geeky loading animations using ASCII characters."
+		],
+		"type": "project",
+		"uid": "PROJECT_ASCII_LOADERS"
+	},
+	{
+		"title": "Color Jump!",
+		"date": "2013-09-29",
+		"tags": ["golf", "online", "pretty", "reusable"],
+		"coolness": 14,
+		"link": "http://codepen.io/rileyjshaw/pen/Ijtgr",
+		"lastTagged": 1564708977786,
+		"descriptionList": [
+			"Sass mixin: jump from x to y in z steps.",
+			"This was my first CodePen to hit the front page :)"
+		],
+		"type": "project",
+		"uid": "PROJECT_COLOR_JUMP!"
+	},
+	{
+		"title": "Git cheatsheet",
+		"date": "2013-09-18",
+		"tags": ["instructional"],
+		"coolness": 66,
+		"link": "https://github.com/rileyjshaw/git-cheatsheet",
+		"lastTagged": 1564708978237,
+		"descriptionList": [
+			"A quick reference for before your morning coffee."
+		],
+		"type": "project",
+		"uid": "PROJECT_GIT_CHEATSHEET"
+	},
+	{
+		"title": "Frequency bar visualizer",
+		"date": "2013-09-12",
+		"tags": ["music", "pretty", "reusable"],
+		"coolness": 16,
+		"link": "https://github.com/rileyjshaw/basic_visualizer",
+		"lastTagged": 1564708981557,
+		"descriptionList": [
+			"A simple frequency bar visualizer for audio in Processing.",
+			"Features a terrible mash-up of Watermelon Man and Mos Def's Beef freestyle that I threw together in Audacity..."
+		],
+		"type": "project",
+		"uid": "PROJECT_FREQUENCY_BAR_VISUALIZER"
+	},
+	{
+		"title": "CSS beach",
+		"date": "2013-09-06",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 27,
+		"link": "http://codepen.io/rileyjshaw/details/GsotD/",
+		"lastTagged": 1564708985741,
+		"descriptionList": [
+			"Geeky loading animations using ASCII characters."
+		],
+		"type": "project",
+		"uid": "PROJECT_CSS_BEACH"
+	},
+	{
+		"title": "Perspective buttons",
+		"date": "2013-08-31",
+		"tags": ["extinct", "golf", "online", "pretty", "reusable"],
+		"coolness": 74,
+		"link": "http://codepen.io/rileyjshaw/full/ebokj/",
+		"lastTagged": 1564708989446,
+		"descriptionList": [
+			"Buttons that maintain linear perspective from the screen's vertical midpoint.",
+			"The perspective effect can be added to anything; a site where each content block was extruded could look interesting.",
+			"Chrome only as of 2018."
+		],
+		"type": "project",
+		"uid": "PROJECT_PERSPECTIVE_BUTTONS"
+	},
+	{
+		"title": "Nested radio menu",
+		"date": "2013-08-27",
+		"tags": ["golf", "online", "pretty", "reusable"],
+		"coolness": 42,
+		"link": "http://codepen.io/rileyjshaw/full/jDCty/",
+		"lastTagged": 1564708991379,
+		"descriptionList": [
+			"Semantic vertical menu using nested radio buttons and CSS."
+		],
+		"type": "project",
+		"uid": "PROJECT_NESTED_RADIO_MENU"
+	},
+	{
+		"title": "Sass tooltips",
+		"date": "2013-07-13",
+		"tags": ["golf", "online", "reusable"],
+		"coolness": 24,
+		"link": "http://codepen.io/rileyjshaw/pen/dAFiu",
+		"lastTagged": 1564708992197,
+		"descriptionList": ["Sass speech bubble mixin."],
+		"type": "project",
+		"uid": "PROJECT_SASS_TOOLTIPS"
+	},
+	{
+		"title": "Instaframe",
+		"date": "2013-04-02",
+		"tags": ["app", "external", "extinct", "online"],
+		"coolness": 30,
+		"link": "/portfolio/old/instaframedemo/",
+		"lastTagged": 1564708997115,
+		"descriptionList": [
+			"Buggy proof of concept exploring the CSS background-attachment property and a 3rd-party Instagram API."
+		],
+		"type": "project",
+		"uid": "PROJECT_INSTAFRAME"
+	},
+	{
+		"title": "Peek",
+		"date": "2013-03-25",
+		"tags": ["golf", "online", "pretty", "reusable"],
+		"coolness": 60,
+		"link": "/portfolio/old/peekdemo.html",
+		"lastTagged": 1564709001360,
+		"descriptionList": ["Scrolling gallery view for tumblr."],
+		"type": "project",
+		"uid": "PROJECT_PEEK"
+	},
+	{
+		"title": "Zenwall",
+		"date": "2013-03-22",
+		"tags": ["app", "external", "pretty", "starred"],
+		"coolness": 50,
+		"link": "http://youtu.be/zQ5tKU3z1fc",
+		"lastTagged": 1564709003258,
+		"descriptionList": [
+			"A depth-sensing grafitti wall for touch-screens &amp; pen tablets.",
+			"Demo built for web browsers and Wacom tablets. Installation involved creating a large infrared plane behind a flexible display and sensing deformations using Community Core Vision."
+		],
+		"type": "project",
+		"uid": "PROJECT_ZENWALL"
+	},
+	{
+		"title": "FitHub",
+		"date": "2013-03-02",
+		"tags": ["app", "external"],
+		"coolness": 85,
+		"link": "https://github.com/uniphil/FitHub",
+		"lastTagged": 1564708999688,
+		"descriptionList": ["A fitness form trainer using an Xbox Kinect."],
+		"type": "project",
+		"uid": "PROJECT_FITHUB"
+	},
+	{
+		"title": "Jumble puzzle",
+		"date": "2013-02-05",
+		"tags": ["game"],
+		"coolness": 30,
+		"link": "https://github.com/rileyjshaw/jumble-puzzle",
+		"lastTagged": 1564709005490,
+		"descriptionList": ["Word-search puzzle generator."],
+		"type": "project",
+		"uid": "PROJECT_JUMBLE_PUZZLE"
+	},
+	{
+		"title": "Pure Sass music icons",
+		"date": "2012-10-30",
+		"tags": ["golf", "music", "online", "pretty", "reusable"],
+		"coolness": 12,
+		"link": "http://codepen.io/rileyjshaw/full/xdfeC",
+		"lastTagged": 1564709007492,
+		"type": "project",
+		"uid": "PROJECT_PURE_SASS_MUSIC_ICONS"
+	},
+	{
+		"title": "Terminal display",
+		"date": "2012-10-23",
+		"tags": ["online", "reusable"],
+		"coolness": 23,
+		"link": "http://codepen.io/rileyjshaw/full/FLpJk/",
+		"lastTagged": 1564709012522,
+		"descriptionList": [
+			"Used to promote <a href=\"http://qhack.ca\" target=\"_blank\" rel=\"noopener noreferrer\">\"hack nights\" at my university</a>."
+		],
+		"type": "project",
+		"uid": "PROJECT_TERMINAL_DISPLAY"
+	},
+	{
+		"title": "HTML quine",
+		"date": "2012-06-22",
+		"tags": ["golf", "online"],
+		"coolness": 14,
+		"link": "http://codepen.io/rileyjshaw/pen/iGjgs",
+		"lastTagged": 1564709008266,
+		"descriptionList": [
+			"A quine is a non-empty computer program which takes no input and produces a copy of its own source code as its only output."
+		],
+		"type": "project",
+		"uid": "PROJECT_HTML_QUINE"
+	},
+	{
+		"title": "Infiniteye",
+		"date": "2012-01-05",
+		"tags": ["golf", "online", "pretty"],
+		"coolness": 24,
+		"link": "/portfolio/old/cssonly/infiniteye.html",
+		"lastTagged": 1564709009404,
+		"descriptionList": ["My former personal brand mark."],
+		"type": "project",
+		"uid": "PROJECT_INFINITEYE"
+	},
+	{
+		"title": "That's nuts!",
+		"date": "2011-11-26",
+		"tags": ["golf", "online", "pretty", "reusable"],
+		"coolness": 11,
+		"link": "http://codepen.io/rileyjshaw/details/fKmuI",
+		"lastTagged": 1564709010796,
+		"descriptionList": [
+			"Settings reveal concept where a nut unscrews itself then drops a curtain."
+		],
+		"type": "project",
+		"uid": "PROJECT_THAT'S_NUTS!"
+	},
+	{
+		"title": "Infinite scroll",
+		"date": "2010-06-22",
+		"tags": ["online", "reusable"],
+		"coolness": 15,
+		"link": "http://codepen.io/rileyjshaw/details/dzLwm/",
+		"lastTagged": 1564709014386,
+		"type": "project",
+		"uid": "PROJECT_INFINITE_SCROLL"
 	}
 ]

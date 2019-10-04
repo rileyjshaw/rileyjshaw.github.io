@@ -7,7 +7,9 @@ const rssify = query => {
 	return format(query)
 		.map(node => ({
 			title: node.title,
-			description: node.description || '',
+			description: node.descriptionList
+				? node.descriptionList.join('\n')
+				: node.description || '',
 			url: (node.link.startsWith('/') ? siteUrl : '') + node.link,
 			date: node.date,
 			guid: node.uid,
@@ -60,7 +62,7 @@ module.exports = {
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
-				path: `${__dirname}/src/data/json/`,
+				path: `${__dirname}/project-scraper/sources/`,
 				name: `data`,
 			},
 		},
@@ -119,30 +121,9 @@ module.exports = {
 					{
 						serialize: ({query}) => rssify(query),
 						query: `{
-							allMarkdownRemark(
-								filter: {fileAbsolutePath: {regex: "//posts/.*\.md$/"}}
-								sort: {fields: [fields___date], order: DESC}
-							) {
-								edges {
-									node {
-										description
-										frontmatter {
-											layout
-											topTitle
-											tags
-										}
-										fields {
-											uid
-											slug
-											title
-											date(formatString: "YYYY-MM-DD")
-										}
-									}
-								}
-							}
-
-							allScrapedProjectsFormattedJson(
-								filter: {type: {in: ["tumblr", "commit"]}}
+							allCombinedProjectsJson (
+								filter: {tags: {in: ["starred"]}}
+								sort: {fields: [date], order: DESC}
 							) {
 								nodes {
 									uid
@@ -159,8 +140,34 @@ module.exports = {
 								}
 							}
 						}`,
-						output: '/blog.xml',
-						title: 'Blog feed',
+						output: `/index.xml`,
+						title: `Homepage feed`,
+					},
+					{
+						serialize: ({query}) => rssify(query),
+						query: `
+							{
+								allCombinedProjectsJson(
+									filter: {type: {nin: ["tumblr", "commit"]}}
+								) {
+									nodes {
+										uid
+										type
+										title
+										date
+										link
+										description
+										updatedAt
+										length
+										contentType
+										body
+										image
+									}
+								}
+							}
+						`,
+						output: `/projects.xml`,
+						title: `Projects feed`,
 					},
 					{
 						serialize: ({query}) => rssify(query),
@@ -188,19 +195,7 @@ module.exports = {
 									}
 								}
 
-								allProjectsJson {
-									nodes {
-										title
-										description
-										todo
-										tags
-										date
-										coolness
-										href
-									}
-								}
-
-								allScrapedProjectsFormattedJson {
+								allCombinedProjectsJson {
 									nodes {
 										uid
 										type

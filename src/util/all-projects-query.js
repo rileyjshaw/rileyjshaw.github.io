@@ -4,23 +4,14 @@ import formatProps from './format-props';
 
 export function format({
 	allMarkdownRemark: {edges: posts} = {edges: []},
-	allProjectsJson: {nodes: projects} = {nodes: []},
-	allScrapedProjectsFormattedJson: {nodes: scraped} = {nodes: []},
+	allCombinedProjectsJson: {nodes: projects} = {nodes: []},
 }) {
 	return [
 		...posts.map(p => ({
 			...p,
 			type: 'post',
 		})),
-		...projects
-			// TODO(riley): Filter the TODOs in GraphQL.
-			.filter(({todo}) => !todo)
-			.map((p, i) => ({
-				...p,
-				type: 'project',
-				uid: `PROJECT_${p.title.toUpperCase().replace(/[- ]/g, '_')}`,
-			})),
-		...scraped,
+		...projects,
 	].map(formatProps);
 }
 
@@ -51,27 +42,18 @@ export default () =>
 				}
 			}
 
-			allProjectsJson {
-				nodes {
-					title
-					description
-					todo
-					tags
-					date
-					coolness
-					href
-				}
-			}
-
-			allScrapedProjectsFormattedJson {
+			allCombinedProjectsJson {
 				nodes {
 					uid
 					type
 					title
+					coolness
 					date
 					link
-					repo
 					description
+					descriptionList
+					tags
+					repo
 					updatedAt
 					length
 					contentType

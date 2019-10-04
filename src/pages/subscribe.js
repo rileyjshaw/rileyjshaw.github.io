@@ -25,12 +25,11 @@ export default () => (
 		<div className="inner">
 			<Newsletter />
 			<hr />
-			<p>This website also has RSS feeds for more frequent updates:</p>
+			<p>This website has RSS feeds for more frequent updates:</p>
 			<dl className="rss-feeds">
-				{/*
 				<dt>
 					<UncontrolledLink to="/index.xml">
-						Index feed (todo)
+						Homepage feed
 					</UncontrolledLink>
 				</dt>
 				<dd>
@@ -41,16 +40,6 @@ export default () => (
 					</ExternalLink>
 					.
 				</dd>
-
-				<dt>
-					<UncontrolledLink to="/about.xml">
-						Current projects feed (todo)
-					</UncontrolledLink>
-				</dt>
-				<dd>
-					Updates on <Link to="/about">what I'm up to</Link>.
-				</dd>
-				*/}
 				<dt>
 					<UncontrolledLink to="/blog.xml">
 						Blog feed
@@ -62,21 +51,14 @@ export default () => (
 
 				<dt>
 					<UncontrolledLink to="/explore.xml">
-						Project feed (todo)
+						Project feed
 					</UncontrolledLink>
 				</dt>
 				<dd>
 					New projects in the{' '}
-					<Link to="/explore">project explorer</Link>.
+					<Link to="/explore">project explorer</Link>, minus blog
+					posts.
 				</dd>
-				{/*
-				<dt>
-					<UncontrolledLink to="/subscribe.xml">
-						RSS feed feed (todo)
-					</UncontrolledLink>
-				</dt>
-				<dd>A list of feeds available from this page. So meta.</dd>
-				*/}
 				<dt>
 					<UncontrolledLink to="/firehose.xml">
 						Firehose feed

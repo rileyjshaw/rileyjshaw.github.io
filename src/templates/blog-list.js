@@ -20,7 +20,7 @@ export default ({data, pageContext: {currentPage, numPages}}) => {
 	//              of collecting + sorting it with GraphQL.
 	const posts = [
 		...data.allMarkdownRemark.edges.map(({node}) => node),
-		...data.allScrapedProjectsFormattedJson.nodes,
+		...data.allCombinedProjectsJson.nodes,
 	].sort(
 		(a, b) =>
 			new Date(b.date || b.fields.date) -
@@ -154,7 +154,7 @@ export const blogListQuery = graphql`
 			}
 		}
 
-		allScrapedProjectsFormattedJson(
+		allCombinedProjectsJson(
 			filter: {type: {in: ["tumblr", "commit"]}}
 			sort: {fields: [date, title], order: DESC}
 			limit: $externalLimit

@@ -1,10 +1,10 @@
 import React from 'react';
 
 export const DweetContent = () => null;
-export const ProjectContent = ({description}) =>
-	description && (
+export const ProjectContent = ({descriptionList}) =>
+	descriptionList && (
 		<main>
-			{description.map((d, i) => (
+			{descriptionList.map((d, i) => (
 				<p key={i} dangerouslySetInnerHTML={{__html: d}} />
 			))}
 		</main>
