@@ -16,12 +16,20 @@ export default () => {
 			<button
 				aria-expanded={open}
 				aria-controls="menu"
+				aria-haspopup="true"
+				id="menubutton"
 				className={open ? 'open' : 'closed'}
 				onClick={() => setOpen(o => !o)}
 			>
 				{open ? '✖' : <MenuIcon />}
 			</button>
-			<ul id="menu" hidden={!open} onClick={() => setOpen(o => !o)}>
+			<ul
+				aria-labelledby="menubutton"
+				id="menu"
+				role="menu"
+				hidden={!open}
+				onClick={() => setOpen(o => !o)}
+			>
 				<li>
 					<Link to="/">
 						<Wrap>Home</Wrap>
