@@ -79,11 +79,11 @@
 }
 .site-nav li:nth-child(1) {
 	animation-delay: -0.5s;
-	background: var(--green);
+	background: var(--red);
 }
 .site-nav li:nth-child(2) {
 	animation-delay: -0.4s;
-	background: var(--red);
+	background: var(--green);
 }
 .site-nav li:nth-child(3) {
 	animation-delay: -0.3s;
@@ -91,7 +91,7 @@
 }
 .site-nav li:nth-child(4) {
 	animation-delay: -0.2s;
-	background: var(--yellow);
+	background: var(--cyan);
 }
 .site-nav li:nth-child(5) {
 	animation-delay: -0.1s;

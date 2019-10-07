@@ -1,11 +1,7 @@
 .blog-list-page-header {
-	background: var(--yellow);
-}
-.blog-list-page-header::after {
-	border-right-color: var(--white) !important;
+	background: var(--cyan);
 }
 .blog-list {
-	background: var(--white);
 	padding: 30px;
 }
 .blog-list .blog-posts {

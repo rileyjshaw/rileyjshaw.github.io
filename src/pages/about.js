@@ -4,7 +4,6 @@ import {StaticQuery, graphql} from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import BigQuote from '../components/big-quote';
-import UpTo from '../components/up-to';
 import GoUp from '../components/go-up';
 import {ExternalLink} from '../components/auto-link';
 import RgbSplitter from '../components/rgb-splitter';
@@ -17,7 +16,7 @@ import './about.css';
 export default () => (
 	<Layout>
 		<SEO title="About" className="about" />
-		<header className="page-header cycle-bg">
+		<header className="page-header">
 			<SiteNav />
 			<RgbSplitter El="h1" className="title">
 				<Shard>About</Shard>
@@ -151,7 +150,7 @@ export default () => (
 				listn,
 				site,
 			}) => (
-				<div className="about-page">
+				<main className="about-page">
 					<div className="about-me blog-post-content">
 						<div
 							dangerouslySetInnerHTML={{
@@ -168,7 +167,7 @@ export default () => (
 								__html: me_rest.childMarkdownRemark.html,
 							}}
 						/>
-						<UpTo />
+						{/* TODO(riley): <UpTo /> */}
 						<div
 							dangerouslySetInnerHTML={{
 								__html:
@@ -222,7 +221,7 @@ export default () => (
 					</div>
 					<BigQuote quoteIndex={4} />
 					<GoUp />
-				</div>
+				</main>
 			)}
 		/>
 	</Layout>

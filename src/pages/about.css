@@ -1,12 +1,9 @@
+.about .page-header {
+	background: var(--green);
+}
 .about-page {
-	background: var(--white);
-	color: var(--black);
 	font-size: var(--font-scale-1);
 	overflow: hidden;
-}
-.about-page .page-picker-wrapper {
-	font-size: var(--font-scale--1);
-	padding: 60px 30px 30px;
 }
 /* Copied from post template. */
 .about-page .about-me {

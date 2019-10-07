@@ -46,9 +46,6 @@
 	position: absolute;
 	width: 1px;
 }
-.project-explorer-hide-filters {
-	margin: 0;
-}
 .project-explorer-hide-filters,
 .project-explorer .filters label,
 .project-explorer .filters button {
@@ -62,6 +59,10 @@
 	font-weight: 900;
 	margin: 0 0 30px 16px;
 	padding: 10px 20px;
+}
+.project-explorer-hide-filters {
+	display: flex;
+	margin-left: auto;
 }
 .project-explorer .filters header button {
 	margin: 0 0 0 auto;

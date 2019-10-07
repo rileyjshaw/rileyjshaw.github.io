@@ -27,7 +27,7 @@
 }
 .big-quote blockquote {
 	margin: 0 auto;
-	max-width: var(--w-md);
+	max-width: 800px; /* TODO(riley): Add breakpoint variables. */
 	width: 90%;
 }
 .big-quote p {

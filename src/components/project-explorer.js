@@ -148,7 +148,7 @@ class ProjectExplorer extends React.PureComponent {
 			<div className="project-explorer">
 				<p className="result-details warning">
 					Hi! I'm still developing this part of the website, so I
-					apologize if it crashes your browser. Enjoy!
+					apologize if it crashes your browser. Good luck!
 				</p>
 
 				<button
@@ -236,7 +236,7 @@ class ProjectExplorer extends React.PureComponent {
 									Shuffle
 								</button>
 							</div>
-							<legend>Match:</legend>
+							{/* <legend>Match:</legend>
 							<div className="inputs">
 								<input
 									type="radio"
@@ -285,7 +285,7 @@ class ProjectExplorer extends React.PureComponent {
 								onClick={this.handleClearTagsClick}
 							>
 								X
-							</button>
+							</button> */}
 						</fieldset>
 					)}
 				</div>

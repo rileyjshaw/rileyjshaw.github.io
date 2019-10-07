@@ -33,9 +33,6 @@
 	position: absolute;
 	top: -2px;
 }
-.content-node header {
-	line-height: 1;
-}
 .content-node h1 {
 	font-size: var(--font-scale-2);
 	margin-bottom: 8px;

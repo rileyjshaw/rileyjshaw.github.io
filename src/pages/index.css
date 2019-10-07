@@ -1,9 +1,3 @@
-.index-page-header {
-	background: var(--green);
-}
-.index-page-header::after {
-	border-right-color: var(--yellow) !important;
-}
 .page-header {
 	position: relative;
 }
@@ -103,7 +97,7 @@
 	margin-top: 0;
 }
 .main-about {
-	background: var(--yellow);
+	background: var(--white);
 }
 .main-about h2 {
 	color: var(--black) !important;
@@ -129,7 +123,6 @@
 .section .row > :last-child {
 	display: inline-block;
 	font-family: var(--font-stack-serif);
-	line-height: 1.5;
 	padding-left: 100px;
 	padding-top: 8px;
 	position: relative;

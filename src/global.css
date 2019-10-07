@@ -77,10 +77,14 @@ h4 {
 	margin: var(--font-scale-2) 0 var(--font-scale--1);
 }
 p,
-li {
+li,
+dt,
+dd {
 	font-family: var(--font-stack-serif);
+	line-height: 1.5;
 }
-p {
+p,
+dd {
 	margin-bottom: var(--font-scale-1);
 }
 ul {
