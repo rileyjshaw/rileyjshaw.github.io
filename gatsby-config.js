@@ -4,6 +4,11 @@ const {format} = require('./src/util/all-projects-query');
 
 const rssify = query => {
 	const {siteUrl} = query.site.siteMetadata;
+	// HACK(riley): Support for OR is limited, and this was quicker.
+	if (query.b) {
+		query.allCombinedProjectsJson.nodes.push(...query.b.nodes);
+		delete query.b;
+	}
 	return format(query)
 		.map(node => ({
 			title: node.title,
@@ -123,6 +128,28 @@ module.exports = {
 						query: `{
 							allCombinedProjectsJson (
 								filter: {tags: {in: ["starred"]}}
+								sort: {fields: [date], order: DESC}
+							) {
+								nodes {
+									uid
+									type
+									title
+									date
+									link
+									description
+									updatedAt
+									length
+									contentType
+									body
+									image
+								}
+							}
+
+							b: allCombinedProjectsJson (
+								filter: {
+									tags: {nin: ["starred"]},
+									repo: {eq: "rileyjshaw/rileyjshaw-new"}
+								}
 								sort: {fields: [date], order: DESC}
 							) {
 								nodes {
