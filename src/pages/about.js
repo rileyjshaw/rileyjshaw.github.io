@@ -48,6 +48,16 @@ export default () => (
 							html
 						}
 					}
+					mozilla: file(
+						relativePath: {eq: "about/work/mozilla.md"}
+					) {
+						childMarkdownRemark {
+							html
+							frontmatter {
+								current
+							}
+						}
+					}
 					repair_matters: file(
 						relativePath: {eq: "about/work/repair_matters.md"}
 					) {
@@ -130,6 +140,7 @@ export default () => (
 				me_intro,
 				me_rest,
 				timeline_title,
+				mozilla,
 				repair_matters,
 				sfpc,
 				khan_academy,
@@ -166,6 +177,7 @@ export default () => (
 						/>
 						<ul className="timeline">
 							{[
+								mozilla,
 								repair_matters,
 								sfpc,
 								khan_academy,
