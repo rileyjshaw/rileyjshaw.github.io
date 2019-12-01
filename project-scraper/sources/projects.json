@@ -1404,7 +1404,7 @@
 		"date": "2014-12-09",
 		"tags": ["starred", "online", "app", "reusable"],
 		"coolness": 78,
-		"link": "http://fingerprint.tappy.pw/",
+		"link": "/tappy-fingerprint",
 		"lastTagged": 1564708792923
 	},
 	{
@@ -1426,7 +1426,7 @@
 		"date": "2014-11-23",
 		"tags": ["starred", "online", "music", "reusable"],
 		"coolness": 77,
-		"link": "http://tappy.pw",
+		"link": "/tappy",
 		"lastTagged": 1564708795522
 	},
 	{
@@ -1537,13 +1537,13 @@
 		"date": "2014-10-13",
 		"tags": ["starred", "online", "game", "pretty", "music"],
 		"coolness": 76,
-		"link": "http://play.tappy.pw/",
+		"link": "/tappy-game",
 		"lastTagged": 1564708812602
 	},
 	{
 		"title": "Material design ripple effect",
 		"description": [
-			"Needed this for <a href=\"http://play.tappy.pw\" target=\"_blank\" rel=\"noopener noreferrer\">tappy</a> before there were 1000 libraries to choose from."
+			"Needed this for <a href=\"/tappy-game\" target=\"_blank\" rel=\"noopener noreferrer\">tappy</a> before there were 1000 libraries to choose from."
 		],
 		"date": "2014-10-12",
 		"tags": ["online", "pretty", "reusable"],
@@ -1942,7 +1942,7 @@
 		"date": "2014-02-28",
 		"tags": ["online", "app"],
 		"coolness": 52,
-		"link": "http://ushld.com",
+		"link": "http://ushld.rileyjshaw.com",
 		"lastTagged": 1564708889861
 	},
 	{
