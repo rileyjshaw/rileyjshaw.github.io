@@ -2,7 +2,7 @@
 import React, {Fragment} from 'react';
 import {useStaticQuery, graphql} from 'gatsby';
 
-import sortingMethods from '../util/sorting-methods';
+import sortingMethods, {shuffle} from '../util/sorting-methods';
 import allProjectsQuery from '../util/all-projects-query';
 import contentTypes from '../util/content-types';
 
@@ -87,12 +87,7 @@ class ProjectExplorer extends React.PureComponent {
 
 	shuffleDisplayNodes = () => {
 		this.setState(({nodes}) => {
-			const sorted = [...nodes];
-			for (let i = sorted.length - 1; i > 0; --i) {
-				let j = Math.floor(Math.random() * (i + 1));
-				[sorted[i], sorted[j]] = [sorted[j], sorted[i]];
-			}
-			return {nodes: sorted};
+			return {nodes: shuffle(nodes)};
 		});
 	};
 

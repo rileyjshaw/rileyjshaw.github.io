@@ -5,7 +5,9 @@
 
 const fs = require('fs');
 const scrapedProjects = require('../_generated/scraped-projects-formatted.json');
+const scrapedQuotes = require('../_generated/scraped-quotes.json');
 const listedProjects = require('../sources/projects.json');
+const listedQuotes = require('../sources/quotes.json');
 
 const projects = [
 	...scrapedProjects,
@@ -56,6 +58,32 @@ const tweaksList = {
 	},
 };
 
+// Expanded from underscore's _.unescape() method.
+const unescape = (substitutions => {
+	const substitute = match => substitutions[match];
+	const source = '(?:' + Object.keys(substitutions).join('|') + ')';
+	const testRegexp = RegExp(source);
+	const replaceRegexp = RegExp(source, 'g');
+
+	return function unescape(str) {
+		str = str == null ? '' : '' + str;
+		return testRegexp.test(str)
+			? str.replace(replaceRegexp, substitute)
+			: str;
+	};
+})({
+	'&amp;': '&',
+	'&lt;': '<',
+	'&gt;': '>',
+	'&quot;': '"',
+	'&#x27;': "'",
+	'&#x60;': '`',
+	'&lsquo;': '‘',
+	'&ldquo;': '“',
+	'&rsquo;': '’',
+	'&rdquo;': '”',
+});
+
 function runTweaks() {
 	// Add type transformers to each node of each specified type.
 	Object.entries(typeTransformers).forEach(([type, transformer]) => {
@@ -100,6 +128,27 @@ function runTweaks() {
 		'./project-scraper/_generated/combined-projects.json',
 		JSON.stringify(projects)
 	);
+
+	const combinedQuotes = Object.entries(listedQuotes)
+		.map(([key, value]) => ({
+			uid: key,
+			...value,
+		}))
+		.concat(
+			scrapedQuotes.map(quote => ({
+				...quote,
+				content: quote.content && unescape(quote.content),
+				// Discard quotes around source names, since big-quote.js adds those.
+				source:
+					quote.source &&
+					unescape(quote.source.replace(/^[“”‘’"']|[“”‘’"']/g, '')),
+			}))
+		);
+
+	fs.writeFileSync(
+		'./project-scraper/_generated/combined-quotes.json',
+		JSON.stringify(combinedQuotes)
+	);
 }
-runTweaks();
+
 module.exports = {runTweaks};
