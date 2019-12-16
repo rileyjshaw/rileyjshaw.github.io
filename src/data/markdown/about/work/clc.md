@@ -10,4 +10,4 @@ I am a volunteer mentor and instructor with [Canada Learning Code](https://www.c
 -   [Ladies Learning Code](https://www.canadalearningcode.ca/experiences/?program=ladies_learning_code)
 -   [Teachers Learning Code](https://www.canadalearningcode.ca/experiences/?program=teachers_learning_code)
 
-I like teaching girls how to make games, and helping teachers learn more about digital privacy.
+Curriculum content ranges from teaching girls how to make video games to helping teachers learn more about digital privacy.
