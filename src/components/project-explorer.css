@@ -33,8 +33,9 @@
 }
 .project-explorer .warning {
 	text-align: center;
-	text-decoration: underline;
-	text-decoration-style: wavy;
+}
+.project-explorer .warning a {
+	color: var(--white);
 }
 .project-explorer .filters input {
 	border: 0;

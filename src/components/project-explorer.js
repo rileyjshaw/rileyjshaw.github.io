@@ -8,6 +8,7 @@ import contentTypes from '../util/content-types';
 
 import gridDoodles from './grid-doodles';
 import ContentGrid from './content-grid';
+import AutoLink from './auto-link';
 
 import './project-explorer.css';
 
@@ -144,6 +145,13 @@ class ProjectExplorer extends React.PureComponent {
 				<p className="result-details warning">
 					Hi! I'm still developing this part of the website, so I
 					apologize if it crashes your browser. Good luck!
+				</p>
+				<p className="result-details warning">
+					I host a{' '}
+					<AutoLink to="https://old.rileyjshaw.com/lab">
+						mirror of my old website
+					</AutoLink>{' '}
+					if needed.
 				</p>
 
 				<button
