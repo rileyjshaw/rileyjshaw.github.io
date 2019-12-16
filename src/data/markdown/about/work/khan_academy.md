@@ -1,6 +1,6 @@
 ### Khan Academy
 
-I spent three years as a Software Engineer at [Khan Academy](https://khanacademy.org). Here are some highlights:
+I spent three years on the Engineering team at [Khan Academy](https://khanacademy.org). Here are some highlights:
 
 -   I rewrote the video page and player, reducing load time by over 100%
 -   I created and led KA's first optimization team

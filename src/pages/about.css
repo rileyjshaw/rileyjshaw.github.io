@@ -27,3 +27,6 @@
 	height: 42px !important;
 	width: 42px !important;
 }
+.about-page .timeline .job-title {
+	font-size: var(--font-scale--2);
+}
