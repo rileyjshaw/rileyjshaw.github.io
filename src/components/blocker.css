@@ -4,7 +4,6 @@
 	color: var(--white);
 	font-family: var(--font-stack-serif);
 }
-
 .idle-blocker {
 	align-items: center;
 	display: flex;
@@ -17,14 +16,12 @@
 	width: 100vw;
 	z-index: 10;
 }
-
 .idle-blocker ul {
 	display: flex;
-	list-style: none;
 	justify-content: space-between;
+	list-style: none;
 	padding: 0;
 }
-
 .idle-blocker button {
 	border: 0;
 	font-size: inherit;
