@@ -16,15 +16,46 @@ export const Time = () => {
 		.padStart(2, '0')}${hour < 12 ? 'am' : 'pm'}`;
 	return time;
 };
-// TODO(riley): Have this open when you open my website? And have a "no" button
-//              to which it says "okay, i tried to warn you." as it fades away.
-export default () => {
+
+export default ({onClose}) => {
+	const [mode, setMode] = useState('open');
 	return (
 		<div className="idle-blocker">
-			<p>
-				It is now: <Time />.
-			</p>
-			<p>You have been on the Internet for: too long.</p>
+			{mode === 'open' ? (
+				<>
+					<p>
+						It is now: <Time />.
+					</p>
+					<p>Do you still want to be on the internet?</p>
+					<ul>
+						<li>
+							<button
+								onClick={() => {
+									setMode('response');
+									window.setTimeout(onClose, 1200);
+								}}
+							>
+								Yes
+							</button>
+						</li>
+						<li>
+							<button
+								onClick={() => {
+									setMode('response');
+									window.setTimeout(
+										() => setMode('blank'),
+										1200
+									);
+								}}
+							>
+								No
+							</button>
+						</li>
+					</ul>
+				</>
+			) : mode === 'response' ? (
+				'Okay.'
+			) : null}
 		</div>
 	);
 };

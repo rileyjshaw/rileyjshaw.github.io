@@ -1,7 +1,12 @@
-.idle-blocker {
-	align-items: center;
+.idle-blocker,
+.idle-blocker button {
 	background: var(--black);
 	color: var(--white);
+	font-family: var(--font-stack-serif);
+}
+
+.idle-blocker {
+	align-items: center;
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
@@ -11,4 +16,19 @@
 	top: 0;
 	width: 100vw;
 	z-index: 10;
+}
+
+.idle-blocker ul {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	padding: 0;
+}
+
+.idle-blocker button {
+	border: 0;
+	cursor: pointer;
+	font-size: inherit;
+	margin: 0 var(--font-scale-1);
+	text-decoration: underline;
 }

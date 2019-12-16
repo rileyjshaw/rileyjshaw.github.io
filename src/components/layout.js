@@ -1,14 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import {useIdle} from '../util/hooks';
 
 import Blocker from './blocker';
 
 const Layout = ({children}) => {
-	const idle = useIdle(60000 * 10);
+	const [isBlockerOpen, setIsBlockerOpen] = useState(false);
+	useIdle(60000 * 4, () => setIsBlockerOpen(true));
+
 	return (
 		<>
-			{idle && <Blocker />}
+			{isBlockerOpen && (
+				<Blocker onClose={() => setIsBlockerOpen(false)} />
+			)}
 			{children}
 		</>
 	);

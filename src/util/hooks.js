@@ -119,7 +119,7 @@ const interactionEventNames = [
 	'MSPointerDown',
 	'MSPointerMove',
 ];
-export function useIdle(delay) {
+export function useIdle(delay, onIdle) {
 	if (typeof window === 'undefined') return false;
 	const [isIdle, setIdle] = useState(false);
 	const [idleTimeout, setIdleTimeout] = useState(null);
@@ -127,7 +127,10 @@ export function useIdle(delay) {
 		setIdle(false);
 		setIdleTimeout(idleTimeout => {
 			window.clearTimeout(idleTimeout);
-			return window.setTimeout(() => setIdle(true), delay);
+			return window.setTimeout(() => {
+				setIdle(true);
+				onIdle && onIdle();
+			}, delay);
 		});
 	};
 	useEffect(() => {
