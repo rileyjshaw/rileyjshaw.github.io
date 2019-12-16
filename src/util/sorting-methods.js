@@ -8,15 +8,15 @@ export function shuffle(nodes) {
 }
 
 function sortByCoolness(nodes) {
-	return [...nodes].sort((a, b) => b.coolness - a.coolness);
+	return [...nodes].sort(({coolness: a = -1}, {coolness: b = -1}) => b - a);
 }
 
 function sortByDate(nodes) {
-	return [...nodes].sort((a, b) => a.date.localeCompare(b.date));
+	return [...nodes].sort((a, b) => b.date.localeCompare(a.date));
 }
 
 function sortByName(nodes) {
-	return [...nodes].sort((a, b) => b.title.localeCompare(a.title));
+	return [...nodes].sort((a, b) => a.title.localeCompare(b.title));
 }
 
 export default [

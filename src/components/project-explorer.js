@@ -67,7 +67,7 @@ class ProjectExplorer extends React.PureComponent {
 			  )
 			: filteredByType;
 		const sorted = sortFn(filtered);
-		const ordered = state.ascending ? sorted : sorted.reverse();
+		const ordered = state.ascending ? sorted.reverse() : sorted;
 		// Insert doodles into a random position.
 		doodles.forEach(doodle =>
 			ordered.splice(
