@@ -65,6 +65,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\" && stylelint \"src/**/*.css\" --fix",
     "scrape": "npx babel-node project-scraper/run-scraper.js && npm run format",
+    "scraper": "npm run scrape",
     "serve": "gatsby serve",
     "start": "npm run develop",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
