@@ -82,6 +82,7 @@ const unescape = (substitutions => {
 	'&ldquo;': '“',
 	'&rsquo;': '’',
 	'&rdquo;': '”',
+	'&hellip;': '…',
 });
 
 const quoteAuthors = ['Osamu Sato'];
