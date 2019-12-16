@@ -101,3 +101,6 @@ pre {
 [hidden] {
 	display: none; /* For legacy browser support. */
 }
+button {
+	cursor: pointer;
+}

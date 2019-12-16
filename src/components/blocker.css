@@ -27,7 +27,6 @@
 
 .idle-blocker button {
 	border: 0;
-	cursor: pointer;
 	font-size: inherit;
 	margin: 0 var(--font-scale-1);
 	text-decoration: underline;

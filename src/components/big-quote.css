@@ -40,7 +40,6 @@
 .big-quote .refresh {
 	background: none;
 	border: 0;
-	cursor: pointer;
 	fill: var(--white);
 	margin-bottom: 120px;
 }

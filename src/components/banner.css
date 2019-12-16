@@ -1,0 +1,23 @@
+.banner {
+	width: 100%;
+	height: var(--font-scale-6);
+	display: flex;
+	align-items: center;
+	background: var(--black);
+	color: var(--white);
+	text-align: center;
+	padding: 0 1em;
+}
+
+.banner > * {
+	flex-grow: 1;
+}
+
+.banner button {
+	background: none;
+	border: 0;
+	color: inherit;
+	font-size: var(--font-scale-1);
+	margin-left: auto;
+	flex-grow: 0;
+}
