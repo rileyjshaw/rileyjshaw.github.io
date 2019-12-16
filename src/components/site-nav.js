@@ -12,7 +12,7 @@ export default () => {
 	useKeyPress('Escape', () => setOpen(false));
 
 	return (
-		<nav class="site-nav">
+		<nav className="site-nav">
 			<button
 				aria-expanded={open}
 				aria-controls="menu"
