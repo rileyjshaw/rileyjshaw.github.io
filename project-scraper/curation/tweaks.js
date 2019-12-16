@@ -84,6 +84,7 @@ const unescape = (substitutions => {
 	'&rdquo;': '”',
 });
 
+const quoteAuthors = ['Osamu Sato'];
 function runTweaks() {
 	// Add type transformers to each node of each specified type.
 	Object.entries(typeTransformers).forEach(([type, transformer]) => {
@@ -135,13 +136,13 @@ function runTweaks() {
 			...value,
 		}))
 		.concat(
-			scrapedQuotes.map(quote => ({
-				...quote,
-				content: quote.content && unescape(quote.content),
-				// Discard quotes around source names, since big-quote.js adds those.
-				source:
-					quote.source &&
-					unescape(quote.source.replace(/^[“”‘’"']|[“”‘’"']/g, '')),
+			scrapedQuotes.map(({content, source, ...rest}) => ({
+				...rest,
+				content: content && unescape(content),
+				[quoteAuthors.includes(source) ? 'author' : 'source']:
+					source &&
+					// Discard quotes around source names, since big-quote.js adds those.
+					unescape(source.replace(/^[“”‘’"']|[“”‘’"']/g, '')),
 			}))
 		);
 

@@ -3,6 +3,7 @@ import {StaticQuery, graphql} from 'gatsby';
 
 import {shuffle} from '../util/sorting-methods';
 import {ReactComponent as Repeat} from '../../content/images/repeat.svg';
+import AutoLink from './auto-link';
 
 import './big-quote.css';
 
@@ -31,8 +32,8 @@ export default ({quoteId}) => (
 			const quote =
 				(quoteId && quotes.find(({uid}) => uid === quoteId)) ||
 				shuffledQuotes[quoteIndex];
-			const {content, author, cite} = quote;
-			let {source} = quote;
+			const {content, cite} = quote;
+			let {source, author} = quote;
 			if (source) {
 				source = (
 					<>
@@ -40,7 +41,7 @@ export default ({quoteId}) => (
 					</>
 				);
 				if (cite) {
-					source = <a href={cite}>{source}</a>;
+					source = <AutoLink to={cite}>{source}</AutoLink>;
 				}
 				if (author) {
 					source = (
@@ -50,7 +51,10 @@ export default ({quoteId}) => (
 					);
 				}
 			} else if (author) {
-				source = `– ${author}`;
+				if (cite) {
+					author = <AutoLink to={cite}>{author}</AutoLink>;
+				}
+				source = <>– {author}</>;
 			}
 
 			return (
