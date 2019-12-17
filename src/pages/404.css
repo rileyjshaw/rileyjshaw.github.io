@@ -10,7 +10,7 @@
 	flex-direction: column;
 }
 .page-not-found header {
-	background: #000;
+	background: var(--black);
 	justify-self: flex-start;
 }
 .page-not-found header::after {
@@ -20,6 +20,23 @@
 	background: var(--white);
 	border: 1px solid var(--black);
 	box-shadow: 4px 4px var(--black);
-	margin: auto;
+	margin: 60px auto 0;
+	max-width: 90%;
 	padding: var(--font-scale-1) var(--font-scale-2);
+	width: 36em;
+}
+/* TODO(riley): Share these breakpoints. */
+@media only screen and (max-width: 480px) {
+	.page-not-found #gatsby-focus-wrapper {
+		background: var(--white);
+	}
+	.page-not-found header::after {
+		border-right-color: var(--white);
+	}
+	.page-not-found main {
+		max-width: 100%;
+		border: 0;
+		box-shadow: none;
+		margin: 0;
+	}
 }

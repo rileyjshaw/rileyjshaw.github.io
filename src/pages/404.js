@@ -26,6 +26,11 @@ const NotFoundPage = ({location}) => (
 			<ul>
 				<li>
 					<p>
+						Start over from <Link to="/">the home page</Link>.
+					</p>
+				</li>
+				<li>
+					<p>
 						Check if the link works on my{' '}
 						<ExternalLink
 							to={`https://old.rileyjshaw.com${location.pathname}`}
@@ -34,30 +39,25 @@ const NotFoundPage = ({location}) => (
 						</ExternalLink>
 						.
 					</p>
-					<li>
-						<p>
-							Search for{' '}
-							<ExternalLink
-								to={`https://duckduckgo.com/?q=rileyjshaw${location.pathname.replace(
-									/[/ _-]/g,
-									'+'
-								)}`}
-							>
-								related keywords online
-							</ExternalLink>
-							.
-						</p>
-					</li>
-					<li>
-						<p>
-							Start over from <Link to="/">the home page</Link>.
-						</p>
-					</li>
-					<li>
-						<p>
-							Get off the Internet. It's already <Time />.
-						</p>
-					</li>
+				</li>
+				<li>
+					<p>
+						Search for{' '}
+						<ExternalLink
+							to={`https://duckduckgo.com/?q=rileyjshaw${location.pathname.replace(
+								/[/ _-]/g,
+								'+'
+							)}`}
+						>
+							related keywords online
+						</ExternalLink>
+						.
+					</p>
+				</li>
+				<li>
+					<p>
+						Get off the Internet. It's already <Time />.
+					</p>
 				</li>
 			</ul>
 		</main>
