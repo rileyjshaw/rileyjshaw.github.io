@@ -119,3 +119,7 @@
 		height: 80%;
 	}
 }
+.blog-post-page .site-nav {
+	/* HACK(riley) */
+	display: none;
+}

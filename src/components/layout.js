@@ -42,7 +42,7 @@ const Layout = ({children}) => {
 				</Banner>
 			)}
 			<SiteNav />
-			{children}
+			<div className="site-content">{children}</div>
 		</>
 	);
 };
