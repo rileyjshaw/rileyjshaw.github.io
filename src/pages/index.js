@@ -9,7 +9,6 @@ import Fit from '../components/fit-4';
 import GoUp from '../components/go-up';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import SiteNav from '../components/site-nav';
 import RgbSplitter from '../components/rgb-splitter';
 import Shard from '../components/shard';
 
@@ -35,7 +34,6 @@ const IndexPage = ({starredProjects = []}) => {
 		<Layout>
 			<SEO title="Home" />
 			<header className="page-header cycle-bg">
-				<SiteNav />
 				<RgbSplitter El="h1" className="title">
 					{/* <Shard>As your eyes adjust, you discover that</Shard>
 			<span className="visuallyhidden"> </span> */}

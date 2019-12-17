@@ -4,6 +4,7 @@ import {useIdle} from '../util/hooks';
 import AutoLink from './auto-link';
 import Blocker from './blocker';
 import Banner from './banner';
+import SiteNav from './site-nav';
 
 const Layout = ({children}) => {
 	const [isBlockerOpen, setIsBlockerOpen] = useState(false);
@@ -33,6 +34,7 @@ const Layout = ({children}) => {
 					</p>
 				</Banner>
 			)}
+			<SiteNav />
 			{children}
 		</>
 	);

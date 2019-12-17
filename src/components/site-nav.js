@@ -3,7 +3,6 @@ import {Link} from 'gatsby';
 
 import {ReactComponent as MenuIcon} from '../../content/images/menu.svg';
 import {useKeyPress} from '../util/hooks';
-import Wrap from './wrap';
 
 import './site-nav.css';
 
@@ -31,29 +30,19 @@ export default () => {
 				onClick={() => setOpen(o => !o)}
 			>
 				<li>
-					<Link to="/">
-						<Wrap>Home</Wrap>
-					</Link>
+					<Link to="/">Home</Link>
 				</li>
 				<li>
-					<Link to="/about">
-						<Wrap>About</Wrap>
-					</Link>
+					<Link to="/about">About</Link>
 				</li>
 				<li>
-					<Link to="/explore">
-						<Wrap>Projects</Wrap>
-					</Link>
+					<Link to="/explore">Projects</Link>
 				</li>
 				<li>
-					<Link to="/blog">
-						<Wrap>Blog</Wrap>
-					</Link>
+					<Link to="/blog">Blog</Link>
 				</li>
 				<li>
-					<Link to="/subscribe">
-						<Wrap>Subscribe</Wrap>
-					</Link>
+					<Link to="/subscribe">Subscribe</Link>
 				</li>
 			</ul>
 		</nav>

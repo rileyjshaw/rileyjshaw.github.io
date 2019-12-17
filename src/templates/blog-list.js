@@ -6,7 +6,6 @@ import Layout from '../components/layout';
 import RgbSplitter from '../components/rgb-splitter';
 import SEO from '../components/seo';
 import Shard from '../components/shard';
-import SiteNav from '../components/site-nav';
 
 import '../components/content-node.css';
 import './post.css';
@@ -47,7 +46,6 @@ export default ({data, pageContext: {currentPage, numPages}}) => {
 		<Layout>
 			<SEO title="All posts" />
 			<header className="page-header blog-list-page-header">
-				<SiteNav />
 				<RgbSplitter El="h1" className="title">
 					<Shard>Blog</Shard>
 				</RgbSplitter>

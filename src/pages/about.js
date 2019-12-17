@@ -8,7 +8,6 @@ import GoUp from '../components/go-up';
 import {ExternalLink} from '../components/auto-link';
 import RgbSplitter from '../components/rgb-splitter';
 import Shard from '../components/shard';
-import SiteNav from '../components/site-nav';
 
 import '../templates/post.css';
 import './about.css';
@@ -17,7 +16,6 @@ export default () => (
 	<Layout>
 		<SEO title="About" className="about" />
 		<header className="page-header">
-			<SiteNav />
 			<RgbSplitter El="h1" className="title">
 				<Shard>About</Shard>
 			</RgbSplitter>

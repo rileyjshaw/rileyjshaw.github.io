@@ -7,7 +7,6 @@ import Layout from '../components/layout';
 import RgbSplitter from '../components/rgb-splitter';
 import SEO from '../components/seo';
 import Shard from '../components/shard';
-import SiteNav from '../components/site-nav';
 
 import './404.css';
 
@@ -15,7 +14,6 @@ const NotFoundPage = ({location}) => (
 	<Layout>
 		<SEO title="404: Not found" className="page-not-found" />
 		<header className="page-header">
-			<SiteNav />
 			<RgbSplitter El="h1" className="title">
 				<Shard>Page not found</Shard>
 			</RgbSplitter>

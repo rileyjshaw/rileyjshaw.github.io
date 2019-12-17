@@ -1,7 +1,10 @@
 .site-nav {
-	left: 18px;
-	position: fixed;
-	top: 24px;
+	height: 0;
+	margin-bottom: -18px;
+	margin-left: 18px;
+	padding-top: 18px;
+	position: sticky;
+	top: 18px;
 	z-index: 1;
 }
 .site-nav button {
@@ -29,128 +32,65 @@
 	height: 50%;
 }
 .site-nav ul {
-	animation: fade-to-white 0.5s;
 	background: var(--white);
 	bottom: 0;
 	flex-direction: column;
 	left: 0;
 	list-style: none;
 	margin: 0;
+	overflow: auto;
 	overscroll-behavior: contain;
 	padding: 0;
 	position: fixed;
 	right: 0;
 	top: 0;
-	transition: background 0.5s ease-out;
-}
-@keyframes fade-to-white {
-	from {
-		background: rgba(var(--whitergb), 0);
-	}
-	to {
-		background: rgba(var(--whitergb), 1);
-	}
 }
 .site-nav ul:not([hidden]) {
 	display: flex;
 }
 .site-nav li {
-	animation: fly-in 1s cubic-bezier(0.57, 0.21, 0.69, 1.25); /* Only actually takes half this time. */
 	border-radius: 0 1000px 1000px 0;
 	box-sizing: content-box;
 	display: flex;
 	flex-grow: 1;
-	padding-left: 10%;
-	padding-right: 100%;
-	transform: translate3d(-5%, 0, 0);
 	width: 100%;
-}
-@keyframes fly-in {
-	from {
-		transform: translate3d(-100%, 0, 0);
-	}
-	50% {
-		transform: translate3d(-100%, 0, 0);
-	}
-	to {
-		transform: translate3d(-5%, 0, 0);
-	}
-}
-.site-nav li:nth-child(1) {
-	animation-delay: -0.5s;
-	background: var(--red);
-}
-.site-nav li:nth-child(2) {
-	animation-delay: -0.4s;
-	background: var(--green);
-}
-.site-nav li:nth-child(3) {
-	animation-delay: -0.3s;
-	background: var(--blue);
-}
-.site-nav li:nth-child(4) {
-	animation-delay: -0.2s;
-	background: var(--cyan);
-}
-.site-nav li:nth-child(5) {
-	animation-delay: -0.1s;
-	background: var(--magenta);
 }
 .site-nav a {
 	align-items: center;
-	color: var(--white);
+	animation: fade-in 1s ease-in-out;
+	color: var(--black);
 	display: flex;
 	flex-grow: 1;
-	font-family: var(--font-stack-heading);
+	font-family: var(--font-stack-sans);
 	font-size: 42px;
-	font-weight: 700;
 	justify-content: center;
 	text-decoration: none;
 	width: 100%;
 }
-.site-nav a:hover span {
-	animation: hop 0.16s alternate infinite ease-in-out;
-}
-@keyframes hop {
+@keyframes fade-in {
 	from {
-		transform: translate3d(0, 0, 0);
-	}
-	50% {
-		transform: translate3d(0, -0.125em, 0);
+		opacity: 0;
+		transform: translate3d(-24px, 0, 0);
 	}
 	to {
-		transform: translate3d(0, 0, 0);
+		opacity: 1;
+		transform: none;
 	}
 }
-.site-nav a:hover span:nth-child(2) {
-	animation-delay: 0.04s;
+.site-nav li:nth-child(1) a {
+	animation-delay: -0.5s;
 }
-.site-nav a:hover span:nth-child(3) {
-	animation-delay: 0.08s;
+.site-nav li:nth-child(2) a {
+	animation-delay: -0.4s;
 }
-.site-nav a:hover span:nth-child(4) {
-	animation-delay: 0.12s;
+.site-nav li:nth-child(3) a {
+	animation-delay: -0.3s;
 }
-.site-nav a:hover span:nth-child(5) {
-	animation-delay: 0.16s;
+.site-nav li:nth-child(4) a {
+	animation-delay: -0.2s;
 }
-.site-nav a:hover span:nth-child(6) {
-	animation-delay: 0.2s;
-}
-.site-nav a:hover span:nth-child(7) {
-	animation-delay: 0.24s;
-}
-.site-nav a:hover span:nth-child(8) {
-	animation-delay: 0.28s;
-}
-.site-nav a:hover span:nth-child(9) {
-	animation-delay: 0.32s;
-}
-.site-nav a:hover span:nth-child(10) {
-	animation-delay: 0.36s;
-}
-.site-nav a:hover span:nth-child(11) {
-	animation-delay: 0.4s;
+.site-nav li:nth-child(5) a {
+	animation-delay: -0.1s;
 }
 /* TODO(riley): Share these breakpoints. */
 @media only screen and (max-width: 800px) {

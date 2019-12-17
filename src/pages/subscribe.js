@@ -8,7 +8,6 @@ import Newsletter from '../components/newsletter';
 import RgbSplitter from '../components/rgb-splitter';
 import SEO from '../components/seo';
 import Shard from '../components/shard';
-import SiteNav from '../components/site-nav';
 import BigQuote from '../components/big-quote';
 
 import './subscribe.css';
@@ -17,7 +16,6 @@ export default () => (
 	<Layout>
 		<SEO title="Subscribe" className="subscribe-page" />
 		<header className="page-header subscribe-page-header">
-			<SiteNav />
 			<RgbSplitter El="h1" className="title">
 				<Shard>Feeds</Shard>
 			</RgbSplitter>

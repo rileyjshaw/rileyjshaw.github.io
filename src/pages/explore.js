@@ -6,7 +6,6 @@ import SEO from '../components/seo';
 import GoUp from '../components/go-up';
 import RgbSplitter from '../components/rgb-splitter';
 import Shard from '../components/shard';
-import SiteNav from '../components/site-nav';
 import BigQuote from '../components/big-quote';
 
 import './explore.css';
@@ -15,7 +14,6 @@ const ExplorePage = () => (
 	<Layout>
 		<SEO title="Project explorer" className="explore" />
 		<header className="page-header project-explorer-page-header">
-			<SiteNav />
 			<RgbSplitter El="h1" className="title">
 				<Shard>Projects</Shard>
 			</RgbSplitter>

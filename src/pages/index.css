@@ -124,7 +124,7 @@
 	display: inline-block;
 	font-family: var(--font-stack-serif);
 	padding-left: 100px;
-	padding-top: 8px;
+	padding-top: 12px; /* HACK(riley): Align the h2. */
 	position: relative;
 	text-align: left;
 	top: -4px;
