@@ -174,8 +174,31 @@ module.exports = {
 						serialize: ({query}) => rssify(query),
 						query: `
 							{
+								allMarkdownRemark(
+									filter: {fileAbsolutePath: {regex: "//posts/.*\.md$/"}}
+									sort: {fields: [fields___date], order: DESC}
+								) {
+									edges {
+										node {
+											description
+											frontmatter {
+												layout
+												topTitle
+												tags
+											}
+											fields {
+												uid
+												slug
+												title
+												date(formatString: "YYYY-MM-DD")
+											}
+										}
+									}
+								}
+
 								allCombinedProjectsJson(
-									filter: {type: {nin: ["tumblr", "commit"]}}
+									filter: {type: {in: ["tumblr", "commit"]}}
+									sort: {fields: [date], order: DESC}
 								) {
 									nodes {
 										uid
@@ -193,7 +216,34 @@ module.exports = {
 								}
 							}
 						`,
-						output: `/projects.xml`,
+						output: `/blog.xml`,
+						title: `Blog feed`,
+					},
+					{
+						serialize: ({query}) => rssify(query),
+						query: `
+							{
+								allCombinedProjectsJson(
+									filter: {type: {nin: ["tumblr", "commit"]}}
+									sort: {fields: [date], order: DESC}
+								) {
+									nodes {
+										uid
+										type
+										title
+										date
+										link
+										description
+										updatedAt
+										length
+										contentType
+										body
+										image
+									}
+								}
+							}
+						`,
+						output: `/explore.xml`,
 						title: `Projects feed`,
 					},
 					{
@@ -222,7 +272,9 @@ module.exports = {
 									}
 								}
 
-								allCombinedProjectsJson {
+								allCombinedProjectsJson(
+									sort: {fields: [date], order: DESC}
+								) {
 									nodes {
 										uid
 										type
