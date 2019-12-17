@@ -28,6 +28,7 @@
 .big-quote blockquote {
 	margin: 0 auto;
 	max-width: 800px; /* TODO(riley): Add breakpoint variables. */
+	padding-bottom: 2em;
 	width: 90%;
 }
 .big-quote p {

@@ -84,7 +84,7 @@ const unescape = (substitutions => {
 	'&rdquo;': '”',
 	'&hellip;': '…',
 });
-
+const stripOuterQuotes = str => str.replace(/^[“”‘’"'](.*)[“”‘’"']/g, '$1');
 const quoteAuthors = ['Osamu Sato'];
 function runTweaks() {
 	// Add type transformers to each node of each specified type.
@@ -139,11 +139,11 @@ function runTweaks() {
 		.concat(
 			scrapedQuotes.map(({content, source, ...rest}) => ({
 				...rest,
-				content: content && unescape(content),
+				content: content && unescape(stripOuterQuotes(content)),
 				[quoteAuthors.includes(source) ? 'author' : 'source']:
 					source &&
 					// Discard quotes around source names, since big-quote.js adds those.
-					unescape(source.replace(/^[“”‘’"']|[“”‘’"']/g, '')),
+					unescape(stripOuterQuotes(source)),
 			}))
 		);
 
