@@ -1,6 +1,3 @@
-# Project cache
-project-scraper/_generated/scraped-projects-raw.json
-
 # Logs
 logs
 *.log

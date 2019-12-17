@@ -332,11 +332,19 @@ function getAll() {
 			);
 			fs.writeFileSync(
 				'./project-scraper/_generated/scraped-projects-formatted.json',
-				JSON.stringify(formatted)
+				JSON.stringify(
+					formatted.sort(({uid: a = ''}, {uid: b = ''}) =>
+						a.localeCompare(b)
+					)
+				)
 			);
 			fs.writeFileSync(
 				'./project-scraper/_generated/scraped-quotes.json',
-				JSON.stringify(scrapedQuotes)
+				JSON.stringify(
+					scrapedQuotes.sort(({uid: a = ''}, {uid: b = ''}) =>
+						a.localeCompare(b)
+					)
+				)
 			);
 		})
 		.catch(err => {

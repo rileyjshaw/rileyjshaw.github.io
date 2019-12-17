@@ -85,7 +85,7 @@ const unescape = (substitutions => {
 	'&hellip;': '…',
 });
 const stripOuterQuotes = str => str.replace(/^[“”‘’"'](.*)[“”‘’"']/g, '$1');
-const quoteAuthors = ['Osamu Sato'];
+const quoteAuthors = ['Osamu Sato', 'Donna J. Haraway'];
 function runTweaks() {
 	// Add type transformers to each node of each specified type.
 	Object.entries(typeTransformers).forEach(([type, transformer]) => {
@@ -128,7 +128,9 @@ function runTweaks() {
 
 	fs.writeFileSync(
 		'./project-scraper/_generated/combined-projects.json',
-		JSON.stringify(projects)
+		JSON.stringify(
+			projects.sort(({uid: a = ''}, {uid: b = ''}) => a.localeCompare(b))
+		)
 	);
 
 	const combinedQuotes = Object.entries(listedQuotes)
@@ -149,7 +151,11 @@ function runTweaks() {
 
 	fs.writeFileSync(
 		'./project-scraper/_generated/combined-quotes.json',
-		JSON.stringify(combinedQuotes)
+		JSON.stringify(
+			combinedQuotes.sort(({uid: a = ''}, {uid: b = ''}) =>
+				a.localeCompare(b)
+			)
+		)
 	);
 }
 
