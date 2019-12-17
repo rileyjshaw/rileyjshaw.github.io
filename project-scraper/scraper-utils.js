@@ -225,9 +225,8 @@ function getSFPCTumblr() {
 										uid,
 										content: post.text,
 										source:
-											sourceAnchor.textContent ||
-											sourceDoc.querySelector('*')
-												?.textContent,
+											sourceAnchor?.textContent ||
+											sourceDoc.textContent,
 										cite,
 										relatedLink: post.post_url,
 									};
