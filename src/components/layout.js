@@ -9,7 +9,10 @@ import SiteNav from './site-nav';
 const Layout = ({children}) => {
 	const [isBlockerOpen, setIsBlockerOpen] = useState(false);
 	const [isBannerOpen, setIsBannerOpen] = useState(
-		!JSON.parse(sessionStorage.getItem('betaBannerClosed'))
+		!JSON.parse(
+			typeof window !== 'undefined' &&
+				window.sessionStorage.getItem('betaBannerClosed')
+		)
 	);
 	useIdle(60000 * 4, () => setIsBlockerOpen(false));
 
@@ -21,7 +24,11 @@ const Layout = ({children}) => {
 			{isBannerOpen && (
 				<Banner
 					onClose={() => {
-						sessionStorage.setItem('betaBannerClosed', true);
+						typeof window !== 'undefined' &&
+							window.sessionStorage.setItem(
+								'betaBannerClosed',
+								true
+							);
 						setIsBannerOpen(false);
 					}}
 				>
