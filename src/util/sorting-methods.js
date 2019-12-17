@@ -7,15 +7,15 @@ export function shuffle(nodes) {
 	return shuffled;
 }
 
-function sortByCoolness(nodes) {
+export function sortByCoolness(nodes) {
 	return [...nodes].sort(({coolness: a = -1}, {coolness: b = -1}) => b - a);
 }
 
-function sortByDate(nodes) {
+export function sortByDate(nodes) {
 	return [...nodes].sort((a, b) => b.date.localeCompare(a.date));
 }
 
-function sortByName(nodes) {
+export function sortByName(nodes) {
 	return [...nodes].sort((a, b) => a.title.localeCompare(b.title));
 }
 

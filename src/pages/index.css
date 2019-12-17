@@ -141,8 +141,14 @@
 	background: var(--blue);
 }
 .explore-link {
-	color: #fff;
+	color: var(--white);
+}
+h2 + .explore-link {
 	font-size: var(--font-scale-1);
+}
+.explore-more {
+	color: var(--white);
+	font-size: var(--font-scale-2);
 }
 @media only screen and (max-width: 960px) {
 	.main-content .section .row > * {
