@@ -21,7 +21,6 @@ exports.createPages = async ({actions, graphql, reporter}) => {
 						excerpt
 						frontmatter {
 							layout
-							topTitle
 							tags
 						}
 						fields {

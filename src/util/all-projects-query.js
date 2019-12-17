@@ -29,7 +29,6 @@ export default () =>
 						description
 						frontmatter {
 							layout
-							topTitle
 							tags
 						}
 						fields {

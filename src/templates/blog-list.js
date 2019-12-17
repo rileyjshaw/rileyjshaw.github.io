@@ -139,7 +139,6 @@ export const blogListQuery = graphql`
 					more
 					frontmatter {
 						layout
-						topTitle
 						tags
 					}
 					fields {

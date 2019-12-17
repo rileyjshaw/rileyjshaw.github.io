@@ -183,7 +183,6 @@ module.exports = {
 											description
 											frontmatter {
 												layout
-												topTitle
 												tags
 											}
 											fields {
@@ -259,7 +258,6 @@ module.exports = {
 											description
 											frontmatter {
 												layout
-												topTitle
 												tags
 											}
 											fields {

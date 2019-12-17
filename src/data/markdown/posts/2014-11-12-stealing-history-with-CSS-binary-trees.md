@@ -1,6 +1,5 @@
 ---
 layout: post
-topTitle: Stealing History With CSS Binary Trees
 title: Stealing history with CSS binary trees
 tags:
     - security
