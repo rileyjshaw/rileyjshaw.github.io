@@ -95,10 +95,11 @@
 /* TODO(riley): Share these breakpoints. */
 @media only screen and (max-width: 800px) {
 	.site-nav {
-		background: var(--black);
+		background: var(--white);
 		height: 36px;
 		left: 0;
 		margin: 0;
+		padding: 0;
 		position: relative;
 		top: 0;
 		width: 100%;
