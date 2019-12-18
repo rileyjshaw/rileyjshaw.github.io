@@ -26,7 +26,11 @@ const excerptify = body => {
 	if (!body) return {};
 
 	function processNode(node) {
-		if (['IMG'].includes(node.nodeName) || node.textContent.length === 0) {
+		if (
+			['IMG'].includes(node.nodeName) ||
+			node.textContent.length === 0 ||
+			node.className === 'gatsby-resp-image-wrapper'
+		) {
 			node.remove();
 		}
 

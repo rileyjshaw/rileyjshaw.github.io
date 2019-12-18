@@ -71,6 +71,7 @@ module.exports = {
 				name: `data`,
 			},
 		},
+		`gatsby-transformer-json`,
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
@@ -78,7 +79,6 @@ module.exports = {
 				name: `scraped`,
 			},
 		},
-		`gatsby-transformer-json`,
 		{
 			resolve: `gatsby-transformer-remark`,
 			options: {
