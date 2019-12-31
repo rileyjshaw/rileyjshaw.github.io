@@ -50,11 +50,10 @@ module.exports = {
 				name: `The digital landfill of rileyjshaw`,
 				short_name: `rileyjshaw`,
 				start_url: `/`,
-				background_color: `#0074d9`,
-				theme_color: `#0074d9`,
+				background_color: `#4ccbab`,
+				theme_color: `#4ccbab`,
 				display: `minimal-ui`,
-				// TODO(riley): Favicon.
-				// icon: `content/images/favicon.png`,
+				include_favicon: false,
 			},
 		},
 		{
