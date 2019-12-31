@@ -149,73 +149,79 @@ export default () => (
 				site,
 			}) => (
 				<main className="about-page">
-					<div className="about-me blog-post-content">
-						<div
-							dangerouslySetInnerHTML={{
-								__html: me_title.childMarkdownRemark.html,
-							}}
-						/>
-						<div
-							dangerouslySetInnerHTML={{
-								__html: me_intro.childMarkdownRemark.html,
-							}}
-						/>
-						<div
-							dangerouslySetInnerHTML={{
-								__html: me_rest.childMarkdownRemark.html,
-							}}
-						/>
-						{/* TODO(riley): <UpTo /> */}
-						<div
-							dangerouslySetInnerHTML={{
-								__html:
-									timeline_title.childMarkdownRemark.html,
-							}}
-						/>
-						<ul className="timeline">
-							{[
-								mozilla,
-								repair_matters,
-								sfpc,
-								khan_academy,
-								clc,
-								d30u30,
-								signal,
-								recurse_center,
-								listn,
-							].map(
-								(
-									{
-										childMarkdownRemark: {
-											html,
-											frontmatter: {current},
+					<div className="about-page-content">
+						<div className="about-me blog-post-content">
+							<div
+								dangerouslySetInnerHTML={{
+									__html: me_title.childMarkdownRemark.html,
+								}}
+							/>
+							<div
+								dangerouslySetInnerHTML={{
+									__html: me_intro.childMarkdownRemark.html,
+								}}
+							/>
+							<div
+								dangerouslySetInnerHTML={{
+									__html: me_rest.childMarkdownRemark.html,
+								}}
+							/>
+							{/* TODO(riley): <UpTo /> */}
+							<div
+								dangerouslySetInnerHTML={{
+									__html:
+										timeline_title.childMarkdownRemark
+											.html,
+								}}
+							/>
+							<ul className="timeline">
+								{[
+									mozilla,
+									repair_matters,
+									sfpc,
+									khan_academy,
+									clc,
+									d30u30,
+									signal,
+									recurse_center,
+									listn,
+								].map(
+									(
+										{
+											childMarkdownRemark: {
+												html,
+												frontmatter: {current},
+											},
 										},
-									},
-									i
-								) => (
-									<li
-										key={i}
-										className={current ? 'current' : ''}
-										dangerouslySetInnerHTML={{
-											__html: html,
-										}}
-									/>
-								)
-							)}
-						</ul>
-						<hr />
-						<p>
-							For a full history of my employment, please see my{' '}
-							<ExternalLink to="https://www.linkedin.com/in/rileyjshaw/">
-								Linkedin
-							</ExternalLink>
-							.
-						</p>
-						<div
-							dangerouslySetInnerHTML={{
-								__html: site.childMarkdownRemark.html,
-							}}
-						/>
+										i
+									) => (
+										<li
+											key={i}
+											className={
+												current ? 'current' : ''
+											}
+											dangerouslySetInnerHTML={{
+												__html: html,
+											}}
+										/>
+									)
+								)}
+							</ul>
+							<hr />
+							<p>
+								For a full history of my employment, please see
+								my{' '}
+								<ExternalLink to="https://www.linkedin.com/in/rileyjshaw/">
+									Linkedin
+								</ExternalLink>
+								.
+							</p>
+							<div
+								dangerouslySetInnerHTML={{
+									__html: site.childMarkdownRemark.html,
+								}}
+							/>
+						</div>
 					</div>
 					<BigQuote quoteIndex={4} />
 					<GoUp />

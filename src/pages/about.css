@@ -1,7 +1,7 @@
 .about .page-header {
 	background: var(--green);
 }
-.about-page {
+.about-page-content {
 	font-size: var(--font-scale-1);
 	overflow: hidden;
 }
