@@ -126,6 +126,11 @@ function runTweaks() {
 		.filter(n => n.tags)
 		.forEach(n => (n.tags = unique(n.tags).sort()));
 
+	// Add a timestamp to each node with a date.
+	Object.values(projects)
+		.filter(n => n.date)
+		.forEach(n => (n.timestamp = +new Date(n.date)));
+
 	fs.writeFileSync(
 		'./project-scraper/_generated/combined-projects.json',
 		JSON.stringify(

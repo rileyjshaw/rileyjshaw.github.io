@@ -114,15 +114,12 @@ async function getArena() {
 	try {
 		const url = `http://api.are.na/v2/users/riley-shaw/channels?access_token=${process.env.ARENA_SECRET}`;
 		const response = JSON.parse(await request(url));
-		raw.arena = response.channels;
-		console.log(`Got ${response.channels.length} Are.na channels.`);
-		response.channels
-			.filter(
-				channel =>
-					channel.published &&
-					channel.status !== 'private' &&
-					channel.length > 5
-			)
+		const channels = (raw.arena = response.channels.filter(
+			channel => channel.published && channel.status !== 'private'
+		));
+		console.log(`Got ${channels.length} Are.na channels.`);
+		channels
+			.filter(channel => channel.length > 5)
 			.forEach(channel => {
 				const uid = idify(`ARENA_${channel.slug}`);
 				const index = formatted.findIndex(d => d.uid === uid);

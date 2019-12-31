@@ -1,14 +1,14 @@
-# Firehose
+# [Personal site](https://rileyjshaw.com)
 
-I'm experimenting with auto-generating nodes for https://rileyjshaw.com/lab from a variety of data sources. This project may eventually replace https://rileyjshaw.com.
+You can read more about the person _and_ the site [here](https://rileyjshaw.com/about).
 
 ## Setup
 
 ```
-npm i -g gatsby-cli
+npm i -g gatsby-cli commitizen
 gatsby telemetry --disable  # optional
-git clone https://github.com/rileyjshaw/rileyjshaw-new
-cd rileyjshaw-new
+git clone https://github.com/rileyjshaw/rileyjshaw.github.io rileyjshaw
+cd rileyjshaw
 npm i
 BABEL_ENV=test gatsby build
 gatsby develop

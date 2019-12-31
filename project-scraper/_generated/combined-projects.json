@@ -6,8 +6,9 @@
 		"date": "2019-05-30",
 		"link": "https://are.na/riley-shaw/hell-sbgbxnmdlxi",
 		"description": "",
-		"updatedAt": "2019-12-17",
-		"length": 137
+		"updatedAt": "2019-12-31",
+		"length": 139,
+		"timestamp": 1559174400000
 	},
 	{
 		"uid": "ARENA_HW_U1LMOISDNYU",
@@ -16,8 +17,9 @@
 		"date": "2018-11-21",
 		"link": "https://are.na/riley-shaw/hw-u1lmoisdnyu",
 		"description": "",
-		"updatedAt": "2019-12-18",
-		"length": 156
+		"updatedAt": "2019-12-31",
+		"length": 156,
+		"timestamp": 1542758400000
 	},
 	{
 		"uid": "ARENA_SUAXBJVGLLS",
@@ -26,8 +28,9 @@
 		"date": "2018-11-04",
 		"link": "https://are.na/riley-shaw/suaxbjvglls",
 		"description": "",
-		"updatedAt": "2019-12-17",
-		"length": 11
+		"updatedAt": "2019-12-27",
+		"length": 11,
+		"timestamp": 1541289600000
 	},
 	{
 		"uid": "ARENA_TILDE_QVDRQCJJOPM",
@@ -35,8 +38,9 @@
 		"title": "~",
 		"date": "2018-12-09",
 		"link": "https://are.na/riley-shaw/tilde-qvdrqcjjopm",
-		"updatedAt": "2019-12-07",
-		"length": 14
+		"updatedAt": "2019-12-29",
+		"length": 14,
+		"timestamp": 1544313600000
 	},
 	{
 		"uid": "COMMIT_0167A91073922AC7B5018C6A73C894853DABBA56",
@@ -47,7 +51,8 @@
 		"repo": "rileyjshaw/.supermac",
 		"body": "<p>1, 2, 3, and 4 are useful for app-specific bindings and should thus be reserved.</p>",
 		"description": "<p>1, 2, 3, and 4 are useful for app-specific bindings and should thus be reserved.</p>",
-		"more": false
+		"more": false,
+		"timestamp": 1450828800000
 	},
 	{
 		"uid": "COMMIT_072F34F44BBEEE61E14B7D1DE92D3202A41B51F9",
@@ -58,7 +63,8 @@
 		"repo": "rileyjshaw/node-timsort-async",
 		"body": "<p>Wow. This, big time: <a href=\"http://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/\">http://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/</a></p>\n<p>Test Plan:</p>\n<ul>\n<li><code>npm run lint</code></li>\n<li><code>npm run test</code></li>\n</ul>",
 		"description": "<p>Wow. This, big time: <a href=\"http://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/\">http://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/</a></p><p>Test Plan:</p><ul>\n<li><code>npm run lint</code></li>\n<li><code>npm run test</code></li>\n</ul>",
-		"more": false
+		"more": false,
+		"timestamp": 1488153600000
 	},
 	{
 		"uid": "COMMIT_13F32FB1219D29A61032646BE13DCFE602A595F5",
@@ -69,7 +75,8 @@
 		"repo": "rileyjshaw/rileyjshaw-new",
 		"body": "<p>This is an exciting commit for the new site. It collects blog posts from multiple sources (for now: <a href=\"http://rileyjshaw.commit--blog.com\" rel=\"nofollow\">http://rileyjshaw.commit--blog.com</a>, <a href=\"https://sfpc.rileyjshaw.com\" rel=\"nofollow\">https://sfpc.rileyjshaw.com</a>, and <a href=\"https://rileyjshaw.com/blog\" rel=\"nofollow\">https://rileyjshaw.com/blog</a>), orders them by date, and paginates them into a nice on-site list.</p>\n<p>In the past, my blog has always seemed stale and outdated. By allowing it to gobble content from across the web, I can point it to whatever platform I'm currently publishing on!</p>\n<p>This commit is going to show up as a post on my blog, which feels rather meta.</p>",
 		"description": "<p>This is an exciting commit for the new site. It collects blog posts from multiple sources (for now: <a href=\"http://rileyjshaw.commit--blog.com\" rel=\"nofollow\">http://rileyjshaw.commit--blog.com</a>, <a href=\"https://sfpc.rileyjshaw.com\" rel=\"nofollow\">https://sfpc.rileyjshaw.com</a>, and <a href=\"https://rileyjshaw.com/blog\" rel=\"nofollow\">https://rileyjshaw.com/blog</a>), orders them by date, and paginates them into a nice on-site list.</p><p>In the past, my blog has always seemed stale and outdated. By allowing it to gobble content from across the web, I can point it to whatever platform I'm currently publishing on!</p><p>This commit is going to show up as a post on my blog, which feels rather meta.</p>",
-		"more": false
+		"more": false,
+		"timestamp": 1567468800000
 	},
 	{
 		"uid": "COMMIT_1BDED12B1BBE518E87FFBAB8C0C3A4D80F10FB46",
@@ -80,7 +87,8 @@
 		"repo": "rileyjshaw/canvas",
 		"body": "<p>I started this repository in the spirit of OpenFrameworks and TouchDesigner: I wanted all the libraries I might need close at hand, with a simple, abstracted API for drawing to , SVG, etc. I wanted a personal playpen / pigpen to test ideas in.</p>\n<p>For that reason, I didn't need nice features like <em>routing</em> or <em>pages.</em> :) if I wanted to see an old sketch, I'd change the root component and re-render. It worked for me!</p>\n<p>But I planned to eventually make an easier way to browse existing experiments. It would benefit me a bit, and casual viewers a lot.</p>\n<p>I haven't updated this repository in nearly two years, and I honestly never expect to again. I'm doing less browser-based creative coding these days, and trying to stretch my work in other directions.</p>\n<p>About an hour ago, I decided to create an index page or dropdown to close this project out and keep it accessible in perpetuity. When I cloned the repo and started looking at the build pipeline, I almost noped the whole idea. I built this with <code>create-react-app</code>, so even adding new pages for each project <em>the recommended way</em> involves:</p>\n<ol>\n<li>Installing some sort of React-compliant router.</li>\n<li>Spending… hours? figuring out which version of which router works with the project's outdated dependencies, OR,</li>\n<li>Upgrading the entire project, likely involving major upgrades to Webpack, Babel, etc.</li>\n<li>Installing something called <a href=\"https://www.npmjs.com/package/react-snapshot\" rel=\"nofollow\">react-snapshot</a>, which apparently builds static files for you? But there's still a <code>pushState</code> history API? The README listed some tutorials, so I opened them.</li>\n<li>…once I'd reached this point, I realized I'd need another method if I wanted to be done within the hour.</li>\n</ol>\n<p>At that point, I could have searched the web for \"create-react-app static routes 2017 easy\" and gone down that rabbit hole before giving up. OR, I could have given up immediately. Or I could do what I did, which was a good idea:</p>\n<p>I changed the root component 38 times by hand, typed \"npm run build\" into my terminal by hand, and dragged the built files BY HAND into unique directories that I created BY HAND.</p>\n<p>Gasp!</p>\n<p>I spent another minute in my editor surrounding the output of <code>ls -d</code> with anchor tags for a root index. (yes, by hand)</p>\n<p>The most time-intensive part of the process was writing this commit message. I'm confident if I'd tried to automate the process or rebuilt the project \"the right way\", I'd be at this for a few more hours.</p>\n<p>The result is a little sketchy. Namely, I'm sure the total payload of each page is a bit bigger, and caching takes a hit. But I think an extra kilobyte will be tolerated by the 3 people who ever visit this corner of my website.</p>\n<p>And wow it was so easy. And if I ever decide to add a new sketch, I can do the same simple steps by hand. No dependency mismatch with my local versions. No reading old docs. Just build, drag, repeat, forever.</p>\n<p>I guess I'm writing this as a reminder to myself: it's usually possible to break back out to 1995 in a pinch.</p>",
 		"description": "<p>I started this repository in the spirit of OpenFrameworks and TouchDesigner: I wanted all the libraries I might need close at hand, with a simple, abstracted API for drawing to , SVG, etc. I wanted a personal playpen / pigpen to test ideas in.</p><p>For that reason, I didn't need nice features like <em>routing</em> or <em>pages.</em> :) if I wanted to see an old sketch, I'd change the root component and re-render. It worked for me!</p><p>But I planned to eventually make an easier way to browse existing experiments. It would benefit me a bit, and casual viewers a lot.</p><p>I haven't updated this repository in nearly two years, and I honestly never expect to again. I'm doing less browser-based creative coding these days, and trying to stretch my work in other directions.</p>",
-		"more": true
+		"more": true,
+		"timestamp": 1565136000000
 	},
 	{
 		"uid": "COMMIT_2488BCD5E5610F692773E7815FABDB247ECE55F5",
@@ -91,7 +99,8 @@
 		"repo": "rileyjshaw/rileyjshaw-new",
 		"body": "<h1>Project scraper</h1>\n<p>The projects on my site are automatically scraped and formatted at publish time using the scripts in this directory. Read more about my reasoning below, or skip to the <a href=\"#structure\">directory structure</a>.</p>\n<h2>Why?</h2>\n<p>Gatsby's source and transformer plugins are powerful, and I used them in the initial development of this site. I eventually decided that separating my collection process would be good for flexibility, control, and offline work.</p>\n<h3>Flexibility</h3>\n<p>GraphQL's filters and transforms are powerful, and Gatsby's APIs add more options for how data is fetched, cached, and transformed. However, complicated or non-standard data transforms and sanitization are much easier outside of Gatsby's ecosystem. For instance, the API starts to feel clunky for one-off treatment of specific content nodes,</p>\n<h3>Control</h3>\n<p>I've had a good experience with Gatsby but I may decide to migrate my site to another platform or format someday. Keeping my data entirely separate from the from the site's framework makes migrating my data as easy as copy/pasting this directory. It's just a few JS files!</p>\n<h3>Offline</h3>\n<p>Gatsby stores requests made through its source plugins in the <code>.cache</code> directory by default. The <code>.cache</code> directory is deleted after:</p>\n<ul>\n<li><code>gatsby clean</code> is called.</li>\n<li><code>package.json</code> changes, for example a dependency is updated or added.</li>\n<li><code>gatsby-config.js</code> changes, for example a plugin is added or modified.</li>\n<li><code>gatsby-node.js</code> changes, for example if a new Node API is invoked.</li>\n<li>…etc.</li>\n</ul>\n<p>I found I was frequently triggering <code>.cache</code> wipes during development. At best this meant I was pinging APIs and atom feeds more than necessary. At worst, it made working offline with project data impossible.</p>\n<h2>Directory structure</h2>\n<p>Here's how the scraper is organized for now:</p>\n<pre><code>scrape-projects.js\n\tThe megafile to replace Gatsby's source plugins. This pulls project data\n\tfrom all online sources and saves them into `_generated/`.\n\n_generated/\n\tFiles generated by the `scrape-projects.js` above. DO NOT EDIT THESE FILES\n\tMANUALLY! They will be overwritten.\n\n\tscraped-projects-raw.json\n\t\tNot quite the raw response, but pretty close. This file\n\t\tcontains all the data that I may decide to use someday, but\n\t\thaven't yet. Organized by `type` in a nested object.\n\n    scraped-projects-formatted.json\n\t\tStandardized into a smaller format that can be smashed together with\n\t\t`curation/` data. Flattened into an array with `type` annotations on\n\t\teach node, as well as unique, unchanging project IDs (`UID`).\n\ncuration/\n\tThis is where all custom curation and processing go, eg. tagging content.\n\tProjects are modified based on their generated UID.\n\n\ttweaks.js\n\t\tMainly for one-off changes eg. fixing formatting errors from immutable\n\t\tonline sources. This file can also be used to apply changes on groups\n\t\tof files.\n\n\ttags.js\n\t\tTODO: figure out where `tags`, `lastTagged`, and `coolness` data are\n\t\tgoing to live.\n\nsources/\n\tOffline data files and collections to compliment the online data cached in\n\t`_generated/`.\n\n\tstandalone-projects.json\n\t\tTODO: Move these over from the `src/data` directory.\n\ntools/\n\tCustom tools to help classify, organize, or edit project nodes without\n\topening a text editor. Custom tools are only built for data that is too\n\tdifficult to keep updated or standardized manually.\n\tTODO: Hook these up to a Node server so they edit the JSON files directly.\n\n\ttagger.html\n\t\tFinds untagged or incorrectly tagged projects, as well as projects\n\t\tthat were last tagged before a new tag type was added. Provides an\n\t\tinterface to preview and re-tag each project.\n\n\tcool-sort.html\n\t\tTODO: sort or insert nodes based on their \"coolness\".\n\ntest/\n\tQuick test files to ensure data is downloaded without any dropped nodes,\n\tUIDs are unique, etc.\n</code></pre>",
 		"description": "<h2>Project scraper</h2><p>The projects on my site are automatically scraped and formatted at publish time using the scripts in this directory. Read more about my reasoning below, or skip to the <a href=\"#structure\">directory structure</a>.</p><h3>Why?</h3><p>Gatsby's source and transformer plugins are powerful, and I used them in the initial development of this site. I eventually decided that separating my collection process would be good for flexibility, control, and offline work.</p><h4>Flexibility</h4><p>GraphQL's filters and transforms are powerful, and Gatsby's APIs add more options for how data is fetched, cached, and transformed. However, complicated or non-standard data transforms and sanitization are much easier outside of Gatsby's ecosystem. For instance, the API starts to feel clunky for one-off treatment of specific content nodes,</p>",
-		"more": true
+		"more": true,
+		"timestamp": 1567209600000
 	},
 	{
 		"uid": "COMMIT_477E923EFCD46FF16DE4677A80E0846B310973A5",
@@ -99,7 +108,8 @@
 		"title": "Initial commit",
 		"date": "2019-02-19",
 		"link": "http://rileyjshaw.commit--blog.com/miseryco/curriculum/477e923efcd46ff16de4677a80e0846b310973a5",
-		"repo": "miseryco/curriculum"
+		"repo": "miseryco/curriculum",
+		"timestamp": 1550534400000
 	},
 	{
 		"uid": "COMMIT_5BD325E113AC998737005467529F93AED8791F45",
@@ -110,7 +120,8 @@
 		"repo": "rileyjshaw/rileyjshaw.github.io",
 		"body": "<p>I love the tidal wave of projects on <a href=\"https://rileyjshaw.com/lab\" rel=\"nofollow\">/lab</a>, and I want to emphasize that for v3.0 of the website. I update pages across the web daily; Glitch, Codepen, gist.github.com, Dwitter, Hackster, etc. Plus there's social media…</p>\n<p>I'm okay with manual curation for the most part, but for websites like Dwitter where contributions are inherently unpolished / untitled, it doesn't make sense for me to hand-pick and manually update a giant list.</p>\n<p>Also: I'm not sure how long Dwitter will be around for. Periodically saving the underlying code / images / etc. gives me more ownership over the presentation and preservation of my data. It changes my relationship with these sites from content hosts to publishing platforms. That makes me feel more secure with my zillion links.</p>\n<p>TODO(?): Automatically fetch new content during the publishing step?</p>",
 		"description": "<p>I love the tidal wave of projects on <a href=\"https://rileyjshaw.com/lab\" rel=\"nofollow\">/lab</a>, and I want to emphasize that for v3.0 of the website. I update pages across the web daily; Glitch, Codepen, gist.github.com, Dwitter, Hackster, etc. Plus there's social media…</p><p>I'm okay with manual curation for the most part, but for websites like Dwitter where contributions are inherently unpolished / untitled, it doesn't make sense for me to hand-pick and manually update a giant list.</p><p>Also: I'm not sure how long Dwitter will be around for. Periodically saving the underlying code / images / etc. gives me more ownership over the presentation and preservation of my data. It changes my relationship with these sites from content hosts to publishing platforms. That makes me feel more secure with my zillion links.</p>",
-		"more": true
+		"more": true,
+		"timestamp": 1565049600000
 	},
 	{
 		"uid": "COMMIT_5EFE71827C2575CBD09DC30669E9C1A63FC625DB",
@@ -121,7 +132,8 @@
 		"repo": "rileyjshaw/plop",
 		"body": "<h1>plop (working title)</h1>\n<p><em>Scriptable text expansion microtool.</em></p>\n<p><code>Status: pre-alpha / prototype / I thought of this an hour ago</code></p>\n<p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"img/hello_world.gif\"><img src=\"img/hello_world.gif\" alt=\"demo of the tool printing &quot;hello world&quot;\" style=\"max-width:100%;\"></a> <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"img/beer.gif\"><img src=\"img/beer.gif\" alt=\"demo of the tool sequentially printing the song &quot;99 bottles of beer on the wall&quot;\" style=\"max-width:100%;\"></a> <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"img/multiline.gif\"><img src=\"img/multiline.gif\" alt=\"demo of multiline text entry\" style=\"max-width:100%;\"></a></p>\n<h2>Usage:</h2>\n<pre><code># Only works on MacOS for now.\ngit clone https://github.com/rileyjshaw/plop\ncd plop\nnpm i\nnpm start\n</code></pre>\n<p>While going about your business, hit <code>Cmd + Shift + Space</code>. Write some valid JavaScript. The result will be typed into whatever program you have open.</p>\n<h3>Note:</h3>\n<p><code>\\n</code> triggers a simulated Enter press. Please be kind, don't spam your group chat.</p>",
 		"description": "<h2>plop (working title)</h2><p><em>Scriptable text expansion microtool.</em></p><p><code>Status: pre-alpha / prototype / I thought of this an hour ago</code></p><p>  </p><h3>Usage:</h3><pre><code># Only works on MacOS for now.\ngit clone https://github.com/rileyjshaw/plop\ncd plop\nnpm i\nnpm start\n</code></pre><p>While going about your business, hit <code>Cmd + Shift + Space</code>. Write some valid JavaScript. The result will be typed into whatever program you have open.</p><h4>Note:</h4><p><code>\\n</code> triggers a simulated Enter press. Please be kind, don't spam your group chat.</p>",
-		"more": false
+		"more": false,
+		"timestamp": 1568419200000
 	},
 	{
 		"uid": "COMMIT_638C25CE03E53B1042A6E8081BBC356D865AC67C",
@@ -132,7 +144,8 @@
 		"repo": "rileyjshaw/xoxo-bingo",
 		"body": "<p>Excerpt from the  new README:</p>\n<pre><code>## timeline\n2015: first bingo! [eli](https://twitter.com/veryeli) and i used the attendee\ndirectory to generate a unique card for everyone (twitter login kept it private\n🔒). squares on your card were other attendees - if you met someone on your\ncard you got to check it off. we made it cuz we’re shy. most of it is in the\n`pre-2019` folder!\n\n2016: we made the cards prettier by pulling in people’s twitter photos and\ndoing imgmagick to them 🔮\n\n2017: no xoxo, no bingo… missed u all\n\n2018: xoxo was in the midst of changing their infrastructure, so i lost access\nto the attendee directory. [hannah](https://twitter.com/herlifeinpixels),\n[jason](https://twitter.com/justsomeguy) and i met in a cafe before the kickoff\nceremony and designed a static version with input from the community. hannah\nand jason made 25 icons in like two minutes, it was incredible!!!\n\n2019: i've been too cheap to get https://xoxo.bingo in previous years, but\n[andy](https://twitter.com/andymcmillan) noticed a thread on slack and hooked\nus up! thx andy.\n</code></pre>\n<p>leading up to xoxo2018, i realized we wouldn't have access to the new attendee registry. <a href=\"https://twitter.com/waxpancake\" rel=\"nofollow\">andy</a> and i discussed ad-hoc private access and other ways to make it work, but it was too much. so hannah, jason and i made a static version with \"achievements\" sourced from the slack community.</p>\n<p>it was fun to get excited about things specific to that year, like the podcast airstream and the blue ox. and it's gonna be that way from now on! feel free to create an issue or msg on slack if you have ideas for this year's bingo squares.</p>\n<p>since it's staying a static site, i moved everything off of heroku. all site content will live in <a href=\"./2019-and-on/\"><code>2019-and-on/</code></a>.</p>",
 		"description": "<p>Excerpt from the  new README:</p><pre><code>## timeline\n2015: first bingo! [eli](https://twitter.com/veryeli) and i used the attendee\ndirectory to generate a unique card for everyone (twitter login kept it private\n🔒). squares on your card were other attendees - if you met someone on your\ncard you got to check it off. we made it cuz we’re shy. most of it is in the\n`pre-2019` folder!\n\n2016: we made the cards prettier by pulling in people’s twitter photos and\ndoing imgmagick to them 🔮\n\n2017: no xoxo, no bingo… missed u all\n\n2018: xoxo was in the midst of changing their infrastructure, so i lost access\nto the attendee directory. [hannah](https://twitter.com/herlifeinpixels),\n[jason](https://twitter.com/justsomeguy) and i met in a cafe before the kickoff\nceremony and designed a static version with input from the community. hannah\nand jason made 25 icons in like two minutes, it was incredible!!!\n\n2019: i've been too cheap to get https://xoxo.bingo in previous years, but\n[andy](https://twitter.com/andymcmillan) noticed a thread on slack and hooked\nus up! thx andy.\n</code></pre>",
-		"more": true
+		"more": true,
+		"timestamp": 1565740800000
 	},
 	{
 		"uid": "COMMIT_640CEC9613AA6DC284D953591545FFFF5CF6B0FF",
@@ -140,7 +153,8 @@
 		"title": "the basement flooded.. :(",
 		"date": "2018-11-19",
 		"link": "http://rileyjshaw.commit--blog.com/herlifeinpixels/voxels/640cec9613aa6dc284d953591545ffff5cf6b0ff",
-		"repo": "herlifeinpixels/voxels"
+		"repo": "herlifeinpixels/voxels",
+		"timestamp": 1542585600000
 	},
 	{
 		"uid": "COMMIT_709CCB765346828CEB247058B2CAB34B1E874954",
@@ -151,7 +165,8 @@
 		"repo": "rileyjshaw/.supermac",
 		"body": "<p>I'm about to go through a series of refactors, and want a quick visual indication of whether I'm adding or removing lines of code overall. This change shows whether I'm red or green from the upstream branch and from <code>HEAD</code>.</p>\n<p><a href=\"https://camo.githubusercontent.com/a55675ade651a63dbf36e7a8099a1924ef10929a/687474703a2f2f692e696d6775722e636f6d2f58664e7654754f2e706e67\" target=\"_blank\"><img src=\"https://camo.githubusercontent.com/a55675ade651a63dbf36e7a8099a1924ef10929a/687474703a2f2f692e696d6775722e636f6d2f58664e7654754f2e706e67\" alt=\"Annotated screenshot of what the new prompt colors represent\" data-canonical-src=\"http://i.imgur.com/XfNvTuO.png\" style=\"max-width:100%;\"></a></p>\n<p>It's a bit slow. I'd like to speed it up if this works out.</p>",
 		"description": "<p>I'm about to go through a series of refactors, and want a quick visual indication of whether I'm adding or removing lines of code overall. This change shows whether I'm red or green from the upstream branch and from <code>HEAD</code>.</p><p>It's a bit slow. I'd like to speed it up if this works out.</p>",
-		"more": false
+		"more": false,
+		"timestamp": 1502236800000
 	},
 	{
 		"uid": "COMMIT_7E2CA523403D8403FAACC6D6DB0CF49D07A9C992",
@@ -162,7 +177,8 @@
 		"repo": "rileyjshaw/LineMenuStyles",
 		"body": "<p>Tested on latest IE, Firefox, Chrome, Safari.</p>\n\n<p>Screenshot:</p>\n\n<p><a href=\"https://camo.githubusercontent.com/8b148818499acc87fc183007cad064ecb46a89f6/68747470733a2f2f7a697070792e6766796361742e636f6d2f42696f64656772616461626c6543616c63756c6174696e67426561722e676966\" target=\"_blank\"><img src=\"https://camo.githubusercontent.com/8b148818499acc87fc183007cad064ecb46a89f6/68747470733a2f2f7a697070792e6766796361742e636f6d2f42696f64656772616461626c6543616c63756c6174696e67426561722e676966\" alt=\"Screenshot\" data-canonical-src=\"https://zippy.gfycat.com/BiodegradableCalculatingBear.gif\" style=\"max-width:100%;\"></a></p>\n\n<p>It's responsive, too!</p>\n\n<p><a href=\"https://camo.githubusercontent.com/0230c59f3ad8732430ef7694f180a294d9d860ee/68747470733a2f2f7a697070792e6766796361742e636f6d2f4e6172726f774772697070696e67486172726965726861776b2e676966\" target=\"_blank\"><img src=\"https://camo.githubusercontent.com/0230c59f3ad8732430ef7694f180a294d9d860ee/68747470733a2f2f7a697070792e6766796361742e636f6d2f4e6172726f774772697070696e67486172726965726861776b2e676966\" alt=\"Responsive screenshot\" data-canonical-src=\"https://zippy.gfycat.com/NarrowGrippingHarrierhawk.gif\" style=\"max-width:100%;\"></a></p>",
 		"description": "<p>Tested on latest IE, Firefox, Chrome, Safari.</p><p>Screenshot:</p><p>It's responsive, too!</p>",
-		"more": false
+		"more": false,
+		"timestamp": 1452038400000
 	},
 	{
 		"uid": "COMMIT_981204B86E730B08A8805A031FC74C199CC7B445",
@@ -173,7 +189,8 @@
 		"repo": "rileyjshaw/average-color",
 		"body": "<p>The previous version of this library assumed use on RGB native platforms, eg. web browsers. This had some consequences for HSL/HSB devices (eg. Philips Hue lightbulbs), where 100% lightness does not necessarily imply white light.</p>\n<p>v2 uses some trig functions that are slower than the v1 algorithm. For super fast averaging, v1 is still your best bet.</p>",
 		"description": "<p>The previous version of this library assumed use on RGB native platforms, eg. web browsers. This had some consequences for HSL/HSB devices (eg. Philips Hue lightbulbs), where 100% lightness does not necessarily imply white light.</p><p>v2 uses some trig functions that are slower than the v1 algorithm. For super fast averaging, v1 is still your best bet.</p>",
-		"more": false
+		"more": false,
+		"timestamp": 1513209600000
 	},
 	{
 		"uid": "COMMIT_9A31D93C0803DDB1B2E0FD9208451686011472B7",
@@ -184,7 +201,8 @@
 		"repo": "rileyjshaw/rileyjshaw.github.io",
 		"body": "<p>I've decided to upgrade my website! The <a href=\"/blog\">blog</a> and <a href=\"/lab\">lab</a> are moving to the same page. I'm also going to add more content types, like songs, galleries, and videos. As I migrate things over, I'll be backfilling my blog with content to test with.</p>\n<p>The CA post is an example of filler content.</p>",
 		"description": "<p>I've decided to upgrade my website! The <a href=\"/blog\">blog</a> and <a href=\"/lab\">lab</a> are moving to the same page. I'm also going to add more content types, like songs, galleries, and videos. As I migrate things over, I'll be backfilling my blog with content to test with.</p><p>The CA post is an example of filler content.</p>",
-		"more": false
+		"more": false,
+		"timestamp": 1564617600000
 	},
 	{
 		"uid": "COMMIT_9FFAFC7146FDA36F6F83D26F6CB5BF6B0DF1B99E",
@@ -195,7 +213,8 @@
 		"repo": "rileyjshaw/rileyjshaw.github.io",
 		"body": "<p>...Including jQuery!? That was easier than expected.</p>",
 		"description": "<p>...Including jQuery!? That was easier than expected.</p>",
-		"more": false
+		"more": false,
+		"timestamp": 1512086400000
 	},
 	{
 		"uid": "COMMIT_AC98244CC4F551C3BE62F62340E13BF50B89F508",
@@ -206,7 +225,8 @@
 		"repo": "rileyjshaw/browser-compat-data",
 		"body": "<p>As mentioned in <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Performance/now\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/Performance/now</a>:</p>\n<blockquote>\n<p>Firefox started rounding to 1 millisecond in Firefox 60.</p>\n</blockquote>\n<p>This commit updates the <code>performance.now()</code> compatibility table to match the rest of the article.</p>",
 		"description": "<p>As mentioned in <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Performance/now\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/Performance/now</a>:</p><blockquote>\n<p>Firefox started rounding to 1 millisecond in Firefox 60.</p>\n</blockquote><p>This commit updates the <code>performance.now()</code> compatibility table to match the rest of the article.</p>",
-		"more": false
+		"more": false,
+		"timestamp": 1554422400000
 	},
 	{
 		"uid": "COMMIT_AE17D794F03958E04D586EEC10C9491F8FAB4FD0",
@@ -217,7 +237,8 @@
 		"repo": "rileyjshaw/.supermac",
 		"body": "<p>Guess I'm never going back to a terminal that doesn't support unicode…</p>\n<h1>1 ahead, 0 behind</h1>\n<p><a href=\"https://camo.githubusercontent.com/b76d8249f891d01f8c3a59805aecebe02a1adf99/687474703a2f2f692e696d6775722e636f6d2f38654a58714c642e706e67\" target=\"_blank\"><img src=\"https://camo.githubusercontent.com/b76d8249f891d01f8c3a59805aecebe02a1adf99/687474703a2f2f692e696d6775722e636f6d2f38654a58714c642e706e67\" alt=\"1 ahead, 0 behind\" data-canonical-src=\"http://i.imgur.com/8eJXqLd.png\" style=\"max-width:100%;\"></a></p>\n<h1>5 ahead, 2 behind</h1>\n<p><a href=\"https://camo.githubusercontent.com/7125fbf9fc6f7f1498abc25c786184e49900eda9/687474703a2f2f692e696d6775722e636f6d2f7a50516b6c6c652e706e67\" target=\"_blank\"><img src=\"https://camo.githubusercontent.com/7125fbf9fc6f7f1498abc25c786184e49900eda9/687474703a2f2f692e696d6775722e636f6d2f7a50516b6c6c652e706e67\" alt=\"5 ahead, 2 behind\" data-canonical-src=\"http://i.imgur.com/zPQklle.png\" style=\"max-width:100%;\"></a></p>",
 		"description": "<p>Guess I'm never going back to a terminal that doesn't support unicode…</p>",
-		"more": false
+		"more": false,
+		"timestamp": 1502323200000
 	},
 	{
 		"uid": "COMMIT_CB0D305F163E53E0D964AC7D9C102C407FF04F7D",
@@ -228,7 +249,8 @@
 		"repo": "rileyjshaw/rileyjshaw.github.io",
 		"body": "<p>Well, it's time.</p>\n<p>When I made this website, I decided against adding an /about page. The site was a sandbox to dump anything I happened to build / write / imagine while attending Hacker School, and an /about page seemed limiting. As the site grew, it grew weirder. I decided that its lack of context was an asset. I have some free usertesting.com recordings from 2015 that prove the site made no sense. I loved them.</p>\n<p>But the real reason I never had an /about page is that I didn't want to talk about myself.</p>\n<p>Exactly a year ago, I <a href=\"https://rileyjshaw.com/blog/i-have-a-new-blog/\" rel=\"nofollow\">retired my portfolio page</a>. I've recently begun applying for grants, and having some context on who is behind this site is important.</p>\n<p>The real problem is that this site is old; an /about page is an easy stopgap. This site does not represent me well anymore; I don't know why I still have links to my blog, for example. I would like to strip the site down, and think about the intended audience. But that sort of thing takes time, and I'm making the conscious decision to not prioritize my personal site for now.</p>\n<p>There are many technical goals I would keep in mind if I were to rebuild my website:</p>\n<ul>\n<li>Cut dependencies and bundle size to make things faster.</li>\n<li>Move off of Ruby, Jekyll, Bower, and Grunt.</li>\n<li>Do <em>not</em> center particular frameworks or technologies on the new site.\n<ul>\n<li>Reorganize the file structure to be more modular and declarative. <code>_data/lab/*</code> is a great example.</li>\n</ul>\n</li>\n<li>Have it available over the dat:// protocol, and accessible offline.</li>\n</ul>\n<p>And I'd like to keep it weird.</p>",
 		"description": "<p>Well, it's time.</p><p>When I made this website, I decided against adding an /about page. The site was a sandbox to dump anything I happened to build / write / imagine while attending Hacker School, and an /about page seemed limiting. As the site grew, it grew weirder. I decided that its lack of context was an asset. I have some free usertesting.com recordings from 2015 that prove the site made no sense. I loved them.</p><p>But the real reason I never had an /about page is that I didn't want to talk about myself.</p><p>Exactly a year ago, I <a href=\"https://rileyjshaw.com/blog/i-have-a-new-blog/\" rel=\"nofollow\">retired my portfolio page</a>. I've recently begun applying for grants, and having some context on who is behind this site is important.</p><p>The real problem is that this site is old; an /about page is an easy stopgap. This site does not represent me well anymore; I don't know why I still have links to my blog, for example. I would like to strip the site down, and think about the intended audience. But that sort of thing takes time, and I'm making the conscious decision to not prioritize my personal site for now.</p>",
-		"more": true
+		"more": true,
+		"timestamp": 1551830400000
 	},
 	{
 		"uid": "COMMIT_E2592C54BF110E35957A6C093A79999C3A1047BB",
@@ -239,7 +261,8 @@
 		"repo": "rileyjshaw/dark-theme-everywhere",
 		"body": "<p>Initially, this extension grabbed the content of a CSS file with an XMLHttpRequest and injected it into the bottom of the page. This had a few advantages:</p>\n\n<ol>\n<li>Text content could be easy processed and manipulated (admittedly, I wasn't using this for anything).</li>\n<li>Toggling styles was as easy as adding and removing a  element from &lt;body&gt;.&lt;/li&gt;\n&lt;li&gt;In theory, this strategy would beat out almost every other style rule (some inline styles excepted). &lt;a href=\"http://www.w3.org/TR/CSS2/cascade.html#cascading-order\"&gt;User &lt;code&gt;!important&lt;/code&gt; rules used to override author &lt;code&gt;!important&lt;/code&gt; rules&lt;/a&gt;, but Chrome &lt;a href=\"https://src.chromium.org/viewvc/chrome?revision=234007&amp;amp;view=revision\"&gt;no-longer does user stylesheets&lt;/a&gt;. I figured an aggressively &lt;code&gt;!important&lt;/code&gt; author stylesheet added at the very bottom of the page was pretty solid.&lt;/li&gt;\n&lt;/ol&gt;\n\n&lt;p&gt;After some testing, I realized that &lt;code&gt;!important&lt;/code&gt; styles from &lt;code&gt;content_scripts&lt;/code&gt; injection (along with chrome.tabs.insertCSS) actually &lt;em&gt;do&lt;/em&gt; take precedence over author stylesheets. Since 3) was the key consideration for my original decision, I re-wrote the extension to inject a stylesheet from &lt;code&gt;content_scripts&lt;/code&gt;.&lt;/p&gt;\n\n&lt;p&gt;This change in architecture had pros and cons.&lt;/p&gt;\n\n&lt;pre&gt;&lt;code&gt;+ Improved chance of dark theme winning out over author styles.\n+ Allowed styles to be applied before any other DOM is constructed, substantially reducing time-to-darkness.\n+ Simplified the callbacks between background.js and client.js, reduced code, and made the entire extension easier to reason about.\n\n- With 1) above, I could&amp;#39;ve handled variant rules (eg. specificityHelper) with a few regular expressions. Locking into a static stylesheet added some huge copypastas, tripling the size of main.css.\n- Injected stylesheets aren&amp;#39;t accessible once they&amp;#39;ve been added. Rather than &amp;quot;turning the styles off&amp;quot; like in 2), the best option was to add a toggle class to &amp;lt;body&amp;gt;.\n- Rewrites take time.\n&lt;/code&gt;&lt;/pre&gt;\n\n&lt;p&gt;This commit was essentially a full rewrite, so I changed some smaller things while I was at it:&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;Styles now look for :not(.off) instead of .on. This makes the default dark and avoids a Blinding White Flash before the class changes.&lt;/li&gt;\n&lt;li&gt;Added id specificity helpers; it&amp;#39;s discussed further in client.js:24.&lt;/li&gt;\n&lt;li&gt;Renamed some files for clarity.&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;I came across some unfortunate Chromium bugs while working on this, which caused me to dive into that project. It&amp;#39;s huge! Lots of fun to poke around :)&lt;/p&gt;</li>\n</ol>",
 		"description": "<p>Initially, this extension grabbed the content of a CSS file with an XMLHttpRequest and injected it into the bottom of the page. This had a few advantages:</p><ol>\n<li>Text content could be easy processed and manipulated (admittedly, I wasn't using this for anything).</li>\n<li>Toggling styles was as easy as adding and removing a  element from &lt;body&gt;.&lt;/li&gt;\n&lt;li&gt;In theory, this strategy would beat out almost every other style rule (some inline styles excepted). &lt;a href=\"http://www.w3.org/TR/CSS2/cascade.html#cascading-order\"&gt;User &lt;code&gt;!important&lt;/code&gt; rules used to override author &lt;code&gt;!important&lt;/code&gt; rules&lt;/a&gt;, but Chrome &lt;a href=\"https://src.chromium.org/viewvc/chrome?revision=234007&amp;amp;view=revision\"&gt;no-longer does user stylesheets&lt;/a&gt;. I figured an aggressively &lt;code&gt;!important&lt;/code&gt; author stylesheet added at the very bottom of the page was pretty solid.&lt;/li&gt;\n&lt;/ol&gt;\n\n&lt;p&gt;After some testing, I realized that &lt;code&gt;!important&lt;/code&gt; styles from &lt;code&gt;content_scripts&lt;/code&gt; injection (along with chrome.tabs.insertCSS) actually &lt;em&gt;do&lt;/em&gt; take precedence over author stylesheets. Since 3) was the key consideration for my original decision, I re-wrote the extension to inject a stylesheet from &lt;code&gt;content_scripts&lt;/code&gt;.&lt;/p&gt;\n\n&lt;p&gt;This change in architecture had pros and cons.&lt;/p&gt;\n\n&lt;pre&gt;&lt;code&gt;+ Improved chance of dark theme winning out over author styles.\n+ Allowed styles to be applied before any other DOM is constructed, substantially reducing time-to-darkness.\n+ Simplified the callbacks between background.js and client.js, reduced code, and made the entire extension easier to reason about.\n\n- With 1) above, I could&amp;#39;ve handled variant rules (eg. specificityHelper) with a few regular expressions. Locking into a static stylesheet added some huge copypastas, tripling the size of main.css.\n- Injected stylesheets aren&amp;#39;t accessible once they&amp;#39;ve been added. Rather than &amp;quot;turning the styles off&amp;quot; like in 2), the best option was to add a toggle class to &amp;lt;body&amp;gt;.\n- Rewrites take time.\n&lt;/code&gt;&lt;/pre&gt;\n\n&lt;p&gt;This commit was essentially a full rewrite, so I changed some smaller things while I was at it:&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;Styles now look for :not(.off) instead of .on. This makes the default dark and avoids a Blinding White Flash before the class changes.&lt;/li&gt;\n&lt;li&gt;Added id specificity helpers; it&amp;#39;s discussed further in client.js:24.&lt;/li&gt;\n&lt;li&gt;Renamed some files for clarity.&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;I came across some unfortunate Chromium bugs while working on this, which caused me to dive into that project. It&amp;#39;s huge! Lots of fun to poke around :)&lt;/p&gt;</li>\n</ol>",
-		"more": false
+		"more": false,
+		"timestamp": 1451347200000
 	},
 	{
 		"uid": "COMMIT_EE318587C8289471319DE25166AB3F979655A790",
@@ -250,7 +273,8 @@
 		"repo": "rileyjshaw/write",
 		"body": "<p>Meta Key + click to create a new text box anywhere on the page, then just start typing!</p>",
 		"description": "<p>Meta Key + click to create a new text box anywhere on the page, then just start typing!</p>",
-		"more": false
+		"more": false,
+		"timestamp": 1511308800000
 	},
 	{
 		"uid": "COMMIT_F117F4FAA75DCA5FA109BAC066ADB3B3EE5C6CF7",
@@ -261,7 +285,8 @@
 		"repo": "rileyjshaw/rileyjshaw-new",
 		"body": "<p>I'm experimenting with auto-generating nodes for <a href=\"https://rileyjshaw.com/lab\" rel=\"nofollow\">https://rileyjshaw.com/lab</a> from a variety of data sources. This project may eventually replace <a href=\"https://rileyjshaw.com\" rel=\"nofollow\">https://rileyjshaw.com</a>.</p>\n<p>This is the initial commit, completed quickly as a proof of concept. There's nothing much to show, but I want to deploy ASAP so I can test the full pipeline.</p>\n<p>So far, everything has worked! Data from a variety of sources is already appearing on my local server. To reproduce:</p>\n<ul>\n<li>Run <code>gatsby develop</code>.</li>\n<li>Open <a href=\"http://localhost:8000/page-2\" rel=\"nofollow\">http://localhost:8000/page-2</a> in a browser.</li>\n</ul>\n<p>So far, I'm surfacing data from:</p>\n<ul>\n<li>A hand-curated JSON list of projects I use for <a href=\"https://rileyjshaw.com/lab\" rel=\"nofollow\">https://rileyjshaw.com/lab</a>.</li>\n<li><a href=\"https://dwitter.net\" rel=\"nofollow\">Dwitter</a>'s API.</li>\n<li><a href=\"https://rileyjshaw.commit--blog.com\" rel=\"nofollow\">My commit--blog</a>'s Atom feed.</li>\n</ul>\n<p>Setting this up was <em>EASY</em>, which makes me excited for the future of this experiment :)</p>",
 		"description": "<p>I'm experimenting with auto-generating nodes for <a href=\"https://rileyjshaw.com/lab\" rel=\"nofollow\">https://rileyjshaw.com/lab</a> from a variety of data sources. This project may eventually replace <a href=\"https://rileyjshaw.com\" rel=\"nofollow\">https://rileyjshaw.com</a>.</p><p>This is the initial commit, completed quickly as a proof of concept. There's nothing much to show, but I want to deploy ASAP so I can test the full pipeline.</p><p>So far, everything has worked! Data from a variety of sources is already appearing on my local server. To reproduce:</p><ul>\n<li>Run <code>gatsby develop</code>.</li>\n<li>Open <a href=\"http://localhost:8000/page-2\" rel=\"nofollow\">http://localhost:8000/page-2</a> in a browser.</li>\n</ul><p>So far, I'm surfacing data from:</p><ul>\n<li>A hand-curated JSON list of projects I use for <a href=\"https://rileyjshaw.com/lab\" rel=\"nofollow\">https://rileyjshaw.com/lab</a>.</li>\n<li><a href=\"https://dwitter.net\" rel=\"nofollow\">Dwitter</a>'s API.</li>\n<li><a href=\"https://rileyjshaw.commit--blog.com\" rel=\"nofollow\">My commit--blog</a>'s Atom feed.</li>\n</ul><p>Setting this up was <em>EASY</em>, which makes me excited for the future of this experiment :)</p>",
-		"more": false
+		"more": false,
+		"timestamp": 1565308800000
 	},
 	{
 		"uid": "COMMIT_F192783EBF8F74818F008D143D9FB44CF2D9AFD8",
@@ -272,7 +297,8 @@
 		"repo": "rileyjshaw/SVG-to-GCode",
 		"body": "<p>URL encodings - they%27ll get ya.</p>",
 		"description": "<p>URL encodings - they%27ll get ya.</p>",
-		"more": false
+		"more": false,
+		"timestamp": 1495584000000
 	},
 	{
 		"uid": "COMMIT_F96E4148F210177757F79AA74D872EA645CD45A6",
@@ -283,7 +309,8 @@
 		"repo": "rileyjshaw/tech-ethics-yvr",
 		"body": "<p>Adds the following resources:</p>\n<ul>\n<li>\"<a href=\"https://humanetech.com/podcast/\" rel=\"nofollow\">Your Undivided Attention</a>\" (podcast)</li>\n<li>\"<a href=\"https://www.carbonite.com/podcasts/breach\" rel=\"nofollow\">Breach</a>\" (podcast)</li>\n<li>\"<a href=\"https://irlpodcast.org\" rel=\"nofollow\">IRL</a>\" (podcast)</li>\n<li>\"<a href=\"https://www.bbc.co.uk/programmes/m000458m\" rel=\"nofollow\">New Ways of Seeing</a>\" (podcast)</li>\n<li>\"<a href=\"https://stealthisshow.com\" rel=\"nofollow\">Steal This Show</a>\" (podcast)</li>\n<li>\"<a href=\"http://www.sarawb.com/technically-wrong\" rel=\"nofollow\">Technically Wrong</a>\" (book)</li>\n<li>\"<a href=\"https://mitpress.mit.edu/books/protocol\" rel=\"nofollow\">Protocol</a>\" (book)</li>\n<li>\"<a href=\"https://www.penguinrandomhouse.com/books/600671/how-to-do-nothing-by-jenny-odell/9781612197494\" rel=\"nofollow\">How to Do Nothing</a>\" (book)</li>\n</ul>",
 		"description": "<p>Adds the following resources:</p><ul>\n<li>\"<a href=\"https://humanetech.com/podcast/\" rel=\"nofollow\">Your Undivided Attention</a>\" (podcast)</li>\n<li>\"<a href=\"https://www.carbonite.com/podcasts/breach\" rel=\"nofollow\">Breach</a>\" (podcast)</li>\n<li>\"<a href=\"https://irlpodcast.org\" rel=\"nofollow\">IRL</a>\" (podcast)</li>\n<li>\"<a href=\"https://www.bbc.co.uk/programmes/m000458m\" rel=\"nofollow\">New Ways of Seeing</a>\" (podcast)</li>\n<li>\"<a href=\"https://stealthisshow.com\" rel=\"nofollow\">Steal This Show</a>\" (podcast)</li>\n<li>\"<a href=\"http://www.sarawb.com/technically-wrong\" rel=\"nofollow\">Technically Wrong</a>\" (book)</li>\n<li>\"<a href=\"https://mitpress.mit.edu/books/protocol\" rel=\"nofollow\">Protocol</a>\" (book)</li>\n<li>\"<a href=\"https://www.penguinrandomhouse.com/books/600671/how-to-do-nothing-by-jenny-odell/9781612197494\" rel=\"nofollow\">How to Do Nothing</a>\" (book)</li>\n</ul>",
-		"more": false
+		"more": false,
+		"timestamp": 1569196800000
 	},
 	{
 		"uid": "DWEET_15270",
@@ -291,7 +318,8 @@
 		"title": "No. 15270",
 		"date": "2019-08-03",
 		"link": "https://www.dwitter.net/d/15270",
-		"tags": ["golf", "online"]
+		"tags": ["golf", "online"],
+		"timestamp": 1564790400000
 	},
 	{
 		"uid": "DWEET_15271",
@@ -299,7 +327,8 @@
 		"title": "No. 15271",
 		"date": "2019-08-03",
 		"link": "https://www.dwitter.net/d/15271",
-		"tags": ["golf", "online"]
+		"tags": ["golf", "online"],
+		"timestamp": 1564790400000
 	},
 	{
 		"uid": "DWEET_15303",
@@ -307,7 +336,8 @@
 		"title": "No. 15303",
 		"date": "2019-08-06",
 		"link": "https://www.dwitter.net/d/15303",
-		"tags": ["golf", "online"]
+		"tags": ["golf", "online"],
+		"timestamp": 1565049600000
 	},
 	{
 		"uid": "DWEET_15308",
@@ -315,7 +345,8 @@
 		"title": "No. 15308",
 		"date": "2019-08-06",
 		"link": "https://www.dwitter.net/d/15308",
-		"tags": ["golf", "online"]
+		"tags": ["golf", "online"],
+		"timestamp": 1565049600000
 	},
 	{
 		"uid": "DWEET_15311",
@@ -323,7 +354,8 @@
 		"title": "No. 15311",
 		"date": "2019-08-06",
 		"link": "https://www.dwitter.net/d/15311",
-		"tags": ["golf", "online"]
+		"tags": ["golf", "online"],
+		"timestamp": 1565049600000
 	},
 	{
 		"uid": "DWEET_2601",
@@ -331,7 +363,8 @@
 		"title": "No. 2601",
 		"date": "2017-04-26",
 		"link": "https://www.dwitter.net/d/2601",
-		"tags": ["golf", "online"]
+		"tags": ["golf", "online"],
+		"timestamp": 1493164800000
 	},
 	{
 		"uid": "DWEET_2602",
@@ -339,7 +372,8 @@
 		"title": "No. 2602",
 		"date": "2017-04-26",
 		"link": "https://www.dwitter.net/d/2602",
-		"tags": ["golf", "online"]
+		"tags": ["golf", "online"],
+		"timestamp": 1493164800000
 	},
 	{
 		"uid": "DWEET_2603",
@@ -347,7 +381,8 @@
 		"title": "No. 2603",
 		"date": "2017-04-26",
 		"link": "https://www.dwitter.net/d/2603",
-		"tags": ["golf", "online"]
+		"tags": ["golf", "online"],
+		"timestamp": 1493164800000
 	},
 	{
 		"uid": "DWEET_2605",
@@ -355,7 +390,8 @@
 		"title": "No. 2605",
 		"date": "2017-04-26",
 		"link": "https://www.dwitter.net/d/2605",
-		"tags": ["golf", "online"]
+		"tags": ["golf", "online"],
+		"timestamp": 1493164800000
 	},
 	{
 		"uid": "DWEET_2608",
@@ -363,7 +399,8 @@
 		"title": "No. 2608",
 		"date": "2017-04-26",
 		"link": "https://www.dwitter.net/d/2608",
-		"tags": ["golf", "online"]
+		"tags": ["golf", "online"],
+		"timestamp": 1493164800000
 	},
 	{
 		"uid": "DWEET_2609",
@@ -371,7 +408,8 @@
 		"title": "No. 2609",
 		"date": "2017-04-26",
 		"link": "https://www.dwitter.net/d/2609",
-		"tags": ["golf", "online"]
+		"tags": ["golf", "online"],
+		"timestamp": 1493164800000
 	},
 	{
 		"uid": "DWEET_2610",
@@ -379,7 +417,8 @@
 		"title": "No. 2610",
 		"date": "2017-04-26",
 		"link": "https://www.dwitter.net/d/2610",
-		"tags": ["golf", "online"]
+		"tags": ["golf", "online"],
+		"timestamp": 1493164800000
 	},
 	{
 		"uid": "DWEET_2613",
@@ -387,7 +426,8 @@
 		"title": "No. 2613",
 		"date": "2017-04-27",
 		"link": "https://www.dwitter.net/d/2613",
-		"tags": ["golf", "online"]
+		"tags": ["golf", "online"],
+		"timestamp": 1493251200000
 	},
 	{
 		"uid": "DWEET_2617",
@@ -395,7 +435,8 @@
 		"title": "No. 2617",
 		"date": "2017-04-27",
 		"link": "https://www.dwitter.net/d/2617",
-		"tags": ["golf", "online"]
+		"tags": ["golf", "online"],
+		"timestamp": 1493251200000
 	},
 	{
 		"uid": "DWEET_2618",
@@ -403,7 +444,8 @@
 		"title": "No. 2618",
 		"date": "2017-04-27",
 		"link": "https://www.dwitter.net/d/2618",
-		"tags": ["golf", "online"]
+		"tags": ["golf", "online"],
+		"timestamp": 1493251200000
 	},
 	{
 		"uid": "DWEET_2619",
@@ -411,7 +453,8 @@
 		"title": "No. 2619",
 		"date": "2017-04-27",
 		"link": "https://www.dwitter.net/d/2619",
-		"tags": ["golf", "online"]
+		"tags": ["golf", "online"],
+		"timestamp": 1493251200000
 	},
 	{
 		"uid": "DWEET_2621",
@@ -419,7 +462,8 @@
 		"title": "No. 2621",
 		"date": "2017-04-27",
 		"link": "https://www.dwitter.net/d/2621",
-		"tags": ["golf", "online"]
+		"tags": ["golf", "online"],
+		"timestamp": 1493251200000
 	},
 	{
 		"uid": "ICON_11539",
@@ -427,7 +471,8 @@
 		"title": "Arrow left",
 		"date": "2013-02-12",
 		"link": "https://thenounproject.com/term/arrow-left/11539",
-		"image": "https://static.thenounproject.com/png/11539-84.png"
+		"image": "https://static.thenounproject.com/png/11539-84.png",
+		"timestamp": 1360627200000
 	},
 	{
 		"uid": "ICON_11541",
@@ -435,7 +480,8 @@
 		"title": "Calendar",
 		"date": "2013-02-12",
 		"link": "https://thenounproject.com/term/calendar/11541",
-		"image": "https://static.thenounproject.com/png/11541-84.png"
+		"image": "https://static.thenounproject.com/png/11541-84.png",
+		"timestamp": 1360627200000
 	},
 	{
 		"uid": "ICON_11542",
@@ -443,7 +489,8 @@
 		"title": "Happy",
 		"date": "2013-02-12",
 		"link": "https://thenounproject.com/term/happy/11542",
-		"image": "https://static.thenounproject.com/png/11542-84.png"
+		"image": "https://static.thenounproject.com/png/11542-84.png",
+		"timestamp": 1360627200000
 	},
 	{
 		"uid": "ICON_11543",
@@ -451,7 +498,8 @@
 		"title": "Clock",
 		"date": "2013-02-12",
 		"link": "https://thenounproject.com/term/clock/11543",
-		"image": "https://static.thenounproject.com/png/11543-84.png"
+		"image": "https://static.thenounproject.com/png/11543-84.png",
+		"timestamp": 1360627200000
 	},
 	{
 		"uid": "ICON_11544",
@@ -459,7 +507,8 @@
 		"title": "Nut",
 		"date": "2013-02-12",
 		"link": "https://thenounproject.com/term/nut/11544",
-		"image": "https://static.thenounproject.com/png/11544-84.png"
+		"image": "https://static.thenounproject.com/png/11544-84.png",
+		"timestamp": 1360627200000
 	},
 	{
 		"uid": "ICON_11584",
@@ -467,7 +516,8 @@
 		"title": "Arrow down",
 		"date": "2013-02-12",
 		"link": "https://thenounproject.com/term/arrow-down/11584",
-		"image": "https://static.thenounproject.com/png/11584-84.png"
+		"image": "https://static.thenounproject.com/png/11584-84.png",
+		"timestamp": 1360627200000
 	},
 	{
 		"uid": "ICON_11585",
@@ -475,7 +525,8 @@
 		"title": "Arrow up",
 		"date": "2013-02-12",
 		"link": "https://thenounproject.com/term/arrow-up/11585",
-		"image": "https://static.thenounproject.com/png/11585-84.png"
+		"image": "https://static.thenounproject.com/png/11585-84.png",
+		"timestamp": 1360627200000
 	},
 	{
 		"uid": "ICON_11586",
@@ -483,7 +534,8 @@
 		"title": "Close",
 		"date": "2013-02-12",
 		"link": "https://thenounproject.com/term/close/11586",
-		"image": "https://static.thenounproject.com/png/11586-84.png"
+		"image": "https://static.thenounproject.com/png/11586-84.png",
+		"timestamp": 1360627200000
 	},
 	{
 		"uid": "ICON_11587",
@@ -491,7 +543,8 @@
 		"title": "Right arrow",
 		"date": "2013-02-12",
 		"link": "https://thenounproject.com/term/right-arrow/11587",
-		"image": "https://static.thenounproject.com/png/11587-84.png"
+		"image": "https://static.thenounproject.com/png/11587-84.png",
+		"timestamp": 1360627200000
 	},
 	{
 		"uid": "ICON_11588",
@@ -499,7 +552,8 @@
 		"title": "Close",
 		"date": "2013-02-12",
 		"link": "https://thenounproject.com/term/close/11588",
-		"image": "https://static.thenounproject.com/png/11588-84.png"
+		"image": "https://static.thenounproject.com/png/11588-84.png",
+		"timestamp": 1360627200000
 	},
 	{
 		"uid": "ICON_2154767",
@@ -507,7 +561,8 @@
 		"title": "Dropper",
 		"date": "2018-11-12",
 		"link": "https://thenounproject.com/term/dropper/2154767",
-		"image": "https://static.thenounproject.com/png/2154767-84.png"
+		"image": "https://static.thenounproject.com/png/2154767-84.png",
+		"timestamp": 1541980800000
 	},
 	{
 		"uid": "ICON_215555",
@@ -515,7 +570,8 @@
 		"title": "Map marker",
 		"date": "2015-09-24",
 		"link": "https://thenounproject.com/term/map-marker/215555",
-		"image": "https://static.thenounproject.com/png/215555-84.png"
+		"image": "https://static.thenounproject.com/png/215555-84.png",
+		"timestamp": 1443052800000
 	},
 	{
 		"uid": "ICON_294465",
@@ -523,7 +579,8 @@
 		"title": "Lower right",
 		"date": "2015-12-22",
 		"link": "https://thenounproject.com/term/lower-right/294465",
-		"image": "https://static.thenounproject.com/png/294465-84.png"
+		"image": "https://static.thenounproject.com/png/294465-84.png",
+		"timestamp": 1450742400000
 	},
 	{
 		"uid": "ICON_294466",
@@ -531,7 +588,8 @@
 		"title": "Lower left",
 		"date": "2015-12-22",
 		"link": "https://thenounproject.com/term/lower-left/294466",
-		"image": "https://static.thenounproject.com/png/294466-84.png"
+		"image": "https://static.thenounproject.com/png/294466-84.png",
+		"timestamp": 1450742400000
 	},
 	{
 		"uid": "ICON_294467",
@@ -539,7 +597,8 @@
 		"title": "Upper right",
 		"date": "2015-12-22",
 		"link": "https://thenounproject.com/term/upper-right/294467",
-		"image": "https://static.thenounproject.com/png/294467-84.png"
+		"image": "https://static.thenounproject.com/png/294467-84.png",
+		"timestamp": 1450742400000
 	},
 	{
 		"uid": "ICON_294468",
@@ -547,7 +606,8 @@
 		"title": "Down",
 		"date": "2015-12-22",
 		"link": "https://thenounproject.com/term/down/294468",
-		"image": "https://static.thenounproject.com/png/294468-84.png"
+		"image": "https://static.thenounproject.com/png/294468-84.png",
+		"timestamp": 1450742400000
 	},
 	{
 		"uid": "ICON_294469",
@@ -555,7 +615,8 @@
 		"title": "Up",
 		"date": "2015-12-22",
 		"link": "https://thenounproject.com/term/up/294469",
-		"image": "https://static.thenounproject.com/png/294469-84.png"
+		"image": "https://static.thenounproject.com/png/294469-84.png",
+		"timestamp": 1450742400000
 	},
 	{
 		"uid": "ICON_294470",
@@ -563,7 +624,8 @@
 		"title": "Right",
 		"date": "2015-12-22",
 		"link": "https://thenounproject.com/term/right/294470",
-		"image": "https://static.thenounproject.com/png/294470-84.png"
+		"image": "https://static.thenounproject.com/png/294470-84.png",
+		"timestamp": 1450742400000
 	},
 	{
 		"uid": "ICON_294471",
@@ -571,7 +633,8 @@
 		"title": "Left",
 		"date": "2015-12-22",
 		"link": "https://thenounproject.com/term/left/294471",
-		"image": "https://static.thenounproject.com/png/294471-84.png"
+		"image": "https://static.thenounproject.com/png/294471-84.png",
+		"timestamp": 1450742400000
 	},
 	{
 		"uid": "ICON_294472",
@@ -579,7 +642,8 @@
 		"title": "Upper left",
 		"date": "2015-12-22",
 		"link": "https://thenounproject.com/term/upper-left/294472",
-		"image": "https://static.thenounproject.com/png/294472-84.png"
+		"image": "https://static.thenounproject.com/png/294472-84.png",
+		"timestamp": 1450742400000
 	},
 	{
 		"uid": "ICON_295645",
@@ -587,7 +651,8 @@
 		"title": "Spring",
 		"date": "2015-12-23",
 		"link": "https://thenounproject.com/term/spring/295645",
-		"image": "https://static.thenounproject.com/png/295645-84.png"
+		"image": "https://static.thenounproject.com/png/295645-84.png",
+		"timestamp": 1450828800000
 	},
 	{
 		"uid": "ICON_295647",
@@ -595,7 +660,8 @@
 		"title": "Spring",
 		"date": "2015-12-23",
 		"link": "https://thenounproject.com/term/spring/295647",
-		"image": "https://static.thenounproject.com/png/295647-84.png"
+		"image": "https://static.thenounproject.com/png/295647-84.png",
+		"timestamp": 1450828800000
 	},
 	{
 		"uid": "ICON_295649",
@@ -603,7 +669,8 @@
 		"title": "Hamburger",
 		"date": "2015-12-23",
 		"link": "https://thenounproject.com/term/hamburger/295649",
-		"image": "https://static.thenounproject.com/png/295649-84.png"
+		"image": "https://static.thenounproject.com/png/295649-84.png",
+		"timestamp": 1450828800000
 	},
 	{
 		"uid": "ICON_3164",
@@ -611,7 +678,8 @@
 		"title": "No trash",
 		"date": "2012-06-09",
 		"link": "https://thenounproject.com/term/no-trash/3164",
-		"image": "https://static.thenounproject.com/png/3164-84.png"
+		"image": "https://static.thenounproject.com/png/3164-84.png",
+		"timestamp": 1339200000000
 	},
 	{
 		"uid": "ICON_74002",
@@ -619,7 +687,8 @@
 		"title": "Video camera",
 		"date": "2014-09-14",
 		"link": "https://thenounproject.com/term/video-camera/74002",
-		"image": "https://static.thenounproject.com/png/74002-84.png"
+		"image": "https://static.thenounproject.com/png/74002-84.png",
+		"timestamp": 1410652800000
 	},
 	{
 		"uid": "ICON_79589",
@@ -627,7 +696,8 @@
 		"title": "Back",
 		"date": "2014-10-18",
 		"link": "https://thenounproject.com/term/back/79589",
-		"image": "https://static.thenounproject.com/png/79589-84.png"
+		"image": "https://static.thenounproject.com/png/79589-84.png",
+		"timestamp": 1413590400000
 	},
 	{
 		"uid": "ICON_79590",
@@ -635,7 +705,8 @@
 		"title": "Fast forward",
 		"date": "2014-10-18",
 		"link": "https://thenounproject.com/term/fast-forward/79590",
-		"image": "https://static.thenounproject.com/png/79590-84.png"
+		"image": "https://static.thenounproject.com/png/79590-84.png",
+		"timestamp": 1413590400000
 	},
 	{
 		"uid": "ICON_79591",
@@ -643,7 +714,8 @@
 		"title": "Repeat",
 		"date": "2014-10-18",
 		"link": "https://thenounproject.com/term/repeat/79591",
-		"image": "https://static.thenounproject.com/png/79591-84.png"
+		"image": "https://static.thenounproject.com/png/79591-84.png",
+		"timestamp": 1413590400000
 	},
 	{
 		"uid": "ICON_79592",
@@ -651,7 +723,8 @@
 		"title": "Rewind",
 		"date": "2014-10-18",
 		"link": "https://thenounproject.com/term/rewind/79592",
-		"image": "https://static.thenounproject.com/png/79592-84.png"
+		"image": "https://static.thenounproject.com/png/79592-84.png",
+		"timestamp": 1413590400000
 	},
 	{
 		"uid": "ICON_79593",
@@ -659,7 +732,8 @@
 		"title": "Play",
 		"date": "2014-10-18",
 		"link": "https://thenounproject.com/term/play/79593",
-		"image": "https://static.thenounproject.com/png/79593-84.png"
+		"image": "https://static.thenounproject.com/png/79593-84.png",
+		"timestamp": 1413590400000
 	},
 	{
 		"uid": "ICON_79594",
@@ -667,7 +741,8 @@
 		"title": "Pause",
 		"date": "2014-10-18",
 		"link": "https://thenounproject.com/term/pause/79594",
-		"image": "https://static.thenounproject.com/png/79594-84.png"
+		"image": "https://static.thenounproject.com/png/79594-84.png",
+		"timestamp": 1413590400000
 	},
 	{
 		"uid": "ICON_79595",
@@ -675,7 +750,8 @@
 		"title": "Shuffle",
 		"date": "2014-10-18",
 		"link": "https://thenounproject.com/term/shuffle/79595",
-		"image": "https://static.thenounproject.com/png/79595-84.png"
+		"image": "https://static.thenounproject.com/png/79595-84.png",
+		"timestamp": 1413590400000
 	},
 	{
 		"uid": "ICON_79596",
@@ -683,7 +759,8 @@
 		"title": "Share",
 		"date": "2014-10-18",
 		"link": "https://thenounproject.com/term/share/79596",
-		"image": "https://static.thenounproject.com/png/79596-84.png"
+		"image": "https://static.thenounproject.com/png/79596-84.png",
+		"timestamp": 1413590400000
 	},
 	{
 		"title": ".supermac",
@@ -696,7 +773,8 @@
 			"A collection of dotfiles that I use + some scripts to keep 'em in sync."
 		],
 		"type": "project",
-		"uid": "PROJECT_.SUPERMAC"
+		"uid": "PROJECT_.SUPERMAC",
+		"timestamp": 1441584000000
 	},
 	{
 		"title": "\"Points\" color palette",
@@ -711,7 +789,8 @@
 			"¯\\_(ツ)_/¯"
 		],
 		"type": "project",
-		"uid": "PROJECT_\"POINTS\"_COLOR_PALETTE"
+		"uid": "PROJECT_\"POINTS\"_COLOR_PALETTE",
+		"timestamp": 1409529600000
 	},
 	{
 		"title": "~~~",
@@ -722,7 +801,8 @@
 		"lastTagged": 1564707876975,
 		"descriptionList": ["Blend modes + simplex noise."],
 		"type": "project",
-		"uid": "PROJECT_~~~"
+		"uid": "PROJECT_~~~",
+		"timestamp": 1459123200000
 	},
 	{
 		"title": "┋┋┋",
@@ -735,7 +815,8 @@
 			"Variations on \"Stone\" with controlled line angles across the circle."
 		],
 		"type": "project",
-		"uid": "PROJECT_┋┋┋"
+		"uid": "PROJECT_┋┋┋",
+		"timestamp": 1457827200000
 	},
 	{
 		"title": "10 colors that faded away",
@@ -745,7 +826,8 @@
 		"link": "http://codepen.io/rileyjshaw/details/gLcoi/",
 		"lastTagged": 1564708948573,
 		"type": "project",
-		"uid": "PROJECT_10_COLORS_THAT_FADED_AWAY"
+		"uid": "PROJECT_10_COLORS_THAT_FADED_AWAY",
+		"timestamp": 1385337600000
 	},
 	{
 		"title": "1125899906842624",
@@ -756,7 +838,8 @@
 		"lastTagged": 1564708885721,
 		"descriptionList": ["A terrible clone of a terrible clone of a game."],
 		"type": "project",
-		"uid": "PROJECT_1125899906842624"
+		"uid": "PROJECT_1125899906842624",
+		"timestamp": 1394668800000
 	},
 	{
 		"title": "28 Hour Day",
@@ -769,7 +852,8 @@
 			"A Pebble watchface that divides the week into six 28-hour days instead of the standard 24/7."
 		],
 		"type": "project",
-		"uid": "PROJECT_28_HOUR_DAY"
+		"uid": "PROJECT_28_HOUR_DAY",
+		"timestamp": 1422489600000
 	},
 	{
 		"title": "2p Snake",
@@ -782,7 +866,8 @@
 			"Snake for 2 players on the same keyboard?! Saucy."
 		],
 		"type": "project",
-		"uid": "PROJECT_2P_SNAKE"
+		"uid": "PROJECT_2P_SNAKE",
+		"timestamp": 1384128000000
 	},
 	{
 		"title": "3D flower",
@@ -792,7 +877,8 @@
 		"link": "http://codepen.io/rileyjshaw/full/LhFfw",
 		"lastTagged": 1564708941375,
 		"type": "project",
-		"uid": "PROJECT_3D_FLOWER"
+		"uid": "PROJECT_3D_FLOWER",
+		"timestamp": 1386028800000
 	},
 	{
 		"title": "3D text!",
@@ -803,7 +889,8 @@
 		"lastTagged": 1564708937835,
 		"descriptionList": ["BYOG (glasses)."],
 		"type": "project",
-		"uid": "PROJECT_3D_TEXT!"
+		"uid": "PROJECT_3D_TEXT!",
+		"timestamp": 1387065600000
 	},
 	{
 		"title": "A disco badass",
@@ -814,7 +901,8 @@
 		"lastTagged": 1564708829946,
 		"descriptionList": ["How I like to think of myself."],
 		"type": "project",
-		"uid": "PROJECT_A_DISCO_BADASS"
+		"uid": "PROJECT_A_DISCO_BADASS",
+		"timestamp": 1399593600000
 	},
 	{
 		"title": "A responsive one-line header",
@@ -828,7 +916,8 @@
 			"Requires a bit of JS on page load. Just CSS and SVG after that."
 		],
 		"type": "project",
-		"uid": "PROJECT_A_RESPONSIVE_ONE_LINE_HEADER"
+		"uid": "PROJECT_A_RESPONSIVE_ONE_LINE_HEADER",
+		"timestamp": 1440028800000
 	},
 	{
 		"title": "Arcs",
@@ -842,7 +931,8 @@
 			"Could be done far more efficiently by scaling / translating a fixed amount of concentric circles, but math-ing it was more fun :)"
 		],
 		"type": "project",
-		"uid": "PROJECT_ARCS"
+		"uid": "PROJECT_ARCS",
+		"timestamp": 1457654400000
 	},
 	{
 		"title": "ASCII animator",
@@ -852,7 +942,8 @@
 		"link": "http://codepen.io/rileyjshaw/full/YWbbGJ/",
 		"lastTagged": 1564608420432,
 		"type": "project",
-		"uid": "PROJECT_ASCII_ANIMATOR"
+		"uid": "PROJECT_ASCII_ANIMATOR",
+		"timestamp": 1471910400000
 	},
 	{
 		"title": "ascii garden",
@@ -863,7 +954,8 @@
 		"lastTagged": 1564773957386,
 		"descriptionList": ["An ascii rock garden. Rake with touch / mouse."],
 		"type": "project",
-		"uid": "PROJECT_ASCII_GARDEN"
+		"uid": "PROJECT_ASCII_GARDEN",
+		"timestamp": 1552780800000
 	},
 	{
 		"title": "ASCII loaders",
@@ -876,7 +968,8 @@
 			"Geeky loading animations using ASCII characters."
 		],
 		"type": "project",
-		"uid": "PROJECT_ASCII_LOADERS"
+		"uid": "PROJECT_ASCII_LOADERS",
+		"timestamp": 1381190400000
 	},
 	{
 		"title": "Astronomie & Astrophysique",
@@ -887,7 +980,8 @@
 		"lastTagged": 1564707896427,
 		"descriptionList": ["Small canvas demo using Lissajous curves."],
 		"type": "project",
-		"uid": "PROJECT_ASTRONOMIE_&_ASTROPHYSIQUE"
+		"uid": "PROJECT_ASTRONOMIE_&_ASTROPHYSIQUE",
+		"timestamp": 1457222400000
 	},
 	{
 		"title": "average-color",
@@ -900,7 +994,8 @@
 			"Returns the average color from a list of HSL arrays."
 		],
 		"type": "project",
-		"uid": "PROJECT_AVERAGE_COLOR"
+		"uid": "PROJECT_AVERAGE_COLOR",
+		"timestamp": 1466035200000
 	},
 	{
 		"title": "b+w",
@@ -910,7 +1005,8 @@
 		"link": "http://codepen.io/rileyjshaw/pen/bpvwxQ",
 		"lastTagged": 1564707861136,
 		"type": "project",
-		"uid": "PROJECT_B+W"
+		"uid": "PROJECT_B+W",
+		"timestamp": 1460505600000
 	},
 	{
 		"title": "Ball",
@@ -921,7 +1017,8 @@
 		"lastTagged": 1564708942431,
 		"descriptionList": ["Simple animation in three.js."],
 		"type": "project",
-		"uid": "PROJECT_BALL"
+		"uid": "PROJECT_BALL",
+		"timestamp": 1386028800000
 	},
 	{
 		"title": "Bell curves",
@@ -932,7 +1029,8 @@
 		"lastTagged": 1564707897855,
 		"descriptionList": ["Hey! It's a normal distribution!"],
 		"type": "project",
-		"uid": "PROJECT_BELL_CURVES"
+		"uid": "PROJECT_BELL_CURVES",
+		"timestamp": 1457222400000
 	},
 	{
 		"title": "Ben Eath: Surf Ace",
@@ -947,7 +1045,8 @@
 			"This used to be on Chrome Experiments but it's offline now :("
 		],
 		"type": "project",
-		"uid": "PROJECT_BEN_EATH:_SURF_ACE"
+		"uid": "PROJECT_BEN_EATH:_SURF_ACE",
+		"timestamp": 1398729600000
 	},
 	{
 		"title": "Black hole sun",
@@ -957,7 +1056,8 @@
 		"link": "http://codepen.io/rileyjshaw/pen/GjVZYq",
 		"lastTagged": 1564608396287,
 		"type": "project",
-		"uid": "PROJECT_BLACK_HOLE_SUN"
+		"uid": "PROJECT_BLACK_HOLE_SUN",
+		"timestamp": 1477872000000
 	},
 	{
 		"title": "Black lotus",
@@ -967,7 +1067,8 @@
 		"link": "http://codepen.io/rileyjshaw/full/ZpXPYR/",
 		"lastTagged": 1564608406264,
 		"type": "project",
-		"uid": "PROJECT_BLACK_LOTUS"
+		"uid": "PROJECT_BLACK_LOTUS",
+		"timestamp": 1475452800000
 	},
 	{
 		"title": "Blinds",
@@ -978,7 +1079,8 @@
 		"lastTagged": 1564608423548,
 		"descriptionList": ["It resizes!"],
 		"type": "project",
-		"uid": "PROJECT_BLINDS"
+		"uid": "PROJECT_BLINDS",
+		"timestamp": 1470614400000
 	},
 	{
 		"title": "Blinds (with type)",
@@ -988,7 +1090,8 @@
 		"link": "http://codepen.io/rileyjshaw/full/mAmRNa/",
 		"lastTagged": 1564608408933,
 		"type": "project",
-		"uid": "PROJECT_BLINDS_(WITH_TYPE)"
+		"uid": "PROJECT_BLINDS_(WITH_TYPE)",
+		"timestamp": 1474848000000
 	},
 	{
 		"title": "Blinkers",
@@ -1001,7 +1104,8 @@
 			"Threw this together to help with color inspiration for another project."
 		],
 		"type": "project",
-		"uid": "PROJECT_BLINKERS"
+		"uid": "PROJECT_BLINKERS",
+		"timestamp": 1470614400000
 	},
 	{
 		"title": "Blips",
@@ -1011,7 +1115,8 @@
 		"link": "http://codepen.io/rileyjshaw/pen/Ragqyq",
 		"lastTagged": 1564707878597,
 		"type": "project",
-		"uid": "PROJECT_BLIPS"
+		"uid": "PROJECT_BLIPS",
+		"timestamp": 1459123200000
 	},
 	{
 		"title": "boom!",
@@ -1025,7 +1130,8 @@
 			"Written originally as a bookmarklet in 2013."
 		],
 		"type": "project",
-		"uid": "PROJECT_BOOM!"
+		"uid": "PROJECT_BOOM!",
+		"timestamp": 1447545600000
 	},
 	{
 		"title": "Bubble",
@@ -1036,7 +1142,8 @@
 		"lastTagged": 1564608412735,
 		"descriptionList": ["Follows your mouse."],
 		"type": "project",
-		"uid": "PROJECT_BUBBLE"
+		"uid": "PROJECT_BUBBLE",
+		"timestamp": 1473465600000
 	},
 	{
 		"title": "CA finder",
@@ -1049,7 +1156,8 @@
 			"Caution: it flashes! <a href=\"https://glitch.com/edit/#!/ca-finder?path=README.md:1:0\" target=\"_blank\" rel=\"noopener noreferrer\">Controls listed in the README.</a>"
 		],
 		"type": "project",
-		"uid": "PROJECT_CA_FINDER"
+		"uid": "PROJECT_CA_FINDER",
+		"timestamp": 1552089600000
 	},
 	{
 		"title": "canvas",
@@ -1063,7 +1171,8 @@
 			"Each experiment was built using a web tool I created in the spirit of OpenFrameworks and TouchDesigner. I wanted libraries close at hand with a simple API for drawing to &lt;canvas&gt;, SVG, etc."
 		],
 		"type": "project",
-		"uid": "PROJECT_CANVAS"
+		"uid": "PROJECT_CANVAS",
+		"timestamp": 1507334400000
 	},
 	{
 		"title": "Canvas compositing operations",
@@ -1076,7 +1185,8 @@
 			"A quick look into some of the options for context.globalCompositeOperation."
 		],
 		"type": "project",
-		"uid": "PROJECT_CANVAS_COMPOSITING_OPERATIONS"
+		"uid": "PROJECT_CANVAS_COMPOSITING_OPERATIONS",
+		"timestamp": 1458691200000
 	},
 	{
 		"title": "Canvas spectrum",
@@ -1087,7 +1197,8 @@
 		"lastTagged": 1564708933870,
 		"descriptionList": ["lol these variable names..."],
 		"type": "project",
-		"uid": "PROJECT_CANVAS_SPECTRUM"
+		"uid": "PROJECT_CANVAS_SPECTRUM",
+		"timestamp": 1387584000000
 	},
 	{
 		"title": "Challenger",
@@ -1098,7 +1209,8 @@
 		"lastTagged": 1564708774349,
 		"descriptionList": ["Pop-up programming challenges in your browser."],
 		"type": "project",
-		"uid": "PROJECT_CHALLENGER"
+		"uid": "PROJECT_CHALLENGER",
+		"timestamp": 1424304000000
 	},
 	{
 		"title": "Chamber",
@@ -1109,7 +1221,8 @@
 		"lastTagged": 1564708940474,
 		"descriptionList": ["Random mutations of a polyhedron."],
 		"type": "project",
-		"uid": "PROJECT_CHAMBER"
+		"uid": "PROJECT_CHAMBER",
+		"timestamp": 1386028800000
 	},
 	{
 		"title": "Cheshire Cat Loader",
@@ -1119,7 +1232,8 @@
 		"link": "http://codepen.io/rileyjshaw/full/fondm",
 		"lastTagged": 1564708938863,
 		"type": "project",
-		"uid": "PROJECT_CHESHIRE_CAT_LOADER"
+		"uid": "PROJECT_CHESHIRE_CAT_LOADER",
+		"timestamp": 1386460800000
 	},
 	{
 		"title": "Circling circles",
@@ -1133,7 +1247,8 @@
 			"Changing the timing function on this one is extremely satisfying."
 		],
 		"type": "project",
-		"uid": "PROJECT_CIRCLING_CIRCLES"
+		"uid": "PROJECT_CIRCLING_CIRCLES",
+		"timestamp": 1462233600000
 	},
 	{
 		"title": "Color Jump!",
@@ -1147,7 +1262,8 @@
 			"This was my first CodePen to hit the front page :)"
 		],
 		"type": "project",
-		"uid": "PROJECT_COLOR_JUMP!"
+		"uid": "PROJECT_COLOR_JUMP!",
+		"timestamp": 1380412800000
 	},
 	{
 		"title": "Color screen",
@@ -1160,7 +1276,8 @@
 			"Full-screen hex, hsl, and rgb color picker & converter"
 		],
 		"type": "project",
-		"uid": "PROJECT_COLOR_SCREEN"
+		"uid": "PROJECT_COLOR_SCREEN",
+		"timestamp": 1483574400000
 	},
 	{
 		"title": "Composer",
@@ -1171,7 +1288,8 @@
 		"lastTagged": 1564708887783,
 		"descriptionList": ["Generate frequencies, chords, and songs."],
 		"type": "project",
-		"uid": "PROJECT_COMPOSER"
+		"uid": "PROJECT_COMPOSER",
+		"timestamp": 1394582400000
 	},
 	{
 		"title": "Console",
@@ -1184,7 +1302,8 @@
 			"Functional JavaScript terminal using my TinyTerm library."
 		],
 		"type": "project",
-		"uid": "PROJECT_CONSOLE"
+		"uid": "PROJECT_CONSOLE",
+		"timestamp": 1419120000000
 	},
 	{
 		"title": "COS logo",
@@ -1197,7 +1316,8 @@
 			"Recreating a popular clothing brand's logo in CSS."
 		],
 		"type": "project",
-		"uid": "PROJECT_COS_LOGO"
+		"uid": "PROJECT_COS_LOGO",
+		"timestamp": 1387411200000
 	},
 	{
 		"title": "Crazy chemicals",
@@ -1207,7 +1327,8 @@
 		"link": "http://codepen.io/rileyjshaw/full/zwxCv/",
 		"lastTagged": 1564708946139,
 		"type": "project",
-		"uid": "PROJECT_CRAZY_CHEMICALS"
+		"uid": "PROJECT_CRAZY_CHEMICALS",
+		"timestamp": 1385424000000
 	},
 	{
 		"title": "Crypto Christmas",
@@ -1221,7 +1342,8 @@
 			"I was interviewed for this work by NPR, the CBC, and PCMag."
 		],
 		"type": "project",
-		"uid": "PROJECT_CRYPTO_CHRISTMAS"
+		"uid": "PROJECT_CRYPTO_CHRISTMAS",
+		"timestamp": 1482796800000
 	},
 	{
 		"title": "CSS beach",
@@ -1234,7 +1356,8 @@
 			"Geeky loading animations using ASCII characters."
 		],
 		"type": "project",
-		"uid": "PROJECT_CSS_BEACH"
+		"uid": "PROJECT_CSS_BEACH",
+		"timestamp": 1378425600000
 	},
 	{
 		"title": "CSS gradient blocker",
@@ -1247,7 +1370,8 @@
 			"Using a repeating pattern to give the illusion of semi-transparency."
 		],
 		"type": "project",
-		"uid": "PROJECT_CSS_GRADIENT_BLOCKER"
+		"uid": "PROJECT_CSS_GRADIENT_BLOCKER",
+		"timestamp": 1388707200000
 	},
 	{
 		"title": "CSS slope illusion in <140 characters",
@@ -1258,7 +1382,8 @@
 		"lastTagged": 1564708953257,
 		"descriptionList": ["Are the base lines straight or at an angle?"],
 		"type": "project",
-		"uid": "PROJECT_CSS_SLOPE_ILLUSION_IN_<140_CHARACTERS"
+		"uid": "PROJECT_CSS_SLOPE_ILLUSION_IN_<140_CHARACTERS",
+		"timestamp": 1384905600000
 	},
 	{
 		"title": "CSS tab bar",
@@ -1269,7 +1394,8 @@
 		"lastTagged": 1564624440228,
 		"descriptionList": ["For Pairjam."],
 		"type": "project",
-		"uid": "PROJECT_CSS_TAB_BAR"
+		"uid": "PROJECT_CSS_TAB_BAR",
+		"timestamp": 1410480000000
 	},
 	{
 		"title": "CSSANDY CANE",
@@ -1279,7 +1405,8 @@
 		"link": "https://codepen.io/rileyjshaw/full/mOZrye/",
 		"lastTagged": 1564608390236,
 		"type": "project",
-		"uid": "PROJECT_CSSANDY_CANE"
+		"uid": "PROJECT_CSSANDY_CANE",
+		"timestamp": 1482624000000
 	},
 	{
 		"title": "Custom carat",
@@ -1290,7 +1417,8 @@
 		"lastTagged": 1564708969978,
 		"descriptionList": ["Ugly implementation of something pretty."],
 		"type": "project",
-		"uid": "PROJECT_CUSTOM_CARAT"
+		"uid": "PROJECT_CUSTOM_CARAT",
+		"timestamp": 1382486400000
 	},
 	{
 		"title": "Cyber pilot",
@@ -1304,7 +1432,8 @@
 			"n͖͙͍͔o̴̰̤͈͙̘̥w͉̮ ̩w̺̘i̠̲͉̘̪t̟̜͉͓͈͞h̩͚̺̕ ̧͉̹̮̠ͅm̻̰͔̜͚o̲̥̘r̶͕̟͇͇̟̭e̠ ̩̺̖̟g̪̬̰̺̟̪͈͜l͇͉͚̬͞i̡ṭ̠̲̰̦ͅc̨̣ͅh̰̲̯̺͕̼͈͜e̷͕̜͎̱s̢̩"
 		],
 		"type": "project",
-		"uid": "PROJECT_CYBER_PILOT"
+		"uid": "PROJECT_CYBER_PILOT",
+		"timestamp": 1459123200000
 	},
 	{
 		"title": "Cyber pilot (with controls)",
@@ -1317,7 +1446,8 @@
 			"Play this one in a small window. Arrow keys to move around."
 		],
 		"type": "project",
-		"uid": "PROJECT_CYBER_PILOT_(WITH_CONTROLS)"
+		"uid": "PROJECT_CYBER_PILOT_(WITH_CONTROLS)",
+		"timestamp": 1475020800000
 	},
 	{
 		"title": "Cyclic CA (PICO-8)",
@@ -1327,7 +1457,8 @@
 		"link": "http://www.lexaloffle.com/bbs/?tid=27569",
 		"lastTagged": 1564608416268,
 		"type": "project",
-		"uid": "PROJECT_CYCLIC_CA_(PICO_8)"
+		"uid": "PROJECT_CYCLIC_CA_(PICO_8)",
+		"timestamp": 1472428800000
 	},
 	{
 		"title": "Dandelion",
@@ -1340,7 +1471,8 @@
 			"Independently oscillating points that form a greater picture together."
 		],
 		"type": "project",
-		"uid": "PROJECT_DANDELION"
+		"uid": "PROJECT_DANDELION",
+		"timestamp": 1462406400000
 	},
 	{
 		"title": "Dark Theme Everywhere",
@@ -1351,7 +1483,8 @@
 		"lastTagged": 1564708732408,
 		"descriptionList": ["A forcefully applied dark theme for the web."],
 		"type": "project",
-		"uid": "PROJECT_DARK_THEME_EVERYWHERE"
+		"uid": "PROJECT_DARK_THEME_EVERYWHERE",
+		"timestamp": 1446076800000
 	},
 	{
 		"title": "Desire paths",
@@ -1364,7 +1497,8 @@
 			"Remix of ~~~ using angles &amp; moving agents instead of absolute positions."
 		],
 		"type": "project",
-		"uid": "PROJECT_DESIRE_PATHS"
+		"uid": "PROJECT_DESIRE_PATHS",
+		"timestamp": 1459728000000
 	},
 	{
 		"title": "Desire paths: remixes",
@@ -1374,7 +1508,8 @@
 		"link": "http://codepen.io/collection/DRPBqZ/",
 		"lastTagged": 1564707864470,
 		"type": "project",
-		"uid": "PROJECT_DESIRE_PATHS:_REMIXES"
+		"uid": "PROJECT_DESIRE_PATHS:_REMIXES",
+		"timestamp": 1460246400000
 	},
 	{
 		"title": "ditter",
@@ -1387,7 +1522,8 @@
 			"Create a private Twitter list out of someone else's feed so you can read it."
 		],
 		"type": "project",
-		"uid": "PROJECT_DITTER"
+		"uid": "PROJECT_DITTER",
+		"timestamp": 1478995200000
 	},
 	{
 		"title": "DNS error easter egg",
@@ -1398,7 +1534,8 @@
 		"lastTagged": 1564708969001,
 		"descriptionList": ["Hover over \"DNS\"."],
 		"type": "project",
-		"uid": "PROJECT_DNS_ERROR_EASTER_EGG"
+		"uid": "PROJECT_DNS_ERROR_EASTER_EGG",
+		"timestamp": 1382918400000
 	},
 	{
 		"title": "drawRotatedRect",
@@ -1409,7 +1546,8 @@
 		"lastTagged": 1564708775492,
 		"descriptionList": ["Two versions of a canvas util function."],
 		"type": "project",
-		"uid": "PROJECT_DRAWROTATEDRECT"
+		"uid": "PROJECT_DRAWROTATEDRECT",
+		"timestamp": 1423353600000
 	},
 	{
 		"title": "Easy Inbox Zero",
@@ -1422,7 +1560,8 @@
 			"A browser extension that removes the unread count from your Gmail inbox and title bar."
 		],
 		"type": "project",
-		"uid": "PROJECT_EASY_INBOX_ZERO"
+		"uid": "PROJECT_EASY_INBOX_ZERO",
+		"timestamp": 1450569600000
 	},
 	{
 		"title": "Everything button",
@@ -1433,7 +1572,8 @@
 		"lastTagged": 1564624447769,
 		"descriptionList": ["Initial pass at the menu system for Pairjam."],
 		"type": "project",
-		"uid": "PROJECT_EVERYTHING_BUTTON"
+		"uid": "PROJECT_EVERYTHING_BUTTON",
+		"timestamp": 1410652800000
 	},
 	{
 		"title": "Expanding user circles",
@@ -1444,7 +1584,8 @@
 		"lastTagged": 1564624442669,
 		"descriptionList": ["For Pairjam.", "Bad interaction tbh."],
 		"type": "project",
-		"uid": "PROJECT_EXPANDING_USER_CIRCLES"
+		"uid": "PROJECT_EXPANDING_USER_CIRCLES",
+		"timestamp": 1410480000000
 	},
 	{
 		"title": "Eye sea",
@@ -1455,7 +1596,8 @@
 		"lastTagged": 1564707916616,
 		"descriptionList": ["These used to be pokéballs."],
 		"type": "project",
-		"uid": "PROJECT_EYE_SEA"
+		"uid": "PROJECT_EYE_SEA",
+		"timestamp": 1450137600000
 	},
 	{
 		"title": "Face",
@@ -1466,7 +1608,8 @@
 		"lastTagged": 1564624445152,
 		"descriptionList": ["Displays a random ASCII face."],
 		"type": "project",
-		"uid": "PROJECT_FACE"
+		"uid": "PROJECT_FACE",
+		"timestamp": 1410048000000
 	},
 	{
 		"title": "Fadey text backdrop",
@@ -1479,7 +1622,8 @@
 			"CSS technique to make a semi-transparent background fade in perfectly with its box-shadow."
 		],
 		"type": "project",
-		"uid": "PROJECT_FADEY_TEXT_BACKDROP"
+		"uid": "PROJECT_FADEY_TEXT_BACKDROP",
+		"timestamp": 1456272000000
 	},
 	{
 		"title": "Falling",
@@ -1490,7 +1634,8 @@
 		"lastTagged": 1564707836594,
 		"descriptionList": ["Looping CSS animation."],
 		"type": "project",
-		"uid": "PROJECT_FALLING"
+		"uid": "PROJECT_FALLING",
+		"timestamp": 1463875200000
 	},
 	{
 		"title": "Fastdraw",
@@ -1503,7 +1648,8 @@
 			"Checks how quickly you can navigate to other sites in a new tab. Only works in Firefox."
 		],
 		"type": "project",
-		"uid": "PROJECT_FASTDRAW"
+		"uid": "PROJECT_FASTDRAW",
+		"timestamp": 1397433600000
 	},
 	{
 		"title": "Fifty shades of grey",
@@ -1514,7 +1660,8 @@
 		"lastTagged": 1564708964844,
 		"descriptionList": ["Ha."],
 		"type": "project",
-		"uid": "PROJECT_FIFTY_SHADES_OF_GREY"
+		"uid": "PROJECT_FIFTY_SHADES_OF_GREY",
+		"timestamp": 1383868800000
 	},
 	{
 		"title": "filesupply",
@@ -1527,7 +1674,8 @@
 			"WebRTC file sharing concept thrown together in ~40 minutes (or your pizza's free!)"
 		],
 		"type": "project",
-		"uid": "PROJECT_FILESUPPLY"
+		"uid": "PROJECT_FILESUPPLY",
+		"timestamp": 1400457600000
 	},
 	{
 		"title": "filings",
@@ -1538,7 +1686,8 @@
 		"lastTagged": 1564707866386,
 		"descriptionList": ["Cliché vector \"field\" \"diagram\"."],
 		"type": "project",
-		"uid": "PROJECT_FILINGS"
+		"uid": "PROJECT_FILINGS",
+		"timestamp": 1459728000000
 	},
 	{
 		"title": "Film-grain effect in 117B of JavaScript",
@@ -1551,7 +1700,8 @@
 			"Warning: contains a blocking loop that may cause browsers to hang briefly."
 		],
 		"type": "project",
-		"uid": "PROJECT_FILM_GRAIN_EFFECT_IN_117B_OF_JAVASCRIPT"
+		"uid": "PROJECT_FILM_GRAIN_EFFECT_IN_117B_OF_JAVASCRIPT",
+		"timestamp": 1413072000000
 	},
 	{
 		"title": "Fingerprint",
@@ -1562,7 +1712,8 @@
 		"lastTagged": 1564708792923,
 		"descriptionList": ["In-browser keystroke dynamics demo using Tappy."],
 		"type": "project",
-		"uid": "PROJECT_FINGERPRINT"
+		"uid": "PROJECT_FINGERPRINT",
+		"timestamp": 1418083200000
 	},
 	{
 		"title": "FitHub",
@@ -1573,7 +1724,8 @@
 		"lastTagged": 1564708999688,
 		"descriptionList": ["A fitness form trainer using an Xbox Kinect."],
 		"type": "project",
-		"uid": "PROJECT_FITHUB"
+		"uid": "PROJECT_FITHUB",
+		"timestamp": 1362182400000
 	},
 	{
 		"title": "Flat shadow mouse tracker",
@@ -1583,7 +1735,8 @@
 		"link": "http://codepen.io/rileyjshaw/full/wEJzg/",
 		"lastTagged": 1564708968360,
 		"type": "project",
-		"uid": "PROJECT_FLAT_SHADOW_MOUSE_TRACKER"
+		"uid": "PROJECT_FLAT_SHADOW_MOUSE_TRACKER",
+		"timestamp": 1382918400000
 	},
 	{
 		"title": "Flexbox chat interface",
@@ -1597,7 +1750,8 @@
 			"Created as a proof of concept for TextSecure's browser extension layout."
 		],
 		"type": "project",
-		"uid": "PROJECT_FLEXBOX_CHAT_INTERFACE"
+		"uid": "PROJECT_FLEXBOX_CHAT_INTERFACE",
+		"timestamp": 1421020800000
 	},
 	{
 		"title": "Flexin' donut",
@@ -1607,7 +1761,8 @@
 		"link": "http://s.codepen.io/rileyjshaw/debug/BKZOwz",
 		"lastTagged": 1564707875762,
 		"type": "project",
-		"uid": "PROJECT_FLEXIN'_DONUT"
+		"uid": "PROJECT_FLEXIN'_DONUT",
+		"timestamp": 1459123200000
 	},
 	{
 		"title": "Flower power",
@@ -1618,7 +1773,8 @@
 		"lastTagged": 1564708950723,
 		"descriptionList": ["Sass flower with variable number of petals."],
 		"type": "project",
-		"uid": "PROJECT_FLOWER_POWER"
+		"uid": "PROJECT_FLOWER_POWER",
+		"timestamp": 1385337600000
 	},
 	{
 		"title": "Flubber",
@@ -1631,7 +1787,8 @@
 			"Nobody's perfect! Takes a MIDI file and messes up a few of the notes."
 		],
 		"type": "project",
-		"uid": "PROJECT_FLUBBER"
+		"uid": "PROJECT_FLUBBER",
+		"timestamp": 1466294400000
 	},
 	{
 		"title": "Fluid simulation",
@@ -1644,7 +1801,8 @@
 			"Jeff Thomas's Fluid Simulation, ported to Khan Academy's CS platform."
 		],
 		"type": "project",
-		"uid": "PROJECT_FLUID_SIMULATION"
+		"uid": "PROJECT_FLUID_SIMULATION",
+		"timestamp": 1425168000000
 	},
 	{
 		"title": "Flutter",
@@ -1657,7 +1815,8 @@
 			"If you make a pin out of this please send me one."
 		],
 		"type": "project",
-		"uid": "PROJECT_FLUTTER"
+		"uid": "PROJECT_FLUTTER",
+		"timestamp": 1475539200000
 	},
 	{
 		"title": "Focus",
@@ -1668,7 +1827,8 @@
 		"lastTagged": 1564708955045,
 		"descriptionList": ["Linear gradient, animation, and background-clip"],
 		"type": "project",
-		"uid": "PROJECT_FOCUS"
+		"uid": "PROJECT_FOCUS",
+		"timestamp": 1384905600000
 	},
 	{
 		"title": "Folding tutorial concept",
@@ -1681,7 +1841,8 @@
 			"UI experiment for line-by-line tutorials. Annotations can be turned off to expose a complete code example."
 		],
 		"type": "project",
-		"uid": "PROJECT_FOLDING_TUTORIAL_CONCEPT"
+		"uid": "PROJECT_FOLDING_TUTORIAL_CONCEPT",
+		"timestamp": 1415836800000
 	},
 	{
 		"title": "Free",
@@ -1692,7 +1853,8 @@
 		"lastTagged": 1564707834778,
 		"descriptionList": ["Poster? Coaster?"],
 		"type": "project",
-		"uid": "PROJECT_FREE"
+		"uid": "PROJECT_FREE",
+		"timestamp": 1464048000000
 	},
 	{
 		"title": "Frequency bar visualizer",
@@ -1706,7 +1868,8 @@
 			"Features a terrible mash-up of Watermelon Man and Mos Def's Beef freestyle that I threw together in Audacity..."
 		],
 		"type": "project",
-		"uid": "PROJECT_FREQUENCY_BAR_VISUALIZER"
+		"uid": "PROJECT_FREQUENCY_BAR_VISUALIZER",
+		"timestamp": 1378944000000
 	},
 	{
 		"title": "FS video + blocking tiles",
@@ -1717,7 +1880,8 @@
 		"lastTagged": 1564708966191,
 		"descriptionList": ["Recreating a nice hover effect in CSS."],
 		"type": "project",
-		"uid": "PROJECT_FS_VIDEO_+_BLOCKING_TILES"
+		"uid": "PROJECT_FS_VIDEO_+_BLOCKING_TILES",
+		"timestamp": 1383177600000
 	},
 	{
 		"title": "Function cards",
@@ -1728,7 +1892,8 @@
 		"lastTagged": 1564707863361,
 		"descriptionList": ["Simple visualizations of sinusoidal functions."],
 		"type": "project",
-		"uid": "PROJECT_FUNCTION_CARDS"
+		"uid": "PROJECT_FUNCTION_CARDS",
+		"timestamp": 1460332800000
 	},
 	{
 		"title": "Funky wallpaper in 106B of JavaScript",
@@ -1741,7 +1906,8 @@
 			"Warning: contains a blocking loop that may cause browsers to hang briefly."
 		],
 		"type": "project",
-		"uid": "PROJECT_FUNKY_WALLPAPER_IN_106B_OF_JAVASCRIPT"
+		"uid": "PROJECT_FUNKY_WALLPAPER_IN_106B_OF_JAVASCRIPT",
+		"timestamp": 1413072000000
 	},
 	{
 		"title": "Funky wallpaper with blur effect in 111B of JavaScript",
@@ -1754,7 +1920,8 @@
 			"Warning: contains a blocking loop that may cause browsers to hang briefly."
 		],
 		"type": "project",
-		"uid": "PROJECT_FUNKY_WALLPAPER_WITH_BLUR_EFFECT_IN_111B_OF_JAVASCRIPT"
+		"uid": "PROJECT_FUNKY_WALLPAPER_WITH_BLUR_EFFECT_IN_111B_OF_JAVASCRIPT",
+		"timestamp": 1413072000000
 	},
 	{
 		"title": "Fuzzy Match Utils",
@@ -1767,7 +1934,8 @@
 			"A collection of string matching algorithms designed with React Select in mind."
 		],
 		"type": "project",
-		"uid": "PROJECT_FUZZY_MATCH_UTILS"
+		"uid": "PROJECT_FUZZY_MATCH_UTILS",
+		"timestamp": 1490572800000
 	},
 	{
 		"title": "Gems",
@@ -1777,7 +1945,8 @@
 		"link": "http://codepen.io/rileyjshaw/full/QNqPZE/",
 		"lastTagged": 1564707871449,
 		"type": "project",
-		"uid": "PROJECT_GEMS"
+		"uid": "PROJECT_GEMS",
+		"timestamp": 1459641600000
 	},
 	{
 		"title": "Git cheatsheet",
@@ -1790,7 +1959,8 @@
 			"A quick reference for before your morning coffee."
 		],
 		"type": "project",
-		"uid": "PROJECT_GIT_CHEATSHEET"
+		"uid": "PROJECT_GIT_CHEATSHEET",
+		"timestamp": 1379462400000
 	},
 	{
 		"title": "Glorious pattern matcher",
@@ -1803,7 +1973,8 @@
 			"Takes a series of characters and a series of words and checks if they match the same sequence. Words need not be delimited."
 		],
 		"type": "project",
-		"uid": "PROJECT_GLORIOUS_PATTERN_MATCHER"
+		"uid": "PROJECT_GLORIOUS_PATTERN_MATCHER",
+		"timestamp": 1400544000000
 	},
 	{
 		"title": "Gotta catch 'em all",
@@ -1814,7 +1985,8 @@
 		"lastTagged": 1564707917359,
 		"descriptionList": ["Riffing on pokéball wave."],
 		"type": "project",
-		"uid": "PROJECT_GOTTA_CATCH_'EM_ALL"
+		"uid": "PROJECT_GOTTA_CATCH_'EM_ALL",
+		"timestamp": 1450137600000
 	},
 	{
 		"title": "Gradient patterns",
@@ -1824,7 +1996,8 @@
 		"link": "http://codepen.io/rileyjshaw/full/KdFAg/",
 		"lastTagged": 1564708926590,
 		"type": "project",
-		"uid": "PROJECT_GRADIENT_PATTERNS"
+		"uid": "PROJECT_GRADIENT_PATTERNS",
+		"timestamp": 1388707200000
 	},
 	{
 		"title": "Graphing depth",
@@ -1838,7 +2011,8 @@
 			"Supports my <a href=\"/blog/graphing-depth/\">blog post</a> of the same name."
 		],
 		"type": "project",
-		"uid": "PROJECT_GRAPHING_DEPTH"
+		"uid": "PROJECT_GRAPHING_DEPTH",
+		"timestamp": 1406764800000
 	},
 	{
 		"title": "Groovy!",
@@ -1851,7 +2025,8 @@
 			"Animated lava lamps with simple non-rectangular collision detection and metaballs for wax clumps."
 		],
 		"type": "project",
-		"uid": "PROJECT_GROOVY!"
+		"uid": "PROJECT_GROOVY!",
+		"timestamp": 1457136000000
 	},
 	{
 		"title": "Hackers.cool",
@@ -1865,7 +2040,8 @@
 			"Type \"help\" for command list."
 		],
 		"type": "project",
-		"uid": "PROJECT_HACKERS.COOL"
+		"uid": "PROJECT_HACKERS.COOL",
+		"timestamp": 1420675200000
 	},
 	{
 		"title": "Have you seen my ship?",
@@ -1876,7 +2052,8 @@
 		"lastTagged": 1564707848382,
 		"descriptionList": ["It's hard to see the ship... :/"],
 		"type": "project",
-		"uid": "PROJECT_HAVE_YOU_SEEN_MY_SHIP?"
+		"uid": "PROJECT_HAVE_YOU_SEEN_MY_SHIP?",
+		"timestamp": 1462320000000
 	},
 	{
 		"title": "hologram",
@@ -1889,7 +2066,8 @@
 			"Cuts a hologram out of acrylic using the Hacklab TO laser cutter."
 		],
 		"type": "project",
-		"uid": "PROJECT_HOLOGRAM"
+		"uid": "PROJECT_HOLOGRAM",
+		"timestamp": 1496016000000
 	},
 	{
 		"title": "HTML quine",
@@ -1902,7 +2080,8 @@
 			"A quine is a non-empty computer program which takes no input and produces a copy of its own source code as its only output."
 		],
 		"type": "project",
-		"uid": "PROJECT_HTML_QUINE"
+		"uid": "PROJECT_HTML_QUINE",
+		"timestamp": 1340323200000
 	},
 	{
 		"title": "Huemidity",
@@ -1915,7 +2094,8 @@
 			"Control your Philips Hue lights with MIDI triggers."
 		],
 		"type": "project",
-		"uid": "PROJECT_HUEMIDITY"
+		"uid": "PROJECT_HUEMIDITY",
+		"timestamp": 1513209600000
 	},
 	{
 		"title": "Huertbeat",
@@ -1928,7 +2108,8 @@
 			"Pulse available Philips hue lights to whatever is playing on Spotify."
 		],
 		"type": "project",
-		"uid": "PROJECT_HUERTBEAT"
+		"uid": "PROJECT_HUERTBEAT",
+		"timestamp": 1515542400000
 	},
 	{
 		"title": "Important people",
@@ -1941,7 +2122,8 @@
 			"Scrapes Wikipedia to find the most important births and deaths of each year by word count."
 		],
 		"type": "project",
-		"uid": "PROJECT_IMPORTANT_PEOPLE"
+		"uid": "PROJECT_IMPORTANT_PEOPLE",
+		"timestamp": 1394668800000
 	},
 	{
 		"title": "Infinite burger",
@@ -1954,7 +2136,8 @@
 			"Pure Sass hamburger. Sesame-seed bun, lettuce, tomato, fresh cheddar, and infinity perfectly cooked Angus beef patties."
 		],
 		"type": "project",
-		"uid": "PROJECT_INFINITE_BURGER"
+		"uid": "PROJECT_INFINITE_BURGER",
+		"timestamp": 1383004800000
 	},
 	{
 		"title": "Infinite scroll",
@@ -1964,7 +2147,8 @@
 		"link": "http://codepen.io/rileyjshaw/details/dzLwm/",
 		"lastTagged": 1564709014386,
 		"type": "project",
-		"uid": "PROJECT_INFINITE_SCROLL"
+		"uid": "PROJECT_INFINITE_SCROLL",
+		"timestamp": 1277164800000
 	},
 	{
 		"title": "Infiniteye",
@@ -1975,7 +2159,8 @@
 		"lastTagged": 1564709009404,
 		"descriptionList": ["My former personal brand mark."],
 		"type": "project",
-		"uid": "PROJECT_INFINITEYE"
+		"uid": "PROJECT_INFINITEYE",
+		"timestamp": 1325721600000
 	},
 	{
 		"title": "Instaframe",
@@ -1988,7 +2173,8 @@
 			"Buggy proof of concept exploring the CSS background-attachment property and a 3rd-party Instagram API."
 		],
 		"type": "project",
-		"uid": "PROJECT_INSTAFRAME"
+		"uid": "PROJECT_INSTAFRAME",
+		"timestamp": 1364860800000
 	},
 	{
 		"title": "Internal link offset (sticky header)",
@@ -2001,7 +2187,8 @@
 			"Sticky headers cover internally-linked content by default. The most robust solutions I've seen use JS, but these 4 lines of CSS seem to do the trick."
 		],
 		"type": "project",
-		"uid": "PROJECT_INTERNAL_LINK_OFFSET_(STICKY_HEADER)"
+		"uid": "PROJECT_INTERNAL_LINK_OFFSET_(STICKY_HEADER)",
+		"timestamp": 1426204800000
 	},
 	{
 		"title": "Jittery shapes",
@@ -2015,7 +2202,8 @@
 			"Includes an audio visualizer built with the Web Audio API."
 		],
 		"type": "project",
-		"uid": "PROJECT_JITTERY_SHAPES"
+		"uid": "PROJECT_JITTERY_SHAPES",
+		"timestamp": 1427328000000
 	},
 	{
 		"title": "Jittery visualizer v2",
@@ -2028,7 +2216,8 @@
 			"Added a linear ramp and smoothing function to v1 to make the lowest frequency bin match up with the highest frequency bin in both position and derivative. The effect is a continuous circle, versus the <a href=\"http://codepen.io/rileyjshaw/full/ogVNgW/\" target=\"_blank\" rel=\"noopener noreferrer\">\"speech-bubble\" notch effect of v1</a>."
 		],
 		"type": "project",
-		"uid": "PROJECT_JITTERY_VISUALIZER_V2"
+		"uid": "PROJECT_JITTERY_VISUALIZER_V2",
+		"timestamp": 1461801600000
 	},
 	{
 		"title": "Jittery visualizer v3",
@@ -2041,7 +2230,8 @@
 			"V1 -&gt; V2 contained the <em>tiniest</em> tweak perceptually (smooth line all 'round), but it was a technical challenge. V2 -&gt; V3 contains the tiniest code tweaks, but is perceptually very different. Uses canvas transform logic from <a href=\"http://codepen.io/rileyjshaw/pen/ONrdoM\" target=\"_blank\" rel=\"noopener noreferrer\">zonin'</a>."
 		],
 		"type": "project",
-		"uid": "PROJECT_JITTERY_VISUALIZER_V3"
+		"uid": "PROJECT_JITTERY_VISUALIZER_V3",
+		"timestamp": 1462406400000
 	},
 	{
 		"title": "Joy Division: Unknown Pleasures",
@@ -2055,7 +2245,8 @@
 			"Drag your mouse over it, and click for something special."
 		],
 		"type": "project",
-		"uid": "PROJECT_JOY_DIVISION:_UNKNOWN_PLEASURES"
+		"uid": "PROJECT_JOY_DIVISION:_UNKNOWN_PLEASURES",
+		"timestamp": 1456185600000
 	},
 	{
 		"title": "Jumble puzzle",
@@ -2066,7 +2257,8 @@
 		"lastTagged": 1564709005490,
 		"descriptionList": ["Word-search puzzle generator."],
 		"type": "project",
-		"uid": "PROJECT_JUMBLE_PUZZLE"
+		"uid": "PROJECT_JUMBLE_PUZZLE",
+		"timestamp": 1360022400000
 	},
 	{
 		"title": "Key Generator",
@@ -2080,7 +2272,8 @@
 			"Lowercase alphanumeric, length [1, 198)."
 		],
 		"type": "project",
-		"uid": "PROJECT_KEY_GENERATOR"
+		"uid": "PROJECT_KEY_GENERATOR",
+		"timestamp": 1398643200000
 	},
 	{
 		"title": "Keyboard keyboard",
@@ -2094,7 +2287,8 @@
 			"Hard press = UPPERCASE, soft press = lowercase."
 		],
 		"type": "project",
-		"uid": "PROJECT_KEYBOARD_KEYBOARD"
+		"uid": "PROJECT_KEYBOARD_KEYBOARD",
+		"timestamp": 1464393600000
 	},
 	{
 		"title": "Lattice",
@@ -2105,7 +2299,8 @@
 		"lastTagged": 1564707874575,
 		"descriptionList": ["Lines + circles."],
 		"type": "project",
-		"uid": "PROJECT_LATTICE"
+		"uid": "PROJECT_LATTICE",
+		"timestamp": 1459209600000
 	},
 	{
 		"title": "Lattice 3",
@@ -2118,7 +2313,8 @@
 			"A tricker, more generalized case of Lattice implemented on a trangular grid."
 		],
 		"type": "project",
-		"uid": "PROJECT_LATTICE_3"
+		"uid": "PROJECT_LATTICE_3",
+		"timestamp": 1459296000000
 	},
 	{
 		"title": "Linescapes",
@@ -2131,7 +2327,8 @@
 			"An audiovisual experiment that generates landscapes from sound waves."
 		],
 		"type": "project",
-		"uid": "PROJECT_LINESCAPES"
+		"uid": "PROJECT_LINESCAPES",
+		"timestamp": 1408060800000
 	},
 	{
 		"title": "Literate theme",
@@ -2144,7 +2341,8 @@
 			"A CLI tool to update your favorite text editor theme. Emphasizes comments and mutes everything else."
 		],
 		"type": "project",
-		"uid": "PROJECT_LITERATE_THEME"
+		"uid": "PROJECT_LITERATE_THEME",
+		"timestamp": 1463011200000
 	},
 	{
 		"title": "Long-shadow cards",
@@ -2155,7 +2353,8 @@
 		"lastTagged": 1564708967845,
 		"descriptionList": ["Each one's only a single element."],
 		"type": "project",
-		"uid": "PROJECT_LONG_SHADOW_CARDS"
+		"uid": "PROJECT_LONG_SHADOW_CARDS",
+		"timestamp": 1382918400000
 	},
 	{
 		"title": "Long-shadow input series",
@@ -2168,7 +2367,8 @@
 			"An attempt to give flat buttons some depth. Collection of inputs including radio buttons, checkboxes, and text inputs."
 		],
 		"type": "project",
-		"uid": "PROJECT_LONG_SHADOW_INPUT_SERIES"
+		"uid": "PROJECT_LONG_SHADOW_INPUT_SERIES",
+		"timestamp": 1382918400000
 	},
 	{
 		"title": "Look closer",
@@ -2179,7 +2379,8 @@
 		"lastTagged": 1564707869979,
 		"descriptionList": ["CSS-only typography experiment."],
 		"type": "project",
-		"uid": "PROJECT_LOOK_CLOSER"
+		"uid": "PROJECT_LOOK_CLOSER",
+		"timestamp": 1459728000000
 	},
 	{
 		"title": "Marqueee",
@@ -2193,7 +2394,8 @@
 			"Used as part of an online treasure hunt I made."
 		],
 		"type": "project",
-		"uid": "PROJECT_MARQUEEE"
+		"uid": "PROJECT_MARQUEEE",
+		"timestamp": 1559347200000
 	},
 	{
 		"title": "Material design ripple effect",
@@ -2206,7 +2408,8 @@
 			"Needed this for <a href=\"/tappy-game\" target=\"_blank\" rel=\"noopener noreferrer\">tappy</a> before there were 1000 libraries to choose from."
 		],
 		"type": "project",
-		"uid": "PROJECT_MATERIAL_DESIGN_RIPPLE_EFFECT"
+		"uid": "PROJECT_MATERIAL_DESIGN_RIPPLE_EFFECT",
+		"timestamp": 1413072000000
 	},
 	{
 		"title": "Mean tone",
@@ -2219,7 +2422,8 @@
 			"Supporting code for my \"Taking the average tone\" blog post."
 		],
 		"type": "project",
-		"uid": "PROJECT_MEAN_TONE"
+		"uid": "PROJECT_MEAN_TONE",
+		"timestamp": 1395014400000
 	},
 	{
 		"title": "Mechanical waves",
@@ -2233,7 +2437,8 @@
 			"Includes a few variations."
 		],
 		"type": "project",
-		"uid": "PROJECT_MECHANICAL_WAVES"
+		"uid": "PROJECT_MECHANICAL_WAVES",
+		"timestamp": 1456358400000
 	},
 	{
 		"title": "Meta Letters",
@@ -2246,7 +2451,8 @@
 			"The letters [A-z], composed of smaller versions of themselves."
 		],
 		"type": "project",
-		"uid": "PROJECT_META_LETTERS"
+		"uid": "PROJECT_META_LETTERS",
+		"timestamp": 1422748800000
 	},
 	{
 		"title": "Minimal fizzbuzz",
@@ -2259,7 +2465,8 @@
 			"Two very small implementations of Fizzbuzz: one in JavaScript (74B) and one in Stylus (126B)."
 		],
 		"type": "project",
-		"uid": "PROJECT_MINIMAL_FIZZBUZZ"
+		"uid": "PROJECT_MINIMAL_FIZZBUZZ",
+		"timestamp": 1385683200000
 	},
 	{
 		"title": "Mirror",
@@ -2270,7 +2477,8 @@
 		"lastTagged": 1564708856993,
 		"descriptionList": ["Small demo of live translation synchronization."],
 		"type": "project",
-		"uid": "PROJECT_MIRROR"
+		"uid": "PROJECT_MIRROR",
+		"timestamp": 1398297600000
 	},
 	{
 		"title": "Moore / Von Neumann neighborhoods",
@@ -2281,7 +2489,8 @@
 		"lastTagged": 1564708805462,
 		"descriptionList": ["Utils for <a href=\"/terra\">Terra</a>."],
 		"type": "project",
-		"uid": "PROJECT_MOORE_/_VON_NEUMANN_NEIGHBORHOODS"
+		"uid": "PROJECT_MOORE_/_VON_NEUMANN_NEIGHBORHOODS",
+		"timestamp": 1415059200000
 	},
 	{
 		"title": "Multi-level spoilers",
@@ -2295,7 +2504,8 @@
 			"Demo involved patching Adobe Web Platform's balance-text polyfill."
 		],
 		"type": "project",
-		"uid": "PROJECT_MULTI_LEVEL_SPOILERS"
+		"uid": "PROJECT_MULTI_LEVEL_SPOILERS",
+		"timestamp": 1416614400000
 	},
 	{
 		"title": "Multi-line lists with item separators (CSS only)",
@@ -2305,7 +2515,8 @@
 		"link": "http://codepen.io/rileyjshaw/pen/BWjZZV/?editors=1100",
 		"lastTagged": 1564608379885,
 		"type": "project",
-		"uid": "PROJECT_MULTI_LINE_LISTS_WITH_ITEM_SEPARATORS_(CSS_ONLY)"
+		"uid": "PROJECT_MULTI_LINE_LISTS_WITH_ITEM_SEPARATORS_(CSS_ONLY)",
+		"timestamp": 1488326400000
 	},
 	{
 		"title": "Multiple hover events in CSS",
@@ -2315,7 +2526,8 @@
 		"link": "http://codepen.io/rileyjshaw/details/LIwdc/",
 		"lastTagged": 1564708965846,
 		"type": "project",
-		"uid": "PROJECT_MULTIPLE_HOVER_EVENTS_IN_CSS"
+		"uid": "PROJECT_MULTIPLE_HOVER_EVENTS_IN_CSS",
+		"timestamp": 1383436800000
 	},
 	{
 		"title": "My website fits in a favicon",
@@ -2325,7 +2537,8 @@
 		"link": "http://codepen.io/rileyjshaw/full/bNbxjg",
 		"lastTagged": 1564708801217,
 		"type": "project",
-		"uid": "PROJECT_MY_WEBSITE_FITS_IN_A_FAVICON"
+		"uid": "PROJECT_MY_WEBSITE_FITS_IN_A_FAVICON",
+		"timestamp": 1415577600000
 	},
 	{
 		"title": "n-input OR gate in CSS",
@@ -2339,7 +2552,8 @@
 			"Part of <a href=\"/blog/stealing-history-with-CSS-binary-trees/\">\"Stealing history with CSS binary trees\"</a>."
 		],
 		"type": "project",
-		"uid": "PROJECT_N_INPUT_OR_GATE_IN_CSS"
+		"uid": "PROJECT_N_INPUT_OR_GATE_IN_CSS",
+		"timestamp": 1403740800000
 	},
 	{
 		"title": "Nested radio menu",
@@ -2352,7 +2566,8 @@
 			"Semantic vertical menu using nested radio buttons and CSS."
 		],
 		"type": "project",
-		"uid": "PROJECT_NESTED_RADIO_MENU"
+		"uid": "PROJECT_NESTED_RADIO_MENU",
+		"timestamp": 1377561600000
 	},
 	{
 		"title": "Newspaper column",
@@ -2363,7 +2578,8 @@
 		"lastTagged": 1564708791889,
 		"descriptionList": ["Web typography experiment: drop cap + justify."],
 		"type": "project",
-		"uid": "PROJECT_NEWSPAPER_COLUMN"
+		"uid": "PROJECT_NEWSPAPER_COLUMN",
+		"timestamp": 1418256000000
 	},
 	{
 		"title": "Nite versions",
@@ -2374,7 +2590,8 @@
 		"lastTagged": 1564708920950,
 		"descriptionList": ["Recreating Soulwax's album art in CSS."],
 		"type": "project",
-		"uid": "PROJECT_NITE_VERSIONS"
+		"uid": "PROJECT_NITE_VERSIONS",
+		"timestamp": 1389571200000
 	},
 	{
 		"title": "No Vacancy 404 concept",
@@ -2384,7 +2601,8 @@
 		"link": "http://codepen.io/rileyjshaw/full/ufEIH",
 		"lastTagged": 1564708935022,
 		"type": "project",
-		"uid": "PROJECT_NO_VACANCY_404_CONCEPT"
+		"uid": "PROJECT_NO_VACANCY_404_CONCEPT",
+		"timestamp": 1387411200000
 	},
 	{
 		"title": "Node-TimSort Async",
@@ -2397,7 +2615,8 @@
 			"Asynchronous TimSort implementation for Node.js."
 		],
 		"type": "project",
-		"uid": "PROJECT_NODE_TIMSORT_ASYNC"
+		"uid": "PROJECT_NODE_TIMSORT_ASYNC",
+		"timestamp": 1488067200000
 	},
 	{
 		"title": "NoJS edge-adaptive tooltip",
@@ -2410,7 +2629,8 @@
 			"CSS Flexbox solution to prevent tooltips from overflowing their container at the edges."
 		],
 		"type": "project",
-		"uid": "PROJECT_NOJS_EDGE_ADAPTIVE_TOOLTIP"
+		"uid": "PROJECT_NOJS_EDGE_ADAPTIVE_TOOLTIP",
+		"timestamp": 1456444800000
 	},
 	{
 		"title": "Orbit",
@@ -2423,7 +2643,8 @@
 			"A game: hit space over the red dots to earn points."
 		],
 		"type": "project",
-		"uid": "PROJECT_ORBIT"
+		"uid": "PROJECT_ORBIT",
+		"timestamp": 1424390400000
 	},
 	{
 		"title": "Own this website",
@@ -2436,7 +2657,8 @@
 			"An experimental online game of King of the Hill, on this very website."
 		],
 		"type": "project",
-		"uid": "PROJECT_OWN_THIS_WEBSITE"
+		"uid": "PROJECT_OWN_THIS_WEBSITE",
+		"timestamp": 1395187200000
 	},
 	{
 		"title": "Pairjam",
@@ -2447,7 +2669,8 @@
 		"lastTagged": 1564624438020,
 		"descriptionList": ["Realtime web-based collaborative coding."],
 		"type": "project",
-		"uid": "PROJECT_PAIRJAM"
+		"uid": "PROJECT_PAIRJAM",
+		"timestamp": 1410739200000
 	},
 	{
 		"title": "Peek",
@@ -2458,7 +2681,8 @@
 		"lastTagged": 1564709001360,
 		"descriptionList": ["Scrolling gallery view for tumblr."],
 		"type": "project",
-		"uid": "PROJECT_PEEK"
+		"uid": "PROJECT_PEEK",
+		"timestamp": 1364169600000
 	},
 	{
 		"title": "Perspective buttons",
@@ -2473,7 +2697,8 @@
 			"Chrome only as of 2018."
 		],
 		"type": "project",
-		"uid": "PROJECT_PERSPECTIVE_BUTTONS"
+		"uid": "PROJECT_PERSPECTIVE_BUTTONS",
+		"timestamp": 1377907200000
 	},
 	{
 		"title": "Photo experiment",
@@ -2487,7 +2712,8 @@
 			"Each row is placed to line up visually with the row above it, which causes a subtle shearing effect."
 		],
 		"type": "project",
-		"uid": "PROJECT_PHOTO_EXPERIMENT"
+		"uid": "PROJECT_PHOTO_EXPERIMENT",
+		"timestamp": 1506729600000
 	},
 	{
 		"title": "Placid tab",
@@ -2498,7 +2724,8 @@
 		"lastTagged": 1564624451247,
 		"descriptionList": ["A minimal New Tab page for Chrome"],
 		"type": "project",
-		"uid": "PROJECT_PLACID_TAB"
+		"uid": "PROJECT_PLACID_TAB",
+		"timestamp": 1408924800000
 	},
 	{
 		"title": "Planets",
@@ -2509,7 +2736,8 @@
 		"lastTagged": 1564708963195,
 		"descriptionList": ["Pure Sass animated solar system."],
 		"type": "project",
-		"uid": "PROJECT_PLANETS"
+		"uid": "PROJECT_PLANETS",
+		"timestamp": 1384473600000
 	},
 	{
 		"title": "Plaster swirls, sort of",
@@ -2522,7 +2750,8 @@
 			"I've got plaster swirls on my ceiling. This began as a recreation of that and turned into something else."
 		],
 		"type": "project",
-		"uid": "PROJECT_PLASTER_SWIRLS,_SORT_OF"
+		"uid": "PROJECT_PLASTER_SWIRLS,_SORT_OF",
+		"timestamp": 1465948800000
 	},
 	{
 		"title": "Plaster swirls, thicker",
@@ -2532,7 +2761,8 @@
 		"link": "http://codepen.io/rileyjshaw/full/Meeedv",
 		"lastTagged": 1564707815578,
 		"type": "project",
-		"uid": "PROJECT_PLASTER_SWIRLS,_THICKER"
+		"uid": "PROJECT_PLASTER_SWIRLS,_THICKER",
+		"timestamp": 1465948800000
 	},
 	{
 		"title": "Pokéball wave",
@@ -2545,7 +2775,8 @@
 			"Animated demo written alongside a new programmer who was really into Pokémon."
 		],
 		"type": "project",
-		"uid": "PROJECT_POKÉBALL_WAVE"
+		"uid": "PROJECT_POKÉBALL_WAVE",
+		"timestamp": 1450137600000
 	},
 	{
 		"title": "Pond",
@@ -2556,7 +2787,8 @@
 		"lastTagged": 1564708733322,
 		"descriptionList": ["An ASCII art pond ripple animation."],
 		"type": "project",
-		"uid": "PROJECT_POND"
+		"uid": "PROJECT_POND",
+		"timestamp": 1444608000000
 	},
 	{
 		"title": "Pride and Prejudice (webkit only)",
@@ -2570,7 +2802,8 @@
 			"I was hoping for a more convincing gradient; the weight calculation could use some work."
 		],
 		"type": "project",
-		"uid": "PROJECT_PRIDE_AND_PREJUDICE_(WEBKIT_ONLY)"
+		"uid": "PROJECT_PRIDE_AND_PREJUDICE_(WEBKIT_ONLY)",
+		"timestamp": 1449878400000
 	},
 	{
 		"title": "Pure Sass music icons",
@@ -2580,7 +2813,8 @@
 		"link": "http://codepen.io/rileyjshaw/full/xdfeC",
 		"lastTagged": 1564709007492,
 		"type": "project",
-		"uid": "PROJECT_PURE_SASS_MUSIC_ICONS"
+		"uid": "PROJECT_PURE_SASS_MUSIC_ICONS",
+		"timestamp": 1351555200000
 	},
 	{
 		"title": "Pursuit",
@@ -2591,7 +2825,8 @@
 		"lastTagged": 1564708872623,
 		"descriptionList": ["CSS animation with no additional HTML or JS."],
 		"type": "project",
-		"uid": "PROJECT_PURSUIT"
+		"uid": "PROJECT_PURSUIT",
+		"timestamp": 1395014400000
 	},
 	{
 		"title": "Pyramid",
@@ -2601,7 +2836,8 @@
 		"link": "http://codepen.io/rileyjshaw/full/dihjv/",
 		"lastTagged": 1564708864040,
 		"type": "project",
-		"uid": "PROJECT_PYRAMID"
+		"uid": "PROJECT_PYRAMID",
+		"timestamp": 1397692800000
 	},
 	{
 		"title": "Racer",
@@ -2615,7 +2851,8 @@
 			"Built with a custom raycaster / collision engine."
 		],
 		"type": "project",
-		"uid": "PROJECT_RACER"
+		"uid": "PROJECT_RACER",
+		"timestamp": 1413331200000
 	},
 	{
 		"title": "Rainbobble",
@@ -2628,7 +2865,8 @@
 			"Rainbow remix of <a href=\"http://codepen.io/rileyjshaw/full/ozjEoK/\" target=\"_blank\" rel=\"noopener noreferrer\">Bubble</a>."
 		],
 		"type": "project",
-		"uid": "PROJECT_RAINBOBBLE"
+		"uid": "PROJECT_RAINBOBBLE",
+		"timestamp": 1511568000000
 	},
 	{
 		"title": "Rainbow text",
@@ -2638,7 +2876,8 @@
 		"link": "http://codepen.io/rileyjshaw/details/vExWpe/",
 		"lastTagged": 1564708785074,
 		"type": "project",
-		"uid": "PROJECT_RAINBOW_TEXT"
+		"uid": "PROJECT_RAINBOW_TEXT",
+		"timestamp": 1421280000000
 	},
 	{
 		"title": "Reaction",
@@ -2659,7 +2898,8 @@
 			"*This is a proof-of-concept and won't actually steal anything."
 		],
 		"type": "project",
-		"uid": "PROJECT_REACTION"
+		"uid": "PROJECT_REACTION",
+		"timestamp": 1414368000000
 	},
 	{
 		"title": "Reduce Background Flicker",
@@ -2672,7 +2912,8 @@
 			"A Chrome extension to preserve the background color between page loads."
 		],
 		"type": "project",
-		"uid": "PROJECT_REDUCE_BACKGROUND_FLICKER"
+		"uid": "PROJECT_REDUCE_BACKGROUND_FLICKER",
+		"timestamp": 1404345600000
 	},
 	{
 		"title": "render",
@@ -2685,7 +2926,8 @@
 			"A color-theory game completed as a bonus project for Khan Academy's 2016 Hackathon. Built with a friend using Unity 3D."
 		],
 		"type": "project",
-		"uid": "PROJECT_RENDER"
+		"uid": "PROJECT_RENDER",
+		"timestamp": 1456099200000
 	},
 	{
 		"title": "RileyJShaw.???",
@@ -2698,7 +2940,8 @@
 			"A single program that outputs my name when you run it through three separate programming languages."
 		],
 		"type": "project",
-		"uid": "PROJECT_RILEYJSHAW.???"
+		"uid": "PROJECT_RILEYJSHAW.???",
+		"timestamp": 1477526400000
 	},
 	{
 		"title": "Ring",
@@ -2709,7 +2952,8 @@
 		"lastTagged": 1564608411208,
 		"descriptionList": ["It was left here by the aliens."],
 		"type": "project",
-		"uid": "PROJECT_RING"
+		"uid": "PROJECT_RING",
+		"timestamp": 1474848000000
 	},
 	{
 		"title": "Rings",
@@ -2722,7 +2966,8 @@
 			"A quick visual built during lunch, inspired by the base of the lunch table."
 		],
 		"type": "project",
-		"uid": "PROJECT_RINGS"
+		"uid": "PROJECT_RINGS",
+		"timestamp": 1441843200000
 	},
 	{
 		"title": "Rows of 'em",
@@ -2736,7 +2981,8 @@
 			"Super quick demo trying (failing, mostly) to capture the perspective effect."
 		],
 		"type": "project",
-		"uid": "PROJECT_ROWS_OF_'EM"
+		"uid": "PROJECT_ROWS_OF_'EM",
+		"timestamp": 1457308800000
 	},
 	{
 		"title": "Sass animation grid",
@@ -2747,7 +2993,8 @@
 		"lastTagged": 1564708963876,
 		"descriptionList": ["Collection of Sass animations."],
 		"type": "project",
-		"uid": "PROJECT_SASS_ANIMATION_GRID"
+		"uid": "PROJECT_SASS_ANIMATION_GRID",
+		"timestamp": 1384128000000
 	},
 	{
 		"title": "Sass tooltips",
@@ -2758,7 +3005,8 @@
 		"lastTagged": 1564708992197,
 		"descriptionList": ["Sass speech bubble mixin."],
 		"type": "project",
-		"uid": "PROJECT_SASS_TOOLTIPS"
+		"uid": "PROJECT_SASS_TOOLTIPS",
+		"timestamp": 1373673600000
 	},
 	{
 		"title": "Shadowfy",
@@ -2769,7 +3017,8 @@
 		"lastTagged": 1564708975996,
 		"descriptionList": ["Sass 3D text-shadow mixin."],
 		"type": "project",
-		"uid": "PROJECT_SHADOWFY"
+		"uid": "PROJECT_SHADOWFY",
+		"timestamp": 1381276800000
 	},
 	{
 		"title": "Shell or something",
@@ -2782,7 +3031,8 @@
 			"Stumbled upon this on my way to making <a href=\"http://codepen.io/rileyjshaw/full/YqbGKK/\" target=\"_blank\" rel=\"noopener noreferrer\">swirls</a>."
 		],
 		"type": "project",
-		"uid": "PROJECT_SHELL_OR_SOMETHING"
+		"uid": "PROJECT_SHELL_OR_SOMETHING",
+		"timestamp": 1463356800000
 	},
 	{
 		"title": "Shepard-Risset Glissando",
@@ -2796,7 +3046,8 @@
 			"Implemented with the Web Audio API using custom oscillators."
 		],
 		"type": "project",
-		"uid": "PROJECT_SHEPARD_RISSET_GLISSANDO"
+		"uid": "PROJECT_SHEPARD_RISSET_GLISSANDO",
+		"timestamp": 1425340800000
 	},
 	{
 		"title": "Short domain finder",
@@ -2807,7 +3058,8 @@
 		"lastTagged": 1564624426575,
 		"descriptionList": ["Search for emoji domains and short domains."],
 		"type": "project",
-		"uid": "PROJECT_SHORT_DOMAIN_FINDER"
+		"uid": "PROJECT_SHORT_DOMAIN_FINDER",
+		"timestamp": 1410825600000
 	},
 	{
 		"title": "Simple slide-out footer",
@@ -2818,7 +3070,8 @@
 		"lastTagged": 1564708931950,
 		"descriptionList": ["Slide-out footer with semantic markup."],
 		"type": "project",
-		"uid": "PROJECT_SIMPLE_SLIDE_OUT_FOOTER"
+		"uid": "PROJECT_SIMPLE_SLIDE_OUT_FOOTER",
+		"timestamp": 1388102400000
 	},
 	{
 		"title": "Single element kabamm",
@@ -2828,7 +3081,8 @@
 		"link": "http://codepen.io/rileyjshaw/details/zFdyq/",
 		"lastTagged": 1564708971928,
 		"type": "project",
-		"uid": "PROJECT_SINGLE_ELEMENT_KABAMM"
+		"uid": "PROJECT_SINGLE_ELEMENT_KABAMM",
+		"timestamp": 1382486400000
 	},
 	{
 		"title": "Single line tiling",
@@ -2842,7 +3096,8 @@
 			"Though the line's formula stays consistent as it spirals out, the tile grid doesn't increase in size."
 		],
 		"type": "project",
-		"uid": "PROJECT_SINGLE_LINE_TILING"
+		"uid": "PROJECT_SINGLE_LINE_TILING",
+		"timestamp": 1463529600000
 	},
 	{
 		"title": "slant + swap + shift",
@@ -2853,7 +3108,8 @@
 		"lastTagged": 1564707853866,
 		"descriptionList": ["Playing with bg gradient dots, CSS only."],
 		"type": "project",
-		"uid": "PROJECT_SLANT_+_SWAP_+_SHIFT"
+		"uid": "PROJECT_SLANT_+_SWAP_+_SHIFT",
+		"timestamp": 1461628800000
 	},
 	{
 		"title": "Slidey menu",
@@ -2867,7 +3123,8 @@
 			"Probably doesn't work cross-browser."
 		],
 		"type": "project",
-		"uid": "PROJECT_SLIDEY_MENU"
+		"uid": "PROJECT_SLIDEY_MENU",
+		"timestamp": 1421539200000
 	},
 	{
 		"title": "Sliding radio button menu",
@@ -2880,7 +3137,8 @@
 			"A sliding menu concept using just radio buttons and CSS."
 		],
 		"type": "project",
-		"uid": "PROJECT_SLIDING_RADIO_BUTTON_MENU"
+		"uid": "PROJECT_SLIDING_RADIO_BUTTON_MENU",
+		"timestamp": 1430352000000
 	},
 	{
 		"title": "Smart-splitting window panes (CSS only)",
@@ -2894,7 +3152,8 @@
 			"This layout was rather difficult before flexbox came along."
 		],
 		"type": "project",
-		"uid": "PROJECT_SMART_SPLITTING_WINDOW_PANES_(CSS_ONLY)"
+		"uid": "PROJECT_SMART_SPLITTING_WINDOW_PANES_(CSS_ONLY)",
+		"timestamp": 1457395200000
 	},
 	{
 		"title": "smudge",
@@ -2905,7 +3164,8 @@
 		"lastTagged": 1564608355968,
 		"descriptionList": ["Created in 99B of Javascript."],
 		"type": "project",
-		"uid": "PROJECT_SMUDGE"
+		"uid": "PROJECT_SMUDGE",
+		"timestamp": 1522972800000
 	},
 	{
 		"title": "snowballs!",
@@ -2916,7 +3176,8 @@
 		"lastTagged": 1564707886487,
 		"descriptionList": ["Async/await ftw"],
 		"type": "project",
-		"uid": "PROJECT_SNOWBALLS!"
+		"uid": "PROJECT_SNOWBALLS!",
+		"timestamp": 1458172800000
 	},
 	{
 		"title": "Solar static",
@@ -2930,7 +3191,8 @@
 			"Creates a shadow based on mouse position."
 		],
 		"type": "project",
-		"uid": "PROJECT_SOLAR_STATIC"
+		"uid": "PROJECT_SOLAR_STATIC",
+		"timestamp": 1433548800000
 	},
 	{
 		"title": "Sorta",
@@ -2944,7 +3206,8 @@
 			"Abandoned UI experiment; seeing a large list is useful for large sets. Also, quicksort would work better here."
 		],
 		"type": "project",
-		"uid": "PROJECT_SORTA"
+		"uid": "PROJECT_SORTA",
+		"timestamp": 1488153600000
 	},
 	{
 		"title": "Space avoiders",
@@ -2955,7 +3218,8 @@
 		"lastTagged": 1564708893630,
 		"descriptionList": ["Thx Mary :)"],
 		"type": "project",
-		"uid": "PROJECT_SPACE_AVOIDERS"
+		"uid": "PROJECT_SPACE_AVOIDERS",
+		"timestamp": 1392249600000
 	},
 	{
 		"title": "SpeeDOMeter",
@@ -2968,7 +3232,8 @@
 			"A speedometer that travels through time with Doc Brown."
 		],
 		"type": "project",
-		"uid": "PROJECT_SPEEDOMETER"
+		"uid": "PROJECT_SPEEDOMETER",
+		"timestamp": 1431216000000
 	},
 	{
 		"title": "Speedy scroll",
@@ -2982,7 +3247,8 @@
 			"A follow-up article has since been written to show more robust techniques."
 		],
 		"type": "project",
-		"uid": "PROJECT_SPEEDY_SCROLL"
+		"uid": "PROJECT_SPEEDY_SCROLL",
+		"timestamp": 1386028800000
 	},
 	{
 		"title": "Spokes, etc",
@@ -2995,7 +3261,8 @@
 			"Geometric patterns created from straight lines cutting through a circle."
 		],
 		"type": "project",
-		"uid": "PROJECT_SPOKES,_ETC"
+		"uid": "PROJECT_SPOKES,_ETC",
+		"timestamp": 1464912000000
 	},
 	{
 		"title": "Spotlight",
@@ -3006,7 +3273,8 @@
 		"lastTagged": 1564707825199,
 		"descriptionList": ["Move your mouse/finger. Remix of \"filings\"."],
 		"type": "project",
-		"uid": "PROJECT_SPOTLIGHT"
+		"uid": "PROJECT_SPOTLIGHT",
+		"timestamp": 1464739200000
 	},
 	{
 		"title": "Stepping down a corridor",
@@ -3017,7 +3285,8 @@
 		"lastTagged": 1564707852961,
 		"descriptionList": ["Trying out CSS animation steps()."],
 		"type": "project",
-		"uid": "PROJECT_STEPPING_DOWN_A_CORRIDOR"
+		"uid": "PROJECT_STEPPING_DOWN_A_CORRIDOR",
+		"timestamp": 1461801600000
 	},
 	{
 		"title": "Sticky CSS transitions",
@@ -3027,7 +3296,8 @@
 		"link": "http://codepen.io/rileyjshaw/full/bHsJf",
 		"lastTagged": 1564708964427,
 		"type": "project",
-		"uid": "PROJECT_STICKY_CSS_TRANSITIONS"
+		"uid": "PROJECT_STICKY_CSS_TRANSITIONS",
+		"timestamp": 1383868800000
 	},
 	{
 		"title": "Stone",
@@ -3041,7 +3311,8 @@
 			"I'm sure someone else discovered this effect long before I did."
 		],
 		"type": "project",
-		"uid": "PROJECT_STONE"
+		"uid": "PROJECT_STONE",
+		"timestamp": 1457827200000
 	},
 	{
 		"title": "Stormy green",
@@ -3052,7 +3323,8 @@
 		"lastTagged": 1564707889498,
 		"descriptionList": ["Sine waves shifting sinusoidally."],
 		"type": "project",
-		"uid": "PROJECT_STORMY_GREEN"
+		"uid": "PROJECT_STORMY_GREEN",
+		"timestamp": 1457913600000
 	},
 	{
 		"title": "Stormy green (ripples)",
@@ -3065,7 +3337,8 @@
 			"A version of Stormy Green that doesn't drift out of phase."
 		],
 		"type": "project",
-		"uid": "PROJECT_STORMY_GREEN_(RIPPLES)"
+		"uid": "PROJECT_STORMY_GREEN_(RIPPLES)",
+		"timestamp": 1457913600000
 	},
 	{
 		"title": "Strobe",
@@ -3076,7 +3349,8 @@
 		"lastTagged": 1564708891840,
 		"descriptionList": ["Boring."],
 		"type": "project",
-		"uid": "PROJECT_STROBE"
+		"uid": "PROJECT_STROBE",
+		"timestamp": 1392422400000
 	},
 	{
 		"title": "Sun",
@@ -3086,7 +3360,8 @@
 		"link": "http://codepen.io/rileyjshaw/full/WxYkmW/",
 		"lastTagged": 1564608422097,
 		"type": "project",
-		"uid": "PROJECT_SUN"
+		"uid": "PROJECT_SUN",
+		"timestamp": 1470614400000
 	},
 	{
 		"title": "Super slinky",
@@ -3100,7 +3375,8 @@
 			"Currently doesn't work on iOS &lt; 8 since they mess with scroll events. If you use this in production, look into iScroll."
 		],
 		"type": "project",
-		"uid": "PROJECT_SUPER_SLINKY"
+		"uid": "PROJECT_SUPER_SLINKY",
+		"timestamp": 1412380800000
 	},
 	{
 		"title": "Superformula explorer",
@@ -3114,7 +3390,8 @@
 			":facepalm:"
 		],
 		"type": "project",
-		"uid": "PROJECT_SUPERFORMULA_EXPLORER"
+		"uid": "PROJECT_SUPERFORMULA_EXPLORER",
+		"timestamp": 1475539200000
 	},
 	{
 		"title": "sway + swell + spin",
@@ -3125,7 +3402,8 @@
 		"lastTagged": 1564707854423,
 		"descriptionList": ["Playing with bg gradient stripes, CSS only."],
 		"type": "project",
-		"uid": "PROJECT_SWAY_+_SWELL_+_SPIN"
+		"uid": "PROJECT_SWAY_+_SWELL_+_SPIN",
+		"timestamp": 1461542400000
 	},
 	{
 		"title": "Sweep",
@@ -3138,7 +3416,8 @@
 			"A JavaScript library for smoother color transitions"
 		],
 		"type": "project",
-		"uid": "PROJECT_SWEEP"
+		"uid": "PROJECT_SWEEP",
+		"timestamp": 1395619200000
 	},
 	{
 		"title": "swirls",
@@ -3151,7 +3430,8 @@
 			"Abandoned background generator. Pattern is played out."
 		],
 		"type": "project",
-		"uid": "PROJECT_SWIRLS"
+		"uid": "PROJECT_SWIRLS",
+		"timestamp": 1463356800000
 	},
 	{
 		"title": "Synthesia",
@@ -3164,7 +3444,8 @@
 			"Synthesizer synesthesia. Turn MIDI notes into colors."
 		],
 		"type": "project",
-		"uid": "PROJECT_SYNTHESIA"
+		"uid": "PROJECT_SYNTHESIA",
+		"timestamp": 1465084800000
 	},
 	{
 		"title": "Tappy",
@@ -3177,7 +3458,8 @@
 			"A JavaScript library for recording and comparing rhythms"
 		],
 		"type": "project",
-		"uid": "PROJECT_TAPPY"
+		"uid": "PROJECT_TAPPY",
+		"timestamp": 1416700800000
 	},
 	{
 		"title": "Tappy game",
@@ -3188,7 +3470,8 @@
 		"lastTagged": 1564708812602,
 		"descriptionList": ["Tap the rhythm of the lyrics displayed."],
 		"type": "project",
-		"uid": "PROJECT_TAPPY_GAME"
+		"uid": "PROJECT_TAPPY_GAME",
+		"timestamp": 1413158400000
 	},
 	{
 		"title": "Terminal display",
@@ -3201,7 +3484,8 @@
 			"Used to promote <a href=\"http://qhack.ca\" target=\"_blank\" rel=\"noopener noreferrer\">\"hack nights\" at my university</a>."
 		],
 		"type": "project",
-		"uid": "PROJECT_TERMINAL_DISPLAY"
+		"uid": "PROJECT_TERMINAL_DISPLAY",
+		"timestamp": 1350950400000
 	},
 	{
 		"title": "terra",
@@ -3214,7 +3498,8 @@
 			"A JavaScript library for simple biological simulations and cellular automata."
 		],
 		"type": "project",
-		"uid": "PROJECT_TERRA"
+		"uid": "PROJECT_TERRA",
+		"timestamp": 1394323200000
 	},
 	{
 		"title": "terra.js demos",
@@ -3224,7 +3509,8 @@
 		"link": "http://codepen.io/collection/XGogPm/",
 		"lastTagged": 1564708759832,
 		"type": "project",
-		"uid": "PROJECT_TERRA.JS_DEMOS"
+		"uid": "PROJECT_TERRA.JS_DEMOS",
+		"timestamp": 1425254400000
 	},
 	{
 		"title": "Text fade-in effect",
@@ -3237,7 +3523,8 @@
 			"A bit of an anti-pattern, but people seemed to like it."
 		],
 		"type": "project",
-		"uid": "PROJECT_TEXT_FADE_IN_EFFECT"
+		"uid": "PROJECT_TEXT_FADE_IN_EFFECT",
+		"timestamp": 1415404800000
 	},
 	{
 		"title": "Text fly-in effect",
@@ -3247,7 +3534,8 @@
 		"link": "http://codepen.io/rileyjshaw/full/pvzdzX/",
 		"lastTagged": 1564708804489,
 		"type": "project",
-		"uid": "PROJECT_TEXT_FLY_IN_EFFECT"
+		"uid": "PROJECT_TEXT_FLY_IN_EFFECT",
+		"timestamp": 1415404800000
 	},
 	{
 		"title": "That's nuts!",
@@ -3260,7 +3548,8 @@
 			"Settings reveal concept where a nut unscrews itself then drops a curtain."
 		],
 		"type": "project",
-		"uid": "PROJECT_THAT'S_NUTS!"
+		"uid": "PROJECT_THAT'S_NUTS!",
+		"timestamp": 1322265600000
 	},
 	{
 		"title": "the camera rotates with the minute hand (animated)",
@@ -3270,7 +3559,8 @@
 		"link": "https://codepen.io/rileyjshaw/details/gWamKx/",
 		"lastTagged": 1564608372846,
 		"type": "project",
-		"uid": "PROJECT_THE_CAMERA_ROTATES_WITH_THE_MINUTE_HAND_(ANIMATED)"
+		"uid": "PROJECT_THE_CAMERA_ROTATES_WITH_THE_MINUTE_HAND_(ANIMATED)",
+		"timestamp": 1492473600000
 	},
 	{
 		"title": "Thin diagonal stripes",
@@ -3284,7 +3574,8 @@
 			"Cross-device, cross-browser."
 		],
 		"type": "project",
-		"uid": "PROJECT_THIN_DIAGONAL_STRIPES"
+		"uid": "PROJECT_THIN_DIAGONAL_STRIPES",
+		"timestamp": 1398297600000
 	},
 	{
 		"title": "Thoughtboard",
@@ -3297,7 +3588,8 @@
 			"Democratic billboard for sharing the pulse of a community. Popular thoughts will be displayed on the billboard for all to see."
 		],
 		"type": "project",
-		"uid": "PROJECT_THOUGHTBOARD"
+		"uid": "PROJECT_THOUGHTBOARD",
+		"timestamp": 1401494400000
 	},
 	{
 		"title": "Tic Attack Toe",
@@ -3311,7 +3603,8 @@
 			"Inspired by Kung-Fu Chess."
 		],
 		"type": "project",
-		"uid": "PROJECT_TIC_ATTACK_TOE"
+		"uid": "PROJECT_TIC_ATTACK_TOE",
+		"timestamp": 1414972800000
 	},
 	{
 		"title": "Tilted type",
@@ -3324,7 +3617,8 @@
 			"Web typography experiment using CSS transforms and SVG."
 		],
 		"type": "project",
-		"uid": "PROJECT_TILTED_TYPE"
+		"uid": "PROJECT_TILTED_TYPE",
+		"timestamp": 1417219200000
 	},
 	{
 		"title": "Tiny boxes",
@@ -3337,7 +3631,8 @@
 			"Chat through happenstance. The interface adapts to meet demand."
 		],
 		"type": "project",
-		"uid": "PROJECT_TINY_BOXES"
+		"uid": "PROJECT_TINY_BOXES",
+		"timestamp": 1395187200000
 	},
 	{
 		"title": "Tiny TCP",
@@ -3348,7 +3643,8 @@
 		"lastTagged": 1564708870888,
 		"descriptionList": ["Really little chat server written in Node.js."],
 		"type": "project",
-		"uid": "PROJECT_TINY_TCP"
+		"uid": "PROJECT_TINY_TCP",
+		"timestamp": 1395014400000
 	},
 	{
 		"title": "Tinyterm",
@@ -3359,7 +3655,8 @@
 		"lastTagged": 1564708789475,
 		"descriptionList": ["A tiny in-browser terminal."],
 		"type": "project",
-		"uid": "PROJECT_TINYTERM"
+		"uid": "PROJECT_TINYTERM",
+		"timestamp": 1418688000000
 	},
 	{
 		"title": "Titania",
@@ -3372,7 +3669,8 @@
 			"Contribution to the publication \"Codrops\" for their Line Menu Styles collection."
 		],
 		"type": "project",
-		"uid": "PROJECT_TITANIA"
+		"uid": "PROJECT_TITANIA",
+		"timestamp": 1452038400000
 	},
 	{
 		"title": "Tony Montana",
@@ -3386,7 +3684,8 @@
 			"An excuse to write git push it to-the-limit into the console."
 		],
 		"type": "project",
-		"uid": "PROJECT_TONY_MONTANA"
+		"uid": "PROJECT_TONY_MONTANA",
+		"timestamp": 1446076800000
 	},
 	{
 		"title": "Touchtone math facts",
@@ -3400,7 +3699,8 @@
 			"Call +1.480.360.MATH (6284) from the US, <s>+1.647.360.MATH (6284) from Canada</s>."
 		],
 		"type": "project",
-		"uid": "PROJECT_TOUCHTONE_MATH_FACTS"
+		"uid": "PROJECT_TOUCHTONE_MATH_FACTS",
+		"timestamp": 1434153600000
 	},
 	{
 		"title": "txt flowers",
@@ -3413,7 +3713,8 @@
 			"A garden of emoji that slowly climbs your screen."
 		],
 		"type": "project",
-		"uid": "PROJECT_TXT_FLOWERS"
+		"uid": "PROJECT_TXT_FLOWERS",
+		"timestamp": 1552780800000
 	},
 	{
 		"title": "Typelab",
@@ -3426,7 +3727,8 @@
 			"Repeatedly apply a set of transformations to text."
 		],
 		"type": "project",
-		"uid": "PROJECT_TYPELAB"
+		"uid": "PROJECT_TYPELAB",
+		"timestamp": 1460764800000
 	},
 	{
 		"title": "Typing for two",
@@ -3439,7 +3741,8 @@
 			"A competitive typing tutor. Two players type different paragraphs on the same keyboard, simultaneously."
 		],
 		"type": "project",
-		"uid": "PROJECT_TYPING_FOR_TWO"
+		"uid": "PROJECT_TYPING_FOR_TWO",
+		"timestamp": 1464393600000
 	},
 	{
 		"title": "typing lazy (desktop only)",
@@ -3453,7 +3756,8 @@
 			"This was a proof-of-concept for a keyboard glove, which was implemented in hardware by <a href=\"https://github.com/rileyjshaw/english-words-directory-trie\" target=\"_blank\" rel=\"noopener noreferrer\">mapping the trie to a directory tree</a>."
 		],
 		"type": "project",
-		"uid": "PROJECT_TYPING_LAZY_(DESKTOP_ONLY)"
+		"uid": "PROJECT_TYPING_LAZY_(DESKTOP_ONLY)",
+		"timestamp": 1552176000000
 	},
 	{
 		"title": "Typographic HUSL sweep",
@@ -3467,7 +3771,8 @@
 			"Never used."
 		],
 		"type": "project",
-		"uid": "PROJECT_TYPOGRAPHIC_HUSL_SWEEP"
+		"uid": "PROJECT_TYPOGRAPHIC_HUSL_SWEEP",
+		"timestamp": 1418515200000
 	},
 	{
 		"title": "Typographic loader",
@@ -3478,7 +3783,8 @@
 		"lastTagged": 1564708969478,
 		"descriptionList": ["Loading bar concept."],
 		"type": "project",
-		"uid": "PROJECT_TYPOGRAPHIC_LOADER"
+		"uid": "PROJECT_TYPOGRAPHIC_LOADER",
+		"timestamp": 1382918400000
 	},
 	{
 		"title": "Ushld",
@@ -3491,7 +3797,8 @@
 			"Tell people on the internet what they should do."
 		],
 		"type": "project",
-		"uid": "PROJECT_USHLD"
+		"uid": "PROJECT_USHLD",
+		"timestamp": 1393545600000
 	},
 	{
 		"title": "Vanishify",
@@ -3502,7 +3809,8 @@
 		"lastTagged": 1564708939620,
 		"descriptionList": ["Sass vanishing point mixin."],
 		"type": "project",
-		"uid": "PROJECT_VANISHIFY"
+		"uid": "PROJECT_VANISHIFY",
+		"timestamp": 1386460800000
 	},
 	{
 		"title": "Vintage",
@@ -3513,7 +3821,8 @@
 		"lastTagged": 1564608401800,
 		"descriptionList": ["wallpaper..?"],
 		"type": "project",
-		"uid": "PROJECT_VINTAGE"
+		"uid": "PROJECT_VINTAGE",
+		"timestamp": 1477267200000
 	},
 	{
 		"title": "Virtuoso",
@@ -3527,7 +3836,8 @@
 			"Works best with MIDI keyboards, but you can use your computer keyboard too."
 		],
 		"type": "project",
-		"uid": "PROJECT_VIRTUOSO"
+		"uid": "PROJECT_VIRTUOSO",
+		"timestamp": 1466121600000
 	},
 	{
 		"title": "w h a t",
@@ -3540,7 +3850,8 @@
 			"Short narrative experiment written for the PICO-8 fantasy console."
 		],
 		"type": "project",
-		"uid": "PROJECT_W_H_A_T"
+		"uid": "PROJECT_W_H_A_T",
+		"timestamp": 1472342400000
 	},
 	{
 		"title": "Wacky static",
@@ -3550,7 +3861,8 @@
 		"link": "http://codepen.io/rileyjshaw/pen/GDmeF",
 		"lastTagged": 1564708958327,
 		"type": "project",
-		"uid": "PROJECT_WACKY_STATIC"
+		"uid": "PROJECT_WACKY_STATIC",
+		"timestamp": 1384905600000
 	},
 	{
 		"title": "Wacky static 2: TV edition",
@@ -3561,7 +3873,8 @@
 		"lastTagged": 1564708957259,
 		"descriptionList": ["Used this as my 404 page for a while."],
 		"type": "project",
-		"uid": "PROJECT_WACKY_STATIC_2:_TV_EDITION"
+		"uid": "PROJECT_WACKY_STATIC_2:_TV_EDITION",
+		"timestamp": 1384905600000
 	},
 	{
 		"title": "Watercolor",
@@ -3574,7 +3887,8 @@
 			"Uses Chrome's canvas compositing algorithm (circa 2013) to simulate watercolor painting in the browser."
 		],
 		"type": "project",
-		"uid": "PROJECT_WATERCOLOR"
+		"uid": "PROJECT_WATERCOLOR",
+		"timestamp": 1388275200000
 	},
 	{
 		"title": "Waveform visualizer",
@@ -3585,7 +3899,8 @@
 		"lastTagged": 1564708754661,
 		"descriptionList": ["Boring minimal audio visualizer."],
 		"type": "project",
-		"uid": "PROJECT_WAVEFORM_VISUALIZER"
+		"uid": "PROJECT_WAVEFORM_VISUALIZER",
+		"timestamp": 1427587200000
 	},
 	{
 		"title": "whoami.py",
@@ -3599,7 +3914,8 @@
 			"From the project page: \"there is confusion in the mixed layers of metaphors. This is not an obfuscated code repository; not really. In some ways, it is the opposite.\""
 		],
 		"type": "project",
-		"uid": "PROJECT_WHOAMI.PY"
+		"uid": "PROJECT_WHOAMI.PY",
+		"timestamp": 1451520000000
 	},
 	{
 		"title": "Wind alarm",
@@ -3612,7 +3928,8 @@
 			"Only wakes you up if the wind is howling. An alarm for kiteboarders."
 		],
 		"type": "project",
-		"uid": "PROJECT_WIND_ALARM"
+		"uid": "PROJECT_WIND_ALARM",
+		"timestamp": 1399420800000
 	},
 	{
 		"title": "Window Shopper",
@@ -3625,7 +3942,8 @@
 			"A Chrome extension: count and list all page-defined global variables."
 		],
 		"type": "project",
-		"uid": "PROJECT_WINDOW_SHOPPER"
+		"uid": "PROJECT_WINDOW_SHOPPER",
+		"timestamp": 1430784000000
 	},
 	{
 		"title": "Worst practices",
@@ -3639,7 +3957,8 @@
 			"There's actually some cool stuff going on in here, so I've commented it thoroughly."
 		],
 		"type": "project",
-		"uid": "PROJECT_WORST_PRACTICES"
+		"uid": "PROJECT_WORST_PRACTICES",
+		"timestamp": 1381622400000
 	},
 	{
 		"title": "write",
@@ -3650,7 +3969,8 @@
 		"lastTagged": 1564608384406,
 		"descriptionList": ["A chill place to write things."],
 		"type": "project",
-		"uid": "PROJECT_WRITE"
+		"uid": "PROJECT_WRITE",
+		"timestamp": 1484611200000
 	},
 	{
 		"title": "XOR profile card",
@@ -3663,7 +3983,8 @@
 			"Accidentally discovered this 2d water effect by stacking sine waves. Simple but convincing!"
 		],
 		"type": "project",
-		"uid": "PROJECT_XOR_PROFILE_CARD"
+		"uid": "PROJECT_XOR_PROFILE_CARD",
+		"timestamp": 1460332800000
 	},
 	{
 		"title": "XOXO Bingo",
@@ -3677,7 +3998,8 @@
 			"Built hastily between speakers on the last day of the festival; requires login with Twitter to protect attendees' identity."
 		],
 		"type": "project",
-		"uid": "PROJECT_XOXO_BINGO"
+		"uid": "PROJECT_XOXO_BINGO",
+		"timestamp": 1442102400000
 	},
 	{
 		"title": "Yummy loader",
@@ -3687,7 +4009,8 @@
 		"link": "http://codepen.io/rileyjshaw/full/jdyqC",
 		"lastTagged": 1564708960068,
 		"type": "project",
-		"uid": "PROJECT_YUMMY_LOADER"
+		"uid": "PROJECT_YUMMY_LOADER",
+		"timestamp": 1384473600000
 	},
 	{
 		"title": "Zenwall",
@@ -3701,7 +4024,8 @@
 			"Demo built for web browsers and Wacom tablets. Installation involved creating a large infrared plane behind a flexible display and sensing deformations using Community Core Vision."
 		],
 		"type": "project",
-		"uid": "PROJECT_ZENWALL"
+		"uid": "PROJECT_ZENWALL",
+		"timestamp": 1363910400000
 	},
 	{
 		"title": "Zig-zag text effect",
@@ -3715,7 +4039,8 @@
 			"Fun with gradients and background-clip: text."
 		],
 		"type": "project",
-		"uid": "PROJECT_ZIG_ZAG_TEXT_EFFECT"
+		"uid": "PROJECT_ZIG_ZAG_TEXT_EFFECT",
+		"timestamp": 1388707200000
 	},
 	{
 		"title": "zonin'",
@@ -3728,7 +4053,8 @@
 			"Efficiently scales and rotates canvas image data <em>seemingly</em> in-place using two overlapping canvas elements."
 		],
 		"type": "project",
-		"uid": "PROJECT_ZONIN'"
+		"uid": "PROJECT_ZONIN'",
+		"timestamp": 1462406400000
 	},
 	{
 		"uid": "SFPC_TUMBLR_171116512267",
@@ -3739,7 +4065,8 @@
 		"title": "rough thoughts on the bear thing",
 		"body": "<p>it was silly to write all of this down but i  created this blog today and i’m still editing the layout, so i want more words to work with.<br/></p><hr><p>create a few distinct sounds, for example:</p><ul><li>cup/table tap</li><li>cup/table scrape</li><li>ball/table tap</li><li>ball/table scrape</li><li>cup/ball tap</li></ul><p>these examples are unambiguous and easy to perform rapidly by someone keeping the cup in one hand &amp; ball in the other. i&rsquo;ll refer to each performed sound as a &ldquo;bit&rdquo; from here on out.</p><p>for n bits, you have (number of sounds)^n options. with the examples above that&rsquo;s 5^n, which is plenty.</p><p>so what&rsquo;s important to convey?</p><p>the shapes are curvy and strange, so it&rsquo;s easier to share a limited reference table of basic + advanced shapes instead of deriving each part of the bear from scratch. three bits could cover 125 shapes, which is  ample for bear and bear-like drawings.</p><p>shapes are more reusable if they can be drawn at different sizes. let&rsquo;s use one bit to indicate size:</p><p>0: smallest<br/>1: smaller<br/>2: as shown on reference table<br/>3: larger<br/>4: largest</p><p>we&rsquo;re trying to convey a cohesive bear, so the relative position between shapes is more important than their absolute position on the page. two bits can express position in relation to the last shape drawn, for example:</p><p>0: draw in any open space<br/>1: draw connected to the north-most edge of the previous shape<br/>2: draw connected to the northeast-most edge of the previous shape<br/>3: draw connected to the east-most edge of the previous shape<br/>4: draw connected to the southeast-most edge of the previous shape<br/>5: draw connected to the south-most edge of the previous shape<br/>&hellip;<br/>9: continue from shape&rsquo;s final pen position<br/>10: continue from shape&rsquo;s initial pen position<br/>&hellip;<br/>15: draw within the previous shape<br/>16: draw surrounding the previous shape<br/>&hellip;<br/>etc.</p><p>since pen position is a factor, the shape reference table should imply direction.</p><p>to save time, a bit could be added to indicate how many shapes should be drawn at the specified position. for example, there are four toes in each bear foot.</p><hr><p>when ordering the bits, it makes sense to think of what information is most useful to the receiver at each step. my intuition is that this is a good order:</p><p>•• position<br/>• number<br/>• size<br/>••• shape</p><p>so each shape takes seven sounds from the sender.</p><hr><p>update: i ran this by phil; they made the point that since there&rsquo;s no acknowledgment channel from the receiver, redundancy would help reduce errors. let&rsquo;s add a bit at the beginning to indicate whether this is the initial message or a confirmation message. the following 7 bits will then be identical.</p><hr><p>update 2: in the above system, a single missed bit would be catastrophic; it would corrupt the receiver&rsquo;s understanding of all future communication. the (initial | confirmation) sound should be unique so it always marks the start of a new shape. dragging the (cup | ball) in a double circle works.</p>",
 		"description": "<p>it was silly to write all of this down but i  created this blog today and i’m still editing the layout, so i want more words to work with.</p><p>create a few distinct sounds, for example:</p><ul><li>cup/table tap</li><li>cup/table scrape</li><li>ball/table tap</li><li>ball/table scrape</li><li>cup/ball tap</li></ul><p>these examples are unambiguous and easy to perform rapidly by someone keeping the cup in one hand &amp; ball in the other. i’ll refer to each performed sound as a “bit” from here on out.</p><p>for n bits, you have (number of sounds)^n options. with the examples above that’s 5^n, which is plenty.</p><p>so what’s important to convey?</p><p>the shapes are curvy and strange, so it’s easier to share a limited reference table of basic + advanced shapes instead of deriving each part of the bear from scratch. three bits could cover 125 shapes, which is  ample for bear and bear-like drawings.</p>",
-		"more": true
+		"more": true,
+		"timestamp": 1519171200000
 	},
 	{
 		"uid": "SFPC_TUMBLR_171298312372",
@@ -3750,7 +4077,8 @@
 		"title": "metropolis",
 		"body": "<p>i watched metropolis (1927) tonight at a bar with some friends. despite being nearly a century old, it’s  a pertinent commentary on class and technology. the explicit moral is literally spelled out at the end, I guess:</p><blockquote><p><i>there can be no understanding between the hands and the brain unless the heart acts as mediator.</i><br/></p></blockquote><p>but we couldn’t reach consensus about what this meant re: the worker struggles depicted in the film.<br/></p><p>anyway, it’s late so instead of getting getting into heady things like that, i’ll share something that made me laugh during the movie. this scene reminded me  of my lacking estimation skills at various points in my corporate tech career:</p><figure data-orig-width=\"475\" data-orig-height=\"356\" class=\"tmblr-full\"><img src=\"https://66.media.tumblr.com/12054928438109d9c8654a3235697b8f/tumblr_inline_p4qs5h50u81vbjywz_540.gif\" alt=\"image\" data-orig-width=\"475\" data-orig-height=\"356\"/></figure><p>^ me, hand waving</p><figure data-orig-width=\"1892\" data-orig-height=\"1416\" class=\"tmblr-full\"><img src=\"https://66.media.tumblr.com/ca8c4b6b28764afc509d220824bf7620/tumblr_inline_p4qsdxXARF1vbjywz_540.png\" alt=\"image\" data-orig-width=\"1892\" data-orig-height=\"1416\"/></figure><figure class=\"tmblr-full\" data-orig-height=\"356\" data-orig-width=\"475\"><img src=\"https://66.media.tumblr.com/da3dc92386911154aa68dc5d28d24f0e/tumblr_inline_p4qsl0hF4x1vbjywz_540.gif\" data-orig-height=\"356\" data-orig-width=\"475\"/></figure><p>^ my manager</p><figure data-orig-width=\"475\" data-orig-height=\"356\" class=\"tmblr-full\"><img src=\"https://66.media.tumblr.com/4e6eafdbf837a898d96e968af5a311ff/tumblr_inline_p4qsa2G3mL1vbjywz_540.gif\" alt=\"image\" data-orig-width=\"475\" data-orig-height=\"356\"/></figure><p>^ my current progress<br/></p><hr><figure data-orig-width=\"475\" data-orig-height=\"356\" class=\"tmblr-full\"><img src=\"https://66.media.tumblr.com/490aeb5aa549f2f54c2f241113c807d0/tumblr_inline_p4qscaPieQ1vbjywz_540.gif\" alt=\"image\" data-orig-width=\"475\" data-orig-height=\"356\"/></figure><p>^ my deadline</p><hr><p>gifs are a big thing on tumblr so i hope this goes viral.<br/></p>",
 		"description": "<p>i watched metropolis (1927) tonight at a bar with some friends. despite being nearly a century old, it’s  a pertinent commentary on class and technology. the explicit moral is literally spelled out at the end, I guess:</p><blockquote><p><i>there can be no understanding between the hands and the brain unless the heart acts as mediator.</i></p></blockquote><p>but we couldn’t reach consensus about what this meant re: the worker struggles depicted in the film.</p><p>anyway, it’s late so instead of getting getting into heady things like that, i’ll share something that made me laugh during the movie. this scene reminded me  of my lacking estimation skills at various points in my corporate tech career:</p><p>^ me, hand waving</p><p>^ my manager</p><p>^ my current progress</p>",
-		"more": true
+		"more": true,
+		"timestamp": 1519603200000
 	},
 	{
 		"uid": "SFPC_TUMBLR_171298380607",
@@ -3761,7 +4089,8 @@
 		"title": "oh dear, my gifs aren’t animating. i’ll never be famous.",
 		"body": "<p style=\"\">oh dear, my gifs aren’t animating. i’ll never be famous.<br/></p>",
 		"description": "<p style=\"\">oh dear, my gifs aren’t animating. i’ll never be famous.</p>",
-		"more": false
+		"more": false,
+		"timestamp": 1519603200000
 	},
 	{
 		"uid": "SFPC_TUMBLR_171435065582",
@@ -3772,7 +4101,8 @@
 		"title": "My School for Poetic Computation application",
 		"body": "<p>I’ve decided to post my response to the three questions SFPC asks potential participants.</p><p>Before I start any application process I try to learn as much as I can about the place. That involves learning about the folx involved. I hope this post helps a future SFPC attendee get started on their application.<br/></p><p>If you’ve landed here from a search and are considering applying, I recommend doing so! It’s fun here and the people are nice.</p><hr><p><b>A disclaimer  before we get into it:</b> everyone who goes through SFPC comes from different backgrounds. If you see something on my application that you haven’t experienced, please don’t take it as a requirement. Batches are carefully selected to include different perspectives and skillsets. And you’re awesome 💕<br/></p><hr><h2>Why do you want to study at SFPC at this point in your life?<br/></h2><p>I love making art! But when I use computers, I can get distracted by Technical Shinys. I also get distracted by Expectations, especially around my Engineering Career.</p><p>In 2014 I was working at a startup without a purpose whatsoever. I left to join Khan Academy, a free education nonprofit. I felt good about that.</p><p>A few years have gone by and I feel a similar pull. I&rsquo;ve lost my idealism for nonprofits; they&rsquo;re subject to the same restrictive evaluation metrics and organizational patterns as any corporation.</p><p>(Dang, that sucks.)</p><p>I see art as a way to effect change outside of the rigid hierarchical structures of Work. It&rsquo;s a chance to connect on a different level; to surprise, engage, and hopefully, to shine light on something better.</p><p>I&rsquo;d like to recalibrate… again. I wrote a little poem called &ldquo;whoami&rdquo; below. I want to work with more expressive languages.</p><p>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</p><p>#!/usr/bin/env python<br/>from subprocess import Popen as ask, PIPE as rain; for_truth_in = bool</p><p>id  = &lsquo;my&rsquo; in'stinctual impulse&rsquo;<br/>for all_my_be in'g&rsquo;:<br/>    there = 'more to&rsquo;.find(&ldquo;) - (id is not 'critical&rsquo; or 'moralizing&rsquo;)<br/>superego = there</p><p>ego = i = ask('whoami&rsquo;, stdout=rain)<br/>for days in ['the rain&rsquo;]: i = i.stdout</p><p>reflection = (word for word in [<br/>    'oh, the places you'll go&rsquo; in 'the summer&rsquo;,<br/>    'the art of electronics&rsquo; in 'uni&rsquo;,<br/>    'the lean startup&rsquo; in 'my dark days&rsquo;,<br/>    'the one room schoolhouse&rsquo; in 'that idealistic edtech phase&rsquo;,<br/>    &rdquo;,<br/>    &rsquo;&rsquo;,<br/>    &rsquo;&rsquo;,<br/>    'and so on.&rsquo;<br/>])</p><p>found = not 'yet&rsquo;</p><p>while not found:<br/>    found = i.read(for_truth_in(next(reflection)))</p><p>i = found + ego.communicate()[id][:superego]<br/>print i</p><hr><h2>What do you want the School for Poetic Computation to be?</h2><p>APPROACHING IDEAS WITH THOUGHTFULNESS<br/>=====================================</p><p>I&rsquo;m familiar with some of the technical methods we&rsquo;ll cover over the term. This is exciting; re-approaching them intentionally through an artistic lens might help me break forgotten assumptions. So rather than focusing on *how* to build a Markov chain, I want to explore *why* I&rsquo;d build one.</p><p>I went to Recurse Center in 2014 because I wanted to collaborate with people outside of rigid project structures. I want to explore and build new frameworks now. I hope SFPC can help me rebuild my conceptions around the words &ldquo;technical&rdquo;, &ldquo;art&rdquo;, and &ldquo;project&rdquo;.</p><p>A STUDY IN EDUCATION<br/>====================</p><p>I&rsquo;ve spent the past few years learning about education. I&rsquo;ve formed opinions and have even more questions now. I&rsquo;m interested in programs like SFPC that challenge the rigidity of institutional CS or Fine Arts programs.</p><p>I also love mentorship. I lead our formal mentorship program at Khan Academy, and teach as a volunteer at a few local organizations. I&rsquo;m sure I&rsquo;ll learn more from my cohort than they learn from me, but when it&rsquo;s helpful I&rsquo;d like to pitch in.</p><p>ULTIMATELY,<br/>===========</p><p>I&rsquo;m excited to develop my artistic practice around folks that I&rsquo;ve admired for a really, really long time &lt;3</p><hr><h2>What would you like to make at SFPC?</h2><p>As you can see on <a href=\"https://rileyjshaw.com/lab\">rileyjshaw.com/lab</a>, I&rsquo;ve made many little things. These days, I try to work slower. Rather than approaching SFPC with plans to create specific artifacts, I&rsquo;m more interested in the process. I would like to refine the way that I absorb and synthesize ideas. I want to listen a lot and make slow, deliberate progress toward this goal.</p><p>Here are some topics that I&rsquo;m interested in:</p><p>EDUCATION AND THE REINFORCEMENT OF CLASS STRUCTURES<br/>===================================================</p><p>Our formal education system creates adults who can&rsquo;t take care of themselves, and whose survival depends on capitalist class structures. Educated and non-educated citizens are trapped in this cycle. A post-class society needs modes of education that break these rigidly imposed hierarchies. What might that look like?</p><p>DELETION, PERMANENCE, AND CONSISTENCY<br/>=====================================</p><p>Silicon Valley likes to store data because it entrenches people in their past behaviors. Corporate culture&rsquo;s emphasis on consistency is ableist, colonizing, transphobic, and represents a growing discomfort with people&rsquo;s fluidity.</p><p>I hope someday to have an International Day of Deletion. How can we live more presently?</p><p>CORPORATE TOOLS<br/>===============</p><p>A Craigslist bot gives Sol LeWitt-style instructions to a community. A series of banner ads discourage consumerism. Challenging people&rsquo;s expectations around advertising and corporate tools may raise questions about the structures behind them.</p><p>Mechanical Turk, Google Ads, Ebay, promoted tweets… these tools enforce the goals and values of capitalism. Can they be used to break them?</p><p>MAKING FRIENDS!!!<br/>=================</p><p>I am especially excited for the chance to meet new people that I can work with deeply. Festivals like XOXO or Eyeo allow only fleeting glimpses of fellow weirdos. Collaborating and growing together as a cohort – supporting and challenging one-another – is what I&rsquo;m most excited about.</p><p>In every education program I&rsquo;ve been a part of so far, people have been the most important part.</p><hr><p>Well, that’s it. I was initially accepted into the Fall 2017 batch but deferred to finish  some important work at Khan Academy and transition stewardship of the programs I was looking after. In the past half-year I’ve learned a lot and changed a lot, and my application would look different if I were to write it today. But the heart of this – writing less code, more thoughtfully – is at least as true today as it was when I wrote this.<br/></p>",
 		"description": "<p>I’ve decided to post my response to the three questions SFPC asks potential participants.</p><p>Before I start any application process I try to learn as much as I can about the place. That involves learning about the folx involved. I hope this post helps a future SFPC attendee get started on their application.</p><p>If you’ve landed here from a search and are considering applying, I recommend doing so! It’s fun here and the people are nice.</p><p><b>A disclaimer  before we get into it:</b> everyone who goes through SFPC comes from different backgrounds. If you see something on my application that you haven’t experienced, please don’t take it as a requirement. Batches are carefully selected to include different perspectives and skillsets. And you’re awesome 💕</p>",
-		"more": true
+		"more": true,
+		"timestamp": 1519948800000
 	},
 	{
 		"uid": "SFPC_TUMBLR_171435153227",
@@ -3783,7 +4113,8 @@
 		"title": "Oh, And Speaking Of Consistency...",
 		"body": "<p>I’m capitalizing words sometimes now. New brand guidelines, hot off the presses.</p>",
 		"description": "<p>I’m capitalizing words sometimes now. New brand guidelines, hot off the presses.</p>",
-		"more": false
+		"more": false,
+		"timestamp": 1519948800000
 	},
 	{
 		"uid": "SFPC_TUMBLR_171825548577",
@@ -3794,7 +4125,8 @@
 		"title": "border crossing",
 		"body": "<p>headed back to canada for the weekend to see the AGO’s yayoi kusama exhibit (RAD!) and attend a funky dance (RAD!). i’m back at the airport now and made it through (phewf). explaining this school at customs is always complicated, and i’ve been pulled into secondary each time.</p><p>with this week’s readings on “security” + surveillance for our crit theory course (“the radical outside”) fresh on my mind, the customs experience was heightened. last time reached an ABSURD level of invasiveness with questions about my family. this time was just lots of silence as i pondered what the neural nets were cooking up.</p><p>lil thought: upon saying i quit my job just over a month ago, the agent said “oh - that’s a really long time”. Work is a weed we’re feeding 🌱 neoliberal capitalism, “we eat for you”, soapbox, etc.</p><p>anyway, glad i’m leaving all these keywords on a subdomain of my personal site for some cruel robot to scrape! typing from my phone so bye!</p>",
 		"description": "<p>headed back to canada for the weekend to see the AGO’s yayoi kusama exhibit (RAD!) and attend a funky dance (RAD!). i’m back at the airport now and made it through (phewf). explaining this school at customs is always complicated, and i’ve been pulled into secondary each time.</p><p>with this week’s readings on “security” + surveillance for our crit theory course (“the radical outside”) fresh on my mind, the customs experience was heightened. last time reached an ABSURD level of invasiveness with questions about my family. this time was just lots of silence as i pondered what the neural nets were cooking up.</p><p>lil thought: upon saying i quit my job just over a month ago, the agent said “oh - that’s a really long time”. Work is a weed we’re feeding 🌱 neoliberal capitalism, “we eat for you”, soapbox, etc.</p>",
-		"more": true
+		"more": true,
+		"timestamp": 1520899200000
 	},
 	{
 		"uid": "SFPC_TUMBLR_172315833927",
@@ -3805,7 +4137,8 @@
 		"title": "checking in",
 		"body": "<p>hi! i haven’t written here in a while. school is busyyy. reading a lot, building a bit, exploring new york, etc. i’ve got a few drafts / reflections from the past few weeks which i’ll hopefully post, but here’s the official rundown so far:<br/></p><p><a href=\"https://medium.com/sfpc/by-yeli-student-of-sfpc-spring-2018-e007cf28ccdb\">week 1</a></p><p><a href=\"https://medium.com/sfpc/spring-2018-week-2-8539ec15443\">week 2</a></p><p><a href=\"https://medium.com/sfpc/spring-2018-week-3-26068381ab30\">week 3</a></p><p><a href=\"https://medium.com/sfpc/spring-2018-week-4-9f7587d464dc\">week 4</a></p><p><a href=\"https://medium.com/sfpc/spring-2018-week-5-36df8924e06e\">week 5</a></p><p>&hellip;i can’t believe we’re halfway through! final showcase prep is starting and i still have no idea what i’ll build. yikes! gonna go ponder that, bye for now :)<br/></p>",
 		"description": "<p>hi! i haven’t written here in a while. school is busyyy. reading a lot, building a bit, exploring new york, etc. i’ve got a few drafts / reflections from the past few weeks which i’ll hopefully post, but here’s the official rundown so far:</p><p><a href=\"https://medium.com/sfpc/by-yeli-student-of-sfpc-spring-2018-e007cf28ccdb\">week 1</a></p><p><a href=\"https://medium.com/sfpc/spring-2018-week-2-8539ec15443\">week 2</a></p><p><a href=\"https://medium.com/sfpc/spring-2018-week-3-26068381ab30\">week 3</a></p><p><a href=\"https://medium.com/sfpc/spring-2018-week-4-9f7587d464dc\">week 4</a></p><p><a href=\"https://medium.com/sfpc/spring-2018-week-5-36df8924e06e\">week 5</a></p><p>…i can’t believe we’re halfway through! final showcase prep is starting and i still have no idea what i’ll build. yikes! gonna go ponder that, bye for now :)</p>",
-		"more": false
+		"more": false,
+		"timestamp": 1522108800000
 	},
 	{
 		"uid": "SFPC_TUMBLR_172372422682",
@@ -3816,7 +4149,8 @@
 		"title": "making nothing",
 		"body": "<p>here’s a post that i wrote during my second week here. now that the showcase is coming up, i need to start making a thing. guess i’d better put this up before that starts :)<br/></p><hr><p>one of my major goals during this program is to not make things.<br/></p><p><i>* silence. the sfpc showcase curators back away slowly to discuss what a mistake they’ve made. *</i></p><p>it’s okay, i’ll do the assignments and make a showcase project and all that. i’m still going to make things. it’s hard not to; i’ve already made a lot of Things since arriving, more than i’m comfortable with. but i’m celebrating all the things i think of that i don’t make.</p><p>during the binary numbers assignment, i came up with an idea to:</p><ul><li>map binary digits (bits) to piano keys</li><li>find binary numbers that resolve to nice chords</li><li>create a simple matching app that prompts players with a decimal number and celebrates when the correct chord is played</li></ul><p>i have a midi keyboard here, and i’ve <a href=\"https://github.com/rileyjshaw/keyboard-keyboard\">written</a> <a href=\"https://github.com/rileyjshaw/virtuoso\">a</a> <a href=\"https://github.com/rileyjshaw/huemidity\">few</a> <a href=\"https://github.com/rileyjshaw/flubber\">programs</a> <a href=\"https://github.com/rileyjshaw/synthesia\">already</a> that interface with it. throwing this sketch together would have been easy. tbh it would have been an easy way to show off in class too. but just by thinking it through, i’d already gotten as much out of it as i was ever going to. building it would have come from a compulsion, not from any actual question or need. and it would have taken time, and space. for what?<br/></p><p>there’s a passage in Madness, Rack, and Honey that i love:</p><blockquote><p>if you have any idea for a poem, an exact grid of intent, you are on the wrong path, a dead-end alley, at the top of a cliff you haven’t even climbed.<br/></p></blockquote><p>moving to new york – even from a big city like toronto – i’m struck by the overabundance of <b>stuff</b> here. stuff to buy. stuff to eat. stuff to stuff your apartment with. it’s a good reminder that less can be more.<br/></p>",
 		"description": "<p>here’s a post that i wrote during my second week here. now that the showcase is coming up, i need to start making a thing. guess i’d better put this up before that starts :)</p><p>one of my major goals during this program is to not make things.</p><p><i>* silence. the sfpc showcase curators back away slowly to discuss what a mistake they’ve made. *</i></p><p>it’s okay, i’ll do the assignments and make a showcase project and all that. i’m still going to make things. it’s hard not to; i’ve already made a lot of Things since arriving, more than i’m comfortable with. but i’m celebrating all the things i think of that i don’t make.</p><p>during the binary numbers assignment, i came up with an idea to:</p><ul><li>map binary digits (bits) to piano keys</li><li>find binary numbers that resolve to nice chords</li><li>create a simple matching app that prompts players with a decimal number and celebrates when the correct chord is played</li></ul>",
-		"more": true
+		"more": true,
+		"timestamp": 1522281600000
 	},
 	{
 		"uid": "SFPC_TUMBLR_172567522977",
@@ -3827,7 +4161,8 @@
 		"title": "Telepresence Manifesto (2018 redux)",
 		"body": "<p>today in critical theory, we read and discussed <a href=\"https://github.com/morehshin/TheRadicalOutside_Spring2018#on-manifestos\">a few “manifestos for the internet age”</a>. i’ve got a cold so i called in; when the class broke out to create their own manifestos, i decided to write a “telepresence manifesto” from my sniffly blanket fort.</p><p><a href=\"https://spectrum.ieee.org/robotics/artificial-intelligence/telepresence-a-manifesto\">turns out marvin minsky beat me to it.</a> for context: minsky, who said “i don’t think there is any such thing” regarding human consciousness, co-founded MIT’s AI laboratory. MIT has a long history of military research; in recent years, its public focus has shifted to military robots, drones, and battle suits.<br/></p><p>his manifesto creeps me out. i changed “hands” to “drones” to emphasize why. Edits left as strikethroughs; emphasis my own.</p><hr><h2>Marvin Minsky&rsquo;s Telepresence Manifesto (1980) (2018 redux)</h2><p>You don a comfortable jacket lined with sensors and musclelike motors. Each motion of your arm, hand, and fingers is reproduced at another place by mobile, mechanical drones<strike>hands.</strike> Light, dexterous, and strong, these drones<strike>hands</strike> have their own sensors through which you see and feel what is happening. Using this instrument, you can &ldquo;work&rdquo; in another room, in another city, in another country, or on another planet. Your remote presence possesses the strength of a giant or the delicacy of a surgeon. Heat or pain is translated into informative but tolerable sensation. <b>Your dangerous job becomes safe and pleasant.</b><br/></p><p>…</p><p>Telepresence is not science fiction. We could have a remote controlled economy by the twenty first century if we start planning right now. <b>The technical scope of such a project would be no greater than that of designing a new military aircraft.</b></p><p>A genuine telepresence system requires new ways to sense the various motions of a person<strike>’s hands</strike>. This means new motors, sensors, and lightweight actuators. Prototypes will be complex, but as designs mature, much of that complexity will move from hardware to easily copied computer software. The first ten years of telepresence research will see the development of basic instruments: geometry, mechanics, sensors, effectors, and control theory and its human interface. During the second decade we will work to make the instruments rugged, reliable, and natural.</p><hr><p>i hate reading this. he’s so <i>excited</i> about it. engineers need to think harder about what they propose. and “great engineers” rarely deserve the title.<br/></p>",
 		"description": "<p>today in critical theory, we read and discussed <a href=\"https://github.com/morehshin/TheRadicalOutside_Spring2018#on-manifestos\">a few “manifestos for the internet age”</a>. i’ve got a cold so i called in; when the class broke out to create their own manifestos, i decided to write a “telepresence manifesto” from my sniffly blanket fort.</p><p><a href=\"https://spectrum.ieee.org/robotics/artificial-intelligence/telepresence-a-manifesto\">turns out marvin minsky beat me to it.</a> for context: minsky, who said “i don’t think there is any such thing” regarding human consciousness, co-founded MIT’s AI laboratory. MIT has a long history of military research; in recent years, its public focus has shifted to military robots, drones, and battle suits.</p><p>his manifesto creeps me out. i changed “hands” to “drones” to emphasize why. Edits left as strikethroughs; emphasis my own.</p>",
-		"more": true
+		"more": true,
+		"timestamp": 1522713600000
 	},
 	{
 		"uid": "SFPC_TUMBLR_173089791367",
@@ -3838,7 +4173,8 @@
 		"title": "v.1",
 		"body": "<p>with the showcase coming up, i’ve been ignoring this blog to fill my sketchbook with desperate project ideas. it’s been a process. i’ve built a few prototypes to 50% but haven’t been satisfied yet.</p><p>this evening (less than two days before the showcase) i finally had an idea that stuck. i’m writing from the subway home after building the enclosure and v1 of the software:</p><p><br/></p><figure data-orig-width=\"3024\" data-orig-height=\"3026\" class=\"tmblr-full\"><img src=\"https://66.media.tumblr.com/ad5d2f1804397f935d79817c23a3e134/2bd71e65e7c1ddd0-1b/s540x810/2e00180ab0323857a54850ace2c031bd00c2e9f9.jpg\" alt=\"image\" data-orig-width=\"3024\" data-orig-height=\"3026\"/></figure><p>the project is called depression. i’m excited to write more about it soon!</p>",
 		"description": "<p>with the showcase coming up, i’ve been ignoring this blog to fill my sketchbook with desperate project ideas. it’s been a process. i’ve built a few prototypes to 50% but haven’t been satisfied yet.</p><p>this evening (less than two days before the showcase) i finally had an idea that stuck. i’m writing from the subway home after building the enclosure and v1 of the software:</p><p>the project is called depression. i’m excited to write more about it soon!</p>",
-		"more": false
+		"more": false,
+		"timestamp": 1524096000000
 	},
 	{
 		"uid": "SFPC_TUMBLR_173128872587",
@@ -3849,7 +4185,8 @@
 		"title": "Calling all New York friends!",
 		"body": "<p>The SFPC showcase is this weekend. Come check it out!</p><p style=\"\"><a href=\"https://www.eventbrite.com/e/sfpc-spring-2018-student-showcase-tickets-45020562715\">https://www.eventbrite.com/e/sfpc-spring-2018-student-showcase-tickets-45020562715</a><br/></p>",
 		"description": "<p>The SFPC showcase is this weekend. Come check it out!</p><p style=\"\"><a href=\"https://www.eventbrite.com/e/sfpc-spring-2018-student-showcase-tickets-45020562715\">https://www.eventbrite.com/e/sfpc-spring-2018-student-showcase-tickets-45020562715</a></p>",
-		"more": false
+		"more": false,
+		"timestamp": 1524182400000
 	},
 	{
 		"uid": "SFPC_TUMBLR_179360727897",
@@ -3860,7 +4197,8 @@
 		"title": "a few ideas along the way",
 		"body": "<p>annnd the showcase is finished! i’m working on a writeup for my final project, but in the meantime here are some other ideas i tested along the way. this post won’t get into the themes i wanted to explore with these pieces, since i’d rather spend that time on the final writeup. hopefully you find some of these  interesting without explanation!<br/></p><p><b>geometries that reveal contradictory images / messages from different perspectives</b> (to be printed, then origami’d). i tested a few geometries for this one; here’s a prototype i built to test “print” images to a pyramidal lattice:<br/></p><figure data-orig-width=\"3024\" data-orig-height=\"4032\" class=\"tmblr-full\"><img src=\"https://66.media.tumblr.com/aa21cca17846b413a58b85e97be72f68/tumblr_inline_ph2ju1wfR71vbjywz_540.jpg\" alt=\"image\" data-orig-width=\"3024\" data-orig-height=\"4032\"/></figure><figure class=\"tmblr-embed tmblr-full\" data-provider=\"youtube\" data-orig-width=\"459\" data-orig-height=\"344\" data-url=\"https%3A%2F%2Fyoutu.be%2Ff6GyXxs04Ek\"><iframe id=\"youtube_iframe\" src=\"https://www.youtube.com/embed/f6GyXxs04Ek?feature=oembed&amp;enablejsapi=1&amp;origin=https://safe.txmblr.com&amp;wmode=opaque\" allowfullscreen=\"\" width=\"540\" height=\"405\" frameborder=\"0\"></iframe></figure><p><br/></p><p><b>self-destructive art piece that wants privacy:</b></p><figure data-orig-width=\"4032\" data-orig-height=\"3024\" class=\"tmblr-full\"><img src=\"https://66.media.tumblr.com/e4e1ecdc7ffa17b3a1cb9a9f0eab6de4/tumblr_inline_ph2kk8je2d1vbjywz_540.jpg\" alt=\"image\" data-orig-width=\"4032\" data-orig-height=\"3024\"/></figure><figure class=\"tmblr-embed tmblr-full\" data-provider=\"youtube\" data-orig-width=\"540\" data-orig-height=\"304\" data-url=\"https%3A%2F%2Fwww.youtube.com%2Fembed%2Fswj26KBqIGs\"><iframe src=\"https://www.youtube.com/embed/swj26KBqIGs?feature=oembed&amp;enablejsapi=1&amp;origin=https://safe.txmblr.com&amp;wmode=opaque\" allowfullscreen=\"\" width=\"540\" height=\"304\" frameborder=\"0\"></iframe></figure><figure class=\"tmblr-embed tmblr-full\" data-provider=\"youtube\" data-orig-width=\"459\" data-orig-height=\"344\" data-url=\"https%3A%2F%2Fyoutu.be%2FipSsIDukTRo\"><iframe id=\"youtube_iframe\" src=\"https://www.youtube.com/embed/ipSsIDukTRo?feature=oembed&amp;enablejsapi=1&amp;origin=https://safe.txmblr.com&amp;wmode=opaque\" allow=\"autoplay; encrypted-media\" allowfullscreen=\"\" width=\"540\" height=\"405\" frameborder=\"0\"></iframe></figure><figure data-orig-width=\"1024\" data-orig-height=\"768\" class=\"tmblr-full\"><img src=\"https://66.media.tumblr.com/5841933ccfcbca98c1b6cacc27f61637/tumblr_inline_ph2lruwqQB1vbjywz_540.jpg\" alt=\"image\" data-orig-width=\"1024\" data-orig-height=\"768\"/></figure><p><b><br/></b></p><p><b>wiping away digital residue:</b><br/></p><figure class=\"tmblr-embed tmblr-full\" data-provider=\"youtube\" data-orig-width=\"459\" data-orig-height=\"344\" data-url=\"https%3A%2F%2Fyoutu.be%2Fpxi0i4199_0\"><iframe src=\"https://www.youtube.com/embed/pxi0i4199_0?feature=oembed&amp;enablejsapi=1&amp;origin=https://safe.txmblr.com&amp;wmode=opaque\" allowfullscreen=\"\" width=\"540\" height=\"405\" frameborder=\"0\"></iframe></figure><p><br/></p><p><b>a printer that ran through a scanner that ran through another printer and then into a paper shredder because idk state surveillance or something:</b></p><figure data-orig-width=\"3024\" data-orig-height=\"4032\" class=\"tmblr-full\"><img src=\"https://66.media.tumblr.com/872fe9a00889d146ed48dfb78a49240b/tumblr_inline_ph2kfkXPmH1vbjywz_540.jpg\" alt=\"image\" data-orig-width=\"3024\" data-orig-height=\"4032\"/></figure><p><b><br/></b></p><p><b>long-distance relationship represented by two balloons (and some motors and sensors):<br/></b></p><figure class=\"tmblr-embed tmblr-full\" data-provider=\"youtube\" data-orig-width=\"459\" data-orig-height=\"344\" data-url=\"https%3A%2F%2Fyoutu.be%2FJo-Ds14to7w\"><iframe src=\"https://www.youtube.com/embed/Jo-Ds14to7w?feature=oembed&amp;enablejsapi=1&amp;origin=https://safe.txmblr.com&amp;wmode=opaque\" allowfullscreen=\"\" width=\"540\" height=\"405\" frameborder=\"0\"></iframe></figure><p><b><br/></b></p><p><b>overcomplicated seed of the final idea:</b></p><figure data-orig-width=\"4032\" data-orig-height=\"1411\" class=\"tmblr-full\"><img src=\"https://66.media.tumblr.com/482884985f6c41a6e7d326cd717719d0/tumblr_inline_ph2lf9sS8N1vbjywz_540.jpg\" alt=\"image\" data-orig-width=\"4032\" data-orig-height=\"1411\"/></figure>",
 		"description": "<p>annnd the showcase is finished! i’m working on a writeup for my final project, but in the meantime here are some other ideas i tested along the way. this post won’t get into the themes i wanted to explore with these pieces, since i’d rather spend that time on the final writeup. hopefully you find some of these  interesting without explanation!</p><p><b>geometries that reveal contradictory images / messages from different perspectives</b> (to be printed, then origami’d). i tested a few geometries for this one; here’s a prototype i built to test “print” images to a pyramidal lattice:</p><p><b>self-destructive art piece that wants privacy:</b></p><p><b>wiping away digital residue:</b></p><p><b>a printer that ran through a scanner that ran through another printer and then into a paper shredder because idk state surveillance or something:</b></p>",
-		"more": true
+		"more": true,
+		"timestamp": 1524528000000
 	},
 	{
 		"uid": "SFPC_TUMBLR_179678255817",
@@ -3871,7 +4209,8 @@
 		"title": "unhitching",
 		"body": "<p>The possibility, vital for life, of unhitching, which consists… in grasping, during the brief intervals in which our species can bring itself to interrupt its hive-like activity, the essence of what it was and continues to be, below the threshold of thought and over and above society: in the contemplation of a mineral more beautiful than all our creations; in the scent that can be smelt at the heart of a lily and is more imbued with learning than all our books; or in the brief glance, heavy with patience, serenity and mutual forgiveness, that, through some involuntary understanding, one can sometimes exchange with a cat.</p><p>Claude Lévi-Strauss, “Tristes Tropiques”</p>",
 		"description": "<p>The possibility, vital for life, of unhitching, which consists… in grasping, during the brief intervals in which our species can bring itself to interrupt its hive-like activity, the essence of what it was and continues to be, below the threshold of thought and over and above society: in the contemplation of a mineral more beautiful than all our creations; in the scent that can be smelt at the heart of a lily and is more imbued with learning than all our books; or in the brief glance, heavy with patience, serenity and mutual forgiveness, that, through some involuntary understanding, one can sometimes exchange with a cat.</p><p>Claude Lévi-Strauss, “Tristes Tropiques”</p>",
-		"more": false
+		"more": false,
+		"timestamp": 1522454400000
 	},
 	{
 		"uid": "SFPC_TUMBLR_182905537092",
@@ -3882,6 +4221,7 @@
 		"title": "final showcase project: depression",
 		"body": "<blockquote><p>“how can i help?”</p><p>a solitary\n dial reflects the machine’s physical clock speed, acting as display \nrather than control. despite appearances, your presence is appreciated.</p></blockquote><figure data-orig-width=\"2790\" data-orig-height=\"1356\" class=\"tmblr-full\"><img src=\"https://66.media.tumblr.com/aeb9973b18fe8c16342b578c0508b700/tumblr_inline_ph2hvv4t9h1vbjywz_540.jpg\" alt=\"image\" data-orig-width=\"2790\" data-orig-height=\"1356\"/></figure><p><i>depression</i> is a personal reflection of my past few years, struggling\n with depression in an environment that couldn&rsquo;t help or support me the \nway i needed. <i>depression </i>initially existed as part of a larger criticism of  capitalism and the work ethic. i stripped down the larger piece until one exposed dial remained.<br/></p><figure data-orig-width=\"1024\" data-orig-height=\"768\" class=\"tmblr-full\"><img src=\"https://66.media.tumblr.com/22822b94391bbe6d697233ebab5653f0/tumblr_inline_ph2imh5oHk1vbjywz_540.jpg\" alt=\"image\" data-orig-width=\"1024\" data-orig-height=\"768\"/></figure><p>the dial  represents the machine’s energy level. turned all the way down, it represents depression; the machine’s clock speed drops, and it becomes so sluggish it’s nearly inoperational. when the dial is turned all the way up, the machine works “as intended”.</p><p>over time, the machine’s clock goes through a natural ebb and flow. it’s affected by both a long-term depressive cycle, and short-term events that bump the dial in random directions. the machine tends toward the depressive, so most viewers’ initial encounter is with the depressive state.<br/></p><p>nearly every piece in the sfpc showcase was interactive, so  most viewers had the instinct to force the dial towards a “better mood”. the dial would linger briefly at its new state before two heavy motors forced it back to its initial energy level. the initial “why don’t you just cheer up?” was rebuffed. some participants moved on at this point. </p><p>but if a viewer remained present near the piece <i>without</i> forcing the dial, its energy level would resurface on its own.<br/></p><figure class=\"tmblr-embed tmblr-full\" data-provider=\"youtube\" data-orig-width=\"540\" data-orig-height=\"304\" data-url=\"https%3A%2F%2Fyoutu.be%2FZTyzMsvt2jo\"><iframe id=\"youtube_iframe\" src=\"https://www.youtube.com/embed/ZTyzMsvt2jo?feature=oembed&amp;enablejsapi=1&amp;origin=https://safe.txmblr.com&amp;wmode=opaque\" allowfullscreen=\"\" width=\"540\" height=\"304\" frameborder=\"0\"></iframe></figure><p>i created this piece from found or discarded materials in the sfpc workshop. it’s held together with wire and rubber bands. it’s delicate and exposed, sculptural and functional, chaotic, messy, and cute. expensive or over-engineered solutions were consciously avoided for this project. for example, presence was sensed with a tangle of spare wires glued to aluminum foil from the trash bin (a capacitive proximity sensor). tech fetishism would have obscured the project’s meaning. this is a project is about the messiness of the human condition.<br/></p><figure data-orig-width=\"1024\" data-orig-height=\"768\" class=\"tmblr-full\"><img src=\"https://66.media.tumblr.com/82d432d563aa3459ac9ec689dfb5887d/tumblr_inline_ph2ieqxMOk1vbjywz_540.jpg\" alt=\"image\" data-orig-width=\"1024\" data-orig-height=\"768\"/></figure><p>scared to leave my untested project on its own, i was standing nearby\n when the first viewer arrived. he spun the dial and it spun back. the\n interaction was exactly how i&rsquo;d imagined. he paused, tried again, \ncontemplated the machine. we had a discussion, and i mentioned that it \ncould sense physical presence. he cradled the machine in such a \ndelicate and caring way; i didn’t spoil the moment with a photo, but \nhopefully the photos in this post give some indication. we waited. after half a\n minute, the dial notched up slightly. then i noticed he was crying.</p><p>&ldquo;i didn&rsquo;t think i&rsquo;d be able to make it happier&rdquo;</p><p>he gave me a long, tight hug. i think he was still crying. \nhe said a few more words, but seemed to be choking over them, then \nwandered off, dazed. i wish so badly that i&rsquo;d asked if he was okay, \nhow he was doing, if he wanted to talk. it&rsquo;s a lesson i hope i remember. the piece is about making space and time for people, and \nthough it&rsquo;s not the artist&rsquo;s responsibility to be perfect all the time, i\n should strive to be as good as my art asks others to be.</p><figure data-orig-width=\"1024\" data-orig-height=\"768\" class=\"tmblr-full\"><img src=\"https://66.media.tumblr.com/0b2af8263633a41433b905d2103d28bd/tumblr_inline_ph2ig8CKHA1vbjywz_540.jpg\" alt=\"image\" data-orig-width=\"1024\" data-orig-height=\"768\"/></figure><p>as the space became more crowded, not everyone was willing to spend time\n with the piece. on day two i made tweaks entirely for &ldquo;gropers&rdquo;. i \nsped the piece up. i added another motor so that the dial spun back \nquicker and more reliably. i honed my spiel. i think these were good \nimprovements for the space, but it was also a compromise.<br/></p><figure data-orig-width=\"5760\" data-orig-height=\"3840\" class=\"tmblr-full\"><img src=\"https://66.media.tumblr.com/9cd269a79d5db30a9b0b8c695b5bf433/tumblr_inline_ph2hub5Sbo1vbjywz_540.jpg\" alt=\"image\" data-orig-width=\"5760\" data-orig-height=\"3840\"/></figure><p>in my ideal version of this piece, it takes 10 minutes of nurturing \nbefore the dial begins to move. the viewer would be sitting, alone, in a\n comfortable and intimate space. it&rsquo;s quiet, it takes a lot of time. the\n strongest reactions from day one resulted in tears and deep \ndiscussions, which was rare after i sped the piece up. quicker timing \nsmoothed out the reactions; people &ldquo;got it&rdquo; more often, but fewer \npeople connected on a deep emotional level.<br/></p><figure data-orig-width=\"1024\" data-orig-height=\"1024\" class=\"tmblr-full\"><img src=\"https://66.media.tumblr.com/94b86702aa3e444c084e87f50f68b61a/tumblr_inline_ph2ih1SO3o1vbjywz_540.jpg\" alt=\"image\" data-orig-width=\"1024\" data-orig-height=\"1024\"/></figure><p>i’m proud of this piece. it may not have been the takedown of free market capitalism that i was initially aiming for, but hey, baby steps. it sparked many discussions of depression over the weekend, and allowed me some needed introspection.</p>",
 		"description": "<blockquote><p>“how can i help?”</p><p>a solitary\n dial reflects the machine’s physical clock speed, acting as display \nrather than control. despite appearances, your presence is appreciated.</p></blockquote><p><i>depression</i> is a personal reflection of my past few years, struggling\n with depression in an environment that couldn’t help or support me the \nway i needed. <i>depression </i>initially existed as part of a larger criticism of  capitalism and the work ethic. i stripped down the larger piece until one exposed dial remained.</p><p>the dial  represents the machine’s energy level. turned all the way down, it represents depression; the machine’s&nbsp;clock speed drops, and it becomes so sluggish it’s nearly inoperational. when the dial is turned all the way up, the machine works “as intended”.</p>",
-		"more": true
+		"more": true,
+		"timestamp": 1524614400000
 	}
 ]
