@@ -9,6 +9,10 @@ const rssify = query => {
 		query.allCombinedProjectsJson.nodes.push(...query.b.nodes);
 		delete query.b;
 	}
+	if (query.c) {
+		query.allCombinedProjectsJson.nodes.push(...query.c.nodes);
+		delete query.c;
+	}
 	return format(query)
 		.map(node => ({
 			title: node.title,
@@ -148,6 +152,29 @@ module.exports = {
 								filter: {
 									tags: {nin: ["starred"]},
 									repo: {eq: "rileyjshaw/rileyjshaw-new"}
+								}
+								sort: {fields: [date], order: DESC}
+							) {
+								nodes {
+									uid
+									type
+									title
+									date
+									link
+									description
+									updatedAt
+									length
+									contentType
+									body
+									image
+								}
+							}
+
+							c: allCombinedProjectsJson (
+								filter: {
+									tags: {nin: ["starred"]},
+									repo: {eq: "rileyjshaw/rileyjshaw.github.io"}
+									timestamp: {gt: 1577833572562}
 								}
 								sort: {fields: [date], order: DESC}
 							) {
