@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/rileyjshaw
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://rileyjshaw.com
+  * I am rileyjshaw (https://keybase.io/rileyjshaw) on keybase.
+  * I have a public key ASDyjD6RSBns6qbSok7F_ZrVmghD0ZF6Un_c2raOt-bLmgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120f28c3e914819eceaa6d2a24ec5fd9ad59a0843d1917a527fdcdab68eb7e6cb9a0a",
+      "host": "keybase.io",
+      "kid": "0120f28c3e914819eceaa6d2a24ec5fd9ad59a0843d1917a527fdcdab68eb7e6cb9a0a",
+      "uid": "945e308adfddd4183e6a2c44128cfc19",
+      "username": "rileyjshaw"
+    },
+    "merkle_root": {
+      "ctime": 1551942194,
+      "hash": "2b518382b4a0dff1a013617aa82f58c4c870cee973fe79aafaa055ac537f20f30a8fdb5a01726d45b743e2a8da1a6edb67a38e13b565bff81831055f52d3979d",
+      "hash_meta": "122ba4657c6ebc56615b64df816efa728ee69fdcbd9ac7c0d0f608966f23df8f",
+      "seqno": 4892574
+    },
+    "service": {
+      "entropy": "h2wybTxzUrpWB2+bTLzlaTsP",
+      "hostname": "rileyjshaw.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.0.0"
+  },
+  "ctime": 1551942204,
+  "expire_in": 504576000,
+  "prev": "fba7b73c97df51aea50937ace15efbff533f82a7779aa803607687a8451b7bf5",
+  "seqno": 27,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg8ow+kUgZ7Oqm0qJOxf2a1ZoIQ9GRelJ/3Nq2jrfmy5oKp3BheWxvYWTESpcCG8Qg+6e3PJffUa6lCTes4V77/1M/gqd3mqgDYHaHqEUbe/XEINvUA87sMUTVp190zAmULGziwA6PSIXPM9S0c5roI9SUAgHCo3NpZ8RAZ76WIDlSqn+y2K7sRBG9nz1g/k7WLrzzPCZALGzFKa2d4+nzAdXnt5sDOIC1Wd2svSZQZ8sGrD3umedCbG8wBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIHa7mij35Ewu5rHNn5yL9yHzQ5jOc8M20VwuAL2Ne4B+o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/rileyjshaw
+
+==================================================================
