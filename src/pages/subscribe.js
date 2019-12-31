@@ -26,8 +26,8 @@ export default () => (
 			<p>This website has RSS feeds for more frequent updates:</p>
 			<dl className="rss-feeds">
 				<dt>
-					<UncontrolledLink to="/index.xml">
-						Homepage feed
+					<UncontrolledLink to="/highlights.xml">
+						Highlights feed
 					</UncontrolledLink>
 				</dt>
 				<dd>
@@ -58,7 +58,7 @@ export default () => (
 					posts.
 				</dd>
 				<dt>
-					<UncontrolledLink to="/firehose.xml">
+					<UncontrolledLink to="/index.xml">
 						Firehose feed
 					</UncontrolledLink>
 				</dt>

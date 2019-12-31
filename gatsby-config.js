@@ -167,8 +167,8 @@ module.exports = {
 								}
 							}
 						}`,
-						output: `/index.xml`,
-						title: `Homepage feed`,
+						output: `/highlights.xml`,
+						title: `Highlights feed`,
 					},
 					{
 						serialize: ({query}) => rssify(query),
@@ -289,7 +289,7 @@ module.exports = {
 								}
 							}
 						`,
-						output: `/firehose.xml`,
+						output: `/index.xml`,
 						title: `Firehose feed`,
 					},
 				],

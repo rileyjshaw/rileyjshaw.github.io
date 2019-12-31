@@ -33,7 +33,7 @@ const NotFoundPage = ({location}) => (
 					<p>
 						Check if the link works on my{' '}
 						<ExternalLink
-							to={`https://old.rileyjshaw.com${location.pathname}`}
+							to={`https://v14.rileyjshaw.com${location.pathname}`}
 						>
 							old website
 						</ExternalLink>

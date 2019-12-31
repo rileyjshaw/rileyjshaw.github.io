@@ -148,7 +148,7 @@ class ProjectExplorer extends React.PureComponent {
 				</p>
 				<p className="result-details warning">
 					I host a{' '}
-					<AutoLink to="https://old.rileyjshaw.com/lab">
+					<AutoLink to="https://v14.rileyjshaw.com/lab">
 						mirror of my old website
 					</AutoLink>{' '}
 					if needed.
