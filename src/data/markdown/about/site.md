@@ -6,4 +6,4 @@ If you like the idea of website-as-API, [I have some feeds that you can subscrib
 
 To respect your privacy, this site does not, and will never, track usage data. Most website owners do not share this proclivity. To reclaim some privacy, check out [Privacy Badger](https://www.eff.org/privacybadger).
 
-This site is free software under the [GNU GPLv3 license](https://github.com/rileyjshaw/rileyjshaw.github.io/blob/master/COPYING) and follows the [Contributor Covenant](https://www.contributor-covenant.org/).
+This site is free software under the [GNU GPLv3 license](https://github.com/rileyjshaw/rileyjshaw.github.io/blob/dev/COPYING) and follows the [Contributor Covenant](https://www.contributor-covenant.org/).
