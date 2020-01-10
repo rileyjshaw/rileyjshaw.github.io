@@ -32,12 +32,12 @@ const IndexPage = ({featuredProjects = []}) => {
 
 	return (
 		<Layout>
-			<SEO title="Home" />
+			<SEO />
 			<header className="page-header cycle-bg">
 				<RgbSplitter El="h1" className="title">
 					{/* <Shard>As your eyes adjust, you discover that</Shard>
 			<span className="visuallyhidden"> </span> */}
-					<Shard>you’re in the digital</Shard>
+					<Shard>You’re in the digital</Shard>
 					<span className="visuallyhidden"> </span>
 					<Shard>landfill of</Shard>
 					<span className="visuallyhidden"> </span>
