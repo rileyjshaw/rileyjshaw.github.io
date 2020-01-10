@@ -17,6 +17,7 @@ function SEO({description, lang, meta, title: pageTitle, className, ...rest}) {
 				site {
 					siteMetadata {
 						title
+						titlePostfix
 						description
 						author
 					}
@@ -25,9 +26,13 @@ function SEO({description, lang, meta, title: pageTitle, className, ...rest}) {
 		`
 	);
 
+	const title = `${pageTitle || site.siteMetadata.title} · ${
+		site.siteMetadata.titlePostfix
+	}`;
+	const metaTitle = `${pageTitle ? `${pageTitle} · ` : ''}${
+		site.siteMetadata.title
+	}`;
 	const metaDescription = description || site.siteMetadata.description;
-	const metaTitle = pageTitle || site.siteMetadata.title;
-
 	const classAttribute = className ? {class: className} : null;
 
 	return (
@@ -36,10 +41,7 @@ function SEO({description, lang, meta, title: pageTitle, className, ...rest}) {
 				...classAttribute,
 				lang,
 			}}
-			title={metaTitle}
-			titleTemplate={`${pageTitle ? '%s · ' : ''}${
-				site.siteMetadata.title
-			}`}
+			title={title}
 			meta={[
 				{
 					name: `description`,

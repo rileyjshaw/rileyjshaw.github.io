@@ -33,6 +33,7 @@ const rssify = query => {
 module.exports = {
 	siteMetadata: {
 		title: `The Digital Landfill of Riley J. Shaw`,
+		titlePostfix: `rileyjshaw`,
 		description: `Riley J. Shaw is an artist, engineer, and educator. Focused on accessibility, mentorship, and community, Riley questions who “digital literacy” serves.`,
 		author: `@rileyjshaw`,
 		siteUrl: `https://rileyjshaw.com`,
