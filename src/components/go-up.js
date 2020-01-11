@@ -7,6 +7,7 @@ import './go-up.css';
 export default () => (
 	<div className="go-up">
 		<CycleText
+			ms={150}
 			OuterElement="span"
 			onClick={() =>
 				window.scroll({
@@ -15,7 +16,7 @@ export default () => (
 				})
 			}
 		>
-			–➫➯➱➬
+			➫➯➱➬–
 		</CycleText>
 	</div>
 );

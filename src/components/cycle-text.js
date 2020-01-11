@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
-import {useInView} from 'react-intersection-observer';
 
-import {useInterval} from '../util/hooks';
+import {useInterval, useInView} from '../util/hooks';
 
 import TextGrid from './text-grid';
 

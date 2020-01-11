@@ -1,7 +1,6 @@
 import React, {cloneElement, isValidElement} from 'react';
-import {useInView} from 'react-intersection-observer';
 
-import {useMousePosition, useWindowSize} from '../util/hooks';
+import {useInView, useMousePosition, useWindowSize} from '../util/hooks';
 
 const deepCloneChildren = (children, propsFn = null) =>
 	React.Children.map(children, child =>

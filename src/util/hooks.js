@@ -1,4 +1,5 @@
 import {useState, useEffect, useRef, useLayoutEffect} from 'react';
+import {useInView as useInViewExternal} from 'react-intersection-observer';
 
 export function useWindowSize(cb) {
 	const initialSize =
@@ -53,6 +54,7 @@ export function useInterval(cb, ms, oneShot) {
 		if (typeof ms === 'number') {
 			function tick(lastNow) {
 				let now = performance.now();
+				// TODO(riley): Add option to skip ticks if drift > ms.
 				const drift = ms + lastNow - now;
 				now += drift;
 				if (!oneShot)
@@ -145,4 +147,10 @@ export function useIdle(delay, onIdle) {
 		};
 	}, []);
 	return isIdle;
+}
+
+export function useInView() {
+	let [ref, inView] = useInViewExternal(...arguments);
+	inView = inView && true; // TODO(riley): Add check for active tab.
+	return [ref, inView];
 }

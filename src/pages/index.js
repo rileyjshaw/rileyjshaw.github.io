@@ -58,7 +58,11 @@ const IndexPage = ({featuredProjects = []}) => {
 							&nbsp;
 							<Link to="/about">
 								More&nbsp;
-								<CycleText OuterElement="span" ms={100}>
+								<CycleText
+									className="arrow"
+									OuterElement="span"
+									ms={100}
+								>
 									–➫➯➱➬
 								</CycleText>
 							</Link>
