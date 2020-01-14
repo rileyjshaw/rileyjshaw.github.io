@@ -50,47 +50,12 @@ With just the first two tricks we have a [functioning game](/visited-vectors/rea
 
 [This paper](http://lcamtuf.coredump.cx/css_calc/) builds an n-input OR gate in CSS using alpha-blending rounding errors. I've embedded my own cross-browser version below; click Result to see it in action:
 
-<div data-height="268" data-theme-id="5323" data-slug-hash="CjiKf" data-default-tab="css" data-user="rileyjshaw" class='codepen'><pre><code>$in: 0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
-
-.container
-div
-opacity: 0.004
-background: white
-
-@for $b from 1 through length($in)
-@if nth($in,$b) == 1
-.l#{\$b}
-background: red
-
-// Everything below this is beside the point...
-.container
-position: fixed
-top: 50%
-left: 50%
-height: 120px
-width: 120px
-margin: -62px
-border: 4px solid black
-font: bold 32px/#{60px} sans-serif
-text-align: center
-color: red
-
-div
-position: absolute
-top: 0
-left: 0
-height: 100%
-width: 100%
-
-p
-position: relative
-
-.on
-color: white
-</code></pre>
-
-<p>See the Pen <a href='http://codepen.io/rileyjshaw/pen/CjiKf/'>n-input OR gate in CSS</a> by Riley Shaw (<a href='http://codepen.io/rileyjshaw'>@rileyjshaw</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-</div><script async src="https://assets.codepen.io/assets/embed/ei.js"></script>
+<p class="codepen" data-height="265" data-theme-id="5323" data-default-tab="css,result" data-user="rileyjshaw" data-slug-hash="CjiKf" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="n-input OR gate in CSS">
+  <span>See the Pen <a href="https://codepen.io/rileyjshaw/pen/CjiKf">
+  n-input OR gate in CSS</a> by Riley Shaw (<a href="https://codepen.io/rileyjshaw">@rileyjshaw</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 An OR gate is "on" if any of its inputs are "on". We can use this to probe n links[^3] at once by stacking them together. Now if a user sees red and hits the spacebar we know that one of the links in the group has been visited.
 

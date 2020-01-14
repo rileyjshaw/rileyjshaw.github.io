@@ -31,14 +31,14 @@ These first tones were generated using the powerful, free, cross-platform audio 
 4. Double-click the top track to select it
 5. In the menu bar, click Effect > Nyquist Prompt...
 6. Enter the following into the prompt:
-    <pre><code class='language-lisp'>
-      (setf f0 (aref (yin s 33 93 4400) 0))
-      (setf fl (truncate (snd-length f0 ny:all)))
-      (setf mean-f0 (snd-fetch (snd-avg f0 fl fl op-average)))
-      (format nil "Mean Fundamental Frequency:~%~a ~~~a"
-              (step-to-hz mean-f0)
-              (nth (round mean-f0) nyq:pitch-names))
-    </code></pre>
+    ```lisp
+    (setf f0 (aref (yin s 33 93 4400) 0))
+    (setf fl (truncate (snd-length f0 ny:all)))
+    (setf mean-f0 (snd-fetch (snd-avg f0 fl fl op-average)))
+    (format nil "Mean Fundamental Frequency:~%~a ~~~a"
+        (step-to-hz mean-f0)
+        (nth (round mean-f0) nyq:pitch-names))
+    ```
 7. If you're using a recent version of Audacity, check the "Use legacy (version 3) syntax" box at the top of the prompt[^2]
 8. Let it run and **remember the output frequency**
 9. Keeping the track selected, click Generate > Tone... in the top menu

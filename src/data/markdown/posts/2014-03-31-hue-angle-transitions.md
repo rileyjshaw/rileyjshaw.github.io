@@ -12,7 +12,7 @@ tags:
 
 I was recently browsing a beautiful red monochrome[^1] site. There were a few call-to-action buttons on the page that transitioned to green on hover.
 
-<p data-height="268" data-theme-id="0" data-slug-hash="qgrKn" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/rileyjshaw/pen/qgrKn/'>Red to green transitions are ugly</a> by Riley Shaw (<a href='http://codepen.io/rileyjshaw'>@rileyjshaw</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="268" data-theme-id="5323" data-slug-hash="qgrKn" data-default-tab="result" data-user="rileyjshaw" class='codepen'>See the Pen <a href='http://codepen.io/rileyjshaw/pen/qgrKn/'>Red to green transitions are ugly</a> by Riley Shaw (<a href='http://codepen.io/rileyjshaw'>@rileyjshaw</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 
 Where did that brown come from?! The initial red looks great, the final green looks great, but everything between is pretty dismal. Why is that?
 
@@ -41,11 +41,11 @@ Passing RGB values lets you manipulate pixels as though you were mixing paint. H
 
 Since HSL takes _hue_ as one of its arguments, you'd think that transitioning from one hue to another would be a breeze. Sadly, browsers convert all HSL colors to their RGB counterparts before using them, so transitions between RGB and HSL end up looking the exact same.
 
-<p data-height="268" data-theme-id="0" data-slug-hash="GLKrD" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/rileyjshaw/pen/GLKrD/'>Red to green transitions are still ugly</a> by Riley Shaw (<a href='http://codepen.io/rileyjshaw'>@rileyjshaw</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="268" data-theme-id="5323" data-slug-hash="GLKrD" data-default-tab="result" data-user="rileyjshaw" class='codepen'>See the Pen <a href='http://codepen.io/rileyjshaw/pen/GLKrD/'>Red to green transitions are still ugly</a> by Riley Shaw (<a href='http://codepen.io/rileyjshaw'>@rileyjshaw</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 
 We can do better than this, but we're going to have to use some JavaScript. [There has been discussion](http://lists.w3.org/Archives/Public/www-style/2012May/1060.html) of changing the way HSL transitions work in the browser, but nothing's come of it yet. For now, let's run a little comparison that updates both RGB and HSL values at each step.
 
-<p data-height="268" data-theme-id="5323" data-slug-hash="uonyi" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/rileyjshaw/pen/uonyi/'>Transitions through RGB and HSL spaces</a> by Riley Shaw (<a href='http://codepen.io/rileyjshaw'>@rileyjshaw</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="268" data-theme-id="5323" data-slug-hash="uonyi" data-default-tab="result" data-user="rileyjshaw" class='codepen'>See the Pen <a href='http://codepen.io/rileyjshaw/pen/uonyi/'>Transitions through RGB and HSL spaces</a> by Riley Shaw (<a href='http://codepen.io/rileyjshaw'>@rileyjshaw</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 
 The HSL transition maintains a consistent saturation, so we're able to avoid the sludge of RGB. Unfortunately, we're still left with an awkward transition. Our HSL version peaks in lightness at yellow, leaving a jarring shift between yellow and the final color. Though the colors are nicer through HSL, the RGB version is still more appealing since it has natural apparent timing.
 
@@ -53,7 +53,7 @@ The HSL transition maintains a consistent saturation, so we're able to avoid the
 
 We can come up with a localized easing function to make the HSL transition smoother. By mapping the trough of a sine curve to the peak at the center of our transition, we can move slowly through the area where change is greatest:
 
-<p data-height="268" data-theme-id="5323" data-slug-hash="Levyq" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/rileyjshaw/pen/Levyq/'>HSL transition with easing</a> by Riley Shaw (<a href='http://codepen.io/rileyjshaw'>@rileyjshaw</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="268" data-theme-id="5323" data-slug-hash="Levyq" data-default-tab="result" data-user="rileyjshaw" class='codepen'>See the Pen <a href='http://codepen.io/rileyjshaw/pen/Levyq/'>HSL transition with easing</a> by Riley Shaw (<a href='http://codepen.io/rileyjshaw'>@rileyjshaw</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 
 The adjusted version looks better, but it's still not great. A smooth transition could be reached after extensive tweaking, but our timing function would only be relevant for a red-to-green transition; any other combinations would require their own custom timing functions.
 
@@ -77,12 +77,12 @@ This is why color pairs require custom timing functions. Our eyes try to find a 
 
 Plenty of discussions on the inconsistencies of HSL lightness already exist, so I've thrown some of my favorite links into the [references](#references). One particularly awesome project is [HUSL](http://www.boronine.com/husl/), which uses CIE's definition of lightness to smooth out the space. In HUSL, large-angle transitions appear less jumpy; check it out!
 
-<p data-height="268" data-theme-id="5323" data-slug-hash="ArhLK" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/rileyjshaw/pen/ArhLK/'>HUSL to the rescue</a> by Riley Shaw (<a href='http://codepen.io/rileyjshaw'>@rileyjshaw</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="268" data-theme-id="5323" data-slug-hash="ArhLK" data-default-tab="result" data-user="rileyjshaw" class='codepen'>See the Pen <a href='http://codepen.io/rileyjshaw/pen/ArhLK/'>HUSL to the rescue</a> by Riley Shaw (<a href='http://codepen.io/rileyjshaw'>@rileyjshaw</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 
 HUSL gets us very close to perceptually linear hue-angle transitions. It also puts a ceiling on our saturation, dragging us closer to the sludgy colors that we've been avoiding all along. Some transitions like cyan to violet end up looking awesome. Others, such as our original example of red to green, look far worse than they would in RGB or HSL.
 
-<p data-height="268" data-theme-id="5323" data-slug-hash="Lexkg" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/rileyjshaw/pen/Lexkg/'>HUSL Transitions: A good'n and a bad'n</a> by Riley Shaw (<a href='http://codepen.io/rileyjshaw'>@rileyjshaw</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="https://codepen.io/assets/embed/ei.js"></script>
+<p data-height="268" data-theme-id="5323" data-slug-hash="Lexkg" data-default-tab="result" data-user="rileyjshaw" class='codepen'>See the Pen <a href='http://codepen.io/rileyjshaw/pen/Lexkg/'>HUSL Transitions: A good'n and a bad'n</a> by Riley Shaw (<a href='http://codepen.io/rileyjshaw'>@rileyjshaw</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 We've come all this way, we've systematically solved all of our problems with the initial transition, and we still ended up with something worse than what we started with. What gives?
 
