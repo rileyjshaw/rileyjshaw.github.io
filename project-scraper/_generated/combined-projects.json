@@ -6,8 +6,8 @@
 		"date": "2019-05-30",
 		"link": "https://are.na/riley-shaw/hell-sbgbxnmdlxi",
 		"description": "",
-		"updatedAt": "2019-12-31",
-		"length": 139,
+		"updatedAt": "2020-01-10",
+		"length": 142,
 		"timestamp": 1559174400000
 	},
 	{
@@ -17,8 +17,8 @@
 		"date": "2018-11-21",
 		"link": "https://are.na/riley-shaw/hw-u1lmoisdnyu",
 		"description": "",
-		"updatedAt": "2019-12-31",
-		"length": 156,
+		"updatedAt": "2020-01-11",
+		"length": 157,
 		"timestamp": 1542758400000
 	},
 	{
@@ -28,7 +28,7 @@
 		"date": "2018-11-04",
 		"link": "https://are.na/riley-shaw/suaxbjvglls",
 		"description": "",
-		"updatedAt": "2019-12-27",
+		"updatedAt": "2020-01-11",
 		"length": 11,
 		"timestamp": 1541289600000
 	},
@@ -38,7 +38,7 @@
 		"title": "~",
 		"date": "2018-12-09",
 		"link": "https://are.na/riley-shaw/tilde-qvdrqcjjopm",
-		"updatedAt": "2019-12-29",
+		"updatedAt": "2020-01-10",
 		"length": 14,
 		"timestamp": 1544313600000
 	},
@@ -1996,6 +1996,20 @@
 		"timestamp": 1379462400000
 	},
 	{
+		"title": "git tidy-up",
+		"date": "2016-10-06",
+		"tags": ["app", "extinct"],
+		"coolness": 30,
+		"link": "https://github.com/rileyjshaw/git-tidy-up",
+		"lastTagged": 1564608401800,
+		"descriptionList": [
+			"Git CLI to tidy up a working directory with too much going on."
+		],
+		"type": "project",
+		"uid": "PROJECT_GIT_TIDY_UP",
+		"timestamp": 1475712000000
+	},
+	{
 		"title": "Glorious pattern matcher",
 		"date": "2014-05-20",
 		"tags": ["game", "online", "pretty", "reusable"],
@@ -2666,6 +2680,20 @@
 		"timestamp": 1456444800000
 	},
 	{
+		"title": "NSA Ipsum",
+		"date": "2016-06-27",
+		"coolness": 27,
+		"link": "https://www.npmjs.com/package/nsa-ipsum",
+		"tags": ["external", "instructional", "online"],
+		"lastTagged": 1564772210294,
+		"descriptionList": [
+			"An NPM module containing words from the NSA Analyst's Desktop Binder, Section 2.13: \"Key Words & Search Terms\"."
+		],
+		"type": "project",
+		"uid": "PROJECT_NSA_IPSUM",
+		"timestamp": 1466985600000
+	},
+	{
 		"title": "Orbit",
 		"date": "2015-02-20",
 		"tags": ["game", "online"],
@@ -2796,6 +2824,18 @@
 		"type": "project",
 		"uid": "PROJECT_PLASTER_SWIRLS,_THICKER",
 		"timestamp": 1465948800000
+	},
+	{
+		"title": "Plop",
+		"date": "2019-09-13",
+		"coolness": 60,
+		"link": "https://github.com/rileyjshaw/plop",
+		"tags": ["app", "starred"],
+		"lastTagged": 1564772210294,
+		"descriptionList": ["A scriptable text expansion microtool."],
+		"type": "project",
+		"uid": "PROJECT_PLOP",
+		"timestamp": 1568332800000
 	},
 	{
 		"title": "Pokéball wave",
@@ -3042,6 +3082,20 @@
 		"timestamp": 1373673600000
 	},
 	{
+		"title": "Servo",
+		"date": "2019-04-05",
+		"coolness": 42,
+		"link": "https://github.com/rileyjshaw/Servo/tree/min-max-improvements",
+		"tags": ["external", "starred"],
+		"lastTagged": 1564772210294,
+		"descriptionList": [
+			"A fork of the official Arduino Servo library, improved to match standard R/C pulse widths."
+		],
+		"type": "project",
+		"uid": "PROJECT_SERVO",
+		"timestamp": 1554422400000
+	},
+	{
 		"title": "Shadowfy",
 		"date": "2013-10-09",
 		"tags": ["golf", "online", "reusable"],
@@ -3284,6 +3338,20 @@
 		"timestamp": 1386028800000
 	},
 	{
+		"title": "Spiral explorer",
+		"date": "2020-01-10",
+		"coolness": 40,
+		"link": "https://github.com/rileyjshaw/spiral-explorer",
+		"tags": ["extinct", "pretty", "reusable"],
+		"lastTagged": 1564772210294,
+		"descriptionList": [
+			"A WIP / DOA sandbox for exploring <a href=\"https://codepen.io/collection/nYWPBp\">single-line, tiling spirals</a>."
+		],
+		"type": "project",
+		"uid": "PROJECT_SPIRAL_EXPLORER",
+		"timestamp": 1578614400000
+	},
+	{
 		"title": "Spokes, etc",
 		"date": "2016-06-03",
 		"tags": ["online", "pretty"],
@@ -3331,6 +3399,21 @@
 		"type": "project",
 		"uid": "PROJECT_STICKY_CSS_TRANSITIONS",
 		"timestamp": 1383868800000
+	},
+	{
+		"title": "Stipphonic",
+		"coolness": 34,
+		"link": "https://github.com/rileyjshaw/stipphonic",
+		"date": "2018-10-03",
+		"tags": ["app", "music", "pretty"],
+		"lastTagged": 1564772210294,
+		"descriptionList": [
+			"I wanted to see what stippling sounded like applied to musical chords.",
+			"Adapted from <a href=\"https://github.com/rileyjshaw/virtuoso\">Virtuoso</a>."
+		],
+		"type": "project",
+		"uid": "PROJECT_STIPPHONIC",
+		"timestamp": 1538524800000
 	},
 	{
 		"title": "Stone",
