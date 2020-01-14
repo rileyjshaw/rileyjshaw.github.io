@@ -20,6 +20,26 @@
 		"todo": true
 	},
 	{
+		"title": "Spiral explorer",
+		"description": [
+			"A WIP / DOA sandbox for exploring <a href=\"https://codepen.io/collection/nYWPBp\">single-line, tiling spirals</a>."
+		],
+		"date": "2020-01-10",
+		"coolness": 40,
+		"link": "https://github.com/rileyjshaw/spiral-explorer",
+		"tags": ["extinct", "reusable", "pretty"],
+		"lastTagged": 1564772210294
+	},
+	{
+		"title": "Plop",
+		"description": ["A scriptable text expansion microtool."],
+		"date": "2019-09-13",
+		"coolness": 60,
+		"link": "https://github.com/rileyjshaw/plop",
+		"tags": ["app", "starred"],
+		"lastTagged": 1564772210294
+	},
+	{
 		"title": "Marqueee",
 		"description": [
 			"A quick experiment to render efficient \"ticker tape\" on a canvas.",
@@ -29,6 +49,17 @@
 		"coolness": 36,
 		"link": "https://marqueee.glitch.me/",
 		"tags": ["online", "reusable"],
+		"lastTagged": 1564772210294
+	},
+	{
+		"title": "Servo",
+		"description": [
+			"A fork of the official Arduino Servo library, improved to match standard R/C pulse widths."
+		],
+		"date": "2019-04-05",
+		"coolness": 42,
+		"link": "https://github.com/rileyjshaw/Servo/tree/min-max-improvements",
+		"tags": ["external", "starred"],
 		"lastTagged": 1564772210294
 	},
 	{
@@ -71,6 +102,18 @@
 		"coolness": 76,
 		"link": "https://ca-finder.glitch.me/",
 		"lastTagged": 1552433253008
+	},
+	{
+		"title": "Stipphonic",
+		"description": [
+			"I wanted to see what stippling sounded like applied to musical chords.",
+			"Adapted from <a href=\"https://github.com/rileyjshaw/virtuoso\">Virtuoso</a>."
+		],
+		"coolness": 34,
+		"link": "https://github.com/rileyjshaw/stipphonic",
+		"date": "2018-10-03",
+		"tags": ["app", "music", "pretty"],
+		"lastTagged": 1564772210294
 	},
 	{
 		"title": "smudge",
@@ -275,6 +318,17 @@
 		"lastTagged": 1564608401800
 	},
 	{
+		"title": "git tidy-up",
+		"description": [
+			"Git CLI to tidy up a working directory with too much going on."
+		],
+		"date": "2016-10-06",
+		"tags": ["app", "extinct"],
+		"coolness": 30,
+		"link": "https://github.com/rileyjshaw/git-tidy-up",
+		"lastTagged": 1564608401800
+	},
+	{
 		"title": "Flutter",
 		"description": ["If you make a pin out of this please send me one."],
 		"date": "2016-10-04",
@@ -394,6 +448,17 @@
 		"coolness": 50,
 		"link": "http://codepen.io/rileyjshaw/full/pbQEoA/",
 		"lastTagged": 1564608428261
+	},
+	{
+		"title": "NSA Ipsum",
+		"description": [
+			"An NPM module containing words from the NSA Analyst's Desktop Binder, Section 2.13: \"Key Words & Search Terms\"."
+		],
+		"date": "2016-06-27",
+		"coolness": 27,
+		"link": "https://www.npmjs.com/package/nsa-ipsum",
+		"tags": ["online", "external", "instructional"],
+		"lastTagged": 1564772210294
 	},
 	{
 		"title": "Flubber",
