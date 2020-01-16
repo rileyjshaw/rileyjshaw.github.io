@@ -6,8 +6,8 @@
 		"date": "2019-05-30",
 		"link": "https://are.na/riley-shaw/hell-sbgbxnmdlxi",
 		"description": "",
-		"updatedAt": "2020-01-10",
-		"length": 142,
+		"updatedAt": "2020-01-14",
+		"length": 143,
 		"timestamp": 1559174400000
 	},
 	{
@@ -17,7 +17,7 @@
 		"date": "2018-11-21",
 		"link": "https://are.na/riley-shaw/hw-u1lmoisdnyu",
 		"description": "",
-		"updatedAt": "2020-01-11",
+		"updatedAt": "2020-01-14",
 		"length": 157,
 		"timestamp": 1542758400000
 	},
@@ -28,7 +28,7 @@
 		"date": "2018-11-04",
 		"link": "https://are.na/riley-shaw/suaxbjvglls",
 		"description": "",
-		"updatedAt": "2020-01-11",
+		"updatedAt": "2020-01-14",
 		"length": 11,
 		"timestamp": 1541289600000
 	},
@@ -1585,7 +1585,7 @@
 	{
 		"title": "Easy Inbox Zero",
 		"date": "2015-12-20",
-		"tags": ["browserextension"],
+		"tags": ["browserextension", "extinct"],
 		"coolness": 50,
 		"link": "https://github.com/rileyjshaw/easy-inbox-zero",
 		"lastTagged": 1564707914672,
