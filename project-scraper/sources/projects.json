@@ -1075,7 +1075,7 @@
 			"A browser extension that removes the unread count from your Gmail inbox and title bar."
 		],
 		"date": "2015-12-20",
-		"tags": ["browserextension"],
+		"tags": ["browserextension", "extinct"],
 		"coolness": 50,
 		"link": "https://github.com/rileyjshaw/easy-inbox-zero",
 		"lastTagged": 1564707914672
