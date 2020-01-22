@@ -30,10 +30,43 @@ const addTags = (n, tags) => {
 	if (typeof tags === 'string') tags = [tags];
 	n.tags = [...(n.tags || []), ...tags];
 };
+// Parse HTML with regular expressions, they said. It'll be fun, they said...
+const fixLinks = text =>
+	text &&
+	text
+		.replace(
+			/<a [^>]*?\bhref=(["'])(?:https?:\/\/)?(?:www\.)?rileyjshaw.com\b\/?((?:\\\1|[^\1])+?)\1[^>]*?>/gi,
+			'<a href=$1/$2$1>'
+		)
+		.replace(
+			/<a [^>]*?\bhref=(["'])((?!(\/|#|\1))(?:\\\1|[^\1])+?)\1[^>]*?>/gi,
+			'<a href=$1$2$1 rel="noopener noreferrer" target="_blank">'
+		);
 const typeTransformers = {
-	dweet: n => {
-		addTags(n, ['golf', 'online']);
-	},
+	dweet: [
+		n => {
+			addTags(n, ['golf', 'online']);
+		},
+	],
+	commit: [
+		n => {
+			n.body = fixLinks(n.body);
+			n.description = fixLinks(n.body);
+		},
+	],
+	tumblr: [
+		n => {
+			n.body = fixLinks(n.body);
+			n.description = fixLinks(n.body);
+		},
+	],
+	project: [
+		n => {
+			if (n.descriptionList) {
+				n.descriptionList = n.descriptionList.map(fixLinks);
+			}
+		},
+	],
 };
 
 const featuredProjects = [
@@ -88,12 +121,12 @@ const stripOuterQuotes = str => str.replace(/^[“”‘’"'](.*)[“”‘’"
 const quoteAuthors = ['Osamu Sato', 'Donna J. Haraway'];
 function runTweaks() {
 	// Add type transformers to each node of each specified type.
-	Object.entries(typeTransformers).forEach(([type, transformer]) => {
+	Object.entries(typeTransformers).forEach(([type, transformers]) => {
 		Object.values(projects)
 			.filter(n => n.type === type)
 			.forEach(n => {
-				if (n.transformers) n.transformers.unshift(transformer);
-				else n.transformers = [transformer];
+				if (n.transformers) n.transformers.unshift(...transformers);
+				else n.transformers = transformers;
 			});
 	});
 
