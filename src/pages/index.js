@@ -54,16 +54,15 @@ const IndexPage = ({featuredProjects = []}) => {
 							<div
 								className="md-wrapper"
 								dangerouslySetInnerHTML={{__html: html}}
-							/>
-							&nbsp;
-							<Link to="/about">
-								More&nbsp;
+							/>{' '}
+							<Link to="/about" className="about-link">
+								More{' '}
 								<CycleText
 									className="arrow"
 									OuterElement="span"
 									ms={100}
 								>
-									–➫➯➱➬
+									➫➯➱➬–
 								</CycleText>
 							</Link>
 						</div>
