@@ -149,6 +149,9 @@
 .main-projects {
 	background: var(--blue);
 }
+.main-projects .content-grid .content-node {
+	grid-column-end: -1;
+}
 .explore-link {
 	color: var(--white);
 }
