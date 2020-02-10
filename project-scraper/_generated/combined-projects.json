@@ -6,8 +6,8 @@
 		"date": "2019-05-30",
 		"link": "https://are.na/riley-shaw/hell-sbgbxnmdlxi",
 		"description": "",
-		"updatedAt": "2020-01-14",
-		"length": 143,
+		"updatedAt": "2020-01-27",
+		"length": 144,
 		"timestamp": 1559174400000
 	},
 	{
@@ -17,7 +17,7 @@
 		"date": "2018-11-21",
 		"link": "https://are.na/riley-shaw/hw-u1lmoisdnyu",
 		"description": "",
-		"updatedAt": "2020-01-22",
+		"updatedAt": "2020-01-27",
 		"length": 157,
 		"timestamp": 1542758400000
 	},
@@ -28,7 +28,7 @@
 		"date": "2018-11-04",
 		"link": "https://are.na/riley-shaw/suaxbjvglls",
 		"description": "",
-		"updatedAt": "2020-01-22",
+		"updatedAt": "2020-01-27",
 		"length": 11,
 		"timestamp": 1541289600000
 	},
@@ -38,7 +38,7 @@
 		"title": "~",
 		"date": "2018-12-09",
 		"link": "https://are.na/riley-shaw/tilde-qvdrqcjjopm",
-		"updatedAt": "2020-01-19",
+		"updatedAt": "2020-01-25",
 		"length": 14,
 		"timestamp": 1544313600000
 	},
@@ -179,6 +179,18 @@
 		"description": "<p>Tested on latest IE, Firefox, Chrome, Safari.</p>\n\n<p>Screenshot:</p>\n\n<p><a href=\"https://camo.githubusercontent.com/8b148818499acc87fc183007cad064ecb46a89f6/68747470733a2f2f7a697070792e6766796361742e636f6d2f42696f64656772616461626c6543616c63756c6174696e67426561722e676966\" rel=\"noopener noreferrer\" target=\"_blank\"><img src=\"https://camo.githubusercontent.com/8b148818499acc87fc183007cad064ecb46a89f6/68747470733a2f2f7a697070792e6766796361742e636f6d2f42696f64656772616461626c6543616c63756c6174696e67426561722e676966\" alt=\"Screenshot\" data-canonical-src=\"https://zippy.gfycat.com/BiodegradableCalculatingBear.gif\" style=\"max-width:100%;\"></a></p>\n\n<p>It's responsive, too!</p>\n\n<p><a href=\"https://camo.githubusercontent.com/0230c59f3ad8732430ef7694f180a294d9d860ee/68747470733a2f2f7a697070792e6766796361742e636f6d2f4e6172726f774772697070696e67486172726965726861776b2e676966\" rel=\"noopener noreferrer\" target=\"_blank\"><img src=\"https://camo.githubusercontent.com/0230c59f3ad8732430ef7694f180a294d9d860ee/68747470733a2f2f7a697070792e6766796361742e636f6d2f4e6172726f774772697070696e67486172726965726861776b2e676966\" alt=\"Responsive screenshot\" data-canonical-src=\"https://zippy.gfycat.com/NarrowGrippingHarrierhawk.gif\" style=\"max-width:100%;\"></a></p>",
 		"more": false,
 		"timestamp": 1452038400000
+	},
+	{
+		"uid": "COMMIT_8D135B3BCD140DC3DEC77F082837BFB37956C77C",
+		"type": "commit",
+		"title": "Add control mode à la tmux for text alignment",
+		"date": "2020-01-24",
+		"link": "http://rileyjshaw.commit--blog.com/rileyjshaw/write/8d135b3bcd140dc3dec77f082837bfb37956c77c",
+		"repo": "rileyjshaw/write",
+		"body": "<p>To enable control mode, hit <code>meta key + e</code>. From there, the next key you click will run a control command.</p>\n<p>There are currently two valid control commands:</p>\n<ul>\n<li>ArrowLeft: nudge text alignment left for the active editor</li>\n<li>ArrowRight: nudge text alignment right for the active editor</li>\n</ul>",
+		"description": "<p>To enable control mode, hit <code>meta key + e</code>. From there, the next key you click will run a control command.</p>\n<p>There are currently two valid control commands:</p>\n<ul>\n<li>ArrowLeft: nudge text alignment left for the active editor</li>\n<li>ArrowRight: nudge text alignment right for the active editor</li>\n</ul>",
+		"more": false,
+		"timestamp": 1579824000000
 	},
 	{
 		"uid": "COMMIT_8FDC6236E9343C37AE1F9E2D3A1737C96D84A995",

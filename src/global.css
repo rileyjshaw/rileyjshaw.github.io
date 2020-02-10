@@ -8,12 +8,12 @@
 	--magenta: #e91e63;
 	--yellow: #ffdc00;
 	--black: #0a0b08;
-	--font-stack-sans: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-	--font-stack-serif: Georgia, Palatino, 'Palatino Linotype', Times,
+	--font-stack-sans: arial, 'Helvetica Neue', helvetica, sans-serif;
+	--font-stack-serif: georgia, palatino, 'Palatino Linotype', times,
 		'Times New Roman', serif;
 	--font-stack-heading: 'Proxima Nova', 'Montserrat', 'Arial Black',
-		'Arial Bold', Gadget, sans-serif;
-	--font-stack-mono: 'Courier New', Courier, 'Lucida Sans Typewriter',
+		'Arial Bold', gadget, sans-serif;
+	--font-stack-mono: 'Courier New', courier, 'Lucida Sans Typewriter',
 		'Lucida Typewriter', monospace;
 	--font-scale--5: 0.328em;
 	--font-scale--4: 0.41em;
