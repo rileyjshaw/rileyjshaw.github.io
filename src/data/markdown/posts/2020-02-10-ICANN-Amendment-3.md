@@ -1,0 +1,41 @@
+---
+layout: post
+title: 'I oppose Amendment 3 to the .COM Registry Agreement'
+tags:
+    - rant
+---
+
+[ICANN](https://en.wikipedia.org/wiki/ICANN) is the governing body for the Internet’s domain name system. They are responsible for enabling and achieving “broad representation of the global Internet community”. Over the past few years they have proven to be shady, if not downright corrupt.
+
+Last year, ICANN lifted price caps for the `.org` TLD then allowed its sale to a private equity firm. This year, they're coming for `.com`.
+
+[This post by Namecheap](https://www.namecheap.com/blog/icann-allows-com-price-increases-gets-more-money) does a great job covering the issue at hand. I won't waste time rehashing it here; read the article!
+
+I'm writing to call attention to the **brief window until February 14, 2020 where public comments will be accepted.** If you've [read the article](https://www.namecheap.com/blog/icann-allows-com-price-increases-gets-more-money) and think this is important, consider [submitting a comment](https://www.icann.org/public-comments/com-amendment-3-2020-01-03-en/mail_form).
+
+Below is my public comment. Please feel free to use or repurpose anything I've written in [your own response](https://www.icann.org/public-comments/com-amendment-3-2020-01-03-en/mail_form).
+
+<pre style="white-space: pre-wrap">
+
+From: Riley Shaw &lt;email redacted&gt;
+To: comments-com-amendment-3-03jan20@icann.org
+Subject: I oppose Amendment 3 to the .COM Registry Agreement
+Mon, Feb 10, 2020 at 3:54 PM
+
+Hi,
+
+I am a professional software developer. I have spent most of my career working for nonprofits and small businesses.
+
+I am troubled by the pricing amendments in your new agreement with Verisign. The annual cost for .COM domain registrants is currently within reach for individuals, which is essential for the health and democracy of the Internet. With Amendment 3, Verisign will be able to price out individuals. This will have a direct and immediate negative impact on Internet users.
+
+Earlier this month, I was forced to let a project expire due to an unexpected price increase. I was running the project for a small community completely out of my own pocket. I poured dozens of hours into the project and community. The domain, prompts.club, increased in cost between 2019 and 2020 from ~$10 / year to ~$450 / year. I was forced to let the project die.
+
+I realize that .club is under different ownership, but I hope you can see the relevance.
+
+The changes in pricing model proposed in Amendment 3 will negatively affect artists, independent developers, small businesses, and people using the Internet for anything other than profit generation. It will stifle creativity and access across the Internet.
+
+I imagine you're getting a flood of similar letters right now. Please consider the input of Internet users in this huge decision.
+
+Regards,
+Riley Shaw
+<a href="/">rileyjshaw.com</a></pre>
