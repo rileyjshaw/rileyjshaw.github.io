@@ -6,11 +6,10 @@ import {sortByDate} from '../util/sorting-methods';
 import BigQuote from '../components/big-quote';
 import ContentGrid from '../components/content-grid';
 import CycleText from '../components/cycle-text';
+import Fit from '../components/fit-4';
 import GoUp from '../components/go-up';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import RgbSplitter from '../components/rgb-splitter';
-import Shard from '../components/shard';
 
 import './index.css';
 
@@ -33,18 +32,16 @@ const IndexPage = ({featuredProjects = []}) => {
 	return (
 		<Layout>
 			<SEO />
-			<header className="page-header cycle-bg">
-				<RgbSplitter El="h1" className="title">
-					{/* <Shard>As your eyes adjust, you discover that</Shard>
-			<span className="visuallyhidden"> </span> */}
-					<Shard>You’re in the digital</Shard>
+			<header className="page-header">
+				<h1 className="title">
+					<Fit>You’re in the digital</Fit>
 					<span className="visuallyhidden"> </span>
-					<Shard>landfill of</Shard>
+					<Fit>landfill of</Fit>
 					<span className="visuallyhidden"> </span>
-					<Shard>Riley J.</Shard>
+					<Fit>Riley J.</Fit>
 					<span className="visuallyhidden"> </span>
-					<Shard>Shaw</Shard>
-				</RgbSplitter>
+					<Fit>Shaw</Fit>
+				</h1>
 			</header>
 			<main className="main-content">
 				<div className="section main-about">

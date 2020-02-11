@@ -3,10 +3,9 @@ import {Link} from 'gatsby';
 
 import {ExternalLink} from '../components/auto-link';
 import {Time} from '../components/blocker';
+import Fit from '../components/fit-4';
 import Layout from '../components/layout';
-import RgbSplitter from '../components/rgb-splitter';
 import SEO from '../components/seo';
-import Shard from '../components/shard';
 
 import './404.css';
 
@@ -14,9 +13,9 @@ const NotFoundPage = ({location}) => (
 	<Layout>
 		<SEO title="404: Not found" className="page-not-found" />
 		<header className="page-header">
-			<RgbSplitter El="h1" className="title">
-				<Shard>Page not found</Shard>
-			</RgbSplitter>
+			<h1 className="title">
+				<Fit>Page not found</Fit>
+			</h1>
 		</header>
 		<main className="404-main">
 			<p>

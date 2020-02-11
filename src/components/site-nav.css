@@ -95,7 +95,7 @@
 /* TODO(riley): Share these breakpoints. */
 @media only screen and (max-width: 800px) {
 	.site-nav {
-		background: var(--white);
+		background: var(--black);
 		height: 36px;
 		left: 0;
 		margin: 0;
@@ -105,6 +105,7 @@
 		width: 100%;
 	}
 	.site-nav button {
+		background: transparent;
 		border: none;
 		border-radius: 0;
 		box-shadow: none !important;
@@ -116,6 +117,7 @@
 		position: fixed;
 	}
 	.site-nav button svg {
+		fill: var(--white);
 		height: 80%;
 	}
 }

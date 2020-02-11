@@ -1,92 +1,17 @@
 .page-header {
+	background: var(--black);
+	color: var(--white);
 	position: relative;
-}
-.cycle-bg {
-	animation: color-cycle 60s infinite;
-	background: var(--red);
-}
-@keyframes color-cycle {
-	0% {
-		background: var(--red);
-	}
-	16.667% {
-		background: var(--magenta);
-	}
-	33.333% {
-		background: var(--blue);
-	}
-	50% {
-		background: var(--cyan);
-	}
-	66.667% {
-		background: var(--green);
-	}
-	83.333% {
-		background: var(--yellow);
-	}
-}
-.page-header::after {
-	border-right: 100vw solid var(--white);
-	border-top: 3vw solid transparent;
-	bottom: 0;
-	content: '';
-	position: absolute;
-	width: 100%;
 }
 .title {
 	font-family: var(--font-stack-heading);
 	font-size: var(--font-scale-5);
 	font-weight: 900;
-	line-height: 1;
-	margin: 0;
-	margin-left: 10%;
-	overflow: hidden;
+	line-height: 0.75;
+	margin: 0 0 0 10%;
+	padding-bottom: var(--font-scale--3);
 	position: relative;
 	text-transform: uppercase;
-}
-.title .r,
-.title .g,
-.title .b {
-	margin-top: 30px;
-	mix-blend-mode: screen;
-	width: 100%;
-	will-change: left, top;
-}
-.title .r {
-	color: var(--red);
-	left: -14px;
-	position: relative;
-}
-.title .r > :last-child {
-	margin-bottom: -0.1em;
-}
-.title .g,
-.title .b,
-.title .shard {
-	pointer-events: none;
-	position: absolute;
-	user-select: none;
-}
-.title .g,
-.title .b {
-	left: 7px;
-}
-.title .g {
-	color: var(--green);
-	top: -12px;
-}
-.title .b {
-	color: var(--blue);
-	top: 12px;
-}
-.title .shard {
-	display: none;
-}
-@supports (mix-blend-mode: screen) {
-	.title .shard {
-		display: block;
-		width: 100%;
-	}
 }
 .main-content {
 	background: var(--white);
@@ -161,6 +86,12 @@ h2 + .explore-link {
 .explore-more {
 	color: var(--white);
 	font-size: var(--font-scale-2);
+}
+@media only screen and (max-width: 800px) {
+	.title {
+		margin: 0;
+		padding: 12px 0 0;
+	}
 }
 @media only screen and (max-width: 960px) {
 	.main-content .section .row > * {

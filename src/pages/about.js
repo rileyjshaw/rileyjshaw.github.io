@@ -1,13 +1,12 @@
 import React from 'react';
 import {StaticQuery, graphql} from 'gatsby';
 
+import BigQuote from '../components/big-quote';
+import {ExternalLink} from '../components/auto-link';
+import Fit from '../components/fit-4';
+import GoUp from '../components/go-up';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import BigQuote from '../components/big-quote';
-import GoUp from '../components/go-up';
-import {ExternalLink} from '../components/auto-link';
-import RgbSplitter from '../components/rgb-splitter';
-import Shard from '../components/shard';
 
 import '../templates/post.css';
 import './about.css';
@@ -16,9 +15,9 @@ export default () => (
 	<Layout>
 		<SEO title="About" className="about" />
 		<header className="page-header">
-			<RgbSplitter El="h1" className="title">
-				<Shard>About</Shard>
-			</RgbSplitter>
+			<h1 className="title">
+				<Fit>About</Fit>
+			</h1>
 		</header>
 		<StaticQuery
 			query={graphql`

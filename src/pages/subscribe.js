@@ -2,23 +2,22 @@ import React from 'react';
 import {Link} from 'gatsby';
 
 import {UncontrolledLink, ExternalLink} from '../components/auto-link';
+import BigQuote from '../components/big-quote';
+import Fit from '../components/fit-4';
 import GoUp from '../components/go-up';
 import Layout from '../components/layout';
 import Newsletter from '../components/newsletter';
-import RgbSplitter from '../components/rgb-splitter';
 import SEO from '../components/seo';
-import Shard from '../components/shard';
-import BigQuote from '../components/big-quote';
 
 import './subscribe.css';
 
 export default () => (
 	<Layout>
 		<SEO title="Subscribe" className="subscribe-page" />
-		<header className="page-header subscribe-page-header">
-			<RgbSplitter El="h1" className="title">
-				<Shard>Feeds</Shard>
-			</RgbSplitter>
+		<header className="page-header">
+			<h1 className="title">
+				<Fit>Feeds</Fit>
+			</h1>
 		</header>
 		<div className="inner">
 			<Newsletter />

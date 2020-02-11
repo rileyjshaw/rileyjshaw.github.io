@@ -10,11 +10,7 @@
 	flex-direction: column;
 }
 .page-not-found header {
-	background: var(--black);
 	justify-self: flex-start;
-}
-.page-not-found header::after {
-	border-right-color: var(--cyan);
 }
 .page-not-found main {
 	background: var(--white);
@@ -29,9 +25,6 @@
 @media only screen and (max-width: 480px) {
 	.page-not-found #gatsby-focus-wrapper {
 		background: var(--white);
-	}
-	.page-not-found header::after {
-		border-right-color: var(--white);
 	}
 	.page-not-found main {
 		border: 0;
