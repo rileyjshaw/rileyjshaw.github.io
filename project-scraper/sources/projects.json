@@ -20,6 +20,22 @@
 		"todo": true
 	},
 	{
+		"title": "Neumorphic keyboard",
+		"description": ["Hopping on the bandwagon…"],
+		"date": "2020-02-11",
+		"coolness": 20,
+		"link": "https://codepen.io/rileyjshaw/full/oNXjLOV",
+		"tags": ["online", "pretty"]
+	},
+	{
+		"title": "PO-33 loader",
+		"description": ["A drum sample loader for my Pocket Operator K.O."],
+		"date": "2020-02-07",
+		"coolness": 60,
+		"link": "https://glitch.com/edit/#!/po-33?path=README.md",
+		"tags": ["app", "external", "music", "online", "starred"]
+	},
+	{
 		"title": "Spiral explorer",
 		"description": [
 			"A WIP / DOA sandbox for exploring <a href=\"https://codepen.io/collection/nYWPBp\">single-line, tiling spirals</a>."
