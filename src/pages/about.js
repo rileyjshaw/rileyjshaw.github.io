@@ -14,9 +14,7 @@ import './about.css';
 export default ({location}) => (
 	<Layout>
 		<SEO title="About" className="about" />
-		<PageHeader showHome fromPage={location?.state?.fromPage}>
-			About
-		</PageHeader>
+		<PageHeader fromPage={location?.state?.fromPage}>About</PageHeader>
 		<StaticQuery
 			query={graphql`
 				{

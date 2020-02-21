@@ -12,7 +12,7 @@ import './404.css';
 const NotFoundPage = ({location}) => (
 	<Layout>
 		<SEO title="404: Not found" className="page-not-found" />
-		<PageHeader showHome>
+		<PageHeader>
 			<span>Page</span> <span>not</span> <span>found.</span>
 		</PageHeader>
 		<main className="404-main">

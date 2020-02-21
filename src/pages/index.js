@@ -31,7 +31,7 @@ const IndexPage = ({featuredProjects = [], location}) => {
 	return (
 		<Layout>
 			<SEO />
-			<PageHeader fromPage={location?.state?.fromPage} showHome>
+			<PageHeader fromPage={location?.state?.fromPage} underlined>
 				The digital <span>landfill of</span> <span>Riley J.</span>{' '}
 				<span>Shaw</span>
 			</PageHeader>
@@ -62,17 +62,16 @@ const IndexPage = ({featuredProjects = [], location}) => {
 					<div className="row">
 						<div>
 							<h2>Recent additions</h2>
-							<Link className="explore-link" to="/explore">
+							<Link className="lab-link" to="/lab">
 								(explore all)
 							</Link>
 						</div>
 						<div>
 							<ContentGrid nodes={featuredProjects} />
 							<p className="explore-more">
-								Sort through hundreds of projects and posts
-								with{' '}
-								<Link className="explore-link" to="/explore">
-									the explorer
+								Sort through hundreds of projects and posts in{' '}
+								<Link className="lab-link" to="/lab">
+									the lab
 								</Link>
 								.
 							</p>

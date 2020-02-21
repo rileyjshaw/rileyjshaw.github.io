@@ -269,8 +269,8 @@ module.exports = {
 								}
 							}
 						`,
-						output: `/explore.xml`,
-						title: `Projects feed`,
+						output: `/lab.xml`,
+						title: `Lab projects feed`,
 					},
 					{
 						serialize: ({query}) => rssify(query),

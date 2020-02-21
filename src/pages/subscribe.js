@@ -14,9 +14,7 @@ import './subscribe.css';
 export default ({location}) => (
 	<Layout>
 		<SEO title="Subscribe" className="subscribe-page" />
-		<PageHeader showHome fromPage={location?.state?.fromPage}>
-			Subscribe
-		</PageHeader>
+		<PageHeader fromPage={location?.state?.fromPage}>Subscribe</PageHeader>
 		<div className="inner">
 			<Newsletter />
 			<hr />
@@ -45,13 +43,12 @@ export default ({location}) => (
 				</dd>
 
 				<dt>
-					<UncontrolledLink to="/explore.xml">
-						Project feed
+					<UncontrolledLink to="/lab.xml">
+						Lab projects feed
 					</UncontrolledLink>
 				</dt>
 				<dd>
-					New projects in the{' '}
-					<Link to="/explore">project explorer</Link>, minus blog
+					New projects in the <Link to="/lab">lab</Link>, minus blog
 					posts.
 				</dd>
 				<dt>

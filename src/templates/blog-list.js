@@ -44,9 +44,7 @@ export default ({data, location, pageContext: {currentPage, numPages}}) => {
 	return (
 		<Layout>
 			<SEO title="All posts" />
-			<PageHeader showHome fromPage={location?.state?.fromPage}>
-				Blog
-			</PageHeader>
+			<PageHeader fromPage={location?.state?.fromPage}>Blog</PageHeader>
 			<main className="blog-list">
 				<ul className="blog-posts">
 					{posts.map(post => {

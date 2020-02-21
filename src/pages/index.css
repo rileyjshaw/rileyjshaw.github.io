@@ -57,7 +57,7 @@
 .main-projects .content-grid .content-node {
 	grid-column-end: -1;
 }
-h2 + .explore-link {
+h2 + .lab-link {
 	color: var(--black);
 	font-size: var(--font-scale-1);
 }

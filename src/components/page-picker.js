@@ -22,15 +22,15 @@ const pages = {
 		color: 'var(--magenta)',
 		link: '/about',
 	},
-	explore: {
+	lab: {
 		Icon: Planet,
 		title: (
 			<>
-				Project explorer<sup>beta</sup>
+				Lab<sup>beta</sup>
 			</>
 		),
 		color: 'var(--blue)',
-		link: '/explore',
+		link: '/lab',
 	},
 	blog: {
 		Icon: Keyboard,

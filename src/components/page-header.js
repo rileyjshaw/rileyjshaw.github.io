@@ -5,11 +5,13 @@ import SiteNav from '../components/site-nav';
 
 import './page-header.css';
 
-export default ({children, fromPage, showHome}) => (
+export default ({children, fromPage, underlined}) => (
 	<>
-		<SiteNav fromPage={fromPage} showHome={showHome} />
+		<SiteNav fromPage={fromPage} />
 		<header className="page-header">
-			<h1 className="title">{children}</h1>
+			<h1 className={`title${underlined ? ' underlined' : ''}`}>
+				{children}
+			</h1>
 		</header>
 	</>
 );

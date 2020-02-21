@@ -7,17 +7,17 @@ import {ReactComponent as Rss} from '../../content/images/rss.svg';
 
 import './site-nav.css';
 
-const LINKS = [
+const links = [
+	['/', 'Home'],
 	['/about', 'About'],
-	['/explore', 'Projects'],
+	['/lab', 'Lab'],
 	['/blog', 'Blog'],
 	['/subscribe', 'Subscribe'],
 ];
 
-export default ({fromPage, showHome}) => {
+export default ({fromPage}) => {
 	const [open, setOpen] = useState(false);
 	const [activePage, setActivePage] = useState(fromPage);
-	const links = showHome ? [['/', 'Home'], ...LINKS] : LINKS;
 	useKeyPress('Escape', () => setOpen(false));
 	return (
 		<nav className="site-nav">

@@ -4,7 +4,6 @@
 	margin: 1em 1em 0;
 }
 .title {
-	border-bottom: 6px solid var(--black);
 	display: flex;
 	flex-direction: column;
 	font-family: var(--font-stack-heading);
@@ -13,6 +12,9 @@
 	line-height: 1;
 	margin: 0;
 	padding-bottom: var(--font-scale--3);
+}
+.title.underlined {
+	border-bottom: 6px solid var(--black);
 }
 .title a {
 	color: var(--black);

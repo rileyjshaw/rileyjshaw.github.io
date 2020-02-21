@@ -7,16 +7,14 @@ import PageHeader from '../components/page-header';
 import ProjectExplorer from '../components/project-explorer';
 import SEO from '../components/seo';
 
-const ExplorePage = ({location}) => (
+const LabPage = ({location}) => (
 	<Layout>
-		<SEO title="Project explorer" className="explore" />
-		<PageHeader showHome fromPage={location?.state?.fromPage}>
-			Explore
-		</PageHeader>
+		<SEO title="Lab" />
+		<PageHeader fromPage={location?.state?.fromPage}>Lab</PageHeader>
 		<ProjectExplorer />
 		<BigQuote quoteIndex={3} />
 		<GoUp />
 	</Layout>
 );
 
-export default ExplorePage;
+export default LabPage;
