@@ -31,12 +31,9 @@ const IndexPage = ({featuredProjects = [], location}) => {
 	return (
 		<Layout>
 			<SEO />
-			<PageHeader
-				rileyjshaw
-				fromPage={location?.state?.fromPage}
-				showHome
-			>
-				The digital <span>landfill of</span>
+			<PageHeader fromPage={location?.state?.fromPage} showHome>
+				The digital <span>landfill of</span> <span>Riley J.</span>{' '}
+				<span>Shaw</span>
 			</PageHeader>
 			<main className="main-content">
 				<div className="section main-about">

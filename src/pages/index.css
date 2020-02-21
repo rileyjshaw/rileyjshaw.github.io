@@ -1,3 +1,6 @@
+.main-content {
+	margin-top: var(--font-scale-6);
+}
 .main-content h2 {
 	font-size: var(--font-scale-3);
 	margin-top: 0;
