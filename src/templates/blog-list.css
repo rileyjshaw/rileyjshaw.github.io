@@ -8,14 +8,14 @@
 }
 .blog-list .blog-post {
 	margin-bottom: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 0;
 }
 .blog-list .blog-post h1 {
 	font-size: var(--font-scale-4);
 	margin-top: var(--font-scale--2);
 }
 .blog-list .blog-post section {
-	padding-top: 1em;
+	padding: 1em 0 1em;
 }
 .blog-list .blog-post section > :first-child {
 	margin-top: 0;
@@ -36,4 +36,7 @@
 }
 .blog-list .page-navigation .current-page {
 	color: var(--yellow);
+}
+.blog-list .continue-reading {
+	margin-bottom: 4px;
 }

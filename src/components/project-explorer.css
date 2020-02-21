@@ -21,7 +21,6 @@
 }
 .project-explorer .filters legend,
 .project-explorer .result-details {
-	color: var(--white);
 	font-family: var(--font-stack-heading);
 	font-size: var(--font-scale-1);
 	font-weight: 900;
@@ -35,7 +34,7 @@
 	text-align: center;
 }
 .project-explorer .warning a {
-	color: var(--white);
+	color: var(--black);
 }
 .project-explorer .filters input {
 	border: 0;
@@ -50,9 +49,9 @@
 .project-explorer-hide-filters,
 .project-explorer .filters label,
 .project-explorer .filters button {
-	background: var(--cyan);
-	border: 2px solid var(--black);
-	box-shadow: 3px 3px var(--black);
+	background: var(--white);
+	border: 1px solid var(--black);
+	box-shadow: 2px 2px var(--black);
 	cursor: pointer;
 	display: inline-block;
 	font-family: var(--font-stack-heading);
@@ -62,16 +61,15 @@
 	padding: 10px 20px;
 }
 .project-explorer-hide-filters {
-	display: flex;
-	margin-left: auto;
+	margin-left: 0;
+	width: 100%;
+}
+.project-explorer button:active,
+.project-explorer .filters :checked + label {
+	background: var(--grey);
+	box-shadow: none;
+	transform: translate(3px, 3px);
 }
 .project-explorer .filters header button {
 	margin: 0 0 0 auto;
-}
-.project-explorer .filters :checked + label,
-.project-explorer .filters button:active {
-	border-color: var(--white);
-	box-shadow: none;
-	transform: translate(3px, 3px);
-	/* box-shadow: 0 0 2px var(--white); */
 }

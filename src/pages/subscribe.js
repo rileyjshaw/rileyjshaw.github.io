@@ -3,22 +3,20 @@ import {Link} from 'gatsby';
 
 import {UncontrolledLink, ExternalLink} from '../components/auto-link';
 import BigQuote from '../components/big-quote';
-import Fit from '../components/fit-4';
 import GoUp from '../components/go-up';
 import Layout from '../components/layout';
 import Newsletter from '../components/newsletter';
+import PageHeader from '../components/page-header';
 import SEO from '../components/seo';
 
 import './subscribe.css';
 
-export default () => (
+export default ({location}) => (
 	<Layout>
 		<SEO title="Subscribe" className="subscribe-page" />
-		<header className="page-header">
-			<h1 className="title">
-				<Fit>Feeds</Fit>
-			</h1>
-		</header>
+		<PageHeader showHome fromPage={location?.state?.fromPage}>
+			Subscribe
+		</PageHeader>
 		<div className="inner">
 			<Newsletter />
 			<hr />

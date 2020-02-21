@@ -1,5 +1,7 @@
 import React from 'react';
 
+import AutoLink from '../components/auto-link';
+
 export const DweetContent = () => null;
 export const ProjectContent = ({descriptionList}) =>
 	descriptionList && (
@@ -9,12 +11,19 @@ export const ProjectContent = ({descriptionList}) =>
 			))}
 		</main>
 	);
-export const PostContent = ({description, more}) =>
+export const PostContent = ({description, link, more}) =>
 	description ? (
-		<main
-			className={more ? 'excerpt' : null}
-			dangerouslySetInnerHTML={{__html: description}}
-		/>
+		<main>
+			<div
+				className={more ? 'excerpt' : null}
+				dangerouslySetInnerHTML={{__html: description}}
+			/>
+			{more && (
+				<p className="continue-reading">
+					<AutoLink to={link}>Continue reading</AutoLink>
+				</p>
+			)}
+		</main>
 	) : null;
 export const ArenaChannelContent = ({description, length, updatedAt}) => (
 	<main>

@@ -3,47 +3,72 @@ import {Link} from 'gatsby';
 
 import {ReactComponent as MenuIcon} from '../../content/images/menu.svg';
 import {useKeyPress} from '../util/hooks';
+import {ReactComponent as Rss} from '../../content/images/rss.svg';
 
 import './site-nav.css';
 
-export default () => {
-	const [open, setOpen] = useState(false);
-	useKeyPress('Escape', () => setOpen(false));
+const LINKS = [
+	['/about', 'About'],
+	['/explore', 'Projects'],
+	['/blog', 'Blog'],
+	['/subscribe', 'Subscribe'],
+];
 
+export default ({fromPage, showHome}) => {
+	const [open, setOpen] = useState(false);
+	const [activePage, setActivePage] = useState(fromPage);
+	const links = showHome ? [['/', 'Home'], ...LINKS] : LINKS;
+	useKeyPress('Escape', () => setOpen(false));
 	return (
 		<nav className="site-nav">
 			<button
-				aria-expanded={open}
 				aria-controls="menu"
+				aria-expanded={open}
 				aria-haspopup="true"
-				id="menubutton"
+				aria-label="Toggle navigation"
 				className={open ? 'open' : 'closed'}
+				data-target="#menu"
+				data-toggle="collapse"
+				id="menubutton"
 				onClick={() => setOpen(o => !o)}
+				type="button"
 			>
 				{open ? '✖' : <MenuIcon />}
 			</button>
 			<ul
 				aria-labelledby="menubutton"
+				className={open ? '' : 'hidden'}
+				// hidden={!open}
 				id="menu"
+				onClick={() => setOpen(false)}
 				role="menu"
-				hidden={!open}
-				onClick={() => setOpen(o => !o)}
 			>
-				<li>
-					<Link to="/">Home</Link>
-				</li>
-				<li>
-					<Link to="/about">About</Link>
-				</li>
-				<li>
-					<Link to="/explore">Projects</Link>
-				</li>
-				<li>
-					<Link to="/blog">Blog</Link>
-				</li>
-				<li>
-					<Link to="/subscribe">Subscribe</Link>
-				</li>
+				{links.map(([href, name]) => (
+					<li
+						className={activePage === name ? 'active' : ''}
+						key={name}
+					>
+						<Link
+							getProps={props => {
+								if (
+									props.isCurrent ||
+									(props.isPartiallyCurrent &&
+										href.length > 1)
+								)
+									setActivePage(name);
+							}}
+							state={{fromPage: activePage}}
+							to={href}
+						>
+							{name}
+						</Link>
+					</li>
+				))}
+				<li
+					aria-hidden="true"
+					className="underline"
+					key="underline"
+				></li>
 			</ul>
 		</nav>
 	);

@@ -1,31 +1,9 @@
-.page-header {
-	background: var(--black);
-	color: var(--white);
-	position: relative;
-}
-.title {
-	font-family: var(--font-stack-heading);
-	font-size: var(--font-scale-5);
-	font-weight: 900;
-	line-height: 0.75;
-	margin: 0 0 0 10%;
-	padding-bottom: var(--font-scale--3);
-	position: relative;
-	text-transform: uppercase;
-}
-.main-content {
-	background: var(--white);
-	color: var(--black);
-}
 .main-content h2 {
 	font-size: var(--font-scale-3);
 	margin-top: 0;
 }
 .main-about {
 	background: var(--white);
-}
-.main-about h2 {
-	color: var(--black) !important;
 }
 .main-about .about-link {
 	white-space: nowrap;
@@ -40,10 +18,9 @@
 	display: block;
 	margin: 0 auto;
 	max-width: 100%;
-	padding: 80px 5%;
+	padding: var(--font-scale-6) 5%;
 }
 .section .row > :first-child {
-	color: var(--white);
 	display: inline-block;
 	font-family: var(--font-stack-heading);
 	padding-right: 10px;
@@ -71,27 +48,18 @@
 .about-stub p {
 	display: inline;
 }
-.main-projects {
-	background: var(--blue);
+.main-projects .content-grid {
+	padding-top: 8px;
 }
 .main-projects .content-grid .content-node {
 	grid-column-end: -1;
 }
-.explore-link {
-	color: var(--white);
-}
 h2 + .explore-link {
+	color: var(--black);
 	font-size: var(--font-scale-1);
 }
 .explore-more {
-	color: var(--white);
 	font-size: var(--font-scale-2);
-}
-@media only screen and (max-width: 800px) {
-	.title {
-		margin: 0;
-		padding: 12px 0 0;
-	}
 }
 @media only screen and (max-width: 960px) {
 	.main-content .section .row > * {

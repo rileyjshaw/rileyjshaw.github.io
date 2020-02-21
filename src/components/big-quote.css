@@ -1,7 +1,5 @@
 .big-quote {
 	align-items: center;
-	background: var(--black);
-	color: var(--white);
 	display: flex;
 	flex-direction: column;
 	font-family: var(--font-stack-serif);
@@ -41,7 +39,7 @@
 .big-quote .refresh {
 	background: none;
 	border: 0;
-	fill: var(--white);
+	fill: var(--black);
 	margin-bottom: 120px;
 }
 /* TODO(riley): Share these breakpoints. */

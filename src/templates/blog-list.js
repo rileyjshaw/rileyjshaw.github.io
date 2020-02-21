@@ -2,8 +2,8 @@ import React from 'react';
 import {Link, graphql} from 'gatsby';
 
 import AutoLink, {ExternalLink} from '../components/auto-link';
-import Fit from '../components/fit-4';
 import Layout from '../components/layout';
+import PageHeader from '../components/page-header';
 import SEO from '../components/seo';
 
 import '../components/content-node.css';
@@ -13,7 +13,7 @@ import './blog-list.css';
 const urlFrom = page => `/blog${page === 1 ? '' : `/${page}`}`;
 
 // TODO(riley): Style with same stylesheet as blog posts.
-export default ({data, pageContext: {currentPage, numPages}}) => {
+export default ({data, location, pageContext: {currentPage, numPages}}) => {
 	// TODO(riley): Unfortunate that we're re-sorting this client-side instead
 	//              of collecting + sorting it with GraphQL.
 	const posts = [
@@ -44,11 +44,9 @@ export default ({data, pageContext: {currentPage, numPages}}) => {
 	return (
 		<Layout>
 			<SEO title="All posts" />
-			<header className="page-header blog-list-page-header">
-				<h1 className="title">
-					<Fit>Blog</Fit>
-				</h1>
-			</header>
+			<PageHeader showHome fromPage={location?.state?.fromPage}>
+				Blog
+			</PageHeader>
 			<main className="blog-list">
 				<ul className="blog-posts">
 					{posts.map(post => {
@@ -60,11 +58,7 @@ export default ({data, pageContext: {currentPage, numPages}}) => {
 
 						return (
 							<li className="blog-post content-node" key={uid}>
-								<article
-									className={`blog-post-content${
-										post.more ? ' excerpt' : ''
-									}`}
-								>
+								<article className="blog-post-content">
 									<header>
 										<h1>
 											<AutoLink to={link}>
@@ -90,10 +84,20 @@ export default ({data, pageContext: {currentPage, numPages}}) => {
 										</div>
 									</header>
 									<section
+										className={
+											post.more ? 'excerpt' : null
+										}
 										dangerouslySetInnerHTML={{
 											__html: post.description,
 										}}
-									></section>
+									/>
+									{post.more && (
+										<p className="continue-reading">
+											<AutoLink to={link}>
+												Continue reading
+											</AutoLink>
+										</p>
+									)}
 								</article>
 							</li>
 						);

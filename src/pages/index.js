@@ -6,14 +6,13 @@ import {sortByDate} from '../util/sorting-methods';
 import BigQuote from '../components/big-quote';
 import ContentGrid from '../components/content-grid';
 import CycleText from '../components/cycle-text';
-import Fit from '../components/fit-4';
 import GoUp from '../components/go-up';
 import Layout from '../components/layout';
+import PageHeader from '../components/page-header';
 import SEO from '../components/seo';
 
 import './index.css';
-
-const IndexPage = ({featuredProjects = []}) => {
+const IndexPage = ({featuredProjects = [], location}) => {
 	// TODO(riley): Get featured projects from here.
 	const {
 		aboutIntro: {
@@ -32,17 +31,13 @@ const IndexPage = ({featuredProjects = []}) => {
 	return (
 		<Layout>
 			<SEO />
-			<header className="page-header">
-				<h1 className="title">
-					<Fit>You’re in the digital</Fit>
-					<span className="visuallyhidden"> </span>
-					<Fit>landfill of</Fit>
-					<span className="visuallyhidden"> </span>
-					<Fit>Riley J.</Fit>
-					<span className="visuallyhidden"> </span>
-					<Fit>Shaw</Fit>
-				</h1>
-			</header>
+			<PageHeader
+				rileyjshaw
+				fromPage={location?.state?.fromPage}
+				showHome
+			>
+				The digital <span>landfill of</span>
+			</PageHeader>
 			<main className="main-content">
 				<div className="section main-about">
 					<div className="row">
@@ -94,7 +89,7 @@ const IndexPage = ({featuredProjects = []}) => {
 	);
 };
 
-export default () => {
+export default props => {
 	const featuredProjects = sortByDate(allProjectsQuery()).slice(0, 6);
-	return <IndexPage featuredProjects={featuredProjects} />;
+	return <IndexPage {...props} featuredProjects={featuredProjects} />;
 };

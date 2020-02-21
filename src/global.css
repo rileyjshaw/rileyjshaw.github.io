@@ -1,6 +1,7 @@
 :root {
 	--white: #fff;
 	--whitergb: 255, 255, 255;
+	--grey: #eee;
 	--red: #ff4136;
 	--green: #2ecc40;
 	--blue: #0074d9;
@@ -26,6 +27,7 @@
 	--font-scale-3: 1.953em;
 	--font-scale-4: 2.441em;
 	--font-scale-5: 3.052em;
+	--font-scale-6: 3.815em;
 
 	font-family: var(--font-stack-sans);
 	font-size: 18px;

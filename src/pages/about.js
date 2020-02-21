@@ -3,22 +3,20 @@ import {StaticQuery, graphql} from 'gatsby';
 
 import BigQuote from '../components/big-quote';
 import {ExternalLink} from '../components/auto-link';
-import Fit from '../components/fit-4';
 import GoUp from '../components/go-up';
 import Layout from '../components/layout';
+import PageHeader from '../components/page-header';
 import SEO from '../components/seo';
 
 import '../templates/post.css';
 import './about.css';
 
-export default () => (
+export default ({location}) => (
 	<Layout>
 		<SEO title="About" className="about" />
-		<header className="page-header">
-			<h1 className="title">
-				<Fit>About</Fit>
-			</h1>
-		</header>
+		<PageHeader showHome fromPage={location?.state?.fromPage}>
+			About
+		</PageHeader>
 		<StaticQuery
 			query={graphql`
 				{

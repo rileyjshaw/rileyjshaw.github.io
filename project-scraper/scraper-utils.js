@@ -98,7 +98,7 @@ async function getDweets() {
 			const result = {
 				uid,
 				type: 'dweet',
-				title: `No. ${dweet.id}`,
+				title: `#${dweet.id}`,
 				date: dweet.posted.slice(0, 10),
 				link: dweet.link,
 			};

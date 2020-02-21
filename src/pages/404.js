@@ -3,8 +3,8 @@ import {Link} from 'gatsby';
 
 import {ExternalLink} from '../components/auto-link';
 import {Time} from '../components/blocker';
-import Fit from '../components/fit-4';
 import Layout from '../components/layout';
+import PageHeader from '../components/page-header';
 import SEO from '../components/seo';
 
 import './404.css';
@@ -12,11 +12,9 @@ import './404.css';
 const NotFoundPage = ({location}) => (
 	<Layout>
 		<SEO title="404: Not found" className="page-not-found" />
-		<header className="page-header">
-			<h1 className="title">
-				<Fit>Page not found</Fit>
-			</h1>
-		</header>
+		<PageHeader showHome>
+			<span>Page</span> <span>not</span> <span>found.</span>
+		</PageHeader>
 		<main className="404-main">
 			<p>
 				You tried to load a page that doesn't exist. Here are some

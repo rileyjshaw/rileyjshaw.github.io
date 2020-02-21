@@ -28,7 +28,7 @@ class ProjectExplorer extends React.PureComponent {
 			ascending: false,
 			filterType: 'any',
 			tagStates: Array.from(props.tags).fill(0),
-			drawerOpen: true,
+			drawerOpen: false,
 		};
 
 		this.state = {
