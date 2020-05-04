@@ -31,7 +31,9 @@
 	},
 	{
 		"title": "Full-width text experiments",
-		"description": "Typesetting experiments in stretching, smooshing, and justification.",
+		"description": [
+			"Typesetting experiments in stretching, smooshing, and justification."
+		],
 		"date": "2020-03-02",
 		"coolness": 40,
 		"link": "https://codepen.io/collection/AaZmYv?cursor=ZD0wJm89MSZwPTEmdj0yOTM4MjE2",

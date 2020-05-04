@@ -66,17 +66,17 @@ Within our callback for `glob`, we can rename and rearrange our files based on w
 // (within glob's callback argument)
 
 // get the basename from our files
-files = files.map(function(name) {
+files = files.map(function (name) {
 	return path.basename(name, '.js');
 });
 
 // sort the files in reverse order
-files.sort(function(a, b) {
+files.sort(function (a, b) {
 	return parseFloat(a) < parseFloat(b);
 });
 
 // remove the numbers once we're in sorted order
-files = files.map(function(name) {
+files = files.map(function (name) {
 	return name.slice(name.indexOf('_') + 1);
 });
 ```
@@ -84,7 +84,7 @@ files = files.map(function(name) {
 Our last step in `glob`'s callback is to send each file to a `buildHTML()` function. This is where the magic happens.
 
 ```javascript
-files.forEach(function(demoName, i) {
+files.forEach(function (demoName, i) {
 	// files[i + 1] and [i - 1] will only be truthy if they exist
 	return buildHTML(demoName, i, files[i + 1], files[i - 1]);
 });

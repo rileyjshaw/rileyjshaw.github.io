@@ -301,10 +301,7 @@ function getIcons() {
 					type: 'icon',
 					title:
 						upload.term[0].toUpperCase() +
-						upload.term
-							.slice(1)
-							.toLowerCase()
-							.replace(/-/g, ' '),
+						upload.term.slice(1).toLowerCase().replace(/-/g, ' '),
 					date: upload.date_uploaded,
 					link: `https://thenounproject.com${upload.permalink}`,
 					image: upload.preview_url_84,

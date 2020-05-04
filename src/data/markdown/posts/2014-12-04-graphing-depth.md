@@ -40,9 +40,7 @@ function kaprekar(num) {
 
 		// otherwise, split the current number into an array
 		// of digits and sort it in ascending order
-		var lo = String(cur)
-			.split('')
-			.sort();
+		var lo = String(cur).split('').sort();
 
 		// make a new array of the numbers in descending order
 		var hi = lo.slice().reverse();
@@ -236,12 +234,12 @@ Like Kaprekar's Routine, this procedure is deterministic. That means that _whene
 
 ```javascript
 // slightly better memoized implementation
-var collatz = (function() {
+var collatz = (function () {
 	var memo = {
 		1: 0,
 	};
 
-	return function(cur) {
+	return function (cur) {
 		var l,
 			_len,
 			memoized,
@@ -294,7 +292,6 @@ Have fun!
 [^3]: i.e. with input _n_ and depth _t_ we're looking for _t_ where &fnof;<sub>_n_</sub>(_t_) = &fnof;<sub>_n_</sub>(_t_ - 1). More generally, &fnof;<sub>_n_</sub>(_t_) = &fnof;<sub>_n_</sub>(_t_ - _L_), where _L_ = fixed-loop size. But we'll get to that part soon.
 [^4]: A neologism, as far as I can tell. "Stopping time" is likely more appropriate.
 [^5]:
-
     The Ulam Spiral story doesn't end with a different drawing function. The presentation that he was sitting in on must have been really boring, because Ulam started circling prime numbers on his spiral:
 
     <figure>
