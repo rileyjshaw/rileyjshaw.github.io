@@ -1229,10 +1229,10 @@
 		"title": "Touchtone math facts",
 		"description": [
 			"A math facts app that you can play from a payphone.",
-			"Call +1.480.360.MATH (6284) from the US, <s>+1.647.360.MATH (6284) from Canada</s>."
+			"Used to live at the epic phone numbers <s>+1.480.360.MATH (US)</s> and <s>+1.647.360.MATH (Canada)</s>."
 		],
 		"date": "2015-06-13",
-		"tags": ["starred", "game", "external"],
+		"tags": ["starred", "game", "external", "extinct"],
 		"coolness": 92,
 		"link": "https://github.com/rileyjshaw/touchtone-math-facts",
 		"lastTagged": 1564708744196
