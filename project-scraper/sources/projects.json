@@ -20,6 +20,24 @@
 		"todo": true
 	},
 	{
+		"title": "Deletion Day",
+		"description": [
+			"Deletion Day challenges the prevailing notion that “more is more”. In a culture that strives for permanence, we celebrate ephemerality, growth, and change."
+		],
+		"date": "2020-04-04",
+		"coolness": 99,
+		"link": "https://deletionday.com",
+		"tags": ["starred", "online", "instructional"]
+	},
+	{
+		"title": "Full-width text experiments",
+		"description": "Typesetting experiments in stretching, smooshing, and justification.",
+		"date": "2020-03-02",
+		"coolness": 40,
+		"link": "https://codepen.io/collection/AaZmYv?cursor=ZD0wJm89MSZwPTEmdj0yOTM4MjE2",
+		"tags": ["online", "pretty", "reusable"]
+	},
+	{
 		"title": "Neumorphic keyboard",
 		"description": ["Hopping on the bandwagon…"],
 		"date": "2020-02-11",
