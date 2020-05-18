@@ -234,7 +234,7 @@ class ProjectExplorer extends React.PureComponent {
 									checked={this.state.ascending}
 									onChange={this.handleAscendingChange}
 								/>
-								<label htmlFor="labs-order">Z - A</label>
+								<label htmlFor="labs-order">Reverse</label>
 								<button onClick={this.shuffleDisplayNodes}>
 									Shuffle
 								</button>
