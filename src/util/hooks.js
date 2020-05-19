@@ -5,7 +5,7 @@ export function useWindowSize(cb) {
 	const initialSize =
 		typeof window !== 'undefined'
 			? [window.innerWidth, window.innerHeight]
-			: [0, 0];
+			: [1000, 1000];
 	const [size, setSize] = useState(initialSize);
 	const debouncedSize = useDebounce(size, 300);
 	useEffect(() => {
@@ -153,4 +153,18 @@ export function useInView() {
 	let [ref, inView] = useInViewExternal(...arguments);
 	inView = inView && true; // TODO(riley): Add check for active tab.
 	return [ref, inView];
+}
+
+export function useStickyState(defaultValue, key, scope = 'local') {
+	const [value, setValue] = useState(() => {
+		const stickyValue =
+			typeof window === 'undefined'
+				? null
+				: window[`${scope}Storage`].getItem(key);
+		return stickyValue === null ? defaultValue : JSON.parse(stickyValue);
+	});
+	useEffect(() => {
+		window[`${scope}Storage`].setItem(key, JSON.stringify(value));
+	}, [key, value]);
+	return [value, setValue];
 }
