@@ -180,13 +180,17 @@ function getCommitBlog() {
 
 function getSFPCTumblr() {
 	const client = tumblr.createClient({
-		consumer_key: process.env.TUMBLR_SECRET,
+		credentials: {
+			consumer_key: process.env.TUMBLR_KEY,
+			consumer_secret: process.env.TUMBLR_SECRET,
+		},
+		returnPromises: true,
 	});
 
 	let allPosts = [];
 	return (function getPage(queryParams = {}) {
-		return util
-			.promisify(client.blogPosts)('sfpc.tumblr.com', queryParams)
+		return client
+			.blogPosts('sfpc', queryParams)
 			.then(
 				({
 					posts,

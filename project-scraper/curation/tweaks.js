@@ -35,7 +35,7 @@ const fixLinks = text =>
 	text &&
 	text
 		.replace(
-			/<a [^>]*?\bhref=(["'])(?:https?:\/\/)?(?:www\.)?rileyjshaw.com\b\/?((?:\\\1|[^\1])+?)\1[^>]*?>/gi,
+			/<a [^>]*?\bhref=(["'])(?:https?:\/\/)?(?:www\.)?rileyjshaw\.com\b\/?((\\\1|(?:(?!\1).))*)\1[^>]*?>/gi,
 			'<a href=$1/$2$1>'
 		)
 		.replace(
