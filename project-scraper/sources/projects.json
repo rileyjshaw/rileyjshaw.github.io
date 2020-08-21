@@ -20,6 +20,37 @@
 		"todo": true
 	},
 	{
+		"title": "Double double dots (CSS only)",
+		"description": [
+			"Recursive illustration of the loci of points on a moving circle."
+		],
+		"date": "2020-05-26",
+		"coolness": 30,
+		"link": "https://codepen.io/rileyjshaw/full/mdegGpa",
+		"tags": ["pretty", "online", "golf"]
+	},
+	{
+		"title": "guyz",
+		"date": "2020-05-12",
+		"coolness": 19,
+		"link": "https://codepen.io/rileyjshaw/full/jObpqem",
+		"tags": ["online", "starred"]
+	},
+	{
+		"title": "dotz",
+		"date": "2020-05-12",
+		"coolness": 18,
+		"link": "https://codepen.io/rileyjshaw/pen/ExVpPgK",
+		"tags": ["online"]
+	},
+	{
+		"title": "macaronis",
+		"date": "2020-05-12",
+		"coolness": 18,
+		"link": "https://codepen.io/rileyjshaw/pen/ZEbjQrb",
+		"tags": ["online"]
+	},
+	{
 		"title": "Deletion Day",
 		"description": [
 			"Deletion Day challenges the prevailing notion that “more is more”. In a culture that strives for permanence, we celebrate ephemerality, growth, and change."
@@ -38,6 +69,16 @@
 		"coolness": 40,
 		"link": "https://codepen.io/collection/AaZmYv?cursor=ZD0wJm89MSZwPTEmdj0yOTM4MjE2",
 		"tags": ["online", "pretty", "reusable"]
+	},
+	{
+		"title": "CSS vertical rhythm",
+		"description": [
+			"An adaptive ruleset for vertical rhythm, responsive to the font-size of the parent container."
+		],
+		"date": "2020-02-22",
+		"coolness": 26,
+		"link": "https://codepen.io/rileyjshaw/pen/KKpNvew",
+		"tags": ["online", "reusable"]
 	},
 	{
 		"title": "Neumorphic keyboard",
@@ -67,6 +108,17 @@
 		"lastTagged": 1564772210294
 	},
 	{
+		"title": "Scroll-snap grid",
+		"description": [
+			"Prototype for a scrollable full-screen gallery using CSS <code>scroll-snap-</code> properties.",
+			"Works with touch, touchpad, mouse, and arrow keys."
+		],
+		"date": "2020-01-08",
+		"coolness": 40,
+		"link": "https://codepen.io/rileyjshaw/details/ExaQLqa",
+		"tags": ["pretty", "reusable", "online"]
+	},
+	{
 		"title": "Plop",
 		"description": ["A scriptable text expansion microtool."],
 		"date": "2019-09-13",
@@ -74,6 +126,13 @@
 		"link": "https://github.com/rileyjshaw/plop",
 		"tags": ["app", "starred"],
 		"lastTagged": 1564772210294
+	},
+	{
+		"title": "SVG text: subtractive color blend with <code>mix-blend-mode: multiply</code>",
+		"date": "2019-08-15",
+		"coolness": 8,
+		"link": "https://codepen.io/rileyjshaw/pen/RwbaoVr",
+		"tags": ["online", "reusable"]
 	},
 	{
 		"title": "Marqueee",
@@ -138,6 +197,26 @@
 		"coolness": 76,
 		"link": "https://ca-finder.glitch.me/",
 		"lastTagged": 1552433253008
+	},
+	{
+		"title": "1.618 tests",
+		"description": [
+			"After watching some <a href=\"https://asknature.org/resource/doodling-in-math-spirals-fibonacci-and-being-a-plant\">Vi Hart videos</a>, I started thinking a lot about Fibonacci Hashing and made some simple visualizations to test ideas."
+		],
+		"date": "2019-02-02",
+		"coolness": 22,
+		"link": "https://codepen.io/rileyjshaw/pen/pGPaKQ",
+		"tags": ["online"]
+	},
+	{
+		"title": "b/w?",
+		"description": [
+			"Testing the limits of the illusion that R+G+B = grey"
+		],
+		"date": "2019-02-01",
+		"coolness": 20,
+		"link": "https://codepen.io/rileyjshaw/pen/XOMNwX",
+		"tags": ["online"]
 	},
 	{
 		"title": "Stipphonic",
@@ -456,6 +535,14 @@
 		"coolness": 59,
 		"link": "http://codepen.io/rileyjshaw/full/YWbbGJ/",
 		"lastTagged": 1564608420432
+	},
+	{
+		"title": "Countdown button",
+		"description": ["Autoplay is a scourge…"],
+		"date": "2016-08-18",
+		"coolness": 5,
+		"link": "https://codepen.io/rileyjshaw/pen/akxdvp",
+		"tags": ["online", "reusable"]
 	},
 	{
 		"title": "Sun",
