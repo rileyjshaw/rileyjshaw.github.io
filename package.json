@@ -44,7 +44,6 @@
     "babel-preset-gatsby": "^0.5.5",
     "commitizen": "^4.1.2",
     "copyright-header": "^0.4.6",
-    "cz-conventional-changelog": "^3.2.0",
     "davefeedread": "^0.5.14",
     "eslint-plugin-react-hooks": "^4.1.0",
     "gh-pages": "^3.1.0",
@@ -73,7 +72,7 @@
   "license": "GNU GPLv3",
   "scripts": {
     "build": "gatsby build",
-    "commit": "git-cz",
+    "commit": "git-cz --disable-emoji",
     "deploy": "npm run format && gatsby build && gh-pages -d public -b master",
     "dev": "npm run develop",
     "develop": "gatsby develop",
@@ -94,7 +93,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "git-cz"
     }
   }
 }
