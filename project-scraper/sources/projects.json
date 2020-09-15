@@ -20,6 +20,16 @@
 		"todo": true
 	},
 	{
+		"title": "Tiling background generator",
+		"description": [
+			"Click to regenerate"
+		],
+		"date": "2020-09-14",
+		"coolness": 30,
+		"link": "https://codepen.io/rileyjshaw/full/GRZGPLQ",
+		"tags": ["pretty", "online"]
+	},
+	{
 		"title": "Double double dots (CSS only)",
 		"description": [
 			"Recursive illustration of the loci of points on a moving circle."
