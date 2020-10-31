@@ -20,13 +20,20 @@
 		"todo": true
 	},
 	{
-		"title": "Tiling background generator",
+		"title": "Seg16",
 		"description": [
-			"Click to regenerate"
+			"A simple Arduino library for driving 16-segment displays with a HT16K33."
 		],
+		"date": "2020-10-30",
+		"coolness": "34",
+		"link": "https://github.com/rileyjshaw/Seg16",
+		"tage": ["external", "reusable"]
+	},
+	{
+		"title": "Tiling background generators",
 		"date": "2020-09-14",
 		"coolness": 30,
-		"link": "https://codepen.io/rileyjshaw/full/GRZGPLQ",
+		"link": "https://codepen.io/collection/AEGpVQ",
 		"tags": ["pretty", "online"]
 	},
 	{
