@@ -25,9 +25,9 @@
 			"A simple Arduino library for driving 16-segment displays with a HT16K33."
 		],
 		"date": "2020-10-30",
-		"coolness": "34",
+		"coolness": 34,
 		"link": "https://github.com/rileyjshaw/Seg16",
-		"tage": ["external", "reusable"]
+		"tags": ["external", "reusable"]
 	},
 	{
 		"title": "Tiling background generators",
