@@ -3275,6 +3275,19 @@
 		"timestamp": 1578441600000
 	},
 	{
+		"title": "Seg16",
+		"date": "2020-10-30",
+		"coolness": "34",
+		"link": "https://github.com/rileyjshaw/Seg16",
+		"tage": ["external", "reusable"],
+		"descriptionList": [
+			"A simple Arduino library for driving 16-segment displays with a HT16K33."
+		],
+		"type": "project",
+		"uid": "PROJECT_SEG16",
+		"timestamp": 1604016000000
+	},
+	{
 		"title": "Servo",
 		"date": "2019-04-05",
 		"coolness": 42,
@@ -3924,6 +3937,16 @@
 		"type": "project",
 		"uid": "PROJECT_TIC_ATTACK_TOE",
 		"timestamp": 1414972800000
+	},
+	{
+		"title": "Tiling background generators",
+		"date": "2020-09-14",
+		"coolness": 30,
+		"link": "https://codepen.io/collection/AEGpVQ",
+		"tags": ["online", "pretty"],
+		"type": "project",
+		"uid": "PROJECT_TILING_BACKGROUND_GENERATORS",
+		"timestamp": 1600041600000
 	},
 	{
 		"title": "Tilted type",

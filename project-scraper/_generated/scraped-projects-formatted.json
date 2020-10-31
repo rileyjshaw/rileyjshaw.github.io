@@ -6,8 +6,8 @@
 		"date": "2019-05-30",
 		"link": "https://are.na/riley-shaw/hell-sbgbxnmdlxi",
 		"description": "",
-		"updatedAt": "2020-07-21",
-		"length": 154
+		"updatedAt": "2020-10-15",
+		"length": 158
 	},
 	{
 		"uid": "ARENA_HW_U1LMOISDNYU",
@@ -16,8 +16,8 @@
 		"date": "2018-11-21",
 		"link": "https://are.na/riley-shaw/hw-u1lmoisdnyu",
 		"description": "",
-		"updatedAt": "2020-08-21",
-		"length": 211
+		"updatedAt": "2020-10-31",
+		"length": 213
 	},
 	{
 		"uid": "ARENA_SUAXBJVGLLS",
@@ -26,7 +26,7 @@
 		"date": "2018-11-04",
 		"link": "https://are.na/riley-shaw/suaxbjvglls",
 		"description": "",
-		"updatedAt": "2020-08-21",
+		"updatedAt": "2020-10-30",
 		"length": 13
 	},
 	{
@@ -35,7 +35,7 @@
 		"title": "~",
 		"date": "2018-12-09",
 		"link": "https://are.na/riley-shaw/tilde-qvdrqcjjopm",
-		"updatedAt": "2020-08-18",
+		"updatedAt": "2020-10-30",
 		"length": 15
 	},
 	{
@@ -382,6 +382,55 @@
 		"title": "#15311",
 		"date": "2019-08-06",
 		"link": "https://www.dwitter.net/d/15311"
+	},
+	{
+		"uid": "DWEET_19983",
+		"type": "dweet",
+		"title": "#19983",
+		"date": "2020-09-16",
+		"link": "https://www.dwitter.net/d/19983"
+	},
+	{
+		"uid": "DWEET_19987",
+		"type": "dweet",
+		"title": "#19987",
+		"date": "2020-09-16",
+		"link": "https://www.dwitter.net/d/19987"
+	},
+	{
+		"uid": "DWEET_19988",
+		"type": "dweet",
+		"title": "#19988",
+		"date": "2020-09-16",
+		"link": "https://www.dwitter.net/d/19988"
+	},
+	{
+		"uid": "DWEET_20004",
+		"type": "dweet",
+		"title": "#20004",
+		"date": "2020-09-19",
+		"link": "https://www.dwitter.net/d/20004"
+	},
+	{
+		"uid": "DWEET_20092",
+		"type": "dweet",
+		"title": "#20092",
+		"date": "2020-09-24",
+		"link": "https://www.dwitter.net/d/20092"
+	},
+	{
+		"uid": "DWEET_20093",
+		"type": "dweet",
+		"title": "#20093",
+		"date": "2020-09-24",
+		"link": "https://www.dwitter.net/d/20093"
+	},
+	{
+		"uid": "DWEET_20094",
+		"type": "dweet",
+		"title": "#20094",
+		"date": "2020-09-24",
+		"link": "https://www.dwitter.net/d/20094"
 	},
 	{
 		"uid": "DWEET_2601",
@@ -790,7 +839,7 @@
 		"uid": "SFPC_TUMBLR_171825548577",
 		"type": "tumblr",
 		"date": "2018-03-13",
-		"link": "https://sfpc.rileyjshaw.com/post/171825548577/border-crossing",
+		"link": "https://sfpc.rileyjshaw.com/post/171825548577/border-crossing-headed-back-to-canada-for-the",
 		"contentType": "text",
 		"title": "border crossing",
 		"body": "<p>headed back to canada for the weekend to see the AGO’s yayoi kusama exhibit (RAD!) and attend a funky dance (RAD!). i’m back at the airport now and made it through (phewf). explaining this school at customs is always complicated, and i’ve been pulled into secondary each time.</p><p>with this week’s readings on “security” + surveillance for our crit theory course (“the radical outside”) fresh on my mind, the customs experience was heightened. last time reached an ABSURD level of invasiveness with questions about my family. this time was just lots of silence as i pondered what the neural nets were cooking up.</p><p>lil thought: upon saying i quit my job just over a month ago, the agent said “oh - that’s a really long time”. Work is a weed we’re feeding 🌱 neoliberal capitalism, “we eat for you”, soapbox, etc.</p><p>anyway, glad i’m leaving all these keywords on a subdomain of my personal site for some cruel robot to scrape! typing from my phone so bye!</p>",
@@ -867,7 +916,7 @@
 		"uid": "SFPC_TUMBLR_179678255817",
 		"type": "tumblr",
 		"date": "2018-03-31",
-		"link": "https://sfpc.rileyjshaw.com/post/179678255817/unhitching",
+		"link": "https://sfpc.rileyjshaw.com/post/179678255817/the-possibility-vital-for-life-of-unhitching",
 		"contentType": "text",
 		"title": "unhitching",
 		"body": "<p>The possibility, vital for life, of unhitching, which consists… in grasping, during the brief intervals in which our species can bring itself to interrupt its hive-like activity, the essence of what it was and continues to be, below the threshold of thought and over and above society: in the contemplation of a mineral more beautiful than all our creations; in the scent that can be smelt at the heart of a lily and is more imbued with learning than all our books; or in the brief glance, heavy with patience, serenity and mutual forgiveness, that, through some involuntary understanding, one can sometimes exchange with a cat.</p><p>Claude Lévi-Strauss, “Tristes Tropiques”</p>",
