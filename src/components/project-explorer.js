@@ -1,14 +1,14 @@
 // TODO(RILEY): https://tympanus.net/Development/TiltHoverEffects/index.html
-import React, {Fragment} from 'react';
+import React, {Fragment, useState, useEffect} from 'react';
 import {useStaticQuery, graphql} from 'gatsby';
 
 import sortingMethods, {shuffle} from '../util/sorting-methods';
 import allProjectsQuery from '../util/all-projects-query';
 import contentTypes from '../util/content-types';
+import {useInView} from '../util/hooks';
 
 import gridDoodles from './grid-doodles';
 import ContentGrid from './content-grid';
-import AutoLink from './auto-link';
 
 import './project-explorer.css';
 
@@ -137,23 +137,11 @@ class ProjectExplorer extends React.PureComponent {
 	};
 
 	render() {
-		const {tags} = this.props;
+		// const {tags} = this.props;
 		const {nodes} = this.state;
 
 		return (
 			<div className="project-explorer">
-				<p className="result-details warning">
-					Hi! I'm still developing this part of the website, so I
-					apologize if it crashes your browser. Good luck!
-				</p>
-				<p className="result-details warning">
-					I host a{' '}
-					<AutoLink to="https://v14.rileyjshaw.com/lab">
-						mirror of my old website
-					</AutoLink>{' '}
-					if needed.
-				</p>
-
 				<button
 					className="project-explorer-hide-filters"
 					onClick={() =>
@@ -300,10 +288,39 @@ class ProjectExplorer extends React.PureComponent {
 					</strong>{' '}
 					sources:
 				</p>
-				<ContentGrid nodes={nodes} />
+				<LazyGrid
+					nodes={nodes}
+					setIsFullyLoaded={this.props.setIsFullyLoaded}
+				/>
 			</div>
 		);
 	}
+}
+
+// TODO(riley): Ensure this lazy-loading works with a screen reader.
+function LazyGrid({nodes, setIsFullyLoaded}) {
+	const [renderLimit, setRenderLimit] = useState(20);
+	const [ref, inView, entry] = useInView();
+	// If the last node is on or above the viewport, load the next 20 nodes.
+	// Note that the “last” node might be higher up on the page, eg. if it has
+	// a small footprint and squeezes into some top row masonry. Hence the on
+	// *or above* the viewport check.
+	useEffect(() => {
+		if (
+			(inView || (entry?.boundingClientRect?.bottom ?? 1) <= 0) &&
+			renderLimit < nodes.length
+		) {
+			setRenderLimit(l => l + 20);
+		}
+	}, [inView, entry?.boundingClientRect?.bottom]);
+	useEffect(() => {
+		setRenderLimit(20);
+	}, [nodes.length]);
+	useEffect(() => {
+		setIsFullyLoaded && setIsFullyLoaded(renderLimit >= nodes.length);
+	}, [nodes.length, renderLimit]);
+
+	return <ContentGrid nodes={nodes.slice(0, renderLimit)} ref={ref} />;
 }
 
 export default props => {
@@ -321,10 +338,10 @@ export default props => {
 	`);
 
 	const nodes = allProjectsQuery().concat(
-		gridDoodles.map((rendered, i) => ({
+		gridDoodles.map((Doodle, i) => ({
 			uid: `DOODLE_${i}`,
 			type: 'doodle',
-			rendered,
+			Doodle,
 		}))
 	);
 

@@ -12,7 +12,27 @@ import TextGrid from './text-grid';
 ▙▛▜▟
 */
 
-export default ({
+// HACK(riley): We potentially have two different useInView refs on this
+//              component: one for pausing the animation, and one for checking
+//              scroll position for lazy loading. I'm attaching both to the
+//              root element for now, but there's gotta be a nicer way to do
+//              this.
+const mergeRefs = (...refs) => {
+	const filteredRefs = refs.filter(Boolean);
+	if (!filteredRefs.length) return null;
+	if (filteredRefs.length === 1) return filteredRefs[0];
+	return el => {
+		filteredRefs.forEach(ref => {
+			if (typeof ref === 'function') {
+				ref(el);
+			} else {
+				ref.current = el;
+			}
+		});
+	};
+};
+
+export default React.forwardRef(({
 	children: text,
 	ms = 300,
 	size = [1, 1],
@@ -20,7 +40,7 @@ export default ({
 	className = '',
 	OuterElement = 'div',
 	...rest
-}) => {
+}, passedRef) => {
 	const [xSize, ySize] = size;
 	const n = xSize * ySize;
 	const [index, setIndex] = useState(0);
@@ -30,7 +50,7 @@ export default ({
 	if (n === 1)
 		return (
 			<OuterElement
-				ref={ref}
+				ref={mergeRefs(passedRef, ref)}
 				className={`${className} ${classPrefix}-item`}
 				{...rest}
 			>
@@ -43,7 +63,7 @@ export default ({
 			size={size}
 			classPrefix={classPrefix}
 			className={className}
-			ref={ref}
+			ref={mergeRefs(passedRef, ref)}
 			OuterElement={OuterElement}
 			{...rest}
 		>
@@ -57,4 +77,4 @@ export default ({
 			).join('')}
 		</TextGrid>
 	);
-};
+});

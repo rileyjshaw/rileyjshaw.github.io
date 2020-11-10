@@ -1,18 +1,17 @@
-// TODO(riley): This component will benefit greatly from time-slicing.
-// https://reactjs.org/blog/2018/03/01/sneak-peek-beyond-react-16.html
 import React from 'react';
-import TimeSlicer from 'react-time-slicer';
 
-import ContentNode from './content-node.js';
+import ContentNode from './content-node';
 
 import './content-grid.css';
 
-export default ({nodes}) => (
-	<TimeSlicer>
-		<ul className="content-grid">
-			{nodes.map(node => (
-				<ContentNode key={node.uid} {...node} />
-			))}
-		</ul>
-	</TimeSlicer>
-);
+export default React.forwardRef(({nodes}, ref) => (
+	<ul className="content-grid">
+		{nodes.map((node, i, {length}) => (
+			<ContentNode
+				ref={i === length - 1 ? ref : null}
+				key={node.uid}
+				{...node}
+			/>
+		))}
+	</ul>
+));

@@ -150,9 +150,9 @@ export function useIdle(delay, onIdle) {
 }
 
 export function useInView() {
-	let [ref, inView] = useInViewExternal(...arguments);
+	let [ref, inView, entry] = useInViewExternal(...arguments);
 	inView = inView && true; // TODO(riley): Add check for active tab.
-	return [ref, inView];
+	return [ref, inView, entry];
 }
 
 export function useStickyState(defaultValue, key, scope = 'local') {
