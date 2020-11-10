@@ -17,7 +17,7 @@
 		"date": "2018-11-21",
 		"link": "https://are.na/riley-shaw/hw-u1lmoisdnyu",
 		"description": "",
-		"updatedAt": "2020-10-31",
+		"updatedAt": "2020-11-10",
 		"length": 213,
 		"timestamp": 1542758400000
 	},
@@ -28,7 +28,7 @@
 		"date": "2018-11-04",
 		"link": "https://are.na/riley-shaw/suaxbjvglls",
 		"description": "",
-		"updatedAt": "2020-10-30",
+		"updatedAt": "2020-11-09",
 		"length": 13,
 		"timestamp": 1541289600000
 	},
@@ -38,7 +38,7 @@
 		"title": "~",
 		"date": "2018-12-09",
 		"link": "https://are.na/riley-shaw/tilde-qvdrqcjjopm",
-		"updatedAt": "2020-10-30",
+		"updatedAt": "2020-11-08",
 		"length": 15,
 		"timestamp": 1544313600000
 	},
@@ -388,6 +388,7 @@
 		"date": "2019-08-03",
 		"link": "https://www.dwitter.net/d/15270",
 		"tags": ["golf", "online"],
+		"coolness": 5,
 		"timestamp": 1564790400000
 	},
 	{
@@ -397,6 +398,7 @@
 		"date": "2019-08-03",
 		"link": "https://www.dwitter.net/d/15271",
 		"tags": ["golf", "online"],
+		"coolness": 5,
 		"timestamp": 1564790400000
 	},
 	{
@@ -406,6 +408,7 @@
 		"date": "2019-08-06",
 		"link": "https://www.dwitter.net/d/15303",
 		"tags": ["golf", "online"],
+		"coolness": 5,
 		"timestamp": 1565049600000
 	},
 	{
@@ -415,6 +418,7 @@
 		"date": "2019-08-06",
 		"link": "https://www.dwitter.net/d/15308",
 		"tags": ["golf", "online"],
+		"coolness": 5,
 		"timestamp": 1565049600000
 	},
 	{
@@ -424,6 +428,7 @@
 		"date": "2019-08-06",
 		"link": "https://www.dwitter.net/d/15311",
 		"tags": ["golf", "online"],
+		"coolness": 5,
 		"timestamp": 1565049600000
 	},
 	{
@@ -433,6 +438,7 @@
 		"date": "2020-09-16",
 		"link": "https://www.dwitter.net/d/19983",
 		"tags": ["golf", "online"],
+		"coolness": 5,
 		"timestamp": 1600214400000
 	},
 	{
@@ -442,6 +448,7 @@
 		"date": "2020-09-16",
 		"link": "https://www.dwitter.net/d/19987",
 		"tags": ["golf", "online"],
+		"coolness": 5,
 		"timestamp": 1600214400000
 	},
 	{
@@ -451,6 +458,7 @@
 		"date": "2020-09-16",
 		"link": "https://www.dwitter.net/d/19988",
 		"tags": ["golf", "online"],
+		"coolness": 5,
 		"timestamp": 1600214400000
 	},
 	{
@@ -460,6 +468,7 @@
 		"date": "2020-09-19",
 		"link": "https://www.dwitter.net/d/20004",
 		"tags": ["golf", "online"],
+		"coolness": 5,
 		"timestamp": 1600473600000
 	},
 	{
@@ -469,6 +478,7 @@
 		"date": "2020-09-24",
 		"link": "https://www.dwitter.net/d/20092",
 		"tags": ["golf", "online"],
+		"coolness": 5,
 		"timestamp": 1600905600000
 	},
 	{
@@ -478,6 +488,7 @@
 		"date": "2020-09-24",
 		"link": "https://www.dwitter.net/d/20093",
 		"tags": ["golf", "online"],
+		"coolness": 5,
 		"timestamp": 1600905600000
 	},
 	{
@@ -487,6 +498,7 @@
 		"date": "2020-09-24",
 		"link": "https://www.dwitter.net/d/20094",
 		"tags": ["golf", "online"],
+		"coolness": 5,
 		"timestamp": 1600905600000
 	},
 	{
@@ -496,6 +508,7 @@
 		"date": "2017-04-26",
 		"link": "https://www.dwitter.net/d/2601",
 		"tags": ["golf", "online"],
+		"coolness": 5,
 		"timestamp": 1493164800000
 	},
 	{
@@ -505,6 +518,7 @@
 		"date": "2017-04-26",
 		"link": "https://www.dwitter.net/d/2602",
 		"tags": ["golf", "online"],
+		"coolness": 5,
 		"timestamp": 1493164800000
 	},
 	{
@@ -514,6 +528,7 @@
 		"date": "2017-04-26",
 		"link": "https://www.dwitter.net/d/2603",
 		"tags": ["golf", "online"],
+		"coolness": 5,
 		"timestamp": 1493164800000
 	},
 	{
@@ -523,6 +538,7 @@
 		"date": "2017-04-26",
 		"link": "https://www.dwitter.net/d/2605",
 		"tags": ["golf", "online"],
+		"coolness": 5,
 		"timestamp": 1493164800000
 	},
 	{
@@ -532,6 +548,7 @@
 		"date": "2017-04-26",
 		"link": "https://www.dwitter.net/d/2608",
 		"tags": ["golf", "online"],
+		"coolness": 5,
 		"timestamp": 1493164800000
 	},
 	{
@@ -541,6 +558,7 @@
 		"date": "2017-04-26",
 		"link": "https://www.dwitter.net/d/2609",
 		"tags": ["golf", "online"],
+		"coolness": 5,
 		"timestamp": 1493164800000
 	},
 	{
@@ -550,6 +568,7 @@
 		"date": "2017-04-26",
 		"link": "https://www.dwitter.net/d/2610",
 		"tags": ["golf", "online"],
+		"coolness": 5,
 		"timestamp": 1493164800000
 	},
 	{
@@ -559,6 +578,7 @@
 		"date": "2017-04-27",
 		"link": "https://www.dwitter.net/d/2613",
 		"tags": ["golf", "online"],
+		"coolness": 5,
 		"timestamp": 1493251200000
 	},
 	{
@@ -568,6 +588,7 @@
 		"date": "2017-04-27",
 		"link": "https://www.dwitter.net/d/2617",
 		"tags": ["golf", "online"],
+		"coolness": 5,
 		"timestamp": 1493251200000
 	},
 	{
@@ -577,6 +598,7 @@
 		"date": "2017-04-27",
 		"link": "https://www.dwitter.net/d/2618",
 		"tags": ["golf", "online"],
+		"coolness": 5,
 		"timestamp": 1493251200000
 	},
 	{
@@ -586,6 +608,7 @@
 		"date": "2017-04-27",
 		"link": "https://www.dwitter.net/d/2619",
 		"tags": ["golf", "online"],
+		"coolness": 5,
 		"timestamp": 1493251200000
 	},
 	{
@@ -595,6 +618,7 @@
 		"date": "2017-04-27",
 		"link": "https://www.dwitter.net/d/2621",
 		"tags": ["golf", "online"],
+		"coolness": 5,
 		"timestamp": 1493251200000
 	},
 	{
