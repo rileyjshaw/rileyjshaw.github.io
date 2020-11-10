@@ -46,6 +46,7 @@ const typeTransformers = {
 	dweet: [
 		n => {
 			addTags(n, ['golf', 'online']);
+			n.coolness = 5;
 		},
 	],
 	commit: [
@@ -86,7 +87,7 @@ const featuredProjects = [
 const tweaksList = {
 	DWEET_15311: {
 		tags: [],
-		coolness: [],
+		coolness: 41,
 		transformers: [],
 	},
 };
