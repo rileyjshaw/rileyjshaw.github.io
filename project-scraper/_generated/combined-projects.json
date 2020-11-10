@@ -1333,6 +1333,19 @@
 		"timestamp": 1507334400000
 	},
 	{
+		"title": "canvas b/w image effects",
+		"date": "2020-10-10",
+		"coolness": 13,
+		"link": "https://codepen.io/collection/DRdKOb",
+		"tags": ["online", "pretty"],
+		"descriptionList": [
+			"Two quick doodles that I eventually ported to WebGL."
+		],
+		"type": "project",
+		"uid": "PROJECT_CANVAS_B/W_IMAGE_EFFECTS",
+		"timestamp": 1602288000000
+	},
+	{
 		"title": "Canvas compositing operations",
 		"date": "2016-03-23",
 		"tags": ["instructional", "online", "pretty"],
@@ -3322,6 +3335,20 @@
 		"type": "project",
 		"uid": "PROJECT_SASS_TOOLTIPS",
 		"timestamp": 1373673600000
+	},
+	{
+		"title": "Scaling faders (audio demo)",
+		"date": "2020-11-09",
+		"coolness": 70,
+		"link": "https://codepen.io/rileyjshaw/full/ZEOqdPM",
+		"tags": ["music", "reusable", "starred"],
+		"descriptionList": [
+			"I dread mixing audio. I tend to make the drums a little louder, then the lead, then the bass, then the drums again, and on and on until I’m clipping everywhere.",
+			"I made this demo UI to show how a mixer might help keep your levels in check. Does this exist yet?"
+		],
+		"type": "project",
+		"uid": "PROJECT_SCALING_FADERS_(AUDIO_DEMO)",
+		"timestamp": 1604880000000
 	},
 	{
 		"title": "Scroll-snap grid",
