@@ -20,6 +20,17 @@
 		"todo": true
 	},
 	{
+		"title": "Scaling faders (audio demo)",
+		"description": [
+			"I dread mixing audio. I tend to make the drums a little louder, then the lead, then the bass, then the drums again, and on and on until I’m clipping everywhere.",
+			"I made this demo UI to show how a mixer might help keep your levels in check. Does this exist yet?"
+		],
+		"date": "2020-11-09",
+		"coolness": 70,
+		"link": "https://codepen.io/rileyjshaw/full/ZEOqdPM",
+		"tags": ["starred", "music", "reusable"]
+	},
+	{
 		"title": "Seg16",
 		"description": [
 			"A simple Arduino library for driving 16-segment displays with a HT16K33."
@@ -28,6 +39,16 @@
 		"coolness": 34,
 		"link": "https://github.com/rileyjshaw/Seg16",
 		"tags": ["external", "reusable"]
+	},
+	{
+		"title": "canvas b/w image effects",
+		"description": [
+			"Two quick doodles that I eventually ported to WebGL."
+		],
+		"date": "2020-10-10",
+		"coolness": 13,
+		"link": "https://codepen.io/collection/DRdKOb",
+		"tags": ["pretty", "online"]
 	},
 	{
 		"title": "Tiling background generators",
