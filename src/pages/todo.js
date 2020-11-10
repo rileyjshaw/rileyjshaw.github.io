@@ -49,7 +49,9 @@ export default () => (
 					https://www.gatsbyjs.org/packages/gatsby-image/
 				</strike>
 			</li>
-			<li>Lazy-loading</li>
+			<li>
+				<strike>Lazy-loading</strike>
+			</li>
 			<li>
 				<strike>Blog excerpts for each type</strike>
 			</li>
