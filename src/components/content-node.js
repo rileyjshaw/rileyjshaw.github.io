@@ -39,9 +39,16 @@ export default React.memo(props => {
 			<div className="inner" ref={ref}>
 				<div className="content-type">{readableType}</div>
 				<header>
-					<h1>
-						{link ? <AutoLink to={link}>{title}</AutoLink> : title}
-					</h1>
+					{link ? (
+						<h1>
+							<AutoLink
+								to={link}
+								dangerouslySetInnerHTML={{__html: title}}
+							/>
+						</h1>
+					) : (
+						<h1 dangerouslySetInnerHTML={{__html: title}} />
+					)}
 					<div className="subheading">
 						<time dateTime={date}>{date.replace(/-/g, '.')}</time>
 						{repo && (
