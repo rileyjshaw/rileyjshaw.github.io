@@ -25,8 +25,8 @@ module.exports = {
 		},
 		mess: {
 			description:
-				'🍔 A huge, messy, awesome change that "should" be broken into thoughtful little atoms',
-			value: 'Hot mess',
+				'🍔 A huge, messy, awesome change that “should” be broken into thoughtful little atoms',
+			value: 'Hotmess',
 		},
 		bug: {
 			description: '🐛 Squish, squash, bug sauce!',
