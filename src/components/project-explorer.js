@@ -18,16 +18,14 @@ class ProjectExplorer extends React.PureComponent {
 
 		const nodeTypes = Array.from(
 			new Set(this.props.nodes.map(n => n.type))
-		);
+		).filter(type => type !== 'doodle');
 		const initialState = {
 			nodeTypes,
-			typeStates: nodeTypes.map(
-				type => type === 'project' || type === 'doodle'
-			),
+			typeStates: nodeTypes.map(type => type === 'project'),
 			sortIdx: 0,
 			ascending: false,
 			filterType: 'any',
-			tagStates: Array.from(props.tags).fill(0),
+			tagStates: Array.from(props.tags).fill(false),
 			drawerOpen: false,
 		};
 
@@ -49,8 +47,10 @@ class ProjectExplorer extends React.PureComponent {
 			.filter((_, i) => state.tagStates[i])
 			.map(tag => tag.name);
 		const [doodles, filteredByType] = (checkedTypeNames.length
-			? nodes.filter(node =>
-					checkedTypeNames.some(type => node.type === type)
+			? nodes.filter(
+					node =>
+						node.type === 'doodle' ||
+						checkedTypeNames.includes(node.type)
 			  )
 			: nodes
 		).reduce(
@@ -69,14 +69,16 @@ class ProjectExplorer extends React.PureComponent {
 			: filteredByType;
 		const sorted = sortFn(filtered);
 		const ordered = state.ascending ? sorted.reverse() : sorted;
-		// Insert doodles into a random position.
-		doodles.forEach(doodle =>
-			ordered.splice(
-				Math.floor(Math.random() * ordered.length),
-				0,
-				doodle
-			)
-		);
+		// Insert a few doodles into a random position.
+		doodles.forEach(doodle => {
+			if (Math.random() < 0.3) {
+				ordered.splice(
+					Math.floor(Math.random() * ordered.length),
+					0,
+					doodle
+				);
+			}
+		});
 		return ordered;
 	}
 
@@ -111,7 +113,7 @@ class ProjectExplorer extends React.PureComponent {
 
 	handleClearTypesClick = () => {
 		this.setState(
-			{typeStates: new Array(this.getNodeTypes().length).fill(0)},
+			{typeStates: new Array(this.getNodeTypes().length).fill(false)},
 			this.refreshDisplayNodes
 		);
 	};
@@ -127,7 +129,7 @@ class ProjectExplorer extends React.PureComponent {
 
 	handleClearTagsClick = () => {
 		this.setState(
-			{tagStates: new Array(this.props.tags.length).fill(0)},
+			{tagStates: new Array(this.props.tags.length).fill(false)},
 			this.refreshDisplayNodes
 		);
 	};
@@ -281,7 +283,11 @@ class ProjectExplorer extends React.PureComponent {
 					)}
 				</div>
 				<p className="result-details">
-					Found <strong>{nodes.length}</strong> entries from{' '}
+					Found{' '}
+					<strong>
+						{nodes.filter(node => node.type !== 'doodle').length}
+					</strong>{' '}
+					entries from{' '}
 					<strong>
 						{this.state.typeStates.reduce((a, b) => a + b) ||
 							this.state.typeStates.length}
