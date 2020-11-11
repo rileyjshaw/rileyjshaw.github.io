@@ -3,7 +3,6 @@ import {Link} from 'gatsby';
 
 import {ReactComponent as MenuIcon} from '../../content/images/menu.svg';
 import {useKeyPress} from '../util/hooks';
-import {ReactComponent as Rss} from '../../content/images/rss.svg';
 
 import './site-nav.css';
 
@@ -48,6 +47,7 @@ export default ({fromPage}) => {
 						className={activePage === name ? 'active' : ''}
 						key={name}
 					>
+						{/* TODO: Setting state here throws warning. */}
 						<Link
 							getProps={props => {
 								if (

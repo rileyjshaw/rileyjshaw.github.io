@@ -1,7 +1,6 @@
 .content-node {
-	border: 1px solid var(--black);
-	color: var(--black);
-	grid-row-end: span 4;
+	border: 1px solid var(--cfg);
+	color: var(--cfg);
 	max-width: 100%;
 	min-width: 60px; /* HACK(riley): Hardcoded to column width. */
 	padding: 0 12px 12px;
@@ -17,11 +16,11 @@
 /* TODO(riley): Move this into a semantic element, since it means something. */
 .content-node .content-type {
 	align-items: center;
-	background: var(--white);
-	border: 1px solid var(--black);
-	color: var(--black);
+	background: var(--cbg);
+	border: 1px solid var(--cfg);
+	color: var(--cfg);
 	display: flex;
-	font-family: var(--font-stack-heading);
+	font-family: var(--fh);
 	font-size: var(--font-scale--1);
 	font-weight: 900;
 	height: 24px;
@@ -41,9 +40,9 @@
 }
 .content-node h1 a[target='_blank']::after {
 	align-items: center;
-	background: var(--white);
-	border: 1px solid var(--black);
-	color: var(--black);
+	background: var(--cbg);
+	border: 1px solid var(--cfg);
+	color: var(--cfg);
 	content: '\279A';
 	display: flex;
 	font-size: 24px;
@@ -59,7 +58,7 @@
 }
 .content-node .subheading {
 	display: block;
-	font-family: var(--font-stack-sans);
+	font-family: var(--fss);
 	font-size: var(--font-scale--2);
 	font-style: italic;
 	font-weight: bold;
@@ -96,11 +95,6 @@
 .content-node footer {
 	margin-top: auto;
 }
-.content-node .tags {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
 .content-node.measured .inner {
 	display: flex;
 	flex-direction: column;
@@ -108,7 +102,7 @@
 	min-height: 100%;
 }
 .content-node .tags li {
-	border: 0.5px solid black;
+	border: 0.5px solid var(--cfg);
 	border-radius: 100px;
 	display: inline-block;
 	font-size: var(--font-scale--2);
@@ -131,7 +125,7 @@
 	position: relative;
 }
 .excerpt::after {
-	background: linear-gradient(rgba(var(--whitergb), 0), var(--white));
+	background: linear-gradient(rgba(var(--cbgrgb), 0), var(--cbg));
 	bottom: 0;
 	content: '';
 	display: block;

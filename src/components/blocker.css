@@ -1,8 +1,8 @@
 .idle-blocker,
 .idle-blocker button {
-	background: var(--black);
-	color: var(--white);
-	font-family: var(--font-stack-serif);
+	background: var(--cfg);
+	color: var(--cbg);
+	font-family: var(--fs);
 }
 .idle-blocker {
 	align-items: center;

@@ -25,15 +25,15 @@
 	width: 30px;
 }
 .page-picker svg {
-	fill: var(--white);
+	fill: var(--cbg);
 	height: 100%;
 	width: 100%;
 }
 .page-picker .page-title {
 	align-items: center;
-	color: var(--white);
+	color: var(--cbg);
 	display: flex;
-	font-family: var(--font-stack-heading);
+	font-family: var(--fh);
 	font-size: 2em;
 	margin: 0;
 	padding: 12px 2em 12px 0.5em;

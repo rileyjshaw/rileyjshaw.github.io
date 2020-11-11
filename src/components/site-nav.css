@@ -18,15 +18,15 @@
 	width: 96px;
 }
 .site-nav a {
-	color: var(--black);
-	font-family: var(--font-stack-heading);
+	color: var(--cbg);
+	font-family: var(--fh);
 	font-size: var(--font-scale--1);
-	/* margin-left: var(--font-scale-2); */
+	mix-blend-mode: difference;
 	text-decoration: none;
 }
 .site-nav .underline {
-	background: var(--black);
-	border: 1px solid var(--white);
+	background: var(--cfg);
+	border: 1px solid var(--cbg);
 	border-width: 0 28px;
 	display: none;
 	height: 2px;
@@ -58,30 +58,20 @@
 	display: block;
 	transform: translate3d(400%, 0, 0);
 }
-@keyframes fade-in {
-	from {
-		opacity: 0;
-		transform: translate3d(-24px, 0, 0);
-	}
-	to {
-		opacity: 1;
-		transform: none;
-	}
-}
 .site-nav li:nth-child(1) a {
-	animation-delay: -0.5s;
+	animation-delay: 0s, -0.5s;
 }
 .site-nav li:nth-child(2) a {
-	animation-delay: -0.4s;
+	animation-delay: 0s, -0.4s;
 }
 .site-nav li:nth-child(3) a {
-	animation-delay: -0.3s;
+	animation-delay: 0s, -0.3s;
 }
 .site-nav li:nth-child(4) a {
-	animation-delay: -0.2s;
+	animation-delay: 0s, -0.2s;
 }
 .site-nav li:nth-child(5) a {
-	animation-delay: -0.1s;
+	animation-delay: 0s, -0.1s;
 }
 /* TODO(riley): Share these breakpoints. */
 @media only screen and (max-width: 960px) {
@@ -94,12 +84,12 @@
 	}
 	.site-nav button {
 		align-items: center;
-		background: var(--white);
+		background: var(--cbg);
 		border: none;
 		border-radius: 50%;
 		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
 			0 1px 2px rgba(0, 0, 0, 0.24);
-		color: var(--black);
+		color: var(--cfg);
 		display: flex;
 		font-size: var(--font-scale-2);
 		height: 54px;
@@ -116,17 +106,17 @@
 			0 3px 6px rgba(0, 0, 0, 0.23);
 	}
 	.site-nav button svg {
-		fill: var(--black);
+		fill: var(--cfg);
 		height: 50%;
 	}
 	.site-nav button.open {
-		fill: var(--white);
+		fill: var(--cbg);
 	}
 	.site-nav ul.hidden {
 		display: none;
 	}
 	.site-nav ul {
-		background: var(--white);
+		background: var(--cbg);
 		bottom: 0;
 		flex-direction: column;
 		left: 0;
@@ -149,7 +139,7 @@
 	}
 	.site-nav a {
 		align-items: center;
-		animation: fade-in 1s ease-in-out;
+		animation: fade-in 1s ease-in-out, slide-right 1s ease-in-out;
 		display: flex;
 		flex-grow: 1;
 		font-size: var(--font-scale-2);

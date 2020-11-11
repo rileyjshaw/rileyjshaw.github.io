@@ -2,7 +2,7 @@
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	font-family: var(--font-stack-serif);
+	font-family: var(--fs);
 	font-size: var(--font-scale-2);
 	justify-content: space-between;
 	margin: 0;
@@ -39,7 +39,7 @@
 .big-quote .refresh {
 	background: none;
 	border: 0;
-	fill: var(--black);
+	fill: var(--cfg);
 	margin-bottom: 120px;
 }
 /* TODO(riley): Share these breakpoints. */

@@ -18,11 +18,6 @@ export default ({location}) => (
 		<StaticQuery
 			query={graphql`
 				{
-					me_title: file(relativePath: {eq: "about/me_title.md"}) {
-						childMarkdownRemark {
-							html
-						}
-					}
 					me_intro: file(relativePath: {eq: "about/me_intro.md"}) {
 						childMarkdownRemark {
 							html
@@ -128,7 +123,6 @@ export default ({location}) => (
 				}
 			`}
 			render={({
-				me_title,
 				me_intro,
 				me_rest,
 				timeline_title,
@@ -146,11 +140,6 @@ export default ({location}) => (
 				<main className="about-page">
 					<div className="about-page-content">
 						<div className="about-me blog-post-content">
-							<div
-								dangerouslySetInnerHTML={{
-									__html: me_title.childMarkdownRemark.html,
-								}}
-							/>
 							<div
 								dangerouslySetInnerHTML={{
 									__html: me_intro.childMarkdownRemark.html,

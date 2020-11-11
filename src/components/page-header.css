@@ -4,9 +4,10 @@
 	margin: 1em 1em 0;
 }
 .title {
+	color: var(--cfg);
 	display: flex;
 	flex-direction: column;
-	font-family: var(--font-stack-heading);
+	font-family: var(--fh);
 	font-size: var(--font-scale-5);
 	font-weight: 900;
 	line-height: 1;

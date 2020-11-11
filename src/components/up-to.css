@@ -7,12 +7,12 @@
 }
 .currently li {
 	align-items: center;
-	background: var(--white);
-	border: 2px solid var(--black);
-	box-shadow: 3px 3px var(--black);
+	background: var(--cbg);
+	border: 2px solid var(--cfg);
+	box-shadow: 3px 3px var(--cfg);
 	display: flex;
 	flex: 1 1 0;
-	font-family: var(--font-stack-heading);
+	font-family: var(--fh);
 	font-size: var(--font-scale-4);
 	font-weight: 900;
 	height: 200px;
