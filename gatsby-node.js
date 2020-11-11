@@ -1,7 +1,7 @@
 require(`@babel/register`);
 const path = require('path');
 const {createFilePath} = require('gatsby-source-filesystem');
-const {idify, excerptify} = require('./project-scraper/scraper-utils');
+const {idify} = require('./project-scraper/scraper-utils');
 
 exports.createPages = async ({actions, graphql, reporter}) => {
 	const {createPage} = actions;
@@ -106,10 +106,9 @@ exports.onCreateNode = ({node, getNode, actions}) => {
 		node.fileAbsolutePath.includes('/posts/')
 	) {
 		let {title} = node.frontmatter;
-
 		const fileName = createFilePath({node, getNode, basePath: `posts`});
 		const [, date, slug] = fileName.match(
-			/^\/([\d]{4}-[\d]{2}-[\d]{2})-{1}(.+)\/$/
+			/^\/(?:published|drafts)\/([\d]{4}-[\d]{2}-[\d]{2})-{1}(.+)\/$/
 		);
 
 		createNodeField({node, name: 'slug', value: `/blog/${slug}`});

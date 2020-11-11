@@ -9,5 +9,11 @@
 		"sfpc",
 		"tldr",
 		"tumblr"
-	]
+	],
+	"search.useIgnoreFiles": false,
+	"search.useGlobalIgnoreFiles": true,
+	"files.exclude": {
+		".cache/": true,
+		"public/*": true
+	}
 }

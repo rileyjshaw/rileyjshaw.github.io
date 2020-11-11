@@ -83,7 +83,7 @@ Python has some awesome modules for audio analysis, but the underlying math can 
 When we talk about frequencies in music, we're referring to the _frequency_ at which a _pressure wave needs to repeat to make our ears hear a certain note_[^3]. Audio signals are usually represented as a pressure wave over time since that's how microphones and speakers understand sound. When multiple frequencies are played at the same time we end up with a crazy waveform that represents the composite of its individual parts. If we're really clever, we might be able to pick out characteristic waveforms of different sounds just by how they look.
 
 <figure>
-  <img src="../../../../content/images/blog/hello_there_audio.png" width="250px" alt="Audio waveform for 'hello there'" />
+  <img src="../../../../../content/images/blog/hello_there_audio.png" width="250px" alt="Audio waveform for 'hello there'" />
   <figcaption>Hello there</figcaption>
 </figure>
 
@@ -94,14 +94,14 @@ A time-domain representation like this allows us to recognize the structure of a
 The Fourier transform allows us to move from the time or spatial representations of signals that we're used to into the frequency domain. Calculating the Fourier transform of an audio signal gives you a new representation that looks like this:
 
 <figure>
-  <img src="../../../../content/images/blog/c_major_freq.png" width="400px" alt="C Major chord in the frequency domain" />
+  <img src="../../../../../content/images/blog/c_major_freq.png" width="400px" alt="C Major chord in the frequency domain" />
   <figcaption>C major chord in the frequency-domain</figcaption>
 </figure>
 
 Here we have frequency on the x-axis and magnitude on the y-axis. The Fourier transform breaks a signal down into its component frequencies; since the diagram above shows high magnitudes at about _260Hz_ (_C_), _330Hz_ (_E_), and _390Hz_ (_G_), it looks like we've got a **C Major chord** on our hands. Easier than trying to figure out the chord from the time-domain, huh?
 
 <figure>
-  <img src="../../../../content/images/blog/c_major_time.png" width="400px" alt="C Major chord in the time domain" />
+  <img src="../../../../../content/images/blog/c_major_time.png" width="400px" alt="C Major chord in the time domain" />
   <figcaption>C major chord in the time-domain</figcaption>
 </figure>
 
@@ -208,13 +208,13 @@ I hope to make a Part Two some day where I explore some nicer-sounding alternati
 [^1]: The arrow looks like this:
 
     <figure>
-      <img src="../../../../content/images/blog/audacity_arrow.png" width="163px" alt="Audacity track side-menu" />
+      <img src="../../../../../content/images/blog/audacity_arrow.png" width="163px" alt="Audacity track side-menu" />
     </figure>
 
 [^2]: Thanks Nolan Beck for the heads up!
 
     <figure>
-      <img src="../../../../content/images/blog/audacity_legacy_checkbox.png" width="406px" alt="Nyquist legacy syntax option" />
+      <img src="../../../../../content/images/blog/audacity_legacy_checkbox.png" width="406px" alt="Nyquist legacy syntax option" />
     </figure>
 
 [^3]: A 440Hz sine wave, for example, sounds like an **A** to our ears.

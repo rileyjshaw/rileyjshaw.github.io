@@ -65,6 +65,9 @@ module.exports = {
 			resolve: `gatsby-source-filesystem`,
 			options: {
 				path: `${__dirname}/src/data/markdown/`,
+				...(process.env.NODE_ENV !== 'development' && {
+					ignore: [`${__dirname}/src/data/markdown/posts/drafts`],
+				}),
 				name: `markdown`,
 			},
 		},
