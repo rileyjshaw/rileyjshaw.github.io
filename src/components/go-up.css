@@ -3,7 +3,7 @@
 	display: flex;
 	/* TODO(riley): Cross-platform option? */
 	/* TODO(riley): Repetative generic font-family to pacify Stylelint */
-	font-family: Menlo, var(--font-stack-sans), sans-serif;
+	font-family: Menlo, var(--fss), sans-serif;
 	font-size: 600px;
 	height: 100vh;
 	justify-content: center;

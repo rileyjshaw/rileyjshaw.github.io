@@ -9,7 +9,7 @@
 	width: 36em;
 }
 .about-page .currently {
-	color: var(--black);
+	color: var(--cfg);
 }
 .about-page .timeline {
 	list-style: none;

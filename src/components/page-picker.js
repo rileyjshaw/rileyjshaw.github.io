@@ -13,13 +13,13 @@ const pages = {
 	home: {
 		Icon: Pin,
 		title: 'Home',
-		color: 'var(--red)',
+		color: 'var(--cr)',
 		link: '/',
 	},
 	about: {
 		Icon: Sleep,
 		title: 'About',
-		color: 'var(--magenta)',
+		color: 'var(--cm)',
 		link: '/about',
 	},
 	lab: {
@@ -29,19 +29,19 @@ const pages = {
 				Lab<sup>beta</sup>
 			</>
 		),
-		color: 'var(--blue)',
+		color: 'var(--cb)',
 		link: '/lab',
 	},
 	blog: {
 		Icon: Keyboard,
 		title: 'Blog',
-		color: 'var(--cyan)',
+		color: 'var(--cc)',
 		link: '/blog',
 	},
 	subscribe: {
 		Icon: Rss,
 		title: 'Subscribe',
-		color: 'var(--green)',
+		color: 'var(--cg)',
 		link: '/subscribe',
 	},
 };

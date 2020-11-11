@@ -6,7 +6,12 @@
 	margin-top: 0;
 }
 .main-about {
-	background: var(--white);
+	margin: var(--font-scale-6) auto 0;
+	max-width: 90%;
+}
+.main-about .md-wrapper,
+.main-about p {
+	display: inline;
 }
 .main-about .about-link {
 	white-space: nowrap;
@@ -14,7 +19,7 @@
 .main-about .arrow {
 	display: inline-block;
 	/* TODO(riley): Cross-platform option? */
-	font-family: Menlo, var(--font-stack-sans), sans-serif;
+	font-family: Menlo, var(--fss), sans-serif;
 	width: 1ch;
 }
 .section .row {
@@ -25,7 +30,7 @@
 }
 .section .row > :first-child {
 	display: inline-block;
-	font-family: var(--font-stack-heading);
+	font-family: var(--fh);
 	padding-right: 10px;
 	text-align: right;
 	vertical-align: top;
@@ -36,7 +41,7 @@
 }
 .section .row > :last-child {
 	display: inline-block;
-	font-family: var(--font-stack-serif);
+	font-family: var(--fs);
 	padding-left: 100px;
 	padding-top: 12px; /* HACK(riley): Align the h2. */
 	position: relative;
@@ -58,7 +63,7 @@
 	grid-column-end: -1;
 }
 h2 + .lab-link {
-	color: var(--black);
+	color: var(--cfg);
 	font-size: var(--font-scale-1);
 }
 .explore-more {

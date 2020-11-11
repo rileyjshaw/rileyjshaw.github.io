@@ -2,3 +2,30 @@
 	overflow: auto;
 	position: relative;
 }
+main {
+	animation: 1s fade-in ease;
+}
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes slide-left {
+	from {
+		transform: translate3d(24px, 0, 0);
+	}
+	to {
+		transform: none;
+	}
+}
+@keyframes slide-right {
+	from {
+		transform: translate3d(-24px, 0, 0);
+	}
+	to {
+		transform: none;
+	}
+}

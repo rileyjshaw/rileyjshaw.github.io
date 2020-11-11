@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 
 import {useIdle, useStickyState} from '../util/hooks';
 import AutoLink from './auto-link';

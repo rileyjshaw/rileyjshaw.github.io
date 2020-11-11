@@ -1,0 +1,138 @@
+:root {
+	--co: #eee;
+	--cr: #ff4136;
+	--cg: #2ecc40;
+	--cb: #0074d9;
+	--cc: #00bcd4;
+	--cm: #e91e63;
+	--cy: #ffdc00;
+	--ck: #0a0b08;
+	--cbg: #fff;
+	--cbgrgb: 255, 255, 255;
+	--cfg: var(--ck);
+	--fss: arial, 'Helvetica Neue', helvetica, sans-serif;
+	--fs: georgia, palatino, 'Palatino Linotype', times, 'Times New Roman',
+		serif;
+	--fh: 'Proxima Nova', 'Montserrat', 'Arial Black', 'Arial Bold', gadget,
+		sans-serif;
+	--fm: 'Courier New', courier, 'Lucida Sans Typewriter', 'Lucida Typewriter',
+		monospace;
+	--s7: 2.80492446em;
+	--s6: 2.243939568em;
+	--s5: 1.7951516544em;
+	--s4: 1.4361213235em;
+	--s3: 1.1488970588em;
+	--s2: 0.9191176471em;
+	--s1: 0.7352941176em;
+	--s0: 0.5882352941em;
+	--s-1: 0.4705882353em;
+	--s-2: 0.3764705882em;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+html,
+body {
+	overflow: auto;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+blockquote,
+figure,
+dl,
+dd {
+	margin: 0;
+}
+ul[class],
+ol[class] {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+input,
+button,
+textarea,
+select,
+pre,
+code {
+	font: inherit;
+	letter-spacing: inherit;
+	word-spacing: inherit;
+}
+button {
+	cursor: pointer;
+}
+html {
+	background: var(--cbg);
+	color: var(--cfg);
+	font: 18px/1.7 var(--fss);
+}
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	min-height: 100vh;
+	text-rendering: optimizeLegibility;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--fh);
+}
+/* TODO(riley): I wanted to delete these rules at some point. Starting here… */
+h1,
+h2,
+h3,
+h4,
+h5 {
+		/* Margins are set to {top: font-scale-3; bottom: font-scale-0} **as though
+		the font-size were 1em** */
+		font-family: var(--font-stack-heading);
+}
+h1 {
+		font-size: var(--font-scale-4);
+		margin: var(--font-scale--1) 0 var(--font-scale--4);
+}
+h2 {
+		font-size: var(--font-scale-3);
+		margin: var(--font-scale-0) 0 var(--font-scale--2);
+}
+h3,
+h4 {
+		font-size: var(--font-scale-1);
+		margin: var(--font-scale-2) 0 var(--font-scale--1);
+}
+p,
+dd {
+	margin-top: 1em;
+	margin-bottom: var(--font-scale-1);
+}
+/* …and ending here. */
+p,
+li,
+dt,
+dd {
+	font-family: var(--fs);
+}
+code,
+pre {
+	font-family: var(--fm);
+	overflow: auto;
+}
+a {
+	color: var(--cb);
+}
+a[target='_blank'] {
+	cursor: alias;
+}
+a[target='_blank']::after {
+	content: '\202F\279A';
+	font-family: var(--fs);
+}

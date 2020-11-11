@@ -21,7 +21,7 @@
 }
 .project-explorer .filters legend,
 .project-explorer .result-details {
-	font-family: var(--font-stack-heading);
+	font-family: var(--fh);
 	font-size: var(--font-scale-1);
 	font-weight: 900;
 	grid-column: legends;
@@ -29,12 +29,6 @@
 }
 .project-explorer .filters legend {
 	float: left; /* Oh no. */
-}
-.project-explorer .warning {
-	text-align: center;
-}
-.project-explorer .warning a {
-	color: var(--black);
 }
 .project-explorer .filters input {
 	border: 0;
@@ -49,12 +43,12 @@
 .project-explorer-hide-filters,
 .project-explorer .filters label,
 .project-explorer .filters button {
-	background: var(--white);
-	border: 1px solid var(--black);
-	box-shadow: 2px 2px var(--black);
+	background: var(--cbg);
+	border: 1px solid var(--cfg);
+	box-shadow: 2px 2px var(--cfg);
 	cursor: pointer;
 	display: inline-block;
-	font-family: var(--font-stack-heading);
+	font-family: var(--fh);
 	font-size: var(--font-scale--1);
 	font-weight: 900;
 	margin: 0 0 30px 16px;

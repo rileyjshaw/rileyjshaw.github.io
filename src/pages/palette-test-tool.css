@@ -4,12 +4,12 @@
 	padding: 0;
 }
 .palette-test-tool .title {
-	border-bottom: var(--black) 1px solid;
+	border-bottom: var(--cfg) 1px solid;
 	margin: 1rem 18px 0;
 	padding: 0;
 }
 .palette-test-tool .subtitle {
-	color: var(--black);
+	color: var(--cfg);
 	display: block;
 	font-weight: bold;
 	margin: 6px 18px 2rem;
@@ -17,7 +17,7 @@
 }
 .list-name {
 	align-items: center;
-	background: var(--white);
+	background: var(--cbg);
 	bottom: 18px;
 	display: inline-flex;
 	height: 2rem;

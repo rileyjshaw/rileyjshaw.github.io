@@ -35,7 +35,7 @@
 	text-decoration: none;
 }
 .blog-list .page-navigation .current-page {
-	color: var(--yellow);
+	color: var(--cy);
 }
 .blog-list .continue-reading {
 	margin-bottom: 4px;

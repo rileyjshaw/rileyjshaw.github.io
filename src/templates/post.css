@@ -20,13 +20,13 @@
 	line-height: 1;
 }
 .blog-post-page .blog-post-content h1 {
-	font-family: var(--font-stack-heading);
+	font-family: var(--fh);
 	font-size: var(--font-scale-5);
 	margin-bottom: 0;
 }
 /* TODO(riley): Duplicate. */
 .blog-post-content header .subheading {
-	font-family: var(--font-stack-sans);
+	font-family: var(--fss);
 	font-size: var(--font-scale--2);
 	font-style: italic;
 	font-weight: bold;
