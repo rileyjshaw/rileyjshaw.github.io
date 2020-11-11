@@ -11,8 +11,8 @@ exports.createPages = async ({actions, graphql, reporter}) => {
 	// TODO(riley): Import this query from a common place.
 	const result = await graphql(`
 		{
-			allMarkdownRemark(
-				filter: {fileAbsolutePath: {regex: "//posts/.*.md$/"}}
+			allMdx(
+				filter: {fileAbsolutePath: {regex: "//posts/.*.mdx?$/"}}
 				sort: {fields: [fields___date], order: DESC}
 				limit: 1000
 			) {
@@ -48,7 +48,7 @@ exports.createPages = async ({actions, graphql, reporter}) => {
 		reporter.panicOnBuild(`Error while running GraphQL query.`);
 		return;
 	}
-	const internalPosts = result.data.allMarkdownRemark.edges.map(e => e.node);
+	const internalPosts = result.data.allMdx.edges.map(e => e.node);
 	const externalPosts = result.data.allCombinedProjectsJson.nodes;
 	const allPosts = internalPosts
 		.map(p => ({
@@ -102,7 +102,7 @@ exports.onCreateNode = ({node, getNode, actions}) => {
 	const {createNodeField} = actions;
 
 	if (
-		node.internal.type === 'MarkdownRemark' &&
+		node.internal.type === 'Mdx' &&
 		node.fileAbsolutePath.includes('/posts/')
 	) {
 		let {title} = node.frontmatter;
@@ -147,26 +147,41 @@ exports.createSchemaCustomization = ({actions}) => {
 
 exports.createResolvers = ({createResolvers}) =>
 	createResolvers({
-		// HACK(riley): Currently, excerptify is called twice for each node.
-		MarkdownRemark: {
+		// HACK(riley): Currently, excerpt is called twice for each node.
+		Mdx: {
 			description: {
 				type: 'String',
-				resolve: async (source, args, _, info) => {
-					const resolver = info.schema
-						.getType('MarkdownRemark')
-						.getFields().html.resolve;
-					const html = await resolver(source, args);
-					return excerptify(html).description;
+				resolve: async (source, args, context, info) => {
+					const resolver = info.schema.getType('Mdx').getFields()
+						.excerpt.resolve;
+					return await resolver(
+						source,
+						{
+							...args,
+							pruneLength: 700,
+							truncate: false,
+						},
+						context,
+						info
+					);
 				},
 			},
 			more: {
 				type: 'Boolean',
-				resolve: async (source, args, _, info) => {
-					const resolver = info.schema
-						.getType('MarkdownRemark')
-						.getFields().html.resolve;
-					const html = await resolver(source, args);
-					return excerptify(html).more;
+				resolve: async (source, args, context, info) => {
+					const resolver = info.schema.getType('Mdx').getFields()
+						.excerpt.resolve;
+					const excerpt = await resolver(
+						source,
+						{
+							...args,
+							pruneLength: 700,
+							truncate: false,
+						},
+						context,
+						info
+					);
+					return excerpt.charAt(excerpt.length - 1) === '…';
 				},
 			},
 		},

@@ -20,7 +20,7 @@ Where did that brown come from?! The initial red looks great, the final green lo
 **R**ed **G**reen and **B**lue are the [three primary additive colors](/blog/your-art-teacher-lied). Your browser takes an 8-bit intensity value for each of the R, G, and B components to determine the output color. This is often represented as three two-digit hex values (for example, <span style="color:#ff8800">#ff8800</span> is orange).
 
 <figure>
-  <img src="../../../../content/images/blog/rgb-cube.png" width="240px" alt="Three-dimensional RGB color space">
+  <img src="../../../../content/images/blog/rgb-cube.png" width="240px" alt="Three-dimensional RGB color space" />
   <figcaption>Axes represent red, green, and blue</figcaption>
 </figure>
 
@@ -31,7 +31,7 @@ For the subtle changes that make up 90% of color transitions, moving through RGB
 HSL stands for **H**ue, **S**aturation, **L**ightness. It maps RGB's cartesian space to cylindrical coordinates, which means that hue is represented as an angle around the RGB color wheel. It's a friendlier representation to use since changes can be more explicit. For example, to make an intense red more subdued, just reduce saturation from 100% to 50%. For comparison, doing this in RGB requires reducing R from 255 to 191 and increasing G and B from 0 to 64.
 
 <figure>
-  <img src="../../../../content/images/blog/hsl-cube.png" width="240px" alt="Three-dimensional HSL color space">
+  <img src="../../../../content/images/blog/hsl-cube.png" width="240px" alt="Three-dimensional HSL color space" />
   <figcaption>Axes represent hue, saturation, and lightness</figcaption>
 </figure>
 
@@ -62,13 +62,13 @@ The adjusted version looks better, but it's still not great. A smooth transition
 The real issue here is that HSL does a bad job dealing with _perceived_ lightness. Here's the HSL spectrum with 50% lightness:
 
 <figure>
-  <img src="../../../../content/images/blog/hsl-spectrum.png" alt="Two-dimensional HSL spectrum">
+  <img src="../../../../content/images/blog/hsl-spectrum.png" alt="Two-dimensional HSL spectrum" />
 </figure>
 
 And here's the associated lightness values based on [CIE's definition of lightness](http://en.wikipedia.org/wiki/Lab_color_space#CIELAB):
 
 <figure>
-  <img src="../../../../content/images/blog/hsl-lightness.png" alt="Perceived lightness of a two-dimensional HSL spectrum">
+  <img src="../../../../content/images/blog/hsl-lightness.png" alt="Perceived lightness of a two-dimensional HSL spectrum" />
 </figure>
 
 This is why color pairs require custom timing functions. Our eyes try to find a pattern when they notice changes in lightness. In RGB, we get consistently lighter or darker, so the linear shift is easy for our eyes to comprehend. In HSL, we ride a crazy, inconsistent wave of light/dark patches until we arrive at our destination. Since our eyes can't discern a pattern, the transition between color-groups feels springy.[^2]

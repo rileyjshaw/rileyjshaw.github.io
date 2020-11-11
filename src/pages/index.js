@@ -1,5 +1,6 @@
 import React from 'react';
 import {useStaticQuery, graphql, Link} from 'gatsby';
+import {MDXRenderer} from 'gatsby-plugin-mdx';
 
 import allProjectsQuery from '../util/all-projects-query';
 import {sortByDate} from '../util/sorting-methods';
@@ -16,13 +17,13 @@ const IndexPage = ({featuredProjects = [], location}) => {
 	// TODO(riley): Get featured projects from here.
 	const {
 		aboutIntro: {
-			childMarkdownRemark: {html},
+			childMdx: {body},
 		},
 	} = useStaticQuery(graphql`
 		{
 			aboutIntro: file(relativePath: {eq: "about/me_intro.md"}) {
-				childMarkdownRemark {
-					html
+				childMdx {
+					body
 				}
 			}
 		}
@@ -37,10 +38,9 @@ const IndexPage = ({featuredProjects = [], location}) => {
 					<div className="row">
 						<div />
 						<div className="about-stub">
-							<div
-								className="md-wrapper"
-								dangerouslySetInnerHTML={{__html: html}}
-							/>{' '}
+							<MDXRenderer className="md-wrapper">
+								{body}
+							</MDXRenderer>{' '}
 							<Link to="/about" className="about-link">
 								More{' '}
 								<CycleText

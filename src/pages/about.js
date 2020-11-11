@@ -1,5 +1,6 @@
 import React from 'react';
 import {StaticQuery, graphql} from 'gatsby';
+import {MDXRenderer} from 'gatsby-plugin-mdx';
 
 import BigQuote from '../components/big-quote';
 import {ExternalLink} from '../components/auto-link';
@@ -19,27 +20,27 @@ export default ({location}) => (
 			query={graphql`
 				{
 					me_intro: file(relativePath: {eq: "about/me_intro.md"}) {
-						childMarkdownRemark {
-							html
+						childMdx {
+							body
 						}
 					}
 					me_rest: file(relativePath: {eq: "about/me_rest.md"}) {
-						childMarkdownRemark {
-							html
+						childMdx {
+							body
 						}
 					}
 					timeline_title: file(
 						relativePath: {eq: "about/work/title.md"}
 					) {
-						childMarkdownRemark {
-							html
+						childMdx {
+							body
 						}
 					}
 					mozilla: file(
 						relativePath: {eq: "about/work/mozilla.md"}
 					) {
-						childMarkdownRemark {
-							html
+						childMdx {
+							body
 							frontmatter {
 								current
 							}
@@ -48,16 +49,16 @@ export default ({location}) => (
 					repair_matters: file(
 						relativePath: {eq: "about/work/repair_matters.md"}
 					) {
-						childMarkdownRemark {
-							html
+						childMdx {
+							body
 							frontmatter {
 								current
 							}
 						}
 					}
 					sfpc: file(relativePath: {eq: "about/work/sfpc.md"}) {
-						childMarkdownRemark {
-							html
+						childMdx {
+							body
 							frontmatter {
 								current
 							}
@@ -66,32 +67,32 @@ export default ({location}) => (
 					khan_academy: file(
 						relativePath: {eq: "about/work/khan_academy.md"}
 					) {
-						childMarkdownRemark {
-							html
+						childMdx {
+							body
 							frontmatter {
 								current
 							}
 						}
 					}
 					clc: file(relativePath: {eq: "about/work/clc.md"}) {
-						childMarkdownRemark {
-							html
+						childMdx {
+							body
 							frontmatter {
 								current
 							}
 						}
 					}
 					d30u30: file(relativePath: {eq: "about/work/d30u30.md"}) {
-						childMarkdownRemark {
-							html
+						childMdx {
+							body
 							frontmatter {
 								current
 							}
 						}
 					}
 					signal: file(relativePath: {eq: "about/work/signal.md"}) {
-						childMarkdownRemark {
-							html
+						childMdx {
+							body
 							frontmatter {
 								current
 							}
@@ -100,24 +101,24 @@ export default ({location}) => (
 					recurse_center: file(
 						relativePath: {eq: "about/work/recurse_center.md"}
 					) {
-						childMarkdownRemark {
-							html
+						childMdx {
+							body
 							frontmatter {
 								current
 							}
 						}
 					}
 					listn: file(relativePath: {eq: "about/work/listn.md"}) {
-						childMarkdownRemark {
-							html
+						childMdx {
+							body
 							frontmatter {
 								current
 							}
 						}
 					}
 					site: file(relativePath: {eq: "about/site.md"}) {
-						childMarkdownRemark {
-							html
+						childMdx {
+							body
 						}
 					}
 				}
@@ -140,24 +141,12 @@ export default ({location}) => (
 				<main className="about-page">
 					<div className="about-page-content">
 						<div className="about-me blog-post-content">
-							<div
-								dangerouslySetInnerHTML={{
-									__html: me_intro.childMarkdownRemark.html,
-								}}
-							/>
-							<div
-								dangerouslySetInnerHTML={{
-									__html: me_rest.childMarkdownRemark.html,
-								}}
-							/>
+							<MDXRenderer>{me_intro.childMdx.body}</MDXRenderer>
+							<MDXRenderer>{me_rest.childMdx.body}</MDXRenderer>
 							{/* TODO(riley): <UpTo /> */}
-							<div
-								dangerouslySetInnerHTML={{
-									__html:
-										timeline_title.childMarkdownRemark
-											.html,
-								}}
-							/>
+							<MDXRenderer>
+								{timeline_title.childMdx.body}
+							</MDXRenderer>
 							<ul className="timeline">
 								{[
 									mozilla,
@@ -172,8 +161,8 @@ export default ({location}) => (
 								].map(
 									(
 										{
-											childMarkdownRemark: {
-												html,
+											childMdx: {
+												body,
 												frontmatter: {current},
 											},
 										},
@@ -184,10 +173,9 @@ export default ({location}) => (
 											className={
 												current ? 'current' : ''
 											}
-											dangerouslySetInnerHTML={{
-												__html: html,
-											}}
-										/>
+										>
+											<MDXRenderer>{body}</MDXRenderer>
+										</li>
 									)
 								)}
 							</ul>
@@ -200,11 +188,7 @@ export default ({location}) => (
 								</ExternalLink>
 								.
 							</p>
-							<div
-								dangerouslySetInnerHTML={{
-									__html: site.childMarkdownRemark.html,
-								}}
-							/>
+							<MDXRenderer>{site.childMdx.body}</MDXRenderer>
 						</div>
 					</div>
 					<BigQuote quoteIndex={4} />
