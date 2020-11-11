@@ -76,6 +76,7 @@
     "deploy": "npm run format && gatsby build && gh-pages -d public -b master",
     "dev": "npm run develop",
     "develop": "gatsby develop",
+    "develop-everywhere": "gatsby develop -H 0.0.0.0 -p 8000",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\" && stylelint \"src/**/*.css\" --fix",
     "lint": "npm run format",
     "scrape": "npx babel-node project-scraper/run-scraper.js && npm run format",
