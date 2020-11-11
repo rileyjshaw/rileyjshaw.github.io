@@ -1,5 +1,6 @@
 .about-page-content {
 	font-size: var(--font-scale-1);
+	margin-top: 6em;
 	overflow: hidden;
 }
 /* Copied from post template. */

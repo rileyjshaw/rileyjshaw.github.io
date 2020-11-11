@@ -5,13 +5,14 @@ import SiteNav from '../components/site-nav';
 
 import './page-header.css';
 
-export default ({children, fromPage, underlined}) => (
-	<>
-		<SiteNav fromPage={fromPage} />
-		<header className="page-header">
-			<h1 className={`title${underlined ? ' underlined' : ''}`}>
-				{children}
+export default ({fromPage}) => (
+	<header className="page-header">
+		<Link to="/">
+			<h1 className="title">
+				The digital <span>landfill of</span> <span>Riley J.</span>{' '}
+				<span>Shaw</span>
 			</h1>
-		</header>
-	</>
+		</Link>
+		<SiteNav fromPage={fromPage} />
+	</header>
 );

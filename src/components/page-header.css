@@ -1,4 +1,6 @@
 .page-header {
+	align-items: flex-end;
+	border-bottom: 2px solid var(--cfg);
 	display: flex;
 	justify-content: space-between;
 	margin: 1em 1em 0;
@@ -12,13 +14,8 @@
 	font-weight: 900;
 	line-height: 1;
 	margin: 0;
-	padding-bottom: var(--font-scale--3);
+	padding-bottom: 12px;
 }
-.title.underlined {
-	border-bottom: 6px solid var(--black);
-}
-.title a {
-	color: var(--black);
-	display: flex;
-	flex-direction: column;
+.page-header a {
+	text-decoration: none;
 }

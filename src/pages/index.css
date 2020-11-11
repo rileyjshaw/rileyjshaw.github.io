@@ -1,13 +1,6 @@
-.main-content {
-	margin-top: var(--font-scale-6);
-}
 .main-content h2 {
 	font-size: var(--font-scale-3);
 	margin-top: 0;
-}
-.main-about {
-	margin: var(--font-scale-6) auto 0;
-	max-width: 90%;
 }
 .main-about .md-wrapper,
 .main-about p {
