@@ -3,9 +3,6 @@ import React from 'react';
 export default () => (
 	<div className="todo-some-better-name">
 		<ul>
-			<li>Add scroll to sidebar on index page if it's short and wide</li>
-		</ul>
-		<ul>
 			<li>Potential other sources:</li>
 			<li>
 				Instagram
