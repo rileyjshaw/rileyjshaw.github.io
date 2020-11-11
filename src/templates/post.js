@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link, graphql} from 'gatsby';
+import {MDXRenderer} from 'gatsby-plugin-mdx';
 
 import SEO from '../components/seo';
 import Layout from '../components/layout';
@@ -7,8 +8,8 @@ import Layout from '../components/layout';
 import './post.css';
 
 export default function Template({data}) {
-	const {markdownRemark} = data;
-	const {fields, html} = markdownRemark;
+	const {mdx} = data;
+	const {fields, body} = mdx;
 	return (
 		<Layout>
 			<SEO title={fields.title} className="blog-post-page" />
@@ -28,13 +29,10 @@ export default function Template({data}) {
 							<time>Posted {fields.date}</time>
 						</div>
 					</header>
-					<div
-						className="blog-post-markdown"
-						// HACK(riley): Replace this in a remark plugin.
-						dangerouslySetInnerHTML={{
-							__html: html.replace(/↩/g, '↩&#xFE0E;'),
-						}}
-					/>
+					<MDXRenderer className="blog-post-markdown">
+						{/* HACK(riley): Replace this in a remark plugin. */}
+						{body.replace(/↩/g, '↩&#xFE0E;')}
+					</MDXRenderer>
 				</article>
 			</main>
 		</Layout>
@@ -43,8 +41,8 @@ export default function Template({data}) {
 
 export const pageQuery = graphql`
 	query($path: String!) {
-		markdownRemark(fields: {slug: {eq: $path}}) {
-			html
+		mdx(fields: {slug: {eq: $path}}) {
+			body
 			fields {
 				date(formatString: "MMMM DD, YYYY")
 				slug

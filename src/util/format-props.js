@@ -11,7 +11,7 @@ const formatters = {
 			...rest,
 			frontmatter: {
 				...frontmatter,
-				tags: [...frontmatter.tags].sort(),
+				tags: [...(frontmatter.tags ?? [])].sort(),
 			},
 			type: 'post',
 			link: slug,

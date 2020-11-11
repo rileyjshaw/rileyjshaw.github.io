@@ -87,15 +87,6 @@ h4 {
 	font-family: var(--fh);
 }
 /* TODO(riley): I wanted to delete these rules at some point. Starting here… */
-h1,
-h2,
-h3,
-h4,
-h5 {
-	/* Margins are set to {top: font-scale-3; bottom: font-scale-0} **as though
-		the font-size were 1em** */
-	font-family: var(--font-stack-heading);
-}
 h1 {
 	font-size: var(--font-scale-4);
 	margin: var(--font-scale--1) 0 var(--font-scale--4);

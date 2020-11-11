@@ -84,9 +84,10 @@ module.exports = {
 			},
 		},
 		{
-			resolve: `gatsby-transformer-remark`,
+			resolve: `gatsby-plugin-mdx`,
 			options: {
-				plugins: [
+				extensions: ['.md', '.mdx'],
+				gatsbyRemarkPlugins: [
 					`gatsby-remark-copy-linked-files`,
 					`gatsby-remark-autolink-headers`,
 					{
@@ -201,8 +202,8 @@ module.exports = {
 						serialize: ({query}) => rssify(query),
 						query: `
 							{
-								allMarkdownRemark(
-									filter: {fileAbsolutePath: {regex: "//posts/.*\.md$/"}}
+								allMdx(
+									filter: {fileAbsolutePath: {regex: "//posts/.*\.mdx$/"}}
 									sort: {fields: [fields___date], order: DESC}
 								) {
 									edges {
@@ -276,8 +277,8 @@ module.exports = {
 						serialize: ({query}) => rssify(query),
 						query: `
 							{
-								allMarkdownRemark(
-									filter: {fileAbsolutePath: {regex: "//posts/.*\.md$/"}}
+								allMdx(
+									filter: {fileAbsolutePath: {regex: "//posts/.*\.mdx?$/"}}
 									sort: {fields: [fields___date], order: DESC}
 								) {
 									edges {

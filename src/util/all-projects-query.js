@@ -3,7 +3,7 @@ import {useStaticQuery, graphql} from 'gatsby';
 import formatProps from './format-props';
 
 export function format({
-	allMarkdownRemark: {edges: posts} = {edges: []},
+	allMdx: {edges: posts} = {edges: []},
 	allCombinedProjectsJson: {nodes: projects} = {nodes: []},
 }) {
 	return [
@@ -19,8 +19,8 @@ export default () =>
 	format(
 		useStaticQuery(graphql`
 		{
-			allMarkdownRemark(
-				filter: {fileAbsolutePath: {regex: "/\/posts\/.*\\.md$/"}}
+			allMdx(
+				filter: {fileAbsolutePath: {regex: "/\/posts\/.*\\.mdx?$/"}}
 				sort: {fields: [fields___date], order: DESC}
 			) {
 				edges {

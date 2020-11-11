@@ -17,7 +17,7 @@ export default ({data, location, pageContext: {currentPage, numPages}}) => {
 	// TODO(riley): Unfortunate that we're re-sorting this client-side instead
 	//              of collecting + sorting it with GraphQL.
 	const posts = [
-		...data.allMarkdownRemark.edges.map(({node}) => node),
+		...data.allMdx.edges.map(({node}) => node),
 		...data.allCombinedProjectsJson.nodes,
 	].sort(
 		(a, b) =>
@@ -128,8 +128,8 @@ export const blogListQuery = graphql`
 		$externalLimit: Int!
 		$externalSkip: Int!
 	) {
-		allMarkdownRemark(
-			filter: {fileAbsolutePath: {regex: "//posts/.*.md$/"}}
+		allMdx(
+			filter: {fileAbsolutePath: {regex: "//posts/.*.mdx?$/"}}
 			sort: {fields: [fields___date], order: DESC}
 			limit: $internalLimit
 			skip: $internalSkip
