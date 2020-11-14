@@ -18,7 +18,7 @@ Today we wrote copy, polished features, closed bugs, and merged pull-requests.
 
 Measured by lines of code, today was short. Measured by steps taken, it was tall. Measured by ideas discussed, things learned, and sights seen, it was towering.
 
-![Hanakapi'ai Falls](../../../../content/images/blog/falls.jpg)
+![Hanakapi'ai Falls](../../../../../content/images/blog/falls.jpg)
 
 For the past week and a half I've been trapped on an island among a team of brilliant hackers. A curious duality exists on the island. At sunrise, stand-up paddleboard yoga is followed naturally by a technical stand-up meeting. A group huddling around a laptop for hours may swiftly disband upon noticing big surf. This isn't an idle vacation, nor is it daunting contract work. We're nineteen people fervently working toward a noble goal in a stress-free mind amphitheater.
 
@@ -34,7 +34,7 @@ Though it sounded too good to be true, sparse details soon surfaced in our inbox
 
 We arrived in Hawaii with backpacks and a vague idea of what the next two weeks would hold. The uncertainty distilled a group of self-motivated people who _really_ wanted to pitch in. The lack of granular detail allowed us to fill in gaps and make the trip our own.
 
-![Kauai's Best Shave Ice](../../../../content/images/blog/shave-ice.jpg)
+![Kauai's Best Shave Ice](../../../../../content/images/blog/shave-ice.jpg)
 
 ## An activist, an anarchist, and an astrophysicist walk into a bar...
 
@@ -56,4 +56,4 @@ The most important part of an experience like this is having interesting people 
 
 Since arriving I've restructured the browser extension's event system and kayaked beside a family of sea-turtles. The day that I watched a rainstorm pass by while Lilia played ukulele was the same day that I allowed multiple conversation instances to open concurrently. If there was any uncertainty it's long gone now, replaced by a fulfillment that stretches far beyond these two weeks.
 
-![Sunset on Kalalau Trail](../../../../content/images/blog/sunset.jpg)
+![Sunset on Kalalau Trail](../../../../../content/images/blog/sunset.jpg)

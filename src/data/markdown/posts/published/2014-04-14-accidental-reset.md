@@ -14,4 +14,4 @@ From page 33 of the [Apple II User's Guide](http://www.librarything.com/work/520
 
 Sometimes, all you need is a small rubber washer.
 
-![Accidental Reset section of the Apple II User's Guide](../../../../content/images/blog/apple-ii-reset-key.png)
+![Accidental Reset section of the Apple II User's Guide](../../../../../content/images/blog/apple-ii-reset-key.png)
