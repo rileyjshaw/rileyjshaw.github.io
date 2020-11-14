@@ -19,7 +19,7 @@
 	grid-column: 1/-1;
 	padding: 0;
 }
-.project-explorer .filters legend,
+.project-explorer .filters .legend,
 .project-explorer .result-details {
 	font-family: var(--fh);
 	font-size: var(--font-scale-1);
@@ -27,8 +27,14 @@
 	grid-column: legends;
 	line-height: 47px; /* HACK(riley): Matches the button size. */
 }
-.project-explorer .filters legend {
-	float: left; /* Oh no. */
+.project-explorer .filters .legend {
+	margin: 0;
+}
+.project-explorer .filters .inputs {
+	grid-column: inputs;
+}
+.project-explorer .filters .labs-clear {
+	grid-column: cancel;
 }
 .project-explorer .filters input {
 	border: 0;
