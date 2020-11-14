@@ -13,6 +13,7 @@ import PageHeader from '../components/page-header';
 import SEO from '../components/seo';
 
 import './index.css';
+
 const IndexPage = ({featuredProjects = [], location}) => {
 	// TODO(riley): Get featured projects from here.
 	const {

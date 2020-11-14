@@ -158,13 +158,15 @@ class ProjectExplorer extends React.PureComponent {
 				</button>
 				<div className="filters">
 					{this.state.drawerOpen && (
-						<fieldset className="controls">
-							{/* TODO(riley): Once display: contents or display:
-						subgrid have good support, get rid of the .inputs
-						wrappers and nest fieldsets (display: contents) around
-						each legend / .inputs / button set. Until then, the
-						children need to be direct descendents of the grid… */}
-							<legend>Show:</legend>
+						/* TODO(riley): Once display: contents or display:
+						subgrid have good support, replace <p.legend> with
+						<legend>, get rid of the .inputs wrappers, and nest
+						<fieldset>s (display: contents) around each <legend> /
+						.inputs / button set. Until then, the children need to
+						be direct descendents of the grid, and a11y takes a
+						hit. */
+						<div className="controls">
+							<p className="legend">Show:</p>
 							<div className="inputs">
 								{this.getNodeTypes().map((type, i) => (
 									<Fragment key={type}>
@@ -188,12 +190,12 @@ class ProjectExplorer extends React.PureComponent {
 								))}
 							</div>
 							<button
-								className="labs-clear-types"
+								className="labs-clear labs-clear-types"
 								onClick={this.handleClearTypesClick}
 							>
 								X
 							</button>
-							<legend>Sort by:</legend>
+							<p className="legend">Sort by:</p>
 							<div className="inputs">
 								{sortingMethods.map(({title}, i) => (
 									<Fragment key={title}>
@@ -214,7 +216,7 @@ class ProjectExplorer extends React.PureComponent {
 									</Fragment>
 								))}
 							</div>
-							<legend>Order:</legend>
+							<p className="legend">Order:</p>
 							<div className="inputs">
 								<input
 									type="checkbox"
@@ -229,7 +231,7 @@ class ProjectExplorer extends React.PureComponent {
 									Shuffle
 								</button>
 							</div>
-							{/* <legend>Match:</legend>
+							{/* <p className="legend">Match:</p>
 							<div className="inputs">
 								<input
 									type="radio"
@@ -251,7 +253,7 @@ class ProjectExplorer extends React.PureComponent {
 								/>
 								<label htmlFor="labs-filter-all">All</label>
 							</div>
-							<legend>Of:</legend>
+							<p className="legend">Of:</p>
 							<div className="inputs">
 								{tags.map((tag, i) => (
 									<Fragment key={tag.name}>
@@ -274,12 +276,12 @@ class ProjectExplorer extends React.PureComponent {
 								))}
 							</div>
 							<button
-								className="labs-clear-tags"
+								className="labs-clear labs-clear-tags"
 								onClick={this.handleClearTagsClick}
 							>
 								X
 							</button> */}
-						</fieldset>
+						</div>
 					)}
 				</div>
 				<p className="result-details">
