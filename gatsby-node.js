@@ -185,3 +185,13 @@ exports.createResolvers = ({createResolvers}) =>
 			},
 		},
 	});
+
+// Allows components to be imported from the absolute path "components/etc"
+// instead of the relative "../../components/etc". This is necessary for MDX.
+exports.onCreateWebpackConfig = ({actions}) => {
+	actions.setWebpackConfig({
+		resolve: {
+			modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+		},
+	});
+};

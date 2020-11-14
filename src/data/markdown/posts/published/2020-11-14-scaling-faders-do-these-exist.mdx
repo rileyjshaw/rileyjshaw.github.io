@@ -1,0 +1,52 @@
+---
+title: "Scaling faders: do these exist?"
+---
+
+import ScalingFadersDemo from 'components/scaling-faders-demo';
+
+Occasionally, clumsily, I make music.
+
+I had a drum kit when I was growing up. Making music looked like this:
+
+1. Sit down.
+2. Hit drums for an hour.
+
+Now I’ve grown up, so I share walls with landlords and neighbours whose love is conditional. And though I’ve managed to fit drums into some astonishing nooks, my recent apartments haven’t had room for surfaces that I don’t eat or sleep on.
+
+Now I make music with a keyboard or drum pad connected to my computer. It’s the same computer that I spend most of my time programming on. Making music looks like this now:
+
+1. Remain seated.
+2. Minimize my work software. Open my music software.
+3. Update music software to latest version.
+4. Wait for updates, search “what are the best chords”.
+5. The sun is going down. I have 30 tabs open. What happened??
+6. Okay focus. Let’s try some of these chords.
+7. Plug in keyboard.
+8. Switch to the music software.
+9. Oh no that’s the work software.
+10. While I’m here I’ll just write a quick computer program that knows more about chords than I do. It shouldn’t take long. This will save time in the long run.
+11. The sun is coming up. What happened??
+
+I used to get frustrated if I dedicated time to music and wrote none. I’ve come to accept that maybe my hobby includes these detours. I’m still having fun. I’ve built more instruments than I care to count, and I’m quite fond of some of the tools and toys I’ve created.
+
+Today I’m writing about one such creation. I wouldn’t say I’m fond of it yet, I’m just curious why I haven’t seen something like this before. My hope in posting this is that someone more experienced will tell me why.
+
+## Scaling faders
+
+As an amateur with no focus, I rarely reach the point in a song where I need to worry about the mix or arrangement. But sometimes I do, and when I do, I do it badly.
+
+When I add a new track to a song, I make it too loud. Then when I’m mixing, I make everything as loud as the loudest track. “Mixing” for me means depleting headroom until something starts clipping and I start over from scratch.
+
+I could practice mixing, or read a book, or take a lesson. Or I could follow my calling and make something brand new and probably much worse for reasons that, as a beginner, I won’t understand.
+
+Last weekend, I made something new. Of course. And I’m having fun with it. But I’m also kind of surprised I haven’t seen this type of UI before. Is this not a problem other people have? Are faders old-timey now because the pros mix their tracks with machine learning? I searched terms like “auto-scaling fader bank” and “mixer keep average”, but nothing is coming up.
+
+The idea is that when you move one fader up, the rest move down in proportion to keep the output level around the same place. There are two additional faders. “Volume” represents the average level of the track faders. Moving the volume knob scales each track fader to maintain the correct average. If the volume fader knob is red, it means volume is maxed out for all the playing tracks. “Gain” represents a more standard volume fader – it affects the output level without changing any of the fader positions.
+
+Click “Start demo” below to start 8 looping tracks and see what I’m talking about. Play around with it to your heart’s content.
+
+<ScalingFadersDemo />
+
+The loops are from Garageband, so I can’t take credit for the transcendant flute riff on Track 7. But hopefully this illustrates the idea. If you really want to dig into the details, [the code](https://github.com/rileyjshaw/rileyjshaw.github.io/blob/dev/src/components/scaling-faders-demo.js) (like everything on my website) is open source. [There’s also a Codepen](https://codepen.io/rileyjshaw/pen/ZEOqdPM?editors=0010) that you can remix.
+
+I’m happy that my website doesn’t have a comments section (or analytics, webfonts, and other ad tracking vectors) but today I’m curious to hear what Real Musicians think of this interface. So I’ll post this to Reddit in case in case anyone has thoughts. [Feel free to comment there!](https://reddit.com)
