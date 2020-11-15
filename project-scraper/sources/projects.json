@@ -257,6 +257,16 @@
 		"tags": ["online"]
 	},
 	{
+		"title": "Mystery house",
+		"description": [
+			"A house built collaboratively in <a href=\"https://ephtracy.github.io/\">MagicaVoxel</a> with my friend Hannah."
+		],
+		"date": "2018-11-11",
+		"coolness": 60,
+		"link": "https://twitter.com/herlifeinpixels/status/1061891927312805888",
+		"tags": ["pretty"]
+	},
+	{
 		"title": "Stipphonic",
 		"description": [
 			"I wanted to see what stippling sounded like applied to musical chords.",
