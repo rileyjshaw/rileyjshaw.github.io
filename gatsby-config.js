@@ -207,7 +207,7 @@ module.exports = {
 						query: `
 							{
 								allMdx(
-									filter: {fileAbsolutePath: {regex: "//posts/.*\.mdx$/"}}
+									filter: {fileAbsolutePath: {regex: "//posts/published/.*\.mdx?$/"}}
 									sort: {fields: [fields___date], order: DESC}
 								) {
 									edges {
@@ -254,6 +254,35 @@ module.exports = {
 						serialize: ({query}) => rssify(query),
 						query: `
 							{
+								allMdx(
+									filter: {fileAbsolutePath: {regex: "//posts/published.*\.mdx?$/"}}
+									sort: {fields: [fields___date], order: DESC}
+								) {
+									edges {
+										node {
+											description
+											frontmatter {
+												layout
+												tags
+											}
+											fields {
+												uid
+												slug
+												title
+												date(formatString: "YYYY-MM-DD")
+											}
+										}
+									}
+								}
+							}
+						`,
+						output: `/blog-internal.xml`,
+						title: `Blog feed: internal posts only`,
+					},
+					{
+						serialize: ({query}) => rssify(query),
+						query: `
+							{
 								allCombinedProjectsJson(
 									filter: {type: {nin: ["tumblr", "commit"]}}
 									sort: {fields: [date], order: DESC}
@@ -282,7 +311,7 @@ module.exports = {
 						query: `
 							{
 								allMdx(
-									filter: {fileAbsolutePath: {regex: "//posts/.*\.mdx?$/"}}
+									filter: {fileAbsolutePath: {regex: "//posts/published/.*\.mdx?$/"}}
 									sort: {fields: [fields___date], order: DESC}
 								) {
 									edges {
