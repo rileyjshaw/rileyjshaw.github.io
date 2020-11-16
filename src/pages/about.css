@@ -1,7 +1,12 @@
 .about-page-content {
 	font-size: var(--font-scale-1);
-	margin-top: 6em;
+	margin-top: 4em;
 	overflow: hidden;
+}
+@media only screen and (max-width: 960px) {
+	.about-page-content {
+		margin-top: 2em;
+	}
 }
 /* Copied from post template. */
 .about-page .about-me {
