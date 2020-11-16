@@ -3,7 +3,14 @@ import React from 'react';
 export default () => (
 	<div className="todo-some-better-name">
 		<ul>
+			<li>Graph contribution types over time</li>
+			<li>
+				Stretched images in static site w/ Gulp post and footnotes of
+				taking-the-average-tone
+			</li>
 			<li>Potential other sources:</li>
+			<li>Patchstorage</li>
+			<li>Screenshots blog</li>
 			<li>
 				Instagram
 				(https://www.gatsbyjs.org/packages/gatsby-source-instagram/)

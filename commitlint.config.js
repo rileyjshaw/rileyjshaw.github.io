@@ -9,5 +9,6 @@ module.exports = {
 			'always',
 			changelogConfig.list.map(key => changelogConfig.types[key].value),
 		],
+		'body-max-line-length': [0, 'always', [100]],
 	},
 };
