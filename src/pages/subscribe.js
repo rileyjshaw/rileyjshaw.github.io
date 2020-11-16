@@ -108,6 +108,11 @@ export default ({location}) => (
 						Dwitter
 					</ExternalLink>
 				</li>
+				<li>
+					<ExternalLink to="https://www.youtube.com/channel/UCV09P32tImJ8etTRcRNUKNw">
+						YouTube
+					</ExternalLink>
+				</li>
 			</ul>
 		</div>
 		<BigQuote quoteIndex={0} />
