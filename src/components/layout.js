@@ -15,7 +15,7 @@ const Layout = ({children}) => {
 		'betaBanner',
 		'session'
 	);
-	useIdle(60000 * 4, () => setIsBlockerOpen(false));
+	useIdle(60000 * 4, () => setIsBlockerOpen(true));
 
 	return (
 		<>
