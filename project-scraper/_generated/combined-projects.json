@@ -2855,6 +2855,19 @@
 		"timestamp": 1415577600000
 	},
 	{
+		"title": "Mystery house",
+		"date": "2018-11-11",
+		"coolness": 60,
+		"link": "https://twitter.com/herlifeinpixels/status/1061891927312805888",
+		"tags": ["pretty"],
+		"descriptionList": [
+			"A house built collaboratively in <a href=\"https://ephtracy.github.io/\" rel=\"noopener noreferrer\" target=\"_blank\">MagicaVoxel</a> with my friend Hannah."
+		],
+		"type": "project",
+		"uid": "PROJECT_MYSTERY_HOUSE",
+		"timestamp": 1541894400000
+	},
+	{
 		"title": "n-input OR gate in CSS",
 		"date": "2014-06-26",
 		"tags": ["extinct", "golf", "instructional", "online", "reusable"],
