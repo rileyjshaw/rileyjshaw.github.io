@@ -5,7 +5,7 @@ tags:
     - gallery
 ---
 
-I just had a blast playing with [Anselm Levskaya](https://github.com/levskaya)'s [Escher Sketch](https://levskaya.github.io/eschersketch/) project!
+I just had a blast playing with [Anselm Levskaya](https://github.com/levskaya)’s [Escher Sketch](https://levskaya.github.io/eschersketch/) project!
 
 ![Sketch 1](../../../../../content/images/blog/eschersketch/1.png)
 ![Sketch 2](../../../../../content/images/blog/eschersketch/2.png)

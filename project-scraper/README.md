@@ -6,24 +6,24 @@ skip to the [directory structure](#structure).
 
 ## Why?
 
-Gatsby's source and transformer plugins are powerful, and I used them in the
+Gatsby’s source and transformer plugins are powerful, and I used them in the
 initial development of this site. I eventually decided that separating my
 collection process would be good for flexibility, control, and offline work.
 
 ### Flexibility
 
-GraphQL's filters and transforms are powerful, and Gatsby's APIs add more
+GraphQL’s filters and transforms are powerful, and Gatsby’s APIs add more
 options for how data is fetched, cached, and transformed. However, complicated
 or non-standard data transforms and sanitization are much easier outside of
-Gatsby's ecosystem. For instance, the API starts to feel clunky for one-off
+Gatsby’s ecosystem. For instance, the API starts to feel clunky for one-off
 treatment of specific content nodes,
 
 ### Control
 
-I've had a good experience with Gatsby but I may decide to migrate my site to
+I’ve had a good experience with Gatsby but I may decide to migrate my site to
 another platform or format someday. Keeping my data entirely separate from the
-from the site's framework makes migrating my data as easy as copy/pasting this
-directory. It's just a few JS files!
+from the site’s framework makes migrating my data as easy as copy/pasting this
+directory. It’s just a few JS files!
 
 ### Offline
 
@@ -42,11 +42,11 @@ made working offline with project data impossible.
 
 ## Directory structure
 
-Here's how the scraper is organized for now:
+Here’s how the scraper is organized for now:
 
 ```
 scraper-utils.js
-	The megafile to replace Gatsby's source plugins. This contains functions to
+	The megafile to replace Gatsby’s source plugins. This contains functions to
 	pull project data from all online sources and save them into `_generated/`.
 
 run-scraper.js
@@ -61,7 +61,7 @@ _generated/
 	scraped-projects-raw.json
 		Not quite the raw response, but pretty close. This file
 		contains all the data that I may decide to use someday, but
-		haven't yet. Organized by `type` in a nested object.
+		haven’t yet. Organized by `type` in a nested object.
 
     scraped-projects-formatted.json
 		Standardized into a smaller format that can be smashed together with
@@ -100,7 +100,7 @@ tools/
 		interface to preview and re-tag each project.
 
 	cool-sort.html
-		TODO: sort or insert nodes based on their "coolness".
+		TODO: sort or insert nodes based on their “coolness”.
 
 test/
 	Quick test files to ensure data is downloaded without any dropped nodes,

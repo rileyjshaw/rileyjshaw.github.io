@@ -1,6 +1,6 @@
 .page-header {
 	align-items: flex-end;
-	border-bottom: 2px solid var(--cfg);
+	border-bottom: 4px solid var(--cfg);
 	display: flex;
 	justify-content: space-between;
 	margin: 1em 1em 0;

@@ -59,8 +59,15 @@
 .blog-post-content figure {
 	text-align: center;
 }
-.blog-post-content img {
+.blog-post-content .gatsby-resp-image-wrapper {
+	margin: 2.5em auto;
 	max-width: 100%;
+}
+.blog-post-content .blog-figure {
+	margin-bottom: 2.5em;
+}
+.blog-post-content .blog-figure .gatsby-resp-image-wrapper {
+	margin-bottom: 0;
 }
 .blog-post-content figcaption {
 	font-size: var(--font-scale--2);
@@ -88,4 +95,8 @@
 .blog-post-content hr {
 	border: 0;
 	border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+.blog-post-content blockquote {
+	border-left: 4px solid var(--cfg);
+	padding-left: 1em;
 }

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Khan Academy: a new employee's primer"
+title: 'Khan Academy: a new employee’s primer'
 tags:
     - education
     - life
@@ -23,9 +23,9 @@ Onboarding actually started a few weeks before my first work day. As soon as my 
 
 I said something stupid:
 
-> As far as magic words go, I've always been a fan of "flipendo"
+> As far as magic words go, I’ve always been a fan of “flipendo”
 
-...and I got **the coolest** response ever:
+…and I got **the coolest** response ever:
 
 > OK!! [https://www.khanacademy.org/r/flipendo](https://www.khanacademy.org/r/flipendo)
 
