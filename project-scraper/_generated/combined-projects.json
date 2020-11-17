@@ -17,7 +17,7 @@
 		"date": "2018-11-21",
 		"link": "https://are.na/riley-shaw/hw-u1lmoisdnyu",
 		"description": "",
-		"updatedAt": "2020-11-16",
+		"updatedAt": "2020-11-17",
 		"length": 213,
 		"timestamp": 1542758400000
 	},
@@ -28,7 +28,7 @@
 		"date": "2018-11-04",
 		"link": "https://are.na/riley-shaw/suaxbjvglls",
 		"description": "",
-		"updatedAt": "2020-11-15",
+		"updatedAt": "2020-11-16",
 		"length": 13,
 		"timestamp": 1541289600000
 	},
@@ -2906,6 +2906,20 @@
 		"type": "project",
 		"uid": "PROJECT_NEUMORPHIC_KEYBOARD",
 		"timestamp": 1581379200000
+	},
+	{
+		"title": "New blog theme",
+		"date": "2017-03-06",
+		"tags": ["online"],
+		"coolness": 7,
+		"link": "https://codepen.io/rileyjshaw/full/pebMaM",
+		"descriptionList": [
+			"Decided to finally try out material design.",
+			"(Subtle effect on mousemove)"
+		],
+		"type": "project",
+		"uid": "PROJECT_NEW_BLOG_THEME",
+		"timestamp": 1488758400000
 	},
 	{
 		"title": "Newspaper column",
