@@ -105,12 +105,12 @@ exports.onCreateNode = ({node, getNode, actions}) => {
 		node.internal.type === 'Mdx' &&
 		node.fileAbsolutePath.includes('/posts/')
 	) {
-		let {title} = node.frontmatter;
+		let {title, slug} = node.frontmatter;
 		const fileName = createFilePath({node, getNode, basePath: `posts`});
-		const [, date, slug] = fileName.match(
+		const [, date, fileNameSlug] = fileName.match(
 			/^\/(?:published|drafts)\/([\d]{4}-[\d]{2}-[\d]{2})-{1}(.+)\/$/
 		);
-
+		slug ??= fileNameSlug;
 		createNodeField({node, name: 'slug', value: `/blog/${slug}`});
 
 		if (!title) {
