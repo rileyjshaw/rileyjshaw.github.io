@@ -191,7 +191,7 @@ export default ({location}) => (
 							<MDXRenderer>{site.childMdx.body}</MDXRenderer>
 						</div>
 					</div>
-					<BigQuote quoteIndex={4} />
+					<BigQuote quoteId="DANCES_GAMES_AND_FEASTS" />
 					<GoUp />
 				</main>
 			)}

@@ -115,7 +115,7 @@ export default ({location}) => (
 				</li>
 			</ul>
 		</div>
-		<BigQuote quoteIndex={0} />
+		<BigQuote quoteId="MAKING_NOTHING" />
 		<GoUp />
 	</Layout>
 );
