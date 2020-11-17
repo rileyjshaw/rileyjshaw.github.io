@@ -21,7 +21,7 @@
 	color: var(--cfg);
 	font: italic 600 24px var(--fs);
 	height: 400px;
-	margin: 0 auto var(--font-scale-1);
+	margin: 0 calc(var(--fader-width) * 2) var(--font-scale-1);
 	max-width: 100%;
 }
 .scaling-faderbank {
