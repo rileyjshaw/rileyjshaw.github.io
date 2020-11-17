@@ -33,7 +33,7 @@ const Fader = ({onChange, value}) => (
 );
 
 const FaderBank = ({values, label, onChange, className}) => (
-	<div className={`scaling-faderbank ${className ?? ''}`}>
+	<div className={`scaling-faderbank ${className || ''}`}>
 		<div className="scaling-faders">
 			{values.map((value, i) => (
 				<Fader
@@ -173,7 +173,7 @@ export default () => {
 			{players.length ? (
 				<Demo players={players} />
 			) : (
-				<p>Loading music…</p>
+				<p className="scaling-faders-loading">Loading music…</p>
 			)}
 		</div>
 	);
