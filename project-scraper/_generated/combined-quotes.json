@@ -20,6 +20,20 @@
 		"source": "Against Leviathan"
 	},
 	{
+		"uid": "JPOD_QUOTES",
+		"content": "And while we're at it, stop putting quotes from Nietzsche at the end of your emails. Five years ago you were laughing your guts out over American Pie 2. What - suddenly you've magically turned into Noam Chomsky?",
+		"author": "Douglas Coupland",
+		"source": "JPod",
+		"cite": "https://coupland.com/jpod/"
+	},
+	{
+		"uid": "LESS_STITCHES",
+		"content": "Ending is better than mending. The more stitches, the less riches.",
+		"author": "Alduous Huxley",
+		"source": "Brave New World",
+		"cite": "https://www.fadedpage.com/showbook.php?pid=20160545"
+	},
+	{
 		"uid": "LURKING_INTENTIONS",
 		"content": "A simply functional understanding of systems is insufficient; one needs to be able to think about histories and consequences too. Where did these systems come from, who designed them and what for, and which of these intentions still lurk within them today?",
 		"author": "James Bridle",
@@ -40,6 +54,11 @@
 		"author": "Zach Mandeville",
 		"source": "The Future Will be Technical",
 		"cite": "https://coolguy.website/writing/the-future-will-be-technical/background().html"
+	},
+	{
+		"uid": "REMEMBER_SHOES",
+		"content": "Every morning I forget how it is.\nI watch the smoke mount\nIn great strides above the city.\nI belong to no one.\n\nThen, I remember my shoes,\nHow I have to put them on,\nHow bending over to tie them up\nI will look into the earth.",
+		"author": "Charles Simic"
 	},
 	{
 		"uid": "SFPC_TUMBLR_171125946552",
@@ -167,10 +186,29 @@
 		"cite": "https://depts.washington.edu/epic34/docs/I_governor_1934.pdf"
 	},
 	{
+		"uid": "SPUTTERED_AND_STOPPED",
+		"content": "The thundering machines sputtered and stopped.",
+		"author": "Feral Kid",
+		"source": "Mad Max 2: The Road Warrior"
+	},
+	{
 		"uid": "TECHNICAL_LITERACY",
 		"content": "If we do not understand how complex technologies function, how systems of technologies interconnect, and how systems of systems interact, then we are powerless within them, and their potential is more easily captured by selfish elites and inhuman corporations… this understanding cannot be limited to the practicalities of how things work: it must be extended to how things came to be, and how they continue to function in the world in ways that are often invisible and interwoven. What is required is not understanding, but literacy.",
 		"author": "James Bridle",
 		"source": "New Dark Age: Technology and the End of the Future",
 		"cite": "https://www.versobooks.com/books/2698-new-dark-age"
+	},
+	{
+		"uid": "VOLTAIRE_BORING",
+		"content": "The secret of being a bore is to tell everything.",
+		"author": "Voltaire",
+		"source": "Sept Discours en Vers sur l'Homme"
+	},
+	{
+		"uid": "VOMIT_COFFIN",
+		"content": "I am bereft of two human things\nTwo things that a cyborg can never do\nTwo things that I strive for\nTwo things between myself and mankind\nDeath\nAnd to vomit",
+		"author": "King Gizzard & the Lizard Wizard",
+		"source": "Han-Tyumi, the Confused Cyborg",
+		"cite": "https://kinggizzard.bandcamp.com/album/murder-of-the-universe"
 	}
 ]

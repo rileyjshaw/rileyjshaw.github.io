@@ -7,7 +7,7 @@ import AutoLink from './auto-link';
 
 import './big-quote.css';
 
-export default ({quoteId}) => (
+export default ({quoteId, showRefreshButton = true}) => (
 	<StaticQuery
 		query={graphql`
 			{
@@ -24,14 +24,14 @@ export default ({quoteId}) => (
 			}
 		`}
 		render={({allCombinedQuotesJson: {nodes: quotes}}) => {
-			let showRefreshButton = !quoteId;
-			let [shuffledQuotes] = useState(shuffle(quotes));
-			let [quoteIndex, setQuoteIndex] = useState(
-				Math.floor(Math.random() * quotes.length)
+			const [shuffledQuotes] = useState(shuffle(quotes));
+			const [quoteIndex, setQuoteIndex] = useState(
+				Math.max(
+					0,
+					shuffledQuotes.findIndex(({uid}) => uid === quoteId)
+				)
 			);
-			const quote =
-				(quoteId && quotes.find(({uid}) => uid === quoteId)) ||
-				shuffledQuotes[quoteIndex];
+			const quote = shuffledQuotes[quoteIndex];
 			const {content, cite} = quote;
 			let {source, author} = quote;
 			if (source) {

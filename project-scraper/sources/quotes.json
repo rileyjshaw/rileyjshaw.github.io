@@ -46,5 +46,37 @@
 		"author": "James Bridle",
 		"source": "New Dark Age: Technology and the End of the Future",
 		"cite": "https://www.versobooks.com/books/2698-new-dark-age"
+	},
+	"REMEMBER_SHOES": {
+		"content": "Every morning I forget how it is.\nI watch the smoke mount\nIn great strides above the city.\nI belong to no one.\n\nThen, I remember my shoes,\nHow I have to put them on,\nHow bending over to tie them up\nI will look into the earth.",
+		"author": "Charles Simic"
+	},
+	"JPOD_QUOTES": {
+		"content": "And while we're at it, stop putting quotes from Nietzsche at the end of your emails. Five years ago you were laughing your guts out over American Pie 2. What - suddenly you've magically turned into Noam Chomsky?",
+		"author": "Douglas Coupland",
+		"source": "JPod",
+		"cite": "https://coupland.com/jpod/"
+	},
+	"VOLTAIRE_BORING": {
+		"content": "The secret of being a bore is to tell everything.",
+		"author": "Voltaire",
+		"source": "Sept Discours en Vers sur l'Homme"
+	},
+	"LESS_STITCHES": {
+		"content": "Ending is better than mending. The more stitches, the less riches.",
+		"author": "Alduous Huxley",
+		"source": "Brave New World",
+		"cite": "https://www.fadedpage.com/showbook.php?pid=20160545"
+	},
+	"SPUTTERED_AND_STOPPED": {
+		"content": "The thundering machines sputtered and stopped.",
+		"author": "Feral Kid",
+		"source": "Mad Max 2: The Road Warrior"
+	},
+	"VOMIT_COFFIN": {
+		"content": "I am bereft of two human things\nTwo things that a cyborg can never do\nTwo things that I strive for\nTwo things between myself and mankind\nDeath\nAnd to vomit",
+		"author": "King Gizzard & the Lizard Wizard",
+		"source": "Han-Tyumi, the Confused Cyborg",
+		"cite": "https://kinggizzard.bandcamp.com/album/murder-of-the-universe"
 	}
 }
