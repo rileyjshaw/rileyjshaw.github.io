@@ -85,10 +85,184 @@
 		"source": "The Monsters of Education Technology",
 		"cite": "http://monsters.hackeducation.com/"
 	},
+	"PRO_MARKET_STEM": {
+		"content": "One of the arguments often made in response to weak public understanding of technology is a call to increase technological education – in its simplest formulation, to learn to code. Such a call is made frequently by politicians, technologists, pundits and business leaders, and it is often advanced in nakedly functional and pro-market terms.",
+		"author": "James Bridle",
+		"source": "New Dark Age: Technology and the End of the Future",
+		"cite": "https://www.versobooks.com/books/2698-new-dark-age"
+	},
 	"REVOLUTION_V_INNOVATION": {
 		"content": "“Revolution” declines in frequency as “innovation” increases.",
 		"author": "Audrey Watters",
 		"source": "The Monsters of Education Technology",
 		"cite": "http://monsters.hackeducation.com/"
+	},
+	"GOOGLE_EDITORIALIZED": {
+		"content": "It looks like a human was involved in choosing what went where. It looks too editorialized. Google products are machine-driven. They’re created by machines. And that is what makes us powerful. That’s what makes our products great.",
+		"author": "Marissa Mayer",
+		"source": "In the Plex",
+		"cite": "https://www.simonandschuster.com/books/In-the-Plex/Steven-Levy/9781416596714"
+	},
+	"SV_MERITOCRACY": {
+		"content": "Men were three times as likely as women to say Silicon Valley is a meritocracy.",
+		"author": "Adrienne LaFrance, The Atlantic",
+		"source": "View From the Valley (2016)",
+		"cite": "https://www.theatlantic.com/technology/archive/2016/10/is-silicon-valley-a-meritocracy/503948/"
+	},
+	"MOST_DIFFICULT_MYTH": {
+		"content": "Tied up in this meritocracy myth is also the assumption that technical skills are the most difficult to learn—and that if people study something else, it’s because they couldn’t hack programming. As a result, the system prizes technical abilities—and systematically devalues the people who bring the very skills to the table that could strengthen products, both ethically and commercially: people with the humanities and social science training needed to consider historical and cultural context, identify unconscious bias, and be more empathetic to the needs of users.",
+		"author": "Sara Wachter-Boettcher",
+		"source": "Technically Wrong",
+		"cite": "https://www.indiebound.org/book/9780393356045"
+	},
+	"EMPTY_DELIGHT": {
+		"content": "But time and again, the conversation turned away from how to make the program useful, and toward that word I find so empty: “delight.”",
+		"author": "Sara Wachter-Boettcher",
+		"source": "Technically Wrong",
+		"cite": "https://www.indiebound.org/book/9780393356045"
+	},
+	"NOT_ANOTHER_INSTALLATION": {
+		"content": "can Art, our cultural antibody, help us here? Surely it’s revolution we need, not another installation piece?",
+		"author": "Matt Pearson",
+		"source": "Novelty Waves",
+		"cite": "https://leanpub.com/noveltywaves"
+	},
+	"RHYTHM_OF_JOY": {
+		"content": "The greater part of human activity is designed to make permanent those experiences and joys which are only lovable because they are changing.",
+		"author": "Alan Watts",
+		"source": "The Wisdom of Insecurity",
+		"cite": "https://www.indiebound.org/book/9780307741202"
+	},
+	"SHAPE_ABILITIES": {
+		"content": "new technologies do not merely augment our abilities, but actively shape and direct them",
+		"author": "James Bridle",
+		"source": "New Dark Age: Technology and the End of the Future",
+		"cite": "https://www.versobooks.com/books/2698-new-dark-age"
+	},
+	"THE_TECH_MAN": {
+		"content": "The tech-man was short, and his skin glistened with well-kept plumpness. His hair was a fringe and his skull shone through pinkly. The rings on his fingers were thick and heavy, his clothes were scented, and he was the first man Mallow had met on the planet who hadn’t looked hungry.",
+		"author": "Isaac Asimov",
+		"source": "Foundation",
+		"cite": "https://www.indiebound.org/book/9780553293357"
+	},
+	"KNIFE_SCIENCE": {
+		"content": "...the harm was done: the topic became known as “computer science” - which, actually, is like referring to surgery as “knife science” - and it was firmly implanted in people's minds that computing science is about machines and their peripheral equipment.",
+		"author": "Braydie Grove",
+		"source": "How to be a Programmer",
+		"cite": "https://github.com/braydie/HowToBeAProgrammer"
+	},
+	"PARTICULAR_KIND_OF_INDIVIDUAL": {
+		"content": "individualization is a key factor in the contemporary rhetoric of creativity. But the rhetoric demands even more; you have to be a particular kind of individual.",
+		"author": "Oli Mould",
+		"source": "Against Creativity",
+		"cite": "https://www.versobooks.com/books/2852-against-creativity"
+	},
+	"NEOLIBERAL_CREATIVITY": {
+		"content": "While pretending to be looking for moments of connection, neoliberal versions of creativity champion individuality, and shun attempts to change the contexts in which individuals operate. Indeed, these contexts have become so granular that it becomes ever more difficult to relate, connect and mobilize into a collective force that could subvert and challenge them. The trick of neoliberal creativity then is to convince us that you can only be creative by looking to your own agency; any appeal to wider structures do not matter.",
+		"author": "Oli Mould",
+		"source": "Against Creativity",
+		"cite": "https://www.versobooks.com/books/2852-against-creativity"
+	},
+	"REALITY_TV_IDEALS": {
+		"content": "Put these forms of reality TV together and we have a potent mix that has allowed for the subtle, but very real advancement of the ideologies of self-promotion, hyper-mediation and deep surveillance further into the routine of creative media production and consumption.",
+		"author": "Oli Mould",
+		"source": "Against Creativity",
+		"cite": "https://www.versobooks.com/books/2852-against-creativity"
+	},
+	"OPENWASHING": {
+		"content": "Openwashing: n., having an appearance of open-source and open-licensing for marketing purposes, while continuing proprietary practices.",
+		"author": "Audrey Watters",
+		"source": "The Monsters of Education Technology",
+		"cite": "http://monsters.hackeducation.com/"
+	},
+	"WHO_PROGRAMS_WHO": {
+		"content": "When people talk about computers in education they do not all have the same image in mind. Some think of using the computer to program the kid; others think of using the kid to program the computer.",
+		"author": "Seymour Papert",
+		"source": "Twenty things to do with a computer",
+		"cite": "https://dspace.mit.edu/handle/1721.1/5836"
+	},
+	"DYNABOOK_REFLEXIVE": {
+		"content": "It is now within the reach of current technology to give all the Beths and their dads a “DynaBook” to use anytime, anywhere as they may wish. Although it can be used to communicate with others through the “knowledge utilities” of the future such as a school “library” (or business information system), we think that a large fraction of its use will involve reflexive communication of the owner with himself through this personal medium, much as paper and notebooks are currently used.",
+		"author": "Alan C. Kay",
+		"source": "A Personal Computer for Children of All Ages ",
+		"cite": "http://www.bitsavers.org/pdf/xerox/smalltalk/Kay__A_Personal_Computer_For_Children_Of_All_Ages_Aug72.pdf"
+	},
+	"EVERY_CHILD_COMPUTER": {
+		"content": "Only inertia and prejudice, not economics or the lack of good educational ideas, stand in the way of providing every child in the world with the kind of experience of which we have tried to give you some glimpses. If every child were to be given access to a computer, computers would be cheap enough for every child to be given access to a computer.",
+		"author": "Seymour Papert",
+		"source": "Twenty things to do with a computer",
+		"cite": "https://dspace.mit.edu/handle/1721.1/5836"
+	},
+	"KAY_REMIX": {
+		"content": "Most people are not interested in acting as a source or bootlegger, rather, they like to permute and play with what they own.",
+		"author": "Alan C. Kay",
+		"source": "A Personal Computer for Children of All Ages ",
+		"cite": "http://www.bitsavers.org/pdf/xerox/smalltalk/Kay__A_Personal_Computer_For_Children_Of_All_Ages_Aug72.pdf"
+	},
+	"MONOLITHIC_BLOCK": {
+		"content": "it supports a prevailing narrative about innovation – where innovation comes from (according to this narrative, it comes from private industry, and not from public institutions; from Silicon Valley, that is, not from elsewhere in the world) and when it comes (there’s this fiercely myopic fixation on the future). The lack of knowledge about history matters too because it reflects and even enables a powerful strain in American ideology and in the ideology of the technology industry: that the past is irrelevant, that the past is a monolithic block of brokenness.",
+		"author": "Audrey Watters",
+		"source": "The Monsters of Education Technology",
+		"cite": "http://monsters.hackeducation.com/"
+	},
+	"FLOTILLA_OF_FANATICS": {
+		"content": "Can you imagine schools whose epistemological story does not aim at producing a flotilla of fanatics, but, rather, people who proceed to learn with full consciousness of their own fallibility, as well as the fallibility of others?",
+		"author": "Neil Postman",
+		"source": "The End of Education",
+		"cite": "https://www.penguinrandomhouse.com/books/132786/the-end-of-education-by-neil-postman/"
+	},
+	"RE_INSCRIBES": {
+		"content": "Despite what you often hear that technologies will change teaching and learning, more likely technologies re-inscribe the traditional functions and practices of education.",
+		"author": "Audrey Watters",
+		"source": "The Monsters of Education Technology",
+		"cite": "http://monsters.hackeducation.com/"
+	},
+	"BOOKS_OBSOLETE": {
+		"content": "Books will soon be obsolete in the public schools.",
+		"author": "Thomas Edison",
+		"source": "The New York Dramatic Mirror, July 1913",
+		"cite": "https://quoteinvestigator.com/2012/02/15/books-obsolete"
+	},
+	"SOCIAL_MEDIA_REVOLUTION": {
+		"content": "the glorification of social media as a tool of revolution obscures the simple fact that revolutions predate the Internet and that movements are about actual grievances, demands, and aspirations.",
+		"author": "Mohamed Zayani",
+		"source": "Networked Publics and Digital Contention",
+		"cite": "https://global.oup.com/academic/product/networked-publics-and-digital-contention-9780190239770"
+	},
+	"SOCIAL_DEEP_ROOTS": {
+		"content": "social media are not sufficient to maintain social revolutionary movements because social activism requires deep roots and strong social ties, which they are incapable of producing.",
+		"author": "Mohamed Zayani",
+		"source": "Networked Publics and Digital Contention",
+		"cite": "https://global.oup.com/academic/product/networked-publics-and-digital-contention-9780190239770"
+	},
+	"MOVEMENTS_THAT_SHAPED_ME": {
+		"content": "I know I’ve gotta express the movements that shaped me.",
+		"author": "Flea",
+		"source": "Acid for the Children",
+		"cite": "https://www.indiebound.org/book/9781455530533"
+	},
+	"LOVE_IS_WORK": {
+		"content": "Love Is the Only Serious Work",
+		"author": "Flea",
+		"source": "Acid for the Children",
+		"cite": "https://www.indiebound.org/book/9781455530533"
+	},
+	"WITHHOLD_PERISH": {
+		"content": "You often say, “I would give, but only to the deserving.” The trees in your orchard say not so, nor the flocks in your pasture. They give that they may live, for to withhold is to perish.",
+		"author": "Kahlil Gibran",
+		"source": "The Prophet",
+		"cite": "https://standardebooks.org/ebooks/khalil-gibran/the-prophet"
+	},
+	"TROUBLE_WITH_CYBORGS": {
+		"content": "The main trouble with cyborgs, of course, is that they are the illegitimate offspring of militarism and patriarchal capitalism, not to mention state socialism. But illegitimate offspring are often exceedingly unfaithful to their origins.",
+		"author": "Donna Haraway",
+		"source": "A Cyborg Manifesto",
+		"cite": "https://faculty.uca.edu/rnovy/Haraway--A%20Cyborg%20Manifesto.htm"
+	},
+	"FAMOUS_DRESSES": {
+		"content": "Strong keep – I hope someone will create lots of articles about lots of famous dresses.",
+		"author": "Jimmy Wales",
+		"source": "Articles for deletion/Wedding dress of Kate Middleton",
+		"cite": "https://en.wikipedia.org/w/index.php?title=Wikipedia:Articles_for_deletion/Wedding_dress_of_Kate_Middleton&diff=426695849&oldid=426694927"
 	}
 }
