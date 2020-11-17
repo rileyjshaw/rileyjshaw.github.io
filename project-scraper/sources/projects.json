@@ -373,6 +373,17 @@
 		"lastTagged": 1564608377140
 	},
 	{
+		"title": "New blog theme",
+		"description": [
+			"Decided to finally try out material design.",
+			"(Subtle effect on mousemove)"
+		],
+		"date": "2017-03-06",
+		"tags": ["online"],
+		"coolness": 7,
+		"link": "https://codepen.io/rileyjshaw/full/pebMaM"
+	},
+	{
 		"title": "Multi-line lists with item separators (CSS only)",
 		"date": "2017-03-01",
 		"tags": ["online", "reusable", "golf"],
