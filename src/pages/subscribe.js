@@ -48,7 +48,7 @@ export default ({location}) => (
 				</dt>
 				<dd>
 					New posts from the <Link to="/blog">blog</Link> page, minus
-					external blogs like Tumblrs or the
+					external blogs like Tumblrs or the{' '}
 					<ExternalLink to="http://rileyjshaw.commit--blog.com/">
 						commit--blog
 					</ExternalLink>

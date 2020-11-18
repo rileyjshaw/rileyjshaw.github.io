@@ -200,7 +200,7 @@ function getSFPCTumblr() {
 					},
 				}) => {
 					allPosts = allPosts.concat(posts);
-					console.log(`Got ${posts.length} SFPC Tubmlr posts.`);
+					console.log(`Got ${posts.length} SFPC Tumblr posts.`);
 					if (query_params.offset < total_posts) {
 						return getPage(query_params);
 					} else {
@@ -276,6 +276,109 @@ function getSFPCTumblr() {
 	})();
 }
 
+function getScreenshotsTumblr() {
+	const client = tumblr.createClient({
+		credentials: {
+			consumer_key: process.env.TUMBLR_KEY,
+			consumer_secret: process.env.TUMBLR_SECRET,
+		},
+		returnPromises: true,
+	});
+
+	let allPosts = [];
+	return (function getPage(queryParams = {}) {
+		return client
+			.blogPosts('screeenshots', queryParams)
+			.then(
+				({
+					posts,
+					total_posts,
+					_links: {
+						next: {query_params},
+					},
+				}) => {
+					allPosts = allPosts.concat(posts);
+					console.log(
+						`Got ${posts.length} Screenshots Tumblr posts.`
+					);
+					if (query_params.offset < total_posts) {
+						return getPage(query_params);
+					} else {
+						raw.screenshotsTumblr = allPosts;
+						allPosts.forEach(post => {
+							const uid = idify(`SCREENSHOTS_TUMBLR_${post.id}`);
+							switch (post.type) {
+								case 'photo':
+								case 'video':
+								case 'audio':
+									const textIndex = formatted.findIndex(
+										post => post.uid === uid
+									);
+									const unadjustedDate = new Date(
+										post.timestamp * 1000
+									);
+									// The blog is in the Eastern timezone, and
+									// we also need to account for DST.
+									const localTimezoneOffsetFromEastern =
+										(new Date(
+											'January 1, 2020'
+										).getTimezoneOffset() -
+											5 * 60) *
+										60 *
+										1000;
+									const date = new Date(
+										unadjustedDate.getTime() +
+											localTimezoneOffsetFromEastern
+									);
+									const fileType = {
+										photo: 'png',
+										video: 'mov',
+										audio: 'wav',
+									}[post.type];
+									const title = `Screen Shot ${date.getFullYear()}-${`${
+										date.getMonth() + 1
+									}`.padStart(
+										2,
+										0
+									)}-${`${date.getDate()}`.padStart(
+										2,
+										0
+									)} at ${`${date.getHours()}`.padStart(
+										2,
+										0
+									)}.${`${date.getMinutes()}`.padStart(
+										2,
+										0
+									)}.${`${date.getSeconds()}`.padStart(
+										2,
+										0
+									)}.${fileType}`;
+									const textResult = {
+										uid,
+										type: 'screenshotsTumblr',
+										date: post.date.slice(0, 10),
+										link: post.post_url,
+										contentType: post.type,
+										title,
+										// TODO: Can I do without?
+										// body: post.body,
+										// ...excerptify(post.body),
+									};
+									if (textIndex !== -1)
+										formatted[textIndex] = textResult;
+									else formatted.push(textResult);
+									return;
+							}
+						});
+					}
+				}
+			)
+			.catch(err => {
+				console.error('Error while fetching Screenshots Tumblr:', err);
+			});
+	})();
+}
+
 function getIcons() {
 	const auth = new OAuth.OAuth(
 		'https://api.thenounproject.com',
@@ -325,6 +428,7 @@ function getAll() {
 		getArena(),
 		getCommitBlog(),
 		getSFPCTumblr(),
+		getScreenshotsTumblr(),
 		getIcons(),
 	])
 		.then(() => {
