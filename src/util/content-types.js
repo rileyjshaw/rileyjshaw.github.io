@@ -2,7 +2,7 @@ import React from 'react';
 
 import AutoLink from '../components/auto-link';
 
-export const DweetContent = () => null;
+export const TitleOnly = () => null;
 export const ProjectContent = ({descriptionList}) =>
 	descriptionList && (
 		<main>
@@ -47,7 +47,7 @@ export default {
 	dweet: {
 		className: 'span-2',
 		readableType: 'Dweet',
-		Inner: DweetContent,
+		Inner: TitleOnly,
 	},
 	project: {
 		className: 'span-4',
@@ -78,5 +78,10 @@ export default {
 		className: 'span-6',
 		readableType: 'SFPC blog post',
 		Inner: PostContent,
+	},
+	screenshotsTumblr: {
+		className: 'span-3',
+		readableType: 'Screenshot',
+		Inner: TitleOnly,
 	},
 };
