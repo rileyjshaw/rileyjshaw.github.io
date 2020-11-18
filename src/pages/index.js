@@ -76,7 +76,7 @@ const IndexPage = ({featuredProjects = [], location}) => {
 						</div>
 					</div>
 				</div>
-				<BigQuote />
+				<BigQuote quoteId="SPUTTERED_AND_STOPPED" />
 				<GoUp />
 			</main>
 		</Layout>
