@@ -41,7 +41,19 @@ export default ({location}) => (
 				<dd>
 					New posts from the <Link to="/blog">blog</Link> page.
 				</dd>
-
+				<dt>
+					<UncontrolledLink to="/blog-internal.xml">
+						Internal blog feed
+					</UncontrolledLink>
+				</dt>
+				<dd>
+					New posts from the <Link to="/blog">blog</Link> page, minus
+					external blogs like Tumblrs or the
+					<ExternalLink to="http://rileyjshaw.commit--blog.com/">
+						commit--blog
+					</ExternalLink>
+					.
+				</dd>
 				<dt>
 					<UncontrolledLink to="/lab.xml">
 						Lab projects feed
