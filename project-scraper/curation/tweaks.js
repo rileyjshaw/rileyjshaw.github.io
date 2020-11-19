@@ -55,6 +55,11 @@ const typeTransformers = {
 			n.description = fixLinks(n.body);
 		},
 	],
+	screenshotsTumblr: [
+		n => {
+			n.coolness = 3;
+		},
+	],
 	tumblr: [
 		n => {
 			n.body = fixLinks(n.body);
