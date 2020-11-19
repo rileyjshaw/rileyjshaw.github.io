@@ -60,6 +60,20 @@ module.exports = {
 				theme_color: `#4ccbab`,
 				display: `minimal-ui`,
 				include_favicon: false,
+				// TODO(riley): Currently manual mode. Consider automatic mode
+				// 	            once you’ve updated the favicon.
+				icons: [
+					{
+						"src": "/android-chrome-192x192.png",
+						"sizes": "192x192",
+						"type": "image/png"
+					},
+					{
+						"src": "/android-chrome-512x512.png",
+						"sizes": "512x512",
+						"type": "image/png"
+					}
+				],
 			},
 		},
 		{
