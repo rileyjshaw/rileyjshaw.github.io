@@ -1,8 +1,7 @@
 ---
 layout: gallery
 title: Cellular automata
-tags:
-    - gallery
+tags: ['gallery']
 ---
 
 I made some pretty images using [Andy Doro](https://andydoro.com/)’s [3-state cellular automata tool](https://andydoro.com/processing/3state/java/CA.pde) and [my CA finder](https://ca-finder.glitch.me/)! Each of the 4 final images can be clicked for a slightly higher-res video, but careful: each video is over 10 megabytes.

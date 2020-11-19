@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Repair Matters on CBC Radio
-tags:
-    - life
-    - repair
+tags: ['life', 'repair']
 ---
 
 I was on the CBC again! Kady Wong and I represented

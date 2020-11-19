@@ -1,9 +1,7 @@
 ---
 layout: post
 title: I have a new blog
-tags:
-    - life
-    - meta
+tags: ['life', 'meta']
 ---
 
 I made this website in early 2014 to document projects I worked on at [Hacker School](https://www.recurse.com/). Though I’ve changed a lot since then and worked on all sorts of problems, the site hasn’t updated to reflect that.
