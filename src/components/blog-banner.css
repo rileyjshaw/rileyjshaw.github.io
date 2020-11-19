@@ -1,0 +1,73 @@
+.blog-banner {
+	border-radius: 6px;
+	color: var(--cbg);
+	display: flex;
+	font-size: var(--font-scale--2);
+	margin: 2em 0 1em;
+	padding: 1em 2em;
+	width: 100%;
+}
+
+.blog-banner + .blog-banner {
+	margin-top: 1.5em;
+}
+
+.blog-banner a {
+	color: var(--cbg);
+}
+
+.blog-banner-note a {
+	color: var(--cfg);
+}
+
+.blog-banner-update {
+	background: var(--cb);
+}
+
+.blog-banner-edit {
+	background: var(--cr);
+}
+
+.blog-banner-note {
+	background: var(--cy);
+	color: var(--cfg);
+}
+
+.blog-banner-title {
+	align-items: center;
+	border-right: 1px solid var(--cbg);
+	display: flex;
+	font-weight: bold;
+	margin-right: 1.5em;
+	min-width: 20%;  /* TODO(riley): This is for multi-banner alignment - see /blog/khan-academy-primer. Once subgrid lands, put multiples inside a BannerContainer element and figure out the grid alignment automatically. “Note” banners look a lot better with this rule off. */
+	padding-right: 1.5em;
+}
+
+.blog-banner-note .blog-banner-title {
+	border-color: var(--cfg);
+}
+
+.blog-banner-content {
+	font-family: var(--fs);
+}
+
+.blog-banner-content p {
+	margin: 0;
+}
+
+.blog-banner-content p + p {
+	margin-top: 1em;
+}
+
+@media only screen and (max-width: 800px) {
+	.blog-banner {
+		flex-direction: column;
+		padding: 1em 1.5em;
+	}
+
+	.blog-banner-title {
+		border: 0;
+		margin-bottom: 1em;
+		text-decoration: underline;
+	}
+}
