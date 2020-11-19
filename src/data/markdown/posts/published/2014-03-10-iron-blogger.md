@@ -1,10 +1,6 @@
 ---
 layout: post
-tags:
-    - meta
-    - build
-    - web
-    - hackerschool
+tags: ['meta', 'build', 'web', 'hackerschool']
 ---
 
 A few days ago a fellow Hacker-Schooler proposed Iron Blogger to our batch. The rules are simple:

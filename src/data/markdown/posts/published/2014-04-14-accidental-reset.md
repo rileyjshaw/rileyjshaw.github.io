@@ -1,8 +1,6 @@
 ---
 layout: post
-tags:
-    - hardware
-    - quote
+tags: ['hardware', 'quote']
 ---
 
 From page 33 of the [Apple II User’s Guide](http://www.librarything.com/work/52052):

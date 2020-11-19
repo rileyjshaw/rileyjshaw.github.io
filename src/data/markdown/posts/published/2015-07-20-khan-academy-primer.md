@@ -1,22 +1,21 @@
 ---
 layout: post
 title: 'Khan Academy: a new employee’s primer'
-tags:
-    - education
-    - life
-    - web
+tags: ['education', 'life', 'web']
 ---
 
-import BlogBanner from 'components/blog-banner';
+import BlogBanner, {BlogBannerGroup} from 'components/blog-banner';
 
+<BlogBannerGroup>
 <BlogBanner type="note">
 
 This post was originally published on the [KA Engineering blog](http://engineering.khanacademy.org/posts/new-employees-primer.htm).
 
 </BlogBanner>
 <BlogBanner type="update" date="2018-03-01">
-	I no-longer work at Khan Academy, and most of these systems have changed drastically since 2015.
+I no-longer work at Khan Academy, and most of these systems have changed drastically since 2015.
 </BlogBanner>
+</BlogBannerGroup>
 
 I recently joined the developer team at Khan Academy. Since arriving I’ve been surprised by a number of intentional decisions the organization has made to empower its developers. Whether you’re working in tech or just curious about the inner workings of Khan Academy, there’s some great wisdom in how things are done here.
 

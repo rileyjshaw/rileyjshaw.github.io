@@ -1,9 +1,6 @@
 ---
 layout: post
-tags:
-    - c
-    - db
-    - quote
+tags: ['c', 'db', 'quote']
 ---
 
 From [Learn C The Hard Way](https://c.learncodethehardway.org/book/introduction.html):

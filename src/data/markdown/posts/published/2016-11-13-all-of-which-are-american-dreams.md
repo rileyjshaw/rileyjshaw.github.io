@@ -1,10 +1,7 @@
 ---
 layout: post
 title: All of which are American dreams
-tags:
-    - build
-    - web
-    - tools
+tags: ['build', 'web', 'tools']
 ---
 
 Title lifted from <a href="https://youtu.be/4smim2MNvF8" rel="noopener noreferrer" target="_blank">“Know Your Enemy”</a>.

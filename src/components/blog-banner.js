@@ -22,3 +22,7 @@ export default ({children, date, type = 'update'}) => (
 		<div className="blog-banner-content">{children}</div>
 	</div>
 );
+
+export const BlogBannerGroup = ({children}) => (
+	<div className="blog-banner-group">{children}</div>
+);

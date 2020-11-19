@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Escher Sketch!
-tags:
-    - gallery
+tags: ['gallery']
 ---
 
 I just had a blast playing with [Anselm Levskaya](https://github.com/levskaya)’s [Escher Sketch](https://levskaya.github.io/eschersketch/) project!

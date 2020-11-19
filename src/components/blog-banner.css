@@ -32,7 +32,6 @@
 	display: flex;
 	font-weight: bold;
 	margin-right: 1.5em;
-	min-width: 20%; /* TODO(riley): This is for multi-banner alignment - see /blog/khan-academy-primer. Once subgrid lands, put multiples inside a BannerContainer element and figure out the grid alignment automatically. “Note” banners look a lot better with this rule off. */
 	padding-right: 1.5em;
 }
 .blog-banner-note .blog-banner-title {
@@ -47,7 +46,14 @@
 .blog-banner-content p + p {
 	margin-top: 1em;
 }
-
+/* TODO(riley): This is for multi-banner alignment - see
+   /blog/khan-academy-primer. Once subgrid lands, set .blog-banner-group to
+   display: grid so the titles column is as narrow as it can be. As it is now,
+   “Note” banners look a lot better with this rule off.
+*/
+.blog-banner-group .blog-banner-title {
+	min-width: 20%;
+}
 @media only screen and (max-width: 800px) {
 	.blog-banner {
 		flex-direction: column;
