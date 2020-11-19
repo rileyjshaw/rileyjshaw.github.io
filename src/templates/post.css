@@ -100,3 +100,11 @@
 	border-left: 4px solid var(--cfg);
 	padding-left: 1em;
 }
+.blog-post-content pre {
+	font-size: 0.75em;
+}
+@media only screen and (max-width: 800px) {
+	.blog-post-content pre {
+		font-size: 0.6em;
+	}
+}
