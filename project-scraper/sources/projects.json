@@ -20,6 +20,17 @@
 		"todo": true
 	},
 	{
+		"title": "Import soundcloud?",
+		"todo": true
+	},
+	{
+		"title": "A video game song",
+		"date": "2020-11-25",
+		"coolness": 69,
+		"link": "https://soundcloud.com/riley-shaw-1/a-video-game",
+		"tags": ["music", "online"]
+	},
+	{
 		"title": "Scaling faders (audio demo)",
 		"description": [
 			"I dread mixing audio. I tend to make the drums a little louder, then the lead, then the bass, then the drums again, and on and on until I’m clipping everywhere.",
