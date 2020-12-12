@@ -16,7 +16,7 @@
 		"date": "2018-11-21",
 		"link": "https://are.na/riley-shaw/hw-u1lmoisdnyu",
 		"description": "",
-		"updatedAt": "2020-12-07",
+		"updatedAt": "2020-12-12",
 		"length": 216
 	},
 	{
@@ -26,7 +26,7 @@
 		"date": "2018-11-04",
 		"link": "https://are.na/riley-shaw/suaxbjvglls",
 		"description": "",
-		"updatedAt": "2020-12-06",
+		"updatedAt": "2020-12-10",
 		"length": 13
 	},
 	{
@@ -35,7 +35,7 @@
 		"title": "~",
 		"date": "2018-12-09",
 		"link": "https://are.na/riley-shaw/tilde-qvdrqcjjopm",
-		"updatedAt": "2020-12-06",
+		"updatedAt": "2020-12-10",
 		"length": 15
 	},
 	{
@@ -141,7 +141,7 @@
 		"date": "2019-09-14",
 		"link": "http://rileyjshaw.commit--blog.com/rileyjshaw/plop/5efe71827c2575cbd09dc30669e9c1a63fc625db",
 		"repo": "rileyjshaw/plop",
-		"body": "<h1>plop (working title)</h1>\n<p><em>Scriptable text expansion microtool.</em></p>\n<p><code>Status: pre-alpha / prototype / I thought of this an hour ago</code></p>\n<p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"img/hello_world.gif\"><img src=\"img/hello_world.gif\" alt=\"demo of the tool printing &quot;hello world&quot;\" style=\"max-width:100%;\"></a> <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"img/beer.gif\"><img src=\"img/beer.gif\" alt=\"demo of the tool sequentially printing the song &quot;99 bottles of beer on the wall&quot;\" style=\"max-width:100%;\"></a> <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"img/multiline.gif\"><img src=\"img/multiline.gif\" alt=\"demo of multiline text entry\" style=\"max-width:100%;\"></a></p>\n<h2>Usage:</h2>\n<pre><code># Only works on MacOS for now.\ngit clone https://github.com/rileyjshaw/plop\ncd plop\nnpm i\nnpm start\n</code></pre>\n<p>While going about your business, hit <code>Cmd + Shift + Space</code>. Write some valid JavaScript. The result will be typed into whatever program you have open.</p>\n<h3>Note:</h3>\n<p><code>\\n</code> triggers a simulated Enter press. Please be kind, don't spam your group chat.</p>",
+		"body": "<h1>plop (working title)</h1>\n<p><em>Scriptable text expansion microtool.</em></p>\n<p><code>Status: pre-alpha / prototype / I thought of this an hour ago</code></p>\n<p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"img/hello_world.gif\"><img src=\"https://raw.githubusercontent.com/rileyjshaw/plop/5efe71827c2575cbd09dc30669e9c1a63fc625db/img/hello_world.gif\" alt=\"demo of the tool printing &quot;hello world&quot;\" style=\"max-width:100%;\"></a> <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"img/beer.gif\"><img src=\"https://raw.githubusercontent.com/rileyjshaw/plop/5efe71827c2575cbd09dc30669e9c1a63fc625db/img/beer.gif\" alt=\"demo of the tool sequentially printing the song &quot;99 bottles of beer on the wall&quot;\" style=\"max-width:100%;\"></a> <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"img/multiline.gif\"><img src=\"https://raw.githubusercontent.com/rileyjshaw/plop/5efe71827c2575cbd09dc30669e9c1a63fc625db/img/multiline.gif\" alt=\"demo of multiline text entry\" style=\"max-width:100%;\"></a></p>\n<h2>Usage:</h2>\n<pre><code># Only works on MacOS for now.\ngit clone https://github.com/rileyjshaw/plop\ncd plop\nnpm i\nnpm start\n</code></pre>\n<p>While going about your business, hit <code>Cmd + Shift + Space</code>. Write some valid JavaScript. The result will be typed into whatever program you have open.</p>\n<h3>Note:</h3>\n<p><code>\\n</code> triggers a simulated Enter press. Please be kind, don't spam your group chat.</p>",
 		"description": "<h2>plop (working title)</h2><p><em>Scriptable text expansion microtool.</em></p><p><code>Status: pre-alpha / prototype / I thought of this an hour ago</code></p><p>  </p><h3>Usage:</h3><pre><code># Only works on MacOS for now.\ngit clone https://github.com/rileyjshaw/plop\ncd plop\nnpm i\nnpm start\n</code></pre><p>While going about your business, hit <code>Cmd + Shift + Space</code>. Write some valid JavaScript. The result will be typed into whatever program you have open.</p><h4>Note:</h4><p><code>\\n</code> triggers a simulated Enter press. Please be kind, don't spam your group chat.</p>",
 		"more": false
 	},
@@ -790,6 +790,46 @@
 		"date": "2014-10-18",
 		"link": "https://thenounproject.com/term/share/79596",
 		"image": "https://static.thenounproject.com/png/79596-84.png"
+	},
+	{
+		"uid": "PATCH_130675",
+		"type": "patch",
+		"title": "Chorder!",
+		"date": "2020-10-16",
+		"link": "https://patchstorage.com/chorder/",
+		"coolness": 41
+	},
+	{
+		"uid": "PATCH_131668",
+		"type": "patch",
+		"title": "Jambo MIDI map",
+		"date": "2020-11-09",
+		"link": "https://patchstorage.com/jambo-midi-map/",
+		"coolness": 21
+	},
+	{
+		"uid": "PATCH_132469",
+		"type": "patch",
+		"title": "Glitch More",
+		"date": "2020-11-27",
+		"link": "https://patchstorage.com/glitch-more/",
+		"coolness": 41
+	},
+	{
+		"uid": "PATCH_133008",
+		"type": "patch",
+		"title": "Panic! At The Drambo",
+		"date": "2020-12-12",
+		"link": "https://patchstorage.com/midi-panic/",
+		"coolness": 41
+	},
+	{
+		"uid": "PATCH_133014",
+		"type": "patch",
+		"title": "MIDI note # to pitch conversion",
+		"date": "2020-12-12",
+		"link": "https://patchstorage.com/midi-note-to-pitch-conversion/",
+		"coolness": 41
 	},
 	{
 		"uid": "SCREENSHOTS_TUMBLR_190653258355",
