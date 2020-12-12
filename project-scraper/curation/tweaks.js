@@ -8,7 +8,6 @@ const scrapedProjects = require('../_generated/scraped-projects-formatted.json')
 const scrapedQuotes = require('../_generated/scraped-quotes.json');
 const listedProjects = require('../sources/projects.json');
 const listedQuotes = require('../sources/quotes.json');
-
 const projects = [
 	...scrapedProjects,
 	...listedProjects

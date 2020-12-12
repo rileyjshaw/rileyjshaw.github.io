@@ -49,6 +49,12 @@ export default {
 		readableType: 'Dweet',
 		Inner: TitleOnly,
 	},
+	patch: {
+		className: 'span-2',
+		readableType: 'Patchstorage module',
+		shortType: 'Patch',
+		Inner: TitleOnly,
+	},
 	project: {
 		className: 'span-4',
 		readableType: 'Project',

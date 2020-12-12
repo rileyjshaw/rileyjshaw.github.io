@@ -81,6 +81,7 @@ const excerptify = body => {
 	// TODO(riley): Use charCount to slice the textContent of the final node?
 	return {description, more};
 };
+
 async function getDweets() {
 	try {
 		let url = 'https://www.dwitter.net/api/dweets/?author=rileyjshaw';
@@ -107,6 +108,46 @@ async function getDweets() {
 		});
 	} catch (err) {
 		console.error('Error while fetching Dweets:', err);
+	}
+}
+
+// Note: Tag a patch as “tiny” to prevent it showing up on the homepage feed.
+async function getPatches() {
+	try {
+		const url =
+			'https://patchstorage.com/api/alpha/patches?author=6265&per_page=20';
+		let page = 1,
+			totalPages = 0;
+
+		let patches = [];
+		do {
+			const response = await request({
+				uri: `${url}&page=${page}`,
+				method: 'GET',
+				resolveWithFullResponse: true,
+			});
+			const body = JSON.parse(response.body);
+			console.log(`Got ${body.length} patches.`);
+			patches = patches.concat(body);
+			totalPages = +response.headers['x-wp-totalpages'];
+		} while (page++ < totalPages);
+		raw.patches = patches;
+		patches.forEach(patch => {
+			const uid = idify(`PATCH_${patch.id}`);
+			const index = formatted.findIndex(d => d.uid === uid);
+			const result = {
+				uid,
+				type: 'patch',
+				title: patch.title,
+				date: patch.created_at.slice(0, 10),
+				link: patch.link,
+				coolness: patch.tags.some(t => t.slug === 'tiny') ? 21 : 41,
+			};
+			if (index !== -1) formatted[index] = result;
+			else formatted.push(result);
+		});
+	} catch (err) {
+		console.error('Error while fetching Patches:', err);
 	}
 }
 
@@ -425,6 +466,7 @@ function getIcons() {
 function getAll() {
 	return Promise.all([
 		getDweets(),
+		getPatches(),
 		getArena(),
 		getCommitBlog(),
 		getSFPCTumblr(),

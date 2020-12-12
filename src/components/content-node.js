@@ -18,7 +18,9 @@ export default React.memo(
 		if (type === 'doodle') return <Doodle ref={ref} />;
 		if (!contentTypes[type]) return null;
 
-		const {className = '', readableType, Inner} = contentTypes[type];
+		const {className = '', readableType, shortType, Inner} = contentTypes[
+			type
+		];
 
 		const [innerRef, {height}] = useDimensions({liveMeasure: false});
 		// Inner: Math.ceil((height + 27) / (27 * 2))
@@ -45,7 +47,9 @@ export default React.memo(
 			https://stackoverflow.com/questions/12866008/html5-semantic-markup-for-blog-post-tags-and-categories
 			https://html.spec.whatwg.org/multipage/links.html#link-type-tag */}
 				<div className="inner" ref={innerRef}>
-					<div className="content-type">{readableType}</div>
+					<div className="content-type">
+						{shortType ?? readableType}
+					</div>
 					<header>
 						{link ? (
 							<h1>
