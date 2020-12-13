@@ -21,7 +21,7 @@ class ProjectExplorer extends React.PureComponent {
 		).filter(type => type !== 'doodle');
 		const initialState = {
 			nodeTypes,
-			typeStates: nodeTypes.map(type => type === 'project'),
+			typeStates: Array.from(nodeTypes).fill(false),
 			sortIdx: 0,
 			ascending: false,
 			filterType: 'any',
