@@ -41,7 +41,7 @@ export const IconContent = ({image, title}) => (
 );
 export const PatchContent = ({description, link}) => (
 	<main>
-		{description.slice(-3) === '...' ? (
+		{description?.slice(-3) === '...' ? (
 			<p>
 				{description}{' '}
 				<ExternalLink to={link}>
