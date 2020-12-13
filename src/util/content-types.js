@@ -64,7 +64,7 @@ export default {
 		Inner: TitleOnly,
 	},
 	patch: {
-		className: 'span-2',
+		className: 'span-4',
 		readableType: 'Patchstorage module',
 		shortType: 'Patch',
 		Inner: PatchContent,
