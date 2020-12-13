@@ -139,6 +139,7 @@ async function getPatches() {
 				uid,
 				type: 'patch',
 				title: patch.title,
+				description: patch.excerpt,
 				date: patch.created_at.slice(0, 10),
 				link: patch.link,
 				coolness: patch.tags.some(t => t.slug === 'tiny') ? 21 : 41,

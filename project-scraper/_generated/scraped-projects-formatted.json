@@ -26,7 +26,7 @@
 		"date": "2018-11-04",
 		"link": "https://are.na/riley-shaw/suaxbjvglls",
 		"description": "",
-		"updatedAt": "2020-12-10",
+		"updatedAt": "2020-12-12",
 		"length": 13
 	},
 	{
@@ -795,6 +795,7 @@
 		"uid": "PATCH_130675",
 		"type": "patch",
 		"title": "Chorder!",
+		"description": "A parameter-lockable, MIDI-mappable converter from a single MIDI note to 8 configurable chords. For my...",
 		"date": "2020-10-16",
 		"link": "https://patchstorage.com/chorder/",
 		"coolness": 41
@@ -803,6 +804,7 @@
 		"uid": "PATCH_131668",
 		"type": "patch",
 		"title": "Jambo MIDI map",
+		"description": "A simple MIDI mapping for my Jambo hardware controller. The DIY guide is up at...",
 		"date": "2020-11-09",
 		"link": "https://patchstorage.com/jambo-midi-map/",
 		"coolness": 21
@@ -811,6 +813,7 @@
 		"uid": "PATCH_132469",
 		"type": "patch",
 		"title": "Glitch More",
+		"description": "A first pass at recreating my favourite parts of Alex Matheu's lovely GlitchCore app in...",
 		"date": "2020-11-27",
 		"link": "https://patchstorage.com/glitch-more/",
 		"coolness": 41
@@ -819,6 +822,7 @@
 		"uid": "PATCH_133008",
 		"type": "patch",
 		"title": "Panic! At The Drambo",
+		"description": "This is a MIDI panic rack. I've been using Drambo more and more to sequence...",
 		"date": "2020-12-12",
 		"link": "https://patchstorage.com/midi-panic/",
 		"coolness": 41
@@ -827,9 +831,10 @@
 		"uid": "PATCH_133014",
 		"type": "patch",
 		"title": "MIDI note # to pitch conversion",
+		"description": "This demo rack uses a few Math modules to convert an integer MIDI note number...",
 		"date": "2020-12-12",
 		"link": "https://patchstorage.com/midi-note-to-pitch-conversion/",
-		"coolness": 41
+		"coolness": 21
 	},
 	{
 		"uid": "SCREENSHOTS_TUMBLR_190653258355",

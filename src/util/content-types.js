@@ -1,6 +1,6 @@
 import React from 'react';
 
-import AutoLink from '../components/auto-link';
+import AutoLink, {ExternalLink} from '../components/auto-link';
 
 export const TitleOnly = () => null;
 export const ProjectContent = ({descriptionList}) =>
@@ -39,6 +39,20 @@ export const IconContent = ({image, title}) => (
 		<img src={image} width={84} height={84} alt={`${title} icon`} />
 	</main>
 );
+export const PatchContent = ({description, link}) => (
+	<main>
+		{description.slice(-3) === '...' ? (
+			<p>
+				{description}{' '}
+				<ExternalLink to={link}>
+					read the full description at Patchstorage.
+				</ExternalLink>
+			</p>
+		) : (
+			<p>{description}</p>
+		)}
+	</main>
+);
 
 export default {
 	doodle: {
@@ -53,7 +67,7 @@ export default {
 		className: 'span-2',
 		readableType: 'Patchstorage module',
 		shortType: 'Patch',
-		Inner: TitleOnly,
+		Inner: PatchContent,
 	},
 	project: {
 		className: 'span-4',
