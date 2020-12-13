@@ -56,7 +56,7 @@ export default ({quoteId, showRefreshButton = true}) => (
 				}
 				source = <>– {author}</>;
 			}
-
+			const lines = content.split('\n');
 			return (
 				<div
 					className={`big-quote ${
@@ -65,7 +65,9 @@ export default ({quoteId, showRefreshButton = true}) => (
 					id={showRefreshButton && 'big-quote'}
 				>
 					<blockquote cite={cite}>
-						<p>{content}</p>
+						{lines.map((line, i) => (
+							<p key={i}>{line}</p>
+						))}
 						{source && <footer>{source}</footer>}
 					</blockquote>
 					{showRefreshButton && (
