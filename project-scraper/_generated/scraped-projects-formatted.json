@@ -176,6 +176,17 @@
 		"more": false
 	},
 	{
+		"uid": "COMMIT_76A558DFD30B60806E4D7CD42AB37EF0737C3F31",
+		"type": "commit",
+		"title": "Feature: add a SoundCloud song scraper",
+		"date": "2020-12-14",
+		"link": "http://rileyjshaw.commit--blog.com/rileyjshaw/rileyjshaw.github.io/76a558dfd30b60806e4d7cd42ab37ef0737c3f31",
+		"repo": "rileyjshaw/rileyjshaw.github.io",
+		"body": "<p>For now it’s mostly experiments and technical demos, but as I get braver I might start posting more music :)</p>",
+		"description": "<p>For now it’s mostly experiments and technical demos, but as I get braver I might start posting more music :)</p>",
+		"more": false
+	},
+	{
 		"uid": "COMMIT_7E2CA523403D8403FAACC6D6DB0CF49D07A9C992",
 		"type": "commit",
 		"title": "Add Titania style",
