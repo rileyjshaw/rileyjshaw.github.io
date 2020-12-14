@@ -9,7 +9,6 @@ export default () => (
 				taking-the-average-tone
 			</li>
 			<li>Potential other sources:</li>
-			<li>Patchstorage</li>
 			<li>Screenshots blog</li>
 			<li>
 				Instagram
@@ -26,13 +25,9 @@ export default () => (
 			<li>Glitch ()</li>
 			<li>Hackster</li>
 			<li>Galleries</li>
-			<li>
-				<strike>SFPC tumblr (https://sfpc.rileyjshaw.com/rss)</strike>
-			</li>
 			<li>Creative code tumblr</li>
-			<li>Increase project node types</li>
 			<li></li>
-			<li>TODO:</li>
+			<li>TODONE:</li>
 			<li>
 				<strike>Sorting</strike>
 			</li>
@@ -46,6 +41,15 @@ export default () => (
 			</li>
 			<li>
 				<strike>Blog / etc links</strike>
+			</li>
+			<li>
+				<strike>Patchstorage</strike>
+			</li>
+			<li>
+				<strike>Increase project node types</strike>
+			</li>
+			<li>
+				<strike>SFPC tumblr (https://sfpc.rileyjshaw.com/rss)</strike>
 			</li>
 			<li>
 				<strike>
