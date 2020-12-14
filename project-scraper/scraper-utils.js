@@ -464,6 +464,43 @@ function getIcons() {
 		});
 }
 
+// The official SoundCloud API is disallowing new registrations, so I’m just
+// using their client-side api-v2 routes for now.
+async function getSoundCloud() {
+	try {
+		let url = `https://api-v2.soundcloud.com/users/${process.env.SOUNDCLOUD_USER_ID}/tracks?limit=20&offset=0`;
+		let songs = [];
+		while (url) {
+			const response = JSON.parse(
+				await request(
+					`${url}&client_id=${process.env.SOUNDCLOUD_CLIENT_ID}`
+				)
+			);
+			console.log(`Got ${response.collection.length} songs.`);
+			songs = songs.concat(response.collection);
+			url = response.next_href;
+		}
+		raw.songs = songs;
+		songs
+			.filter(song => !song.tag_list.split(' ').includes('hide'))
+			.forEach(song => {
+				const uid = idify(`SONG_${song.id}`);
+				const index = formatted.findIndex(s => s.uid === uid);
+				const result = {
+					uid,
+					type: 'song',
+					title: song.title,
+					date: song.created_at.slice(0, 10),
+					link: song.permalink_url,
+				};
+				if (index !== -1) formatted[index] = result;
+				else formatted.push(result);
+			});
+	} catch (err) {
+		console.error('Error while fetching SoundCloud tracks:', err);
+	}
+}
+
 function getAll() {
 	return Promise.all([
 		getDweets(),
@@ -473,6 +510,7 @@ function getAll() {
 		getSFPCTumblr(),
 		getScreenshotsTumblr(),
 		getIcons(),
+		getSoundCloud(),
 	])
 		.then(() => {
 			fs.writeFileSync(

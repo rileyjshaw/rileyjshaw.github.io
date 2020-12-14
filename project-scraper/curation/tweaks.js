@@ -59,6 +59,12 @@ const typeTransformers = {
 			n.coolness = 3;
 		},
 	],
+	song: [
+		n => {
+			n.coolness = 50;
+			n.tags = ['music', 'online'];
+		},
+	],
 	tumblr: [
 		n => {
 			n.body = fixLinks(n.body);
