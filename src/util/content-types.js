@@ -53,6 +53,18 @@ export const PatchContent = ({description, link}) => (
 		)}
 	</main>
 );
+export const SongContent = ({uid}) => (
+	<iframe
+		className="soundcloud"
+		width="100%"
+		height="100"
+		scrolling="no"
+		frameborder="no"
+		src={`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${uid.slice(
+			uid.indexOf('_') + 1
+		)}&color=%23000000&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=true`}
+	></iframe>
+);
 
 export default {
 	doodle: {
@@ -103,5 +115,10 @@ export default {
 		className: 'span-3',
 		readableType: 'Screenshot',
 		Inner: TitleOnly,
+	},
+	song: {
+		className: 'span-5',
+		readableType: 'Song',
+		Inner: SongContent,
 	},
 };
