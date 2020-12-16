@@ -16,7 +16,7 @@
 		"date": "2018-11-21",
 		"link": "https://are.na/riley-shaw/hw-u1lmoisdnyu",
 		"description": "",
-		"updatedAt": "2020-12-13",
+		"updatedAt": "2020-12-16",
 		"length": 216
 	},
 	{
@@ -26,7 +26,7 @@
 		"date": "2018-11-04",
 		"link": "https://are.na/riley-shaw/suaxbjvglls",
 		"description": "",
-		"updatedAt": "2020-12-12",
+		"updatedAt": "2020-12-16",
 		"length": 13
 	},
 	{
@@ -35,7 +35,7 @@
 		"title": "~",
 		"date": "2018-12-09",
 		"link": "https://are.na/riley-shaw/tilde-qvdrqcjjopm",
-		"updatedAt": "2020-12-10",
+		"updatedAt": "2020-12-16",
 		"length": 15
 	},
 	{
@@ -1350,5 +1350,12 @@
 		"title": "Quarter note stutter (demo)",
 		"date": "2020-11-25",
 		"link": "https://soundcloud.com/rileyjshaw/quarter-note-stutter-demo"
+	},
+	{
+		"uid": "SONG_948431872",
+		"type": "song",
+		"title": "Mallets",
+		"date": "2020-12-16",
+		"link": "https://soundcloud.com/rileyjshaw/mallets"
 	}
 ]
