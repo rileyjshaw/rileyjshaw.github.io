@@ -125,6 +125,11 @@ export default ({location}) => (
 						YouTube
 					</ExternalLink>
 				</li>
+				<li>
+					<ExternalLink to="https://vimeo.com/rileyjshaw">
+						Vimeo
+					</ExternalLink>
+				</li>
 			</ul>
 		</div>
 		<BigQuote quoteId="MAKING_NOTHING" />

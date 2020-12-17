@@ -6,6 +6,8 @@ const util = require('util');
 const fs = require('fs');
 const url = require('url');
 const tumblr = require('tumblr.js');
+const {Vimeo} = require('vimeo');
+const {google} = require('googleapis');
 const feedRead = require('davefeedread');
 const request = require('request-promise-native');
 const OAuth = require('oauth');
@@ -476,7 +478,9 @@ async function getSoundCloud() {
 					`${url}&client_id=${process.env.SOUNDCLOUD_CLIENT_ID}`
 				)
 			);
-			console.log(`Got ${response.collection.length} songs.`);
+			if (response.collection.length || response.next_href) {
+				console.log(`Got ${response.collection.length} songs.`);
+			}
 			songs = songs.concat(response.collection);
 			url = response.next_href;
 		}
@@ -501,6 +505,125 @@ async function getSoundCloud() {
 	}
 }
 
+async function getYoutube() {
+	try {
+		const youtube = google.youtube({
+			version: 'v3',
+			auth: process.env.YOUTUBE_KEY,
+		});
+		const uploadsPlaylistId = (
+			await util.promisify(youtube.channels.list.bind(youtube))({
+				forUsername: 'rileyjshaw',
+				part: 'id,snippet,contentDetails',
+			})
+		).data.items[0].contentDetails.relatedPlaylists.uploads;
+		const requestConfig = {
+			part: 'snippet',
+			playlistId: uploadsPlaylistId,
+		};
+		let videos = [];
+		do {
+			const {data} = await util.promisify(
+				youtube.playlistItems.list.bind(youtube)
+			)(requestConfig);
+			console.log(`Got ${data.items.length} YouTube videos.`);
+			videos = videos.concat(data.items.map(v => v.snippet));
+			requestConfig.pageToken = requestConfig.nextPageToken;
+		} while (requestConfig.pageToken);
+		return videos;
+	} catch (err) {
+		console.error('Error while fetching YouTube videos:', err);
+	}
+}
+
+async function getVimeo() {
+	const vimeoClient = new Vimeo(
+		process.env.VIMEO_CLIENT_ID,
+		process.env.VIMEO_CLIENT_SECRET,
+		process.env.VIMEO_ACCESS_TOKEN_2
+	);
+	return new Promise((resolve, reject) => {
+		(function nextRequest(url, videos = []) {
+			vimeoClient.request(
+				{
+					method: 'GET',
+					path: url,
+				},
+				function (error, body) {
+					if (error) {
+						reject(error);
+					}
+					const nextUrl = body.paging.next;
+					const newVideos = body.data.filter(
+						video => video.privacy.view === 'anybody'
+					);
+					console.log(`Got ${newVideos.length} Vimeo videos.`);
+					videos = videos.concat(newVideos);
+					if (nextUrl) {
+						nextRequest(nextUrl, videos);
+					} else {
+						resolve(videos);
+					}
+				}
+			);
+		})(
+			'/me/videos?fields=uri,name,description,link,embed.html,created_time,privacy&filter_playable=true'
+		);
+	});
+}
+
+async function getVideos() {
+	return Promise.all([getVimeo(), getYoutube()])
+		.then(([vimeo, youtube]) => {
+			raw.videos = {vimeo, youtube};
+			vimeo.forEach(video => {
+				const uid = idify(`VIDEO_V_${video.uri.slice(8)}`);
+				const index = formatted.findIndex(d => d.uid === uid);
+				const descriptionList = video.description.split('\n');
+				const result = {
+					uid,
+					description: descriptionList[0],
+					type: 'video',
+					title: video.name,
+					date: video.created_time.slice(0, 10),
+					body:
+						video.privacy.embed === 'public' &&
+						video.embed.html.replace(
+							/ ?(width|height)="[0-9]+"/gi,
+							''
+						),
+					link: video.link,
+					contentType: 'vimeo',
+					more: descriptionList.length > 1,
+				};
+				if (index !== -1) formatted[index] = result;
+				else formatted.push(result);
+			});
+			youtube.forEach(video => {
+				const {videoId} = video.resourceId;
+				const uid = idify(`VIDEO_Y_${videoId}`);
+				const index = formatted.findIndex(d => d.uid === uid);
+				const descriptionList = video.description.split('\n');
+				const result = {
+					uid,
+					body: videoId,
+					description: descriptionList[0],
+					type: 'video',
+					title: video.title,
+					date: video.publishedAt.slice(0, 10),
+					link: `https://youtube.com/watch?v=${videoId}`,
+					contentType: 'youtube',
+					more: descriptionList.length > 1,
+				};
+				if (index !== -1) formatted[index] = result;
+				else formatted.push(result);
+			});
+		})
+		.catch(err => {
+			console.log(`Error while fetching videos: ${err}`);
+		});
+}
+
 function getAll() {
 	return Promise.all([
 		getDweets(),
@@ -511,6 +634,7 @@ function getAll() {
 		getScreenshotsTumblr(),
 		getIcons(),
 		getSoundCloud(),
+		getVideos(),
 	])
 		.then(() => {
 			fs.writeFileSync(

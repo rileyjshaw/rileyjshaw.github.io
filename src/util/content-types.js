@@ -45,7 +45,7 @@ export const PatchContent = ({description, link}) => (
 			<p>
 				{description}{' '}
 				<ExternalLink to={link}>
-					read the full description at Patchstorage.
+					read the full description on Patchstorage
 				</ExternalLink>
 			</p>
 		) : (
@@ -64,6 +64,47 @@ export const SongContent = ({uid}) => (
 			uid.indexOf('_') + 1
 		)}&color=%23000000&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=true`}
 	></iframe>
+);
+export const VideoContent = ({body, contentType, description, link, more}) => (
+	<main>
+		{
+			{
+				vimeo: body && (
+					<div
+						className="video-embed"
+						dangerouslySetInnerHTML={{__html: body}}
+					/>
+				),
+				youtube: (
+					<div className="video-embed">
+						<iframe
+							allowfullscreen
+							frameborder="0"
+							src={`https://www.youtube-nocookie.com/embed/${body}`}
+						></iframe>
+					</div>
+				),
+			}[contentType]
+		}
+		{description && (
+			<>
+				<p>{description}</p>
+				{more && (
+					<p>
+						<ExternalLink to={link}>
+							Read the full description on{' '}
+							{
+								{
+									vimeo: 'Vimeo',
+									youtube: 'YouTube',
+								}[contentType]
+							}
+						</ExternalLink>
+					</p>
+				)}
+			</>
+		)}
+	</main>
 );
 
 export default {
@@ -120,5 +161,10 @@ export default {
 		className: 'span-5',
 		readableType: 'Song',
 		Inner: SongContent,
+	},
+	video: {
+		className: 'span-4',
+		readableType: 'Video',
+		Inner: VideoContent,
 	},
 };
