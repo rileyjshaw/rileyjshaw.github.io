@@ -9,7 +9,6 @@ export default () => (
 				taking-the-average-tone
 			</li>
 			<li>Potential other sources:</li>
-			<li>Screenshots blog</li>
 			<li>
 				Instagram
 				(https://www.gatsbyjs.org/packages/gatsby-source-instagram/)
@@ -25,7 +24,6 @@ export default () => (
 			<li>Glitch ()</li>
 			<li>Hackster</li>
 			<li>Galleries</li>
-			<li>Creative code tumblr</li>
 			<li></li>
 			<li>TODONE:</li>
 			<li>
@@ -49,7 +47,16 @@ export default () => (
 				<strike>Increase project node types</strike>
 			</li>
 			<li>
+				<strike>Screenshots blog</strike>
+			</li>
+			<li>
 				<strike>SFPC tumblr (https://sfpc.rileyjshaw.com/rss)</strike>
+			</li>
+			<li>
+				<strike>YouTube</strike>
+			</li>
+			<li>
+				<strike>Vimeo</strike>
 			</li>
 			<li>
 				<strike>

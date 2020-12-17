@@ -17,7 +17,7 @@
 		"date": "2018-11-21",
 		"link": "https://are.na/riley-shaw/hw-u1lmoisdnyu",
 		"description": "",
-		"updatedAt": "2020-12-13",
+		"updatedAt": "2020-12-16",
 		"length": 216,
 		"timestamp": 1542758400000
 	},
@@ -28,7 +28,7 @@
 		"date": "2018-11-04",
 		"link": "https://are.na/riley-shaw/suaxbjvglls",
 		"description": "",
-		"updatedAt": "2020-12-12",
+		"updatedAt": "2020-12-16",
 		"length": 13,
 		"timestamp": 1541289600000
 	},
@@ -38,7 +38,7 @@
 		"title": "~",
 		"date": "2018-12-09",
 		"link": "https://are.na/riley-shaw/tilde-qvdrqcjjopm",
-		"updatedAt": "2020-12-10",
+		"updatedAt": "2020-12-16",
 		"length": 15,
 		"timestamp": 1544313600000
 	},
@@ -5222,5 +5222,87 @@
 		"coolness": 50,
 		"tags": ["music", "online"],
 		"timestamp": 1606262400000
+	},
+	{
+		"uid": "SONG_948431872",
+		"type": "song",
+		"title": "Mallets",
+		"date": "2020-12-16",
+		"link": "https://soundcloud.com/rileyjshaw/mallets",
+		"coolness": 50,
+		"tags": ["music", "online"],
+		"timestamp": 1608076800000
+	},
+	{
+		"uid": "VIDEO_V_377116426",
+		"description": "This video played behind me during my Winter 2018 School for Poetic Computation intro. The following is a transcript of my talk:",
+		"type": "video",
+		"title": "timestamped",
+		"date": "2019-12-03",
+		"body": "<iframe src=\"https://player.vimeo.com/video/377116426?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=198113\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"timestamped\"></iframe>",
+		"link": "https://vimeo.com/377116426",
+		"contentType": "vimeo",
+		"more": true,
+		"timestamp": 1575331200000
+	},
+	{
+		"uid": "VIDEO_Y_2FAZHBVHDTY",
+		"body": "2FAzhbVhdTY",
+		"description": "A first pass at recreating my favourite parts of Alex Matheu's lovely GlitchCore app in Drambo. You can download it on PatchStorage here: https://patchstorage.com/glitch-more/",
+		"type": "video",
+		"title": "Glitch More",
+		"date": "2020-11-27",
+		"link": "https://youtube.com/watch?v=2FAzhbVhdTY",
+		"contentType": "youtube",
+		"more": true,
+		"timestamp": 1606435200000
+	},
+	{
+		"uid": "VIDEO_Y_7UM6FZ8IBF4",
+		"body": "7UM6fZ8ibF4",
+		"description": "This is a demo video for my Drambo “Chorder!” rack, a parameter-lockable, MIDI-mappable converter from a single MIDI note to 8 configurable chords.",
+		"type": "video",
+		"title": "Making a chord progression on the fly w/ Chorder! (v1.0.0)",
+		"date": "2020-10-16",
+		"link": "https://youtube.com/watch?v=7UM6fZ8ibF4",
+		"contentType": "youtube",
+		"more": true,
+		"timestamp": 1602806400000
+	},
+	{
+		"uid": "VIDEO_Y_OW5A2BGH1M4",
+		"body": "Ow5A2BGH1m4",
+		"description": "UPDATE: I created an 18-page handwritten DIY guide. It’s for sale at https://oneitem.store/jambo.",
+		"type": "video",
+		"title": "Jambo v1.0.0",
+		"date": "2020-10-06",
+		"link": "https://youtube.com/watch?v=Ow5A2BGH1m4",
+		"contentType": "youtube",
+		"more": true,
+		"timestamp": 1601942400000
+	},
+	{
+		"uid": "VIDEO_Y_VGYJ4DNHFVM",
+		"body": "Vgyj4DNHfvM",
+		"description": "This is a MIDI panic rack.",
+		"type": "video",
+		"title": "Panic! At The Drambo (MIDI panic rack)",
+		"date": "2020-12-12",
+		"link": "https://youtube.com/watch?v=Vgyj4DNHfvM",
+		"contentType": "youtube",
+		"more": true,
+		"timestamp": 1607731200000
+	},
+	{
+		"uid": "VIDEO_Y_ZTYZMSVT2JO",
+		"body": "ZTyzMsvt2jo",
+		"description": "sfpc spring 2018 showcase project",
+		"type": "video",
+		"title": "resurfacing",
+		"date": "2019-02-19",
+		"link": "https://youtube.com/watch?v=ZTyzMsvt2jo",
+		"contentType": "youtube",
+		"more": true,
+		"timestamp": 1550534400000
 	}
 ]
