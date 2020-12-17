@@ -12,13 +12,24 @@ import ContentGrid from './content-grid';
 
 import './project-explorer.css';
 
+// TODO(riley): Get rid of the class component, switch to useStickyState.
+const SAVED_PROPERTIES = [
+	'typeStates',
+	'sortIdx',
+	'ascending',
+	'filterType',
+	'tagStates',
+];
 class ProjectExplorer extends React.PureComponent {
 	constructor(props) {
 		super(props);
 
 		const nodeTypes = Array.from(
 			new Set(this.props.nodes.map(n => n.type))
-		).filter(type => type !== 'doodle');
+		)
+			.filter(type => type !== 'doodle')
+			.sort((a, b) => a.localeCompare(b));
+
 		const initialState = {
 			nodeTypes,
 			typeStates: Array.from(nodeTypes).fill(true),
@@ -28,6 +39,28 @@ class ProjectExplorer extends React.PureComponent {
 			tagStates: Array.from(props.tags).fill(false),
 			drawerOpen: false,
 		};
+
+		if (typeof window !== 'undefined') {
+			if (
+				window.localStorage.getItem('LAB_V1_nodeTypes') ===
+				initialState.nodeTypes.join('')
+			) {
+				SAVED_PROPERTIES.forEach(key => {
+					const savedValue = JSON.parse(
+						window.localStorage.getItem(`LAB_V1_${key}`)
+					);
+					if (savedValue != null) initialState[key] = savedValue;
+				});
+			} else {
+				window.localStorage.setItem(
+					'LAB_V1_nodeTypes',
+					initialState.nodeTypes.join('')
+				);
+				SAVED_PROPERTIES.forEach(key =>
+					window.localStorage.removeItem(`LAB_V1_${key}`)
+				);
+			}
+		}
 
 		this.state = {
 			...initialState,
@@ -83,9 +116,19 @@ class ProjectExplorer extends React.PureComponent {
 	}
 
 	refreshDisplayNodes = () => {
-		this.setState((state, props) => ({
-			nodes: this.getDisplayNodes(state, props),
-		}));
+		this.setState((state, props) => {
+			if (typeof window !== 'undefined') {
+				SAVED_PROPERTIES.forEach(key =>
+					window.localStorage.setItem(
+						`LAB_V1_${key}`,
+						JSON.stringify(state[key])
+					)
+				);
+			}
+			return {
+				nodes: this.getDisplayNodes(state, props),
+			};
+		});
 	};
 
 	shuffleDisplayNodes = () => {
