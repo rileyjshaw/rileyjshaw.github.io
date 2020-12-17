@@ -4,25 +4,6 @@
 //       *in place*. This whole file is a hack.
 
 const fs = require('fs');
-const scrapedProjects = require('../_generated/scraped-projects-formatted.json');
-const scrapedQuotes = require('../_generated/scraped-quotes.json');
-const listedProjects = require('../sources/projects.json');
-const listedQuotes = require('../sources/quotes.json');
-const projects = [
-	...scrapedProjects,
-	...listedProjects
-		.filter(n => !n.todo)
-		.map(p => {
-			const {description, ...rest} = p;
-			return {
-				...rest,
-				// HACK(riley): Array for projects, string for other things.
-				descriptionList: description,
-				type: 'project',
-				uid: `PROJECT_${p.title.toUpperCase().replace(/[- ]/g, '_')}`,
-			};
-		}),
-];
 
 const unique = arr => arr.filter((x, i) => arr.indexOf(x) === i);
 const addTags = (n, tags) => {
@@ -131,6 +112,28 @@ const unescape = (substitutions => {
 const stripOuterQuotes = str => str.replace(/^[“”‘’"'](.*)[“”‘’"']/g, '$1');
 const quoteAuthors = ['Osamu Sato', 'Donna J. Haraway'];
 function runTweaks() {
+	const scrapedProjects = require('../_generated/scraped-projects-formatted.json');
+	const scrapedQuotes = require('../_generated/scraped-quotes.json');
+	const listedProjects = require('../sources/projects.json');
+	const listedQuotes = require('../sources/quotes.json');
+	const projects = [
+		...scrapedProjects,
+		...listedProjects
+			.filter(n => !n.todo)
+			.map(p => {
+				const {description, ...rest} = p;
+				return {
+					...rest,
+					// HACK(riley): Array for projects, string for other things.
+					descriptionList: description,
+					type: 'project',
+					uid: `PROJECT_${p.title
+						.toUpperCase()
+						.replace(/[- ]/g, '_')}`,
+				};
+			}),
+	];
+
 	// Add type transformers to each node of each specified type.
 	Object.entries(typeTransformers).forEach(([type, transformers]) => {
 		Object.values(projects)

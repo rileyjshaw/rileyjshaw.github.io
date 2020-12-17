@@ -124,6 +124,17 @@
 		"repo": "miseryco/curriculum"
 	},
 	{
+		"uid": "COMMIT_4D115D10AA58B7606B7EF4AD1C750E4BF4C56FC7",
+		"type": "commit",
+		"title": "Feature: add a video scraper",
+		"date": "2020-12-17",
+		"link": "http://rileyjshaw.commit--blog.com/rileyjshaw/rileyjshaw.github.io/4d115d10aa58b7606b7ef4ad1c750e4bf4c56fc7",
+		"repo": "rileyjshaw/rileyjshaw.github.io",
+		"body": "<p>I figure now that I’m scraping SoundCloud, I’d better start scraping YouTube and Vimeo too. Since I occasionally cross-post videos (eg. a demo / instructional video for Patchstorage), I need to figure out how to reduce the clutter caused by duplicate entries. I’ll solve that problem once I see where duplicates tend to crop up.</p>",
+		"description": "<p>I figure now that I’m scraping SoundCloud, I’d better start scraping YouTube and Vimeo too. Since I occasionally cross-post videos (eg. a demo / instructional video for Patchstorage), I need to figure out how to reduce the clutter caused by duplicate entries. I’ll solve that problem once I see where duplicates tend to crop up.</p>",
+		"more": false
+	},
+	{
 		"uid": "COMMIT_5BD325E113AC998737005467529F93AED8791F45",
 		"type": "commit",
 		"title": "Add Dwitter data and some initial scraper options",
@@ -1412,6 +1423,17 @@
 		"link": "https://youtube.com/watch?v=Vgyj4DNHfvM",
 		"contentType": "youtube",
 		"more": true
+	},
+	{
+		"uid": "VIDEO_Y_W8ZUUMKQ3J0",
+		"body": "w8Zuumkq3j0",
+		"description": "Bit of progress as I work on the settings menu :)",
+		"type": "video",
+		"title": "Jambo brightness control demo",
+		"date": "2020-12-17",
+		"link": "https://youtube.com/watch?v=w8Zuumkq3j0",
+		"contentType": "youtube",
+		"more": false
 	},
 	{
 		"uid": "VIDEO_Y_ZTYZMSVT2JO",
