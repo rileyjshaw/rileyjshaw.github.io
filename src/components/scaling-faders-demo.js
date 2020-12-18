@@ -57,6 +57,7 @@ const Demo = ({players}) => {
 		),
 	});
 	const [gain, setGain] = useState(0.5);
+	const [simple, setSimple] = useState(false);
 
 	const updateVolume = newVolume => {
 		setLinkedFaders(({tracks}) => {
@@ -73,17 +74,19 @@ const Demo = ({players}) => {
 	};
 	const updateTrack = (newValue, i) => {
 		setLinkedFaders(({volume, tracks}) => {
-			const newTracksUnscaled = [
+			const newTracks = [
 				...tracks.slice(0, i),
 				+newValue,
 				...tracks.slice(i + 1),
 			];
-			const factor =
-				(volume * nTracks - newValue) /
-				(newTracksUnscaled.reduce(add) - newValue);
-			const newTracks = newTracksUnscaled.map((unscaled, j) =>
-				i === j ? unscaled : bound(factor * unscaled, 0, 1)
-			);
+			if (!simple) {
+				const factor =
+					(volume * nTracks - newValue) /
+					(newTracks.reduce(add) - newValue);
+				newTracks = newTracks.map((unscaled, j) =>
+					i === j ? unscaled : bound(factor * unscaled, 0, 1)
+				);
+			}
 			return {
 				volume: newTracks.reduce(add) / nTracks,
 				tracks: newTracks,
@@ -107,18 +110,34 @@ const Demo = ({players}) => {
 
 	return started ? (
 		<>
-			<FaderBank
-				label="Volume"
-				values={[linkedFaders.volume]}
-				onChange={updateVolume}
-				className={linkedFaders.volumeLocked && 'scaling-fader-locked'}
+			<div className="scaling-faderbanks">
+				<FaderBank
+					label="Volume"
+					values={[linkedFaders.volume]}
+					onChange={updateVolume}
+					className={
+						linkedFaders.volumeLocked && 'scaling-fader-locked'
+					}
+				/>
+				<FaderBank
+					label="Tracks"
+					values={linkedFaders.tracks}
+					onChange={updateTrack}
+				/>
+				<FaderBank
+					label="Gain"
+					values={[gain]}
+					onChange={updateGain}
+				/>
+			</div>
+			<input
+				id="simple-toggle"
+				type="checkbox"
+				className="scaling-fader-mode-toggle"
+				checked={simple}
+				onChange={() => setSimple(x => !x)}
 			/>
-			<FaderBank
-				label="Tracks"
-				values={linkedFaders.tracks}
-				onChange={updateTrack}
-			/>
-			<FaderBank label="Gain" values={[gain]} onChange={updateGain} />
+			<label for="simple-toggle">Simple mode</label>
 		</>
 	) : (
 		<button
