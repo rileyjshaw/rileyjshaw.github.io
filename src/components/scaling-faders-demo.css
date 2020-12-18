@@ -8,6 +8,7 @@
 	--fader-width: 6px;
 }
 .scaling-faders-demo,
+.scaling-faderbanks,
 .scaling-faderbank,
 .scaling-faders,
 .scaling-fader-container {
@@ -19,10 +20,14 @@
 }
 .scaling-faders-demo {
 	color: var(--cfg);
+	flex-direction: column;
 	font: italic 600 24px var(--fs);
 	height: 400px;
-	margin: 0 calc(var(--fader-width) * 2) var(--font-scale-1);
+	margin-bottom: var(--font-scale-4);
 	max-width: 100%;
+}
+.scaling-faderbanks {
+	margin: 0 calc(var(--fader-width) * 2) var(--font-scale-2);
 }
 .scaling-faderbank {
 	flex-direction: column;
@@ -196,6 +201,34 @@
 }
 .scaling-faders-loading {
 	margin: auto;
+}
+.scaling-fader-mode-toggle {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.scaling-fader-mode-toggle + label::before {
+	background: var(--cbg);
+	border: 6px solid var(--cfg);
+	border-radius: 50%;
+	box-sizing: content-box;
+	content: '';
+	display: inline-block;
+	height: calc(var(--fader-width) * 3);
+	margin-right: 0.5em;
+	vertical-align: text-bottom;
+	width: calc(var(--fader-width) * 3);
+}
+.scaling-fader-mode-toggle:checked + label::before {
+	background: var(--cui);
+}
+.scaling-fader-mode-toggle:active + label::before {
+	background: var(--cui-emphasis);
 }
 @media only screen and (max-width: 600px) {
 	:root {
