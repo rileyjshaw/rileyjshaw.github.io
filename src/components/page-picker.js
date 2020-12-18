@@ -24,11 +24,7 @@ const pages = {
 	},
 	lab: {
 		Icon: Planet,
-		title: (
-			<>
-				Lab<sup>beta</sup>
-			</>
-		),
+		title: <>Lab</>,
 		color: 'var(--cb)',
 		link: '/lab',
 	},
