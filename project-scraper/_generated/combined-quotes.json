@@ -1,5 +1,12 @@
 [
 	{
+		"uid": "ACTUAL_DRAGON",
+		"content": "That will be the judgement of history for your startup culture. They’re going to say the twenty-teens were all about that. It was a tacit allegiance between the hackerspace favelas of the startups and offshore capital in tax avoidance money laundries. That's your actual dragon… and you know it's the big dragon because you're a part of it. And as long as you are making rich guys richer, you are not disrupting the austerity. You are one if its top facilitators.",
+		"author": "Bruce Sterling",
+		"source": "Fantasy prototypes and real disruption",
+		"cite": "https://youtu.be/M7KErICTSHU"
+	},
+	{
 		"uid": "AUTOMATION_OWNERSHIP",
 		"content": "Who benefits from automation, and who loses, is ultimately a consequence not of the robots themselves, but of who owns them.",
 		"author": "Peter Frase",
@@ -152,6 +159,13 @@
 		"author": "Flea",
 		"source": "Acid for the Children",
 		"cite": "https://www.indiebound.org/book/9781455530533"
+	},
+	{
+		"uid": "NAPTIME_AESTHETICS",
+		"content": "We’re in the middle of a decade of post-dignity design, whose dogma is cuteness. One explanation would be geopolitical: when the perception of instability is elevated, we seek the safety of naptime aesthetics.",
+		"author": "Jesse Barron",
+		"source": "The Babysitters Club",
+		"cite": "https://reallifemag.com/the-babysitters-club"
 	},
 	{
 		"uid": "NEOLIBERAL_CREATIVITY",

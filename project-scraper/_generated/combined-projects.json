@@ -17,8 +17,8 @@
 		"date": "2018-11-21",
 		"link": "https://are.na/riley-shaw/hw-u1lmoisdnyu",
 		"description": "",
-		"updatedAt": "2020-12-16",
-		"length": 216,
+		"updatedAt": "2020-12-17",
+		"length": 217,
 		"timestamp": 1542758400000
 	},
 	{
@@ -28,7 +28,7 @@
 		"date": "2018-11-04",
 		"link": "https://are.na/riley-shaw/suaxbjvglls",
 		"description": "",
-		"updatedAt": "2020-12-16",
+		"updatedAt": "2020-12-17",
 		"length": 13,
 		"timestamp": 1541289600000
 	},
@@ -38,7 +38,7 @@
 		"title": "~",
 		"date": "2018-12-09",
 		"link": "https://are.na/riley-shaw/tilde-qvdrqcjjopm",
-		"updatedAt": "2020-12-16",
+		"updatedAt": "2020-12-17",
 		"length": 15,
 		"timestamp": 1544313600000
 	},
@@ -158,6 +158,18 @@
 		"description": "<p>I love the tidal wave of projects on <a href=\"/lab\">/lab</a>, and I want to emphasize that for v3.0 of the website. I update pages across the web daily; Glitch, Codepen, gist.github.com, Dwitter, Hackster, etc. Plus there's social media…</p>\n<p>I'm okay with manual curation for the most part, but for websites like Dwitter where contributions are inherently unpolished / untitled, it doesn't make sense for me to hand-pick and manually update a giant list.</p>\n<p>Also: I'm not sure how long Dwitter will be around for. Periodically saving the underlying code / images / etc. gives me more ownership over the presentation and preservation of my data. It changes my relationship with these sites from content hosts to publishing platforms. That makes me feel more secure with my zillion links.</p>\n<p>TODO(?): Automatically fetch new content during the publishing step?</p>",
 		"more": true,
 		"timestamp": 1565049600000
+	},
+	{
+		"uid": "COMMIT_5EDF7CAB0D844A346F49222F92A84005B0F01433",
+		"type": "commit",
+		"title": "Release: remove the “beta” banner!!! 🎊",
+		"date": "2020-12-18",
+		"link": "http://rileyjshaw.commit--blog.com/rileyjshaw/rileyjshaw.github.io/5edf7cab0d844a346f49222f92a84005b0f01433",
+		"repo": "rileyjshaw/rileyjshaw.github.io",
+		"body": "<p>Almost one year ago, I <a href=\"http://rileyjshaw.commit--blog.com/rileyjshaw/rileyjshaw.github.io/acfbf166206e1fcea9f03b6919715eba01e4b2f9\" rel=\"noopener noreferrer\" target=\"_blank\">quietly launched the new version of my site to rileyjshaw.com</a>. It was the last day of the decade, and it felt momentous. But since there were still some glaring bugs and omissions, I decided to hedge the release behind a “THIS SITE IS IN BETA” banner.</p>\n<p>It’s the end of the year again. Though there are <em>still</em> design problems and omissions, the site is much further along than it was on initial release. Some highlights:</p>\n<ul>\n<li><a href=\"/lab\">/lab</a> no-longer crashes Webkit based browsers (lol)</li>\n<li>I added <em>bunch</em> of new scrapers. Most recently: SoundCloud, Vimeo, and YouTube.</li>\n<li>The design is still uh… getting there… but it’s at least simpler and more consistent now.</li>\n<li>I test-drove the blog and added some new features (like MDX!)</li>\n<li>I put a ton of meat on last year’s skelly bones. From <a href=\"/about\">/about</a> to <a href=\"/lab\">/lab</a> to adding about 3x more quotes, this site is more substantial and chaotic than ever before.</li>\n</ul>\n<p>There have been about 130 commits between the beta release and this one. It’s not much for a whole year, but fixing up my personal website felt pretty small and self-indulgent vs. everything else I was focusing on. And 130 is still plenty of work to call this beta version un-betafied!</p>\n<p>I was initially going to remove the banner on New Year’s Eve, but I’d rather do it early and spend the rest of the year offline. That feels like the biggest improvement in this whole feature list.</p>",
+		"description": "<p>Almost one year ago, I <a href=\"http://rileyjshaw.commit--blog.com/rileyjshaw/rileyjshaw.github.io/acfbf166206e1fcea9f03b6919715eba01e4b2f9\" rel=\"noopener noreferrer\" target=\"_blank\">quietly launched the new version of my site to rileyjshaw.com</a>. It was the last day of the decade, and it felt momentous. But since there were still some glaring bugs and omissions, I decided to hedge the release behind a “THIS SITE IS IN BETA” banner.</p>\n<p>It’s the end of the year again. Though there are <em>still</em> design problems and omissions, the site is much further along than it was on initial release. Some highlights:</p>\n<ul>\n<li><a href=\"/lab\">/lab</a> no-longer crashes Webkit based browsers (lol)</li>\n<li>I added <em>bunch</em> of new scrapers. Most recently: SoundCloud, Vimeo, and YouTube.</li>\n<li>The design is still uh… getting there… but it’s at least simpler and more consistent now.</li>\n<li>I test-drove the blog and added some new features (like MDX!)</li>\n<li>I put a ton of meat on last year’s skelly bones. From <a href=\"/about\">/about</a> to <a href=\"/lab\">/lab</a> to adding about 3x more quotes, this site is more substantial and chaotic than ever before.</li>\n</ul>\n<p>There have been about 130 commits between the beta release and this one. It’s not much for a whole year, but fixing up my personal website felt pretty small and self-indulgent vs. everything else I was focusing on. And 130 is still plenty of work to call this beta version un-betafied!</p>\n<p>I was initially going to remove the banner on New Year’s Eve, but I’d rather do it early and spend the rest of the year offline. That feels like the biggest improvement in this whole feature list.</p>",
+		"more": true,
+		"timestamp": 1608249600000
 	},
 	{
 		"uid": "COMMIT_5EFE71827C2575CBD09DC30669E9C1A63FC625DB",
@@ -5311,11 +5323,11 @@
 		"description": "Bit of progress as I work on the settings menu :)",
 		"type": "video",
 		"title": "Jambo brightness control demo",
-		"date": "2020-12-17",
+		"date": "2020-10-18",
 		"link": "https://youtube.com/watch?v=w8Zuumkq3j0",
 		"contentType": "youtube",
 		"more": false,
-		"timestamp": 1608163200000
+		"timestamp": 1602979200000
 	},
 	{
 		"uid": "VIDEO_Y_ZTYZMSVT2JO",
