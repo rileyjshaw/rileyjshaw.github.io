@@ -17,7 +17,7 @@
 		"date": "2018-11-21",
 		"link": "https://are.na/riley-shaw/hw-u1lmoisdnyu",
 		"description": "",
-		"updatedAt": "2020-12-23",
+		"updatedAt": "2020-12-27",
 		"length": 217,
 		"timestamp": 1542758400000
 	},
@@ -38,7 +38,7 @@
 		"title": "~",
 		"date": "2018-12-09",
 		"link": "https://are.na/riley-shaw/tilde-qvdrqcjjopm",
-		"updatedAt": "2020-12-21",
+		"updatedAt": "2020-12-24",
 		"length": 15,
 		"timestamp": 1544313600000
 	},
@@ -5266,6 +5266,16 @@
 		"coolness": 50,
 		"tags": ["music", "online"],
 		"timestamp": 1608681600000
+	},
+	{
+		"uid": "SONG_954986224",
+		"type": "song",
+		"title": "Gravity drops (excerpt 2)",
+		"date": "2020-12-27",
+		"link": "https://soundcloud.com/rileyjshaw/gravity-drops-excerpt-2",
+		"coolness": 50,
+		"tags": ["music", "online"],
+		"timestamp": 1609027200000
 	},
 	{
 		"uid": "VIDEO_V_377116426",
