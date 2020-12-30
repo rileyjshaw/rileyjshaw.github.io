@@ -16,7 +16,7 @@
 		"date": "2018-11-21",
 		"link": "https://are.na/riley-shaw/hw-u1lmoisdnyu",
 		"description": "",
-		"updatedAt": "2020-12-27",
+		"updatedAt": "2020-12-29",
 		"length": 217
 	},
 	{
@@ -26,7 +26,7 @@
 		"date": "2018-11-04",
 		"link": "https://are.na/riley-shaw/suaxbjvglls",
 		"description": "",
-		"updatedAt": "2020-12-22",
+		"updatedAt": "2020-12-29",
 		"length": 13
 	},
 	{
@@ -35,7 +35,7 @@
 		"title": "~",
 		"date": "2018-12-09",
 		"link": "https://are.na/riley-shaw/tilde-qvdrqcjjopm",
-		"updatedAt": "2020-12-24",
+		"updatedAt": "2020-12-28",
 		"length": 15
 	},
 	{
@@ -868,6 +868,15 @@
 		"date": "2020-12-12",
 		"link": "https://patchstorage.com/midi-note-to-pitch-conversion/",
 		"coolness": 21
+	},
+	{
+		"uid": "PATCH_133788",
+		"type": "patch",
+		"title": "Dedupe",
+		"description": "Dedupe prevents consecutive MIDI Note On messages from occurring on the same note &amp; channel...",
+		"date": "2020-12-30",
+		"link": "https://patchstorage.com/dedupe/",
+		"coolness": 41
 	},
 	{
 		"uid": "SCREENSHOTS_TUMBLR_190653258355",
