@@ -52,6 +52,13 @@ const typeTransformers = {
 			n.description = fixLinks(n.body);
 		},
 	],
+	patch: [
+		n => {
+			if (n.description) {
+				n.description = unescape(n.description);
+			}
+		},
+	],
 	project: [
 		n => {
 			if (n.descriptionList) {
