@@ -53,8 +53,9 @@ export const PatchContent = ({description, link}) => (
 		)}
 	</main>
 );
-export const SongContent = ({uid}) => (
+export const SongContent = ({title, uid}) => (
 	<iframe
+		title={`An embedded song called "${title}"`}
 		className="soundcloud"
 		width="100%"
 		height="100"
@@ -65,7 +66,14 @@ export const SongContent = ({uid}) => (
 		)}&color=%23000000&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=true`}
 	></iframe>
 );
-export const VideoContent = ({body, contentType, description, link, more}) => (
+export const VideoContent = ({
+	body,
+	contentType,
+	description,
+	title,
+	link,
+	more,
+}) => (
 	<main>
 		{
 			{
@@ -78,6 +86,7 @@ export const VideoContent = ({body, contentType, description, link, more}) => (
 				youtube: (
 					<div className="video-embed">
 						<iframe
+							title={`An embedded video called "${title}"`}
 							allowfullscreen
 							frameborder="0"
 							src={`https://www.youtube-nocookie.com/embed/${body}`}
