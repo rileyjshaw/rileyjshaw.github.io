@@ -24,6 +24,16 @@
 		"todo": true
 	},
 	{
+		"title": "Canvas smudge effect (demo)",
+		"description": [
+			"Reusable function: pass in an HTML canvas to re-draw it slightly smudged."
+		],
+		"date": "2021-01-12",
+		"coolness": 20,
+		"link": "https://codepen.io/rileyjshaw/pen/XWjxVJN?editors=0010",
+		"tags": ["pretty", "online", "reusable"]
+	},
+	{
 		"title": "sunflower",
 		"date": "2021-01-12",
 		"coolness": 20,
