@@ -24,6 +24,13 @@
 		"todo": true
 	},
 	{
+		"title": "sunflower",
+		"date": "2021-01-12",
+		"coolness": 20,
+		"link": "https://codepen.io/rileyjshaw/full/rNMqBZR",
+		"tags": ["pretty", "online"]
+	},
+	{
 		"title": "Scaling faders (audio demo)",
 		"description": [
 			"I dread mixing audio. I tend to make the drums a little louder, then the lead, then the bass, then the drums again, and on and on until I’m clipping everywhere.",
