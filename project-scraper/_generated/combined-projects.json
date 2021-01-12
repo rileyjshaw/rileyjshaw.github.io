@@ -1481,7 +1481,7 @@
 		"link": "https://codepen.io/collection/DRdKOb",
 		"tags": ["online", "pretty"],
 		"descriptionList": [
-			"Two quick doodles that I eventually ported to WebGL."
+			"A few quick doodles that I eventually ported to WebGL."
 		],
 		"type": "project",
 		"uid": "PROJECT_CANVAS_B/W_IMAGE_EFFECTS",
@@ -1500,6 +1500,19 @@
 		"type": "project",
 		"uid": "PROJECT_CANVAS_COMPOSITING_OPERATIONS",
 		"timestamp": 1458691200000
+	},
+	{
+		"title": "Canvas smudge effect (demo)",
+		"date": "2021-01-12",
+		"coolness": 41,
+		"link": "https://codepen.io/rileyjshaw/pen/XWjxVJN?editors=0010",
+		"tags": ["online", "pretty", "reusable"],
+		"descriptionList": [
+			"Reusable function: pass in an HTML canvas to re-draw it slightly smudged."
+		],
+		"type": "project",
+		"uid": "PROJECT_CANVAS_SMUDGE_EFFECT_(DEMO)",
+		"timestamp": 1610409600000
 	},
 	{
 		"title": "Canvas spectrum",

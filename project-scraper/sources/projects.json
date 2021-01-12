@@ -29,7 +29,7 @@
 			"Reusable function: pass in an HTML canvas to re-draw it slightly smudged."
 		],
 		"date": "2021-01-12",
-		"coolness": 20,
+		"coolness": 41,
 		"link": "https://codepen.io/rileyjshaw/pen/XWjxVJN?editors=0010",
 		"tags": ["pretty", "online", "reusable"]
 	},
@@ -64,7 +64,7 @@
 	{
 		"title": "canvas b/w image effects",
 		"description": [
-			"Two quick doodles that I eventually ported to WebGL."
+			"A few quick doodles that I eventually ported to WebGL."
 		],
 		"date": "2020-10-10",
 		"coolness": 13,
