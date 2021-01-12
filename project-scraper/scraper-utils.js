@@ -8,7 +8,7 @@ const url = require('url');
 const tumblr = require('tumblr.js');
 const {Vimeo} = require('vimeo');
 const {google} = require('googleapis');
-const feedRead = require('davefeedread');
+const RssParser = require('rss-parser');
 const request = require('request-promise-native');
 const OAuth = require('oauth');
 const {JSDOM} = require('jsdom');
@@ -185,41 +185,38 @@ async function getArena() {
 	}
 }
 
-function getCommitBlog() {
-	const url = 'http://rileyjshaw.commit--blog.com/feed';
-	return util
-		.promisify(feedRead.parseUrl)(url, 15)
-		.then(feed => {
-			raw.commitBlog = feed.items;
-			console.log(`Got ${feed.items.length} Commit Blog entries.`);
-			feed.items.forEach(commit => {
-				const uid = idify(
-					`COMMIT_${commit.guid.slice(
-						commit.guid.lastIndexOf('/') + 1
-					)}`
-				);
-				const index = formatted.findIndex(d => d.uid === uid);
-				const body = commit.description?.replace(/<br>\n/g, ' ');
-				const result = {
-					uid,
-					type: 'commit',
-					title: commit.title,
-					date: commit.date.toISOString().slice(0, 10),
-					link: commit.link,
-					repo: commit.link.match(
-						/commit--blog\.com\/([^/]*\/[^/]*)/
-					)[1],
-					body,
-					...excerptify(body),
-				};
+async function getCommitBlog() {
+	const url = 'https://rileyjshaw.commit--blog.com/feed';
+	const parser = new RssParser();
+	try {
+		const feed = await parser.parseURL(url);
+		raw.commitBlog = feed.items;
+		console.log(`Got ${feed.items.length} Commit Blog entries.`);
+		feed.items.forEach(commit => {
+			const uid = idify(
+				`COMMIT_${commit.id.slice(commit.id.lastIndexOf('/') + 1)}`
+			);
+			const index = formatted.findIndex(d => d.uid === uid);
+			const body = commit.content?.replace(/<br>\n/g, ' ');
+			const result = {
+				uid,
+				type: 'commit',
+				title: commit.title,
+				date: commit.isoDate.slice(0, 10),
+				link: commit.link,
+				repo: commit.link.match(
+					/commit--blog\.com\/([^/]*\/[^/]*)/
+				)[1],
+				body,
+				...excerptify(body),
+			};
 
-				if (index !== -1) formatted[index] = result;
-				else formatted.push(result);
-			});
-		})
-		.catch(err => {
-			console.error('Error while fetching Commit Blog:', err);
+			if (index !== -1) formatted[index] = result;
+			else formatted.push(result);
 		});
+	} catch (err) {
+		console.error('Error while fetching Commit Blog:', err);
+	}
 }
 
 function getSFPCTumblr() {
