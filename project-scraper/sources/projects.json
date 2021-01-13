@@ -158,7 +158,7 @@
 	{
 		"title": "Spiral explorer",
 		"description": [
-			"A WIP / DOA sandbox for exploring <a href=\"https://codepen.io/collection/nYWPBp\">single-line, tiling spirals</a>."
+			"A WIP / DOA sandbox for exploring <a href=\"https://codepen.io/collection/nYWPBp\" target=\"_blank\" rel=\"noopener noreferrer\">single-line, tiling spirals</a>."
 		],
 		"date": "2020-01-10",
 		"coolness": 40,
@@ -260,7 +260,7 @@
 	{
 		"title": "1.618 tests",
 		"description": [
-			"After watching some <a href=\"https://asknature.org/resource/doodling-in-math-spirals-fibonacci-and-being-a-plant\">Vi Hart videos</a>, I started thinking a lot about Fibonacci Hashing and made some simple visualizations to test ideas."
+			"After watching some <a href=\"https://asknature.org/resource/doodling-in-math-spirals-fibonacci-and-being-a-plant\" target=\"_blank\" rel=\"noopener noreferrer\">Vi Hart videos</a>, I started thinking a lot about Fibonacci Hashing and made some simple visualizations to test ideas."
 		],
 		"date": "2019-02-02",
 		"coolness": 22,
@@ -280,7 +280,7 @@
 	{
 		"title": "Mystery house",
 		"description": [
-			"A house built collaboratively in <a href=\"https://ephtracy.github.io/\">MagicaVoxel</a> with my friend Hannah."
+			"A house built collaboratively in <a href=\"https://ephtracy.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">MagicaVoxel</a> with my friend Hannah."
 		],
 		"date": "2018-11-11",
 		"coolness": 60,
@@ -291,7 +291,7 @@
 		"title": "Stipphonic",
 		"description": [
 			"I wanted to see what stippling sounded like applied to musical chords.",
-			"Adapted from <a href=\"https://github.com/rileyjshaw/virtuoso\">Virtuoso</a>."
+			"Adapted from <a href=\"https://github.com/rileyjshaw/virtuoso\" target=\"_blank\" rel=\"noopener noreferrer\">Virtuoso</a>."
 		],
 		"coolness": 34,
 		"link": "https://github.com/rileyjshaw/stipphonic",
