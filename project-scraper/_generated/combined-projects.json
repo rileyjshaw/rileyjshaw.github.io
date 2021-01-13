@@ -17,7 +17,7 @@
 		"date": "2018-11-21",
 		"link": "https://are.na/riley-shaw/hw-u1lmoisdnyu",
 		"description": "",
-		"updatedAt": "2021-01-12",
+		"updatedAt": "2021-01-13",
 		"length": 217,
 		"timestamp": 1542758400000
 	},
@@ -1502,16 +1502,16 @@
 		"timestamp": 1458691200000
 	},
 	{
-		"title": "Canvas smudge effect (demo)",
+		"title": "Canvas smudge effect demos",
 		"date": "2021-01-12",
-		"coolness": 41,
-		"link": "https://codepen.io/rileyjshaw/pen/XWjxVJN?editors=0010",
+		"coolness": 55,
+		"link": "https://codepen.io/collection/DaxrqQ",
 		"tags": ["online", "pretty", "reusable"],
 		"descriptionList": [
-			"Reusable function: pass in an HTML canvas to re-draw it slightly smudged."
+			"Reusable functions that accept an HTML canvas and re-draw it slightly smudged. The CMY version separates cyan/magenta/yellow color channels and adds an offset."
 		],
 		"type": "project",
-		"uid": "PROJECT_CANVAS_SMUDGE_EFFECT_(DEMO)",
+		"uid": "PROJECT_CANVAS_SMUDGE_EFFECT_DEMOS",
 		"timestamp": 1610409600000
 	},
 	{
