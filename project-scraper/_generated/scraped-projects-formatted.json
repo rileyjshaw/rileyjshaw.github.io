@@ -16,7 +16,7 @@
 		"date": "2018-11-21",
 		"link": "https://are.na/riley-shaw/hw-u1lmoisdnyu",
 		"description": "",
-		"updatedAt": "2021-01-13",
+		"updatedAt": "2021-01-16",
 		"length": 217
 	},
 	{
@@ -26,7 +26,7 @@
 		"date": "2018-11-04",
 		"link": "https://are.na/riley-shaw/suaxbjvglls",
 		"description": "",
-		"updatedAt": "2021-01-11",
+		"updatedAt": "2021-01-17",
 		"length": 13
 	},
 	{
@@ -35,7 +35,7 @@
 		"title": "~",
 		"date": "2018-12-09",
 		"link": "https://are.na/riley-shaw/tilde-qvdrqcjjopm",
-		"updatedAt": "2021-01-11",
+		"updatedAt": "2021-01-14",
 		"length": 15
 	},
 	{
@@ -1216,6 +1216,14 @@
 		"title": "Screen Shot 2021-01-12 at 14.16.38.png"
 	},
 	{
+		"uid": "SCREENSHOTS_TUMBLR_640500172146802688",
+		"type": "screenshotsTumblr",
+		"date": "2021-01-16",
+		"link": "https://screenshots.rileyjshaw.com/post/640500172146802688/the-art-of-electronics-third-edition-index-page",
+		"contentType": "photo",
+		"title": "Screen Shot 2021-01-16 at 15.22.43.png"
+	},
+	{
 		"uid": "SFPC_TUMBLR_171116512267",
 		"type": "tumblr",
 		"date": "2018-02-21",
@@ -1442,7 +1450,7 @@
 		"type": "video",
 		"title": "timestamped",
 		"date": "2019-12-03",
-		"body": "<iframe src=\"https://player.vimeo.com/video/377116426?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=198113\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen title=\"timestamped\"></iframe>",
+		"body": "<iframe src=\"https://player.vimeo.com/video/377116426?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=198113\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen title=\"timestamped\"></iframe>",
 		"link": "https://vimeo.com/377116426",
 		"contentType": "vimeo",
 		"more": true
