@@ -2,10 +2,12 @@ import React from 'react';
 
 import TextGrid from './text-grid';
 import CycleText from './cycle-text';
+import BackgroundGenerator from './doodles/background-generator';
 
 import './grid-doodles.css';
 
 export default [
+	React.forwardRef(BackgroundGenerator),
 	React.forwardRef((props, ref) => (
 		<TextGrid
 			size={[3, 3]}
@@ -69,7 +71,7 @@ export default [
 			{...props}
 			ref={ref}
 		>
-			GrEeTiNgShUmAn
+			Hail Santa!
 		</CycleText>
 	)),
 ];

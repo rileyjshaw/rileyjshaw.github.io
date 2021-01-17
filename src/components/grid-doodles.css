@@ -1,9 +1,9 @@
 .content-node.doingreat-grid {
-	background: var(--cr);
-	color: var(--cg);
+	background: var(--cfg);
+	color: var(--cbg);
 	font-weight: bold;
 	/* grid-area: 9 / 2 / span 3 / span 2; */
-	grid-area: span 3 / span 2;
+	grid-area: span 2 / span 2;
 	justify-items: stretch;
 	text-align: center;
 }
@@ -13,8 +13,8 @@
 	justify-content: center;
 }
 .doingreat-item:nth-child(even) {
-	background: var(--cg);
-	color: var(--cb);
+	background: var(--cbg);
+	color: var(--cfg);
 }
 .wavebump-item,
 .droplet-item,
@@ -36,8 +36,8 @@
 }
 .content-node.wavebump-item.tall {
 	background: var(--cg);
-	color: var(--cy);
-	grid-area: span 10 / span 2;
+	color: var(--cr);
+	grid-area: span 5 / span 2;
 }
 .content-node.droplet-item {
 	background: var(--cb);
@@ -55,4 +55,9 @@
 .content-node.snowman {
 	font-size: 30px;
 	grid-area: span 3 / span 2;
+}
+.doodle-background-generator {
+	cursor: pointer;
+	grid-area: span 3 / span 3;
+	image-rendering: crisp-edges;
 }
