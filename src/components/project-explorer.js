@@ -26,9 +26,7 @@ class ProjectExplorer extends React.PureComponent {
 
 		const nodeTypes = Array.from(
 			new Set(this.props.nodes.map(n => n.type))
-		)
-			.filter(type => type !== 'doodle')
-			.sort((a, b) => a.localeCompare(b));
+		).sort((a, b) => a.localeCompare(b));
 
 		const initialState = {
 			nodeTypes,
@@ -80,11 +78,7 @@ class ProjectExplorer extends React.PureComponent {
 			.filter((_, i) => state.tagStates[i])
 			.map(tag => tag.name);
 		const [doodles, filteredByType] = (checkedTypeNames.length
-			? nodes.filter(
-					node =>
-						node.type === 'doodle' ||
-						checkedTypeNames.includes(node.type)
-			  )
+			? nodes.filter(node => checkedTypeNames.includes(node.type))
 			: nodes
 		).reduce(
 			(partitions, node) => {
@@ -104,7 +98,7 @@ class ProjectExplorer extends React.PureComponent {
 		const ordered = state.ascending ? sorted.reverse() : sorted;
 		// Insert a few doodles into a random position.
 		doodles.forEach(doodle => {
-			if (Math.random() < 0.3) {
+			if (Math.random() < 0.7) {
 				ordered.splice(
 					Math.floor(Math.random() * ordered.length),
 					0,
@@ -328,11 +322,7 @@ class ProjectExplorer extends React.PureComponent {
 					)}
 				</div>
 				<p className="result-details">
-					Found{' '}
-					<strong>
-						{nodes.filter(node => node.type !== 'doodle').length}
-					</strong>{' '}
-					entries from{' '}
+					Found <strong>{nodes.length}</strong> entries from{' '}
 					<strong>
 						{this.state.typeStates.reduce((a, b) => a + b) ||
 							this.state.typeStates.length}
