@@ -9,6 +9,18 @@ import './grid-doodles.css';
 export default [
 	React.forwardRef(BackgroundGenerator),
 	React.forwardRef((props, ref) => (
+		<li className="doodle wavytext" ref={ref}>
+			{'@rileyjshaw'.split('').map((letter, i, {length}) => (
+				<span
+					key={`wavytext-${i}`}
+					style={{animationDelay: `${(i - length) * 0.2}s`}}
+				>
+					{letter}
+				</span>
+			))}
+		</li>
+	)),
+	React.forwardRef((props, ref) => (
 		<TextGrid
 			size={[3, 3]}
 			classPrefix="doingreat"
