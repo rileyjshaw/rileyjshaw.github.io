@@ -97,15 +97,15 @@ class ProjectExplorer extends React.PureComponent {
 		const sorted = sortFn(filtered);
 		const ordered = state.ascending ? sorted.reverse() : sorted;
 		// Insert a few doodles into a random position.
-		doodles.forEach(doodle => {
-			if (Math.random() < 0.7) {
+		doodles
+			.filter(doodle => doodle.shouldRender())
+			.forEach(doodle => {
 				ordered.splice(
 					Math.floor(Math.random() * ordered.length),
 					0,
 					doodle
 				);
-			}
-		});
+			});
 		return ordered;
 	}
 
@@ -379,10 +379,11 @@ export default props => {
 	`);
 
 	const nodes = allProjectsQuery().concat(
-		gridDoodles.map((Doodle, i) => ({
+		gridDoodles.map(([Doodle, shouldRender], i) => ({
 			uid: `DOODLE_${i}`,
 			type: 'doodle',
 			Doodle,
+			shouldRender,
 		}))
 	);
 
