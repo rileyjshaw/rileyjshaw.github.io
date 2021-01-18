@@ -54,7 +54,7 @@
 }
 .content-node.snowman {
 	font-size: 30px;
-	grid-area: span 3 / span 2;
+	grid-area: span 1 / span 1;
 }
 .doodle-background-generator {
 	cursor: pointer;
