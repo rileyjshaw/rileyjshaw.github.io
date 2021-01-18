@@ -74,8 +74,9 @@ const getState = props => {
 	return [tiledCanvas, nTiles, height];
 };
 
-export default function Template(props) {
+export default function BackgroundGenerator(props, ref) {
 	const [[tiledCanvas, nTiles, height], setState] = useState([]);
+	const [clicked, setClicked] = useState(false);
 	useEffect(() => {
 		setState(getState(props));
 	}, []);
@@ -85,6 +86,7 @@ export default function Template(props) {
 		<li
 			onClick={() => {
 				setState(getState(props));
+				if (!clicked) setClicked(true);
 			}}
 			className="content-node doodle doodle-background-generator"
 			style={
@@ -94,6 +96,9 @@ export default function Template(props) {
 					}px ${height * zoom}px url(${tiledCanvas.toDataURL()}`,
 				}
 			}
-		/>
+			ref={ref}
+		>
+			{clicked || <span>Click?</span>}
+		</li>
 	);
 }
