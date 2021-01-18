@@ -57,9 +57,19 @@
 	grid-area: span 1 / span 1;
 }
 .doodle-background-generator {
+	align-items: center;
 	cursor: pointer;
+	display: flex;
 	grid-area: span 2 / span 3;
 	image-rendering: crisp-edges;
+	justify-content: center;
+}
+.doodle-background-generator span {
+	background: var(--cbg);
+	border: 6px solid var(--cfg);
+	font: var(--font-scale--1) var(--fh);
+	padding: 6px 12px;
+	text-transform: uppercase;
 }
 .wavytext {
 	align-items: center;
