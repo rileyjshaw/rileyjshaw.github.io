@@ -74,7 +74,7 @@ const Demo = ({players}) => {
 	};
 	const updateTrack = (newValue, i) => {
 		setLinkedFaders(({volume, tracks}) => {
-			const newTracks = [
+			let newTracks = [
 				...tracks.slice(0, i),
 				+newValue,
 				...tracks.slice(i + 1),
