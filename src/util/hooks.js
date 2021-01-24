@@ -125,8 +125,7 @@ export function useIdle(delay, onIdle) {
 	if (typeof window === 'undefined') return false;
 	const [isIdle, setIdle] = useState(false);
 	const [idleTimeout, setIdleTimeout] = useState(null);
-	const handleInteraction = () => {
-		setIdle(false);
+	const resetIdleTimeout = () =>
 		setIdleTimeout(idleTimeout => {
 			window.clearTimeout(idleTimeout);
 			return window.setTimeout(() => {
@@ -134,18 +133,22 @@ export function useIdle(delay, onIdle) {
 				onIdle && onIdle();
 			}, delay);
 		});
+	const handleInteraction = () => {
+		setIdle(false);
+		resetIdleTimeout();
 	};
 	useEffect(() => {
 		interactionEventNames.forEach(name =>
 			window.addEventListener(name, handleInteraction)
 		);
+		resetIdleTimeout();
 		return () => {
 			window.clearTimeout(idleTimeout);
 			interactionEventNames.forEach(name =>
 				window.removeEventListener(name, handleInteraction)
 			);
 		};
-	}, []);
+	}, [delay]);
 	return isIdle;
 }
 
