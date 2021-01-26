@@ -326,7 +326,7 @@ class ProjectExplorer extends React.PureComponent {
 				<p className="result-details">
 					Found <strong>{nodes.length}</strong> entries from{' '}
 					<strong>{nSources}</strong> source
-					{nSources === 1 ? 's' : ''}:
+					{nSources === 1 ? '' : 's'}:
 				</p>
 				<LazyGrid
 					nodes={nodes}
