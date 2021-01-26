@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {randSequence, lcm} from '../../util/util';
+import {colors} from '../../util/constants';
 
 const minWidth = 100; // Tiling width. Height is calculated dynamically.
 const maxWidth = 200;
@@ -17,20 +18,22 @@ const maxTiledWidth = 10000;
 const defaultProps = {
 	width: minWidth + Math.floor(Math.random() * (maxWidth - minWidth) + 1),
 	zoom: 6, // I think it looks better a bit chunky like this.
-	dark: '#000',
-	light: '#fff',
+	dark: colors.fg,
+	light: colors.bg,
 	themeBias: 0.65, // 0: light | 1: dark.
 	seamless: true,
+	El: 'div',
 };
 
-// TODO: Only run the createElements once.
-const getState = props => {
+const getState = (
+	props,
+	canvas = document.createElement('canvas'),
+	tiledCanvas = document.createElement('canvas')
+) => {
 	const {width, dark, light, themeBias, seamless} = {
 		...defaultProps,
 		...props,
 	};
-	const canvas = document.createElement('canvas');
-	const tiledCanvas = document.createElement('canvas');
 
 	let size, height, sequence;
 	do {
@@ -71,24 +74,29 @@ const getState = props => {
 		} while (offset <= height);
 	}
 
-	return [tiledCanvas, nTiles, height];
+	return [canvas, tiledCanvas, nTiles, height];
 };
 
 export default function BackgroundGenerator(props, ref) {
-	const [[tiledCanvas, nTiles, height], setState] = useState([]);
+	const [[canvas, tiledCanvas, nTiles, height], setState] = useState([]);
 	const [clicked, setClicked] = useState(false);
 	useEffect(() => {
-		setState(getState(props));
+		setState(getState(props, canvas, tiledCanvas));
 	}, []);
-	const {width, zoom, dark, light, themeBias} = {...defaultProps, ...props};
+	const {width, zoom, dark, light, themeBias, El, className} = {
+		...defaultProps,
+		...props,
+	};
 	// Apply the wide, tileable canvas as a repeating background.
 	return (
-		<li
+		<El
 			onClick={() => {
-				setState(getState(props));
+				setState(getState(props, canvas, tiledCanvas));
 				if (!clicked) setClicked(true);
 			}}
-			className="content-node doodle doodle-background-generator"
+			className={`content-node doodle doodle-background-generator${
+				className ? ` ${className}` : ''
+			}`}
 			style={
 				tiledCanvas && {
 					background: `${themeBias > 0.5 ? dark : light} left top/${
@@ -96,9 +104,9 @@ export default function BackgroundGenerator(props, ref) {
 					}px ${height * zoom}px url(${tiledCanvas.toDataURL()}`,
 				}
 			}
-			ref={ref}
+			{...(ref.hasOwnProperty('current') ? {ref} : {})}
 		>
 			{clicked || <span>Click?</span>}
-		</li>
+		</El>
 	);
 }

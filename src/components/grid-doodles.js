@@ -7,11 +7,16 @@ import BackgroundGenerator from './doodles/background-generator';
 import './grid-doodles.css';
 
 export default [
-	[React.forwardRef(BackgroundGenerator), 0.8],
+	[
+		React.forwardRef((props, ref) => (
+			<BackgroundGenerator El="li" ref={ref} {...props} />
+		)),
+		0.8,
+	],
 	[
 		React.forwardRef((props, ref) => (
 			<li className="doodle wavytext" ref={ref}>
-				{'@rileyjshaw'.split('').map((letter, i, {length}) => (
+				{'rileyjshaw'.split('').map((letter, i, {length}) => (
 					<span
 						key={`wavytext-${i}`}
 						style={{animationDelay: `${(i - length) * 0.2}s`}}
