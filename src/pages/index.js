@@ -11,6 +11,7 @@ import GoUp from '../components/go-up';
 import Layout from '../components/layout';
 import PageHeader from '../components/page-header';
 import SEO from '../components/seo';
+import BackgroundGenerator from '../components/doodles/background-generator';
 
 import './index.css';
 
@@ -37,7 +38,9 @@ const IndexPage = ({featuredProjects = [], location}) => {
 			<main className="main-content">
 				<div className="section main-about">
 					<div className="row">
-						<div />
+						<div className="frontpage-doodle">
+							<BackgroundGenerator />
+						</div>
 						<div className="about-stub">
 							<MDXRenderer className="md-wrapper">
 								{body}
@@ -58,7 +61,7 @@ const IndexPage = ({featuredProjects = [], location}) => {
 				{/* Include News, Newsletter? */}
 				<div className="section main-projects">
 					<div className="row">
-						<div>
+						<div className="main-projects-title">
 							<h2>Recent additions</h2>
 							<Link className="lab-link" to="/lab">
 								(explore all)

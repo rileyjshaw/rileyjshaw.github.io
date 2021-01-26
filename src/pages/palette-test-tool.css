@@ -11,7 +11,7 @@
 .palette-test-tool .subtitle {
 	color: var(--cfg);
 	display: block;
-	font-weight: bold;
+	font-weight: 500;
 	margin: 6px 18px 2rem;
 	text-decoration: none;
 }
@@ -46,7 +46,7 @@
 	border: 0;
 	display: inline-block;
 	font-size: 42px;
-	font-weight: bold;
+	font-weight: 500;
 	max-width: 12vw;
 	text-align: center;
 }

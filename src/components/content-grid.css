@@ -1,13 +1,15 @@
 .content-grid {
 	align-items: stretch;
 	display: grid;
+	gap: 30px;
 	grid-auto-flow: row dense;
-	grid-auto-rows: 100px;
-	grid-gap: 30px;
 	grid-template-columns: repeat(auto-fit, minmax(60px, max-content));
 	justify-content: space-around;
 	list-style: none;
 	margin: 0;
 	padding: 30px 0 !important; /* TODO(riley): What is the least annoying way to override the ul[class] selector? */
 	width: 100%;
+}
+.content-grid.masonry {
+	grid-auto-rows: 100px;
 }

@@ -1,12 +1,21 @@
+.frontpage-doodle {
+	aspect-ratio: 1 / 1;
+	height: 100%;
+	max-width: 100%;
+}
 .main-content h2 {
 	font-size: var(--font-scale-3);
-	margin-top: 0;
+	margin: 0;
+}
+.main-about {
+	padding: var(--font-scale-3);
 }
 .main-about .md-wrapper,
 .main-about p {
 	display: inline;
 }
 .main-about .about-link {
+	font-family: var(--fs);
 	white-space: nowrap;
 }
 .main-about .arrow {
@@ -16,31 +25,16 @@
 	width: 1ch;
 }
 .section .row {
-	display: block;
+	column-gap: 60px;
+	display: grid;
+	grid-template-columns: 25% 1fr;
 	margin: 0 auto;
 	max-width: 100%;
 	padding: var(--font-scale-6) 5%;
 }
-.section .row > :first-child {
-	display: inline-block;
-	font-family: var(--fh);
-	padding-right: 10px;
+.main-projects-title {
+	margin-top: -8px;
 	text-align: right;
-	vertical-align: top;
-	width: 25%;
-}
-.section .row > :first-child h2 {
-	margin-bottom: 0;
-}
-.section .row > :last-child {
-	display: inline-block;
-	font-family: var(--fs);
-	padding-left: 100px;
-	padding-top: 12px; /* HACK(riley): Align the h2. */
-	position: relative;
-	text-align: left;
-	top: -4px;
-	width: 70%;
 }
 .about-stub {
 	font-size: var(--font-scale-2);
@@ -50,7 +44,7 @@
 	display: inline;
 }
 .main-projects .content-grid {
-	padding-top: 8px;
+	padding-top: 8px !important;
 }
 .main-projects .content-grid .content-node {
 	grid-column-end: -1;
@@ -63,10 +57,19 @@ h2 + .lab-link {
 	font-size: var(--font-scale-2);
 }
 @media only screen and (max-width: 960px) {
-	.main-content .section .row > * {
-		display: block;
-		padding: 0;
+	.section .row {
+		grid-template-columns: 1fr;
+		padding: var(--font-scale-3) 1em 0;
+	}
+	.main-about {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.frontpage-doodle {
+		display: none;
+	}
+	.main-projects-title {
+		margin-bottom: 1em;
 		text-align: left;
-		width: 100%;
 	}
 }

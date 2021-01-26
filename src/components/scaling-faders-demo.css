@@ -21,7 +21,7 @@
 .scaling-faders-demo {
 	color: var(--cfg);
 	flex-direction: column;
-	font: italic 600 24px var(--fs);
+	font: 500 24px var(--fss);
 	height: 400px;
 	margin-bottom: var(--font-scale-4);
 	max-width: 100%;

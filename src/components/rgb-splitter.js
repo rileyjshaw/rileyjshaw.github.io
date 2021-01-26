@@ -13,8 +13,7 @@ const deepCloneChildren = (children, propsFn = null) =>
 			: child
 	);
 
-const INTENSITY = 1;
-export default ({children, El = 'div', className, style}) => {
+export default ({children, El = 'div', className, style, intensity = 1}) => {
 	const [ref, inView] = useInView({threshold: 0});
 	const mousePosition = useMousePosition(
 		typeof window !== 'undefined' && inView && window
@@ -35,8 +34,8 @@ export default ({children, El = 'div', className, style}) => {
 	const offsets = Array.from({length: 3}, (_, i) => {
 		const a = angle + (i * Math.PI * 2) / 3;
 		return {
-			top: magnitude * Math.sin(a) * INTENSITY,
-			left: magnitude * Math.cos(a) * INTENSITY,
+			top: magnitude * Math.sin(a) * intensity,
+			left: magnitude * Math.cos(a) * intensity,
 		};
 	});
 

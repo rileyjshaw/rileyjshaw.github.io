@@ -7,14 +7,14 @@
 	--cm: #e91e63;
 	--cy: #ffdc00;
 	--ck: #0a0b08;
-	--cbg: #fff;
+	--cbg: #faf9f7;
 	--cbgrgb: 255, 255, 255;
 	--cfg: var(--ck);
-	--fss: arial, 'Helvetica Neue', helvetica, sans-serif;
+	--fss: 'Geomanist', arial, 'Helvetica Neue', helvetica, sans-serif;
 	--fs: georgia, palatino, 'Palatino Linotype', times, 'Times New Roman',
 		serif;
-	--fh: 'Proxima Nova', 'Montserrat', 'Arial Black', 'Arial Bold', gadget,
-		sans-serif;
+	--fh: 'Geomanist', 'Proxima Nova', 'Montserrat', 'Arial Black',
+		'Arial Bold', gadget, sans-serif;
 	--fm: 'Courier New', courier, 'Lucida Sans Typewriter', 'Lucida Typewriter',
 		monospace;
 	--s7: 2.80492446em;
@@ -85,6 +85,7 @@ h2,
 h3,
 h4 {
 	font-family: var(--fh);
+	font-weight: 500;
 }
 /* TODO(riley): I wanted to delete these rules at some point. Starting here… */
 h1 {
@@ -93,7 +94,7 @@ h1 {
 }
 h2 {
 	font-size: var(--font-scale-3);
-	margin: var(--font-scale-0) 0 var(--font-scale--2);
+	margin: var(--font-scale-0) 0 0;
 }
 h3,
 h4 {
