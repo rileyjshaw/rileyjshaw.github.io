@@ -61,13 +61,16 @@
 	cursor: pointer;
 	display: flex;
 	grid-area: span 2 / span 3;
+	height: 100%;
+	image-rendering: pixelated;
 	image-rendering: crisp-edges;
 	justify-content: center;
 }
 .doodle-background-generator span {
 	background: var(--cbg);
 	border: 6px solid var(--cfg);
-	font: var(--font-scale--1) var(--fh);
+	font: 900 var(--font-scale--1) var(--fh);
+	letter-spacing: 3px;
 	padding: 6px 12px;
 	text-transform: uppercase;
 }
