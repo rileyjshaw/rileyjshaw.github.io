@@ -3,6 +3,7 @@ import React from 'react';
 import TextGrid from './text-grid';
 import CycleText from './cycle-text';
 import BackgroundGenerator from './doodles/background-generator';
+import CircleConstrainedLines from './doodles/circle-constrained-lines';
 
 import './grid-doodles.css';
 
@@ -12,6 +13,12 @@ export default [
 			<BackgroundGenerator El="li" ref={ref} {...props} />
 		)),
 		0.8,
+	],
+	[
+		React.forwardRef((props, ref) => (
+			<CircleConstrainedLines El="li" ref={ref} {...props} />
+		)),
+		1,
 	],
 	[
 		React.forwardRef((props, ref) => (
@@ -111,7 +118,7 @@ export default [
 				{...props}
 				ref={ref}
 			>
-				Hail Santa!
+				Secret message!
 			</CycleText>
 		)),
 		0.05,

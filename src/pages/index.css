@@ -1,7 +1,25 @@
 .frontpage-doodle {
 	aspect-ratio: 1 / 1;
-	height: 100%;
+	border: 5px solid var(--cfg);
+	height: max-content;
 	max-width: 100%;
+	position: relative;
+}
+.frontpage-doodle .new-doodle {
+	align-items: center;
+	background: var(--cbg);
+	border: 6px solid var(--cfg);
+	border-radius: 50%;
+	bottom: -21px;
+	display: flex;
+	height: 56px;
+	justify-content: center;
+	position: absolute;
+	right: -21px;
+	width: 56px;
+}
+.frontpage-doodle .new-doodle svg {
+	transform: scale(1.2) translateX(-0.5px);
 }
 .main-content h2 {
 	font-size: var(--font-scale-3);

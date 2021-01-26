@@ -70,7 +70,7 @@
 	background: var(--cbg);
 	border: 6px solid var(--cfg);
 	font: 900 var(--font-scale--1) var(--fh);
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 	padding: 6px 12px;
 	text-transform: uppercase;
 }
@@ -87,6 +87,17 @@
 .wavytext span {
 	animation: hop 1s infinite alternate ease-in-out;
 	display: inline-block;
+}
+.doodle-constrained-lines {
+	align-items: center;
+	background: var(--cfg);
+	display: flex;
+	grid-area: span 3 / span 3;
+	justify-content: center;
+}
+.doodle-constrained-lines canvas {
+	max-height: 100%;
+	max-width: 100%;
 }
 @keyframes hop {
 	from {
