@@ -178,7 +178,9 @@ class ProjectExplorer extends React.PureComponent {
 	render() {
 		// const {tags} = this.props;
 		const {nodes} = this.state;
-
+		const nSources =
+			this.state.typeStates.reduce((a, b) => a + b) ||
+			this.state.typeStates.length;
 		return (
 			<div className="project-explorer">
 				<button
@@ -323,11 +325,8 @@ class ProjectExplorer extends React.PureComponent {
 				</div>
 				<p className="result-details">
 					Found <strong>{nodes.length}</strong> entries from{' '}
-					<strong>
-						{this.state.typeStates.reduce((a, b) => a + b) ||
-							this.state.typeStates.length}
-					</strong>{' '}
-					sources:
+					<strong>{nSources}</strong> source
+					{nSources === 1 ? 's' : ''}:
 				</p>
 				<LazyGrid
 					nodes={nodes}
