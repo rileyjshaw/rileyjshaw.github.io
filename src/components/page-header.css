@@ -7,15 +7,43 @@
 }
 .title {
 	color: var(--cfg);
-	display: flex;
-	flex-direction: column;
 	font-family: var(--fh);
-	font-size: var(--font-scale-5);
-	font-weight: 900;
-	line-height: 1;
+	font-size: var(--font-scale-4);
+	font-weight: 500;
+	line-height: 1.1;
 	margin: 0;
 	padding-bottom: 12px;
+	position: relative;
 }
 .page-header a {
 	text-decoration: none;
+}
+.title .r,
+.title .g,
+.title .b {
+	mix-blend-mode: multiply;
+	width: max-content;
+	will-change: left, top;
+}
+.title .r {
+	color: var(--cr);
+	position: relative;
+}
+.title .r > :last-child {
+	margin-bottom: -0.1em;
+}
+.title .g,
+.title .b {
+	pointer-events: none;
+	position: absolute;
+	user-select: none;
+}
+.title .g {
+	color: var(--cg);
+}
+.title .b {
+	color: var(--cb);
+}
+.title span {
+	display: block;
 }

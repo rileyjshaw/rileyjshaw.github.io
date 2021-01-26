@@ -26,6 +26,9 @@
 	margin: 0;
 	position: relative;
 }
+.about-page .timeline li:first-child h3 {
+	margin-top: var(--font-scale--1);
+}
 .about-page .timeline .logo {
 	height: 42px !important;
 	width: 42px !important;

@@ -23,11 +23,12 @@
 .project-explorer .result-details {
 	font-family: var(--fh);
 	font-size: var(--font-scale-1);
-	font-weight: 900;
+	font-weight: 500;
 	grid-column: legends;
 	line-height: 47px; /* HACK(riley): Matches the button size. */
 }
 .project-explorer .filters .legend {
+	font-weight: 900;
 	margin: 0;
 }
 .project-explorer .filters .inputs {
@@ -56,7 +57,7 @@
 	display: inline-block;
 	font-family: var(--fh);
 	font-size: var(--font-scale--1);
-	font-weight: 900;
+	font-weight: 500;
 	margin: 0 0 30px 16px;
 	padding: 10px 20px;
 }
@@ -68,6 +69,8 @@
 .project-explorer .filters :checked + label {
 	background: var(--grey);
 	box-shadow: none;
+	font-weight: 900;
+	text-decoration: underline 2px;
 	transform: translate(3px, 3px);
 }
 .project-explorer .filters header button {

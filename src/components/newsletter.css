@@ -1,7 +1,7 @@
 .newsletter-form,
 .newsletter-form input {
 	font-family: var(--fs);
-	font-weight: bold;
+	font-weight: 500;
 }
 .newsletter-form {
 	margin-bottom: var(--font-scale-3);

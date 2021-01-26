@@ -1,8 +1,8 @@
 .content-node.doingreat-grid {
 	background: var(--cfg);
 	color: var(--cbg);
-	font-weight: bold;
-	/* grid-area: 9 / 2 / span 3 / span 2; */
+	font-family: var(--fh);
+	font-weight: 900;
 	grid-area: span 2 / span 2;
 	justify-items: stretch;
 	text-align: center;
@@ -79,7 +79,7 @@
 	background: var(--cb);
 	color: var(--cy);
 	display: flex;
-	font: var(--font-scale--1) var(--fh);
+	font: 900 var(--font-scale--1) var(--fh);
 	grid-area: span 1 / span 3;
 	justify-content: space-around;
 	padding-top: 20px;

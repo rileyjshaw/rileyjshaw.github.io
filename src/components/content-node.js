@@ -13,7 +13,17 @@ import './content-node.css';
 //   "date":
 export default React.memo(
 	React.forwardRef((props, ref) => {
-		const {type, title, date, link, repo, uid, tags, Doodle} = props;
+		const {
+			type,
+			title,
+			date,
+			link,
+			repo,
+			uid,
+			tags,
+			Doodle,
+			masonry,
+		} = props;
 
 		if (type === 'doodle') return <Doodle ref={ref} />;
 		if (!contentTypes[type]) return null;
@@ -41,7 +51,7 @@ export default React.memo(
 			content-node`}
 				key={uid}
 				ref={ref}
-				style={span && {gridRowEnd: `span ${span}`}}
+				style={span && masonry && {gridRowEnd: `span ${span}`}}
 			>
 				{/* Note: might be able to make this more semantic. Sources:
 			https://stackoverflow.com/questions/12866008/html5-semantic-markup-for-blog-post-tags-and-categories

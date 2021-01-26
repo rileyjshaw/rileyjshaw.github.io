@@ -230,7 +230,7 @@ class ProjectExplorer extends React.PureComponent {
 								className="labs-clear labs-clear-types"
 								onClick={this.handleClearTypesClick}
 							>
-								X
+								✖
 							</button>
 							<p className="legend">Sort by:</p>
 							<div className="inputs">
@@ -316,7 +316,7 @@ class ProjectExplorer extends React.PureComponent {
 								className="labs-clear labs-clear-tags"
 								onClick={this.handleClearTagsClick}
 							>
-								X
+								✖
 							</button> */}
 						</div>
 					)}
@@ -361,7 +361,9 @@ function LazyGrid({nodes, setIsFullyLoaded}) {
 		setIsFullyLoaded && setIsFullyLoaded(renderLimit >= nodes.length);
 	}, [nodes.length, renderLimit]);
 
-	return <ContentGrid nodes={nodes.slice(0, renderLimit)} ref={ref} />;
+	return (
+		<ContentGrid masonry nodes={nodes.slice(0, renderLimit)} ref={ref} />
+	);
 }
 
 export default props => {

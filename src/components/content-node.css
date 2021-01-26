@@ -36,7 +36,7 @@
 	display: flex;
 	font-family: var(--fh);
 	font-size: var(--font-scale--1);
-	font-weight: 900;
+	font-weight: 500;
 	height: 27px;
 	justify-content: center;
 	left: -1px;
@@ -46,6 +46,7 @@
 }
 .content-node h1 {
 	font-size: var(--font-scale-2);
+	line-height: 1.5;
 	margin-bottom: 8px;
 	margin-top: var(--font-scale-1);
 }
@@ -75,10 +76,10 @@
 	font-family: var(--fss);
 	font-size: var(--font-scale--2);
 	font-style: italic;
-	font-weight: bold;
+	font-weight: 500;
 	margin: 0;
 	position: relative;
-	top: -0.5em;
+	top: -1em;
 }
 .content-node .subheading a[target='_blank']::after {
 	content: '\279A';
@@ -108,7 +109,7 @@
 .content-node footer {
 	margin-top: auto;
 }
-.content-node.measured .inner {
+.masonry .content-node.measured .inner {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;

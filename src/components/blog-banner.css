@@ -10,6 +10,9 @@
 .blog-banner + .blog-banner {
 	margin-top: 1.5em;
 }
+.blog-banner + p {
+	margin-top: 2em;
+}
 .blog-banner a {
 	color: var(--cbg);
 }
@@ -30,7 +33,7 @@
 	align-items: center;
 	border-right: 1px solid var(--cbg);
 	display: flex;
-	font-weight: bold;
+	font-weight: 500;
 	margin-right: 1.5em;
 	padding-right: 1.5em;
 }
