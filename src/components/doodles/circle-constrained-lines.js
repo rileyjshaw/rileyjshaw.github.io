@@ -1,6 +1,8 @@
 import React, {useRef, useEffect} from 'react';
 import {colors} from '../../util/constants';
 
+import './circle-constrained-lines.css';
+
 const {PI, cos, sin} = Math;
 const L = 800;
 const ROTATIONS = 10;

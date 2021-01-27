@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react';
 import {randSequence, lcm} from '../../util/util';
 import {colors} from '../../util/constants';
 
+import './background-generator.css';
+
 const minWidth = 100; // Tiling width. Height is calculated dynamically.
 const maxWidth = 200;
 const minSequenceLength = 20; // Bigger numbers = more complex patterns.
