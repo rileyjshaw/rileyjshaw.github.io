@@ -7,6 +7,7 @@
 }
 .doodle-constrained-lines canvas {
 	background: var(--cfg);
+	cursor: pointer;
 	max-height: 100%;
 	max-width: 100%;
 }

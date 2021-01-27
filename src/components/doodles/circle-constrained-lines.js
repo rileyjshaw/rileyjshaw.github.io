@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from 'react';
+import React, {useRef, useState, useEffect} from 'react';
 import {colors} from '../../util/constants';
 
 import './circle-constrained-lines.css';
@@ -39,6 +39,7 @@ const variants = [
 
 export default function CircleConstrainedLines({El = 'div'}, ref) {
 	const canvasRef = useRef(null);
+	const [variant, setVariant] = useState(0);
 	useEffect(() => {
 		const canvas = canvasRef.current;
 		if (!canvas) return;
@@ -48,11 +49,12 @@ export default function CircleConstrainedLines({El = 'div'}, ref) {
 			nLines,
 			lineWidth,
 			globalCompositeOperation,
-		} = variants[Math.floor(Math.random() * variants.length)];
+		} = variants[variant];
 
 		const angleStep = (2 * PI) / nLines;
 		const ctx = canvas.getContext('2d');
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
+		ctx.beginPath();
 		ctx.globalCompositeOperation = globalCompositeOperation;
 		ctx.lineWidth = lineWidth;
 		ctx.strokeStyle = colors.fg;
@@ -77,13 +79,18 @@ export default function CircleConstrainedLines({El = 'div'}, ref) {
 			ctx.lineTo(C + x2, C + y2);
 			ctx.stroke();
 		}
-	}, []);
+	}, [variant]);
 	return (
 		<El
 			{...(ref.hasOwnProperty('current') ? {ref} : {})}
 			className="content-node doodle doodle-constrained-lines"
 		>
-			<canvas height={L} width={L} ref={canvasRef} />
+			<canvas
+				height={L}
+				width={L}
+				ref={canvasRef}
+				onClick={() => setVariant(v => (v + 1) % variants.length)}
+			/>
 		</El>
 	);
 }
