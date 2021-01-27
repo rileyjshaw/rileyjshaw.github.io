@@ -17,7 +17,7 @@
 		"date": "2018-11-21",
 		"link": "https://are.na/riley-shaw/hw-u1lmoisdnyu",
 		"description": "",
-		"updatedAt": "2021-01-16",
+		"updatedAt": "2021-01-27",
 		"length": 217,
 		"timestamp": 1542758400000
 	},
@@ -28,7 +28,7 @@
 		"date": "2018-11-04",
 		"link": "https://are.na/riley-shaw/suaxbjvglls",
 		"description": "",
-		"updatedAt": "2021-01-17",
+		"updatedAt": "2021-01-27",
 		"length": 13,
 		"timestamp": 1541289600000
 	},
@@ -38,7 +38,7 @@
 		"title": "~",
 		"date": "2018-12-09",
 		"link": "https://are.na/riley-shaw/tilde-qvdrqcjjopm",
-		"updatedAt": "2021-01-14",
+		"updatedAt": "2021-01-27",
 		"length": 15,
 		"timestamp": 1544313600000
 	},
@@ -2229,6 +2229,20 @@
 		"type": "project",
 		"uid": "PROJECT_FOLDING_TUTORIAL_CONCEPT",
 		"timestamp": 1415836800000
+	},
+	{
+		"title": "Font comparison tool",
+		"date": "2021-01-26",
+		"coolness": 73,
+		"link": "https://github.com/rileyjshaw/font-comparison-tool",
+		"tags": ["app", "online", "pretty", "reusable"],
+		"descriptionList": [
+			"A tool for comparing local / web fonts side-by-side.",
+			"This wasn’t designed for public consumption, but the code is open-source if you want to remix it with your own fonts. I recorded <a href=\"https://youtu.be/TRGodGOu3Ww\" rel=\"noopener noreferrer\" target=\"_blank\">a quick session of myself using it</a> if you’re curious."
+		],
+		"type": "project",
+		"uid": "PROJECT_FONT_COMPARISON_TOOL",
+		"timestamp": 1611619200000
 	},
 	{
 		"title": "Free",
