@@ -56,57 +56,49 @@ const IndexPage = ({featuredProjects = [], location}) => {
 			<SEO />
 			<PageHeader fromPage={location?.state?.fromPage} />
 			<main className="main-content">
-				<div className="section main-about">
-					<div className="row">
-						<div className="frontpage-doodle" style={doodleStyles}>
-							<Doodle />
-							<button
-								className="new-doodle"
-								onClick={() =>
-									setDoodleIdx(
-										idx => (idx + 1) % doodles.length
-									)
-								}
-							>
-								<Repeat />
-							</button>
-						</div>
-						<div className="about-stub">
-							<MDXRenderer className="md-wrapper">
-								{body}
-							</MDXRenderer>{' '}
-							<Link to="/about" className="about-link">
-								More{' '}
-								<CycleText
-									className="arrow"
-									OuterElement="span"
-									ms={100}
-								>
-									➫➯➱➬–
-								</CycleText>
-							</Link>
-						</div>
+				<div className="frontpage-grid">
+					<div className="frontpage-doodle" style={doodleStyles}>
+						<Doodle />
+						<button
+							className="new-doodle"
+							onClick={() =>
+								setDoodleIdx(idx => (idx + 1) % doodles.length)
+							}
+						>
+							<Repeat />
+						</button>
 					</div>
-				</div>
-				{/* Include News, Newsletter? */}
-				<div className="section main-projects">
-					<div className="row">
-						<div className="main-projects-title">
-							<h2>Recent additions</h2>
+					<div className="about-stub">
+						<MDXRenderer className="about-md-wrapper">
+							{body}
+						</MDXRenderer>{' '}
+						<Link to="/about" className="about-link">
+							More{' '}
+							<CycleText
+								className="about-arrow"
+								OuterElement="span"
+								ms={100}
+							>
+								➫➯➱➬–
+							</CycleText>
+						</Link>
+					</div>
+					{/* Include News, Newsletter? */}
+					<div className="main-projects-title">
+						<h2>Recent additions</h2>
+						<Link className="lab-link" to="/lab">
+							(explore all)
+						</Link>
+					</div>
+					<div>
+						<ContentGrid nodes={featuredProjects} />
+						<p className="explore-more">
+							Sort through hundreds of projects and posts in{' '}
 							<Link className="lab-link" to="/lab">
-								(explore all)
+								the lab
 							</Link>
-						</div>
-						<div>
-							<ContentGrid nodes={featuredProjects} />
-							<p className="explore-more">
-								Sort through hundreds of projects and posts in{' '}
-								<Link className="lab-link" to="/lab">
-									the lab
-								</Link>
-								.
-							</p>
-						</div>
+							.
+						</p>
 					</div>
 				</div>
 				<BigQuote quoteId="SPUTTERED_AND_STOPPED" />
