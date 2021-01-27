@@ -3,16 +3,39 @@ import {colors} from '../../util/constants';
 
 import './circle-constrained-lines.css';
 
-const {PI, cos, sin} = Math;
+const {PI, cos, sin, pow} = Math;
 const L = 800;
-const ROTATIONS = 10;
 const R = L / 3;
-const N_LINES = 1000;
-const LINE_WIDTH = 1;
+const N_LINES = 800;
 
 // Derived.
 const C = L / 2;
-const ANGLE_STEP = (2 * PI) / N_LINES;
+
+const variants = [
+	{
+		getOffset: (i, nLines) =>
+			sin((i / nLines) * PI * 2) * cos((i / nLines) * PI * 2) * PI * 10,
+		nLines: 800,
+		lineWidth: 1,
+		globalCompositeOperation: 'overlay',
+	},
+	{
+		getOffset: (i, nLines) =>
+			pow(sin((i / nLines) * 2 * PI) * cos((i / nLines) * 2 * PI), 2) *
+			2 *
+			PI *
+			2,
+		nLines: 800,
+		lineWidth: 1,
+		globalCompositeOperation: 'overlay',
+	},
+	{
+		getOffset: (i, nLines) => (i / nLines) * 2 * PI * 1.5,
+		nLines: 100,
+		lineWidth: 2,
+		globalCompositeOperation: 'source-over',
+	},
+];
 
 export default function CircleConstrainedLines({El = 'div'}, ref) {
 	const canvasRef = useRef(null);
@@ -20,9 +43,18 @@ export default function CircleConstrainedLines({El = 'div'}, ref) {
 		const canvas = canvasRef.current;
 		if (!canvas) return;
 
+		const {
+			getOffset,
+			nLines,
+			lineWidth,
+			globalCompositeOperation,
+		} = variants[Math.floor(Math.random() * variants.length)];
+
+		const angleStep = (2 * PI) / nLines;
 		const ctx = canvas.getContext('2d');
-		ctx.globalCompositeOperation = 'overlay';
-		ctx.lineWidth = LINE_WIDTH;
+		ctx.clearRect(0, 0, canvas.width, canvas.height);
+		ctx.globalCompositeOperation = globalCompositeOperation;
+		ctx.lineWidth = lineWidth;
 		ctx.strokeStyle = colors.fg;
 		ctx.fillStyle = colors.co;
 		ctx.arc(C, C, R * 1.03, 0, 2 * PI);
@@ -32,13 +64,9 @@ export default function CircleConstrainedLines({El = 'div'}, ref) {
 		ctx.arc(C, C, R, 0, 2 * PI);
 		ctx.stroke();
 
-		for (let i = 0; i < N_LINES; ++i) {
-			const offset =
-				sin((i / N_LINES) * PI * 2) *
-				cos((i / N_LINES) * PI * 2) *
-				PI *
-				ROTATIONS;
-			const angle = i * ANGLE_STEP;
+		for (let i = 0; i < nLines; ++i) {
+			const offset = getOffset(i, nLines);
+			const angle = i * angleStep;
 			const x1 = cos(angle) * R;
 			const y1 = sin(angle) * R;
 			const x2 = cos(angle + offset) * R;
@@ -55,14 +83,7 @@ export default function CircleConstrainedLines({El = 'div'}, ref) {
 			{...(ref.hasOwnProperty('current') ? {ref} : {})}
 			className="content-node doodle doodle-constrained-lines"
 		>
-			<canvas
-				height={L}
-				width={L}
-				style={{
-					background: colors.fg,
-				}}
-				ref={canvasRef}
-			/>
+			<canvas height={L} width={L} ref={canvasRef} />
 		</El>
 	);
 }
