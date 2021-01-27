@@ -39,7 +39,9 @@ const variants = [
 
 export default function CircleConstrainedLines({El = 'div'}, ref) {
 	const canvasRef = useRef(null);
-	const [variant, setVariant] = useState(0);
+	const [variant, setVariant] = useState(
+		Math.floor(Math.random() * variants.length)
+	);
 	useEffect(() => {
 		const canvas = canvasRef.current;
 		if (!canvas) return;
