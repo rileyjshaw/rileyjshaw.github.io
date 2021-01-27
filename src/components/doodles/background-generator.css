@@ -11,7 +11,9 @@
 .doodle-background-generator span {
 	background: var(--cbg);
 	border: 6px solid var(--cfg);
-	font: 900 var(--font-scale--1) var(--fh);
+	font-family: var(--fh);
+	font-size: var(--font-scale--1);
+	font-weight: 900;
 	letter-spacing: 2px;
 	padding: 6px 12px;
 	text-transform: uppercase;
