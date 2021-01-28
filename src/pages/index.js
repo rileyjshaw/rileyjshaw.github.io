@@ -12,6 +12,7 @@ import Layout from '../components/layout';
 import PageHeader from '../components/page-header';
 import SEO from '../components/seo';
 import {ReactComponent as Repeat} from '../../content/images/repeat.svg';
+import ClientOnly from '../components/client-only';
 
 // Doodles:
 import BackgroundGenerator from '../components/doodles/background-generator';
@@ -57,17 +58,22 @@ const IndexPage = ({featuredProjects = [], location}) => {
 			<PageHeader fromPage={location?.state?.fromPage} />
 			<main className="main-content">
 				<div className="frontpage-grid">
-					<div className="frontpage-doodle" style={doodleStyles}>
-						<Doodle />
-						<button
-							className="new-doodle"
-							onClick={() =>
-								setDoodleIdx(idx => (idx + 1) % doodles.length)
-							}
-						>
-							<Repeat />
-						</button>
-					</div>
+					{/* TODO: Why don’t the styles load on rehydration? */}
+					<ClientOnly>
+						<div className="frontpage-doodle" style={doodleStyles}>
+							<Doodle />
+							<button
+								className="new-doodle"
+								onClick={() =>
+									setDoodleIdx(
+										idx => (idx + 1) % doodles.length
+									)
+								}
+							>
+								<Repeat />
+							</button>
+						</div>
+					</ClientOnly>
 					<div className="about-stub">
 						<MDXRenderer className="about-md-wrapper">
 							{body}
