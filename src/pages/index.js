@@ -3,7 +3,6 @@ import BigQuote from '../components/big-quote';
 import ClientOnly from '../components/client-only';
 import ContentGrid from '../components/content-grid';
 import CycleText from '../components/cycle-text';
-// Doodles:
 import BackgroundGenerator from '../components/doodles/background-generator';
 import CircleConstrainedLines from '../components/doodles/circle-constrained-lines';
 import GoUp from '../components/go-up';
@@ -55,22 +54,23 @@ const IndexPage = ({featuredProjects = [], location}) => {
 			<PageHeader fromPage={location?.state?.fromPage} />
 			<main className="main-content">
 				<div className="frontpage-grid">
-					{/* TODO: Why don’t the styles load on rehydration? */}
-					<ClientOnly>
-						<div className="frontpage-doodle" style={doodleStyles}>
-							<Doodle />
-							<button
-								className="new-doodle"
-								onClick={() =>
-									setDoodleIdx(
-										idx => (idx + 1) % doodles.length
-									)
-								}
-							>
-								<Repeat />
-							</button>
-						</div>
-					</ClientOnly>
+					<div className="frontpage-doodle" style={doodleStyles}>
+						<ClientOnly>
+							<>
+								<Doodle />
+								<button
+									className="new-doodle"
+									onClick={() =>
+										setDoodleIdx(
+											idx => (idx + 1) % doodles.length
+										)
+									}
+								>
+									<Repeat />
+								</button>
+							</>
+						</ClientOnly>
+					</div>
 					<div className="about-stub">
 						<MDXRenderer className="about-md-wrapper">
 							{body}
