@@ -1,24 +1,21 @@
-import React, {useState} from 'react';
-import {useStaticQuery, graphql, Link} from 'gatsby';
-import {MDXRenderer} from 'gatsby-plugin-mdx';
-
-import allProjectsQuery from '../util/all-projects-query';
-import {sortByDate} from '../util/sorting-methods';
+import {ReactComponent as Repeat} from '../../content/images/repeat.svg';
 import BigQuote from '../components/big-quote';
+import ClientOnly from '../components/client-only';
 import ContentGrid from '../components/content-grid';
 import CycleText from '../components/cycle-text';
+// Doodles:
+import BackgroundGenerator from '../components/doodles/background-generator';
+import CircleConstrainedLines from '../components/doodles/circle-constrained-lines';
 import GoUp from '../components/go-up';
 import Layout from '../components/layout';
 import PageHeader from '../components/page-header';
 import SEO from '../components/seo';
-import {ReactComponent as Repeat} from '../../content/images/repeat.svg';
-import ClientOnly from '../components/client-only';
-
-// Doodles:
-import BackgroundGenerator from '../components/doodles/background-generator';
-import CircleConstrainedLines from '../components/doodles/circle-constrained-lines';
-
+import allProjectsQuery from '../util/all-projects-query';
+import {sortByDate} from '../util/sorting-methods';
 import './index.css';
+import {useStaticQuery, graphql, Link} from 'gatsby';
+import {MDXRenderer} from 'gatsby-plugin-mdx';
+import React, {useState} from 'react';
 
 const doodles = [
 	{

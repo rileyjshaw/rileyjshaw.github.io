@@ -1,7 +1,6 @@
+import './scaling-faders-demo.css';
 import React, {useEffect, useState} from 'react';
 import * as Tone from 'tone';
-
-import './scaling-faders-demo.css';
 
 const loops = [
 	{file: 'Beat1', initialVolume: 0.75},

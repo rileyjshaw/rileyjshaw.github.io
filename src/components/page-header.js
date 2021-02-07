@@ -1,10 +1,8 @@
-import React from 'react';
-import {Link} from 'gatsby';
-
-import SiteNav from '../components/site-nav';
 import RGBSplitter from '../components/rgb-splitter';
-
+import SiteNav from '../components/site-nav';
 import './page-header.css';
+import {Link} from 'gatsby';
+import React from 'react';
 
 export default ({fromPage}) => (
 	<header className="page-header">

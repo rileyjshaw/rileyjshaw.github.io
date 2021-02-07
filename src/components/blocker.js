@@ -1,8 +1,6 @@
-import React, {useState} from 'react';
-
 import {useInterval} from '../util/hooks';
-
 import './blocker.css';
+import React, {useState} from 'react';
 
 export const Time = () => {
 	const [date, setDate] = useState(new Date());

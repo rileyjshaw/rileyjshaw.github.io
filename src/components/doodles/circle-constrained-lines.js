@@ -1,7 +1,6 @@
-import React, {useRef, useState, useEffect} from 'react';
 import {colors} from '../../util/constants';
-
 import './circle-constrained-lines.css';
+import React, {useRef, useState, useEffect} from 'react';
 
 const {PI, cos, sin, pow} = Math;
 const L = 800;

@@ -1,11 +1,9 @@
-import React from 'react';
-
-import TextGrid from './text-grid';
 import CycleText from './cycle-text';
 import BackgroundGenerator from './doodles/background-generator';
 import CircleConstrainedLines from './doodles/circle-constrained-lines';
-
 import './grid-doodles.css';
+import TextGrid from './text-grid';
+import React from 'react';
 
 export default [
 	[

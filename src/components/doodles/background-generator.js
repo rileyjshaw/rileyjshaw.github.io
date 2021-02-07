@@ -1,8 +1,7 @@
-import React, {useState, useEffect} from 'react';
-import {randSequence, lcm} from '../../util/util';
 import {colors} from '../../util/constants';
-
+import {randSequence, lcm} from '../../util/util';
 import './background-generator.css';
+import React, {useState, useEffect} from 'react';
 
 const minWidth = 100; // Tiling width. Height is calculated dynamically.
 const maxWidth = 200;

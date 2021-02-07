@@ -1,13 +1,11 @@
-import React, {useState} from 'react';
-import {Link} from 'gatsby';
-
-import {ReactComponent as Planet} from '../../content/images/planet.svg';
 import {ReactComponent as Keyboard} from '../../content/images/keyboard.svg';
-import {ReactComponent as Rss} from '../../content/images/rss.svg';
 import {ReactComponent as Pin} from '../../content/images/pin.svg';
+import {ReactComponent as Planet} from '../../content/images/planet.svg';
+import {ReactComponent as Rss} from '../../content/images/rss.svg';
 import {ReactComponent as Sleep} from '../../content/images/sleep.svg';
-
 import './page-picker.css';
+import {Link} from 'gatsby';
+import React, {useState} from 'react';
 
 const pages = {
 	home: {

@@ -1,9 +1,7 @@
 // transform: scale
-import React from 'react';
-
-import useDimensions from 'react-use-dimensions';
-
 import './fit-3.css';
+import React from 'react';
+import useDimensions from 'react-use-dimensions';
 
 export default ({children, x, y}) => {
 	const [

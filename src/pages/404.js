@@ -1,13 +1,11 @@
-import React from 'react';
-import {Link} from 'gatsby';
-
 import {ExternalLink} from '../components/auto-link';
 import {Time} from '../components/blocker';
 import Layout from '../components/layout';
 import PageHeader from '../components/page-header';
 import SEO from '../components/seo';
-
 import './404.css';
+import {Link} from 'gatsby';
+import React from 'react';
 
 const NotFoundPage = ({location}) => (
 	<Layout>

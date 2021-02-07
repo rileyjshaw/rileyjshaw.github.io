@@ -1,6 +1,5 @@
-import React from 'react';
-
 import './up-to.css';
+import React from 'react';
 
 export default () => (
 	<div className="up-to">

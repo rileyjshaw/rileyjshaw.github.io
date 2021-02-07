@@ -1,10 +1,8 @@
-import React, {useState} from 'react';
-import {Link} from 'gatsby';
-
 import {ReactComponent as MenuIcon} from '../../content/images/menu.svg';
 import {useKeyPress} from '../util/hooks';
-
 import './site-nav.css';
+import {Link} from 'gatsby';
+import React, {useState} from 'react';
 
 const links = [
 	['/', 'Home'],

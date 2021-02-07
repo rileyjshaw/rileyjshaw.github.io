@@ -1,6 +1,5 @@
-import React from 'react';
-
 import './blog-banner.css';
+import React from 'react';
 
 const bannerTypes = {
 	edit: {

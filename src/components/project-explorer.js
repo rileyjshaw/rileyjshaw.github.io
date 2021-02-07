@@ -1,16 +1,13 @@
 // TODO(RILEY): https://tympanus.net/Development/TiltHoverEffects/index.html
-import React, {Fragment, useState, useEffect, useMemo} from 'react';
-import {useStaticQuery, graphql} from 'gatsby';
-
-import sortingMethods, {shuffle} from '../util/sorting-methods';
 import allProjectsQuery from '../util/all-projects-query';
 import contentTypes from '../util/content-types';
 import {useInView, useStickyState} from '../util/hooks';
-
-import gridDoodles from './grid-doodles';
+import sortingMethods, {shuffle} from '../util/sorting-methods';
 import ContentGrid from './content-grid';
-
+import gridDoodles from './grid-doodles';
 import './project-explorer.css';
+import {useStaticQuery, graphql} from 'gatsby';
+import React, {Fragment, useState, useEffect, useMemo} from 'react';
 
 const ProjectExplorer = React.memo(props => {
 	const [nodeTypes, version] = useMemo(() => {

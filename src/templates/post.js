@@ -1,11 +1,9 @@
-import React from 'react';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import './post.css';
 import {Link, graphql} from 'gatsby';
 import {MDXRenderer} from 'gatsby-plugin-mdx';
-
-import SEO from '../components/seo';
-import Layout from '../components/layout';
-
-import './post.css';
+import React from 'react';
 
 export default function Template({data}) {
 	const {mdx} = data;

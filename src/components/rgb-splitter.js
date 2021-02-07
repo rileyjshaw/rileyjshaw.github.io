@@ -1,6 +1,5 @@
-import React, {cloneElement, isValidElement} from 'react';
-
 import {useInView, useMousePosition, useWindowSize} from '../util/hooks';
+import React, {cloneElement, isValidElement} from 'react';
 
 const deepCloneChildren = (children, propsFn = null) =>
 	React.Children.map(children, child =>

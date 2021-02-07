@@ -1,7 +1,6 @@
-import React, {useState} from 'react';
-import {Link} from 'gatsby';
-
 import './palette-test-tool.css';
+import {Link} from 'gatsby';
+import React, {useState} from 'react';
 
 // sRGB luminance(Y) values
 const rY = 0.212655,

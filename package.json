@@ -44,6 +44,7 @@
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@commitlint/prompt": "^11.0.0",
+    "@trivago/prettier-plugin-sort-imports": "^1.4.1",
     "babel-preset-gatsby": "^0.12.1",
     "commitizen": "^4.2.3",
     "copyright-header": "^0.4.6",

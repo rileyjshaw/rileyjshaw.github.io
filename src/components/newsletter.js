@@ -1,6 +1,5 @@
-import React from 'react';
-
 import './newsletter.css';
+import React from 'react';
 
 export const Form = () => (
 	<form

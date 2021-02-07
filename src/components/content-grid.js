@@ -1,8 +1,6 @@
-import React from 'react';
-
-import ContentNode from './content-node';
-
 import './content-grid.css';
+import ContentNode from './content-node';
+import React from 'react';
 
 export default React.memo(
 	React.forwardRef(({nodes, masonry}, ref) => (

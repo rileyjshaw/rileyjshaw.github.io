@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
-
 import Fit from './fit-4';
+import React, {useState} from 'react';
 
 export default ({children}) => {
 	const [[rA, rB, rC, rD]] = useState([
