@@ -10,21 +10,25 @@ import Layout from '../components/layout';
 import PageHeader from '../components/page-header';
 import SEO from '../components/seo';
 import allProjectsQuery from '../util/all-projects-query';
-import {sortByDate} from '../util/sorting-methods';
+import {shuffle, sortByDate} from '../util/sorting-methods';
 import './index.css';
 import {useStaticQuery, graphql, Link} from 'gatsby';
 import {MDXRenderer} from 'gatsby-plugin-mdx';
 import React, {useState} from 'react';
 
+// Ensure the first doodle shown is consistent to prevent layout shifts on
+// initial load. Shuffle the rest.
 const doodles = [
 	{
 		Doodle: BackgroundGenerator,
 		styles: {height: '100%'},
 	},
-	{
-		Doodle: CircleConstrainedLines,
-		styles: {height: 'max-content'},
-	},
+	...shuffle([
+		{
+			Doodle: CircleConstrainedLines,
+			styles: {height: 'max-content'},
+		},
+	]),
 ];
 
 const IndexPage = ({featuredProjects = [], location}) => {
@@ -43,9 +47,7 @@ const IndexPage = ({featuredProjects = [], location}) => {
 		}
 	`);
 
-	const [doodleIdx, setDoodleIdx] = useState(
-		Math.floor(Math.random() * doodles.length)
-	);
+	const [doodleIdx, setDoodleIdx] = useState(0);
 	const {Doodle, styles: doodleStyles} = doodles[doodleIdx];
 
 	return (
