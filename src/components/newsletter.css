@@ -17,7 +17,9 @@
 	font-size: var(--font-scale--1);
 	margin: 0;
 }
-.newsletter-form .bottom-row {
+/* Allowing for inner div in case an extension wraps the input eg. FF Relay. */
+.newsletter-form .bottom-row,
+.newsletter-form .bottom-row > div {
 	display: flex;
 	height: 60px;
 	margin: var(--font-scale--1) 0;
