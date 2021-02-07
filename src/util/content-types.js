@@ -87,7 +87,7 @@ export const VideoContent = ({
 					<div className="video-embed">
 						<iframe
 							title={`An embedded video called "${title}"`}
-							allowfullscreen
+							allowFullScreen
 							frameBorder="0"
 							src={`https://www.youtube-nocookie.com/embed/${body}`}
 						></iframe>
