@@ -107,7 +107,7 @@ export default function BackgroundGenerator(props, ref) {
 			}
 			{...(ref.hasOwnProperty('current') ? {ref} : {})}
 		>
-			{clicked || <span>Click?</span>}
+			{clicked || <span class="default-button">Click?</span>}
 		</El>
 	);
 }

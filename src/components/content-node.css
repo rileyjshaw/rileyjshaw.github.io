@@ -9,12 +9,25 @@
 .content-node.doodle {
 	padding: 0;
 }
-.content-node .soundcloud {
-	margin-top: 12px;
+.content-node .song-content {
+	align-items: center;
+	display: flex;
+	height: 100px;
+	justify-content: center;
+	margin: 12px 0 24px;
 }
 .content-node .video-embed {
+	align-items: center;
+	display: flex;
+	justify-content: center;
 	padding-bottom: 56.25%;
 	position: relative;
+}
+.content-node .video-embed .block-embed-button {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 .content-node .video-embed iframe {
 	height: 100%;

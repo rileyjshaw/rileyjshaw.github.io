@@ -1,5 +1,11 @@
 import AutoLink, {ExternalLink} from '../components/auto-link';
-import React from 'react';
+import React, {useState} from 'react';
+
+const BlockEmbedButton = ({type, onClick}) => (
+	<button className="block-embed-button default-button" onClick={onClick}>
+		Load embedded media{type ? ` (${type})` : ''}
+	</button>
+);
 
 export const TitleOnly = () => null;
 export const ProjectContent = ({descriptionList}) =>
@@ -52,19 +58,32 @@ export const PatchContent = ({description, link}) => (
 		)}
 	</main>
 );
-export const SongContent = ({title, uid}) => (
-	<iframe
-		title={`An embedded song called "${title}"`}
-		className="soundcloud"
-		width="100%"
-		height="100"
-		scrolling="no"
-		frameBorder="no"
-		src={`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${uid.slice(
-			uid.indexOf('_') + 1
-		)}&color=%23000000&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=true`}
-	></iframe>
-);
+export const SongContent = ({title, uid}) => {
+	const [showEmbed, setShowEmbed] = useState(false);
+
+	return (
+		<div className="song-content">
+			{showEmbed ? (
+				<iframe
+					title={`An embedded song called "${title}"`}
+					className="soundcloud"
+					width="100%"
+					height="100"
+					scrolling="no"
+					frameBorder="no"
+					src={`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${uid.slice(
+						uid.indexOf('_') + 1
+					)}&color=%23000000&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=true`}
+				></iframe>
+			) : (
+				<BlockEmbedButton
+					type="SoundCloud"
+					onClick={() => setShowEmbed(true)}
+				/>
+			)}
+		</div>
+	);
+};
 export const VideoContent = ({
 	body,
 	contentType,
@@ -72,48 +91,54 @@ export const VideoContent = ({
 	title,
 	link,
 	more,
-}) => (
-	<main>
-		{
-			{
-				vimeo: body && (
-					<div
-						className="video-embed"
-						dangerouslySetInnerHTML={{__html: body}}
+}) => {
+	const [showEmbed, setShowEmbed] = useState(false);
+
+	return (
+		<main>
+			<div className="video-embed">
+				{showEmbed ? (
+					{
+						vimeo: body && (
+							<div dangerouslySetInnerHTML={{__html: body}} />
+						),
+						youtube: (
+							<iframe
+								title={`An embedded video called "${title}"`}
+								allowFullScreen
+								frameBorder="0"
+								src={`https://www.youtube-nocookie.com/embed/${body}`}
+							></iframe>
+						),
+					}[contentType]
+				) : (
+					<BlockEmbedButton
+						type={contentType === 'vimeo' ? 'Vimeo' : 'YouTube'}
+						onClick={() => setShowEmbed(true)}
 					/>
-				),
-				youtube: (
-					<div className="video-embed">
-						<iframe
-							title={`An embedded video called "${title}"`}
-							allowFullScreen
-							frameBorder="0"
-							src={`https://www.youtube-nocookie.com/embed/${body}`}
-						></iframe>
-					</div>
-				),
-			}[contentType]
-		}
-		{description && (
-			<>
-				<p>{description}</p>
-				{more && (
-					<p>
-						<ExternalLink to={link}>
-							Read the full description on{' '}
-							{
-								{
-									vimeo: 'Vimeo',
-									youtube: 'YouTube',
-								}[contentType]
-							}
-						</ExternalLink>
-					</p>
 				)}
-			</>
-		)}
-	</main>
-);
+			</div>
+			{description && (
+				<>
+					<p>{description}</p>
+					{more && (
+						<p>
+							<ExternalLink to={link}>
+								Read the full description on{' '}
+								{
+									{
+										vimeo: 'Vimeo',
+										youtube: 'YouTube',
+									}[contentType]
+								}
+							</ExternalLink>
+						</p>
+					)}
+				</>
+			)}
+		</main>
+	);
+};
 
 export default {
 	doodle: {
