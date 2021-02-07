@@ -1,18 +1,33 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 import {useIdle, useStickyState} from '../util/hooks';
 import Blocker from './blocker';
 
 import './layout.css';
 
+// TODO(April 2021): Just trying to be kind and clear out unused keys, but
+// delete this once April comes around.
+const unusedLocalStorageKeys = [
+	'ascending',
+	'nodeTypes',
+	'sortIdx',
+	'tagStates',
+	'typeStates',
+].map(name => `LAB_V1_${name}`);
+
 const Layout = ({children}) => {
 	const [isBlockerOpen, setIsBlockerOpen] = useState(false);
 	const [nTimesClosed, setNTimesClosed] = useStickyState(
 		0,
 		'nTimesClosedBlocker',
-		'session'
+		{scope: 'session'}
 	);
 	useIdle(60000 * 4 * (nTimesClosed + 1), () => setIsBlockerOpen(true));
+	useEffect(() => {
+		unusedLocalStorageKeys.forEach(key =>
+			window.localStorage.removeItem(key)
+		);
+	}, []);
 
 	return (
 		<>

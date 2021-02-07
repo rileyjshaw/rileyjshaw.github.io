@@ -2,11 +2,11 @@ import {useState, useEffect, useRef, useLayoutEffect} from 'react';
 import {useInView as useInViewExternal} from 'react-intersection-observer';
 
 export function useWindowSize(cb) {
-	const initialSize =
+	const [size, setSize] = useState(() =>
 		typeof window !== 'undefined'
 			? [window.innerWidth, window.innerHeight]
-			: [1000, 1000];
-	const [size, setSize] = useState(initialSize);
+			: [1000, 1000]
+	);
 	const debouncedSize = useDebounce(size, 300);
 	useEffect(() => {
 		const handleResize = () =>
@@ -158,16 +158,29 @@ export function useInView() {
 	return [ref, inView, entry];
 }
 
-export function useStickyState(defaultValue, key, scope = 'local') {
+export function useStickyState(
+	defaultValue,
+	key,
+	{scope = 'local', version = 'default'} = {}
+) {
 	const [value, setValue] = useState(() => {
-		const stickyValue =
-			typeof window === 'undefined'
-				? null
-				: window[`${scope}Storage`].getItem(key);
-		return stickyValue === null ? defaultValue : JSON.parse(stickyValue);
+		const evaluatedDefault =
+			typeof defaultValue === 'function' ? defaultValue() : defaultValue;
+		if (window === 'undefined') return evaluatedDefault;
+		const stickyValue = JSON.parse(window[`${scope}Storage`].getItem(key));
+		if (
+			!stickyValue?.hasOwnProperty?.('value') ||
+			!stickyValue?.hasOwnProperty?.('version') ||
+			!stickyValue.version === version
+		)
+			return evaluatedDefault;
+		return stickyValue.value;
 	});
 	useEffect(() => {
-		window[`${scope}Storage`].setItem(key, JSON.stringify(value));
-	}, [key, value]);
+		window[`${scope}Storage`].setItem(
+			key,
+			JSON.stringify({value, version})
+		);
+	}, [key, value, version]);
 	return [value, setValue];
 }
