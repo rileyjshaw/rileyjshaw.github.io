@@ -23,7 +23,7 @@ export default [
 			<li className="doodle wavytext" ref={ref}>
 				{'rileyjshaw'.split('').map((letter, i, {length}) => (
 					<span
-						key={`wavytext-${i}`}
+						key={i}
 						style={{animationDelay: `${(i - length) * 0.2}s`}}
 					>
 						{letter}

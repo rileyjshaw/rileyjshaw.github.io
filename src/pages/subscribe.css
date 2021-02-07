@@ -9,3 +9,16 @@
 .subscribe-page hr {
 	margin: var(--font-scale-4) 0;
 }
+.subscribe-page .rss-feeds {
+	display: grid;
+	gap: var(--font-scale-2) var(--font-scale-1);
+	grid-template-columns: max-content auto;
+	margin-top: var(--font-scale-2);
+}
+.subscribe-page .rss-feeds dt {
+	grid-column-start: 1;
+}
+.subscribe-page .rss-feeds dd {
+	grid-column-start: 2;
+	margin: 0;
+}
