@@ -17,8 +17,8 @@
 		"date": "2018-11-21",
 		"link": "https://are.na/riley-shaw/hw-u1lmoisdnyu",
 		"description": "",
-		"updatedAt": "2021-01-27",
-		"length": 217,
+		"updatedAt": "2021-02-07",
+		"length": 218,
 		"timestamp": 1542758400000
 	},
 	{
@@ -28,8 +28,8 @@
 		"date": "2018-11-04",
 		"link": "https://are.na/riley-shaw/suaxbjvglls",
 		"description": "",
-		"updatedAt": "2021-01-27",
-		"length": 13,
+		"updatedAt": "2021-02-06",
+		"length": 12,
 		"timestamp": 1541289600000
 	},
 	{
@@ -38,7 +38,7 @@
 		"title": "~",
 		"date": "2018-12-09",
 		"link": "https://are.na/riley-shaw/tilde-qvdrqcjjopm",
-		"updatedAt": "2021-01-27",
+		"updatedAt": "2021-02-06",
 		"length": 15,
 		"timestamp": 1544313600000
 	},
@@ -1044,26 +1044,24 @@
 		"link": "https://github.com/rileyjshaw/.supermac",
 		"lastTagged": 1564708739903,
 		"descriptionList": [
-			"A collection of dotfiles that I use + some scripts to keep 'em in sync."
+			"A collection of dotfiles that I use + some scripts to keep ’em in sync."
 		],
 		"type": "project",
 		"uid": "PROJECT_.SUPERMAC",
 		"timestamp": 1441584000000
 	},
 	{
-		"title": "\"Points\" color palette",
+		"title": "“Points” color palette",
 		"date": "2014-09-01",
 		"tags": ["online", "pretty"],
 		"coolness": 16,
 		"link": "http://codepen.io/rileyjshaw/full/JvdrG/",
 		"lastTagged": 1564624449407,
 		"descriptionList": [
-			"Hacked together an app with a rainbow interface. Threw this page together to see how things looked together.",
-			"100% for personal use so...",
-			"¯\\_(ツ)_/¯"
+			"I was designing an app with a rainbow interface, so I threw this page together to see how the palette looked together."
 		],
 		"type": "project",
-		"uid": "PROJECT_\"POINTS\"_COLOR_PALETTE",
+		"uid": "PROJECT_“POINTS”_COLOR_PALETTE",
 		"timestamp": 1409529600000
 	},
 	{
@@ -1086,7 +1084,7 @@
 		"link": "http://codepen.io/rileyjshaw/full/mPrXxb/",
 		"lastTagged": 1564707890990,
 		"descriptionList": [
-			"Variations on \"Stone\" with controlled line angles across the circle."
+			"Variations on <a href=\"http://codepen.io/rileyjshaw/pen/dMpJre\" rel=\"noopener noreferrer\" target=\"_blank\">Stone</a> with controlled line angles across the circle."
 		],
 		"type": "project",
 		"uid": "PROJECT_┋┋┋",
@@ -1327,7 +1325,7 @@
 		"coolness": 40,
 		"link": "http://codepen.io/rileyjshaw/details/ONyGxM/",
 		"lastTagged": 1564707897855,
-		"descriptionList": ["Hey! It's a normal distribution!"],
+		"descriptionList": ["Hey! It’s a normal distribution!"],
 		"type": "project",
 		"uid": "PROJECT_BELL_CURVES",
 		"timestamp": 1457222400000
@@ -1342,7 +1340,7 @@
 		"descriptionList": [
 			"A multiplayer shark-frenzy controlled with your phone.",
 			"Created with friends at Hacker School. I was in charge of the mobile + WebSocket controller framework and the server.",
-			"This used to be on Chrome Experiments but it's offline now :("
+			"This used to be on Chrome Experiments but it’s offline now :("
 		],
 		"type": "project",
 		"uid": "PROJECT_BEN_EATH:_SURF_ACE",
@@ -1521,7 +1519,7 @@
 		"coolness": 24,
 		"link": "http://codepen.io/rileyjshaw/pen/bzeqL?editors=0010",
 		"lastTagged": 1564708933870,
-		"descriptionList": ["lol these variable names..."],
+		"descriptionList": ["lol these variable names…"],
 		"type": "project",
 		"uid": "PROJECT_CANVAS_SPECTRUM",
 		"timestamp": 1387584000000
@@ -1639,7 +1637,7 @@
 		"link": "http://codepen.io/rileyjshaw/pen/blCIq/",
 		"lastTagged": 1564708936373,
 		"descriptionList": [
-			"Recreating a popular clothing brand's logo in CSS."
+			"Recreating a popular clothing brand’s logo in CSS."
 		],
 		"type": "project",
 		"uid": "PROJECT_COS_LOGO",
@@ -1882,7 +1880,7 @@
 		"link": "https://gist.github.com/rileyjshaw/fab2c01b9bb85e598fffba130ca28d0a",
 		"lastTagged": 1564608392569,
 		"descriptionList": [
-			"Create a private Twitter list out of someone else's feed so you can read it."
+			"Create a private Twitter list out of someone else’s feed so you can read it."
 		],
 		"type": "project",
 		"uid": "PROJECT_DITTER",
@@ -1895,7 +1893,7 @@
 		"coolness": 25,
 		"link": "http://codepen.io/rileyjshaw/details/eAEya/",
 		"lastTagged": 1564708969001,
-		"descriptionList": ["Hover over \"DNS\"."],
+		"descriptionList": ["Hover over “DNS”."],
 		"type": "project",
 		"uid": "PROJECT_DNS_ERROR_EASTER_EGG",
 		"timestamp": 1382918400000
@@ -2057,7 +2055,7 @@
 		"link": "https://github.com/rileyjshaw/filesupply",
 		"lastTagged": 1564708828018,
 		"descriptionList": [
-			"WebRTC file sharing concept thrown together in ~40 minutes (or your pizza's free!)"
+			"WebRTC file sharing concept thrown together in ~40 minutes (or your pizza’s free!)"
 		],
 		"type": "project",
 		"uid": "PROJECT_FILESUPPLY",
@@ -2070,7 +2068,7 @@
 		"coolness": 60,
 		"link": "http://codepen.io/rileyjshaw/pen/ONxKVd?editors=0010",
 		"lastTagged": 1564707866386,
-		"descriptionList": ["Cliché vector \"field\" \"diagram\"."],
+		"descriptionList": ["Cliché vector “field” “diagram”."],
 		"type": "project",
 		"uid": "PROJECT_FILINGS",
 		"timestamp": 1459728000000
@@ -2133,21 +2131,21 @@
 		"lastTagged": 1564708783154,
 		"descriptionList": [
 			"Responsive chat interface using CSS flexbox.",
-			"Created as a proof of concept for TextSecure's browser extension layout."
+			"Created as a proof of concept for TextSecure’s browser extension layout."
 		],
 		"type": "project",
 		"uid": "PROJECT_FLEXBOX_CHAT_INTERFACE",
 		"timestamp": 1421020800000
 	},
 	{
-		"title": "Flexin' donut",
+		"title": "Flexin’ donut",
 		"date": "2016-03-28",
 		"tags": ["online", "pretty"],
 		"coolness": 60,
 		"link": "http://s.codepen.io/rileyjshaw/debug/BKZOwz",
 		"lastTagged": 1564707875762,
 		"type": "project",
-		"uid": "PROJECT_FLEXIN'_DONUT",
+		"uid": "PROJECT_FLEXIN’_DONUT",
 		"timestamp": 1459123200000
 	},
 	{
@@ -2170,7 +2168,7 @@
 		"link": "https://github.com/rileyjshaw/flubber",
 		"lastTagged": 1564707806856,
 		"descriptionList": [
-			"Nobody's perfect! Takes a MIDI file and messes up a few of the notes."
+			"Nobody’s perfect! Takes a MIDI file and messes up a few of the notes."
 		],
 		"type": "project",
 		"uid": "PROJECT_FLUBBER",
@@ -2184,7 +2182,7 @@
 		"link": "https://www.khanacademy.org/computer-programming/fluid-simulation/6333748830011392",
 		"lastTagged": 1564708761419,
 		"descriptionList": [
-			"Jeff Thomas's Fluid Simulation, ported to Khan Academy's CS platform."
+			"Jeff Thomas’s Fluid Simulation, ported to Khan Academy’s CS platform."
 		],
 		"type": "project",
 		"uid": "PROJECT_FLUID_SIMULATION",
@@ -2265,7 +2263,7 @@
 		"lastTagged": 1564708981557,
 		"descriptionList": [
 			"A simple frequency bar visualizer for audio in Processing.",
-			"Features a terrible mash-up of Watermelon Man and Mos Def's Beef freestyle that I threw together in Audacity..."
+			"Features a terrible mash-up of Watermelon Man and Mos Def’s Beef freestyle that I threw together in Audacity…"
 		],
 		"type": "project",
 		"uid": "PROJECT_FREQUENCY_BAR_VISUALIZER",
@@ -2404,7 +2402,7 @@
 		"timestamp": 1400544000000
 	},
 	{
-		"title": "Gotta catch 'em all",
+		"title": "Gotta catch ’em all",
 		"date": "2015-12-15",
 		"tags": ["online", "pretty"],
 		"coolness": 30,
@@ -2412,7 +2410,7 @@
 		"lastTagged": 1564707917359,
 		"descriptionList": ["Riffing on pokéball wave."],
 		"type": "project",
-		"uid": "PROJECT_GOTTA_CATCH_'EM_ALL",
+		"uid": "PROJECT_GOTTA_CATCH_’EM_ALL",
 		"timestamp": 1450137600000
 	},
 	{
@@ -2474,7 +2472,7 @@
 		"lastTagged": 1564708786127,
 		"descriptionList": [
 			"Retro command line emulator using my TinyTerm library.",
-			"Type \"help\" for command list."
+			"Type “help” for command list."
 		],
 		"type": "project",
 		"uid": "PROJECT_HACKERS.COOL",
@@ -2487,7 +2485,7 @@
 		"coolness": 39,
 		"link": "http://codepen.io/rileyjshaw/full/BKvWBP/",
 		"lastTagged": 1564707848382,
-		"descriptionList": ["It's hard to see the ship... :/"],
+		"descriptionList": ["It’s hard to see the ship… :/"],
 		"type": "project",
 		"uid": "PROJECT_HAVE_YOU_SEEN_MY_SHIP?",
 		"timestamp": 1462320000000
@@ -2621,7 +2619,7 @@
 		"link": "http://codepen.io/rileyjshaw/pen/OPBBGK?editors=110",
 		"lastTagged": 1564708757219,
 		"descriptionList": [
-			"Sticky headers cover internally-linked content by default. The most robust solutions I've seen use JS, but these 4 lines of CSS seem to do the trick."
+			"Sticky headers cover internally-linked content by default. The most robust solutions I’ve seen use JS, but these 4 lines of CSS seem to do the trick."
 		],
 		"type": "project",
 		"uid": "PROJECT_INTERNAL_LINK_OFFSET_(STICKY_HEADER)",
@@ -2650,7 +2648,7 @@
 		"link": "http://codepen.io/rileyjshaw/full/oxaxqX/",
 		"lastTagged": 1564707851729,
 		"descriptionList": [
-			"Added a linear ramp and smoothing function to v1 to make the lowest frequency bin match up with the highest frequency bin in both position and derivative. The effect is a continuous circle, versus the <a href=\"http://codepen.io/rileyjshaw/full/ogVNgW/\" rel=\"noopener noreferrer\" target=\"_blank\">\"speech-bubble\" notch effect of v1</a>."
+			"Added a linear ramp and smoothing function to v1 to make the lowest frequency bin match up with the highest frequency bin in both position and derivative. The effect is a continuous circle, versus the <a href=\"http://codepen.io/rileyjshaw/full/ogVNgW/\" rel=\"noopener noreferrer\" target=\"_blank\">“speech-bubble” notch effect of v1</a>."
 		],
 		"type": "project",
 		"uid": "PROJECT_JITTERY_VISUALIZER_V2",
@@ -2664,7 +2662,7 @@
 		"link": "http://codepen.io/rileyjshaw/full/NNeoMR/",
 		"lastTagged": 1564707845485,
 		"descriptionList": [
-			"V1 -&gt; V2 contained the <em>tiniest</em> tweak perceptually (smooth line all 'round), but it was a technical challenge. V2 -&gt; V3 contains the tiniest code tweaks, but is perceptually very different. Uses canvas transform logic from <a href=\"http://codepen.io/rileyjshaw/pen/ONrdoM\" rel=\"noopener noreferrer\" target=\"_blank\">zonin'</a>."
+			"V1 -&gt; V2 contained the <em>tiniest</em> tweak perceptually (smooth line all ’round), but it was a technical challenge. V2 -&gt; V3 contains the tiniest code tweaks, but is perceptually very different. Uses canvas transform logic from <a href=\"http://codepen.io/rileyjshaw/pen/ONrdoM\" rel=\"noopener noreferrer\" target=\"_blank\">zonin’</a>."
 		],
 		"type": "project",
 		"uid": "PROJECT_JITTERY_VISUALIZER_V3",
@@ -2788,7 +2786,7 @@
 		"coolness": 36,
 		"link": "http://codepen.io/rileyjshaw/details/AgGbs",
 		"lastTagged": 1564708967845,
-		"descriptionList": ["Each one's only a single element."],
+		"descriptionList": ["Each one’s only a single element."],
 		"type": "project",
 		"uid": "PROJECT_LONG_SHADOW_CARDS",
 		"timestamp": 1382918400000
@@ -2837,7 +2835,7 @@
 		"tags": ["online", "reusable"],
 		"lastTagged": 1564772210294,
 		"descriptionList": [
-			"A quick experiment to render efficient \"ticker tape\" on a canvas.",
+			"A quick experiment to render an efficient marquee / ticker tape on a canvas.",
 			"Used as part of an online treasure hunt I made."
 		],
 		"type": "project",
@@ -2852,7 +2850,7 @@
 		"link": "http://codepen.io/rileyjshaw/pen/uiJqo",
 		"lastTagged": 1564708813922,
 		"descriptionList": [
-			"Needed this for <a href=\"/tappy-game\" target=\"_blank\" rel=\"noopener noreferrer\">tappy</a> before there were 1000 libraries to choose from."
+			"I needed this for <a href=\"/tappy-game\">tappy</a> before there were 1000 libraries to choose from."
 		],
 		"type": "project",
 		"uid": "PROJECT_MATERIAL_DESIGN_RIPPLE_EFFECT",
@@ -2866,7 +2864,7 @@
 		"link": "https://github.com/rileyjshaw/mean-tone",
 		"lastTagged": 1564708879145,
 		"descriptionList": [
-			"Supporting code for my \"Taking the average tone\" blog post."
+			"Supporting code for my <a href=\"/blog/taking-the-average-tone/\">“Taking the average tone”</a> blog post."
 		],
 		"type": "project",
 		"uid": "PROJECT_MEAN_TONE",
@@ -2880,7 +2878,7 @@
 		"link": "http://codepen.io/collection/XWQERV/",
 		"lastTagged": 1564707904033,
 		"descriptionList": [
-			"Possible header for \"Mechanical waves and sound\" for Khan Academy's new content redesign.",
+			"Possible header for “Mechanical waves and sound” for Khan Academy’s new content redesign.",
 			"Includes a few variations."
 		],
 		"type": "project",
@@ -2948,7 +2946,7 @@
 		"lastTagged": 1564708797294,
 		"descriptionList": [
 			"UI pattern for nested spoilers.",
-			"Demo involved patching Adobe Web Platform's balance-text polyfill."
+			"Demo involved patching Adobe Web Platform’s balance-text polyfill."
 		],
 		"type": "project",
 		"uid": "PROJECT_MULTI_LEVEL_SPOILERS",
@@ -3008,8 +3006,8 @@
 		"link": "http://codepen.io/rileyjshaw/pen/CjiKf",
 		"lastTagged": 1564708823299,
 		"descriptionList": [
-			"Used to work. Doesn't anymore.",
-			"Part of <a href=\"/blog/stealing-history-with-CSS-binary-trees/\">\"Stealing history with CSS binary trees\"</a>."
+			"Used to work. Doesn’t anymore.",
+			"Part of <a href=\"/blog/stealing-history-with-CSS-binary-trees/\">“Stealing history with CSS binary trees”</a>."
 		],
 		"type": "project",
 		"uid": "PROJECT_N_INPUT_OR_GATE_IN_CSS",
@@ -3073,7 +3071,7 @@
 		"coolness": 20,
 		"link": "http://codepen.io/rileyjshaw/full/sDrLJ/",
 		"lastTagged": 1564708920950,
-		"descriptionList": ["Recreating Soulwax's album art in CSS."],
+		"descriptionList": ["Recreating Soulwax’s album art in CSS."],
 		"type": "project",
 		"uid": "PROJECT_NITE_VERSIONS",
 		"timestamp": 1389571200000
@@ -3125,7 +3123,7 @@
 		"tags": ["external", "instructional", "online"],
 		"lastTagged": 1564772210294,
 		"descriptionList": [
-			"An NPM module containing words from the NSA Analyst's Desktop Binder, Section 2.13: \"Key Words & Search Terms\"."
+			"An NPM module containing words from the NSA Analyst’s Desktop Binder, Section 2.13: “Key Words & Search Terms”."
 		],
 		"type": "project",
 		"uid": "PROJECT_NSA_IPSUM",
@@ -3191,7 +3189,7 @@
 		"link": "http://codepen.io/rileyjshaw/full/ebokj/",
 		"lastTagged": 1564708989446,
 		"descriptionList": [
-			"Buttons that maintain linear perspective from the screen's vertical midpoint.",
+			"Buttons that maintain linear perspective from the screen’s vertical midpoint.",
 			"The perspective effect can be added to anything; a site where each content block was extruded could look interesting.",
 			"Chrome only as of 2018."
 		],
@@ -3246,7 +3244,7 @@
 		"link": "http://codepen.io/rileyjshaw/full/RRajov/",
 		"lastTagged": 1564707816646,
 		"descriptionList": [
-			"I've got plaster swirls on my ceiling. This began as a recreation of that and turned into something else."
+			"I’ve got plaster swirls on my ceiling. This began as a recreation of that and turned into something else."
 		],
 		"type": "project",
 		"uid": "PROJECT_PLASTER_SWIRLS,_SORT_OF",
@@ -3419,7 +3417,7 @@
 		"lastTagged": 1564708809571,
 		"descriptionList": [
 			"Reaction game that steals your history*. It exploits alpha-rounding to create an n-input OR gate for CSS :visited states, then probes links in sequential binary trees.",
-			"*This is a proof-of-concept and won't actually steal anything."
+			"*This is a proof-of-concept and won’t actually steal anything."
 		],
 		"type": "project",
 		"uid": "PROJECT_REACTION",
@@ -3447,7 +3445,7 @@
 		"tags": ["app", "external", "game"],
 		"lastTagged": 1564765055195,
 		"descriptionList": [
-			"A color-theory game completed as a bonus project for Khan Academy's 2016 Hackathon. Built with a friend using Unity 3D."
+			"A color-theory game completed as a bonus project for Khan Academy’s 2016 Hackathon. Built with a friend using Unity 3D."
 		],
 		"type": "project",
 		"uid": "PROJECT_RENDER",
@@ -3494,18 +3492,18 @@
 		"timestamp": 1441843200000
 	},
 	{
-		"title": "Rows of 'em",
+		"title": "Rows of ’em",
 		"date": "2016-03-07",
 		"tags": ["online", "pretty"],
 		"coolness": 42,
 		"link": "http://codepen.io/rileyjshaw/full/Rarobr/",
 		"lastTagged": 1564707895541,
 		"descriptionList": [
-			"There's nothing like driving by a field of trees in the passenger seat.",
+			"There’s nothing like driving by a field of trees in the passenger seat.",
 			"Super quick demo trying (failing, mostly) to capture the perspective effect."
 		],
 		"type": "project",
-		"uid": "PROJECT_ROWS_OF_'EM",
+		"uid": "PROJECT_ROWS_OF_’EM",
 		"timestamp": 1457308800000
 	},
 	{
@@ -3621,7 +3619,7 @@
 		"link": "http://codepen.io/rileyjshaw/pen/OPwROr?editors=001",
 		"lastTagged": 1564708758541,
 		"descriptionList": [
-			"Auditory illusion of a tone that continually descends in pitch. It has been described as a \"sonic barber's pole\".",
+			"Auditory illusion of a tone that continually descends in pitch. It has been described as a “sonic barber’s pole”.",
 			"Implemented with the Web Audio API using custom oscillators."
 		],
 		"type": "project",
@@ -3672,7 +3670,7 @@
 		"lastTagged": 1564707838057,
 		"descriptionList": [
 			"Tiling patterns from a single spiral with a fixed modulation signal.",
-			"Though the line's formula stays consistent as it spirals out, the tile grid doesn't increase in size."
+			"Though the line’s formula stays consistent as it spirals out, the tile grid doesn’t increase in size."
 		],
 		"type": "project",
 		"uid": "PROJECT_SINGLE_LINE_TILING",
@@ -3699,7 +3697,7 @@
 		"lastTagged": 1564708782164,
 		"descriptionList": [
 			"A quick ~10m demo to demonstrate some animation concepts.",
-			"Probably doesn't work cross-browser."
+			"Probably doesn’t work cross-browser."
 		],
 		"type": "project",
 		"uid": "PROJECT_SLIDEY_MENU",
@@ -3727,7 +3725,7 @@
 		"link": "http://codepen.io/rileyjshaw/pen/vGLvVo",
 		"lastTagged": 1564707894644,
 		"descriptionList": [
-			"If the window is wider than it is tall, it'll split into columns. Otherwise, it'll give you two rows.",
+			"If the window is wider than it is tall, it’ll split into columns. Otherwise, it’ll give you two rows.",
 			"This layout was rather difficult before flexbox came along."
 		],
 		"type": "project",
@@ -3864,7 +3862,9 @@
 		"coolness": 64,
 		"link": "http://codepen.io/rileyjshaw/pen/aZzKGa",
 		"lastTagged": 1564707825199,
-		"descriptionList": ["Move your mouse/finger. Remix of \"filings\"."],
+		"descriptionList": [
+			"Move your mouse / finger. Remix of <a href=\"http://codepen.io/rileyjshaw/pen/ONxKVd?editors=0010\" rel=\"noopener noreferrer\" target=\"_blank\">“filings”</a>."
+		],
 		"type": "project",
 		"uid": "PROJECT_SPOTLIGHT",
 		"timestamp": 1464739200000
@@ -3916,7 +3916,7 @@
 		"lastTagged": 1564707892058,
 		"descriptionList": [
 			"Sphere effect arising from random lines across a circle.",
-			"I'm sure someone else discovered this effect long before I did."
+			"I’m sure someone else discovered this effect long before I did."
 		],
 		"type": "project",
 		"uid": "PROJECT_STONE",
@@ -3942,7 +3942,7 @@
 		"link": "http://codepen.io/rileyjshaw/full/dMpmRY/",
 		"lastTagged": 1564707888292,
 		"descriptionList": [
-			"A version of Stormy Green that doesn't drift out of phase."
+			"A version of Stormy Green that doesn’t drift out of phase."
 		],
 		"type": "project",
 		"uid": "PROJECT_STORMY_GREEN_(RIPPLES)",
@@ -3990,7 +3990,7 @@
 		"lastTagged": 1564624423924,
 		"descriptionList": [
 			"No jQuery dependency, section progress shown in headers, click to scroll, resizable with scrollbar on window. Inspired by Slinky.js and DesignWall.",
-			"Currently doesn't work on iOS &lt; 8 since they mess with scroll events. If you use this in production, look into iScroll."
+			"Currently doesn’t work on iOS &lt; 8 since they mess with scroll events. If you use this in production, look into iScroll."
 		],
 		"type": "project",
 		"uid": "PROJECT_SUPER_SLINKY",
@@ -4004,7 +4004,7 @@
 		"link": "http://codepen.io/rileyjshaw/pen/jrayWL",
 		"lastTagged": 1564608405055,
 		"descriptionList": [
-			"\"...the formula can be used to describe many complex shapes and curves that are found in nature. Gielis <em>holds a patent</em> related to the synthesis of patterns generated by the superformula.\"",
+			"“…the formula can be used to describe many complex shapes and curves that are found in nature. Gielis <em>holds a patent</em> related to the synthesis of patterns generated by the superformula.”",
 			":facepalm:"
 		],
 		"type": "project",
@@ -4109,7 +4109,7 @@
 		"link": "http://codepen.io/rileyjshaw/full/FLpJk/",
 		"lastTagged": 1564709012522,
 		"descriptionList": [
-			"Used to promote <a href=\"http://qhack.ca\" rel=\"noopener noreferrer\" target=\"_blank\">\"hack nights\" at my university</a>."
+			"Used to promote <a href=\"http://qhack.ca\" rel=\"noopener noreferrer\" target=\"_blank\">“hack nights” at my university</a>."
 		],
 		"type": "project",
 		"uid": "PROJECT_TERMINAL_DISPLAY",
@@ -4166,7 +4166,7 @@
 		"timestamp": 1415404800000
 	},
 	{
-		"title": "That's nuts!",
+		"title": "That’s nuts!",
 		"date": "2011-11-26",
 		"tags": ["golf", "online", "pretty", "reusable"],
 		"coolness": 11,
@@ -4176,7 +4176,7 @@
 			"Settings reveal concept where a nut unscrews itself then drops a curtain."
 		],
 		"type": "project",
-		"uid": "PROJECT_THAT'S_NUTS!",
+		"uid": "PROJECT_THAT’S_NUTS!",
 		"timestamp": 1322265600000
 	},
 	{
@@ -4304,7 +4304,7 @@
 		"link": "http://tympanus.net/Development/LineMenuStyles/#Titania",
 		"lastTagged": 1564707907104,
 		"descriptionList": [
-			"Contribution to the publication \"Codrops\" for their Line Menu Styles collection."
+			"Contribution to the publication “Codrops” for their Line Menu Styles collection."
 		],
 		"type": "project",
 		"uid": "PROJECT_TITANIA",
@@ -4318,7 +4318,7 @@
 		"link": "https://github.com/rileyjshaw/tony-montana",
 		"lastTagged": 1564708730063,
 		"descriptionList": [
-			"Nothing gonna stop you, there's nothing that strong ♫",
+			"Nothing gonna stop you, there’s nothing that strong ♫",
 			"An excuse to write git push it to-the-limit into the console."
 		],
 		"type": "project",
@@ -4457,7 +4457,7 @@
 		"coolness": 32,
 		"link": "http://codepen.io/rileyjshaw/pen/ozmymE/",
 		"lastTagged": 1564608401800,
-		"descriptionList": ["wallpaper..?"],
+		"descriptionList": ["wallpaper…?"],
 		"type": "project",
 		"uid": "PROJECT_VINTAGE",
 		"timestamp": 1477267200000
@@ -4522,7 +4522,7 @@
 		"link": "/watercolor/",
 		"lastTagged": 1564708930039,
 		"descriptionList": [
-			"Uses Chrome's canvas compositing algorithm (circa 2013) to simulate watercolor painting in the browser."
+			"Uses Chrome’s canvas compositing algorithm (circa 2013) to simulate watercolor painting in the browser."
 		],
 		"type": "project",
 		"uid": "PROJECT_WATERCOLOR",
@@ -4549,7 +4549,7 @@
 		"lastTagged": 1564707910272,
 		"descriptionList": [
 			"My contribution to a collection of poems.",
-			"From the project page: \"there is confusion in the mixed layers of metaphors. This is not an obfuscated code repository; not really. In some ways, it is the opposite.\""
+			"From the project page: “there is confusion in the mixed layers of metaphors. This is not an obfuscated code repository; not really. In some ways, it is the opposite.”"
 		],
 		"type": "project",
 		"uid": "PROJECT_WHOAMI.PY",
@@ -4591,8 +4591,8 @@
 		"link": "http://codepen.io/rileyjshaw/pen/cKiDn?editors=0010",
 		"lastTagged": 1564708974879,
 		"descriptionList": [
-			"Some Javascript that I threw together for a friend to 1) solve his problem, 2) explain some hacky JS tricks, and 3) attempt to show him that they aren't always great to use since they obfuscate your code.",
-			"There's actually some cool stuff going on in here, so I've commented it thoroughly."
+			"Some Javascript that I threw together for a friend to 1) solve his problem, 2) explain some hacky JS tricks, and 3) attempt to show him that they aren’t always great to use since they obfuscate your code.",
+			"There’s actually some cool stuff going on in here, so I’ve commented it thoroughly."
 		],
 		"type": "project",
 		"uid": "PROJECT_WORST_PRACTICES",
@@ -4632,8 +4632,8 @@
 		"link": "https://github.com/rileyjshaw/xoxo-bingo",
 		"lastTagged": 1564708738919,
 		"descriptionList": [
-			"Bingo cards generated from the attendance list of XOXOFest. The first person to meet enough attendees \"won\" the party.",
-			"Built hastily between speakers on the last day of the festival; requires login with Twitter to protect attendees' identity."
+			"Bingo cards generated from the attendance list of XOXOFest. The first person to meet enough attendees “won” the party.",
+			"Built hastily between speakers on the last day of the festival; requires login with Twitter to protect attendees’ identity."
 		],
 		"type": "project",
 		"uid": "PROJECT_XOXO_BINGO",
@@ -4681,7 +4681,7 @@
 		"timestamp": 1388707200000
 	},
 	{
-		"title": "zonin'",
+		"title": "zonin’",
 		"date": "2016-05-05",
 		"tags": ["online", "pretty", "reusable"],
 		"coolness": 56,
@@ -4691,7 +4691,7 @@
 			"Efficiently scales and rotates canvas image data <em>seemingly</em> in-place using two overlapping canvas elements."
 		],
 		"type": "project",
-		"uid": "PROJECT_ZONIN'",
+		"uid": "PROJECT_ZONIN’",
 		"timestamp": 1462406400000
 	},
 	{
