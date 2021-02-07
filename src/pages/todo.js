@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default () => (
+const TodoPage = () => (
 	<div className="todo-some-better-name">
 		<ul>
 			<li>Graph contribution types over time</li>
@@ -82,3 +82,5 @@ export default () => (
 		</ul>
 	</div>
 );
+
+export default TodoPage;

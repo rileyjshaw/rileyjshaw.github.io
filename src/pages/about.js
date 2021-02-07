@@ -12,7 +12,7 @@ import SEO from '../components/seo';
 import '../templates/post.css';
 import './about.css';
 
-export default ({location}) => (
+const AboutPage = ({location}) => (
 	<Layout>
 		<SEO title="About" className="about" />
 		<PageHeader fromPage={location?.state?.fromPage}>About</PageHeader>
@@ -198,3 +198,5 @@ export default ({location}) => (
 		/>
 	</Layout>
 );
+
+export default AboutPage;
