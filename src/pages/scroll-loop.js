@@ -48,7 +48,7 @@ const FullPage = ({page, onChange}) => {
 	);
 };
 
-export default () => {
+const ScrollLoop = () => {
 	const [page, setPage] = useState(1);
 	const [[topPage, bottomPage], setPages] = useState([]);
 	/*
@@ -92,3 +92,5 @@ export default () => {
 		</div>
 	);
 };
+
+export default ScrollLoop;

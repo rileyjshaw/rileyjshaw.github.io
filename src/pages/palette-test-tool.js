@@ -56,7 +56,8 @@ const initial = [
 	'ffdc00', // Y
 	'000', // K
 ];
-export default () => {
+
+const PaletteTestTool = () => {
 	const [palette, setPalette] = useState(initial);
 	const [R, G, B, C, M, Y] = palette;
 	return (
@@ -312,3 +313,5 @@ export default () => {
 		</main>
 	);
 };
+
+export default PaletteTestTool;

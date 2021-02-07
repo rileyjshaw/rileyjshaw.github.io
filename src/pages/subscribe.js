@@ -11,7 +11,7 @@ import SEO from '../components/seo';
 
 import './subscribe.css';
 
-export default ({location}) => (
+const SubscribePage = ({location}) => (
 	<Layout>
 		<SEO title="Subscribe" className="subscribe-page" />
 		<PageHeader fromPage={location?.state?.fromPage}>Subscribe</PageHeader>
@@ -136,3 +136,5 @@ export default ({location}) => (
 		<GoUp />
 	</Layout>
 );
+
+export default SubscribePage;
