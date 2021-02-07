@@ -1,10 +1,8 @@
+import contentTypes from '../util/content-types';
+import AutoLink, {ExternalLink} from './auto-link';
+import './content-node.css';
 import React from 'react';
 import useDimensions from 'react-use-dimensions';
-
-import AutoLink, {ExternalLink} from './auto-link';
-import contentTypes from '../util/content-types';
-
-import './content-node.css';
 
 // Each content type needs:
 //   "uid":

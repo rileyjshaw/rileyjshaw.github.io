@@ -1,6 +1,5 @@
-import {useStaticQuery, graphql} from 'gatsby';
-
 import formatProps from './format-props';
+import {useStaticQuery, graphql} from 'gatsby';
 
 export function format({
 	allMdx: {edges: posts} = {edges: []},

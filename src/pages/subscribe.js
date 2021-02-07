@@ -1,6 +1,3 @@
-import React from 'react';
-import {Link} from 'gatsby';
-
 import {UncontrolledLink, ExternalLink} from '../components/auto-link';
 import BigQuote from '../components/big-quote';
 import GoUp from '../components/go-up';
@@ -8,8 +5,9 @@ import Layout from '../components/layout';
 import Newsletter from '../components/newsletter';
 import PageHeader from '../components/page-header';
 import SEO from '../components/seo';
-
 import './subscribe.css';
+import {Link} from 'gatsby';
+import React from 'react';
 
 const SubscribePage = ({location}) => (
 	<Layout>

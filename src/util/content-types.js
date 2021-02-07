@@ -1,6 +1,5 @@
-import React from 'react';
-
 import AutoLink, {ExternalLink} from '../components/auto-link';
+import React from 'react';
 
 export const TitleOnly = () => null;
 export const ProjectContent = ({descriptionList}) =>

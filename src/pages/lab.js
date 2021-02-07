@@ -1,11 +1,10 @@
-import React, {useState} from 'react';
-
 import BigQuote from '../components/big-quote';
 import GoUp from '../components/go-up';
 import Layout from '../components/layout';
 import PageHeader from '../components/page-header';
 import ProjectExplorer from '../components/project-explorer';
 import SEO from '../components/seo';
+import React, {useState} from 'react';
 
 const LabPage = ({location}) => {
 	const [isFullyLoaded, setIsFullyLoaded] = useState(false);

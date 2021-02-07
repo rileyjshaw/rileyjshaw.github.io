@@ -1,9 +1,7 @@
 // Some initial work at trying to get an infinite scroll page going.
-
+import './scroll-loop.css';
 import React, {useState, useLayoutEffect, useRef} from 'react';
 import {InView} from 'react-intersection-observer';
-
-import './scroll-loop.css';
 
 const Page = ({page}) => (
 	<div className="fullscreen plus">

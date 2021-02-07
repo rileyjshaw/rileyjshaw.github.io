@@ -1,8 +1,6 @@
-import React, {useState} from 'react';
-
 import {useInterval, useInView} from '../util/hooks';
-
 import TextGrid from './text-grid';
+import React, {useState} from 'react';
 
 /* Fun strings:
 ▁▂▃▅▆▇▇▆▅▃▂▁

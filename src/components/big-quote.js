@@ -1,11 +1,9 @@
-import React, {useState} from 'react';
-import {StaticQuery, graphql} from 'gatsby';
-
-import {shuffle} from '../util/sorting-methods';
 import {ReactComponent as Repeat} from '../../content/images/repeat.svg';
+import {shuffle} from '../util/sorting-methods';
 import AutoLink from './auto-link';
-
 import './big-quote.css';
+import {StaticQuery, graphql} from 'gatsby';
+import React, {useState} from 'react';
 
 export default ({quoteId, showRefreshButton = true}) => (
 	<StaticQuery

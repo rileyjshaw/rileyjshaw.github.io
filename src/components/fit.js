@@ -1,8 +1,6 @@
-import React, {useState, useEffect, useRef} from 'react';
-
 import {useWindowSize} from '../util/hooks';
-
 import './fit.css';
+import React, {useState, useEffect, useRef} from 'react';
 
 export default ({children, className = ''}) => {
 	const [windowWidth] = useWindowSize();

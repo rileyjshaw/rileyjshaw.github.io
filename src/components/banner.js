@@ -1,6 +1,5 @@
-import React from 'react';
-
 import './banner.css';
+import React from 'react';
 
 export default ({children, onClose}) => (
 	<div className="banner">

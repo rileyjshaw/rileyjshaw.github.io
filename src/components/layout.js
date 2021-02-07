@@ -1,9 +1,7 @@
-import React, {useState, useEffect} from 'react';
-
 import {useIdle, useStickyState} from '../util/hooks';
 import Blocker from './blocker';
-
 import './layout.css';
+import React, {useState, useEffect} from 'react';
 
 // TODO(April 2021): Just trying to be kind and clear out unused keys, but
 // delete this once April comes around.
