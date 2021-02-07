@@ -114,7 +114,7 @@ const ProjectExplorer = React.memo(props => {
 							className="labs-clear labs-clear-types"
 							onClick={() =>
 								setTypeStates(
-									new Array(nodeTypes().length).fill(false)
+									new Array(nodeTypes.length).fill(false)
 								)
 							}
 						>
