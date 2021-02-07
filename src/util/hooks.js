@@ -166,7 +166,7 @@ export function useStickyState(
 	const [value, setValue] = useState(() => {
 		const evaluatedDefault =
 			typeof defaultValue === 'function' ? defaultValue() : defaultValue;
-		if (window === 'undefined') return evaluatedDefault;
+		if (typeof window === 'undefined') return evaluatedDefault;
 		const stickyValue = JSON.parse(window[`${scope}Storage`].getItem(key));
 		if (
 			!stickyValue?.hasOwnProperty?.('value') ||
