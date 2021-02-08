@@ -10,3 +10,6 @@ export const colors = {
 	yellow: '#ffdc00',
 	fg: '#0a0b08',
 };
+
+export const isRenderingOnServer = typeof window === 'undefined';
+export const isRenderingOnClient = !isRenderingOnServer;

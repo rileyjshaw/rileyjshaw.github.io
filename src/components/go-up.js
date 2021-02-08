@@ -7,12 +7,11 @@ export default () => (
 		<CycleText
 			ms={150}
 			OuterElement="span"
-			onClick={() =>
-				window.scroll({
-					top: 0,
-					behavior: 'smooth',
-				})
-			}
+			onClick={() => {
+				window.scrollTo(0, 0);
+				const title = document.getElementById('page-header');
+				title.focus({preventScroll: true});
+			}}
 		>
 			➫➯➱➬–
 		</CycleText>

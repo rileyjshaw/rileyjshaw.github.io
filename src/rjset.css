@@ -76,6 +76,12 @@ html {
 	background: var(--cbg);
 	color: var(--cfg);
 	font: 18px/1.7 var(--fss);
+	scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion) {
+	html {
+		scroll-behavior: auto;
+	}
 }
 body {
 	-webkit-font-smoothing: antialiased;
