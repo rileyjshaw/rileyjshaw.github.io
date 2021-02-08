@@ -1,9 +1,10 @@
+import {isRenderingOnClient, isRenderingOnServer} from './constants';
 import {useState, useEffect, useRef, useLayoutEffect} from 'react';
 import {useInView as useInViewExternal} from 'react-intersection-observer';
 
 export function useWindowSize(cb) {
 	const [size, setSize] = useState(() =>
-		typeof window !== 'undefined'
+		isRenderingOnClient
 			? [window.innerWidth, window.innerHeight]
 			: [1000, 1000]
 	);
@@ -122,7 +123,7 @@ const interactionEventNames = [
 	'MSPointerMove',
 ];
 export function useIdle(delay, onIdle) {
-	if (typeof window === 'undefined') return false;
+	if (isRenderingOnServer) return false;
 	const [isIdle, setIdle] = useState(false);
 	const [idleTimeout, setIdleTimeout] = useState(null);
 	const resetIdleTimeout = () =>
@@ -166,7 +167,7 @@ export function useStickyState(
 	const [value, setValue] = useState(() => {
 		const evaluatedDefault =
 			typeof defaultValue === 'function' ? defaultValue() : defaultValue;
-		if (typeof window === 'undefined') return evaluatedDefault;
+		if (isRenderingOnServer) return evaluatedDefault;
 		const stickyValue = JSON.parse(window[`${scope}Storage`].getItem(key));
 		if (
 			!stickyValue?.hasOwnProperty?.('value') ||
@@ -183,4 +184,21 @@ export function useStickyState(
 		);
 	}, [key, value, version]);
 	return [value, setValue];
+}
+
+export function useMediaQuery(query) {
+	const [queryResult, setQueryResult] = useState(
+		() => isRenderingOnClient && window.matchMedia(query).matches
+	);
+	useEffect(() => {
+		const mediaQueryList = window.matchMedia(query);
+		const listener = event => {
+			setQueryResult(event.matches);
+		};
+		mediaQueryList.addListener(listener);
+		return () => {
+			mediaQueryList.removeListener(listener);
+		};
+	}, [query]);
+	return queryResult;
 }

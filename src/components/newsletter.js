@@ -1,3 +1,4 @@
+import {isRenderingOnClient} from '../util/constants';
 import './newsletter.css';
 import React from 'react';
 
@@ -8,7 +9,7 @@ export const Form = () => (
 		method="post"
 		target="popupwindow"
 		onSubmit={() => {
-			if (typeof window !== 'undefined') {
+			if (isRenderingOnClient) {
 				window.open(
 					'https://tinyletter.com/changelog',
 					'popupwindow',

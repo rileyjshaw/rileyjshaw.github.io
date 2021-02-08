@@ -5,7 +5,7 @@ import {Link} from 'gatsby';
 import React from 'react';
 
 export default ({fromPage}) => (
-	<header className="page-header">
+	<header className="page-header" id="page-header" tabIndex="-1">
 		<Link to="/">
 			<RGBSplitter El="h1" className="title">
 				The digital <span>landfill of</span> <span>Riley J.</span>{' '}
