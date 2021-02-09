@@ -1,5 +1,5 @@
 @font-face {
-	font-display: optional;
+	font-display: fallback;
 	font-family: Geomanist;
 	font-style: normal;
 	font-weight: 400;
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-	font-display: optional;
+	font-display: fallback;
 	font-family: Geomanist;
 	font-style: italic;
 	font-weight: 400;
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-	font-display: optional;
+	font-display: fallback;
 	font-family: Geomanist;
 	font-style: normal;
 	font-weight: 500;
@@ -26,7 +26,7 @@
 }
 
 @font-face {
-	font-display: optional;
+	font-display: fallback;
 	font-family: Geomanist;
 	font-style: italic;
 	font-weight: 500;
@@ -35,7 +35,7 @@
 }
 
 @font-face {
-	font-display: optional;
+	font-display: fallback;
 	font-family: Geomanist;
 	font-style: normal;
 	font-weight: 900;
@@ -44,7 +44,7 @@
 }
 
 @font-face {
-	font-display: optional;
+	font-display: fallback;
 	font-family: Geomanist;
 	font-style: italic;
 	font-weight: 900;
