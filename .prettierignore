@@ -4,3 +4,4 @@ package-lock.json
 public
 .vscode
 project-scraper/_generated/scraped-projects-raw.json
+font-preload-cache.json
