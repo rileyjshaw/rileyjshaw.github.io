@@ -40,10 +40,15 @@ export default ({onClose}) => {
 							<button
 								onClick={() => {
 									setMode('response');
-									window.setTimeout(
-										() => setMode('blank'),
-										1200
-									);
+									window.setTimeout(() => {
+										setMode('blank');
+										window.setTimeout(() => {
+											setMode('bye');
+											window.setTimeout(() => {
+												setMode('blank');
+											}, 2000);
+										}, 5000);
+									}, 1200);
 								}}
 							>
 								No
@@ -53,6 +58,8 @@ export default ({onClose}) => {
 				</>
 			) : mode === 'response' ? (
 				'Okay.'
+			) : mode === 'bye' ? (
+				'BYE!'
 			) : null}
 		</div>
 	);

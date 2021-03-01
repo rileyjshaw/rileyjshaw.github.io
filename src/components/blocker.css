@@ -11,6 +11,8 @@
 	height: 100vh;
 	justify-content: center;
 	left: 0;
+	overflow: hidden;
+	overscroll-behavior: contain;
 	position: fixed;
 	top: 0;
 	width: 100vw;
