@@ -61,6 +61,7 @@ const colorObjectToCss = (colorObject, rgbWrap) =>
 export const onRenderBody = ({
 	setHeadComponents,
 	setPreBodyComponents,
+	setPostBodyComponents,
 }) => {
 	setHeadComponents(
 		// Set some default themes in case JavaScript isn’t enabled.
@@ -85,4 +86,26 @@ ${colorObjectToCss(ABSTRACT_COLOR_PROPERTIES.dark)}
 			}}
 		/>
 	);
+
+	setPostBodyComponents(
+		<script
+			key="love"
+			dangerouslySetInnerHTML={{
+				__html: `console.log(\`${loveYou}\`)`,
+			}}
+		/>
+	);
 };
+
+const loveYou = `
+'▀█║────────────▄▄───────────​─▄──▄_
+──█║───────▄─▄─█▄▄█║──────▄▄──​█║─█║
+──█║───▄▄──█║█║█║─▄║▄──▄║█║─█║​█║▄█║
+──█║──█║─█║█║█║─▀▀──█║─█║█║─█║​─▀─▀
+──█║▄║█║─█║─▀───────█║▄█║─▀▀
+──▀▀▀──▀▀────────────▀─█║
+───────▄▄─▄▄▀▀▄▀▀▄──▀▄▄▀
+──────███████───▄▀
+──────▀█████▀▀▄▀
+────────▀█▀
+`;
