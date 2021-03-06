@@ -1,6 +1,6 @@
 .blog-banner {
 	border-radius: 6px;
-	color: var(--cbg);
+	color: var(--color-bg);
 	display: flex;
 	font-size: var(--font-scale--2);
 	margin: 2em 0 1em;
@@ -14,31 +14,31 @@
 	margin-top: 2em;
 }
 .blog-banner a {
-	color: var(--cbg);
+	color: var(--color-bg);
 }
 .blog-banner-note a {
-	color: var(--cfg);
+	color: var(--color-fg);
 }
 .blog-banner-update {
-	background: var(--cb);
+	background: var(--color-p3);
 }
 .blog-banner-edit {
-	background: var(--cr);
+	background: var(--color-p1);
 }
 .blog-banner-note {
-	background: var(--cy);
-	color: var(--cfg);
+	background: var(--color-s3);
+	color: var(--color-fg);
 }
 .blog-banner-title {
 	align-items: center;
-	border-right: 1px solid var(--cbg);
+	border-right: 1px solid var(--color-bg);
 	display: flex;
 	font-weight: 500;
 	margin-right: 1.5em;
 	padding-right: 1.5em;
 }
 .blog-banner-note .blog-banner-title {
-	border-color: var(--cfg);
+	border-color: var(--color-fg);
 }
 .blog-banner-content {
 	font-family: var(--fs);

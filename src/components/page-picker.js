@@ -11,31 +11,31 @@ const pages = {
 	home: {
 		Icon: Pin,
 		title: 'Home',
-		color: 'var(--cr)',
+		color: 'var(--color-p1)',
 		link: '/',
 	},
 	about: {
 		Icon: Sleep,
 		title: 'About',
-		color: 'var(--cm)',
+		color: 'var(--color-s2)',
 		link: '/about',
 	},
 	lab: {
 		Icon: Planet,
 		title: <>Lab</>,
-		color: 'var(--cb)',
+		color: 'var(--color-p3)',
 		link: '/lab',
 	},
 	blog: {
 		Icon: Keyboard,
 		title: 'Blog',
-		color: 'var(--cc)',
+		color: 'var(--color-s1)',
 		link: '/blog',
 	},
 	subscribe: {
 		Icon: Rss,
 		title: 'Subscribe',
-		color: 'var(--cg)',
+		color: 'var(--color-p2)',
 		link: '/subscribe',
 	},
 };

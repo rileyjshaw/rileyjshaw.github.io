@@ -1,6 +1,6 @@
 .content-node.doingreat-grid {
-	background: var(--cfg);
-	color: var(--cbg);
+	background: var(--color-fg);
+	color: var(--color-bg);
 	font-family: var(--fh);
 	font-weight: 900;
 	grid-area: span 2 / span 2;
@@ -13,8 +13,8 @@
 	justify-content: center;
 }
 .doingreat-item:nth-child(even) {
-	background: var(--cbg);
-	color: var(--cfg);
+	background: var(--color-bg);
+	color: var(--color-fg);
 }
 .wavebump-item,
 .droplet-item,
@@ -29,25 +29,28 @@
 	font-size: 100px;
 }
 .content-node.wavebump-item {
-	background: var(--cr);
-	color: var(--cy);
+	background: var(--color-p1);
+	color: var(--color-s3);
 	/* grid-area: 7 / -4 / span 1 / span 3; */
 	grid-area: span 3 / span 2;
 }
 .content-node.wavebump-item.tall {
-	background: var(--cg);
-	color: var(--cr);
+	background: var(--color-p2);
+	color: var(--color-p1);
 	grid-area: span 5 / span 2;
 }
 .content-node.droplet-item {
-	background: var(--cb);
-	color: var(--cc);
+	background: var(--color-p3);
+	color: var(--color-s1);
 	/* grid-area: 27 / 4 / span 1 / span 3; */
 	grid-area: span 5 / span 3;
 }
+.dark-theme .content-node.droplet-item {
+	background: var(--color-bg);
+}
 .content-node.circles-grid {
-	background: var(--cy);
-	color: var(--cm);
+	background: var(--color-s3);
+	color: var(--color-s2);
 	font-size: 60px;
 	/* grid-area: 8 / 4 / span 1 / span 3; */
 	grid-area: span 2 / span 3;
@@ -58,8 +61,8 @@
 }
 .wavytext {
 	align-items: center;
-	background: var(--cb);
-	color: var(--cy);
+	background: var(--color-p3);
+	color: var(--color-s3);
 	display: flex;
 	font: 900 var(--font-scale--1) var(--fh);
 	grid-area: span 1 / span 3;

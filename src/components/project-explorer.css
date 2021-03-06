@@ -50,9 +50,9 @@
 .project-explorer-hide-filters,
 .project-explorer .filters label,
 .project-explorer .filters button {
-	background: var(--cbg);
-	border: 1px solid var(--cfg);
-	box-shadow: 2px 2px var(--cfg);
+	background: var(--color-bg);
+	border: 1px solid var(--color-fg);
+	box-shadow: 2px 2px var(--color-fg);
 	cursor: pointer;
 	display: inline-block;
 	font-family: var(--fh);

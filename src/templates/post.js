@@ -1,15 +1,15 @@
-import Layout from '../components/layout';
 import SEO from '../components/seo';
 import './post.css';
 import {Link, graphql} from 'gatsby';
 import {MDXRenderer} from 'gatsby-plugin-mdx';
 import React from 'react';
 
+// TODO: Add settings?
 export default function Template({data}) {
 	const {mdx} = data;
 	const {fields, body} = mdx;
 	return (
-		<Layout>
+		<>
 			<SEO title={fields.title} className="blog-post-page" />
 			<header className="top-nav" role="banner">
 				<nav role="navigation">
@@ -33,7 +33,7 @@ export default function Template({data}) {
 					</MDXRenderer>
 				</article>
 			</main>
-		</Layout>
+		</>
 	);
 }
 

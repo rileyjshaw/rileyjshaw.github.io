@@ -58,12 +58,12 @@ export const PatchContent = ({description, link}) => (
 		)}
 	</main>
 );
-export const SongContent = ({title, uid}) => {
+export const SongContent = ({title, uid, blockEmbeds}) => {
 	const [showEmbed, setShowEmbed] = useState(false);
 
 	return (
 		<div className="song-content">
-			{showEmbed ? (
+			{!blockEmbeds || showEmbed ? (
 				<iframe
 					title={`An embedded song called "${title}"`}
 					className="soundcloud"
@@ -85,6 +85,7 @@ export const SongContent = ({title, uid}) => {
 	);
 };
 export const VideoContent = ({
+	blockEmbeds,
 	body,
 	contentType,
 	description,
@@ -97,7 +98,7 @@ export const VideoContent = ({
 	return (
 		<main>
 			<div className="video-embed">
-				{showEmbed ? (
+				{!blockEmbeds || showEmbed ? (
 					{
 						vimeo: body && (
 							<div dangerouslySetInnerHTML={{__html: body}} />

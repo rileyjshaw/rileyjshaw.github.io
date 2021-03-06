@@ -21,8 +21,8 @@ pre {
 	font-size: var(--font-scale--1);
 }
 .default-button {
-	background: var(--cbg);
-	border: 6px solid var(--cfg);
+	background: var(--color-bg);
+	border: 6px solid var(--color-fg);
 	font-family: var(--fh);
 	font-size: var(--font-scale--1);
 	font-weight: 900;
@@ -30,6 +30,9 @@ pre {
 	padding: 6px 12px;
 	text-align: center;
 	text-transform: uppercase;
+}
+.svg-icon {
+	fill: currentColor;
 }
 /* HACK(riley): From gatsby-remark-autolink-headers. Why isn’t this added
                 automatically? TODO: Ensure the rest of the plugins are working

@@ -1,7 +1,7 @@
-import {colors} from '../../util/constants';
-import {randSequence, lcm} from '../../util/util';
+import {getThemeColor, randSequence, lcm} from '../../util/util';
+import {SettingsContext} from '../settings-provider';
 import './background-generator.css';
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext, useMemo} from 'react';
 
 const minWidth = 100; // Tiling width. Height is calculated dynamically.
 const maxWidth = 200;
@@ -19,19 +19,21 @@ const maxTiledWidth = 10000;
 const defaultProps = {
 	width: minWidth + Math.floor(Math.random() * (maxWidth - minWidth) + 1),
 	zoom: 6, // I think it looks better a bit chunky like this.
-	dark: colors.fg,
-	light: colors.bg,
-	themeBias: 0.65, // 0: light | 1: dark.
+	dark: 'fg',
+	light: 'bg',
 	seamless: true,
 	El: 'div',
 };
 
 const getState = (
 	props,
+	cDark,
+	cLight,
+	themeBias,
 	canvas = document.createElement('canvas'),
 	tiledCanvas = document.createElement('canvas')
 ) => {
-	const {width, dark, light, themeBias, seamless} = {
+	const {width, seamless} = {
 		...defaultProps,
 		...props,
 	};
@@ -59,7 +61,7 @@ const getState = (
 	for (let i = 0; i < size; ++i) {
 		const x = i % width;
 		const y = Math.floor(i / width);
-		ctx.fillStyle = sequence[i % sequence.length] ? dark : light;
+		ctx.fillStyle = sequence[i % sequence.length] ? cDark : cLight;
 		ctx.fillRect(x, y, 1, 1);
 	}
 
@@ -79,20 +81,39 @@ const getState = (
 };
 
 export default function BackgroundGenerator(props, ref) {
-	const [[canvas, tiledCanvas, nTiles, height], setState] = useState([]);
-	const [clicked, setClicked] = useState(false);
-	useEffect(() => {
-		setState(getState(props, canvas, tiledCanvas));
-	}, []);
-	const {width, zoom, dark, light, themeBias, El, className} = {
+	const {width, zoom, dark, light, El, className} = {
 		...defaultProps,
 		...props,
 	};
+	const {theme} = useContext(SettingsContext);
+	const themeBias = theme === 'light' ? 0.65 : 0.45; // 0: light | 1: dark
+	const cDark = useMemo(() => getThemeColor(theme)(dark)(), [dark, theme]);
+	const cLight = useMemo(() => getThemeColor(theme)(light)(), [
+		light,
+		theme,
+	]);
+	const [[canvas, tiledCanvas, nTiles, height], setState] = useState([]);
+	const [clicked, setClicked] = useState(false);
+	useEffect(() => {
+		setState(
+			getState(props, cDark, cLight, themeBias, canvas, tiledCanvas)
+		);
+	}, [cDark, cLight]);
+
 	// Apply the wide, tileable canvas as a repeating background.
 	return (
 		<El
 			onClick={() => {
-				setState(getState(props, canvas, tiledCanvas));
+				setState(
+					getState(
+						props,
+						cDark,
+						cLight,
+						themeBias,
+						canvas,
+						tiledCanvas
+					)
+				);
 				if (!clicked) setClicked(true);
 			}}
 			className={`content-node doodle doodle-background-generator${
@@ -100,9 +121,11 @@ export default function BackgroundGenerator(props, ref) {
 			}`}
 			style={
 				tiledCanvas && {
-					background: `${themeBias > 0.5 ? dark : light} left top/${
-						width * nTiles * zoom
-					}px ${height * zoom}px url(${tiledCanvas.toDataURL()}`,
+					background: `${
+						themeBias > 0.5 ? cDark : cLight
+					} left top/${width * nTiles * zoom}px ${
+						height * zoom
+					}px url(${tiledCanvas.toDataURL()}`,
 				}
 			}
 			{...(ref.hasOwnProperty('current') ? {ref} : {})}

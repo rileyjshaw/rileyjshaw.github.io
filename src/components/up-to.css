@@ -7,9 +7,9 @@
 }
 .currently li {
 	align-items: center;
-	background: var(--cbg);
-	border: 2px solid var(--cfg);
-	box-shadow: 3px 3px var(--cfg);
+	background: var(--color-bg);
+	border: 2px solid var(--color-fg);
+	box-shadow: 3px 3px var(--color-fg);
 	display: flex;
 	flex: 1 1 0;
 	font-family: var(--fh);

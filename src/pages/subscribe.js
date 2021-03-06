@@ -1,18 +1,15 @@
 import {UncontrolledLink, ExternalLink} from '../components/auto-link';
 import BigQuote from '../components/big-quote';
 import GoUp from '../components/go-up';
-import Layout from '../components/layout';
 import Newsletter from '../components/newsletter';
-import PageHeader from '../components/page-header';
 import SEO from '../components/seo';
 import './subscribe.css';
 import {Link} from 'gatsby';
 import React from 'react';
 
-const SubscribePage = ({location}) => (
-	<Layout>
+const SubscribePage = () => (
+	<>
 		<SEO title="Subscribe" className="subscribe-page" />
-		<PageHeader fromPage={location?.state?.fromPage}>Subscribe</PageHeader>
 		<div className="inner">
 			<Newsletter />
 			<hr />
@@ -132,7 +129,7 @@ const SubscribePage = ({location}) => (
 		</div>
 		<BigQuote quoteId="MAKING_NOTHING" />
 		<GoUp />
-	</Layout>
+	</>
 );
 
 export default SubscribePage;

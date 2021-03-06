@@ -1,7 +1,5 @@
 import AutoLink, {ExternalLink} from '../components/auto-link';
 import '../components/content-node.css';
-import Layout from '../components/layout';
-import PageHeader from '../components/page-header';
 import SEO from '../components/seo';
 import './blog-list.css';
 import './post.css';
@@ -11,7 +9,7 @@ import React from 'react';
 const urlFrom = page => `/blog${page === 1 ? '' : `/${page}`}`;
 
 // TODO(riley): Style with same stylesheet as blog posts.
-const BlogList = ({data, location, pageContext: {currentPage, numPages}}) => {
+const BlogList = ({data, pageContext: {currentPage, numPages}}) => {
 	// TODO(riley): Unfortunate that we're re-sorting this client-side instead
 	//              of collecting + sorting it with GraphQL.
 	const posts = [
@@ -40,9 +38,8 @@ const BlogList = ({data, location, pageContext: {currentPage, numPages}}) => {
 		));
 
 	return (
-		<Layout>
+		<>
 			<SEO title="All posts" />
-			<PageHeader fromPage={location?.state?.fromPage}>Blog</PageHeader>
 			<main className="blog-list">
 				<ul className="blog-posts">
 					{posts.map(post => {
@@ -114,7 +111,7 @@ const BlogList = ({data, location, pageContext: {currentPage, numPages}}) => {
 					)}
 				</div>
 			</main>
-		</Layout>
+		</>
 	);
 };
 

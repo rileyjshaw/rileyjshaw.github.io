@@ -1,6 +1,7 @@
 import {ReactComponent as MenuIcon} from '../../content/images/menu.svg';
 import {useKeyPress} from '../util/hooks';
 import './site-nav.css';
+import ThemeToggleButton from './theme-toggle-button';
 import {Link} from 'gatsby';
 import React, {useState} from 'react';
 
@@ -12,54 +13,45 @@ const links = [
 	['/subscribe', 'Subscribe'],
 ];
 
-export default ({fromPage}) => {
+export default ({location}) => {
 	const [open, setOpen] = useState(false);
-	const [activePage, setActivePage] = useState(fromPage);
+
 	useKeyPress('Escape', () => setOpen(false));
 	return (
 		<nav className="site-nav">
 			<button
-				aria-controls="menu"
+				aria-controls="site_nav_menu"
 				aria-expanded={open}
 				aria-haspopup="true"
 				aria-label="Toggle navigation"
-				className={open ? 'open' : 'closed'}
-				data-target="#menu"
+				className={`site-nav-menu-button ${open ? 'open' : 'closed'}`}
+				data-target="#site_nav_menu"
 				data-toggle="collapse"
-				id="menubutton"
+				id="site_nav_menu_button"
 				onClick={() => setOpen(o => !o)}
 				type="button"
 			>
 				{open ? '✖' : <MenuIcon />}
 			</button>
 			<ul
-				aria-labelledby="menubutton"
+				aria-labelledby="site_nav_menu_button"
 				className={open ? '' : 'hidden'}
-				// hidden={!open}
-				id="menu"
-				onClick={() => setOpen(false)}
+				id="site_nav_menu"
 				role="menu"
 			>
 				{links.map(([href, name]) => (
 					<li
-						className={activePage === name ? 'active' : ''}
+						className={
+							location.pathname === href ||
+							(href.length > 1 &&
+								location.pathname.startsWith(href))
+								? 'active'
+								: ''
+						}
 						key={name}
+						onClick={() => setOpen(false)}
 					>
-						{/* TODO: Setting state here throws warning. */}
-						<Link
-							getProps={props => {
-								if (
-									props.isCurrent ||
-									(props.isPartiallyCurrent &&
-										href.length > 1)
-								)
-									setActivePage(name);
-							}}
-							state={{fromPage: activePage}}
-							to={href}
-						>
-							{name}
-						</Link>
+						<Link to={href}>{name}</Link>
 					</li>
 				))}
 				<li
@@ -67,6 +59,9 @@ export default ({fromPage}) => {
 					className="underline"
 					key="underline"
 				></li>
+				<li className="settings">
+					<ThemeToggleButton uid="navThemeToggle" />
+				</li>
 			</ul>
 		</nav>
 	);

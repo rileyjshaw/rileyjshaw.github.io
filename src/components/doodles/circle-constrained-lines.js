@@ -1,11 +1,11 @@
-import {colors} from '../../util/constants';
+import {getThemeColor} from '../../util/util';
+import {SettingsContext} from '../settings-provider';
 import './circle-constrained-lines.css';
-import React, {useRef, useState, useEffect} from 'react';
+import React, {useRef, useState, useEffect, useContext, useMemo} from 'react';
 
 const {PI, cos, sin, pow} = Math;
 const L = 800;
 const R = L / 3;
-const N_LINES = 800;
 
 // Derived.
 const C = L / 2;
@@ -37,10 +37,12 @@ const variants = [
 ];
 
 export default function CircleConstrainedLines({El = 'div'}, ref) {
+	const {theme} = useContext(SettingsContext);
 	const canvasRef = useRef(null);
 	const [variant, setVariant] = useState(
 		Math.floor(Math.random() * variants.length)
 	);
+	const getColor = useMemo(() => getThemeColor(theme), [theme]);
 	useEffect(() => {
 		const canvas = canvasRef.current;
 		if (!canvas) return;
@@ -58,8 +60,8 @@ export default function CircleConstrainedLines({El = 'div'}, ref) {
 		ctx.beginPath();
 		ctx.globalCompositeOperation = globalCompositeOperation;
 		ctx.lineWidth = lineWidth;
-		ctx.strokeStyle = colors.fg;
-		ctx.fillStyle = colors.co;
+		ctx.strokeStyle = getColor('fg')();
+		ctx.fillStyle = getColor('bg', 'mute')();
 		ctx.arc(C, C, R * 1.03, 0, 2 * PI);
 		ctx.fill();
 
@@ -80,7 +82,7 @@ export default function CircleConstrainedLines({El = 'div'}, ref) {
 			ctx.lineTo(C + x2, C + y2);
 			ctx.stroke();
 		}
-	}, [variant]);
+	}, [variant, theme]);
 	return (
 		<El
 			{...(ref.hasOwnProperty('current') ? {ref} : {})}

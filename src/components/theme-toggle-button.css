@@ -1,0 +1,16 @@
+.theme-toggle-button {
+	background: none;
+	border: 0;
+	cursor: pointer;
+	flex: 1 1 0;
+	font: 500 1em var(--fss);
+	height: 100%;
+	width: max-content;
+}
+.page-header > .theme-toggle-button {
+	height: 120px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 120px;
+}
