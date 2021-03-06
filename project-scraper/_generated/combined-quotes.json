@@ -7,6 +7,13 @@
 		"cite": "https://youtu.be/M7KErICTSHU"
 	},
 	{
+		"uid": "ART_MONEY_TECH",
+		"content": "Arts institutions need money and money comes with ideology. Money wants to know it is improving the world and engaging its audience. Money wants goals and numbers. This is the technological ideology. And this ideology has no space for a painting, a drawing, a video or a hole in the ceiling that you visit day after day, puzzling it out in different moods and lights. No. Look at something new. Look at something good for you. Contemplation is only acceptable in the form meditation, which has been proven to lower stress and make you more productive, with fewer expensive doctor visits.",
+		"author": "Sarah Groff Hennigh-Palermo",
+		"source": "Art Is Not an R&D Lab",
+		"cite": "http://art.sarahghp.com/art-not-rd/"
+	},
+	{
 		"uid": "AUTOMATION_OWNERSHIP",
 		"content": "Who benefits from automation, and who loses, is ultimately a consequence not of the robots themselves, but of who owns them.",
 		"author": "Peter Frase",
@@ -46,6 +53,12 @@
 		"content": "The managers tell us that the swimmers, crawlers, walkers, and fliers spent their lives working in order to eat. These managers are broadcasting their news too soon. The varied beings haven’t all been exterminated yet. You, reader, have only to mingle with them, or just watch them from a distance, to see that their waking lives are filled with dances, games, and feasts. Even the hunt, the stalking and feinting and leaping, is not what we call Work, but what we call Fun. The only beings who work are inmates like us.",
 		"author": "Fredy Perlman",
 		"source": "Against Leviathan"
+	},
+	{
+		"uid": "DELETION_DAY",
+		"content": "Deletion Day challenges the prevailing notion that “more is more”. In a culture that strives for permanence, we celebrate ephemerality, growth, and change. On April 4th, a chorus of Delete keys will ring out across the world. We hope you’ll join us.",
+		"source": "Deletion Day",
+		"cite": "https://deletionday.com"
 	},
 	{
 		"uid": "DYNABOOK_REFLEXIVE",
@@ -109,6 +122,13 @@
 		"author": "Braydie Grove",
 		"source": "How to be a Programmer",
 		"cite": "https://github.com/braydie/HowToBeAProgrammer"
+	},
+	{
+		"uid": "LEARNING_RUST",
+		"content": "Learning Rust will probably not do much to solve that problem for you. It won't assist you in making the ontological leap from a tired stereotype into something sentient and real. You will remain a replaceable silhouette with no discernible identity. It might even exacerbate the problem. However, it will give you a useful tool for writing low-level software.",
+		"author": "Zach Oakes",
+		"source": "Rust for Clojurists",
+		"cite": "https://gist.github.com/oakes/4af1023b6c5162c6f8f0"
 	},
 	{
 		"uid": "LESS_STITCHES",
