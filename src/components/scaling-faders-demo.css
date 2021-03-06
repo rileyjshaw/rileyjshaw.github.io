@@ -1,9 +1,8 @@
 :root {
-	--cfg-emphasis: #000;
-	--cfg-emphasis-rgb: 0, 0, 0;
-	--cui: var(--cy);
-	--cui-emphasis: #dbbe00;
-	--cui-error: var(--cr);
+	--color-fg-bold-rgb: 0, 0, 0;
+	--cui: var(--color-s3);
+	--cui-bold: #dbbe00;
+	--cui-error: var(--color-p1);
 	--fader-height: 200px;
 	--fader-width: 6px;
 }
@@ -19,7 +18,7 @@
 	min-width: 0;
 }
 .scaling-faders-demo {
-	color: var(--cfg);
+	color: var(--color-fg);
 	flex-direction: column;
 	font: 500 24px var(--fss);
 	height: 400px;
@@ -40,7 +39,7 @@
 }
 .scaling-faders::before,
 .scaling-faders::after {
-	border: solid var(--cfg);
+	border: solid var(--color-fg);
 	content: '';
 	height: 12px;
 	position: absolute;
@@ -61,7 +60,7 @@
 }
 .scaling-fader {
 	-webkit-appearance: none;
-	background-color: var(--cfg);
+	background-color: var(--color-fg);
 	border: 0;
 	border-radius: calc(var(--fader-width) / 2);
 	cursor: pointer;
@@ -74,7 +73,7 @@
 	width: var(--fader-height);
 }
 .scaling-fader::-webkit-slider-runnable-track {
-	background: var(--cfg);
+	background: var(--color-fg);
 	border: 0;
 	border-radius: calc(var(--fader-width) / 2);
 	cursor: pointer;
@@ -82,7 +81,7 @@
 	width: var(--fader-height);
 }
 .scaling-fader::-moz-range-track {
-	background: var(--cfg);
+	background: var(--color-fg);
 	border: 0;
 	border-radius: calc(var(--fader-width) / 2);
 	cursor: pointer;
@@ -93,7 +92,7 @@
 	-webkit-appearance: none;
 	appearance: none;
 	background: var(--cui);
-	border: var(--fader-width) solid var(--cfg);
+	border: var(--fader-width) solid var(--color-fg);
 	border-radius: 50%;
 	box-sizing: content-box;
 	cursor: pointer;
@@ -109,7 +108,7 @@
 	-moz-appearance: none;
 	appearance: none;
 	background: var(--cui);
-	border: var(--fader-width) solid var(--cfg);
+	border: var(--fader-width) solid var(--color-fg);
 	border-radius: 50%;
 	cursor: pointer;
 	height: calc(var(--fader-width) * 3);
@@ -122,7 +121,7 @@
 	-webkit-appearance: none;
 	appearance: none;
 	background: var(--cui);
-	border: var(--fader-width) solid var(--cfg);
+	border: var(--fader-width) solid var(--color-fg);
 	border-radius: 50%;
 	cursor: pointer;
 	height: calc(var(--fader-width) * 3);
@@ -143,38 +142,38 @@
 }
 .scaling-fader::-ms-fill-lower,
 .scaling-fader::-ms-fill-upper {
-	background: var(--cfg);
+	background: var(--color-fg);
 	border: 0;
 	border-radius: calc(var(--fader-width) / 2);
 }
 .scaling-fader:active::-webkit-slider-thumb {
-	background: var(--cui-emphasis);
+	background: var(--cui-bold);
 }
 .scaling-fader:active::-moz-range-thumb {
-	background: var(--cui-emphasis);
+	background: var(--cui-bold);
 }
 .scaling-fader:active::-ms-thumb {
-	background: var(--cui-emphasis);
+	background: var(--cui-bold);
 }
 .scaling-fader:focus,
 .scaling-fader:hover {
-	background: var(--cfg-emphasis);
+	background: var(--color-fg-bold);
 	outline: none;
 }
 .scaling-fader:focus ::-webkit-slider-runnable-track,
 .scaling-fader:hover ::-webkit-slider-runnable-track {
-	background: var(--cfg-emphasis);
+	background: var(--color-fg-bold);
 }
 .scaling-fader:focus::-ms-fill-lower,
 .scaling-fader:hover::-ms-fill-lower {
-	background: var(--cfg);
+	background: var(--color-fg);
 }
 .scaling-fader:focus::-ms-fill-upper,
 .scaling-fader:hover::-ms-fill-upper {
-	background: var(--cfg-emphasis);
+	background: var(--color-fg-bold);
 }
 .scaling-fader:focus {
-	box-shadow: 0 0 2px rgba(var(--cfg-emphasis-rgb), 0.5);
+	box-shadow: 0 0 2px rgba(var(--color-fg-bold-rgb), 0.5);
 }
 
 @supports (-ms-ime-align: auto) {
@@ -189,7 +188,7 @@
 }
 .scaling-fader-button {
 	background: var(--cui);
-	border: 6px solid var(--cfg);
+	border: 6px solid var(--color-fg);
 	border-radius: 8px;
 	cursor: pointer;
 	font: inherit;
@@ -197,7 +196,7 @@
 	padding: 1em 1em 0.9em;
 }
 .scaling-fader-button:active {
-	background: var(--cui-emphasis);
+	background: var(--cui-bold);
 }
 .scaling-faders-loading {
 	margin: auto;
@@ -213,8 +212,8 @@
 	width: 1px;
 }
 .scaling-fader-mode-toggle + label::before {
-	background: var(--cbg);
-	border: 6px solid var(--cfg);
+	background: var(--color-bg);
+	border: 6px solid var(--color-fg);
 	border-radius: 50%;
 	box-sizing: content-box;
 	content: '';
@@ -228,7 +227,7 @@
 	background: var(--cui);
 }
 .scaling-fader-mode-toggle:active + label::before {
-	background: var(--cui-emphasis);
+	background: var(--cui-bold);
 }
 @media only screen and (max-width: 600px) {
 	:root {

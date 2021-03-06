@@ -1,7 +1,7 @@
 .banner {
 	align-items: center;
-	background: var(--cfg);
-	color: var(--cbg);
+	background: var(--color-fg);
+	color: var(--color-bg);
 	display: flex;
 	height: var(--font-scale-6);
 	padding: 0 1em;

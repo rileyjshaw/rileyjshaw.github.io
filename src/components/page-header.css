@@ -1,15 +1,19 @@
 .page-header {
 	align-items: flex-end;
-	border-bottom: 4px solid var(--cfg);
+	border-bottom: 4px solid var(--color-fg);
 	display: flex;
 	justify-content: space-between;
-	margin: 1em 1em 0;
+	padding: 1em 1em 0;
+}
+.page-header:focus {
+	outline: none;
 }
 .title {
-	color: var(--cfg);
+	color: var(--color-fg);
 	font-family: var(--fh);
 	font-size: var(--font-scale-4);
 	font-weight: 500;
+	isolation: isolate;
 	line-height: 1.1;
 	margin: 0;
 	padding-bottom: 12px;
@@ -18,31 +22,30 @@
 .page-header a {
 	text-decoration: none;
 }
-.title .r,
-.title .g,
-.title .b {
-	mix-blend-mode: multiply;
+.title .c,
+.title .m,
+.title .y {
 	width: max-content;
 	will-change: left, top;
 }
-.title .r {
-	color: var(--cr);
+.title .c {
+	color: var(--color-s1);
 	position: relative;
 }
-.title .r > :last-child {
+.title .c > :last-child {
 	margin-bottom: -0.1em;
 }
-.title .g,
-.title .b {
+.title .m,
+.title .y {
 	pointer-events: none;
 	position: absolute;
 	user-select: none;
 }
-.title .g {
-	color: var(--cg);
+.title .m {
+	color: var(--color-s2);
 }
-.title .b {
-	color: var(--cb);
+.title .y {
+	color: var(--color-s3);
 }
 .title span {
 	display: block;

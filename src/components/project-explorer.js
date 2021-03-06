@@ -1,5 +1,6 @@
 // TODO(RILEY): https://tympanus.net/Development/TiltHoverEffects/index.html
 import allProjectsQuery from '../util/all-projects-query';
+import {STORAGE_KEYS} from '../util/constants';
 import contentTypes from '../util/content-types';
 import {useInView, useStickyState} from '../util/hooks';
 import sortingMethods, {shuffle} from '../util/sorting-methods';
@@ -20,15 +21,15 @@ const ProjectExplorer = React.memo(props => {
 	const [drawerOpen, setDrawerOpen] = useState(false);
 	const [ascending, setAscending] = useStickyState(
 		false,
-		'LAB_V2_ascending',
+		STORAGE_KEYS.labAscending,
 		{version}
 	);
-	const [sortIdx, setSortIdx] = useStickyState(0, 'LAB_V2_sortIdx', {
+	const [sortIdx, setSortIdx] = useStickyState(0, STORAGE_KEYS.labSortIdx, {
 		version,
 	});
 	const [typeStates, setTypeStates] = useStickyState(
 		() => Array.from(nodeTypes).fill(true),
-		'LAB_V2_typeStates',
+		STORAGE_KEYS.labTypeStates,
 		{version}
 	);
 

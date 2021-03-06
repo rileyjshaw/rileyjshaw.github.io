@@ -1,15 +1,4 @@
 :root {
-	--co: #eee;
-	--cr: #ff4136;
-	--cg: #2ecc40;
-	--cb: #0074d9;
-	--cc: #00bcd4;
-	--cm: #e91e63;
-	--cy: #ffdc00;
-	--ck: #0a0b08;
-	--cbg: #faf9f7;
-	--cbgrgb: 255, 255, 255;
-	--cfg: var(--ck);
 	--fss: 'Geomanist', arial, 'Helvetica Neue', helvetica, sans-serif;
 	--fs: georgia, palatino, 'Palatino Linotype', times, 'Times New Roman',
 		serif;
@@ -32,9 +21,11 @@
 *::before,
 *::after {
 	box-sizing: border-box;
+	transition: all 0.2s ease-in-out;
+	transition-property: background-color, border-color, color;
 }
 ::selection {
-	background: var(--cy);
+	background: var(--color-s3);
 }
 html,
 body {
@@ -65,16 +56,20 @@ textarea,
 select,
 pre,
 code {
+	color: inherit;
 	font: inherit;
 	letter-spacing: inherit;
 	word-spacing: inherit;
+}
+input[type='text'] {
+	background: var(--color-bg-bold);
 }
 button {
 	cursor: pointer;
 }
 html {
-	background: var(--cbg);
-	color: var(--cfg);
+	background: var(--color-bg);
+	color: var(--color-fg);
 	font: 18px/1.7 var(--fss);
 	scroll-behavior: smooth;
 }
@@ -128,7 +123,7 @@ pre {
 	overflow: auto;
 }
 a {
-	color: var(--cb);
+	color: var(--color-blue);
 }
 a[target='_blank'] {
 	cursor: alias;
@@ -136,4 +131,10 @@ a[target='_blank'] {
 a[target='_blank']::after {
 	content: '\202F\279A';
 	font-family: var(--fs);
+}
+.dark-theme ul {
+	list-style: disc;
+}
+.dark-theme ::selection {
+	background: var(--color-p2);
 }

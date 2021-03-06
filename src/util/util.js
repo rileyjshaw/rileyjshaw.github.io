@@ -1,3 +1,36 @@
+import {cssColorProperty} from './_util';
+import {
+	ABSTRACT_COLORS,
+	ABSTRACT_COLOR_PROPERTIES,
+	DIRECT_COLORS,
+} from './constants';
+
+export function applyTheme(activeTheme) {
+	const root = document.documentElement;
+	[DIRECT_COLORS, ABSTRACT_COLOR_PROPERTIES]
+		.map(themes => themes[activeTheme])
+		.forEach((theme, i) => {
+			Object.entries(theme).forEach(([color, _o]) => {
+				Object.entries(_o).forEach(([variant, value]) => {
+					root.style.setProperty(
+						cssColorProperty(color, variant),
+						i ? value : `rgb(${value})`
+					);
+				});
+			});
+		});
+}
+
+// Usage example: getThemeColor('light')('fg')();
+export function getThemeColor(activeTheme) {
+	const themeColors = ABSTRACT_COLORS[activeTheme];
+	return (color, variant = 'main') => {
+		const rgb = themeColors[color][variant];
+		return (alpha = 1) =>
+			alpha === 1 ? `rgb(${rgb})` : `rgba(${rgb.concat(alpha)})`;
+	};
+}
+
 // Returns a random bit array within a specified length range, with
 // configurable bias towards 0 or 1.
 export function randSequence(minLength, maxLength, bias = 0.5) {

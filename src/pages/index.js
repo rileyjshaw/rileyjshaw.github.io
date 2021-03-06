@@ -6,8 +6,6 @@ import CycleText from '../components/cycle-text';
 import BackgroundGenerator from '../components/doodles/background-generator';
 import CircleConstrainedLines from '../components/doodles/circle-constrained-lines';
 import GoUp from '../components/go-up';
-import Layout from '../components/layout';
-import PageHeader from '../components/page-header';
 import SEO from '../components/seo';
 import allProjectsQuery from '../util/all-projects-query';
 import {shuffle, sortByDate} from '../util/sorting-methods';
@@ -31,7 +29,7 @@ const doodles = [
 	]),
 ];
 
-const IndexPage = ({featuredProjects = [], location}) => {
+const IndexPage = ({featuredProjects = []}) => {
 	// TODO(riley): Get featured projects from here.
 	const {
 		aboutIntro: {
@@ -51,9 +49,8 @@ const IndexPage = ({featuredProjects = [], location}) => {
 	const {Doodle, styles: doodleStyles} = doodles[doodleIdx];
 
 	return (
-		<Layout>
+		<>
 			<SEO />
-			<PageHeader fromPage={location?.state?.fromPage} />
 			<main className="main-content">
 				<div className="frontpage-grid">
 					<div className="frontpage-doodle" style={doodleStyles}>
@@ -109,7 +106,7 @@ const IndexPage = ({featuredProjects = [], location}) => {
 				<BigQuote quoteId="SPUTTERED_AND_STOPPED" />
 				<GoUp />
 			</main>
-		</Layout>
+		</>
 	);
 };
 

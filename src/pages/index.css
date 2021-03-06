@@ -12,18 +12,18 @@
 	margin: 0;
 }
 .frontpage-doodle {
-	aspect-ratio: 1 / 1;
-	border: 5px solid var(--cfg);
+	border: 5px solid var(--color-fg);
 	height: max-content;
 	max-width: 100%;
 	position: relative;
 }
 .frontpage-doodle .new-doodle {
 	align-items: center;
-	background: var(--cbg);
-	border: 6px solid var(--cfg);
+	background: var(--color-bg);
+	border: 6px solid var(--color-fg);
 	border-radius: 50%;
 	bottom: -21px;
+	color: var(--color-fg);
 	display: flex;
 	height: 56px;
 	justify-content: center;
@@ -59,7 +59,7 @@
 	grid-column-end: -1;
 }
 h2 + .lab-link {
-	color: var(--cfg);
+	color: var(--color-fg);
 	font-size: var(--font-scale-1);
 }
 .explore-more {

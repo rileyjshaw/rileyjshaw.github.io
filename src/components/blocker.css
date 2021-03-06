@@ -1,7 +1,7 @@
 .idle-blocker,
 .idle-blocker button {
-	background: var(--cfg);
-	color: var(--cbg);
+	background: var(--color-black);
+	color: var(--color-white);
 	font-family: var(--fs);
 }
 .idle-blocker {
@@ -18,10 +18,11 @@
 	width: 100vw;
 	z-index: 10;
 }
-.idle-blocker ul {
+.idle-blocker ul.options {
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
+	margin: var(--font-scale--1) 0;
 	padding: 0;
 }
 .idle-blocker button {

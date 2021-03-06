@@ -5,7 +5,6 @@
 	height: 100%;
 }
 .page-not-found #gatsby-focus-wrapper {
-	background: var(--cc);
 	display: flex;
 	flex-direction: column;
 }
@@ -13,9 +12,8 @@
 	justify-self: flex-start;
 }
 .page-not-found main {
-	background: var(--cbg);
-	border: 1px solid var(--cfg);
-	box-shadow: 4px 4px var(--cfg);
+	border: 1px solid var(--color-fg);
+	box-shadow: 4px 4px var(--color-fg);
 	margin: 60px auto 0;
 	max-width: 90%;
 	padding: var(--font-scale-1) var(--font-scale-2);
@@ -23,9 +21,6 @@
 }
 /* TODO(riley): Share these breakpoints. */
 @media only screen and (max-width: 480px) {
-	.page-not-found #gatsby-focus-wrapper {
-		background: var(--cbg);
-	}
 	.page-not-found main {
 		border: 0;
 		box-shadow: none;

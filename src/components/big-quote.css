@@ -40,7 +40,7 @@
 .big-quote .refresh {
 	background: none;
 	border: 0;
-	fill: var(--cfg);
+	color: var(--color-fg);
 	margin-bottom: 120px;
 }
 /* TODO(riley): Share these breakpoints. */

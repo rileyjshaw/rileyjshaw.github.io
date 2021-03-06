@@ -4,6 +4,8 @@ import './content-node.css';
 import React from 'react';
 import useDimensions from 'react-use-dimensions';
 
+// TODO: Break this component and the grid fitting component out into separate
+//       files.
 // Each content type needs:
 //   "uid":
 //   "type":
@@ -23,12 +25,11 @@ export default React.memo(
 			masonry,
 		} = props;
 
-		if (type === 'doodle') return <Doodle ref={ref} />;
-		if (!contentTypes[type]) return null;
+		if (type === 'doodle') return <Doodle ref={ref} {...props} />;
 
-		const {className = '', readableType, shortType, Inner} = contentTypes[
-			type
-		];
+		const contentType = contentTypes[type];
+		if (!contentType) return null;
+		const {className = '', readableType, shortType, Inner} = contentType;
 
 		const [innerRef, {height}] = useDimensions({liveMeasure: false});
 		// Inner: Math.ceil((height + 27) / (27 * 2))

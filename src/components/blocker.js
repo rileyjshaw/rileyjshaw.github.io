@@ -25,7 +25,7 @@ export default ({onClose}) => {
 						It is now: <Time />.
 					</p>
 					<p>Do you still want to be on the internet?</p>
-					<ul>
+					<ul className="options">
 						<li>
 							<button
 								onClick={() => {

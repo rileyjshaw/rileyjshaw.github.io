@@ -1,8 +1,6 @@
 import {ExternalLink} from '../components/auto-link';
 import BigQuote from '../components/big-quote';
 import GoUp from '../components/go-up';
-import Layout from '../components/layout';
-import PageHeader from '../components/page-header';
 import SEO from '../components/seo';
 import '../templates/post.css';
 import './about.css';
@@ -10,10 +8,9 @@ import {StaticQuery, graphql} from 'gatsby';
 import {MDXRenderer} from 'gatsby-plugin-mdx';
 import React from 'react';
 
-const AboutPage = ({location}) => (
-	<Layout>
+const AboutPage = () => (
+	<>
 		<SEO title="About" className="about" />
-		<PageHeader fromPage={location?.state?.fromPage}>About</PageHeader>
 		<StaticQuery
 			query={graphql`
 				{
@@ -194,7 +191,7 @@ const AboutPage = ({location}) => (
 				</main>
 			)}
 		/>
-	</Layout>
+	</>
 );
 
 export default AboutPage;

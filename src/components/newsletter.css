@@ -25,15 +25,15 @@
 	margin: var(--font-scale--1) 0;
 }
 .newsletter-form input[type='text'] {
-	border: 1px solid var(--cfg);
+	border: 1px solid var(--color-fg);
 	border-right: 0;
 	flex-grow: 1;
 	padding: 4px 12px;
 }
 .newsletter-form input[type='submit'] {
-	background: var(--cfg);
+	background: var(--color-fg);
 	border: 0;
-	color: var(--cbg);
+	color: var(--color-bg);
 	cursor: pointer;
 	font-family: var(--fss);
 }

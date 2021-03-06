@@ -1,18 +1,14 @@
 import {ExternalLink} from '../components/auto-link';
 import {Time} from '../components/blocker';
-import Layout from '../components/layout';
-import PageHeader from '../components/page-header';
 import SEO from '../components/seo';
 import './404.css';
 import {Link} from 'gatsby';
 import React from 'react';
 
+// TODO: Update design, check `location` with a useEffect.
 const NotFoundPage = ({location}) => (
-	<Layout>
+	<>
 		<SEO title="404: Not found" className="page-not-found" />
-		<PageHeader>
-			<span>Page</span> <span>not</span> <span>found.</span>
-		</PageHeader>
 		<main className="404-main">
 			<p>
 				You tried to load a page that doesn't exist. Here are some
@@ -56,7 +52,7 @@ const NotFoundPage = ({location}) => (
 				</li>
 			</ul>
 		</main>
-	</Layout>
+	</>
 );
 
 export default NotFoundPage;

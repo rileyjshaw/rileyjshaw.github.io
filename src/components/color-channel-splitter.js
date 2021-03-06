@@ -1,11 +1,7 @@
 import {isRenderingOnClient} from '../util/constants';
-import {
-	useInView,
-	useMousePosition,
-	useWindowSize,
-	useMediaQuery,
-} from '../util/hooks';
-import React, {cloneElement, isValidElement} from 'react';
+import {useInView, useMousePosition, useWindowSize} from '../util/hooks';
+import {SettingsContext} from './settings-provider';
+import React, {cloneElement, isValidElement, useContext, useMemo} from 'react';
 
 const deepCloneChildren = (children, propsFn = null) =>
 	React.Children.map(children, child =>
@@ -18,7 +14,7 @@ const deepCloneChildren = (children, propsFn = null) =>
 			: child
 	);
 
-export default ({
+const ColorChannelSplitter = ({
 	children,
 	El = 'div',
 	className,
@@ -31,16 +27,22 @@ export default ({
 		isRenderingOnClient && inView && window
 	);
 	const [windowWidth, windowHeight] = useWindowSize();
-	const prefersReducedMotion = useMediaQuery(
-		'(prefers-reduced-motion: reduce)'
+	const {theme, reducedMotion, contrastPreference} = useContext(
+		SettingsContext
 	);
-	const highContrast = useMediaQuery('(prefers-contrast: high)');
-	const hideRgb = prefersReducedMotion || highContrast;
-	let offsets;
-	if (hideRgb) {
-		const rStyles = {top: 0, left: 0};
-		const gbStyles = {...rStyles, display: 'none'};
-		offsets = [rStyles, gbStyles, gbStyles];
+	const hideColors = reducedMotion || contrastPreference === 'more';
+
+	let styles;
+	let commonStyles = useMemo(
+		() => ({
+			mixBlendMode: theme === 'light' ? 'darken' : 'lighten',
+		}),
+		[theme]
+	);
+	if (hideColors) {
+		commonStyles = {...commonStyles, top: 0, left: 0};
+		const otherChannelStyles = {...commonStyles, display: 'none'};
+		styles = [commonStyles, otherChannelStyles, otherChannelStyles];
 	} else {
 		const windowCenter = [windowWidth / 2, windowHeight / 2];
 		const angle = Math.atan2(
@@ -53,9 +55,10 @@ export default ({
 				mousePosition[1] - windowCenter[1]
 			) / 256;
 
-		offsets = Array.from({length: 3}, (_, i) => {
+		styles = Array.from({length: 3}, (_, i) => {
 			const a = angle + (i * Math.PI * 2) / 3;
 			return {
+				...commonStyles,
 				top: magnitude * Math.sin(a) * intensity,
 				left: magnitude * Math.cos(a) * intensity,
 			};
@@ -66,18 +69,20 @@ export default ({
 		<El
 			style={style}
 			ref={ref}
-			className={`rgb-splitter ${className ? className : ''}`}
+			className={`color-channel-splitter ${className ? className : ''}`}
 			{...rest}
 		>
-			<div className={hideRgb ? 'k' : 'r'} style={offsets[0]}>
+			<div className={hideColors ? 'k' : 'c'} style={styles[0]}>
 				{children}
 			</div>
-			<div className="g" style={offsets[1]} aria-hidden="true">
+			<div className="m" style={styles[1]} aria-hidden="true">
 				{deepCloneChildren(children)}
 			</div>
-			<div className="b" style={offsets[2]} aria-hidden="true">
+			<div className="y" style={styles[2]} aria-hidden="true">
 				{deepCloneChildren(children)}
 			</div>
 		</El>
 	);
 };
+
+export default ColorChannelSplitter;
