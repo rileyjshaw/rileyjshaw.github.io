@@ -5,27 +5,37 @@ import {useInView as useInViewExternal} from 'react-intersection-observer';
 export function useWindowSize(cb) {
 	const [size, setSize] = useState(() =>
 		isRenderingOnClient
-			? [window.innerWidth, window.innerHeight]
+			? [
+					window.innerWidth,
+					window.innerHeight,
+					Math.hypot(window.innerWidth, window.innerHeight),
+			  ]
 			: [1000, 1000]
 	);
 	const debouncedSize = useDebounce(size, 300);
 	useEffect(() => {
 		const handleResize = () =>
-			setSize([window.innerWidth, window.innerHeight]);
+			setSize([
+				window.innerWidth,
+				window.innerHeight,
+				Math.hypot(window.innerWidth, window.innerHeight),
+			]);
 		window.addEventListener('resize', handleResize);
-		cb && cb(size);
 		return () => {
 			window.removeEventListener('resize', handleResize);
 		};
-	}, debouncedSize);
+	}, []);
+	useEffect(() => {
+		cb && cb(size);
+	}, [cb, debouncedSize]);
 	return debouncedSize;
 }
 
 export function useMousePosition(el) {
 	const [mousePosition, setMousePosition] = useState([null, null]);
-	// TODO(riley): Will this work for anything other than window?
-	const handleMouseMove = e => setMousePosition([e.clientX, e.clientY]);
 	useEffect(() => {
+		// TODO(riley): Will this work for anything other than window?
+		const handleMouseMove = e => setMousePosition([e.clientX, e.clientY]);
 		if (el) {
 			el.addEventListener('mousemove', handleMouseMove, false);
 			return () => {
