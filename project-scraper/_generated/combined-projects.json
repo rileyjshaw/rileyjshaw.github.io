@@ -43,6 +43,18 @@
 		"timestamp": 1544313600000
 	},
 	{
+		"uid": "COMMIT_0065325B42759A67CC72CBAD73C5F1D97BDF2857",
+		"type": "commit",
+		"title": "Feature: add an embed blocker for external media 🔐",
+		"date": "2021-02-07",
+		"link": "https://rileyjshaw.commit--blog.com/rileyjshaw/rileyjshaw.github.io/0065325b42759a67cc72cbad73c5f1d97bdf2857",
+		"repo": "rileyjshaw/rileyjshaw.github.io",
+		"body": "<p>Makes page loads snappier, and lets folks opt into Google’s tracking empire</p>",
+		"description": "<p>Makes page loads snappier, and lets folks opt into Google’s tracking empire</p>",
+		"more": false,
+		"timestamp": 1612656000000
+	},
+	{
 		"uid": "COMMIT_0167A91073922AC7B5018C6A73C894853DABBA56",
 		"type": "commit",
 		"title": "Remove numkey layout bindings",
