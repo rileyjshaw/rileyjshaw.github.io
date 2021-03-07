@@ -3,6 +3,7 @@ import {STORAGE_KEYS} from '../util/constants';
 import {useIdle, useStickyState} from '../util/hooks';
 import Blocker from './blocker';
 import './layout.css';
+import MouseTracker from './mouse-tracker';
 import {SettingsContext} from './settings-provider';
 import React, {useContext, useEffect, useMemo, useState} from 'react';
 
@@ -68,6 +69,7 @@ const Layout = ({children, location}) => {
 			)}
 			{showPageHeader && <PageHeader location={location} />}
 			<div className="site-content">{children}</div>
+			<MouseTracker />
 		</div>
 	);
 };

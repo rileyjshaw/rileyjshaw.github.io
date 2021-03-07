@@ -1,0 +1,28 @@
+.color-channel-splitter .channel {
+	mix-blend-mode: darken;
+	width: max-content;
+}
+.dark-theme .color-channel-splitter .channel {
+	mix-blend-mode: lighten;
+}
+.color-channel-splitter .s2,
+.color-channel-splitter .s3 {
+	left: 0;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	user-select: none;
+}
+.color-channel-splitter .s1 {
+	color: var(--color-s1);
+}
+.color-channel-splitter .s2 {
+	color: var(--color-s2);
+}
+.color-channel-splitter .s3 {
+	color: var(--color-s3);
+}
+.color-channel-splitter.no-split .s2,
+.color-channel-splitter.no-split .s3 {
+	display: none;
+}

@@ -22,30 +22,17 @@
 .page-header a {
 	text-decoration: none;
 }
-.title .c,
-.title .m,
-.title .y {
-	width: max-content;
-	will-change: left, top;
+.title .s1 {
+	transform: translate(var(--header-x-offset-s1), var(--header-y-offset-s1));
 }
-.title .c {
-	color: var(--color-s1);
-	position: relative;
+.title .s2 {
+	transform: translate(var(--header-x-offset-s2), var(--header-y-offset-s2));
 }
-.title .c > :last-child {
+.title .s3 {
+	transform: translate(var(--header-x-offset-s3), var(--header-y-offset-s3));
+}
+.title .s1 > :last-child {
 	margin-bottom: -0.1em;
-}
-.title .m,
-.title .y {
-	pointer-events: none;
-	position: absolute;
-	user-select: none;
-}
-.title .m {
-	color: var(--color-s2);
-}
-.title .y {
-	color: var(--color-s3);
 }
 .title span {
 	display: block;
