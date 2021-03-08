@@ -31,9 +31,6 @@
 .title .s3 {
 	transform: translate(var(--header-x-offset-s3), var(--header-y-offset-s3));
 }
-.title .s1 > :last-child {
-	margin-bottom: -0.1em;
-}
 .title span {
 	display: block;
 }

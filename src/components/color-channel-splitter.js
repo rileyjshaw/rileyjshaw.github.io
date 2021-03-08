@@ -1,6 +1,6 @@
 import {useInView} from '../util/hooks';
 import './color-channel-splitter.css';
-import {withSettings} from './settings-provider';
+import {SettingsContext} from './settings-provider';
 import React, {cloneElement, isValidElement, useContext} from 'react';
 
 const deepCloneChildren = (children, propsFn = null) =>
@@ -19,13 +19,15 @@ function ColorChannelSplitter({
 	El = 'div',
 	className,
 	style,
-	settings: {reducedMotion, contrastPreference},
 	...rest
 }) {
 	const [ref, inView] = useInView({threshold: 0});
+	const {theme, reducedMotion, contrastPreference} = useContext(
+		SettingsContext
+	);
 
 	const hideColors =
-		!inView || reducedMotion || contrastPreference === 'more';
+		!inView || !theme || reducedMotion || contrastPreference === 'more';
 
 	const classNames = [
 		'color-channel-splitter',
@@ -50,4 +52,4 @@ function ColorChannelSplitter({
 	);
 }
 
-export default withSettings(ColorChannelSplitter);
+export default ColorChannelSplitter;
