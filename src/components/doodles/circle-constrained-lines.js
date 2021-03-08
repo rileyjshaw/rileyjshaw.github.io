@@ -1,5 +1,5 @@
 import {getThemeColor} from '../../util/util';
-import {SettingsContext} from '../settings-provider';
+import {withSettings} from '../settings-provider';
 import './circle-constrained-lines.css';
 import React, {useRef, useState, useEffect, useContext, useMemo} from 'react';
 
@@ -36,8 +36,7 @@ const variants = [
 	},
 ];
 
-export default function CircleConstrainedLines({El = 'div'}, ref) {
-	const {theme} = useContext(SettingsContext);
+function CircleConstrainedLines({El = 'div', settings: {theme}}, ref) {
 	const canvasRef = useRef(null);
 	const [variant, setVariant] = useState(
 		Math.floor(Math.random() * variants.length)
@@ -97,3 +96,5 @@ export default function CircleConstrainedLines({El = 'div'}, ref) {
 		</El>
 	);
 }
+
+export default withSettings(CircleConstrainedLines);

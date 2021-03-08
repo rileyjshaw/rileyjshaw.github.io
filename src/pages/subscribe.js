@@ -9,7 +9,7 @@ import React from 'react';
 
 const SubscribePage = () => (
 	<>
-		<SEO title="Subscribe" className="subscribe-page" />
+		<SEO title="Subscribe" />
 		<div className="inner">
 			<Newsletter />
 			<hr />

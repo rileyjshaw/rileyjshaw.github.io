@@ -1,5 +1,5 @@
 import {getThemeColor, randSequence, lcm} from '../../util/util';
-import {SettingsContext} from '../settings-provider';
+import {withSettings} from '../settings-provider';
 import './background-generator.css';
 import React, {useState, useEffect, useContext, useMemo} from 'react';
 
@@ -80,12 +80,11 @@ const getState = (
 	return [canvas, tiledCanvas, nTiles, height];
 };
 
-export default function BackgroundGenerator(props, ref) {
+function BackgroundGenerator({settings: {theme}, ...props}, ref) {
 	const {width, zoom, dark, light, El, className} = {
 		...defaultProps,
 		...props,
 	};
-	const {theme} = useContext(SettingsContext);
 	const themeBias = theme === 'light' ? 0.65 : 0.45; // 0: light | 1: dark
 	const cDark = useMemo(() => getThemeColor(theme)(dark)(), [dark, theme]);
 	const cLight = useMemo(() => getThemeColor(theme)(light)(), [
@@ -134,3 +133,5 @@ export default function BackgroundGenerator(props, ref) {
 		</El>
 	);
 }
+
+export default withSettings(BackgroundGenerator);

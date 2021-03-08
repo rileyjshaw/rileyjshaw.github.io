@@ -1,5 +1,11 @@
 import {isRenderingOnClient, isRenderingOnServer} from './constants';
-import {useState, useEffect, useRef, useLayoutEffect} from 'react';
+import {
+	useCallback,
+	useEffect,
+	useLayoutEffect,
+	useRef,
+	useState,
+} from 'react';
 import {useInView as useInViewExternal} from 'react-intersection-observer';
 
 export function useWindowSize(cb) {
@@ -169,31 +175,44 @@ export function useInView() {
 	return [ref, inView, entry];
 }
 
+// Note: returns `null` or `serverState` for SSR’d components.
 export function useStickyState(
 	defaultValue,
 	key,
-	{scope = 'local', version = 'default'} = {}
+	{scope = 'local', version = 'default', serverState = null} = {}
 ) {
-	const [value, setValue] = useState(() => {
+	const [{initialized, value}, setValue] = useState({
+		initialized: false,
+		value: serverState,
+	});
+	const setInitializedValue = useCallback(newValue =>
+		setValue(({value: oldValue}) => ({
+			initialized: true,
+			value:
+				typeof newValue === 'function' ? newValue(oldValue) : newValue,
+		}))
+	);
+	useEffect(() => {
 		const evaluatedDefault =
 			typeof defaultValue === 'function' ? defaultValue() : defaultValue;
-		if (isRenderingOnServer) return evaluatedDefault;
 		const stickyValue = JSON.parse(window[`${scope}Storage`].getItem(key));
 		if (
 			!stickyValue?.hasOwnProperty?.('value') ||
 			!stickyValue?.hasOwnProperty?.('version') ||
 			!stickyValue.version === version
-		)
-			return evaluatedDefault;
-		return stickyValue.value;
-	});
+		) {
+			setInitializedValue(evaluatedDefault);
+		} else setInitializedValue(stickyValue.value);
+	}, []);
 	useEffect(() => {
-		window[`${scope}Storage`].setItem(
-			key,
-			JSON.stringify({value, version})
-		);
-	}, [key, value, version]);
-	return [value, setValue];
+		if (initialized) {
+			window[`${scope}Storage`].setItem(
+				key,
+				JSON.stringify({value, version})
+			);
+		}
+	}, [initialized, key, value, version]);
+	return [value, setInitializedValue];
 }
 
 export function useMediaQuery(query) {

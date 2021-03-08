@@ -10,7 +10,7 @@ import React from 'react';
 
 const AboutPage = () => (
 	<>
-		<SEO title="About" className="about" />
+		<SEO title="About" />
 		<StaticQuery
 			query={graphql`
 				{

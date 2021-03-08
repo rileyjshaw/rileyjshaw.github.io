@@ -10,7 +10,7 @@ import './project-explorer.css';
 import {useStaticQuery, graphql} from 'gatsby';
 import React, {Fragment, useState, useEffect, useMemo} from 'react';
 
-const ProjectExplorer = React.memo(props => {
+const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 	const [nodeTypes, version] = useMemo(() => {
 		const nodeTypes = Array.from(
 			new Set(props.nodes.map(n => n.type))
@@ -30,12 +30,14 @@ const ProjectExplorer = React.memo(props => {
 	const [typeStates, setTypeStates] = useStickyState(
 		() => Array.from(nodeTypes).fill(true),
 		STORAGE_KEYS.labTypeStates,
-		{version}
+		{version, serverState: []}
 	);
 
-	const nSources = typeStates.reduce((a, b) => a + b) || typeStates.length;
+	const nSources =
+		typeStates.reduce((a, b) => a + b, 0) || typeStates.length;
 
 	const nodes = useMemo(() => {
+		if (!typeStates.length) return null;
 		const {sortFn} = sortingMethods[sortIdx];
 		const checkedTypeNames = nodeTypes.filter((_, i) => typeStates[i]);
 		const [doodles, filtered] = (checkedTypeNames.length
@@ -64,109 +66,117 @@ const ProjectExplorer = React.memo(props => {
 	}, [ascending, sortIdx, typeStates, props.nodes]);
 
 	return (
-		<div className="project-explorer">
-			<button
-				className="project-explorer-hide-filters"
-				onClick={() => setDrawerOpen(openState => !openState)}
-			>
-				{drawerOpen ? 'Hide filters ▲' : 'Show filters ▼'}
-			</button>
-			<div className="filters">
-				{drawerOpen && (
-					/* TODO(riley): Once display: contents or display:
+		nodes && (
+			<div className="project-explorer">
+				<button
+					className="project-explorer-hide-filters"
+					onClick={() => setDrawerOpen(openState => !openState)}
+				>
+					{drawerOpen ? 'Hide filters ▲' : 'Show filters ▼'}
+				</button>
+				<div className="filters">
+					{drawerOpen && (
+						/* TODO(riley): Once display: contents or display:
 				subgrid have good support, replace <p.legend> with
 				<legend>, get rid of the .inputs wrappers, and nest
 				<fieldset>s (display: contents) around each <legend> /
 				.inputs / button set. Until then, the children need to
 				be direct descendents of the grid, and a11y takes a
 				hit. */
-					<div className="controls">
-						<p className="legend">Show:</p>
-						<div className="inputs">
-							{nodeTypes.map((type, i) => (
-								<Fragment key={type}>
-									<input
-										type="checkbox"
-										name={`labs-types-${type}`}
-										id={`labs-types-${type}`}
-										value={type}
-										checked={typeStates[i]}
-										onChange={e => {
-											const {checked} = e.target;
-											setTypeStates(prevTypeStates => {
-												const updatedTypeStates = [
-													...prevTypeStates,
-												];
-												updatedTypeStates[i] = checked;
-												return updatedTypeStates;
-											});
-										}}
-									/>
-									<label htmlFor={`labs-types-${type}`}>
-										{contentTypes[type].readableType}s
-									</label>
-								</Fragment>
-							))}
-						</div>
-						<button
-							className="labs-clear labs-clear-types"
-							onClick={() =>
-								setTypeStates(
-									new Array(nodeTypes.length).fill(false)
-								)
-							}
-						>
-							✖
-						</button>
-						<p className="legend">Sort by:</p>
-						<div className="inputs">
-							{sortingMethods.map(({title}, i) => (
-								<Fragment key={title}>
-									<input
-										type="radio"
-										name={`labs-sort-${title}`}
-										id={`labs-sort-${title}`}
-										value={title}
-										checked={sortIdx === i}
-										onChange={() => setSortIdx(i)}
-									/>
-									<label htmlFor={`labs-sort-${title}`}>
-										{title.toUpperCase().slice(0, 1) +
-											title.slice(1)}
-									</label>
-								</Fragment>
-							))}
-						</div>
-						<p className="legend">Order:</p>
-						<div className="inputs">
-							<input
-								type="checkbox"
-								name="labs-order"
-								id="labs-order"
-								value="ascending"
-								checked={ascending}
-								onChange={e => setAscending(e.target.checked)}
-							/>
-							<label htmlFor="labs-order">Reverse</label>
-							{/* TODO: Add the shuffle button back here!
+						<div className="controls">
+							<p className="legend">Show:</p>
+							<div className="inputs">
+								{nodeTypes.map((type, i) => (
+									<Fragment key={type}>
+										<input
+											type="checkbox"
+											name={`labs-types-${type}`}
+											id={`labs-types-${type}`}
+											value={type}
+											checked={typeStates[i]}
+											onChange={e => {
+												const {checked} = e.target;
+												setTypeStates(
+													prevTypeStates => {
+														const updatedTypeStates = [
+															...prevTypeStates,
+														];
+														updatedTypeStates[
+															i
+														] = checked;
+														return updatedTypeStates;
+													}
+												);
+											}}
+										/>
+										<label htmlFor={`labs-types-${type}`}>
+											{contentTypes[type].readableType}s
+										</label>
+									</Fragment>
+								))}
+							</div>
+							<button
+								className="labs-clear labs-clear-types"
+								onClick={() =>
+									setTypeStates(
+										new Array(nodeTypes.length).fill(false)
+									)
+								}
+							>
+								✖
+							</button>
+							<p className="legend">Sort by:</p>
+							<div className="inputs">
+								{sortingMethods.map(({title}, i) => (
+									<Fragment key={title}>
+										<input
+											type="radio"
+											name={`labs-sort-${title}`}
+											id={`labs-sort-${title}`}
+											value={title}
+											checked={sortIdx === i}
+											onChange={() => setSortIdx(i)}
+										/>
+										<label htmlFor={`labs-sort-${title}`}>
+											{title.toUpperCase().slice(0, 1) +
+												title.slice(1)}
+										</label>
+									</Fragment>
+								))}
+							</div>
+							<p className="legend">Order:</p>
+							<div className="inputs">
+								<input
+									type="checkbox"
+									name="labs-order"
+									id="labs-order"
+									value="ascending"
+									checked={ascending}
+									onChange={e =>
+										setAscending(e.target.checked)
+									}
+								/>
+								<label htmlFor="labs-order">Reverse</label>
+								{/* TODO: Add the shuffle button back here!
 
 							<button onClick={this.shuffleDisplayNodes}>
 								Shuffle
 							</button> */}
+							</div>
 						</div>
-					</div>
-				)}
+					)}
+				</div>
+				<p className="result-details">
+					Found <strong>{nodes.length}</strong> entries from{' '}
+					<strong>{nSources}</strong> source
+					{nSources === 1 ? '' : 's'}:
+				</p>
+				<LazyGrid
+					nodes={nodes}
+					setIsFullyLoaded={props.setIsFullyLoaded}
+				/>
 			</div>
-			<p className="result-details">
-				Found <strong>{nodes.length}</strong> entries from{' '}
-				<strong>{nSources}</strong> source
-				{nSources === 1 ? '' : 's'}:
-			</p>
-			<LazyGrid
-				nodes={nodes}
-				setIsFullyLoaded={props.setIsFullyLoaded}
-			/>
-		</div>
+		)
 	);
 });
 

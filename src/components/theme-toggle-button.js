@@ -1,7 +1,7 @@
 import ClientOnly from './client-only';
-import {SettingsContext} from './settings-provider';
+import {withSettings} from './settings-provider';
 import './theme-toggle-button.css';
-import React, {useCallback, useContext, useMemo, useRef} from 'react';
+import React, {useCallback, useMemo, useRef} from 'react';
 
 // TODO: Eye should definitely follow the mouse.
 
@@ -50,8 +50,8 @@ const THEME_ATTRIBUTES = {
 		},
 	},
 };
-export default ({uid}) => {
-	const {themeKey, setThemeKey} = useContext(SettingsContext);
+
+function ThemeToggleButton({uid, settings: {themeKey, setThemeKey}}) {
 	const mainAnimationRef = useRef(null);
 
 	const refCallback = useCallback(node => {
@@ -259,4 +259,6 @@ export default ({uid}) => {
 			</button>
 		</ClientOnly>
 	);
-};
+}
+
+export default withSettings(ThemeToggleButton);
