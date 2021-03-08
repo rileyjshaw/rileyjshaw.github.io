@@ -184,6 +184,9 @@
 	margin: auto;
 	width: 42px;
 }
+.dark-theme .content-node.icon img {
+	filter: invert(1);
+}
 .excerpt {
 	position: relative;
 }
