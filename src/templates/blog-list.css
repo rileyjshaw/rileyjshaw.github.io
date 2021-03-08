@@ -1,5 +1,5 @@
 .blog-list {
-	padding: 30px;
+	padding: var(--grid-gap);
 }
 .blog-list .blog-posts {
 	list-style: none;
@@ -7,7 +7,7 @@
 	padding: 0;
 }
 .blog-list .blog-post {
-	margin-bottom: 30px;
+	margin-bottom: var(--grid-gap);
 	padding-bottom: 0;
 }
 .blog-list .blog-post h1 {
