@@ -163,7 +163,7 @@ async function getArena() {
 		));
 		console.log(`Got ${channels.length} Are.na channels.`);
 		channels
-			.filter(channel => channel.length > 5)
+			.filter(channel => channel.length > 20)
 			.forEach(channel => {
 				const uid = idify(`ARENA_${channel.slug}`);
 				const index = formatted.findIndex(d => d.uid === uid);
