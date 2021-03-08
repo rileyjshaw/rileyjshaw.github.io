@@ -1,6 +1,6 @@
 .project-explorer {
 	min-height: 100vh;
-	padding: 30px;
+	padding: var(--grid-gap);
 }
 .project-explorer .controls {
 	align-items: flex-start;
@@ -58,7 +58,7 @@
 	font-family: var(--fh);
 	font-size: var(--font-scale--1);
 	font-weight: 500;
-	margin: 0 0 30px 16px;
+	margin: 0 0 var(--grid-gap) 16px;
 	padding: 10px 20px;
 }
 .project-explorer-hide-filters {

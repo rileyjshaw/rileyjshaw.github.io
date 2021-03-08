@@ -69,7 +69,7 @@ h2 + .lab-link {
 	.frontpage-grid {
 		grid-template-columns: 1fr;
 		padding: 2.5em 1em 0;
-		row-gap: 30px;
+		row-gap: var(--grid-gap);
 	}
 	.frontpage-doodle {
 		display: none;
