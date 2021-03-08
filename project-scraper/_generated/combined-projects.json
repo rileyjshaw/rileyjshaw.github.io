@@ -22,27 +22,6 @@
 		"timestamp": 1542758400000
 	},
 	{
-		"uid": "ARENA_SUAXBJVGLLS",
-		"type": "arenaChannel",
-		"title": "☀️🤘",
-		"date": "2018-11-04",
-		"link": "https://are.na/riley-shaw/suaxbjvglls",
-		"description": "",
-		"updatedAt": "2021-03-06",
-		"length": 12,
-		"timestamp": 1541289600000
-	},
-	{
-		"uid": "ARENA_TILDE_QVDRQCJJOPM",
-		"type": "arenaChannel",
-		"title": "~",
-		"date": "2018-12-09",
-		"link": "https://are.na/riley-shaw/tilde-qvdrqcjjopm",
-		"updatedAt": "2021-03-07",
-		"length": 15,
-		"timestamp": 1544313600000
-	},
-	{
 		"uid": "COMMIT_0065325B42759A67CC72CBAD73C5F1D97BDF2857",
 		"type": "commit",
 		"title": "Feature: add an embed blocker for external media 🔐",
