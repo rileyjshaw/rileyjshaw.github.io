@@ -1,6 +1,7 @@
 import {STORAGE_KEYS} from '../util/constants';
 import {useMediaQuery, useStickyState} from '../util/hooks';
 import {applyTheme} from '../util/util';
+import ClientOnly from './client-only';
 import React, {createContext, useEffect} from 'react';
 
 export const SettingsContext = createContext();
@@ -48,7 +49,7 @@ const SettingsProvider = ({children}) => {
 		STORAGE_KEYS.blockEmbeds
 	);
 
-	useEffect(() => applyTheme(theme), [themeKey, theme]);
+	useEffect(() => theme && applyTheme(theme), [themeKey, theme]);
 
 	return (
 		<SettingsContext.Provider
@@ -73,5 +74,15 @@ const SettingsProvider = ({children}) => {
 		</SettingsContext.Provider>
 	);
 };
+
+export const withSettings = WrappedComponent => props => (
+	<SettingsContext.Consumer>
+		{settings => (
+			<ClientOnly>
+				<WrappedComponent settings={settings} {...props} />
+			</ClientOnly>
+		)}
+	</SettingsContext.Consumer>
+);
 
 export default SettingsProvider;

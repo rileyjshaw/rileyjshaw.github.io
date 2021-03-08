@@ -10,7 +10,7 @@ export default function Template({data}) {
 	const {fields, body} = mdx;
 	return (
 		<>
-			<SEO title={fields.title} className="blog-post-page" />
+			<SEO title={fields.title} />
 			<header className="top-nav" role="banner">
 				<nav role="navigation">
 					<h1>

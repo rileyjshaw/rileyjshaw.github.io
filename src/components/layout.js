@@ -25,7 +25,15 @@ const unusedLocalStorageKeys = [
 	)
 );
 
-const Layout = ({children, location}) => {
+const PAGE_CLASSES = {
+	'/': 'index-page',
+	'/about': 'about-page',
+	'/subscribe': 'subscribe-page',
+	'/blog': 'blog-page',
+	'/blog/post': 'blog-post-page',
+};
+
+const Layout = ({children, location, uri}) => {
 	const {theme, reducedMotion, contrastPreference} = useContext(
 		SettingsContext
 	);
@@ -33,7 +41,7 @@ const Layout = ({children, location}) => {
 	const [nTimesClosed, setNTimesClosed] = useStickyState(
 		0,
 		STORAGE_KEYS.nTimesClosedBlocker,
-		{scope: 'session'}
+		{scope: 'session', serverState: 0}
 	);
 	useIdle(60000 * 4 * (nTimesClosed + 1), () => setIsBlockerOpen(true));
 	useEffect(() => {
@@ -42,21 +50,21 @@ const Layout = ({children, location}) => {
 		);
 	}, []);
 
-	const wrapperClassNames = useMemo(
-		() =>
-			[
-				'site-wrapper',
-				`${theme}-theme`,
-				reducedMotion && 'reduced-motion',
-				contrastPreference !== 'default' &&
-					`contrast-preference-${contrastPreference}`,
-			]
-				.filter(x => x)
-				.join(' '),
-		[theme, reducedMotion, contrastPreference]
-	);
+	const isBlogPost = location.pathname.match(/\/blog\/.*[^0-9/]/);
+	if (uri.startsWith('/blog')) uri = isBlogPost ? '/blog/post' : '/blog';
+	const wrapperClassNames = [
+		'site-wrapper',
+		theme && `${theme}-theme`,
+		reducedMotion && 'reduced-motion',
+		contrastPreference &&
+			contrastPreference !== 'default' &&
+			`contrast-preference-${contrastPreference}`,
+		PAGE_CLASSES[uri],
+	]
+		.filter(x => x)
+		.join(' ');
 
-	const showPageHeader = !location.pathname.match(/\/blog\/.*[^0-9/]/);
+	const showPageHeader = !isBlogPost;
 	return (
 		<div className={wrapperClassNames}>
 			{isBlockerOpen && (
