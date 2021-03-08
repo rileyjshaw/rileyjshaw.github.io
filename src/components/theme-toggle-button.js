@@ -174,7 +174,7 @@ function ThemeToggleButton({uid, settings: {themeKey, setThemeKey}}) {
 					<text width="50" dy="-0.5em">
 						<textPath
 							href={`#${eyelidsId}`}
-							vectorEffect="non-scaling-stroke"
+							strokeWidth={0}
 							startOffset="25%"
 							style={{textAnchor: 'middle'}}
 						>
@@ -184,7 +184,7 @@ function ThemeToggleButton({uid, settings: {themeKey, setThemeKey}}) {
 					<text width="50" dy="1em">
 						<textPath
 							href={`#${eyelidsId}`}
-							vectorEffect="non-scaling-stroke"
+							strokeWidth={0}
 							startOffset="75%"
 							style={{textAnchor: 'middle', letterSpacing: 2}}
 							y="10"
