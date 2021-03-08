@@ -32,7 +32,7 @@ const typeTransformers = {
 	commit: [
 		n => {
 			n.body = fixLinks(n.body);
-			n.description = fixLinks(n.body);
+			n.description = fixLinks(n.description);
 		},
 	],
 	screenshotsTumblr: [
@@ -49,7 +49,7 @@ const typeTransformers = {
 	tumblr: [
 		n => {
 			n.body = fixLinks(n.body);
-			n.description = fixLinks(n.body);
+			n.description = fixLinks(n.description);
 		},
 	],
 	patch: [

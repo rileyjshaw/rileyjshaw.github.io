@@ -45,6 +45,11 @@ const excerptify = body => {
 		// Limit the excerpt to 700 characters.
 		({charCount, els}, el) => {
 			if (charCount > 700) return {charCount, els, more: true};
+			// TODO:
+			// if (charCount + charCount + el.textContent.length > 700) {
+			// Recursively go through Array.from(el.children).reverse(), and delete
+			// nodes until it’s under 700 characters.
+			// }
 			return {
 				charCount: charCount + el.textContent.length,
 				els: [...els, el],
