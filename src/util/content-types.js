@@ -44,6 +44,28 @@ export const IconContent = ({image, title}) => (
 		<img src={image} width={84} height={84} alt={`${title} icon`} />
 	</main>
 );
+export const DweetContent = ({title, blockEmbeds}) => {
+	const [showEmbed, setShowEmbed] = useState(false);
+
+	return (
+		<div className="dweet-content">
+			{!blockEmbeds || showEmbed ? (
+				<iframe
+					width="100%"
+					height="100%"
+					frameBorder="0"
+					src={`https://www.dwitter.net/e/${title.slice(1)}`}
+					allowFullScreen="true"
+				/>
+			) : (
+				<BlockEmbedButton
+					type="Dwitter"
+					onClick={() => setShowEmbed(true)}
+				/>
+			)}
+		</div>
+	);
+};
 export const PatchContent = ({description, link}) => (
 	<main>
 		{description?.slice(-3) === '...' ? (
@@ -146,9 +168,9 @@ export default {
 		readableType: 'Doodle',
 	},
 	dweet: {
-		className: 'span-2',
+		className: 'span-5',
 		readableType: 'Dweet',
-		Inner: TitleOnly,
+		Inner: DweetContent,
 	},
 	patch: {
 		className: 'span-4',

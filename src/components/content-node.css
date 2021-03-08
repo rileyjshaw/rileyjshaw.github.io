@@ -9,12 +9,25 @@
 .content-node.doodle {
 	padding: 0;
 }
-.content-node .song-content {
+.content-node .song-content,
+.content-node .dweet-content {
 	align-items: center;
 	display: flex;
 	height: 100px;
 	justify-content: center;
 	margin: 12px 0 24px;
+}
+.content-node .dweet-content {
+	height: auto;
+	padding: 36% 0;
+	position: relative;
+}
+.content-node .dweet-content iframe {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 .content-node .video-embed {
 	align-items: center;
