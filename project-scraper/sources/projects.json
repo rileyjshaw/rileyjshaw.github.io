@@ -25,7 +25,9 @@
 	},
 	{
 		"title": "SVG &lt;animate&gt; tests",
-		"description": ["Even more tiny tests while learning SVG’s SMIL specification."],
+		"description": [
+			"Even more tiny tests while learning SVG’s SMIL specification."
+		],
 		"date": "2021-03-04",
 		"coolness": 14,
 		"link": "https://codepen.io/rileyjshaw/pen/rNWKPOW",
