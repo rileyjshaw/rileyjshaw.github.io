@@ -22,3 +22,12 @@
 	grid-column-start: 2;
 	margin: 0;
 }
+@media only screen and (max-width: 600px) {
+	.subscribe-page .rss-feeds {
+		grid-template-columns: 1fr;
+	}
+	.subscribe-page .rss-feeds dt,
+	.subscribe-page .rss-feeds dd {
+		grid-column: 1 / -1;
+	}
+}
