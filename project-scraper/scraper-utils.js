@@ -29,7 +29,7 @@ const excerptify = body => {
 
 	function processNode(node) {
 		if (
-			['IMG'].includes(node.nodeName) ||
+			['IMG', 'IFRAME'].includes(node.nodeName) ||
 			node.textContent.length === 0 ||
 			node.className === 'gatsby-resp-image-wrapper'
 		) {
