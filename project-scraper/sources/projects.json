@@ -24,6 +24,65 @@
 		"todo": true
 	},
 	{
+		"title": "SVG &lt;animate&gt; tests",
+		"description": ["Even more tiny tests while learning SVG’s SMIL specification."],
+		"date": "2021-03-04",
+		"coolness": 14,
+		"link": "https://codepen.io/rileyjshaw/pen/rNWKPOW",
+		"tags": ["pretty", "online"]
+	},
+	{
+		"title": "breathing timer",
+		"description": [
+			"A quick experiment to see if SVG <code>&lt;animateTransform&gt;</code> declarations can be copied and reused (they can).",
+			"Inhale for 4 seconds, hold for 7 seconds, exhale for 9 seconds."
+		],
+		"date": "2021-03-03",
+		"coolness": 16,
+		"link": "https://codepen.io/rileyjshaw/full/bGBKmZp",
+		"tags": ["pretty", "online", "golf"]
+	},
+	{
+		"title": "Winking SVG",
+		"description": [
+			"A raw SVG animation using no external libraries. It’s also cute. Click to animate.",
+			"Used as an initial test for this site’s theme picker icon."
+		],
+		"date": "2021-03-03",
+		"coolness": 38,
+		"link": "https://codepen.io/rileyjshaw/pen/abBKOmE",
+		"tags": ["pretty", "online", "golf"]
+	},
+	{
+		"title": "Minimal SVG dark mode icon",
+		"description": [
+			"An attempt to fit a few difficult SVG requirements (SMIL animation, resizable with fixed stroke width, fits within container bounds) into the same icon.",
+			"It’s a different icon than the one I created for this site."
+		],
+		"date": "2021-03-03",
+		"coolness": 44,
+		"link": "https://codepen.io/rileyjshaw/pen/LYbrEGb",
+		"tags": ["pretty", "online"]
+	},
+	{
+		"title": "February calendar",
+		"date": "2021-02-28",
+		"coolness": 26,
+		"link": "https://codepen.io/rileyjshaw/full/poNLNOL",
+		"tags": ["pretty", "online"]
+	},
+	{
+		"title": "Palette test tool",
+		"description": [
+			"Bikeshedding (noun): <em>Futile investment of time and energy in discussion of marginal technical issues. Procrastination.</em>",
+			"A bespoke developer tool that I created to choose the additive (dark theme) and subtractive (light theme) color palettes for this website."
+		],
+		"date": "2021-02-12",
+		"coolness": 40,
+		"link": "https://github.com/rileyjshaw/palette-test-tool",
+		"tags": ["online", "reusable", "app"]
+	},
+	{
 		"title": "Font comparison tool",
 		"description": [
 			"A tool for comparing local / web fonts side-by-side.",
@@ -1045,7 +1104,7 @@
 		"date": "2016-03-28",
 		"tags": ["online", "pretty"],
 		"coolness": 60,
-		"link": "http://s.codepen.io/rileyjshaw/debug/BKZOwz",
+		"link": "https://codepen.io/rileyjshaw/full/BKZOwz",
 		"lastTagged": 1564707875762
 	},
 	{
