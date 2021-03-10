@@ -1056,7 +1056,7 @@
 	{
 		"title": "Desire paths",
 		"description": [
-			"Remix of ~~~ using angles &amp; moving agents instead of absolute positions."
+			"Remix of <a href=\"https://codepen.io/rileyjshaw/pen/oxwVNw\" target=\"_blank\" rel=\"noopener noreferrer\">~~~</a> using angles &amp; moving agents instead of absolute positions."
 		],
 		"date": "2016-04-04",
 		"tags": ["online", "pretty"],
