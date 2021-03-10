@@ -88,7 +88,7 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\" && stylelint \"src/**/*.css\" --fix",
     "lint": "npm run format",
     "preload-fonts": "gatsby-preload-fonts",
-    "scrape": "npx babel-node project-scraper/run-scraper.js && npm run format",
+    "scrape": "npx babel-node project-scraper/run-scraper.js && prettier --write \"project-scraper/**/*.{js,jsx,json,md}\"",
     "scraper": "npm run scrape",
     "serve": "gatsby serve",
     "start": "npm run develop",
