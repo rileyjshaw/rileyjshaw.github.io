@@ -87,19 +87,12 @@ module.exports = {
 				name: `markdown`,
 			},
 		},
-		{
-			resolve: `gatsby-source-filesystem`,
-			options: {
-				path: `${__dirname}/project-scraper/sources/`,
-				name: `data`,
-			},
-		},
 		`gatsby-transformer-json`,
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
 				path: `${__dirname}/project-scraper/_generated/`,
-				name: `scraped`,
+				name: `generated`,
 			},
 		},
 		{

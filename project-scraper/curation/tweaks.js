@@ -123,6 +123,7 @@ function runTweaks() {
 	const scrapedQuotes = require('../_generated/scraped-quotes.json');
 	const listedProjects = require('../sources/projects.json');
 	const listedQuotes = require('../sources/quotes.json');
+	const {taggedProjects} = require('../sources/tags.json');
 	const projects = [
 		...scrapedProjects,
 		...listedProjects
@@ -142,6 +143,15 @@ function runTweaks() {
 				};
 			}),
 	];
+
+	// Add project tags.
+	projects.forEach(project => {
+		const projectTags = taggedProjects[project.uid];
+		if (projectTags) {
+			project.tags = projectTags.tags;
+			project.lastTagged = projectTags.updated;
+		}
+	});
 
 	// Add type transformers to each node of each specified type.
 	Object.entries(typeTransformers).forEach(([type, transformers]) => {
