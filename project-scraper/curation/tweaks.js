@@ -43,7 +43,7 @@ const typeTransformers = {
 	song: [
 		n => {
 			n.coolness = 50;
-			n.tags = ['music', 'online'];
+			addTags(n, ['music', 'online']);
 		},
 	],
 	tumblr: [
@@ -134,9 +134,11 @@ function runTweaks() {
 					// HACK(riley): Array for projects, string for other things.
 					descriptionList: description,
 					type: 'project',
-					uid: `PROJECT_${p.title
-						.toUpperCase()
-						.replace(/[- ]/g, '_')}`,
+					uid: `PROJECT_${p.title.replace(/[- ]/g, '_')}`
+						.replace(/\W/g, char =>
+							char.codePointAt(0).toString(36)
+						)
+						.toUpperCase(),
 				};
 			}),
 	];
