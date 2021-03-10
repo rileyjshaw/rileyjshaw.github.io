@@ -17,7 +17,7 @@
 		"date": "2018-11-21",
 		"link": "https://are.na/riley-shaw/hw-u1lmoisdnyu",
 		"description": "",
-		"updatedAt": "2021-03-08",
+		"updatedAt": "2021-03-10",
 		"length": 218,
 		"timestamp": 1542758400000
 	},
@@ -1088,73 +1088,6 @@
 		"timestamp": 1610236800000
 	},
 	{
-		"title": ".supermac",
-		"date": "2015-09-07",
-		"tags": ["reusable"],
-		"coolness": 89,
-		"link": "https://github.com/rileyjshaw/.supermac",
-		"lastTagged": 1564708739903,
-		"descriptionList": [
-			"A collection of dotfiles that I use + some scripts to keep ’em in sync."
-		],
-		"type": "project",
-		"uid": "PROJECT_.SUPERMAC",
-		"timestamp": 1441584000000
-	},
-	{
-		"title": "“Points” color palette",
-		"date": "2014-09-01",
-		"tags": ["online", "pretty"],
-		"coolness": 16,
-		"link": "https://codepen.io/rileyjshaw/full/JvdrG/",
-		"lastTagged": 1564624449407,
-		"descriptionList": [
-			"I was designing an app with a rainbow interface, so I threw this page together to see how the palette looked together."
-		],
-		"type": "project",
-		"uid": "PROJECT_“POINTS”_COLOR_PALETTE",
-		"timestamp": 1409529600000
-	},
-	{
-		"title": "~~~",
-		"date": "2016-03-28",
-		"tags": ["online", "pretty"],
-		"coolness": 64,
-		"link": "https://codepen.io/rileyjshaw/pen/oxwVNw",
-		"lastTagged": 1564707876975,
-		"descriptionList": ["Blend modes + simplex noise."],
-		"type": "project",
-		"uid": "PROJECT_~~~",
-		"timestamp": 1459123200000
-	},
-	{
-		"title": "┋┋┋",
-		"date": "2016-03-13",
-		"tags": ["online", "pretty"],
-		"coolness": 74,
-		"link": "https://codepen.io/rileyjshaw/full/mPrXxb/",
-		"lastTagged": 1564707890990,
-		"descriptionList": [
-			"Variations on <a href=\"https://codepen.io/rileyjshaw/pen/dMpJre\" rel=\"noopener noreferrer\" target=\"_blank\">Stone</a> with controlled line angles across the circle."
-		],
-		"type": "project",
-		"uid": "PROJECT_┋┋┋",
-		"timestamp": 1457827200000
-	},
-	{
-		"title": "1.618 tests",
-		"date": "2019-02-02",
-		"coolness": 22,
-		"link": "https://codepen.io/rileyjshaw/pen/pGPaKQ",
-		"tags": ["online"],
-		"descriptionList": [
-			"After watching some <a href=\"https://asknature.org/resource/doodling-in-math-spirals-fibonacci-and-being-a-plant\" rel=\"noopener noreferrer\" target=\"_blank\">Vi Hart videos</a>, I started thinking a lot about Fibonacci Hashing and made some simple visualizations to test ideas."
-		],
-		"type": "project",
-		"uid": "PROJECT_1.618_TESTS",
-		"timestamp": 1549065600000
-	},
-	{
 		"title": "10 colors that faded away",
 		"date": "2013-11-25",
 		"tags": ["golf", "online", "pretty"],
@@ -1176,6 +1109,33 @@
 		"type": "project",
 		"uid": "PROJECT_1125899906842624",
 		"timestamp": 1394668800000
+	},
+	{
+		"title": "1.618 tests",
+		"date": "2019-02-02",
+		"coolness": 22,
+		"link": "https://codepen.io/rileyjshaw/pen/pGPaKQ",
+		"tags": ["online"],
+		"descriptionList": [
+			"After watching some <a href=\"https://asknature.org/resource/doodling-in-math-spirals-fibonacci-and-being-a-plant\" rel=\"noopener noreferrer\" target=\"_blank\">Vi Hart videos</a>, I started thinking a lot about Fibonacci Hashing and made some simple visualizations to test ideas."
+		],
+		"type": "project",
+		"uid": "PROJECT_11A618_TESTS",
+		"timestamp": 1549065600000
+	},
+	{
+		"title": ".supermac",
+		"date": "2015-09-07",
+		"tags": ["reusable"],
+		"coolness": 89,
+		"link": "https://github.com/rileyjshaw/.supermac",
+		"lastTagged": 1564708739903,
+		"descriptionList": [
+			"A collection of dotfiles that I use + some scripts to keep ’em in sync."
+		],
+		"type": "project",
+		"uid": "PROJECT_1ASUPERMAC",
+		"timestamp": 1441584000000
 	},
 	{
 		"title": "28 Hour Day",
@@ -1225,8 +1185,48 @@
 		"lastTagged": 1564708937835,
 		"descriptionList": ["BYOG (glasses)."],
 		"type": "project",
-		"uid": "PROJECT_3D_TEXT!",
+		"uid": "PROJECT_3D_TEXTX",
 		"timestamp": 1387065600000
+	},
+	{
+		"title": "~~~",
+		"date": "2016-03-28",
+		"tags": ["online", "pretty"],
+		"coolness": 64,
+		"link": "https://codepen.io/rileyjshaw/pen/oxwVNw",
+		"lastTagged": 1564707876975,
+		"descriptionList": ["Blend modes + simplex noise."],
+		"type": "project",
+		"uid": "PROJECT_3I3I3I",
+		"timestamp": 1459123200000
+	},
+	{
+		"title": "“Points” color palette",
+		"date": "2014-09-01",
+		"tags": ["online", "pretty"],
+		"coolness": 16,
+		"link": "https://codepen.io/rileyjshaw/full/JvdrG/",
+		"lastTagged": 1564624449407,
+		"descriptionList": [
+			"I was designing an app with a rainbow interface, so I threw this page together to see how the palette looked together."
+		],
+		"type": "project",
+		"uid": "PROJECT_6CCPOINTS6CD_COLOR_PALETTE",
+		"timestamp": 1409529600000
+	},
+	{
+		"title": "┋┋┋",
+		"date": "2016-03-13",
+		"tags": ["online", "pretty"],
+		"coolness": 74,
+		"link": "https://codepen.io/rileyjshaw/full/mPrXxb/",
+		"lastTagged": 1564707890990,
+		"descriptionList": [
+			"Variations on <a href=\"https://codepen.io/rileyjshaw/pen/dMpJre\" rel=\"noopener noreferrer\" target=\"_blank\">Stone</a> with controlled line angles across the circle."
+		],
+		"type": "project",
+		"uid": "PROJECT_7BF7BF7BF",
+		"timestamp": 1457827200000
 	},
 	{
 		"title": "A disco badass",
@@ -1316,7 +1316,7 @@
 		"lastTagged": 1564707896427,
 		"descriptionList": ["Small canvas demo using Lissajous curves."],
 		"type": "project",
-		"uid": "PROJECT_ASTRONOMIE_&_ASTROPHYSIQUE",
+		"uid": "PROJECT_ASTRONOMIE_12_ASTROPHYSIQUE",
 		"timestamp": 1457222400000
 	},
 	{
@@ -1334,6 +1334,17 @@
 		"timestamp": 1466035200000
 	},
 	{
+		"title": "b+w",
+		"date": "2016-04-13",
+		"tags": ["online", "pretty"],
+		"coolness": 34,
+		"link": "https://codepen.io/rileyjshaw/pen/bpvwxQ",
+		"lastTagged": 1564707861136,
+		"type": "project",
+		"uid": "PROJECT_B17W",
+		"timestamp": 1460505600000
+	},
+	{
 		"title": "b/w?",
 		"date": "2019-02-01",
 		"coolness": 20,
@@ -1343,19 +1354,8 @@
 			"Testing the limits of the illusion that R+G+B = grey"
 		],
 		"type": "project",
-		"uid": "PROJECT_B/W?",
+		"uid": "PROJECT_B1BW1R",
 		"timestamp": 1548979200000
-	},
-	{
-		"title": "b+w",
-		"date": "2016-04-13",
-		"tags": ["online", "pretty"],
-		"coolness": 34,
-		"link": "https://codepen.io/rileyjshaw/pen/bpvwxQ",
-		"lastTagged": 1564707861136,
-		"type": "project",
-		"uid": "PROJECT_B+W",
-		"timestamp": 1460505600000
 	},
 	{
 		"title": "Ball",
@@ -1394,7 +1394,7 @@
 			"This used to be on Chrome Experiments but it’s offline now :("
 		],
 		"type": "project",
-		"uid": "PROJECT_BEN_EATH:_SURF_ACE",
+		"uid": "PROJECT_BEN_EATH1M_SURF_ACE",
 		"timestamp": 1398729600000
 	},
 	{
@@ -1439,7 +1439,7 @@
 		"link": "https://codepen.io/rileyjshaw/full/mAmRNa/",
 		"lastTagged": 1564608408933,
 		"type": "project",
-		"uid": "PROJECT_BLINDS_(WITH_TYPE)",
+		"uid": "PROJECT_BLINDS_14WITH_TYPE15",
 		"timestamp": 1474848000000
 	},
 	{
@@ -1479,7 +1479,7 @@
 			"Written originally as a bookmarklet in 2013."
 		],
 		"type": "project",
-		"uid": "PROJECT_BOOM!",
+		"uid": "PROJECT_BOOMX",
 		"timestamp": 1447545600000
 	},
 	{
@@ -1547,7 +1547,7 @@
 			"A few quick doodles that I eventually ported to WebGL."
 		],
 		"type": "project",
-		"uid": "PROJECT_CANVAS_B/W_IMAGE_EFFECTS",
+		"uid": "PROJECT_CANVAS_B1BW_IMAGE_EFFECTS",
 		"timestamp": 1602288000000
 	},
 	{
@@ -1651,7 +1651,7 @@
 			"This was my first CodePen to hit the front page :)"
 		],
 		"type": "project",
-		"uid": "PROJECT_COLOR_JUMP!",
+		"uid": "PROJECT_COLOR_JUMPX",
 		"timestamp": 1380412800000
 	},
 	{
@@ -1782,7 +1782,7 @@
 		"lastTagged": 1564708953257,
 		"descriptionList": ["Are the base lines straight or at an angle?"],
 		"type": "project",
-		"uid": "PROJECT_CSS_SLOPE_ILLUSION_IN_<140_CHARACTERS",
+		"uid": "PROJECT_CSS_SLOPE_ILLUSION_IN_1O140_CHARACTERS",
 		"timestamp": 1384905600000
 	},
 	{
@@ -1859,7 +1859,7 @@
 			"Play this one in a small window. Arrow keys to move around."
 		],
 		"type": "project",
-		"uid": "PROJECT_CYBER_PILOT_(WITH_CONTROLS)",
+		"uid": "PROJECT_CYBER_PILOT_14WITH_CONTROLS15",
 		"timestamp": 1475020800000
 	},
 	{
@@ -1870,7 +1870,7 @@
 		"link": "https://www.lexaloffle.com/bbs/?tid=27569",
 		"lastTagged": 1564608416268,
 		"type": "project",
-		"uid": "PROJECT_CYCLIC_CA_(PICO_8)",
+		"uid": "PROJECT_CYCLIC_CA_14PICO_815",
 		"timestamp": 1472428800000
 	},
 	{
@@ -1920,7 +1920,7 @@
 		"link": "https://codepen.io/rileyjshaw/full/mPBZNj/",
 		"lastTagged": 1564707868594,
 		"descriptionList": [
-			"Remix of ~~~ using angles &amp; moving agents instead of absolute positions."
+			"Remix of <a href=\"https://codepen.io/rileyjshaw/pen/oxwVNw\" rel=\"noopener noreferrer\" target=\"_blank\">~~~</a> using angles &amp; moving agents instead of absolute positions."
 		],
 		"type": "project",
 		"uid": "PROJECT_DESIRE_PATHS",
@@ -1934,7 +1934,7 @@
 		"link": "https://codepen.io/collection/DRPBqZ/",
 		"lastTagged": 1564707864470,
 		"type": "project",
-		"uid": "PROJECT_DESIRE_PATHS:_REMIXES",
+		"uid": "PROJECT_DESIRE_PATHS1M_REMIXES",
 		"timestamp": 1460246400000
 	},
 	{
@@ -1983,7 +1983,7 @@
 			"Recursive illustration of the loci of points on a moving circle."
 		],
 		"type": "project",
-		"uid": "PROJECT_DOUBLE_DOUBLE_DOTS_(CSS_ONLY)",
+		"uid": "PROJECT_DOUBLE_DOUBLE_DOTS_14CSS_ONLY15",
 		"timestamp": 1590451200000
 	},
 	{
@@ -2220,7 +2220,7 @@
 		"link": "https://codepen.io/rileyjshaw/full/BKZOwz",
 		"lastTagged": 1564707875762,
 		"type": "project",
-		"uid": "PROJECT_FLEXIN’_DONUT",
+		"uid": "PROJECT_FLEXIN6C9_DONUT",
 		"timestamp": 1459123200000
 	},
 	{
@@ -2353,7 +2353,7 @@
 		"lastTagged": 1564708966191,
 		"descriptionList": ["Recreating a nice hover effect in CSS."],
 		"type": "project",
-		"uid": "PROJECT_FS_VIDEO_+_BLOCKING_TILES",
+		"uid": "PROJECT_FS_VIDEO_17_BLOCKING_TILES",
 		"timestamp": 1383177600000
 	},
 	{
@@ -2485,7 +2485,7 @@
 		"lastTagged": 1564707917359,
 		"descriptionList": ["Riffing on pokéball wave."],
 		"type": "project",
-		"uid": "PROJECT_GOTTA_CATCH_’EM_ALL",
+		"uid": "PROJECT_GOTTA_CATCH_6C9EM_ALL",
 		"timestamp": 1450137600000
 	},
 	{
@@ -2525,7 +2525,7 @@
 			"Animated lava lamps with simple non-rectangular collision detection and metaballs for wax clumps."
 		],
 		"type": "project",
-		"uid": "PROJECT_GROOVY!",
+		"uid": "PROJECT_GROOVYX",
 		"timestamp": 1457136000000
 	},
 	{
@@ -2550,7 +2550,7 @@
 			"Type “help” for command list."
 		],
 		"type": "project",
-		"uid": "PROJECT_HACKERS.COOL",
+		"uid": "PROJECT_HACKERS1ACOOL",
 		"timestamp": 1420675200000
 	},
 	{
@@ -2562,7 +2562,7 @@
 		"lastTagged": 1564707848382,
 		"descriptionList": ["It’s hard to see the ship… :/"],
 		"type": "project",
-		"uid": "PROJECT_HAVE_YOU_SEEN_MY_SHIP?",
+		"uid": "PROJECT_HAVE_YOU_SEEN_MY_SHIP1R",
 		"timestamp": 1462320000000
 	},
 	{
@@ -2697,7 +2697,7 @@
 			"Sticky headers cover internally-linked content by default. The most robust solutions I’ve seen use JS, but these 4 lines of CSS seem to do the trick."
 		],
 		"type": "project",
-		"uid": "PROJECT_INTERNAL_LINK_OFFSET_(STICKY_HEADER)",
+		"uid": "PROJECT_INTERNAL_LINK_OFFSET_14STICKY_HEADER15",
 		"timestamp": 1426204800000
 	},
 	{
@@ -2755,7 +2755,7 @@
 			"Drag your mouse over it, and click for something special."
 		],
 		"type": "project",
-		"uid": "PROJECT_JOY_DIVISION:_UNKNOWN_PLEASURES",
+		"uid": "PROJECT_JOY_DIVISION1M_UNKNOWN_PLEASURES",
 		"timestamp": 1456185600000
 	},
 	{
@@ -3023,7 +3023,7 @@
 		"lastTagged": 1564708805462,
 		"descriptionList": ["Utils for <a href=\"/terra\">Terra</a>."],
 		"type": "project",
-		"uid": "PROJECT_MOORE_/_VON_NEUMANN_NEIGHBORHOODS",
+		"uid": "PROJECT_MOORE_1B_VON_NEUMANN_NEIGHBORHOODS",
 		"timestamp": 1415059200000
 	},
 	{
@@ -3049,7 +3049,7 @@
 		"link": "https://codepen.io/rileyjshaw/pen/BWjZZV/?editors=1100",
 		"lastTagged": 1564608379885,
 		"type": "project",
-		"uid": "PROJECT_MULTI_LINE_LISTS_WITH_ITEM_SEPARATORS_(CSS_ONLY)",
+		"uid": "PROJECT_MULTI_LINE_LISTS_WITH_ITEM_SEPARATORS_14CSS_ONLY15",
 		"timestamp": 1488326400000
 	},
 	{
@@ -3350,7 +3350,7 @@
 			"I’ve got plaster swirls on my ceiling. This began as a recreation of that and turned into something else."
 		],
 		"type": "project",
-		"uid": "PROJECT_PLASTER_SWIRLS,_SORT_OF",
+		"uid": "PROJECT_PLASTER_SWIRLS18_SORT_OF",
 		"timestamp": 1465948800000
 	},
 	{
@@ -3361,7 +3361,7 @@
 		"link": "https://codepen.io/rileyjshaw/full/Meeedv",
 		"lastTagged": 1564707815578,
 		"type": "project",
-		"uid": "PROJECT_PLASTER_SWIRLS,_THICKER",
+		"uid": "PROJECT_PLASTER_SWIRLS18_THICKER",
 		"timestamp": 1465948800000
 	},
 	{
@@ -3400,7 +3400,7 @@
 			"Animated demo written alongside a new programmer who was really into Pokémon."
 		],
 		"type": "project",
-		"uid": "PROJECT_POKÉBALL_WAVE",
+		"uid": "PROJECT_POK6HBALL_WAVE",
 		"timestamp": 1450137600000
 	},
 	{
@@ -3427,7 +3427,7 @@
 			"I was hoping for a more convincing gradient; the weight calculation could use some work."
 		],
 		"type": "project",
-		"uid": "PROJECT_PRIDE_AND_PREJUDICE_(WEBKIT_ONLY)",
+		"uid": "PROJECT_PRIDE_AND_PREJUDICE_14WEBKIT_ONLY15",
 		"timestamp": 1449878400000
 	},
 	{
@@ -3565,7 +3565,7 @@
 			"A single program that outputs my name when you run it through three separate programming languages."
 		],
 		"type": "project",
-		"uid": "PROJECT_RILEYJSHAW.???",
+		"uid": "PROJECT_RILEYJSHAW1A1R1R1R",
 		"timestamp": 1477526400000
 	},
 	{
@@ -3606,7 +3606,7 @@
 			"Super quick demo trying (failing, mostly) to capture the perspective effect."
 		],
 		"type": "project",
-		"uid": "PROJECT_ROWS_OF_’EM",
+		"uid": "PROJECT_ROWS_OF_6C9EM",
 		"timestamp": 1457308800000
 	},
 	{
@@ -3644,7 +3644,7 @@
 			"I made this demo UI to show how a mixer might help keep your levels in check. Does this exist yet?"
 		],
 		"type": "project",
-		"uid": "PROJECT_SCALING_FADERS_(AUDIO_DEMO)",
+		"uid": "PROJECT_SCALING_FADERS_14AUDIO_DEMO15",
 		"timestamp": 1604880000000
 	},
 	{
@@ -3788,7 +3788,7 @@
 		"lastTagged": 1564707853866,
 		"descriptionList": ["Playing with bg gradient dots, CSS only."],
 		"type": "project",
-		"uid": "PROJECT_SLANT_+_SWAP_+_SHIFT",
+		"uid": "PROJECT_SLANT_17_SWAP_17_SHIFT",
 		"timestamp": 1461628800000
 	},
 	{
@@ -3832,7 +3832,7 @@
 			"This layout was rather difficult before flexbox came along."
 		],
 		"type": "project",
-		"uid": "PROJECT_SMART_SPLITTING_WINDOW_PANES_(CSS_ONLY)",
+		"uid": "PROJECT_SMART_SPLITTING_WINDOW_PANES_14CSS_ONLY15",
 		"timestamp": 1457395200000
 	},
 	{
@@ -3856,7 +3856,7 @@
 		"lastTagged": 1564707886487,
 		"descriptionList": ["Async/await ftw"],
 		"type": "project",
-		"uid": "PROJECT_SNOWBALLS!",
+		"uid": "PROJECT_SNOWBALLSX",
 		"timestamp": 1458172800000
 	},
 	{
@@ -3955,7 +3955,7 @@
 			"Geometric patterns created from straight lines cutting through a circle."
 		],
 		"type": "project",
-		"uid": "PROJECT_SPOKES,_ETC",
+		"uid": "PROJECT_SPOKES18_ETC",
 		"timestamp": 1464912000000
 	},
 	{
@@ -4048,7 +4048,7 @@
 			"A version of Stormy Green that doesn’t drift out of phase."
 		],
 		"type": "project",
-		"uid": "PROJECT_STORMY_GREEN_(RIPPLES)",
+		"uid": "PROJECT_STORMY_GREEN_14RIPPLES15",
 		"timestamp": 1457913600000
 	},
 	{
@@ -4124,7 +4124,7 @@
 			"Even more tiny tests while learning SVG’s SMIL specification."
 		],
 		"type": "project",
-		"uid": "PROJECT_SVG_&LT;ANIMATE&GT;_TESTS",
+		"uid": "PROJECT_SVG_12LT1NANIMATE12GT1N_TESTS",
 		"timestamp": 1614816000000
 	},
 	{
@@ -4134,7 +4134,7 @@
 		"link": "https://codepen.io/rileyjshaw/pen/RwbaoVr",
 		"tags": ["online", "reusable"],
 		"type": "project",
-		"uid": "PROJECT_SVG_TEXT:_SUBTRACTIVE_COLOR_BLEND_WITH_<CODE>MIX_BLEND_MODE:_MULTIPLY</CODE>",
+		"uid": "PROJECT_SVG_TEXT1M_SUBTRACTIVE_COLOR_BLEND_WITH_1OCODE1QMIX_BLEND_MODE1M_MULTIPLY1O1BCODE1Q",
 		"timestamp": 1565827200000
 	},
 	{
@@ -4146,7 +4146,7 @@
 		"lastTagged": 1564707854423,
 		"descriptionList": ["Playing with bg gradient stripes, CSS only."],
 		"type": "project",
-		"uid": "PROJECT_SWAY_+_SWELL_+_SPIN",
+		"uid": "PROJECT_SWAY_17_SWELL_17_SPIN",
 		"timestamp": 1461542400000
 	},
 	{
@@ -4253,7 +4253,7 @@
 		"link": "https://codepen.io/collection/XGogPm/",
 		"lastTagged": 1564708759832,
 		"type": "project",
-		"uid": "PROJECT_TERRA.JS_DEMOS",
+		"uid": "PROJECT_TERRA1AJS_DEMOS",
 		"timestamp": 1425254400000
 	},
 	{
@@ -4292,7 +4292,7 @@
 			"Settings reveal concept where a nut unscrews itself then drops a curtain."
 		],
 		"type": "project",
-		"uid": "PROJECT_THAT’S_NUTS!",
+		"uid": "PROJECT_THAT6C9S_NUTSX",
 		"timestamp": 1322265600000
 	},
 	{
@@ -4303,7 +4303,7 @@
 		"link": "https://codepen.io/rileyjshaw/details/gWamKx/",
 		"lastTagged": 1564608372846,
 		"type": "project",
-		"uid": "PROJECT_THE_CAMERA_ROTATES_WITH_THE_MINUTE_HAND_(ANIMATED)",
+		"uid": "PROJECT_THE_CAMERA_ROTATES_WITH_THE_MINUTE_HAND_14ANIMATED15",
 		"timestamp": 1492473600000
 	},
 	{
@@ -4510,7 +4510,7 @@
 			"This was a proof-of-concept for a keyboard glove, which was implemented in hardware by <a href=\"https://github.com/rileyjshaw/english-words-directory-trie\" rel=\"noopener noreferrer\" target=\"_blank\">mapping the trie to a directory tree</a>."
 		],
 		"type": "project",
-		"uid": "PROJECT_TYPING_LAZY_(DESKTOP_ONLY)",
+		"uid": "PROJECT_TYPING_LAZY_14DESKTOP_ONLY15",
 		"timestamp": 1552176000000
 	},
 	{
@@ -4627,7 +4627,7 @@
 		"lastTagged": 1564708957259,
 		"descriptionList": ["Used this as my 404 page for a while."],
 		"type": "project",
-		"uid": "PROJECT_WACKY_STATIC_2:_TV_EDITION",
+		"uid": "PROJECT_WACKY_STATIC_21M_TV_EDITION",
 		"timestamp": 1384905600000
 	},
 	{
@@ -4668,7 +4668,7 @@
 			"From the project page: “there is confusion in the mixed layers of metaphors. This is not an obfuscated code repository; not really. In some ways, it is the opposite.”"
 		],
 		"type": "project",
-		"uid": "PROJECT_WHOAMI.PY",
+		"uid": "PROJECT_WHOAMI1APY",
 		"timestamp": 1451520000000
 	},
 	{
@@ -4821,7 +4821,7 @@
 			"Efficiently scales and rotates canvas image data <em>seemingly</em> in-place using two overlapping canvas elements."
 		],
 		"type": "project",
-		"uid": "PROJECT_ZONIN’",
+		"uid": "PROJECT_ZONIN6C9",
 		"timestamp": 1462406400000
 	},
 	{
