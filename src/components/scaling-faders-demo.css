@@ -27,6 +27,7 @@
 }
 .scaling-faderbanks {
 	margin: 0 calc(var(--fader-width) * 2) var(--font-scale-2);
+	width: 100%;
 }
 .scaling-faderbank {
 	flex-direction: column;
