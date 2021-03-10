@@ -371,6 +371,16 @@ module.exports = {
 				],
 			},
 		},
+		...(process.env.NODE_ENV === `development`
+			? [
+					{
+						resolve: `gatsby-plugin-page-creator`,
+						options: {
+							path: `${__dirname}/src/devPages`,
+						},
+					},
+			  ]
+			: []),
 		// TODO(riley)
 		// this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.dev/offline
