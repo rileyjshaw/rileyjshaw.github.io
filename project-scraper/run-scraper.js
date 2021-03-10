@@ -2,10 +2,12 @@
 // npx babel-node project-scraper/run-scraper.js && npm run format
 const {getAll} = require('./scraper-utils');
 const {runTweaks} = require('./curation/tweaks');
+const {generateTags} = require('./curation/generate-tags');
 
 getAll().then(() => {
 	console.log('\nScraped content.');
+	generateTags();
 	runTweaks();
 	console.log('Tweaked scraped content.');
-	console.log('Done.');
+	console.log('Done. Running linters:');
 });
