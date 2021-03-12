@@ -364,19 +364,25 @@ module.exports = {
 				],
 			},
 		},
-		...(process.env.NODE_ENV === `development`
-			? [
-					{
-						resolve: `gatsby-plugin-page-creator`,
-						options: {
-							path: `${__dirname}/src/devPages`,
-						},
-					},
-			  ]
-			: []),
+		{
+			resolve: `gatsby-plugin-page-creator`,
+			options: {
+				path: `${__dirname}/src/pages`,
+				ignore:
+					process.env.NODE_ENV === `production`
+						? `curate/**/*`
+						: undefined,
+			},
+		},
 		// TODO(riley)
 		// this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.dev/offline
 		// `gatsby-plugin-offline`,
+	],
+	proxy: [
+		{
+			prefix: `/_curate`,
+			url: `http://localhost:5000`,
+		},
 	],
 };

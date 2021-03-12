@@ -3,73 +3,73 @@
 		"starred": {
 			"readable": "Featured",
 			"description": "A collection of projects I wanted to put a gold star on.",
-			"public": true,
+			"isPublic": true,
 			"created": 1524688680270
 		},
 		"online": {
-			"readable": "Easy 2 demo",
+			"readable": "Online",
 			"description": "Projects you can see and interact with just by clicking the link (no installation or setup).",
-			"public": true,
+			"isPublic": true,
 			"created": 1524688697797
 		},
 		"external": {
 			"readable": "External parts",
 			"description": "Projects that use obscure APIs or run on hardware in the real world.",
-			"public": true,
+			"isPublic": true,
 			"created": 1526020590158
 		},
 		"app": {
 			"readable": "App",
 			"description": "I'm using this term loosely to mean anything someone might wanna use without digging into details of how it was made.",
-			"public": true,
+			"isPublic": true,
 			"created": 1524688707204
 		},
 		"game": {
 			"readable": "Game",
 			"description": "It's a game.",
-			"public": true,
+			"isPublic": true,
 			"created": 1524688707204
 		},
 		"pretty": {
 			"readable": "Pretty",
 			"description": "It's pretty.",
-			"public": true,
+			"isPublic": true,
 			"created": 1524688711340
 		},
 		"music": {
 			"readable": "Music",
 			"description": "Projects involving music.",
-			"public": true,
+			"isPublic": true,
 			"created": 1524688714309
 		},
 		"extinct": {
 			"readable": "Extinct",
 			"description": "These projects require maintenance. I do my best to find maintainers or support projects personally, but sometimes it makes most sense to just let a domain expire.",
-			"public": true,
+			"isPublic": true,
 			"created": 1524688717555
 		},
 		"reusable": {
 			"readable": "Reusable",
 			"description": "Everything on this page is open source and reusable to some extent. Some projects were built with reuse as a primary goal; that's what this tag represents.",
-			"public": true,
+			"isPublic": true,
 			"created": 1525753826119
 		},
 		"instructional": {
 			"readable": "Instructional",
 			"description": "Some projects were built with education as a primary goal; that's what this tag represents.",
-			"public": true,
+			"isPublic": true,
 			"created": 1525753826119
 		},
 		"browserextension": {
 			"readable": "Browser extension",
 			"description": "A free browser extension, usually available on the Firefox and/or Chrome web stores.",
-			"public": true,
+			"isPublic": true,
 			"created": 1525916289357
 		},
 		"golf": {
 			"readable": "Golf",
 			"description": "Challenging myself to build systems within constraints, like code golf or only using CSS.",
-			"public": true,
+			"isPublic": true,
 			"created": 1526009645610
 		}
 	},

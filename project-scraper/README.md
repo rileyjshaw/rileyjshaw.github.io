@@ -92,6 +92,10 @@ curation/
 		Flattens `../sources/tags.json`.tagInfo into an array so GraphQL can
 		ingest it.
 
+	server.mjs
+		A simple express server that allows devtools like the project tagger to
+		directly edit JSON files (eg. `../sources/tags.json`).
+
 sources/
 	Offline data files and collections to compliment the online data cached in
 	`_generated/`.

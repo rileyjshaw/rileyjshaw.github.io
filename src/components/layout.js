@@ -64,7 +64,7 @@ const Layout = ({children, location, uri}) => {
 		.filter(x => x)
 		.join(' ');
 
-	const showPageHeader = !isBlogPost;
+	const showPageHeader = !(isBlogPost || uri.startsWith('/curate/'));
 	return (
 		<div className={wrapperClassNames}>
 			{isBlockerOpen && (

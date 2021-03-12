@@ -11,6 +11,7 @@ export default React.memo(
 				{nodes.map((node, i, {length}) => (
 					<ContentNode
 						theme={theme}
+						El="li"
 						blockEmbeds={blockEmbeds}
 						masonry={masonry}
 						ref={i === length - 1 ? ref : null}
