@@ -1,0 +1,29 @@
+.curate-tags-page {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: space-around;
+	width: 100vw;
+}
+.curate-tags-page .untagged-counter {
+	font: 500 var(--s1) var(--fh);
+	left: 12px;
+	position: absolute;
+	top: 0;
+}
+.curate-tags-page .untagged-counter strong {
+	font-size: 36px;
+	margin-right: 0.2em;
+	text-decoration: underline;
+}
+.curate-tags-page .content-node {
+	margin: 0 10vw;
+}
+.curate-tags-page .tag-select,
+.curate-tags-page button {
+	color: var(--color-black);
+}
+.curate-tags-page .tag-select {
+	width: 800px;
+}

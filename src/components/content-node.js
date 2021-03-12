@@ -14,6 +14,7 @@ import useDimensions from 'react-use-dimensions';
 export default React.memo(
 	React.forwardRef((props, ref) => {
 		const {
+			El = 'div',
 			type,
 			title,
 			date,
@@ -42,7 +43,7 @@ export default React.memo(
 		const span = height && Math.ceil((height + 82) / 130);
 
 		return (
-			<li
+			<El
 				className={`${className} ${type
 					.split(/(?=[A-Z])/)
 					.join('-')
@@ -98,7 +99,7 @@ export default React.memo(
 						</footer>
 					)}
 				</div>
-			</li>
+			</El>
 		);
 	})
 );
