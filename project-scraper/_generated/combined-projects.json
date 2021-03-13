@@ -19,7 +19,7 @@
 		"date": "2018-11-21",
 		"link": "https://are.na/riley-shaw/hw-u1lmoisdnyu",
 		"description": "",
-		"updatedAt": "2021-03-12",
+		"updatedAt": "2021-03-13",
 		"length": 218,
 		"tags": ["collection", "hardware", "pretty", "starred", "visual"],
 		"lastTagged": 1615510424508,
@@ -1132,6 +1132,26 @@
 		"link": "https://patchstorage.com/midi-channel-shifter/",
 		"coolness": 41,
 		"timestamp": 1610236800000
+	},
+	{
+		"uid": "PATCH_137431",
+		"type": "patch",
+		"title": "Gravity delay",
+		"description": "This is a creative MIDI delay that physically models incoming notes based on their velocity...",
+		"date": "2021-03-13",
+		"link": "https://patchstorage.com/gravity-delay/",
+		"coolness": 41,
+		"timestamp": 1615593600000
+	},
+	{
+		"uid": "PATCH_137434",
+		"type": "patch",
+		"title": "Panning gravity delay",
+		"description": "This is a creative MIDI delay that physically models incoming notes based on their velocity...",
+		"date": "2021-03-13",
+		"link": "https://patchstorage.com/panning-gravity-delay/",
+		"coolness": 41,
+		"timestamp": 1615593600000
 	},
 	{
 		"title": "10 colors that faded away",
@@ -5644,6 +5664,18 @@
 		"contentType": "youtube",
 		"more": true,
 		"timestamp": 1602806400000
+	},
+	{
+		"uid": "VIDEO_Y_MFGEZUXGDR8",
+		"body": "MfgEzUxGdR8",
+		"description": "A quick demo of three Mozaic plugins I wrote in December 2020: “Gravity delay”, “Panning gravity delay”, and “Dedupe”. Download them for free on Patchstorage:",
+		"type": "video",
+		"title": "Mozaic demos: Gravity delay, panning gravity delay, dedupe",
+		"date": "2021-03-13",
+		"link": "https://youtube.com/watch?v=MfgEzUxGdR8",
+		"contentType": "youtube",
+		"more": true,
+		"timestamp": 1615593600000
 	},
 	{
 		"uid": "VIDEO_Y_OW5A2BGH1M4",
