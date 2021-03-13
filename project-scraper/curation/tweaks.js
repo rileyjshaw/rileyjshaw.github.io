@@ -45,7 +45,7 @@ const repoTags = {
 const typeTransformers = {
 	dweet: [
 		n => {
-			addTags(n, ['golf', 'online']);
+			addTags(n, ['golf', 'online', 'visual']);
 			n.coolness = 5;
 		},
 	],
@@ -54,6 +54,11 @@ const typeTransformers = {
 			addTags(n, ['readable', ...(repoTags[n.repo] ?? [])]);
 			n.body = fixLinks(n.body);
 			n.description = fixLinks(n.description);
+		},
+	],
+	icon: [
+		n => {
+			addTags(n, ['visual']);
 		},
 	],
 	post: [
@@ -69,7 +74,7 @@ const typeTransformers = {
 	song: [
 		n => {
 			n.coolness = 50;
-			addTags(n, ['music', 'online']);
+			addTags(n, ['audio', 'online']);
 		},
 	],
 	tumblr: [
@@ -83,6 +88,7 @@ const typeTransformers = {
 			if (n.description) {
 				n.description = unescape(n.description);
 			}
+			addTags(n, ['audio', 'reusable', 'tool']);
 		},
 	],
 	project: [

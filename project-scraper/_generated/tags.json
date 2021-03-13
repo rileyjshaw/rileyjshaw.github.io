@@ -9,7 +9,7 @@
 	{
 		"name": "online",
 		"readable": "Easy to demo",
-		"description": "Projects you can see and interact with just by clicking the link (no installation or setup).",
+		"description": "Projects you can see and interact with just by clicking the link (no installation or setup required).",
 		"isPublic": true,
 		"created": 1524688697797
 	},
@@ -21,30 +21,23 @@
 		"created": 1526020590158
 	},
 	{
-		"name": "app",
-		"readable": "App",
-		"description": "I'm using this term loosely to mean anything someone might wanna use without digging into details of how it was made.",
-		"isPublic": true,
-		"created": 1524688707204
-	},
-	{
 		"name": "game",
 		"readable": "Game",
-		"description": "It's a game.",
+		"description": "It’s a game.",
 		"isPublic": true,
 		"created": 1524688707204
 	},
 	{
 		"name": "pretty",
 		"readable": "Pretty",
-		"description": "It's pretty.",
+		"description": "It’s pretty.",
 		"isPublic": true,
 		"created": 1524688711340
 	},
 	{
-		"name": "music",
-		"readable": "Music",
-		"description": "Projects involving music.",
+		"name": "audio",
+		"readable": "Audio",
+		"description": "Audio tools, or audible tools, or music.",
 		"isPublic": true,
 		"created": 1524688714309
 	},
@@ -129,7 +122,7 @@
 		"name": "tool",
 		"readable": "Tool",
 		"isPublic": true,
-		"description": "Something that aids in accomplishing a task",
+		"description": "Something that aids in accomplishing a task. I’m using this term loosely to mean anything someone might wanna use without digging into details of how it was made.",
 		"created": 1615511132040
 	},
 	{
@@ -138,5 +131,47 @@
 		"isPublic": true,
 		"description": "A demo that requires a physical keyboard and/or mouse, or maybe just a big screen",
 		"created": 1615591822254
+	},
+	{
+		"name": "animated",
+		"readable": "Animated",
+		"isPublic": false,
+		"description": "It moves!",
+		"created": 1615702950750
+	},
+	{
+		"name": "colorful",
+		"readable": "Colorful",
+		"isPublic": false,
+		"description": "Bright and cheery",
+		"created": 1615702989760
+	},
+	{
+		"name": "interactive",
+		"readable": "Interactive",
+		"isPublic": true,
+		"description": "Content that you can interact with, beyond just reading, watching, or listening.",
+		"created": 1615704689830
+	},
+	{
+		"name": "automata",
+		"readable": "Automata",
+		"isPublic": false,
+		"description": "Uses cellular automata, or a closely related concept.",
+		"created": 1615704793982
+	},
+	{
+		"name": "pixelated",
+		"readable": "Pixelated",
+		"isPublic": false,
+		"description": "…or voxelated.",
+		"created": 1615704837978
+	},
+	{
+		"name": "3d",
+		"readable": "3d",
+		"isPublic": false,
+		"description": "Uses 3d graphics, or fakes the appearance of something three-dimensional.",
+		"created": 1615704896785
 	}
 ]
