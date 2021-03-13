@@ -84,7 +84,7 @@
   "scripts": {
     "build": "gatsby build",
     "commit": "git-cz --disable-emoji",
-    "curate": "concurrently \"npm run develop\" \"nodemon project-scraper/curation/server.mjs\"",
+    "curate": "concurrently \"npm run develop-everywhere\" \"nodemon project-scraper/curation/server.mjs\"",
     "deploy": "npm run format && gatsby build && gh-pages -d public -b master",
     "dev": "npm run develop",
     "develop": "gatsby develop -o",
