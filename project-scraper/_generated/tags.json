@@ -8,7 +8,7 @@
 	},
 	{
 		"name": "online",
-		"readable": "Online",
+		"readable": "Easy to demo",
 		"description": "Projects you can see and interact with just by clicking the link (no installation or setup).",
 		"isPublic": true,
 		"created": 1524688697797
@@ -78,9 +78,65 @@
 	},
 	{
 		"name": "golf",
-		"readable": "Golf",
+		"readable": "Code golf",
 		"description": "Challenging myself to build systems within constraints, like code golf or only using CSS.",
 		"isPublic": true,
 		"created": 1526009645610
+	},
+	{
+		"name": "collection",
+		"readable": "Collection",
+		"isPublic": true,
+		"description": "Not one thing, but many!",
+		"created": 1615509016231
+	},
+	{
+		"name": "reading",
+		"readable": "Reading",
+		"isPublic": true,
+		"description": "Words that you can read",
+		"created": 1615510168494
+	},
+	{
+		"name": "hardware",
+		"readable": "Hardware",
+		"isPublic": true,
+		"description": "Physical things in real life",
+		"created": 1615510335739
+	},
+	{
+		"name": "visual",
+		"readable": "Visual",
+		"isPublic": true,
+		"description": "Things to look at",
+		"created": 1615510415825
+	},
+	{
+		"name": "untech",
+		"readable": "Untech",
+		"isPublic": true,
+		"description": "The luddites would approve",
+		"created": 1615510542672
+	},
+	{
+		"name": "meta",
+		"readable": "Meta",
+		"isPublic": true,
+		"description": "Posts, features, or announcements about this website (rileyjshaw.com)",
+		"created": 1615510855670
+	},
+	{
+		"name": "tool",
+		"readable": "Tool",
+		"isPublic": true,
+		"description": "Something that aids in accomplishing a task",
+		"created": 1615511132040
+	},
+	{
+		"name": "desktop",
+		"readable": "Desktop only",
+		"isPublic": true,
+		"description": "A demo that requires a physical keyboard and/or mouse, or maybe just a big screen",
+		"created": 1615591822254
 	}
 ]
