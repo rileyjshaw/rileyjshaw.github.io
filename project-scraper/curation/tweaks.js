@@ -6,7 +6,7 @@
 const fs = require('fs');
 
 const unique = arr => arr.filter((x, i) => arr.indexOf(x) === i);
-const addTags = (n, tags) => {
+const addTags = (n, tags = []) => {
 	if (typeof tags === 'string') tags = [tags];
 	n.tags = [...(n.tags || []), ...tags];
 };
@@ -22,6 +22,26 @@ const fixLinks = text =>
 			/<a [^>]*?\bhref=(["'])((?!(\/|#|\1))(?:\\\1|[^\1])+?)\1[^>]*?>/gi,
 			'<a href=$1$2$1 rel="noopener noreferrer" target="_blank">'
 		);
+const repoTags = {
+	'rileyjshaw/rileyjshaw.github.io': ['meta'],
+	'rileyjshaw/rileyjshaw-new': ['meta'],
+	'rileyjshaw/rileyjshaw.github.io-v14': ['meta'],
+	'rileyjshaw/font-comparison-tool': ['tools'],
+	'rileyjshaw/palette-test-tool': ['tools'],
+	'rileyjshaw/write': ['tools'],
+	'rileyjshaw/.supermac': ['tools'],
+	'rileyjshaw/tech-ethics-yvr': ['untech'],
+	'rileyjshaw/plop': ['tools'],
+	'rileyjshaw/xoxo-bingo': ['game'],
+	'rileyjshaw/canvas': ['visual', 'pretty', 'collection'],
+	'rileyjshaw/Servo': ['tools', 'hardware'],
+	'miseryco/curriculum': ['untech'],
+	'herlifeinpixels/voxels': ['visual', 'pretty'],
+	'rileyjshaw/average-color': ['tools', 'visual'],
+	'rileyjshaw/node-timsort-async': ['tools'],
+	'rileyjshaw/LineMenuStyles': ['visual', 'golf'],
+	'rileyjshaw/dark-theme-everywhere': ['browserextension', 'tool', 'visual'],
+};
 const typeTransformers = {
 	dweet: [
 		n => {
@@ -31,8 +51,14 @@ const typeTransformers = {
 	],
 	commit: [
 		n => {
+			addTags(n, ['readable', ...(repoTags[n.repo] ?? [])]);
 			n.body = fixLinks(n.body);
 			n.description = fixLinks(n.description);
+		},
+	],
+	post: [
+		n => {
+			addTags(n, ['readable']);
 		},
 	],
 	screenshotsTumblr: [
