@@ -28,12 +28,12 @@ const unusedLocalStorageKeys = [
 const PAGE_CLASSES = {
 	'/': 'index-page',
 	'/about': 'about-page',
-	'/subscribe': 'subscribe-page',
 	'/blog': 'blog-page',
 	'/blog/post': 'blog-post-page',
+	'/subscribe': 'subscribe-page',
 };
 
-const Layout = ({children, location, uri}) => {
+const Layout = ({children, location}) => {
 	const {theme, reducedMotion, contrastPreference} = useContext(
 		SettingsContext
 	);
@@ -50,8 +50,10 @@ const Layout = ({children, location, uri}) => {
 		);
 	}, []);
 
-	const isBlogPost = location.pathname.match(/\/blog\/.*[^0-9/]/);
-	if (uri.startsWith('/blog')) uri = isBlogPost ? '/blog/post' : '/blog';
+	let {pathname} = location;
+	const isBlogPost = pathname.match(/\/blog\/.*[^0-9/]/);
+	if (pathname.startsWith('/blog')) pathname = isBlogPost ? '/blog/post' : '/blog';
+
 	const wrapperClassNames = [
 		'site-wrapper',
 		theme && `${theme}-theme`,
@@ -59,12 +61,12 @@ const Layout = ({children, location, uri}) => {
 		contrastPreference &&
 			contrastPreference !== 'default' &&
 			`contrast-preference-${contrastPreference}`,
-		PAGE_CLASSES[uri],
+		PAGE_CLASSES[pathname],
 	]
 		.filter(x => x)
 		.join(' ');
 
-	const showPageHeader = !(isBlogPost || uri.startsWith('/curate/'));
+	const showPageHeader = !(isBlogPost || pathname.startsWith('/curate/'));
 	return (
 		<div className={wrapperClassNames}>
 			{isBlockerOpen && (
