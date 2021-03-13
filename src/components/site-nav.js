@@ -1,9 +1,9 @@
 import {ReactComponent as MenuIcon} from '../../content/images/menu.svg';
-import {useKeyPress} from '../util/hooks';
+import {useKeyPresses} from '../util/hooks';
 import './site-nav.css';
 import ThemeToggleButton from './theme-toggle-button';
 import {Link} from 'gatsby';
-import React, {useState} from 'react';
+import React, {useMemo, useState} from 'react';
 
 const links = [
 	['/', 'Home'],
@@ -15,8 +15,13 @@ const links = [
 
 export default ({location}) => {
 	const [open, setOpen] = useState(false);
-
-	useKeyPress('Escape', () => setOpen(false));
+	const keyHandlers = useMemo(
+		() => ({
+			Escape: {onDown: () => setOpen(false)},
+		}),
+		[setOpen]
+	);
+	useKeyPresses(keyHandlers);
 	return (
 		<nav className="site-nav">
 			<button

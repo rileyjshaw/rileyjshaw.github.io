@@ -97,24 +97,33 @@ export function useDomMethod(domMethod) {
 	return [ref, result];
 }
 
-export function useKeyPress(targetKey, onDown, onUp) {
-	const [keyPressed, setKeyPressed] = useState(false);
-
-	function downHandler({key}) {
-		if (key === targetKey && !keyPressed) {
-			setKeyPressed(true);
-			onDown?.();
-		}
-	}
-
-	const upHandler = ({key}) => {
-		if (key === targetKey && keyPressed) {
-			setKeyPressed(false);
-			onUp?.();
-		}
-	};
+// `keyHandlers` example: {Escape: {onDown: () => setOpen(false)}}.
+export function useKeyPresses(keyHandlers) {
+	const [keysPressed, setKeysPressed] = useState({});
 
 	useEffect(() => {
+		function downHandler({key}) {
+			const handlers = keyHandlers[key];
+			if (handlers && !keysPressed[key]) {
+				setKeysPressed(oldKeysPressed => ({
+					...oldKeysPressed,
+					[key]: true,
+				}));
+				handlers.onDown?.();
+			}
+		}
+
+		function upHandler({key}) {
+			const handlers = keyHandlers[key];
+			if (handlers && keysPressed[key]) {
+				setKeysPressed(oldKeysPressed => ({
+					...oldKeysPressed,
+					[key]: false,
+				}));
+				handlers.onUp?.();
+			}
+		}
+
 		window.addEventListener('keydown', downHandler);
 		window.addEventListener('keyup', upHandler);
 		return () => {
@@ -123,7 +132,7 @@ export function useKeyPress(targetKey, onDown, onUp) {
 		};
 	}, []);
 
-	return keyPressed;
+	return keysPressed;
 }
 
 const interactionEventNames = [
