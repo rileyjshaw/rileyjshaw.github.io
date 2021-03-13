@@ -52,7 +52,8 @@ const Layout = ({children, location}) => {
 
 	let {pathname} = location;
 	const isBlogPost = pathname.match(/\/blog\/.*[^0-9/]/);
-	if (pathname.startsWith('/blog')) pathname = isBlogPost ? '/blog/post' : '/blog';
+	if (pathname.startsWith('/blog'))
+		pathname = isBlogPost ? '/blog/post' : '/blog';
 
 	const wrapperClassNames = [
 		'site-wrapper',
