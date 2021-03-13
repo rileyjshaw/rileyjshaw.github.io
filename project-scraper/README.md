@@ -94,7 +94,9 @@ curation/
 
 	server.mjs
 		A simple express server that allows devtools like the project tagger to
-		directly edit JSON files (eg. `../sources/tags.json`).
+		directly edit JSON files (eg. `../sources/tags.json`). Curation tools
+		are currently located in /src/pages/curate/, and can be accessed from
+		localhost:8000/curate/<tool> after running `npm run curate`.
 
 sources/
 	Offline data files and collections to compliment the online data cached in
@@ -113,20 +115,6 @@ sources/
 			tagInfo: A list of project tags, with descriptions and other useful
 			info.
 			taggedProjects: projects linked with their associated tags.
-
-tools/
-	Custom tools to help classify, organize, or edit project nodes without
-	opening a text editor. Custom tools are only built for data that is too
-	difficult to keep updated or standardized manually.
-	TODO: Hook these up to a Node server so they edit the JSON files directly.
-
-	tagger.html
-		Finds untagged or incorrectly tagged projects, as well as projects
-		that were last tagged before a new tag type was added. Provides an
-		interface to preview and re-tag each project.
-
-	cool-sort.html
-		TODO: sort or insert nodes based on their “coolness”.
 
 test/
 	Quick test files to ensure data is downloaded without any dropped nodes,

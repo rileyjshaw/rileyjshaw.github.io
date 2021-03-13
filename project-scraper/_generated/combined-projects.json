@@ -19,7 +19,7 @@
 		"date": "2018-11-21",
 		"link": "https://are.na/riley-shaw/hw-u1lmoisdnyu",
 		"description": "",
-		"updatedAt": "2021-03-13",
+		"updatedAt": "2021-03-14",
 		"length": 218,
 		"tags": ["collection", "hardware", "pretty", "starred", "visual"],
 		"lastTagged": 1615510424508,
@@ -77,7 +77,8 @@
 		"body": "<p>(Part 1 was <a href=\"https://github.com/rileyjshaw/font-comparison-tool/commit/c9bfc9788212e54a4c2e428bb3d5fd9b04add8f7\" rel=\"noopener noreferrer\" target=\"_blank\"><tt>c9bfc97</tt></a>)</p>\n<p>Wow. After these two commits, this feels like a completely different app. It’s so speedy!</p>\n<h2>Background</h2>\n<p>Last commit, I focused on eliminating unnecessary FontContainer re-renders. This wasn’t a big priority at first… until I added Google’s catalog of &gt; 1000 fonts. Ever since, performance has crawled whenever that category is selected.</p>\n<p>I decided to tighten up my own render code first because I knew that after enclosing the list in a virtual scroller, performance would be okay enough. And then I’d be less motivated by the sluggish, practically unusable Google Fonts viewer.</p>\n<p>And I'm happy I did! <code>react-window</code> made a huge difference. With the improved render tree <em>and</em> virtualized scrolling, this app somehow makes loading, displaying, and live-editing the preview of &gt; 1000 webfonts pretty smooth.</p>\n<h2>Changelog</h2>\n<p>Specific big changes in this commit:</p>\n<ul>\n<li>Enclose the preview grid in a virtualized scroller (<code>react-window</code>)</li>\n<li>Rework the font-loading pipeline to only download new fonts once they’re near the viewport</li>\n<li>Supporting UI and layout changes</li>\n</ul>\n<hr>\n<p>There may be a performance edit: part 3, but… there’s not much need for the time being.</p>",
 		"description": "<p>(Part 1 was <a href=\"https://github.com/rileyjshaw/font-comparison-tool/commit/c9bfc9788212e54a4c2e428bb3d5fd9b04add8f7\" rel=\"noopener noreferrer\" target=\"_blank\"><tt>c9bfc97</tt></a>)</p><p>Wow. After these two commits, this feels like a completely different app. It’s so speedy!</p><h2>Background</h2><p>Last commit, I focused on eliminating unnecessary FontContainer re-renders. This wasn’t a big priority at first… until I added Google’s catalog of &gt; 1000 fonts. Ever since, performance has crawled whenever that category is selected.</p><p>I decided to tighten up my own render code first because I knew that after enclosing the list in a virtual scroller, performance would be okay enough. And then I’d be less motivated by the sluggish, practically unusable Google Fonts viewer.</p><p>And I'm happy I did! <code>react-window</code> made a huge difference. With the improved render tree <em>and</em> virtualized scrolling, this app somehow makes loading, displaying, and live-editing the preview of &gt; 1000 webfonts pretty smooth.</p>",
 		"more": true,
-		"tags": ["readable", "tools"],
+		"tags": ["readable", "reusable", "tool", "tools", "visual"],
+		"lastTagged": 1615675410895,
 		"timestamp": 1614038400000
 	},
 	{
@@ -91,6 +92,7 @@
 		"description": "<p>This small, very important change has been in my working directory since January. What a year…</p>",
 		"more": false,
 		"tags": ["meta", "readable"],
+		"lastTagged": 1615675446460,
 		"timestamp": 1604966400000
 	},
 	{
@@ -104,6 +106,7 @@
 		"description": "<p>This is an exciting commit for the new site. It collects blog posts from multiple sources (for now: <a href=\"http://rileyjshaw.commit--blog.com\" rel=\"noopener noreferrer\" target=\"_blank\">http://rileyjshaw.commit--blog.com</a>, <a href=\"https://sfpc.rileyjshaw.com\" rel=\"noopener noreferrer\" target=\"_blank\">https://sfpc.rileyjshaw.com</a>, and <a href=\"/blog\">https://rileyjshaw.com/blog</a>), orders them by date, and paginates them into a nice on-site list.</p><p>In the past, my blog has always seemed stale and outdated. By allowing it to gobble content from across the web, I can point it to whatever platform I'm currently publishing on!</p><p>This commit is going to show up as a post on my blog, which feels rather meta.</p>",
 		"more": false,
 		"tags": ["meta", "readable"],
+		"lastTagged": 1615704511963,
 		"timestamp": 1567468800000
 	},
 	{
@@ -532,7 +535,7 @@
 		"title": "#15270",
 		"date": "2019-08-03",
 		"link": "https://www.dwitter.net/d/15270",
-		"tags": ["golf", "online"],
+		"tags": ["golf", "online", "visual"],
 		"coolness": 5,
 		"timestamp": 1564790400000
 	},
@@ -542,7 +545,7 @@
 		"title": "#15271",
 		"date": "2019-08-03",
 		"link": "https://www.dwitter.net/d/15271",
-		"tags": ["golf", "online"],
+		"tags": ["golf", "online", "visual"],
 		"coolness": 5,
 		"timestamp": 1564790400000
 	},
@@ -552,7 +555,7 @@
 		"title": "#15303",
 		"date": "2019-08-06",
 		"link": "https://www.dwitter.net/d/15303",
-		"tags": ["golf", "online"],
+		"tags": ["golf", "online", "visual"],
 		"coolness": 5,
 		"timestamp": 1565049600000
 	},
@@ -562,7 +565,7 @@
 		"title": "#15308",
 		"date": "2019-08-06",
 		"link": "https://www.dwitter.net/d/15308",
-		"tags": ["golf", "online"],
+		"tags": ["golf", "online", "visual"],
 		"coolness": 5,
 		"timestamp": 1565049600000
 	},
@@ -572,7 +575,7 @@
 		"title": "#15311",
 		"date": "2019-08-06",
 		"link": "https://www.dwitter.net/d/15311",
-		"tags": ["golf", "online"],
+		"tags": ["golf", "online", "visual"],
 		"coolness": 5,
 		"timestamp": 1565049600000
 	},
@@ -582,7 +585,7 @@
 		"title": "#19983",
 		"date": "2020-09-16",
 		"link": "https://www.dwitter.net/d/19983",
-		"tags": ["golf", "online"],
+		"tags": ["golf", "online", "visual"],
 		"coolness": 5,
 		"timestamp": 1600214400000
 	},
@@ -592,7 +595,7 @@
 		"title": "#19987",
 		"date": "2020-09-16",
 		"link": "https://www.dwitter.net/d/19987",
-		"tags": ["golf", "online"],
+		"tags": ["golf", "online", "visual"],
 		"coolness": 5,
 		"timestamp": 1600214400000
 	},
@@ -602,7 +605,7 @@
 		"title": "#19988",
 		"date": "2020-09-16",
 		"link": "https://www.dwitter.net/d/19988",
-		"tags": ["golf", "online"],
+		"tags": ["golf", "online", "visual"],
 		"coolness": 5,
 		"timestamp": 1600214400000
 	},
@@ -612,7 +615,7 @@
 		"title": "#20004",
 		"date": "2020-09-19",
 		"link": "https://www.dwitter.net/d/20004",
-		"tags": ["golf", "online"],
+		"tags": ["golf", "online", "visual"],
 		"coolness": 5,
 		"timestamp": 1600473600000
 	},
@@ -622,7 +625,7 @@
 		"title": "#20092",
 		"date": "2020-09-24",
 		"link": "https://www.dwitter.net/d/20092",
-		"tags": ["golf", "online"],
+		"tags": ["golf", "online", "visual"],
 		"coolness": 5,
 		"timestamp": 1600905600000
 	},
@@ -632,7 +635,7 @@
 		"title": "#20093",
 		"date": "2020-09-24",
 		"link": "https://www.dwitter.net/d/20093",
-		"tags": ["golf", "online"],
+		"tags": ["golf", "online", "visual"],
 		"coolness": 5,
 		"timestamp": 1600905600000
 	},
@@ -642,7 +645,7 @@
 		"title": "#20094",
 		"date": "2020-09-24",
 		"link": "https://www.dwitter.net/d/20094",
-		"tags": ["golf", "online"],
+		"tags": ["golf", "online", "visual"],
 		"coolness": 5,
 		"timestamp": 1600905600000
 	},
@@ -652,7 +655,7 @@
 		"title": "#2601",
 		"date": "2017-04-26",
 		"link": "https://www.dwitter.net/d/2601",
-		"tags": ["golf", "online"],
+		"tags": ["golf", "online", "visual"],
 		"coolness": 5,
 		"timestamp": 1493164800000
 	},
@@ -662,7 +665,7 @@
 		"title": "#2602",
 		"date": "2017-04-26",
 		"link": "https://www.dwitter.net/d/2602",
-		"tags": ["golf", "online"],
+		"tags": ["golf", "online", "visual"],
 		"coolness": 5,
 		"timestamp": 1493164800000
 	},
@@ -672,7 +675,7 @@
 		"title": "#2603",
 		"date": "2017-04-26",
 		"link": "https://www.dwitter.net/d/2603",
-		"tags": ["golf", "online"],
+		"tags": ["golf", "online", "visual"],
 		"coolness": 5,
 		"timestamp": 1493164800000
 	},
@@ -682,7 +685,7 @@
 		"title": "#2605",
 		"date": "2017-04-26",
 		"link": "https://www.dwitter.net/d/2605",
-		"tags": ["golf", "online"],
+		"tags": ["golf", "online", "visual"],
 		"coolness": 5,
 		"timestamp": 1493164800000
 	},
@@ -692,7 +695,7 @@
 		"title": "#2608",
 		"date": "2017-04-26",
 		"link": "https://www.dwitter.net/d/2608",
-		"tags": ["golf", "online"],
+		"tags": ["golf", "online", "visual"],
 		"coolness": 5,
 		"timestamp": 1493164800000
 	},
@@ -702,7 +705,7 @@
 		"title": "#2609",
 		"date": "2017-04-26",
 		"link": "https://www.dwitter.net/d/2609",
-		"tags": ["golf", "online"],
+		"tags": ["golf", "online", "visual"],
 		"coolness": 5,
 		"timestamp": 1493164800000
 	},
@@ -712,7 +715,7 @@
 		"title": "#2610",
 		"date": "2017-04-26",
 		"link": "https://www.dwitter.net/d/2610",
-		"tags": ["golf", "online"],
+		"tags": ["golf", "online", "visual"],
 		"coolness": 5,
 		"timestamp": 1493164800000
 	},
@@ -722,7 +725,7 @@
 		"title": "#2613",
 		"date": "2017-04-27",
 		"link": "https://www.dwitter.net/d/2613",
-		"tags": ["golf", "online"],
+		"tags": ["golf", "online", "visual"],
 		"coolness": 5,
 		"timestamp": 1493251200000
 	},
@@ -732,7 +735,7 @@
 		"title": "#2617",
 		"date": "2017-04-27",
 		"link": "https://www.dwitter.net/d/2617",
-		"tags": ["golf", "online"],
+		"tags": ["golf", "online", "visual"],
 		"coolness": 5,
 		"timestamp": 1493251200000
 	},
@@ -742,7 +745,7 @@
 		"title": "#2618",
 		"date": "2017-04-27",
 		"link": "https://www.dwitter.net/d/2618",
-		"tags": ["golf", "online"],
+		"tags": ["golf", "online", "visual"],
 		"coolness": 5,
 		"timestamp": 1493251200000
 	},
@@ -752,7 +755,7 @@
 		"title": "#2619",
 		"date": "2017-04-27",
 		"link": "https://www.dwitter.net/d/2619",
-		"tags": ["golf", "online"],
+		"tags": ["golf", "online", "visual"],
 		"coolness": 5,
 		"timestamp": 1493251200000
 	},
@@ -762,7 +765,7 @@
 		"title": "#2621",
 		"date": "2017-04-27",
 		"link": "https://www.dwitter.net/d/2621",
-		"tags": ["golf", "online"],
+		"tags": ["golf", "online", "visual"],
 		"coolness": 5,
 		"timestamp": 1493251200000
 	},
@@ -773,6 +776,7 @@
 		"date": "2013-02-12",
 		"link": "https://thenounproject.com/term/arrow-left/11539",
 		"image": "https://static.thenounproject.com/png/11539-84.png",
+		"tags": ["visual"],
 		"timestamp": 1360627200000
 	},
 	{
@@ -782,6 +786,7 @@
 		"date": "2013-02-12",
 		"link": "https://thenounproject.com/term/calendar/11541",
 		"image": "https://static.thenounproject.com/png/11541-84.png",
+		"tags": ["visual"],
 		"timestamp": 1360627200000
 	},
 	{
@@ -791,6 +796,7 @@
 		"date": "2013-02-12",
 		"link": "https://thenounproject.com/term/happy/11542",
 		"image": "https://static.thenounproject.com/png/11542-84.png",
+		"tags": ["visual"],
 		"timestamp": 1360627200000
 	},
 	{
@@ -800,6 +806,7 @@
 		"date": "2013-02-12",
 		"link": "https://thenounproject.com/term/clock/11543",
 		"image": "https://static.thenounproject.com/png/11543-84.png",
+		"tags": ["visual"],
 		"timestamp": 1360627200000
 	},
 	{
@@ -809,6 +816,7 @@
 		"date": "2013-02-12",
 		"link": "https://thenounproject.com/term/nut/11544",
 		"image": "https://static.thenounproject.com/png/11544-84.png",
+		"tags": ["visual"],
 		"timestamp": 1360627200000
 	},
 	{
@@ -818,6 +826,7 @@
 		"date": "2013-02-12",
 		"link": "https://thenounproject.com/term/arrow-down/11584",
 		"image": "https://static.thenounproject.com/png/11584-84.png",
+		"tags": ["visual"],
 		"timestamp": 1360627200000
 	},
 	{
@@ -827,6 +836,7 @@
 		"date": "2013-02-12",
 		"link": "https://thenounproject.com/term/arrow-up/11585",
 		"image": "https://static.thenounproject.com/png/11585-84.png",
+		"tags": ["visual"],
 		"timestamp": 1360627200000
 	},
 	{
@@ -836,6 +846,7 @@
 		"date": "2013-02-12",
 		"link": "https://thenounproject.com/term/close/11586",
 		"image": "https://static.thenounproject.com/png/11586-84.png",
+		"tags": ["visual"],
 		"timestamp": 1360627200000
 	},
 	{
@@ -845,6 +856,7 @@
 		"date": "2013-02-12",
 		"link": "https://thenounproject.com/term/right-arrow/11587",
 		"image": "https://static.thenounproject.com/png/11587-84.png",
+		"tags": ["visual"],
 		"timestamp": 1360627200000
 	},
 	{
@@ -854,6 +866,7 @@
 		"date": "2013-02-12",
 		"link": "https://thenounproject.com/term/close/11588",
 		"image": "https://static.thenounproject.com/png/11588-84.png",
+		"tags": ["visual"],
 		"timestamp": 1360627200000
 	},
 	{
@@ -863,6 +876,7 @@
 		"date": "2018-11-12",
 		"link": "https://thenounproject.com/term/dropper/2154767",
 		"image": "https://static.thenounproject.com/png/2154767-84.png",
+		"tags": ["visual"],
 		"timestamp": 1541980800000
 	},
 	{
@@ -872,6 +886,7 @@
 		"date": "2015-09-24",
 		"link": "https://thenounproject.com/term/map-marker/215555",
 		"image": "https://static.thenounproject.com/png/215555-84.png",
+		"tags": ["visual"],
 		"timestamp": 1443052800000
 	},
 	{
@@ -881,6 +896,7 @@
 		"date": "2015-12-22",
 		"link": "https://thenounproject.com/term/lower-right/294465",
 		"image": "https://static.thenounproject.com/png/294465-84.png",
+		"tags": ["visual"],
 		"timestamp": 1450742400000
 	},
 	{
@@ -890,6 +906,7 @@
 		"date": "2015-12-22",
 		"link": "https://thenounproject.com/term/lower-left/294466",
 		"image": "https://static.thenounproject.com/png/294466-84.png",
+		"tags": ["visual"],
 		"timestamp": 1450742400000
 	},
 	{
@@ -899,6 +916,7 @@
 		"date": "2015-12-22",
 		"link": "https://thenounproject.com/term/upper-right/294467",
 		"image": "https://static.thenounproject.com/png/294467-84.png",
+		"tags": ["visual"],
 		"timestamp": 1450742400000
 	},
 	{
@@ -908,6 +926,7 @@
 		"date": "2015-12-22",
 		"link": "https://thenounproject.com/term/down/294468",
 		"image": "https://static.thenounproject.com/png/294468-84.png",
+		"tags": ["visual"],
 		"timestamp": 1450742400000
 	},
 	{
@@ -917,6 +936,7 @@
 		"date": "2015-12-22",
 		"link": "https://thenounproject.com/term/up/294469",
 		"image": "https://static.thenounproject.com/png/294469-84.png",
+		"tags": ["visual"],
 		"timestamp": 1450742400000
 	},
 	{
@@ -926,6 +946,7 @@
 		"date": "2015-12-22",
 		"link": "https://thenounproject.com/term/right/294470",
 		"image": "https://static.thenounproject.com/png/294470-84.png",
+		"tags": ["visual"],
 		"timestamp": 1450742400000
 	},
 	{
@@ -935,6 +956,7 @@
 		"date": "2015-12-22",
 		"link": "https://thenounproject.com/term/left/294471",
 		"image": "https://static.thenounproject.com/png/294471-84.png",
+		"tags": ["visual"],
 		"timestamp": 1450742400000
 	},
 	{
@@ -944,6 +966,7 @@
 		"date": "2015-12-22",
 		"link": "https://thenounproject.com/term/upper-left/294472",
 		"image": "https://static.thenounproject.com/png/294472-84.png",
+		"tags": ["visual"],
 		"timestamp": 1450742400000
 	},
 	{
@@ -953,6 +976,7 @@
 		"date": "2015-12-23",
 		"link": "https://thenounproject.com/term/spring/295645",
 		"image": "https://static.thenounproject.com/png/295645-84.png",
+		"tags": ["visual"],
 		"timestamp": 1450828800000
 	},
 	{
@@ -962,6 +986,7 @@
 		"date": "2015-12-23",
 		"link": "https://thenounproject.com/term/spring/295647",
 		"image": "https://static.thenounproject.com/png/295647-84.png",
+		"tags": ["visual"],
 		"timestamp": 1450828800000
 	},
 	{
@@ -971,6 +996,7 @@
 		"date": "2015-12-23",
 		"link": "https://thenounproject.com/term/hamburger/295649",
 		"image": "https://static.thenounproject.com/png/295649-84.png",
+		"tags": ["visual"],
 		"timestamp": 1450828800000
 	},
 	{
@@ -980,6 +1006,7 @@
 		"date": "2012-06-09",
 		"link": "https://thenounproject.com/term/no-trash/3164",
 		"image": "https://static.thenounproject.com/png/3164-84.png",
+		"tags": ["visual"],
 		"timestamp": 1339200000000
 	},
 	{
@@ -989,6 +1016,7 @@
 		"date": "2014-09-14",
 		"link": "https://thenounproject.com/term/video-camera/74002",
 		"image": "https://static.thenounproject.com/png/74002-84.png",
+		"tags": ["visual"],
 		"timestamp": 1410652800000
 	},
 	{
@@ -998,6 +1026,7 @@
 		"date": "2014-10-18",
 		"link": "https://thenounproject.com/term/back/79589",
 		"image": "https://static.thenounproject.com/png/79589-84.png",
+		"tags": ["visual"],
 		"timestamp": 1413590400000
 	},
 	{
@@ -1007,6 +1036,7 @@
 		"date": "2014-10-18",
 		"link": "https://thenounproject.com/term/fast-forward/79590",
 		"image": "https://static.thenounproject.com/png/79590-84.png",
+		"tags": ["visual"],
 		"timestamp": 1413590400000
 	},
 	{
@@ -1016,6 +1046,7 @@
 		"date": "2014-10-18",
 		"link": "https://thenounproject.com/term/repeat/79591",
 		"image": "https://static.thenounproject.com/png/79591-84.png",
+		"tags": ["visual"],
 		"timestamp": 1413590400000
 	},
 	{
@@ -1025,6 +1056,7 @@
 		"date": "2014-10-18",
 		"link": "https://thenounproject.com/term/rewind/79592",
 		"image": "https://static.thenounproject.com/png/79592-84.png",
+		"tags": ["visual"],
 		"timestamp": 1413590400000
 	},
 	{
@@ -1034,6 +1066,7 @@
 		"date": "2014-10-18",
 		"link": "https://thenounproject.com/term/play/79593",
 		"image": "https://static.thenounproject.com/png/79593-84.png",
+		"tags": ["visual"],
 		"timestamp": 1413590400000
 	},
 	{
@@ -1043,6 +1076,7 @@
 		"date": "2014-10-18",
 		"link": "https://thenounproject.com/term/pause/79594",
 		"image": "https://static.thenounproject.com/png/79594-84.png",
+		"tags": ["visual"],
 		"timestamp": 1413590400000
 	},
 	{
@@ -1052,6 +1086,7 @@
 		"date": "2014-10-18",
 		"link": "https://thenounproject.com/term/shuffle/79595",
 		"image": "https://static.thenounproject.com/png/79595-84.png",
+		"tags": ["visual"],
 		"timestamp": 1413590400000
 	},
 	{
@@ -1061,6 +1096,7 @@
 		"date": "2014-10-18",
 		"link": "https://thenounproject.com/term/share/79596",
 		"image": "https://static.thenounproject.com/png/79596-84.png",
+		"tags": ["visual"],
 		"timestamp": 1413590400000
 	},
 	{
@@ -1071,6 +1107,7 @@
 		"date": "2020-10-16",
 		"link": "https://patchstorage.com/chorder/",
 		"coolness": 41,
+		"tags": ["audio", "reusable", "tool"],
 		"timestamp": 1602806400000
 	},
 	{
@@ -1081,6 +1118,7 @@
 		"date": "2020-11-09",
 		"link": "https://patchstorage.com/jambo-midi-map/",
 		"coolness": 21,
+		"tags": ["audio", "reusable", "tool"],
 		"timestamp": 1604880000000
 	},
 	{
@@ -1091,6 +1129,7 @@
 		"date": "2020-11-27",
 		"link": "https://patchstorage.com/glitch-more/",
 		"coolness": 41,
+		"tags": ["audio", "reusable", "tool"],
 		"timestamp": 1606435200000
 	},
 	{
@@ -1101,6 +1140,7 @@
 		"date": "2020-12-12",
 		"link": "https://patchstorage.com/midi-panic/",
 		"coolness": 41,
+		"tags": ["audio", "reusable", "tool"],
 		"timestamp": 1607731200000
 	},
 	{
@@ -1111,6 +1151,7 @@
 		"date": "2020-12-12",
 		"link": "https://patchstorage.com/midi-note-to-pitch-conversion/",
 		"coolness": 21,
+		"tags": ["audio", "reusable", "tool"],
 		"timestamp": 1607731200000
 	},
 	{
@@ -1121,6 +1162,7 @@
 		"date": "2020-12-30",
 		"link": "https://patchstorage.com/dedupe/",
 		"coolness": 41,
+		"tags": ["audio", "reusable", "tool"],
 		"timestamp": 1609286400000
 	},
 	{
@@ -1131,6 +1173,7 @@
 		"date": "2021-01-10",
 		"link": "https://patchstorage.com/midi-channel-shifter/",
 		"coolness": 41,
+		"tags": ["audio", "reusable", "tool"],
 		"timestamp": 1610236800000
 	},
 	{
@@ -1141,6 +1184,7 @@
 		"date": "2021-03-13",
 		"link": "https://patchstorage.com/gravity-delay/",
 		"coolness": 41,
+		"tags": ["audio", "reusable", "tool"],
 		"timestamp": 1615593600000
 	},
 	{
@@ -1151,6 +1195,7 @@
 		"date": "2021-03-13",
 		"link": "https://patchstorage.com/panning-gravity-delay/",
 		"coolness": 41,
+		"tags": ["audio", "reusable", "tool"],
 		"timestamp": 1615593600000
 	},
 	{
@@ -1214,7 +1259,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_28_HOUR_DAY",
-		"tags": ["app", "external", "starred"],
+		"tags": ["external", "starred", "tool"],
 		"lastTagged": 1564708780643,
 		"timestamp": 1422489600000
 	},
@@ -1344,7 +1389,7 @@
 		"link": "https://codepen.io/rileyjshaw/full/YWbbGJ/",
 		"type": "project",
 		"uid": "PROJECT_ASCII_ANIMATOR",
-		"tags": ["app", "online", "pretty"],
+		"tags": ["online", "pretty", "tool"],
 		"lastTagged": 1564608420432,
 		"timestamp": 1471910400000
 	},
@@ -1396,7 +1441,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_AVERAGE_COLOR",
-		"tags": ["app", "reusable"],
+		"tags": ["reusable", "tool"],
 		"lastTagged": 1564707813397,
 		"timestamp": 1466035200000
 	},
@@ -1735,7 +1780,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_COLOR_SCREEN",
-		"tags": ["app", "online"],
+		"tags": ["online", "tool"],
 		"lastTagged": 1564608387197,
 		"timestamp": 1483574400000
 	},
@@ -1747,7 +1792,7 @@
 		"descriptionList": ["Generate frequencies, chords, and songs."],
 		"type": "project",
 		"uid": "PROJECT_COMPOSER",
-		"tags": ["music", "reusable"],
+		"tags": ["audio", "reusable"],
 		"lastTagged": 1564708887783,
 		"timestamp": 1394582400000
 	},
@@ -2172,7 +2217,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_FASTDRAW",
-		"tags": ["app", "game", "instructional"],
+		"tags": ["game", "instructional", "tool"],
 		"lastTagged": 1564708862840,
 		"timestamp": 1397433600000
 	},
@@ -2209,7 +2254,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_FILESUPPLY",
-		"tags": ["app", "online", "reusable"],
+		"tags": ["online", "reusable", "tool"],
 		"lastTagged": 1564708828018,
 		"timestamp": 1400457600000
 	},
@@ -2247,7 +2292,7 @@
 		"descriptionList": ["In-browser keystroke dynamics demo using Tappy."],
 		"type": "project",
 		"uid": "PROJECT_FINGERPRINT",
-		"tags": ["app", "online", "reusable", "starred"],
+		"tags": ["online", "reusable", "starred", "tool"],
 		"lastTagged": 1564708792923,
 		"timestamp": 1418083200000
 	},
@@ -2259,7 +2304,7 @@
 		"descriptionList": ["A fitness form trainer using an Xbox Kinect."],
 		"type": "project",
 		"uid": "PROJECT_FITHUB",
-		"tags": ["app", "external"],
+		"tags": ["external", "tool"],
 		"lastTagged": 1564708999688,
 		"timestamp": 1362182400000
 	},
@@ -2322,7 +2367,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_FLUBBER",
-		"tags": ["app", "music", "reusable"],
+		"tags": ["audio", "reusable", "tool"],
 		"lastTagged": 1564707806856,
 		"timestamp": 1466294400000
 	},
@@ -2391,7 +2436,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_FONT_COMPARISON_TOOL",
-		"tags": ["app", "online", "pretty", "reusable"],
+		"tags": ["online", "pretty", "reusable", "tool"],
 		"lastTagged": 0,
 		"timestamp": 1611619200000
 	},
@@ -2418,7 +2463,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_FREQUENCY_BAR_VISUALIZER",
-		"tags": ["music", "pretty", "reusable"],
+		"tags": ["audio", "pretty", "reusable"],
 		"lastTagged": 1564708981557,
 		"timestamp": 1378944000000
 	},
@@ -2537,7 +2582,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_GIT_TIDY_UP",
-		"tags": ["app", "extinct"],
+		"tags": ["extinct", "tool"],
 		"lastTagged": 1564608401800,
 		"timestamp": 1475712000000
 	},
@@ -2683,7 +2728,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_HUEMIDITY",
-		"tags": ["app", "external", "music"],
+		"tags": ["audio", "external", "tool"],
 		"lastTagged": 1564608358786,
 		"timestamp": 1513209600000
 	},
@@ -2697,7 +2742,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_HUERTBEAT",
-		"tags": ["app", "external", "music", "starred"],
+		"tags": ["audio", "external", "starred", "tool"],
 		"lastTagged": 1564608357834,
 		"timestamp": 1515542400000
 	},
@@ -2762,7 +2807,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_INSTAFRAME",
-		"tags": ["app", "external", "extinct", "online"],
+		"tags": ["external", "extinct", "online", "tool"],
 		"lastTagged": 1564708997115,
 		"timestamp": 1364860800000
 	},
@@ -2791,7 +2836,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_JITTERY_SHAPES",
-		"tags": ["music", "online", "pretty"],
+		"tags": ["audio", "online", "pretty"],
 		"lastTagged": 1564708755914,
 		"timestamp": 1427328000000
 	},
@@ -2805,7 +2850,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_JITTERY_VISUALIZER_V2",
-		"tags": ["music", "online", "pretty", "starred"],
+		"tags": ["audio", "online", "pretty", "starred"],
 		"lastTagged": 1564707851729,
 		"timestamp": 1461801600000
 	},
@@ -2819,7 +2864,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_JITTERY_VISUALIZER_V3",
-		"tags": ["music", "online", "pretty"],
+		"tags": ["audio", "online", "pretty"],
 		"lastTagged": 1564707845485,
 		"timestamp": 1462406400000
 	},
@@ -2834,7 +2879,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_JOY_DIVISION1M_UNKNOWN_PLEASURES",
-		"tags": ["music", "online", "pretty"],
+		"tags": ["audio", "online", "pretty"],
 		"lastTagged": 1564707906457,
 		"timestamp": 1456185600000
 	},
@@ -2876,7 +2921,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_KEYBOARD_KEYBOARD",
-		"tags": ["external", "music", "reusable", "starred"],
+		"tags": ["audio", "external", "reusable", "starred"],
 		"lastTagged": 1564707826462,
 		"timestamp": 1464393600000
 	},
@@ -2916,7 +2961,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_LINESCAPES",
-		"tags": ["music", "online", "pretty", "starred"],
+		"tags": ["audio", "online", "pretty", "starred"],
 		"lastTagged": 1564708815678,
 		"timestamp": 1408060800000
 	},
@@ -2930,7 +2975,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_LITERATE_THEME",
-		"tags": ["app", "reusable", "starred"],
+		"tags": ["reusable", "starred", "tool"],
 		"lastTagged": 1564707843448,
 		"timestamp": 1463011200000
 	},
@@ -3022,7 +3067,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_MEAN_TONE",
-		"tags": ["instructional", "music"],
+		"tags": ["audio", "instructional"],
 		"lastTagged": 1564708879145,
 		"timestamp": 1395014400000
 	},
@@ -3092,7 +3137,7 @@
 		"descriptionList": ["Small demo of live translation synchronization."],
 		"type": "project",
 		"uid": "PROJECT_MIRROR",
-		"tags": ["app", "online", "reusable"],
+		"tags": ["online", "reusable", "tool"],
 		"lastTagged": 1564708856993,
 		"timestamp": 1398297600000
 	},
@@ -3327,7 +3372,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_OWN_THIS_WEBSITE",
-		"tags": ["app", "extinct", "game", "online", "starred"],
+		"tags": ["extinct", "game", "online", "starred", "tool"],
 		"lastTagged": 1564708868615,
 		"timestamp": 1395187200000
 	},
@@ -3339,7 +3384,7 @@
 		"descriptionList": ["Realtime web-based collaborative coding."],
 		"type": "project",
 		"uid": "PROJECT_PAIRJAM",
-		"tags": ["app", "external", "extinct", "online", "starred"],
+		"tags": ["external", "extinct", "online", "starred", "tool"],
 		"lastTagged": 1564624438020,
 		"timestamp": 1410739200000
 	},
@@ -3354,7 +3399,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_PALETTE_TEST_TOOL",
-		"tags": ["app", "online", "reusable"],
+		"tags": ["online", "reusable", "tool"],
 		"lastTagged": 0,
 		"timestamp": 1613088000000
 	},
@@ -3409,7 +3454,7 @@
 		"descriptionList": ["A minimal New Tab page for Chrome"],
 		"type": "project",
 		"uid": "PROJECT_PLACID_TAB",
-		"tags": ["app", "browserextension", "golf", "pretty", "starred"],
+		"tags": ["browserextension", "golf", "pretty", "starred", "tool"],
 		"lastTagged": 1564624451247,
 		"timestamp": 1408924800000
 	},
@@ -3458,7 +3503,7 @@
 		"descriptionList": ["A scriptable text expansion microtool."],
 		"type": "project",
 		"uid": "PROJECT_PLOP",
-		"tags": ["app", "starred"],
+		"tags": ["starred", "tool"],
 		"lastTagged": 1564772210294,
 		"timestamp": 1568332800000
 	},
@@ -3472,7 +3517,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_PO_33_LOADER",
-		"tags": ["app", "external", "music", "online", "starred"],
+		"tags": ["audio", "external", "online", "starred", "tool"],
 		"lastTagged": 0,
 		"timestamp": 1581033600000
 	},
@@ -3524,7 +3569,7 @@
 		"link": "https://codepen.io/rileyjshaw/full/xdfeC",
 		"type": "project",
 		"uid": "PROJECT_PURE_SASS_MUSIC_ICONS",
-		"tags": ["golf", "music", "online", "pretty", "reusable"],
+		"tags": ["audio", "golf", "online", "pretty", "reusable"],
 		"lastTagged": 1564709007492,
 		"timestamp": 1351555200000
 	},
@@ -3637,7 +3682,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_RENDER",
-		"tags": ["app", "external", "game"],
+		"tags": ["external", "game", "tool"],
 		"lastTagged": 1564765055195,
 		"timestamp": 1456099200000
 	},
@@ -3731,7 +3776,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_SCALING_FADERS_14AUDIO_DEMO15",
-		"tags": ["music", "reusable", "starred"],
+		"tags": ["audio", "reusable", "starred"],
 		"lastTagged": 0,
 		"timestamp": 1604880000000
 	},
@@ -3815,7 +3860,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_SHEPARD_RISSET_GLISSANDO",
-		"tags": ["music", "online", "pretty", "starred"],
+		"tags": ["audio", "online", "pretty", "starred"],
 		"lastTagged": 1564708758541,
 		"timestamp": 1425340800000
 	},
@@ -3827,7 +3872,7 @@
 		"descriptionList": ["Search for emoji domains and short domains."],
 		"type": "project",
 		"uid": "PROJECT_SHORT_DOMAIN_FINDER",
-		"tags": ["app", "reusable"],
+		"tags": ["reusable", "tool"],
 		"lastTagged": 1564624426575,
 		"timestamp": 1410825600000
 	},
@@ -4096,7 +4141,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_STIPPHONIC",
-		"tags": ["app", "music", "pretty"],
+		"tags": ["audio", "pretty", "tool"],
 		"lastTagged": 1564772210294,
 		"timestamp": 1538524800000
 	},
@@ -4201,7 +4246,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_SUPERFORMULA_EXPLORER",
-		"tags": ["app", "online", "pretty"],
+		"tags": ["online", "pretty", "tool"],
 		"lastTagged": 1564608405055,
 		"timestamp": 1475539200000
 	},
@@ -4280,7 +4325,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_SYNTHESIA",
-		"tags": ["external", "music", "pretty", "reusable"],
+		"tags": ["audio", "external", "pretty", "reusable"],
 		"lastTagged": 1564707820422,
 		"timestamp": 1465084800000
 	},
@@ -4294,7 +4339,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_TAPPY",
-		"tags": ["music", "online", "reusable", "starred"],
+		"tags": ["audio", "online", "reusable", "starred"],
 		"lastTagged": 1564708795522,
 		"timestamp": 1416700800000
 	},
@@ -4306,7 +4351,7 @@
 		"descriptionList": ["Tap the rhythm of the lyrics displayed."],
 		"type": "project",
 		"uid": "PROJECT_TAPPY_GAME",
-		"tags": ["game", "music", "online", "pretty", "starred"],
+		"tags": ["audio", "game", "online", "pretty", "starred"],
 		"lastTagged": 1564708812602,
 		"timestamp": 1413158400000
 	},
@@ -4424,7 +4469,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_THOUGHTBOARD",
-		"tags": ["app"],
+		"tags": ["tool"],
 		"lastTagged": 1564708825898,
 		"timestamp": 1401494400000
 	},
@@ -4478,7 +4523,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_TINY_BOXES",
-		"tags": ["app", "extinct", "online", "pretty", "starred"],
+		"tags": ["extinct", "online", "pretty", "starred", "tool"],
 		"lastTagged": 1564708867142,
 		"timestamp": 1395187200000
 	},
@@ -4490,7 +4535,7 @@
 		"descriptionList": ["Really little chat server written in Node.js."],
 		"type": "project",
 		"uid": "PROJECT_TINY_TCP",
-		"tags": ["app"],
+		"tags": ["tool"],
 		"lastTagged": 1564708870888,
 		"timestamp": 1395014400000
 	},
@@ -4516,7 +4561,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_TITANIA",
-		"tags": ["golf", "music", "online", "reusable"],
+		"tags": ["audio", "golf", "online", "reusable"],
 		"lastTagged": 1564707907104,
 		"timestamp": 1452038400000
 	},
@@ -4531,7 +4576,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_TONY_MONTANA",
-		"tags": ["golf", "music"],
+		"tags": ["audio", "golf"],
 		"lastTagged": 1564708730063,
 		"timestamp": 1446076800000
 	},
@@ -4574,7 +4619,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_TYPELAB",
-		"tags": ["app", "online", "pretty", "starred"],
+		"tags": ["online", "pretty", "starred", "tool"],
 		"lastTagged": 1564707857033,
 		"timestamp": 1460764800000
 	},
@@ -4644,7 +4689,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_USHLD",
-		"tags": ["app", "online"],
+		"tags": ["online", "tool"],
 		"lastTagged": 1564708889861,
 		"timestamp": 1393545600000
 	},
@@ -4683,7 +4728,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_VIRTUOSO",
-		"tags": ["app", "external", "game", "music", "reusable", "starred"],
+		"tags": ["audio", "external", "game", "reusable", "starred", "tool"],
 		"lastTagged": 1564707810842,
 		"timestamp": 1466121600000
 	},
@@ -4697,7 +4742,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_W_H_A_T",
-		"tags": ["external", "game", "golf", "music", "online", "starred"],
+		"tags": ["audio", "external", "game", "golf", "online", "starred"],
 		"lastTagged": 1564608417415,
 		"timestamp": 1472342400000
 	},
@@ -4734,7 +4779,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_WATERCOLOR",
-		"tags": ["app", "online", "pretty"],
+		"tags": ["online", "pretty", "tool"],
 		"lastTagged": 1564708930039,
 		"timestamp": 1388275200000
 	},
@@ -4746,7 +4791,7 @@
 		"descriptionList": ["Boring minimal audio visualizer."],
 		"type": "project",
 		"uid": "PROJECT_WAVEFORM_VISUALIZER",
-		"tags": ["music", "online", "pretty"],
+		"tags": ["audio", "online", "pretty"],
 		"lastTagged": 1564708754661,
 		"timestamp": 1427587200000
 	},
@@ -4775,7 +4820,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_WIND_ALARM",
-		"tags": ["app", "external"],
+		"tags": ["external", "tool"],
 		"lastTagged": 1564708846185,
 		"timestamp": 1399420800000
 	},
@@ -4831,7 +4876,7 @@
 		"descriptionList": ["A chill place to write things."],
 		"type": "project",
 		"uid": "PROJECT_WRITE",
-		"tags": ["app", "online", "starred"],
+		"tags": ["online", "starred", "tool"],
 		"lastTagged": 1564608384406,
 		"timestamp": 1484611200000
 	},
@@ -4886,7 +4931,7 @@
 		],
 		"type": "project",
 		"uid": "PROJECT_ZENWALL",
-		"tags": ["app", "external", "pretty", "starred"],
+		"tags": ["external", "pretty", "starred", "tool"],
 		"lastTagged": 1564709003258,
 		"timestamp": 1363910400000
 	},
@@ -5556,7 +5601,7 @@
 		"date": "2014-03-17",
 		"link": "https://soundcloud.com/rileyjshaw/average-tone-music-for-18",
 		"coolness": 50,
-		"tags": ["music", "online"],
+		"tags": ["audio", "online"],
 		"timestamp": 1395014400000
 	},
 	{
@@ -5566,7 +5611,7 @@
 		"date": "2017-04-16",
 		"link": "https://soundcloud.com/rileyjshaw/2015-01-24-kawaii",
 		"coolness": 50,
-		"tags": ["music", "online"],
+		"tags": ["audio", "online"],
 		"timestamp": 1492300800000
 	},
 	{
@@ -5576,7 +5621,7 @@
 		"date": "2017-04-16",
 		"link": "https://soundcloud.com/rileyjshaw/20150120-133914a",
 		"coolness": 50,
-		"tags": ["music", "online"],
+		"tags": ["audio", "online"],
 		"timestamp": 1492300800000
 	},
 	{
@@ -5586,7 +5631,7 @@
 		"date": "2020-11-25",
 		"link": "https://soundcloud.com/rileyjshaw/a-video-game",
 		"coolness": 50,
-		"tags": ["music", "online"],
+		"tags": ["audio", "online"],
 		"timestamp": 1606262400000
 	},
 	{
@@ -5596,7 +5641,7 @@
 		"date": "2020-11-25",
 		"link": "https://soundcloud.com/rileyjshaw/quarter-note-stutter-demo",
 		"coolness": 50,
-		"tags": ["music", "online"],
+		"tags": ["audio", "online"],
 		"timestamp": 1606262400000
 	},
 	{
@@ -5606,7 +5651,7 @@
 		"date": "2020-12-16",
 		"link": "https://soundcloud.com/rileyjshaw/mallets",
 		"coolness": 50,
-		"tags": ["music", "online"],
+		"tags": ["audio", "online"],
 		"timestamp": 1608076800000
 	},
 	{
@@ -5616,7 +5661,7 @@
 		"date": "2020-12-23",
 		"link": "https://soundcloud.com/rileyjshaw/gravity-drops-excerpt-1",
 		"coolness": 50,
-		"tags": ["music", "online"],
+		"tags": ["audio", "online"],
 		"timestamp": 1608681600000
 	},
 	{
@@ -5626,7 +5671,7 @@
 		"date": "2020-12-27",
 		"link": "https://soundcloud.com/rileyjshaw/gravity-drops-excerpt-2",
 		"coolness": 50,
-		"tags": ["music", "online"],
+		"tags": ["audio", "online"],
 		"timestamp": 1609027200000
 	},
 	{

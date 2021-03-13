@@ -8,7 +8,7 @@
 		},
 		"online": {
 			"readable": "Easy to demo",
-			"description": "Projects you can see and interact with just by clicking the link (no installation or setup).",
+			"description": "Projects you can see and interact with just by clicking the link (no installation or setup required).",
 			"isPublic": true,
 			"created": 1524688697797
 		},
@@ -18,27 +18,21 @@
 			"isPublic": true,
 			"created": 1526020590158
 		},
-		"app": {
-			"readable": "App",
-			"description": "I'm using this term loosely to mean anything someone might wanna use without digging into details of how it was made.",
-			"isPublic": true,
-			"created": 1524688707204
-		},
 		"game": {
 			"readable": "Game",
-			"description": "It's a game.",
+			"description": "It’s a game.",
 			"isPublic": true,
 			"created": 1524688707204
 		},
 		"pretty": {
 			"readable": "Pretty",
-			"description": "It's pretty.",
+			"description": "It’s pretty.",
 			"isPublic": true,
 			"created": 1524688711340
 		},
-		"music": {
-			"readable": "Music",
-			"description": "Projects involving music.",
+		"audio": {
+			"readable": "Audio",
+			"description": "Audio tools, or audible tools, or music.",
 			"isPublic": true,
 			"created": 1524688714309
 		},
@@ -81,44 +75,92 @@
 		"reading": {
 			"readable": "Reading",
 			"isPublic": true,
-			"description": "Words that you can read",
+			"description": "Words that you can read.",
 			"created": 1615510168494
 		},
 		"hardware": {
 			"readable": "Hardware",
 			"isPublic": true,
-			"description": "Physical things in real life",
+			"description": "Physical stuff in real life.",
 			"created": 1615510335739
 		},
 		"visual": {
 			"readable": "Visual",
 			"isPublic": true,
-			"description": "Things to look at",
+			"description": "Things to look at.",
 			"created": 1615510415825
 		},
 		"untech": {
 			"readable": "Untech",
 			"isPublic": true,
-			"description": "The luddites would approve",
+			"description": "The luddites would approve.",
 			"created": 1615510542672
 		},
 		"meta": {
 			"readable": "Meta",
 			"isPublic": true,
-			"description": "Posts, features, or announcements about this website (rileyjshaw.com)",
+			"description": "Posts, features, or announcements about this website (rileyjshaw.com).",
 			"created": 1615510855670
 		},
 		"tool": {
 			"readable": "Tool",
 			"isPublic": true,
-			"description": "Something that aids in accomplishing a task",
+			"description": "Something that aids in accomplishing a task. I’m using this term loosely to mean anything someone might wanna use without digging into details of how it was made.",
 			"created": 1615511132040
 		},
 		"desktop": {
 			"readable": "Desktop only",
 			"isPublic": true,
-			"description": "A demo that requires a physical keyboard and/or mouse, or maybe just a big screen",
+			"description": "A demo that requires a physical keyboard and/or mouse, or maybe just a big screen.",
 			"created": 1615591822254
+		},
+		"animated": {
+			"readable": "Animated",
+			"isPublic": false,
+			"description": "It moves!",
+			"created": 1615702950750
+		},
+		"colorful": {
+			"readable": "Colorful",
+			"isPublic": false,
+			"description": "Bright and cheery. You got those crayola books? Oh yaa – technicolor rainbow.",
+			"created": 1615702989760
+		},
+		"interactive": {
+			"readable": "Interactive",
+			"isPublic": true,
+			"description": "Content that you can interact with, beyond just reading, watching, or listening.",
+			"created": 1615704689830
+		},
+		"automata": {
+			"readable": "Automata",
+			"isPublic": false,
+			"description": "Uses cellular automata, or a closely related concept.",
+			"created": 1615704793982
+		},
+		"pixelated": {
+			"readable": "Pixelated",
+			"isPublic": false,
+			"description": "…or voxelated.",
+			"created": 1615704837978
+		},
+		"3d": {
+			"readable": "3d",
+			"isPublic": false,
+			"description": "Uses 3d graphics, or fakes the appearance of something three-dimensional.",
+			"created": 1615704896785
+		},
+		"glitch": {
+			"readable": "Glitch",
+			"isPublic": false,
+			"description": "A hack, bug, exploit, or glitch. Could be intentional, could be emergent, could just be coded before ample coffee.",
+			"created": 1615706754621
+		},
+		"generative": {
+			"readable": "Generative",
+			"isPublic": true,
+			"description": "An artwork or process that creates varied results by following simple rules.",
+			"created": 1615709175784
 		}
 	},
 	"taggedProjects": {
@@ -139,7 +181,7 @@
 			"updated": 1564708739903
 		},
 		"PROJECT_28_HOUR_DAY": {
-			"tags": ["app", "external", "starred"],
+			"tags": ["tool", "external", "starred"],
 			"updated": 1564708780643
 		},
 		"PROJECT_2P_SNAKE": {
@@ -179,7 +221,7 @@
 			"updated": 1564707893272
 		},
 		"PROJECT_ASCII_ANIMATOR": {
-			"tags": ["app", "online", "pretty"],
+			"tags": ["tool", "online", "pretty"],
 			"updated": 1564608420432
 		},
 		"PROJECT_ASCII_GARDEN": {
@@ -195,7 +237,7 @@
 			"updated": 1564707896427
 		},
 		"PROJECT_AVERAGE_COLOR": {
-			"tags": ["app", "reusable"],
+			"tags": ["tool", "reusable"],
 			"updated": 1564707813397
 		},
 		"PROJECT_B17W": {
@@ -299,11 +341,11 @@
 			"updated": 1564708977786
 		},
 		"PROJECT_COLOR_SCREEN": {
-			"tags": ["app", "online"],
+			"tags": ["tool", "online"],
 			"updated": 1564608387197
 		},
 		"PROJECT_COMPOSER": {
-			"tags": ["music", "reusable"],
+			"tags": ["audio", "reusable"],
 			"updated": 1564708887783
 		},
 		"PROJECT_CONSOLE": {
@@ -435,7 +477,7 @@
 			"updated": 1564707836594
 		},
 		"PROJECT_FASTDRAW": {
-			"tags": ["app", "game", "instructional"],
+			"tags": ["tool", "game", "instructional"],
 			"updated": 1564708862840
 		},
 		"PROJECT_FEBRUARY_CALENDAR": {
@@ -447,7 +489,7 @@
 			"updated": 1564708964844
 		},
 		"PROJECT_FILESUPPLY": {
-			"tags": ["app", "online", "reusable"],
+			"tags": ["tool", "online", "reusable"],
 			"updated": 1564708828018
 		},
 		"PROJECT_FILINGS": {
@@ -459,11 +501,11 @@
 			"updated": 1564624420398
 		},
 		"PROJECT_FINGERPRINT": {
-			"tags": ["app", "online", "reusable", "starred"],
+			"tags": ["tool", "online", "reusable", "starred"],
 			"updated": 1564708792923
 		},
 		"PROJECT_FITHUB": {
-			"tags": ["app", "external"],
+			"tags": ["tool", "external"],
 			"updated": 1564708999688
 		},
 		"PROJECT_FLAT_SHADOW_MOUSE_TRACKER": {
@@ -483,7 +525,7 @@
 			"updated": 1564708950723
 		},
 		"PROJECT_FLUBBER": {
-			"tags": ["app", "music", "reusable"],
+			"tags": ["tool", "audio", "reusable"],
 			"updated": 1564707806856
 		},
 		"PROJECT_FLUID_SIMULATION": {
@@ -503,7 +545,7 @@
 			"updated": 1564708799379
 		},
 		"PROJECT_FONT_COMPARISON_TOOL": {
-			"tags": ["app", "online", "pretty", "reusable"],
+			"tags": ["tool", "online", "pretty", "reusable"],
 			"updated": 0
 		},
 		"PROJECT_FREE": {
@@ -511,7 +553,7 @@
 			"updated": 1564707834778
 		},
 		"PROJECT_FREQUENCY_BAR_VISUALIZER": {
-			"tags": ["music", "pretty", "reusable"],
+			"tags": ["audio", "pretty", "reusable"],
 			"updated": 1564708981557
 		},
 		"PROJECT_FS_VIDEO_17_BLOCKING_TILES": {
@@ -547,7 +589,7 @@
 			"updated": 1564708978237
 		},
 		"PROJECT_GIT_TIDY_UP": {
-			"tags": ["app", "extinct"],
+			"tags": ["tool", "extinct"],
 			"updated": 1564608401800
 		},
 		"PROJECT_GLORIOUS_PATTERN_MATCHER": {
@@ -591,11 +633,11 @@
 			"updated": 1564709008266
 		},
 		"PROJECT_HUEMIDITY": {
-			"tags": ["app", "external", "music"],
+			"tags": ["tool", "external", "audio"],
 			"updated": 1564608358786
 		},
 		"PROJECT_HUERTBEAT": {
-			"tags": ["app", "external", "music", "starred"],
+			"tags": ["tool", "external", "audio", "starred"],
 			"updated": 1564608357834
 		},
 		"PROJECT_IMPORTANT_PEOPLE": {
@@ -615,7 +657,7 @@
 			"updated": 1564709009404
 		},
 		"PROJECT_INSTAFRAME": {
-			"tags": ["app", "external", "extinct", "online"],
+			"tags": ["tool", "external", "extinct", "online"],
 			"updated": 1564708997115
 		},
 		"PROJECT_INTERNAL_LINK_OFFSET_14STICKY_HEADER15": {
@@ -623,19 +665,19 @@
 			"updated": 1564708757219
 		},
 		"PROJECT_JITTERY_SHAPES": {
-			"tags": ["music", "online", "pretty"],
+			"tags": ["audio", "online", "pretty"],
 			"updated": 1564708755914
 		},
 		"PROJECT_JITTERY_VISUALIZER_V2": {
-			"tags": ["music", "online", "pretty", "starred"],
+			"tags": ["audio", "online", "pretty", "starred"],
 			"updated": 1564707851729
 		},
 		"PROJECT_JITTERY_VISUALIZER_V3": {
-			"tags": ["music", "online", "pretty"],
+			"tags": ["audio", "online", "pretty"],
 			"updated": 1564707845485
 		},
 		"PROJECT_JOY_DIVISION1M_UNKNOWN_PLEASURES": {
-			"tags": ["music", "online", "pretty"],
+			"tags": ["audio", "online", "pretty"],
 			"updated": 1564707906457
 		},
 		"PROJECT_JUMBLE_PUZZLE": {
@@ -647,7 +689,7 @@
 			"updated": 1564708851648
 		},
 		"PROJECT_KEYBOARD_KEYBOARD": {
-			"tags": ["external", "music", "reusable", "starred"],
+			"tags": ["external", "audio", "reusable", "starred"],
 			"updated": 1564707826462
 		},
 		"PROJECT_LATTICE": {
@@ -659,11 +701,11 @@
 			"updated": 1564707873027
 		},
 		"PROJECT_LINESCAPES": {
-			"tags": ["music", "online", "pretty", "starred"],
+			"tags": ["audio", "online", "pretty", "starred"],
 			"updated": 1564708815678
 		},
 		"PROJECT_LITERATE_THEME": {
-			"tags": ["app", "reusable", "starred"],
+			"tags": ["tool", "reusable", "starred"],
 			"updated": 1564707843448
 		},
 		"PROJECT_LONG_SHADOW_CARDS": {
@@ -691,7 +733,7 @@
 			"updated": 1564708813922
 		},
 		"PROJECT_MEAN_TONE": {
-			"tags": ["instructional", "music"],
+			"tags": ["instructional", "audio"],
 			"updated": 1564708879145
 		},
 		"PROJECT_MECHANICAL_WAVES": {
@@ -711,7 +753,7 @@
 			"updated": 0
 		},
 		"PROJECT_MIRROR": {
-			"tags": ["app", "online", "reusable"],
+			"tags": ["tool", "online", "reusable"],
 			"updated": 1564708856993
 		},
 		"PROJECT_MOORE_1B_VON_NEUMANN_NEIGHBORHOODS": {
@@ -783,15 +825,15 @@
 			"updated": 1564708766604
 		},
 		"PROJECT_OWN_THIS_WEBSITE": {
-			"tags": ["app", "extinct", "game", "online", "starred"],
+			"tags": ["tool", "extinct", "game", "online", "starred"],
 			"updated": 1564708868615
 		},
 		"PROJECT_PAIRJAM": {
-			"tags": ["app", "external", "extinct", "online", "starred"],
+			"tags": ["tool", "external", "extinct", "online", "starred"],
 			"updated": 1564624438020
 		},
 		"PROJECT_PALETTE_TEST_TOOL": {
-			"tags": ["app", "online", "reusable"],
+			"tags": ["tool", "online", "reusable"],
 			"updated": 0
 		},
 		"PROJECT_PEEK": {
@@ -807,7 +849,7 @@
 			"updated": 1564624404415
 		},
 		"PROJECT_PLACID_TAB": {
-			"tags": ["app", "browserextension", "golf", "pretty", "starred"],
+			"tags": ["tool", "browserextension", "golf", "pretty", "starred"],
 			"updated": 1564624451247
 		},
 		"PROJECT_PLANETS": {
@@ -823,11 +865,11 @@
 			"updated": 1564707815578
 		},
 		"PROJECT_PLOP": {
-			"tags": ["app", "starred"],
+			"tags": ["tool", "starred"],
 			"updated": 1564772210294
 		},
 		"PROJECT_PO_33_LOADER": {
-			"tags": ["app", "external", "music", "online", "starred"],
+			"tags": ["tool", "external", "audio", "online", "starred"],
 			"updated": 0
 		},
 		"PROJECT_POK6HBALL_WAVE": {
@@ -843,7 +885,7 @@
 			"updated": 1564708720327
 		},
 		"PROJECT_PURE_SASS_MUSIC_ICONS": {
-			"tags": ["golf", "music", "online", "pretty", "reusable"],
+			"tags": ["golf", "audio", "online", "pretty", "reusable"],
 			"updated": 1564709007492
 		},
 		"PROJECT_PURSUIT": {
@@ -882,7 +924,7 @@
 			"updated": 1564708822603
 		},
 		"PROJECT_RENDER": {
-			"tags": ["app", "external", "game"],
+			"tags": ["tool", "external", "game"],
 			"updated": 1564765055195
 		},
 		"PROJECT_RILEYJSHAW1A1R1R1R": {
@@ -910,7 +952,7 @@
 			"updated": 1564708992197
 		},
 		"PROJECT_SCALING_FADERS_14AUDIO_DEMO15": {
-			"tags": ["music", "reusable", "starred"],
+			"tags": ["audio", "reusable", "starred"],
 			"updated": 0
 		},
 		"PROJECT_SCROLL_SNAP_GRID": {
@@ -934,11 +976,11 @@
 			"updated": 1564707841219
 		},
 		"PROJECT_SHEPARD_RISSET_GLISSANDO": {
-			"tags": ["music", "online", "pretty", "starred"],
+			"tags": ["audio", "online", "pretty", "starred"],
 			"updated": 1564708758541
 		},
 		"PROJECT_SHORT_DOMAIN_FINDER": {
-			"tags": ["app", "reusable"],
+			"tags": ["tool", "reusable"],
 			"updated": 1564624426575
 		},
 		"PROJECT_SIMPLE_SLIDE_OUT_FOOTER": {
@@ -1018,7 +1060,7 @@
 			"updated": 1564708964427
 		},
 		"PROJECT_STIPPHONIC": {
-			"tags": ["app", "music", "pretty"],
+			"tags": ["tool", "audio", "pretty"],
 			"updated": 1564772210294
 		},
 		"PROJECT_STONE": {
@@ -1050,7 +1092,7 @@
 			"updated": 1564624423924
 		},
 		"PROJECT_SUPERFORMULA_EXPLORER": {
-			"tags": ["app", "online", "pretty"],
+			"tags": ["tool", "online", "pretty"],
 			"updated": 1564608405055
 		},
 		"PROJECT_SVG_12LT1NANIMATE12GT1N_TESTS": {
@@ -1074,15 +1116,15 @@
 			"updated": 1564707839982
 		},
 		"PROJECT_SYNTHESIA": {
-			"tags": ["external", "music", "pretty", "reusable"],
+			"tags": ["external", "audio", "pretty", "reusable"],
 			"updated": 1564707820422
 		},
 		"PROJECT_TAPPY": {
-			"tags": ["music", "online", "reusable", "starred"],
+			"tags": ["audio", "online", "reusable", "starred"],
 			"updated": 1564708795522
 		},
 		"PROJECT_TAPPY_GAME": {
-			"tags": ["game", "music", "online", "pretty", "starred"],
+			"tags": ["game", "audio", "online", "pretty", "starred"],
 			"updated": 1564708812602
 		},
 		"PROJECT_TERMINAL_DISPLAY": {
@@ -1124,7 +1166,7 @@
 			"updated": 1564708854160
 		},
 		"PROJECT_THOUGHTBOARD": {
-			"tags": ["app"],
+			"tags": ["tool"],
 			"updated": 1564708825898
 		},
 		"PROJECT_TIC_ATTACK_TOE": {
@@ -1140,11 +1182,11 @@
 			"updated": 1564708794443
 		},
 		"PROJECT_TINY_BOXES": {
-			"tags": ["app", "extinct", "online", "pretty", "starred"],
+			"tags": ["tool", "extinct", "online", "pretty", "starred"],
 			"updated": 1564708867142
 		},
 		"PROJECT_TINY_TCP": {
-			"tags": ["app"],
+			"tags": ["tool"],
 			"updated": 1564708870888
 		},
 		"PROJECT_TINYTERM": {
@@ -1152,11 +1194,11 @@
 			"updated": 1564708789475
 		},
 		"PROJECT_TITANIA": {
-			"tags": ["golf", "music", "online", "reusable"],
+			"tags": ["golf", "audio", "online", "reusable"],
 			"updated": 1564707907104
 		},
 		"PROJECT_TONY_MONTANA": {
-			"tags": ["golf", "music"],
+			"tags": ["golf", "audio"],
 			"updated": 1564708730063
 		},
 		"PROJECT_TOUCHTONE_MATH_FACTS": {
@@ -1168,7 +1210,7 @@
 			"updated": 1564773945787
 		},
 		"PROJECT_TYPELAB": {
-			"tags": ["app", "online", "pretty", "starred"],
+			"tags": ["tool", "online", "pretty", "starred"],
 			"updated": 1564707857033
 		},
 		"PROJECT_TYPING_FOR_TWO": {
@@ -1188,7 +1230,7 @@
 			"updated": 1564708969478
 		},
 		"PROJECT_USHLD": {
-			"tags": ["app", "online"],
+			"tags": ["tool", "online"],
 			"updated": 1564708889861
 		},
 		"PROJECT_VANISHIFY": {
@@ -1201,17 +1243,17 @@
 		},
 		"PROJECT_VIRTUOSO": {
 			"tags": [
-				"app",
+				"tool",
 				"external",
 				"game",
-				"music",
+				"audio",
 				"reusable",
 				"starred"
 			],
 			"updated": 1564707810842
 		},
 		"PROJECT_W_H_A_T": {
-			"tags": ["external", "game", "golf", "music", "online", "starred"],
+			"tags": ["external", "game", "golf", "audio", "online", "starred"],
 			"updated": 1564608417415
 		},
 		"PROJECT_WACKY_STATIC": {
@@ -1223,11 +1265,11 @@
 			"updated": 1564708957259
 		},
 		"PROJECT_WATERCOLOR": {
-			"tags": ["app", "online", "pretty"],
+			"tags": ["tool", "online", "pretty"],
 			"updated": 1564708930039
 		},
 		"PROJECT_WAVEFORM_VISUALIZER": {
-			"tags": ["music", "online", "pretty"],
+			"tags": ["audio", "online", "pretty"],
 			"updated": 1564708754661
 		},
 		"PROJECT_WHOAMI1APY": {
@@ -1235,7 +1277,7 @@
 			"updated": 1564707910272
 		},
 		"PROJECT_WIND_ALARM": {
-			"tags": ["app", "external"],
+			"tags": ["tool", "external"],
 			"updated": 1564708846185
 		},
 		"PROJECT_WINDOW_SHOPPER": {
@@ -1251,7 +1293,7 @@
 			"updated": 1564708974879
 		},
 		"PROJECT_WRITE": {
-			"tags": ["app", "online", "starred"],
+			"tags": ["tool", "online", "starred"],
 			"updated": 1564608384406
 		},
 		"PROJECT_XOR_PROFILE_CARD": {
@@ -1267,7 +1309,7 @@
 			"updated": 1564708960068
 		},
 		"PROJECT_ZENWALL": {
-			"tags": ["app", "external", "pretty", "starred"],
+			"tags": ["tool", "external", "pretty", "starred"],
 			"updated": 1564709003258
 		},
 		"PROJECT_ZIG_ZAG_TEXT_EFFECT": {
@@ -1297,6 +1339,18 @@
 		"COMMIT_072F34F44BBEEE61E14B7D1DE92D3202A41B51F9": {
 			"tags": ["tool"],
 			"updated": 1615511178587
+		},
+		"COMMIT_097837CFA4965A10DCCF160A5E046042F59FED8C": {
+			"tags": ["reusable", "tool", "visual"],
+			"updated": 1615675410895
+		},
+		"COMMIT_0CDFAD1D54B6CE4317EFC6775F67C9C12827BCD0": {
+			"tags": [],
+			"updated": 1615675446460
+		},
+		"COMMIT_13F32FB1219D29A61032646BE13DCFE602A595F5": {
+			"tags": [],
+			"updated": 1615704511963
 		}
 	}
 }
