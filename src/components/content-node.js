@@ -12,7 +12,7 @@ import useDimensions from 'react-use-dimensions';
 //   "title":
 //   "date":
 export default React.memo(
-	React.forwardRef((props, ref) => {
+	React.forwardRef(function ContentNode(props, ref) {
 		const {
 			El = 'div',
 			type,

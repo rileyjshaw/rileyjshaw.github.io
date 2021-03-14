@@ -8,15 +8,15 @@ import React from 'react';
 export default [
 	[
 		React.forwardRef((props, ref) => (
-			<BackgroundGenerator El="li" ref={ref} {...props} />
+			<BackgroundGenerator El="li" ref={ref} />
 		)),
 		0.8,
 	],
 	[
 		React.forwardRef((props, ref) => (
-			<CircleConstrainedLines El="li" ref={ref} {...props} />
+			<CircleConstrainedLines El="li" ref={ref} />
 		)),
-		1,
+		0.8,
 	],
 	[
 		React.forwardRef((props, ref) => (
@@ -40,7 +40,6 @@ export default [
 				classPrefix="doingreat"
 				className="content-node doodle"
 				OuterElement="li"
-				{...props}
 				ref={ref}
 			>
 				DOINGREAT
@@ -55,7 +54,6 @@ export default [
 				className="content-node doodle"
 				ms={50}
 				OuterElement="li"
-				{...props}
 				ref={ref}
 			>
 				▁▂▃▅▆▇▇▆▅▃▂▁
@@ -70,7 +68,6 @@ export default [
 				className="content-node doodle"
 				ms={150}
 				OuterElement="li"
-				{...props}
 				ref={ref}
 			>
 				⊙⊚⦾⊛
@@ -86,7 +83,6 @@ export default [
 				ms={100}
 				size={[2, 2]}
 				OuterElement="li"
-				{...props}
 				ref={ref}
 			>
 				◯⦿◉◎
@@ -96,7 +92,7 @@ export default [
 	],
 	[
 		React.forwardRef((props, ref) => (
-			<li className="content-node snowman doodle" {...props} ref={ref}>
+			<li className="content-node snowman doodle" ref={ref}>
 				☃
 			</li>
 		)),
@@ -113,7 +109,6 @@ export default [
 				className="content-node tall doodle"
 				ms={400}
 				OuterElement="li"
-				{...props}
 				ref={ref}
 			>
 				Secret message!

@@ -53,15 +53,16 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 		const sorted = sortFn(filtered);
 		const ordered = ascending ? sorted.reverse() : sorted;
 		// Insert a few doodles into a random position.
-		doodles
-			.filter(doodle => doodle.shouldRender())
-			.forEach(doodle => {
+		doodles.forEach(doodle => {
+			const {shouldRender, ...rest} = doodle;
+			if (shouldRender()) {
 				ordered.splice(
 					Math.floor(Math.random() * ordered.length),
 					0,
-					doodle
+					rest
 				);
-			});
+			}
+		});
 		return ordered;
 	}, [ascending, sortIdx, typeStates, props.nodes]);
 
@@ -208,7 +209,11 @@ const LazyGrid = React.memo(({nodes, setIsFullyLoaded}) => {
 	}, [nodes.length, renderLimit]);
 
 	return (
-		<ContentGrid masonry nodes={nodes.slice(0, renderLimit)} ref={ref} />
+		<ContentGrid
+			masonry
+			nodes={nodes.slice(0, renderLimit)}
+			lazyLoadRef={ref}
+		/>
 	);
 });
 
