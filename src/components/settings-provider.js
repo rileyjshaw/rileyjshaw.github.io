@@ -75,14 +75,19 @@ const SettingsProvider = ({children}) => {
 	);
 };
 
-export const withSettings = WrappedComponent => props => (
-	<SettingsContext.Consumer>
-		{settings => (
-			<ClientOnly>
-				<WrappedComponent settings={settings} {...props} />
-			</ClientOnly>
-		)}
-	</SettingsContext.Consumer>
-);
+export const withSettings = WrappedComponent =>
+	React.forwardRef((props, ref) => (
+		<SettingsContext.Consumer>
+			{settings => (
+				<ClientOnly>
+					<WrappedComponent
+						{...props}
+						settings={settings}
+						ref={ref}
+					/>
+				</ClientOnly>
+			)}
+		</SettingsContext.Consumer>
+	));
 
 export default SettingsProvider;

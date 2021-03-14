@@ -1,7 +1,7 @@
 import {getThemeColor, randSequence, lcm} from '../../util/util';
 import {withSettings} from '../settings-provider';
 import './background-generator.css';
-import React, {useState, useEffect, useContext, useMemo} from 'react';
+import React, {useState, useEffect, useMemo} from 'react';
 
 const minWidth = 100; // Tiling width. Height is calculated dynamically.
 const maxWidth = 200;
@@ -80,7 +80,10 @@ const getState = (
 	return [canvas, tiledCanvas, nTiles, height];
 };
 
-function BackgroundGenerator({settings: {theme}, ...props}, ref) {
+const BackgroundGenerator = React.forwardRef(function BackgroundGenerator(
+	{settings: {theme}, ...props},
+	ref
+) {
 	const {width, zoom, dark, light, El, className} = {
 		...defaultProps,
 		...props,
@@ -127,11 +130,11 @@ function BackgroundGenerator({settings: {theme}, ...props}, ref) {
 					}px url(${tiledCanvas.toDataURL()}`,
 				}
 			}
-			{...(ref.hasOwnProperty('current') ? {ref} : {})}
+			{...(ref?.hasOwnProperty('current') ? {ref} : {})}
 		>
 			{clicked || <span className="default-button">Click?</span>}
 		</El>
 	);
-}
+});
 
 export default withSettings(BackgroundGenerator);
