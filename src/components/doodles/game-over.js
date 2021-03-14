@@ -1,3 +1,4 @@
+import {useTypedText} from '../../util/hooks';
 import './game-over.css';
 import React, {useRef, useState, useEffect} from 'react';
 
@@ -9,27 +10,29 @@ const textOptions = {
 function GameOver(_, ref) {
 	const activeTimeout = useRef(null);
 	const [gameState, setGameState] = useState('game-over');
+	const mainText =
+		useTypedText(textOptions[gameState] ?? 'Game over', {delay: 30}) ||
+		'\u00A0';
 	useEffect(() => {
 		activeTimeout.current = setTimeout(() => {
 			setGameState('play-again');
 		}, 1800);
 		return () => clearTimeout(activeTimeout.current);
 	}, []);
+	const playAgain = gameState === 'play-again';
 	return (
 		<div
 			{...(ref?.hasOwnProperty('current') ? {ref} : {})}
 			className="content-node doodle doodle-game-over"
 		>
-			<p className="main-text">
-				{textOptions[gameState] ?? 'Game over'}
-			</p>
+			<p className="main-text">{mainText}</p>
 			<p
-				className={`play-again${
-					gameState === 'play-again' ? ' show' : ''
-				}`}
+				aria-hidden={!playAgain}
+				className={`play-again${playAgain ? ' show' : ''}`}
 			>
 				Play again?{' '}
 				<button
+					disabled={!playAgain}
 					onClick={() => {
 						setGameState('loading');
 						clearTimeout(activeTimeout.current);
@@ -46,6 +49,7 @@ function GameOver(_, ref) {
 				</button>{' '}
 				/{' '}
 				<button
+					disabled={!playAgain}
 					onClick={() => {
 						clearTimeout(activeTimeout.current);
 						setGameState('win');

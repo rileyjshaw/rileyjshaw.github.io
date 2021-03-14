@@ -240,3 +240,21 @@ export function useMediaQuery(query) {
 	}, [query]);
 	return queryResult;
 }
+
+export function useTypedText(text, {delay = 6} = {}) {
+	const [displayedText, setDisplayedText] = useState('');
+	useEffect(() => {
+		let timeout;
+		if (text !== displayedText) {
+			const nextDisplayedText = text.startsWith(displayedText)
+				? text.slice(0, displayedText.length + 1)
+				: displayedText.slice(0, -1);
+			timeout = setTimeout(
+				() => setDisplayedText(nextDisplayedText),
+				delay
+			);
+		}
+		return () => clearTimeout(timeout);
+	}, [displayedText, text]);
+	return displayedText;
+}

@@ -20,13 +20,15 @@
 	margin: 0 0 1.5em;
 	max-height: 0;
 	opacity: 0;
-	transition: opacity 0.4s, max-height 0.4s 0.4s;
+	pointer-events: none;
+	transition: opacity 0.4s 0.4s, max-height 0.4s 0.8s;
 	will-change: max-height;
 }
 .doodle-game-over .play-again.show {
 	max-height: 3em;
 	opacity: 1;
-	transition: opacity 0.4s 0.4s, max-height 0.4s;
+	pointer-events: auto;
+	transition: opacity 0.4s 0.8s, max-height 0.4s 0.4s;
 }
 .doodle-game-over button {
 	background: none;
