@@ -1,0 +1,34 @@
+.doodle-game-over {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	grid-area: span 2 / span 3;
+	height: 100%;
+	justify-content: center;
+}
+.doodle-game-over p {
+	flex-basis: 0;
+	font-family: var(--fss);
+}
+.doodle-game-over .main-text {
+	font-weight: 500;
+	letter-spacing: 2px;
+	margin: 1.5em 0 0;
+}
+.doodle-game-over .play-again {
+	font-size: var(--font-scale--1);
+	margin: 0 0 1.5em;
+	max-height: 0;
+	opacity: 0;
+	transition: opacity 0.4s, max-height 0.4s 0.4s;
+	will-change: max-height;
+}
+.doodle-game-over .play-again.show {
+	max-height: 3em;
+	opacity: 1;
+	transition: opacity 0.4s 0.4s, max-height 0.4s;
+}
+.doodle-game-over button {
+	background: none;
+	border: 0;
+}

@@ -5,6 +5,7 @@ import ContentGrid from '../components/content-grid';
 import CycleText from '../components/cycle-text';
 import BackgroundGenerator from '../components/doodles/background-generator';
 import CircleConstrainedLines from '../components/doodles/circle-constrained-lines';
+import GameOver from '../components/doodles/game-over';
 import GoUp from '../components/go-up';
 import SEO from '../components/seo';
 import allProjectsQuery from '../util/all-projects-query';
@@ -25,6 +26,10 @@ const doodles = [
 		{
 			Doodle: CircleConstrainedLines,
 			styles: {height: 'max-content'},
+		},
+		{
+			Doodle: GameOver,
+			styles: {height: '100%'},
 		},
 	]),
 ];
