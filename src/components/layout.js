@@ -51,6 +51,8 @@ const Layout = ({children, location}) => {
 	}, []);
 
 	let {pathname} = location;
+	if (pathname.endsWith('/')) pathname = pathname.slice(0, -1);
+
 	const isBlogPost = pathname.match(/\/blog\/.*[^0-9/]/);
 	if (pathname.startsWith('/blog'))
 		pathname = isBlogPost ? '/blog/post' : '/blog';
