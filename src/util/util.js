@@ -31,6 +31,24 @@ export function getThemeColor(activeTheme) {
 	};
 }
 
+export function debounce(fn, ms) {
+	let timeout;
+	return function _debounce() {
+		clearTimeout(timeout);
+		timeout = setTimeout(() => fn(arguments), ms);
+	};
+}
+export function throttle(fn, ms) {
+	let last = -Infinity;
+	return function _throttle() {
+		const now = Date.now();
+		if (now - last > ms) {
+			last = now;
+			fn(arguments);
+		}
+	};
+}
+
 // Returns a random bit array within a specified length range, with
 // configurable bias towards 0 or 1.
 export function randSequence(minLength, maxLength, bias = 0.5) {

@@ -1,4 +1,4 @@
-import {useInView} from '../util/hooks';
+import {useViewport} from '../util/hooks';
 import './color-channel-splitter.css';
 import {SettingsContext} from './settings-provider';
 import React, {cloneElement, isValidElement, useContext} from 'react';
@@ -21,7 +21,7 @@ function ColorChannelSplitter({
 	style,
 	...rest
 }) {
-	const [ref, inView] = useInView({threshold: 0});
+	const [ref, inView] = useViewport({initialInView: true});
 	const {theme, reducedMotion, contrastPreference} = useContext(
 		SettingsContext
 	);

@@ -1,12 +1,6 @@
 import {isRenderingOnClient, isRenderingOnServer} from './constants';
-import {
-	useCallback,
-	useEffect,
-	useLayoutEffect,
-	useRef,
-	useState,
-} from 'react';
-import {useInView as useInViewExternal} from 'react-intersection-observer';
+import {debounce, throttle} from './util';
+import {useCallback, useEffect, useRef, useState} from 'react';
 
 export function useWindowSize(cb) {
 	const [size, setSize] = useState(() =>
@@ -18,14 +12,16 @@ export function useWindowSize(cb) {
 			  ]
 			: [1000, 1000]
 	);
-	const debouncedSize = useDebounce(size, 300);
 	useEffect(() => {
-		const handleResize = () =>
-			setSize([
-				window.innerWidth,
-				window.innerHeight,
-				Math.hypot(window.innerWidth, window.innerHeight),
-			]);
+		const handleResize = debounce(
+			() =>
+				setSize([
+					window.innerWidth,
+					window.innerHeight,
+					Math.hypot(window.innerWidth, window.innerHeight),
+				]),
+			300
+		);
 		window.addEventListener('resize', handleResize);
 		return () => {
 			window.removeEventListener('resize', handleResize);
@@ -33,8 +29,8 @@ export function useWindowSize(cb) {
 	}, []);
 	useEffect(() => {
 		cb && cb(size);
-	}, [cb, debouncedSize]);
-	return debouncedSize;
+	}, [cb, size]);
+	return size;
 }
 
 export function useMousePosition(el) {
@@ -89,12 +85,12 @@ export function useInterval(cb, ms, oneShot) {
 // Usage: useDomMethod(domMethod: string)
 // Eg: useDomMethod('getBoundingClientRect');
 export function useDomMethod(domMethod) {
-	const ref = useRef();
-	const [result, setResult] = useState({});
-	useLayoutEffect(() => {
-		setResult(ref.current[domMethod]());
-	}, [ref.current]);
-	return [ref, result];
+	const [value, setValue] = useState(null);
+	const ref = useCallback(node => {
+		if (node === null) return;
+		setValue(node[domMethod]());
+	}, []);
+	return [ref, value];
 }
 
 // `keyHandlers` example: {Escape: {onDown: () => setOpen(false)}}.
@@ -178,11 +174,82 @@ export function useIdle(delay, onIdle) {
 	return isIdle;
 }
 
-export function useInView() {
-	let [ref, inView, entry] = useInViewExternal(...arguments);
-	inView = inView && true; // TODO(riley): Add check for active tab.
-	return [ref, inView, entry];
-}
+// TODO(riley): Add check for active tab.
+export const useViewport = (() => {
+	if (typeof window === 'undefined')
+		return ({initialInView = false} = {}) => {
+			return [null, initialInView];
+		};
+
+	const entryCallbacks = new Map();
+	const scrollingEntries = new Set();
+	const intersectionObserver = new IntersectionObserver(entries => {
+		entries.forEach(({target, isIntersecting}) =>
+			entryCallbacks.get(target)?.(isIntersecting)
+		);
+	});
+
+	return function useViewport({
+		updateOnScroll,
+		initialInView = false,
+		ms = 33,
+	} = {}) {
+		const [inView, setInView] = useState(initialInView);
+		const [measurements, setMeasurements] = useState([]);
+		// We’re using useCallback here instead of useEffect, since it works
+		// better with changing `ref` values. But… it’s less convenient at
+		// cleaning up its side-effects.
+		const nodeRef = useRef(null);
+
+		const ref = useCallback(node => {
+			const prevNode = nodeRef.current;
+			nodeRef.current = node;
+			if (prevNode) {
+				entryCallbacks.delete(prevNode);
+				scrollingEntries.delete(prevNode);
+				intersectionObserver.unobserve(prevNode);
+				if (!scrollingEntries.size)
+					window.removeEventListener('scroll', handleScroll);
+				if (!entryCallbacks.size) intersectionObserver.disconnect();
+			}
+			setInView(initialInView);
+			if (node === null) return;
+
+			const handleScroll = throttle(function handleScroll() {
+				setMeasurements([
+					node.getBoundingClientRect(),
+					window.innerHeight,
+					window.innerWidth,
+				]);
+			}, ms);
+			handleScroll();
+
+			if (!entryCallbacks.size) {
+				intersectionObserver.observe;
+			}
+			entryCallbacks.set(node, inView => {
+				setInView(inView);
+				if (inView && updateOnScroll) {
+					if (!scrollingEntries.size) {
+						window.addEventListener('scroll', handleScroll, {
+							passive: true,
+						});
+					}
+					scrollingEntries.add(node);
+				} else {
+					scrollingEntries.delete(node);
+					if (!scrollingEntries.size) {
+						window.removeEventListener('scroll', handleScroll);
+					}
+				}
+			});
+
+			intersectionObserver.observe(node);
+		}, []);
+
+		return [ref, inView, ...measurements];
+	};
+})();
 
 // Note: returns `null` or `serverState` for SSR’d components.
 export function useStickyState(

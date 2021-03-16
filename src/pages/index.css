@@ -13,9 +13,12 @@
 }
 .frontpage-doodle {
 	border: 5px solid var(--color-fg);
-	height: max-content;
 	max-width: 100%;
 	position: relative;
+}
+.frontpage-doodle,
+.frontpage-doodle .content-node {
+	height: 100%;
 }
 .frontpage-doodle .new-doodle {
 	align-items: center;

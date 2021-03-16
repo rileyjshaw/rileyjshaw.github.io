@@ -6,6 +6,7 @@ import CycleText from '../components/cycle-text';
 import BackgroundGenerator from '../components/doodles/background-generator';
 import CircleConstrainedLines from '../components/doodles/circle-constrained-lines';
 import GameOver from '../components/doodles/game-over';
+import Riot from '../components/doodles/riot';
 import GoUp from '../components/go-up';
 import SEO from '../components/seo';
 import allProjectsQuery from '../util/all-projects-query';
@@ -20,7 +21,6 @@ import React, {useState} from 'react';
 const doodles = [
 	{
 		Doodle: BackgroundGenerator,
-		styles: {height: '100%'},
 	},
 	...shuffle([
 		{
@@ -29,7 +29,9 @@ const doodles = [
 		},
 		{
 			Doodle: GameOver,
-			styles: {height: '100%'},
+		},
+		{
+			Doodle: Riot,
 		},
 	]),
 ];
