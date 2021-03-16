@@ -1,4 +1,4 @@
-import {useInterval, useInView} from '../util/hooks';
+import {useInterval, useViewport} from '../util/hooks';
 import TextGrid from './text-grid';
 import React, {useState} from 'react';
 
@@ -10,7 +10,7 @@ import React, {useState} from 'react';
 ▙▛▜▟
 */
 
-// HACK(riley): We potentially have two different useInView refs on this
+// HACK(riley): We potentially have two different useViewport refs on this
 //              component: one for pausing the animation, and one for checking
 //              scroll position for lazy loading. I'm attaching both to the
 //              root element for now, but there's gotta be a nicer way to do
@@ -46,7 +46,7 @@ export default React.forwardRef(
 		const [xSize, ySize] = size;
 		const n = xSize * ySize;
 		const [index, setIndex] = useState(0);
-		const [ref, inView] = useInView({threshold: 0});
+		const [ref, inView] = useViewport();
 		useInterval(() => setIndex(index + 1), inView ? ms : null);
 
 		if (n === 1)

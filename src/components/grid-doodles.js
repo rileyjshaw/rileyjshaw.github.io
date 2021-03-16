@@ -2,6 +2,7 @@ import CycleText from './cycle-text';
 import BackgroundGenerator from './doodles/background-generator';
 import CircleConstrainedLines from './doodles/circle-constrained-lines';
 import GameOver from './doodles/game-over';
+import Riot from './doodles/riot';
 import './grid-doodles.css';
 import TextGrid from './text-grid';
 import React from 'react';
@@ -20,6 +21,7 @@ export default [
 		0.8,
 	],
 	[React.forwardRef((props, ref) => <GameOver ref={ref} />), 0.8],
+	[React.forwardRef((props, ref) => <Riot ref={ref} />), 0.7],
 	[
 		React.forwardRef((props, ref) => (
 			<li className="doodle wavytext" ref={ref}>

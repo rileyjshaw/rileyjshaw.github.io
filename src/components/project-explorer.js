@@ -2,7 +2,7 @@
 import allProjectsQuery from '../util/all-projects-query';
 import {STORAGE_KEYS} from '../util/constants';
 import contentTypes from '../util/content-types';
-import {useInView, useStickyState} from '../util/hooks';
+import {useViewport, useStickyState} from '../util/hooks';
 import sortingMethods, {shuffle} from '../util/sorting-methods';
 import ContentGrid from './content-grid';
 import gridDoodles from './grid-doodles';
@@ -184,21 +184,20 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 // TODO(riley): Ensure this lazy-loading works with a screen reader.
 const LazyGrid = React.memo(({nodes, setIsFullyLoaded}) => {
 	const [renderLimit, setRenderLimit] = useState(20);
-	const [ref, inView, entry] = useInView();
+	const [ref, inView, boundingClientRect] = useViewport();
 
-	// TODO: The “or above” check doesn’t actually work…
 	// If the last node is on or above the viewport, load the next 20 nodes.
 	// Note that the “last” node might be higher up on the page, eg. if it has
 	// a small footprint and squeezes into some top row masonry. Hence the on
 	// *or above* the viewport check.
 	useEffect(() => {
 		if (
-			(inView || (entry?.boundingClientRect?.bottom ?? 1) <= 0) &&
+			(inView || boundingClientRect?.bottom <= 0) &&
 			renderLimit < nodes.length
 		) {
 			setRenderLimit(l => l + 20);
 		}
-	}, [inView, entry?.boundingClientRect?.bottom]);
+	}, [inView, boundingClientRect]);
 
 	useEffect(() => {
 		setRenderLimit(20);

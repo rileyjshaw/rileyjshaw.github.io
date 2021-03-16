@@ -1,7 +1,7 @@
 // Some initial work at trying to get an infinite scroll page going.
+import {useViewport} from '../util/hooks';
 import './scroll-loop.css';
-import React, {useState, useLayoutEffect, useRef} from 'react';
-import {InView} from 'react-intersection-observer';
+import React, {useState, useLayoutEffect, useRef, useEffect} from 'react';
 
 const Page = ({page}) => (
 	<div className="fullscreen plus">
@@ -10,21 +10,14 @@ const Page = ({page}) => (
 );
 
 const Quote = ({children, onChange}) => {
+	const [ref, inView, boundingClientRect] = useViewport();
+	useEffect(() => {
+		if (inView && boundingClientRect?.y > 0) onChange(true); // Hmm…?
+	}, [inView]);
 	return (
-		<InView
-			threshold={0.3}
-			className="fullscreen"
-			onChange={(inView, entry) => {
-				if (
-					entry.isIntersecting &&
-					entry.boundingClientRect.y > 0 &&
-					inView
-				)
-					onChange(inView);
-			}}
-		>
+		<div ref={ref} className="fullscreen">
 			{children}
-		</InView>
+		</div>
 	);
 };
 

@@ -1,0 +1,14 @@
+.doodle-riot {
+	grid-area: span 3 / span 4;
+	position: relative;
+}
+.doodle-riot .riot-overlay {
+	font-family: var(--fh);
+	font-size: var(--font-scale-6);
+	font-weight: 500;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	transition: transform 0.1s linear;
+}
