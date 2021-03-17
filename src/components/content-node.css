@@ -184,6 +184,10 @@
 	margin: auto;
 	width: 42px;
 }
+.content-node .screenshot-content img {
+	height: auto;
+	width: 100%;
+}
 .dark-theme .content-node.icon img {
 	filter: invert(1);
 }
@@ -204,4 +208,7 @@
 .content-node .continue-reading {
 	font-size: var(--font-scale-1);
 	text-align: right;
+}
+.content-node .image-link::after {
+	content: '';
 }

@@ -159,6 +159,7 @@ module.exports = {
 									contentType
 									body
 									image
+									extraData
 								}
 							}
 
@@ -181,6 +182,7 @@ module.exports = {
 									contentType
 									body
 									image
+									extraData
 								}
 							}
 
@@ -204,6 +206,7 @@ module.exports = {
 									contentType
 									body
 									image
+									extraData
 								}
 							}
 						}`,
@@ -251,6 +254,7 @@ module.exports = {
 										contentType
 										body
 										image
+										extraData
 									}
 								}
 							}
@@ -307,6 +311,7 @@ module.exports = {
 										contentType
 										body
 										image
+										extraData
 									}
 								}
 							}
@@ -354,6 +359,7 @@ module.exports = {
 										contentType
 										body
 										image
+										extraData
 									}
 								}
 							}
