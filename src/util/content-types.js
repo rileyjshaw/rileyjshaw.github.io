@@ -192,7 +192,7 @@ export const ScreenshotContent = ({body, link, contentType, extraData}) => {
 				<video
 					autoPlay
 					controls
-					height={extraData[1]}
+					height={extraData[1] || 'auto'}
 					loop
 					muted
 					src={body}

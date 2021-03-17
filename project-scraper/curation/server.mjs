@@ -1,5 +1,6 @@
 import express from 'express';
 import fs from 'fs';
+import stableStringify from 'json-stable-stringify';
 import {dirname} from 'path';
 import path from 'path';
 import {fileURLToPath} from 'url';
@@ -20,7 +21,7 @@ router.put('/tags', function (req, res) {
 	tags.tagInfo[tagKey] = {...tagValue, created};
 	fs.writeFileSync(
 		path.join(__dirname, '../sources/tags.json'),
-		JSON.stringify(tags, null, '\t')
+		stableStringify(tags, {space: '\t'})
 	);
 	res.json(tags);
 });
@@ -35,7 +36,7 @@ router.put('/tags/:uid', function (req, res) {
 	tags.taggedProjects[uid] = {tags: newTags, updated};
 	fs.writeFileSync(
 		path.join(__dirname, '../sources/tags.json'),
-		JSON.stringify(tags, null, '\t')
+		stableStringify(tags, {space: '\t'})
 	);
 	res.json(tags);
 });

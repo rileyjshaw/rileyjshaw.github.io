@@ -1,6 +1,7 @@
 'use strict';
 
 const fs = require('fs');
+const stableStringify = require('json-stable-stringify');
 
 function generateTags() {
 	const {tagInfo} = JSON.parse(
@@ -8,13 +9,12 @@ function generateTags() {
 	);
 	fs.writeFileSync(
 		'./project-scraper/_generated/tags.json',
-		JSON.stringify(
+		stableStringify(
 			Object.entries(tagInfo).map(([name, value]) => ({
 				name,
 				...value,
 			})),
-			null,
-			'\t'
+			{space: '\t'}
 		)
 	);
 }

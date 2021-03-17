@@ -8,6 +8,5 @@ getAll().then(() => {
 	console.log('\nScraped content.');
 	generateTags();
 	runTweaks();
-	console.log('Tweaked scraped content.');
-	console.log('Done. Running linters:');
+	console.log('Tweaked scraped content.\nDone.');
 });

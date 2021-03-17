@@ -9,6 +9,7 @@
 */
 
 const fs = require('fs');
+const stableStringify = require('json-stable-stringify');
 
 function moveInfo() {
 	const projects = JSON.parse(
@@ -41,7 +42,7 @@ function moveInfo() {
 
 	fs.writeFileSync(
 		'./project-scraper/sources/tags.json',
-		JSON.stringify(tags, null, '\t')
+		stableStringify(tags, {space: '\t'})
 	);
 }
 
