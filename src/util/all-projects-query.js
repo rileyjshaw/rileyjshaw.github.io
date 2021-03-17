@@ -58,6 +58,7 @@ export default () =>
 					body
 					image
 					more
+					extraData
 				}
 			}
 		}

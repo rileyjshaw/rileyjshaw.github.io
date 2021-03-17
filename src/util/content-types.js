@@ -162,6 +162,50 @@ export const VideoContent = ({
 		</main>
 	);
 };
+export const ScreenshotContent = ({body, link, contentType, extraData}) => {
+	let innerContent;
+	switch (contentType) {
+		case 'photo':
+			// TODO: If embeds are turned off, make innerContent something like:
+			// <ExternalLink to={link}>See ${extraData[2]} images</ExternalLink>
+			innerContent = (
+				<>
+					<ExternalLink className="image-link" to={link}>
+						<img
+							height={extraData[1]}
+							src={body}
+							width={extraData[0]}
+						/>
+					</ExternalLink>
+					{extraData[2] > 1 && (
+						<p>
+							<ExternalLink to={link}>
+								+ {extraData[2] - 1} more images
+							</ExternalLink>
+						</p>
+					)}
+				</>
+			);
+			break;
+		case 'video':
+			innerContent = (
+				<video
+					autoPlay
+					controls
+					height={extraData[1]}
+					loop
+					muted
+					src={body}
+					width={extraData[0]}
+				/>
+			);
+			break;
+		case 'audio':
+			innerContent = <audio controls preload="none" src={body} />;
+			break;
+	}
+	return <main className="screenshot-content">{innerContent}</main>;
+};
 
 export default {
 	doodle: {
@@ -211,7 +255,7 @@ export default {
 	screenshotsTumblr: {
 		className: 'span-3',
 		readableType: 'Screenshot',
-		Inner: TitleOnly,
+		Inner: ScreenshotContent,
 	},
 	song: {
 		className: 'span-5',

@@ -353,68 +353,86 @@ function getScreenshotsTumblr() {
 						raw.screenshotsTumblr = allPosts;
 						allPosts.forEach(post => {
 							const uid = idify(`SCREENSHOTS_TUMBLR_${post.id}`);
+							let body,
+								fileType,
+								extraData = [];
 							switch (post.type) {
 								case 'photo':
+									fileType = 'png';
+									const {photos} = post;
+									// TODO: Use a smaller one.
+									const photo = photos[0].original_size;
+									body = photo.url;
+									extraData = [
+										photo.width,
+										photo.height,
+										photos.length,
+									];
+									break;
 								case 'video':
+									fileType = 'mov';
+									body = post.video_url;
+									extraData = [
+										post.player[0].width,
+										post.player[0].embed_code.match(
+											/height=['"](\d+)['"]/
+										)?.[1] ?? 'auto',
+									];
+									break;
 								case 'audio':
-									const textIndex = formatted.findIndex(
-										post => post.uid === uid
-									);
-									const unadjustedDate = new Date(
-										post.timestamp * 1000
-									);
-									// The blog is in the Eastern timezone, and
-									// we also need to account for DST.
-									const localTimezoneOffsetFromEastern =
-										(new Date(
-											'January 1, 2020'
-										).getTimezoneOffset() -
-											5 * 60) *
-										60 *
-										1000;
-									const date = new Date(
-										unadjustedDate.getTime() +
-											localTimezoneOffsetFromEastern
-									);
-									const fileType = {
-										photo: 'png',
-										video: 'mov',
-										audio: 'wav',
-									}[post.type];
-									const title = `Screen Shot ${date.getFullYear()}-${`${
-										date.getMonth() + 1
-									}`.padStart(
-										2,
-										0
-									)}-${`${date.getDate()}`.padStart(
-										2,
-										0
-									)} at ${`${date.getHours()}`.padStart(
-										2,
-										0
-									)}.${`${date.getMinutes()}`.padStart(
-										2,
-										0
-									)}.${`${date.getSeconds()}`.padStart(
-										2,
-										0
-									)}.${fileType}`;
-									const textResult = {
-										uid,
-										type: 'screenshotsTumblr',
-										date: post.date.slice(0, 10),
-										link: post.post_url,
-										contentType: post.type,
-										title,
-										// TODO: Can I do without?
-										// body: post.body,
-										// ...excerptify(post.body),
-									};
-									if (textIndex !== -1)
-										formatted[textIndex] = textResult;
-									else formatted.push(textResult);
-									return;
+									fileType = 'wav';
+									body = post.audio_url;
+									break;
 							}
+							if (!fileType) return;
+
+							const textIndex = formatted.findIndex(
+								post => post.uid === uid
+							);
+							const unadjustedDate = new Date(
+								post.timestamp * 1000
+							);
+							// The blog is in the Eastern timezone, and
+							// we also need to account for DST.
+							const localTimezoneOffsetFromEastern =
+								(new Date(
+									'January 1, 2020'
+								).getTimezoneOffset() -
+									5 * 60) *
+								60 *
+								1000;
+							const date = new Date(
+								unadjustedDate.getTime() +
+									localTimezoneOffsetFromEastern
+							);
+							const title = `${date.getFullYear()}-${`${
+								date.getMonth() + 1
+							}`.padStart(2, 0)}-${`${date.getDate()}`.padStart(
+								2,
+								0
+							)} at ${`${date.getHours()}`.padStart(
+								2,
+								0
+							)}.${`${date.getMinutes()}`.padStart(
+								2,
+								0
+							)}.${`${date.getSeconds()}`.padStart(
+								2,
+								0
+							)}.${fileType}`;
+							const result = {
+								uid,
+								type: 'screenshotsTumblr',
+								date: post.date.slice(0, 10),
+								link: post.post_url,
+								contentType: post.type,
+								title,
+								body,
+								extraData,
+							};
+							if (textIndex !== -1)
+								formatted[textIndex] = result;
+							else formatted.push(result);
 						});
 					}
 				}
