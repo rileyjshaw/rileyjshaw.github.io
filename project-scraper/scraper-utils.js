@@ -12,6 +12,7 @@ const RssParser = require('rss-parser');
 const request = require('request-promise-native');
 const OAuth = require('oauth');
 const {JSDOM} = require('jsdom');
+const stableStringify = require('json-stable-stringify');
 
 const raw = {}; // Raw is completely overwritten, but we append to formatted and quotes.
 const formatted = JSON.parse(
@@ -374,9 +375,9 @@ function getScreenshotsTumblr() {
 									body = post.video_url;
 									extraData = [
 										post.player[0].width,
-										post.player[0].embed_code.match(
+										+post.player[0].embed_code.match(
 											/height=['"](\d+)['"]/
-										)?.[1] ?? 'auto',
+										)?.[1] ?? 0,
 									];
 									break;
 								case 'audio':
@@ -659,22 +660,24 @@ function getAll() {
 		.then(() => {
 			fs.writeFileSync(
 				'./project-scraper/_generated/scraped-projects-raw.json',
-				JSON.stringify(raw)
+				stableStringify(raw, {space: '\t'})
 			);
 			fs.writeFileSync(
 				'./project-scraper/_generated/scraped-projects-formatted.json',
-				JSON.stringify(
+				stableStringify(
 					formatted.sort(({uid: a = ''}, {uid: b = ''}) =>
 						a.localeCompare(b)
-					)
+					),
+					{space: '\t'}
 				)
 			);
 			fs.writeFileSync(
 				'./project-scraper/_generated/scraped-quotes.json',
-				JSON.stringify(
+				stableStringify(
 					scrapedQuotes.sort(({uid: a = ''}, {uid: b = ''}) =>
 						a.localeCompare(b)
-					)
+					),
+					{space: '\t'}
 				)
 			);
 		})

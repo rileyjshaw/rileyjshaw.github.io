@@ -192,7 +192,11 @@ function CurateTags() {
 			const response = await fetch(`/_curate/tags/${projectNode.uid}`, {
 				method: 'PUT',
 				headers: {'Content-Type': 'application/json'},
-				body: JSON.stringify(selectedTags.map(t => t.value)),
+				body: JSON.stringify(
+					selectedTags
+						.map(t => t.value)
+						.sort((a, b) => a.localeCompare(b))
+				),
 			});
 			const newTags = await response.json();
 			setTags(newTags);

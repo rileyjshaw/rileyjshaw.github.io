@@ -7,6 +7,7 @@ import {
 	ABSTRACT_COLOR_PROPERTIES,
 } from './src/util/constants';
 import {applyTheme} from './src/util/util';
+import stableStringify from 'json-stable-stringify';
 import React from 'react';
 
 export const wrapRootElement = ({element}) => (
@@ -35,11 +36,11 @@ const execString_manageInitialTheme = `(function() {
 })()`
 	.replace(
 		new RegExp(_webpackImportString('DIRECT_COLORS')),
-		JSON.stringify(DIRECT_COLORS)
+		stableStringify(DIRECT_COLORS)
 	)
 	.replace(
 		new RegExp(_webpackImportString('ABSTRACT_COLOR_PROPERTIES')),
-		JSON.stringify(ABSTRACT_COLOR_PROPERTIES)
+		stableStringify(ABSTRACT_COLOR_PROPERTIES)
 	)
 	.replace(
 		new RegExp(_webpackImportString('cssColorProperty')),

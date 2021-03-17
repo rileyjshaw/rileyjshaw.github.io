@@ -4,6 +4,7 @@
 //       *in place*. This whole file is a hack.
 
 const fs = require('fs');
+const stableStringify = require('json-stable-stringify');
 
 const unique = arr => arr.filter((x, i) => arr.indexOf(x) === i);
 const addTags = (n, tags = []) => {
@@ -231,8 +232,11 @@ function runTweaks() {
 
 	fs.writeFileSync(
 		'./project-scraper/_generated/combined-projects.json',
-		JSON.stringify(
-			projects.sort(({uid: a = ''}, {uid: b = ''}) => a.localeCompare(b))
+		stableStringify(
+			projects.sort(({uid: a = ''}, {uid: b = ''}) =>
+				a.localeCompare(b)
+			),
+			{space: '\t'}
 		)
 	);
 
@@ -254,10 +258,11 @@ function runTweaks() {
 
 	fs.writeFileSync(
 		'./project-scraper/_generated/combined-quotes.json',
-		JSON.stringify(
+		stableStringify(
 			combinedQuotes.sort(({uid: a = ''}, {uid: b = ''}) =>
 				a.localeCompare(b)
-			)
+			),
+			{space: '\t'}
 		)
 	);
 }
