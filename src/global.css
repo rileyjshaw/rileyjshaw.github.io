@@ -14,6 +14,7 @@
 	--font-scale-6: 3.815em;
 	--grid-column-width: 60px;
 	--grid-gap: 30px;
+	--half-grid-gap: 15px;
 }
 p,
 dd {
