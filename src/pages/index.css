@@ -59,7 +59,7 @@
 	text-align: right;
 }
 .frontpage-grid .content-grid .content-node {
-	grid-column-end: -1;
+	grid-column: 1 / -1;
 }
 h2 + .lab-link {
 	color: var(--color-fg);
