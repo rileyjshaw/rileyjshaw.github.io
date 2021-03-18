@@ -1,6 +1,6 @@
 .project-explorer {
 	min-height: 100vh;
-	padding: var(--grid-gap) calc(var(--grid-gap) / 2);
+	padding: var(--grid-gap) var(--half-grid-gap);
 }
 .project-explorer .controls {
 	align-items: flex-start;

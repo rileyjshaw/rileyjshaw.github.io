@@ -1,5 +1,5 @@
 .blog-list {
-	padding: var(--grid-gap) calc(var(--grid-gap) / 2);
+	padding: var(--grid-gap) var(--half-grid-gap);
 }
 .blog-list .blog-posts {
 	list-style: none;
