@@ -1,7 +1,7 @@
 :root {
 	--fss: 'Geomanist', arial, 'Helvetica Neue', helvetica, sans-serif;
-	--fs: georgia, palatino, 'Palatino Linotype', times, 'Times New Roman',
-		serif;
+	--fs: charter, georgia, palatino, 'Palatino Linotype', times,
+		'Times New Roman', 'Century Schoolbook L', serif;
 	--fh: 'Geomanist', 'Proxima Nova', 'Montserrat', 'Arial Black',
 		'Arial Bold', gadget, sans-serif;
 	--fm: 'Courier New', courier, 'Lucida Sans Typewriter', 'Lucida Typewriter',
