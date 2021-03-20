@@ -1,6 +1,6 @@
-import {useTypedText} from '../../util/hooks';
+import {useKeyPresses, useTypedText} from '../../util/hooks';
 import './game-over.css';
-import React, {useRef, useState, useEffect} from 'react';
+import React, {useCallback, useEffect, useRef, useState} from 'react';
 
 const textOptions = {
 	loading: 'Loading…',
@@ -19,6 +19,22 @@ function GameOver(_, ref) {
 		}, 1800);
 		return () => clearTimeout(activeTimeout.current);
 	}, []);
+	const clickYes = useCallback(() => {
+		setGameState('loading');
+		clearTimeout(activeTimeout.current);
+		activeTimeout.current = setTimeout(() => {
+			setGameState('game-over');
+			activeTimeout.current = setTimeout(
+				() => setGameState('play-again'),
+				1800
+			);
+		}, 2400);
+	}, []);
+	const clickNo = useCallback(() => {
+		clearTimeout(activeTimeout.current);
+		setGameState('win');
+	}, []);
+	useKeyPresses({y: {onDown: clickYes}, n: {onDown: clickNo}});
 	const playAgain = gameState === 'play-again';
 	return (
 		<div
@@ -31,30 +47,11 @@ function GameOver(_, ref) {
 				className={`play-again${playAgain ? ' show' : ''}`}
 			>
 				Play again?{' '}
-				<button
-					disabled={!playAgain}
-					onClick={() => {
-						setGameState('loading');
-						clearTimeout(activeTimeout.current);
-						activeTimeout.current = setTimeout(() => {
-							setGameState('game-over');
-							activeTimeout.current = setTimeout(
-								() => setGameState('play-again'),
-								1800
-							);
-						}, 2400);
-					}}
-				>
+				<button disabled={!playAgain} onClick={clickYes}>
 					Y
-				</button>{' '}
-				/{' '}
-				<button
-					disabled={!playAgain}
-					onClick={() => {
-						clearTimeout(activeTimeout.current);
-						setGameState('win');
-					}}
-				>
+				</button>
+				{' / '}
+				<button disabled={!playAgain} onClick={clickNo}>
 					N
 				</button>
 			</p>
