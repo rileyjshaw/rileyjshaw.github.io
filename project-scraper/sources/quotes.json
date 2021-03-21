@@ -52,7 +52,7 @@
 		"author": "Charles Simic"
 	},
 	"JPOD_QUOTES": {
-		"content": "And while we're at it, stop putting quotes from Nietzsche at the end of your emails. Five years ago you were laughing your guts out over American Pie 2. What - suddenly you've magically turned into Noam Chomsky?",
+		"content": "And while we’re at it, stop putting quotes from Nietzsche at the end of your emails. Five years ago you were laughing your guts out over American Pie 2. What - suddenly you’ve magically turned into Noam Chomsky?",
 		"author": "Douglas Coupland",
 		"source": "JPod",
 		"cite": "https://coupland.com/jpod/"
@@ -60,7 +60,7 @@
 	"VOLTAIRE_BORING": {
 		"content": "The secret of being a bore is to tell everything.",
 		"author": "Voltaire",
-		"source": "Sept discours en vers sur l'homme"
+		"source": "Sept discours en vers sur l’homme"
 	},
 	"LESS_STITCHES": {
 		"content": "Ending is better than mending. The more stitches, the less riches.",
@@ -146,7 +146,7 @@
 		"cite": "https://www.indiebound.org/book/9780553293357"
 	},
 	"KNIFE_SCIENCE": {
-		"content": "...the harm was done: the topic became known as “computer science” - which, actually, is like referring to surgery as “knife science” - and it was firmly implanted in people's minds that computing science is about machines and their peripheral equipment.",
+		"content": "...the harm was done: the topic became known as “computer science” - which, actually, is like referring to surgery as “knife science” - and it was firmly implanted in people’s minds that computing science is about machines and their peripheral equipment.",
 		"author": "Braydie Grove",
 		"source": "How to be a Programmer",
 		"cite": "https://github.com/braydie/HowToBeAProgrammer"
@@ -278,7 +278,7 @@
 		"cite": "https://reallifemag.com/the-babysitters-club"
 	},
 	"ACTUAL_DRAGON": {
-		"content": "That will be the judgement of history for your startup culture. They’re going to say the twenty-teens were all about that. It was a tacit allegiance between the hackerspace favelas of the startups and offshore capital in tax avoidance money laundries. That's your actual dragon… and you know it's the big dragon because you're a part of it. And as long as you are making rich guys richer, you are not disrupting the austerity. You are one if its top facilitators.",
+		"content": "That will be the judgement of history for your startup culture. They’re going to say the twenty-teens were all about that. It was a tacit allegiance between the hackerspace favelas of the startups and offshore capital in tax avoidance money laundries. That’s your actual dragon… and you know it’s the big dragon because you’re a part of it. And as long as you are making rich guys richer, you are not disrupting the austerity. You are one if its top facilitators.",
 		"author": "Bruce Sterling",
 		"source": "Fantasy prototypes and real disruption",
 		"cite": "https://youtu.be/M7KErICTSHU"
@@ -290,7 +290,7 @@
 		"cite": "https://www.poetryfoundation.org/poems/48578/at-the-california-institute-of-technology"
 	},
 	"LEARNING_RUST": {
-		"content": "Learning Rust will probably not do much to solve that problem for you. It won't assist you in making the ontological leap from a tired stereotype into something sentient and real. You will remain a replaceable silhouette with no discernible identity. It might even exacerbate the problem. However, it will give you a useful tool for writing low-level software.",
+		"content": "Learning Rust will probably not do much to solve that problem for you. It won’t assist you in making the ontological leap from a tired stereotype into something sentient and real. You will remain a replaceable silhouette with no discernible identity. It might even exacerbate the problem. However, it will give you a useful tool for writing low-level software.",
 		"author": "Zach Oakes",
 		"source": "Rust for Clojurists",
 		"cite": "https://gist.github.com/oakes/4af1023b6c5162c6f8f0"
@@ -305,5 +305,29 @@
 		"content": "Deletion Day challenges the prevailing notion that “more is more”. In a culture that strives for permanence, we celebrate ephemerality, growth, and change. On April 4th, a chorus of Delete keys will ring out across the world. We hope you’ll join us.",
 		"source": "Deletion Day",
 		"cite": "https://deletionday.com"
+	},
+	"MSG_FROM_VERA": {
+		"content": "My work does not contain any elements of a symbolic, metaphysical or mystical kind. There is no message. Absolutely no message whatsoever.",
+		"author": "Vera Molnar",
+		"source": "Inventaire",
+		"cite": "http://www.veramolnar.com/blog/wp-content/uploads/VM1994_inventaire.pdf"
+	},
+	"CUT_UP": {
+		"content": "What is any writing but a cut-up?",
+		"author": "William S. Burroughs",
+		"source": "The Paris Review: The Art of Fiction No. 36",
+		"cite": "https://www.theparisreview.org/interviews/4424/the-art-of-fiction-no-36-william-s-burroughs"
+	},
+	"SKETCHBOOK": {
+		"content": "I don’t know what people expect to see what they look in a sketchbook but they always seem mighty disappointed. I think people expect to see what they would see in a Hollywood version of a sketchbook. Whenever someone is sketching from life in a movie, it’s always supposed to look tossed off and effortless but it’s really some totally finished and labored-over drawing that some artist spent hours rendering. Any real sketchbook is full of misfires, false starts and stumbles, with a few successes sprinkled here and there.",
+		"author": "Mark Kennedy",
+		"source": "Carrying a sketchbook",
+		"cite": "https://sevencamels.blogspot.com/2007/03/carrying-sketchbook-part-one.html"
+	},
+	"PERFORMANCE_ART": {
+		"content": "I used to think “Software Design” is an art form. I now believe that I was half-right: it is indeed an art, but it has a rather short half-life. Software is merely a performance art!",
+		"author": "Kai Krause",
+		"source": "Software is merely a Performance Art",
+		"cite": "https://www.edge.org/response-detail/10113"
 	}
 }
