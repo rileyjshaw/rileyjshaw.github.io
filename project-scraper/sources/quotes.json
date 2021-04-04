@@ -329,5 +329,53 @@
 		"author": "Kai Krause",
 		"source": "Software is merely a Performance Art",
 		"cite": "https://www.edge.org/response-detail/10113"
+	},
+	"INTERDEPENDENCY": {
+		"content": "It makes a difference to understand ourselves as living in a world in which we are fundamentally dependent on others, on institutions, on the Earth, and to see that this life depends on a sustaining organisation for various forms of life. If no one escapes that interdependency, then we are equal in a different sense. We are equally dependent, that is, equally social and ecological, and that means we cease to understand ourselves only as demarcated individuals.",
+		"author": "Judith Butler",
+		"source": "Interview",
+		"cite": "https://www.newstatesman.com/international/2020/09/judith-butler-culture-wars-jk-rowling-and-living-anti-intellectual-times"
+	},
+	"RACCOON_KING": {
+		"content": "I am the raccoon king of my mountain of garbage",
+		"author": "Frank Chimero",
+		"source": "Redesign: The Raccoon King of Garbage Mountain",
+		"cite": "https://frankchimero.com/blog/2020/raccoon-king/"
+	},
+	"SYMMETRIC_AUTHORING": {
+		"content": "For all media, the original intent was “symmetric authoring and consuming”. Isn’t it crystal clear that this last and most important service is quite lacking in today’s computing for the general public?",
+		"author": "Alan C. Kay",
+		"source": "An Interview with Computing Pioneer Alan Kay",
+		"cite": "https://techland.time.com/2013/04/02/an-interview-with-computing-pioneer-alan-kay/"
+	},
+	"CHOPSTICKS_CULTURE": {
+		"content": "I’ve used the analogy of what would happen if you put a piano in every classroom. If there is no other context, you will get a “chopsticks” culture, and maybe even a pop culture. And this is pretty much what is happening. In other words, “the music is not in the piano”.",
+		"author": "Alan C. Kay",
+		"source": "An Interview with Computing Pioneer Alan Kay",
+		"cite": "https://techland.time.com/2013/04/02/an-interview-with-computing-pioneer-alan-kay/"
+	},
+	"NFT_CRIME": {
+		"content": "During unprecedented temperature increases, sea level rise, the total loss of permanent sea ice, widespread species extinction, countless severe weather events, and all the other hallmarks of total climate collapse, this kind of gleeful wastefulness is, and I am not being hyperbolic, a crime against humanity.",
+		"author": "Everest Pipkin",
+		"source": "NFT article",
+		"cite": "https://everestpipkin.medium.com/but-the-environmental-issues-with-cryptoart-1128ef72e6a3"
+	},
+	"QUINOA": {
+		"content": "To buy some time, you have some wine.",
+		"author": "David Lynch",
+		"source": "Quinoa",
+		"cite": "https://youtu.be/11p0y9z1XOU"
+	},
+	"NEVER_PERFECT": {
+		"content": "Perfection is a Procrustean bed and the core of the digital sickness.",
+		"author": "Sarah Groff Hennigh-Palermo",
+		"source": "Seven Points for a Computer Critical Computer Art",
+		"cite": "http://art.sarahghp.com/seven-points/"
+	},
+	"LET_THE_COMPUTER_FORGET": {
+		"content": "Ignore the database. Let the computer forget.",
+		"author": "Sarah Groff Hennigh-Palermo",
+		"source": "Seven Points for a Computer Critical Computer Art",
+		"cite": "http://art.sarahghp.com/seven-points/"
 	}
 }
