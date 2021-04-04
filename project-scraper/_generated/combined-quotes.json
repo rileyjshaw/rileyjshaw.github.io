@@ -2,7 +2,7 @@
 	{
 		"author": "Bruce Sterling",
 		"cite": "https://youtu.be/M7KErICTSHU",
-		"content": "That will be the judgement of history for your startup culture. They’re going to say the twenty-teens were all about that. It was a tacit allegiance between the hackerspace favelas of the startups and offshore capital in tax avoidance money laundries. That's your actual dragon… and you know it's the big dragon because you're a part of it. And as long as you are making rich guys richer, you are not disrupting the austerity. You are one if its top facilitators.",
+		"content": "That will be the judgement of history for your startup culture. They’re going to say the twenty-teens were all about that. It was a tacit allegiance between the hackerspace favelas of the startups and offshore capital in tax avoidance money laundries. That’s your actual dragon… and you know it’s the big dragon because you’re a part of it. And as long as you are making rich guys richer, you are not disrupting the austerity. You are one if its top facilitators.",
 		"source": "Fantasy prototypes and real disruption",
 		"uid": "ACTUAL_DRAGON"
 	},
@@ -35,6 +35,13 @@
 		"uid": "CALTECH_BORED"
 	},
 	{
+		"author": "Alan C. Kay",
+		"cite": "https://techland.time.com/2013/04/02/an-interview-with-computing-pioneer-alan-kay/",
+		"content": "I’ve used the analogy of what would happen if you put a piano in every classroom. If there is no other context, you will get a “chopsticks” culture, and maybe even a pop culture. And this is pretty much what is happening. In other words, “the music is not in the piano”.",
+		"source": "An Interview with Computing Pioneer Alan Kay",
+		"uid": "CHOPSTICKS_CULTURE"
+	},
+	{
 		"author": "Audrey Watters",
 		"cite": "http://monsters.hackeducation.com/",
 		"content": "We confuse “innovation” with “progress” and we confuse “technological progress” with “progress” and we confuse all of that with progressive politics. We forget that “innovation” does not give us justice. “Innovation” does not give us equality. “Innovation” does not empower us. We achieve these things when we build a robust civic society, when we support an engaged citizenry. We achieve these things through organization and collective action. We achieve these things through and with democracy. And we achieve – or we certainly strive to achieve – these things through public education.",
@@ -47,6 +54,13 @@
 		"content": "You have not sufficiently understood power relationships in the control society unless you have understood how it works and who it works for.",
 		"source": "Protocol: How Control Exists After Decentralization",
 		"uid": "CONTROL_POWER"
+	},
+	{
+		"author": "William S. Burroughs",
+		"cite": "https://www.theparisreview.org/interviews/4424/the-art-of-fiction-no-36-william-s-burroughs",
+		"content": "What is any writing but a cut-up?",
+		"source": "The Paris Review: The Art of Fiction No. 36",
+		"uid": "CUT_UP"
 	},
 	{
 		"author": "Fredy Perlman",
@@ -103,9 +117,16 @@
 		"uid": "GOOGLE_EDITORIALIZED"
 	},
 	{
+		"author": "Judith Butler",
+		"cite": "https://www.newstatesman.com/international/2020/09/judith-butler-culture-wars-jk-rowling-and-living-anti-intellectual-times",
+		"content": "It makes a difference to understand ourselves as living in a world in which we are fundamentally dependent on others, on institutions, on the Earth, and to see that this life depends on a sustaining organisation for various forms of life. If no one escapes that interdependency, then we are equal in a different sense. We are equally dependent, that is, equally social and ecological, and that means we cease to understand ourselves only as demarcated individuals.",
+		"source": "Interview",
+		"uid": "INTERDEPENDENCY"
+	},
+	{
 		"author": "Douglas Coupland",
 		"cite": "https://coupland.com/jpod/",
-		"content": "And while we're at it, stop putting quotes from Nietzsche at the end of your emails. Five years ago you were laughing your guts out over American Pie 2. What - suddenly you've magically turned into Noam Chomsky?",
+		"content": "And while we’re at it, stop putting quotes from Nietzsche at the end of your emails. Five years ago you were laughing your guts out over American Pie 2. What - suddenly you’ve magically turned into Noam Chomsky?",
 		"source": "JPod",
 		"uid": "JPOD_QUOTES"
 	},
@@ -119,14 +140,14 @@
 	{
 		"author": "Braydie Grove",
 		"cite": "https://github.com/braydie/HowToBeAProgrammer",
-		"content": "...the harm was done: the topic became known as “computer science” - which, actually, is like referring to surgery as “knife science” - and it was firmly implanted in people's minds that computing science is about machines and their peripheral equipment.",
+		"content": "...the harm was done: the topic became known as “computer science” - which, actually, is like referring to surgery as “knife science” - and it was firmly implanted in people’s minds that computing science is about machines and their peripheral equipment.",
 		"source": "How to be a Programmer",
 		"uid": "KNIFE_SCIENCE"
 	},
 	{
 		"author": "Zach Oakes",
 		"cite": "https://gist.github.com/oakes/4af1023b6c5162c6f8f0",
-		"content": "Learning Rust will probably not do much to solve that problem for you. It won't assist you in making the ontological leap from a tired stereotype into something sentient and real. You will remain a replaceable silhouette with no discernible identity. It might even exacerbate the problem. However, it will give you a useful tool for writing low-level software.",
+		"content": "Learning Rust will probably not do much to solve that problem for you. It won’t assist you in making the ontological leap from a tired stereotype into something sentient and real. You will remain a replaceable silhouette with no discernible identity. It might even exacerbate the problem. However, it will give you a useful tool for writing low-level software.",
 		"source": "Rust for Clojurists",
 		"uid": "LEARNING_RUST"
 	},
@@ -136,6 +157,13 @@
 		"content": "Ending is better than mending. The more stitches, the less riches.",
 		"source": "Brave New World",
 		"uid": "LESS_STITCHES"
+	},
+	{
+		"author": "Sarah Groff Hennigh-Palermo",
+		"cite": "http://art.sarahghp.com/seven-points/",
+		"content": "Ignore the database. Let the computer forget.",
+		"source": "Seven Points for a Computer Critical Computer Art",
+		"uid": "LET_THE_COMPUTER_FORGET"
 	},
 	{
 		"author": "Flea",
@@ -188,6 +216,13 @@
 		"uid": "MOVEMENTS_THAT_SHAPED_ME"
 	},
 	{
+		"author": "Vera Molnar",
+		"cite": "http://www.veramolnar.com/blog/wp-content/uploads/VM1994_inventaire.pdf",
+		"content": "My work does not contain any elements of a symbolic, metaphysical or mystical kind. There is no message. Absolutely no message whatsoever.",
+		"source": "Inventaire",
+		"uid": "MSG_FROM_VERA"
+	},
+	{
 		"author": "Jesse Barron",
 		"cite": "https://reallifemag.com/the-babysitters-club",
 		"content": "We’re in the middle of a decade of post-dignity design, whose dogma is cuteness. One explanation would be geopolitical: when the perception of instability is elevated, we seek the safety of naptime aesthetics.",
@@ -200,6 +235,20 @@
 		"content": "While pretending to be looking for moments of connection, neoliberal versions of creativity champion individuality, and shun attempts to change the contexts in which individuals operate. Indeed, these contexts have become so granular that it becomes ever more difficult to relate, connect and mobilize into a collective force that could subvert and challenge them. The trick of neoliberal creativity then is to convince us that you can only be creative by looking to your own agency; any appeal to wider structures do not matter.",
 		"source": "Against Creativity",
 		"uid": "NEOLIBERAL_CREATIVITY"
+	},
+	{
+		"author": "Sarah Groff Hennigh-Palermo",
+		"cite": "http://art.sarahghp.com/seven-points/",
+		"content": "Perfection is a Procrustean bed and the core of the digital sickness.",
+		"source": "Seven Points for a Computer Critical Computer Art",
+		"uid": "NEVER_PERFECT"
+	},
+	{
+		"author": "Everest Pipkin",
+		"cite": "https://everestpipkin.medium.com/but-the-environmental-issues-with-cryptoart-1128ef72e6a3",
+		"content": "During unprecedented temperature increases, sea level rise, the total loss of permanent sea ice, widespread species extinction, countless severe weather events, and all the other hallmarks of total climate collapse, this kind of gleeful wastefulness is, and I am not being hyperbolic, a crime against humanity.",
+		"source": "NFT article",
+		"uid": "NFT_CRIME"
 	},
 	{
 		"author": "Matt Pearson",
@@ -223,11 +272,32 @@
 		"uid": "PARTICULAR_KIND_OF_INDIVIDUAL"
 	},
 	{
+		"author": "Kai Krause",
+		"cite": "https://www.edge.org/response-detail/10113",
+		"content": "I used to think “Software Design” is an art form. I now believe that I was half-right: it is indeed an art, but it has a rather short half-life. Software is merely a performance art!",
+		"source": "Software is merely a Performance Art",
+		"uid": "PERFORMANCE_ART"
+	},
+	{
 		"author": "James Bridle",
 		"cite": "https://www.versobooks.com/books/2698-new-dark-age",
 		"content": "One of the arguments often made in response to weak public understanding of technology is a call to increase technological education – in its simplest formulation, to learn to code. Such a call is made frequently by politicians, technologists, pundits and business leaders, and it is often advanced in nakedly functional and pro-market terms.",
 		"source": "New Dark Age: Technology and the End of the Future",
 		"uid": "PRO_MARKET_STEM"
+	},
+	{
+		"author": "David Lynch",
+		"cite": "https://youtu.be/11p0y9z1XOU",
+		"content": "To buy some time, you have some wine.",
+		"source": "Quinoa",
+		"uid": "QUINOA"
+	},
+	{
+		"author": "Frank Chimero",
+		"cite": "https://frankchimero.com/blog/2020/raccoon-king/",
+		"content": "I am the raccoon king of my mountain of garbage",
+		"source": "Redesign: The Raccoon King of Garbage Mountain",
+		"uid": "RACCOON_KING"
 	},
 	{
 		"author": "Audrey Watters",
@@ -402,6 +472,13 @@
 		"uid": "SIMPLE_TOOLS"
 	},
 	{
+		"author": "Mark Kennedy",
+		"cite": "https://sevencamels.blogspot.com/2007/03/carrying-sketchbook-part-one.html",
+		"content": "I don’t know what people expect to see what they look in a sketchbook but they always seem mighty disappointed. I think people expect to see what they would see in a Hollywood version of a sketchbook. Whenever someone is sketching from life in a movie, it’s always supposed to look tossed off and effortless but it’s really some totally finished and labored-over drawing that some artist spent hours rendering. Any real sketchbook is full of misfires, false starts and stumbles, with a few successes sprinkled here and there.",
+		"source": "Carrying a sketchbook",
+		"uid": "SKETCHBOOK"
+	},
+	{
 		"author": "Mohamed Zayani",
 		"cite": "https://global.oup.com/academic/product/networked-publics-and-digital-contention-9780190239770",
 		"content": "Social media are not sufficient to maintain social revolutionary movements because social activism requires deep roots and strong social ties, which they are incapable of producing.",
@@ -429,6 +506,13 @@
 		"uid": "SV_MERITOCRACY"
 	},
 	{
+		"author": "Alan C. Kay",
+		"cite": "https://techland.time.com/2013/04/02/an-interview-with-computing-pioneer-alan-kay/",
+		"content": "For all media, the original intent was “symmetric authoring and consuming”. Isn’t it crystal clear that this last and most important service is quite lacking in today’s computing for the general public?",
+		"source": "An Interview with Computing Pioneer Alan Kay",
+		"uid": "SYMMETRIC_AUTHORING"
+	},
+	{
 		"author": "James Bridle",
 		"cite": "https://www.versobooks.com/books/2698-new-dark-age",
 		"content": "If we do not understand how complex technologies function, how systems of technologies interconnect, and how systems of systems interact, then we are powerless within them, and their potential is more easily captured by selfish elites and inhuman corporations… this understanding cannot be limited to the practicalities of how things work: it must be extended to how things came to be, and how they continue to function in the world in ways that are often invisible and interwoven. What is required is not understanding, but literacy.",
@@ -452,7 +536,7 @@
 	{
 		"author": "Voltaire",
 		"content": "The secret of being a bore is to tell everything.",
-		"source": "Sept discours en vers sur l'homme",
+		"source": "Sept discours en vers sur l’homme",
 		"uid": "VOLTAIRE_BORING"
 	},
 	{
