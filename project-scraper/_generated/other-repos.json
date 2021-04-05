@@ -1,0 +1,158 @@
+[
+	{
+		"url": "https://rileyjshaw.com/2048/",
+		"priority": 0.1
+	},
+	{
+		"url": "https://rileyjshaw.com/28-hour-day-pebble/",
+		"priority": 0.1
+	},
+	{
+		"url": "https://rileyjshaw.com/2p-snake/",
+		"priority": 0.6
+	},
+	{
+		"url": "https://rileyjshaw.com/4000-words/",
+		"priority": 0.1
+	},
+	{
+		"url": "https://rileyjshaw.com/balance-text/",
+		"priority": 0.1
+	},
+	{
+		"url": "https://rileyjshaw.com/beautiful-open/",
+		"priority": 0.1
+	},
+	{
+		"url": "https://rileyjshaw.com/buster-test/",
+		"priority": 0.1
+	},
+	{
+		"url": "https://rileyjshaw.com/canvas/",
+		"priority": 0.6
+	},
+	{
+		"url": "https://rileyjshaw.com/challenger/",
+		"priority": 0.8
+	},
+	{
+		"url": "https://rileyjshaw.com/chromium-injected-css-specificity-bug-demo/",
+		"priority": 0.1
+	},
+	{
+		"url": "https://rileyjshaw.com/code-is-bad/",
+		"priority": 0.1
+	},
+	{
+		"url": "https://rileyjshaw.com/color-screen/",
+		"priority": 0.5
+	},
+	{
+		"url": "https://rileyjshaw.com/do-it/",
+		"priority": 0.2
+	},
+	{
+		"url": "https://rileyjshaw.com/face/",
+		"priority": 0.6
+	},
+	{
+		"url": "https://rileyjshaw.com/fastdraw/",
+		"priority": 0.1
+	},
+	{
+		"url": "https://rileyjshaw.com/fitter-happier-text/",
+		"priority": 0.1
+	},
+	{
+		"url": "https://rileyjshaw.com/glorious-pattern-matcher/",
+		"priority": 0.5
+	},
+	{
+		"url": "https://rileyjshaw.com/life/",
+		"priority": 0.2
+	},
+	{
+		"url": "https://rileyjshaw.com/linescapes/",
+		"priority": 0.6
+	},
+	{
+		"url": "https://rileyjshaw.com/nature-of-code/",
+		"priority": 0.6
+	},
+	{
+		"url": "https://rileyjshaw.com/orbit/",
+		"priority": 0.6
+	},
+	{
+		"url": "https://rileyjshaw.com/palette-test-tool/",
+		"priority": 0.2
+	},
+	{
+		"url": "https://rileyjshaw.com/phi_fo_fum/",
+		"priority": 0.4
+	},
+	{
+		"url": "https://rileyjshaw.com/po-33/",
+		"priority": 1
+	},
+	{
+		"url": "https://rileyjshaw.com/racer/",
+		"priority": 0.5
+	},
+	{
+		"url": "https://rileyjshaw.com/sci-13/",
+		"priority": 0.1
+	},
+	{
+		"url": "https://rileyjshaw.com/sorta/",
+		"priority": 0.4
+	},
+	{
+		"url": "https://rileyjshaw.com/super-slinky/",
+		"priority": 0.5
+	},
+	{
+		"url": "https://rileyjshaw.com/sweep/",
+		"priority": 0.7
+	},
+	{
+		"url": "https://rileyjshaw.com/tappy-fingerprint/",
+		"priority": 0.7
+	},
+	{
+		"url": "https://rileyjshaw.com/tappy-game/",
+		"priority": 0.7
+	},
+	{
+		"url": "https://rileyjshaw.com/tappy/",
+		"priority": 0.8
+	},
+	{
+		"url": "https://rileyjshaw.com/terra/",
+		"priority": 0.8
+	},
+	{
+		"url": "https://rileyjshaw.com/tic-attack-toe/",
+		"priority": 0.5
+	},
+	{
+		"url": "https://rileyjshaw.com/tinyterm/",
+		"priority": 0.5
+	},
+	{
+		"url": "https://rileyjshaw.com/typing-for-two/",
+		"priority": 0.4
+	},
+	{
+		"url": "https://rileyjshaw.com/visited-vectors/",
+		"priority": 0.5
+	},
+	{
+		"url": "https://rileyjshaw.com/watercolor/",
+		"priority": 0.5
+	},
+	{
+		"url": "https://rileyjshaw.com/write/",
+		"priority": 0.6
+	}
+]
