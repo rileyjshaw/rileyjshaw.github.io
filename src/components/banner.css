@@ -11,6 +11,12 @@
 .banner > * {
 	flex-grow: 1;
 }
+.banner p {
+	margin: 0;
+}
+.banner a {
+	color: inherit;
+}
 .banner button {
 	background: none;
 	border: 0;

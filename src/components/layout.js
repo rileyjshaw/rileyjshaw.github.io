@@ -1,11 +1,14 @@
 import PageHeader from '../components/page-header';
 import {STORAGE_KEYS} from '../util/constants';
-import {useIdle, useStickyState} from '../util/hooks';
+import {useIdle, useInterval, useStickyState} from '../util/hooks';
+import AutoLink from './auto-link';
+import Banner from './banner';
 import Blocker from './blocker';
+import ClientOnly from './client-only';
 import './layout.css';
 import MouseTracker from './mouse-tracker';
 import {SettingsContext} from './settings-provider';
-import React, {useContext, useEffect, useMemo, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 
 // TODO(April 2021): Just trying to be kind and clear out unused keys, but
 // delete this once April comes around.
@@ -44,6 +47,20 @@ const Layout = ({children, location}) => {
 		{scope: 'session', serverState: 0}
 	);
 	useIdle(60000 * 4 * (nTimesClosed + 1), () => setIsBlockerOpen(true));
+	const [
+		isDeletionDayBannerOpen,
+		setIsDeletionDayBannerOpen,
+	] = useStickyState(true, STORAGE_KEYS.showDeletionDayBanner, 'session');
+	const [daysUntilDeletionDay, setDaysUntilDeletionDay] = useState(null);
+	useInterval(() => {
+		const today = new Date();
+		const daysUntil = Math.ceil(
+			(new Date(today.getFullYear(), 3, 4) - today) / 86400000
+		);
+		if (daysUntil >= 0) {
+			setDaysUntilDeletionDay(daysUntil);
+		} else setDaysUntilDeletionDay(null);
+	}, 60000);
 	useEffect(() => {
 		unusedLocalStorageKeys.forEach(key =>
 			window.localStorage.removeItem(key)
@@ -80,6 +97,34 @@ const Layout = ({children, location}) => {
 					}}
 				/>
 			)}
+			<ClientOnly>
+				{isDeletionDayBannerOpen &&
+					typeof daysUntilDeletionDay === 'number' &&
+					daysUntilDeletionDay <= 3 && (
+						<Banner
+							onClose={() => setIsDeletionDayBannerOpen(false)}
+						>
+							{daysUntilDeletionDay ? (
+								<p>
+									{daysUntilDeletionDay} day
+									{daysUntilDeletionDay > 1
+										? 's'
+										: ''} until{' '}
+									<AutoLink to="https://deletionday.com">
+										Deletion Day
+									</AutoLink>
+								</p>
+							) : (
+								<p>
+									<AutoLink to="https://deletionday.com">
+										Deletion Day
+									</AutoLink>{' '}
+									is today!
+								</p>
+							)}
+						</Banner>
+					)}
+			</ClientOnly>
 			{showPageHeader && <PageHeader location={location} />}
 			<div className="site-content">{children}</div>
 			<MouseTracker />

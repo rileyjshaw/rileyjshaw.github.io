@@ -58,27 +58,53 @@ export function useDebounce(value, delay) {
 }
 
 // setInterval with auto drift-correction and dynamic callback / timing props.
-export function useInterval(cb, ms, oneShot) {
+export function useInterval(
+	cb,
+	ms,
+	{skipFrames = true, oneShot = false, immediate = true} = {}
+) {
 	const savedCallback = useRef();
 	useEffect(() => {
 		savedCallback.current = cb;
 	}, [cb]);
+
 	useEffect(() => {
-		if (typeof ms === 'number') {
-			function tick(lastNow) {
+		if (typeof ms !== 'number' || ms < 0) return;
+
+		function tick(lastNow) {
+			if (!oneShot) {
+				// Mimic setInterval by re-calling setTimeout within the callback.
 				let now = performance.now();
-				// TODO(riley): Add option to skip ticks if drift > ms.
-				const drift = ms + lastNow - now;
+				let drift = ms + lastNow - now; // -ve if behind schedule.
+				let delay = ms + drift;
+
+				// Handle the case where another tick should have already triggered.
+				// If `skipFrames` is true, it forgets all the missed frames, and
+				// schedules a new frame in the future. If false, it sets `delay`
+				// to 0 over and over again until it catches up.
+				if (delay < 0) {
+					if (skipFrames) {
+						delay = (delay % ms) + delay;
+						drift = delay - ms;
+					} else delay = 0;
+				}
+
+				// Update `now` to when it should have happened.
 				now += drift;
-				if (!oneShot)
-					timeoutId = setTimeout(tick, Math.max(0, ms + drift), now);
-				savedCallback.current();
+				timeoutId = setTimeout(tick, delay, now);
 			}
-			let timeoutId = setTimeout(tick, ms, performance.now());
-			// TODO(riley): Is this going to try to clear the first timeoutId?
-			return () => clearTimeout(timeoutId);
+
+			// Finally, run the callback.
+			savedCallback.current();
 		}
-	}, [ms]);
+		let timeoutId = setTimeout(tick, ms, performance.now());
+
+		return () => clearTimeout(timeoutId);
+	}, [ms, skipFrames, oneShot]);
+
+	useEffect(() => {
+		if (immediate) cb();
+	}, []);
 }
 
 // TODO(riley): Improve this then replace all useDimensions() calls.
@@ -264,7 +290,7 @@ export function useStickyState(
 
 	// Basically setValue, but adds `initialized: true` for the client.
 	const setInitializedValue = useCallback(newValue =>
-		setValue(({value: oldValue}) =>({
+		setValue(({value: oldValue}) => ({
 			initialized: true,
 			value:
 				typeof newValue === 'function' ? newValue(oldValue) : newValue,

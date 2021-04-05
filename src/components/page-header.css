@@ -4,6 +4,7 @@
 	display: flex;
 	justify-content: space-between;
 	padding: var(--half-grid-gap) var(--half-grid-gap) 0;
+	position: relative;
 }
 .page-header:focus {
 	outline: none;
