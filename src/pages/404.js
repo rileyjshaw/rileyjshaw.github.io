@@ -51,7 +51,8 @@ function NotFoundPage({location}) {
 					</li>
 					<li>
 						<p>
-							Get off the Internet. It's already <Time />.
+							Get off the Internet.{' '}
+							<Time format={t => `It’s already ${t}`} />
 						</p>
 					</li>
 				</ul>
