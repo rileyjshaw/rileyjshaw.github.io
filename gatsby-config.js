@@ -39,6 +39,63 @@ module.exports = {
 		siteUrl: `https://rileyjshaw.com`,
 	},
 	plugins: [
+		{
+			resolve: `gatsby-plugin-sitemap`,
+			options: {
+				query: `
+					{
+						site {
+							siteMetadata {
+								siteUrl
+							}
+						}
+						allSitePage {
+							edges {
+								node {
+									path
+								}
+							}
+						}
+						allOtherReposJson {
+							edges {
+								node {
+									url
+									priority
+								}
+							}
+						}
+					}
+				`,
+				serialize: ({site, allSitePage, allOtherReposJson}) => {
+					return allSitePage.edges
+						.map(({node}) => {
+							let priority = 0.7;
+							if (node.path.startsWith('/blog')) {
+								if (node.path.match(/\/blog\/[0-9]+$/)) {
+									priority = 0.1; // Blog index page eg. /blog/2/
+								} else if (
+									node.path.match(/\/blog\/.*[^0-9/]/)
+								) {
+									priority = 0.9;
+								}
+							}
+							return {
+								url: site.siteMetadata.siteUrl + node.path,
+								priority,
+								changefreq: 'daily',
+							};
+						})
+						.concat(
+							allOtherReposJson.edges.map(({node}) => {
+								return {
+									...node,
+									changefreq: 'daily',
+								};
+							})
+						);
+				},
+			},
+		},
 		`gatsby-plugin-react-helmet`,
 		`gatsby-plugin-preload-fonts`,
 		{
