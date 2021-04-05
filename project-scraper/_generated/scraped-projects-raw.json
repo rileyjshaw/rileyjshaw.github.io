@@ -1704,7 +1704,7 @@
 			"state": "available",
 			"status": "closed",
 			"title": "hw",
-			"updated_at": "2021-04-04T16:54:47.112Z",
+			"updated_at": "2021-04-05T01:25:25.946Z",
 			"user": {
 				"avatar": "https://gravatar.com/avatar/8160bf91ac2add0c991472c5a64f6baa.png?d=blank&r=r&s=150",
 				"avatar_image": {
@@ -2794,7 +2794,7 @@
 		},
 		{
 			"author": "rileyjshaw",
-			"content": "<h1>plop (working title)</h1>\n<p><em>Scriptable text expansion microtool.</em></p>\n<p><code>Status: pre-alpha / prototype / I thought of this an hour ago</code></p>\n<p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"img/hello_world.gif\"><img src=\"https://raw.githubusercontent.com/rileyjshaw/plop/5efe71827c2575cbd09dc30669e9c1a63fc625db/img/hello_world.gif\" alt=\"demo of the tool printing &quot;hello world&quot;\" style=\"max-width:100%;\"></a><br>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"img/beer.gif\"><img src=\"https://raw.githubusercontent.com/rileyjshaw/plop/5efe71827c2575cbd09dc30669e9c1a63fc625db/img/beer.gif\" alt=\"demo of the tool sequentially printing the song &quot;99 bottles of beer on the wall&quot;\" style=\"max-width:100%;\"></a><br>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"img/multiline.gif\"><img src=\"https://raw.githubusercontent.com/rileyjshaw/plop/5efe71827c2575cbd09dc30669e9c1a63fc625db/img/multiline.gif\" alt=\"demo of multiline text entry\" style=\"max-width:100%;\"></a></p>\n<h2>Usage:</h2>\n<pre><code># Only works on MacOS for now.\ngit clone https://github.com/rileyjshaw/plop\ncd plop\nnpm i\nnpm start\n</code></pre>\n<p>While going about your business, hit <code>Cmd + Shift + Space</code>. Write some valid<br>\nJavaScript. The result will be typed into whatever program you have open.</p>\n<h3>Note:</h3>\n<p><code>\\n</code> triggers a simulated Enter press. Please be kind, don't spam your group<br>\nchat.</p>",
+			"content": "<h1>plop (working title)</h1>\n<p><em>Scriptable text expansion microtool.</em></p>\n<p><code>Status: pre-alpha / prototype / I thought of this an hour ago</code></p>\n<p><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"img/hello_world.gif\"><img src=\"img/hello_world.gif\" alt=\"demo of the tool printing &quot;hello world&quot;\" style=\"max-width:100%;\"></a><br>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"img/beer.gif\"><img src=\"img/beer.gif\" alt=\"demo of the tool sequentially printing the song &quot;99 bottles of beer on the wall&quot;\" style=\"max-width:100%;\"></a><br>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"img/multiline.gif\"><img src=\"img/multiline.gif\" alt=\"demo of multiline text entry\" style=\"max-width:100%;\"></a></p>\n<h2>Usage:</h2>\n<pre><code># Only works on MacOS for now.\ngit clone https://github.com/rileyjshaw/plop\ncd plop\nnpm i\nnpm start\n</code></pre>\n<p>While going about your business, hit <code>Cmd + Shift + Space</code>. Write some valid<br>\nJavaScript. The result will be typed into whatever program you have open.</p>\n<h3>Note:</h3>\n<p><code>\\n</code> triggers a simulated Enter press. Please be kind, don't spam your group<br>\nchat.</p>",
 			"contentSnippet": "plop (working title)\nScriptable text expansion microtool.\nStatus: pre-alpha / prototype / I thought of this an hour ago\n\n\n\nUsage:\n# Only works on MacOS for now.\ngit clone https://github.com/rileyjshaw/plop\ncd plop\nnpm i\nnpm start\n\nWhile going about your business, hit Cmd + Shift + Space. Write some valid\nNote:\n\\n triggers a simulated Enter press. Please be kind, don't spam your group\nchat.",
 			"id": "https://rileyjshaw.commit--blog.com/rileyjshaw/plop/5efe71827c2575cbd09dc30669e9c1a63fc625db",
 			"isoDate": "2019-09-14T01:38:45.000Z",
@@ -3010,8 +3010,8 @@
 		},
 		{
 			"author": "rileyjshaw",
-			"content": "<p>Initially, this extension grabbed the content of a CSS file with an XMLHttpRequest and injected it into the bottom of the page. This had a few advantages:</p>\n\n<ol>\n<li>Text content could be easy processed and manipulated (admittedly, I wasn't using this for anything).</li>\n<li>Toggling styles was as easy as adding and removing a  element from &lt;body&gt;.&lt;/li&gt;\n&lt;li&gt;In theory, this strategy would beat out almost every other style rule (some inline styles excepted). &lt;a href=\"http://www.w3.org/TR/CSS2/cascade.html#cascading-order\"&gt;User &lt;code&gt;!important&lt;/code&gt; rules used to override author &lt;code&gt;!important&lt;/code&gt; rules&lt;/a&gt;, but Chrome &lt;a href=\"https://src.chromium.org/viewvc/chrome?revision=234007&amp;amp;view=revision\"&gt;no-longer does user stylesheets&lt;/a&gt;. I figured an aggressively &lt;code&gt;!important&lt;/code&gt; author stylesheet added at the very bottom of the page was pretty solid.&lt;/li&gt;\n&lt;/ol&gt;\n\n&lt;p&gt;After some testing, I realized that &lt;code&gt;!important&lt;/code&gt; styles from &lt;code&gt;content_scripts&lt;/code&gt; injection (along with chrome.tabs.insertCSS) actually &lt;em&gt;do&lt;/em&gt; take precedence over author stylesheets. Since 3) was the key consideration for my original decision, I re-wrote the extension to inject a stylesheet from &lt;code&gt;content_scripts&lt;/code&gt;.&lt;/p&gt;\n\n&lt;p&gt;This change in architecture had pros and cons.&lt;/p&gt;\n\n&lt;pre&gt;&lt;code&gt;+ Improved chance of dark theme winning out over author styles.\n+ Allowed styles to be applied before any other DOM is constructed, substantially reducing time-to-darkness.\n+ Simplified the callbacks between background.js and client.js, reduced code, and made the entire extension easier to reason about.\n\n- With 1) above, I could&amp;#39;ve handled variant rules (eg. specificityHelper) with a few regular expressions. Locking into a static stylesheet added some huge copypastas, tripling the size of main.css.\n- Injected stylesheets aren&amp;#39;t accessible once they&amp;#39;ve been added. Rather than &amp;quot;turning the styles off&amp;quot; like in 2), the best option was to add a toggle class to &amp;lt;body&amp;gt;.\n- Rewrites take time.\n&lt;/code&gt;&lt;/pre&gt;\n\n&lt;p&gt;This commit was essentially a full rewrite, so I changed some smaller things while I was at it:&lt;/p&gt;\n\n&lt;ul&gt;\n&lt;li&gt;Styles now look for :not(.off) instead of .on. This makes the default dark and avoids a Blinding White Flash before the class changes.&lt;/li&gt;\n&lt;li&gt;Added id specificity helpers; it&amp;#39;s discussed further in client.js:24.&lt;/li&gt;\n&lt;li&gt;Renamed some files for clarity.&lt;/li&gt;\n&lt;/ul&gt;\n\n&lt;p&gt;I came across some unfortunate Chromium bugs while working on this, which caused me to dive into that project. It&amp;#39;s huge! Lots of fun to poke around :)&lt;/p&gt;</li>\n</ol>",
-			"contentSnippet": "Initially, this extension grabbed the content of a CSS file with an XMLHttpRequest and injected it into the bottom of the page. This had a few advantages:\nText content could be easy processed and manipulated (admittedly, I wasn't using this for anything).\nToggling styles was as easy as adding and removing a  element from <body>.</li>\n<li>In theory, this strategy would beat out almost every other style rule (some inline styles excepted). <a href=\"http://www.w3.org/TR/CSS2/cascade.html#cascading-order\">User <code>!important</code> rules used to override author <code>!important</code> rules</a>, but Chrome <a href=\"https://src.chromium.org/viewvc/chrome?revision=234007&amp;view=revision\">no-longer does user stylesheets</a>. I figured an aggressively <code>!important</code> author stylesheet added at the very bottom of the page was pretty solid.</li>\n</ol>\n\n<p>After some testing, I realized that <code>!important</code> styles from <code>content_scripts</code> injection (along with chrome.tabs.insertCSS) actually <em>do</em> take precedence over author stylesheets. Since 3) was the key consideration for my original decision, I re-wrote the extension to inject a stylesheet from <code>content_scripts</code>.</p>\n\n<p>This change in architecture had pros and cons.</p>\n\n<pre><code>+ Improved chance of dark theme winning out over author styles.\n+ Allowed styles to be applied before any other DOM is constructed, substantially reducing time-to-darkness.\n+ Simplified the callbacks between background.js and client.js, reduced code, and made the entire extension easier to reason about.\n\n- With 1) above, I could&#39;ve handled variant rules (eg. specificityHelper) with a few regular expressions. Locking into a static stylesheet added some huge copypastas, tripling the size of main.css.\n- Injected stylesheets aren&#39;t accessible once they&#39;ve been added. Rather than &quot;turning the styles off&quot; like in 2), the best option was to add a toggle class to &lt;body&gt;.\n- Rewrites take time.\n</code></pre>\n\n<p>This commit was essentially a full rewrite, so I changed some smaller things while I was at it:</p>\n\n<ul>\n<li>Styles now look for :not(.off) instead of .on. This makes the default dark and avoids a Blinding White Flash before the class changes.</li>\n<li>Added id specificity helpers; it&#39;s discussed further in client.js:24.</li>\n<li>Renamed some files for clarity.</li>\n</ul>\n\n<p>I came across some unfortunate Chromium bugs while working on this, which caused me to dive into that project. It&#39;s huge! Lots of fun to poke around :)</p>",
+			"content": "<p>Initially, this extension grabbed the content of a CSS file with an XMLHttpRequest and injected it into the bottom of the page. This had a few advantages:</p>\n<ol>\n<li>Text content could be easy processed and manipulated (admittedly, I wasn't using this for anything).</li>\n<li>Toggling styles was as easy as adding and removing a &lt;style&gt; element from &lt;body&gt;.</li>\n<li>In theory, this strategy would beat out almost every other style rule (some inline styles excepted). <a href=\"http://www.w3.org/TR/CSS2/cascade.html#cascading-order\">User <code>!important</code> rules used to override author <code>!important</code> rules</a>, but Chrome <a href=\"https://src.chromium.org/viewvc/chrome?revision=234007&amp;view=revision\">no-longer does user stylesheets</a>. I figured an aggressively <code>!important</code> author stylesheet added at the very bottom of the page was pretty solid.</li>\n</ol>\n<p>After some testing, I realized that <code>!important</code> styles from <code>content_scripts</code> injection (along with chrome.tabs.insertCSS) actually <em>do</em> take precedence over author stylesheets. Since 3) was the key consideration for my original decision, I re-wrote the extension to inject a stylesheet from <code>content_scripts</code>.</p>\n<p>This change in architecture had pros and cons.</p>\n<div class=\"codehilite\"><pre><span></span><code>+ Improved chance of dark theme winning out over author styles.\n+ Allowed styles to be applied before any other DOM is constructed, substantially reducing time-to-darkness.\n+ Simplified the callbacks between background.js and client.js, reduced code, and made the entire extension easier to reason about.\n\n\n- With 1) above, I could've handled variant rules (eg. specificityHelper) with a few regular expressions. Locking into a static stylesheet added some huge copypastas, tripling the size of main.css.\n- Injected stylesheets aren't accessible once they've been added. Rather than \"turning the styles off\" like in 2), the best option was to add a toggle class to &lt;body&gt;.\n- Rewrites take time.\n</code></pre></div>\n\n<p>This commit was essentially a full rewrite, so I changed some smaller things while I was at it:</p>\n<ul>\n<li>Styles now look for :not(.off) instead of .on. This makes the default dark and avoids a Blinding White Flash before the class changes.</li>\n<li>Added id specificity helpers; it's discussed further in client.js:24.</li>\n<li>Renamed some files for clarity.</li>\n</ul>\n<p>I came across some unfortunate Chromium bugs while working on this, which caused me to dive into that project. It's huge! Lots of fun to poke around :)</p>",
+			"contentSnippet": "Initially, this extension grabbed the content of a CSS file with an XMLHttpRequest and injected it into the bottom of the page. This had a few advantages:\nText content could be easy processed and manipulated (admittedly, I wasn't using this for anything).\nToggling styles was as easy as adding and removing a <style> element from <body>.\nIn theory, this strategy would beat out almost every other style rule (some inline styles excepted). User !important rules used to override author !important rules, but Chrome no-longer does user stylesheets. I figured an aggressively !important author stylesheet added at the very bottom of the page was pretty solid.\nAfter some testing, I realized that !important styles from content_scripts injection (along with chrome.tabs.insertCSS) actually do take precedence over author stylesheets. Since 3) was the key consideration for my original decision, I re-wrote the extension to inject a stylesheet from content_scripts.\nThis change in architecture had pros and cons.\n+ Improved chance of dark theme winning out over author styles.\n+ Allowed styles to be applied before any other DOM is constructed, substantially reducing time-to-darkness.\n+ Simplified the callbacks between background.js and client.js, reduced code, and made the entire extension easier to reason about.\n\n\n- With 1) above, I could've handled variant rules (eg. specificityHelper) with a few regular expressions. Locking into a static stylesheet added some huge copypastas, tripling the size of main.css.\n- Injected stylesheets aren't accessible once they've been added. Rather than \"turning the styles off\" like in 2), the best option was to add a toggle class to <body>.\n- Rewrites take time.\n\n\n\nThis commit was essentially a full rewrite, so I changed some smaller things while I was at it:\nStyles now look for :not(.off) instead of .on. This makes the default dark and avoids a Blinding White Flash before the class changes.\nAdded id specificity helpers; it's discussed further in client.js:24.\nRenamed some files for clarity.\nI came across some unfortunate Chromium bugs while working on this, which caused me to dive into that project. It's huge! Lots of fun to poke around :)",
 			"id": "https://rileyjshaw.commit--blog.com/rileyjshaw/dark-theme-everywhere/e2592c54bf110e35957a6c093a79999c3a1047bb",
 			"isoDate": "2015-12-29T18:17:34.000Z",
 			"link": "https://rileyjshaw.commit--blog.com/rileyjshaw/dark-theme-everywhere/e2592c54bf110e35957a6c093a79999c3a1047bb",
@@ -5583,7 +5583,7 @@
 		{
 			"attribution": "No Trash by Riley Shaw from Noun Project",
 			"date_uploaded": "2012-06-09",
-			"icon_url": "https://static.thenounproject.com/noun-svg/3164.svg?Expires=1617578722&Signature=Xq22zUVrpfN4Ruv5Z6HhQCq-f8i2bgP7YE~69cYaa8Nx3Q-RVLihLddb4yjJdOkc-Ta98~NHNh92IcHQ2ADNlblSYcS~4g6MW261uuYECpCZbklvR3zwSmD4YcfrlunXB7DhMahwC0uowrWlm23aA9Dz5GUH-ymfUgvwlAx8zTM_&Key-Pair-Id=APKAI5ZVHAXN65CHVU2Q",
+			"icon_url": "https://static.thenounproject.com/noun-svg/3164.svg?Expires=1617642898&Signature=llesD2liMdPYnDzq8KIRBhI2W-8tn~G2uz6-80~6jpbb1HPHtcJzW7zygEkWzu~rt1a1b~nWmzBRRLnGzB9e4tL1dxdcNXeyhiJbrtvwZBHr-46n~fj8VnFASuiZJvm1tvaCBM1rqY61Q6RGB~7WtJI2iiqyAMRZJc4iyzE66Jw_&Key-Pair-Id=APKAI5ZVHAXN65CHVU2Q",
 			"id": "3164",
 			"is_active": "1",
 			"is_explicit": "0",
@@ -5731,7 +5731,7 @@
 			],
 			"title": "Panning gravity delay",
 			"updated_at": "2021-03-13T21:32:42+00:00",
-			"view_count": 121
+			"view_count": 123
 		},
 		{
 			"artwork": {
@@ -5822,7 +5822,7 @@
 			],
 			"title": "Gravity delay",
 			"updated_at": "2021-03-13T21:27:21+00:00",
-			"view_count": 146
+			"view_count": 149
 		},
 		{
 			"artwork": {
@@ -5959,7 +5959,7 @@
 			],
 			"title": "Dedupe",
 			"updated_at": "2021-03-13T21:28:23+00:00",
-			"view_count": 265
+			"view_count": 268
 		},
 		{
 			"artwork": {
@@ -6035,7 +6035,7 @@
 			],
 			"title": "MIDI note # to pitch conversion",
 			"updated_at": "2020-12-12T20:53:48+00:00",
-			"view_count": 178
+			"view_count": 179
 		},
 		{
 			"artwork": {
@@ -10852,15 +10852,15 @@
 			"note_count": 0,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-606a3cd4386af050440844' class='crt-video crt-skin-default' width='250' height='141' poster='https://64.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":19,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hyeqpaJK1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-606b3830b0724957598025' class='crt-video crt-skin-default' width='250' height='141' poster='https://64.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":19,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hyeqpaJK1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-606a3cd4386af050440844' class='crt-video crt-skin-default' width='400' height='225' poster='https://64.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":19,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hyeqpaJK1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-606b3830b0724957598025' class='crt-video crt-skin-default' width='400' height='225' poster='https://64.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":19,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hyeqpaJK1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-606a3cd4386af050440844' class='crt-video crt-skin-default' width='500' height='281' poster='https://64.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":19,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hyeqpaJK1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-606b3830b0724957598025' class='crt-video crt-skin-default' width='500' height='281' poster='https://64.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":19,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hyeqpaJK1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -11759,15 +11759,15 @@
 			"note_count": 0,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-606a3cd4e76f2540815072' class='crt-video crt-skin-default' width='250' height='141' poster='https://64.media.tumblr.com/tumblr_q5hzbneImv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":22,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hzbneImv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hzbneImv1yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-606b38318ff3c249460173' class='crt-video crt-skin-default' width='250' height='141' poster='https://64.media.tumblr.com/tumblr_q5hzbneImv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":22,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hzbneImv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hzbneImv1yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-606a3cd4e76f2540815072' class='crt-video crt-skin-default' width='400' height='225' poster='https://64.media.tumblr.com/tumblr_q5hzbneImv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":22,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hzbneImv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hzbneImv1yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-606b38318ff3c249460173' class='crt-video crt-skin-default' width='400' height='225' poster='https://64.media.tumblr.com/tumblr_q5hzbneImv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":22,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hzbneImv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hzbneImv1yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-606a3cd4e76f2540815072' class='crt-video crt-skin-default' width='500' height='282' poster='https://64.media.tumblr.com/tumblr_q5hzbneImv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":22,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hzbneImv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hzbneImv1yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-606b38318ff3c249460173' class='crt-video crt-skin-default' width='500' height='282' poster='https://64.media.tumblr.com/tumblr_q5hzbneImv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":22,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hzbneImv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hzbneImv1yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -12660,15 +12660,15 @@
 			"note_count": 1,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-606a3cd4ea89a824841057' class='crt-video crt-skin-default' width='250' height='142' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-606b383191f96854771676' class='crt-video crt-skin-default' width='250' height='142' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-606a3cd4ea89a824841057' class='crt-video crt-skin-default' width='400' height='228' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-606b383191f96854771676' class='crt-video crt-skin-default' width='400' height='228' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-606a3cd4ea89a824841057' class='crt-video crt-skin-default' width='500' height='285' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-606b383191f96854771676' class='crt-video crt-skin-default' width='500' height='285' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -12930,15 +12930,15 @@
 			"note_count": 2,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-606a3cd4ebdda733306407' class='crt-video crt-skin-default' width='250' height='250' poster='https://64.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":12,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qgs0vsE7hv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-606b383192d5f992699154' class='crt-video crt-skin-default' width='250' height='250' poster='https://64.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":12,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qgs0vsE7hv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-606a3cd4ebdda733306407' class='crt-video crt-skin-default' width='400' height='400' poster='https://64.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":12,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qgs0vsE7hv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-606b383192d5f992699154' class='crt-video crt-skin-default' width='400' height='400' poster='https://64.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":12,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qgs0vsE7hv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-606a3cd4ebdda733306407' class='crt-video crt-skin-default' width='500' height='500' poster='https://64.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":12,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qgs0vsE7hv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-606b383192d5f992699154' class='crt-video crt-skin-default' width='500' height='500' poster='https://64.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":12,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qgs0vsE7hv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -13513,15 +13513,15 @@
 			"note_count": 1,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-606a3cd39b6af237682814' class='crt-video crt-skin-default' width='250' height='142' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-606b382e70965397220325' class='crt-video crt-skin-default' width='250' height='142' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-606a3cd39b6af237682814' class='crt-video crt-skin-default' width='400' height='228' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-606b382e70965397220325' class='crt-video crt-skin-default' width='400' height='228' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-606a3cd39b6af237682814' class='crt-video crt-skin-default' width='500' height='285' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-606b382e70965397220325' class='crt-video crt-skin-default' width='500' height='285' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -18531,7 +18531,7 @@
 			"monetization_model": "NOT_APPLICABLE",
 			"permalink": "average-tone-beat-bandoliers",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-beat-bandoliers",
-			"playback_count": 307,
+			"playback_count": 308,
 			"policy": "ALLOW",
 			"public": true,
 			"publisher_metadata": {
@@ -18725,7 +18725,7 @@
 			"monetization_model": "NOT_APPLICABLE",
 			"permalink": "average-tone-misty-sapphire",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-misty-sapphire",
-			"playback_count": 638,
+			"playback_count": 639,
 			"policy": "ALLOW",
 			"public": true,
 			"publisher_metadata": {
@@ -18833,7 +18833,7 @@
 			"monetization_model": "NOT_APPLICABLE",
 			"permalink": "average-tone-talk-box-kill-the",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-talk-box-kill-the",
-			"playback_count": 520,
+			"playback_count": 521,
 			"policy": "ALLOW",
 			"public": true,
 			"publisher_metadata": {
@@ -18930,7 +18930,7 @@
 			"monetization_model": "NOT_APPLICABLE",
 			"permalink": "average-tone-music-for-18",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-music-for-18",
-			"playback_count": 526,
+			"playback_count": 527,
 			"policy": "ALLOW",
 			"public": true,
 			"publisher_metadata": null,
