@@ -166,6 +166,11 @@
 		"uid": "LET_THE_COMPUTER_FORGET"
 	},
 	{
+		"author": "Ray Bradbury",
+		"content": "I discovered me in the library.",
+		"uid": "LIBRARME"
+	},
+	{
 		"author": "Flea",
 		"cite": "https://www.indiebound.org/book/9781455530533",
 		"content": "Love Is the Only Serious Work.",
@@ -186,6 +191,13 @@
 		"relatedLink": "https://sfpc.rileyjshaw.com/post/172372422682/making-nothing",
 		"source": "Madness, Rack, and Honey",
 		"uid": "MAKING_NOTHING"
+	},
+	{
+		"author": "Mary Rose Cook",
+		"cite": "https://maryrosecook.substack.com/p/good-stuff-faster",
+		"content": "Artists have always known that you can pair a medium with many materials. Software makers seem to doubt that. They seem to think that you can only use code to make software. They seem to think that, in the future, most software will be made with code.",
+		"source": "Good stuff, faster",
+		"uid": "MANY_MATERIALS"
 	},
 	{
 		"author": "Audrey Watters",
@@ -214,6 +226,12 @@
 		"content": "I know I’ve gotta express the movements that shaped me.",
 		"source": "Acid for the Children",
 		"uid": "MOVEMENTS_THAT_SHAPED_ME"
+	},
+	{
+		"author": "Arthur Arnould",
+		"content": "We had nothing but an anonymous power, representation by Monsieur Tout le Monde.",
+		"source": "Histoire populaire et parlementaire de la Commune de Paris (1878)",
+		"uid": "MR_EVERYBODY"
 	},
 	{
 		"author": "Vera Molnar",
@@ -256,6 +274,13 @@
 		"content": "Can art, our cultural antibody, help us here? Surely it’s revolution we need, not another installation piece?",
 		"source": "Novelty Waves",
 		"uid": "NOT_ANOTHER_INSTALLATION"
+	},
+	{
+		"author": "Frank Pasquale",
+		"cite": "https://reallifemag.com/odd-numbers/",
+		"content": "Trying to make these games fairer, the research elides the possibility of rejecting them altogether… An algorithmic accountability movement worthy of the name must challenge the foundations of those hierarchies, rather than content itself to repair the wreckage left in their wake.",
+		"source": "Odd Numbers",
+		"uid": "ODD_NUMBERS"
 	},
 	{
 		"author": "Audrey Watters",
