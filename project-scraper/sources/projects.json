@@ -20,6 +20,15 @@
 		"todo": true
 	},
 	{
+		"title": "Pocket calculator",
+		"description": [
+			"Scrapes your unread and archived Pocket content and provides basic stats."
+		],
+		"date": "2021-04-01",
+		"coolness": 50,
+		"link": "https://github.com/rileyjshaw/pocket-calculator"
+	},
+	{
 		"title": "SVG &lt;animate&gt; tests",
 		"description": [
 			"Even more tiny tests while learning SVG’s SMIL specification."

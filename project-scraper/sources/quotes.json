@@ -381,5 +381,22 @@
 	"LIBRARME": {
 		"content": "I discovered me in the library.",
 		"author": "Ray Bradbury"
+	},
+	"MANY_MATERIALS": {
+		"content": "Artists have always known that you can pair a medium with many materials. Software makers seem to doubt that. They seem to think that you can only use code to make software. They seem to think that, in the future, most software will be made with code.",
+		"author": "Mary Rose Cook",
+		"source": "Good stuff, faster",
+		"cite": "https://maryrosecook.substack.com/p/good-stuff-faster"
+	},
+	"ODD_NUMBERS": {
+		"content": "Trying to make these games fairer, the research elides the possibility of rejecting them altogether… An algorithmic accountability movement worthy of the name must challenge the foundations of those hierarchies, rather than content itself to repair the wreckage left in their wake.",
+		"author": "Frank Pasquale",
+		"source": "Odd Numbers",
+		"cite": "https://reallifemag.com/odd-numbers/"
+	},
+	"MR_EVERYBODY": {
+		"content": "We had nothing but an anonymous power, representation by Monsieur Tout le Monde.",
+		"author": "Arthur Arnould",
+		"source": "Histoire populaire et parlementaire de la Commune de Paris (1878)"
 	}
 }
