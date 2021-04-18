@@ -32,7 +32,7 @@
 		"title": "hw",
 		"type": "arenaChannel",
 		"uid": "ARENA_HW_U1LMOISDNYU",
-		"updatedAt": "2021-04-05"
+		"updatedAt": "2021-04-18"
 	},
 	{
 		"body": "<p>Makes page loads snappier, and lets folks opt into Google’s tracking empire</p>",
@@ -4625,6 +4625,18 @@
 		"title": "PO-33 loader",
 		"type": "project",
 		"uid": "PROJECT_PO_33_LOADER"
+	},
+	{
+		"coolness": 50,
+		"date": "2021-04-01",
+		"descriptionList": [
+			"Scrapes your unread and archived Pocket content and provides basic stats."
+		],
+		"link": "https://github.com/rileyjshaw/pocket-calculator",
+		"timestamp": 1617235200000,
+		"title": "Pocket calculator",
+		"type": "project",
+		"uid": "PROJECT_POCKET_CALCULATOR"
 	},
 	{
 		"coolness": 44,
