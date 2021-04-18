@@ -74,7 +74,7 @@ exports.createPages = async ({actions, graphql, reporter}) => {
 			.filter(p => p.type === 'internal').length;
 		const externalLimit = postsPerPage - internalLimit;
 		createPage({
-			path: `/blog${page ? `/${page + 1}` : ''}`,
+			path: `/blog${page ? `/${page + 1}` : ''}/`,
 			component: blogListTemplate,
 			context: {
 				internalLimit,
