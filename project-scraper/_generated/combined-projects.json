@@ -7273,14 +7273,14 @@
 		"uid": "SCREENSHOTS_TUMBLR_645675992489345024"
 	},
 	{
-		"body": "https://64.media.tumblr.com/aa336f2287af61cb88078519f5d9f759/7018923dd746f8bc-d1/s640x960/bfcb12bd2356ae584e858582f32dd4dad3d60609.png",
+		"body": "https://64.media.tumblr.com/e532012d20e9087e73fdf9f41326d1ac/7018923dd746f8bc-ce/s1280x1920/a2d985cc8ebc76f0be477011742ca40208d73014.png",
 		"contentType": "photo",
 		"coolness": 3,
 		"date": "2021-04-19",
 		"extraData": [
-			600,
-			600,
-			10
+			824,
+			914,
+			9
 		],
 		"link": "https://screenshots.rileyjshaw.com/post/648934708695236608",
 		"timestamp": 1618790400000,
@@ -7321,7 +7321,7 @@
 		"uid": "SCREENSHOTS_TUMBLR_648935871611092992"
 	},
 	{
-		"body": "https://64.media.tumblr.com/537d2cd01d94dba2cb9d62bea0247f19/bc78d90fa3bf7477-8b/s640x960/9319634cb088fcead3dea7c194626776b1abc115.png",
+		"body": "https://64.media.tumblr.com/09b7a6a1d0f8caed25b716e4d2337deb/bc78d90fa3bf7477-38/s640x960/ceca383a72c3ea1331f1f066676d1804c24d8281.png",
 		"contentType": "photo",
 		"coolness": 3,
 		"date": "2021-04-19",
@@ -7337,20 +7337,35 @@
 		"uid": "SCREENSHOTS_TUMBLR_648936044176261120"
 	},
 	{
-		"body": "https://64.media.tumblr.com/d43a274a87e8e425d0171ab5c9f3e035/010193027d317747-89/s640x960/a05315875b21ead1867f53b29f7788f6d0826533.png",
+		"body": "https://64.media.tumblr.com/b1ecc98a5a69c407225970f126ec53a6/010193027d317747-f9/s640x960/f3ebd6ba524f758e8c234c96d75b8b94f0384603.png",
 		"contentType": "photo",
 		"coolness": 3,
 		"date": "2021-04-19",
 		"extraData": [
 			600,
 			600,
-			1
+			3
 		],
 		"link": "https://screenshots.rileyjshaw.com/post/648936073919070208",
 		"timestamp": 1618790400000,
 		"title": "2021-04-19 at 19.07.46.png",
 		"type": "screenshotsTumblr",
 		"uid": "SCREENSHOTS_TUMBLR_648936073919070208"
+	},
+	{
+		"body": "https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4",
+		"contentType": "video",
+		"coolness": 3,
+		"date": "2021-04-19",
+		"extraData": [
+			250,
+			251
+		],
+		"link": "https://screenshots.rileyjshaw.com/post/648936317634363392",
+		"timestamp": 1618790400000,
+		"title": "2021-04-19 at 19.11.39.mov",
+		"type": "screenshotsTumblr",
+		"uid": "SCREENSHOTS_TUMBLR_648936317634363392"
 	},
 	{
 		"body": "<p>it was silly to write all of this down but i  created this blog today and i’m still editing the layout, so i want more words to work with.<br/></p><hr><p>create a few distinct sounds, for example:</p><ul><li>cup/table tap</li><li>cup/table scrape</li><li>ball/table tap</li><li>ball/table scrape</li><li>cup/ball tap</li></ul><p>these examples are unambiguous and easy to perform rapidly by someone keeping the cup in one hand &amp; ball in the other. i&rsquo;ll refer to each performed sound as a &ldquo;bit&rdquo; from here on out.</p><p>for n bits, you have (number of sounds)^n options. with the examples above that&rsquo;s 5^n, which is plenty.</p><p>so what&rsquo;s important to convey?</p><p>the shapes are curvy and strange, so it&rsquo;s easier to share a limited reference table of basic + advanced shapes instead of deriving each part of the bear from scratch. three bits could cover 125 shapes, which is  ample for bear and bear-like drawings.</p><p>shapes are more reusable if they can be drawn at different sizes. let&rsquo;s use one bit to indicate size:</p><p>0: smallest<br/>1: smaller<br/>2: as shown on reference table<br/>3: larger<br/>4: largest</p><p>we&rsquo;re trying to convey a cohesive bear, so the relative position between shapes is more important than their absolute position on the page. two bits can express position in relation to the last shape drawn, for example:</p><p>0: draw in any open space<br/>1: draw connected to the north-most edge of the previous shape<br/>2: draw connected to the northeast-most edge of the previous shape<br/>3: draw connected to the east-most edge of the previous shape<br/>4: draw connected to the southeast-most edge of the previous shape<br/>5: draw connected to the south-most edge of the previous shape<br/>&hellip;<br/>9: continue from shape&rsquo;s final pen position<br/>10: continue from shape&rsquo;s initial pen position<br/>&hellip;<br/>15: draw within the previous shape<br/>16: draw surrounding the previous shape<br/>&hellip;<br/>etc.</p><p>since pen position is a factor, the shape reference table should imply direction.</p><p>to save time, a bit could be added to indicate how many shapes should be drawn at the specified position. for example, there are four toes in each bear foot.</p><hr><p>when ordering the bits, it makes sense to think of what information is most useful to the receiver at each step. my intuition is that this is a good order:</p><p>•• position<br/>• number<br/>• size<br/>••• shape</p><p>so each shape takes seven sounds from the sender.</p><hr><p>update: i ran this by phil; they made the point that since there&rsquo;s no acknowledgment channel from the receiver, redundancy would help reduce errors. let&rsquo;s add a bit at the beginning to indicate whether this is the initial message or a confirmation message. the following 7 bits will then be identical.</p><hr><p>update 2: in the above system, a single missed bit would be catastrophic; it would corrupt the receiver&rsquo;s understanding of all future communication. the (initial | confirmation) sound should be unique so it always marks the start of a new shape. dragging the (cup | ball) in a double circle works.</p>",
