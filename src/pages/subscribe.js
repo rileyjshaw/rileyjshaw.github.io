@@ -76,6 +76,11 @@ const SubscribePage = () => (
 					</ExternalLink>
 				</li>
 				<li>
+					<ExternalLink to="https://keybase.io/rileyjshaw">
+						Keybase
+					</ExternalLink>
+				</li>
+				<li>
 					<ExternalLink to="https://twitter.com/rileyjshaw">
 						Twitter
 					</ExternalLink>
