@@ -31,6 +31,14 @@ const AboutPage = () => (
 							body
 						}
 					}
+					misery: file(relativePath: {eq: "about/work/misery.md"}) {
+						childMdx {
+							body
+							frontmatter {
+								current
+							}
+						}
+					}
 					mozilla: file(
 						relativePath: {eq: "about/work/mozilla.md"}
 					) {
@@ -122,6 +130,7 @@ const AboutPage = () => (
 				me_intro,
 				me_rest,
 				timeline_title,
+				misery,
 				mozilla,
 				repair_matters,
 				sfpc,
@@ -144,6 +153,7 @@ const AboutPage = () => (
 							</MDXRenderer>
 							<ul className="timeline">
 								{[
+									misery,
 									mozilla,
 									repair_matters,
 									sfpc,
