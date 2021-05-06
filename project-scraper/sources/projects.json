@@ -20,6 +20,15 @@
 		"todo": true
 	},
 	{
+		"title": "Power Song Finder",
+		"description": [
+			"Searches your favorite Spotify tracks for a running “Power Song”. A Power Song matches your target cadence, and pumps you up during a tough point in the run."
+		],
+		"date": "2021-04-30",
+		"coolness": 65,
+		"link": "https://rileyjshaw.com/power-song-finder/"
+	},
+	{
 		"title": "Pocket calculator",
 		"description": [
 			"Scrapes your unread and archived Pocket content and provides basic stats."
