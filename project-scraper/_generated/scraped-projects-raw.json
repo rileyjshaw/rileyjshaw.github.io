@@ -193,7 +193,7 @@
 					"connection_id": 10715076,
 					"contents": null,
 					"created_at": "2017-12-01T22:32:52.062Z",
-					"follower_count": 1966,
+					"follower_count": 2003,
 					"group": null,
 					"id": 112808,
 					"kind": "default",
@@ -212,7 +212,7 @@
 					"state": "available",
 					"status": "public",
 					"title": "plants and grids",
-					"updated_at": "2021-04-22T15:45:51.483Z",
+					"updated_at": "2021-05-06T04:07:37.905Z",
 					"user": {
 						"avatar": "https://arena-avatars.s3.amazonaws.com/14299/small_f8196d90a0119a1a70220297cd1c843d.png?1512271217",
 						"avatar_image": {
@@ -222,12 +222,12 @@
 						"badge": "investor",
 						"base_class": "User",
 						"can_index": true,
-						"channel_count": 192,
+						"channel_count": 195,
 						"class": "User",
 						"created_at": "2017-03-03T23:42:52.484Z",
 						"first_name": "Clement",
-						"follower_count": 558,
-						"following_count": 1019,
+						"follower_count": 560,
+						"following_count": 1028,
 						"full_name": "Clement Valla",
 						"id": 14299,
 						"initials": "CV",
@@ -536,7 +536,7 @@
 			"state": "available",
 			"status": "public",
 			"title": "☀️🤘",
-			"updated_at": "2021-04-22T15:42:27.037Z",
+			"updated_at": "2021-04-29T08:54:10.376Z",
 			"user": {
 				"avatar": "https://gravatar.com/avatar/8160bf91ac2add0c991472c5a64f6baa.png?d=blank&r=r&s=150",
 				"avatar_image": {
@@ -1704,7 +1704,7 @@
 			"state": "available",
 			"status": "closed",
 			"title": "hw",
-			"updated_at": "2021-04-22T14:46:20.793Z",
+			"updated_at": "2021-05-01T08:31:07.103Z",
 			"user": {
 				"avatar": "https://gravatar.com/avatar/8160bf91ac2add0c991472c5a64f6baa.png?d=blank&r=r&s=150",
 				"avatar_image": {
@@ -1986,7 +1986,7 @@
 						"class": "User",
 						"created_at": "2018-11-12T09:05:27.700Z",
 						"first_name": "dé",
-						"follower_count": 210,
+						"follower_count": 214,
 						"following_count": 116,
 						"full_name": "dé 🥐",
 						"id": 73554,
@@ -2298,7 +2298,7 @@
 			"state": "available",
 			"status": "public",
 			"title": "~",
-			"updated_at": "2021-04-20T12:32:38.784Z",
+			"updated_at": "2021-04-28T07:06:35.635Z",
 			"user": {
 				"avatar": "https://gravatar.com/avatar/8160bf91ac2add0c991472c5a64f6baa.png?d=blank&r=r&s=150",
 				"avatar_image": {
@@ -5583,7 +5583,7 @@
 		{
 			"attribution": "No Trash by Riley Shaw from Noun Project",
 			"date_uploaded": "2012-06-09",
-			"icon_url": "https://static.thenounproject.com/noun-svg/3164.svg?Expires=1619106890&Signature=F2jGzjqcYU3nAB9lN4gGQ5X1jh9-1L~VNYVHSd2TMUhk9lTDC~vqKQsscwQ7VgY5nU03BQKyB9EnILu7MERsnNxYjkw4UCt6PB2TZkiC8Bk3biJzO26KcaXIUlRGOYqBZ8ErOSVYFggwKRM8a5i26iFShFDR8bzZmBPUyTHkcDY_&Key-Pair-Id=APKAI5ZVHAXN65CHVU2Q",
+			"icon_url": "https://static.thenounproject.com/noun-svg/3164.svg?Expires=1620321509&Signature=GIK2IlBHxnc8i0-9CMAyRAMCOxZ8qHTrLWf9LXubdPfZwT2PANpbDajhIQPckM-I~yLY3iGgZC1EACCwfcZWIohEJXpmYn5GqNfoJEUDE~2LWfRc3J7iF7YgxPsOTpB0-mqOFsdIkwTsBa4z5OJ9vBbh4XyneOf5mGhZ2TlYRu0_&Key-Pair-Id=APKAI5ZVHAXN65CHVU2Q",
 			"id": "3164",
 			"is_active": "1",
 			"is_explicit": "0",
@@ -5670,10 +5670,10 @@
 			],
 			"comment_count": 0,
 			"created_at": "2021-03-13T21:32:42+00:00",
-			"download_count": 9,
+			"download_count": 11,
 			"excerpt": "This is a creative MIDI delay that physically models incoming notes based on their velocity...",
 			"id": 137434,
-			"like_count": 0,
+			"like_count": 2,
 			"link": "https://patchstorage.com/panning-gravity-delay/",
 			"platform": {
 				"id": 3341,
@@ -5731,7 +5731,7 @@
 			],
 			"title": "Panning gravity delay",
 			"updated_at": "2021-03-13T21:32:42+00:00",
-			"view_count": 162
+			"view_count": 186
 		},
 		{
 			"artwork": {
@@ -5761,10 +5761,10 @@
 			],
 			"comment_count": 1,
 			"created_at": "2021-03-13T21:27:21+00:00",
-			"download_count": 13,
+			"download_count": 15,
 			"excerpt": "This is a creative MIDI delay that physically models incoming notes based on their velocity...",
 			"id": 137431,
-			"like_count": 2,
+			"like_count": 4,
 			"link": "https://patchstorage.com/gravity-delay/",
 			"platform": {
 				"id": 3341,
@@ -5822,7 +5822,7 @@
 			],
 			"title": "Gravity delay",
 			"updated_at": "2021-03-13T21:27:21+00:00",
-			"view_count": 193
+			"view_count": 225
 		},
 		{
 			"artwork": {
@@ -5842,7 +5842,7 @@
 			],
 			"comment_count": 1,
 			"created_at": "2021-01-10T22:24:56+00:00",
-			"download_count": 6,
+			"download_count": 7,
 			"excerpt": "Shifts the MIDI Channel of incoming MIDI messages. Knob 1: Channel shift amount, from -15...",
 			"id": 134431,
 			"like_count": 0,
@@ -5883,7 +5883,7 @@
 			],
 			"title": "MIDI Channel Shifter",
 			"updated_at": "2021-01-10T22:24:56+00:00",
-			"view_count": 218
+			"view_count": 225
 		},
 		{
 			"artwork": {
@@ -5903,10 +5903,10 @@
 			],
 			"comment_count": 0,
 			"created_at": "2020-12-30T00:19:26+00:00",
-			"download_count": 15,
+			"download_count": 16,
 			"excerpt": "Dedupe prevents consecutive MIDI Note On messages from occurring on the same note &amp; channel...",
 			"id": 133788,
-			"like_count": 0,
+			"like_count": 1,
 			"link": "https://patchstorage.com/dedupe/",
 			"platform": {
 				"id": 3341,
@@ -5959,7 +5959,7 @@
 			],
 			"title": "Dedupe",
 			"updated_at": "2021-03-13T21:28:23+00:00",
-			"view_count": 289
+			"view_count": 304
 		},
 		{
 			"artwork": {
@@ -5984,7 +5984,7 @@
 			],
 			"comment_count": 0,
 			"created_at": "2020-12-12T02:57:37+00:00",
-			"download_count": 13,
+			"download_count": 14,
 			"excerpt": "This demo rack uses a few Math modules to convert an integer MIDI note number...",
 			"id": 133014,
 			"like_count": 1,
@@ -6035,7 +6035,7 @@
 			],
 			"title": "MIDI note # to pitch conversion",
 			"updated_at": "2020-12-12T20:53:48+00:00",
-			"view_count": 193
+			"view_count": 198
 		},
 		{
 			"artwork": {
@@ -6055,7 +6055,7 @@
 			],
 			"comment_count": 0,
 			"created_at": "2020-12-12T02:36:30+00:00",
-			"download_count": 16,
+			"download_count": 17,
 			"excerpt": "This is a MIDI panic rack. I've been using Drambo more and more to sequence...",
 			"id": 133008,
 			"like_count": 2,
@@ -6111,7 +6111,7 @@
 			],
 			"title": "Panic! At The Drambo",
 			"updated_at": "2020-12-12T06:57:01+00:00",
-			"view_count": 278
+			"view_count": 286
 		},
 		{
 			"artwork": {
@@ -6136,7 +6136,7 @@
 			],
 			"comment_count": 1,
 			"created_at": "2020-11-27T04:17:14+00:00",
-			"download_count": 29,
+			"download_count": 31,
 			"excerpt": "A first pass at recreating my favourite parts of Alex Matheu's lovely GlitchCore app in...",
 			"id": 132469,
 			"like_count": 6,
@@ -6197,7 +6197,7 @@
 			],
 			"title": "Glitch More",
 			"updated_at": "2021-03-13T21:54:33+00:00",
-			"view_count": 475
+			"view_count": 493
 		},
 		{
 			"artwork": {
@@ -6267,7 +6267,7 @@
 				},
 				{
 					"id": 4652,
-					"name": "Morph",
+					"name": "morph",
 					"slug": "morph"
 				},
 				{
@@ -6283,7 +6283,7 @@
 			],
 			"title": "Jambo MIDI map",
 			"updated_at": "2021-01-05T01:34:44+00:00",
-			"view_count": 314
+			"view_count": 321
 		},
 		{
 			"artwork": {
@@ -6308,7 +6308,7 @@
 			],
 			"comment_count": 0,
 			"created_at": "2020-10-16T00:17:04+00:00",
-			"download_count": 30,
+			"download_count": 31,
 			"excerpt": "A parameter-lockable, MIDI-mappable converter from a single MIDI note to 8 configurable chords. For my...",
 			"id": 130675,
 			"like_count": 2,
@@ -6359,7 +6359,7 @@
 			],
 			"title": "Chorder!",
 			"updated_at": "2020-10-16T00:17:04+00:00",
-			"view_count": 415
+			"view_count": 424
 		}
 	],
 	"screenshotsTumblr": [
@@ -6388,15 +6388,15 @@
 			"note_count": 0,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-60819a706d85e097673468' class='crt-video crt-skin-default' width='250' height='251' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-609416d7d4062391914184' class='crt-video crt-skin-default' width='250' height='251' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-60819a706d85e097673468' class='crt-video crt-skin-default' width='400' height='402' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-609416d7d4062391914184' class='crt-video crt-skin-default' width='400' height='402' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-60819a706d85e097673468' class='crt-video crt-skin-default' width='500' height='502' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-609416d7d4062391914184' class='crt-video crt-skin-default' width='500' height='502' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -12574,15 +12574,15 @@
 			"note_count": 0,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-60819a72df52b630111967' class='crt-video crt-skin-default' width='250' height='141' poster='https://64.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":19,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hyeqpaJK1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-609416d9222c9166673324' class='crt-video crt-skin-default' width='250' height='141' poster='https://64.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":19,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hyeqpaJK1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-60819a72df52b630111967' class='crt-video crt-skin-default' width='400' height='225' poster='https://64.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":19,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hyeqpaJK1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-609416d9222c9166673324' class='crt-video crt-skin-default' width='400' height='225' poster='https://64.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":19,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hyeqpaJK1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-60819a72df52b630111967' class='crt-video crt-skin-default' width='500' height='281' poster='https://64.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":19,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hyeqpaJK1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-609416d9222c9166673324' class='crt-video crt-skin-default' width='500' height='281' poster='https://64.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":19,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hyeqpaJK1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -13481,15 +13481,15 @@
 			"note_count": 0,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-60819a75a130a728813843' class='crt-video crt-skin-default' width='250' height='141' poster='https://64.media.tumblr.com/tumblr_q5hzbneImv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":22,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hzbneImv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hzbneImv1yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-609416d97caff392588449' class='crt-video crt-skin-default' width='250' height='141' poster='https://64.media.tumblr.com/tumblr_q5hzbneImv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":22,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hzbneImv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hzbneImv1yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-60819a75a130a728813843' class='crt-video crt-skin-default' width='400' height='225' poster='https://64.media.tumblr.com/tumblr_q5hzbneImv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":22,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hzbneImv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hzbneImv1yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-609416d97caff392588449' class='crt-video crt-skin-default' width='400' height='225' poster='https://64.media.tumblr.com/tumblr_q5hzbneImv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":22,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hzbneImv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hzbneImv1yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-60819a75a130a728813843' class='crt-video crt-skin-default' width='500' height='282' poster='https://64.media.tumblr.com/tumblr_q5hzbneImv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":22,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hzbneImv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hzbneImv1yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-609416d97caff392588449' class='crt-video crt-skin-default' width='500' height='282' poster='https://64.media.tumblr.com/tumblr_q5hzbneImv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":22,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hzbneImv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hzbneImv1yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -14382,15 +14382,15 @@
 			"note_count": 1,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-60819a75a41d0700996553' class='crt-video crt-skin-default' width='250' height='142' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-609416d97f237751491279' class='crt-video crt-skin-default' width='250' height='142' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-60819a75a41d0700996553' class='crt-video crt-skin-default' width='400' height='228' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-609416d97f237751491279' class='crt-video crt-skin-default' width='400' height='228' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-60819a75a41d0700996553' class='crt-video crt-skin-default' width='500' height='285' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-609416d97f237751491279' class='crt-video crt-skin-default' width='500' height='285' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -14652,15 +14652,15 @@
 			"note_count": 2,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-60819a75a4fbf925343527' class='crt-video crt-skin-default' width='250' height='250' poster='https://64.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":12,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qgs0vsE7hv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-609416d980123230871274' class='crt-video crt-skin-default' width='250' height='250' poster='https://64.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":12,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qgs0vsE7hv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-60819a75a4fbf925343527' class='crt-video crt-skin-default' width='400' height='400' poster='https://64.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":12,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qgs0vsE7hv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-609416d980123230871274' class='crt-video crt-skin-default' width='400' height='400' poster='https://64.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":12,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qgs0vsE7hv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-60819a75a4fbf925343527' class='crt-video crt-skin-default' width='500' height='500' poster='https://64.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":12,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qgs0vsE7hv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-609416d980123230871274' class='crt-video crt-skin-default' width='500' height='500' poster='https://64.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":12,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qgs0vsE7hv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -15235,15 +15235,15 @@
 			"note_count": 1,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-60819a7043256100197283' class='crt-video crt-skin-default' width='250' height='142' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-609416d7de240301334283' class='crt-video crt-skin-default' width='250' height='142' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-60819a7043256100197283' class='crt-video crt-skin-default' width='400' height='228' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-609416d7de240301334283' class='crt-video crt-skin-default' width='400' height='228' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-60819a7043256100197283' class='crt-video crt-skin-default' width='500' height='285' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-609416d7de240301334283' class='crt-video crt-skin-default' width='500' height='285' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -19547,6 +19547,7 @@
 			"secret_token": null,
 			"sharing": "public",
 			"state": "finished",
+			"station_permalink": "track-stations:954986224",
 			"streamable": true,
 			"tag_list": "",
 			"title": "Gravity drops (excerpt 2)",
@@ -19571,6 +19572,7 @@
 				"last_name": "Shaw",
 				"permalink": "rileyjshaw",
 				"permalink_url": "https://soundcloud.com/rileyjshaw",
+				"station_permalink": "artist-stations:18724470",
 				"uri": "https://api.soundcloud.com/users/18724470",
 				"urn": "soundcloud:users:18724470",
 				"username": "rileyjshaw",
@@ -19652,6 +19654,7 @@
 			"secret_token": null,
 			"sharing": "public",
 			"state": "finished",
+			"station_permalink": "track-stations:953102674",
 			"streamable": true,
 			"tag_list": "",
 			"title": "Gravity drops (excerpt 1)",
@@ -19676,6 +19679,7 @@
 				"last_name": "Shaw",
 				"permalink": "rileyjshaw",
 				"permalink_url": "https://soundcloud.com/rileyjshaw",
+				"station_permalink": "artist-stations:18724470",
 				"uri": "https://api.soundcloud.com/users/18724470",
 				"urn": "soundcloud:users:18724470",
 				"username": "rileyjshaw",
@@ -19757,6 +19761,7 @@
 			"secret_token": null,
 			"sharing": "public",
 			"state": "finished",
+			"station_permalink": "track-stations:948431872",
 			"streamable": true,
 			"tag_list": "",
 			"title": "Mallets",
@@ -19781,6 +19786,7 @@
 				"last_name": "Shaw",
 				"permalink": "rileyjshaw",
 				"permalink_url": "https://soundcloud.com/rileyjshaw",
+				"station_permalink": "artist-stations:18724470",
 				"uri": "https://api.soundcloud.com/users/18724470",
 				"urn": "soundcloud:users:18724470",
 				"username": "rileyjshaw",
@@ -19866,6 +19872,7 @@
 			"secret_token": null,
 			"sharing": "public",
 			"state": "finished",
+			"station_permalink": "track-stations:935985013",
 			"streamable": true,
 			"tag_list": "",
 			"title": "Quarter note stutter (demo)",
@@ -19890,6 +19897,7 @@
 				"last_name": "Shaw",
 				"permalink": "rileyjshaw",
 				"permalink_url": "https://soundcloud.com/rileyjshaw",
+				"station_permalink": "artist-stations:18724470",
 				"uri": "https://api.soundcloud.com/users/18724470",
 				"urn": "soundcloud:users:18724470",
 				"username": "rileyjshaw",
@@ -19975,6 +19983,7 @@
 			"secret_token": null,
 			"sharing": "public",
 			"state": "finished",
+			"station_permalink": "track-stations:935973070",
 			"streamable": true,
 			"tag_list": "",
 			"title": "A video game",
@@ -19999,6 +20008,7 @@
 				"last_name": "Shaw",
 				"permalink": "rileyjshaw",
 				"permalink_url": "https://soundcloud.com/rileyjshaw",
+				"station_permalink": "artist-stations:18724470",
 				"uri": "https://api.soundcloud.com/users/18724470",
 				"urn": "soundcloud:users:18724470",
 				"username": "rileyjshaw",
@@ -20072,6 +20082,7 @@
 			"secret_token": null,
 			"sharing": "public",
 			"state": "finished",
+			"station_permalink": "track-stations:317969466",
 			"streamable": true,
 			"tag_list": "",
 			"title": "2015-01-20: Waterfall",
@@ -20096,6 +20107,7 @@
 				"last_name": "Shaw",
 				"permalink": "rileyjshaw",
 				"permalink_url": "https://soundcloud.com/rileyjshaw",
+				"station_permalink": "artist-stations:18724470",
 				"uri": "https://api.soundcloud.com/users/18724470",
 				"urn": "soundcloud:users:18724470",
 				"username": "rileyjshaw",
@@ -20170,6 +20182,7 @@
 			"secret_token": null,
 			"sharing": "public",
 			"state": "finished",
+			"station_permalink": "track-stations:317968925",
 			"streamable": true,
 			"tag_list": "",
 			"title": "2015-01-24: Kawaii",
@@ -20194,6 +20207,7 @@
 				"last_name": "Shaw",
 				"permalink": "rileyjshaw",
 				"permalink_url": "https://soundcloud.com/rileyjshaw",
+				"station_permalink": "artist-stations:18724470",
 				"uri": "https://api.soundcloud.com/users/18724470",
 				"urn": "soundcloud:users:18724470",
 				"username": "rileyjshaw",
@@ -20253,7 +20267,7 @@
 			"monetization_model": "BLACKBOX",
 			"permalink": "average-tone-beat-bandoliers",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-beat-bandoliers",
-			"playback_count": 314,
+			"playback_count": 315,
 			"policy": "MONETIZE",
 			"public": true,
 			"publisher_metadata": {
@@ -20267,6 +20281,7 @@
 			"secret_token": null,
 			"sharing": "public",
 			"state": "finished",
+			"station_permalink": "track-stations:139987561",
 			"streamable": true,
 			"tag_list": "audacity tone hide",
 			"title": "Average tone / beat: Bandoliers",
@@ -20291,6 +20306,7 @@
 				"last_name": "Shaw",
 				"permalink": "rileyjshaw",
 				"permalink_url": "https://soundcloud.com/rileyjshaw",
+				"station_permalink": "artist-stations:18724470",
 				"uri": "https://api.soundcloud.com/users/18724470",
 				"urn": "soundcloud:users:18724470",
 				"username": "rileyjshaw",
@@ -20350,7 +20366,7 @@
 			"monetization_model": "BLACKBOX",
 			"permalink": "average-tone-beat-2-1",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-beat-2-1",
-			"playback_count": 198,
+			"playback_count": 199,
 			"policy": "MONETIZE",
 			"public": true,
 			"publisher_metadata": {
@@ -20364,6 +20380,7 @@
 			"secret_token": null,
 			"sharing": "public",
 			"state": "finished",
+			"station_permalink": "track-stations:139985315",
 			"streamable": true,
 			"tag_list": "audacity tones hide",
 			"title": "Average tone / beat: 2-1",
@@ -20388,6 +20405,7 @@
 				"last_name": "Shaw",
 				"permalink": "rileyjshaw",
 				"permalink_url": "https://soundcloud.com/rileyjshaw",
+				"station_permalink": "artist-stations:18724470",
 				"uri": "https://api.soundcloud.com/users/18724470",
 				"urn": "soundcloud:users:18724470",
 				"username": "rileyjshaw",
@@ -20447,7 +20465,7 @@
 			"monetization_model": "NOT_APPLICABLE",
 			"permalink": "average-tone-misty-sapphire",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-misty-sapphire",
-			"playback_count": 649,
+			"playback_count": 652,
 			"policy": "ALLOW",
 			"public": true,
 			"publisher_metadata": {
@@ -20461,6 +20479,7 @@
 			"secret_token": null,
 			"sharing": "public",
 			"state": "finished",
+			"station_permalink": "track-stations:139984944",
 			"streamable": true,
 			"tag_list": "audacity tones hide",
 			"title": "Average tone: Misty Sapphire",
@@ -20485,6 +20504,7 @@
 				"last_name": "Shaw",
 				"permalink": "rileyjshaw",
 				"permalink_url": "https://soundcloud.com/rileyjshaw",
+				"station_permalink": "artist-stations:18724470",
 				"uri": "https://api.soundcloud.com/users/18724470",
 				"urn": "soundcloud:users:18724470",
 				"username": "rileyjshaw",
@@ -20555,7 +20575,7 @@
 			"monetization_model": "NOT_APPLICABLE",
 			"permalink": "average-tone-talk-box-kill-the",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-talk-box-kill-the",
-			"playback_count": 527,
+			"playback_count": 529,
 			"policy": "ALLOW",
 			"public": true,
 			"publisher_metadata": {
@@ -20569,6 +20589,7 @@
 			"secret_token": null,
 			"sharing": "public",
 			"state": "finished",
+			"station_permalink": "track-stations:139984943",
 			"streamable": true,
 			"tag_list": "audacity tones hide",
 			"title": "Average tone: Talk Box (Kill The Noise Remix)",
@@ -20593,6 +20614,7 @@
 				"last_name": "Shaw",
 				"permalink": "rileyjshaw",
 				"permalink_url": "https://soundcloud.com/rileyjshaw",
+				"station_permalink": "artist-stations:18724470",
 				"uri": "https://api.soundcloud.com/users/18724470",
 				"urn": "soundcloud:users:18724470",
 				"username": "rileyjshaw",
@@ -20652,7 +20674,7 @@
 			"monetization_model": "NOT_APPLICABLE",
 			"permalink": "average-tone-music-for-18",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-music-for-18",
-			"playback_count": 535,
+			"playback_count": 537,
 			"policy": "ALLOW",
 			"public": true,
 			"publisher_metadata": null,
@@ -20663,6 +20685,7 @@
 			"secret_token": null,
 			"sharing": "public",
 			"state": "finished",
+			"station_permalink": "track-stations:139984941",
 			"streamable": true,
 			"tag_list": "audacity tones",
 			"title": "Average tone: Music For 18 Musicians",
@@ -20687,6 +20710,7 @@
 				"last_name": "Shaw",
 				"permalink": "rileyjshaw",
 				"permalink_url": "https://soundcloud.com/rileyjshaw",
+				"station_permalink": "artist-stations:18724470",
 				"uri": "https://api.soundcloud.com/users/18724470",
 				"urn": "soundcloud:users:18724470",
 				"username": "rileyjshaw",
@@ -20760,6 +20784,7 @@
 			"secret_token": null,
 			"sharing": "public",
 			"state": "finished",
+			"station_permalink": "track-stations:139984939",
 			"streamable": true,
 			"tag_list": "audacity tones hide",
 			"title": "Average tone / beat: A440",
@@ -20784,6 +20809,7 @@
 				"last_name": "Shaw",
 				"permalink": "rileyjshaw",
 				"permalink_url": "https://soundcloud.com/rileyjshaw",
+				"station_permalink": "artist-stations:18724470",
 				"uri": "https://api.soundcloud.com/users/18724470",
 				"urn": "soundcloud:users:18724470",
 				"username": "rileyjshaw",
@@ -20843,7 +20869,7 @@
 			"monetization_model": "BLACKBOX",
 			"permalink": "average-tone-beat-another",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-beat-another",
-			"playback_count": 265,
+			"playback_count": 266,
 			"policy": "MONETIZE",
 			"public": true,
 			"publisher_metadata": {
@@ -20857,6 +20883,7 @@
 			"secret_token": null,
 			"sharing": "public",
 			"state": "finished",
+			"station_permalink": "track-stations:139984938",
 			"streamable": true,
 			"tag_list": "audacity tones hide",
 			"title": "Average tone / beat: Another World",
@@ -20881,6 +20908,7 @@
 				"last_name": "Shaw",
 				"permalink": "rileyjshaw",
 				"permalink_url": "https://soundcloud.com/rileyjshaw",
+				"station_permalink": "artist-stations:18724470",
 				"uri": "https://api.soundcloud.com/users/18724470",
 				"urn": "soundcloud:users:18724470",
 				"username": "rileyjshaw",
@@ -20954,6 +20982,7 @@
 			"secret_token": null,
 			"sharing": "public",
 			"state": "finished",
+			"station_permalink": "track-stations:93017600",
 			"streamable": true,
 			"tag_list": "hide",
 			"title": "Berklee Assignment 3: Sight Reading (Part 4) (8th note metronome)",
@@ -20978,6 +21007,7 @@
 				"last_name": "Shaw",
 				"permalink": "rileyjshaw",
 				"permalink_url": "https://soundcloud.com/rileyjshaw",
+				"station_permalink": "artist-stations:18724470",
 				"uri": "https://api.soundcloud.com/users/18724470",
 				"urn": "soundcloud:users:18724470",
 				"username": "rileyjshaw",
@@ -21051,6 +21081,7 @@
 			"secret_token": null,
 			"sharing": "public",
 			"state": "finished",
+			"station_permalink": "track-stations:93017542",
 			"streamable": true,
 			"tag_list": "hide",
 			"title": "Berklee Assignment 3: Sight Reading (Part 3)",
@@ -21075,6 +21106,7 @@
 				"last_name": "Shaw",
 				"permalink": "rileyjshaw",
 				"permalink_url": "https://soundcloud.com/rileyjshaw",
+				"station_permalink": "artist-stations:18724470",
 				"uri": "https://api.soundcloud.com/users/18724470",
 				"urn": "soundcloud:users:18724470",
 				"username": "rileyjshaw",
@@ -21148,6 +21180,7 @@
 			"secret_token": null,
 			"sharing": "public",
 			"state": "finished",
+			"station_permalink": "track-stations:93017504",
 			"streamable": true,
 			"tag_list": "hide",
 			"title": "Berklee Assignment 3: Sight Reading (Part 2)",
@@ -21172,6 +21205,7 @@
 				"last_name": "Shaw",
 				"permalink": "rileyjshaw",
 				"permalink_url": "https://soundcloud.com/rileyjshaw",
+				"station_permalink": "artist-stations:18724470",
 				"uri": "https://api.soundcloud.com/users/18724470",
 				"urn": "soundcloud:users:18724470",
 				"username": "rileyjshaw",
@@ -21245,6 +21279,7 @@
 			"secret_token": null,
 			"sharing": "public",
 			"state": "finished",
+			"station_permalink": "track-stations:93017447",
 			"streamable": true,
 			"tag_list": "hide",
 			"title": "Berklee Assignment 3: Sight Reading (Part 1)",
@@ -21269,6 +21304,7 @@
 				"last_name": "Shaw",
 				"permalink": "rileyjshaw",
 				"permalink_url": "https://soundcloud.com/rileyjshaw",
+				"station_permalink": "artist-stations:18724470",
 				"uri": "https://api.soundcloud.com/users/18724470",
 				"urn": "soundcloud:users:18724470",
 				"username": "rileyjshaw",
@@ -21342,6 +21378,7 @@
 			"secret_token": null,
 			"sharing": "public",
 			"state": "finished",
+			"station_permalink": "track-stations:92038775",
 			"streamable": true,
 			"tag_list": "hide",
 			"title": "Berklee Assignment 2: Strumming Technique",
@@ -21366,6 +21403,7 @@
 				"last_name": "Shaw",
 				"permalink": "rileyjshaw",
 				"permalink_url": "https://soundcloud.com/rileyjshaw",
+				"station_permalink": "artist-stations:18724470",
 				"uri": "https://api.soundcloud.com/users/18724470",
 				"urn": "soundcloud:users:18724470",
 				"username": "rileyjshaw",
@@ -21439,6 +21477,7 @@
 			"secret_token": null,
 			"sharing": "public",
 			"state": "finished",
+			"station_permalink": "track-stations:92037621",
 			"streamable": true,
 			"tag_list": "hide",
 			"title": "Berklee Assignment 2: Finger Picking",
@@ -21463,6 +21502,7 @@
 				"last_name": "Shaw",
 				"permalink": "rileyjshaw",
 				"permalink_url": "https://soundcloud.com/rileyjshaw",
+				"station_permalink": "artist-stations:18724470",
 				"uri": "https://api.soundcloud.com/users/18724470",
 				"urn": "soundcloud:users:18724470",
 				"username": "rileyjshaw",
@@ -21536,6 +21576,7 @@
 			"secret_token": null,
 			"sharing": "public",
 			"state": "finished",
+			"station_permalink": "track-stations:92037387",
 			"streamable": true,
 			"tag_list": "hide",
 			"title": "Berklee Assignment 2: Picking Technique",
@@ -21560,6 +21601,7 @@
 				"last_name": "Shaw",
 				"permalink": "rileyjshaw",
 				"permalink_url": "https://soundcloud.com/rileyjshaw",
+				"station_permalink": "artist-stations:18724470",
 				"uri": "https://api.soundcloud.com/users/18724470",
 				"urn": "soundcloud:users:18724470",
 				"username": "rileyjshaw",

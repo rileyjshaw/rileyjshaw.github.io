@@ -32,7 +32,7 @@
 		"title": "hw",
 		"type": "arenaChannel",
 		"uid": "ARENA_HW_U1LMOISDNYU",
-		"updatedAt": "2021-04-22"
+		"updatedAt": "2021-05-01"
 	},
 	{
 		"body": "<p>Makes page loads snappier, and lets folks opt into Google’s tracking empire</p>",
@@ -4672,6 +4672,18 @@
 		"title": "Pond",
 		"type": "project",
 		"uid": "PROJECT_POND"
+	},
+	{
+		"coolness": 65,
+		"date": "2021-04-30",
+		"descriptionList": [
+			"Searches your favorite Spotify tracks for a running “Power Song”. A Power Song matches your target cadence, and pumps you up during a tough point in the run."
+		],
+		"link": "https://rileyjshaw.com/power-song-finder/",
+		"timestamp": 1619740800000,
+		"title": "Power Song Finder",
+		"type": "project",
+		"uid": "PROJECT_POWER_SONG_FINDER"
 	},
 	{
 		"coolness": 50,
