@@ -20,6 +20,15 @@
 		"todo": true
 	},
 	{
+		"title": "LOUDER",
+		"description": [
+			"A quick experiment with variable fonts. Responds to mouse or touch."
+		],
+		"date": "2021-05-14",
+		"coolness": 35,
+		"link": "https://codepen.io/rileyjshaw/full/WNpwGZx"
+	},
+	{
 		"title": "Power Song Finder",
 		"description": [
 			"Searches your favorite Spotify tracks for a running “Power Song”. A Power Song matches your target cadence, and pumps you up during a tough point in the run."
