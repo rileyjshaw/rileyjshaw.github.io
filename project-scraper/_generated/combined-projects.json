@@ -32,7 +32,7 @@
 		"title": "hw",
 		"type": "arenaChannel",
 		"uid": "ARENA_HW_U1LMOISDNYU",
-		"updatedAt": "2021-05-01"
+		"updatedAt": "2021-05-07"
 	},
 	{
 		"body": "<p>Makes page loads snappier, and lets folks opt into Google’s tracking empire</p>",
@@ -3943,6 +3943,18 @@
 		"title": "Look closer",
 		"type": "project",
 		"uid": "PROJECT_LOOK_CLOSER"
+	},
+	{
+		"coolness": 35,
+		"date": "2021-05-14",
+		"descriptionList": [
+			"A quick experiment with variable fonts. Responds to mouse or touch."
+		],
+		"link": "https://codepen.io/rileyjshaw/full/WNpwGZx",
+		"timestamp": 1620950400000,
+		"title": "LOUDER",
+		"type": "project",
+		"uid": "PROJECT_LOUDER"
 	},
 	{
 		"coolness": 18,
