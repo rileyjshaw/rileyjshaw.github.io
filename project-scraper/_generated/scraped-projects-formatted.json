@@ -953,6 +953,15 @@
 		"uid": "PATCH_137434"
 	},
 	{
+		"coolness": 41,
+		"date": "2021-05-17",
+		"description": "∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿ LFOs by Orchid, v1.0.0 ∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿ Set and toggle 16 independent LFOs. No modulation. Nothing...",
+		"link": "https://patchstorage.com/lfos/",
+		"title": "LFOs",
+		"type": "patch",
+		"uid": "PATCH_140563"
+	},
+	{
 		"body": "https://64.media.tumblr.com/53746342bc4d6b6008a82fe5424abf54/9b608ac197fbbe29-54/s1280x1920/f2c389cbfd64b0bf1641ee0685792bf25a0f7eb3.png",
 		"contentType": "photo",
 		"date": "2020-02-05",
