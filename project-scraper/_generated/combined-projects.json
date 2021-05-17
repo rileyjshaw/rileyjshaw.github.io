@@ -1536,6 +1536,21 @@
 		"uid": "PATCH_137434"
 	},
 	{
+		"coolness": 41,
+		"date": "2021-05-17",
+		"description": "Set and toggle 16 independent LFOs. No modulation. Nothing complex. Just a bunch of LFOs.",
+		"link": "https://patchstorage.com/lfos/",
+		"tags": [
+			"audio",
+			"reusable",
+			"tool"
+		],
+		"timestamp": 1621209600000,
+		"title": "LFOs",
+		"type": "patch",
+		"uid": "PATCH_140563"
+	},
+	{
 		"coolness": 27,
 		"date": "2013-11-25",
 		"lastTagged": 1564708948573,

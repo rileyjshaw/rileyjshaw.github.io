@@ -121,6 +121,14 @@ const tweaksList = {
 		coolness: 41,
 		transformers: [],
 	},
+	PATCH_140563: {
+		transformers: [
+			n => {
+				n.description =
+					'Set and toggle 16 independent LFOs. No modulation. Nothing complex. Just a bunch of LFOs.';
+			},
+		],
+	},
 };
 
 // Expanded from underscore's _.unescape() method.
@@ -203,8 +211,14 @@ function runTweaks() {
 
 	// Apply tweaks to nodes.
 	Object.entries(tweaksList).forEach(
-		(projectId, {tags, coolness, transformers}) => {
-			const n = projects[projectId];
+		([projectId, {tags, coolness, transformers}]) => {
+			const n = projects.find(project => project.uid === projectId);
+			if (!n) {
+				console.warn(
+					`You’ve written a tweak for nonexistent UID ${projectId}.`
+				);
+				return;
+			}
 			if (tags) addTags(n, tags);
 			if (coolness) n.coolness = coolness;
 			if (transformers)
