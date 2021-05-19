@@ -1538,7 +1538,7 @@
 	{
 		"coolness": 41,
 		"date": "2021-05-17",
-		"description": "Set and toggle 16 independent LFOs. No modulation. Nothing complex. Just a bunch of LFOs.",
+		"description": "Set and toggle 16 independent LFOs. You can cross-modulate them if you want, but by default it’s just a bunch of LFOs.",
 		"link": "https://patchstorage.com/lfos/",
 		"tags": [
 			"audio",

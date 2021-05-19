@@ -955,7 +955,7 @@
 	{
 		"coolness": 41,
 		"date": "2021-05-17",
-		"description": "∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿ LFOs by Orchid, v1.0.0 ∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿∿ Set and toggle 16 independent LFOs. No modulation. Nothing...",
+		"description": "Set and toggle 16 independent LFOs. You can cross-modulate them if you want, but by...",
 		"link": "https://patchstorage.com/lfos/",
 		"title": "LFOs",
 		"type": "patch",

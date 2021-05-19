@@ -125,7 +125,7 @@ const tweaksList = {
 		transformers: [
 			n => {
 				n.description =
-					'Set and toggle 16 independent LFOs. No modulation. Nothing complex. Just a bunch of LFOs.';
+					'Set and toggle 16 independent LFOs. You can cross-modulate them if you want, but by default it’s just a bunch of LFOs.';
 			},
 		],
 	},
