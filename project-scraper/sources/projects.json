@@ -20,6 +20,15 @@
 		"todo": true
 	},
 	{
+		"title": "Variable font: headings grow on hover",
+		"description": [
+			"Another quick experiment with variable fonts following <a href=\"https://codepen.io/rileyjshaw/full/WNpwGZx\" target=\"_blank\" rel=\"noopener noreferrer\">LOUDER</a>. The heading text grows in response to hover or touch proximity."
+		],
+		"date": "2021-05-19",
+		"coolness": 36,
+		"link": "https://codepen.io/rileyjshaw/full/xxqRmjg"
+	},
+	{
 		"title": "LOUDER",
 		"description": [
 			"A quick experiment with variable fonts. Responds to mouse or touch."
