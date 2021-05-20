@@ -6233,6 +6233,18 @@
 		"uid": "PROJECT_VANISHIFY"
 	},
 	{
+		"coolness": 36,
+		"date": "2021-05-19",
+		"descriptionList": [
+			"Another quick experiment with variable fonts following <a href=\"https://codepen.io/rileyjshaw/full/WNpwGZx\" rel=\"noopener noreferrer\" target=\"_blank\">LOUDER</a>. The heading text grows in response to hover or touch proximity."
+		],
+		"link": "https://codepen.io/rileyjshaw/full/xxqRmjg",
+		"timestamp": 1621382400000,
+		"title": "Variable font: headings grow on hover",
+		"type": "project",
+		"uid": "PROJECT_VARIABLE_FONT1M_HEADINGS_GROW_ON_HOVER"
+	},
+	{
 		"coolness": 32,
 		"date": "2016-10-24",
 		"descriptionList": [
