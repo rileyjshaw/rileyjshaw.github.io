@@ -20,6 +20,15 @@
 		"todo": true
 	},
 	{
+		"title": "Marqueee (rotated)",
+		"description": [
+			"A remix of <a href=\"https://glitch.com/edit/#!/marqueee\" target=\"_blank\" rel=\"noopener noreferrer\">Marqueee</a>, with a <code>rotate</code> parameter added."
+		],
+		"date": "2021-06-08",
+		"coolness": 40,
+		"link": "https://marqueee-rotated.glitch.me/"
+	},
+	{
 		"title": "Variable font: headings grow on hover",
 		"description": [
 			"Another quick experiment with variable fonts following <a href=\"https://codepen.io/rileyjshaw/full/WNpwGZx\" target=\"_blank\" rel=\"noopener noreferrer\">LOUDER</a>. The heading text grows in response to hover or touch proximity."
