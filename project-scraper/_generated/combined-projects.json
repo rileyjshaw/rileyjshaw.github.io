@@ -13,7 +13,7 @@
 		"title": "hell",
 		"type": "arenaChannel",
 		"uid": "ARENA_HELL_SBGBXNMDLXI",
-		"updatedAt": "2021-02-15"
+		"updatedAt": "2021-05-27"
 	},
 	{
 		"date": "2018-11-21",
@@ -4001,6 +4001,18 @@
 		"title": "Marqueee",
 		"type": "project",
 		"uid": "PROJECT_MARQUEEE"
+	},
+	{
+		"coolness": 40,
+		"date": "2021-06-08",
+		"descriptionList": [
+			"A remix of <a href=\"https://glitch.com/edit/#!/marqueee\" rel=\"noopener noreferrer\" target=\"_blank\">Marqueee</a>, with a <code>rotate</code> parameter added."
+		],
+		"link": "https://marqueee-rotated.glitch.me/",
+		"timestamp": 1623110400000,
+		"title": "Marqueee (rotated)",
+		"type": "project",
+		"uid": "PROJECT_MARQUEEE_14ROTATED15"
 	},
 	{
 		"coolness": 13,
