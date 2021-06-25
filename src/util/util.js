@@ -35,7 +35,7 @@ export function debounce(fn, ms) {
 	let timeout;
 	return function _debounce() {
 		clearTimeout(timeout);
-		timeout = setTimeout(() => fn(arguments), ms);
+		timeout = setTimeout(() => fn(...arguments), ms);
 	};
 }
 export function throttle(fn, ms) {
@@ -44,7 +44,7 @@ export function throttle(fn, ms) {
 		const now = Date.now();
 		if (now - last > ms) {
 			last = now;
-			fn(arguments);
+			fn(...arguments);
 		}
 	};
 }
