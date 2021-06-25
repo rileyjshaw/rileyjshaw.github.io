@@ -31,20 +31,67 @@ export function getThemeColor(activeTheme) {
 	};
 }
 
-export function debounce(fn, ms) {
-	let timeout;
-	return function _debounce() {
+/**
+ * Returns a debounced version of the passed function.
+ *
+ *   • = event
+ *   x = trigger
+ *
+ *   With default arguments:
+ *   • • • •      • • • •
+ *           x            x
+ *
+ *   With triggerFirstCall = true, triggerLastCall = true:
+ *   • • • •      • • • •
+ *   x       x    x       x
+ *
+ *   With triggerFirstCall = true, triggerLastCall = false:
+ *   • • • •      • • • •
+ *   x            x
+ */
+export function debounce(fn, ms, { triggerFirstCall = false, triggerLastCall = true } = {}) {
+	let timeout = null;
+	function _debounce() {
+		if (triggerFirstCall && timeout == null) fn(...arguments);
+		else clearTimeout(timeout);
+		timeout = setTimeout(() => {
+			if (triggerLastCall) fn(...arguments);
+			timeout = null;
+		}, ms);
+	}
+	// hehe…
+	_debounce.clearTimeout = function _debounceClearTimeout() {
 		clearTimeout(timeout);
-		timeout = setTimeout(() => fn(...arguments), ms);
+		timeout = null;
 	};
+	return _debounce;
 }
-export function throttle(fn, ms) {
+
+/**
+ * Returns a throttled version of the passed function.
+ *
+ *   • = event
+ *   x = trigger
+ *
+ *   With default arguments:
+ *   • • • •      • • • •
+ *   x   x   x    x   x   x
+ *
+ *   With triggerLastCall = false:
+ *   • • • •      • • • •
+ *   x   x        x   x
+ */
+export function throttle(fn, ms, { triggerLastCall = true } = {}) {
+	const debouncedFn = triggerLastCall && debounce(fn, ms, { triggerFirstCall: false, triggerLastCall: true });
 	let last = -Infinity;
 	return function _throttle() {
 		const now = Date.now();
-		if (now - last > ms) {
+		if (now - last >= ms) {
 			last = now;
 			fn(...arguments);
+			debouncedFn?.clearTimeout();
+		} else {
+			debouncedFn?.(...arguments);
 		}
 	};
 }
