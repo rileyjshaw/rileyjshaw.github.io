@@ -49,7 +49,11 @@ export function getThemeColor(activeTheme) {
  *   • • • •      • • • •
  *   x            x
  */
-export function debounce(fn, ms, { triggerFirstCall = false, triggerLastCall = true } = {}) {
+export function debounce(
+	fn,
+	ms,
+	{triggerFirstCall = false, triggerLastCall = true} = {}
+) {
 	let timeout = null;
 	function _debounce() {
 		if (triggerFirstCall && timeout == null) fn(...arguments);
@@ -81,8 +85,10 @@ export function debounce(fn, ms, { triggerFirstCall = false, triggerLastCall = t
  *   • • • •      • • • •
  *   x   x        x   x
  */
-export function throttle(fn, ms, { triggerLastCall = true } = {}) {
-	const debouncedFn = triggerLastCall && debounce(fn, ms, { triggerFirstCall: false, triggerLastCall: true });
+export function throttle(fn, ms, {triggerLastCall = true} = {}) {
+	const debouncedFn =
+		triggerLastCall &&
+		debounce(fn, ms, {triggerFirstCall: false, triggerLastCall: true});
 	let last = -Infinity;
 	return function _throttle() {
 		const now = Date.now();
