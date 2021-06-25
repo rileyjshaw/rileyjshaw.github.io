@@ -262,9 +262,8 @@ function getSFPCTumblr() {
 									const sourceDoc = JSDOM.fragment(
 										post.source
 									);
-									const sourceAnchor = sourceDoc.querySelector(
-										'a'
-									);
+									const sourceAnchor =
+										sourceDoc.querySelector('a');
 									let cite = sourceAnchor?.href;
 									if (
 										cite?.startsWith(
@@ -283,9 +282,8 @@ function getSFPCTumblr() {
 										relatedLink: post.post_url,
 									};
 									if (quoteIndex !== -1)
-										scrapedQuotes[
-											quoteIndex
-										] = quoteResult;
+										scrapedQuotes[quoteIndex] =
+											quoteResult;
 									else scrapedQuotes.push(quoteResult);
 									return;
 								// TODO(riley): Should I handle these?

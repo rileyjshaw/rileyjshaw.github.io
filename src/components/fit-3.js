@@ -4,12 +4,10 @@ import React from 'react';
 import useDimensions from 'react-use-dimensions';
 
 export default ({children, x, y}) => {
-	const [
-		parentRef,
-		{width: parentWidth, height: parentHeight},
-	] = useDimensions({
-		liveMeasure: true,
-	});
+	const [parentRef, {width: parentWidth, height: parentHeight}] =
+		useDimensions({
+			liveMeasure: true,
+		});
 	const [childRef, {width: childWidth, height: childHeight}] = useDimensions(
 		{
 			liveMeasure: false,

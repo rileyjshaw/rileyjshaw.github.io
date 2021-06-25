@@ -118,9 +118,8 @@ function CurateTags() {
 			.filter(p => p.updated <= lastTagCreatedAt)
 			.sort((a, b) => a.updated - b.updated);
 
-		const {project, updated} = untaggedProjects[
-			skipIndex % untaggedProjects.length
-		];
+		const {project, updated} =
+			untaggedProjects[skipIndex % untaggedProjects.length];
 
 		// tagOptions is split into [old, new].
 		const tagOptions = Object.entries(tags.tagInfo).reduce(

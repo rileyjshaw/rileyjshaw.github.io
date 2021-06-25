@@ -38,7 +38,7 @@ export default function Template({data}) {
 }
 
 export const pageQuery = graphql`
-	query($path: String!) {
+	query ($path: String!) {
 		mdx(fields: {slug: {eq: $path}}) {
 			body
 			fields {

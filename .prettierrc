@@ -4,5 +4,6 @@
 	"printWidth": 79,
 	"singleQuote": true,
 	"tabWidth": 4,
-	"useTabs": true
+	"useTabs": true,
+	"experimentalBabelParserPluginsList": ["jsx"]
 }

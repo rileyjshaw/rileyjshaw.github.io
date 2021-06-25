@@ -18,9 +18,8 @@ export default ({children}) => {
 					className="shard"
 					aria-hidden="true"
 					style={{
-						[`border${
-							rA < 0.25 ? 'Right' : 'Left'
-						}`]: '90vw solid #000',
+						[`border${rA < 0.25 ? 'Right' : 'Left'}`]:
+							'90vw solid #000',
 						borderBottom: `${rB * 0.4}em solid transparent`,
 						borderTop: `${rC * 0.4}em solid transparent`,
 						bottom: `${rD / 2}em`,
