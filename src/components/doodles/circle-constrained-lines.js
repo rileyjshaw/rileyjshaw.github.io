@@ -47,12 +47,8 @@ const CircleConstrainedLines = React.forwardRef(
 			const canvas = canvasRef.current;
 			if (!canvas) return;
 
-			const {
-				getOffset,
-				nLines,
-				lineWidth,
-				globalCompositeOperation,
-			} = variants[variant];
+			const {getOffset, nLines, lineWidth, globalCompositeOperation} =
+				variants[variant];
 
 			const angleStep = (2 * PI) / nLines;
 			const ctx = canvas.getContext('2d');

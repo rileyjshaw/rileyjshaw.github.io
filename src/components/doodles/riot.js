@@ -3,12 +3,8 @@ import './riot.css';
 import React, {useMemo} from 'react';
 
 function Riot(_, ref) {
-	const [
-		riotRef,
-		_inView,
-		boundingClientRect,
-		windowHeight = 0,
-	] = useViewport({updateOnScroll: true});
+	const [riotRef, _inView, boundingClientRect, windowHeight = 0] =
+		useViewport({updateOnScroll: true});
 	const [oRef, oBoundingClientRect] = useDomMethod('getBoundingClientRect');
 	let factor = boundingClientRect
 		? (1 -

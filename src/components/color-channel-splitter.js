@@ -22,9 +22,8 @@ function ColorChannelSplitter({
 	...rest
 }) {
 	const [ref, inView] = useViewport({initialInView: true});
-	const {theme, reducedMotion, contrastPreference} = useContext(
-		SettingsContext
-	);
+	const {theme, reducedMotion, contrastPreference} =
+		useContext(SettingsContext);
 
 	const hideColors =
 		!inView || !theme || reducedMotion || contrastPreference === 'more';

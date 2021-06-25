@@ -90,10 +90,10 @@ const BackgroundGenerator = React.forwardRef(function BackgroundGenerator(
 	};
 	const themeBias = theme === 'light' ? 0.65 : 0.45; // 0: light | 1: dark
 	const cDark = useMemo(() => getThemeColor(theme)(dark)(), [dark, theme]);
-	const cLight = useMemo(() => getThemeColor(theme)(light)(), [
-		light,
-		theme,
-	]);
+	const cLight = useMemo(
+		() => getThemeColor(theme)(light)(),
+		[light, theme]
+	);
 	const [[canvas, tiledCanvas, nTiles, height], setState] = useState([]);
 	const [clicked, setClicked] = useState(false);
 	useEffect(() => {

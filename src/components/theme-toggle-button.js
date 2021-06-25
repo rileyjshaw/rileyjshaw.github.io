@@ -59,9 +59,10 @@ function ThemeToggleButton({uid, settings: {themeKey, setThemeKey}}) {
 		node?.beginElement();
 	}, []);
 
-	const themeNameIdx = useMemo(() => THEME_NAMES.indexOf(themeKey), [
-		themeKey,
-	]);
+	const themeNameIdx = useMemo(
+		() => THEME_NAMES.indexOf(themeKey),
+		[themeKey]
+	);
 	const pastThemeKey =
 		THEME_NAMES[
 			(themeNameIdx + THEME_NAMES.length - 1) % THEME_NAMES.length

@@ -40,9 +40,12 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 		if (!typeStates.length) return null;
 		const {sortFn} = sortingMethods[sortIdx];
 		const checkedTypeNames = nodeTypes.filter((_, i) => typeStates[i]);
-		const [doodles, filtered] = (checkedTypeNames.length
-			? props.nodes.filter(node => checkedTypeNames.includes(node.type))
-			: props.nodes
+		const [doodles, filtered] = (
+			checkedTypeNames.length
+				? props.nodes.filter(node =>
+						checkedTypeNames.includes(node.type)
+				  )
+				: props.nodes
 		).reduce(
 			(partitions, node) => {
 				partitions[node.type === 'doodle' ? 0 : 1].push(node);
@@ -99,12 +102,12 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 												const {checked} = e.target;
 												setTypeStates(
 													prevTypeStates => {
-														const updatedTypeStates = [
-															...prevTypeStates,
-														];
-														updatedTypeStates[
-															i
-														] = checked;
+														const updatedTypeStates =
+															[
+																...prevTypeStates,
+															];
+														updatedTypeStates[i] =
+															checked;
 														return updatedTypeStates;
 													}
 												);

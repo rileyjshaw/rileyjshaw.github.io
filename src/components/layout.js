@@ -37,9 +37,8 @@ const PAGE_CLASSES = {
 };
 
 const Layout = ({children, location}) => {
-	const {theme, reducedMotion, contrastPreference} = useContext(
-		SettingsContext
-	);
+	const {theme, reducedMotion, contrastPreference} =
+		useContext(SettingsContext);
 	const [isBlockerOpen, setIsBlockerOpen] = useState(false);
 	const [nTimesClosed, setNTimesClosed] = useStickyState(
 		0,
@@ -47,10 +46,8 @@ const Layout = ({children, location}) => {
 		{scope: 'session', serverState: 0}
 	);
 	useIdle(60000 * 4 * (nTimesClosed + 1), () => setIsBlockerOpen(true));
-	const [
-		isDeletionDayBannerOpen,
-		setIsDeletionDayBannerOpen,
-	] = useStickyState(true, STORAGE_KEYS.showDeletionDayBanner, 'session');
+	const [isDeletionDayBannerOpen, setIsDeletionDayBannerOpen] =
+		useStickyState(true, STORAGE_KEYS.showDeletionDayBanner, 'session');
 	const [daysUntilDeletionDay, setDaysUntilDeletionDay] = useState(null);
 	useInterval(() => {
 		const today = new Date();

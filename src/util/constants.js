@@ -87,9 +87,8 @@ const DIRECT_COLOR_PROPERTIES = Object.entries(DIRECT_COLORS).reduce(
 					},
 					{}
 				);
-				colorAcc[colorName].rgb = DIRECT_COLORS[themeName][
-					colorName
-				].main.join();
+				colorAcc[colorName].rgb =
+					DIRECT_COLORS[themeName][colorName].main.join();
 				return colorAcc;
 			},
 			{}
