@@ -6,6 +6,8 @@
 const fs = require('fs');
 const stableStringify = require('json-stable-stringify');
 
+const {idify} = require('../scraper-utils.js');
+
 const unique = arr => arr.filter((x, i) => arr.indexOf(x) === i);
 const addTags = (n, tags = []) => {
 	if (typeof tags === 'string') tags = [tags];
@@ -176,11 +178,7 @@ function runTweaks() {
 					// HACK(riley): Array for projects, string for other things.
 					descriptionList: description,
 					type: 'project',
-					uid: `PROJECT_${p.title.replace(/[- ]/g, '_')}`
-						.replace(/\W/g, char =>
-							char.codePointAt(0).toString(36)
-						)
-						.toUpperCase(),
+					uid: `PROJECT_${idify(p.title)}`,
 				};
 			}),
 	];

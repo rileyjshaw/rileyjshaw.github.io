@@ -11,13 +11,6 @@ const octokit = new Octokit({
 });
 
 const SITE_ROOT = 'https://rileyjshaw.com/';
-const pathFromUrl = (() => {
-	const regex = new RegExp(
-		`(${SITE_ROOT.replaceAll('/', '\\/')}|\\/$)`,
-		'gi'
-	);
-	return url => url.replace(regex, '');
-})();
 
 const PRIORITY_JSON_NAME = 'other-repo-sitemap-priorities.json';
 const otherRepoSitemapPriorities = JSON.parse(
@@ -72,7 +65,7 @@ async function checkGitRepoRoutes() {
 		);
 		if (!link?.includes('rel="next"')) break;
 	}
-	Promise.all(routeChecks).then(results => {
+	return Promise.all(routeChecks).then(results => {
 		fs.writeFileSync(
 			'./project-scraper/_generated/other-repos.json',
 			JSON.stringify(
@@ -81,15 +74,17 @@ async function checkGitRepoRoutes() {
 					.filter((route, i, routes) => routes.indexOf(route) === i)
 					.sort((a, b) => a.localeCompare(b))
 					.map(url => {
+						const {pathname} = new URL(url);
+						const strippedPath = pathname.replace(/^\/|\/$/g, '');
 						let priority =
-							otherRepoSitemapPriorities[pathFromUrl(url)];
+							otherRepoSitemapPriorities[strippedPath];
 						if (typeof priority !== 'number') {
 							priority = 0.1;
 							console.log(
-								`Missing priority for ${url}. Update ${PRIORITY_JSON_NAME}.`
+								`Missing priority for ${strippedPath}. Update ${PRIORITY_JSON_NAME}.`
 							);
 						}
-						return {url, priority};
+						return {path: pathname, priority};
 					}),
 				null,
 				'\t'

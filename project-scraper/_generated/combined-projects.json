@@ -1551,6 +1551,30 @@
 		"uid": "PATCH_140563"
 	},
 	{
+		"coolness": 89,
+		"date": "2015-09-07",
+		"descriptionList": [
+			"A collection of dotfiles that I use + some scripts to keep ’em in sync."
+		],
+		"link": "https://github.com/rileyjshaw/.supermac",
+		"timestamp": 1441584000000,
+		"title": ".supermac",
+		"type": "project",
+		"uid": "PROJECT__SUPERMAC"
+	},
+	{
+		"coolness": 22,
+		"date": "2019-02-02",
+		"descriptionList": [
+			"After watching some <a href=\"https://asknature.org/resource/doodling-in-math-spirals-fibonacci-and-being-a-plant\" rel=\"noopener noreferrer\" target=\"_blank\">Vi Hart videos</a>, I started thinking a lot about Fibonacci Hashing and made some simple visualizations to test ideas."
+		],
+		"link": "https://codepen.io/rileyjshaw/pen/pGPaKQ",
+		"timestamp": 1549065600000,
+		"title": "1.618 tests",
+		"type": "project",
+		"uid": "PROJECT_1_618_TESTS"
+	},
+	{
 		"coolness": 27,
 		"date": "2013-11-25",
 		"lastTagged": 1564708948573,
@@ -1581,38 +1605,6 @@
 		"title": "1125899906842624",
 		"type": "project",
 		"uid": "PROJECT_1125899906842624"
-	},
-	{
-		"coolness": 22,
-		"date": "2019-02-02",
-		"descriptionList": [
-			"After watching some <a href=\"https://asknature.org/resource/doodling-in-math-spirals-fibonacci-and-being-a-plant\" rel=\"noopener noreferrer\" target=\"_blank\">Vi Hart videos</a>, I started thinking a lot about Fibonacci Hashing and made some simple visualizations to test ideas."
-		],
-		"lastTagged": 0,
-		"link": "https://codepen.io/rileyjshaw/pen/pGPaKQ",
-		"tags": [
-			"online"
-		],
-		"timestamp": 1549065600000,
-		"title": "1.618 tests",
-		"type": "project",
-		"uid": "PROJECT_11A618_TESTS"
-	},
-	{
-		"coolness": 89,
-		"date": "2015-09-07",
-		"descriptionList": [
-			"A collection of dotfiles that I use + some scripts to keep ’em in sync."
-		],
-		"lastTagged": 1564708739903,
-		"link": "https://github.com/rileyjshaw/.supermac",
-		"tags": [
-			"reusable"
-		],
-		"timestamp": 1441584000000,
-		"title": ".supermac",
-		"type": "project",
-		"uid": "PROJECT_1ASUPERMAC"
 	},
 	{
 		"coolness": 71,
@@ -3501,16 +3493,11 @@
 			"Retro command line emulator using my TinyTerm library.",
 			"Type “help” for command list."
 		],
-		"lastTagged": 1564708786127,
 		"link": "http://hackers.cool/~rileyjshaw/",
-		"tags": [
-			"online",
-			"starred"
-		],
 		"timestamp": 1420675200000,
 		"title": "Hackers.cool",
 		"type": "project",
-		"uid": "PROJECT_HACKERS1ACOOL"
+		"uid": "PROJECT_HACKERS_COOL"
 	},
 	{
 		"coolness": 39,
@@ -4903,17 +4890,11 @@
 		"descriptionList": [
 			"A single program that outputs my name when you run it through three separate programming languages."
 		],
-		"lastTagged": 1564608398380,
 		"link": "https://gist.github.com/rileyjshaw/216af3d73b16e35d462ea5a29da4bcd4",
-		"tags": [
-			"golf",
-			"online",
-			"starred"
-		],
 		"timestamp": 1477526400000,
 		"title": "RileyJShaw.???",
 		"type": "project",
-		"uid": "PROJECT_RILEYJSHAW1A1R1R1R"
+		"uid": "PROJECT_RILEYJSHAW_1R1R1R"
 	},
 	{
 		"coolness": 82,
@@ -5822,16 +5803,11 @@
 	{
 		"coolness": 70,
 		"date": "2015-03-02",
-		"lastTagged": 1564708759832,
 		"link": "https://codepen.io/collection/XGogPm/",
-		"tags": [
-			"online",
-			"pretty"
-		],
 		"timestamp": 1425254400000,
 		"title": "terra.js demos",
 		"type": "project",
-		"uid": "PROJECT_TERRA1AJS_DEMOS"
+		"uid": "PROJECT_TERRA_JS_DEMOS"
 	},
 	{
 		"coolness": 23,
@@ -6392,17 +6368,11 @@
 			"My contribution to a collection of poems.",
 			"From the project page: “there is confusion in the mixed layers of metaphors. This is not an obfuscated code repository; not really. In some ways, it is the opposite.”"
 		],
-		"lastTagged": 1564707910272,
 		"link": "https://raw.githubusercontent.com/eliawry/poetics/master/whoami.py",
-		"tags": [
-			"golf",
-			"pretty",
-			"starred"
-		],
 		"timestamp": 1451520000000,
 		"title": "whoami.py",
 		"type": "project",
-		"uid": "PROJECT_WHOAMI1APY"
+		"uid": "PROJECT_WHOAMI_PY"
 	},
 	{
 		"coolness": 68,

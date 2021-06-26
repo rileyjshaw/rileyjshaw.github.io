@@ -111,7 +111,11 @@ exports.onCreateNode = ({node, getNode, actions}) => {
 			/^\/(?:published|drafts)\/([\d]{4}-[\d]{2}-[\d]{2})-{1}(.+)\/$/
 		);
 		slug ??= fileNameSlug;
-		createNodeField({node, name: 'slug', value: `/blog/${slug}`});
+		createNodeField({
+			node,
+			name: 'slug',
+			value: `/blog/${encodeURI(slug)}`,
+		});
 
 		if (!title) {
 			title =
