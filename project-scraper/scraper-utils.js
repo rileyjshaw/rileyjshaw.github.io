@@ -24,7 +24,12 @@ const scrapedQuotes = JSON.parse(
 	fs.readFileSync('./project-scraper/_generated/scraped-quotes.json')
 );
 
-const idify = uid => uid.toUpperCase().replace(/-/g, '_');
+const idify = uid =>
+	uid
+		.replace(/[-. ]/g, '_')
+		.replace(/\W/g, char => char.codePointAt(0).toString(36))
+		.toUpperCase();
+
 const excerptify = body => {
 	if (!body) return {};
 

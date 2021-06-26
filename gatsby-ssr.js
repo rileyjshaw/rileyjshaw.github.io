@@ -20,7 +20,7 @@ export const wrapPageElement = ({props, element}) => (
 
 // HAAAACK!
 const _webpackImportString = importName =>
-	`_\\w+__WEBPACK_IMPORTED_MODULE_[0-9]+__\\["${importName}"\\]`;
+	`_\\w+__WEBPACK_IMPORTED_MODULE_[0-9]+__\\.${importName}`;
 
 const execString_manageInitialTheme = `(function() {
 	var stored = JSON.parse(

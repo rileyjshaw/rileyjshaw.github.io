@@ -1,166 +1,166 @@
 [
 	{
-		"url": "https://rileyjshaw.com/2048/",
+		"path": "/2048/",
 		"priority": 0.1
 	},
 	{
-		"url": "https://rileyjshaw.com/28-hour-day-pebble/",
+		"path": "/28-hour-day-pebble/",
 		"priority": 0.1
 	},
 	{
-		"url": "https://rileyjshaw.com/2p-snake/",
+		"path": "/2p-snake/",
 		"priority": 0.6
 	},
 	{
-		"url": "https://rileyjshaw.com/4000-words/",
+		"path": "/4000-words/",
 		"priority": 0.1
 	},
 	{
-		"url": "https://rileyjshaw.com/balance-text/",
+		"path": "/balance-text/",
 		"priority": 0.1
 	},
 	{
-		"url": "https://rileyjshaw.com/beautiful-open/",
+		"path": "/beautiful-open/",
 		"priority": 0.1
 	},
 	{
-		"url": "https://rileyjshaw.com/buster-test/",
+		"path": "/buster-test/",
 		"priority": 0.1
 	},
 	{
-		"url": "https://rileyjshaw.com/canvas/",
+		"path": "/canvas/",
 		"priority": 0.6
 	},
 	{
-		"url": "https://rileyjshaw.com/challenger/",
+		"path": "/challenger/",
 		"priority": 0.8
 	},
 	{
-		"url": "https://rileyjshaw.com/chromium-injected-css-specificity-bug-demo/",
+		"path": "/chromium-injected-css-specificity-bug-demo/",
 		"priority": 0.1
 	},
 	{
-		"url": "https://rileyjshaw.com/code-is-bad/",
+		"path": "/code-is-bad/",
 		"priority": 0.1
 	},
 	{
-		"url": "https://rileyjshaw.com/color-screen/",
+		"path": "/color-screen/",
 		"priority": 0.5
 	},
 	{
-		"url": "https://rileyjshaw.com/do-it/",
+		"path": "/do-it/",
 		"priority": 0.2
 	},
 	{
-		"url": "https://rileyjshaw.com/face/",
+		"path": "/face/",
 		"priority": 0.6
 	},
 	{
-		"url": "https://rileyjshaw.com/fastdraw/",
+		"path": "/fastdraw/",
 		"priority": 0.1
 	},
 	{
-		"url": "https://rileyjshaw.com/fitter-happier-text/",
+		"path": "/fitter-happier-text/",
 		"priority": 0.1
 	},
 	{
-		"url": "https://rileyjshaw.com/glorious-pattern-matcher/",
+		"path": "/glorious-pattern-matcher/",
 		"priority": 0.5
 	},
 	{
-		"url": "https://rileyjshaw.com/life/",
+		"path": "/life/",
 		"priority": 0.2
 	},
 	{
-		"url": "https://rileyjshaw.com/linescapes/",
+		"path": "/linescapes/",
 		"priority": 0.6
 	},
 	{
-		"url": "https://rileyjshaw.com/nature-of-code/",
+		"path": "/nature-of-code/",
 		"priority": 0.6
 	},
 	{
-		"url": "https://rileyjshaw.com/orbit/",
+		"path": "/orbit/",
 		"priority": 0.6
 	},
 	{
-		"url": "https://rileyjshaw.com/palette-test-tool/",
+		"path": "/palette-test-tool/",
 		"priority": 0.2
 	},
 	{
-		"url": "https://rileyjshaw.com/phi_fo_fum/",
+		"path": "/phi_fo_fum/",
 		"priority": 0.4
 	},
 	{
-		"url": "https://rileyjshaw.com/po-33/",
+		"path": "/po-33/",
 		"priority": 1
 	},
 	{
-		"url": "https://rileyjshaw.com/power-song-finder/",
+		"path": "/power-song-finder/",
 		"priority": 1
 	},
 	{
-		"url": "https://rileyjshaw.com/pride-and-prejudice/",
+		"path": "/pride-and-prejudice/",
 		"priority": 0.5
 	},
 	{
-		"url": "https://rileyjshaw.com/racer/",
+		"path": "/racer/",
 		"priority": 0.5
 	},
 	{
-		"url": "https://rileyjshaw.com/sci-13/",
+		"path": "/sci-13/",
 		"priority": 0.1
 	},
 	{
-		"url": "https://rileyjshaw.com/sorta/",
+		"path": "/sorta/",
 		"priority": 0.4
 	},
 	{
-		"url": "https://rileyjshaw.com/super-slinky/",
+		"path": "/super-slinky/",
 		"priority": 0.5
 	},
 	{
-		"url": "https://rileyjshaw.com/sweep/",
+		"path": "/sweep/",
 		"priority": 0.7
 	},
 	{
-		"url": "https://rileyjshaw.com/tappy-fingerprint/",
+		"path": "/tappy-fingerprint/",
 		"priority": 0.7
 	},
 	{
-		"url": "https://rileyjshaw.com/tappy-game/",
+		"path": "/tappy-game/",
 		"priority": 0.7
 	},
 	{
-		"url": "https://rileyjshaw.com/tappy/",
+		"path": "/tappy/",
 		"priority": 0.8
 	},
 	{
-		"url": "https://rileyjshaw.com/terra/",
+		"path": "/terra/",
 		"priority": 0.8
 	},
 	{
-		"url": "https://rileyjshaw.com/tic-attack-toe/",
+		"path": "/tic-attack-toe/",
 		"priority": 0.5
 	},
 	{
-		"url": "https://rileyjshaw.com/tinyterm/",
+		"path": "/tinyterm/",
 		"priority": 0.5
 	},
 	{
-		"url": "https://rileyjshaw.com/typing-for-two/",
+		"path": "/typing-for-two/",
 		"priority": 0.4
 	},
 	{
-		"url": "https://rileyjshaw.com/visited-vectors/",
+		"path": "/visited-vectors/",
 		"priority": 0.5
 	},
 	{
-		"url": "https://rileyjshaw.com/watercolor/",
+		"path": "/watercolor/",
 		"priority": 0.5
 	},
 	{
-		"url": "https://rileyjshaw.com/write/",
+		"path": "/write/",
 		"priority": 0.6
 	}
 ]

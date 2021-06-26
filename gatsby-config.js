@@ -50,50 +50,55 @@ module.exports = {
 							}
 						}
 						allSitePage {
-							edges {
-								node {
-									path
-								}
+							nodes {
+								path
 							}
 						}
 						allOtherReposJson {
-							edges {
-								node {
-									url
-									priority
-								}
+							nodes {
+								path
+								priority
 							}
 						}
 					}
 				`,
-				serialize: ({site, allSitePage, allOtherReposJson}) => {
-					return allSitePage.edges
-						.map(({node}) => {
+				resolvePages: ({
+					allSitePage: {nodes: allSitePages},
+					allOtherReposJson: {nodes: allOtherRepos},
+				}) => {
+					var result = allSitePages
+						.map(page => {
 							let priority = 0.7;
-							if (node.path.startsWith('/blog')) {
-								if (node.path.match(/\/blog\/[0-9]+$/)) {
+							if (page.path.startsWith('/blog')) {
+								if (page.path.match(/\/blog\/[0-9]+$/)) {
 									priority = 0.1; // Blog index page eg. /blog/2/
 								} else if (
-									node.path.match(/\/blog\/.*[^0-9/]/)
+									page.path.match(/\/blog\/.*[^0-9/]/)
 								) {
 									priority = 0.9;
 								}
 							}
 							return {
-								url: site.siteMetadata.siteUrl + node.path,
+								path: page.path,
 								priority,
 								changefreq: 'daily',
 							};
 						})
 						.concat(
-							allOtherReposJson.edges.map(({node}) => {
+							allOtherRepos.map(page => {
 								return {
-									...node,
+									...page,
 									changefreq: 'daily',
 								};
 							})
 						);
+					return result;
 				},
+				serialize: page => ({
+					url: page.path,
+					priority: page.priority,
+					changefreq: page.changefreq,
+				}),
 			},
 		},
 		`gatsby-plugin-react-helmet`,
@@ -179,6 +184,17 @@ module.exports = {
 			},
 		},
 		`gatsby-plugin-svgr`,
+		{
+			resolve: `gatsby-plugin-postcss`,
+			options: {
+				cssLoaderOptions: {
+					esModule: false,
+					modules: {
+						namedExport: false,
+					},
+				},
+			},
+		},
 		// TODO(riley): So much redundancy between here, gatsby-node, and
 		//              all-projects-query. Do better!
 		{

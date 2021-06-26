@@ -164,6 +164,14 @@
 		}
 	},
 	"taggedProjects": {
+		"PROJECT_1_618_TESTS": {
+			"tags": ["online"],
+			"updated": 0
+		},
+		"PROJECT__SUPERMAC": {
+			"tags": ["reusable"],
+			"updated": 1564708739903
+		},
 		"PROJECT_10_COLORS_THAT_FADED_AWAY": {
 			"tags": ["golf", "online", "pretty"],
 			"updated": 1564708948573
@@ -171,14 +179,6 @@
 		"PROJECT_1125899906842624": {
 			"tags": ["game", "online"],
 			"updated": 1564708885721
-		},
-		"PROJECT_11A618_TESTS": {
-			"tags": ["online"],
-			"updated": 0
-		},
-		"PROJECT_1ASUPERMAC": {
-			"tags": ["reusable"],
-			"updated": 1564708739903
 		},
 		"PROJECT_28_HOUR_DAY": {
 			"tags": ["tool", "external", "starred"],
@@ -616,7 +616,7 @@
 			"tags": ["online", "starred"],
 			"updated": 0
 		},
-		"PROJECT_HACKERS1ACOOL": {
+		"PROJECT_HACKERS_COOL": {
 			"tags": ["online", "starred"],
 			"updated": 1564708786127
 		},
@@ -927,7 +927,7 @@
 			"tags": ["tool", "external", "game"],
 			"updated": 1564765055195
 		},
-		"PROJECT_RILEYJSHAW1A1R1R1R": {
+		"PROJECT_RILEYJSHAW_1R1R1R": {
 			"tags": ["golf", "online", "starred"],
 			"updated": 1564608398380
 		},
@@ -1141,7 +1141,7 @@
 			],
 			"updated": 1564708889063
 		},
-		"PROJECT_TERRA1AJS_DEMOS": {
+		"PROJECT_TERRA_JS_DEMOS": {
 			"tags": ["online", "pretty"],
 			"updated": 1564708759832
 		},
@@ -1272,7 +1272,7 @@
 			"tags": ["audio", "online", "pretty"],
 			"updated": 1564708754661
 		},
-		"PROJECT_WHOAMI1APY": {
+		"PROJECT_WHOAMI_PY": {
 			"tags": ["golf", "pretty", "starred"],
 			"updated": 1564707910272
 		},
