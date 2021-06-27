@@ -132,7 +132,7 @@ const Demo = ({players}) => {
 			<input
 				id="simple-toggle"
 				type="checkbox"
-				className="scaling-fader-mode-toggle"
+				className="scaling-fader-mode-toggle visually-hidden"
 				checked={simple}
 				onChange={() => setSimple(x => !x)}
 			/>

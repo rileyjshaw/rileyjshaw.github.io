@@ -202,16 +202,6 @@
 .scaling-faders-loading {
 	margin: auto;
 }
-.scaling-fader-mode-toggle {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-}
 .scaling-fader-mode-toggle + label::before {
 	background: var(--color-bg);
 	border: 6px solid var(--color-fg);

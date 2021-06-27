@@ -23,7 +23,9 @@ export default React.memo(
 			uid,
 			tags,
 			Doodle,
+			// Warning: `masonry` cannot change within the component’s lifetime.
 			masonry,
+			hidden,
 		} = props;
 
 		if (type === 'doodle') return <Doodle ref={ref} {...props} />;
@@ -32,23 +34,33 @@ export default React.memo(
 		if (!contentType) return null;
 		const {className = '', readableType, shortType, Inner} = contentType;
 
-		const [innerRef, {height}] = useDimensions({liveMeasure: false});
-		// Inner: Math.ceil((height + 27) / (27 * 2))
-		//                            ^ "+ 27" accounts for height falling within gap.
-		//     (27 * 2) is the row + gap height ^
-		// With outer padding: Math.ceil((height + 27 + 46) / (27 * 2))
-		//                    = Math.ceil(height / 54) + 1
-		// TODO(riley): Was this with the new design system.
-		// const span = height && Math.ceil((height + 19) / 54) + 1;
-		const span = height && Math.ceil((height + 82) / 130);
+		let innerRef, height, span;
+		if (masonry) {
+			[innerRef, {height}] = useDimensions({liveMeasure: false});
+			// Inner: Math.ceil((height + 27) / (27 * 2))
+			//                            ^ "+ 27" accounts for height falling within gap.
+			//     (27 * 2) is the row + gap height ^
+			// With outer padding: Math.ceil((height + 27 + 46) / (27 * 2))
+			//                    = Math.ceil(height / 54) + 1
+			// TODO(riley): Was this with the new design system.
+			// const span = height && Math.ceil((height + 19) / 54) + 1;
+			span = height && Math.ceil((height + 82) / 130);
+		}
 
 		return (
 			<El
-				className={`${className} ${type
-					.split(/(?=[A-Z])/)
-					.join('-')
-					.toLowerCase()} ${height ? '' : 'un'}measured
-			content-node`}
+				className={[
+					'content-node',
+					className,
+					type
+						.split(/(?=[A-Z])/)
+						.join('-')
+						.toLowerCase(),
+					masonry && (height ? 'measured' : 'transparent'),
+					hidden && 'visually-hidden',
+				]
+					.filter(x => x)
+					.join(' ')}
 				key={uid}
 				ref={ref}
 				style={span && masonry && {gridRowEnd: `span ${span}`}}

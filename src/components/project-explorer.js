@@ -93,6 +93,7 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 								{nodeTypes.map((type, i) => (
 									<Fragment key={type}>
 										<input
+											className="visually-hidden"
 											type="checkbox"
 											name={`labs-types-${type}`}
 											id={`labs-types-${type}`}
@@ -134,6 +135,7 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 								{sortingMethods.map(({title}, i) => (
 									<Fragment key={title}>
 										<input
+											className="visually-hidden"
 											type="radio"
 											name={`labs-sort-${title}`}
 											id={`labs-sort-${title}`}
@@ -151,6 +153,7 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 							<p className="legend">Order:</p>
 							<div className="inputs">
 								<input
+									className="visually-hidden"
 									type="checkbox"
 									name="labs-order"
 									id="labs-order"
@@ -184,7 +187,6 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 	);
 });
 
-// TODO(riley): Ensure this lazy-loading works with a screen reader.
 const LazyGrid = React.memo(({nodes, setIsFullyLoaded}) => {
 	const [renderLimit, setRenderLimit] = useState(20);
 	const [ref, inView, boundingClientRect] = useViewport();
@@ -214,6 +216,7 @@ const LazyGrid = React.memo(({nodes, setIsFullyLoaded}) => {
 		<ContentGrid
 			masonry
 			nodes={nodes.slice(0, renderLimit)}
+			hiddenNodes={nodes.slice(renderLimit)}
 			lazyLoadRef={ref}
 		/>
 	);

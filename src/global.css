@@ -37,6 +37,23 @@ pre {
 .svg-icon {
 	fill: currentColor;
 }
+.visually-hidden {
+	border: 0 !important;
+	clip: rect(0 0 0 0) !important;
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+}
+.visually-hidden img,
+.visually-hidden video {
+	display: none;
+}
+.transparent {
+	opacity: 0;
+}
 /* HACK(riley): From gatsby-remark-autolink-headers. Why isn’t this added
                 automatically? TODO: Ensure the rest of the plugins are working
                 as expected. */
@@ -57,7 +74,7 @@ h3 .anchor svg,
 h4 .anchor svg,
 h5 .anchor svg,
 h6 .anchor svg {
-	visibility: hidden;
+	opacity: 0;
 }
 h1:hover .anchor svg,
 h2:hover .anchor svg,
@@ -71,5 +88,5 @@ h3 .anchor:focus svg,
 h4 .anchor:focus svg,
 h5 .anchor:focus svg,
 h6 .anchor:focus svg {
-	visibility: visible;
+	opacity: 1;
 }
