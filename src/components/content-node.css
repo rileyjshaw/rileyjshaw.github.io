@@ -47,9 +47,6 @@
 	top: 0;
 	width: 100%;
 }
-.content-node.unmeasured {
-	visibility: hidden;
-}
 /* TODO(riley): Share these styles and bring link style out to root node. */
 /* TODO(riley): Move this into a semantic element, since it means something. */
 .content-node .content-type {
