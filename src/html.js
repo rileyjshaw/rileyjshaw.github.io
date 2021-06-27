@@ -1,3 +1,6 @@
+import geomanistBlack from './fonts/geomanist-black-webfont.woff2';
+import geomanistMedium from './fonts/geomanist-medium-webfont.woff2';
+import geomanistRegular from './fonts/geomanist-regular-webfont.woff2';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -37,6 +40,25 @@ export default function HTML(props) {
 				/>
 				<meta name="msapplication-TileColor" content="#4ccbab" />
 				<meta name="theme-color" content="#4ccbab" />
+				{/* TODO: Get `gatsby-plugin-preload-fonts` working again. See https://github.com/gatsbyjs/gatsby/issues/32127. */}
+				<link
+					as="font"
+					href={geomanistRegular}
+					rel="preload"
+					crossOrigin="anonymous"
+				/>
+				<link
+					as="font"
+					href={geomanistMedium}
+					rel="preload"
+					crossOrigin="anonymous"
+				/>
+				<link
+					as="font"
+					href={geomanistBlack}
+					rel="preload"
+					crossOrigin="anonymous"
+				/>
 			</head>
 			<body {...props.bodyAttributes}>
 				{props.preBodyComponents}

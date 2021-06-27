@@ -102,7 +102,7 @@ module.exports = {
 			},
 		},
 		`gatsby-plugin-react-helmet`,
-		`gatsby-plugin-preload-fonts`,
+		// `gatsby-plugin-preload-fonts`,
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
