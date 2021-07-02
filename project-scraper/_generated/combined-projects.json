@@ -1556,7 +1556,11 @@
 		"descriptionList": [
 			"A collection of dotfiles that I use + some scripts to keep ’em in sync."
 		],
+		"lastTagged": 1564708739903,
 		"link": "https://github.com/rileyjshaw/.supermac",
+		"tags": [
+			"reusable"
+		],
 		"timestamp": 1441584000000,
 		"title": ".supermac",
 		"type": "project",
@@ -1568,7 +1572,11 @@
 		"descriptionList": [
 			"After watching some <a href=\"https://asknature.org/resource/doodling-in-math-spirals-fibonacci-and-being-a-plant\" rel=\"noopener noreferrer\" target=\"_blank\">Vi Hart videos</a>, I started thinking a lot about Fibonacci Hashing and made some simple visualizations to test ideas."
 		],
+		"lastTagged": 0,
 		"link": "https://codepen.io/rileyjshaw/pen/pGPaKQ",
+		"tags": [
+			"online"
+		],
 		"timestamp": 1549065600000,
 		"title": "1.618 tests",
 		"type": "project",
@@ -3493,7 +3501,12 @@
 			"Retro command line emulator using my TinyTerm library.",
 			"Type “help” for command list."
 		],
+		"lastTagged": 1564708786127,
 		"link": "http://hackers.cool/~rileyjshaw/",
+		"tags": [
+			"online",
+			"starred"
+		],
 		"timestamp": 1420675200000,
 		"title": "Hackers.cool",
 		"type": "project",
@@ -4890,7 +4903,13 @@
 		"descriptionList": [
 			"A single program that outputs my name when you run it through three separate programming languages."
 		],
+		"lastTagged": 1564608398380,
 		"link": "https://gist.github.com/rileyjshaw/216af3d73b16e35d462ea5a29da4bcd4",
+		"tags": [
+			"golf",
+			"online",
+			"starred"
+		],
 		"timestamp": 1477526400000,
 		"title": "RileyJShaw.???",
 		"type": "project",
@@ -5803,7 +5822,12 @@
 	{
 		"coolness": 70,
 		"date": "2015-03-02",
+		"lastTagged": 1564708759832,
 		"link": "https://codepen.io/collection/XGogPm/",
+		"tags": [
+			"online",
+			"pretty"
+		],
 		"timestamp": 1425254400000,
 		"title": "terra.js demos",
 		"type": "project",
@@ -6368,7 +6392,13 @@
 			"My contribution to a collection of poems.",
 			"From the project page: “there is confusion in the mixed layers of metaphors. This is not an obfuscated code repository; not really. In some ways, it is the opposite.”"
 		],
+		"lastTagged": 1564707910272,
 		"link": "https://raw.githubusercontent.com/eliawry/poetics/master/whoami.py",
+		"tags": [
+			"golf",
+			"pretty",
+			"starred"
+		],
 		"timestamp": 1451520000000,
 		"title": "whoami.py",
 		"type": "project",
@@ -7399,6 +7429,22 @@
 		"title": "2021-04-19 at 19.11.39.mov",
 		"type": "screenshotsTumblr",
 		"uid": "SCREENSHOTS_TUMBLR_648936317634363392"
+	},
+	{
+		"body": "https://64.media.tumblr.com/1db6b3276587da1ea9bf26138a84807e/f597ec7bad48f586-50/s1280x1920/a273f7c2829569922a9a71cc2bd027a91144f9dc.png",
+		"contentType": "photo",
+		"coolness": 3,
+		"date": "2021-07-02",
+		"extraData": [
+			1280,
+			744,
+			4
+		],
+		"link": "https://screenshots.rileyjshaw.com/post/655613490564939776",
+		"timestamp": 1625184000000,
+		"title": "2021-07-02 at 12.02.27.png",
+		"type": "screenshotsTumblr",
+		"uid": "SCREENSHOTS_TUMBLR_655613490564939776"
 	},
 	{
 		"body": "<p>it was silly to write all of this down but i  created this blog today and i’m still editing the layout, so i want more words to work with.<br/></p><hr><p>create a few distinct sounds, for example:</p><ul><li>cup/table tap</li><li>cup/table scrape</li><li>ball/table tap</li><li>ball/table scrape</li><li>cup/ball tap</li></ul><p>these examples are unambiguous and easy to perform rapidly by someone keeping the cup in one hand &amp; ball in the other. i&rsquo;ll refer to each performed sound as a &ldquo;bit&rdquo; from here on out.</p><p>for n bits, you have (number of sounds)^n options. with the examples above that&rsquo;s 5^n, which is plenty.</p><p>so what&rsquo;s important to convey?</p><p>the shapes are curvy and strange, so it&rsquo;s easier to share a limited reference table of basic + advanced shapes instead of deriving each part of the bear from scratch. three bits could cover 125 shapes, which is  ample for bear and bear-like drawings.</p><p>shapes are more reusable if they can be drawn at different sizes. let&rsquo;s use one bit to indicate size:</p><p>0: smallest<br/>1: smaller<br/>2: as shown on reference table<br/>3: larger<br/>4: largest</p><p>we&rsquo;re trying to convey a cohesive bear, so the relative position between shapes is more important than their absolute position on the page. two bits can express position in relation to the last shape drawn, for example:</p><p>0: draw in any open space<br/>1: draw connected to the north-most edge of the previous shape<br/>2: draw connected to the northeast-most edge of the previous shape<br/>3: draw connected to the east-most edge of the previous shape<br/>4: draw connected to the southeast-most edge of the previous shape<br/>5: draw connected to the south-most edge of the previous shape<br/>&hellip;<br/>9: continue from shape&rsquo;s final pen position<br/>10: continue from shape&rsquo;s initial pen position<br/>&hellip;<br/>15: draw within the previous shape<br/>16: draw surrounding the previous shape<br/>&hellip;<br/>etc.</p><p>since pen position is a factor, the shape reference table should imply direction.</p><p>to save time, a bit could be added to indicate how many shapes should be drawn at the specified position. for example, there are four toes in each bear foot.</p><hr><p>when ordering the bits, it makes sense to think of what information is most useful to the receiver at each step. my intuition is that this is a good order:</p><p>•• position<br/>• number<br/>• size<br/>••• shape</p><p>so each shape takes seven sounds from the sender.</p><hr><p>update: i ran this by phil; they made the point that since there&rsquo;s no acknowledgment channel from the receiver, redundancy would help reduce errors. let&rsquo;s add a bit at the beginning to indicate whether this is the initial message or a confirmation message. the following 7 bits will then be identical.</p><hr><p>update 2: in the above system, a single missed bit would be catastrophic; it would corrupt the receiver&rsquo;s understanding of all future communication. the (initial | confirmation) sound should be unique so it always marks the start of a new shape. dragging the (cup | ball) in a double circle works.</p>",
