@@ -526,6 +526,12 @@ async function getSoundCloud() {
 			});
 	} catch (err) {
 		console.error('Error while fetching SoundCloud tracks:', err);
+		console.error(
+			'Your SOUNDCLOUD_CLIENT_ID in .env might be out of date.'
+		);
+		console.error(
+			'Check the Network tab on soundcloud.com to get a new one.'
+		);
 	}
 }
 
