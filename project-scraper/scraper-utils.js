@@ -170,7 +170,10 @@ async function getArena() {
 		const url = `http://api.are.na/v2/users/riley-shaw/channels?access_token=${process.env.ARENA_SECRET}`;
 		const response = JSON.parse(await request(url));
 		const channels = (raw.arena = response.channels.filter(
-			channel => channel.published && channel.status !== 'private' && channel.owner_id === 72803
+			channel =>
+				channel.published &&
+				channel.status !== 'private' &&
+				channel.owner_id === 72803
 		));
 		console.log(`Got ${channels.length} Are.na channels.`);
 		channels
