@@ -20,6 +20,15 @@
 		"todo": true
 	},
 	{
+		"title": "My keyboard layout",
+		"description": [
+			"The layout I use for my <a href=\"https://www.zsa.io/moonlander/\" target=\"_blank\" rel=\"noopener noreferrer\">Moonlander</a> keyboard."
+		],
+		"date": "2021-06-20",
+		"coolness": 60,
+		"link": "https://configure.zsa.io/moonlander/layouts/30wmY/latest"
+	},
+	{
 		"title": "Marqueee (rotated)",
 		"description": [
 			"A remix of <a href=\"https://glitch.com/edit/#!/marqueee\" target=\"_blank\" rel=\"noopener noreferrer\">Marqueee</a>, with a <code>rotate</code> parameter added."
