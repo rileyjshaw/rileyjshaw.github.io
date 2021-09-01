@@ -469,6 +469,9 @@ function getIcons() {
 		)
 		.then(JSON.parse)
 		.then(({uploads}) => {
+			uploads.forEach(icon => {
+				delete icon.icon_url;
+			});
 			raw.nounIcons = uploads;
 			console.log(`Got ${uploads.length} The Noun Project icons.`);
 			uploads.forEach(upload => {
@@ -511,6 +514,9 @@ async function getSoundCloud() {
 			songs = songs.concat(response.collection);
 			url = response.next_href;
 		}
+		songs.forEach(song => {
+			delete song.track_authorization;
+		});
 		raw.songs = songs;
 		songs
 			.filter(song => !song.tag_list.split(' ').includes('hide'))
