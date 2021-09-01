@@ -587,7 +587,7 @@
 					"connection_id": 10715076,
 					"contents": null,
 					"created_at": "2017-12-01T22:32:52.062Z",
-					"follower_count": 2241,
+					"follower_count": 2260,
 					"group": null,
 					"id": 112808,
 					"kind": "default",
@@ -606,7 +606,7 @@
 					"state": "available",
 					"status": "public",
 					"title": "plants and grids",
-					"updated_at": "2021-08-25T10:05:49.747Z",
+					"updated_at": "2021-08-31T18:47:06.404Z",
 					"user": {
 						"avatar": "https://arena-avatars.s3.amazonaws.com/14299/small_f8196d90a0119a1a70220297cd1c843d.png?1512271217",
 						"avatar_image": {
@@ -620,7 +620,7 @@
 						"class": "User",
 						"created_at": "2017-03-03T23:42:52.484Z",
 						"first_name": "Clement",
-						"follower_count": 583,
+						"follower_count": 585,
 						"following_count": 1067,
 						"full_name": "Clement Valla",
 						"id": 14299,
@@ -1972,7 +1972,7 @@
 						"class": "User",
 						"created_at": "2018-11-12T09:05:27.700Z",
 						"first_name": "dé",
-						"follower_count": 226,
+						"follower_count": 227,
 						"following_count": 120,
 						"full_name": "dé 🥐",
 						"id": 73554,
@@ -5569,7 +5569,7 @@
 		{
 			"attribution": "No Trash by Riley Shaw from Noun Project",
 			"date_uploaded": "2012-06-09",
-			"icon_url": "https://static.thenounproject.com/noun-svg/3164.svg?Expires=1629895829&Signature=loXXwicEwKDDJslXl3SOyYiGux2uNKTP~H0JOhHxkymZe-usZNYYUljVHS~LXWuSHwAgRarCZQDakMqc~E4uZ4-YeloGEsiY41PRncbiXkq5RPmnUAzecSwOC4TLkXH-356Y0mKTnmGoA3B77puxBuTGblQUHblgcuzqy4~T62o_&Key-Pair-Id=APKAI5ZVHAXN65CHVU2Q",
+			"icon_url": "https://static.thenounproject.com/noun-svg/3164.svg?Expires=1630456960&Signature=DSnE3eWTL2Hzzja~gbkqBATCsyuR1YJIzo4zA~oOtjd~Ep7Erl~IxVWibCL-wM9TWPPPjX1Mz3X7P~Vl-fjl8hZA0sWJNkSWoyvZgYcmq5hSqBpx07S5lqDXxPWUu6pGs5ub7zuS4o8tUsCuM8nuGePSgfYHlhF4-4bRsDXYnx8_&Key-Pair-Id=APKAI5ZVHAXN65CHVU2Q",
 			"id": "3164",
 			"is_active": "1",
 			"is_explicit": "0",
@@ -5651,7 +5651,7 @@
 			],
 			"comment_count": 1,
 			"created_at": "2021-05-17T19:27:18+00:00",
-			"download_count": 18,
+			"download_count": 19,
 			"excerpt": "Set and toggle 16 independent LFOs. You can cross-modulate them if you want, but by...",
 			"id": 140563,
 			"like_count": 3,
@@ -5737,7 +5737,7 @@
 			],
 			"title": "LFOs",
 			"updated_at": "2021-05-28T22:50:28+00:00",
-			"view_count": 349
+			"view_count": 361
 		},
 		{
 			"artwork": {
@@ -5828,7 +5828,7 @@
 			],
 			"title": "Panning gravity delay",
 			"updated_at": "2021-03-13T21:32:42+00:00",
-			"view_count": 320
+			"view_count": 326
 		},
 		{
 			"artwork": {
@@ -5919,7 +5919,7 @@
 			],
 			"title": "Gravity delay",
 			"updated_at": "2021-03-13T21:27:21+00:00",
-			"view_count": 473
+			"view_count": 479
 		},
 		{
 			"artwork": {
@@ -5939,7 +5939,7 @@
 			],
 			"comment_count": 1,
 			"created_at": "2021-01-10T22:24:56+00:00",
-			"download_count": 10,
+			"download_count": 11,
 			"excerpt": "Shifts the MIDI Channel of incoming MIDI messages. Knob 1: Channel shift amount, from -15...",
 			"id": 134431,
 			"like_count": 0,
@@ -5980,7 +5980,7 @@
 			],
 			"title": "MIDI Channel Shifter",
 			"updated_at": "2021-01-10T22:24:56+00:00",
-			"view_count": 292
+			"view_count": 299
 		},
 		{
 			"artwork": {
@@ -6000,7 +6000,7 @@
 			],
 			"comment_count": 0,
 			"created_at": "2020-12-30T00:19:26+00:00",
-			"download_count": 18,
+			"download_count": 19,
 			"excerpt": "Dedupe prevents consecutive MIDI Note On messages from occurring on the same note &amp; channel...",
 			"id": 133788,
 			"like_count": 1,
@@ -6056,7 +6056,7 @@
 			],
 			"title": "Dedupe",
 			"updated_at": "2021-03-13T21:28:23+00:00",
-			"view_count": 389
+			"view_count": 393
 		},
 		{
 			"artwork": {
@@ -6132,7 +6132,7 @@
 			],
 			"title": "MIDI note # to pitch conversion",
 			"updated_at": "2020-12-12T20:53:48+00:00",
-			"view_count": 250
+			"view_count": 255
 		},
 		{
 			"artwork": {
@@ -6208,7 +6208,7 @@
 			],
 			"title": "Panic! At The Drambo",
 			"updated_at": "2020-12-12T06:57:01+00:00",
-			"view_count": 356
+			"view_count": 358
 		},
 		{
 			"artwork": {
@@ -6294,7 +6294,7 @@
 			],
 			"title": "Glitch More",
 			"updated_at": "2021-03-13T21:54:33+00:00",
-			"view_count": 600
+			"view_count": 603
 		},
 		{
 			"artwork": {
@@ -6380,7 +6380,7 @@
 			],
 			"title": "Jambo MIDI map",
 			"updated_at": "2021-01-05T01:34:44+00:00",
-			"view_count": 364
+			"view_count": 368
 		},
 		{
 			"artwork": {
@@ -6405,10 +6405,10 @@
 			],
 			"comment_count": 0,
 			"created_at": "2020-10-16T00:17:04+00:00",
-			"download_count": 42,
+			"download_count": 45,
 			"excerpt": "A parameter-lockable, MIDI-mappable converter from a single MIDI note to 8 configurable chords. For my...",
 			"id": 130675,
-			"like_count": 3,
+			"like_count": 5,
 			"link": "https://patchstorage.com/chorder/",
 			"platform": {
 				"id": 4890,
@@ -6456,7 +6456,7 @@
 			],
 			"title": "Chorder!",
 			"updated_at": "2020-10-16T00:17:04+00:00",
-			"view_count": 625
+			"view_count": 721
 		}
 	],
 	"screenshotsTumblr": [
@@ -6823,15 +6823,15 @@
 			"note_count": 0,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-61262e8906d36244228616' class='crt-video crt-skin-default' width='250' height='251' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-612eca6174841507476158' class='crt-video crt-skin-default' width='250' height='251' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-61262e8906d36244228616' class='crt-video crt-skin-default' width='400' height='402' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-612eca6174841507476158' class='crt-video crt-skin-default' width='400' height='402' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-61262e8906d36244228616' class='crt-video crt-skin-default' width='500' height='502' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-612eca6174841507476158' class='crt-video crt-skin-default' width='500' height='502' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -10320,15 +10320,15 @@
 			"note_count": 1,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-61262e8917dba958114188' class='crt-video crt-skin-default' width='250' height='142' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-612eca6179698162582680' class='crt-video crt-skin-default' width='250' height='142' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-61262e8917dba958114188' class='crt-video crt-skin-default' width='400' height='228' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-612eca6179698162582680' class='crt-video crt-skin-default' width='400' height='228' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-61262e8917dba958114188' class='crt-video crt-skin-default' width='500' height='285' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-612eca6179698162582680' class='crt-video crt-skin-default' width='500' height='285' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -11773,7 +11773,7 @@
 			"streamable": true,
 			"tag_list": "",
 			"title": "Gravity drops (excerpt 2)",
-			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IjhjNTU3ZDA2LThlZmItNGYxZC1hOGU3LTgxNmU4ZTJmMmQ1ZCIsImlhdCI6MTYyOTg5MjIzNH0.MrU3XA0OGQdps9QUdkMlq9i_XCAvmT-nUJZ0uncCnwk",
+			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IjhjNTU3ZDA2LThlZmItNGYxZC1hOGU3LTgxNmU4ZTJmMmQ1ZCIsImlhdCI6MTYzMDQ1NjQxN30.nRYEeR9q0SoshideP6d-Z9o7kcFOok2uk9VBrmyrF7s",
 			"track_format": "single-track",
 			"uri": "https://api.soundcloud.com/tracks/954986224",
 			"urn": "soundcloud:tracks:954986224",
@@ -11883,7 +11883,7 @@
 			"streamable": true,
 			"tag_list": "",
 			"title": "Gravity drops (excerpt 1)",
-			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6ImE0NWJjYmQ3LWZkY2UtNGY2ZS04ZTkzLThhZDA4YTg1YjAxNyIsImlhdCI6MTYyOTg5MjIzNH0.mn1P0MgMoaICLCDPUklCVIo8CIaHMW73VNRVDjs7Ekg",
+			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6ImE0NWJjYmQ3LWZkY2UtNGY2ZS04ZTkzLThhZDA4YTg1YjAxNyIsImlhdCI6MTYzMDQ1NjQxN30.FCgdYfnk2Wcd6Hn911462x0h8HdymtozpzqEENeYK0Q",
 			"track_format": "single-track",
 			"uri": "https://api.soundcloud.com/tracks/953102674",
 			"urn": "soundcloud:tracks:953102674",
@@ -11993,7 +11993,7 @@
 			"streamable": true,
 			"tag_list": "",
 			"title": "Mallets",
-			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6ImE2OGM0NzQ2LWQwNWUtNDQ0Ny04ZTIxLWRiZmI5OTU1YjFmNSIsImlhdCI6MTYyOTg5MjIzNH0.UqStxeZbSOmzTQX5NMDE_QIdJIL-Cv2i6T64I89u64s",
+			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6ImE2OGM0NzQ2LWQwNWUtNDQ0Ny04ZTIxLWRiZmI5OTU1YjFmNSIsImlhdCI6MTYzMDQ1NjQxN30.4f78eOCubu1aXuORSKfE3PsIAD-42JJI0-caMPjFShE",
 			"track_format": "single-track",
 			"uri": "https://api.soundcloud.com/tracks/948431872",
 			"urn": "soundcloud:tracks:948431872",
@@ -12107,7 +12107,7 @@
 			"streamable": true,
 			"tag_list": "",
 			"title": "Quarter note stutter (demo)",
-			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IiIsImlhdCI6MTYyOTg5MjIzNH0.cuUb4PmW3zRJ8_dItTT7oc3keKmrSpaZeyajLUCjaLQ",
+			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IiIsImlhdCI6MTYzMDQ1NjQxN30.osnqkOnOuGeWMdflBX1njR8zzd48VAbVBKu-xePS-TU",
 			"track_format": "single-track",
 			"uri": "https://api.soundcloud.com/tracks/935985013",
 			"urn": "soundcloud:tracks:935985013",
@@ -12221,7 +12221,7 @@
 			"streamable": true,
 			"tag_list": "",
 			"title": "A video game",
-			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6ImVmM2VlOWUzLTQ4ZDUtNDI1OS1hYzYzLTNiZTZjMjY2MjY0MiIsImlhdCI6MTYyOTg5MjIzNH0.xtKSoMR3JRyKj6J3zZky3wJEi2WXBzTAx4RiDHUEkhE",
+			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6ImVmM2VlOWUzLTQ4ZDUtNDI1OS1hYzYzLTNiZTZjMjY2MjY0MiIsImlhdCI6MTYzMDQ1NjQxN30.E14CfdA0mlLLRhFVuTy5AtFRYRMz9EK795k-1aYoAW4",
 			"track_format": "single-track",
 			"uri": "https://api.soundcloud.com/tracks/935973070",
 			"urn": "soundcloud:tracks:935973070",
@@ -12323,7 +12323,7 @@
 			"streamable": true,
 			"tag_list": "",
 			"title": "2015-01-20: Waterfall",
-			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IjJlNTU5NDI5LWFjZTktNGFkNC05OWY4LTQ3YjQzMTA2ZGQzOSIsImlhdCI6MTYyOTg5MjIzNH0.yhmr3lVKtl6QFz_pWBLKYpfK7ORzbLtsvav4VlHtBlM",
+			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IjJlNTU5NDI5LWFjZTktNGFkNC05OWY4LTQ3YjQzMTA2ZGQzOSIsImlhdCI6MTYzMDQ1NjQxN30.o6Z0RSg7HbFo2pz0bk2LkFdiI37dLGlFPK7teFdBoYk",
 			"track_format": "single-track",
 			"uri": "https://api.soundcloud.com/tracks/317969466",
 			"urn": "soundcloud:tracks:317969466",
@@ -12426,7 +12426,7 @@
 			"streamable": true,
 			"tag_list": "",
 			"title": "2015-01-24: Kawaii",
-			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IjBjYjY0YWVkLWQ1ODAtNDk5MS05NWU4LTIxOTI5Y2ZkOTA3OCIsImlhdCI6MTYyOTg5MjIzNH0.2mlGZQWfi6N4j4T_eUZShM3m78gVOvf5dhB1c87qKz4",
+			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IjBjYjY0YWVkLWQ1ODAtNDk5MS05NWU4LTIxOTI5Y2ZkOTA3OCIsImlhdCI6MTYzMDQ1NjQxN30.XK9eaL7s-VPBdzYm--3k1y8OSbonn5GFUPqvb3F9NDo",
 			"track_format": "single-track",
 			"uri": "https://api.soundcloud.com/tracks/317968925",
 			"urn": "soundcloud:tracks:317968925",
@@ -12509,7 +12509,7 @@
 			"monetization_model": "BLACKBOX",
 			"permalink": "average-tone-beat-bandoliers",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-beat-bandoliers",
-			"playback_count": 330,
+			"playback_count": 331,
 			"policy": "MONETIZE",
 			"public": true,
 			"publisher_metadata": {
@@ -12528,7 +12528,7 @@
 			"streamable": true,
 			"tag_list": "audacity tone hide",
 			"title": "Average tone / beat: Bandoliers",
-			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IjFmNzBmNjM3LWQ0YmYtNDlhNi1iZGU0LWNhZWZjMDMzZDBkMSIsImlhdCI6MTYyOTg5MjIzNH0.55ZKHeGrXufxGbgtYtFKh0kjkakgktkXb_R4sGIDqH8",
+			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IjFmNzBmNjM3LWQ0YmYtNDlhNi1iZGU0LWNhZWZjMDMzZDBkMSIsImlhdCI6MTYzMDQ1NjQxN30.HDCF56bOWB_Qe4vaSFleVA4MFZVGvXUh-hovdvWgB0g",
 			"track_format": "single-track",
 			"uri": "https://api.soundcloud.com/tracks/139987561",
 			"urn": "soundcloud:tracks:139987561",
@@ -12611,7 +12611,7 @@
 			"monetization_model": "BLACKBOX",
 			"permalink": "average-tone-beat-2-1",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-beat-2-1",
-			"playback_count": 208,
+			"playback_count": 209,
 			"policy": "MONETIZE",
 			"public": true,
 			"publisher_metadata": {
@@ -12630,7 +12630,7 @@
 			"streamable": true,
 			"tag_list": "audacity tones hide",
 			"title": "Average tone / beat: 2-1",
-			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6Ijc1OWRhMzM5LTYwM2ItNDcwMS04M2NjLWMxNDRjOTQyODU3NCIsImlhdCI6MTYyOTg5MjIzNH0.Ed8XzBij3m7aBQ4iNcWe42gTLiDse3XNyd4IgqO2dHg",
+			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6Ijc1OWRhMzM5LTYwM2ItNDcwMS04M2NjLWMxNDRjOTQyODU3NCIsImlhdCI6MTYzMDQ1NjQxN30.MwIs8M_iula_3NNucOIUbDyryKekmw4zQCmvxjFNpqo",
 			"track_format": "single-track",
 			"uri": "https://api.soundcloud.com/tracks/139985315",
 			"urn": "soundcloud:tracks:139985315",
@@ -12713,7 +12713,7 @@
 			"monetization_model": "NOT_APPLICABLE",
 			"permalink": "average-tone-misty-sapphire",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-misty-sapphire",
-			"playback_count": 685,
+			"playback_count": 687,
 			"policy": "ALLOW",
 			"public": true,
 			"publisher_metadata": {
@@ -12732,7 +12732,7 @@
 			"streamable": true,
 			"tag_list": "audacity tones hide",
 			"title": "Average tone: Misty Sapphire",
-			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6ImVhMzNiMWYzLWYzYzctNDk5My1iNjNkLThjYTI1ZDRiMTdhMCIsImlhdCI6MTYyOTg5MjIzNH0.ScmCsKjafG1PBs9Hb6yIFVAEepXI_PQzHeV_QF6K6ZU",
+			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6ImVhMzNiMWYzLWYzYzctNDk5My1iNjNkLThjYTI1ZDRiMTdhMCIsImlhdCI6MTYzMDQ1NjQxN30.WFZsasj3WdcZHYDYdeXHclNfo6HSnkWjJJpYKfjU4W8",
 			"track_format": "single-track",
 			"uri": "https://api.soundcloud.com/tracks/139984944",
 			"urn": "soundcloud:tracks:139984944",
@@ -12845,7 +12845,7 @@
 			"streamable": true,
 			"tag_list": "audacity tones hide",
 			"title": "Average tone: Talk Box (Kill The Noise Remix)",
-			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6ImEyNTI2NWMyLTFkNGUtNGQ5Yi1iNDI1LWQ0OTQ1MDdkNmI0MSIsImlhdCI6MTYyOTg5MjIzNH0.z2bsTx9vWSVyyChEXoiKJNY1D6sYS7z5rko7TJTPjQo",
+			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6ImEyNTI2NWMyLTFkNGUtNGQ5Yi1iNDI1LWQ0OTQ1MDdkNmI0MSIsImlhdCI6MTYzMDQ1NjQxN30.9n0ROmIlQpSz1ZU_9-idhYMqKmL10hpuBCKAbsOvs1s",
 			"track_format": "single-track",
 			"uri": "https://api.soundcloud.com/tracks/139984943",
 			"urn": "soundcloud:tracks:139984943",
@@ -12928,7 +12928,7 @@
 			"monetization_model": "NOT_APPLICABLE",
 			"permalink": "average-tone-music-for-18",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-music-for-18",
-			"playback_count": 562,
+			"playback_count": 563,
 			"policy": "ALLOW",
 			"public": true,
 			"publisher_metadata": null,
@@ -12944,7 +12944,7 @@
 			"streamable": true,
 			"tag_list": "audacity tones",
 			"title": "Average tone: Music For 18 Musicians",
-			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IiIsImlhdCI6MTYyOTg5MjIzNH0.cuUb4PmW3zRJ8_dItTT7oc3keKmrSpaZeyajLUCjaLQ",
+			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IiIsImlhdCI6MTYzMDQ1NjQxN30.osnqkOnOuGeWMdflBX1njR8zzd48VAbVBKu-xePS-TU",
 			"track_format": "single-track",
 			"uri": "https://api.soundcloud.com/tracks/139984941",
 			"urn": "soundcloud:tracks:139984941",
@@ -13046,7 +13046,7 @@
 			"streamable": true,
 			"tag_list": "audacity tones hide",
 			"title": "Average tone / beat: A440",
-			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6ImRlZGJhNjM3LWIyNWUtNDIxYi04MjQ2LTM1ODE0Zjk3OTMxYSIsImlhdCI6MTYyOTg5MjIzNH0.ipZoUZIpI2dT5Tfi3sXDUnv236sP4dhsUApxpfwzQvs",
+			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6ImRlZGJhNjM3LWIyNWUtNDIxYi04MjQ2LTM1ODE0Zjk3OTMxYSIsImlhdCI6MTYzMDQ1NjQxN30.D8INlJq2_5ExXUNnDtkJxIRyNyv42JTPupeuGb9NKNg",
 			"track_format": "single-track",
 			"uri": "https://api.soundcloud.com/tracks/139984939",
 			"urn": "soundcloud:tracks:139984939",
@@ -13129,7 +13129,7 @@
 			"monetization_model": "BLACKBOX",
 			"permalink": "average-tone-beat-another",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-beat-another",
-			"playback_count": 278,
+			"playback_count": 279,
 			"policy": "MONETIZE",
 			"public": true,
 			"publisher_metadata": {
@@ -13148,7 +13148,7 @@
 			"streamable": true,
 			"tag_list": "audacity tones hide",
 			"title": "Average tone / beat: Another World",
-			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6ImZiZjg3OWFmLWJlOGUtNDUxOC1hY2U0LThhY2RlNzg4YjZiMCIsImlhdCI6MTYyOTg5MjIzNH0.MrbPom2b33__OlyEExfrzm1mVaMzWLHSEvFBLem6N2k",
+			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6ImZiZjg3OWFmLWJlOGUtNDUxOC1hY2U0LThhY2RlNzg4YjZiMCIsImlhdCI6MTYzMDQ1NjQxN30.3Dzl3ZyrKxQ10p9acZpNZXNsGcIj_XR3HmDm6zNMQXY",
 			"track_format": "single-track",
 			"uri": "https://api.soundcloud.com/tracks/139984938",
 			"urn": "soundcloud:tracks:139984938",
@@ -13250,7 +13250,7 @@
 			"streamable": true,
 			"tag_list": "hide",
 			"title": "Berklee Assignment 3: Sight Reading (Part 4) (8th note metronome)",
-			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IiIsImlhdCI6MTYyOTg5MjIzNH0.cuUb4PmW3zRJ8_dItTT7oc3keKmrSpaZeyajLUCjaLQ",
+			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IiIsImlhdCI6MTYzMDQ1NjQxN30.osnqkOnOuGeWMdflBX1njR8zzd48VAbVBKu-xePS-TU",
 			"track_format": "single-track",
 			"uri": "https://api.soundcloud.com/tracks/93017600",
 			"urn": "soundcloud:tracks:93017600",
@@ -13352,7 +13352,7 @@
 			"streamable": true,
 			"tag_list": "hide",
 			"title": "Berklee Assignment 3: Sight Reading (Part 3)",
-			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IjJjMTNkZThlLTY1ZjYtNDUzZC1iMTZiLTAxYTJkNTY1MDMzOCIsImlhdCI6MTYyOTg5MjIzNH0.LJL911NrkznX9DDT4XwYoNRHxZarC8Bu0z4R7281Lvk",
+			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IjJjMTNkZThlLTY1ZjYtNDUzZC1iMTZiLTAxYTJkNTY1MDMzOCIsImlhdCI6MTYzMDQ1NjQxN30.5nU_I82VTRdAk63YqqeTv43_TDsPb9OakeXS-lJV0fg",
 			"track_format": "single-track",
 			"uri": "https://api.soundcloud.com/tracks/93017542",
 			"urn": "soundcloud:tracks:93017542",
@@ -13454,7 +13454,7 @@
 			"streamable": true,
 			"tag_list": "hide",
 			"title": "Berklee Assignment 3: Sight Reading (Part 2)",
-			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IjgwODgyNzk2LTljNTQtNGVlMC1iMWE1LTVlYWE1YTg0MDA5NSIsImlhdCI6MTYyOTg5MjIzNH0.VcdWpnI9BchxoNAYPy5KoeHc2bof2MLc5Q4F1-11IHM",
+			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IjgwODgyNzk2LTljNTQtNGVlMC1iMWE1LTVlYWE1YTg0MDA5NSIsImlhdCI6MTYzMDQ1NjQxN30.0rFJdbXqnwI1PTQ-smrfVSzLzLov2mb8H3A8erIZQCQ",
 			"track_format": "single-track",
 			"uri": "https://api.soundcloud.com/tracks/93017504",
 			"urn": "soundcloud:tracks:93017504",
@@ -13556,7 +13556,7 @@
 			"streamable": true,
 			"tag_list": "hide",
 			"title": "Berklee Assignment 3: Sight Reading (Part 1)",
-			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IjcyMGQ4ZjI4LTRjY2MtNDI3MS1hNzUxLTAzZTRlMzRkYWQ3MSIsImlhdCI6MTYyOTg5MjIzNH0.QQQSyjBUiEMg5wrsAV_3Mo_WUtTHjuMZGjGW1SQzLV8",
+			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IjcyMGQ4ZjI4LTRjY2MtNDI3MS1hNzUxLTAzZTRlMzRkYWQ3MSIsImlhdCI6MTYzMDQ1NjQxN30.VTYPc6LrSmS_wt6Sg3hQEFuYZ3UfQZ0dCmCrB7UzkuY",
 			"track_format": "single-track",
 			"uri": "https://api.soundcloud.com/tracks/93017447",
 			"urn": "soundcloud:tracks:93017447",
@@ -13658,7 +13658,7 @@
 			"streamable": true,
 			"tag_list": "hide",
 			"title": "Berklee Assignment 2: Strumming Technique",
-			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IiIsImlhdCI6MTYyOTg5MjIzNH0.cuUb4PmW3zRJ8_dItTT7oc3keKmrSpaZeyajLUCjaLQ",
+			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IiIsImlhdCI6MTYzMDQ1NjQxN30.osnqkOnOuGeWMdflBX1njR8zzd48VAbVBKu-xePS-TU",
 			"track_format": "single-track",
 			"uri": "https://api.soundcloud.com/tracks/92038775",
 			"urn": "soundcloud:tracks:92038775",
@@ -13760,7 +13760,7 @@
 			"streamable": true,
 			"tag_list": "hide",
 			"title": "Berklee Assignment 2: Finger Picking",
-			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IjczYWMwZWI5LTY2YjMtNDY5My05ZDJiLWEwODlmMjg5ODg0MiIsImlhdCI6MTYyOTg5MjIzNH0.eNoQO-XBLKtfFa7Qr6Nd0vTn1ECdeDql-R0buJ4u2Cc",
+			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IjczYWMwZWI5LTY2YjMtNDY5My05ZDJiLWEwODlmMjg5ODg0MiIsImlhdCI6MTYzMDQ1NjQxN30.KvhOy2-EaqTWTB2fJQ32z2BztiXh3rvz32Hc5OYdFL0",
 			"track_format": "single-track",
 			"uri": "https://api.soundcloud.com/tracks/92037621",
 			"urn": "soundcloud:tracks:92037621",
@@ -13862,7 +13862,7 @@
 			"streamable": true,
 			"tag_list": "hide",
 			"title": "Berklee Assignment 2: Picking Technique",
-			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IiIsImlhdCI6MTYyOTg5MjIzNn0.QuNuNhIsAyi99JJrSDC_5jl9XDAotpjbCNQthm8JMP4",
+			"track_authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJnZW8iOiJDQSIsInN1YiI6IiIsInJpZCI6IiIsImlhdCI6MTYzMDQ1NjQxOX0.KWT3DcHmJgrocY7lDiN9qO99BYjRw9hJC9E_iclm5Mw",
 			"track_format": "single-track",
 			"uri": "https://api.soundcloud.com/tracks/92037387",
 			"urn": "soundcloud:tracks:92037387",
