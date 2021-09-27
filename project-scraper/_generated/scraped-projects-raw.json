@@ -75,13 +75,13 @@
 						"class": "User",
 						"created_at": "2018-11-04T04:37:31.411Z",
 						"first_name": "riley",
-						"follower_count": 7,
+						"follower_count": 8,
 						"following_count": 39,
 						"full_name": "riley shaw",
 						"id": 72803,
 						"initials": "rs",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -164,13 +164,13 @@
 						"class": "User",
 						"created_at": "2018-11-04T04:37:31.411Z",
 						"first_name": "riley",
-						"follower_count": 7,
+						"follower_count": 8,
 						"following_count": 39,
 						"full_name": "riley shaw",
 						"id": 72803,
 						"initials": "rs",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -246,13 +246,13 @@
 						"class": "User",
 						"created_at": "2018-11-04T04:37:31.411Z",
 						"first_name": "riley",
-						"follower_count": 7,
+						"follower_count": 8,
 						"following_count": 39,
 						"full_name": "riley shaw",
 						"id": 72803,
 						"initials": "rs",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -321,7 +321,7 @@
 						"id": 8551,
 						"initials": "hv",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": true,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -404,13 +404,13 @@
 						"class": "User",
 						"created_at": "2018-11-04T04:37:31.411Z",
 						"first_name": "riley",
-						"follower_count": 7,
+						"follower_count": 8,
 						"following_count": 39,
 						"full_name": "riley shaw",
 						"id": 72803,
 						"initials": "rs",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -486,13 +486,13 @@
 						"class": "User",
 						"created_at": "2018-11-04T04:37:31.411Z",
 						"first_name": "riley",
-						"follower_count": 7,
+						"follower_count": 8,
 						"following_count": 39,
 						"full_name": "riley shaw",
 						"id": 72803,
 						"initials": "rs",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -543,13 +543,13 @@
 				"class": "User",
 				"created_at": "2018-11-04T04:37:31.411Z",
 				"first_name": "riley",
-				"follower_count": 7,
+				"follower_count": 8,
 				"following_count": 39,
 				"full_name": "riley shaw",
 				"id": 72803,
 				"initials": "rs",
 				"is_confirmed": true,
-				"is_exceeding_private_connections_limit": false,
+				"is_exceeding_connections_limit": false,
 				"is_lifetime_premium": false,
 				"is_pending_confirmation": false,
 				"is_pending_reconfirmation": false,
@@ -587,7 +587,7 @@
 					"connection_id": 10715076,
 					"contents": null,
 					"created_at": "2017-12-01T22:32:52.062Z",
-					"follower_count": 2260,
+					"follower_count": 2322,
 					"group": null,
 					"id": 112808,
 					"kind": "default",
@@ -606,7 +606,7 @@
 					"state": "available",
 					"status": "public",
 					"title": "plants and grids",
-					"updated_at": "2021-08-31T18:47:06.404Z",
+					"updated_at": "2021-09-27T15:51:09.806Z",
 					"user": {
 						"avatar": "https://arena-avatars.s3.amazonaws.com/14299/small_f8196d90a0119a1a70220297cd1c843d.png?1512271217",
 						"avatar_image": {
@@ -616,17 +616,17 @@
 						"badge": "investor",
 						"base_class": "User",
 						"can_index": true,
-						"channel_count": 427,
+						"channel_count": 429,
 						"class": "User",
 						"created_at": "2017-03-03T23:42:52.484Z",
 						"first_name": "Clement",
-						"follower_count": 585,
+						"follower_count": 594,
 						"following_count": 1067,
 						"full_name": "Clement Valla",
 						"id": 14299,
 						"initials": "CV",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -709,13 +709,13 @@
 						"class": "User",
 						"created_at": "2018-11-04T04:37:31.411Z",
 						"first_name": "riley",
-						"follower_count": 7,
+						"follower_count": 8,
 						"following_count": 39,
 						"full_name": "riley shaw",
 						"id": 72803,
 						"initials": "rs",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -798,13 +798,13 @@
 						"class": "User",
 						"created_at": "2018-11-04T04:37:31.411Z",
 						"first_name": "riley",
-						"follower_count": 7,
+						"follower_count": 8,
 						"following_count": 39,
 						"full_name": "riley shaw",
 						"id": 72803,
 						"initials": "rs",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -887,13 +887,13 @@
 						"class": "User",
 						"created_at": "2018-11-04T04:37:31.411Z",
 						"first_name": "riley",
-						"follower_count": 7,
+						"follower_count": 8,
 						"following_count": 39,
 						"full_name": "riley shaw",
 						"id": 72803,
 						"initials": "rs",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -976,13 +976,13 @@
 						"class": "User",
 						"created_at": "2018-11-04T04:37:31.411Z",
 						"first_name": "riley",
-						"follower_count": 7,
+						"follower_count": 8,
 						"following_count": 39,
 						"full_name": "riley shaw",
 						"id": 72803,
 						"initials": "rs",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -1037,13 +1037,13 @@
 						"class": "User",
 						"created_at": "2018-11-04T04:37:31.411Z",
 						"first_name": "riley",
-						"follower_count": 7,
+						"follower_count": 8,
 						"following_count": 39,
 						"full_name": "riley shaw",
 						"id": 72803,
 						"initials": "rs",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -1094,13 +1094,13 @@
 				"class": "User",
 				"created_at": "2018-11-04T04:37:31.411Z",
 				"first_name": "riley",
-				"follower_count": 7,
+				"follower_count": 8,
 				"following_count": 39,
 				"full_name": "riley shaw",
 				"id": 72803,
 				"initials": "rs",
 				"is_confirmed": true,
-				"is_exceeding_private_connections_limit": false,
+				"is_exceeding_connections_limit": false,
 				"is_lifetime_premium": false,
 				"is_pending_confirmation": false,
 				"is_pending_reconfirmation": false,
@@ -1191,13 +1191,13 @@
 						"class": "User",
 						"created_at": "2018-11-04T04:37:31.411Z",
 						"first_name": "riley",
-						"follower_count": 7,
+						"follower_count": 8,
 						"following_count": 39,
 						"full_name": "riley shaw",
 						"id": 72803,
 						"initials": "rs",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -1280,13 +1280,13 @@
 						"class": "User",
 						"created_at": "2018-11-04T04:37:31.411Z",
 						"first_name": "riley",
-						"follower_count": 7,
+						"follower_count": 8,
 						"following_count": 39,
 						"full_name": "riley shaw",
 						"id": 72803,
 						"initials": "rs",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -1369,13 +1369,13 @@
 						"class": "User",
 						"created_at": "2018-11-04T04:37:31.411Z",
 						"first_name": "riley",
-						"follower_count": 7,
+						"follower_count": 8,
 						"following_count": 39,
 						"full_name": "riley shaw",
 						"id": 72803,
 						"initials": "rs",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -1458,13 +1458,13 @@
 						"class": "User",
 						"created_at": "2018-11-04T04:37:31.411Z",
 						"first_name": "riley",
-						"follower_count": 7,
+						"follower_count": 8,
 						"following_count": 39,
 						"full_name": "riley shaw",
 						"id": 72803,
 						"initials": "rs",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -1558,13 +1558,13 @@
 						"class": "User",
 						"created_at": "2018-11-04T04:37:31.411Z",
 						"first_name": "riley",
-						"follower_count": 7,
+						"follower_count": 8,
 						"following_count": 39,
 						"full_name": "riley shaw",
 						"id": 72803,
 						"initials": "rs",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -1647,13 +1647,13 @@
 						"class": "User",
 						"created_at": "2018-11-04T04:37:31.411Z",
 						"first_name": "riley",
-						"follower_count": 7,
+						"follower_count": 8,
 						"following_count": 39,
 						"full_name": "riley shaw",
 						"id": 72803,
 						"initials": "rs",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -1704,13 +1704,13 @@
 				"class": "User",
 				"created_at": "2018-11-04T04:37:31.411Z",
 				"first_name": "riley",
-				"follower_count": 7,
+				"follower_count": 8,
 				"following_count": 39,
 				"full_name": "riley shaw",
 				"id": 72803,
 				"initials": "rs",
 				"is_confirmed": true,
-				"is_exceeding_private_connections_limit": false,
+				"is_exceeding_connections_limit": false,
 				"is_lifetime_premium": false,
 				"is_pending_confirmation": false,
 				"is_pending_reconfirmation": false,
@@ -1801,13 +1801,13 @@
 						"class": "User",
 						"created_at": "2018-11-04T04:37:31.411Z",
 						"first_name": "riley",
-						"follower_count": 7,
+						"follower_count": 8,
 						"following_count": 39,
 						"full_name": "riley shaw",
 						"id": 72803,
 						"initials": "rs",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -1890,13 +1890,13 @@
 						"class": "User",
 						"created_at": "2018-11-04T04:37:31.411Z",
 						"first_name": "riley",
-						"follower_count": 7,
+						"follower_count": 8,
 						"following_count": 39,
 						"full_name": "riley shaw",
 						"id": 72803,
 						"initials": "rs",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -1972,13 +1972,13 @@
 						"class": "User",
 						"created_at": "2018-11-12T09:05:27.700Z",
 						"first_name": "dé",
-						"follower_count": 227,
+						"follower_count": 235,
 						"following_count": 120,
 						"full_name": "dé 🥐",
 						"id": 73554,
 						"initials": "d🥐",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -2061,13 +2061,13 @@
 						"class": "User",
 						"created_at": "2018-11-04T04:37:31.411Z",
 						"first_name": "riley",
-						"follower_count": 7,
+						"follower_count": 8,
 						"following_count": 39,
 						"full_name": "riley shaw",
 						"id": 72803,
 						"initials": "rs",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -2167,7 +2167,7 @@
 						"id": 9394,
 						"initials": "KB",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": true,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -2243,13 +2243,13 @@
 						"class": "User",
 						"created_at": "2018-11-04T04:37:31.411Z",
 						"first_name": "riley",
-						"follower_count": 7,
+						"follower_count": 8,
 						"following_count": 39,
 						"full_name": "riley shaw",
 						"id": 72803,
 						"initials": "rs",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -2298,13 +2298,13 @@
 				"class": "User",
 				"created_at": "2018-11-04T04:37:31.411Z",
 				"first_name": "riley",
-				"follower_count": 7,
+				"follower_count": 8,
 				"following_count": 39,
 				"full_name": "riley shaw",
 				"id": 72803,
 				"initials": "rs",
 				"is_confirmed": true,
-				"is_exceeding_private_connections_limit": false,
+				"is_exceeding_connections_limit": false,
 				"is_lifetime_premium": false,
 				"is_pending_confirmation": false,
 				"is_pending_reconfirmation": false,
@@ -2395,13 +2395,13 @@
 						"class": "User",
 						"created_at": "2018-11-04T04:37:31.411Z",
 						"first_name": "riley",
-						"follower_count": 7,
+						"follower_count": 8,
 						"following_count": 39,
 						"full_name": "riley shaw",
 						"id": 72803,
 						"initials": "rs",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -2484,13 +2484,13 @@
 						"class": "User",
 						"created_at": "2018-11-04T04:37:31.411Z",
 						"first_name": "riley",
-						"follower_count": 7,
+						"follower_count": 8,
 						"following_count": 39,
 						"full_name": "riley shaw",
 						"id": 72803,
 						"initials": "rs",
 						"is_confirmed": true,
-						"is_exceeding_private_connections_limit": false,
+						"is_exceeding_connections_limit": false,
 						"is_lifetime_premium": false,
 						"is_pending_confirmation": false,
 						"is_pending_reconfirmation": false,
@@ -2541,13 +2541,13 @@
 				"class": "User",
 				"created_at": "2018-11-04T04:37:31.411Z",
 				"first_name": "riley",
-				"follower_count": 7,
+				"follower_count": 8,
 				"following_count": 39,
 				"full_name": "riley shaw",
 				"id": 72803,
 				"initials": "rs",
 				"is_confirmed": true,
-				"is_exceeding_private_connections_limit": false,
+				"is_exceeding_connections_limit": false,
 				"is_lifetime_premium": false,
 				"is_pending_confirmation": false,
 				"is_pending_reconfirmation": false,
@@ -2606,13 +2606,13 @@
 				"class": "User",
 				"created_at": "2018-11-04T04:37:31.411Z",
 				"first_name": "riley",
-				"follower_count": 7,
+				"follower_count": 8,
 				"following_count": 39,
 				"full_name": "riley shaw",
 				"id": 72803,
 				"initials": "rs",
 				"is_confirmed": true,
-				"is_exceeding_private_connections_limit": false,
+				"is_exceeding_connections_limit": false,
 				"is_lifetime_premium": false,
 				"is_pending_confirmation": false,
 				"is_pending_reconfirmation": false,
@@ -5650,7 +5650,7 @@
 			],
 			"comment_count": 1,
 			"created_at": "2021-05-17T19:27:18+00:00",
-			"download_count": 19,
+			"download_count": 20,
 			"excerpt": "Set and toggle 16 independent LFOs. You can cross-modulate them if you want, but by...",
 			"id": 140563,
 			"like_count": 3,
@@ -5736,7 +5736,7 @@
 			],
 			"title": "LFOs",
 			"updated_at": "2021-05-28T22:50:28+00:00",
-			"view_count": 361
+			"view_count": 404
 		},
 		{
 			"artwork": {
@@ -5827,7 +5827,7 @@
 			],
 			"title": "Panning gravity delay",
 			"updated_at": "2021-03-13T21:32:42+00:00",
-			"view_count": 326
+			"view_count": 362
 		},
 		{
 			"artwork": {
@@ -5918,7 +5918,7 @@
 			],
 			"title": "Gravity delay",
 			"updated_at": "2021-03-13T21:27:21+00:00",
-			"view_count": 479
+			"view_count": 523
 		},
 		{
 			"artwork": {
@@ -5979,7 +5979,7 @@
 			],
 			"title": "MIDI Channel Shifter",
 			"updated_at": "2021-01-10T22:24:56+00:00",
-			"view_count": 299
+			"view_count": 311
 		},
 		{
 			"artwork": {
@@ -6055,7 +6055,7 @@
 			],
 			"title": "Dedupe",
 			"updated_at": "2021-03-13T21:28:23+00:00",
-			"view_count": 393
+			"view_count": 413
 		},
 		{
 			"artwork": {
@@ -6080,7 +6080,7 @@
 			],
 			"comment_count": 0,
 			"created_at": "2020-12-12T02:57:37+00:00",
-			"download_count": 15,
+			"download_count": 16,
 			"excerpt": "This demo rack uses a few Math modules to convert an integer MIDI note number...",
 			"id": 133014,
 			"like_count": 1,
@@ -6131,7 +6131,7 @@
 			],
 			"title": "MIDI note # to pitch conversion",
 			"updated_at": "2020-12-12T20:53:48+00:00",
-			"view_count": 255
+			"view_count": 273
 		},
 		{
 			"artwork": {
@@ -6151,7 +6151,7 @@
 			],
 			"comment_count": 0,
 			"created_at": "2020-12-12T02:36:30+00:00",
-			"download_count": 17,
+			"download_count": 18,
 			"excerpt": "This is a MIDI panic rack. I've been using Drambo more and more to sequence...",
 			"id": 133008,
 			"like_count": 2,
@@ -6207,7 +6207,7 @@
 			],
 			"title": "Panic! At The Drambo",
 			"updated_at": "2020-12-12T06:57:01+00:00",
-			"view_count": 358
+			"view_count": 390
 		},
 		{
 			"artwork": {
@@ -6232,7 +6232,7 @@
 			],
 			"comment_count": 1,
 			"created_at": "2020-11-27T04:17:14+00:00",
-			"download_count": 37,
+			"download_count": 39,
 			"excerpt": "A first pass at recreating my favourite parts of Alex Matheu's lovely GlitchCore app in...",
 			"id": 132469,
 			"like_count": 6,
@@ -6293,7 +6293,7 @@
 			],
 			"title": "Glitch More",
 			"updated_at": "2021-03-13T21:54:33+00:00",
-			"view_count": 603
+			"view_count": 644
 		},
 		{
 			"artwork": {
@@ -6313,7 +6313,7 @@
 			],
 			"comment_count": 4,
 			"created_at": "2020-11-09T17:08:14+00:00",
-			"download_count": 18,
+			"download_count": 19,
 			"excerpt": "A simple MIDI mapping for my Jambo hardware controller. The DIY guide is up at...",
 			"id": 131668,
 			"like_count": 1,
@@ -6379,7 +6379,7 @@
 			],
 			"title": "Jambo MIDI map",
 			"updated_at": "2021-01-05T01:34:44+00:00",
-			"view_count": 368
+			"view_count": 379
 		},
 		{
 			"artwork": {
@@ -6404,7 +6404,7 @@
 			],
 			"comment_count": 0,
 			"created_at": "2020-10-16T00:17:04+00:00",
-			"download_count": 45,
+			"download_count": 46,
 			"excerpt": "A parameter-lockable, MIDI-mappable converter from a single MIDI note to 8 configurable chords. For my...",
 			"id": 130675,
 			"like_count": 5,
@@ -6455,7 +6455,7 @@
 			],
 			"title": "Chorder!",
 			"updated_at": "2020-10-16T00:17:04+00:00",
-			"view_count": 721
+			"view_count": 757
 		}
 	],
 	"screenshotsTumblr": [
@@ -6480,6 +6480,7 @@
 			"id": "656808619808112640",
 			"id_string": "656808619808112640",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/656808619808112640",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"photos": [
 				{
@@ -6553,6 +6554,7 @@
 			"format": "html",
 			"id": "655613490564939776",
 			"id_string": "655613490564939776",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"photos": [
 				{
@@ -6819,18 +6821,19 @@
 			"html5_capable": true,
 			"id": "648936317634363392",
 			"id_string": "648936317634363392",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-612ed4ad57891680032587' class='crt-video crt-skin-default' width='250' height='251' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-61522445ee6f2971974257' class='crt-video crt-skin-default' width='250' height='251' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-612ed4ad57891680032587' class='crt-video crt-skin-default' width='400' height='402' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-61522445ee6f2971974257' class='crt-video crt-skin-default' width='400' height='402' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-612ed4ad57891680032587' class='crt-video crt-skin-default' width='500' height='502' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-61522445ee6f2971974257' class='crt-video crt-skin-default' width='500' height='502' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -6879,6 +6882,7 @@
 			"format": "html",
 			"id": "648936073919070208",
 			"id_string": "648936073919070208",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"photos": [
 				{
@@ -7058,6 +7062,7 @@
 			"format": "html",
 			"id": "648936044176261120",
 			"id_string": "648936044176261120",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"photos": [
 				{
@@ -7417,6 +7422,7 @@
 			"format": "html",
 			"id": "648935871611092992",
 			"id_string": "648935871611092992",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"photos": [
 				{
@@ -7911,6 +7917,7 @@
 			"format": "html",
 			"id": "648935582631903232",
 			"id_string": "648935582631903232",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"photos": [
 				{
@@ -8090,6 +8097,7 @@
 			"format": "html",
 			"id": "648934708695236608",
 			"id_string": "648934708695236608",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"photos": [
 				{
@@ -8540,6 +8548,7 @@
 			"id": "645675992489345024",
 			"id_string": "645675992489345024",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/645675992489345024",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"photos": [
 				{
@@ -8641,6 +8650,7 @@
 			"id": "644678141352247296",
 			"id_string": "644678141352247296",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/644678141352247296",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"photos": [
 				{
@@ -8745,6 +8755,7 @@
 			"format": "html",
 			"id": "644417286725419008",
 			"id_string": "644417286725419008",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"photos": [
 				{
@@ -8890,6 +8901,7 @@
 			"format": "html",
 			"id": "644170627836755968",
 			"id_string": "644170627836755968",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"photos": [
 				{
@@ -9051,6 +9063,7 @@
 			"id": "640500172146802688",
 			"id_string": "640500172146802688",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/640500172146802688",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"photos": [
 				{
@@ -9191,6 +9204,7 @@
 			"format": "html",
 			"id": "640133626062929920",
 			"id_string": "640133626062929920",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"photos": [
 				{
@@ -9302,6 +9316,7 @@
 			"id": "639449421520715776",
 			"id_string": "639449421520715776",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/639449421520715776",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"photos": [
 				{
@@ -9401,6 +9416,7 @@
 			"id": "639449511924727808",
 			"id_string": "639449511924727808",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/639449511924727808",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"photos": [
 				{
@@ -9495,6 +9511,7 @@
 			"format": "html",
 			"id": "638679636843315200",
 			"id_string": "638679636843315200",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"post_url": "https://screenshots.rileyjshaw.com/post/638679636843315200",
 			"reblog": {
@@ -9576,6 +9593,7 @@
 			"id": "637440003545366528",
 			"id_string": "637440003545366528",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/637440003545366528",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"photos": [
 				{
@@ -9714,6 +9732,7 @@
 			"id": "636286701898203136",
 			"id_string": "636286701898203136",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/636286701898203136",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"photos": [
 				{
@@ -9818,6 +9837,7 @@
 			"format": "html",
 			"id": "636543845290721280",
 			"id_string": "636543845290721280",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"post_url": "https://screenshots.rileyjshaw.com/post/636543845290721280",
 			"reblog": {
@@ -9900,6 +9920,7 @@
 			"format": "html",
 			"id": "614491710124359680",
 			"id_string": "614491710124359680",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/614491710124359680/april-4th-is-deletion-day",
 			"reblog": {
@@ -9987,6 +10008,7 @@
 			"format": "html",
 			"id": "182905537092",
 			"id_string": "182905537092",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/182905537092/final-showcase-project-depression",
 			"reblog": {
@@ -10071,6 +10093,7 @@
 			"format": "html",
 			"id": "179360727897",
 			"id_string": "179360727897",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/179360727897/a-few-ideas-along-the-way",
 			"reblog": {
@@ -10152,6 +10175,7 @@
 			"format": "html",
 			"id": "173128872587",
 			"id_string": "173128872587",
+			"interactability_reblog": "everyone",
 			"note_count": 1,
 			"post_url": "https://sfpc.rileyjshaw.com/post/173128872587/calling-all-new-york-friends",
 			"reblog": {
@@ -10233,6 +10257,7 @@
 			"format": "html",
 			"id": "173089791367",
 			"id_string": "173089791367",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/173089791367/v1",
 			"reblog": {
@@ -10316,18 +10341,19 @@
 			"html5_capable": true,
 			"id": "189455640174",
 			"id_string": "189455640174",
+			"interactability_reblog": "everyone",
 			"note_count": 1,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-612ed4ad6026a247104238' class='crt-video crt-skin-default' width='250' height='142' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-61522445f400c869913282' class='crt-video crt-skin-default' width='250' height='142' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-612ed4ad6026a247104238' class='crt-video crt-skin-default' width='400' height='228' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-61522445f400c869913282' class='crt-video crt-skin-default' width='400' height='228' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-612ed4ad6026a247104238' class='crt-video crt-skin-default' width='500' height='285' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-61522445f400c869913282' class='crt-video crt-skin-default' width='500' height='285' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' >\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -10377,6 +10403,7 @@
 			"format": "html",
 			"id": "172627234582",
 			"id_string": "172627234582",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"photos": [
 				{
@@ -10574,6 +10601,7 @@
 			"format": "html",
 			"id": "172567522977",
 			"id_string": "172567522977",
+			"interactability_reblog": "everyone",
 			"note_count": 2,
 			"post_url": "https://sfpc.rileyjshaw.com/post/172567522977/telepresence-manifesto-2018-redux",
 			"reblog": {
@@ -10654,6 +10682,7 @@
 			"format": "html",
 			"id": "172536011902",
 			"id_string": "172536011902",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/172536011902/the-result-has-been-a-generalized-level-of-alarm",
 			"reblog": {
@@ -10695,6 +10724,7 @@
 			"format": "html",
 			"id": "179678255817",
 			"id_string": "179678255817",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/179678255817/the-possibility-vital-for-life-of-unhitching",
 			"reblog": {
@@ -10777,6 +10807,7 @@
 			"id": "172413506617",
 			"id_string": "172413506617",
 			"image_permalink": "https://sfpc.rileyjshaw.com/image/172413506617",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"photos": [
 				{
@@ -10917,6 +10948,7 @@
 			"id": "189455717657",
 			"id_string": "189455717657",
 			"image_permalink": "https://sfpc.rileyjshaw.com/image/189455717657",
+			"interactability_reblog": "everyone",
 			"note_count": 3,
 			"photos": [
 				{
@@ -11020,6 +11052,7 @@
 			"format": "html",
 			"id": "172372422682",
 			"id_string": "172372422682",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/172372422682/making-nothing",
 			"reblog": {
@@ -11100,6 +11133,7 @@
 			"format": "html",
 			"id": "172372156132",
 			"id_string": "172372156132",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/172372156132/i-suppose-what-we-have-to-do-is-survive-in-a-way",
 			"reblog": {
@@ -11142,6 +11176,7 @@
 			"id": "172324262942",
 			"id_string": "172324262942",
 			"image_permalink": "https://sfpc.rileyjshaw.com/image/172324262942",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"photos": [
 				{
@@ -11274,6 +11309,7 @@
 			"format": "html",
 			"id": "172315833927",
 			"id_string": "172315833927",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/172315833927/checking-in",
 			"reblog": {
@@ -11356,6 +11392,7 @@
 			"id": "189455667862",
 			"id_string": "189455667862",
 			"image_permalink": "https://sfpc.rileyjshaw.com/image/189455667862",
+			"interactability_reblog": "everyone",
 			"note_count": 1,
 			"photos": [
 				{
@@ -11458,6 +11495,7 @@
 			"format": "html",
 			"id": "179678418197",
 			"id_string": "179678418197",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/179678418197/i-actually-think-they-empower-a-certain-white",
 			"reblog": {
@@ -11499,6 +11537,7 @@
 			"format": "html",
 			"id": "171825548577",
 			"id_string": "171825548577",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/171825548577/border-crossing-headed-back-to-canada-for-the",
 			"reblog": {
@@ -11581,6 +11620,7 @@
 			"id": "171668817662",
 			"id_string": "171668817662",
 			"image_permalink": "https://sfpc.rileyjshaw.com/image/171668817662",
+			"interactability_reblog": "everyone",
 			"note_count": 0,
 			"photos": [
 				{
@@ -12501,7 +12541,7 @@
 			"monetization_model": "BLACKBOX",
 			"permalink": "average-tone-beat-bandoliers",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-beat-bandoliers",
-			"playback_count": 331,
+			"playback_count": 332,
 			"policy": "MONETIZE",
 			"public": true,
 			"publisher_metadata": {
@@ -12602,7 +12642,7 @@
 			"monetization_model": "BLACKBOX",
 			"permalink": "average-tone-beat-2-1",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-beat-2-1",
-			"playback_count": 209,
+			"playback_count": 210,
 			"policy": "MONETIZE",
 			"public": true,
 			"publisher_metadata": {
@@ -12703,7 +12743,7 @@
 			"monetization_model": "NOT_APPLICABLE",
 			"permalink": "average-tone-misty-sapphire",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-misty-sapphire",
-			"playback_count": 687,
+			"playback_count": 693,
 			"policy": "ALLOW",
 			"public": true,
 			"publisher_metadata": {
@@ -12815,7 +12855,7 @@
 			"monetization_model": "NOT_APPLICABLE",
 			"permalink": "average-tone-talk-box-kill-the",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-talk-box-kill-the",
-			"playback_count": 548,
+			"playback_count": 553,
 			"policy": "ALLOW",
 			"public": true,
 			"publisher_metadata": {
@@ -12916,7 +12956,7 @@
 			"monetization_model": "NOT_APPLICABLE",
 			"permalink": "average-tone-music-for-18",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-music-for-18",
-			"playback_count": 563,
+			"playback_count": 569,
 			"policy": "ALLOW",
 			"public": true,
 			"publisher_metadata": null,
@@ -13880,7 +13920,7 @@
 				"created_time": "2019-12-03T17:41:46+00:00",
 				"description": "This video played behind me during my Winter 2018 School for Poetic Computation intro. The following is a transcript of my talk:\n\nHey, ,\n\nSorry to message you about this so close to the slide deadline – I know the deadline's in place for your sake, and I respect your time.\n\nThe depth of introspection that an \"About me\" requires can kick off really intense feelings sometimes, and I'm in a bit of a hole. I'm comfortable doing a talk tomorrow, but scraping my past and defining myself positively is a taxing process. I'm staring at blank slides and I think I need to step outside to get some air.\n\nI'll have a talk tomorrow, but it's not coming out painless. Again, I'm sorry for complicating things. If you throw in a placeholder slide I'll do my best to help out with setup however I can. I'm not planning to focus on my past work, so a blank slide should be pretty close to what I need for this presentation anyway.\n\nHere's a summary of what I'll talk about with hopes that it'll help you arrange my talk with the others:\n\nI'll start by talking about how lucky I feel to be here, surrounded by folks that inspire me. I've been humbled throughout my life by the extraordinary people I've met and admired. I've met folks who have been further along on a journey, and who have been patient enough to teach me. I've met folks on different journeys who have been kind enough to welcome me into their spaces, and accepting enough to let me hang around.\n\nI'll stress that point because that's kinda the big thing for me while I'm here. I'm excited about tomorrow because I'll get to learn more about the folks in our batch, who I'm already so impressed with. And I think, as Amit put it, the most important day of this program is the first day after it's over. I'm so confident that the folks I'm spending time with are going to help me define what that looks like.\n\nI came here with plans, so I'll also go into some of the topics I'm focused on. Mental health hang-ups aside, I want to participate in this and I think I'll give a good talk tomorrow. I'm sorry for putting a bug in the schedule. G'night.\n\n---\n\nHey, I'm Riley. I spend some of my time excitable and in love with the world around me, and some of it in a deep hole. That's where I got to last night. I wasn't feeling the self-reflection, clearly, and somehow even though I'm still not, here I am sharing a more intimate side of myself than I ever have with a crowd. It was important to me to read that email because anything else felt like a severe omission. If you met me elsewhere, you might get the impression I had shit really together. That's one reason going over my polished portfolio felt dishonest.\n\nAfter sending that email I went for a walk and had an idea. So for the rest of the talk I'm playing a supercut of visuals I programmed while depressed, when I should have been sleeping, along with the commit timestamp. There are literally hundreds of these, these are just the first couple I grabbed. I stayed up most of the night arranging this video, and yes, I see the irony.\n\nDay to day, I think I’m pretty happy and excitable, so this feels like a really weird intro talk to give. But it’s all I could really write last night, so I’m going with it. There’s time still, so I wanna reintroduce myself by sharing some things I'm investigating in my practice.\n\nI just wrapped up a 3 year engineering gig at Khan Academy, which is an education nonprofit. Working there I thought a lot about education systems and their reinforcement of class structures. That's something I'm continuing to focus on.\n\nI'm also thinking about deletion, permanence, and consistency. Silicon Valley stores data because it entrenches people in their past behaviors. Corporate culture’s emphasis on consistency is ableist, colonizing, transphobic, and represents a growing discomfort with people’s fluidity. I hope someday we'll celebrate an International Day of Deletion in place of Facebook holidays.\n\nThe last one I'll mention is Technology-with-a-capital-T's trajectory, and how society relates to technology in general. I'm terrified of the systems we've built under capitalism, and I'm not optimistic about finding new solutions under unchanging systems. So I'm looking into maintenance and decentralization as potential alternatives to the Silicon Valley narrative.\n\n---\n\nThank you for your gracious attention. I'll be around after and I’m happy to talk.",
 				"embed": {
-					"html": "<iframe src=\"https://player.vimeo.com/video/377116426?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=198113&amp;h=6f1df11cf3\" width=\"1280\" height=\"720\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen title=\"timestamped\"></iframe>"
+					"html": "<iframe src=\"https://player.vimeo.com/video/377116426?h=6f1df11cf3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=198113\" width=\"1280\" height=\"720\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen title=\"timestamped\"></iframe>"
 				},
 				"link": "https://vimeo.com/377116426",
 				"name": "timestamped",
