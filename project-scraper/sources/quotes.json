@@ -422,5 +422,11 @@
 		"author": "Simon Sarris",
 		"source": "That which is unique, breaks",
 		"cite": "https://simonsarris.substack.com/p/that-which-is-unique-breaks"
+	},
+	"RETRO_GENERATIVE_MUSIC": {
+		"content": "The mechanical production of music is nothing other than a certain closely defined method I have invented, by which anyone, even if he has no musical knowledge, may, by the varied application of music-making instruments, compose music according to a desired style.",
+		"author": "Athanasius Kircher",
+		"source": "Musurgia Universalis (1650)",
+		"cite": "https://en.wikipedia.org/wiki/Musurgia_Universalis"
 	}
 }
