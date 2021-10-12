@@ -365,6 +365,13 @@
 		"uid": "REMEMBER_SHOES"
 	},
 	{
+		"author": "Athanasius Kircher",
+		"cite": "https://en.wikipedia.org/wiki/Musurgia_Universalis",
+		"content": "The mechanical production of music is nothing other than a certain closely defined method I have invented, by which anyone, even if he has no musical knowledge, may, by the varied application of music-making instruments, compose music according to a desired style.",
+		"source": "Musurgia Universalis (1650)",
+		"uid": "RETRO_GENERATIVE_MUSIC"
+	},
+	{
 		"author": "Audrey Watters",
 		"cite": "http://monsters.hackeducation.com/",
 		"content": "“Revolution” declines in frequency as “innovation” increases.",
