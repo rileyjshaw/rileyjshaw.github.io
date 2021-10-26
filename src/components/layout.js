@@ -1,5 +1,6 @@
 import PageHeader from '../components/page-header';
 import {STORAGE_KEYS} from '../util/constants';
+import {getNextHoliday} from '../util/holidays';
 import {useIdle, useInterval, useStickyState} from '../util/hooks';
 import AutoLink from './auto-link';
 import Banner from './banner';
@@ -8,25 +9,7 @@ import ClientOnly from './client-only';
 import './layout.css';
 import MouseTracker from './mouse-tracker';
 import {SettingsContext} from './settings-provider';
-import React, {useContext, useEffect, useState} from 'react';
-
-// TODO(April 2021): Just trying to be kind and clear out unused keys, but
-// delete this once April comes around.
-function toSnakeCase(camelCase) {
-	return camelCase.replace(/[A-Z]/g, letter => `_${letter}`).toUpperCase();
-}
-const unusedLocalStorageKeys = [
-	'ascending',
-	'nodeTypes',
-	'sortIdx',
-	'tagStates',
-	'typeStates',
-	'filterType',
-].flatMap(name =>
-	[name, toSnakeCase(name)].flatMap(unprefixedKey =>
-		[1, 2].map(n => `LAB_V${n}_${unprefixedKey}`)
-	)
-);
+import React, {useContext, useState} from 'react';
 
 const PAGE_CLASSES = {
 	'/': 'index-page',
@@ -46,23 +29,17 @@ const Layout = ({children, location}) => {
 		{scope: 'session', serverState: 0}
 	);
 	useIdle(60000 * 4 * (nTimesClosed + 1), () => setIsBlockerOpen(true));
-	const [isDeletionDayBannerOpen, setIsDeletionDayBannerOpen] =
-		useStickyState(true, STORAGE_KEYS.showDeletionDayBanner, 'session');
-	const [daysUntilDeletionDay, setDaysUntilDeletionDay] = useState(null);
+	const [activeHoliday, setActiveHoliday] = useState(null);
+	const [isHolidayBannerOpen, setIsHolidayBannerOpen] = useStickyState(
+		true,
+		STORAGE_KEYS.showHolidayBanner,
+		'session'
+	);
+
 	useInterval(() => {
-		const today = new Date();
-		const daysUntil = Math.ceil(
-			(new Date(today.getFullYear(), 3, 4) - today) / 86400000
-		);
-		if (daysUntil >= 0) {
-			setDaysUntilDeletionDay(daysUntil);
-		} else setDaysUntilDeletionDay(null);
+		const nextHoliday = getNextHoliday();
+		setActiveHoliday(nextHoliday.daysUntil <= 3 ? nextHoliday : null);
 	}, 60000);
-	useEffect(() => {
-		unusedLocalStorageKeys.forEach(key =>
-			window.localStorage.removeItem(key)
-		);
-	}, []);
 
 	let {pathname} = location;
 	if (pathname.endsWith('/')) pathname = pathname.slice(0, -1);
@@ -95,32 +72,27 @@ const Layout = ({children, location}) => {
 				/>
 			)}
 			<ClientOnly>
-				{isDeletionDayBannerOpen &&
-					typeof daysUntilDeletionDay === 'number' &&
-					daysUntilDeletionDay <= 3 && (
-						<Banner
-							onClose={() => setIsDeletionDayBannerOpen(false)}
-						>
-							{daysUntilDeletionDay ? (
-								<p>
-									{daysUntilDeletionDay} day
-									{daysUntilDeletionDay > 1
-										? 's'
-										: ''} until{' '}
-									<AutoLink to="https://deletionday.com">
-										Deletion Day
-									</AutoLink>
-								</p>
+				{activeHoliday && isHolidayBannerOpen && (
+					<Banner
+						onClose={() => setIsHolidayBannerOpen(false)}
+						style={activeHoliday.style ?? {}}
+					>
+						<p>
+							{activeHoliday.daysUntil > 0 &&
+								`${activeHoliday.daysUntil} day${
+									activeHoliday.daysUntil === 1 ? '' : 's'
+								} until `}
+							{activeHoliday.link ? (
+								<AutoLink to={activeHoliday.link}>
+									{activeHoliday.name}
+								</AutoLink>
 							) : (
-								<p>
-									<AutoLink to="https://deletionday.com">
-										Deletion Day
-									</AutoLink>{' '}
-									is today!
-								</p>
+								activeHoliday.name
 							)}
-						</Banner>
-					)}
+							{activeHoliday.daysUntil === 0 && ' is today!'}
+						</p>
+					</Banner>
+				)}
 			</ClientOnly>
 			{showPageHeader && <PageHeader location={location} />}
 			<div className="site-content">{children}</div>
