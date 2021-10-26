@@ -144,7 +144,7 @@ export const STORAGE_KEYS = Object.entries({
 	labAscending: 'LAB_ASCENDING',
 	labSortIdx: 'LAB_SORT_IDX',
 	labTypeStates: 'LAB_TYPE_STATES',
-	showDeletionDayBanner: 'SHOW_DELETION_DAY_BANNER',
+	showHolidayBanner: 'SHOW_HOLIDAY_BANNER',
 }).reduce((acc, [key, value]) => {
 	acc[key] = `${_storageKeyPrefix}__${value}`;
 	return acc;
