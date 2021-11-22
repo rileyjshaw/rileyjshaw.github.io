@@ -20,6 +20,12 @@
 		"todo": true
 	},
 	{
+		"title": "Propellers",
+		"date": "2021-11-20",
+		"coolness": 50,
+		"link": "https://codepen.io/collection/zxqJNP"
+	},
+	{
 		"title": "My keyboard layout",
 		"description": [
 			"The layout I use for my <a href=\"https://www.zsa.io/moonlander/\" target=\"_blank\" rel=\"noopener noreferrer\">Moonlander</a> keyboard."
