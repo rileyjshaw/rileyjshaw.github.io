@@ -15,7 +15,7 @@
 	margin-top: var(--font-scale--2);
 }
 .blog-list .blog-post section {
-	padding: 1em 0 1em;
+	padding: 1em 0;
 }
 .blog-list .blog-post section > :first-child {
 	margin-top: 0;

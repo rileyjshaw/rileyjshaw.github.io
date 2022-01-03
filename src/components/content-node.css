@@ -192,7 +192,7 @@
 	position: relative;
 }
 .excerpt::after {
-	background: linear-gradient(rgba(var(--color-bg-rgb), 0), var(--color-bg));
+	background: linear-gradient(rgb(var(--color-bg-rgb) 0), var(--color-bg));
 	bottom: 0;
 	content: '';
 	display: block;

@@ -94,7 +94,7 @@
 }
 .blog-post-content hr {
 	border: 0;
-	border-top: 1px solid rgba(0, 0, 0, 0.3);
+	border-top: 1px solid rgb(0 0 0 / 30%);
 }
 .blog-post-content blockquote {
 	border-left: 4px solid var(--color-fg);
