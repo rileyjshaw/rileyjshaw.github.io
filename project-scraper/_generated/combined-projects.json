@@ -32,7 +32,7 @@
 		"title": "hw",
 		"type": "arenaChannel",
 		"uid": "ARENA_HW_U1LMOISDNYU",
-		"updatedAt": "2021-11-15"
+		"updatedAt": "2021-12-18"
 	},
 	{
 		"body": "<p>Makes page loads snappier, and lets folks opt into Google’s tracking empire</p>",
@@ -7866,6 +7866,18 @@
 		"title": "Jambo brightness control demo",
 		"type": "video",
 		"uid": "VIDEO_Y_W8ZUUMKQ3J0"
+	},
+	{
+		"body": "ytyOffQuA5o",
+		"contentType": "youtube",
+		"date": "2022-01-03",
+		"description": "New instrument!",
+		"link": "https://youtube.com/watch?v=ytyOffQuA5o",
+		"more": true,
+		"timestamp": 1641168000000,
+		"title": "MIDI grid",
+		"type": "video",
+		"uid": "VIDEO_Y_YTYOFFQUA5O"
 	},
 	{
 		"body": "ZTyzMsvt2jo",

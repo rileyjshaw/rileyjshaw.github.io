@@ -14,6 +14,13 @@
 		"uid": "ART_MONEY_TECH"
 	},
 	{
+		"author": "Walter Benjamin",
+		"cite": "https://www.marxists.org/reference/subject/philosophy/works/ge/benjamin.htm",
+		"content": "For the first time in world history, mechanical reproduction emancipates the work of art from its parasitical dependence on ritual. To an ever greater degree the work of art reproduced becomes the work of art designed for reproducibility. From a photographic negative, for example, one can make any number of prints; to ask for the “authentic” print makes no sense. But the instant the criterion of authenticity ceases to be applicable to artistic production, the total function of art is reversed. Instead of being based on ritual, it begins to be based on another practice – politics.",
+		"source": "The Work of Art in the Age of Mechanical Reproduction",
+		"uid": "AUTHENTIC_PRINT"
+	},
+	{
 		"author": "Peter Frase",
 		"cite": "https://www.versobooks.com/books/1847-four-futures",
 		"content": "Who benefits from automation, and who loses, is ultimately a consequence not of the robots themselves, but of who owns them.",
@@ -40,6 +47,13 @@
 		"content": "I’ve used the analogy of what would happen if you put a piano in every classroom. If there is no other context, you will get a “chopsticks” culture, and maybe even a pop culture. And this is pretty much what is happening. In other words, “the music is not in the piano”.",
 		"source": "An Interview with Computing Pioneer Alan Kay",
 		"uid": "CHOPSTICKS_CULTURE"
+	},
+	{
+		"author": "Frieder Nake",
+		"cite": "https://www.bbk.ac.uk/hosted/cache/archive/PAGE/PAGE18.pdf",
+		"content": "Questions like “is a computer creative” or “is a computer an artist” or the like should not be considered serious questions, period. In the light of the problems we are facing at the end of the 20th century, those are irrelevant questions.",
+		"source": "There Should Be No Computer Art",
+		"uid": "COMPUTER_ARTIST"
 	},
 	{
 		"author": "Audrey Watters",
@@ -124,11 +138,25 @@
 		"uid": "GOOGLE_EDITORIALIZED"
 	},
 	{
+		"author": "Brian Eno",
+		"cite": "https://www.wired.com/1999/01/eno/",
+		"content": "I’m struck by the insidious, computer-driven tendency to take things out of the domain of muscular activity and put them into the domain of mental activity… The trouble begins with a design philosophy that equates “more options” with “greater freedom.”",
+		"source": "The Revenge of the Intuitive",
+		"uid": "INFINITE_OPTIONS"
+	},
+	{
 		"author": "Judith Butler",
 		"cite": "https://www.newstatesman.com/international/2020/09/judith-butler-culture-wars-jk-rowling-and-living-anti-intellectual-times",
 		"content": "It makes a difference to understand ourselves as living in a world in which we are fundamentally dependent on others, on institutions, on the Earth, and to see that this life depends on a sustaining organisation for various forms of life. If no one escapes that interdependency, then we are equal in a different sense. We are equally dependent, that is, equally social and ecological, and that means we cease to understand ourselves only as demarcated individuals.",
 		"source": "Interview",
 		"uid": "INTERDEPENDENCY"
+	},
+	{
+		"author": "Walter Benjamin",
+		"cite": "https://www.marxists.org/reference/subject/philosophy/works/ge/benjamin.htm",
+		"content": "Earlier much futile thought had been devoted to the question of whether photography is an art. The primary question – whether the very invention of photography had not transformed the entire nature of art – was not raised.",
+		"source": "The Work of Art in the Age of Mechanical Reproduction",
+		"uid": "IS_PHOTOGRAPHY_ART"
 	},
 	{
 		"author": "Douglas Coupland",
@@ -212,6 +240,13 @@
 		"content": "But anything that offers success in our unjust society without trying to change it is not revolutionary – it just helps people cope. In fact, it could also be making things worse. Instead of encouraging radical action, mindfulness says the causes of suffering are disproportionately inside us, not in the political and economic frameworks that shape how we live… The emphasis on “non-judgmental awareness” can just as easily disable one’s moral intelligence.",
 		"source": "The mindfulness conspiracy",
 		"uid": "MINDFULNESS"
+	},
+	{
+		"author": "Frieder Nake",
+		"cite": "https://www.bbk.ac.uk/hosted/cache/archive/PAGE/PAGE18.pdf",
+		"content": "…we find that a thorough understanding of “computer art” includes an entirely new relationship between the creator(s) and the creation: BENSE uses the term “art as a model for art” in this context.",
+		"source": "There Should Be No Computer Art",
+		"uid": "MODEL_FOR_ART"
 	},
 	{
 		"author": "Audrey Watters",
@@ -302,6 +337,13 @@
 		"content": "Openwashing: n., having an appearance of open-source and open-licensing for marketing purposes, while continuing proprietary practices.",
 		"source": "The Monsters of Education Technology",
 		"uid": "OPENWASHING"
+	},
+	{
+		"author": "Frieder Nake",
+		"cite": "https://www.bbk.ac.uk/hosted/cache/archive/PAGE/PAGE18.pdf",
+		"content": "I find it very strange that, in this situation, outsiders from technology should begin to move into the world of art and try to save it with new methods of creation, old results, and by surrendering to the given “laws of the market” in a naive and ignorant manner. The fact that they use new methods makes them blind to notice that they actually perpetuate a situation which has become unbearable for many artists.",
+		"source": "There Should Be No Computer Art",
+		"uid": "OUTSIDERS"
 	},
 	{
 		"author": "Oli Mould",
@@ -564,6 +606,13 @@
 		"content": "If we do not understand how complex technologies function, how systems of technologies interconnect, and how systems of systems interact, then we are powerless within them, and their potential is more easily captured by selfish elites and inhuman corporations… this understanding cannot be limited to the practicalities of how things work: it must be extended to how things came to be, and how they continue to function in the world in ways that are often invisible and interwoven. What is required is not understanding, but literacy.",
 		"source": "New Dark Age: Technology and the End of the Future",
 		"uid": "TECHNICAL_LITERACY"
+	},
+	{
+		"author": "Walter Benjamin",
+		"cite": "https://www.marxists.org/reference/subject/philosophy/works/ge/benjamin.htm",
+		"content": "The technological formula may be stated as follows: Only war makes it possible to mobilize all of today’s technical resources while maintaining the property system.",
+		"source": "The Work of Art in the Age of Mechanical Reproduction",
+		"uid": "TECHNOLOGICAL_FORMULA"
 	},
 	{
 		"author": "Isaac Asimov",

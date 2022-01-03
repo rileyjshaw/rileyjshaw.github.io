@@ -563,7 +563,7 @@
 			"state": "available",
 			"status": "closed",
 			"title": "hw",
-			"updated_at": "2021-11-15T02:11:24.037Z",
+			"updated_at": "2021-12-18T20:29:43.455Z",
 			"user": {
 				"avatar": "https://gravatar.com/avatar/8160bf91ac2add0c991472c5a64f6baa.png?d=blank&r=r&s=150",
 				"avatar_image": {
@@ -608,7 +608,7 @@
 			"collaborator_count": 0,
 			"contents": [
 				{
-					"added_to_at": "2021-11-02T19:47:17.024Z",
+					"added_to_at": "2021-12-31T13:57:22.986Z",
 					"base_class": "Channel",
 					"can_index": true,
 					"class": "Channel",
@@ -621,11 +621,11 @@
 					"connection_id": 10715076,
 					"contents": null,
 					"created_at": "2017-12-01T22:32:52.062Z",
-					"follower_count": 2468,
+					"follower_count": 2589,
 					"group": null,
 					"id": 112808,
 					"kind": "default",
-					"length": 365,
+					"length": 369,
 					"metadata": null,
 					"nsfw?": false,
 					"open": true,
@@ -640,7 +640,7 @@
 					"state": "available",
 					"status": "public",
 					"title": "plants and grids",
-					"updated_at": "2021-11-22T14:03:56.157Z",
+					"updated_at": "2022-01-03T15:29:08.660Z",
 					"user": {
 						"avatar": "https://arena-avatars.s3.amazonaws.com/14299/small_f8196d90a0119a1a70220297cd1c843d.png?1512271217",
 						"avatar_image": {
@@ -650,12 +650,12 @@
 						"badge": "investor",
 						"base_class": "User",
 						"can_index": true,
-						"channel_count": 432,
+						"channel_count": 436,
 						"class": "User",
 						"created_at": "2017-03-03T23:42:52.484Z",
 						"first_name": "Clement",
-						"follower_count": 611,
-						"following_count": 1084,
+						"follower_count": 623,
+						"following_count": 1100,
 						"full_name": "Clement Valla",
 						"id": 14299,
 						"initials": "CV",
@@ -2006,7 +2006,7 @@
 						"class": "User",
 						"created_at": "2018-11-12T09:05:27.700Z",
 						"first_name": "dé",
-						"follower_count": 243,
+						"follower_count": 257,
 						"following_count": 120,
 						"full_name": "dé 🥐",
 						"id": 73554,
@@ -5684,10 +5684,10 @@
 			],
 			"comment_count": 1,
 			"created_at": "2021-05-17T19:27:18+00:00",
-			"download_count": 23,
+			"download_count": 24,
 			"excerpt": "Set and toggle 16 independent LFOs. You can cross-modulate them if you want, but by...",
 			"id": 140563,
-			"like_count": 4,
+			"like_count": 5,
 			"link": "https://patchstorage.com/lfos/",
 			"platform": {
 				"id": 3341,
@@ -5770,7 +5770,7 @@
 			],
 			"title": "LFOs",
 			"updated_at": "2021-05-28T22:50:28+00:00",
-			"view_count": 497
+			"view_count": 687
 		},
 		{
 			"artwork": {
@@ -5861,7 +5861,7 @@
 			],
 			"title": "Panning gravity delay",
 			"updated_at": "2021-03-13T21:32:42+00:00",
-			"view_count": 428
+			"view_count": 475
 		},
 		{
 			"artwork": {
@@ -5952,7 +5952,7 @@
 			],
 			"title": "Gravity delay",
 			"updated_at": "2021-03-13T21:27:21+00:00",
-			"view_count": 600
+			"view_count": 660
 		},
 		{
 			"artwork": {
@@ -6013,7 +6013,7 @@
 			],
 			"title": "MIDI Channel Shifter",
 			"updated_at": "2021-01-10T22:24:56+00:00",
-			"view_count": 341
+			"view_count": 372
 		},
 		{
 			"artwork": {
@@ -6089,7 +6089,7 @@
 			],
 			"title": "Dedupe",
 			"updated_at": "2021-03-13T21:28:23+00:00",
-			"view_count": 440
+			"view_count": 481
 		},
 		{
 			"artwork": {
@@ -6114,7 +6114,7 @@
 			],
 			"comment_count": 0,
 			"created_at": "2020-12-12T02:57:37+00:00",
-			"download_count": 18,
+			"download_count": 23,
 			"excerpt": "This demo rack uses a few Math modules to convert an integer MIDI note number...",
 			"id": 133014,
 			"like_count": 1,
@@ -6165,7 +6165,7 @@
 			],
 			"title": "MIDI note # to pitch conversion",
 			"updated_at": "2020-12-12T20:53:48+00:00",
-			"view_count": 296
+			"view_count": 323
 		},
 		{
 			"artwork": {
@@ -6185,7 +6185,7 @@
 			],
 			"comment_count": 0,
 			"created_at": "2020-12-12T02:36:30+00:00",
-			"download_count": 19,
+			"download_count": 20,
 			"excerpt": "This is a MIDI panic rack. I've been using Drambo more and more to sequence...",
 			"id": 133008,
 			"like_count": 2,
@@ -6241,7 +6241,7 @@
 			],
 			"title": "Panic! At The Drambo",
 			"updated_at": "2020-12-12T06:57:01+00:00",
-			"view_count": 429
+			"view_count": 457
 		},
 		{
 			"artwork": {
@@ -6266,7 +6266,7 @@
 			],
 			"comment_count": 1,
 			"created_at": "2020-11-27T04:17:14+00:00",
-			"download_count": 48,
+			"download_count": 50,
 			"excerpt": "A first pass at recreating my favourite parts of Alex Matheu's lovely GlitchCore app in...",
 			"id": 132469,
 			"like_count": 6,
@@ -6327,7 +6327,7 @@
 			],
 			"title": "Glitch More",
 			"updated_at": "2021-03-13T21:54:33+00:00",
-			"view_count": 695
+			"view_count": 739
 		},
 		{
 			"artwork": {
@@ -6413,7 +6413,7 @@
 			],
 			"title": "Jambo MIDI map",
 			"updated_at": "2021-01-05T01:34:44+00:00",
-			"view_count": 405
+			"view_count": 433
 		},
 		{
 			"artwork": {
@@ -6438,10 +6438,10 @@
 			],
 			"comment_count": 0,
 			"created_at": "2020-10-16T00:17:04+00:00",
-			"download_count": 49,
+			"download_count": 54,
 			"excerpt": "A parameter-lockable, MIDI-mappable converter from a single MIDI note to 8 configurable chords. For my...",
 			"id": 130675,
-			"like_count": 5,
+			"like_count": 6,
 			"link": "https://patchstorage.com/chorder/",
 			"platform": {
 				"id": 4890,
@@ -6489,7 +6489,7 @@
 			],
 			"title": "Chorder!",
 			"updated_at": "2020-10-16T00:17:04+00:00",
-			"view_count": 830
+			"view_count": 897
 		}
 	],
 	"screenshotsTumblr": [
@@ -7194,15 +7194,15 @@
 			"note_count": 0,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-619c024056d0b862722161' class='crt-video crt-skin-default' width='250' height='251' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-61d350a158c3a225749619' class='crt-video crt-skin-default' width='250' height='251' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-619c024056d0b862722161' class='crt-video crt-skin-default' width='400' height='402' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-61d350a158c3a225749619' class='crt-video crt-skin-default' width='400' height='402' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-619c024056d0b862722161' class='crt-video crt-skin-default' width='500' height='502' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-61d350a158c3a225749619' class='crt-video crt-skin-default' width='500' height='502' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -10714,15 +10714,15 @@
 			"note_count": 1,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-619c0240419f1364026718' class='crt-video crt-skin-default' width='250' height='142' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-61d350a169007076192549' class='crt-video crt-skin-default' width='250' height='142' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-619c0240419f1364026718' class='crt-video crt-skin-default' width='400' height='228' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-61d350a169007076192549' class='crt-video crt-skin-default' width='400' height='228' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-619c0240419f1364026718' class='crt-video crt-skin-default' width='500' height='285' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-61d350a169007076192549' class='crt-video crt-skin-default' width='500' height='285' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -12910,7 +12910,7 @@
 			"monetization_model": "BLACKBOX",
 			"permalink": "average-tone-beat-bandoliers",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-beat-bandoliers",
-			"playback_count": 334,
+			"playback_count": 340,
 			"policy": "MONETIZE",
 			"public": true,
 			"publisher_metadata": {
@@ -13011,7 +13011,7 @@
 			"monetization_model": "BLACKBOX",
 			"permalink": "average-tone-beat-2-1",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-beat-2-1",
-			"playback_count": 211,
+			"playback_count": 215,
 			"policy": "MONETIZE",
 			"public": true,
 			"publisher_metadata": {
@@ -13112,7 +13112,7 @@
 			"monetization_model": "NOT_APPLICABLE",
 			"permalink": "average-tone-misty-sapphire",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-misty-sapphire",
-			"playback_count": 700,
+			"playback_count": 705,
 			"policy": "ALLOW",
 			"public": true,
 			"publisher_metadata": {
@@ -13224,7 +13224,7 @@
 			"monetization_model": "NOT_APPLICABLE",
 			"permalink": "average-tone-talk-box-kill-the",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-talk-box-kill-the",
-			"playback_count": 557,
+			"playback_count": 562,
 			"policy": "ALLOW",
 			"public": true,
 			"publisher_metadata": {
@@ -13325,7 +13325,7 @@
 			"monetization_model": "NOT_APPLICABLE",
 			"permalink": "average-tone-music-for-18",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-music-for-18",
-			"playback_count": 575,
+			"playback_count": 578,
 			"policy": "ALLOW",
 			"public": true,
 			"publisher_metadata": null,
@@ -13524,7 +13524,7 @@
 			"monetization_model": "BLACKBOX",
 			"permalink": "average-tone-beat-another",
 			"permalink_url": "https://soundcloud.com/rileyjshaw/average-tone-beat-another",
-			"playback_count": 283,
+			"playback_count": 286,
 			"policy": "MONETIZE",
 			"public": true,
 			"publisher_metadata": {
@@ -14307,9 +14307,51 @@
 			{
 				"channelId": "UCV09P32tImJ8etTRcRNUKNw",
 				"channelTitle": "Riley Shaw",
-				"description": "A quick demo of three Mozaic plugins I wrote in December 2020: “Gravity delay”, “Panning gravity delay”, and “Dedupe”. Download them for free on Patchstorage:\n\nhttps://patchstorage.com/gravity-delay/\nhttps://patchstorage.com/panning-gravity-delay/\nhttps://patchstorage.com/dedupe/\n\nTimestamps:\n\n0:00 – Set up two instances of Mozaic (Gravity delay and Dedupe), and Beathawk as a grand piano rompler\n0:47 – Set up the signal chain: AUM keyboard → Gravity delay → Dedupe → Beathawk → Audio out\n1:00 – Start making sounds with Gravity delay\n4:35 – Replace Gravity delay with an instance of Panning gravity delay\n5:44 – Play a single note through Panning gravity delay\n\nThere’s a ton of info about the plugins on their respective Patchstorage pages, so follow those links for a thorough description. As always, let me know if you use this on anything you’re working on. I’d love to hear it!",
+				"description": "New instrument!\n\n---\n\nAs a drummer, I’ve always felt out of my depth coming up with a melody or chord progression. Playing music feels great, and I still have so much fun sitting down with a keyboard or guitar and stumbling along, sometimes for hours at a time. But I have no idea what I’m doing. It takes too long to translate what’s playing in my head to the instrument, so I wind up taking random guesses at the next note and adjusting if it sounds wrong. It’s fun, but I miss the immediacy and fluency I feel when I’m playing the drums. I just wanna jam.\n\nI’ve tried to teach myself a bit of piano, but any effort to learn scales or theory has left me frustrated and bored. Why are there black keys?? So I spent a bunch of time that I could have put towards learning the piano, and built this grid thing instead.\n\nSometimes when I finish a project I realize that building it was the fun part, and I don’t end up using it once it’s done. But I built this a few months ago and am still having so much fun with it. The layout makes intuitive sense to me; I still have no idea what chords I’m playing, but seeing the notes in space helps me work out what might sound nice. I eventually want to learn some proper theory around harmony, and I think it’s going to be much easier for me to learn using this instrument.\n\nStill a proud and lifelong member of the Bad Musicians Club, but I’m slightly more confident to play notes in front of people now.\n\n---\n\nSome specifics for those interested:\n\nThe default layout for this keyboard is chromatic, arranged like a bass guitar. Steps to the right increase by 1 semitone and steps up increase by 5 semitones. The yellow key at the top left functions as a Shift key, and can change the layout, assign different functional zones, etc. For instance: the leftmost column is in ‘‘performance mode” right now, which means I can use the black key on the bottom left as a sustain pedal.\n\nThe closest thing to this that I know of is the Linnstrument, which is out of my price range but looks brilliant. Keyboards like this are sometimes referred to as “isomorphic” or ‘‘2-D”.\n\nThis is only half of the full keyboard that I built, but it can work on its own and is easier to fit on my messy desk (not pictured).",
 				"playlistId": "UUV09P32tImJ8etTRcRNUKNw",
 				"position": 0,
+				"publishedAt": "2022-01-03T16:15:12Z",
+				"resourceId": {
+					"kind": "youtube#video",
+					"videoId": "ytyOffQuA5o"
+				},
+				"thumbnails": {
+					"default": {
+						"height": 90,
+						"url": "https://i.ytimg.com/vi/ytyOffQuA5o/default.jpg",
+						"width": 120
+					},
+					"high": {
+						"height": 360,
+						"url": "https://i.ytimg.com/vi/ytyOffQuA5o/hqdefault.jpg",
+						"width": 480
+					},
+					"maxres": {
+						"height": 720,
+						"url": "https://i.ytimg.com/vi/ytyOffQuA5o/maxresdefault.jpg",
+						"width": 1280
+					},
+					"medium": {
+						"height": 180,
+						"url": "https://i.ytimg.com/vi/ytyOffQuA5o/mqdefault.jpg",
+						"width": 320
+					},
+					"standard": {
+						"height": 480,
+						"url": "https://i.ytimg.com/vi/ytyOffQuA5o/sddefault.jpg",
+						"width": 640
+					}
+				},
+				"title": "MIDI grid",
+				"videoOwnerChannelId": "UCV09P32tImJ8etTRcRNUKNw",
+				"videoOwnerChannelTitle": "Riley Shaw"
+			},
+			{
+				"channelId": "UCV09P32tImJ8etTRcRNUKNw",
+				"channelTitle": "Riley Shaw",
+				"description": "A quick demo of three Mozaic plugins I wrote in December 2020: “Gravity delay”, “Panning gravity delay”, and “Dedupe”. Download them for free on Patchstorage:\n\nhttps://patchstorage.com/gravity-delay/\nhttps://patchstorage.com/panning-gravity-delay/\nhttps://patchstorage.com/dedupe/\n\nTimestamps:\n\n0:00 – Set up two instances of Mozaic (Gravity delay and Dedupe), and Beathawk as a grand piano rompler\n0:47 – Set up the signal chain: AUM keyboard → Gravity delay → Dedupe → Beathawk → Audio out\n1:00 – Start making sounds with Gravity delay\n4:35 – Replace Gravity delay with an instance of Panning gravity delay\n5:44 – Play a single note through Panning gravity delay\n\nThere’s a ton of info about the plugins on their respective Patchstorage pages, so follow those links for a thorough description. As always, let me know if you use this on anything you’re working on. I’d love to hear it!",
+				"playlistId": "UUV09P32tImJ8etTRcRNUKNw",
+				"position": 1,
 				"publishedAt": "2021-03-13T21:12:42Z",
 				"resourceId": {
 					"kind": "youtube#video",
@@ -14351,7 +14393,7 @@
 				"channelTitle": "Riley Shaw",
 				"description": "Bit of progress as I work on the settings menu :)",
 				"playlistId": "UUV09P32tImJ8etTRcRNUKNw",
-				"position": 1,
+				"position": 2,
 				"publishedAt": "2020-10-18T06:41:12Z",
 				"resourceId": {
 					"kind": "youtube#video",
@@ -14393,7 +14435,7 @@
 				"channelTitle": "Riley Shaw",
 				"description": "This is a MIDI panic rack.\n\nI've been using Drambo more and more to sequence external devices, and sometimes you get a stuck note. Especially after today's AU host update, I thought this might be useful to folks.\n\nThis MIDI rack rapidly sends a MIDI On/MIDI Off combo (both with Velocity of 0) for MIDI notes 0-127. It also sends the standard MIDI CC 120 and 123.\n\nThere's an embedded MIDI pass-through mixer, so you can route your usual MIDI chain through this without losing anything.\n\nYou can download it at https://patchstorage.com/midi-panic.",
 				"playlistId": "UUV09P32tImJ8etTRcRNUKNw",
-				"position": 2,
+				"position": 3,
 				"publishedAt": "2020-12-12T02:33:05Z",
 				"resourceId": {
 					"kind": "youtube#video",
@@ -14435,7 +14477,7 @@
 				"channelTitle": "Riley Shaw",
 				"description": "A first pass at recreating my favourite parts of Alex Matheu's lovely GlitchCore app in Drambo. You can download it on PatchStorage here: https://patchstorage.com/glitch-more/\n\nFor this to really be useful to me, I would need the sample buffer to continuously update, overwriting itself instead of overdubbing. Fingers crossed that's on its way in the looper module.\n\nGet GlitchCore here: https://apps.apple.com/ca/app/glitchcore/id1499237784\nGet Drambo here: https://apps.apple.com/us/app/drambo/id1469365718",
 				"playlistId": "UUV09P32tImJ8etTRcRNUKNw",
-				"position": 3,
+				"position": 4,
 				"publishedAt": "2020-11-27T04:09:10Z",
 				"resourceId": {
 					"kind": "youtube#video",
@@ -14469,48 +14511,6 @@
 					}
 				},
 				"title": "Glitch More",
-				"videoOwnerChannelId": "UCV09P32tImJ8etTRcRNUKNw",
-				"videoOwnerChannelTitle": "Riley Shaw"
-			},
-			{
-				"channelId": "UCV09P32tImJ8etTRcRNUKNw",
-				"channelTitle": "Riley Shaw",
-				"description": "sfpc spring 2018 showcase project\n\nhttps://sfpc.rileyjshaw.com",
-				"playlistId": "UUV09P32tImJ8etTRcRNUKNw",
-				"position": 4,
-				"publishedAt": "2019-02-19T01:52:21Z",
-				"resourceId": {
-					"kind": "youtube#video",
-					"videoId": "ZTyzMsvt2jo"
-				},
-				"thumbnails": {
-					"default": {
-						"height": 90,
-						"url": "https://i.ytimg.com/vi/ZTyzMsvt2jo/default.jpg",
-						"width": 120
-					},
-					"high": {
-						"height": 360,
-						"url": "https://i.ytimg.com/vi/ZTyzMsvt2jo/hqdefault.jpg",
-						"width": 480
-					},
-					"maxres": {
-						"height": 720,
-						"url": "https://i.ytimg.com/vi/ZTyzMsvt2jo/maxresdefault.jpg",
-						"width": 1280
-					},
-					"medium": {
-						"height": 180,
-						"url": "https://i.ytimg.com/vi/ZTyzMsvt2jo/mqdefault.jpg",
-						"width": 320
-					},
-					"standard": {
-						"height": 480,
-						"url": "https://i.ytimg.com/vi/ZTyzMsvt2jo/sddefault.jpg",
-						"width": 640
-					}
-				},
-				"title": "resurfacing",
 				"videoOwnerChannelId": "UCV09P32tImJ8etTRcRNUKNw",
 				"videoOwnerChannelTitle": "Riley Shaw"
 			}
