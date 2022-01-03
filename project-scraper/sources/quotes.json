@@ -434,5 +434,41 @@
 		"author": "Brian Eno",
 		"source": "The Revenge of the Intuitive",
 		"cite": "https://www.wired.com/1999/01/eno/"
+	},
+	"MODEL_FOR_ART": {
+		"content": "…we find that a thorough understanding of “computer art” includes an entirely new relationship between the creator(s) and the creation: BENSE uses the term “art as a model for art” in this context.",
+		"author": "Frieder Nake",
+		"source": "There Should Be No Computer Art",
+		"cite": "https://www.bbk.ac.uk/hosted/cache/archive/PAGE/PAGE18.pdf"
+	},
+	"OUTSIDERS": {
+		"content": "I find it very strange that, in this situation, outsiders from technology should begin to move into the world of art and try to save it with new methods of creation, old results, and by surrendering to the given “laws of the market” in a naive and ignorant manner. The fact that they use new methods makes them blind to notice that they actually perpetuate a situation which has become unbearable for many artists.",
+		"author": "Frieder Nake",
+		"source": "There Should Be No Computer Art",
+		"cite": "https://www.bbk.ac.uk/hosted/cache/archive/PAGE/PAGE18.pdf"
+	},
+	"COMPUTER_ARTIST": {
+		"content": "Questions like “is a computer creative” or “is a computer an artist” or the like should not be considered serious questions, period. In the light of the problems we are facing at the end of the 20th century, those are irrelevant questions.",
+		"author": "Frieder Nake",
+		"source": "There Should Be No Computer Art",
+		"cite": "https://www.bbk.ac.uk/hosted/cache/archive/PAGE/PAGE18.pdf"
+	},
+	"AUTHENTIC_PRINT": {
+		"content": "For the first time in world history, mechanical reproduction emancipates the work of art from its parasitical dependence on ritual. To an ever greater degree the work of art reproduced becomes the work of art designed for reproducibility. From a photographic negative, for example, one can make any number of prints; to ask for the “authentic” print makes no sense. But the instant the criterion of authenticity ceases to be applicable to artistic production, the total function of art is reversed. Instead of being based on ritual, it begins to be based on another practice – politics.",
+		"author": "Walter Benjamin",
+		"source": "The Work of Art in the Age of Mechanical Reproduction",
+		"cite": "https://www.marxists.org/reference/subject/philosophy/works/ge/benjamin.htm"
+	},
+	"IS_PHOTOGRAPHY_ART": {
+		"content": "Earlier much futile thought had been devoted to the question of whether photography is an art. The primary question – whether the very invention of photography had not transformed the entire nature of art – was not raised.",
+		"author": "Walter Benjamin",
+		"source": "The Work of Art in the Age of Mechanical Reproduction",
+		"cite": "https://www.marxists.org/reference/subject/philosophy/works/ge/benjamin.htm"
+	},
+	"TECHNOLOGICAL_FORMULA": {
+		"content": "The technological formula may be stated as follows: Only war makes it possible to mobilize all of today’s technical resources while maintaining the property system.",
+		"author": "Walter Benjamin",
+		"source": "The Work of Art in the Age of Mechanical Reproduction",
+		"cite": "https://www.marxists.org/reference/subject/philosophy/works/ge/benjamin.htm"
 	}
 }
