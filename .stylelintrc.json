@@ -29,6 +29,8 @@
 		"media-feature-colon-space-before": "never",
 		"media-feature-colon-space-after": "always",
 		"order/order": ["custom-properties", "declarations"],
-		"order/properties-alphabetical-order": true
+		"order/properties-alphabetical-order": true,
+		"custom-property-pattern": "^([a-z][a-z0-9]*)(-+[a-z0-9]+)*$",
+		"selector-id-pattern": "^_*([a-z][a-z0-9]*)(-+[a-z0-9]+)*$"
 	}
 }
