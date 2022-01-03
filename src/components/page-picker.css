@@ -6,12 +6,12 @@
 	padding: 30px 0;
 }
 .page-picker {
-	border: 2px solid rgba(0, 0, 0, 0.5);
+	border: 2px solid rgb(0 0 0 / 50%);
 	cursor: pointer;
 	margin-bottom: 30px;
 }
 .page-picker .page-links {
-	border-top: 2px solid rgba(0, 0, 0, 0.5);
+	border-top: 2px solid rgb(0 0 0 / 50%);
 }
 .page-picker ul {
 	list-style: none;
@@ -41,7 +41,7 @@
 	text-decoration: none;
 }
 .page-picker .page-title .arrow {
-	color: rgba(0, 0, 0, 0.5);
+	color: rgb(0 0 0 / 50%);
 	font-size: 0.5em;
 	line-height: 2em;
 	position: absolute;
