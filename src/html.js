@@ -1,7 +1,6 @@
 import geomanistBlack from './fonts/geomanist-black-webfont.woff2';
 import geomanistMedium from './fonts/geomanist-medium-webfont.woff2';
 import geomanistRegular from './fonts/geomanist-regular-webfont.woff2';
-import PropTypes from 'prop-types';
 import React from 'react';
 
 export default function HTML(props) {
@@ -71,12 +70,3 @@ export default function HTML(props) {
 		</html>
 	);
 }
-
-HTML.propTypes = {
-	htmlAttributes: PropTypes.object,
-	headComponents: PropTypes.array,
-	bodyAttributes: PropTypes.object,
-	preBodyComponents: PropTypes.array,
-	body: PropTypes.string,
-	postBodyComponents: PropTypes.array,
-};
