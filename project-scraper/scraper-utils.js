@@ -250,83 +250,72 @@ function getSFPCTumblr() {
 	return (function getPage(queryParams = {}) {
 		return client
 			.blogPosts('sfpc', queryParams)
-			.then(
-				({
-					posts,
-					total_posts,
-					_links: {
-						next: {query_params},
-					},
-				}) => {
-					allPosts = allPosts.concat(posts);
-					console.log(`Got ${posts.length} SFPC Tumblr posts.`);
-					if (query_params.offset < total_posts) {
-						return getPage(query_params);
-					} else {
-						raw.sfpcTumblr = allPosts;
-						allPosts.forEach(post => {
-							const uid = idify(`SFPC_TUMBLR_${post.id}`);
-							switch (post.type) {
-								case 'quote':
-									const quoteIndex = scrapedQuotes.findIndex(
-										post => post.uid === uid
-									);
-									const sourceDoc = JSDOM.fragment(
-										post.source
-									);
-									const sourceAnchor =
-										sourceDoc.querySelector('a');
-									let cite = sourceAnchor?.href;
-									if (
-										cite?.startsWith(
-											'https://t.umblr.com/redirect'
-										)
-									) {
-										cite = url.parse(cite, true).query.z;
-									}
-									const quoteResult = {
-										uid,
-										content: post.text,
-										source:
-											sourceAnchor?.textContent ||
-											sourceDoc.textContent,
-										cite,
-										relatedLink: post.post_url,
-									};
-									if (quoteIndex !== -1)
-										scrapedQuotes[quoteIndex] =
-											quoteResult;
-									else scrapedQuotes.push(quoteResult);
-									return;
-								// TODO(riley): Should I handle these?
-								case 'chat':
-								case 'link':
-								case 'photo':
-								case 'video':
-								case 'audio':
-									return;
-								case 'text':
-									const textIndex = formatted.findIndex(
-										post => post.uid === uid
-									);
-									const textResult = {
-										uid,
-										type: 'tumblr',
-										date: post.date.slice(0, 10),
-										link: post.post_url,
-										contentType: post.type,
-										title: post.title || post.summary,
-										body: post.body,
-										...excerptify(post.body),
-									};
-									if (textIndex !== -1)
-										formatted[textIndex] = textResult;
-									else formatted.push(textResult);
-							}
-						});
-					}
+			.then(({posts, total_posts}) => {
+				allPosts = allPosts.concat(posts);
+				console.log(`Got ${posts.length} SFPC Tumblr posts.`);
+				if (allPosts.length < total_posts) {
+					return getPage({offset: allPosts.length});
+				} else {
+					raw.sfpcTumblr = allPosts;
+					allPosts.forEach(post => {
+						const uid = idify(`SFPC_TUMBLR_${post.id}`);
+						switch (post.type) {
+							case 'quote':
+								const quoteIndex = scrapedQuotes.findIndex(
+									post => post.uid === uid
+								);
+								const sourceDoc = JSDOM.fragment(post.source);
+								const sourceAnchor =
+									sourceDoc.querySelector('a');
+								let cite = sourceAnchor?.href;
+								if (
+									cite?.startsWith(
+										'https://t.umblr.com/redirect'
+									)
+								) {
+									cite = url.parse(cite, true).query.z;
+								}
+								const quoteResult = {
+									uid,
+									content: post.text,
+									source:
+										sourceAnchor?.textContent ||
+										sourceDoc.textContent,
+									cite,
+									relatedLink: post.post_url,
+								};
+								if (quoteIndex !== -1)
+									scrapedQuotes[quoteIndex] = quoteResult;
+								else scrapedQuotes.push(quoteResult);
+								return;
+							// TODO(riley): Should I handle these?
+							case 'chat':
+							case 'link':
+							case 'photo':
+							case 'video':
+							case 'audio':
+								return;
+							case 'text':
+								const textIndex = formatted.findIndex(
+									post => post.uid === uid
+								);
+								const textResult = {
+									uid,
+									type: 'tumblr',
+									date: post.date.slice(0, 10),
+									link: post.post_url,
+									contentType: post.type,
+									title: post.title || post.summary,
+									body: post.body,
+									...excerptify(post.body),
+								};
+								if (textIndex !== -1)
+									formatted[textIndex] = textResult;
+								else formatted.push(textResult);
+						}
+					});
 				}
-			)
+			})
 			.catch(err => {
 				console.error('Error while fetching SFPC Tumblr:', err);
 			});
@@ -346,108 +335,93 @@ function getScreenshotsTumblr() {
 	return (function getPage(queryParams = {}) {
 		return client
 			.blogPosts('screeenshots', queryParams)
-			.then(
-				({
-					posts,
-					total_posts,
-					_links: {
-						next: {query_params},
-					},
-				}) => {
-					allPosts = allPosts.concat(posts);
-					console.log(
-						`Got ${posts.length} Screenshots Tumblr posts.`
-					);
-					if (query_params.offset < total_posts) {
-						return getPage(query_params);
-					} else {
-						raw.screenshotsTumblr = allPosts;
-						allPosts.forEach(post => {
-							const uid = idify(`SCREENSHOTS_TUMBLR_${post.id}`);
-							let body,
-								fileType,
-								extraData = [];
-							switch (post.type) {
-								case 'photo':
-									fileType = 'png';
-									const {photos} = post;
-									// TODO: Use a smaller one.
-									const photo = photos[0].original_size;
-									body = photo.url;
-									extraData = [
-										photo.width,
-										photo.height,
-										photos.length,
-									];
-									break;
-								case 'video':
-									fileType = 'mov';
-									body = post.video_url;
-									extraData = [
-										post.player[0].width,
-										+post.player[0].embed_code.match(
-											/height=['"](\d+)['"]/
-										)?.[1] ?? 0,
-									];
-									break;
-								case 'audio':
-									fileType = 'wav';
-									body = post.audio_url;
-									break;
-							}
-							if (!fileType) return;
+			.then(({posts, total_posts}) => {
+				allPosts = allPosts.concat(posts);
+				console.log(`Got ${posts.length} Screenshots Tumblr posts.`);
+				if (allPosts.length < total_posts) {
+					return getPage({offset: allPosts.length});
+				} else {
+					raw.screenshotsTumblr = allPosts;
+					allPosts.forEach(post => {
+						const uid = idify(`SCREENSHOTS_TUMBLR_${post.id}`);
+						let body,
+							fileType,
+							extraData = [];
+						switch (post.type) {
+							case 'photo':
+								fileType = 'png';
+								const {photos} = post;
+								// TODO: Use a smaller one.
+								const photo = photos[0].original_size;
+								body = photo.url;
+								extraData = [
+									photo.width,
+									photo.height,
+									photos.length,
+								];
+								break;
+							case 'video':
+								fileType = 'mov';
+								body = post.video_url;
+								extraData = [
+									post.player[0].width,
+									+post.player[0].embed_code.match(
+										/height=['"](\d+)['"]/
+									)?.[1] ?? 0,
+								];
+								break;
+							case 'audio':
+								fileType = 'wav';
+								body = post.audio_url;
+								break;
+						}
+						if (!fileType) return;
 
-							const textIndex = formatted.findIndex(
-								post => post.uid === uid
-							);
-							const unadjustedDate = new Date(
-								post.timestamp * 1000
-							);
-							// The blog is in the Eastern timezone, and
-							// we also need to account for DST.
-							const localTimezoneOffsetFromEastern =
-								(new Date(
-									'January 1, 2020'
-								).getTimezoneOffset() -
-									5 * 60) *
-								60 *
-								1000;
-							const date = new Date(
-								unadjustedDate.getTime() +
-									localTimezoneOffsetFromEastern
-							);
-							const title = `${date.getFullYear()}-${`${
-								date.getMonth() + 1
-							}`.padStart(2, 0)}-${`${date.getDate()}`.padStart(
-								2,
-								0
-							)} at ${`${date.getHours()}`.padStart(
-								2,
-								0
-							)}.${`${date.getMinutes()}`.padStart(
-								2,
-								0
-							)}.${`${date.getSeconds()}`.padStart(
-								2,
-								0
-							)}.${fileType}`;
-							const result = {
-								uid,
-								type: 'screenshotsTumblr',
-								date: post.date.slice(0, 10),
-								link: post.post_url,
-								contentType: post.type,
-								title,
-								body,
-								extraData,
-							};
-							if (textIndex !== -1)
-								formatted[textIndex] = result;
-							else formatted.push(result);
-						});
-					}
+						const textIndex = formatted.findIndex(
+							post => post.uid === uid
+						);
+						const unadjustedDate = new Date(post.timestamp * 1000);
+						// The blog is in the Eastern timezone, and
+						// we also need to account for DST.
+						const localTimezoneOffsetFromEastern =
+							(new Date('January 1, 2020').getTimezoneOffset() -
+								5 * 60) *
+							60 *
+							1000;
+						const date = new Date(
+							unadjustedDate.getTime() +
+								localTimezoneOffsetFromEastern
+						);
+						const title = `${date.getFullYear()}-${`${
+							date.getMonth() + 1
+						}`.padStart(2, 0)}-${`${date.getDate()}`.padStart(
+							2,
+							0
+						)} at ${`${date.getHours()}`.padStart(
+							2,
+							0
+						)}.${`${date.getMinutes()}`.padStart(
+							2,
+							0
+						)}.${`${date.getSeconds()}`.padStart(
+							2,
+							0
+						)}.${fileType}`;
+						const result = {
+							uid,
+							type: 'screenshotsTumblr',
+							date: post.date.slice(0, 10),
+							link: post.post_url,
+							contentType: post.type,
+							title,
+							body,
+							extraData,
+						};
+						if (textIndex !== -1) formatted[textIndex] = result;
+						else formatted.push(result);
+					});
 				}
-			)
+			})
 			.catch(err => {
 				console.error('Error while fetching Screenshots Tumblr:', err);
 			});
