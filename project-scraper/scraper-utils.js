@@ -361,8 +361,8 @@ function getScreenshotsTumblr() {
 								fileType = 'png';
 								body = img.src;
 								extraData = [
-									img.getAttribute('data-orig-width'),
-									img.getAttribute('data-orig-height'),
+									+img.getAttribute('data-orig-width'),
+									+img.getAttribute('data-orig-height'),
 									1,
 								];
 								break;
