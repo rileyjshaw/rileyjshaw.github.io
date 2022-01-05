@@ -49,6 +49,13 @@
 		"uid": "CHOPSTICKS_CULTURE"
 	},
 	{
+		"author": "Fredy Perlman",
+		"cite": "https://www.fifthestate.org/archive/311-winter-1983/against-leviathan/",
+		"content": "The state of nature is a community of freedoms.",
+		"source": "Against Leviathan",
+		"uid": "COMMUNITY_OF_FREEDOMS"
+	},
+	{
 		"author": "Frieder Nake",
 		"cite": "https://www.bbk.ac.uk/hosted/cache/archive/PAGE/PAGE18.pdf",
 		"content": "Questions like “is a computer creative” or “is a computer an artist” or the like should not be considered serious questions, period. In the light of the problems we are facing at the end of the 20th century, those are irrelevant questions.",
@@ -78,6 +85,7 @@
 	},
 	{
 		"author": "Fredy Perlman",
+		"cite": "https://www.fifthestate.org/archive/311-winter-1983/against-leviathan/",
 		"content": "The managers tell us that the swimmers, crawlers, walkers, and fliers spent their lives working in order to eat. These managers are broadcasting their news too soon. The varied beings haven’t all been exterminated yet. You, reader, have only to mingle with them, or just watch them from a distance, to see that their waking lives are filled with dances, games, and feasts. Even the hunt, the stalking and feinting and leaping, is not what we call Work, but what we call Fun. The only beings who work are inmates like us.",
 		"source": "Against Leviathan",
 		"uid": "DANCES_GAMES_AND_FEASTS"
@@ -627,6 +635,13 @@
 		"content": "Our new creations trample the beauty of places and things because we have yet to incorporate our love of craft. And so this initial commodification comes to us at the expense of all things divine",
 		"source": "That which is unique, breaks",
 		"uid": "TRAMPLED_WITHOUT_CRAFT"
+	},
+	{
+		"author": "Fredy Perlman",
+		"cite": "https://www.fifthestate.org/archive/311-winter-1983/against-leviathan/",
+		"content": "There are many ways to speak of a trap. It can be described from the standpoint of the self-balancing environment, of the trapper, of the trapped animal. It can even be described from the standpoint of the trap itself, namely from the objective, scientific, technological standpoint.\nThere are as many ways to speak of the wrecking of the Biosphere. From the standpoint of a single protagonist, Earth herself, it can be said that She is committing suicide. With two protagonists, Mankind and Mother Earth, it can be said that We are murdering Her. Those of us who accept this standpoint and squirm with shame might wish we were whales. But those of us who take the standpoint of the trapped animal will look for a third protagonist.",
+		"source": "Against Leviathan",
+		"uid": "TRAP"
 	},
 	{
 		"author": "Donna Haraway",
