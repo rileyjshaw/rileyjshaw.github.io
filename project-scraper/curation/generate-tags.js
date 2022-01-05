@@ -1,14 +1,15 @@
-'use strict';
+import fs from 'fs';
+import stableStringify from 'json-stable-stringify';
+import {URL} from 'url';
 
-const fs = require('fs');
-const stableStringify = require('json-stable-stringify');
-
-function generateTags() {
+export function generateTags() {
 	const {tagInfo} = JSON.parse(
-		fs.readFileSync('./project-scraper/sources/tags.json')
+		fs.readFileSync(
+			new URL('../sources/tags.json', import.meta.url).pathname
+		)
 	);
 	fs.writeFileSync(
-		'./project-scraper/_generated/tags.json',
+		new URL('../_generated/tags.json', import.meta.url).pathname,
 		stableStringify(
 			Object.entries(tagInfo).map(([name, value]) => ({
 				name,
@@ -18,5 +19,3 @@ function generateTags() {
 		)
 	);
 }
-
-module.exports = {generateTags};

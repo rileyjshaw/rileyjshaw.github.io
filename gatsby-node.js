@@ -1,7 +1,15 @@
 require(`@babel/register`);
 const path = require('path');
 const {createFilePath} = require('gatsby-source-filesystem');
-const {idify} = require('./project-scraper/scraper-utils');
+
+// TODO(riley): Since this is a CommonJS file and the Project Scraper is written,
+// as ES Modules, I duplicated this function rather than complicating the build process.
+// ENSURE THIS FUNCTION STAYS IN SYNC WITH THE COPY IN `scraper-utils.js`.
+const idify = uid =>
+	uid
+		.replace(/[-. ]/g, '_')
+		.replace(/\W/g, char => char.codePointAt(0).toString(36))
+		.toUpperCase();
 
 exports.createPages = async ({actions, graphql, reporter}) => {
 	const {createPage} = actions;
