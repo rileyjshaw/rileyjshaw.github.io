@@ -346,8 +346,26 @@ function getScreenshotsTumblr() {
 						const uid = idify(`SCREENSHOTS_TUMBLR_${post.id}`);
 						let body,
 							fileType,
-							extraData = [];
+							extraData = [],
+							contentType;
 						switch (post.type) {
+							case 'text':
+								// If the post is classified as “text”, it was
+								// probably uploaded from mobile. Assume it’s a
+								// photo.
+								const img = JSDOM.fragment(
+									post.body
+								).querySelector('img');
+								if (!img) return;
+								contentType = 'photo';
+								fileType = 'png';
+								body = img.src;
+								extraData = [
+									img.getAttribute('data-orig-width'),
+									img.getAttribute('data-orig-height'),
+									1,
+								];
+								break;
 							case 'photo':
 								fileType = 'png';
 								const {photos} = post;
@@ -412,7 +430,7 @@ function getScreenshotsTumblr() {
 							type: 'screenshotsTumblr',
 							date: post.date.slice(0, 10),
 							link: post.post_url,
-							contentType: post.type,
+							contentType: contentType || post.type,
 							title,
 							body,
 							extraData,
