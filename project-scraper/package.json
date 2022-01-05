@@ -1,0 +1,39 @@
+{
+  "name": "project-scraper",
+  "version": "1.0.0",
+  "description": "Scrape and format projects that I’ve released from a variety of sources",
+  "main": "run-scraper.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node run-scraper.js",
+    "test": "node tests/tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rileyjshaw/rileyjshaw.github.io.git"
+  },
+  "author": "rileyjshaw",
+  "keywords": [
+    "rileyjshaw"
+  ],
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/rileyjshaw/rileyjshaw.github.io/issues"
+  },
+  "homepage": "https://github.com/rileyjshaw/rileyjshaw.github.io#readme",
+  "dependencies": {
+    "@octokit/rest": "^18.12.0",
+    "googleapis": "^92.0.0",
+    "jsdom": "^19.0.0",
+    "json-stable-stringify": "^1.0.1",
+    "node-fetch": "^3.1.0",
+    "oauth": "^0.9.15",
+    "request-promise-native": "^1.0.9",
+    "rss-parser": "^3.12.0",
+    "tumblr.js": "^3.0.0",
+    "vimeo": "^2.1.1"
+  },
+  "type": "module"
+}

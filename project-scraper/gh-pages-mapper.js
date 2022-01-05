@@ -1,10 +1,8 @@
-'use strict';
-
-require('dotenv').config();
-
-const fs = require('fs');
-const fetch = require('node-fetch');
-const {Octokit} = require('@octokit/rest');
+import {Octokit} from '@octokit/rest';
+import 'dotenv/config';
+import fs from 'fs';
+import fetch from 'node-fetch';
+import {URL} from 'url';
 
 const octokit = new Octokit({
 	auth: process.env.GITHUB_ACCESS_TOKEN,
@@ -14,7 +12,9 @@ const SITE_ROOT = 'https://rileyjshaw.com/';
 
 const PRIORITY_JSON_NAME = 'other-repo-sitemap-priorities.json';
 const otherRepoSitemapPriorities = JSON.parse(
-	fs.readFileSync(`./project-scraper/sources/${PRIORITY_JSON_NAME}`)
+	fs.readFileSync(
+		new URL(`sources/${PRIORITY_JSON_NAME}`, import.meta.url).pathname
+	)
 );
 
 // Github doesn’t presently provide a way to check which of your repos have an
@@ -31,7 +31,7 @@ const otherRepoSitemapPriorities = JSON.parse(
 // This is the kind of hack that I love because it actually tells me _exactly_
 // what I need. It skips all the plumbing, and arrives at the answer with a
 // single request.
-async function checkGitRepoRoutes() {
+export async function checkGitRepoRoutes() {
 	const routeChecks = [];
 	let page = 0;
 	while (true) {
@@ -67,7 +67,7 @@ async function checkGitRepoRoutes() {
 	}
 	return Promise.all(routeChecks).then(results => {
 		fs.writeFileSync(
-			'./project-scraper/_generated/other-repos.json',
+			new URL('_generated/other-repos.json', import.meta.url).pathname,
 			JSON.stringify(
 				results
 					.flat()
@@ -92,5 +92,3 @@ async function checkGitRepoRoutes() {
 		);
 	});
 }
-
-module.exports = {checkGitRepoRoutes};

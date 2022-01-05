@@ -1,9 +1,7 @@
-// USAGE: (from project's root directory)
-// npx babel-node project-scraper/run-scraper.js && npm run format
-const {getAll} = require('./scraper-utils');
-const {checkGitRepoRoutes} = require('./gh-pages-mapper');
-const {runTweaks} = require('./curation/tweaks');
-const {generateTags} = require('./curation/generate-tags');
+import {generateTags} from './curation/generate-tags.js';
+import {runTweaks} from './curation/tweaks.js';
+import {checkGitRepoRoutes} from './gh-pages-mapper.js';
+import {getAll} from './scraper-utils.js';
 
 getAll().then(() => {
 	console.log('\nScraped content.');

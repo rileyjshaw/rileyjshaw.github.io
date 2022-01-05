@@ -1,5 +1,3 @@
-'use strict';
-
 /* NOTE: You should never need to call this.
    This was a single-use utility script that I wrote to initially bootstrap
    `sources/tags.json` with data that had previously been stored elsewhere.
@@ -7,16 +5,19 @@
    Run this only if project UIDs have become out-of-sync with the project keys
    in `sources/tags.json`.
 */
-
-const fs = require('fs');
-const stableStringify = require('json-stable-stringify');
+import fs from 'fs';
+import stableStringify from 'json-stable-stringify';
+import {URL} from 'url';
 
 function moveInfo() {
 	const projects = JSON.parse(
-		fs.readFileSync('./project-scraper/_generated/combined-projects.json')
+		fs.readFileSync(
+			new URL('../_generated/combined-projects.json', import.meta.url)
+				.pathname
+		)
 	);
 	const tags = JSON.parse(
-		fs.readFileSync('./project-scraper/sources/tags.json')
+		fs.readFileSync(new URL('tags.json', import.meta.url).pathname)
 	);
 	tags.taggedProjects = {};
 
@@ -41,7 +42,7 @@ function moveInfo() {
 	});
 
 	fs.writeFileSync(
-		'./project-scraper/sources/tags.json',
+		new URL('tags.json', import.meta.url).pathname,
 		stableStringify(tags, {space: '\t'})
 	);
 }

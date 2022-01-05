@@ -1,36 +1,40 @@
-'use strict';
-
-require('dotenv').config();
-
-const util = require('util');
-const fs = require('fs');
-const url = require('url');
-const tumblr = require('tumblr.js');
-const {Vimeo} = require('vimeo');
-const {google} = require('googleapis');
-const RssParser = require('rss-parser');
-const request = require('request-promise-native');
-const OAuth = require('oauth');
-const {JSDOM} = require('jsdom');
-const stableStringify = require('json-stable-stringify');
+import 'dotenv/config';
+import fs from 'fs';
+import {google} from 'googleapis';
+import {JSDOM} from 'jsdom';
+import stableStringify from 'json-stable-stringify';
+import OAuth from 'oauth';
+import request from 'request-promise-native';
+import RssParser from 'rss-parser';
+import tumblr from 'tumblr.js';
+import {URL} from 'url';
+import url from 'url';
+import util from 'util';
+import {Vimeo} from 'vimeo';
 
 const raw = {}; // Raw is completely overwritten, but we append to formatted and quotes.
 const formatted = JSON.parse(
 	fs.readFileSync(
-		'./project-scraper/_generated/scraped-projects-formatted.json'
+		new URL('_generated/scraped-projects-formatted.json', import.meta.url)
+			.pathname
 	)
 );
 const scrapedQuotes = JSON.parse(
-	fs.readFileSync('./project-scraper/_generated/scraped-quotes.json')
+	fs.readFileSync(
+		new URL('_generated/scraped-quotes.json', import.meta.url).pathname
+	)
 );
 
-const idify = uid =>
+// TODO(riley): Since this is an ES Module and Gatsby expects CJS, I duplicated
+// this function into `gatsby-node.js` rather than complicating the build process.
+// ENSURE THIS FUNCTION STAYS IN SYNC WITH THE COPY IN `gatsby-node.js`.
+export const idify = uid =>
 	uid
 		.replace(/[-. ]/g, '_')
 		.replace(/\W/g, char => char.codePointAt(0).toString(36))
 		.toUpperCase();
 
-const excerptify = body => {
+export const excerptify = body => {
 	if (!body) return {};
 
 	function processNode(node) {
@@ -663,7 +667,7 @@ async function getVideos() {
 		});
 }
 
-function getAll() {
+export function getAll() {
 	return Promise.all([
 		getDweets(),
 		getPatches(),
@@ -677,11 +681,17 @@ function getAll() {
 	])
 		.then(() => {
 			fs.writeFileSync(
-				'./project-scraper/_generated/scraped-projects-raw.json',
+				new URL(
+					'_generated/scraped-projects-raw.json',
+					import.meta.url
+				).pathname,
 				stableStringify(raw, {space: '\t'})
 			);
 			fs.writeFileSync(
-				'./project-scraper/_generated/scraped-projects-formatted.json',
+				new URL(
+					'_generated/scraped-projects-formatted.json',
+					import.meta.url
+				).pathname,
 				stableStringify(
 					formatted.sort(({uid: a = ''}, {uid: b = ''}) =>
 						a.localeCompare(b)
@@ -690,7 +700,8 @@ function getAll() {
 				)
 			);
 			fs.writeFileSync(
-				'./project-scraper/_generated/scraped-quotes.json',
+				new URL('_generated/scraped-quotes.json', import.meta.url)
+					.pathname,
 				stableStringify(
 					scrapedQuotes.sort(({uid: a = ''}, {uid: b = ''}) =>
 						a.localeCompare(b)
@@ -703,9 +714,3 @@ function getAll() {
 			console.log(`Error while scraping content: ${err}`);
 		});
 }
-
-module.exports = {
-	idify,
-	excerptify,
-	getAll,
-};

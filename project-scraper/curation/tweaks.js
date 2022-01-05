@@ -1,12 +1,15 @@
-'use strict';
-
 // NOTE: Functions accepting an `n` (content node) argument modify the node
 //       *in place*. This whole file is a hack.
+import {idify} from '../scraper-utils.js';
+import fs from 'fs';
+import stableStringify from 'json-stable-stringify';
+import {URL} from 'url';
 
-const fs = require('fs');
-const stableStringify = require('json-stable-stringify');
-
-const {idify} = require('../scraper-utils.js');
+function loadJsonFile(relPath) {
+	return JSON.parse(
+		fs.readFileSync(new URL(relPath, import.meta.url).pathname)
+	);
+}
 
 const unique = arr => arr.filter((x, i) => arr.indexOf(x) === i);
 const addTags = (n, tags = []) => {
@@ -161,12 +164,15 @@ const unescape = (substitutions => {
 });
 const stripOuterQuotes = str => str.replace(/^[“”‘’"'](.*)[“”‘’"']/g, '$1');
 const quoteAuthors = ['Osamu Sato', 'Donna J. Haraway'];
-function runTweaks() {
-	const scrapedProjects = require('../_generated/scraped-projects-formatted.json');
-	const scrapedQuotes = require('../_generated/scraped-quotes.json');
-	const listedProjects = require('../sources/projects.json');
-	const listedQuotes = require('../sources/quotes.json');
-	const {taggedProjects} = require('../sources/tags.json');
+
+export function runTweaks() {
+	const scrapedProjects = loadJsonFile(
+		'../_generated/scraped-projects-formatted.json'
+	);
+	const scrapedQuotes = loadJsonFile('../_generated/scraped-quotes.json');
+	const listedProjects = loadJsonFile('../sources/projects.json');
+	const listedQuotes = loadJsonFile('../sources/quotes.json');
+	const {taggedProjects} = loadJsonFile('../sources/tags.json');
 	const projects = [
 		...scrapedProjects,
 		...listedProjects
@@ -243,7 +249,8 @@ function runTweaks() {
 		.forEach(n => (n.timestamp = +new Date(n.date)));
 
 	fs.writeFileSync(
-		'./project-scraper/_generated/combined-projects.json',
+		new URL('../_generated/combined-projects.json', import.meta.url)
+			.pathname,
 		stableStringify(
 			projects.sort(({uid: a = ''}, {uid: b = ''}) =>
 				a.localeCompare(b)
@@ -269,7 +276,8 @@ function runTweaks() {
 		);
 
 	fs.writeFileSync(
-		'./project-scraper/_generated/combined-quotes.json',
+		new URL('../_generated/combined-quotes.json', import.meta.url)
+			.pathname,
 		stableStringify(
 			combinedQuotes.sort(({uid: a = ''}, {uid: b = ''}) =>
 				a.localeCompare(b)
@@ -278,5 +286,3 @@ function runTweaks() {
 		)
 	);
 }
-
-module.exports = {runTweaks};
