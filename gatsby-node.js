@@ -192,10 +192,29 @@ exports.createResolvers = ({createResolvers}) =>
 
 // Allows components to be imported from the absolute path "components/etc"
 // instead of the relative "../../components/etc". This is necessary for MDX.
-exports.onCreateWebpackConfig = ({actions}) => {
-	actions.setWebpackConfig({
+exports.onCreateWebpackConfig = ({stage, loaders, actions}) => {
+	const config = {
 		resolve: {
 			modules: [path.resolve(__dirname, 'src'), 'node_modules'],
 		},
-	});
+	};
+	// TODO(riley): Tone.js spits out the following error during build:
+	//
+	//   TypeError: Cannot read properties of null (reading 'prototype')
+	//
+	// I logged some info about it here: https://github.com/chrisguttandin/standardized-audio-context/issues/986
+	//
+	// For now, I’m just removing Tone.js from the SSR build. Eventually I should make it work with Babel.
+	// But really, eventually, I should only pull it down when it’s actually used.
+	if (stage === 'build-html' || stage === 'develop-html') {
+		config.module = {
+			rules: [
+				{
+					test: /tone/,
+					use: loaders.null(),
+				},
+			],
+		};
+	}
+	actions.setWebpackConfig(config);
 };
