@@ -1,4 +1,4 @@
-var changelogConfig = require('./changelog.config');
+var czConfig = require('./.cz-config.js');
 
 module.exports = {
 	extends: ['@commitlint/config-conventional'],
@@ -7,8 +7,11 @@ module.exports = {
 		'type-enum': [
 			2,
 			'always',
-			changelogConfig.list.map(key => changelogConfig.types[key].value),
+			czConfig.types.map(function (type) {
+				return type.value;
+			}),
 		],
+		'subject-case': [0],
 		'body-max-line-length': [0, 'always', [100]],
 	},
 };
