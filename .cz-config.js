@@ -45,8 +45,7 @@ module.exports = {
 			name: '🤣 Test\t LMAO ya right!!',
 		},
 	],
-	scopes: ['site', 'deps', 'tools', 'multi'],
 	allowCustomScopes: true,
 	upperCaseSubject: true,
-	skipQuestions: ['footer'],
+	skipQuestions: ['scope', 'footer'],
 };
