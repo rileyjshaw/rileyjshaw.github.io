@@ -7,7 +7,6 @@ import {
 	ABSTRACT_COLOR_PROPERTIES,
 } from './src/util/constants';
 import {applyTheme} from './src/util/util';
-import stableStringify from 'json-stable-stringify';
 import React from 'react';
 
 export const wrapRootElement = ({element}) => (
@@ -18,34 +17,14 @@ export const wrapPageElement = ({props, element}) => (
 	<Layout {...props}>{element}</Layout>
 );
 
-// HAAAACK!
-const _webpackImportString = importName =>
-	`_\\w+__WEBPACK_IMPORTED_MODULE_[0-9]+__\\.${importName}`;
-
 const execString_manageInitialTheme = `(function() {
 	var stored = JSON.parse(
 		window.localStorage.getItem('${STORAGE_KEYS.theme}')
 	);
-	var theme;
-	if (!stored || stored.value === 'system') {
-		theme = window.matchMedia('(prefers-color-scheme: dark)').matches
-			? 'dark'
-			: 'light';
-	} else theme = stored.value;
-	(${applyTheme})(theme);
-})()`
-	.replace(
-		new RegExp(_webpackImportString('DIRECT_COLORS')),
-		stableStringify(DIRECT_COLORS)
-	)
-	.replace(
-		new RegExp(_webpackImportString('ABSTRACT_COLOR_PROPERTIES')),
-		stableStringify(ABSTRACT_COLOR_PROPERTIES)
-	)
-	.replace(
-		new RegExp(_webpackImportString('cssColorProperty')),
-		`(${cssColorProperty})`
-	);
+	if (stored && stored.value !== 'system') {
+		(${applyTheme})(stored.value);
+	}
+})()`;
 
 const colorObjectToCss = (colorObject, rgbWrap) =>
 	Object.entries(colorObject)
@@ -57,7 +36,7 @@ const colorObjectToCss = (colorObject, rgbWrap) =>
 					};`
 			)
 		)
-		.join('\n');
+		.join('\n\t');
 
 export const onRenderBody = ({
 	setHeadComponents,
@@ -65,18 +44,30 @@ export const onRenderBody = ({
 	setPostBodyComponents,
 }) => {
 	setHeadComponents(
-		// Set some default themes in case JavaScript isn’t enabled.
-		<style key="color-custom-properties">{`
+		// Adheres to media queries in case JavaScript isn’t enabled.
+		<style
+			key="color-custom-properties"
+			dangerouslySetInnerHTML={{
+				__html: `
 :root {
-${colorObjectToCss(DIRECT_COLORS.light, true)}
-${colorObjectToCss(ABSTRACT_COLOR_PROPERTIES.light)}
+	color-scheme: light dark;
+	${colorObjectToCss(DIRECT_COLORS.light, true)}
+	${colorObjectToCss(ABSTRACT_COLOR_PROPERTIES.light)}
+}
+html[data-theme="dark"] {
+	color-scheme: dark light;
+	${colorObjectToCss(DIRECT_COLORS.dark, true)}
+	${colorObjectToCss(ABSTRACT_COLOR_PROPERTIES.dark)}
 }
 @media (prefers-color-scheme: dark) {
-:root{
-${colorObjectToCss(DIRECT_COLORS.dark, true)}
-${colorObjectToCss(ABSTRACT_COLOR_PROPERTIES.dark)}
+html:not([data-theme="light"]) {
+	color-scheme: dark light;
+	${colorObjectToCss(DIRECT_COLORS.dark, true)}
+	${colorObjectToCss(ABSTRACT_COLOR_PROPERTIES.dark)}
 }
-}`}</style>
+}`,
+			}}
+		/>
 	);
 
 	setPreBodyComponents(

@@ -1,24 +1,7 @@
-import {cssColorProperty} from './_util';
-import {
-	ABSTRACT_COLORS,
-	ABSTRACT_COLOR_PROPERTIES,
-	DIRECT_COLORS,
-} from './constants';
+import {ABSTRACT_COLORS} from './constants';
 
 export function applyTheme(activeTheme) {
-	const root = document.documentElement;
-	[DIRECT_COLORS, ABSTRACT_COLOR_PROPERTIES]
-		.map(themes => themes[activeTheme])
-		.forEach((theme, i) => {
-			Object.entries(theme).forEach(([color, _o]) => {
-				Object.entries(_o).forEach(([variant, value]) => {
-					root.style.setProperty(
-						cssColorProperty(color, variant),
-						i ? value : `rgb(${value})`
-					);
-				});
-			});
-		});
+	document.documentElement.setAttribute('data-theme', activeTheme);
 }
 
 // Usage example: getThemeColor('light')('fg')();
