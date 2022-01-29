@@ -50,81 +50,114 @@
     })
   </script><link rel="alternate" type="application/rss+xml" title="Highlights feed" href="/highlights.xml"/><link rel="alternate" type="application/rss+xml" title="Blog feed" href="/blog.xml"/><link rel="alternate" type="application/rss+xml" title="Blog feed: internal posts only" href="/blog-internal.xml"/><link rel="alternate" type="application/rss+xml" title="Lab projects feed" href="/lab.xml"/><link rel="alternate" type="application/rss+xml" title="Firehose feed" href="/index.xml"/><style>
 :root {
---color-red: rgb(245,61,62);
---color-yellow: rgb(249,215,62);
---color-green: rgb(44,203,62);
---color-cyan: rgb(44,203,221);
---color-blue: rgb(44,61,153);
---color-magenta: rgb(245,61,153);
---color-black: rgb(44,61,62);
---color-white: rgb(250,249,247);
---color-white-mute: rgb(238,238,238);
---color-white-bold: rgb(255,255,255);
---color-fg: var(--color-black);
---color-fg-rgb: 44,61,62;
---color-bg: var(--color-white);
---color-bg-mute: var(--color-white-mute);
---color-bg-bold: var(--color-white-bold);
---color-bg-rgb: 250,249,247;
---color-p1: var(--color-red);
---color-p1-rgb: 245,61,62;
---color-p2: var(--color-green);
---color-p2-rgb: 44,203,62;
---color-p3: var(--color-blue);
---color-p3-rgb: 44,61,153;
---color-s1: var(--color-cyan);
---color-s1-rgb: 44,203,221;
---color-s2: var(--color-magenta);
---color-s2-rgb: 245,61,153;
---color-s3: var(--color-yellow);
---color-s3-rgb: 249,215,62;
+	color-scheme: light dark;
+	--color-red: rgb(245,61,62);
+	--color-yellow: rgb(249,215,62);
+	--color-green: rgb(44,203,62);
+	--color-cyan: rgb(44,203,221);
+	--color-blue: rgb(44,61,153);
+	--color-magenta: rgb(245,61,153);
+	--color-black: rgb(44,61,62);
+	--color-white: rgb(250,249,247);
+	--color-white-mute: rgb(238,238,238);
+	--color-white-bold: rgb(255,255,255);
+	--color-fg: var(--color-black);
+	--color-fg-rgb: 44,61,62;
+	--color-bg: var(--color-white);
+	--color-bg-mute: var(--color-white-mute);
+	--color-bg-bold: var(--color-white-bold);
+	--color-bg-rgb: 250,249,247;
+	--color-p1: var(--color-red);
+	--color-p1-rgb: 245,61,62;
+	--color-p2: var(--color-green);
+	--color-p2-rgb: 44,203,62;
+	--color-p3: var(--color-blue);
+	--color-p3-rgb: 44,61,153;
+	--color-s1: var(--color-cyan);
+	--color-s1-rgb: 44,203,221;
+	--color-s2: var(--color-magenta);
+	--color-s2-rgb: 245,61,153;
+	--color-s3: var(--color-yellow);
+	--color-s3-rgb: 249,215,62;
+}
+html[data-theme="dark"] {
+	color-scheme: dark light;
+	--color-red: rgb(204,54,40);
+	--color-yellow: rgb(204,195,40);
+	--color-green: rgb(45,195,34);
+	--color-cyan: rgb(45,195,194);
+	--color-blue: rgb(0,103,194);
+	--color-magenta: rgb(204,103,194);
+	--color-white: rgb(204,195,194);
+	--color-white-mute: rgb(170,168,166);
+	--color-white-bold: rgb(255,255,255);
+	--color-black: rgb(10,11,8);
+	--color-black-mute: rgb(17,17,17);
+	--color-black-bold: rgb(0,0,0);
+	--color-bg: var(--color-black);
+	--color-bg-mute: var(--color-black-mute);
+	--color-bg-bold: var(--color-black-bold);
+	--color-bg-rgb: 10,11,8;
+	--color-fg: var(--color-white);
+	--color-fg-mute: var(--color-white-mute);
+	--color-fg-bold: var(--color-white-bold);
+	--color-fg-rgb: 204,195,194;
+	--color-p1: var(--color-cyan);
+	--color-p1-rgb: 45,195,194;
+	--color-p2: var(--color-magenta);
+	--color-p2-rgb: 204,103,194;
+	--color-p3: var(--color-yellow);
+	--color-p3-rgb: 204,195,40;
+	--color-s1: var(--color-red);
+	--color-s1-rgb: 204,54,40;
+	--color-s2: var(--color-green);
+	--color-s2-rgb: 45,195,34;
+	--color-s3: var(--color-blue);
+	--color-s3-rgb: 0,103,194;
 }
 @media (prefers-color-scheme: dark) {
-:root{
---color-red: rgb(204,54,40);
---color-yellow: rgb(204,195,40);
---color-green: rgb(45,195,34);
---color-cyan: rgb(45,195,194);
---color-blue: rgb(0,103,194);
---color-magenta: rgb(204,103,194);
---color-white: rgb(204,195,194);
---color-white-mute: rgb(170,168,166);
---color-white-bold: rgb(255,255,255);
---color-black: rgb(10,11,8);
---color-black-mute: rgb(17,17,17);
---color-black-bold: rgb(0,0,0);
---color-bg: var(--color-black);
---color-bg-mute: var(--color-black-mute);
---color-bg-bold: var(--color-black-bold);
---color-bg-rgb: 10,11,8;
---color-fg: var(--color-white);
---color-fg-mute: var(--color-white-mute);
---color-fg-bold: var(--color-white-bold);
---color-fg-rgb: 204,195,194;
---color-p1: var(--color-cyan);
---color-p1-rgb: 45,195,194;
---color-p2: var(--color-magenta);
---color-p2-rgb: 204,103,194;
---color-p3: var(--color-yellow);
---color-p3-rgb: 204,195,40;
---color-s1: var(--color-red);
---color-s1-rgb: 204,54,40;
---color-s2: var(--color-green);
---color-s2-rgb: 45,195,34;
---color-s3: var(--color-blue);
---color-s3-rgb: 0,103,194;
+html:not([data-theme="light"]) {
+	color-scheme: dark light;
+	--color-red: rgb(204,54,40);
+	--color-yellow: rgb(204,195,40);
+	--color-green: rgb(45,195,34);
+	--color-cyan: rgb(45,195,194);
+	--color-blue: rgb(0,103,194);
+	--color-magenta: rgb(204,103,194);
+	--color-white: rgb(204,195,194);
+	--color-white-mute: rgb(170,168,166);
+	--color-white-bold: rgb(255,255,255);
+	--color-black: rgb(10,11,8);
+	--color-black-mute: rgb(17,17,17);
+	--color-black-bold: rgb(0,0,0);
+	--color-bg: var(--color-black);
+	--color-bg-mute: var(--color-black-mute);
+	--color-bg-bold: var(--color-black-bold);
+	--color-bg-rgb: 10,11,8;
+	--color-fg: var(--color-white);
+	--color-fg-mute: var(--color-white-mute);
+	--color-fg-bold: var(--color-white-bold);
+	--color-fg-rgb: 204,195,194;
+	--color-p1: var(--color-cyan);
+	--color-p1-rgb: 45,195,194;
+	--color-p2: var(--color-magenta);
+	--color-p2-rgb: 204,103,194;
+	--color-p3: var(--color-yellow);
+	--color-p3-rgb: 204,195,40;
+	--color-s1: var(--color-red);
+	--color-s1-rgb: 204,54,40;
+	--color-s2: var(--color-green);
+	--color-s2-rgb: 45,195,34;
+	--color-s3: var(--color-blue);
+	--color-s3-rgb: 0,103,194;
 }
-}</style><link as="script" rel="preload" href="/webpack-runtime-98d7c4026dfe0308f7f2.js"/><link as="script" rel="preload" href="/framework-65c2da20f50aba50061a.js"/><link as="script" rel="preload" href="/dc6a8720040df98778fe970bf6c000a41750d3ae-076e74be1dca584e1f3b.js"/><link as="script" rel="preload" href="/app-db2d2aa78110b758873a.js"/><link as="script" rel="preload" href="/commons-b3ee47de06a125814caf.js"/><link as="script" rel="preload" href="/component---src-pages-about-js-9b77ee68753dc874c282.js"/><link as="fetch" rel="preload" href="/page-data/about/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/279051069.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3496774001.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3605882644.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/><link rel="manifest" href="/site.webmanifest"/><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4ccbab"/><meta name="msapplication-TileColor" content="#4ccbab"/><meta name="theme-color" content="#4ccbab"/><link as="font" href="/static/geomanist-regular-webfont-2fffdea879f106fb592c5b5cc3789e18.woff2" rel="preload" crossorigin="anonymous"/><link as="font" href="/static/geomanist-medium-webfont-a5bf7f12d745fb61ec89fb44efc324b8.woff2" rel="preload" crossorigin="anonymous"/><link as="font" href="/static/geomanist-black-webfont-ddae4a9c4044af04aa51f6cd49e130e2.woff2" rel="preload" crossorigin="anonymous"/></head><body><script>(function() {
+}</style><link as="script" rel="preload" href="/webpack-runtime-b03d3587c20c9d3fce34.js"/><link as="script" rel="preload" href="/framework-65c2da20f50aba50061a.js"/><link as="script" rel="preload" href="/dc6a8720040df98778fe970bf6c000a41750d3ae-076e74be1dca584e1f3b.js"/><link as="script" rel="preload" href="/app-fd3e78ac24dc8ec71a66.js"/><link as="script" rel="preload" href="/commons-b3ee47de06a125814caf.js"/><link as="script" rel="preload" href="/component---src-pages-about-js-9b77ee68753dc874c282.js"/><link as="fetch" rel="preload" href="/page-data/about/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/279051069.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3496774001.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3605882644.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/><link rel="manifest" href="/site.webmanifest"/><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4ccbab"/><meta name="msapplication-TileColor" content="#4ccbab"/><meta name="theme-color" content="#4ccbab"/><link as="font" href="/static/geomanist-regular-webfont-2fffdea879f106fb592c5b5cc3789e18.woff2" rel="preload" crossorigin="anonymous"/><link as="font" href="/static/geomanist-medium-webfont-a5bf7f12d745fb61ec89fb44efc324b8.woff2" rel="preload" crossorigin="anonymous"/><link as="font" href="/static/geomanist-black-webfont-ddae4a9c4044af04aa51f6cd49e130e2.woff2" rel="preload" crossorigin="anonymous"/></head><body><script>(function() {
 	var stored = JSON.parse(
 		window.localStorage.getItem('RJS__THEME')
 	);
-	var theme;
-	if (!stored || stored.value === 'system') {
-		theme = window.matchMedia('(prefers-color-scheme: dark)').matches
-			? 'dark'
-			: 'light';
-	} else theme = stored.value;
-	(function applyTheme(activeTheme){var root=document.documentElement;[_constants__WEBPACK_IMPORTED_MODULE_0__/* .DIRECT_COLORS */ .Mj,_constants__WEBPACK_IMPORTED_MODULE_0__/* .ABSTRACT_COLOR_PROPERTIES */ .SF].map(function(themes){return themes[activeTheme];}).forEach(function(theme,i){Object.entries(theme).forEach(function(_ref){var color=_ref[0],_o=_ref[1];Object.entries(_o).forEach(function(_ref2){var variant=_ref2[0],value=_ref2[1];root.style.setProperty((0,_util__WEBPACK_IMPORTED_MODULE_1__/* .cssColorProperty */ .p)(color,variant),i?value:"rgb("+value+")");});});});})(theme);
+	if (stored && stored.value !== 'system') {
+		(function applyTheme(activeTheme){document.documentElement.setAttribute('data-theme',activeTheme);})(stored.value);
+	}
 })()</script><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="site-wrapper about-page"><header class="page-header" id="page-header" tabindex="-1"><a href="/"><h1 class="color-channel-splitter no-split title"><div class="channel ">The digital <span>landfill of</span> <span>Riley J.</span> <span>Shaw</span></div><div class="channel s2" aria-hidden="true">The digital <span>landfill of</span> <span>Riley J.</span> <span>Shaw</span></div><div class="channel s3" aria-hidden="true">The digital <span>landfill of</span> <span>Riley J.</span> <span>Shaw</span></div></h1></a><nav class="site-nav"><button aria-controls="site_nav_menu" aria-expanded="false" aria-haspopup="true" aria-label="Toggle navigation" class="site-nav-menu-button closed" data-target="#site_nav_menu" data-toggle="collapse" id="site_nav_menu_button" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="svg-icon"><path d="M86.1 58.5H13.9c-4.7 0-8.5-3.8-8.5-8.5s3.8-8.5 8.5-8.5h72.2c4.7 0 8.5 3.8 8.5 8.5s-3.8 8.5-8.5 8.5zM86.1 35H13.9c-4.7 0-8.5-3.8-8.5-8.5S9.2 18 13.9 18h72.2c4.7 0 8.5 3.8 8.5 8.5S90.8 35 86.1 35zM86.1 82.1H13.9c-4.7 0-8.5-3.8-8.5-8.5S9.2 65 13.9 65h72.2c4.7 0 8.5 3.8 8.5 8.5s-3.8 8.6-8.5 8.6z"></path></svg></button><ul aria-labelledby="site_nav_menu_button" class="hidden" id="site_nav_menu" role="menu"><li class=""><a href="/">Home</a></li><li class="active"><a href="/about">About</a></li><li class=""><a href="/lab">Lab</a></li><li class=""><a href="/blog">Blog</a></li><li class=""><a href="/subscribe">Subscribe</a></li><li aria-hidden="true" class="underline"></li><li class="settings"></li></ul></nav></header><div class="site-content"><main class="about-page"><div class="about-page-content"><div class="about-me blog-post-content"><p>I am an artist, engineer, and educator. My work has been featured on NPR, the CBC, HuffPost, Canadian Business, and elsewhere. I volunteer at <a href="http://repairmatters.ca/" target="_blank" rel="noopener noreferrer">Repair Matters</a> and <a href="https://www.canadalearningcode.ca/" target="_blank" rel="noopener noreferrer">Canada Learning Code</a>, and am slowly developing my thoughts on <a href="https://github.com/miseryco/curriculum" target="_blank" rel="noopener noreferrer">what digital literacy means on today’s Internet</a>. I founded the studio <a href="https://misery.co" target="_blank" rel="noopener noreferrer">Misery &amp; Co.</a>, and we have re-opened as of Spring 2021.</p><p>Throughout my career, I have focused on accessibility, mentorship, and community. I am a proud graduate of the <a href="https://www.recurse.com/scout/click?t=4bdcd56dfdb6c80c7832262c0bb8007b" target="_blank" rel="noopener noreferrer">Recurse Center</a> and the <a href="http://sfpc.io/" target="_blank" rel="noopener noreferrer">School for Poetic Computation</a>. I have a Bachelor of Science in Electrical Engineering, with a focus on human-computer interaction.</p><p>I have the dubious honor of being recognized as one of Canada’s 30 Under 30 developers.</p><p>If you care to follow along, please <a href="/subscribe">subscribe to my website</a>.</p><h2 id="where-ive-been" style="position:relative"><a href="#where-ive-been" aria-label="where ive been permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Where I’ve been</h2><ul class="timeline"><li class=""><h3 id="misery--co-span-classjob-titlefounderspan" style="position:relative"><a href="#misery--co-span-classjob-titlefounderspan" aria-label="misery  co span classjob titlefounderspan permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Misery &amp; Co. <span class="job-title">Founder</span></h3><p><a href="https://misery.co" target="_blank" rel="noopener noreferrer">Misery &amp; Co.</a> is a development studio specializing in novel mixed-media projects. I founded the studio in 2018, and we recently re-opened.</p></li><li class=""><h3 id="mozilla-span-classjob-titlestaff-software-engineerspan" style="position:relative"><a href="#mozilla-span-classjob-titlestaff-software-engineerspan" aria-label="mozilla span classjob titlestaff software engineerspan permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mozilla <span class="job-title">Staff Software Engineer</span></h3><p>I worked at <a href="https://www.mozilla.org" target="_blank" rel="noopener noreferrer">Mozilla</a> on the Open Innovation team, supporting <a href="https://commonvoice.mozilla.org" target="_blank" rel="noopener noreferrer">Common Voice</a>. Common Voice is a landmark consent-driven dataset for human speech of all types, spanning over 60 languages. For many, voice recognition and synthesis is the primary interface for their devices. Common Voice is an open, inclusive, and privacy-conscious standard for a technology that is rapidly becoming ubiquitous. Here are some highlights of my time there:</p><ul><li>I joined the team as Mozilla’s sole engineer, one month before a major partnership project was due. The project was estimated for three months but we somehow released on time.</li><li>I then helped oversee and implement a major infrastructure migration for one of the largest open source voice datasets.</li><li>I enabled recording on mobile browsers, opening the contribution process to many more people.</li><li>ISSIP Excellence In Service Innovation Award</li><li>Fast Company Innovation By Design Award Finalist</li></ul></li><li class=""><h3 id="repair-matters" style="position:relative"><a href="#repair-matters" aria-label="repair matters permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Repair Matters</h3><p>I used to volunteer with <a href="http://repairmatters.ca" target="_blank" rel="noopener noreferrer">Repair Matters</a>, a Vancouver-based initiative that empowers people to take part in repair and fix their stuff. I was <a href="/blog/repair-matters-on-cbc-radio">interviewed by the CBC</a> for the work we did together.</p></li><li class=""><h3 id="school-for-poetic-computation" style="position:relative"><a href="#school-for-poetic-computation" aria-label="school for poetic computation permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>School for Poetic Computation</h3><p>I attended the <a href="https://sfpc.io" target="_blank" rel="noopener noreferrer">School for Poetic Computation</a> in early 2018, where I <a href="https://sfpc.rileyjshaw.com/" target="_blank" rel="noopener noreferrer">kept a blog</a>. My goal was to focus on:</p><ul><li>Education and the reinforcement of class structures</li><li>Deletion, permanence, and consistency</li><li>Repurposing corporate tools</li><li>Making friends</li><li><a href="https://sfpc.rileyjshaw.com/post/172372422682/making-nothing" target="_blank" rel="noopener noreferrer">Making nothing</a></li></ul><p><a href="https://sfpc.rileyjshaw.com/post/182905537092/final-showcase-project-depression" target="_blank" rel="noopener noreferrer">My final project</a> was about depression, which was a surprise for me. Here’s a link to <a href="https://sfpc.rileyjshaw.com/post/171435065582/my-school-for-poetic-computation-application" target="_blank" rel="noopener noreferrer">my application for the program</a>. I learned a lot about art and about myself. I’m grateful for the experience.</p></li><li class=""><h3 id="khan-academy" style="position:relative"><a href="#khan-academy" aria-label="khan academy permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Khan Academy</h3><p>I spent three years on the Engineering team at <a href="https://khanacademy.org" target="_blank" rel="noopener noreferrer">Khan Academy</a>. Here are some highlights:</p><ul><li>I rewrote the video page and player, reducing load time by over 100%</li><li>I created and led KA’s first optimization team</li><li>I <a href="https://youtu.be/RxKZOhS72Cw" target="_blank" rel="noopener noreferrer">built this interface</a> as the sole developer on LearnStorm 2017 <a href="https://youtu.be/gIvD4OYCbbA" target="_blank" rel="noopener noreferrer">🎉</a></li><li>I led our formal mentorship program</li><li>Over 3 years, I deleted more lines of code than I added</li></ul><p>For most of my time at Khan Academy I worked remotely from Toronto, Canada. I’m honored to have worked with such brilliant and passionate folks.</p></li><li class="current"><h3 id="canada-learning-code" style="position:relative"><a href="#canada-learning-code" aria-label="canada learning code permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Canada Learning Code</h3><p>I am a volunteer mentor and instructor with <a href="https://www.canadalearningcode.ca/" target="_blank" rel="noopener noreferrer">Canada Learning Code</a>. I mostly work within these branches:</p><ul><li><a href="https://www.canadalearningcode.ca/experiences/?program=girls_learning_code" target="_blank" rel="noopener noreferrer">Girls Learning Code</a></li><li><a href="https://www.canadalearningcode.ca/experiences/?program=ladies_learning_code" target="_blank" rel="noopener noreferrer">Ladies Learning Code</a></li><li><a href="https://www.canadalearningcode.ca/experiences/?program=teachers_learning_code" target="_blank" rel="noopener noreferrer">Teachers Learning Code</a></li></ul><p>Curriculum content ranges from teaching girls how to make video games to helping teachers learn more about digital privacy.</p></li><li class=""><h3 id="developer-30-under-30" style="position:relative"><a href="#developer-30-under-30" aria-label="developer 30 under 30 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Developer 30 Under 30</h3><p>I won this award in early 2017. <a href="/blog/D30U30">I’ve written about it here</a>.</p></li><li class=""><h3 id="signal-desktop" style="position:relative"><a href="#signal-desktop" aria-label="signal desktop permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Signal Desktop</h3><p>Duing the <a href="/blog/the-pool-on-the-roof-must-have-a-leak">Winter Break of Code</a>, I pitched in on <a href="https://signal.org/" target="_blank" rel="noopener noreferrer">Signal’s desktop app</a>. Spending the morning on an OSS project I’m passionate about and the afternoon in the ocean was pretty close to perfect.</p></li><li class="current"><h3 id="recurse-center" style="position:relative"><a href="#recurse-center" aria-label="recurse center permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Recurse Center</h3><p>I attended <a href="https://www.recurse.com/scout/click?t=4bdcd56dfdb6c80c7832262c0bb8007b" target="_blank" rel="noopener noreferrer">RC</a> in early 2014. While there, I worked on:</p><ul><li><a href="https://rileyjshaw.com/blog/hue-angle-transitions" target="_blank" rel="noopener noreferrer">A better way to transition colors</a> (adopted by <a href="https://www.framer.com/" target="_blank" rel="noopener noreferrer">Framer</a>)</li><li><a href="https://rileyjshaw.com/terra" target="_blank" rel="noopener noreferrer">A biological simulations and cellular automata library</a></li><li><a href="http://ushld.rileyjshaw.com" target="_blank" rel="noopener noreferrer">Fun</a> <a href="https://github.com/rileyjshaw/own-this-website" target="_blank" rel="noopener noreferrer">goofy</a> <a href="https://github.com/rileyjshaw/boxes" target="_blank" rel="noopener noreferrer">web</a> <a href="https://github.com/rileyjshaw/filesupply" target="_blank" rel="noopener noreferrer">apps</a></li><li><a href="https://github.com/neerajwahi/pairjam" target="_blank" rel="noopener noreferrer">A real-time collaborative coding environment</a></li><li><a href="https://github.com/adventure-db/adventure" target="_blank" rel="noopener noreferrer">A tiny graph database engine written in C</a></li><li><a href="https://github.com/ben-eath/the-surf-ace" target="_blank" rel="noopener noreferrer">A Ludum Dare entry that used phone gyroscopes as controllers</a></li><li><a href="https://v2.rileyjshaw.com/" target="_blank" rel="noopener noreferrer">A personal website</a></li><li>Learning a bit of Haskell (of course)</li><li>Making friends</li></ul><p>My favorite projects were the spontaneous collaborations that happened each day, most of which aren’t listed here. I had a wonderful time.</p><p>I am part of the interviewer team for Recurse Center. <a href="https://www.recurse.com/scout/click?t=4bdcd56dfdb6c80c7832262c0bb8007b" target="_blank" rel="noopener noreferrer">Care to apply?</a></p></li><li class=""><h3 id="listn" style="position:relative"><a href="#listn" aria-label="listn permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Listn</h3><p>I co-created <a href="https://listn.co/" target="_blank" rel="noopener noreferrer">a popular mobile app</a> during university. We sold it to <a href="https://www.beatport.com/" target="_blank" rel="noopener noreferrer">Beatport</a>.</p></li></ul><hr/><p>For a full history of my employment, please see my<!-- --> <a href="https://www.linkedin.com/in/rileyjshaw/" target="_blank" rel="noopener noreferrer">Linkedin</a>.</p><h2 id="about-this-website" style="position:relative"><a href="#about-this-website" aria-label="about this website permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>About this website</h2><p>This website aggregates content that I’ve littered across the Internet. I wrote a <a href="http://rileyjshaw.commit--blog.com/rileyjshaw/rileyjshaw-new/2488bcd5e5610f692773e7815fabdb247ece55f5" target="_blank" rel="noopener noreferrer">small utility to scrape the web</a> which runs daily. I structured my website this way to regain ownership of the collection and presentaton of my data.</p><p>If you like the idea of website-as-API, <a href="/subscribe">I have some feeds that you can subscribe to</a>.</p><p>To respect your privacy, this site does not, and will never, track usage data. Most website owners do not share this proclivity. To reclaim some privacy, check out <a href="https://www.eff.org/privacybadger" target="_blank" rel="noopener noreferrer">Privacy Badger</a>.</p><p>This site is free software under the <a href="https://github.com/rileyjshaw/rileyjshaw.github.io/blob/dev/COPYING" target="_blank" rel="noopener noreferrer">GNU GPLv3 license</a> and follows the <a href="https://www.contributor-covenant.org/" target="_blank" rel="noopener noreferrer">Contributor Covenant</a>.</p></div></div><div class="big-quote " id="big-quote"><blockquote cite="https://www.fifthestate.org/archive/311-winter-1983/against-leviathan/"><p>The managers tell us that the swimmers, crawlers, walkers, and fliers spent their lives working in order to eat. These managers are broadcasting their news too soon. The varied beings haven’t all been exterminated yet. You, reader, have only to mingle with them, or just watch them from a distance, to see that their waking lives are filled with dances, games, and feasts. Even the hunt, the stalking and feinting and leaping, is not what we call Work, but what we call Fun. The only beings who work are inmates like us.</p><footer>– <!-- -->Fredy Perlman<!-- -->, <a href="https://www.fifthestate.org/archive/311-winter-1983/against-leviathan/" target="_blank" rel="noopener noreferrer">“<cite>Against Leviathan</cite>”</a></footer></blockquote><a href="#big-quote" aria-label="Load new quote" class="refresh"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="svg-icon"><path d="M93.748 50.034c0-.039.007-.076.007-.114h-.012C93.659 27.442 75.352 9.18 52.852 9.18v17.683c12.79 0 23.194 10.391 23.216 23.17-.059 12.558-10.144 22.769-22.643 23.078-11.699-.287-21.277-9.273-22.483-20.742h9.335L22.015 34.114 3.755 52.369h9.494c1.254 21.028 18.419 37.801 39.603 38.392v.06c.192 0 .381-.026.573-.03.193.004.38.03.573.03v-.06c21.971-.613 39.664-18.595 39.75-40.687h.003c0-.014-.003-.028-.003-.04z"></path></svg></a></div><div class="go-up"><span class=" cycle-text-item">➫</span></div></main></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>console.log(`
 '▀█║────────────▄▄───────────​─▄──▄_
 ──█║───────▄─▄─█▄▄█║──────▄▄──​█║─█║
@@ -136,4 +169,4 @@
 ──────███████───▄▀
 ──────▀█████▀▀▄▀
 ────────▀█▀
-`)</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/about/";window.___webpackCompilationHash="a1b99d923b915d17f286";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-980dbdb7cb089b543711.js"],"app":["/app-db2d2aa78110b758873a.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4b5d9f1d5c65a970f0c5.js"],"component---src-pages-about-js":["/component---src-pages-about-js-9b77ee68753dc874c282.js"],"component---src-pages-index-js":["/component---src-pages-index-js-5fd2202060b384b5570c.js"],"component---src-pages-lab-js":["/component---src-pages-lab-js-4c6e40308be9d518a7a6.js"],"component---src-pages-subscribe-js":["/component---src-pages-subscribe-js-13916799b8f1d7b7f75d.js"],"component---src-templates-blog-list-js":["/component---src-templates-blog-list-js-9a195ccfdf899e376ce9.js"],"component---src-templates-post-js":["/component---src-templates-post-js-f2790b1de22aeaf561d2.js"]};/*]]>*/</script><script src="/polyfill-980dbdb7cb089b543711.js" nomodule=""></script><script src="/component---src-pages-about-js-9b77ee68753dc874c282.js" async=""></script><script src="/commons-b3ee47de06a125814caf.js" async=""></script><script src="/app-db2d2aa78110b758873a.js" async=""></script><script src="/dc6a8720040df98778fe970bf6c000a41750d3ae-076e74be1dca584e1f3b.js" async=""></script><script src="/framework-65c2da20f50aba50061a.js" async=""></script><script src="/webpack-runtime-98d7c4026dfe0308f7f2.js" async=""></script></body></html>
+`)</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/about/";window.___webpackCompilationHash="e41130321d7c8db681f0";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-980dbdb7cb089b543711.js"],"app":["/app-fd3e78ac24dc8ec71a66.js"],"component---src-pages-404-js":["/component---src-pages-404-js-4b5d9f1d5c65a970f0c5.js"],"component---src-pages-about-js":["/component---src-pages-about-js-9b77ee68753dc874c282.js"],"component---src-pages-index-js":["/component---src-pages-index-js-5fd2202060b384b5570c.js"],"component---src-pages-lab-js":["/component---src-pages-lab-js-47eabcaee95b21f063c4.js"],"component---src-pages-subscribe-js":["/component---src-pages-subscribe-js-b6010052dd634efd0091.js"],"component---src-templates-blog-list-js":["/component---src-templates-blog-list-js-9a195ccfdf899e376ce9.js"],"component---src-templates-post-js":["/component---src-templates-post-js-f2790b1de22aeaf561d2.js"]};/*]]>*/</script><script src="/polyfill-980dbdb7cb089b543711.js" nomodule=""></script><script src="/component---src-pages-about-js-9b77ee68753dc874c282.js" async=""></script><script src="/commons-b3ee47de06a125814caf.js" async=""></script><script src="/app-fd3e78ac24dc8ec71a66.js" async=""></script><script src="/dc6a8720040df98778fe970bf6c000a41750d3ae-076e74be1dca584e1f3b.js" async=""></script><script src="/framework-65c2da20f50aba50061a.js" async=""></script><script src="/webpack-runtime-b03d3587c20c9d3fce34.js" async=""></script></body></html>
