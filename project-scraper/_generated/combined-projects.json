@@ -7628,20 +7628,52 @@
 		"uid": "SCREENSHOTS_TUMBLR_673594223488073728"
 	},
 	{
-		"body": "https://64.media.tumblr.com/a191beff434cd19f034a425df88e1af2/4c88dc379a0b2d5f-b1/s500x750/c396df3177e0453a3fd4917eb9e5f70b4ee31a84.png",
+		"body": "https://64.media.tumblr.com/7b4fdf5a1f4e5a9e87fc056a8af527e5/4c88dc379a0b2d5f-c1/s1280x1920/a1bc50d82a64504d04fd3e4ef2792292f8e3734c.png",
 		"contentType": "photo",
 		"coolness": 3,
 		"date": "2022-01-17",
 		"extraData": [
-			480,
-			249,
-			4
+			1280,
+			800,
+			6
 		],
 		"link": "https://screenshots.rileyjshaw.com/post/673613013882929152",
 		"timestamp": 1642377600000,
 		"title": "2022-01-17 at 03.17.10.png",
 		"type": "screenshotsTumblr",
 		"uid": "SCREENSHOTS_TUMBLR_673613013882929152"
+	},
+	{
+		"body": "https://64.media.tumblr.com/c4596f0736cf42e4268c6b78edda3aa9/cc0ca28776ae3396-c7/s1280x1920/1275171e0ff51808301d39b28d52a72e015444f0.png",
+		"contentType": "photo",
+		"coolness": 3,
+		"date": "2022-02-02",
+		"extraData": [
+			1024,
+			746,
+			10
+		],
+		"link": "https://screenshots.rileyjshaw.com/post/675112835087499264",
+		"timestamp": 1643760000000,
+		"title": "2022-02-02 at 16.36.11.png",
+		"type": "screenshotsTumblr",
+		"uid": "SCREENSHOTS_TUMBLR_675112835087499264"
+	},
+	{
+		"body": "https://64.media.tumblr.com/2046e768d3b05bdc0cdcc75fe127a3ce/fc88a92ded337664-b5/s1280x1920/e3243d55b61595ed59ff8eff4116894318695ba3.png",
+		"contentType": "photo",
+		"coolness": 3,
+		"date": "2022-02-02",
+		"extraData": [
+			1024,
+			746,
+			10
+		],
+		"link": "https://screenshots.rileyjshaw.com/post/675113121046822912",
+		"timestamp": 1643760000000,
+		"title": "2022-02-02 at 16.40.44.png",
+		"type": "screenshotsTumblr",
+		"uid": "SCREENSHOTS_TUMBLR_675113121046822912"
 	},
 	{
 		"body": "<p>it was silly to write all of this down but i  created this blog today and i’m still editing the layout, so i want more words to work with.<br/></p><hr><p>create a few distinct sounds, for example:</p><ul><li>cup/table tap</li><li>cup/table scrape</li><li>ball/table tap</li><li>ball/table scrape</li><li>cup/ball tap</li></ul><p>these examples are unambiguous and easy to perform rapidly by someone keeping the cup in one hand &amp; ball in the other. i&rsquo;ll refer to each performed sound as a &ldquo;bit&rdquo; from here on out.</p><p>for n bits, you have (number of sounds)^n options. with the examples above that&rsquo;s 5^n, which is plenty.</p><p>so what&rsquo;s important to convey?</p><p>the shapes are curvy and strange, so it&rsquo;s easier to share a limited reference table of basic + advanced shapes instead of deriving each part of the bear from scratch. three bits could cover 125 shapes, which is  ample for bear and bear-like drawings.</p><p>shapes are more reusable if they can be drawn at different sizes. let&rsquo;s use one bit to indicate size:</p><p>0: smallest<br/>1: smaller<br/>2: as shown on reference table<br/>3: larger<br/>4: largest</p><p>we&rsquo;re trying to convey a cohesive bear, so the relative position between shapes is more important than their absolute position on the page. two bits can express position in relation to the last shape drawn, for example:</p><p>0: draw in any open space<br/>1: draw connected to the north-most edge of the previous shape<br/>2: draw connected to the northeast-most edge of the previous shape<br/>3: draw connected to the east-most edge of the previous shape<br/>4: draw connected to the southeast-most edge of the previous shape<br/>5: draw connected to the south-most edge of the previous shape<br/>&hellip;<br/>9: continue from shape&rsquo;s final pen position<br/>10: continue from shape&rsquo;s initial pen position<br/>&hellip;<br/>15: draw within the previous shape<br/>16: draw surrounding the previous shape<br/>&hellip;<br/>etc.</p><p>since pen position is a factor, the shape reference table should imply direction.</p><p>to save time, a bit could be added to indicate how many shapes should be drawn at the specified position. for example, there are four toes in each bear foot.</p><hr><p>when ordering the bits, it makes sense to think of what information is most useful to the receiver at each step. my intuition is that this is a good order:</p><p>•• position<br/>• number<br/>• size<br/>••• shape</p><p>so each shape takes seven sounds from the sender.</p><hr><p>update: i ran this by phil; they made the point that since there&rsquo;s no acknowledgment channel from the receiver, redundancy would help reduce errors. let&rsquo;s add a bit at the beginning to indicate whether this is the initial message or a confirmation message. the following 7 bits will then be identical.</p><hr><p>update 2: in the above system, a single missed bit would be catastrophic; it would corrupt the receiver&rsquo;s understanding of all future communication. the (initial | confirmation) sound should be unique so it always marks the start of a new shape. dragging the (cup | ball) in a double circle works.</p>",
