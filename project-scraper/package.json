@@ -28,7 +28,7 @@
     "googleapis": "^92.0.0",
     "jsdom": "^19.0.0",
     "json-stable-stringify": "^1.0.1",
-    "node-fetch": "^3.1.0",
+    "node-fetch": "^3.1.1",
     "oauth": "^0.9.15",
     "request-promise-native": "^1.0.9",
     "rss-parser": "^3.12.0",
