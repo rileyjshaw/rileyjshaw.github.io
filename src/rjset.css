@@ -74,7 +74,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	min-height: 100vh;
-	text-rendering: optimizeLegibility;
+	text-rendering: optimizelegibility;
 }
 h1,
 h2,

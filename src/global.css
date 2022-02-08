@@ -35,7 +35,7 @@ pre {
 	text-transform: uppercase;
 }
 .svg-icon {
-	fill: currentColor;
+	fill: currentcolor;
 }
 .visually-hidden {
 	border: 0 !important;
