@@ -24,6 +24,46 @@ const scrapedQuotes = JSON.parse(
 		new URL('_generated/scraped-quotes.json', import.meta.url).pathname
 	)
 );
+// Mutate an object by deleting specific keys. Keys can be simple strings to
+// remove at the root level, or nested with special characters “.” and “[”.
+//
+//   . - Remove the key from a nested object. Eg: 'user.name'.
+//   [ - Remove the key from each item in an array. Eg: 'users[name'.
+//
+// Special characters can be combined. For instance: 'posts[author.id'.
+const deleteKeys = keys => initialObject => {
+	function processKey(key, obj) {
+		const nextSpecialCharacter = key.match(/[.[]/);
+		if (!nextSpecialCharacter) {
+			delete obj[key];
+		} else {
+			const nestedKey = key.slice(nextSpecialCharacter.index + 1);
+			const nestedObj = obj[key.slice(0, nextSpecialCharacter.index)];
+			switch (nextSpecialCharacter[0]) {
+				case '.':
+					processKey(nestedKey, nestedObj);
+					break;
+				case '[':
+					nestedObj.forEach(o => processKey(nestedKey, o));
+					break;
+			}
+		}
+	}
+	keys.forEach(key => processKey(key, initialObject));
+	return initialObject;
+};
+
+const processArena = deleteKeys(['contents', 'added_to_at', 'user']);
+const processIcon = deleteKeys(['icon_url']);
+const processPatch = deleteKeys(['view_count']);
+const processSong = deleteKeys([
+	'monetization_model',
+	'policy',
+	'playback_count',
+	'user',
+	'track_authorization',
+]);
+const processTumblrPost = deleteKeys(['blog']);
 
 // TODO(riley): Since this is an ES Module and Gatsby expects CJS, I duplicated
 // this function into `gatsby-node.js` rather than complicating the build process.
@@ -148,6 +188,7 @@ async function getPatches() {
 			patches = patches.concat(body);
 			totalPages = +response.headers['x-wp-totalpages'];
 		} while (page++ < totalPages);
+		patches.forEach(processPatch);
 		raw.patches = patches;
 		patches.forEach(patch => {
 			const uid = idify(`PATCH_${patch.id}`);
@@ -173,12 +214,14 @@ async function getArena() {
 	try {
 		const url = `http://api.are.na/v2/users/riley-shaw/channels?access_token=${process.env.ARENA_SECRET}`;
 		const response = JSON.parse(await request(url));
-		const channels = (raw.arena = response.channels.filter(
+		const channels = response.channels.filter(
 			channel =>
 				channel.published &&
 				channel.status !== 'private' &&
 				channel.owner_id === 72803
-		));
+		);
+		channels.forEach(processArena);
+		raw.arena = channels;
 		console.log(`Got ${channels.length} Are.na channels.`);
 		channels
 			.filter(channel => channel.length > 20)
@@ -256,6 +299,7 @@ function getSFPCTumblr() {
 				if (allPosts.length < total_posts) {
 					return getPage({offset: allPosts.length});
 				} else {
+					allPosts.forEach(processTumblrPost);
 					raw.sfpcTumblr = allPosts;
 					allPosts.forEach(post => {
 						const uid = idify(`SFPC_TUMBLR_${post.id}`);
@@ -341,6 +385,7 @@ function getScreenshotsTumblr() {
 				if (allPosts.length < total_posts) {
 					return getPage({offset: allPosts.length});
 				} else {
+					allPosts.forEach(processTumblrPost);
 					raw.screenshotsTumblr = allPosts;
 					allPosts.forEach(post => {
 						const uid = idify(`SCREENSHOTS_TUMBLR_${post.id}`);
@@ -465,9 +510,7 @@ function getIcons() {
 		)
 		.then(JSON.parse)
 		.then(({uploads}) => {
-			uploads.forEach(icon => {
-				delete icon.icon_url;
-			});
+			uploads.forEach(processIcon);
 			raw.nounIcons = uploads;
 			console.log(`Got ${uploads.length} The Noun Project icons.`);
 			uploads.forEach(upload => {
@@ -510,9 +553,7 @@ async function getSoundCloud() {
 			songs = songs.concat(response.collection);
 			url = response.next_href;
 		}
-		songs.forEach(song => {
-			delete song.track_authorization;
-		});
+		songs.forEach(processSong);
 		raw.songs = songs;
 		songs
 			.filter(song => !song.tag_list.split(' ').includes('hide'))
