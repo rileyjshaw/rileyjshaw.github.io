@@ -20,6 +20,21 @@
 		"todo": true
 	},
 	{
+		"title": "SVG filters",
+		"description": [
+			"The SVG specification has built-in noise and lighting, so I tried them out. Infinitely scalable, non-repeating patterns in much less than a kilobyte."
+		],
+		"date": "2022-01-27",
+		"coolness": 73,
+		"link": "https://codepen.io/collection/QWKQYQ"
+	},
+	{
+		"title": "Interference pattern generator",
+		"date": "2022-01-17",
+		"coolness": 41,
+		"link": "https://codepen.io/rileyjshaw/pen/vYePywJ"
+	},
+	{
 		"title": "Propellers",
 		"date": "2021-11-20",
 		"coolness": 50,
