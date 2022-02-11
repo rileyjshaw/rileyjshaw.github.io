@@ -3685,6 +3685,15 @@
 		"uid": "PROJECT_INSTAFRAME"
 	},
 	{
+		"coolness": 41,
+		"date": "2022-01-17",
+		"link": "https://codepen.io/rileyjshaw/pen/vYePywJ",
+		"timestamp": 1642377600000,
+		"title": "Interference pattern generator",
+		"type": "project",
+		"uid": "PROJECT_INTERFERENCE_PATTERN_GENERATOR"
+	},
+	{
 		"coolness": 32,
 		"date": "2015-03-13",
 		"descriptionList": [
@@ -5675,6 +5684,18 @@
 		"title": "SVG &lt;animate&gt; tests",
 		"type": "project",
 		"uid": "PROJECT_SVG_12LT1NANIMATE12GT1N_TESTS"
+	},
+	{
+		"coolness": 73,
+		"date": "2022-01-27",
+		"descriptionList": [
+			"The SVG specification has built-in noise and lighting, so I tried them out. Infinitely scalable, non-repeating patterns in much less than a kilobyte."
+		],
+		"link": "https://codepen.io/collection/QWKQYQ",
+		"timestamp": 1643241600000,
+		"title": "SVG filters",
+		"type": "project",
+		"uid": "PROJECT_SVG_FILTERS"
 	},
 	{
 		"coolness": 8,
