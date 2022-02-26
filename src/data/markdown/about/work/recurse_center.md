@@ -18,4 +18,6 @@ I attended [RC](https://www.recurse.com/scout/click?t=4bdcd56dfdb6c80c7832262c0b
 
 My favorite projects were the spontaneous collaborations that happened each day, most of which aren’t listed here. I had a wonderful time.
 
+In 2021 I helped build RC’s virtual space, [RC Together](https://www.rctogether.com/).
+
 I am part of the interviewer team for Recurse Center. [Care to apply?](https://www.recurse.com/scout/click?t=4bdcd56dfdb6c80c7832262c0bb8007b)
