@@ -20,6 +20,12 @@
 		"todo": true
 	},
 	{
+		"title": "Glass rings",
+		"date": "2022-02-27",
+		"coolness": 31,
+		"link": "https://codepen.io/collection/YypZxG"
+	},
+	{
 		"title": "SVG filters",
 		"description": [
 			"The SVG specification has built-in noise and lighting, so I tried them out. Infinitely scalable, non-repeating patterns in much less than a kilobyte."
