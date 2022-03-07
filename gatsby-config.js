@@ -231,7 +231,11 @@ module.exports = {
 									length
 									contentType
 									body
-									image
+									image {
+										height
+										width
+										url
+									}
 									extraData
 								}
 							}
@@ -254,7 +258,11 @@ module.exports = {
 									length
 									contentType
 									body
-									image
+									image {
+										height
+										width
+										url
+									}
 									extraData
 								}
 							}
@@ -278,7 +286,11 @@ module.exports = {
 									length
 									contentType
 									body
-									image
+									image {
+										height
+										width
+										url
+									}
 									extraData
 								}
 							}
@@ -326,7 +338,11 @@ module.exports = {
 										length
 										contentType
 										body
-										image
+										image {
+											height
+											width
+											url
+										}
 										extraData
 									}
 								}
@@ -383,7 +399,11 @@ module.exports = {
 										length
 										contentType
 										body
-										image
+										image {
+											height
+											width
+											url
+										}
 										extraData
 									}
 								}
@@ -431,7 +451,11 @@ module.exports = {
 										length
 										contentType
 										body
-										image
+										image {
+											height
+											width
+											url
+										}
 										extraData
 									}
 								}

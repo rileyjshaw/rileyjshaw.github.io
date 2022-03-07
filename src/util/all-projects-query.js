@@ -56,7 +56,11 @@ export default () =>
 					length
 					contentType
 					body
-					image
+					image {
+						height
+						width
+						url
+					}
 					more
 					extraData
 				}

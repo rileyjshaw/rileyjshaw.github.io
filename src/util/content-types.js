@@ -41,7 +41,12 @@ export const ArenaChannelContent = ({description, length, updatedAt}) => (
 );
 export const IconContent = ({image, title}) => (
 	<main>
-		<img src={image} width={84} height={84} alt={`${title} icon`} />
+		<img
+			src={image.url}
+			width={image.width}
+			height={image.height}
+			alt={`${title} icon`}
+		/>
 	</main>
 );
 export const DweetContent = ({title, blockEmbeds}) => {
@@ -112,6 +117,7 @@ export const VideoContent = ({
 	contentType,
 	description,
 	title,
+	image,
 	link,
 	more,
 }) => {
@@ -135,10 +141,25 @@ export const VideoContent = ({
 						),
 					}[contentType]
 				) : (
-					<BlockEmbedButton
-						type={contentType === 'vimeo' ? 'Vimeo' : 'YouTube'}
-						onClick={() => setShowEmbed(true)}
-					/>
+					<div
+						style={{
+							backgroundImage: `url(${image.url})`,
+							position: 'absolute',
+							top: 0,
+							left: 0,
+							right: 0,
+							bottom: 0,
+							backgroundSize: 'cover',
+							backgroundPosition: 'center',
+						}}
+					>
+						<BlockEmbedButton
+							type={
+								contentType === 'vimeo' ? 'Vimeo' : 'YouTube'
+							}
+							onClick={() => setShowEmbed(true)}
+						/>
+					</div>
 				)}
 			</div>
 			{description && (

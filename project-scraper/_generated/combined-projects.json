@@ -1006,7 +1006,11 @@
 	},
 	{
 		"date": "2013-02-12",
-		"image": "https://static.thenounproject.com/png/11539-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/11539-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/arrow-left/11539",
 		"tags": [
 			"visual"
@@ -1018,7 +1022,11 @@
 	},
 	{
 		"date": "2013-02-12",
-		"image": "https://static.thenounproject.com/png/11541-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/11541-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/calendar/11541",
 		"tags": [
 			"visual"
@@ -1030,7 +1038,11 @@
 	},
 	{
 		"date": "2013-02-12",
-		"image": "https://static.thenounproject.com/png/11542-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/11542-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/happy/11542",
 		"tags": [
 			"visual"
@@ -1042,7 +1054,11 @@
 	},
 	{
 		"date": "2013-02-12",
-		"image": "https://static.thenounproject.com/png/11543-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/11543-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/clock/11543",
 		"tags": [
 			"visual"
@@ -1054,7 +1070,11 @@
 	},
 	{
 		"date": "2013-02-12",
-		"image": "https://static.thenounproject.com/png/11544-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/11544-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/nut/11544",
 		"tags": [
 			"visual"
@@ -1066,7 +1086,11 @@
 	},
 	{
 		"date": "2013-02-12",
-		"image": "https://static.thenounproject.com/png/11584-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/11584-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/arrow-down/11584",
 		"tags": [
 			"visual"
@@ -1078,7 +1102,11 @@
 	},
 	{
 		"date": "2013-02-12",
-		"image": "https://static.thenounproject.com/png/11585-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/11585-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/arrow-up/11585",
 		"tags": [
 			"visual"
@@ -1090,7 +1118,11 @@
 	},
 	{
 		"date": "2013-02-12",
-		"image": "https://static.thenounproject.com/png/11586-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/11586-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/close/11586",
 		"tags": [
 			"visual"
@@ -1102,7 +1134,11 @@
 	},
 	{
 		"date": "2013-02-12",
-		"image": "https://static.thenounproject.com/png/11587-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/11587-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/right-arrow/11587",
 		"tags": [
 			"visual"
@@ -1114,7 +1150,11 @@
 	},
 	{
 		"date": "2013-02-12",
-		"image": "https://static.thenounproject.com/png/11588-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/11588-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/close/11588",
 		"tags": [
 			"visual"
@@ -1126,7 +1166,11 @@
 	},
 	{
 		"date": "2018-11-12",
-		"image": "https://static.thenounproject.com/png/2154767-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/2154767-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/dropper/2154767",
 		"tags": [
 			"visual"
@@ -1138,7 +1182,11 @@
 	},
 	{
 		"date": "2015-09-24",
-		"image": "https://static.thenounproject.com/png/215555-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/215555-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/map-marker/215555",
 		"tags": [
 			"visual"
@@ -1150,7 +1198,11 @@
 	},
 	{
 		"date": "2015-12-22",
-		"image": "https://static.thenounproject.com/png/294465-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/294465-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/lower-right/294465",
 		"tags": [
 			"visual"
@@ -1162,7 +1214,11 @@
 	},
 	{
 		"date": "2015-12-22",
-		"image": "https://static.thenounproject.com/png/294466-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/294466-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/lower-left/294466",
 		"tags": [
 			"visual"
@@ -1174,7 +1230,11 @@
 	},
 	{
 		"date": "2015-12-22",
-		"image": "https://static.thenounproject.com/png/294467-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/294467-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/upper-right/294467",
 		"tags": [
 			"visual"
@@ -1186,7 +1246,11 @@
 	},
 	{
 		"date": "2015-12-22",
-		"image": "https://static.thenounproject.com/png/294468-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/294468-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/down/294468",
 		"tags": [
 			"visual"
@@ -1198,7 +1262,11 @@
 	},
 	{
 		"date": "2015-12-22",
-		"image": "https://static.thenounproject.com/png/294469-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/294469-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/up/294469",
 		"tags": [
 			"visual"
@@ -1210,7 +1278,11 @@
 	},
 	{
 		"date": "2015-12-22",
-		"image": "https://static.thenounproject.com/png/294470-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/294470-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/right/294470",
 		"tags": [
 			"visual"
@@ -1222,7 +1294,11 @@
 	},
 	{
 		"date": "2015-12-22",
-		"image": "https://static.thenounproject.com/png/294471-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/294471-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/left/294471",
 		"tags": [
 			"visual"
@@ -1234,7 +1310,11 @@
 	},
 	{
 		"date": "2015-12-22",
-		"image": "https://static.thenounproject.com/png/294472-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/294472-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/upper-left/294472",
 		"tags": [
 			"visual"
@@ -1246,7 +1326,11 @@
 	},
 	{
 		"date": "2015-12-23",
-		"image": "https://static.thenounproject.com/png/295645-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/295645-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/spring/295645",
 		"tags": [
 			"visual"
@@ -1258,7 +1342,11 @@
 	},
 	{
 		"date": "2015-12-23",
-		"image": "https://static.thenounproject.com/png/295647-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/295647-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/spring/295647",
 		"tags": [
 			"visual"
@@ -1270,7 +1358,11 @@
 	},
 	{
 		"date": "2015-12-23",
-		"image": "https://static.thenounproject.com/png/295649-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/295649-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/hamburger/295649",
 		"tags": [
 			"visual"
@@ -1282,7 +1374,11 @@
 	},
 	{
 		"date": "2012-06-09",
-		"image": "https://static.thenounproject.com/png/3164-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/3164-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/no-trash/3164",
 		"tags": [
 			"visual"
@@ -1294,7 +1390,11 @@
 	},
 	{
 		"date": "2014-09-14",
-		"image": "https://static.thenounproject.com/png/74002-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/74002-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/video-camera/74002",
 		"tags": [
 			"visual"
@@ -1306,7 +1406,11 @@
 	},
 	{
 		"date": "2014-10-18",
-		"image": "https://static.thenounproject.com/png/79589-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/79589-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/back/79589",
 		"tags": [
 			"visual"
@@ -1318,7 +1422,11 @@
 	},
 	{
 		"date": "2014-10-18",
-		"image": "https://static.thenounproject.com/png/79590-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/79590-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/fast-forward/79590",
 		"tags": [
 			"visual"
@@ -1330,7 +1438,11 @@
 	},
 	{
 		"date": "2014-10-18",
-		"image": "https://static.thenounproject.com/png/79591-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/79591-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/repeat/79591",
 		"tags": [
 			"visual"
@@ -1342,7 +1454,11 @@
 	},
 	{
 		"date": "2014-10-18",
-		"image": "https://static.thenounproject.com/png/79592-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/79592-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/rewind/79592",
 		"tags": [
 			"visual"
@@ -1354,7 +1470,11 @@
 	},
 	{
 		"date": "2014-10-18",
-		"image": "https://static.thenounproject.com/png/79593-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/79593-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/play/79593",
 		"tags": [
 			"visual"
@@ -1366,7 +1486,11 @@
 	},
 	{
 		"date": "2014-10-18",
-		"image": "https://static.thenounproject.com/png/79594-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/79594-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/pause/79594",
 		"tags": [
 			"visual"
@@ -1378,7 +1502,11 @@
 	},
 	{
 		"date": "2014-10-18",
-		"image": "https://static.thenounproject.com/png/79595-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/79595-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/shuffle/79595",
 		"tags": [
 			"visual"
@@ -1390,7 +1518,11 @@
 	},
 	{
 		"date": "2014-10-18",
-		"image": "https://static.thenounproject.com/png/79596-84.png",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/79596-84.png",
+			"width": 84
+		},
 		"link": "https://thenounproject.com/term/share/79596",
 		"tags": [
 			"visual"
@@ -8042,6 +8174,11 @@
 		"contentType": "vimeo",
 		"date": "2019-12-03",
 		"description": "This video played behind me during my Winter 2018 School for Poetic Computation intro. The following is a transcript of my talk:",
+		"image": {
+			"height": 1080,
+			"url": "https://i.vimeocdn.com/video/836440996-b03c76d6f9e8cbb016001bcc4bf3e72d3322cd2565c7e179fb8283009a4861ee-d_1920x1080?r=pad",
+			"width": 1920
+		},
 		"link": "https://vimeo.com/377116426",
 		"more": true,
 		"timestamp": 1575331200000,
@@ -8054,6 +8191,11 @@
 		"contentType": "youtube",
 		"date": "2020-11-27",
 		"description": "A first pass at recreating my favourite parts of Alex Matheu's lovely GlitchCore app in Drambo. You can download it on PatchStorage here: https://patchstorage.com/glitch-more/",
+		"image": {
+			"height": 720,
+			"url": "https://i.ytimg.com/vi/2FAzhbVhdTY/maxresdefault.jpg",
+			"width": 1280
+		},
 		"link": "https://youtube.com/watch?v=2FAzhbVhdTY",
 		"more": true,
 		"timestamp": 1606435200000,
@@ -8066,6 +8208,11 @@
 		"contentType": "youtube",
 		"date": "2020-10-16",
 		"description": "This is a demo video for my Drambo “Chorder!” rack, a parameter-lockable, MIDI-mappable converter from a single MIDI note to 8 configurable chords.",
+		"image": {
+			"height": 720,
+			"url": "https://i.ytimg.com/vi/7UM6fZ8ibF4/maxresdefault.jpg",
+			"width": 1280
+		},
 		"link": "https://youtube.com/watch?v=7UM6fZ8ibF4",
 		"more": true,
 		"timestamp": 1602806400000,
@@ -8078,6 +8225,11 @@
 		"contentType": "youtube",
 		"date": "2022-01-07",
 		"description": "A quick doodle after work today.",
+		"image": {
+			"height": 720,
+			"url": "https://i.ytimg.com/vi/H8dFqFTj19E/maxresdefault.jpg",
+			"width": 1280
+		},
 		"link": "https://youtube.com/watch?v=H8dFqFTj19E",
 		"more": true,
 		"timestamp": 1641513600000,
@@ -8090,6 +8242,11 @@
 		"contentType": "youtube",
 		"date": "2022-01-11",
 		"description": "“Hey, listen!” 🧚‍♀️",
+		"image": {
+			"height": 720,
+			"url": "https://i.ytimg.com/vi/JjOFkKFbvlw/maxresdefault.jpg",
+			"width": 1280
+		},
 		"link": "https://youtube.com/watch?v=JjOFkKFbvlw",
 		"more": true,
 		"timestamp": 1641859200000,
@@ -8102,6 +8259,11 @@
 		"contentType": "youtube",
 		"date": "2021-03-13",
 		"description": "A quick demo of three Mozaic plugins I wrote in December 2020: “Gravity delay”, “Panning gravity delay”, and “Dedupe”. Download them for free on Patchstorage:",
+		"image": {
+			"height": 720,
+			"url": "https://i.ytimg.com/vi/MfgEzUxGdR8/maxresdefault.jpg",
+			"width": 1280
+		},
 		"link": "https://youtube.com/watch?v=MfgEzUxGdR8",
 		"more": true,
 		"timestamp": 1615593600000,
@@ -8113,7 +8275,12 @@
 		"body": "Ow5A2BGH1m4",
 		"contentType": "youtube",
 		"date": "2020-10-06",
-		"description": "UPDATE: I created an 18-page handwritten DIY guide. It’s for sale at https://oneitem.store/jambo.",
+		"description": "UPDATE: I created an 18-page handwritten DIY guide. It’s for sale at https://gum.co/jambo.",
+		"image": {
+			"height": 480,
+			"url": "https://i.ytimg.com/vi/Ow5A2BGH1m4/sddefault.jpg",
+			"width": 640
+		},
 		"link": "https://youtube.com/watch?v=Ow5A2BGH1m4",
 		"more": true,
 		"timestamp": 1601942400000,
@@ -8126,6 +8293,11 @@
 		"contentType": "youtube",
 		"date": "2020-12-12",
 		"description": "This is a MIDI panic rack.",
+		"image": {
+			"height": 720,
+			"url": "https://i.ytimg.com/vi/Vgyj4DNHfvM/maxresdefault.jpg",
+			"width": 1280
+		},
 		"link": "https://youtube.com/watch?v=Vgyj4DNHfvM",
 		"more": true,
 		"timestamp": 1607731200000,
@@ -8138,6 +8310,11 @@
 		"contentType": "youtube",
 		"date": "2020-10-18",
 		"description": "Bit of progress as I work on the settings menu :)",
+		"image": {
+			"height": 720,
+			"url": "https://i.ytimg.com/vi/w8Zuumkq3j0/maxresdefault.jpg",
+			"width": 1280
+		},
 		"link": "https://youtube.com/watch?v=w8Zuumkq3j0",
 		"more": false,
 		"timestamp": 1602979200000,
@@ -8150,6 +8327,11 @@
 		"contentType": "youtube",
 		"date": "2022-01-03",
 		"description": "New instrument!",
+		"image": {
+			"height": 720,
+			"url": "https://i.ytimg.com/vi/ytyOffQuA5o/maxresdefault.jpg",
+			"width": 1280
+		},
 		"link": "https://youtube.com/watch?v=ytyOffQuA5o",
 		"more": true,
 		"timestamp": 1641168000000,
@@ -8162,6 +8344,11 @@
 		"contentType": "youtube",
 		"date": "2019-02-19",
 		"description": "sfpc spring 2018 showcase project",
+		"image": {
+			"height": 720,
+			"url": "https://i.ytimg.com/vi/ZTyzMsvt2jo/maxresdefault.jpg",
+			"width": 1280
+		},
 		"link": "https://youtube.com/watch?v=ZTyzMsvt2jo",
 		"more": true,
 		"timestamp": 1550534400000,
