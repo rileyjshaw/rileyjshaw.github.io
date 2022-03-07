@@ -524,7 +524,11 @@ function getIcons() {
 						upload.term.slice(1).toLowerCase().replace(/-/g, ' '),
 					date: upload.date_uploaded,
 					link: `https://thenounproject.com${upload.permalink}`,
-					image: upload.preview_url_84,
+					image: {
+						height: 84,
+						width: 84,
+						url: upload.preview_url_84,
+					},
 				};
 				if (index !== -1) formatted[index] = result;
 				else formatted.push(result);
@@ -604,7 +608,7 @@ async function getYoutube() {
 			)(requestConfig);
 			console.log(`Got ${data.items.length} YouTube videos.`);
 			videos = videos.concat(data.items.map(v => v.snippet));
-			requestConfig.pageToken = requestConfig.nextPageToken;
+			requestConfig.pageToken = data.nextPageToken;
 		} while (requestConfig.pageToken);
 		return videos;
 	} catch (err) {
@@ -625,13 +629,26 @@ async function getVimeo() {
 					method: 'GET',
 					path: url,
 				},
-				function (error, body) {
+				async function (error, body) {
 					if (error) {
 						reject(error);
 					}
 					const nextUrl = body.paging.next;
-					const newVideos = body.data.filter(
-						video => video.privacy.view === 'anybody'
+					const newVideos = await Promise.all(
+						body.data
+							.filter(video => video.privacy.view === 'anybody')
+							.map(async ({metadata, ...video}) => {
+								const pictures = await util.promisify(
+									vimeoClient.request.bind(vimeoClient)
+								)({
+									method: 'GET',
+									path: metadata.connections.pictures.uri,
+								});
+								return {
+									...video,
+									pictures,
+								};
+							})
 					);
 					console.log(`Got ${newVideos.length} Vimeo videos.`);
 					videos = videos.concat(newVideos);
@@ -643,7 +660,7 @@ async function getVimeo() {
 				}
 			);
 		})(
-			'/me/videos?fields=uri,name,description,link,embed.html,created_time,privacy&filter_playable=true'
+			'/me/videos?fields=uri,name,description,link,embed.html,created_time,privacy,metadata.connections&filter_playable=true'
 		);
 	});
 }
@@ -656,20 +673,27 @@ async function getVideos() {
 				const uid = idify(`VIDEO_V_${video.uri.slice(8)}`);
 				const index = formatted.findIndex(d => d.uid === uid);
 				const descriptionList = video.description.split('\n');
+				const images = video.pictures.data[0].sizes;
+				const image = images[images.length - 1];
 				const result = {
 					uid,
-					description: descriptionList[0],
 					type: 'video',
+					contentType: 'vimeo',
 					title: video.name,
-					date: video.created_time.slice(0, 10),
+					description: descriptionList[0],
+					image: {
+						height: image.height,
+						width: image.width,
+						url: image.link,
+					},
 					body:
 						video.privacy.embed === 'public' &&
 						video.embed.html.replace(
 							/ ?(width|height)="[0-9]+"/gi,
 							''
 						),
+					date: video.created_time.slice(0, 10),
 					link: video.link,
-					contentType: 'vimeo',
 					more: descriptionList.length > 1,
 				};
 				if (index !== -1) formatted[index] = result;
@@ -682,13 +706,19 @@ async function getVideos() {
 				const descriptionList = video.description.split('\n');
 				const result = {
 					uid,
-					body: videoId,
-					description: descriptionList[0],
 					type: 'video',
+					contentType: 'youtube',
 					title: video.title,
+					description: descriptionList[0],
+					image: Object.values(video.thumbnails).reduce(
+						(bestQuality, video) => {
+							if (video.width > bestQuality.width) return video;
+							return bestQuality;
+						}
+					),
+					body: videoId,
 					date: video.publishedAt.slice(0, 10),
 					link: `https://youtube.com/watch?v=${videoId}`,
-					contentType: 'youtube',
 					more: descriptionList.length > 1,
 				};
 				if (index !== -1) formatted[index] = result;
