@@ -3526,6 +3526,10 @@
 	{
 		"coolness": 31,
 		"date": "2022-02-27",
+		"descriptionList": [
+			"More explorations with SVG.",
+			"In these demos, SVG noise is used as a filter to distort geometric canvas animations."
+		],
 		"link": "https://codepen.io/collection/YypZxG",
 		"timestamp": 1645920000000,
 		"title": "Glass rings",
