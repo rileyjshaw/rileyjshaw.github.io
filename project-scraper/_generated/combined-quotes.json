@@ -340,6 +340,13 @@
 		"uid": "ODD_NUMBERS"
 	},
 	{
+		"author": "Devine Lu Linvega",
+		"cite": "https://wiki.xxiivv.com/site/collapse_computing.html",
+		"content": "If your new software no longer runs on old hardware, it is worse than the old software.",
+		"source": "Collapse Computing",
+		"uid": "OLD_SOFTWARE"
+	},
+	{
 		"author": "Audrey Watters",
 		"cite": "http://monsters.hackeducation.com/",
 		"content": "Openwashing: n., having an appearance of open-source and open-licensing for marketing purposes, while continuing proprietary practices.",
