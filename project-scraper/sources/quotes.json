@@ -489,5 +489,11 @@
 		"author": "Moxie Marlinspike",
 		"source": "The Worst",
 		"cite": "https://moxie.org/2012/11/27/the-worst.html"
+	},
+	"OLD_SOFTWARE": {
+		"content": "If your new software no longer runs on old hardware, it is worse than the old software.",
+		"author": "Devine Lu Linvega",
+		"source": "Collapse Computing",
+		"cite": "https://wiki.xxiivv.com/site/collapse_computing.html"
 	}
 }
