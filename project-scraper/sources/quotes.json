@@ -495,5 +495,11 @@
 		"author": "Devine Lu Linvega",
 		"source": "Collapse Computing",
 		"cite": "https://wiki.xxiivv.com/site/collapse_computing.html"
+	},
+	"UNDERSTANDING": {
+		"content": "Let's use the web to create neat new exciting things.\nLet's use the Web to help people understand each other.",
+		"author": "Tim Berners-Lee",
+		"source": "Answers for Young People",
+		"cite": "https://www.w3.org/People/Berners-Lee/Kids.html"
 	}
 }
