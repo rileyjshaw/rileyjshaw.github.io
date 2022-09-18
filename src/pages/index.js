@@ -120,7 +120,7 @@ const IndexPage = ({featuredProjects = []}) => {
 const IndexPageWrapper = props => {
 	const featuredProjects = sortByDate(allProjectsQuery())
 		.filter(project => (project.coolness ?? 100) > 40)
-		.slice(0, 8);
+		.slice(0, 5);
 	return <IndexPage {...props} featuredProjects={featuredProjects} />;
 };
 
