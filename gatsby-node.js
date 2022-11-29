@@ -12,7 +12,14 @@ const idify = uid =>
 		.toUpperCase();
 
 exports.createPages = async ({actions, graphql, reporter}) => {
-	const {createPage} = actions;
+	const {createPage, createRedirect} = actions;
+
+	// Create some redirects.
+	createRedirect({
+		fromPath: '/contact',
+		toPath: '/subscribe',
+	});
+
 	const blogListTemplate = path.resolve('src/templates/blog-list.js');
 	const blogPostTemplate = path.resolve('src/templates/post.js');
 
@@ -51,7 +58,7 @@ exports.createPages = async ({actions, graphql, reporter}) => {
 		}
 	`);
 
-	// Handle errors
+	// Handle errors.
 	if (result.errors) {
 		reporter.panicOnBuild(`Error while running GraphQL query.`);
 		return;
