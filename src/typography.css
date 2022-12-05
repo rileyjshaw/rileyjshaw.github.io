@@ -3,8 +3,8 @@
 	font-family: Geomanist;
 	font-style: normal;
 	font-weight: 400;
-	src: url('geomanist-regular-webfont.woff2') format('woff2'),
-		url('geomanist-regular-webfont.woff') format('woff');
+	src: url('/fonts/geomanist-regular-webfont.woff2') format('woff2'),
+		url('/fonts/geomanist-regular-webfont.woff') format('woff');
 	unicode-range: U+20-7E, U+A0, U+2013, U+2014, U+2018, U+2019, U+201C,
 		U+201D, U+2022, U+2026, U+25BC, U+27A1, U+FE0E;
 }
@@ -14,8 +14,8 @@
 	font-family: Geomanist;
 	font-style: italic;
 	font-weight: 400;
-	src: url('geomanist-regular-italic-webfont.woff2') format('woff2'),
-		url('geomanist-regular-italic-webfont.woff') format('woff');
+	src: url('/fonts/geomanist-regular-italic-webfont.woff2') format('woff2'),
+		url('/fonts/geomanist-regular-italic-webfont.woff') format('woff');
 	unicode-range: U+20-7E, U+A0, U+2013, U+2014, U+2018, U+2019, U+201C,
 		U+201D, U+2022, U+2026, U+25BC, U+27A1, U+FE0E;
 }
@@ -25,8 +25,8 @@
 	font-family: Geomanist;
 	font-style: normal;
 	font-weight: 500;
-	src: url('geomanist-medium-webfont.woff2') format('woff2'),
-		url('geomanist-medium-webfont.woff') format('woff');
+	src: url('/fonts/geomanist-medium-webfont.woff2') format('woff2'),
+		url('/fonts/geomanist-medium-webfont.woff') format('woff');
 	unicode-range: U+20-7E, U+A0, U+2013, U+2014, U+2018, U+2019, U+201C,
 		U+201D, U+2022, U+2026, U+25BC, U+27A1, U+FE0E;
 }
@@ -36,8 +36,8 @@
 	font-family: Geomanist;
 	font-style: italic;
 	font-weight: 500;
-	src: url('geomanist-medium-italic-webfont.woff2') format('woff2'),
-		url('geomanist-medium-italic-webfont.woff') format('woff');
+	src: url('/fonts/geomanist-medium-italic-webfont.woff2') format('woff2'),
+		url('/fonts/geomanist-medium-italic-webfont.woff') format('woff');
 	unicode-range: U+20-7E, U+A0, U+2013, U+2014, U+2018, U+2019, U+201C,
 		U+201D, U+2022, U+2026, U+25BC, U+27A1, U+FE0E;
 }
@@ -47,8 +47,8 @@
 	font-family: Geomanist;
 	font-style: normal;
 	font-weight: 900;
-	src: url('geomanist-black-webfont.woff2') format('woff2'),
-		url('geomanist-black-webfont.woff') format('woff');
+	src: url('/fonts/geomanist-black-webfont.woff2') format('woff2'),
+		url('/fonts/geomanist-black-webfont.woff') format('woff');
 	unicode-range: U+20-7E, U+A0, U+2013, U+2014, U+2018, U+2019, U+201C,
 		U+201D, U+2022, U+2026, U+25BC, U+27A1, U+FE0E;
 }
@@ -58,8 +58,8 @@
 	font-family: Geomanist;
 	font-style: italic;
 	font-weight: 900;
-	src: url('geomanist-black-italic-webfont.woff2') format('woff2'),
-		url('geomanist-black-italic-webfont.woff') format('woff');
+	src: url('/fonts/geomanist-black-italic-webfont.woff2') format('woff2'),
+		url('/fonts/geomanist-black-italic-webfont.woff') format('woff');
 	unicode-range: U+20-7E, U+A0, U+2013, U+2014, U+2018, U+2019, U+201C,
 		U+201D, U+2022, U+2026, U+25BC, U+27A1, U+FE0E;
 }

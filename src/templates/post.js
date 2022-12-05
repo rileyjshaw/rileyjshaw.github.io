@@ -1,16 +1,18 @@
 import SEO from '../components/seo';
 import './post.css';
 import {Link, graphql} from 'gatsby';
-import {MDXRenderer} from 'gatsby-plugin-mdx';
 import React from 'react';
 
+export function Head({data, ...props}) {
+	return <SEO {...props} title={data.mdx.fields.title} />;
+}
+
 // TODO: Add settings?
-export default function Template({data}) {
+export default function Template({data, children}) {
 	const {mdx} = data;
-	const {fields, body} = mdx;
+	const {fields} = mdx;
 	return (
 		<>
-			<SEO title={fields.title} />
 			<header className="top-nav" role="banner">
 				<nav role="navigation">
 					<h1>
@@ -27,10 +29,8 @@ export default function Template({data}) {
 							<time>Posted {fields.date}</time>
 						</div>
 					</header>
-					<MDXRenderer className="blog-post-markdown">
-						{/* HACK(riley): Replace this in a remark plugin. */}
-						{body.replace(/↩/g, '↩&#xFE0E;')}
-					</MDXRenderer>
+					{/* TODO(riley): Replace this: replace(/↩/g, '↩&#xFE0E;') */}
+					<div className="blog-post-markdown">{children}</div>
 				</article>
 			</main>
 		</>
@@ -38,9 +38,8 @@ export default function Template({data}) {
 }
 
 export const pageQuery = graphql`
-	query ($path: String!) {
-		mdx(fields: {slug: {eq: $path}}) {
-			body
+	query PostTemplate($id: String!) {
+		mdx(id: {eq: $id}) {
 			fields {
 				date(formatString: "MMMM DD, YYYY")
 				slug

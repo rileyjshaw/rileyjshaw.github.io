@@ -7,8 +7,7 @@ import OAuth from 'oauth';
 import request from 'request-promise-native';
 import RssParser from 'rss-parser';
 import tumblr from 'tumblr.js';
-import {URL} from 'url';
-import url from 'url';
+import {URL, url} from 'url';
 import util from 'util';
 import {Vimeo} from 'vimeo';
 
@@ -96,7 +95,7 @@ export const excerptify = body => {
 		({charCount, els}, el) => {
 			if (charCount > 700) return {charCount, els, more: true};
 			// TODO:
-			// if (charCount + charCount + el.textContent.length > 700) {
+			// if (charCount + el.textContent.length > 700) {
 			// Recursively go through Array.from(el.children).reverse(), and delete
 			// nodes until it’s under 700 characters.
 			// }

@@ -19,8 +19,8 @@ I made some pretty images using [Andy Doro](https://andydoro.com/)’s [3-state 
 ![Sketch 11](../../../../../content/images/blog/CA_3/11.png)
 ![Sketch 12](../../../../../content/images/blog/CA_3/12.png)
 
-<img alt="Sketch 13" src="../../../../../content/images/blog/CA_3/13.gif" style="width: 100%" />
-<a href="/CA_3/14.mp4"><img alt="Sketch 14" src="../../../../../content/images/blog/CA_3/14.webp" style="width: 50%" /></a>
-<a href="/CA_3/15.mp4"><img alt="Sketch 15" src="../../../../../content/images/blog/CA_3/15.webp" style="width: 50%" /></a>
-<a href="/CA_3/16.mp4"><img alt="Sketch 16" src="../../../../../content/images/blog/CA_3/16.webp" style="width: 50%" /></a>
-<a href="/CA_3/17.mp4"><img alt="Sketch 17" src="../../../../../content/images/blog/CA_3/17.webp" style="width: 50%" /></a>
+<img alt="Sketch 13" src="../../../../../content/images/blog/CA_3/13.gif" style={{width: '100%'}} />
+<a href="/CA_3/14.mp4"><img alt="Sketch 14" src="../../../../../content/images/blog/CA_3/14.webp" style={{width: '50%'}} /></a>
+<a href="/CA_3/15.mp4"><img alt="Sketch 15" src="../../../../../content/images/blog/CA_3/15.webp" style={{width: '50%'}} /></a>
+<a href="/CA_3/16.mp4"><img alt="Sketch 16" src="../../../../../content/images/blog/CA_3/16.webp" style={{width: '50%'}} /></a>
+<a href="/CA_3/17.mp4"><img alt="Sketch 17" src="../../../../../content/images/blog/CA_3/17.webp" style={{width: '50%'}} /></a>

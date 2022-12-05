@@ -26,8 +26,8 @@ Getting rid of my old site was increasingly pressing, and I’m relieved to have
 Though there’s much more to be done, I’m happy with the way this new site is turning out. The build process was pretty cool; I made some things that could be handy for other would-be-bloggers. I’ll definitely post about it soon, since, y’know, I have a blog now…
 
 > We stand today on the edge of a new frontier - the frontier of the blog - a frontier of unknown opportunities and perils - a frontier of unfulfilled hopes and threats.
-> <cite>John F. Kennedy<sup id="fnref-1"><a href="#fn-1" class="footnote-ref">1</a></sup></cite>
+> <cite>John F. Kennedy<sup id="fnref-1"><a href="#fn-1" className="footnote-ref">1</a></sup></cite>
 
 <ol>
-    <li id="fn-1"><p>almost…<a href="#fnref-1" class="footnote-backref">↩</a></p></li>
+    <li id="fn-1"><p>almost…<a href="#fnref-1" className="footnote-backref">↩</a></p></li>
 </ol>

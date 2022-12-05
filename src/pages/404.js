@@ -5,6 +5,10 @@ import './404.css';
 import {Link} from 'gatsby';
 import React, {useEffect, useState} from 'react';
 
+export function Head(props) {
+	return <SEO {...props} title="404: Not found" />;
+}
+
 function NotFoundPage({location}) {
 	const [pathname, setPathname] = useState('');
 	useEffect(() => {
@@ -12,8 +16,8 @@ function NotFoundPage({location}) {
 	}, [location]);
 	return (
 		<>
-			<SEO title="404: Not found" className="page-not-found" />
-			<main className="404-main">
+			<main className="not-found-main">
+				<h2>Page not found</h2>
 				<p>
 					You tried to load a page that doesn't exist. Here are some
 					things you can do:
@@ -26,11 +30,11 @@ function NotFoundPage({location}) {
 					</li>
 					<li>
 						<p>
-							Check if the link works on my{' '}
+							Check if the link works on{' '}
 							<ExternalLink
 								to={`https://v14.rileyjshaw.com${pathname}`}
 							>
-								old website
+								my old website
 							</ExternalLink>
 							.
 						</p>
@@ -52,7 +56,7 @@ function NotFoundPage({location}) {
 					<li>
 						<p>
 							Get off the Internet.{' '}
-							<Time format={t => `It’s already ${t}`} />
+							<Time format={t => `It’s already ${t}.`} />
 						</p>
 					</li>
 				</ul>

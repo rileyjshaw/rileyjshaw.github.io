@@ -105,24 +105,20 @@
 		color: var(--color-fg);
 		display: flex;
 		font-size: var(--font-scale-2);
-		height: 54px;
 		justify-content: center;
 		margin-left: auto;
-		padding: 0;
+		margin-right: -0.5em;
+		margin-top: -0.5em;
+		padding: 0.5em;
 		position: relative;
 		transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-		width: 54px;
 		z-index: 1;
 	}
 	.site-nav .site-nav-menu-button:hover {
 		box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
 	}
-	.site-nav .site-nav-menu-button svg {
-		fill: var(--color-fg);
-		height: 50%;
-	}
 	.site-nav .site-nav-menu-button.open {
-		fill: var(--color-bg);
+		color: var(--color-bg);
 	}
 	.site-nav ul.hidden {
 		display: none;

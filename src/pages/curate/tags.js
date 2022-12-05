@@ -8,6 +8,10 @@ import CreatableSelect from 'react-select/creatable';
 
 const animatedComponents = makeAnimated();
 
+export function Head(props) {
+	return <SEO {...props} title="Curate tags" />;
+}
+
 function Project({
 	addNewTag,
 	isLoading,
@@ -213,7 +217,6 @@ function CurateTags() {
 
 	return (
 		<>
-			<SEO title="Curate tags" />
 			<div className="curate-tags-page">
 				{tags && (
 					<div className="untagged-counter">

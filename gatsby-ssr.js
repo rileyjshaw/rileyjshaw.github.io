@@ -40,9 +40,13 @@ const colorObjectToCss = (colorObject, rgbWrap) =>
 
 export const onRenderBody = ({
 	setHeadComponents,
+	setHtmlAttributes,
 	setPreBodyComponents,
 	setPostBodyComponents,
 }) => {
+	// Set the language to English.
+	setHtmlAttributes({lang: 'en'});
+
 	setHeadComponents(
 		// Adheres to media queries in case JavaScript isn’t enabled.
 		<style
