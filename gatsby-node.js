@@ -1,4 +1,4 @@
-require(`@babel/register`);
+require('@babel/register');
 const path = require('path');
 const {createFilePath} = require('gatsby-source-filesystem');
 
@@ -21,33 +21,40 @@ exports.createPages = async ({actions, graphql, reporter}) => {
 		redirectInBrowser: true,
 	});
 
-	const blogListTemplate = path.resolve('src/templates/blog-list.js');
-	const blogPostTemplate = path.resolve('src/templates/post.js');
+	const blogListTemplate = path.resolve('./src/templates/blog-list.js');
+	const blogPostTemplate = path.resolve('./src/templates/post.js');
 
 	// TODO(riley): Import this query from a common place.
 	const result = await graphql(`
 		{
 			allMdx(
-				filter: {fileAbsolutePath: {regex: "//posts/.*.mdx?$/"}}
-				sort: {fields: [fields___date], order: DESC}
-				limit: 1000
-			) {
-				edges {
-					node {
-						excerpt
-						frontmatter {
-							layout
-							tags
-						}
-						fields {
-							slug
-							title
-							date(formatString: "YYYY-MM-DD")
+				filter: {
+					internal: {
+						contentFilePath: {
+							regex: "//data/markdown/posts/.*.mdx?$/"
 						}
 					}
 				}
+				sort: {fields: {date: DESC}}
+				limit: 1000
+			) {
+				nodes {
+					id
+					excerpt
+					frontmatter {
+						layout
+						tags
+					}
+					fields {
+						slug
+						title
+						date(formatString: "YYYY-MM-DD")
+					}
+					internal {
+						contentFilePath
+					}
+				}
 			}
-
 			allCombinedProjectsJson(
 				filter: {type: {in: ["tumblr", "commit"]}}
 				limit: 1000
@@ -61,10 +68,14 @@ exports.createPages = async ({actions, graphql, reporter}) => {
 
 	// Handle errors.
 	if (result.errors) {
-		reporter.panicOnBuild(`Error while running GraphQL query.`);
+		reporter.panicOnBuild(
+			`Error while running GraphQL query.`,
+			result.errors
+		);
 		return;
 	}
-	const internalPosts = result.data.allMdx.edges.map(e => e.node);
+
+	const internalPosts = result.data.allMdx.nodes;
 	const externalPosts = result.data.allCombinedProjectsJson.nodes;
 	const allPosts = internalPosts
 		.map(p => ({
@@ -109,7 +120,10 @@ exports.createPages = async ({actions, graphql, reporter}) => {
 	internalPosts.forEach(post => {
 		createPage({
 			path: post.fields.slug,
-			component: blogPostTemplate,
+			component: `${blogPostTemplate}?__contentFilePath=${post.internal.contentFilePath}`,
+			context: {
+				id: post.id,
+			},
 		});
 	});
 };
@@ -119,7 +133,7 @@ exports.onCreateNode = ({node, getNode, actions}) => {
 
 	if (
 		node.internal.type === 'Mdx' &&
-		node.fileAbsolutePath.includes('/posts/')
+		node.internal.contentFilePath.includes('/data/markdown/posts/')
 	) {
 		let {title, slug} = node.frontmatter;
 		const fileName = createFilePath({node, getNode, basePath: `posts`});

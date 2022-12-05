@@ -8,12 +8,16 @@ import React from 'react';
 
 const urlFrom = page => `/blog${page === 1 ? '' : `/${page}`}`;
 
+export function Head(props) {
+	return <SEO {...props} title="All posts" />;
+}
+
 // TODO(riley): Style with same stylesheet as blog posts.
 const BlogList = ({data, pageContext: {currentPage, numPages}}) => {
 	// TODO(riley): Unfortunate that we're re-sorting this client-side instead
 	//              of collecting + sorting it with GraphQL.
 	const posts = [
-		...data.allMdx.edges.map(({node}) => node),
+		...data.allMdx.nodes,
 		...data.allCombinedProjectsJson.nodes,
 	].sort(
 		(a, b) =>
@@ -39,7 +43,6 @@ const BlogList = ({data, pageContext: {currentPage, numPages}}) => {
 
 	return (
 		<>
-			<SEO title="All posts" />
 			<main className="blog-list">
 				<ul className="blog-posts">
 					{posts.map(post => {
@@ -116,54 +119,44 @@ const BlogList = ({data, pageContext: {currentPage, numPages}}) => {
 };
 
 // TODO(riley): Standardize this format.
-export const blogListQuery = graphql`
-	query blogListQuery(
-		$internalLimit: Int!
-		$internalSkip: Int!
-		$externalLimit: Int!
-		$externalSkip: Int!
+export const blogListQuery = graphql`query blogListQuery($internalLimit: Int!, $internalSkip: Int!, $externalLimit: Int!, $externalSkip: Int!) {
+	allMdx(
+		filter: {internal: {contentFilePath: {regex: "//data/markdown/posts/.*\\.mdx?$/"}}}
+		sort: {fields: {date: DESC}}
+		limit: $internalLimit
+		skip: $internalSkip
 	) {
-		allMdx(
-			filter: {fileAbsolutePath: {regex: "//posts/.*.mdx?$/"}}
-			sort: {fields: [fields___date], order: DESC}
-			limit: $internalLimit
-			skip: $internalSkip
-		) {
-			edges {
-				node {
-					description
-					more
-					frontmatter {
-						layout
-						tags
-					}
-					fields {
-						uid
-						slug
-						title
-						date(formatString: "YYYY-MM-DD")
-					}
-				}
+		nodes {
+			description
+			more
+			frontmatter {
+				layout
+				tags
 			}
-		}
-
-		allCombinedProjectsJson(
-			filter: {type: {in: ["tumblr", "commit"]}}
-			sort: {fields: [date, title], order: DESC}
-			limit: $externalLimit
-			skip: $externalSkip
-		) {
-			nodes {
+			fields {
 				uid
+				slug
 				title
-				date
-				link
-				repo
-				description
-				more
+				date(formatString: "YYYY-MM-DD")
 			}
 		}
 	}
-`;
+	allCombinedProjectsJson(
+		filter: {type: {in: ["tumblr", "commit"]}}
+		sort: [{date: DESC}, {title: ASC}]
+		limit: $externalLimit
+		skip: $externalSkip
+	) {
+		nodes {
+			uid
+			title
+			date
+			link
+			repo
+			description
+			more
+		}
+	}
+}`;
 
 export default BlogList;

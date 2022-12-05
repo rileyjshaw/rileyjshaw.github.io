@@ -57,7 +57,7 @@ function kaprekar(num) {
 }
 ```
 
-Running <code class="language-javascript">kaprekar(1989)</code> returns <code class="language-javascript">3</code>. Success!
+Running <code className="language-javascript">kaprekar(1989)</code> returns <code className="language-javascript">3</code>. Success!
 
 ## More digits
 
@@ -96,7 +96,7 @@ function kaprekar(num) {
 }
 ```
 
-Great! This function should work with fixed point and fixed series (loop) stopping conditions. Running <code class="language-javascript">kaprekar(63)</code> now returns <code class="language-javascript">5</code>; before, it would’ve tried to crash your browser.
+Great! This function should work with fixed point and fixed series (loop) stopping conditions. Running <code className="language-javascript">kaprekar(63)</code> now returns <code className="language-javascript">5</code>; before, it would’ve tried to crash your browser.
 
 ## The fun part
 
@@ -122,7 +122,7 @@ results in a plot of total cycle depth for the Kaprekar Routine for the range [0
 
 <Figure caption={<>Kaprekar Routine Depths: [0, 1M). <a href="http://codepen.io/rileyjshaw/pen/hipBu" rel="noopener noreferrer" target="_blank">View code</a></>}>
 
-![Total cycle depth for the Kaprekar Routine in the range \[0, 1M)](../../../../../content/images/blog/kaprekar.png)
+![Total cycle depth for the Kaprekar Routine in the range [0, 1M)](../../../../../content/images/blog/kaprekar.png)
 
 </Figure>
 
@@ -173,11 +173,11 @@ function drawUlam(maxVal, fn) {
 }
 ```
 
-By replacing the drawing function in our Kaprekar depth example with <code class="language-javascript">drawUlam()</code> we get the following graph for the range [0, 998k):
+By replacing the drawing function in our Kaprekar depth example with <code className="language-javascript">drawUlam()</code> we get the following graph for the range [0, 998k):
 
 <Figure caption={<>Ulam Spiral of Kaprekar Routine depths: [0, 998k). <a href="http://codepen.io/rileyjshaw/pen/gixuE" rel="noopener noreferrer" target="_blank">View code</a></>}>
 
-![Total cycle depth for the Kaprekar Routine in the range \[0, 998k) drawn in an Ulam Spiral](../../../../../content/images/blog/kaprekar-ulam.png)
+![Total cycle depth for the Kaprekar Routine in the range [0, 998k) drawn in an Ulam Spiral](../../../../../content/images/blog/kaprekar-ulam.png)
 
 </Figure>
 
@@ -195,7 +195,7 @@ The second procedure that we’re looking at is called the Collatz Conjecture[^6
 
 The Collatz Conjecture states that no matter what number we start with, it will always eventually reach 1. This has been verified for numbers up to at least 5.764×10<sup>18</sup> at the time of writing.
 
-To graph this, we can define depth to mean the number of iterations until 1 is reached. Here’s a quick first pass at a <code class="language-javascript">collatz()</code> function:
+To graph this, we can define depth to mean the number of iterations until 1 is reached. Here’s a quick first pass at a <code className="language-javascript">collatz()</code> function:
 
 ```javascript
 // naive implementation
@@ -232,7 +232,7 @@ Soon after, we would have to calculate the depth of 10:
 4. &nbsp;&nbsp;<code>8&nbsp;&nbsp;↦ ÷2 &nbsp; // repeated</code>
 5. &nbsp;&nbsp;…
 
-Like Kaprekar’s Routine, this procedure is deterministic. That means that _whenever_ we see the number 5, we’ve got 5 more steps until we see the number 1. By [memoizing](http://en.wikipedia.org/wiki/Memoization) the <code class="language-javascript">collatz()</code> function, we avoid running these repetitive cycles.
+Like Kaprekar’s Routine, this procedure is deterministic. That means that _whenever_ we see the number 5, we’ve got 5 more steps until we see the number 1. By [memoizing](http://en.wikipedia.org/wiki/Memoization) the <code className="language-javascript">collatz()</code> function, we avoid running these repetitive cycles.
 
 ```javascript
 // slightly better memoized implementation
@@ -263,21 +263,21 @@ var collatz = (function () {
 })();
 ```
 
-Replacing the <code class="language-javascript">kaprekar()</code> function in our first example with <code class="language-javascript">collatz()</code> yields the following graph:
+Replacing the <code className="language-javascript">kaprekar()</code> function in our first example with <code className="language-javascript">collatz()</code> yields the following graph:
 
 <Figure caption={<>Collatz Conjecture depths: (0, 1M]. <a href="http://codepen.io/rileyjshaw/pen/hayod" rel="noopener noreferrer" target="_blank">View code</a></>}>
 
-![Total cycle depth for the Collatz Conjecture in the range (0, 1M\]](../../../../../content/images/blog/collatz.png)
+![Total cycle depth for the Collatz Conjecture in the range (0, 1M]](../../../../../content/images/blog/collatz.png)
 
 </Figure>
 
 The banding that’s observed is interesting; it looks almost like cloth grain. This tells us that sequential numbers are more likely to have similar depths.
 
-Using the <code class="language-javascript">ulam()</code> drawing function, we get:
+Using the <code className="language-javascript">ulam()</code> drawing function, we get:
 
 <Figure caption={<>Ulam Spiral of Collatz Conjecture depths: (0, 998k]. <a href="http://codepen.io/rileyjshaw/pen/fihEm" rel="noopener noreferrer" target="_blank">View code</a></>}>
 
-![Total cycle depth for the Collatz Conjecture in the range (0, 998k\] drawn in an Ulam Spiral](../../../../../content/images/blog/collatz-ulam.png)
+![Total cycle depth for the Collatz Conjecture in the range (0, 998k] drawn in an Ulam Spiral](../../../../../content/images/blog/collatz-ulam.png)
 
 </Figure>
 
@@ -296,21 +296,21 @@ Have fun!
 [^3]: i.e. with input _n_ and depth _t_ we’re looking for _t_ where &fnof;<sub>_n_</sub>(_t_) = &fnof;<sub>_n_</sub>(_t_ - 1). More generally, &fnof;<sub>_n_</sub>(_t_) = &fnof;<sub>_n_</sub>(_t_ - _L_), where _L_ = fixed-loop size. But we’ll get to that part soon.
 [^4]: A neologism, as far as I can tell. “Stopping time” is likely more appropriate.
 [^5]:
-	The Ulam Spiral story doesn’t end with a different drawing function. The presentation that he was sitting in on must have been really boring, because Ulam started circling prime numbers on his spiral:
+    The Ulam Spiral story doesn’t end with a different drawing function. The presentation that he was sitting in on must have been really boring, because Ulam started circling prime numbers on his spiral:
 
-	<Figure caption="Ulam Spiral with prime numbers shown: [1, 50)">
+    <Figure caption="Ulam Spiral with prime numbers shown: [1, 50)">
 
-	![Ulam Spiral with prime numbers shown](../../../../../content/images/blog/ulam-howto-2.svg)
+    ![Ulam Spiral with prime numbers shown](../../../../../content/images/blog/ulam-howto-2.svg)
 
-	</Figure>
+    </Figure>
 
-	He noticed that the primes tended to line up along certain diagonal lines more than others. This isn’t evident in the small grid above, but we can repurpose our old code to generate a larger grid. If we replace the <code class="language-javascript">kaprekar()</code> function with a function that only returns a color if the number is prime, we can visualize Ulam’s diagonal primes:
+    He noticed that the primes tended to line up along certain diagonal lines more than others. This isn’t evident in the small grid above, but we can repurpose our old code to generate a larger grid. If we replace the <code className="language-javascript">kaprekar()</code> function with a function that only returns a color if the number is prime, we can visualize Ulam’s diagonal primes:
 
-	<Figure caption={<>Ulam Spiral with prime numbers shown: [0, 988k). <a href="http://codepen.io/rileyjshaw/pen/gaHhn" rel="noopener noreferrer" target="_blank">View code</a></>}>
+    <Figure caption={<>Ulam Spiral with prime numbers shown: [0, 988k). <a href="http://codepen.io/rileyjshaw/pen/gaHhn" rel="noopener noreferrer" target="_blank">View code</a></>}>
 
-	![Prime numbers in the range \[0, 1M) drawn in an Ulam Spiral](../../../../../content/images/blog/ulam.png)
+    ![Prime numbers in the range [0, 1M) drawn in an Ulam Spiral](../../../../../content/images/blog/ulam.png)
 
-	</Figure>
+    </Figure>
 
 [^6]: The Collatz Conjecture has many names. You might know it as: the 3n + 1 conjecture, the Ulam conjecture, Kakutani’s problem, the Thwaites conjecture, Hasse’s algorithm, the Syracuse problem, the hailstone sequence, hailstone numbers, or wondrous numbers.
 [^7]: Five if you count the footnotes!

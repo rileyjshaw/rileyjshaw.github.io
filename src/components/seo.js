@@ -6,16 +6,8 @@
  */
 import {useStaticQuery, graphql} from 'gatsby';
 import React from 'react';
-import {Helmet} from 'react-helmet';
 
-function SEO({
-	description = '',
-	lang = 'en',
-	meta = [],
-	title: pageTitle,
-	className,
-	...rest
-}) {
+function SEO({description = '', title: pageTitle, children}) {
 	const {site} = useStaticQuery(
 		graphql`
 			query {
@@ -38,51 +30,27 @@ function SEO({
 		site.siteMetadata.title
 	}`;
 	const metaDescription = description || site.siteMetadata.description;
-	const classAttribute = className ? {class: className} : null;
 
 	return (
-		<Helmet
-			htmlAttributes={{
-				...classAttribute,
-				lang,
-			}}
-			title={title}
-			meta={[
-				{
-					name: `description`,
-					content: metaDescription,
-				},
-				{
-					property: `og:title`,
-					content: metaTitle,
-				},
-				{
-					property: `og:description`,
-					content: metaDescription,
-				},
-				{
-					property: `og:type`,
-					content: `website`,
-				},
-				{
-					name: `twitter:card`,
-					content: `summary`,
-				},
-				{
-					name: `twitter:creator`,
-					content: site.siteMetadata.author,
-				},
-				{
-					name: `twitter:title`,
-					content: metaTitle,
-				},
-				{
-					name: `twitter:description`,
-					content: metaDescription,
-				},
-			].concat(meta)}
-			{...rest}
-		/>
+		<>
+			<title>{title}</title>
+			<meta name="description" content={metaDescription} />
+			<meta name="og:title" content={metaTitle} />
+			<meta name="og:description" content={metaDescription} />
+			<meta name="og:type" content="website" />
+			<meta name="twitter:title" content={metaTitle} />
+			<meta name="twitter:description" content={metaDescription} />
+			<meta name="twitter:card" content="summary" />
+			<meta name="twitter:creator" content={site.siteMetadata.author} />
+			{/* TODO: Update properties to include:
+
+		<meta name="image" content={seo.image} />
+		<meta name="twitter:url" content={seo.url} />
+		<meta name="twitter:image" content={seo.image} />
+
+		*/}
+			{children}
+		</>
 	);
 }
 

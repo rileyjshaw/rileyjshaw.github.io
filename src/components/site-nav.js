@@ -1,4 +1,4 @@
-import {ReactComponent as MenuIcon} from '../../content/images/menu.svg';
+import MenuIcon from '../icons/Menu';
 import {useKeyPresses} from '../util/hooks';
 import './site-nav.css';
 import ThemeToggleButton from './theme-toggle-button';
