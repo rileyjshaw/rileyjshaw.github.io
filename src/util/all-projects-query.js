@@ -2,7 +2,7 @@ import formatProps from './format-props';
 import {useStaticQuery, graphql} from 'gatsby';
 
 export function format({
-	allMdx: {edges: posts} = {edges: []},
+	allMdx: {nodes: posts} = {nodes: []},
 	allCombinedProjectsJson: {nodes: projects} = {nodes: []},
 }) {
 	return [
@@ -16,55 +16,50 @@ export function format({
 
 export default () =>
 	format(
-		useStaticQuery(graphql`
-		{
-			allMdx(
-				filter: {fileAbsolutePath: {regex: "/\/posts\/.*\\.mdx?$/"}}
-				sort: {fields: [fields___date], order: DESC}
-			) {
-				edges {
-					node {
-						more
-						description
-						frontmatter {
-							layout
-							tags
-						}
-						fields {
-							uid
-							slug
-							title
-							date(formatString: "YYYY-MM-DD")
-						}
-					}
-				}
+		useStaticQuery(graphql`{
+	allMdx(
+		filter: {internal: {contentFilePath: {regex: "//data/markdown/posts/.*\\.mdx?$/"}}}
+		sort: {fields: {date: DESC}}
+	) {
+		nodes {
+			more
+			description
+			frontmatter {
+				layout
+				tags
 			}
-
-			allCombinedProjectsJson {
-				nodes {
-					uid
-					type
-					title
-					coolness
-					date
-					link
-					description
-					descriptionList
-					tags
-					repo
-					updatedAt
-					length
-					contentType
-					body
-					image {
-						height
-						width
-						url
-					}
-					more
-					extraData
-				}
+			fields {
+				uid
+				slug
+				title
+				date(formatString: "YYYY-MM-DD")
 			}
 		}
-	`)
+	}
+	allCombinedProjectsJson {
+		nodes {
+			uid
+			type
+			title
+			coolness
+			date
+			link
+			description
+			descriptionList
+			tags
+			repo
+			updatedAt
+			length
+			contentType
+			body
+			image {
+				height
+				width
+				url
+			}
+			more
+			extraData
+		}
+	}
+}`)
 	);

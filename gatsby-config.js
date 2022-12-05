@@ -1,4 +1,4 @@
-require(`@babel/register`);
+require('@babel/register');
 
 const {format} = require('./src/util/all-projects-query');
 
@@ -32,15 +32,16 @@ const rssify = query => {
 
 module.exports = {
 	siteMetadata: {
-		title: `The Digital Landfill of Riley J. Shaw`,
-		titlePostfix: `rileyjshaw`,
-		description: `Riley J. Shaw is an artist, engineer, and educator. Focused on accessibility, mentorship, and community, Riley questions who “digital literacy” serves.`,
-		author: `@rileyjshaw`,
-		siteUrl: `https://rileyjshaw.com`,
+		title: 'The Digital Landfill of Riley J. Shaw',
+		titlePostfix: 'rileyjshaw',
+		description:
+			'Riley J. Shaw is an artist, engineer, and educator. Focused on accessibility, mentorship, and community, Riley questions who “digital literacy” serves.',
+		author: '@rileyjshaw',
+		siteUrl: 'https://rileyjshaw.com',
 	},
 	plugins: [
 		{
-			resolve: `gatsby-plugin-sitemap`,
+			resolve: 'gatsby-plugin-sitemap',
 			options: {
 				query: `
 					{
@@ -101,27 +102,25 @@ module.exports = {
 				}),
 			},
 		},
-		`gatsby-plugin-react-helmet`,
-		// `gatsby-plugin-preload-fonts`,
+		// 'gatsby-plugin-preload-fonts',
 		{
-			resolve: `gatsby-source-filesystem`,
+			resolve: 'gatsby-source-filesystem',
 			options: {
-				name: `images`,
+				name: 'images',
 				path: `${__dirname}/content/images`,
 			},
 		},
-		`gatsby-transformer-sharp`,
-		`gatsby-plugin-sharp`,
-		`gatsby-remark-images`,
+		'gatsby-transformer-sharp',
+		'gatsby-plugin-sharp',
 		{
-			resolve: `gatsby-plugin-manifest`,
+			resolve: 'gatsby-plugin-manifest',
 			options: {
-				name: `The digital landfill of rileyjshaw`,
-				short_name: `rileyjshaw`,
-				start_url: `/`,
-				background_color: `#4ccbab`,
-				theme_color: `#4ccbab`,
-				display: `minimal-ui`,
+				name: 'The digital landfill of rileyjshaw',
+				short_name: 'rileyjshaw',
+				start_url: '/',
+				background_color: '#4ccbab',
+				theme_color: '#4ccbab',
+				display: 'minimal-ui',
 				include_favicon: false,
 				// TODO(riley): Currently manual mode. Consider automatic mode
 				// 	            once you’ve updated the favicon.
@@ -140,52 +139,60 @@ module.exports = {
 			},
 		},
 		{
-			resolve: `gatsby-source-filesystem`,
+			resolve: 'gatsby-source-filesystem',
 			options: {
 				path: `${__dirname}/src/data/markdown/`,
 				...(process.env.NODE_ENV !== 'development' && {
 					ignore: [`${__dirname}/src/data/markdown/posts/drafts`],
 				}),
-				name: `markdown`,
+				name: 'markdown',
 			},
 		},
-		`gatsby-transformer-json`,
+		'gatsby-transformer-json',
 		{
-			resolve: `gatsby-source-filesystem`,
+			resolve: 'gatsby-source-filesystem',
 			options: {
 				path: `${__dirname}/project-scraper/_generated/`,
-				name: `generated`,
+				name: 'generated',
 			},
 		},
 		{
-			resolve: `gatsby-plugin-mdx`,
+			resolve: 'gatsby-plugin-mdx',
 			options: {
-				extensions: ['.md', '.mdx'],
+				extensions: ['.mdx', '.md'],
+				mdxOptions: {
+					remarkPlugins: [
+						// TODO: This is pinned to v1 until Gatsby can support ES modules.
+						require('remark-gfm'),
+						// TODO: Once `remark-gfm` is updated to v3, it will support footnotes on its own.
+						require('remark-footnotes'),
+					],
+				},
 				gatsbyRemarkPlugins: [
-					`gatsby-remark-copy-linked-files`,
-					`gatsby-remark-autolink-headers`,
+					// TODO: Replace this with a generic linked header component.
+					'gatsby-remark-autolink-headers',
+					// TODO: “In some cases, like gatsby-remark-prismjs, it makes more sense to use a library like prism-react-renderer to render codeblocks using a React component.”
+					// https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#gatsby-remark--plugins
 					{
-						resolve: `gatsby-remark-external-links`,
+						resolve: 'gatsby-remark-prismjs',
 						options: {
-							target: `_blank`,
-							rel: `noopener noreferrer`,
+							noInlineHighlight: true,
 						},
 					},
-					`gatsby-remark-prismjs`,
+					'gatsby-remark-copy-linked-files',
 					{
-						resolve: `gatsby-remark-images`,
+						resolve: 'gatsby-remark-images',
 						options: {
 							// TODO(riley): Ensure this is always true.
 							maxWidth: 675,
-							backgroundColor: `none`,
+							backgroundColor: 'none',
 						},
 					},
 				],
 			},
 		},
-		`gatsby-plugin-svgr`,
 		{
-			resolve: `gatsby-plugin-postcss`,
+			resolve: 'gatsby-plugin-postcss',
 			options: {
 				cssLoaderOptions: {
 					esModule: false,
@@ -198,7 +205,7 @@ module.exports = {
 		// TODO(riley): So much redundancy between here, gatsby-node, and
 		//              all-projects-query. Do better!
 		{
-			resolve: `gatsby-plugin-feed`,
+			resolve: 'gatsby-plugin-feed',
 			options: {
 				query: `
 				{
@@ -215,12 +222,10 @@ module.exports = {
 				feeds: [
 					{
 						serialize: ({query}) => rssify(query),
-						query: `{
-							allCombinedProjectsJson (
-								filter: {tags: {in: ["starred"]}}
-								sort: {fields: [date], order: DESC}
-							) {
-								nodes {
+						query: `
+							{
+								allCombinedProjectsJson(filter: {tags: {in: ["starred"]}}, sort: {date: DESC}) {
+									nodes {
 									uid
 									type
 									title
@@ -237,17 +242,13 @@ module.exports = {
 										url
 									}
 									extraData
+									}
 								}
-							}
-
-							b: allCombinedProjectsJson (
-								filter: {
-									tags: {nin: ["starred"]},
-									repo: {eq: "rileyjshaw/rileyjshaw-new"}
-								}
-								sort: {fields: [date], order: DESC}
-							) {
-								nodes {
+								b: allCombinedProjectsJson(
+									filter: {tags: {nin: ["starred"]}, repo: {eq: "rileyjshaw/rileyjshaw-new"}}
+									sort: {date: DESC}
+								) {
+									nodes {
 									uid
 									type
 									title
@@ -264,18 +265,13 @@ module.exports = {
 										url
 									}
 									extraData
+									}
 								}
-							}
-
-							c: allCombinedProjectsJson (
-								filter: {
-									tags: {nin: ["starred"]},
-									repo: {eq: "rileyjshaw/rileyjshaw.github.io"}
-									timestamp: {gt: 1577833572562}
-								}
-								sort: {fields: [date], order: DESC}
-							) {
-								nodes {
+								c: allCombinedProjectsJson(
+									filter: {tags: {nin: ["starred"]}, repo: {eq: "rileyjshaw/rileyjshaw.github.io"}, timestamp: {gt: 1577833572562}}
+									sort: {date: DESC}
+								) {
+									nodes {
 									uid
 									type
 									title
@@ -292,40 +288,38 @@ module.exports = {
 										url
 									}
 									extraData
+									}
 								}
-							}
-						}`,
-						output: `/highlights.xml`,
-						title: `Highlights feed`,
+							}`,
+						output: '/highlights.xml',
+						title: 'Highlights feed',
 					},
 					{
 						serialize: ({query}) => rssify(query),
 						query: `
 							{
 								allMdx(
-									filter: {fileAbsolutePath: {regex: "//posts/published/.*\.mdx?$/"}}
-									sort: {fields: [fields___date], order: DESC}
+									filter: {internal: {contentFilePath: {regex: "//data/markdown/posts/published/.*\.mdx?$/"}}}
+									sort: {fields: {date: DESC}}
 								) {
-									edges {
-										node {
-											description
-											frontmatter {
-												layout
-												tags
-											}
-											fields {
-												uid
-												slug
-												title
-												date(formatString: "YYYY-MM-DD")
-											}
+									nodes {
+										description
+										frontmatter {
+											layout
+											tags
+										}
+										fields {
+											uid
+											slug
+											title
+											date(formatString: "YYYY-MM-DD")
 										}
 									}
 								}
 
 								allCombinedProjectsJson(
 									filter: {type: {in: ["tumblr", "commit"]}}
-									sort: {fields: [date], order: DESC}
+									sort: {date: DESC}
 								) {
 									nodes {
 										uid
@@ -348,37 +342,35 @@ module.exports = {
 								}
 							}
 						`,
-						output: `/blog.xml`,
-						title: `Blog feed`,
+						output: '/blog.xml',
+						title: 'Blog feed',
 					},
 					{
 						serialize: ({query}) => rssify(query),
 						query: `
 							{
 								allMdx(
-									filter: {fileAbsolutePath: {regex: "//posts/published.*\.mdx?$/"}}
-									sort: {fields: [fields___date], order: DESC}
+									filter: {internal: {contentFilePath: {regex: "//data/markdown/posts/published/.*\.mdx?$/"}}}
+									sort: {fields: {date: DESC}}
 								) {
-									edges {
-										node {
-											description
-											frontmatter {
-												layout
-												tags
-											}
-											fields {
-												uid
-												slug
-												title
-												date(formatString: "YYYY-MM-DD")
-											}
+									nodes {
+										description
+										frontmatter {
+											layout
+											tags
+										}
+										fields {
+											uid
+											slug
+											title
+											date(formatString: "YYYY-MM-DD")
 										}
 									}
 								}
 							}
 						`,
-						output: `/blog-internal.xml`,
-						title: `Blog feed: internal posts only`,
+						output: '/blog-internal.xml',
+						title: 'Blog feed: internal posts only',
 					},
 					{
 						serialize: ({query}) => rssify(query),
@@ -386,59 +378,57 @@ module.exports = {
 							{
 								allCombinedProjectsJson(
 									filter: {type: {nin: ["tumblr", "commit"]}}
-									sort: {fields: [date], order: DESC}
+									sort: {date: DESC}
 								) {
 									nodes {
-										uid
-										type
-										title
-										date
-										link
-										description
-										updatedAt
-										length
-										contentType
-										body
-										image {
-											height
-											width
-											url
-										}
-										extraData
+									uid
+									type
+									title
+									date
+									link
+									description
+									updatedAt
+									length
+									contentType
+									body
+									image {
+										height
+										width
+										url
+									}
+									extraData
 									}
 								}
 							}
 						`,
-						output: `/lab.xml`,
-						title: `Lab projects feed`,
+						output: '/lab.xml',
+						title: 'Lab projects feed',
 					},
 					{
 						serialize: ({query}) => rssify(query),
 						query: `
 							{
 								allMdx(
-									filter: {fileAbsolutePath: {regex: "//posts/published/.*\.mdx?$/"}}
-									sort: {fields: [fields___date], order: DESC}
+									filter: {internal: {contentFilePath: {regex: "//data/markdown/posts/published/.*\.mdx?$/"}}}
+									sort: {fields: {date: DESC}}
 								) {
-									edges {
-										node {
-											description
-											frontmatter {
-												layout
-												tags
-											}
-											fields {
-												uid
-												slug
-												title
-												date(formatString: "YYYY-MM-DD")
-											}
+									nodes {
+										description
+										frontmatter {
+											layout
+											tags
+										}
+										fields {
+											uid
+											slug
+											title
+											date(formatString: "YYYY-MM-DD")
 										}
 									}
 								}
 
 								allCombinedProjectsJson(
-									sort: {fields: [date], order: DESC}
+									sort: {date: DESC}
 								) {
 									nodes {
 										uid
@@ -461,31 +451,32 @@ module.exports = {
 								}
 							}
 						`,
-						output: `/index.xml`,
-						title: `Firehose feed`,
+						output: '/index.xml',
+						title: 'Firehose feed',
 					},
 				],
 			},
 		},
 		{
-			resolve: `gatsby-plugin-page-creator`,
+			resolve: 'gatsby-plugin-page-creator',
 			options: {
 				path: `${__dirname}/src/pages`,
 				ignore:
-					process.env.NODE_ENV === `production`
-						? `curate/**/*`
+					process.env.NODE_ENV === 'production'
+						? 'curate/**/*'
 						: undefined,
 			},
 		},
 		// TODO(riley)
 		// this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.dev/offline
-		// `gatsby-plugin-offline`,
+		// 'gatsby-plugin-offline',
 	],
 	proxy: [
 		{
-			prefix: `/_curate`,
-			url: `http://localhost:5000`,
+			prefix: '/_curate',
+			url: 'http://localhost:5000',
 		},
 	],
+	trailingSlash: 'never',
 };

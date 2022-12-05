@@ -1,4 +1,5 @@
-@import './fonts/typography.css';
+@import url('./rjset.css');
+@import url('./typography.css');
 :root {
 	--font-scale--5: 0.328em;
 	--font-scale--4: 0.41em;
@@ -33,9 +34,6 @@ pre {
 	padding: 6px 12px;
 	text-align: center;
 	text-transform: uppercase;
-}
-.svg-icon {
-	fill: currentcolor;
 }
 .visually-hidden {
 	border: 0 !important;

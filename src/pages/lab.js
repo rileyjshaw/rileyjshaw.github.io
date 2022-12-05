@@ -4,12 +4,15 @@ import ProjectExplorer from '../components/project-explorer';
 import SEO from '../components/seo';
 import React, {useState} from 'react';
 
+export function Head(props) {
+	return <SEO {...props} title="Lab" />;
+}
+
 const LabPage = () => {
 	const [isFullyLoaded, setIsFullyLoaded] = useState(false);
 
 	return (
 		<>
-			<SEO title="Lab" />
 			<ProjectExplorer setIsFullyLoaded={setIsFullyLoaded} />
 			{isFullyLoaded && (
 				<>

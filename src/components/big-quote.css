@@ -20,8 +20,7 @@
 .big-quote::before,
 .big-quote::after,
 .big-quote .refresh {
-	height: 60px;
-	width: 60px;
+	font-size: 60px;
 }
 .big-quote blockquote {
 	margin: 0 auto;

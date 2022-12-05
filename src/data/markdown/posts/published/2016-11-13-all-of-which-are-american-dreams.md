@@ -59,8 +59,8 @@ I’m in the habit of quietly throwing projects like this onto my [lab](/lab) pa
 ## Footnotes
 
 [^1]: Twitter used to actually offer this as part of their official client. They removed the functionality in 2013.
-[^2]: MacOS comes loaded with BSD utils, so I grabbed the GNU equivalents with <code class="language-javascript">brew install coreutils</code>. That’s what <code class="language-bash">gsplit</code> and <code class="language-bash">gshuf</code> are.
+[^2]: MacOS comes loaded with BSD utils, so I grabbed the GNU equivalents with <code className="language-javascript">brew install coreutils</code>. That’s what <code className="language-bash">gsplit</code> and <code className="language-bash">gshuf</code> are.
 [^3]: Restrictions apply:
 
-    -   Twitter has [a longstanding issue](https://twittercommunity.com/t/nondeterminstic-behavior-for-lists-members-create-all/53640/22) where bulk lists created through the API might be missing members. It’s nothing a little <code class="language-bash">while</code> loop can’t fix, and even an incomplete list can be enough.
-    -   <code class="language-bash">t</code> has <a href="https://github.com/sferik/t/issues/263" rel="noopener noreferrer" target="_blank">its own longstanding issue</a>: it runs up against rate limits if you use it to fetch a large list of followers. This one probably requires a patch or PR.
+    -   Twitter has [a longstanding issue](https://twittercommunity.com/t/nondeterminstic-behavior-for-lists-members-create-all/53640/22) where bulk lists created through the API might be missing members. It’s nothing a little <code className="language-bash">while</code> loop can’t fix, and even an incomplete list can be enough.
+    -   <code className="language-bash">t</code> has <a href="https://github.com/sferik/t/issues/263" rel="noopener noreferrer" target="_blank">its own longstanding issue</a>: it runs up against rate limits if you use it to fetch a large list of followers. This one probably requires a patch or PR.
