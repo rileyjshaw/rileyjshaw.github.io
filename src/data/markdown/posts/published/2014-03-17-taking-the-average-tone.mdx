@@ -7,19 +7,40 @@ import Figure from 'components/figure';
 
 Today I wanted to see what the average frequency of a song would sound like with no spectrum analysis or separation. I had a hunch that it would end up sounding like garbage, and I was totally right.
 
-If you took the average color of a beautiful painting, it would likely turn out poo brown. Today, I created the audio equivalent:
+If you took the average color of a beautiful painting, it would likely turn out muddy brown. Today, I created the audio equivalent:
 
 [Blazo’s Misty Sapphire](https://youtu.be/rlyYQlPrdac):
 
-<iframe title="Average tone: Misty Sapphire" width="100%" height="124" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/139984944&amp;color=ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_artwork=false"></iframe>
+<iframe
+	title="Average tone: Misty Sapphire"
+	width="100%"
+	height="124"
+	scrolling="no"
+	frameBorder="no"
+	src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/139984944&amp;color=ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_artwork=false"
+></iframe>
 
 [Steve Reich’s Music for 18 Musicians](https://youtu.be/E_jwv2QMtAo):
 
-<iframe title="Average tone: Music For 18 Musicians" width="100%" height="124" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/139984941&amp;color=ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_artwork=false"></iframe>
+<iframe
+	title="Average tone: Music For 18 Musicians"
+	width="100%"
+	height="124"
+	scrolling="no"
+	frameBorder="no"
+	src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/139984941&amp;color=ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_artwork=false"
+></iframe>
 
 [Kill the Noise remix of KOAN Sound’s Talk Box](https://youtu.be/f-6H8NsfPNQ):
 
-<iframe title="Average tone: Talk Box (Kill The Noise Remix)" width="100%" height="124" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/139984943&amp;color=ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_artwork=false"></iframe>
+<iframe
+	title="Average tone: Talk Box (Kill The Noise Remix)"
+	width="100%"
+	height="124"
+	scrolling="no"
+	frameBorder="no"
+	src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/139984943&amp;color=ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_artwork=false"
+></iframe>
 
 These first tones were generated using the powerful, free, cross-platform audio software [Audacity](http://audacity.sourceforge.net/) and a cool lisp-y language called [Nyquist](<https://en.wikipedia.org/wiki/Nyquist_(programming_language)>). Since Audacity lets you run Nyquist scripts on hand-selected audio segments, this first bit was quick and dirty:
 
@@ -29,14 +50,14 @@ These first tones were generated using the powerful, free, cross-platform audio 
 4. Double-click the top track to select it
 5. In the menu bar, click Effect > Nyquist Prompt…
 6. Enter the following into the prompt:
-    ```lisp
-    (setf f0 (aref (yin s 33 93 4400) 0))
-    (setf fl (truncate (snd-length f0 ny:all)))
-    (setf mean-f0 (snd-fetch (snd-avg f0 fl fl op-average)))
-    (format nil "Mean Fundamental Frequency:~%~a ~~~a"
-        (step-to-hz mean-f0)
-        (nth (round mean-f0) nyq:pitch-names))
-    ```
+      ```lisp
+      (setf f0 (aref (yin s 33 93 4400) 0))
+      (setf fl (truncate (snd-length f0 ny:all)))
+      (setf mean-f0 (snd-fetch (snd-avg f0 fl fl op-average)))
+      (format nil "Mean Fundamental Frequency:~%~a ~~~a"
+          (step-to-hz mean-f0)
+          (nth (round mean-f0) nyq:pitch-names))
+      ```
 7. If you’re using a recent version of Audacity, check the “Use legacy (version 3) syntax” box at the top of the prompt[^2]
 8. Let it run and **remember the output frequency**
 9. Keeping the track selected, click Generate > Tone… in the top menu
@@ -50,19 +71,19 @@ Its hack-y and too manual, but it was enough to show me that I definitely didn�
 
 Let’s quickly go over _mean_, _median_, and _mode_.
 
--   **Mean**, often called _average_, is the sum of all values in a set divided by the number of values in the set
--   **Median** is the middle-point in a set ordered by magnitude
--   **Mode**, the ugly cousin of median, is the most commonly occurring value in a set
+- **Mean**, often called _average_, is the sum of all values in a set divided by the number of values in the set
+- **Median** is the middle-point in a set ordered by magnitude
+- **Mode**, the ugly cousin of median, is the most commonly occurring value in a set
 
-Given the following set of numbers: { **8, 4, 6, 6 ,8, 4, 8** },
+Given the following set of numbers: \{ **8, 4, 6, 6 ,8, 4, 8** \},
 
-and rearranging them in order: { **4, 4, 6, 6, 8, 8, 8** },
+and rearranging them in order: \{ **4, 4, 6, 6, 8, 8, 8** \},
 
 we observe a _median_ of 6, a _mode_ of 8, and a _mean_ of… 6.29?
 
 ## Why mean sometimes sucks
 
-Our result above demonstrates why my “average” tones sound nothing like their original tracks. After taking the mean of a set, there’s no guarantee that your result will be a member of the set. Just as 6.29 isn’t part of the set { **8, 4, 6, 6 ,8, 4, 8** }, the tones that I generated weren’t _really_ part of their respective songs. In the process of finding the “average” tone, we lost touch with the most important part of the song; its individual notes.
+Our result above demonstrates why my “average” tones sound nothing like their original tracks. After taking the mean of a set, there’s no guarantee that your result will be a member of the set. Just as 6.29 isn’t part of the set \{ **8, 4, 6, 6 ,8, 4, 8** \}, the tones that I generated weren’t _really_ part of their respective songs. In the process of finding the “average” tone, we lost touch with the most important part of the song; its individual notes.
 
 ## More resolution!
 
@@ -127,7 +148,7 @@ import scipy.fftpack as fft
 from itertools import izip_longest
 ```
 
-Next, we use scipy’s <code class="language-python">wavfile.read</code> to return the audio’s sample rate and audio contents.
+Next, we use scipy’s <code className="language-python">wavfile.read</code> to return the audio’s sample rate and audio contents.
 
 ```python
 import_rate, import_data = wav.read('wav/flute.wav')
@@ -150,7 +171,7 @@ def average_frequency(rate, data):
 
 Essentially, we’re being passed in some audio content and its corresponding sample rate, throwing it through a Fourier transform, and returning the average frequency _as heard by us_. The magnitudes alone don’t mean much physically, so we square them to represent the _power_ of each frequency before averaging the range.
 
-Next we need to split the song into chunks to send through the <code class="language-python">average_frequency</code> function. Since we know our sample rate (samples / second) and tempo (beats / minute) already, we can figure out how many samples make up a beat and slice it up.
+Next we need to split the song into chunks to send through the <code className="language-python">average_frequency</code> function. Since we know our sample rate (samples / second) and tempo (beats / minute) already, we can figure out how many samples make up a beat and slice it up.
 
 ```python
 def quarter_note_frequencies(rate, data, bpm):
@@ -165,7 +186,7 @@ def quarter_note_frequencies(rate, data, bpm):
     return notes
 ```
 
-Here we’re using a function called <code class="language-python">grouper</code> that lets us slice up the data. It’s described in depth in [itertools’ Recipes section](https://docs.python.org/2/library/itertools.html#recipes).
+Here we’re using a function called <code className="language-python">grouper</code> that lets us slice up the data. It’s described in depth in [itertools’ Recipes section](https://docs.python.org/2/library/itertools.html#recipes).
 
 We’re getting really close! Now we just need a function to write some frequencies to a wav file,
 
@@ -181,21 +202,42 @@ def create_wav(rate, data, bpm):
 create_wav(import_rate, quarter_note_frequencies(import_rate, import_data, import_bpm), import_bpm)
 ```
 
-And we’re done! The whole thing (including my <code class="language-python">composer</code> module), is on [Github](https://github.com/rileyjshaw/mean-tone).
+And we’re done! The whole thing (including my <code className="language-python">composer</code> module), is on [Github](https://github.com/rileyjshaw/mean-tone).
 
 Let’s hear what it sounds like:
 
 [Them Crooked Vultures’ Bandoliers](https://youtu.be/LFQhbZ7Kkig):
 
-<iframe title="Average tone / beat: Bandoliers" width="100%" height="124" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/139987561&amp;color=ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_artwork=false"></iframe>
+<iframe
+	title="Average tone / beat: Bandoliers"
+	width="100%"
+	height="124"
+	scrolling="no"
+	frameBorder="no"
+	src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/139987561&amp;color=ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_artwork=false"
+></iframe>
 
 [The Chemical Brothers’ Another World](https://youtu.be/oMu9H7Bkb1Y):
 
-<iframe title="Average tone / beat: Another World" width="100%" height="124" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/139984938&amp;color=ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_artwork=false"></iframe>
+<iframe
+	title="Average tone / beat: Another World"
+	width="100%"
+	height="124"
+	scrolling="no"
+	frameBorder="no"
+	src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/139984938&amp;color=ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_artwork=false"
+></iframe>
 
 [Brian Eno’s 2-1](https://youtu.be/AQLh3WanSfg):
 
-<iframe title="Average tone / beat: 2-1" width="100%" height="124" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/139985315&amp;color=ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_artwork=false"></iframe>
+<iframe
+	title="Average tone / beat: 2-1"
+	width="100%"
+	height="124"
+	scrolling="no"
+	frameBorder="no"
+	src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/139985315&amp;color=ff5500&amp;auto_play=false&amp;hide_related=true&amp;show_artwork=false"
+></iframe>
 
 Wow! Still terrible! Who would’ve thought!
 
@@ -216,4 +258,4 @@ I hope to make a Part Two some day where I explore some nicer-sounding alternati
     ![Nyquist legacy syntax option](../../../../../content/images/blog/audacity_legacy_checkbox.png)
 
 [^3]: A 440Hz sine wave, for example, sounds like an **A** to our ears.
-[^4]: Including one I wrote called <code class="language-python">composer</code>, which generates an audio signal from the frequencies we pass it
+[^4]: Including one I wrote called <code className="language-python">composer</code>, which generates an audio signal from the frequencies we pass it

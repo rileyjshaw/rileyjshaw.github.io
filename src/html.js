@@ -1,6 +1,3 @@
-import geomanistBlack from './fonts/geomanist-black-webfont.woff2';
-import geomanistMedium from './fonts/geomanist-medium-webfont.woff2';
-import geomanistRegular from './fonts/geomanist-regular-webfont.woff2';
 import React from 'react';
 
 export default function HTML(props) {
@@ -42,19 +39,19 @@ export default function HTML(props) {
 				{/* TODO: Get `gatsby-plugin-preload-fonts` working again. See https://github.com/gatsbyjs/gatsby/issues/32127. */}
 				<link
 					as="font"
-					href={geomanistRegular}
+					href="/fonts/geomanist-regular-webfont.woff2"
 					rel="preload"
 					crossOrigin="anonymous"
 				/>
 				<link
 					as="font"
-					href={geomanistMedium}
+					href="/fonts/geomanist-medium-webfont.woff2"
 					rel="preload"
 					crossOrigin="anonymous"
 				/>
 				<link
 					as="font"
-					href={geomanistBlack}
+					href="/fonts/geomanist-black-webfont.woff2"
 					rel="preload"
 					crossOrigin="anonymous"
 				/>

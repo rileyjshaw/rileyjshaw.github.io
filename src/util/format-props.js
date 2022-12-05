@@ -1,11 +1,11 @@
 const formatters = {
-	post: function formatPost(data) {
+	post: function formatPost(node) {
 		// Move all `fields` properties to the top level and sort tags.
 		const {
 			fields: {slug, ...fields},
 			frontmatter,
 			...rest
-		} = data.node;
+		} = node;
 		return {
 			...fields,
 			...rest,

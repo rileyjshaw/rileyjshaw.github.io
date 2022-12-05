@@ -1,4 +1,4 @@
-import {ReactComponent as Repeat} from '../../content/images/repeat.svg';
+import AboutIntro from '../components/about/me-intro';
 import BigQuote from '../components/big-quote';
 import ClientOnly from '../components/client-only';
 import ContentGrid from '../components/content-grid';
@@ -9,12 +9,14 @@ import GameOver from '../components/doodles/game-over';
 import Riot from '../components/doodles/riot';
 import GoUp from '../components/go-up';
 import SEO from '../components/seo';
+import Repeat from '../icons/Repeat';
 import allProjectsQuery from '../util/all-projects-query';
 import {shuffle, sortByDate} from '../util/sorting-methods';
 import './index.css';
-import {useStaticQuery, graphql, Link} from 'gatsby';
-import {MDXRenderer} from 'gatsby-plugin-mdx';
+import {Link} from 'gatsby';
 import React, {useState} from 'react';
+
+export const Head = SEO;
 
 // Ensure the first doodle shown is consistent to prevent layout shifts on
 // initial load. Shuffle the rest.
@@ -37,27 +39,11 @@ const doodles = [
 ];
 
 const IndexPage = ({featuredProjects = []}) => {
-	// TODO(riley): Get featured projects from here.
-	const {
-		aboutIntro: {
-			childMdx: {body},
-		},
-	} = useStaticQuery(graphql`
-		{
-			aboutIntro: file(relativePath: {eq: "about/me_intro.md"}) {
-				childMdx {
-					body
-				}
-			}
-		}
-	`);
-
 	const [doodleIdx, setDoodleIdx] = useState(0);
 	const {Doodle, styles: doodleStyles} = doodles[doodleIdx];
 
 	return (
 		<>
-			<SEO />
 			<main className="main-content">
 				<div className="frontpage-grid">
 					<div className="frontpage-doodle" style={doodleStyles}>
@@ -78,9 +64,7 @@ const IndexPage = ({featuredProjects = []}) => {
 						</ClientOnly>
 					</div>
 					<div className="about-stub">
-						<MDXRenderer className="about-md-wrapper">
-							{body}
-						</MDXRenderer>{' '}
+						<AboutIntro />{' '}
 						<Link to="/about" className="about-link">
 							More{' '}
 							<CycleText

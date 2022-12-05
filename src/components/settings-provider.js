@@ -49,7 +49,9 @@ const SettingsProvider = ({children}) => {
 		STORAGE_KEYS.blockEmbeds
 	);
 
-	useEffect(() => theme && applyTheme(theme), [themeKey, theme]);
+	useEffect(() => {
+		theme && applyTheme(theme);
+	}, [themeKey, theme]);
 
 	return (
 		<SettingsContext.Provider

@@ -41,7 +41,6 @@
 	font-family: var(--fs);
 	font-size: var(--font-scale-2);
 }
-.about-stub .about-md-wrapper,
 .about-stub p {
 	display: inline;
 }

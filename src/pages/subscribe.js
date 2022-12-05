@@ -7,9 +7,12 @@ import './subscribe.css';
 import {Link} from 'gatsby';
 import React from 'react';
 
+export function Head(props) {
+	return <SEO {...props} title="Subscribe" />;
+}
+
 const SubscribePage = () => (
 	<>
-		<SEO title="Subscribe" />
 		<div className="inner">
 			<Newsletter />
 			<hr />
@@ -87,7 +90,7 @@ const SubscribePage = () => (
 				</li>
 				<li>
 					<ExternalLink to="https://www.linkedin.com/in/rileyjshaw/">
-						Linkedin
+						LinkedIn
 					</ExternalLink>
 				</li>
 				<li>

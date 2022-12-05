@@ -198,6 +198,9 @@
 .scaling-faders-loading {
 	margin: auto;
 }
+.scaling-fader-mode-toggle + label {
+	cursor: pointer;
+}
 .scaling-fader-mode-toggle + label::before {
 	background: var(--color-bg);
 	border: 6px solid var(--color-fg);
