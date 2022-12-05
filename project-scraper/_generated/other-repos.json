@@ -48,6 +48,10 @@
 		"priority": 0.5
 	},
 	{
+		"path": "/compare-images/",
+		"priority": 0.1
+	},
+	{
 		"path": "/do-it/",
 		"priority": 0.2
 	},
