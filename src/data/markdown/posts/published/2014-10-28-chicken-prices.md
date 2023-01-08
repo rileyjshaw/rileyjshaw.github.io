@@ -155,6 +155,4 @@ As commenter [alsocasey](https://news.ycombinator.com/item?id=8487758) noted:
 
 > The only odd thing about this answer is that farmer 1 apparently decided to lower prices after selling 9 of his 10 chickens in the morning…
 
-## Footnotes
-
 [^1]: This is assuming that they didn’t decide to “sell” their chickens for $0 in the afternoon, which is probably a safe bet.

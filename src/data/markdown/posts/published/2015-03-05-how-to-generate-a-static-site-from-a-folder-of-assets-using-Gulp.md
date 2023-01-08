@@ -160,8 +160,6 @@ There are still some goodies that we can throw into our task runner[^6], but I�
 -   <a href="https://github.com/rileyjshaw/nature-of-code/" rel="noopener noreferrer" target="_blank">GitHub repository</a>
 -   <a href="http://rileyjshaw.com/nature-of-code/" rel="noopener noreferrer" target="_blank">Live demo</a>
 
-## Footnotes
-
 [^1]: If you’re looking to make something more complicated than simple linked pages, <a href="https://www.staticgen.com/" rel="noopener noreferrer" target="_blank">go here</a>.
 [^2]: Doing this felt yucky initially, but I came to really like having a strict naming convention. Opening the demos directory and having your app’s structure immediately apparent is very handy.
 [^3]: One of my biggest concerns with this: once i’d written demos `1.5`, `1.6`, and `1.7`, how could I add anything between `1.5` and `1.6` without renaming a whole cascade of files? This turned out to not be a concern. Since we’re just using the numbers for sorting in Gulp, `1.51` is perfectly valid for an input. We can name the output `1.6` and shift the rest accordingly.
