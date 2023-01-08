@@ -123,8 +123,6 @@ So take this post as an organizational diff. If something seems healthy, merge i
 
 I’ve personally had a wonderful time getting to know the KA team, and am still as unbelievably excited to be here as I was on day one.
 
-## Footnotes
-
 [^1]: For reference, this isn’t the first time that Andy has [gone over the top](http://bjk5.com/post/92617394126/going-over-the-top).
 [^2]: My heels were injured at the time but the walk seemed important so I didn’t mention it.
 [^3]: Eventually I discovered that sitting was also an option and that I didn’t have to damage my body to talk to people.

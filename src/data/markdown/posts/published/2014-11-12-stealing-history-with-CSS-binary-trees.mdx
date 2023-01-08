@@ -124,8 +124,6 @@ And if you made it this far, just [play the damn game already][demo]!
 [pixel perfect timing attacks with html5]: http://www.contextis.com/documents/2/Browser_Timing_Attacks.pdf
 [demo]: /visited-vectors/reaction/
 
-## Footnotes
-
 [^1]: A noble effort, but it’s difficult to plug all the [holes](http://arstechnica.com/security/2014/06/theyre-ba-ack-browser-sniffing-ghosts-return-to-haunt-chrome-ie-firefox/).
 [^2]: True under the assumption that the dataset is sparsely populated with <code className="language-css">:visited</code> links. If there is a high percentage of <code className="language-css">:visited</code> links in the set you’re actually better off with the linear algorithm. Good news: counting on a sparse dataset is a very safe bet.
 [^3]: I settled on n = 16 unique links per stack. Adding more links gives a performance hit, as it’s not easy for the browser to composite that many layers (each unique link requires 256 elements). 16 seems to be a sweet-spot.
