@@ -49,7 +49,7 @@
 	},
 	{
 		"path": "/compare-images/",
-		"priority": 0.9
+		"priority": 0.7
 	},
 	{
 		"path": "/do-it/",
