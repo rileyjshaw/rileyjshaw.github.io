@@ -4,7 +4,7 @@ import React from 'react';
 function MeIntro() {
 	return (
 		<p>
-			I am an artist, engineer, and educator. My work has been featured
+			I am a programmer and interface designer. My work has been featured
 			on NPR, the CBC, HuffPost, Canadian Business, and elsewhere. I
 			volunteer at{' '}
 			<AutoLink to="https://repairmatters.ca/">Repair Matters</AutoLink>{' '}
