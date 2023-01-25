@@ -28,6 +28,13 @@
 		"uid": "AUTOMATION_OWNERSHIP"
 	},
 	{
+		"author": "Kurt Vonnegut",
+		"cite": "https://www.rd.com/article/letter-from-kurt-vonnegut/",
+		"content": "Practice any art, however well or badly, not to get money and fame, but to find out what’s inside you.",
+		"source": "Letter to Ms. Lockwood’s class",
+		"uid": "BAD_ART"
+	},
+	{
 		"author": "Thomas Edison",
 		"cite": "https://quoteinvestigator.com/2012/02/15/books-obsolete",
 		"content": "Books will soon be obsolete in the public schools.",
