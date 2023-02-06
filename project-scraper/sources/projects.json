@@ -20,6 +20,49 @@
 		"todo": true
 	},
 	{
+		"title": "Font comparison tool",
+		"todo": true
+	},
+	{
+		"title": "Dim",
+		"description": ["A simple dark theme for Firefox."],
+		"date": "2023-02-06",
+		"coolness": 50,
+		"link": "https://addons.mozilla.org/en-CA/firefox/addon/dim-a-simple-dark-theme/"
+	},
+	{
+		"title": "Roll",
+		"description": ["Roll a D6."],
+		"date": "2023-01-27",
+		"coolness": 50,
+		"link": "https://rileyjshaw.com/roll/"
+	},
+	{
+		"title": "Compare images",
+		"description": ["Compare two images in a variety of ways."],
+		"date": "2022-11-24",
+		"coolness": 80,
+		"link": "https://rileyjshaw.com/compare-images/"
+	},
+	{
+		"title": "cnz",
+		"description": [
+			"A really tiny library that generates classname strings."
+		],
+		"date": "2022-10-19",
+		"coolness": 50,
+		"link": "https://www.npmjs.com/package/cnz"
+	},
+	{
+		"title": "Ribbon creator",
+		"description": [
+			"An interactive version of my <a href=\"https://codepen.io/rileyjshaw/full/BaJyMMj\" target=\"_blank\" rel=\"noopener noreferrer\">Ribbon doodle</a>."
+		],
+		"date": "2022-03-22",
+		"coolness": 50,
+		"link": "https://codepen.io/rileyjshaw/full/zYpKMWB"
+	},
+	{
 		"title": "Ribbon",
 		"description": ["A doodle I made while eating Fruit by the Foot."],
 		"date": "2022-03-15",
@@ -74,6 +117,15 @@
 		"date": "2021-06-08",
 		"coolness": 40,
 		"link": "https://marqueee-rotated.glitch.me/"
+	},
+	{
+		"title": "CSV to GPX",
+		"description": [
+			"Converts a CSV file to a Garmin-flavored <code>.gpx</code> file."
+		],
+		"date": "2021-05-21",
+		"coolness": 10,
+		"link": "https://github.com/rileyjshaw/csv-to-gpx"
 	},
 	{
 		"title": "Variable font: headings grow on hover",
@@ -139,6 +191,13 @@
 		"date": "2021-03-03",
 		"coolness": 38,
 		"link": "https://codepen.io/rileyjshaw/pen/abBKOmE"
+	},
+	{
+		"title": "Scribbler",
+		"description": ["Combine many types of lines into a single line."],
+		"date": "2021-03-24",
+		"coolness": 30,
+		"link": "https://rileyjshaw.com/scribbler"
 	},
 	{
 		"title": "Minimal SVG dark mode icon",
@@ -1207,6 +1266,15 @@
 		"date": "2015-12-20",
 		"coolness": 50,
 		"link": "https://github.com/rileyjshaw/easy-inbox-zero"
+	},
+	{
+		"title": "2d roll effect experiments",
+		"description": [
+			"Attempts to make a believable enough 3d ball-rolling effect using 2d canvas primitives."
+		],
+		"date": "2015-12-19",
+		"coolness": 44,
+		"link": "https://codepen.io/collection/aMqEjR"
 	},
 	{
 		"title": "Eye sea",
