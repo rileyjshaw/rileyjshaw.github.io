@@ -1765,6 +1765,18 @@
 		"uid": "PROJECT_28_HOUR_DAY"
 	},
 	{
+		"coolness": 44,
+		"date": "2015-12-19",
+		"descriptionList": [
+			"Attempts to make a believable enough 3d ball-rolling effect using 2d canvas primitives."
+		],
+		"link": "https://codepen.io/collection/aMqEjR",
+		"timestamp": 1450483200000,
+		"title": "2d roll effect experiments",
+		"type": "project",
+		"uid": "PROJECT_2D_ROLL_EFFECT_EXPERIMENTS"
+	},
+	{
 		"coolness": 83,
 		"date": "2013-11-11",
 		"descriptionList": [
@@ -2415,6 +2427,18 @@
 		"uid": "PROJECT_CIRCLING_CIRCLES"
 	},
 	{
+		"coolness": 50,
+		"date": "2022-10-19",
+		"descriptionList": [
+			"A really tiny library that generates classname strings."
+		],
+		"link": "https://www.npmjs.com/package/cnz",
+		"timestamp": 1666137600000,
+		"title": "cnz",
+		"type": "project",
+		"uid": "PROJECT_CNZ"
+	},
+	{
 		"coolness": 14,
 		"date": "2013-09-29",
 		"descriptionList": [
@@ -2450,6 +2474,18 @@
 		"title": "Color screen",
 		"type": "project",
 		"uid": "PROJECT_COLOR_SCREEN"
+	},
+	{
+		"coolness": 80,
+		"date": "2022-11-24",
+		"descriptionList": [
+			"Compare two images in a variety of ways."
+		],
+		"link": "https://rileyjshaw.com/compare-images/",
+		"timestamp": 1669248000000,
+		"title": "Compare images",
+		"type": "project",
+		"uid": "PROJECT_COMPARE_IMAGES"
 	},
 	{
 		"coolness": 72,
@@ -2661,6 +2697,18 @@
 		"uid": "PROJECT_CSSANDY_CANE"
 	},
 	{
+		"coolness": 10,
+		"date": "2021-05-21",
+		"descriptionList": [
+			"Converts a CSV file to a Garmin-flavored <code>.gpx</code> file."
+		],
+		"link": "https://github.com/rileyjshaw/csv-to-gpx",
+		"timestamp": 1621555200000,
+		"title": "CSV to GPX",
+		"type": "project",
+		"uid": "PROJECT_CSV_TO_GPX"
+	},
+	{
 		"coolness": 14,
 		"date": "2013-10-23",
 		"descriptionList": [
@@ -2811,6 +2859,18 @@
 		"title": "Desire paths: remixes",
 		"type": "project",
 		"uid": "PROJECT_DESIRE_PATHS1M_REMIXES"
+	},
+	{
+		"coolness": 50,
+		"date": "2023-02-06",
+		"descriptionList": [
+			"A simple dark theme for Firefox."
+		],
+		"link": "https://addons.mozilla.org/en-CA/firefox/addon/dim-a-simple-dark-theme/",
+		"timestamp": 1675641600000,
+		"title": "Dim",
+		"type": "project",
+		"uid": "PROJECT_DIM"
 	},
 	{
 		"coolness": 60,
@@ -5085,6 +5145,18 @@
 		"uid": "PROJECT_RIBBON"
 	},
 	{
+		"coolness": 50,
+		"date": "2022-03-22",
+		"descriptionList": [
+			"An interactive version of my <a href=\"https://codepen.io/rileyjshaw/full/BaJyMMj\" rel=\"noopener noreferrer\" target=\"_blank\">Ribbon doodle</a>."
+		],
+		"link": "https://codepen.io/rileyjshaw/full/zYpKMWB",
+		"timestamp": 1647907200000,
+		"title": "Ribbon creator",
+		"type": "project",
+		"uid": "PROJECT_RIBBON_CREATOR"
+	},
+	{
 		"coolness": 80,
 		"date": "2016-10-27",
 		"descriptionList": [
@@ -5135,6 +5207,18 @@
 		"title": "Rings",
 		"type": "project",
 		"uid": "PROJECT_RINGS"
+	},
+	{
+		"coolness": 50,
+		"date": "2023-01-27",
+		"descriptionList": [
+			"Roll a D6."
+		],
+		"link": "https://rileyjshaw.com/roll/",
+		"timestamp": 1674777600000,
+		"title": "Roll",
+		"type": "project",
+		"uid": "PROJECT_ROLL"
 	},
 	{
 		"coolness": 42,
@@ -5209,6 +5293,18 @@
 		"title": "Scaling faders (audio demo)",
 		"type": "project",
 		"uid": "PROJECT_SCALING_FADERS_14AUDIO_DEMO15"
+	},
+	{
+		"coolness": 30,
+		"date": "2021-03-24",
+		"descriptionList": [
+			"Combine many types of lines into a single line."
+		],
+		"link": "https://rileyjshaw.com/scribbler",
+		"timestamp": 1616544000000,
+		"title": "Scribbler",
+		"type": "project",
+		"uid": "PROJECT_SCRIBBLER"
 	},
 	{
 		"coolness": 40,

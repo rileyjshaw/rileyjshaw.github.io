@@ -112,7 +112,15 @@
 		"priority": 0.5
 	},
 	{
+		"path": "/roll/",
+		"priority": 0.1
+	},
+	{
 		"path": "/sci-13/",
+		"priority": 0.1
+	},
+	{
+		"path": "/scribbler/",
 		"priority": 0.1
 	},
 	{
