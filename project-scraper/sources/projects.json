@@ -27,14 +27,14 @@
 		"title": "Dim",
 		"description": ["A simple dark theme for Firefox."],
 		"date": "2023-02-06",
-		"coolness": 50,
+		"coolness": 60,
 		"link": "https://addons.mozilla.org/en-CA/firefox/addon/dim-a-simple-dark-theme/"
 	},
 	{
 		"title": "Roll",
 		"description": ["Roll a D6."],
 		"date": "2023-01-27",
-		"coolness": 50,
+		"coolness": 40,
 		"link": "https://rileyjshaw.com/roll/"
 	},
 	{

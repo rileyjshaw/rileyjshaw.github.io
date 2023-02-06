@@ -2861,7 +2861,7 @@
 		"uid": "PROJECT_DESIRE_PATHS1M_REMIXES"
 	},
 	{
-		"coolness": 50,
+		"coolness": 60,
 		"date": "2023-02-06",
 		"descriptionList": [
 			"A simple dark theme for Firefox."
@@ -5209,7 +5209,7 @@
 		"uid": "PROJECT_RINGS"
 	},
 	{
-		"coolness": 50,
+		"coolness": 40,
 		"date": "2023-01-27",
 		"descriptionList": [
 			"Roll a D6."
