@@ -113,7 +113,7 @@
 	},
 	{
 		"path": "/roll/",
-		"priority": 0.1
+		"priority": 0.5
 	},
 	{
 		"path": "/sci-13/",
@@ -121,7 +121,7 @@
 	},
 	{
 		"path": "/scribbler/",
-		"priority": 0.1
+		"priority": 0.4
 	},
 	{
 		"path": "/sorta/",
