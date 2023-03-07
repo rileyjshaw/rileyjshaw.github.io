@@ -1,6 +1,6 @@
 # [Personal site](https://rileyjshaw.com)
 
-You can read more about the person _and_ the site [here](https://rileyjshaw.com/about).
+You can read more about me _and_ my site [here](https://rileyjshaw.com/about).
 
 ## Setup
 

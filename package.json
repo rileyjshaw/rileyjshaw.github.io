@@ -72,7 +72,7 @@
     "build": "gatsby build",
     "cm": "cz",
     "curate": "concurrently \"npm run develop-everywhere\" \"nodemon -w project-scraper/curation/server.mjs project-scraper/curation/server.mjs\"",
-    "deploy": "npm run format && gatsby build && gh-pages -d public -b master",
+    "deploy": "npm run format && gatsby build && gh-pages -d public -b main",
     "dev": "npm run develop",
     "develop": "gatsby develop -o",
     "develop-everywhere": "gatsby develop -H 0.0.0.0 -o",
