@@ -3199,10 +3199,10 @@
 			],
 			"comment_count": 0,
 			"created_at": "2023-03-07T00:53:23+00:00",
-			"download_count": 0,
+			"download_count": 12,
 			"excerpt": "This is a free, touchscreen version of my Stargazer MIDI controller. The default layout for...",
 			"id": 165102,
-			"like_count": 0,
+			"like_count": 4,
 			"link": "https://patchstorage.com/stargazer-touch/",
 			"platform": {
 				"id": 7828,
@@ -4132,6 +4132,7 @@
 	"screenshotsTumblr": [
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -4144,6 +4145,8 @@
 			"id_string": "710001202629378048",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/710001202629378048",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -4220,6 +4223,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -4231,6 +4235,8 @@
 			"id": "707203228362850304",
 			"id_string": "707203228362850304",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -4423,6 +4429,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -4436,19 +4443,21 @@
 			"id": "707201000997519360",
 			"id_string": "707201000997519360",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-6406916d67cc7752009266' class='crt-video crt-skin-default' width='250' height='250' poster='https://64.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":3,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_rox1pblECQ1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-641dbb8df009d982188677' class='crt-video crt-skin-default' width='250' height='250' poster='https://64.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":3,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_rox1pblECQ1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-6406916d67cc7752009266' class='crt-video crt-skin-default' width='400' height='400' poster='https://64.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":3,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_rox1pblECQ1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-641dbb8df009d982188677' class='crt-video crt-skin-default' width='400' height='400' poster='https://64.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":3,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_rox1pblECQ1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-6406916d67cc7752009266' class='crt-video crt-skin-default' width='500' height='500' poster='https://64.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":3,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_rox1pblECQ1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-641dbb8df009d982188677' class='crt-video crt-skin-default' width='500' height='500' poster='https://64.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":3,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_rox1pblECQ1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -4481,6 +4490,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -4492,6 +4502,8 @@
 			"id": "702290533345787904",
 			"id_string": "702290533345787904",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -4931,6 +4943,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -4942,6 +4955,8 @@
 			"id": "694771516308668416",
 			"id_string": "694771516308668416",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -5221,6 +5236,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -5233,6 +5249,8 @@
 			"id_string": "686678836961787904",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/686678836961787904",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -5309,6 +5327,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -5320,6 +5339,8 @@
 			"id": "686590056443609089",
 			"id_string": "686590056443609089",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -5638,6 +5659,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -5650,6 +5672,8 @@
 			"id_string": "685262025296871424",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/685262025296871424",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -5737,6 +5761,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -5749,6 +5774,8 @@
 			"id_string": "678913550852456448",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/678913550852456448",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -5830,6 +5857,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -5841,6 +5869,8 @@
 			"id": "678799955049218048",
 			"id_string": "678799955049218048",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -5975,6 +6005,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -5986,6 +6017,8 @@
 			"id": "678748501658779648",
 			"id_string": "678748501658779648",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -6418,6 +6451,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -6430,6 +6464,8 @@
 			"id_string": "675555731299319809",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/675555731299319809",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -6507,6 +6543,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -6518,6 +6555,8 @@
 			"id": "675196394530848768",
 			"id_string": "675196394530848768",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -6946,6 +6985,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -6957,6 +6997,8 @@
 			"id": "675192537579978752",
 			"id_string": "675192537579978752",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -7335,6 +7377,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -7346,6 +7389,8 @@
 			"id": "675113121046822912",
 			"id_string": "675113121046822912",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -7875,6 +7920,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -7886,6 +7932,8 @@
 			"id": "675112835087499264",
 			"id_string": "675112835087499264",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -8414,6 +8462,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -8425,6 +8474,8 @@
 			"id": "673613013882929152",
 			"id_string": "673613013882929152",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -8707,6 +8758,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -8718,6 +8770,8 @@
 			"id": "673594223488073728",
 			"id_string": "673594223488073728",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -9020,6 +9074,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -9031,6 +9086,8 @@
 			"id": "673592524441616384",
 			"id_string": "673592524441616384",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -9328,6 +9385,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -9339,6 +9397,8 @@
 			"id": "665579762325110784",
 			"id_string": "665579762325110784",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 1,
 			"photos": [
@@ -9656,6 +9716,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -9668,6 +9729,8 @@
 			"id_string": "656808619808112640",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/656808619808112640",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -9724,6 +9787,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -9735,6 +9799,8 @@
 			"id": "655613490564939776",
 			"id_string": "655613490564939776",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -9982,6 +10048,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -9995,19 +10062,21 @@
 			"id": "648936317634363392",
 			"id_string": "648936317634363392",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-6406916ddd690052200923' class='crt-video crt-skin-default' width='250' height='251' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-641dbb8e73fd7476943269' class='crt-video crt-skin-default' width='250' height='251' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-6406916ddd690052200923' class='crt-video crt-skin-default' width='400' height='402' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-641dbb8e73fd7476943269' class='crt-video crt-skin-default' width='400' height='402' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-6406916ddd690052200923' class='crt-video crt-skin-default' width='500' height='502' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-641dbb8e73fd7476943269' class='crt-video crt-skin-default' width='500' height='502' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -10038,6 +10107,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -10049,6 +10119,8 @@
 			"id": "648936073919070208",
 			"id_string": "648936073919070208",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -10211,6 +10283,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -10222,6 +10295,8 @@
 			"id": "648936044176261120",
 			"id_string": "648936044176261120",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -10564,6 +10639,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -10575,6 +10651,8 @@
 			"id": "648935871611092992",
 			"id_string": "648935871611092992",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -11052,6 +11130,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -11063,6 +11142,8 @@
 			"id": "648935582631903232",
 			"id_string": "648935582631903232",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -11225,6 +11306,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -11236,6 +11318,8 @@
 			"id": "648934708695236608",
 			"id_string": "648934708695236608",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -11668,6 +11752,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -11680,6 +11765,8 @@
 			"id_string": "645675992489345024",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/645675992489345024",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -11763,6 +11850,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -11775,6 +11863,8 @@
 			"id_string": "672603026379489280",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/672603026379489280",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -11861,6 +11951,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -11873,6 +11964,8 @@
 			"id_string": "644678141352247296",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/644678141352247296",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -11960,6 +12053,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -11971,6 +12065,8 @@
 			"id": "644417286725419008",
 			"id_string": "644417286725419008",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -12099,6 +12195,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -12110,6 +12207,8 @@
 			"id": "644170627836755968",
 			"id_string": "644170627836755968",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -12253,6 +12352,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -12265,6 +12365,8 @@
 			"id_string": "672602520441503744",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/672602520441503744",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -12341,6 +12443,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -12353,6 +12456,8 @@
 			"id_string": "640500172146802688",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/640500172146802688",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -12476,6 +12581,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -12487,6 +12593,8 @@
 			"id": "640133626062929920",
 			"id_string": "640133626062929920",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -12580,6 +12688,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -12592,6 +12701,8 @@
 			"id_string": "639449421520715776",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/639449421520715776",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -12673,6 +12784,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -12685,6 +12797,8 @@
 			"id_string": "639449511924727808",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/639449511924727808",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -12763,6 +12877,7 @@
 		{
 			"blog_name": "screeenshots",
 			"body": "<figure data-orig-height=\"272\" data-orig-width=\"257\"><img src=\"https://64.media.tumblr.com/0d1e0c974ff08917abb00f6812706083/7f59cd4b6bb05914-ea/s640x960/4a16833cd4b13e9c87ebf2c5fc3043f563859965.jpg\" data-orig-height=\"272\" data-orig-width=\"257\" srcset=\"https://64.media.tumblr.com/0d1e0c974ff08917abb00f6812706083/7f59cd4b6bb05914-ea/s75x75_c1/87cfa4bd9279ca8444baa28be4508b57a3cb014c.jpg 75w, https://64.media.tumblr.com/0d1e0c974ff08917abb00f6812706083/7f59cd4b6bb05914-ea/s100x200/38b9ceed2968c0389546489df07950b76ff63d80.jpg 100w, https://64.media.tumblr.com/0d1e0c974ff08917abb00f6812706083/7f59cd4b6bb05914-ea/s250x400/1874b5695be73de208a19d19c2315c3d1ec9312b.jpg 250w, https://64.media.tumblr.com/0d1e0c974ff08917abb00f6812706083/7f59cd4b6bb05914-ea/s400x600/91b185f3289d86fd0c0e6000d629aac9e70203ad.jpg 257w\" sizes=\"(max-width: 257px) 100vw, 257px\"/></figure>",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -12773,6 +12888,8 @@
 			"id": "638679636843315200",
 			"id_string": "638679636843315200",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": true,
 			"note_count": 0,
 			"post_url": "https://screenshots.rileyjshaw.com/post/638679636843315200",
@@ -12836,6 +12953,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -12848,6 +12966,8 @@
 			"id_string": "637440003545366528",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/637440003545366528",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -12968,6 +13088,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -12980,6 +13101,8 @@
 			"id_string": "636286701898203136",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/636286701898203136",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -13068,6 +13191,7 @@
 		{
 			"blog_name": "screeenshots",
 			"body": "<figure data-orig-width=\"2048\" data-orig-height=\"1536\" class=\"tmblr-full\"><img src=\"https://64.media.tumblr.com/b0c59ba0c35d4dcf780f5342e12ec950/186fa69d07726c90-2b/s540x810/185fea80f447cd529c9444b5d69ef9836e51e508.jpg\" alt=\"image\" data-orig-width=\"2048\" data-orig-height=\"1536\"/></figure>",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -13078,6 +13202,8 @@
 			"id": "636543845290721280",
 			"id_string": "636543845290721280",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://screenshots.rileyjshaw.com/post/636543845290721280",
@@ -13141,6 +13267,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -13152,6 +13279,8 @@
 			"id": "635781546255712256",
 			"id_string": "635781546255712256",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -13301,6 +13430,7 @@
 		{
 			"blog_name": "screeenshots",
 			"body": "<div class=\"npf_row\"><figure class=\"tmblr-full\" data-orig-height=\"2048\" data-orig-width=\"2048\"><img src=\"https://64.media.tumblr.com/cb33f65d59b182ea6303192413a02ee0/26ae568e53e3058d-76/s640x960/3413906a9a99107a2dcc51c8925efcb48084d5da.jpg\" data-orig-height=\"2048\" data-orig-width=\"2048\" srcset=\"https://64.media.tumblr.com/cb33f65d59b182ea6303192413a02ee0/26ae568e53e3058d-76/s75x75_c1/b8f02ad1120f956063734f571a81372f5da114e2.jpg 75w, https://64.media.tumblr.com/cb33f65d59b182ea6303192413a02ee0/26ae568e53e3058d-76/s100x200/0aab12fbc0fe974929882f97db2a30ba04d449dc.jpg 100w, https://64.media.tumblr.com/cb33f65d59b182ea6303192413a02ee0/26ae568e53e3058d-76/s250x400/de99a7fe6b6f3193235b5c32b714566afba7666c.jpg 250w, https://64.media.tumblr.com/cb33f65d59b182ea6303192413a02ee0/26ae568e53e3058d-76/s400x600/5be0357820248cdaaa6c234044ac6a75cc5b58d2.jpg 400w, https://64.media.tumblr.com/cb33f65d59b182ea6303192413a02ee0/26ae568e53e3058d-76/s500x750/2c2f3957483693a345073a0c83b189f00600af6b.jpg 500w, https://64.media.tumblr.com/cb33f65d59b182ea6303192413a02ee0/26ae568e53e3058d-76/s540x810/faf2cd361fa5721af594a7ca4ba0b0e4546856a4.jpg 540w, https://64.media.tumblr.com/cb33f65d59b182ea6303192413a02ee0/26ae568e53e3058d-76/s640x960/3413906a9a99107a2dcc51c8925efcb48084d5da.jpg 640w, https://64.media.tumblr.com/cb33f65d59b182ea6303192413a02ee0/26ae568e53e3058d-76/s1280x1920/5b602f448ca141828183847220d03bd97ad24cd9.jpg 1280w, https://64.media.tumblr.com/cb33f65d59b182ea6303192413a02ee0/26ae568e53e3058d-76/s2048x3072/56168398a688be4588bd8c85e4cf6042aa2238e3.jpg 2048w\" sizes=\"(max-width: 1280px) 100vw, 1280px\"/></figure></div>",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -13311,6 +13441,8 @@
 			"id": "635627570004623360",
 			"id_string": "635627570004623360",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": true,
 			"note_count": 0,
 			"post_url": "https://screenshots.rileyjshaw.com/post/635627570004623360",
@@ -13375,6 +13507,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -13387,6 +13520,8 @@
 			"id_string": "634877081179848704",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/634877081179848704",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -13464,6 +13599,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -13475,6 +13611,8 @@
 			"id": "634483776303529984",
 			"id_string": "634483776303529984",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -13608,6 +13746,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -13620,6 +13759,8 @@
 			"id_string": "630727814497337344",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/630727814497337344",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -13701,6 +13842,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -13713,6 +13855,8 @@
 			"id_string": "629904225484374016",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/629904225484374016",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -13833,6 +13977,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -13845,6 +13990,8 @@
 			"id_string": "629843941366300672",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/629843941366300672",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -13921,6 +14068,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -13933,6 +14081,8 @@
 			"id_string": "629464644922261504",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/629464644922261504",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -14019,6 +14169,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -14030,6 +14181,8 @@
 			"id": "629378686096982016",
 			"id_string": "629378686096982016",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -14229,6 +14382,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -14240,6 +14394,8 @@
 			"id": "629374161906761729",
 			"id_string": "629374161906761729",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -14717,6 +14873,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -14728,6 +14885,8 @@
 			"id": "629352312664702976",
 			"id_string": "629352312664702976",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -15015,6 +15174,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -15027,6 +15187,8 @@
 			"id_string": "626901555199819776",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/626901555199819776",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -15151,6 +15313,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -15163,6 +15326,8 @@
 			"id_string": "626812846932656128",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/626812846932656128",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -15244,6 +15409,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -15256,6 +15422,8 @@
 			"id_string": "625199539918438401",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/625199539918438401",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -15320,6 +15488,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -15332,6 +15501,8 @@
 			"id_string": "623385667001597952",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/623385667001597952",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -15378,6 +15549,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -15390,6 +15562,8 @@
 			"id_string": "617955139492462592",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/617955139492462592",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -15472,6 +15646,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -15484,6 +15659,8 @@
 			"id_string": "616325615435579393",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/616325615435579393",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -15536,6 +15713,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -15547,6 +15725,8 @@
 			"id": "618397028511318016",
 			"id_string": "618397028511318016",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -15766,6 +15946,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -15778,6 +15959,8 @@
 			"id_string": "613515798927048704",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/613515798927048704",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -15864,6 +16047,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -15876,6 +16060,8 @@
 			"id_string": "611521814002286592",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/611521814002286592",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -15962,6 +16148,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -15973,6 +16160,8 @@
 			"id": "613036910795014144",
 			"id_string": "613036910795014144",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -16120,6 +16309,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -16133,19 +16323,21 @@
 			"id": "190756400621",
 			"id_string": "190756400621",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-6406916eb4ca2049708323' class='crt-video crt-skin-default' width='250' height='141' poster='https://64.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":19,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hyeqpaJK1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-641dbb8f2a886286403794' class='crt-video crt-skin-default' width='250' height='141' poster='https://64.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":19,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hyeqpaJK1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-6406916eb4ca2049708323' class='crt-video crt-skin-default' width='400' height='225' poster='https://64.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":19,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hyeqpaJK1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-641dbb8f2a886286403794' class='crt-video crt-skin-default' width='400' height='225' poster='https://64.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":19,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hyeqpaJK1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-6406916eb4ca2049708323' class='crt-video crt-skin-default' width='500' height='281' poster='https://64.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":19,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hyeqpaJK1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-641dbb8f2a886286403794' class='crt-video crt-skin-default' width='500' height='281' poster='https://64.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":19,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hyeqpaJK1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -16214,6 +16406,7 @@
 		{
 			"blog_name": "screeenshots",
 			"body": "<div class=\"npf_row\"><figure class=\"tmblr-full\" data-orig-height=\"1536\" data-orig-width=\"2048\"><img src=\"https://64.media.tumblr.com/6f6b91a8651c415a17c949a8987eace0/1855a6bb118eadfc-59/s640x960/db10e1155b2d4d7b19b3125d366ddd40e355d372.jpg\" data-orig-height=\"1536\" data-orig-width=\"2048\" srcset=\"https://64.media.tumblr.com/6f6b91a8651c415a17c949a8987eace0/1855a6bb118eadfc-59/s75x75_c1/f8b6b9e5175a5aa7b1b1d60bc5439a5abd0ec4f1.jpg 75w, https://64.media.tumblr.com/6f6b91a8651c415a17c949a8987eace0/1855a6bb118eadfc-59/s100x200/de117b56240231cd1589b09de1097f98ee019317.jpg 100w, https://64.media.tumblr.com/6f6b91a8651c415a17c949a8987eace0/1855a6bb118eadfc-59/s250x400/2c74095f2744e10bd89a55ccdf78714b183485fd.jpg 250w, https://64.media.tumblr.com/6f6b91a8651c415a17c949a8987eace0/1855a6bb118eadfc-59/s400x600/1440af897e2ff76d53b6955367845a9b80f2da35.jpg 400w, https://64.media.tumblr.com/6f6b91a8651c415a17c949a8987eace0/1855a6bb118eadfc-59/s500x750/14fa41f3718c9d8296e8f00006485ac56411e697.jpg 500w, https://64.media.tumblr.com/6f6b91a8651c415a17c949a8987eace0/1855a6bb118eadfc-59/s540x810/4b4341b3317f4ce87dc4f52142957a45d8de3bb2.jpg 540w, https://64.media.tumblr.com/6f6b91a8651c415a17c949a8987eace0/1855a6bb118eadfc-59/s640x960/db10e1155b2d4d7b19b3125d366ddd40e355d372.jpg 640w, https://64.media.tumblr.com/6f6b91a8651c415a17c949a8987eace0/1855a6bb118eadfc-59/s1280x1920/ed01531156335429bcb26b1e1bf2c8823817899f.jpg 1280w, https://64.media.tumblr.com/6f6b91a8651c415a17c949a8987eace0/1855a6bb118eadfc-59/s2048x3072/e0d7d6229f78e34d916c74a68e9e7ecaf3d3b7cb.jpg 2048w\" sizes=\"(max-width: 1280px) 100vw, 1280px\"/></figure></div>",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -16224,6 +16417,8 @@
 			"id": "190666522900",
 			"id_string": "190666522900",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": true,
 			"note_count": 1,
 			"post_url": "https://screenshots.rileyjshaw.com/post/190666522900",
@@ -16286,6 +16481,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -16298,6 +16494,8 @@
 			"id_string": "190653258355",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/190653258355",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -16422,6 +16620,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -16434,6 +16633,8 @@
 			"id_string": "190665512735",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/190665512735",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -16515,6 +16716,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -16527,6 +16729,8 @@
 			"id_string": "190653519835",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/190653519835",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -16579,6 +16783,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -16591,6 +16796,8 @@
 			"id_string": "190664486770",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/190664486770",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -16705,6 +16912,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -16716,6 +16924,8 @@
 			"id": "190664420870",
 			"id_string": "190664420870",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -16844,6 +17054,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -16856,6 +17067,8 @@
 			"id_string": "190664471025",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/190664471025",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -16979,6 +17192,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -16992,19 +17206,21 @@
 			"id": "190756672335",
 			"id_string": "190756672335",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-6406916eb8a14546562747' class='crt-video crt-skin-default' width='250' height='141' poster='https://64.media.tumblr.com/tumblr_q5hzbneImv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":22,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hzbneImv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hzbneImv1yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-641dbb8f2df7e723418984' class='crt-video crt-skin-default' width='250' height='141' poster='https://64.media.tumblr.com/tumblr_q5hzbneImv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":22,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hzbneImv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hzbneImv1yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-6406916eb8a14546562747' class='crt-video crt-skin-default' width='400' height='225' poster='https://64.media.tumblr.com/tumblr_q5hzbneImv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":22,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hzbneImv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hzbneImv1yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-641dbb8f2df7e723418984' class='crt-video crt-skin-default' width='400' height='225' poster='https://64.media.tumblr.com/tumblr_q5hzbneImv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":22,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hzbneImv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hzbneImv1yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-6406916eb8a14546562747' class='crt-video crt-skin-default' width='500' height='282' poster='https://64.media.tumblr.com/tumblr_q5hzbneImv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":22,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hzbneImv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hzbneImv1yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-641dbb8f2df7e723418984' class='crt-video crt-skin-default' width='500' height='282' poster='https://64.media.tumblr.com/tumblr_q5hzbneImv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":22,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hzbneImv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hzbneImv1yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -17035,6 +17251,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -17046,6 +17263,8 @@
 			"id": "190665056035",
 			"id_string": "190665056035",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -17403,6 +17622,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -17415,6 +17635,8 @@
 			"id_string": "190664911080",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/190664911080",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -17501,6 +17723,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -17512,6 +17735,8 @@
 			"id": "634899891767951360",
 			"id_string": "634899891767951360",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -17856,6 +18081,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -17869,19 +18095,21 @@
 			"id": "190666084735",
 			"id_string": "190666084735",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 1,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-6406916eba89d468328388' class='crt-video crt-skin-default' width='250' height='142' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-641dbb8f2fa8c144164916' class='crt-video crt-skin-default' width='250' height='142' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-6406916eba89d468328388' class='crt-video crt-skin-default' width='400' height='228' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-641dbb8f2fa8c144164916' class='crt-video crt-skin-default' width='400' height='228' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-6406916eba89d468328388' class='crt-video crt-skin-default' width='500' height='285' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-641dbb8f2fa8c144164916' class='crt-video crt-skin-default' width='500' height='285' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -17912,6 +18140,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -17924,6 +18153,8 @@
 			"id_string": "190666062865",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/190666062865",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 3,
 			"photos": [
@@ -18010,6 +18241,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -18022,6 +18254,8 @@
 			"id_string": "190666076435",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/190666076435",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 1,
 			"photos": [
@@ -18108,6 +18342,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -18121,19 +18356,21 @@
 			"id": "629462268079407104",
 			"id_string": "629462268079407104",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 2,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-6406916ebb76c560784629' class='crt-video crt-skin-default' width='250' height='250' poster='https://64.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":12,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qgs0vsE7hv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-641dbb8f306b0866098270' class='crt-video crt-skin-default' width='250' height='250' poster='https://64.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":12,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qgs0vsE7hv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-6406916ebb76c560784629' class='crt-video crt-skin-default' width='400' height='400' poster='https://64.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":12,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qgs0vsE7hv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-641dbb8f306b0866098270' class='crt-video crt-skin-default' width='400' height='400' poster='https://64.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":12,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qgs0vsE7hv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-6406916ebb76c560784629' class='crt-video crt-skin-default' width='500' height='500' poster='https://64.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":12,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qgs0vsE7hv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-641dbb8f306b0866098270' class='crt-video crt-skin-default' width='500' height='500' poster='https://64.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":12,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qgs0vsE7hv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -18165,6 +18402,7 @@
 		},
 		{
 			"blog_name": "screeenshots",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -18177,6 +18415,8 @@
 			"id_string": "190666068880",
 			"image_permalink": "https://screenshots.rileyjshaw.com/image/190666068880",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 2,
 			"photos": [
@@ -18266,6 +18506,7 @@
 		{
 			"blog_name": "sfpc",
 			"body": "<p>I included the following in <a href=\"https://sfpc.rileyjshaw.com/post/171435065582/my-school-for-poetic-computation-application\">my application for SFPC</a>:</p><blockquote><p>DELETION, PERMANENCE, AND CONSISTENCY<br/>=====================================</p><p>Silicon\n Valley likes to store data because it entrenches people in their past \nbehaviors. Corporate culture’s emphasis on consistency is ableist, \ncolonizing, transphobic, and represents a growing discomfort with \npeople’s fluidity.</p><p><b>I hope someday to have an International Day of Deletion.</b> How can we live more presently?</p></blockquote><p>I am excited to say that after a few years of privately practicing Deletion Day on April 4th, we’ve got <a href=\"https://deletionday.com\">a public website</a>.<br/></p><p>Deletion Day 2020 is less straightforward than it’s been in past years. With the isolation of social distancing, I’ve found comfort in social and digital media. And my gripes about data security and privacy seem tiny next to the health crisis we’re dealing with globally. But – this is still something that matters to me. Privacy and agency remain important components of the rapid changes we’re witnessing in government and society.</p><p>Check it out at <a href=\"https://deletionday.com\">https://deletionday.com</a>.<br/></p>",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -18276,6 +18517,8 @@
 			"id": "614491710124359680",
 			"id_string": "614491710124359680",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/614491710124359680/april-4th-is-deletion-day",
@@ -18347,6 +18590,7 @@
 		{
 			"blog_name": "sfpc",
 			"body": "<blockquote><p>“how can i help?”</p><p>a solitary\n dial reflects the machine’s physical clock speed, acting as display \nrather than control. despite appearances, your presence is appreciated.</p></blockquote><figure data-orig-width=\"2790\" data-orig-height=\"1356\" class=\"tmblr-full\"><img src=\"https://64.media.tumblr.com/aeb9973b18fe8c16342b578c0508b700/tumblr_inline_ph2hvv4t9h1vbjywz_540.jpg\" alt=\"image\" data-orig-width=\"2790\" data-orig-height=\"1356\"/></figure><p><i>depression</i> is a personal reflection of my past few years, struggling\n with depression in an environment that couldn&rsquo;t help or support me the \nway i needed. <i>depression </i>initially existed as part of a larger criticism of  capitalism and the work ethic. i stripped down the larger piece until one exposed dial remained.<br/></p><figure data-orig-width=\"1024\" data-orig-height=\"768\" class=\"tmblr-full\"><img src=\"https://64.media.tumblr.com/22822b94391bbe6d697233ebab5653f0/tumblr_inline_ph2imh5oHk1vbjywz_540.jpg\" alt=\"image\" data-orig-width=\"1024\" data-orig-height=\"768\"/></figure><p>the dial  represents the machine’s energy level. turned all the way down, it represents depression; the machine’s clock speed drops, and it becomes so sluggish it’s nearly inoperational. when the dial is turned all the way up, the machine works “as intended”.</p><p>over time, the machine’s clock goes through a natural ebb and flow. it’s affected by both a long-term depressive cycle, and short-term events that bump the dial in random directions. the machine tends toward the depressive, so most viewers’ initial encounter is with the depressive state.<br/></p><p>nearly every piece in the sfpc showcase was interactive, so  most viewers had the instinct to force the dial towards a “better mood”. the dial would linger briefly at its new state before two heavy motors forced it back to its initial energy level. the initial “why don’t you just cheer up?” was rebuffed. some participants moved on at this point. </p><p>but if a viewer remained present near the piece <i>without</i> forcing the dial, its energy level would resurface on its own.<br/></p><figure class=\"tmblr-embed tmblr-full\" data-provider=\"youtube\" data-orig-width=\"540\" data-orig-height=\"304\" data-url=\"https%3A%2F%2Fyoutu.be%2FZTyzMsvt2jo\"><iframe id=\"youtube_iframe\" src=\"https://www.youtube.com/embed/ZTyzMsvt2jo?feature=oembed&amp;enablejsapi=1&amp;origin=https://safe.txmblr.com&amp;wmode=opaque\" allowfullscreen=\"\" width=\"540\" height=\"304\" frameborder=\"0\"></iframe></figure><p>i created this piece from found or discarded materials in the sfpc workshop. it’s held together with wire and rubber bands. it’s delicate and exposed, sculptural and functional, chaotic, messy, and cute. expensive or over-engineered solutions were consciously avoided for this project. for example, presence was sensed with a tangle of spare wires glued to aluminum foil from the trash bin (a capacitive proximity sensor). tech fetishism would have obscured the project’s meaning. this is a project is about the messiness of the human condition.<br/></p><figure data-orig-width=\"1024\" data-orig-height=\"768\" class=\"tmblr-full\"><img src=\"https://64.media.tumblr.com/82d432d563aa3459ac9ec689dfb5887d/tumblr_inline_ph2ieqxMOk1vbjywz_540.jpg\" alt=\"image\" data-orig-width=\"1024\" data-orig-height=\"768\"/></figure><p>scared to leave my untested project on its own, i was standing nearby\n when the first viewer arrived. he spun the dial and it spun back. the\n interaction was exactly how i&rsquo;d imagined. he paused, tried again, \ncontemplated the machine. we had a discussion, and i mentioned that it \ncould sense physical presence. he cradled the machine in such a \ndelicate and caring way; i didn’t spoil the moment with a photo, but \nhopefully the photos in this post give some indication. we waited. after half a\n minute, the dial notched up slightly. then i noticed he was crying.</p><p>&ldquo;i didn&rsquo;t think i&rsquo;d be able to make it happier&rdquo;</p><p>he gave me a long, tight hug. i think he was still crying. \nhe said a few more words, but seemed to be choking over them, then \nwandered off, dazed. i wish so badly that i&rsquo;d asked if he was okay, \nhow he was doing, if he wanted to talk. it&rsquo;s a lesson i hope i remember. the piece is about making space and time for people, and \nthough it&rsquo;s not the artist&rsquo;s responsibility to be perfect all the time, i\n should strive to be as good as my art asks others to be.</p><figure data-orig-width=\"1024\" data-orig-height=\"768\" class=\"tmblr-full\"><img src=\"https://64.media.tumblr.com/0b2af8263633a41433b905d2103d28bd/tumblr_inline_ph2ig8CKHA1vbjywz_540.jpg\" alt=\"image\" data-orig-width=\"1024\" data-orig-height=\"768\"/></figure><p>as the space became more crowded, not everyone was willing to spend time\n with the piece. on day two i made tweaks entirely for &ldquo;gropers&rdquo;. i \nsped the piece up. i added another motor so that the dial spun back \nquicker and more reliably. i honed my spiel. i think these were good \nimprovements for the space, but it was also a compromise.<br/></p><figure data-orig-width=\"5760\" data-orig-height=\"3840\" class=\"tmblr-full\"><img src=\"https://64.media.tumblr.com/9cd269a79d5db30a9b0b8c695b5bf433/tumblr_inline_ph2hub5Sbo1vbjywz_540.jpg\" alt=\"image\" data-orig-width=\"5760\" data-orig-height=\"3840\"/></figure><p>in my ideal version of this piece, it takes 10 minutes of nurturing \nbefore the dial begins to move. the viewer would be sitting, alone, in a\n comfortable and intimate space. it&rsquo;s quiet, it takes a lot of time. the\n strongest reactions from day one resulted in tears and deep \ndiscussions, which was rare after i sped the piece up. quicker timing \nsmoothed out the reactions; people &ldquo;got it&rdquo; more often, but fewer \npeople connected on a deep emotional level.<br/></p><figure data-orig-width=\"1024\" data-orig-height=\"1024\" class=\"tmblr-full\"><img src=\"https://64.media.tumblr.com/94b86702aa3e444c084e87f50f68b61a/tumblr_inline_ph2ih1SO3o1vbjywz_540.jpg\" alt=\"image\" data-orig-width=\"1024\" data-orig-height=\"1024\"/></figure><p>i’m proud of this piece. it may not have been the takedown of free market capitalism that i was initially aiming for, but hey, baby steps. it sparked many discussions of depression over the weekend, and allowed me some needed introspection.</p>",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -18357,6 +18601,8 @@
 			"id": "182905537092",
 			"id_string": "182905537092",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/182905537092/final-showcase-project-depression",
@@ -18425,6 +18671,7 @@
 		{
 			"blog_name": "sfpc",
 			"body": "<p>annnd the showcase is finished! i’m working on a writeup for my final project, but in the meantime here are some other ideas i tested along the way. this post won’t get into the themes i wanted to explore with these pieces, since i’d rather spend that time on the final writeup. hopefully you find some of these  interesting without explanation!<br/></p><p><b>geometries that reveal contradictory images / messages from different perspectives</b> (to be printed, then origami’d). i tested a few geometries for this one; here’s a prototype i built to test “print” images to a pyramidal lattice:<br/></p><figure data-orig-width=\"3024\" data-orig-height=\"4032\" class=\"tmblr-full\"><img src=\"https://64.media.tumblr.com/aa21cca17846b413a58b85e97be72f68/tumblr_inline_ph2ju1wfR71vbjywz_540.jpg\" alt=\"image\" data-orig-width=\"3024\" data-orig-height=\"4032\"/></figure><figure class=\"tmblr-embed tmblr-full\" data-provider=\"youtube\" data-orig-width=\"459\" data-orig-height=\"344\" data-url=\"https%3A%2F%2Fyoutu.be%2Ff6GyXxs04Ek\"><iframe id=\"youtube_iframe\" src=\"https://www.youtube.com/embed/f6GyXxs04Ek?feature=oembed&amp;enablejsapi=1&amp;origin=https://safe.txmblr.com&amp;wmode=opaque\" allowfullscreen=\"\" width=\"540\" height=\"405\" frameborder=\"0\"></iframe></figure><p><br/></p><p><b>self-destructive art piece that wants privacy:</b></p><figure data-orig-width=\"4032\" data-orig-height=\"3024\" class=\"tmblr-full\"><img src=\"https://64.media.tumblr.com/e4e1ecdc7ffa17b3a1cb9a9f0eab6de4/tumblr_inline_ph2kk8je2d1vbjywz_540.jpg\" alt=\"image\" data-orig-width=\"4032\" data-orig-height=\"3024\"/></figure><figure class=\"tmblr-embed tmblr-full\" data-provider=\"youtube\" data-orig-width=\"540\" data-orig-height=\"304\" data-url=\"https%3A%2F%2Fwww.youtube.com%2Fembed%2Fswj26KBqIGs\"><iframe src=\"https://www.youtube.com/embed/swj26KBqIGs?feature=oembed&amp;enablejsapi=1&amp;origin=https://safe.txmblr.com&amp;wmode=opaque\" allowfullscreen=\"\" width=\"540\" height=\"304\" frameborder=\"0\"></iframe></figure><figure class=\"tmblr-embed tmblr-full\" data-provider=\"youtube\" data-orig-width=\"459\" data-orig-height=\"344\" data-url=\"https%3A%2F%2Fyoutu.be%2FipSsIDukTRo\"><iframe id=\"youtube_iframe\" src=\"https://www.youtube.com/embed/ipSsIDukTRo?feature=oembed&amp;enablejsapi=1&amp;origin=https://safe.txmblr.com&amp;wmode=opaque\" allow=\"autoplay; encrypted-media\" allowfullscreen=\"\" width=\"540\" height=\"405\" frameborder=\"0\"></iframe></figure><figure data-orig-width=\"1024\" data-orig-height=\"768\" class=\"tmblr-full\"><img src=\"https://64.media.tumblr.com/5841933ccfcbca98c1b6cacc27f61637/tumblr_inline_ph2lruwqQB1vbjywz_540.jpg\" alt=\"image\" data-orig-width=\"1024\" data-orig-height=\"768\"/></figure><p><b><br/></b></p><p><b>wiping away digital residue:</b><br/></p><figure class=\"tmblr-embed tmblr-full\" data-provider=\"youtube\" data-orig-width=\"459\" data-orig-height=\"344\" data-url=\"https%3A%2F%2Fyoutu.be%2Fpxi0i4199_0\"><iframe src=\"https://www.youtube.com/embed/pxi0i4199_0?feature=oembed&amp;enablejsapi=1&amp;origin=https://safe.txmblr.com&amp;wmode=opaque\" allowfullscreen=\"\" width=\"540\" height=\"405\" frameborder=\"0\"></iframe></figure><p><br/></p><p><b>a printer that ran through a scanner that ran through another printer and then into a paper shredder because idk state surveillance or something:</b></p><figure data-orig-width=\"3024\" data-orig-height=\"4032\" class=\"tmblr-full\"><img src=\"https://64.media.tumblr.com/872fe9a00889d146ed48dfb78a49240b/tumblr_inline_ph2kfkXPmH1vbjywz_540.jpg\" alt=\"image\" data-orig-width=\"3024\" data-orig-height=\"4032\"/></figure><p><b><br/></b></p><p><b>long-distance relationship represented by two balloons (and some motors and sensors):<br/></b></p><figure class=\"tmblr-embed tmblr-full\" data-provider=\"youtube\" data-orig-width=\"459\" data-orig-height=\"344\" data-url=\"https%3A%2F%2Fyoutu.be%2FJo-Ds14to7w\"><iframe src=\"https://www.youtube.com/embed/Jo-Ds14to7w?feature=oembed&amp;enablejsapi=1&amp;origin=https://safe.txmblr.com&amp;wmode=opaque\" allowfullscreen=\"\" width=\"540\" height=\"405\" frameborder=\"0\"></iframe></figure><p><b><br/></b></p><p><b>overcomplicated seed of the final idea:</b></p><figure data-orig-width=\"4032\" data-orig-height=\"1411\" class=\"tmblr-full\"><img src=\"https://64.media.tumblr.com/482884985f6c41a6e7d326cd717719d0/tumblr_inline_ph2lf9sS8N1vbjywz_540.jpg\" alt=\"image\" data-orig-width=\"4032\" data-orig-height=\"1411\"/></figure>",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -18435,6 +18682,8 @@
 			"id": "179360727897",
 			"id_string": "179360727897",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/179360727897/a-few-ideas-along-the-way",
@@ -18500,6 +18749,7 @@
 		{
 			"blog_name": "sfpc",
 			"body": "<p>The SFPC showcase is this weekend. Come check it out!</p><p style=\"\"><a href=\"https://www.eventbrite.com/e/sfpc-spring-2018-student-showcase-tickets-45020562715\">https://www.eventbrite.com/e/sfpc-spring-2018-student-showcase-tickets-45020562715</a><br/></p>",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -18510,6 +18760,8 @@
 			"id": "173128872587",
 			"id_string": "173128872587",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 1,
 			"post_url": "https://sfpc.rileyjshaw.com/post/173128872587/calling-all-new-york-friends",
@@ -18575,6 +18827,7 @@
 		{
 			"blog_name": "sfpc",
 			"body": "<p>with the showcase coming up, i’ve been ignoring this blog to fill my sketchbook with desperate project ideas. it’s been a process. i’ve built a few prototypes to 50% but haven’t been satisfied yet.</p><p>this evening (less than two days before the showcase) i finally had an idea that stuck. i’m writing from the subway home after building the enclosure and v1 of the software:</p><p><br/></p><figure data-orig-width=\"3024\" data-orig-height=\"3026\" class=\"tmblr-full\"><img src=\"https://64.media.tumblr.com/ad5d2f1804397f935d79817c23a3e134/2bd71e65e7c1ddd0-1b/s540x810/2e00180ab0323857a54850ace2c031bd00c2e9f9.jpg\" alt=\"image\" data-orig-width=\"3024\" data-orig-height=\"3026\"/></figure><p>the project is called depression. i’m excited to write more about it soon!</p>",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -18585,6 +18838,8 @@
 			"id": "173089791367",
 			"id_string": "173089791367",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/173089791367/v1",
@@ -18649,6 +18904,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -18662,19 +18918,21 @@
 			"id": "189455640174",
 			"id_string": "189455640174",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 1,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-6406916d6e189803857964' class='crt-video crt-skin-default' width='250' height='142' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-641dbb8d8f50c137512994' class='crt-video crt-skin-default' width='250' height='142' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-6406916d6e189803857964' class='crt-video crt-skin-default' width='400' height='228' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-641dbb8d8f50c137512994' class='crt-video crt-skin-default' width='400' height='228' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-6406916d6e189803857964' class='crt-video crt-skin-default' width='500' height='285' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-641dbb8d8f50c137512994' class='crt-video crt-skin-default' width='500' height='285' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -18706,6 +18964,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -18717,6 +18976,8 @@
 			"id": "172627234582",
 			"id_string": "172627234582",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -18898,6 +19159,7 @@
 		{
 			"blog_name": "sfpc",
 			"body": "<p>today in critical theory, we read and discussed <a href=\"https://github.com/morehshin/TheRadicalOutside_Spring2018#on-manifestos\">a few “manifestos for the internet age”</a>. i’ve got a cold so i called in; when the class broke out to create their own manifestos, i decided to write a “telepresence manifesto” from my sniffly blanket fort.</p><p><a href=\"https://spectrum.ieee.org/robotics/artificial-intelligence/telepresence-a-manifesto\">turns out marvin minsky beat me to it.</a> for context: minsky, who said “i don’t think there is any such thing” regarding human consciousness, co-founded MIT’s AI laboratory. MIT has a long history of military research; in recent years, its public focus has shifted to military robots, drones, and battle suits.<br/></p><p>his manifesto creeps me out. i changed “hands” to “drones” to emphasize why. Edits left as strikethroughs; emphasis my own.</p><hr><h2>Marvin Minsky&rsquo;s Telepresence Manifesto (1980) (2018 redux)</h2><p>You don a comfortable jacket lined with sensors and musclelike motors. Each motion of your arm, hand, and fingers is reproduced at another place by mobile, mechanical drones<strike>hands.</strike> Light, dexterous, and strong, these drones<strike>hands</strike> have their own sensors through which you see and feel what is happening. Using this instrument, you can &ldquo;work&rdquo; in another room, in another city, in another country, or on another planet. Your remote presence possesses the strength of a giant or the delicacy of a surgeon. Heat or pain is translated into informative but tolerable sensation. <b>Your dangerous job becomes safe and pleasant.</b><br/></p><p>…</p><p>Telepresence is not science fiction. We could have a remote controlled economy by the twenty first century if we start planning right now. <b>The technical scope of such a project would be no greater than that of designing a new military aircraft.</b></p><p>A genuine telepresence system requires new ways to sense the various motions of a person<strike>’s hands</strike>. This means new motors, sensors, and lightweight actuators. Prototypes will be complex, but as designs mature, much of that complexity will move from hardware to easily copied computer software. The first ten years of telepresence research will see the development of basic instruments: geometry, mechanics, sensors, effectors, and control theory and its human interface. During the second decade we will work to make the instruments rugged, reliable, and natural.</p><hr><p>i hate reading this. he’s so <i>excited</i> about it. engineers need to think harder about what they propose. and “great engineers” rarely deserve the title.<br/></p>",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -18908,6 +19170,8 @@
 			"id": "172567522977",
 			"id_string": "172567522977",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 2,
 			"post_url": "https://sfpc.rileyjshaw.com/post/172567522977/telepresence-manifesto-2018-redux",
@@ -18972,6 +19236,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -18982,6 +19247,8 @@
 			"id": "172536011902",
 			"id_string": "172536011902",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/172536011902/the-result-has-been-a-generalized-level-of-alarm",
@@ -19007,6 +19274,7 @@
 		{
 			"blog_name": "sfpc",
 			"body": "<p>The possibility, vital for life, of unhitching, which consists… in grasping, during the brief intervals in which our species can bring itself to interrupt its hive-like activity, the essence of what it was and continues to be, below the threshold of thought and over and above society: in the contemplation of a mineral more beautiful than all our creations; in the scent that can be smelt at the heart of a lily and is more imbued with learning than all our books; or in the brief glance, heavy with patience, serenity and mutual forgiveness, that, through some involuntary understanding, one can sometimes exchange with a cat.</p><p>Claude Lévi-Strauss, “Tristes Tropiques”</p>",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -19017,6 +19285,8 @@
 			"id": "179678255817",
 			"id_string": "179678255817",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/179678255817/the-possibility-vital-for-life-of-unhitching",
@@ -19081,6 +19351,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -19093,6 +19364,8 @@
 			"id_string": "172413506617",
 			"image_permalink": "https://sfpc.rileyjshaw.com/image/172413506617",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -19215,6 +19488,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -19227,6 +19501,8 @@
 			"id_string": "189455717657",
 			"image_permalink": "https://sfpc.rileyjshaw.com/image/189455717657",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 3,
 			"photos": [
@@ -19314,6 +19590,7 @@
 		{
 			"blog_name": "sfpc",
 			"body": "<p>here’s a post that i wrote during my second week here. now that the showcase is coming up, i need to start making a thing. guess i’d better put this up before that starts :)<br/></p><hr><p>one of my major goals during this program is to not make things.<br/></p><p><i>* silence. the sfpc showcase curators back away slowly to discuss what a mistake they’ve made. *</i></p><p>it’s okay, i’ll do the assignments and make a showcase project and all that. i’m still going to make things. it’s hard not to; i’ve already made a lot of Things since arriving, more than i’m comfortable with. but i’m celebrating all the things i think of that i don’t make.</p><p>during the binary numbers assignment, i came up with an idea to:</p><ul><li>map binary digits (bits) to piano keys</li><li>find binary numbers that resolve to nice chords</li><li>create a simple matching app that prompts players with a decimal number and celebrates when the correct chord is played</li></ul><p>i have a midi keyboard here, and i’ve <a href=\"https://github.com/rileyjshaw/keyboard-keyboard\">written</a> <a href=\"https://github.com/rileyjshaw/virtuoso\">a</a> <a href=\"https://github.com/rileyjshaw/huemidity\">few</a> <a href=\"https://github.com/rileyjshaw/flubber\">programs</a> <a href=\"https://github.com/rileyjshaw/synthesia\">already</a> that interface with it. throwing this sketch together would have been easy. tbh it would have been an easy way to show off in class too. but just by thinking it through, i’d already gotten as much out of it as i was ever going to. building it would have come from a compulsion, not from any actual question or need. and it would have taken time, and space. for what?<br/></p><p>there’s a passage in Madness, Rack, and Honey that i love:</p><blockquote><p>if you have any idea for a poem, an exact grid of intent, you are on the wrong path, a dead-end alley, at the top of a cliff you haven’t even climbed.<br/></p></blockquote><p>moving to new york – even from a big city like toronto – i’m struck by the overabundance of <b>stuff</b> here. stuff to buy. stuff to eat. stuff to stuff your apartment with. it’s a good reminder that less can be more.<br/></p>",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -19324,6 +19601,8 @@
 			"id": "172372422682",
 			"id_string": "172372422682",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/172372422682/making-nothing",
@@ -19388,6 +19667,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -19398,6 +19678,8 @@
 			"id": "172372156132",
 			"id_string": "172372156132",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/172372156132/i-suppose-what-we-have-to-do-is-survive-in-a-way",
@@ -19422,6 +19704,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -19434,6 +19717,8 @@
 			"id_string": "172324262942",
 			"image_permalink": "https://sfpc.rileyjshaw.com/image/172324262942",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -19550,6 +19835,7 @@
 		{
 			"blog_name": "sfpc",
 			"body": "<p>hi! i haven’t written here in a while. school is busyyy. reading a lot, building a bit, exploring new york, etc. i’ve got a few drafts / reflections from the past few weeks which i’ll hopefully post, but here’s the official rundown so far:<br/></p><p><a href=\"https://medium.com/sfpc/by-yeli-student-of-sfpc-spring-2018-e007cf28ccdb\">week 1</a></p><p><a href=\"https://medium.com/sfpc/spring-2018-week-2-8539ec15443\">week 2</a></p><p><a href=\"https://medium.com/sfpc/spring-2018-week-3-26068381ab30\">week 3</a></p><p><a href=\"https://medium.com/sfpc/spring-2018-week-4-9f7587d464dc\">week 4</a></p><p><a href=\"https://medium.com/sfpc/spring-2018-week-5-36df8924e06e\">week 5</a></p><p>&hellip;i can’t believe we’re halfway through! final showcase prep is starting and i still have no idea what i’ll build. yikes! gonna go ponder that, bye for now :)<br/></p>",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -19560,6 +19846,8 @@
 			"id": "172315833927",
 			"id_string": "172315833927",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/172315833927/checking-in",
@@ -19624,6 +19912,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -19636,6 +19925,8 @@
 			"id_string": "189455667862",
 			"image_permalink": "https://sfpc.rileyjshaw.com/image/189455667862",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 1,
 			"photos": [
@@ -19722,6 +20013,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -19732,6 +20024,8 @@
 			"id": "179678418197",
 			"id_string": "179678418197",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/179678418197/i-actually-think-they-empower-a-certain-white",
@@ -19757,6 +20051,7 @@
 		{
 			"blog_name": "sfpc",
 			"body": "<p>headed back to canada for the weekend to see the AGO’s yayoi kusama exhibit (RAD!) and attend a funky dance (RAD!). i’m back at the airport now and made it through (phewf). explaining this school at customs is always complicated, and i’ve been pulled into secondary each time.</p><p>with this week’s readings on “security” + surveillance for our crit theory course (“the radical outside”) fresh on my mind, the customs experience was heightened. last time reached an ABSURD level of invasiveness with questions about my family. this time was just lots of silence as i pondered what the neural nets were cooking up.</p><p>lil thought: upon saying i quit my job just over a month ago, the agent said “oh - that’s a really long time”. Work is a weed we’re feeding 🌱 neoliberal capitalism, “we eat for you”, soapbox, etc.</p><p>anyway, glad i’m leaving all these keywords on a subdomain of my personal site for some cruel robot to scrape! typing from my phone so bye!</p>",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -19767,6 +20062,8 @@
 			"id": "171825548577",
 			"id_string": "171825548577",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/171825548577/border-crossing-headed-back-to-canada-for-the",
@@ -19831,6 +20128,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -19843,6 +20141,8 @@
 			"id_string": "171668817662",
 			"image_permalink": "https://sfpc.rileyjshaw.com/image/171668817662",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -19958,6 +20258,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -19969,6 +20270,8 @@
 			"id": "171595913347",
 			"id_string": "171595913347",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -20142,6 +20445,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -20154,6 +20458,8 @@
 			"id_string": "171595770872",
 			"image_permalink": "https://sfpc.rileyjshaw.com/image/171595770872",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -20277,6 +20583,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -20289,6 +20596,8 @@
 			"id_string": "171507981642",
 			"image_permalink": "https://sfpc.rileyjshaw.com/image/171507981642",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 3,
 			"photos": [
@@ -20404,6 +20713,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -20416,6 +20726,8 @@
 			"id_string": "171456285892",
 			"image_permalink": "https://sfpc.rileyjshaw.com/image/171456285892",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 2,
 			"photos": [
@@ -20531,6 +20843,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -20543,6 +20856,8 @@
 			"id_string": "171443110312",
 			"image_permalink": "https://sfpc.rileyjshaw.com/image/171443110312",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 2,
 			"photos": [
@@ -20658,6 +20973,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -20670,6 +20986,8 @@
 			"id_string": "171442590432",
 			"image_permalink": "https://sfpc.rileyjshaw.com/image/171442590432",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -20786,6 +21104,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -20798,6 +21117,8 @@
 			"id": "171437175017",
 			"id_string": "171437175017",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"link_author": null,
 			"link_image": "https://64.media.tumblr.com/9ed5d6737d83a695a25ca6e7c63a1385/tumblr_p4y3olOyzA1x6ewqu_og_540.png",
@@ -20923,6 +21244,7 @@
 		{
 			"blog_name": "sfpc",
 			"body": "<p>I’m capitalizing words sometimes now. New brand guidelines, hot off the presses.</p>",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -20933,6 +21255,8 @@
 			"id": "171435153227",
 			"id_string": "171435153227",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/171435153227/oh-and-speaking-of-consistency",
@@ -21001,6 +21325,7 @@
 		{
 			"blog_name": "sfpc",
 			"body": "<p>I’ve decided to post my response to the three questions SFPC asks potential participants.</p><p>Before I start any application process I try to learn as much as I can about the place. That involves learning about the folx involved. I hope this post helps a future SFPC attendee get started on their application.<br/></p><p>If you’ve landed here from a search and are considering applying, I recommend doing so! It’s fun here and the people are nice.</p><hr><p><b>A disclaimer  before we get into it:</b> everyone who goes through SFPC comes from different backgrounds. If you see something on my application that you haven’t experienced, please don’t take it as a requirement. Batches are carefully selected to include different perspectives and skillsets. And you’re awesome 💕<br/></p><hr><h2>Why do you want to study at SFPC at this point in your life?<br/></h2><p>I love making art! But when I use computers, I can get distracted by Technical Shinys. I also get distracted by Expectations, especially around my Engineering Career.</p><p>In 2014 I was working at a startup without a purpose whatsoever. I left to join Khan Academy, a free education nonprofit. I felt good about that.</p><p>A few years have gone by and I feel a similar pull. I&rsquo;ve lost my idealism for nonprofits; they&rsquo;re subject to the same restrictive evaluation metrics and organizational patterns as any corporation.</p><p>(Dang, that sucks.)</p><p>I see art as a way to effect change outside of the rigid hierarchical structures of Work. It&rsquo;s a chance to connect on a different level; to surprise, engage, and hopefully, to shine light on something better.</p><p>I&rsquo;d like to recalibrate… again. I wrote a little poem called &ldquo;whoami&rdquo; below. I want to work with more expressive languages.</p><p>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</p><p>#!/usr/bin/env python<br/>from subprocess import Popen as ask, PIPE as rain; for_truth_in = bool</p><p>id  = &lsquo;my&rsquo; in'stinctual impulse&rsquo;<br/>for all_my_be in'g&rsquo;:<br/>    there = 'more to&rsquo;.find(&ldquo;) - (id is not 'critical&rsquo; or 'moralizing&rsquo;)<br/>superego = there</p><p>ego = i = ask('whoami&rsquo;, stdout=rain)<br/>for days in ['the rain&rsquo;]: i = i.stdout</p><p>reflection = (word for word in [<br/>    'oh, the places you'll go&rsquo; in 'the summer&rsquo;,<br/>    'the art of electronics&rsquo; in 'uni&rsquo;,<br/>    'the lean startup&rsquo; in 'my dark days&rsquo;,<br/>    'the one room schoolhouse&rsquo; in 'that idealistic edtech phase&rsquo;,<br/>    &rdquo;,<br/>    &rsquo;&rsquo;,<br/>    &rsquo;&rsquo;,<br/>    'and so on.&rsquo;<br/>])</p><p>found = not 'yet&rsquo;</p><p>while not found:<br/>    found = i.read(for_truth_in(next(reflection)))</p><p>i = found + ego.communicate()[id][:superego]<br/>print i</p><hr><h2>What do you want the School for Poetic Computation to be?</h2><p>APPROACHING IDEAS WITH THOUGHTFULNESS<br/>=====================================</p><p>I&rsquo;m familiar with some of the technical methods we&rsquo;ll cover over the term. This is exciting; re-approaching them intentionally through an artistic lens might help me break forgotten assumptions. So rather than focusing on *how* to build a Markov chain, I want to explore *why* I&rsquo;d build one.</p><p>I went to Recurse Center in 2014 because I wanted to collaborate with people outside of rigid project structures. I want to explore and build new frameworks now. I hope SFPC can help me rebuild my conceptions around the words &ldquo;technical&rdquo;, &ldquo;art&rdquo;, and &ldquo;project&rdquo;.</p><p>A STUDY IN EDUCATION<br/>====================</p><p>I&rsquo;ve spent the past few years learning about education. I&rsquo;ve formed opinions and have even more questions now. I&rsquo;m interested in programs like SFPC that challenge the rigidity of institutional CS or Fine Arts programs.</p><p>I also love mentorship. I lead our formal mentorship program at Khan Academy, and teach as a volunteer at a few local organizations. I&rsquo;m sure I&rsquo;ll learn more from my cohort than they learn from me, but when it&rsquo;s helpful I&rsquo;d like to pitch in.</p><p>ULTIMATELY,<br/>===========</p><p>I&rsquo;m excited to develop my artistic practice around folks that I&rsquo;ve admired for a really, really long time &lt;3</p><hr><h2>What would you like to make at SFPC?</h2><p>As you can see on <a href=\"https://rileyjshaw.com/lab\">rileyjshaw.com/lab</a>, I&rsquo;ve made many little things. These days, I try to work slower. Rather than approaching SFPC with plans to create specific artifacts, I&rsquo;m more interested in the process. I would like to refine the way that I absorb and synthesize ideas. I want to listen a lot and make slow, deliberate progress toward this goal.</p><p>Here are some topics that I&rsquo;m interested in:</p><p>EDUCATION AND THE REINFORCEMENT OF CLASS STRUCTURES<br/>===================================================</p><p>Our formal education system creates adults who can&rsquo;t take care of themselves, and whose survival depends on capitalist class structures. Educated and non-educated citizens are trapped in this cycle. A post-class society needs modes of education that break these rigidly imposed hierarchies. What might that look like?</p><p>DELETION, PERMANENCE, AND CONSISTENCY<br/>=====================================</p><p>Silicon Valley likes to store data because it entrenches people in their past behaviors. Corporate culture&rsquo;s emphasis on consistency is ableist, colonizing, transphobic, and represents a growing discomfort with people&rsquo;s fluidity.</p><p>I hope someday to have an International Day of Deletion. How can we live more presently?</p><p>CORPORATE TOOLS<br/>===============</p><p>A Craigslist bot gives Sol LeWitt-style instructions to a community. A series of banner ads discourage consumerism. Challenging people&rsquo;s expectations around advertising and corporate tools may raise questions about the structures behind them.</p><p>Mechanical Turk, Google Ads, Ebay, promoted tweets… these tools enforce the goals and values of capitalism. Can they be used to break them?</p><p>MAKING FRIENDS!!!<br/>=================</p><p>I am especially excited for the chance to meet new people that I can work with deeply. Festivals like XOXO or Eyeo allow only fleeting glimpses of fellow weirdos. Collaborating and growing together as a cohort – supporting and challenging one-another – is what I&rsquo;m most excited about.</p><p>In every education program I&rsquo;ve been a part of so far, people have been the most important part.</p><hr><p>Well, that’s it. I was initially accepted into the Fall 2017 batch but deferred to finish  some important work at Khan Academy and transition stewardship of the programs I was looking after. In the past half-year I’ve learned a lot and changed a lot, and my application would look different if I were to write it today. But the heart of this – writing less code, more thoughtfully – is at least as true today as it was when I wrote this.<br/></p>",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -21011,6 +21336,8 @@
 			"id": "171435065582",
 			"id_string": "171435065582",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/171435065582/my-school-for-poetic-computation-application",
@@ -21077,6 +21404,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -21089,6 +21417,8 @@
 			"id_string": "189455700192",
 			"image_permalink": "https://sfpc.rileyjshaw.com/image/189455700192",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 2,
 			"photos": [
@@ -21176,6 +21506,7 @@
 		{
 			"blog_name": "sfpc",
 			"body": "<p style=\"\">oh dear, my gifs aren’t animating. i’ll never be famous.<br/></p>",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -21186,6 +21517,8 @@
 			"id": "171298380607",
 			"id_string": "171298380607",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 1,
 			"post_url": "https://sfpc.rileyjshaw.com/post/171298380607/oh-dear-my-gifs-arent-animating-ill-never-be",
@@ -21251,6 +21584,7 @@
 		{
 			"blog_name": "sfpc",
 			"body": "<p>i watched metropolis (1927) tonight at a bar with some friends. despite being nearly a century old, it’s  a pertinent commentary on class and technology. the explicit moral is literally spelled out at the end, I guess:</p><blockquote><p><i>there can be no understanding between the hands and the brain unless the heart acts as mediator.</i><br/></p></blockquote><p>but we couldn’t reach consensus about what this meant re: the worker struggles depicted in the film.<br/></p><p>anyway, it’s late so instead of getting getting into heady things like that, i’ll share something that made me laugh during the movie. this scene reminded me  of my lacking estimation skills at various points in my corporate tech career:</p><figure data-orig-width=\"475\" data-orig-height=\"356\" class=\"tmblr-full\"><img src=\"https://64.media.tumblr.com/12054928438109d9c8654a3235697b8f/tumblr_inline_p4qs5h50u81vbjywz_540.gif\" alt=\"image\" data-orig-width=\"475\" data-orig-height=\"356\"/></figure><p>^ me, hand waving</p><figure data-orig-width=\"1892\" data-orig-height=\"1416\" class=\"tmblr-full\"><img src=\"https://64.media.tumblr.com/ca8c4b6b28764afc509d220824bf7620/tumblr_inline_p4qsdxXARF1vbjywz_540.png\" alt=\"image\" data-orig-width=\"1892\" data-orig-height=\"1416\"/></figure><figure class=\"tmblr-full\" data-orig-height=\"356\" data-orig-width=\"475\"><img src=\"https://64.media.tumblr.com/da3dc92386911154aa68dc5d28d24f0e/tumblr_inline_p4qsl0hF4x1vbjywz_540.gif\" data-orig-height=\"356\" data-orig-width=\"475\"/></figure><p>^ my manager</p><figure data-orig-width=\"475\" data-orig-height=\"356\" class=\"tmblr-full\"><img src=\"https://64.media.tumblr.com/4e6eafdbf837a898d96e968af5a311ff/tumblr_inline_p4qsa2G3mL1vbjywz_540.gif\" alt=\"image\" data-orig-width=\"475\" data-orig-height=\"356\"/></figure><p>^ my current progress<br/></p><hr><figure data-orig-width=\"475\" data-orig-height=\"356\" class=\"tmblr-full\"><img src=\"https://64.media.tumblr.com/490aeb5aa549f2f54c2f241113c807d0/tumblr_inline_p4qscaPieQ1vbjywz_540.gif\" alt=\"image\" data-orig-width=\"475\" data-orig-height=\"356\"/></figure><p>^ my deadline</p><hr><p>gifs are a big thing on tumblr so i hope this goes viral.<br/></p>",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -21261,6 +21595,8 @@
 			"id": "171298312372",
 			"id_string": "171298312372",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/171298312372/metropolis",
@@ -21327,6 +21663,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -21339,6 +21676,8 @@
 			"id_string": "171210381442",
 			"image_permalink": "https://sfpc.rileyjshaw.com/image/171210381442",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -21454,6 +21793,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -21466,6 +21806,8 @@
 			"id_string": "171178100327",
 			"image_permalink": "https://sfpc.rileyjshaw.com/image/171178100327",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -21588,6 +21930,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -21600,6 +21943,8 @@
 			"id_string": "171177501417",
 			"image_permalink": "https://sfpc.rileyjshaw.com/image/171177501417",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -21723,6 +22068,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -21733,6 +22079,8 @@
 			"id": "171149595572",
 			"id_string": "171149595572",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/171149595572/the-same-careful-attention-one-would-give-to-the",
@@ -21757,6 +22105,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -21767,6 +22116,8 @@
 			"id": "171149584197",
 			"id_string": "171149584197",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/171149584197/what-we-see-here-instead-is-an-ongoing-social",
@@ -21791,6 +22142,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -21801,6 +22153,8 @@
 			"id": "171149562632",
 			"id_string": "171149562632",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/171149562632/it-is-safe-to-say-that-designs-unsuited-for-the",
@@ -21826,6 +22180,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -21836,6 +22191,8 @@
 			"id": "171149552497",
 			"id_string": "171149552497",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/171149552497/if-we-suppose-that-new-technologies-are-introduced",
@@ -21860,6 +22217,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -21870,6 +22228,8 @@
 			"id": "171149535302",
 			"id_string": "171149535302",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/171149535302/the-increased-deployment-of-nuclear-power",
@@ -21895,6 +22255,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -21905,6 +22266,8 @@
 			"id": "189715493107",
 			"id_string": "189715493107",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/189715493107/it-matters-what-matters-we-use-to-think-other",
@@ -21929,6 +22292,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -21939,6 +22303,8 @@
 			"id": "171128489545",
 			"id_string": "171128489545",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/171128489545/the-work-of-past-ages-accumulates-and-is-remade",
@@ -21963,6 +22329,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -21973,6 +22340,8 @@
 			"id": "171127763052",
 			"id_string": "171127763052",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/171127763052/characteristically-a-technocratic-notion-of",
@@ -21997,6 +22366,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -22007,6 +22377,8 @@
 			"id": "171126377257",
 			"id_string": "171126377257",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/171126377257/the-larger-implication-of-this-approach-has-to-do",
@@ -22031,6 +22403,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -22041,6 +22414,8 @@
 			"id": "171126336622",
 			"id_string": "171126336622",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/171126336622/the-technocratic-tendency-of-modern-societies",
@@ -22065,6 +22440,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -22075,6 +22451,8 @@
 			"id": "171126069777",
 			"id_string": "171126069777",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/171126069777/technology-is-not-rational-in-the-old-positivist",
@@ -22099,6 +22477,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -22109,6 +22488,8 @@
 			"id": "171126059207",
 			"id_string": "171126059207",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/171126059207/this-partial-institutional-separation-of-the",
@@ -22133,6 +22514,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -22143,6 +22525,8 @@
 			"id": "171126039722",
 			"id_string": "171126039722",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/171126039722/technology-is-a-two-sided-phenomenon-on-the-one",
@@ -22167,6 +22551,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -22177,6 +22562,8 @@
 			"id": "171125946552",
 			"id_string": "171125946552",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/171125946552/to-judge-an-action-as-more-or-less-efficient-is",
@@ -22202,6 +22589,7 @@
 		{
 			"blog_name": "sfpc",
 			"body": "<p>it was silly to write all of this down but i  created this blog today and i’m still editing the layout, so i want more words to work with.<br/></p><hr><p>create a few distinct sounds, for example:</p><ul><li>cup/table tap</li><li>cup/table scrape</li><li>ball/table tap</li><li>ball/table scrape</li><li>cup/ball tap</li></ul><p>these examples are unambiguous and easy to perform rapidly by someone keeping the cup in one hand &amp; ball in the other. i&rsquo;ll refer to each performed sound as a &ldquo;bit&rdquo; from here on out.</p><p>for n bits, you have (number of sounds)^n options. with the examples above that&rsquo;s 5^n, which is plenty.</p><p>so what&rsquo;s important to convey?</p><p>the shapes are curvy and strange, so it&rsquo;s easier to share a limited reference table of basic + advanced shapes instead of deriving each part of the bear from scratch. three bits could cover 125 shapes, which is  ample for bear and bear-like drawings.</p><p>shapes are more reusable if they can be drawn at different sizes. let&rsquo;s use one bit to indicate size:</p><p>0: smallest<br/>1: smaller<br/>2: as shown on reference table<br/>3: larger<br/>4: largest</p><p>we&rsquo;re trying to convey a cohesive bear, so the relative position between shapes is more important than their absolute position on the page. two bits can express position in relation to the last shape drawn, for example:</p><p>0: draw in any open space<br/>1: draw connected to the north-most edge of the previous shape<br/>2: draw connected to the northeast-most edge of the previous shape<br/>3: draw connected to the east-most edge of the previous shape<br/>4: draw connected to the southeast-most edge of the previous shape<br/>5: draw connected to the south-most edge of the previous shape<br/>&hellip;<br/>9: continue from shape&rsquo;s final pen position<br/>10: continue from shape&rsquo;s initial pen position<br/>&hellip;<br/>15: draw within the previous shape<br/>16: draw surrounding the previous shape<br/>&hellip;<br/>etc.</p><p>since pen position is a factor, the shape reference table should imply direction.</p><p>to save time, a bit could be added to indicate how many shapes should be drawn at the specified position. for example, there are four toes in each bear foot.</p><hr><p>when ordering the bits, it makes sense to think of what information is most useful to the receiver at each step. my intuition is that this is a good order:</p><p>•• position<br/>• number<br/>• size<br/>••• shape</p><p>so each shape takes seven sounds from the sender.</p><hr><p>update: i ran this by phil; they made the point that since there&rsquo;s no acknowledgment channel from the receiver, redundancy would help reduce errors. let&rsquo;s add a bit at the beginning to indicate whether this is the initial message or a confirmation message. the following 7 bits will then be identical.</p><hr><p>update 2: in the above system, a single missed bit would be catastrophic; it would corrupt the receiver&rsquo;s understanding of all future communication. the (initial | confirmation) sound should be unique so it always marks the start of a new shape. dragging the (cup | ball) in a double circle works.</p>",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -22212,6 +22600,8 @@
 			"id": "171116512267",
 			"id_string": "171116512267",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"post_url": "https://sfpc.rileyjshaw.com/post/171116512267/rough-thoughts-on-the-bear-thing",
@@ -22276,6 +22666,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -22288,6 +22679,8 @@
 			"id_string": "171110190292",
 			"image_permalink": "https://sfpc.rileyjshaw.com/image/171110190292",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -22410,6 +22803,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -22422,6 +22816,8 @@
 			"id_string": "171108694807",
 			"image_permalink": "https://sfpc.rileyjshaw.com/image/171108694807",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"note_count": 0,
 			"photos": [
@@ -22544,6 +22940,7 @@
 		},
 		{
 			"blog_name": "sfpc",
+			"can_blaze": false,
 			"can_like": false,
 			"can_reblog": false,
 			"can_reply": false,
@@ -22556,6 +22953,8 @@
 			"id": "171106857242",
 			"id_string": "171106857242",
 			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
 			"is_blocks_post_format": false,
 			"link_author": "SFPC school",
 			"note_count": 0,
