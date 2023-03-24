@@ -24,6 +24,13 @@
 		"todo": true
 	},
 	{
+		"title": "10 PRXXT",
+		"description": ["A remix of 10 PRINT using an even messier grid."],
+		"date": "2023-03-24",
+		"coolness": 24,
+		"link": "https://codepen.io/rileyjshaw/pen/NWLeMdp"
+	},
+	{
 		"title": "10 PRONT",
 		"description": ["A remix of 10 PRINT using a messy grid."],
 		"date": "2023-03-24",
