@@ -9,6 +9,7 @@ import ClientOnly from './client-only';
 import './layout.css';
 import MouseTracker from './mouse-tracker';
 import {SettingsContext} from './settings-provider';
+import cn from 'cnz';
 import React, {useContext, useState} from 'react';
 
 const PAGE_CLASSES = {
@@ -48,21 +49,19 @@ const Layout = ({children, location}) => {
 	if (pathname.startsWith('/blog'))
 		pathname = isBlogPost ? '/blog/post' : '/blog';
 
-	const wrapperClassNames = [
-		'site-wrapper',
-		theme && `${theme}-theme`,
-		reducedMotion && 'reduced-motion',
-		contrastPreference &&
-			contrastPreference !== 'default' &&
-			`contrast-preference-${contrastPreference}`,
-		PAGE_CLASSES[pathname],
-	]
-		.filter(x => x)
-		.join(' ');
-
 	const showPageHeader = !(isBlogPost || pathname.startsWith('/curate/'));
 	return (
-		<div className={wrapperClassNames}>
+		<div
+			className={cn(
+				'site-wrapper',
+				theme && `${theme}-theme`,
+				reducedMotion && 'reduced-motion',
+				contrastPreference &&
+					contrastPreference !== 'default' &&
+					`contrast-preference-${contrastPreference}`,
+				PAGE_CLASSES[pathname]
+			)}
+		>
 			{isBlockerOpen && (
 				<Blocker
 					onClose={() => {
