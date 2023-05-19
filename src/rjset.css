@@ -123,6 +123,9 @@ a[target='_blank']::after {
 	content: '\202F\279A';
 	font-family: var(--fs);
 }
+a[target='_blank'].gatsby-resp-image-link::after {
+	content: none;
+}
 .dark-theme ul {
 	list-style: disc;
 }
