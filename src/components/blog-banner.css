@@ -57,7 +57,7 @@
 .blog-banner-group .blog-banner-title {
 	min-width: 20%;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (width <= 800px) {
 	.blog-banner {
 		flex-direction: column;
 		padding: 1em 1.5em;

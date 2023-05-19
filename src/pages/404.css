@@ -6,7 +6,7 @@
 	width: 40em;
 }
 /* TODO(riley): Share these breakpoints. */
-@media only screen and (max-width: 800px) {
+@media only screen and (width <= 800px) {
 	.not-found-main {
 		padding: 0;
 	}

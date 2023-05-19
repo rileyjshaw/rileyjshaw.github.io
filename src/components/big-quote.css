@@ -43,7 +43,7 @@
 	margin-bottom: 120px;
 }
 /* TODO(riley): Share these breakpoints. */
-@media only screen and (max-width: 800px) {
+@media only screen and (width <= 800px) {
 	.big-quote {
 		font-size: var(--font-scale-0);
 	}
