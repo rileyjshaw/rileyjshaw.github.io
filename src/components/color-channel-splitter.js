@@ -1,6 +1,7 @@
 import {useViewport} from '../util/hooks';
 import './color-channel-splitter.css';
 import {SettingsContext} from './settings-provider';
+import cn from 'cnz';
 import React, {cloneElement, isValidElement, useContext} from 'react';
 
 const deepCloneChildren = (children, propsFn = null) =>
@@ -28,16 +29,17 @@ function ColorChannelSplitter({
 	const hideColors =
 		!inView || !theme || reducedMotion || contrastPreference === 'more';
 
-	const classNames = [
-		'color-channel-splitter',
-		hideColors && 'no-split',
-		className,
-	]
-		.filter(x => x)
-		.join(' ');
-
 	return (
-		<El style={style} ref={ref} className={classNames} {...rest}>
+		<El
+			style={style}
+			ref={ref}
+			className={cn(
+				'color-channel-splitter',
+				hideColors && 'no-split',
+				className
+			)}
+			{...rest}
+		>
 			<div className={`channel ${hideColors ? '' : 's1'}`}>
 				{children}
 			</div>

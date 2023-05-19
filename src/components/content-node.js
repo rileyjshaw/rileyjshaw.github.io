@@ -2,6 +2,7 @@ import contentTypes from '../util/content-types';
 import {useRect} from '../util/hooks';
 import AutoLink, {ExternalLink} from './auto-link';
 import './content-node.css';
+import cn from 'cnz';
 import React from 'react';
 
 // TODO: Break this component and the grid fitting component out into separate
@@ -49,7 +50,7 @@ export default React.memo(
 
 		return (
 			<El
-				className={[
+				className={cn(
 					'content-node',
 					className,
 					type
@@ -57,10 +58,8 @@ export default React.memo(
 						.join('-')
 						.toLowerCase(),
 					masonry && (innerRect ? 'measured' : 'transparent'),
-					hidden && 'visually-hidden',
-				]
-					.filter(x => x)
-					.join(' ')}
+					hidden && 'visually-hidden'
+				)}
 				key={uid}
 				ref={ref}
 				style={span && masonry ? {gridRowEnd: `span ${span}`} : null}

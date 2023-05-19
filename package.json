@@ -6,6 +6,7 @@
   "author": "Riley Shaw <i@rileyjshaw.com>",
   "dependencies": {
     "@mdx-js/react": "^2.3.0",
+    "cnz": "^1.0.6",
     "gatsby": "^5.10.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-feed": "^5.10.0",
