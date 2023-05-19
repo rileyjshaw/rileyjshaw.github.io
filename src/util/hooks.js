@@ -84,7 +84,7 @@ export function useInterval(
 				// to 0 over and over again until it catches up.
 				if (delay < 0) {
 					if (skipFrames) {
-						delay = (delay % ms) + delay;
+						delay = (delay % ms) + ms;
 						drift = delay - ms;
 					} else delay = 0;
 				}
