@@ -1,17 +1,11 @@
-require('@babel/register');
-const path = require('path');
-const {createFilePath} = require('gatsby-source-filesystem');
+import {idify} from './project-scraper/scraper-utils.js';
+import {createFilePath} from 'gatsby-source-filesystem';
+import path, {dirname} from 'path';
+import {fileURLToPath} from 'url';
 
-// TODO(riley): Since this is a CommonJS file and the Project Scraper is written,
-// as ES Modules, I duplicated this function rather than complicating the build process.
-// ENSURE THIS FUNCTION STAYS IN SYNC WITH THE COPY IN `scraper-utils.js`.
-const idify = uid =>
-	uid
-		.replace(/[-. ]/g, '_')
-		.replace(/\W/g, char => char.codePointAt(0).toString(36))
-		.toUpperCase();
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
-exports.createPages = async ({actions, graphql, reporter}) => {
+export const createPages = async ({actions, graphql, reporter}) => {
 	const {createPage, createRedirect} = actions;
 
 	// Create some redirects.
@@ -128,7 +122,7 @@ exports.createPages = async ({actions, graphql, reporter}) => {
 	});
 };
 
-exports.onCreateNode = ({node, getNode, actions}) => {
+export const onCreateNode = ({node, getNode, actions}) => {
 	const {createNodeField} = actions;
 
 	if (
@@ -163,7 +157,7 @@ exports.onCreateNode = ({node, getNode, actions}) => {
 };
 
 // TODO(riley): Flesh this out.
-exports.createSchemaCustomization = ({actions}) => {
+export const createSchemaCustomization = ({actions}) => {
 	const {createTypes} = actions;
 	const typeDefs = `
 		# TODO(riley): Consider merging description and descriptionList.
@@ -178,7 +172,7 @@ exports.createSchemaCustomization = ({actions}) => {
 	createTypes(typeDefs);
 };
 
-exports.createResolvers = ({createResolvers}) =>
+export const createResolvers = ({createResolvers}) =>
 	createResolvers({
 		// HACK(riley): Currently, excerpt is called twice for each node.
 		Mdx: {
@@ -222,7 +216,7 @@ exports.createResolvers = ({createResolvers}) =>
 
 // Allows components to be imported from the absolute path "components/etc"
 // instead of the relative "../../components/etc". This is necessary for MDX.
-exports.onCreateWebpackConfig = ({stage, loaders, actions}) => {
+export const onCreateWebpackConfig = ({stage, loaders, actions}) => {
 	const config = {
 		resolve: {
 			modules: [path.resolve(__dirname, 'src'), 'node_modules'],

@@ -1,6 +1,9 @@
-require('@babel/register');
+import {format} from './src/util/all-projects-query.mjs';
+import {dirname} from 'path';
+import remarkGfm from 'remark-gfm';
+import {fileURLToPath} from 'url';
 
-const {format} = require('./src/util/all-projects-query');
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const rssify = query => {
 	const {siteUrl} = query.site.siteMetadata;
@@ -30,7 +33,7 @@ const rssify = query => {
 		);
 };
 
-module.exports = {
+export default {
 	siteMetadata: {
 		title: 'The Digital Landfill of Riley J. Shaw',
 		titlePostfix: 'rileyjshaw',
@@ -161,12 +164,7 @@ module.exports = {
 			options: {
 				extensions: ['.mdx', '.md'],
 				mdxOptions: {
-					remarkPlugins: [
-						// TODO: This is pinned to v1 until Gatsby can support ES modules.
-						require('remark-gfm'),
-						// TODO: Once `remark-gfm` is updated to v3, it will support footnotes on its own.
-						require('remark-footnotes'),
-					],
+					remarkPlugins: [remarkGfm],
 				},
 				gatsbyRemarkPlugins: [
 					// TODO: Replace this with a generic linked header component.
