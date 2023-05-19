@@ -50,7 +50,7 @@
 .about-arrow {
 	display: inline-block;
 	/* TODO(riley): Cross-platform option? */
-	font-family: Menlo, var(--fss), sans-serif;
+	font-family: Menlo, var(--fss);
 	width: 1ch;
 }
 .main-projects-title {

@@ -2,8 +2,7 @@
 	align-items: center;
 	display: flex;
 	/* TODO(riley): Cross-platform option? */
-	/* TODO(riley): Repetative generic font-family to pacify Stylelint */
-	font-family: Menlo, var(--fss), sans-serif;
+	font-family: Menlo, var(--fss);
 	font-size: 600px;
 	height: 100vh;
 	justify-content: center;
