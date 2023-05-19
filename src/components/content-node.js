@@ -1,8 +1,8 @@
 import contentTypes from '../util/content-types';
+import {useRect} from '../util/hooks';
 import AutoLink, {ExternalLink} from './auto-link';
 import './content-node.css';
 import React from 'react';
-import useDimensions from 'react-use-dimensions';
 
 // TODO: Break this component and the grid fitting component out into separate
 //       files.
@@ -34,9 +34,9 @@ export default React.memo(
 		if (!contentType) return null;
 		const {className = '', readableType, shortType, Inner} = contentType;
 
-		let innerRef, height, span;
+		let innerRef, innerRect, span;
 		if (masonry) {
-			[innerRef, {height}] = useDimensions({liveMeasure: false});
+			[innerRef, innerRect] = useRect();
 			// Inner: Math.ceil((height + 27) / (27 * 2))
 			//                            ^ "+ 27" accounts for height falling within gap.
 			//     (27 * 2) is the row + gap height ^
@@ -44,7 +44,7 @@ export default React.memo(
 			//                    = Math.ceil(height / 54) + 1
 			// TODO(riley): Was this with the new design system.
 			// const span = height && Math.ceil((height + 19) / 54) + 1;
-			span = height && Math.ceil((height + 82) / 130);
+			span = innerRect && Math.ceil((innerRect.height + 82) / 130);
 		}
 
 		return (
@@ -56,14 +56,14 @@ export default React.memo(
 						.split(/(?=[A-Z])/)
 						.join('-')
 						.toLowerCase(),
-					masonry && (height ? 'measured' : 'transparent'),
+					masonry && (innerRect ? 'measured' : 'transparent'),
 					hidden && 'visually-hidden',
 				]
 					.filter(x => x)
 					.join(' ')}
 				key={uid}
 				ref={ref}
-				style={span && masonry && {gridRowEnd: `span ${span}`}}
+				style={span && masonry ? {gridRowEnd: `span ${span}`} : null}
 			>
 				{/* Note: might be able to make this more semantic. Sources:
 			https://stackoverflow.com/questions/12866008/html5-semantic-markup-for-blog-post-tags-and-categories
