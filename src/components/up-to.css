@@ -23,7 +23,7 @@
 	margin: 0;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (width <= 800px) {
 	.currently {
 		flex-direction: column;
 	}

@@ -103,7 +103,7 @@
 .blog-post-content pre {
 	font-size: 0.75em;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (width <= 800px) {
 	.blog-post-content pre {
 		font-size: 0.6em;
 	}

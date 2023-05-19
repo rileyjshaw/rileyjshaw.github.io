@@ -74,7 +74,7 @@
 	display: none;
 }
 /* TODO(riley): Share these breakpoints. */
-@media only screen and (min-width: 961px) {
+@media only screen and (width >= 961px) {
 	.site-nav a {
 		transition: color 0.2s 0.2s;
 	}
@@ -83,7 +83,7 @@
 		transition: color 0.2s 0.4s;
 	}
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (width <= 960px) {
 	.site-nav {
 		display: block;
 		height: 0;
@@ -125,15 +125,12 @@
 	}
 	.site-nav ul {
 		background: var(--color-bg);
-		bottom: 0;
 		flex-direction: column;
-		left: 0;
+		inset: 0;
 		margin: 0;
 		overflow: auto;
 		overscroll-behavior: contain;
 		position: fixed;
-		right: 0;
-		top: 0;
 	}
 	.site-nav li {
 		border-radius: 0 1000px 1000px 0;

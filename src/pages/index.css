@@ -67,7 +67,7 @@ h2 + .lab-link {
 .explore-more {
 	font-size: var(--font-scale-2);
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (width <= 960px) {
 	.frontpage-grid {
 		grid-template-columns: 1fr;
 		padding: 2.5em 1em 0;

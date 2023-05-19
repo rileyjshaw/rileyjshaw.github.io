@@ -21,11 +21,8 @@
 	position: relative;
 }
 .content-node .dweet-content iframe {
-	bottom: 0;
-	left: 0;
+	inset: 0;
 	position: absolute;
-	right: 0;
-	top: 0;
 }
 .content-node .video-embed {
 	align-items: center;
@@ -117,7 +114,7 @@
 }
 /* So hack. */
 /* 210 = page gutters (60px) + 2 columns (2 * 60px) + 1 gap (30px)… etc. */
-@media only screen and (max-width: 210px) {
+@media only screen and (width <= 210px) {
 	.content-node.span-2 {
 		grid-column: 1 / -1;
 	}
@@ -125,7 +122,7 @@
 .content-node.span-3 {
 	grid-column-end: span 3;
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (width <= 300px) {
 	.content-node.span-3 {
 		grid-column: 1 / -1;
 	}
@@ -133,7 +130,7 @@
 .content-node.span-4 {
 	grid-column-end: span 4;
 }
-@media only screen and (max-width: 390px) {
+@media only screen and (width <= 390px) {
 	.content-node.span-4 {
 		grid-column: 1 / -1;
 	}
@@ -141,7 +138,7 @@
 .content-node.span-5 {
 	grid-column-end: span 5;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (width <= 480px) {
 	.content-node.span-5 {
 		grid-column: 1 / -1;
 	}
@@ -149,7 +146,7 @@
 .content-node.span-6 {
 	grid-column-end: span 6;
 }
-@media only screen and (max-width: 570px) {
+@media only screen and (width <= 570px) {
 	.content-node.span-6 {
 		grid-column: 1 / -1;
 	}
