@@ -107,16 +107,41 @@ export function useInterval(
 	}, []);
 }
 
-// TODO(riley): Improve this then replace all useDimensions() calls.
-// Usage: useDomMethod(domMethod: string)
-// Eg: useDomMethod('getBoundingClientRect');
-export function useDomMethod(domMethod) {
-	const [value, setValue] = useState(null);
-	const ref = useCallback(node => {
-		if (node === null) return;
-		setValue(node[domMethod]());
-	}, []);
-	return [ref, value];
+export function useRect({resize = false} = {}) {
+	const [rect, setRect] = useState(null);
+	const cleanupFn = useRef();
+
+	const callbackRef = useCallback(
+		el => {
+			cleanupFn.current?.();
+
+			if (!el) {
+				setRect(null);
+				return;
+			}
+
+			function updateRect() {
+				setRect(el.getBoundingClientRect());
+			}
+			updateRect();
+
+			if (!resize) return;
+
+			const resizeHandler = throttle(updateRect, 100);
+			if (typeof ResizeObserver === 'function') {
+				const resizeObserver = new ResizeObserver(resizeHandler);
+				resizeObserver.observe(el);
+				cleanupFn.current = () => resizeObserver.disconnect();
+			} else {
+				window.addEventListener('resize', resizeHandler);
+				cleanupFn.current = () =>
+					window.removeEventListener('resize', resizeHandler);
+			}
+		},
+		[resize]
+	);
+
+	return [callbackRef, rect];
 }
 
 // `keyHandlers` example: {Escape: {onDown: () => setOpen(false)}}.

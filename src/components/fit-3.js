@@ -1,27 +1,18 @@
 // transform: scale
+import {useRect} from '../util/hooks';
 import './fit-3.css';
 import React from 'react';
-import useDimensions from 'react-use-dimensions';
 
 export default ({children, x, y}) => {
-	const [parentRef, {width: parentWidth, height: parentHeight}] =
-		useDimensions({
-			liveMeasure: true,
-		});
-	const [childRef, {width: childWidth, height: childHeight}] = useDimensions(
-		{
-			liveMeasure: false,
-		}
-	);
+	const [parentRef, parentRect] = useRect({resize: true});
+	const [childRef, childRect] = useRect();
 
-	const style =
-		parentWidth && childWidth
-			? {
-					transform: `scale(${x ? parentWidth / childWidth : 1}, ${
-						y ? parentHeight / childHeight : 1
-					})`,
-			  }
-			: {};
+	const style = {};
+	if (parentRect && childRect) {
+		style.transform = `scale(${
+			x ? parentRect.width / childRect.width : 1
+		}, ${y ? parentRect.height / childRect.height : 1})`;
+	}
 	if (x) style.display = 'inline-block';
 	else style.flexGrow = 1;
 
