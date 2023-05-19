@@ -64,9 +64,6 @@ const processSong = deleteKeys([
 ]);
 const processTumblrPost = deleteKeys(['blog']);
 
-// TODO(riley): Since this is an ES Module and Gatsby expects CJS, I duplicated
-// this function into `gatsby-node.js` rather than complicating the build process.
-// ENSURE THIS FUNCTION STAYS IN SYNC WITH THE COPY IN `gatsby-node.js`.
 export const idify = uid =>
 	uid
 		.replace(/[-. ]/g, '_')

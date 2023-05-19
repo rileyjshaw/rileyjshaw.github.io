@@ -1,4 +1,4 @@
-import formatProps from './format-props';
+import formatProps from './format-props.mjs';
 import {useStaticQuery, graphql} from 'gatsby';
 
 export function format({

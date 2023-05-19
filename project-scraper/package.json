@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Scrape and format projects that I’ve released from a variety of sources",
   "main": "run-scraper.js",
+  "type": "module",
   "directories": {
     "test": "tests"
   },
@@ -34,6 +35,5 @@
     "rss-parser": "^3.12.0",
     "tumblr.js": "^3.0.0",
     "vimeo": "^2.1.1"
-  },
-  "type": "module"
+  }
 }
