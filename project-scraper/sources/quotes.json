@@ -537,5 +537,23 @@
 		"author": "Elaine Katzenberger",
 		"source": "Ways of Hearing, Episode 5",
 		"cite": "https://www.radiotopia.fm/showcase/ways-of-hearing"
+	},
+	"ETHOS": {
+		"content": "If you can’t hack it, you don’t own it.",
+		"author": "Andrew “bunnie” Huang",
+		"source": "The Hardware Hacker",
+		"cite": "https://nostarch.com/hardwarehackerpaperback"
+	},
+	"OPEN_HARDWARE": {
+		"content": "In the beginning, hardware was open.",
+		"author": "Andrew “bunnie” Huang",
+		"source": "The Hardware Hacker",
+		"cite": "https://nostarch.com/hardwarehackerpaperback"
+	},
+	"ARTISAN_ENGINEERING": {
+		"content": "This rise in repair culture will create a demand for schematics and spare parts that in turn facilitates the growth of open ecosystems and small businesses. Personally, I’m looking forward to the return of artisan engineering, where elegance, optimization, and balance are valued over feature creep, and where I can use the same tool for a decade and not be viewed as an anachronism.",
+		"author": "Andrew “bunnie” Huang",
+		"source": "The Hardware Hacker",
+		"cite": "https://nostarch.com/hardwarehackerpaperback"
 	}
 }
