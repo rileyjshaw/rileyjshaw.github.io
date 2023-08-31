@@ -174,9 +174,9 @@
 	display: flex;
 }
 .content-node.icon img {
-	height: 42px;
+	height: 100px;
 	margin: auto;
-	width: 42px;
+	width: 100px;
 }
 .content-node .screenshot-content img {
 	height: auto;
