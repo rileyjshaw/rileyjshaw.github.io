@@ -521,8 +521,8 @@ function getIcons() {
 					date: upload.date_uploaded,
 					link: `https://thenounproject.com${upload.permalink}`,
 					image: {
-						height: 84,
-						width: 84,
+						height: 200,
+						width: 200,
 						url: upload.preview_url,
 					},
 				};
