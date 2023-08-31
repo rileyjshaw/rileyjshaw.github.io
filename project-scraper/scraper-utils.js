@@ -523,7 +523,7 @@ function getIcons() {
 					image: {
 						height: 84,
 						width: 84,
-						url: upload.preview_url_84,
+						url: upload.preview_url,
 					},
 				};
 				if (index !== -1) formatted[index] = result;
