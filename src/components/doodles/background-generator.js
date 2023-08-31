@@ -37,6 +37,7 @@ const getState = (
 		...defaultProps,
 		...props,
 	};
+	const maxTiles = Math.floor(maxTiledWidth / width);
 
 	let size, height, sequence;
 	do {
@@ -51,8 +52,6 @@ const getState = (
 
 	canvas.width = width;
 	canvas.height = height;
-
-	const maxTiles = Math.floor(maxTiledWidth / width);
 
 	const ctx = canvas.getContext('2d');
 	const tiledCtx = tiledCanvas.getContext('2d');

@@ -259,8 +259,9 @@ export const useViewport = (() => {
 				entryCallbacks.delete(prevNode);
 				scrollingEntries.delete(prevNode);
 				intersectionObserver.unobserve(prevNode);
-				if (!scrollingEntries.size)
-					window.removeEventListener('scroll', handleScroll);
+				// TODO(riley): What was this supposed to do?
+				// if (!scrollingEntries.size)
+				// 	window.removeEventListener('scroll', handleScroll);
 				if (!entryCallbacks.size) intersectionObserver.disconnect();
 			}
 			setInView(initialInView);
