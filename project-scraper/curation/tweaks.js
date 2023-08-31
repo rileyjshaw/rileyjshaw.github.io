@@ -126,6 +126,11 @@ const tweaksList = {
 		coolness: 41,
 		transformers: [],
 	},
+	ICON_5707115: {
+		tags: [],
+		coolness: 60,
+		transformers: [],
+	},
 	PATCH_140563: {
 		transformers: [
 			n => {

@@ -7,17 +7,17 @@
 		"title": "hell",
 		"type": "arenaChannel",
 		"uid": "ARENA_HELL_SBGBXNMDLXI",
-		"updatedAt": "2021-05-27"
+		"updatedAt": "2023-05-16"
 	},
 	{
 		"date": "2018-11-21",
 		"description": "",
-		"length": 343,
+		"length": 349,
 		"link": "https://are.na/riley-shaw/hw-u1lmoisdnyu",
 		"title": "hw",
 		"type": "arenaChannel",
 		"uid": "ARENA_HW_U1LMOISDNYU",
-		"updatedAt": "2023-02-25"
+		"updatedAt": "2023-06-08"
 	},
 	{
 		"body": "<p>Makes page loads snappier, and lets folks opt into Google’s tracking empire</p>",
@@ -894,6 +894,18 @@
 		"title": "No trash",
 		"type": "icon",
 		"uid": "ICON_3164"
+	},
+	{
+		"date": "2023-04-13",
+		"image": {
+			"height": 84,
+			"url": "https://static.thenounproject.com/png/5707115-84.png",
+			"width": 84
+		},
+		"link": "https://thenounproject.com/term/repair/5707115",
+		"title": "Repair",
+		"type": "icon",
+		"uid": "ICON_5707115"
 	},
 	{
 		"date": "2014-09-14",
@@ -2168,7 +2180,7 @@
 		"extraData": [
 			640,
 			640,
-			8
+			9
 		],
 		"link": "https://screenshots.rileyjshaw.com/post/702290533345787904",
 		"title": "2022-11-29 at 16.14.04.png",
@@ -2353,7 +2365,7 @@
 		"contentType": "text",
 		"date": "2018-03-31",
 		"description": "<p>The possibility, vital for life, of unhitching, which consists… in grasping, during the brief intervals in which our species can bring itself to interrupt its hive-like activity, the essence of what it was and continues to be, below the threshold of thought and over and above society: in the contemplation of a mineral more beautiful than all our creations; in the scent that can be smelt at the heart of a lily and is more imbued with learning than all our books; or in the brief glance, heavy with patience, serenity and mutual forgiveness, that, through some involuntary understanding, one can sometimes exchange with a cat.</p><p>Claude Lévi-Strauss, “Tristes Tropiques”</p>",
-		"link": "https://sfpc.rileyjshaw.com/post/179678255817/the-possibility-vital-for-life-of-unhitching",
+		"link": "https://sfpc.rileyjshaw.com/post/179678255817/unhitching",
 		"more": false,
 		"title": "unhitching",
 		"type": "tumblr",
@@ -2438,7 +2450,7 @@
 		"uid": "SONG_954986224"
 	},
 	{
-		"body": "<iframe src=\"https://player.vimeo.com/video/377116426?h=6f1df11cf3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=198113\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen title=\"timestamped\"></iframe>",
+		"body": "<iframe src=\"https://player.vimeo.com/video/377116426?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=198113\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" title=\"timestamped\"></iframe>",
 		"contentType": "vimeo",
 		"date": "2019-12-03",
 		"description": "This video played behind me during my Winter 2018 School for Poetic Computation intro. The following is a transcript of my talk:",
