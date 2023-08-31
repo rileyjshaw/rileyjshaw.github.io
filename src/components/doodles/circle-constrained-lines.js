@@ -40,7 +40,7 @@ const CircleConstrainedLines = React.forwardRef(
 	function CircleConstrainedLines({El = 'div', settings: {theme}}, ref) {
 		const canvasRef = useRef(null);
 		const [variant, setVariant] = useState(
-			Math.floor(Math.random() * variants.length)
+			Math.floor(Math.random() * variants.length),
 		);
 		const getColor = useMemo(() => getThemeColor(theme), [theme]);
 		useEffect(() => {
@@ -92,7 +92,7 @@ const CircleConstrainedLines = React.forwardRef(
 				/>
 			</El>
 		);
-	}
+	},
 );
 
 export default withSettings(CircleConstrainedLines);

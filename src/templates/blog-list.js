@@ -22,7 +22,7 @@ const BlogList = ({data, pageContext: {currentPage, numPages}}) => {
 	].sort(
 		(a, b) =>
 			new Date(b.date || b.fields.date) -
-			new Date(a.date || a.fields.date)
+			new Date(a.date || a.fields.date),
 	);
 
 	const isFirst = currentPage === 1;

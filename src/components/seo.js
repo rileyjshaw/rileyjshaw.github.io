@@ -8,20 +8,18 @@ import {useStaticQuery, graphql} from 'gatsby';
 import React from 'react';
 
 function SEO({description = '', title: pageTitle, children}) {
-	const {site} = useStaticQuery(
-		graphql`
-			query {
-				site {
-					siteMetadata {
-						title
-						titlePostfix
-						description
-						author
-					}
+	const {site} = useStaticQuery(graphql`
+		query {
+			site {
+				siteMetadata {
+					title
+					titlePostfix
+					description
+					author
 				}
 			}
-		`
-	);
+		}
+	`);
 
 	const title = `${pageTitle || site.siteMetadata.title} · ${
 		site.siteMetadata.titlePostfix

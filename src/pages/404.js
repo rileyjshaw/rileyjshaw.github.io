@@ -45,7 +45,7 @@ function NotFoundPage({location}) {
 							<ExternalLink
 								to={`https://duckduckgo.com/?q=rileyjshaw${pathname.replace(
 									/[/ _-]/g,
-									'+'
+									'+',
 								)}`}
 							>
 								related keywords online

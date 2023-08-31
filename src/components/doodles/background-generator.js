@@ -31,7 +31,7 @@ const getState = (
 	cLight,
 	themeBias,
 	canvas = document.createElement('canvas'),
-	tiledCanvas = document.createElement('canvas')
+	tiledCanvas = document.createElement('canvas'),
 ) => {
 	const {width, seamless} = {
 		...defaultProps,
@@ -43,7 +43,7 @@ const getState = (
 		sequence = randSequence(
 			minSequenceLength,
 			maxSequenceLength,
-			themeBias
+			themeBias,
 		);
 		size = lcm(width, sequence.length);
 		height = size / width;
@@ -82,7 +82,7 @@ const getState = (
 
 const BackgroundGenerator = React.forwardRef(function BackgroundGenerator(
 	{settings: {theme}, ...props},
-	ref
+	ref,
 ) {
 	const {width, zoom, dark, light, El, className} = {
 		...defaultProps,
@@ -92,13 +92,13 @@ const BackgroundGenerator = React.forwardRef(function BackgroundGenerator(
 	const cDark = useMemo(() => getThemeColor(theme)(dark)(), [dark, theme]);
 	const cLight = useMemo(
 		() => getThemeColor(theme)(light)(),
-		[light, theme]
+		[light, theme],
 	);
 	const [[canvas, tiledCanvas, nTiles, height], setState] = useState([]);
 	const [clicked, setClicked] = useState(false);
 	useEffect(() => {
 		setState(
-			getState(props, cDark, cLight, themeBias, canvas, tiledCanvas)
+			getState(props, cDark, cLight, themeBias, canvas, tiledCanvas),
 		);
 	}, [cDark, cLight]);
 
@@ -113,8 +113,8 @@ const BackgroundGenerator = React.forwardRef(function BackgroundGenerator(
 						cLight,
 						themeBias,
 						canvas,
-						tiledCanvas
-					)
+						tiledCanvas,
+					),
 				);
 				if (!clicked) setClicked(true);
 			}}

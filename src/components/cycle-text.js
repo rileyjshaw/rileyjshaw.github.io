@@ -41,7 +41,7 @@ export default React.forwardRef(
 			OuterElement = 'div',
 			...rest
 		},
-		passedRef
+		passedRef,
 	) => {
 		const [xSize, ySize] = size;
 		const n = xSize * ySize;
@@ -75,9 +75,9 @@ export default React.forwardRef(
 						text[
 							Math.floor(index / Math.pow(text.length, i)) %
 								text.length
-						]
+						],
 				).join('')}
 			</TextGrid>
 		);
-	}
+	},
 );

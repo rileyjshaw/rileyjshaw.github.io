@@ -10,7 +10,7 @@ export function useWindowSize(cb) {
 					window.innerHeight,
 					Math.hypot(window.innerWidth, window.innerHeight),
 			  ]
-			: [1000, 1000]
+			: [1000, 1000],
 	);
 	useEffect(() => {
 		const handleResize = debounce(
@@ -20,7 +20,7 @@ export function useWindowSize(cb) {
 					window.innerHeight,
 					Math.hypot(window.innerWidth, window.innerHeight),
 				]),
-			300
+			300,
 		);
 		window.addEventListener('resize', handleResize);
 		return () => {
@@ -61,7 +61,7 @@ export function useDebounce(value, delay) {
 export function useInterval(
 	cb,
 	ms,
-	{skipFrames = true, oneShot = false, immediate = true} = {}
+	{skipFrames = true, oneShot = false, immediate = true} = {},
 ) {
 	const savedCallback = useRef();
 	useEffect(() => {
@@ -138,7 +138,7 @@ export function useRect({resize = false} = {}) {
 					window.removeEventListener('resize', resizeHandler);
 			}
 		},
-		[resize]
+		[resize],
 	);
 
 	return [callbackRef, rect];
@@ -212,13 +212,13 @@ export function useIdle(delay, onIdle) {
 	};
 	useEffect(() => {
 		interactionEventNames.forEach(name =>
-			window.addEventListener(name, handleInteraction)
+			window.addEventListener(name, handleInteraction),
 		);
 		resetIdleTimeout();
 		return () => {
 			window.clearTimeout(idleTimeout);
 			interactionEventNames.forEach(name =>
-				window.removeEventListener(name, handleInteraction)
+				window.removeEventListener(name, handleInteraction),
 			);
 		};
 	}, [delay]);
@@ -236,7 +236,7 @@ export const useViewport = (() => {
 	const scrollingEntries = new Set();
 	const intersectionObserver = new IntersectionObserver(entries => {
 		entries.forEach(({target, isIntersecting}) =>
-			entryCallbacks.get(target)?.(isIntersecting)
+			entryCallbacks.get(target)?.(isIntersecting),
 		);
 	});
 
@@ -306,7 +306,7 @@ export const useViewport = (() => {
 export function useStickyState(
 	defaultValue,
 	key,
-	{scope = 'local', version = 'default', serverState = null} = {}
+	{scope = 'local', version = 'default', serverState = null} = {},
 ) {
 	const [{initialized, value}, setValue] = useState({
 		initialized: false,
@@ -319,7 +319,7 @@ export function useStickyState(
 			initialized: true,
 			value:
 				typeof newValue === 'function' ? newValue(oldValue) : newValue,
-		}))
+		})),
 	);
 
 	// On the client, check if there’s a preexisting value and apply that.
@@ -346,7 +346,7 @@ export function useStickyState(
 		if (initialized) {
 			window[`${scope}Storage`].setItem(
 				key,
-				JSON.stringify({value, version})
+				JSON.stringify({value, version}),
 			);
 		}
 	}, [initialized, key, value, version]);
@@ -367,7 +367,7 @@ export function useStickyState(
 
 export function useMediaQuery(query) {
 	const [queryResult, setQueryResult] = useState(
-		() => isRenderingOnClient && window.matchMedia(query).matches
+		() => isRenderingOnClient && window.matchMedia(query).matches,
 	);
 	useEffect(() => {
 		const mediaQueryList = window.matchMedia(query);
@@ -392,7 +392,7 @@ export function useTypedText(text, {delay = 6} = {}) {
 				: displayedText.slice(0, -1);
 			timeout = setTimeout(
 				() => setDisplayedText(nextDisplayedText),
-				delay
+				delay,
 			);
 		}
 		return () => clearTimeout(timeout);

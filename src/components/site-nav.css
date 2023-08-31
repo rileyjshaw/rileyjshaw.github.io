@@ -56,19 +56,29 @@
 	transform: translate3d(425%, 0, 0);
 }
 .site-nav li:nth-child(1) a {
-	animation-delay: 0s, -0.5s;
+	animation-delay:
+		0s,
+		-0.5s;
 }
 .site-nav li:nth-child(2) a {
-	animation-delay: 0s, -0.4s;
+	animation-delay:
+		0s,
+		-0.4s;
 }
 .site-nav li:nth-child(3) a {
-	animation-delay: 0s, -0.3s;
+	animation-delay:
+		0s,
+		-0.3s;
 }
 .site-nav li:nth-child(4) a {
-	animation-delay: 0s, -0.2s;
+	animation-delay:
+		0s,
+		-0.2s;
 }
 .site-nav li:nth-child(5) a {
-	animation-delay: 0s, -0.1s;
+	animation-delay:
+		0s,
+		-0.1s;
 }
 .settings {
 	display: none;
@@ -94,14 +104,18 @@
 	}
 	.site-nav a,
 	.settings svg {
-		animation: fade-in 1s ease-in-out, slide-right 1s ease-in-out;
+		animation:
+			fade-in 1s ease-in-out,
+			slide-right 1s ease-in-out;
 	}
 	.site-nav .site-nav-menu-button {
 		align-items: center;
 		background: var(--color-bg);
 		border: none;
 		border-radius: 50%;
-		box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+		box-shadow:
+			0 1px 3px rgb(0 0 0 / 12%),
+			0 1px 2px rgb(0 0 0 / 24%);
 		color: var(--color-fg);
 		display: flex;
 		font-size: var(--font-scale-2);
@@ -115,7 +129,9 @@
 		z-index: 1;
 	}
 	.site-nav .site-nav-menu-button:hover {
-		box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+		box-shadow:
+			0 3px 6px rgb(0 0 0 / 16%),
+			0 3px 6px rgb(0 0 0 / 23%);
 	}
 	.site-nav .site-nav-menu-button.open {
 		color: var(--color-bg);

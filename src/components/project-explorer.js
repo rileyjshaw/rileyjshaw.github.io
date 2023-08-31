@@ -13,7 +13,7 @@ import React, {Fragment, useState, useEffect, useMemo} from 'react';
 const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 	const [nodeTypes, version] = useMemo(() => {
 		const nodeTypes = Array.from(
-			new Set(props.nodes.map(n => n.type))
+			new Set(props.nodes.map(n => n.type)),
 		).sort((a, b) => a.localeCompare(b));
 		return [nodeTypes, `${nodeTypes.join('')}${sortingMethods.length}`];
 	}, [props.nodes]);
@@ -22,7 +22,7 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 	const [ascending, setAscending] = useStickyState(
 		false,
 		STORAGE_KEYS.labAscending,
-		{version}
+		{version},
 	);
 	const [sortIdx, setSortIdx] = useStickyState(0, STORAGE_KEYS.labSortIdx, {
 		version,
@@ -30,7 +30,7 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 	const [typeStates, setTypeStates] = useStickyState(
 		() => Array.from(nodeTypes).fill(true),
 		STORAGE_KEYS.labTypeStates,
-		{version, serverState: []}
+		{version, serverState: []},
 	);
 
 	const nSources =
@@ -43,7 +43,7 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 		const [doodles, filtered] = (
 			checkedTypeNames.length
 				? props.nodes.filter(node =>
-						checkedTypeNames.includes(node.type)
+						checkedTypeNames.includes(node.type),
 				  )
 				: props.nodes
 		).reduce(
@@ -51,7 +51,7 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 				partitions[node.type === 'doodle' ? 0 : 1].push(node);
 				return partitions;
 			},
-			[[], []]
+			[[], []],
 		);
 		const sorted = sortFn(filtered);
 		const ordered = ascending ? sorted.reverse() : sorted;
@@ -62,7 +62,7 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 				ordered.splice(
 					Math.floor(Math.random() * ordered.length),
 					0,
-					rest
+					rest,
 				);
 			}
 		});
@@ -110,7 +110,7 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 														updatedTypeStates[i] =
 															checked;
 														return updatedTypeStates;
-													}
+													},
 												);
 											}}
 										/>
@@ -124,7 +124,9 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 								className="labs-clear labs-clear-types"
 								onClick={() =>
 									setTypeStates(
-										new Array(nodeTypes.length).fill(false)
+										new Array(nodeTypes.length).fill(
+											false,
+										),
 									)
 								}
 							>
@@ -244,9 +246,9 @@ const ProjectExplorerWrapper = React.memo(props => {
 					type: 'doodle',
 					Doodle,
 					shouldRender,
-				}))
+				})),
 			),
-		[allProjects]
+		[allProjects],
 	);
 
 	return <ProjectExplorer nodes={nodes} tags={tags} {...props} />;

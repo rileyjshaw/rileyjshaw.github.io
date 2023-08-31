@@ -15,13 +15,13 @@ const raw = {}; // Raw is completely overwritten, but we append to formatted and
 const formatted = JSON.parse(
 	fs.readFileSync(
 		new URL('_generated/scraped-projects-formatted.json', import.meta.url)
-			.pathname
-	)
+			.pathname,
+	),
 );
 const scrapedQuotes = JSON.parse(
 	fs.readFileSync(
-		new URL('_generated/scraped-quotes.json', import.meta.url).pathname
-	)
+		new URL('_generated/scraped-quotes.json', import.meta.url).pathname,
+	),
 );
 // Mutate an object by deleting specific keys. Keys can be simple strings to
 // remove at the root level, or nested with special characters “.” and “[”.
@@ -86,7 +86,7 @@ export const excerptify = body => {
 		return node;
 	}
 	const processed = Array.from(
-		processNode(JSDOM.fragment(body)).children
+		processNode(JSDOM.fragment(body)).children,
 	).reduce(
 		// Limit the excerpt to 700 characters.
 		({charCount, els}, el) => {
@@ -102,7 +102,7 @@ export const excerptify = body => {
 				more: false,
 			};
 		},
-		{charCount: 0, els: [], more: false}
+		{charCount: 0, els: [], more: false},
 	);
 	const {els: excerpt, more} = processed;
 	let {charCount} = processed;
@@ -123,7 +123,7 @@ export const excerptify = body => {
 				// Increment heading numbers. Eg, <H1> => <H2>.
 				return el.outerHTML.replace(
 					/<(\/?)H([1-5])>/gi,
-					(_, slash, n) => `<${slash}h${parseInt(n) + 1}>`
+					(_, slash, n) => `<${slash}h${parseInt(n) + 1}>`,
 				);
 			})
 			.join('');
@@ -214,7 +214,7 @@ async function getArena() {
 			channel =>
 				channel.published &&
 				channel.status !== 'private' &&
-				channel.owner_id === 72803
+				channel.owner_id === 72803,
 		);
 		channels.forEach(processArena);
 		raw.arena = channels;
@@ -251,7 +251,7 @@ async function getCommitBlog() {
 		console.log(`Got ${feed.items.length} Commit Blog entries.`);
 		feed.items.forEach(commit => {
 			const uid = idify(
-				`COMMIT_${commit.id.slice(commit.id.lastIndexOf('/') + 1)}`
+				`COMMIT_${commit.id.slice(commit.id.lastIndexOf('/') + 1)}`,
 			);
 			const index = formatted.findIndex(d => d.uid === uid);
 			const body = commit.content?.replace(/<br>\n/g, ' ');
@@ -262,7 +262,7 @@ async function getCommitBlog() {
 				date: commit.isoDate.slice(0, 10),
 				link: commit.link,
 				repo: commit.link.match(
-					/commit--blog\.com\/([^/]*\/[^/]*)/
+					/commit--blog\.com\/([^/]*\/[^/]*)/,
 				)[1],
 				body,
 				...excerptify(body),
@@ -302,7 +302,7 @@ function getSFPCTumblr() {
 						switch (post.type) {
 							case 'quote':
 								const quoteIndex = scrapedQuotes.findIndex(
-									post => post.uid === uid
+									post => post.uid === uid,
 								);
 								const sourceDoc = JSDOM.fragment(post.source);
 								const sourceAnchor =
@@ -310,7 +310,7 @@ function getSFPCTumblr() {
 								let cite = sourceAnchor?.href;
 								if (
 									cite?.startsWith(
-										'https://t.umblr.com/redirect'
+										'https://t.umblr.com/redirect',
 									)
 								) {
 									cite = url.parse(cite, true).query.z;
@@ -337,7 +337,7 @@ function getSFPCTumblr() {
 								return;
 							case 'text':
 								const textIndex = formatted.findIndex(
-									post => post.uid === uid
+									post => post.uid === uid,
 								);
 								const textResult = {
 									uid,
@@ -395,7 +395,7 @@ function getScreenshotsTumblr() {
 								// probably uploaded from mobile. Assume it’s a
 								// photo.
 								const img = JSDOM.fragment(
-									post.body
+									post.body,
 								).querySelector('img');
 								if (!img) return;
 								contentType = 'photo';
@@ -425,7 +425,7 @@ function getScreenshotsTumblr() {
 								extraData = [
 									post.player[0].width,
 									+post.player[0].embed_code.match(
-										/height=['"](\d+)['"]/
+										/height=['"](\d+)['"]/,
 									)?.[1] ?? 0,
 								];
 								break;
@@ -437,7 +437,7 @@ function getScreenshotsTumblr() {
 						if (!fileType) return;
 
 						const textIndex = formatted.findIndex(
-							post => post.uid === uid
+							post => post.uid === uid,
 						);
 						const unadjustedDate = new Date(post.timestamp * 1000);
 						// The blog is in the Eastern timezone, and
@@ -449,22 +449,22 @@ function getScreenshotsTumblr() {
 							1000;
 						const date = new Date(
 							unadjustedDate.getTime() +
-								localTimezoneOffsetFromEastern
+								localTimezoneOffsetFromEastern,
 						);
 						const title = `${date.getFullYear()}-${`${
 							date.getMonth() + 1
 						}`.padStart(2, 0)}-${`${date.getDate()}`.padStart(
 							2,
-							0
+							0,
 						)} at ${`${date.getHours()}`.padStart(
 							2,
-							0
+							0,
 						)}.${`${date.getMinutes()}`.padStart(
 							2,
-							0
+							0,
 						)}.${`${date.getSeconds()}`.padStart(
 							2,
-							0
+							0,
 						)}.${fileType}`;
 						const result = {
 							uid,
@@ -495,14 +495,14 @@ function getIcons() {
 		process.env.NOUN_PROJECT_SECRET,
 		'1.0',
 		null,
-		'HMAC-SHA1'
+		'HMAC-SHA1',
 	);
 
 	return util
 		.promisify(auth.get.bind(auth))(
 			'http://api.thenounproject.com/user/riley/uploads',
 			null,
-			null
+			null,
 		)
 		.then(JSON.parse)
 		.then(({uploads}) => {
@@ -544,8 +544,8 @@ async function getSoundCloud() {
 		while (url) {
 			const response = JSON.parse(
 				await request(
-					`${url}&client_id=${process.env.SOUNDCLOUD_CLIENT_ID}`
-				)
+					`${url}&client_id=${process.env.SOUNDCLOUD_CLIENT_ID}`,
+				),
 			);
 			if (response.collection.length || response.next_href) {
 				console.log(`Got ${response.collection.length} songs.`);
@@ -573,10 +573,10 @@ async function getSoundCloud() {
 	} catch (err) {
 		console.error('Error while fetching SoundCloud tracks:', err);
 		console.error(
-			'Your SOUNDCLOUD_CLIENT_ID in .env might be out of date.'
+			'Your SOUNDCLOUD_CLIENT_ID in .env might be out of date.',
 		);
 		console.error(
-			'Check the Network tab on soundcloud.com to get a new one.'
+			'Check the Network tab on soundcloud.com to get a new one.',
 		);
 	}
 }
@@ -600,7 +600,7 @@ async function getYoutube() {
 		let videos = [];
 		do {
 			const {data} = await util.promisify(
-				youtube.playlistItems.list.bind(youtube)
+				youtube.playlistItems.list.bind(youtube),
 			)(requestConfig);
 			console.log(`Got ${data.items.length} YouTube videos.`);
 			videos = videos.concat(data.items.map(v => v.snippet));
@@ -616,7 +616,7 @@ async function getVimeo() {
 	const vimeoClient = new Vimeo(
 		process.env.VIMEO_CLIENT_ID,
 		process.env.VIMEO_CLIENT_SECRET,
-		process.env.VIMEO_ACCESS_TOKEN_2
+		process.env.VIMEO_ACCESS_TOKEN_2,
 	);
 	return new Promise((resolve, reject) => {
 		(function nextRequest(url, videos = []) {
@@ -635,7 +635,7 @@ async function getVimeo() {
 							.filter(video => video.privacy.view === 'anybody')
 							.map(async ({metadata, ...video}) => {
 								const pictures = await util.promisify(
-									vimeoClient.request.bind(vimeoClient)
+									vimeoClient.request.bind(vimeoClient),
 								)({
 									method: 'GET',
 									path: metadata.connections.pictures.uri,
@@ -644,7 +644,7 @@ async function getVimeo() {
 									...video,
 									pictures,
 								};
-							})
+							}),
 					);
 					console.log(`Got ${newVideos.length} Vimeo videos.`);
 					videos = videos.concat(newVideos);
@@ -653,10 +653,10 @@ async function getVimeo() {
 					} else {
 						resolve(videos);
 					}
-				}
+				},
 			);
 		})(
-			'/me/videos?fields=uri,name,description,link,embed.html,created_time,privacy,metadata.connections&filter_playable=true'
+			'/me/videos?fields=uri,name,description,link,embed.html,created_time,privacy,metadata.connections&filter_playable=true',
 		);
 	});
 }
@@ -686,7 +686,7 @@ async function getVideos() {
 						video.privacy.embed === 'public' &&
 						video.embed.html.replace(
 							/ ?(width|height)="[0-9]+"/gi,
-							''
+							'',
 						),
 					date: video.created_time.slice(0, 10),
 					link: video.link,
@@ -710,7 +710,7 @@ async function getVideos() {
 						(bestQuality, video) => {
 							if (video.width > bestQuality.width) return video;
 							return bestQuality;
-						}
+						},
 					),
 					body: videoId,
 					date: video.publishedAt.slice(0, 10),
@@ -742,31 +742,31 @@ export function getAll() {
 			fs.writeFileSync(
 				new URL(
 					'_generated/scraped-projects-raw.json',
-					import.meta.url
+					import.meta.url,
 				).pathname,
-				stableStringify(raw, {space: '\t'})
+				stableStringify(raw, {space: '\t'}),
 			);
 			fs.writeFileSync(
 				new URL(
 					'_generated/scraped-projects-formatted.json',
-					import.meta.url
+					import.meta.url,
 				).pathname,
 				stableStringify(
 					formatted.sort(({uid: a = ''}, {uid: b = ''}) =>
-						a.localeCompare(b)
+						a.localeCompare(b),
 					),
-					{space: '\t'}
-				)
+					{space: '\t'},
+				),
 			);
 			fs.writeFileSync(
 				new URL('_generated/scraped-quotes.json', import.meta.url)
 					.pathname,
 				stableStringify(
 					scrapedQuotes.sort(({uid: a = ''}, {uid: b = ''}) =>
-						a.localeCompare(b)
+						a.localeCompare(b),
 					),
-					{space: '\t'}
-				)
+					{space: '\t'},
+				),
 			);
 		})
 		.catch(err => {

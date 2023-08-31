@@ -81,21 +81,21 @@ const DIRECT_COLOR_PROPERTIES = Object.entries(DIRECT_COLORS).reduce(
 						colorAcc[variant] = cssColorProperty(
 							colorName,
 							variant,
-							true
+							true,
 						);
 						return colorAcc;
 					},
-					{}
+					{},
 				);
 				colorAcc[colorName].rgb =
 					DIRECT_COLORS[themeName][colorName].main.join();
 				return colorAcc;
 			},
-			{}
+			{},
 		);
 		return themeAcc;
 	},
-	{}
+	{},
 );
 
 const [ABSTRACT_COLORS, ABSTRACT_COLOR_PROPERTIES] = [

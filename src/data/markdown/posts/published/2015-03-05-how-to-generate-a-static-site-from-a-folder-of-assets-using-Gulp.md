@@ -142,7 +142,7 @@ function buildHTML(demoName, i, next, prev) {
 					next: next ? i + 1 : null,
 					prev: prev ? i - 1 : null,
 				},
-			})
+			}),
 		)
 		.pipe(gulp - rename(i + '.html'))
 		.pipe(gulp.dest('../path/to/dist/'));

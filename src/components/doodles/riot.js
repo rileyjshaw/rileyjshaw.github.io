@@ -29,7 +29,7 @@ function Riot(_, ref) {
 							boundingClientRect.height,
 				  ]
 				: [0.5, 0.5],
-		[oBoundingClientRect]
+		[oBoundingClientRect],
 	);
 
 	return (

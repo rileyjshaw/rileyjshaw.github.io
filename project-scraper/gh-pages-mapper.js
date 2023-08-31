@@ -13,8 +13,8 @@ const SITE_ROOT = 'https://rileyjshaw.com/';
 const PRIORITY_JSON_NAME = 'other-repo-sitemap-priorities.json';
 const otherRepoSitemapPriorities = JSON.parse(
 	fs.readFileSync(
-		new URL(`sources/${PRIORITY_JSON_NAME}`, import.meta.url).pathname
-	)
+		new URL(`sources/${PRIORITY_JSON_NAME}`, import.meta.url).pathname,
+	),
 );
 
 // Github doesn’t presently provide a way to check which of your repos have an
@@ -49,8 +49,8 @@ export async function checkGitRepoRoutes() {
 				data.map(repo =>
 					fetch(`${SITE_ROOT}${encodeURIComponent(repo.name)}`, {
 						method: 'HEAD',
-					})
-				)
+					}),
+				),
 			).then(results =>
 				results
 					.filter(
@@ -58,10 +58,10 @@ export async function checkGitRepoRoutes() {
 							result.status === 'fulfilled' &&
 							result.value.status === 200 &&
 							result.value.url.startsWith(SITE_ROOT) &&
-							result.value.url !== SITE_ROOT
+							result.value.url !== SITE_ROOT,
 					)
-					.map(r => r.value.url)
-			)
+					.map(r => r.value.url),
+			),
 		);
 		if (!link?.includes('rel="next"')) break;
 	}
@@ -81,14 +81,14 @@ export async function checkGitRepoRoutes() {
 						if (typeof priority !== 'number') {
 							priority = 0.1;
 							console.log(
-								`Missing priority for ${strippedPath}. Update ${PRIORITY_JSON_NAME}.`
+								`Missing priority for ${strippedPath}. Update ${PRIORITY_JSON_NAME}.`,
 							);
 						}
 						return {path: pathname, priority};
 					}),
 				null,
-				'\t'
-			)
+				'\t',
+			),
 		);
 	});
 }

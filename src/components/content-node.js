@@ -58,7 +58,7 @@ export default React.memo(
 						.join('-')
 						.toLowerCase(),
 					masonry && (innerRect ? 'measured' : 'transparent'),
-					hidden && 'visually-hidden'
+					hidden && 'visually-hidden',
 				)}
 				key={uid}
 				ref={ref}
@@ -112,7 +112,7 @@ export default React.memo(
 				</div>
 			</El>
 		);
-	})
+	}),
 );
 
 /*

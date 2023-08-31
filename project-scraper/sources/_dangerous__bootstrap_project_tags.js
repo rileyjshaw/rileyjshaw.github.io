@@ -13,11 +13,11 @@ function moveInfo() {
 	const projects = JSON.parse(
 		fs.readFileSync(
 			new URL('../_generated/combined-projects.json', import.meta.url)
-				.pathname
-		)
+				.pathname,
+		),
 	);
 	const tags = JSON.parse(
-		fs.readFileSync(new URL('tags.json', import.meta.url).pathname)
+		fs.readFileSync(new URL('tags.json', import.meta.url).pathname),
 	);
 	tags.taggedProjects = {};
 
@@ -26,11 +26,11 @@ function moveInfo() {
 		if (!projectTags) return;
 		if (project.type === 'dweet') {
 			projectTags = projectTags.filter(
-				t => t !== 'golf' && t !== 'online'
+				t => t !== 'golf' && t !== 'online',
 			);
 		} else if (project.type === 'song') {
 			projectTags = projectTags.filter(
-				t => t !== 'music' && t !== 'online'
+				t => t !== 'music' && t !== 'online',
 			);
 		}
 		if (!projectTags.length) return;
@@ -43,7 +43,7 @@ function moveInfo() {
 
 	fs.writeFileSync(
 		new URL('tags.json', import.meta.url).pathname,
-		stableStringify(tags, {space: '\t'})
+		stableStringify(tags, {space: '\t'}),
 	);
 }
 
