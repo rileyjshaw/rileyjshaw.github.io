@@ -54,7 +54,7 @@ const IndexPage = ({featuredProjects = []}) => {
 									className="new-doodle"
 									onClick={() =>
 										setDoodleIdx(
-											idx => (idx + 1) % doodles.length
+											idx => (idx + 1) % doodles.length,
 										)
 									}
 								>

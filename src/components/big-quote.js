@@ -27,8 +27,8 @@ function BigQuote({quoteId, showRefreshButton = true}) {
 	const [quoteIndex, setQuoteIndex] = useState(
 		Math.max(
 			0,
-			shuffledQuotes.findIndex(({uid}) => uid === quoteId)
-		)
+			shuffledQuotes.findIndex(({uid}) => uid === quoteId),
+		),
 	);
 	const quote = shuffledQuotes[quoteIndex];
 	const {content, cite} = quote;
@@ -74,7 +74,7 @@ function BigQuote({quoteId, showRefreshButton = true}) {
 					className="refresh"
 					onClick={() =>
 						setQuoteIndex(
-							prevIndex => (prevIndex + 1) % quotes.length
+							prevIndex => (prevIndex + 1) % quotes.length,
 						)
 					}
 				>

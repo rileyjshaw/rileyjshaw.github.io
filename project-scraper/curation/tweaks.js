@@ -7,7 +7,7 @@ import {URL} from 'url';
 
 function loadJsonFile(relPath) {
 	return JSON.parse(
-		fs.readFileSync(new URL(relPath, import.meta.url).pathname)
+		fs.readFileSync(new URL(relPath, import.meta.url).pathname),
 	);
 }
 
@@ -22,11 +22,11 @@ const fixLinks = text =>
 	text
 		.replace(
 			/<a [^>]*?\bhref=(["'])(?:https?:\/\/)?(?:www\.)?rileyjshaw\.com\b\/?((\\\1|(?:(?!\1).))*)\1[^>]*?>/gi,
-			'<a href=$1/$2$1>'
+			'<a href=$1/$2$1>',
 		)
 		.replace(
 			/<a [^>]*?\bhref=(["'])((?!(\/|#|\1))(?:\\\1|[^\1])+?)\1[^>]*?>/gi,
-			'<a href=$1$2$1 rel="noopener noreferrer" target="_blank">'
+			'<a href=$1$2$1 rel="noopener noreferrer" target="_blank">',
 		);
 const repoTags = {
 	'rileyjshaw/rileyjshaw.github.io': ['meta'],
@@ -172,7 +172,7 @@ const quoteAuthors = ['Osamu Sato', 'Donna J. Haraway'];
 
 export function runTweaks() {
 	const scrapedProjects = loadJsonFile(
-		'../_generated/scraped-projects-formatted.json'
+		'../_generated/scraped-projects-formatted.json',
 	);
 	const scrapedQuotes = loadJsonFile('../_generated/scraped-quotes.json');
 	const listedProjects = loadJsonFile('../sources/projects.json');
@@ -215,7 +215,7 @@ export function runTweaks() {
 
 	// Add the "featured" tag to each featured project.
 	featuredProjects.forEach(projectId =>
-		addTags(projects[projectId], 'featured')
+		addTags(projects[projectId], 'featured'),
 	);
 
 	// Apply tweaks to nodes.
@@ -224,7 +224,7 @@ export function runTweaks() {
 			const n = projects.find(project => project.uid === projectId);
 			if (!n) {
 				console.warn(
-					`You’ve written a tweak for nonexistent UID ${projectId}.`
+					`You’ve written a tweak for nonexistent UID ${projectId}.`,
 				);
 				return;
 			}
@@ -232,7 +232,7 @@ export function runTweaks() {
 			if (coolness) n.coolness = coolness;
 			if (transformers)
 				n.transformers = [...(n.transformers || []), ...transformers];
-		}
+		},
 	);
 
 	// Run and delete transformers.
@@ -258,10 +258,10 @@ export function runTweaks() {
 			.pathname,
 		stableStringify(
 			projects.sort(({uid: a = ''}, {uid: b = ''}) =>
-				a.localeCompare(b)
+				a.localeCompare(b),
 			),
-			{space: '\t'}
-		)
+			{space: '\t'},
+		),
 	);
 
 	const combinedQuotes = Object.entries(listedQuotes)
@@ -277,7 +277,7 @@ export function runTweaks() {
 					source &&
 					// Discard quotes around source names, since big-quote.js adds those.
 					unescape(stripOuterQuotes(source)),
-			}))
+			})),
 		);
 
 	fs.writeFileSync(
@@ -285,9 +285,9 @@ export function runTweaks() {
 			.pathname,
 		stableStringify(
 			combinedQuotes.sort(({uid: a = ''}, {uid: b = ''}) =>
-				a.localeCompare(b)
+				a.localeCompare(b),
 			),
-			{space: '\t'}
-		)
+			{space: '\t'},
+		),
 	);
 }

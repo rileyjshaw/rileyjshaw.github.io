@@ -52,7 +52,7 @@ const Demo = ({players}) => {
 		volume: loops.map(loop => loop.initialVolume).reduce(add) / nTracks,
 		tracks: loops.map(loop => loop.initialVolume),
 		volumeLocked: !loops.some(
-			({initialVolume}) => initialVolume && initialVolume < 1
+			({initialVolume}) => initialVolume && initialVolume < 1,
 		),
 	});
 	const [gain, setGain] = useState(0.5);
@@ -83,7 +83,7 @@ const Demo = ({players}) => {
 					(volume * nTracks - newValue) /
 					(newTracks.reduce(add) - newValue);
 				newTracks = newTracks.map((unscaled, j) =>
-					i === j ? unscaled : bound(factor * unscaled, 0, 1)
+					i === j ? unscaled : bound(factor * unscaled, 0, 1),
 				);
 			}
 			return {
@@ -162,10 +162,10 @@ export default () => {
 				new Promise(resolve => {
 					const player = new Tone.Player(
 						`/mp3/loops/${file}.mp3`,
-						() => resolve(player)
+						() => resolve(player),
 					).toDestination();
 					player.volume.value = Tone.gainToDb(initialVolume);
-				})
+				}),
 		);
 		Promise.all(playerPromises).then(players => {
 			if (players.some(player => player.disposed)) return;

@@ -26,7 +26,7 @@ function GameOver(_, ref) {
 			setGameState('game-over');
 			activeTimeout.current = setTimeout(
 				() => setGameState('play-again'),
-				1800
+				1800,
 			);
 		}, 2400);
 	}, []);

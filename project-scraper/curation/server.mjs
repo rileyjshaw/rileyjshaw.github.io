@@ -16,12 +16,12 @@ router.put('/tags', function (req, res) {
 	const [tagKey, tagValue] = req.body;
 	const created = Date.now();
 	const tags = JSON.parse(
-		fs.readFileSync(path.join(__dirname, '../sources/tags.json'))
+		fs.readFileSync(path.join(__dirname, '../sources/tags.json')),
 	);
 	tags.tagInfo[tagKey] = {...tagValue, created};
 	fs.writeFileSync(
 		path.join(__dirname, '../sources/tags.json'),
-		stableStringify(tags, {space: '\t'})
+		stableStringify(tags, {space: '\t'}),
 	);
 	res.json(tags);
 });
@@ -31,12 +31,12 @@ router.put('/tags/:uid', function (req, res) {
 	const newTags = req.body.sort((a, b) => a.localeCompare(b));
 	const updated = Date.now();
 	const tags = JSON.parse(
-		fs.readFileSync(path.join(__dirname, '../sources/tags.json'))
+		fs.readFileSync(path.join(__dirname, '../sources/tags.json')),
 	);
 	tags.taggedProjects[uid] = {tags: newTags, updated};
 	fs.writeFileSync(
 		path.join(__dirname, '../sources/tags.json'),
-		stableStringify(tags, {space: '\t'})
+		stableStringify(tags, {space: '\t'}),
 	);
 	res.json(tags);
 });

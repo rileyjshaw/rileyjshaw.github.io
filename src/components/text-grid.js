@@ -10,7 +10,7 @@ export default React.forwardRef(
 			OuterElement = 'div',
 			...rest
 		},
-		ref
+		ref,
 	) => (
 		<OuterElement
 			className={`${className} ${classPrefix}-grid`}
@@ -30,5 +30,5 @@ export default React.forwardRef(
 				</span>
 			))}
 		</OuterElement>
-	)
+	),
 );

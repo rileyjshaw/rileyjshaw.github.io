@@ -72,6 +72,6 @@ export function getNextHoliday() {
 			};
 		})
 		.reduce((closest, current) =>
-			current.daysUntil < closest.daysUntil ? current : closest
+			current.daysUntil < closest.daysUntil ? current : closest,
 		);
 }

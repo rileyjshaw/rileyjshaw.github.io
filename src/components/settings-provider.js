@@ -9,7 +9,7 @@ export const SettingsContext = createContext();
 const SettingsProvider = ({children}) => {
 	const [themeKey, setThemeKey] = useStickyState(
 		'system',
-		STORAGE_KEYS.theme
+		STORAGE_KEYS.theme,
 	);
 	const systemTheme = useMediaQuery('(prefers-color-scheme: dark)')
 		? 'dark'
@@ -19,17 +19,17 @@ const SettingsProvider = ({children}) => {
 	// TODO: Add user controls for reducedMotion, contrastPreference, blockEmbeds.
 	const [reducedMotionKey, setReducedMotionKey] = useStickyState(
 		'system',
-		STORAGE_KEYS.reducedMotion
+		STORAGE_KEYS.reducedMotion,
 	);
 	const systemReducedMotion = useMediaQuery(
-		'(prefers-reduced-motion: reduce)'
+		'(prefers-reduced-motion: reduce)',
 	);
 	const reducedMotion =
 		reducedMotionKey === 'system' ? systemReducedMotion : reducedMotionKey;
 
 	const [contrastPreferenceKey, setContrastPreferenceKey] = useStickyState(
 		'system',
-		STORAGE_KEYS.contrastPreference
+		STORAGE_KEYS.contrastPreference,
 	);
 	const systemHighContrastPreference =
 		useMediaQuery('(prefers-contrast: more)') && 'more';
@@ -46,7 +46,7 @@ const SettingsProvider = ({children}) => {
 
 	const [blockEmbeds, setBlockEmbeds] = useStickyState(
 		true,
-		STORAGE_KEYS.blockEmbeds
+		STORAGE_KEYS.blockEmbeds,
 	);
 
 	useEffect(() => {

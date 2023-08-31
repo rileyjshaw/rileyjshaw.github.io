@@ -35,7 +35,7 @@ export function getThemeColor(activeTheme) {
 export function debounce(
 	fn,
 	ms,
-	{triggerFirstCall = false, triggerLastCall = true} = {}
+	{triggerFirstCall = false, triggerLastCall = true} = {},
 ) {
 	let timeout = null;
 	function _debounce() {
@@ -91,10 +91,10 @@ export function randSequence(minLength, maxLength, bias = 0.5) {
 	return Array.from(
 		{
 			length: Math.floor(
-				Math.random() * (maxLength - minLength + 1) + minLength
+				Math.random() * (maxLength - minLength + 1) + minLength,
 			),
 		},
-		() => Math.floor(Math.random() + bias)
+		() => Math.floor(Math.random() + bias),
 	);
 }
 // Greatest common denominator of all time.

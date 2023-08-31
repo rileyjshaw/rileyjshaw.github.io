@@ -61,7 +61,7 @@ function ThemeToggleButton({uid, settings: {themeKey, setThemeKey}}) {
 
 	const themeNameIdx = useMemo(
 		() => THEME_NAMES.indexOf(themeKey),
-		[themeKey]
+		[themeKey],
 	);
 	const pastThemeKey =
 		THEME_NAMES[
@@ -87,7 +87,7 @@ function ThemeToggleButton({uid, settings: {themeKey, setThemeKey}}) {
 				onClick={() => {
 					mainAnimationRef.current?.beginElement();
 					setThemeKey(
-						THEME_NAMES[(themeNameIdx + 1) % THEME_NAMES.length]
+						THEME_NAMES[(themeNameIdx + 1) % THEME_NAMES.length],
 					);
 				}}
 			>

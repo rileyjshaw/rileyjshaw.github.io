@@ -64,7 +64,7 @@ export const createPages = async ({actions, graphql, reporter}) => {
 	if (result.errors) {
 		reporter.panicOnBuild(
 			`Error while running GraphQL query.`,
-			result.errors
+			result.errors,
 		);
 		return;
 	}
@@ -80,7 +80,7 @@ export const createPages = async ({actions, graphql, reporter}) => {
 			externalPosts.map(p => ({
 				type: 'external',
 				date: p.date,
-			}))
+			})),
 		)
 		.sort((a, b) => new Date(b.date) - new Date(a.date));
 	const postsPerPage = 5;
@@ -132,7 +132,7 @@ export const onCreateNode = ({node, getNode, actions}) => {
 		let {title, slug} = node.frontmatter;
 		const fileName = createFilePath({node, getNode, basePath: `posts`});
 		const [, date, fileNameSlug] = fileName.match(
-			/^\/(?:published|drafts)\/([\d]{4}-[\d]{2}-[\d]{2})-{1}(.+)\/$/
+			/^\/(?:published|drafts)\/([\d]{4}-[\d]{2}-[\d]{2})-{1}(.+)\/$/,
 		);
 		slug ??= fileNameSlug;
 		createNodeField({
@@ -189,7 +189,7 @@ export const createResolvers = ({createResolvers}) =>
 							truncate: false,
 						},
 						context,
-						info
+						info,
 					);
 				},
 			},
@@ -206,7 +206,7 @@ export const createResolvers = ({createResolvers}) =>
 							truncate: false,
 						},
 						context,
-						info
+						info,
 					);
 					return excerpt.charAt(excerpt.length - 1) === '…';
 				},

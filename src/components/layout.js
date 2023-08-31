@@ -27,14 +27,14 @@ const Layout = ({children, location}) => {
 	const [nTimesClosed, setNTimesClosed] = useStickyState(
 		0,
 		STORAGE_KEYS.nTimesClosedBlocker,
-		{scope: 'session', serverState: 0}
+		{scope: 'session', serverState: 0},
 	);
 	useIdle(60000 * 4 * (nTimesClosed + 1), () => setIsBlockerOpen(true));
 	const [activeHoliday, setActiveHoliday] = useState(null);
 	const [isHolidayBannerOpen, setIsHolidayBannerOpen] = useStickyState(
 		true,
 		STORAGE_KEYS.showHolidayBanner,
-		'session'
+		'session',
 	);
 
 	useInterval(() => {
@@ -59,7 +59,7 @@ const Layout = ({children, location}) => {
 				contrastPreference &&
 					contrastPreference !== 'default' &&
 					`contrast-preference-${contrastPreference}`,
-				PAGE_CLASSES[pathname]
+				PAGE_CLASSES[pathname],
 			)}
 		>
 			{isBlockerOpen && (

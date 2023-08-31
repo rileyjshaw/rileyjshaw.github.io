@@ -29,7 +29,7 @@ const rssify = query => {
 		.sort(
 			(a, b) =>
 				new Date(b.date || b.fields.date) -
-				new Date(a.date || a.fields.date)
+				new Date(a.date || a.fields.date),
 		);
 };
 
@@ -94,7 +94,7 @@ export default {
 									...page,
 									changefreq: 'daily',
 								};
-							})
+							}),
 						);
 					return result;
 				},

@@ -19,7 +19,7 @@ export default ({location}) => {
 		() => ({
 			Escape: {onDown: () => setOpen(false)},
 		}),
-		[setOpen]
+		[setOpen],
 	);
 	useKeyPresses(keyHandlers);
 	return (

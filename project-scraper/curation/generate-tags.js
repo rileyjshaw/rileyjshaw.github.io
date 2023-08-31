@@ -5,8 +5,8 @@ import {URL} from 'url';
 export function generateTags() {
 	const {tagInfo} = JSON.parse(
 		fs.readFileSync(
-			new URL('../sources/tags.json', import.meta.url).pathname
-		)
+			new URL('../sources/tags.json', import.meta.url).pathname,
+		),
 	);
 	fs.writeFileSync(
 		new URL('../_generated/tags.json', import.meta.url).pathname,
@@ -15,7 +15,7 @@ export function generateTags() {
 				name,
 				...value,
 			})),
-			{space: '\t'}
-		)
+			{space: '\t'},
+		),
 	);
 }

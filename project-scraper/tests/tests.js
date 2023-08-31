@@ -24,5 +24,5 @@ const types = ['dweet', 'post'];
 types.every(
 	type =>
 		oldProjects.filter(p => p.type === type).length <=
-		projects.filter(p => p.type === type).length
+		projects.filter(p => p.type === type).length,
 );

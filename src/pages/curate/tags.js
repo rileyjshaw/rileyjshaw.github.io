@@ -26,7 +26,7 @@ function Project({
 		function handleCreate(inputValue) {
 			const readable = prompt(
 				'Input the tag’s readable name:',
-				inputValue
+				inputValue,
 			);
 			let name;
 			while (
@@ -35,16 +35,16 @@ function Project({
 			) {
 				name = prompt(
 					`Input the “${readable}” tag’s unique key:`,
-					inputValue.toLowerCase().replace(/\W/g, '')
+					inputValue.toLowerCase().replace(/\W/g, ''),
 				);
 			}
 			const isPublic = confirm(
-				'Do you want to make this public-facing?'
+				'Do you want to make this public-facing?',
 			);
 			const description = prompt(`Describe the “${readable}” tag:`);
 			addNewTag(name, {readable, isPublic, description});
 		},
-		[tagOptions, addNewTag]
+		[tagOptions, addNewTag],
 	);
 
 	const [oldTagOptions, newTagOptions] = tagOptions;
@@ -93,7 +93,7 @@ function CurateTags() {
 	const [projects, setProjects] = useState(
 		allProjects
 			.filter(({type}) => type !== 'post' && type !== 'icon')
-			.map((p, i) => ({...p, initialIndex: i}))
+			.map((p, i) => ({...p, initialIndex: i})),
 	);
 	const [isLoading, setIsLoading] = useState(false);
 	const [tags, setTags] = useState(null);
@@ -112,7 +112,7 @@ function CurateTags() {
 
 		const lastTagCreatedAt = Object.values(tags.tagInfo).reduce(
 			(mostRecent, {created}) => Math.max(mostRecent, created),
-			0
+			0,
 		);
 		const untaggedProjects = projects
 			.map(p => ({
@@ -136,7 +136,7 @@ function CurateTags() {
 				acc[isNew ? 1 : 0].push(option);
 				return acc;
 			},
-			[[], []]
+			[[], []],
 		);
 
 		return [tagOptions, untaggedProjects.length, project];
@@ -149,7 +149,7 @@ function CurateTags() {
 			initialTags.map(key => ({
 				label: tags.tagInfo[key].readable,
 				value: key,
-			}))
+			})),
 		);
 	}, [projectNode]);
 
@@ -159,12 +159,12 @@ function CurateTags() {
 			setProjects(oldProjects => {
 				const newProjects = [...oldProjects];
 				newProjects[projectNode.initialIndex].tags = newTags.map(
-					t => t.value
+					t => t.value,
 				);
 				return newProjects;
 			});
 		},
-		[projectNode]
+		[projectNode],
 	);
 
 	const addNewTag = useCallback(
@@ -186,7 +186,7 @@ function CurateTags() {
 			]);
 			setIsLoading(false);
 		},
-		[selectedTags, setTags, updateSelectedTags]
+		[selectedTags, setTags, updateSelectedTags],
 	);
 
 	const saveProjectTags = useCallback(
@@ -198,21 +198,21 @@ function CurateTags() {
 				body: JSON.stringify(
 					selectedTags
 						.map(t => t.value)
-						.sort((a, b) => a.localeCompare(b))
+						.sort((a, b) => a.localeCompare(b)),
 				),
 			});
 			const newTags = await response.json();
 			setTags(newTags);
 			setIsLoading(false);
 		},
-		[projectNode, selectedTags]
+		[projectNode, selectedTags],
 	);
 
 	const skipProject = useCallback(
 		function skipProject() {
 			setSkipIndex(i => i + 1);
 		},
-		[setSkipIndex]
+		[setSkipIndex],
 	);
 
 	return (

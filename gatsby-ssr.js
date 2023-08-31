@@ -33,8 +33,8 @@ const colorObjectToCss = (colorObject, rgbWrap) =>
 				([variant, value]) =>
 					`${cssColorProperty(name, variant)}: ${
 						rgbWrap ? `rgb(${value})` : value
-					};`
-			)
+					};`,
+			),
 		)
 		.join('\n\t');
 
@@ -71,7 +71,7 @@ html:not([data-theme="light"]) {
 }
 }`,
 			}}
-		/>
+		/>,
 	);
 
 	setPreBodyComponents(
@@ -80,7 +80,7 @@ html:not([data-theme="light"]) {
 			dangerouslySetInnerHTML={{
 				__html: execString_manageInitialTheme,
 			}}
-		/>
+		/>,
 	);
 
 	setPostBodyComponents(
@@ -89,7 +89,7 @@ html:not([data-theme="light"]) {
 			dangerouslySetInnerHTML={{
 				__html: `console.log(\`${loveYou}\`)`,
 			}}
-		/>
+		/>,
 	);
 };
 
