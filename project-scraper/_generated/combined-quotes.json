@@ -14,6 +14,13 @@
 		"uid": "ART_MONEY_TECH"
 	},
 	{
+		"author": "Andrew “bunnie” Huang",
+		"cite": "https://nostarch.com/hardwarehackerpaperback",
+		"content": "This rise in repair culture will create a demand for schematics and spare parts that in turn facilitates the growth of open ecosystems and small businesses. Personally, I’m looking forward to the return of artisan engineering, where elegance, optimization, and balance are valued over feature creep, and where I can use the same tool for a decade and not be viewed as an anachronism.",
+		"source": "The Hardware Hacker",
+		"uid": "ARTISAN_ENGINEERING"
+	},
+	{
 		"author": "Walter Benjamin",
 		"cite": "https://www.marxists.org/reference/subject/philosophy/works/ge/benjamin.htm",
 		"content": "For the first time in world history, mechanical reproduction emancipates the work of art from its parasitical dependence on ritual. To an ever greater degree the work of art reproduced becomes the work of art designed for reproducibility. From a photographic negative, for example, one can make any number of prints; to ask for the “authentic” print makes no sense. But the instant the criterion of authenticity ceases to be applicable to artistic production, the total function of art is reversed. Instead of being based on ritual, it begins to be based on another practice – politics.",
@@ -123,6 +130,13 @@
 		"content": "But time and again, the conversation turned away from how to make the program useful, and toward that word I find so empty: “delight.”",
 		"source": "Technically Wrong",
 		"uid": "EMPTY_DELIGHT"
+	},
+	{
+		"author": "Andrew “bunnie” Huang",
+		"cite": "https://nostarch.com/hardwarehackerpaperback",
+		"content": "If you can’t hack it, you don’t own it.",
+		"source": "The Hardware Hacker",
+		"uid": "ETHOS"
 	},
 	{
 		"author": "Seymour Papert",
@@ -375,6 +389,13 @@
 		"uid": "OLD_SOFTWARE"
 	},
 	{
+		"author": "Andrew “bunnie” Huang",
+		"cite": "https://nostarch.com/hardwarehackerpaperback",
+		"content": "In the beginning, hardware was open.",
+		"source": "The Hardware Hacker",
+		"uid": "OPEN_HARDWARE"
+	},
+	{
 		"author": "Audrey Watters",
 		"cite": "http://monsters.hackeducation.com/",
 		"content": "Openwashing: n., having an appearance of open-source and open-licensing for marketing purposes, while continuing proprietary practices.",
@@ -394,6 +415,13 @@
 		"content": "individualization is a key factor in the contemporary rhetoric of creativity. But the rhetoric demands even more; you have to be a particular kind of individual.",
 		"source": "Against Creativity",
 		"uid": "PARTICULAR_KIND_OF_INDIVIDUAL"
+	},
+	{
+		"author": "Elaine Katzenberger",
+		"cite": "https://www.radiotopia.fm/showcase/ways-of-hearing",
+		"content": "Most of the time the world doesn’t accommodate human desire, and so you have to accommodate yourself to things. But what digital means is parting the waters all the time. And all you get is your preconceived experience.",
+		"source": "Ways of Hearing, Episode 5",
+		"uid": "PARTING_WATERS"
 	},
 	{
 		"author": "Kai Krause",
