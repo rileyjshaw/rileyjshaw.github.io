@@ -1,4 +1,5 @@
 import PageHeader from '../components/page-header';
+import NotFoundPage from '../pages/404';
 import {STORAGE_KEYS} from '../util/constants';
 import {getNextHoliday} from '../util/holidays';
 import {useIdle, useInterval, useStickyState} from '../util/hooks';
@@ -10,7 +11,7 @@ import './layout.css';
 import MouseTracker from './mouse-tracker';
 import {SettingsContext} from './settings-provider';
 import cn from 'cnz';
-import React, {useContext, useState} from 'react';
+import React, {useContext, useState, Children} from 'react';
 
 const PAGE_CLASSES = {
 	'/': 'index-page',
@@ -45,11 +46,20 @@ const Layout = ({children, location}) => {
 	let {pathname} = location;
 	if (pathname.endsWith('/')) pathname = pathname.slice(0, -1);
 
-	const isBlogPost = pathname.match(/\/blog\/.*[^0-9/]/);
-	if (pathname.startsWith('/blog'))
+	let is404;
+	try {
+		is404 = Children.only(children).type === NotFoundPage;
+	} catch (e) {
+		is404 = false;
+	}
+
+	const isBlogPost = !is404 && pathname.match(/\/blog\/.*[^0-9/]/);
+	if (!is404 && pathname.startsWith('/blog'))
 		pathname = isBlogPost ? '/blog/post' : '/blog';
 
-	const showPageHeader = !(isBlogPost || pathname.startsWith('/curate/'));
+	const showPageHeader =
+		is404 || !(isBlogPost || pathname.startsWith('/curate/'));
+
 	return (
 		<div
 			className={cn(
