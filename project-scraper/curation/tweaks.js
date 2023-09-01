@@ -275,7 +275,7 @@ export function runTweaks() {
 				content: content && unescape(stripOuterQuotes(content)),
 				[quoteAuthors.includes(source) ? 'author' : 'source']:
 					source &&
-					// Discard quotes around source names, since big-quote.js adds those.
+					// Discard quotes around source names, since BigQuote.jsx adds those.
 					unescape(stripOuterQuotes(source)),
 			})),
 		);

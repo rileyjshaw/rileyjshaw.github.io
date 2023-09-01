@@ -1,0 +1,55 @@
+.pick-one {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+.pick-one p {
+	font: inherit;
+	margin: 0 0.5em;
+}
+.pick-one .question {
+	align-items: center;
+	display: flex;
+	font: 900 5vh var(--fh);
+	height: 0;
+	line-height: 1.2;
+	min-height: 0;
+	transition: min-height 1s ease-in-out;
+	will-change: min-height;
+}
+.pick-one.with-question .question {
+	min-height: 15vh;
+}
+.pick-one .choices-container {
+	align-items: center;
+	display: flex;
+	flex-grow: 1;
+	flex-wrap: wrap;
+	font: 900 5vw var(--fh);
+	justify-content: center;
+	width: 100vw;
+}
+/* flex-basis: $ASPECT_W / ($ASPECT_W + $ASPECT_H) * height
+   Using a 4:3 maximum aspect ratio. */
+.pick-one .half {
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	flex-basis: 57.1429vh;
+	flex-grow: 1;
+	justify-content: center;
+}
+.pick-one.with-question .half {
+	flex-basis: 48.5714vh;
+}
+.pick-one .half.chosen {
+	animation: bulge 0.2s;
+}
+@keyframes bulge {
+	from {
+		font-size: 1em;
+	}
+	to {
+		font-size: 1.1em;
+	}
+}

@@ -1,5 +1,5 @@
-import Layout from './src/components/layout';
-import SettingsProvider from './src/components/settings-provider';
+import Layout from './src/components/Layout';
+import SettingsProvider from './src/components/SettingsProvider';
 import {cssColorProperty} from './src/util/_util';
 import {
 	DIRECT_COLORS,

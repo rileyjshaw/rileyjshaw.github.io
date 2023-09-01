@@ -4,7 +4,7 @@ title: 'Khan Academy: a new employee’s primer'
 tags: ['education', 'life', 'web']
 ---
 
-import BlogBanner, {BlogBannerGroup} from 'components/blog-banner';
+import BlogBanner, {BlogBannerGroup} from 'components/BlogBanner';
 
 <BlogBannerGroup>
 <BlogBanner type="note">

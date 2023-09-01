@@ -1,6 +1,6 @@
-import AutoLink from './src/components/auto-link';
-import Layout from './src/components/layout';
-import SettingsProvider from './src/components/settings-provider';
+import AutoLink from './src/components/AutoLink';
+import Layout from './src/components/Layout';
+import SettingsProvider from './src/components/SettingsProvider';
 import './src/global.css';
 import {MDXProvider} from '@mdx-js/react';
 import 'prismjs/themes/prism-okaidia.css';

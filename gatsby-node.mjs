@@ -15,8 +15,8 @@ export const createPages = async ({actions, graphql, reporter}) => {
 		redirectInBrowser: true,
 	});
 
-	const blogListTemplate = path.resolve('./src/templates/blog-list.js');
-	const blogPostTemplate = path.resolve('./src/templates/post.js');
+	const blogListTemplate = path.resolve('./src/templates/BlogList.jsx');
+	const blogPostTemplate = path.resolve('./src/templates/Post.jsx');
 
 	// TODO(riley): Import this query from a common place.
 	const result = await graphql(`
