@@ -169,14 +169,6 @@ export default {
 				gatsbyRemarkPlugins: [
 					// TODO: Replace this with a generic linked header component.
 					'gatsby-remark-autolink-headers',
-					// TODO: “In some cases, like gatsby-remark-prismjs, it makes more sense to use a library like prism-react-renderer to render codeblocks using a React component.”
-					// https://www.gatsbyjs.com/plugins/gatsby-plugin-mdx/#gatsby-remark--plugins
-					{
-						resolve: 'gatsby-remark-prismjs',
-						options: {
-							noInlineHighlight: true,
-						},
-					},
 					'gatsby-remark-copy-linked-files',
 					{
 						resolve: 'gatsby-remark-images',
