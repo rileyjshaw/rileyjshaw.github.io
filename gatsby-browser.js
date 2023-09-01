@@ -1,13 +1,14 @@
 import AutoLink from './src/components/AutoLink';
+import CodeBlock from './src/components/CodeBlock';
 import Layout from './src/components/Layout';
 import SettingsProvider from './src/components/SettingsProvider';
 import './src/global.css';
 import {MDXProvider} from '@mdx-js/react';
-import 'prismjs/themes/prism-okaidia.css';
 import React from 'react';
 
 const mdxComponents = {
 	a: AutoLink,
+	code: CodeBlock,
 };
 
 export const wrapRootElement = ({element}) => (
