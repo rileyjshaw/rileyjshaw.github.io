@@ -74,9 +74,9 @@
 	font-style: italic;
 }
 .blog-post-content table {
-	margin: 1.5em 24px;
-	border-spacing: 0;
 	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 1.5em 24px;
 	text-align: left;
 }
 .blog-post-content tr:nth-child(2n) {
@@ -85,8 +85,8 @@
 .blog-post-content th,
 .blog-post-content td {
 	border: 1px solid var(--color-fg-mute);
-	padding: 6px 24px 6px 13px;
 	margin: 0;
+	padding: 6px 24px 6px 13px;
 }
 .blog-post-content cite {
 	display: block;
