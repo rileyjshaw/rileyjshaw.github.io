@@ -1,4 +1,4 @@
-import {useWindowSize} from '../util/hooks';
+import {useWindowSize} from '../../util/hooks';
 import './Fit.css';
 import React, {useState, useEffect, useRef} from 'react';
 

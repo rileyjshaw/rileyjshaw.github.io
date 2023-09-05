@@ -12,6 +12,7 @@ export default ({children, text, scale = 100, className = '', ...props}) => {
 		display: 'flex',
 		justifyContent: 'space-between',
 		textAlign: 'center',
+		lineHeight: 1,
 		...props.style,
 	};
 	return (

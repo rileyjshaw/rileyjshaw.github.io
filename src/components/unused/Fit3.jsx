@@ -1,5 +1,5 @@
 // transform: scale
-import {useRect} from '../util/hooks';
+import {useRect} from '../../util/hooks';
 import './Fit3.css';
 import React from 'react';
 
