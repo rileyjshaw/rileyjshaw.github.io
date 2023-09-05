@@ -555,5 +555,10 @@
 		"author": "Andrew “bunnie” Huang",
 		"source": "The Hardware Hacker",
 		"cite": "https://nostarch.com/hardwarehackerpaperback"
+	},
+	"ART_MACHINE": {
+		"content": "The idea becomes the machine that makes the art.",
+		"author": "Sol LeWitt",
+		"source": "Paragraphs on Conceptual Art"
 	}
 }
