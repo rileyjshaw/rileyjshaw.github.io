@@ -7,7 +7,7 @@
   "dependencies": {
     "@mdx-js/react": "^2.3.0",
     "cnz": "^1.0.6",
-    "gatsby": "^5.12.3",
+    "gatsby": "^5.12.4",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-feed": "^5.12.0",
     "gatsby-plugin-manifest": "^5.12.0",
@@ -34,10 +34,10 @@
     "tone": "^14.7.77"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.11",
-    "@babel/node": "^7.22.10",
+    "@babel/core": "^7.22.20",
+    "@babel/node": "^7.22.19",
     "@babel/plugin-proposal-optional-chaining": "^7.21.0",
-    "@babel/register": "^7.22.5",
+    "@babel/register": "^7.22.15",
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
     "@svgr/cli": "^6.5.1",
@@ -54,7 +54,7 @@
     "gh-pages": "^6.0.0",
     "husky": "^8.0.3",
     "json-stable-stringify": "^1.0.2",
-    "postcss": "^8.4.29",
+    "postcss": "^8.4.30",
     "prettier": "^3.0.3",
     "request": "^2.88.2",
     "stylelint": "^15.10.3",
