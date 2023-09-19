@@ -1,5 +1,3 @@
-import Layout from './src/components/Layout';
-import SettingsProvider from './src/components/SettingsProvider';
 import {cssColorProperty} from './src/util/_util';
 import {
 	DIRECT_COLORS,
@@ -9,13 +7,7 @@ import {
 import {applyTheme} from './src/util/util';
 import React from 'react';
 
-export const wrapRootElement = ({element}) => (
-	<SettingsProvider>{element}</SettingsProvider>
-);
-
-export const wrapPageElement = ({props, element}) => (
-	<Layout {...props}>{element}</Layout>
-);
+export * from './wrap-root-elements';
 
 const execString_manageInitialTheme = `(function() {
 	var stored = JSON.parse(
