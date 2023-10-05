@@ -2,6 +2,7 @@
 import allProjectsQuery from '../util/all-projects-query';
 import {STORAGE_KEYS} from '../util/constants';
 import contentTypes from '../util/ContentTypes';
+import {capitalize} from '../util/util';
 import {useViewport, useStickyState} from '../util/hooks';
 import sortingMethods, {shuffle} from '../util/sorting-methods';
 import ContentGrid from './ContentGrid';
@@ -146,8 +147,7 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 											onChange={() => setSortIdx(i)}
 										/>
 										<label htmlFor={`labs-sort-${title}`}>
-											{title.toUpperCase().slice(0, 1) +
-												title.slice(1)}
+											{capitalize(title)}
 										</label>
 									</Fragment>
 								))}

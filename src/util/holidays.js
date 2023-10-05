@@ -11,8 +11,9 @@ const holidays = [
 		link: 'https://deletionday.com',
 	},
 	{
-		name: 'Riley’s birthday',
+		name: 'my birthday',
 		date: [9, 5],
+		specialMessages: ['It’s my birthday! 🎈'],
 	},
 	{
 		name: 'Halloween',

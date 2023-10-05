@@ -3,6 +3,7 @@ import NotFoundPage from '../pages/404';
 import {STORAGE_KEYS} from '../util/constants';
 import {getNextHoliday} from '../util/holidays';
 import {useIdle, useInterval, useStickyState} from '../util/hooks';
+import {capitalize} from '../util/util';
 import AutoLink from './AutoLink';
 import Banner from './Banner';
 import Blocker from './Blocker';
@@ -87,18 +88,36 @@ const Layout = ({children, location}) => {
 						style={activeHoliday.style ?? {}}
 					>
 						<p>
-							{activeHoliday.daysUntil > 0 &&
-								`${activeHoliday.daysUntil} day${
-									activeHoliday.daysUntil === 1 ? '' : 's'
-								} until `}
-							{activeHoliday.link ? (
-								<AutoLink to={activeHoliday.link}>
-									{activeHoliday.name}
-								</AutoLink>
-							) : (
-								activeHoliday.name
-							)}
-							{activeHoliday.daysUntil === 0 && ' is today!'}
+							{activeHoliday.specialMessages?.[
+								activeHoliday.daysUntil
+							] ||
+								`${
+									activeHoliday.daysUntil > 0
+										? `${activeHoliday.daysUntil} day${
+												activeHoliday.daysUntil === 1
+													? ''
+													: 's'
+										  } until `
+										: ''
+								}${
+									activeHoliday.link ? (
+										<AutoLink to={activeHoliday.link}>
+											{activeHoliday.daysUntil === 0
+												? capitalize(
+														activeHoliday.name,
+												  )
+												: activeHoliday.name}
+										</AutoLink>
+									) : activeHoliday.daysUntil === 0 ? (
+										capitalize(activeHoliday.name)
+									) : (
+										activeHoliday.name
+									)
+								}${
+									activeHoliday.daysUntil === 0
+										? ' is today!'
+										: '.'
+								}`}
 						</p>
 					</Banner>
 				)}
