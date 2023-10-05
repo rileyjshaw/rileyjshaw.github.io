@@ -5,6 +5,7 @@ import {
 	D30U30,
 	KhanAcademy,
 	Listn,
+	MischiefMakers,
 	Misery,
 	Mozilla,
 	RecurseCenter,
@@ -35,6 +36,7 @@ function AboutPage() {
 					<h2>Where I’ve been</h2>
 					<ul className="timeline">
 						<Misery />
+						<MischiefMakers />
 						<Mozilla />
 						<RepairMatters />
 						<SFPC />

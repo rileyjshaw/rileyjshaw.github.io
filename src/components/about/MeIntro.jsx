@@ -7,10 +7,8 @@ function MeIntro() {
 			I am a programmer and interface designer. My work has been featured
 			on NPR, the CBC, HuffPost, Canadian Business, and elsewhere. I
 			volunteer at{' '}
-			<AutoLink to="https://repairmatters.ca/">Repair Matters</AutoLink>{' '}
-			and{' '}
-			<AutoLink to="https://www.canadalearningcode.ca/">
-				Canada Learning Code
+			<AutoLink to="https://mischiefmakers.ca/">
+				Mischief Makers
 			</AutoLink>
 			, and am slowly developing my thoughts on{' '}
 			<AutoLink to="https://github.com/miseryco/curriculum">

@@ -112,6 +112,20 @@ export function Listn() {
 	</Job>;
 }
 
+export function MischiefMakers() {
+	return (
+		<Job at="Mischief Makers" isCurrent={true}>
+			<p>
+				I volunteer at{' '}
+				<AutoLink to="https://mischiefmakers.ca/">
+					Mischief Makers
+				</AutoLink>
+				, a creative space for kids in Toronto.
+			</p>
+		</Job>
+	);
+}
+
 export function Misery() {
 	return (
 		<Job at="Misery & Co." role="Founder" isCurrent={true}>
