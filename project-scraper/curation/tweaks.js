@@ -120,13 +120,14 @@ const featuredProjects = [
 	// 'video page',
 ];
 
+const excludedProjectIds = ['ICON_5707115'];
 const tweaksList = {
 	DWEET_15311: {
 		tags: [],
 		coolness: 41,
 		transformers: [],
 	},
-	ICON_5707115: {
+	ICON_6077121: {
 		tags: [],
 		coolness: 60,
 		transformers: [],
@@ -182,6 +183,7 @@ export function runTweaks() {
 		...scrapedProjects,
 		...listedProjects
 			.filter(n => !n.todo)
+			.filter(n => !excludedProjectIds.includes(n.uid))
 			.map(p => {
 				const {description, ...rest} = p;
 				return {

@@ -7,6 +7,12 @@
 		"uid": "ACTUAL_DRAGON"
 	},
 	{
+		"author": "Sol LeWitt",
+		"content": "The idea becomes the machine that makes the art.",
+		"source": "Paragraphs on Conceptual Art",
+		"uid": "ART_MACHINE"
+	},
+	{
 		"author": "Sarah Groff Hennigh-Palermo",
 		"cite": "http://art.sarahghp.com/art-not-rd/",
 		"content": "Arts institutions need money and money comes with ideology. Money wants to know it is improving the world and engaging its audience. Money wants goals and numbers. This is the technological ideology. And this ideology has no space for a painting, a drawing, a video or a hole in the ceiling that you visit day after day, puzzling it out in different moods and lights. No. Look at something new. Look at something good for you. Contemplation is only acceptable in the form meditation, which has been proven to lower stress and make you more productive, with fewer expensive doctor visits.",
@@ -47,6 +53,11 @@
 		"content": "Books will soon be obsolete in the public schools.",
 		"source": "The New York Dramatic Mirror, 1913",
 		"uid": "BOOKS_OBSOLETE"
+	},
+	{
+		"author": "Pablo Picasso",
+		"content": "Calculators can only give answers.",
+		"uid": "CALCULATOR"
 	},
 	{
 		"author": "Richard Brautigan, while poet-in-residence at the California Institute of Technology (1967)",
