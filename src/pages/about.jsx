@@ -67,11 +67,9 @@ function AboutPage() {
 						my data.
 					</p>
 					<p>
-						If you like the idea of website-as-API,{' '}
-						<AutoLink to="/subscribe">
-							I have some feeds that you can subscribe to
-						</AutoLink>
-						.
+						If you like the idea of website-as-API, I have{' '}
+						<AutoLink to="/subscribe">specific feeds</AutoLink>{' '}
+						that you can subscribe to.
 					</p>
 					<p>
 						To respect your privacy, this site does not, and will
