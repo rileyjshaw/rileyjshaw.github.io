@@ -58,7 +58,8 @@ function AboutPage() {
 					<h2>About this website</h2>
 					<p>
 						This website aggregates content that I’ve littered
-						across the Internet. I wrote a{' '}
+						across the Internet; think of it like a digital
+						landfill. I wrote a{' '}
 						<AutoLink to="https://rileyjshaw.commit--blog.com/rileyjshaw/rileyjshaw-new/2488bcd5e5610f692773e7815fabdb247ece55f5">
 							small utility to scrape the web
 						</AutoLink>{' '}

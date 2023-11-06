@@ -13,7 +13,6 @@ function SEO({description = '', title: pageTitle, children}) {
 			site {
 				siteMetadata {
 					title
-					titlePostfix
 					description
 					author
 				}
@@ -21,10 +20,7 @@ function SEO({description = '', title: pageTitle, children}) {
 		}
 	`);
 
-	const title = `${pageTitle || site.siteMetadata.title} · ${
-		site.siteMetadata.titlePostfix
-	}`;
-	const metaTitle = `${pageTitle ? `${pageTitle} · ` : ''}${
+	const title = `${pageTitle ? `${pageTitle} · ` : ''}${
 		site.siteMetadata.title
 	}`;
 	const metaDescription = description || site.siteMetadata.description;
@@ -33,10 +29,10 @@ function SEO({description = '', title: pageTitle, children}) {
 		<>
 			<title>{title}</title>
 			<meta name="description" content={metaDescription} />
-			<meta name="og:title" content={metaTitle} />
+			<meta name="og:title" content={title} />
 			<meta name="og:description" content={metaDescription} />
 			<meta name="og:type" content="website" />
-			<meta name="twitter:title" content={metaTitle} />
+			<meta name="twitter:title" content={title} />
 			<meta name="twitter:description" content={metaDescription} />
 			<meta name="twitter:card" content="summary" />
 			<meta name="twitter:creator" content={site.siteMetadata.author} />

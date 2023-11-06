@@ -35,8 +35,7 @@ const rssify = query => {
 
 export default {
 	siteMetadata: {
-		title: 'The Digital Landfill of Riley J. Shaw',
-		titlePostfix: 'rileyjshaw',
+		title: 'Riley J. Shaw',
 		description:
 			'Riley J. Shaw is a programmer and interface designer. Focused on accessibility, mentorship, and community, Riley questions who “digital literacy” serves.',
 		author: '@rileyjshaw',
@@ -118,7 +117,7 @@ export default {
 		{
 			resolve: 'gatsby-plugin-manifest',
 			options: {
-				name: 'The digital landfill of rileyjshaw',
+				name: 'The personal website of rileyjshaw',
 				short_name: 'rileyjshaw',
 				start_url: '/',
 				background_color: '#4ccbab',
