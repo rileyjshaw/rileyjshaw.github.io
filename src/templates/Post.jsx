@@ -13,14 +13,6 @@ export default function Template({data, children}) {
 	const {fields} = mdx;
 	return (
 		<>
-			<header className="top-nav" role="banner">
-				<nav role="navigation">
-					<h1>
-						<Link to="/">Riley Shaw</Link>
-					</h1>{' '}
-					/ <Link to="/blog">Blog</Link> / {fields.title}
-				</nav>
-			</header>
 			<main>
 				<article className="blog-post-content" role="article">
 					<header>

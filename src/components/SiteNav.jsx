@@ -3,7 +3,7 @@ import {useKeyPresses} from '../util/hooks';
 import './SiteNav.css';
 import ThemeToggleButton from './ThemeToggleButton';
 import {Link} from 'gatsby';
-import React, {useMemo, useState} from 'react';
+import React, {useLayoutEffect, useMemo, useState} from 'react';
 
 const links = [
 	['/', 'Home'],
@@ -15,6 +15,7 @@ const links = [
 
 export default ({location}) => {
 	const [open, setOpen] = useState(false);
+
 	const keyHandlers = useMemo(
 		() => ({
 			Escape: {onDown: () => setOpen(false)},
@@ -22,6 +23,21 @@ export default ({location}) => {
 		[setOpen],
 	);
 	useKeyPresses(keyHandlers);
+
+	// Prevent scrolling when the menu is open.
+	useLayoutEffect(() => {
+		if (open) {
+			document.body.style.position = 'fixed';
+			document.body.style.top = `-${window.scrollY}px`;
+			document.body.style.width = '100%';
+		} else {
+			const scrollY = document.body.style.top;
+			document.body.style.position = '';
+			document.body.style.top = '';
+			window.scrollTo(0, parseInt(scrollY || '0') * -1);
+		}
+	}, [open]);
+
 	return (
 		<nav className="site-nav">
 			<button
@@ -59,11 +75,6 @@ export default ({location}) => {
 						<Link to={href}>{name}</Link>
 					</li>
 				))}
-				<li
-					aria-hidden="true"
-					className="underline"
-					key="underline"
-				></li>
 				<li className="settings">
 					<ThemeToggleButton uid="navThemeToggle" />
 				</li>

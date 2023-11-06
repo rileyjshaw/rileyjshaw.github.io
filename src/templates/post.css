@@ -1,12 +1,3 @@
-/* TODO(riley): Make this standard across pages, maybe? */
-.top-nav {
-	margin-top: var(--font-scale-2);
-}
-.top-nav h1 {
-	display: inline;
-	font: inherit;
-	font-weight: 900;
-}
 .blog-post-page .site-content {
 	font-size: var(--font-scale-1);
 	margin: auto;

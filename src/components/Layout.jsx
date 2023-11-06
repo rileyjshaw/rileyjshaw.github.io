@@ -58,8 +58,7 @@ const Layout = ({children, location}) => {
 	if (!is404 && pathname.startsWith('/blog'))
 		pathname = isBlogPost ? '/blog/post' : '/blog';
 
-	const showPageHeader =
-		is404 || !(isBlogPost || pathname.startsWith('/curate/'));
+	const showPageHeader = is404 || !pathname.startsWith('/curate/');
 
 	return (
 		<div
