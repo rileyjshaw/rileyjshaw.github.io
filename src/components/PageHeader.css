@@ -17,6 +17,7 @@
 	margin: 0;
 }
 .page-header a {
+	color: var(--color-fg);
 	text-decoration: none;
 }
 .page-header h1 {
@@ -30,9 +31,6 @@
 .page-header .subpage {
 	font-weight: 400;
 	padding-left: 0.33em;
-}
-.page-header .subpage a {
-	color: var(--color-fg);
 }
 .page-header .subpage a:hover,
 .page-header .subpage a:focus {
