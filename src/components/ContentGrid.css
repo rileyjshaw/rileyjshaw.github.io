@@ -14,6 +14,7 @@
 }
 .project-explorer .content-grid {
 	padding: var(--grid-gap) 0;
+	grid-column: left-column / right-column;
 }
 .content-grid.masonry {
 	grid-auto-rows: 100px;

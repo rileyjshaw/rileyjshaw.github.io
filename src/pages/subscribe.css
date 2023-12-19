@@ -1,11 +1,3 @@
-/* Copied from post template. */
-.subscribe-page .inner {
-	font-size: var(--font-scale-1);
-	margin: auto;
-	max-width: 90%;
-	padding: 60px 0;
-	width: 36em;
-}
 .subscribe-page hr {
 	margin: var(--font-scale-4) 0;
 }

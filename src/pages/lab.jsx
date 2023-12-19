@@ -12,15 +12,17 @@ const LabPage = () => {
 	const [isFullyLoaded, setIsFullyLoaded] = useState(false);
 
 	return (
-		<>
-			<ProjectExplorer setIsFullyLoaded={setIsFullyLoaded} />
+		<main>
+			<div className="page-content">
+				<ProjectExplorer setIsFullyLoaded={setIsFullyLoaded} />
+			</div>
 			{isFullyLoaded && (
 				<>
 					<BigQuote quoteId="VOLTAIRE_BORING" />
 					<GoUp />
 				</>
 			)}
-		</>
+		</main>
 	);
 };
 

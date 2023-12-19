@@ -1,38 +1,39 @@
 .page-header {
 	align-items: center;
 	color: var(--color-fg);
-	display: flex;
+	display: grid;
+	grid-column: left-column / span 2;
+	grid-template-columns: subgrid;
 	font-family: var(--fh);
-	justify-content: space-between;
-	margin-bottom: var(--font-scale-6);
 	margin-top: var(--font-scale-1);
-	padding: 0 var(--half-grid-gap);
+	padding-bottom: 60px;
+	height: 120px;
+}
+.page-header .home-link {
+	display: block;
+	position: relative;
+	height: 100%;
+}
+.page-header .home-icon {
+	display: block;
+	position: absolute;
+	top: 25%;
+	left: 0;
+	height: 50%;
 }
 .page-header .title {
-	align-items: baseline;
-	display: flex;
 	font: inherit;
 	font-size: var(--font-scale-2);
-	font-weight: 900;
 	margin: 0;
+	position: relative;
+	top: 1px;
 }
 .page-header a {
 	color: var(--color-fg);
 	text-decoration: none;
 }
-.page-header h1 {
-	margin: 0;
-}
-.page-header h1,
-.page-header .subpage {
-	display: inline;
-	font: inherit;
-}
-.page-header .subpage {
-	font-weight: 400;
-	padding-left: 0.33em;
-}
-.page-header .subpage a:hover,
-.page-header .subpage a:focus {
-	color: var(--color-blue);
+@media screen and (max-width: 1000px) {
+	.page-header .title {
+		text-align: center;
+	}
 }

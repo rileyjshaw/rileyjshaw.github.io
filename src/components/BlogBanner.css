@@ -49,22 +49,31 @@
 .blog-banner-content p + p {
 	margin-top: 1em;
 }
-/* TODO(riley): This is for multi-banner alignment - see
-   /blog/khan-academy-primer. Once subgrid lands, set .blog-banner-group to
-   display: grid so the titles column is as narrow as it can be. As it is now,
-   “Note” banners look a lot better with this rule off.
-*/
+.blog-banner-group {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	margin-bottom: 2em;
+}
+.blog-banner-group .blog-banner {
+	display: grid;
+	grid-template-columns: subgrid;
+	grid-column: 1 / -1;
+	margin-bottom: 0;
+}
 .blog-banner-group .blog-banner-title {
-	min-width: 20%;
+	grid-column: 1;
 }
 @media only screen and (width <= 800px) {
 	.blog-banner {
 		flex-direction: column;
 		padding: 1em 1.5em;
 	}
+	.blog-banner-group .blog-banner {
+		display: block;
+	}
 	.blog-banner-title {
 		border: 0;
-		margin-bottom: 1em;
+		margin-bottom: 0;
 		text-decoration: underline;
 	}
 }

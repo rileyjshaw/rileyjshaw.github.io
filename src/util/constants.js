@@ -134,6 +134,17 @@ export {ABSTRACT_COLORS, ABSTRACT_COLOR_PROPERTIES};
 export const isRenderingOnServer = typeof window === 'undefined';
 export const isRenderingOnClient = !isRenderingOnServer;
 
+// path, class, link name, title
+export const SITE_PAGES = [
+	['', 'index-page', 'Home', 'Riley J. Shaw'],
+	['about', 'about-page', 'About', 'About'],
+	['lab', 'lab-page', 'Lab', 'Lab'],
+	['blog', 'blog-page', 'Blog', 'Blog'],
+	['blog/post', 'blog-post-page', null, 'Blog'],
+	['subscribe', 'subscribe-page', 'Subscribe', 'Subscribe'],
+	['uses', 'uses-page', null, 'Inventory'],
+];
+
 const _storageKeyPrefix = 'RJS';
 export const STORAGE_KEYS = Object.entries({
 	theme: 'THEME',

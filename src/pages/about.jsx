@@ -27,9 +27,9 @@ export function Head(props) {
 
 function AboutPage() {
 	return (
-		<main className="about-page">
-			<div className="about-page-content">
-				<div className="about-me blog-post-content">
+		<main>
+			<div className="page-content">
+				<div className="blog-post-content">
 					<MeIntro />
 					<MeRest />
 					{/* TODO(riley): <UpTo /> */}

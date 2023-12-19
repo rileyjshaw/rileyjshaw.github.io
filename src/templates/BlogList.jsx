@@ -42,8 +42,8 @@ const BlogList = ({data, pageContext: {currentPage, numPages}}) => {
 		));
 
 	return (
-		<>
-			<main className="blog-list">
+		<main className="blog-list">
+			<div className="page-content">
 				<ul className="blog-posts">
 					{posts.map(post => {
 						const uid = post.uid || post.fields?.uid;
@@ -99,7 +99,6 @@ const BlogList = ({data, pageContext: {currentPage, numPages}}) => {
 						);
 					})}
 				</ul>
-				{/* TODO(riley): Consider replacing arrows with - and + in final design. */}
 				<div className="page-navigation">
 					{!isFirst && (
 						<Link to={prevPage} rel="prev">
@@ -113,8 +112,8 @@ const BlogList = ({data, pageContext: {currentPage, numPages}}) => {
 						</Link>
 					)}
 				</div>
-			</main>
-		</>
+			</div>
+		</main>
 	);
 };
 

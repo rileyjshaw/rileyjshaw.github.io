@@ -1,6 +1,7 @@
 import PageHeader from './PageHeader';
+import SiteNav from './SiteNav';
 import NotFoundPage from '../pages/404';
-import {STORAGE_KEYS} from '../util/constants';
+import {SITE_PAGES, STORAGE_KEYS} from '../util/constants';
 import {getNextHoliday} from '../util/holidays';
 import {useIdle, useInterval, useStickyState} from '../util/hooks';
 import {capitalize} from '../util/util';
@@ -9,18 +10,9 @@ import Banner from './Banner';
 import Blocker from './Blocker';
 import ClientOnly from './ClientOnly';
 import './layout.css';
-import MouseTracker from './MouseTracker';
 import {SettingsContext} from './SettingsProvider';
 import cn from 'cnz';
 import React, {useContext, useState, Children} from 'react';
-
-const PAGE_CLASSES = {
-	'/': 'index-page',
-	'/about': 'about-page',
-	'/blog': 'blog-page',
-	'/blog/post': 'blog-post-page',
-	'/subscribe': 'subscribe-page',
-};
 
 const Layout = ({children, location}) => {
 	const {theme, reducedMotion, contrastPreference} =
@@ -45,7 +37,8 @@ const Layout = ({children, location}) => {
 	}, 60000);
 
 	let {pathname} = location;
-	if (pathname.endsWith('/')) pathname = pathname.slice(0, -1);
+	if (pathname.endsWith('/')) pathname = pathname.slice(1, -1);
+	else pathname = pathname.slice(1);
 
 	let is404;
 	try {
@@ -54,9 +47,9 @@ const Layout = ({children, location}) => {
 		is404 = false;
 	}
 
-	const isBlogPost = !is404 && pathname.match(/\/blog\/.*[^0-9/]/);
-	if (!is404 && pathname.startsWith('/blog'))
-		pathname = isBlogPost ? '/blog/post' : '/blog';
+	const isBlogPost = !is404 && pathname.match(/blog\/.*[^0-9/]/);
+	if (!is404 && pathname.startsWith('blog'))
+		pathname = isBlogPost ? 'blog/post' : 'blog';
 
 	const showPageHeader = is404 || !pathname.startsWith('/curate/');
 
@@ -69,7 +62,8 @@ const Layout = ({children, location}) => {
 				contrastPreference &&
 					contrastPreference !== 'default' &&
 					`contrast-preference-${contrastPreference}`,
-				PAGE_CLASSES[pathname],
+				SITE_PAGES.find(([href]) => href === pathname)?.[1] ??
+					'page-other',
 			)}
 		>
 			{isBlockerOpen && (
@@ -122,8 +116,8 @@ const Layout = ({children, location}) => {
 				)}
 			</ClientOnly>
 			{showPageHeader && <PageHeader location={location} />}
+			{showPageHeader && <SiteNav location={location} />}
 			<div className="site-content">{children}</div>
-			<MouseTracker />
 		</div>
 	);
 };

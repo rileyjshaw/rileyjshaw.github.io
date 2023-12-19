@@ -1,32 +1,31 @@
-import SiteNav from './SiteNav';
 import './PageHeader.css';
 import {Link} from 'gatsby';
 import React from 'react';
+import Rjs from '../icons/RjsF';
+import {SITE_PAGES} from '../util/constants';
 
-const links = [
-	['/about', 'About'],
-	['/lab', 'Lab'],
-	['/blog', 'Blog'],
-	['/subscribe', 'Subscribe'],
-];
+const getPageName = pathname => {
+	const match = pathname.match(/^\/([^\/]*)/);
+	return match ? match[1] : '';
+};
 
 export default ({location}) => {
-	const activePage = links.find(([href]) =>
-		location.pathname.startsWith(href),
-	);
+	const pageName = getPageName(location.pathname);
+	const activePage =
+		SITE_PAGES.find(([name]) => name === pageName) || SITE_PAGES[0];
 	return (
 		<header className="page-header" id="page-header" tabIndex="-1">
-			<div className="title">
-				<h1>
-					<Link to="/">Riley J. Shaw</Link>
-				</h1>
-				{activePage && (
-					<div className="subpage">
-						/ <Link to={activePage[0]}>{activePage[1]}</Link>
-					</div>
-				)}
-			</div>
-			<SiteNav location={location} />
+			<Link to="/" className="home-link">
+				<Rjs
+					title="Site home"
+					titleId="site-home-title"
+					width={null}
+					className="home-icon"
+				/>
+			</Link>
+			<h1 className="title">
+				<Link to={`/${activePage[0]}`}>{activePage[3]}</Link>
+			</h1>
 		</header>
 	);
 };

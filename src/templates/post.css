@@ -1,10 +1,6 @@
-.blog-post-page .site-content {
-	font-size: var(--font-scale-1);
-	margin: auto;
-	max-width: 90%;
-	width: 36em;
-}
 .blog-post-page .blog-post-content {
+	font-size: var(--font-scale-1);
+	grid-column: middle-column / span 1;
 	padding-bottom: 3em;
 }
 .blog-post-content header {
@@ -13,7 +9,7 @@
 .blog-post-page .blog-post-content h1 {
 	font-family: var(--fh);
 	font-size: var(--font-scale-5);
-	margin-bottom: 0;
+	margin: 0;
 }
 /* TODO(riley): Duplicate. */
 .blog-post-content header .subheading {
@@ -97,5 +93,10 @@
 @media only screen and (width <= 800px) {
 	.blog-post-content pre {
 		font-size: 0.75em;
+	}
+}
+@media only screen and (width < 1000px) {
+	.blog-post-page .blog-post-content {
+		grid-column: left-column / span 3;
 	}
 }

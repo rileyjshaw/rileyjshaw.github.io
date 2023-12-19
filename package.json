@@ -83,7 +83,7 @@
     "scraper": "npm run scrape",
     "serve": "gatsby serve",
     "start": "npm run develop",
-    "generate-icons": "npx @svgr/cli --icon --svg-props fill=\"currentColor\" --out-dir src/icons -- icons"
+    "generate-icons": "npx @svgr/cli --icon --svg-props fill=\"currentColor\" --title-prop --ext jsx --out-dir src/icons -- icons"
   },
   "repository": {
     "type": "git",

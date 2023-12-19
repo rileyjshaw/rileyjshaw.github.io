@@ -14,44 +14,38 @@ export const Head = SEO;
 
 const IndexPage = ({featuredProjects = []}) => {
 	return (
-		<>
-			<main className="main-content">
-				<div className="frontpage-grid">
-					<div className="about-stub">
-						<AboutIntro />{' '}
-						<Link to="/about" className="about-link">
-							More{' '}
-							<CycleText
-								className="about-arrow"
-								OuterElement="span"
-								ms={100}
-							>
-								➫➯➱➬–
-							</CycleText>
-						</Link>
-					</div>
-					{/* Include News, Newsletter? */}
-					<div className="main-projects-title">
-						<h2>Recent additions</h2>
-						<Link className="lab-link" to="/lab">
-							(explore all)
-						</Link>
-					</div>
-					<div>
-						<ContentGrid nodes={featuredProjects} />
-						<p className="explore-more">
-							Sort through hundreds of projects and posts in{' '}
-							<Link className="lab-link" to="/lab">
-								the lab
-							</Link>
-							.
-						</p>
-					</div>
+		<main>
+			<div className="page-content">
+				<div className="about-stub">
+					<AboutIntro />{' '}
+					<Link to="/about" className="about-link">
+						More{' '}
+						<CycleText
+							className="about-arrow"
+							OuterElement="span"
+							ms={100}
+						>
+							➫➯➱➬–
+						</CycleText>
+					</Link>
 				</div>
-				<BigQuote quoteId="SPUTTERED_AND_STOPPED" />
-				<GoUp />
-			</main>
-		</>
+				{/* Include News, Newsletter? */}
+				<div className="main-projects">
+					<h2>Recent additions</h2>
+					<ContentGrid nodes={featuredProjects} />
+					{/* 2023.12.10: New <project, icon, post, etc> “Thing Name” added to the <lab, blog>.*/}
+					<p className="explore-more">
+						Sort through hundreds of projects and posts in{' '}
+						<Link className="lab-link" to="/lab">
+							the lab
+						</Link>
+						.
+					</p>
+				</div>
+			</div>
+			<BigQuote quoteId="SPUTTERED_AND_STOPPED" />
+			<GoUp />
+		</main>
 	);
 };
 

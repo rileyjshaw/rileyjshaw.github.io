@@ -16,7 +16,7 @@ const bannerTypes = {
 export default ({children, date, type = 'update'}) => (
 	<div className={`blog-banner blog-banner-${type}`}>
 		<div className="blog-banner-title">
-			{`${bannerTypes[type].title}${date ? ` ${date}` : ''}:`}
+			{`${bannerTypes[type].title}${date ? ` ${date}` : ''}`}
 		</div>
 		<div className="blog-banner-content">{children}</div>
 	</div>

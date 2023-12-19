@@ -73,113 +73,124 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 	return (
 		nodes && (
 			<div className="project-explorer">
-				<button
-					className="project-explorer-hide-filters"
-					onClick={() => setDrawerOpen(openState => !openState)}
-				>
-					{drawerOpen ? 'Hide filters ▲' : 'Show filters ▼'}
-				</button>
-				<div className="filters">
-					{drawerOpen && (
-						/* TODO(riley): Once display: contents or display:
-				subgrid have good support, replace <p.legend> with
-				<legend>, get rid of the .inputs wrappers, and nest
-				<fieldset>s (display: contents) around each <legend> /
-				.inputs / button set. Until then, the children need to
-				be direct descendents of the grid, and a11y takes a
-				hit. */
-						<div className="controls">
-							<p className="legend">Show:</p>
-							<div className="inputs">
-								{nodeTypes.map((type, i) => (
-									<Fragment key={type}>
+				<div className="filters-wrapper">
+					<button
+						className="project-explorer-hide-filters"
+						onClick={() => setDrawerOpen(openState => !openState)}
+					>
+						{drawerOpen ? 'Hide filters ▲' : 'Show filters ▼'}
+					</button>
+					<div className="filters">
+						{drawerOpen && (
+							<>
+								<fieldset>
+									<legend>Show:</legend>
+									<div className="inputs">
+										{nodeTypes.map((type, i) => (
+											<Fragment key={type}>
+												<input
+													className="visually-hidden"
+													type="checkbox"
+													name={`labs-types-${type}`}
+													id={`labs-types-${type}`}
+													value={type}
+													checked={typeStates[i]}
+													onChange={e => {
+														const {checked} =
+															e.target;
+														setTypeStates(
+															prevTypeStates => {
+																const updatedTypeStates =
+																	[
+																		...prevTypeStates,
+																	];
+																updatedTypeStates[
+																	i
+																] = checked;
+																return updatedTypeStates;
+															},
+														);
+													}}
+												/>
+												<label
+													htmlFor={`labs-types-${type}`}
+												>
+													{`${contentTypes[type].readableType}s`}
+												</label>
+											</Fragment>
+										))}
+									</div>
+									<button
+										className="labs-clear labs-clear-types"
+										onClick={() =>
+											setTypeStates(
+												new Array(
+													nodeTypes.length,
+												).fill(false),
+											)
+										}
+									>
+										✖
+									</button>
+								</fieldset>
+								<fieldset>
+									<legend>Sort by:</legend>
+									<div className="inputs">
+										{sortingMethods.map(({title}, i) => (
+											<Fragment key={title}>
+												<input
+													className="visually-hidden"
+													type="radio"
+													name={`labs-sort-${title}`}
+													id={`labs-sort-${title}`}
+													value={title}
+													checked={sortIdx === i}
+													onChange={() =>
+														setSortIdx(i)
+													}
+												/>
+												<label
+													htmlFor={`labs-sort-${title}`}
+												>
+													{capitalize(title)}
+												</label>
+											</Fragment>
+										))}
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend>Order:</legend>
+									<div className="inputs">
 										<input
 											className="visually-hidden"
 											type="checkbox"
-											name={`labs-types-${type}`}
-											id={`labs-types-${type}`}
-											value={type}
-											checked={typeStates[i]}
-											onChange={e => {
-												const {checked} = e.target;
-												setTypeStates(
-													prevTypeStates => {
-														const updatedTypeStates =
-															[
-																...prevTypeStates,
-															];
-														updatedTypeStates[i] =
-															checked;
-														return updatedTypeStates;
-													},
-												);
-											}}
+											name="labs-order"
+											id="labs-order"
+											value="ascending"
+											checked={ascending}
+											onChange={e =>
+												setAscending(e.target.checked)
+											}
 										/>
-										<label htmlFor={`labs-types-${type}`}>
-											{contentTypes[type].readableType}s
+										<label htmlFor="labs-order">
+											Reverse
 										</label>
-									</Fragment>
-								))}
-							</div>
-							<button
-								className="labs-clear labs-clear-types"
-								onClick={() =>
-									setTypeStates(
-										new Array(nodeTypes.length).fill(
-											false,
-										),
-									)
-								}
-							>
-								✖
-							</button>
-							<p className="legend">Sort by:</p>
-							<div className="inputs">
-								{sortingMethods.map(({title}, i) => (
-									<Fragment key={title}>
-										<input
-											className="visually-hidden"
-											type="radio"
-											name={`labs-sort-${title}`}
-											id={`labs-sort-${title}`}
-											value={title}
-											checked={sortIdx === i}
-											onChange={() => setSortIdx(i)}
-										/>
-										<label htmlFor={`labs-sort-${title}`}>
-											{capitalize(title)}
-										</label>
-									</Fragment>
-								))}
-							</div>
-							<p className="legend">Order:</p>
-							<div className="inputs">
-								<input
-									className="visually-hidden"
-									type="checkbox"
-									name="labs-order"
-									id="labs-order"
-									value="ascending"
-									checked={ascending}
-									onChange={e =>
-										setAscending(e.target.checked)
-									}
-								/>
-								<label htmlFor="labs-order">Reverse</label>
-								{/* TODO: Add the shuffle button back here!
+										{/* TODO: Add the shuffle button back here!
 
 							<button onClick={this.shuffleDisplayNodes}>
 								Shuffle
 							</button> */}
-							</div>
-						</div>
-					)}
+									</div>
+								</fieldset>
+							</>
+						)}
+					</div>
+					<p className="result-details">
+						Found <strong>{nodes.length}</strong> entries from{' '}
+						<strong>{nSources}</strong> source
+						{nSources === 1 ? '' : 's'}:
+					</p>
 				</div>
-				<p className="result-details">
-					Found <strong>{nodes.length}</strong> entries from{' '}
-					<strong>{nSources}</strong> source
-					{nSources === 1 ? '' : 's'}:
-				</p>
 				<LazyGrid
 					nodes={nodes}
 					setIsFullyLoaded={props.setIsFullyLoaded}
@@ -272,7 +283,7 @@ export default ProjectExplorerWrapper;
 		// …then for the render:
 		// …
 
-		<p className="legend">Match:</p>
+		<legend>Match:</legend>
 		<div className="inputs">
 			<input
 				type="radio"
@@ -294,7 +305,7 @@ export default ProjectExplorerWrapper;
 			/>
 			<label htmlFor="labs-filter-all">All</label>
 		</div>
-		<p className="legend">Of:</p>
+		<legend>Of:</legend>
 		<div className="inputs">
 			{tags.map((tag, i) => (
 				<Fragment key={tag.name}>

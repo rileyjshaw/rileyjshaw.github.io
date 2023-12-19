@@ -1,4 +1,5 @@
 .big-quote {
+	grid-column: 1 / -1;
 	align-items: center;
 	display: flex;
 	flex-direction: column;

@@ -1,17 +1,10 @@
 import MenuIcon from '../icons/Menu';
+import {SITE_PAGES} from '../util/constants';
 import {useKeyPresses} from '../util/hooks';
 import './SiteNav.css';
 import ThemeToggleButton from './ThemeToggleButton';
 import {Link} from 'gatsby';
 import React, {useLayoutEffect, useMemo, useState} from 'react';
-
-const links = [
-	['/', 'Home'],
-	['/about', 'About'],
-	['/lab', 'Lab'],
-	['/blog', 'Blog'],
-	['/subscribe', 'Subscribe'],
-];
 
 export default ({location}) => {
 	const [open, setOpen] = useState(false);
@@ -38,6 +31,8 @@ export default ({location}) => {
 		}
 	}, [open]);
 
+	const pathName = location.pathname.slice(1);
+
 	return (
 		<nav className="site-nav">
 			<button
@@ -60,24 +55,25 @@ export default ({location}) => {
 				id="site_nav_menu"
 				role="menu"
 			>
-				{links.map(([href, name]) => (
-					<li
-						className={
-							location.pathname === href ||
-							(href.length > 1 &&
-								location.pathname.startsWith(href))
-								? 'active'
-								: ''
-						}
-						key={name}
-						onClick={() => setOpen(false)}
-					>
-						<Link to={href}>{name}</Link>
-					</li>
-				))}
-				<li className="settings">
+				{SITE_PAGES.filter(([, , name]) => name).map(
+					([href, , name]) => (
+						<li
+							className={
+								pathName === href ||
+								(href.length > 1 && pathName.startsWith(href))
+									? 'active'
+									: ''
+							}
+							key={name}
+							onClick={() => setOpen(false)}
+						>
+							<Link to={`/${href}`}>{name}</Link>
+						</li>
+					),
+				)}
+				{/* <li className="settings">
 					<ThemeToggleButton uid="navThemeToggle" />
-				</li>
+				</li> */}
 			</ul>
 		</nav>
 	);
