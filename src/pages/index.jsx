@@ -1,6 +1,6 @@
 import AboutIntro from '../components/about/MeIntro';
 import BigQuote from '../components/BigQuote';
-import ContentGrid from '../components/ContentGrid';
+import ContentList from '../components/ContentList';
 import CycleText from '../components/CycleText';
 import GoUp from '../components/GoUp';
 import SEO from '../components/SEO';
@@ -29,17 +29,15 @@ const IndexPage = ({featuredProjects = []}) => {
 						</CycleText>
 					</Link>
 				</div>
-				{/* Include News, Newsletter? */}
 				<div className="main-projects">
+					<h2>Projects</h2>
+				</div>
+				<div className="recent-additions">
 					<h2>Recent additions</h2>
-					<ContentGrid nodes={featuredProjects} />
-					{/* 2023.12.10: New <project, icon, post, etc> “Thing Name” added to the <lab, blog>.*/}
+					<ContentList nodes={featuredProjects} />
 					<p className="explore-more">
-						Sort through hundreds of projects and posts in{' '}
-						<Link className="lab-link" to="/lab">
-							the lab
-						</Link>
-						.
+						Explore hundreds of projects in{' '}
+						<Link to="/lab">the lab</Link>.
 					</p>
 				</div>
 			</div>
@@ -52,7 +50,7 @@ const IndexPage = ({featuredProjects = []}) => {
 const IndexPageWrapper = props => {
 	const featuredProjects = sortByDate(allProjectsQuery())
 		.filter(project => (project.coolness ?? 100) > 40)
-		.slice(0, 5);
+		.slice(0, 8);
 	return <IndexPage {...props} featuredProjects={featuredProjects} />;
 };
 

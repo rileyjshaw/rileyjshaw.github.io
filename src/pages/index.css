@@ -18,18 +18,12 @@
 	font-family: Menlo, var(--fss);
 	width: 1ch;
 }
-.main-projects {
+.main-projects,
+.recent-additions {
 	grid-column: middle-column / span 2;
 }
-.main-projects .content-node {
-	grid-column: 1 / -1;
-}
-h2 + .lab-link {
-	color: var(--color-fg);
-	font-size: var(--font-scale-1);
-}
 .explore-more {
-	font-size: var(--font-scale-2);
+	font-size: var(--font-scale-1);
 }
 @media screen and (max-width: 1000px) {
 	.about-stub {
@@ -38,7 +32,8 @@ h2 + .lab-link {
 		max-width: 800px;
 		margin: auto;
 	}
-	.main-projects {
+	.main-projects,
+	.recent-additions {
 		grid-column: left-column / span 3;
 	}
 }

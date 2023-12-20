@@ -1,0 +1,23 @@
+ul.content-list {
+	display: grid;
+	font-size: var(--font-scale-1);
+	grid-gap: 0.5em;
+	grid-template-columns: min-content 1fr;
+	padding-top: 1em;
+}
+.content-list li {
+	align-items: baseline;
+	display: grid;
+	grid-column: 1 / -1;
+	grid-template-columns: subgrid;
+}
+.content-list .item-date {
+	grid-column: 1;
+}
+.content-list .item-content {
+	grid-column: 2;
+}
+.content-list time {
+	font-variant-numeric: tabular-nums;
+	letter-spacing: -0.1em;
+}
