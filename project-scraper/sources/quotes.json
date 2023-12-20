@@ -497,7 +497,7 @@
 		"cite": "https://wiki.xxiivv.com/site/collapse_computing.html"
 	},
 	"UNDERSTANDING": {
-		"content": "Let's use the web to create neat new exciting things.\nLet's use the Web to help people understand each other.",
+		"content": "Let’s use the web to create neat new exciting things.\nLet’s use the Web to help people understand each other.",
 		"author": "Tim Berners-Lee",
 		"source": "Answers for Young People",
 		"cite": "https://www.w3.org/People/Berners-Lee/Kids.html"
@@ -564,5 +564,18 @@
 	"CALCULATOR": {
 		"content": "Calculators can only give answers.",
 		"author": "Pablo Picasso"
+	},
+	"OTHER_PEOPLE": {
+		"content": "Everything worthwhile is done with other people.",
+		"author": "Mariame Kaba"
+	},
+	"GOOD_CHANCE": {
+		"content": "I’m often astonished to find how much better chance is than I am.",
+		"author": "Gerhard Richter",
+		"source": "Interview with Benjamin H. D. Buchloh, 1986"
+	},
+	"DEGRADING_ART": {
+		"content": "People accused me of degrading art, because I was employing capitalistic instruments of war - computer was a word non grata!",
+		"author": "Manfred Mohr"
 	}
 }
