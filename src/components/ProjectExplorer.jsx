@@ -248,7 +248,10 @@ const ProjectExplorerWrapper = React.memo(props => {
 			}
 		}
 	`);
-	const allProjects = allProjectsQuery();
+	const hiddenTypes = ['post', 'tumblr', 'commit'];
+	const allProjects = allProjectsQuery().filter(
+		project => !hiddenTypes.includes(project.type),
+	);
 	const nodes = useMemo(
 		() =>
 			allProjects.concat(

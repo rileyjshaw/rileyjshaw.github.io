@@ -50,7 +50,7 @@ export const createPages = async ({actions, graphql, reporter}) => {
 				}
 			}
 			allCombinedProjectsJson(
-				filter: {type: {in: ["tumblr", "commit"]}}
+				filter: {type: {in: ["tumblr"]}}
 				limit: 1000
 			) {
 				nodes {
@@ -83,7 +83,7 @@ export const createPages = async ({actions, graphql, reporter}) => {
 			})),
 		)
 		.sort((a, b) => new Date(b.date) - new Date(a.date));
-	const postsPerPage = 5;
+	const postsPerPage = 3;
 	const numPages = Math.ceil(allPosts.length / postsPerPage);
 
 	// Create paginated blog listings in the pattern /blog, /blog/1, etc.

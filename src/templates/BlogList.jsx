@@ -53,7 +53,7 @@ const BlogList = ({data, pageContext: {currentPage, numPages}}) => {
 						const {repo} = post;
 
 						return (
-							<li className="blog-post content-node" key={uid}>
+							<li className="blog-post" key={uid}>
 								<article className="blog-post-content">
 									<header>
 										<h1>
@@ -141,7 +141,7 @@ export const blogListQuery = graphql`query blogListQuery($internalLimit: Int!, $
 		}
 	}
 	allCombinedProjectsJson(
-		filter: {type: {in: ["tumblr", "commit"]}}
+		filter: {type: {in: ["tumblr"]}}
 		sort: [{date: DESC}, {title: ASC}]
 		limit: $externalLimit
 		skip: $externalSkip

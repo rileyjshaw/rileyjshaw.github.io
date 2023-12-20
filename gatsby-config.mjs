@@ -293,7 +293,7 @@ export default {
 								}
 
 								allCombinedProjectsJson(
-									filter: {type: {in: ["tumblr", "commit"]}}
+									filter: {type: {in: ["tumblr"]}}
 									sort: {date: DESC}
 								) {
 									nodes {

@@ -4,7 +4,7 @@
 	padding: 0;
 }
 .blog-page .blog-post {
-	margin-bottom: var(--grid-gap);
+	margin-bottom: 5em;
 	padding-bottom: 0;
 }
 .blog-page .blog-post h1 {
@@ -12,7 +12,7 @@
 	margin-top: var(--font-scale--2);
 }
 .blog-page .blog-post section {
-	padding: 1em 0;
+	padding: 1em 0 0;
 }
 .blog-page .blog-post section > :first-child {
 	margin-top: 0;
@@ -33,7 +33,4 @@
 }
 .blog-page .page-navigation .current-page {
 	color: var(--color-fg);
-}
-.blog-page .continue-reading {
-	margin-bottom: 4px;
 }
