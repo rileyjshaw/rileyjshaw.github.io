@@ -219,6 +219,7 @@
 .scaling-fader-mode-toggle:active + label::before {
 	background: var(--cui-bold);
 }
+
 @media only screen and (width <= 600px) {
 	:root {
 		--fader-height: 160px;

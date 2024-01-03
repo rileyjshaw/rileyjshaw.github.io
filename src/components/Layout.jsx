@@ -90,7 +90,7 @@ const Layout = ({children, location}) => {
 												activeHoliday.daysUntil === 1
 													? ''
 													: 's'
-										  } until `
+											} until `
 										: ''
 								}${
 									activeHoliday.link ? (
@@ -98,7 +98,7 @@ const Layout = ({children, location}) => {
 											{activeHoliday.daysUntil === 0
 												? capitalize(
 														activeHoliday.name,
-												  )
+													)
 												: activeHoliday.name}
 										</AutoLink>
 									) : activeHoliday.daysUntil === 0 ? (

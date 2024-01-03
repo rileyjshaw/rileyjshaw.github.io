@@ -19,7 +19,7 @@ function PickOne({question = '', left, right, answer, onPick}) {
 						ArrowUp: {onDown: pickLeft},
 						ArrowRight: {onDown: pickRight},
 						ArrowDown: {onDown: pickRight},
-				  },
+					},
 		];
 	}, [answer, setChosen]);
 	useKeyPresses(keyHandlers);

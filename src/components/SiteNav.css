@@ -13,6 +13,7 @@
 .site-nav .active a {
 	color: var(--color-blue);
 }
+
 @media screen and (width <= 1000px) {
 	.site-nav {
 		grid-column: right-column / span 1;

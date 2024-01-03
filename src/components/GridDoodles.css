@@ -87,6 +87,7 @@
 	animation: hop 1s infinite alternate ease-in-out;
 	display: inline-block;
 }
+
 @keyframes hop {
 	from {
 		transform: translate3d(0, 0, 0);

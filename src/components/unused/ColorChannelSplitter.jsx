@@ -11,7 +11,7 @@ const deepCloneChildren = (children, propsFn = null) =>
 					child,
 					propsFn?.(child),
 					...deepCloneChildren(child.props.children),
-			  )
+				)
 			: child,
 	);
 

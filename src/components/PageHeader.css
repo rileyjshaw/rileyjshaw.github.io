@@ -32,6 +32,7 @@
 	color: var(--color-fg);
 	text-decoration: none;
 }
+
 @media screen and (width <= 1000px) {
 	.page-header .title {
 		text-align: center;

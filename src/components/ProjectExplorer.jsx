@@ -45,7 +45,7 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 			checkedTypeNames.length
 				? props.nodes.filter(node =>
 						checkedTypeNames.includes(node.type),
-				  )
+					)
 				: props.nodes
 		).reduce(
 			(partitions, node) => {

@@ -65,6 +65,7 @@ html {
 	font: 18px/1.7 var(--fss);
 	scroll-behavior: smooth;
 }
+
 @media (prefers-reduced-motion) {
 	html {
 		scroll-behavior: auto;

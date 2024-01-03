@@ -11,7 +11,7 @@ function Riot({className}, ref) {
 				boundingClientRect.top /
 					(windowHeight - boundingClientRect.height) -
 				0.5) *
-		  2
+			2
 		: 0;
 	if (factor) factor *= Math.sqrt(Math.abs(factor));
 
@@ -29,7 +29,7 @@ function Riot({className}, ref) {
 							boundingClientRect.top) /
 							boundingClientRect.height -
 							0.02, // Fudge, since the O is not centered.,
-				  ]
+					]
 				: [0.5, 0.5],
 		[oBoundingClientRect],
 	);

@@ -69,6 +69,7 @@
 .project-explorer .filters header button {
 	margin: 0 0 0 auto;
 }
+
 @media screen and (width <= 1000px) {
 	.project-explorer .filters-wrapper {
 		grid-column: left-column / span 3;

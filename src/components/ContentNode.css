@@ -122,6 +122,7 @@
 .content-node.span-3 {
 	grid-column-end: span 3;
 }
+
 @media only screen and (width <= 300px) {
 	.content-node.span-3 {
 		grid-column: 1 / -1;
@@ -130,6 +131,7 @@
 .content-node.span-4 {
 	grid-column-end: span 4;
 }
+
 @media only screen and (width <= 390px) {
 	.content-node.span-4 {
 		grid-column: 1 / -1;
@@ -138,6 +140,7 @@
 .content-node.span-5 {
 	grid-column-end: span 5;
 }
+
 @media only screen and (width <= 480px) {
 	.content-node.span-5 {
 		grid-column: 1 / -1;
@@ -146,6 +149,7 @@
 .content-node.span-6 {
 	grid-column-end: span 6;
 }
+
 @media only screen and (width <= 570px) {
 	.content-node.span-6 {
 		grid-column: 1 / -1;

@@ -9,7 +9,7 @@ export function useWindowSize(cb) {
 					window.innerWidth,
 					window.innerHeight,
 					Math.hypot(window.innerWidth, window.innerHeight),
-			  ]
+				]
 			: [1000, 1000],
 	);
 	useEffect(() => {

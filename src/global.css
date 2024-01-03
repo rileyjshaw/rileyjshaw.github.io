@@ -86,6 +86,7 @@ h5 .anchor:focus svg,
 h6 .anchor:focus svg {
 	opacity: 1;
 }
+
 @media screen and (width <= 1000px) {
 	:root {
 		--grid-gap: 12px;

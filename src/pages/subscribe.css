@@ -14,6 +14,7 @@
 	grid-column-start: 2;
 	margin: 0;
 }
+
 @media only screen and (width <= 600px) {
 	.subscribe-page .rss-feeds {
 		grid-template-columns: 1fr;

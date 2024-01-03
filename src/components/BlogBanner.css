@@ -63,6 +63,7 @@
 .blog-banner-group .blog-banner-title {
 	grid-column: 1;
 }
+
 @media only screen and (width <= 800px) {
 	.blog-banner {
 		flex-direction: column;

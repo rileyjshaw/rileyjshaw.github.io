@@ -45,6 +45,7 @@
 .pick-one .half.chosen {
 	animation: bulge 0.2s;
 }
+
 @keyframes bulge {
 	from {
 		font-size: 1em;
