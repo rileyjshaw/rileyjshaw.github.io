@@ -443,6 +443,7 @@ export default {
 						: undefined,
 			},
 		},
+		'gatsby-plugin-webpack-bundle-analyser-v2',
 		// TODO(riley)
 		// this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.dev/offline

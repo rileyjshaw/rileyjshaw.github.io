@@ -40,6 +40,7 @@
     "@babel/register": "^7.23.7",
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
+    "@size-limit/file": "^11.0.1",
     "@svgr/cli": "^6.5.1",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "babel-preset-gatsby": "^3.13.0",
@@ -51,12 +52,14 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "express": "^4.18.2",
     "gatsby-plugin-postcss": "^6.13.0",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.32",
     "gh-pages": "^6.1.1",
     "husky": "^8.0.3",
     "json-stable-stringify": "^1.1.0",
     "postcss": "^8.4.32",
     "prettier": "^3.1.1",
     "request": "^2.88.2",
+    "size-limit": "^11.0.1",
     "stylelint": "^16.1.0",
     "stylelint-config-standard": "^36.0.0",
     "stylelint-order": "^6.0.4",
@@ -76,14 +79,22 @@
     "develop-everywhere": "gatsby develop -H 0.0.0.0 -o",
     "format": "prettier --write \"**/*.{js,jsx,mjs,json,md,mdx}\" && stylelint \"src/**/*.css\" --fix",
     "lint": "npm run format",
+    "postbuild": "npm run size",
     "preload-fonts": "gatsby-preload-fonts",
     "prepare": "husky install",
     "scrape": "cd project-scraper && npm run start",
     "scraper": "npm run scrape",
     "serve": "gatsby serve",
+    "size": "size-limit",
     "start": "npm run develop",
     "generate-icons": "npx @svgr/cli --icon --svg-props fill=\"currentColor\" --title-prop --ext jsx --out-dir src/icons -- icons"
   },
+  "size-limit": [
+    {
+      "limit": "1.5 MB",
+      "path": "public/*.js"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/rileyjshaw/rileyjshaw-new"
