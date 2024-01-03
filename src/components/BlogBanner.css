@@ -56,8 +56,8 @@
 }
 .blog-banner-group .blog-banner {
 	display: grid;
-	grid-template-columns: subgrid;
 	grid-column: 1 / -1;
+	grid-template-columns: subgrid;
 	margin-bottom: 0;
 }
 .blog-banner-group .blog-banner-title {

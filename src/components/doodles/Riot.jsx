@@ -2,12 +2,12 @@ import {useViewport, useRect} from '../../util/hooks';
 import './Riot.css';
 import React, {useMemo} from 'react';
 
-function Riot(_, ref) {
+function Riot({className}, ref) {
 	const [riotRef, _inView, boundingClientRect, windowHeight = 0] =
 		useViewport({updateOnScroll: true});
 	const [oRef, oBoundingClientRect] = useRect();
 	let factor = boundingClientRect
-		? (1 -
+		? (0.98 -
 				boundingClientRect.top /
 					(windowHeight - boundingClientRect.height) -
 				0.5) *
@@ -22,11 +22,13 @@ function Riot(_, ref) {
 						(oBoundingClientRect.left +
 							oBoundingClientRect.width / 2 -
 							boundingClientRect.left) /
-							boundingClientRect.width,
+							boundingClientRect.width +
+							0.01, // Fudge, since the O is not centered.
 						(oBoundingClientRect.top +
 							oBoundingClientRect.height / 2 -
 							boundingClientRect.top) /
-							boundingClientRect.height,
+							boundingClientRect.height -
+							0.02, // Fudge, since the O is not centered.,
 				  ]
 				: [0.5, 0.5],
 		[oBoundingClientRect],
@@ -35,7 +37,7 @@ function Riot(_, ref) {
 	return (
 		<div
 			{...(ref?.hasOwnProperty('current') ? {ref} : {})}
-			className="content-node doodle doodle-riot"
+			className={`doodle doodle-riot${className ? ` ${className}` : ''}`}
 		>
 			{Array.from({length: 6}, (_, i) => (
 				<p

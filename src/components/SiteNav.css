@@ -1,9 +1,7 @@
 .site-nav {
-	z-index: 1;
-}
-.site-nav {
 	grid-column: left-column / span 1;
 	grid-row: 2 / span 1;
+	z-index: 1;
 }
 .site-nav-menu-button {
 	display: none;
@@ -15,11 +13,11 @@
 .site-nav .active a {
 	color: var(--color-blue);
 }
-@media screen and (max-width: 1000px) {
+@media screen and (width <= 1000px) {
 	.site-nav {
-		margin-top: var(--font-scale-1);
 		grid-column: right-column / span 1;
 		grid-row: 1 / span 1;
+		margin-top: var(--font-scale-1);
 	}
 	.site-nav ul.hidden {
 		display: none;
@@ -67,8 +65,8 @@
 		font-size: var(--font-scale-1);
 		height: 2em;
 		justify-content: center;
-		margin-right: -0.5em;
 		margin-left: auto;
+		margin-right: -0.5em;
 		margin-top: calc((60px - 2em) / 2);
 		padding: 0.5em;
 		position: relative;
@@ -86,6 +84,9 @@
 		font-size: 0;
 		height: 120px;
 		justify-content: stretch;
+	}
+	.site-nav .active a {
+		color: var(--color-fg);
 	}
 	.site-nav li:nth-child(1) a {
 		animation-delay:
@@ -111,8 +112,5 @@
 		animation-delay:
 			0s,
 			-0.1s;
-	}
-	.site-nav .active a {
-		color: var(--color-fg);
 	}
 }

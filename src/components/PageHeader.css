@@ -2,24 +2,24 @@
 	align-items: center;
 	color: var(--color-fg);
 	display: grid;
+	font-family: var(--fh);
 	grid-column: left-column / span 2;
 	grid-template-columns: subgrid;
-	font-family: var(--fh);
+	height: 120px;
 	margin-top: var(--font-scale-1);
 	padding-bottom: 60px;
-	height: 120px;
 }
 .page-header .home-link {
 	display: block;
-	position: relative;
 	height: 100%;
+	position: relative;
 }
 .page-header .home-icon {
 	display: block;
+	height: 50%;
+	left: 0;
 	position: absolute;
 	top: 25%;
-	left: 0;
-	height: 50%;
 }
 .page-header .title {
 	font: inherit;
@@ -32,7 +32,7 @@
 	color: var(--color-fg);
 	text-decoration: none;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (width <= 1000px) {
 	.page-header .title {
 		text-align: center;
 	}

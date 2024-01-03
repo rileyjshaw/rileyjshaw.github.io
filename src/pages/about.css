@@ -1,6 +1,6 @@
 .about-page .page-content {
-	margin-top: -1em;
 	font-size: var(--font-scale-1);
+	margin-top: -1em;
 	overflow: hidden;
 }
 .about-page .currently {

@@ -4,11 +4,11 @@
 	/* TODO(riley): Cross-platform option? */
 	font-family: Menlo, var(--fss);
 	font-size: 600px;
+	grid-column: 1 / -1;
 	height: 100vh;
 	justify-content: center;
 	overflow: hidden;
 	width: 100%;
-	grid-column: 1 / -1;
 }
 .go-up span {
 	cursor: n-resize;

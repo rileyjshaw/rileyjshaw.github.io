@@ -1,10 +1,10 @@
 .big-quote {
-	grid-column: 1 / -1;
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 	font-family: var(--fs);
 	font-size: var(--font-scale-2);
+	grid-column: 1 / -1;
 	justify-content: space-between;
 	margin: 0;
 	min-height: 100vh;

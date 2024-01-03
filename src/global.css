@@ -13,9 +13,7 @@
 	--font-scale-4: 2.441em;
 	--font-scale-5: 3.052em;
 	--font-scale-6: 3.815em;
-	--grid-column-width: 60px;
 	--grid-gap: 18px;
-	--half-grid-gap: 15px;
 }
 p,
 dd {
@@ -87,4 +85,9 @@ h4 .anchor:focus svg,
 h5 .anchor:focus svg,
 h6 .anchor:focus svg {
 	opacity: 1;
+}
+@media screen and (width <= 1000px) {
+	:root {
+		--grid-gap: 12px;
+	}
 }

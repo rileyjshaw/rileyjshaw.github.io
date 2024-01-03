@@ -10,7 +10,7 @@ import React from 'react';
 export default [
 	[
 		React.forwardRef((props, ref) => (
-			<BackgroundGenerator El="li" ref={ref} />
+			<BackgroundGenerator className="content-node" El="li" ref={ref} />
 		)),
 		0.8,
 	],
@@ -20,8 +20,18 @@ export default [
 		)),
 		0.8,
 	],
-	[React.forwardRef((props, ref) => <GameOver ref={ref} />), 0.8],
-	[React.forwardRef((props, ref) => <Riot ref={ref} />), 0.7],
+	[
+		React.forwardRef((props, ref) => (
+			<GameOver className="content-node" ref={ref} />
+		)),
+		0.8,
+	],
+	[
+		React.forwardRef((props, ref) => (
+			<Riot className="content-node" ref={ref} />
+		)),
+		0.7,
+	],
 	[
 		React.forwardRef((props, ref) => (
 			<li className="doodle wavytext" ref={ref}>

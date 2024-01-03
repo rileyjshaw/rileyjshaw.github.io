@@ -1,8 +1,8 @@
 :root {
-	--fss: 'Geomanist', arial, 'Helvetica Neue', helvetica, sans-serif;
+	--fss: 'Protest Grotesk', arial, 'Helvetica Neue', helvetica, sans-serif;
 	--fs: charter, georgia, palatino, 'Palatino Linotype', times,
 		'Times New Roman', 'Century Schoolbook L', serif;
-	--fh: 'Geomanist', 'Proxima Nova', 'Montserrat', 'Arial Black',
+	--fh: 'Protest Grotesk', 'Proxima Nova', 'Montserrat', 'Arial Black',
 		'Arial Bold', gadget, sans-serif;
 	--fm: 'Courier New', courier, 'Lucida Sans Typewriter', 'Lucida Typewriter',
 		monospace;
@@ -102,12 +102,6 @@ dd {
 	margin-top: 1em;
 }
 /* …and ending here. */
-p,
-li,
-dt,
-dd {
-	font-family: var(--fs);
-}
 code,
 pre {
 	font-family: var(--fm);

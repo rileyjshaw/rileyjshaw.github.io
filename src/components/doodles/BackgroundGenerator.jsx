@@ -18,7 +18,7 @@ const maxTiledWidth = 10000;
 
 const defaultProps = {
 	width: minWidth + Math.floor(Math.random() * (maxWidth - minWidth) + 1),
-	zoom: 6, // I think it looks better a bit chunky like this.
+	zoom: 3, // I think it looks better a bit chunky like this.
 	dark: 'fg',
 	light: 'bg',
 	seamless: true,
@@ -117,7 +117,7 @@ const BackgroundGenerator = React.forwardRef(function BackgroundGenerator(
 				);
 				if (!clicked) setClicked(true);
 			}}
-			className={`content-node doodle doodle-background-generator${
+			className={`doodle doodle-background-generator${
 				className ? ` ${className}` : ''
 			}`}
 			style={
@@ -131,7 +131,7 @@ const BackgroundGenerator = React.forwardRef(function BackgroundGenerator(
 			}
 			{...(ref?.hasOwnProperty('current') ? {ref} : {})}
 		>
-			{clicked || <span className="default-button">Click?</span>}
+			{/* {clicked || <span className="default-button">Click?</span>} */}
 		</El>
 	);
 });
