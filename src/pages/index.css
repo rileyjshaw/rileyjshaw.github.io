@@ -1,6 +1,7 @@
 .about-stub {
-	font-size: var(--fs-pretty-big);
+	font: var(--fs-pretty-big) var(--ff-heading);
 	grid-column: middle-column / span 2;
+	line-height: 1.5;
 	margin-top: -0.25em;
 	padding-bottom: 60px;
 }

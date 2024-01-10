@@ -1,10 +1,12 @@
 /* Font subsets created with:
 
-for file in ./*.woff2; do
-  if [ -f "$file" ]; then
-     pyftsubset "$file" --output-file="${file%.*}-Subset.${file##*.}" --flavor=woff2 --layout-features+=tnum --unicodes=U+A,U+20-7E,U+A0,U+A2,U+A9,U+AE,U+B0-B3,U+B7,U+B9,U+C0,U+C2,U+C6-CA,U+CE,U+D4,U+D7,U+D9,U+DB,U+E0,U+E2,U+E6-EA,U+EE,U+F4,U+F7,U+F9,U+FB,U+394,U+3A0,U+3A9,U+2013,U+2014,U+2018-201A,U+201C,U+201D,U+2022,U+2026,U+2070,U+2074-2079,U+2122,U+2190,U+2192,U+2197,U+21BA,U+2206,U+2212,U+221E,U+2248,U+2260,U+2264,U+2265,U+25B2,U+25B6,U+25BC,U+25C0,U+25C9,U+25CB,U+25CE-25D3,U+FE0E
-  fi
+for file in *.woff2; do
+    pyftsubset "$file" --output-file="${file%.*}-Subset.${file##*.}" --flavor=woff2 --layout-features+=tnum,ss02,ss03,ss04 --unicodes=U+A,U+20-7E,U+A0,U+A2,U+A9,U+AE,U+B0-B3,U+B7,U+B9,U+C0,U+C2,U+C6-CA,U+CE,U+D4,U+D7,U+D9,U+DB,U+E0,U+E2,U+E6-EA,U+EE,U+F4,U+F7,U+F9,U+FB,U+394,U+3A0,U+3A9,U+2013,U+2014,U+2018-201A,U+201C,U+201D,U+2022,U+2026,U+2070,U+2074-2079,U+2122,U+2190,U+2192,U+2197,U+21BA,U+2206,U+2212,U+221E,U+2248,U+2260,U+2264,U+2265,U+25B2,U+25B6,U+25BC,U+25C0,U+25C9,U+25CB,U+25CE-25D3,U+FE0E
 done
+
+A tweak for the display fonts to remove more features and characters:
+
+pyftsubset "$file" --output-file="${file%.*}-Subset.${file##*.}" --flavor=woff2 --unicodes=U+A,U+20-7E,U+A0,U+A2,U+A9,U+AE,U+B0,U+B7,U+C0,U+C2,U+C6-CA,U+CE,U+D4,U+D7,U+D9,U+DB,U+E0,U+E2,U+E6-EA,U+EE,U+F4,U+F9,U+FB,U+2013,U+2014,U+2018-201A,U+201C,U+201D,U+2026,U+2122,U+2190,U+2192,U+2197,U+2212,U+221E,U+25BC
 */
 
 :root {
@@ -15,6 +17,10 @@ done
 		U+2122, U+2190, U+2192, U+2197, U+21BA, U+2206, U+2212, U+221E, U+2248,
 		U+2260, U+2264, U+2265, U+25B2, U+25B6, U+25BC, U+25C0, U+25C9, U+25CB,
 		U+25CE-25D3, U+FE0E;
+	--unicode-range-display: U+A, U+20-7E, U+A0, U+A2, U+A9, U+AE, U+B0, U+B7,
+		U+C0, U+C2, U+C6-CA, U+CE, U+D4, U+D7, U+D9, U+DB, U+E0, U+E2, U+E6-EA,
+		U+EE, U+F4, U+F9, U+FB, U+2013, U+2014, U+2018-201A, U+201C, U+201D,
+		U+2026, U+2122, U+2190, U+2192, U+2197, U+2212, U+221E, U+25BC;
 }
 
 @font-face {
@@ -62,7 +68,7 @@ done
 	font-style: normal;
 	font-weight: 400;
 	src: url('/fonts/MintGroteskDisplay-Regular-Subset.woff2') format('woff2');
-	unicode-range: var(--unicode-range);
+	unicode-range: var(--unicode-range-display);
 }
 
 @font-face {
@@ -71,5 +77,5 @@ done
 	font-style: normal;
 	font-weight: 900;
 	src: url('/fonts/MintGroteskDisplay-Heavy-Subset.woff2') format('woff2');
-	unicode-range: var(--unicode-range);
+	unicode-range: var(--unicode-range-display);
 }
