@@ -2,7 +2,7 @@
   "name": "rileyjshaw.com",
   "private": true,
   "description": "The personal website of @rileyjshaw",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "author": "Riley Shaw <i@rileyjshaw.com>",
   "dependencies": {
     "@mdx-js/react": "^3.0.0",
