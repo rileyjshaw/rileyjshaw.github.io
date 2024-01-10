@@ -179,11 +179,11 @@ export function runTweaks() {
 	const listedProjects = loadJsonFile('../sources/projects.json');
 	const listedQuotes = loadJsonFile('../sources/quotes.json');
 	const {taggedProjects} = loadJsonFile('../sources/tags.json');
+
 	const projects = [
 		...scrapedProjects,
 		...listedProjects
 			.filter(n => !n.todo)
-			.filter(n => !excludedProjectIds.includes(n.uid))
 			.map(p => {
 				const {description, ...rest} = p;
 				return {
@@ -194,7 +194,7 @@ export function runTweaks() {
 					uid: `PROJECT_${idify(p.title)}`,
 				};
 			}),
-	];
+	].filter(n => !excludedProjectIds.includes(n.uid));
 
 	// Add project tags.
 	projects.forEach(project => {
