@@ -28,7 +28,7 @@ const Layout = ({children, location}) => {
 	const [isHolidayBannerOpen, setIsHolidayBannerOpen] = useStickyState(
 		true,
 		STORAGE_KEYS.showHolidayBanner,
-		'session',
+		{scope: 'session'},
 	);
 
 	useInterval(() => {
@@ -56,7 +56,7 @@ const Layout = ({children, location}) => {
 	return (
 		<div
 			className={cn(
-				'site-wrapper',
+				'site-outer-wrapper',
 				theme && `${theme}-theme`,
 				reducedMotion && 'reduced-motion',
 				contrastPreference &&
@@ -83,17 +83,16 @@ const Layout = ({children, location}) => {
 						<p>
 							{activeHoliday.specialMessages?.[
 								activeHoliday.daysUntil
-							] ||
-								`${
-									activeHoliday.daysUntil > 0
+							] || (
+								<>
+									{activeHoliday.daysUntil > 0
 										? `${activeHoliday.daysUntil} day${
 												activeHoliday.daysUntil === 1
 													? ''
 													: 's'
 											} until `
-										: ''
-								}${
-									activeHoliday.link ? (
+										: null}
+									{activeHoliday.link ? (
 										<AutoLink to={activeHoliday.link}>
 											{activeHoliday.daysUntil === 0
 												? capitalize(
@@ -105,19 +104,21 @@ const Layout = ({children, location}) => {
 										capitalize(activeHoliday.name)
 									) : (
 										activeHoliday.name
-									)
-								}${
-									activeHoliday.daysUntil === 0
+									)}
+									{activeHoliday.daysUntil === 0
 										? ' is today!'
-										: '.'
-								}`}
+										: '.'}
+								</>
+							)}
 						</p>
 					</Banner>
 				)}
 			</ClientOnly>
-			{showPageHeader && <PageHeader location={location} />}
-			{showPageHeader && <SiteNav location={location} />}
-			<div className="site-content">{children}</div>
+			<div className="site-wrapper">
+				{showPageHeader && <PageHeader location={location} />}
+				{showPageHeader && <SiteNav location={location} />}
+				<div className="site-content">{children}</div>
+			</div>
 		</div>
 	);
 };

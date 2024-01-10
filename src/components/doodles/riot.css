@@ -1,16 +1,15 @@
 .doodle-riot {
-	background: red !important;
-	grid-area: span 3 / span 4;
+	background: var(--color-blue-900);
+	color: var(--color-red-500);
+	grid-area: span 1 / span 2;
 	height: 100%;
 	position: relative;
 }
 .doodle-riot .riot-overlay {
-	font-family: var(--fh);
-	font-size: var(--font-scale-3);
-	font-weight: 500;
+	font: 900 var(--fs-3) var(--ff-heading);
 	left: 50%;
 	margin: 0;
 	position: absolute;
 	top: 50%;
-	transition: transform 0.1s linear;
+	transition: transform var(--transition-t-fast) linear;
 }

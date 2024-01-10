@@ -19,7 +19,6 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 		return [nodeTypes, `${nodeTypes.join('')}${sortingMethods.length}`];
 	}, [props.nodes]);
 
-	const [drawerOpen, setDrawerOpen] = useState(false);
 	const [ascending, setAscending] = useStickyState(
 		false,
 		STORAGE_KEYS.labAscending,
@@ -74,116 +73,96 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 		nodes && (
 			<div className="project-explorer">
 				<div className="filters-wrapper">
-					<button
-						className="project-explorer-hide-filters"
-						onClick={() => setDrawerOpen(openState => !openState)}
-					>
-						{drawerOpen ? 'Hide filters ▲' : 'Show filters ▼'}
-					</button>
 					<div className="filters">
-						{drawerOpen && (
-							<>
-								<fieldset>
-									<legend>Show:</legend>
-									<div className="inputs">
-										{nodeTypes.map((type, i) => (
-											<Fragment key={type}>
-												<input
-													className="visually-hidden"
-													type="checkbox"
-													name={`labs-types-${type}`}
-													id={`labs-types-${type}`}
-													value={type}
-													checked={typeStates[i]}
-													onChange={e => {
-														const {checked} =
-															e.target;
-														setTypeStates(
-															prevTypeStates => {
-																const updatedTypeStates =
-																	[
-																		...prevTypeStates,
-																	];
-																updatedTypeStates[
-																	i
-																] = checked;
-																return updatedTypeStates;
-															},
-														);
-													}}
-												/>
-												<label
-													htmlFor={`labs-types-${type}`}
-												>
-													{`${contentTypes[type].readableType}s`}
-												</label>
-											</Fragment>
-										))}
-									</div>
-									<button
-										className="labs-clear labs-clear-types"
-										onClick={() =>
-											setTypeStates(
-												new Array(
-													nodeTypes.length,
-												).fill(false),
-											)
-										}
-									>
-										✖
-									</button>
-								</fieldset>
-								<fieldset>
-									<legend>Sort by:</legend>
-									<div className="inputs">
-										{sortingMethods.map(({title}, i) => (
-											<Fragment key={title}>
-												<input
-													className="visually-hidden"
-													type="radio"
-													name={`labs-sort-${title}`}
-													id={`labs-sort-${title}`}
-													value={title}
-													checked={sortIdx === i}
-													onChange={() =>
-														setSortIdx(i)
-													}
-												/>
-												<label
-													htmlFor={`labs-sort-${title}`}
-												>
-													{capitalize(title)}
-												</label>
-											</Fragment>
-										))}
-									</div>
-								</fieldset>
-								<fieldset>
-									<legend>Order:</legend>
-									<div className="inputs">
+						<fieldset>
+							<legend>Show:</legend>
+							<div className="inputs">
+								{nodeTypes.map((type, i) => (
+									<Fragment key={type}>
 										<input
 											className="visually-hidden"
 											type="checkbox"
-											name="labs-order"
-											id="labs-order"
-											value="ascending"
-											checked={ascending}
-											onChange={e =>
-												setAscending(e.target.checked)
-											}
+											name={`labs-types-${type}`}
+											id={`labs-types-${type}`}
+											value={type}
+											checked={typeStates[i]}
+											onChange={e => {
+												const {checked} = e.target;
+												setTypeStates(
+													prevTypeStates => {
+														const updatedTypeStates =
+															[
+																...prevTypeStates,
+															];
+														updatedTypeStates[i] =
+															checked;
+														return updatedTypeStates;
+													},
+												);
+											}}
 										/>
-										<label htmlFor="labs-order">
-											Reverse
+										<label htmlFor={`labs-types-${type}`}>
+											{`${contentTypes[type].readableType}s`}
 										</label>
-										{/* TODO: Add the shuffle button back here!
+									</Fragment>
+								))}
+							</div>
+							<button
+								className="labs-clear labs-clear-types"
+								onClick={() =>
+									setTypeStates(
+										new Array(nodeTypes.length).fill(
+											false,
+										),
+									)
+								}
+							>
+								✖
+							</button>
+						</fieldset>
+						<fieldset>
+							<legend>Sort by:</legend>
+							<div className="inputs">
+								{sortingMethods.map(({title}, i) => (
+									<Fragment key={title}>
+										<input
+											className="visually-hidden"
+											type="radio"
+											name={`labs-sort-${title}`}
+											id={`labs-sort-${title}`}
+											value={title}
+											checked={sortIdx === i}
+											onChange={() => setSortIdx(i)}
+										/>
+										<label htmlFor={`labs-sort-${title}`}>
+											{capitalize(title)}
+										</label>
+									</Fragment>
+								))}
+							</div>
+						</fieldset>
+						<fieldset>
+							<legend>Order:</legend>
+							<div className="inputs">
+								<input
+									className="visually-hidden"
+									type="checkbox"
+									name="labs-order"
+									id="labs-order"
+									value="ascending"
+									checked={ascending}
+									onChange={e =>
+										setAscending(e.target.checked)
+									}
+								/>
+								<label htmlFor="labs-order">Reverse</label>
+								{/* TODO: Add the shuffle button back here!
 
 							<button onClick={this.shuffleDisplayNodes}>
 								Shuffle
 							</button> */}
-									</div>
-								</fieldset>
-							</>
-						)}
+							</div>
+						</fieldset>
 					</div>
 					<p className="result-details">
 						Found <strong>{nodes.length}</strong> entries from{' '}

@@ -2,8 +2,7 @@
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	font-family: var(--fs);
-	font-size: var(--font-scale-2);
+	font: var(--fs-pretty-big) var(--ff-heading);
 	grid-column: 1 / -1;
 	justify-content: space-between;
 	margin: 0;
@@ -12,16 +11,16 @@
 }
 .big-quote::before {
 	content: '';
-	margin-top: 120px;
+	margin-top: var(--s-5);
 }
 .big-quote.no-refresh::after {
 	content: '';
-	margin-bottom: 120px;
+	margin-bottom: var(--s-5);
 }
 .big-quote::before,
 .big-quote::after,
 .big-quote .refresh {
-	font-size: 60px;
+	font-size: var(--fs-6);
 }
 .big-quote blockquote {
 	margin: 0 auto;
@@ -30,22 +29,16 @@
 	width: 90%;
 }
 .big-quote p {
-	margin: 0 0 15px;
+	margin: 0 0 var(--s-0);
 	text-align: justify;
 }
 .big-quote footer {
-	margin-top: 30px;
+	margin-top: var(--s-0);
 	text-align: right;
 }
 .big-quote .refresh {
 	background: none;
 	border: 0;
 	color: var(--color-fg);
-	margin-bottom: 120px;
-}
-/* TODO(riley): Share these breakpoints. */
-@media only screen and (width <= 800px) {
-	.big-quote {
-		font-size: var(--font-scale-0);
-	}
+	margin-bottom: var(--s-5);
 }

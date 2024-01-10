@@ -14,19 +14,7 @@ export default function HTML(props) {
 				{/* TODO: Get `gatsby-plugin-preload-fonts` working again. See https://github.com/gatsbyjs/gatsby/issues/32127. */}
 				<link
 					as="font"
-					href="/fonts/geomanist-regular-webfont.woff2"
-					rel="preload"
-					crossOrigin="anonymous"
-				/>
-				<link
-					as="font"
-					href="/fonts/geomanist-medium-webfont.woff2"
-					rel="preload"
-					crossOrigin="anonymous"
-				/>
-				<link
-					as="font"
-					href="/fonts/geomanist-black-webfont.woff2"
+					href="/fonts/MintGrotesk-Regular-Subset.woff2"
 					rel="preload"
 					crossOrigin="anonymous"
 				/>

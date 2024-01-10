@@ -10,11 +10,11 @@
 .pick-one .question {
 	align-items: center;
 	display: flex;
-	font: 900 5vh var(--fh);
+	font: 900 5vh var(--ff-heading);
 	height: 0;
 	line-height: 1.2;
 	min-height: 0;
-	transition: min-height 1s ease-in-out;
+	transition: min-height var(--transition-t) var(--transition-easing);
 	will-change: min-height;
 }
 .pick-one.with-question .question {
@@ -25,7 +25,7 @@
 	display: flex;
 	flex-grow: 1;
 	flex-wrap: wrap;
-	font: 900 5vw var(--fh);
+	font: 900 5vw var(--ff-heading);
 	justify-content: center;
 	width: 100vw;
 }

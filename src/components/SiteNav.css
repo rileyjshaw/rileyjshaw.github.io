@@ -1,24 +1,25 @@
 .site-nav {
 	grid-column: left-column / span 1;
 	grid-row: 2 / span 1;
+	height: min-content;
 	z-index: 1;
 }
 .site-nav-menu-button {
 	display: none;
 }
 .site-nav a {
-	color: var(--color-fg);
+	font-size: var(--fs--1);
 	text-decoration: none;
 }
 .site-nav .active a {
-	color: var(--color-blue);
+	color: var(--color-fg-selected);
 }
 
 @media screen and (width <= 1000px) {
 	.site-nav {
 		grid-column: right-column / span 1;
 		grid-row: 1 / span 1;
-		margin-top: var(--font-scale-1);
+		margin-top: var(--s--3);
 	}
 	.site-nav ul.hidden {
 		display: none;
@@ -34,6 +35,8 @@
 		overscroll-behavior: contain;
 		padding: 0;
 		position: fixed;
+		transition: background-color var(--transition-t)
+			var(--transition-easing);
 	}
 	.site-nav li {
 		border-radius: 0 1000px 1000px 0;
@@ -45,34 +48,37 @@
 		align-items: center;
 		display: flex;
 		flex-grow: 1;
-		font-family: var(--fh);
-		font-size: var(--font-scale-2);
-		font-weight: 400;
+		font-family: var(--ff-heading);
+		font-size: var(--fs-2);
 		justify-content: center;
 		width: 100%;
 	}
 	.site-nav a,
 	.settings svg {
 		animation:
-			fade-in 1s ease-in-out,
-			slide-right 1s ease-in-out;
+			fade-in 1s var(--transition-easing),
+			slide-right 1s var(--transition-easing);
 	}
 	.site-nav .site-nav-menu-button {
-		align-items: center;
-		background: var(--color-bg);
+		background: transparent;
 		border: none;
 		color: var(--color-fg);
-		display: flex;
-		font-size: var(--font-scale-1);
+		display: grid;
+		font-size: var(--fs-1);
 		height: 2em;
-		justify-content: center;
 		margin-left: auto;
 		margin-right: -0.5em;
-		margin-top: calc((60px - 2em) / 2);
+		margin-top: calc((var(--s-2) - 2em) / 2);
 		padding: 0.5em;
+		place-items: center;
 		position: relative;
 		width: 2em;
 		z-index: 2;
+	}
+	.site-nav .site-nav-menu-button.open {
+		position: fixed;
+		right: 1em;
+		top: 0;
 	}
 	.site-nav .site-nav-menu-button:hover,
 	.site-nav .site-nav-menu-button:focus {
@@ -87,7 +93,7 @@
 		justify-content: stretch;
 	}
 	.site-nav .active a {
-		color: var(--color-fg);
+		color: inherit;
 	}
 	.site-nav li:nth-child(1) a {
 		animation-delay:

@@ -2,7 +2,6 @@
 	display: grid;
 	grid-column: left-column / span 3;
 	grid-template-columns: subgrid;
-	min-height: 100vh;
 }
 .project-explorer .filters-wrapper {
 	grid-column: middle-column / span 2;
@@ -10,26 +9,20 @@
 .project-explorer .filters {
 	align-items: flex-start;
 	display: grid;
+	gap: var(--s--4);
 	grid-template-columns: [legends] auto [inputs] 1fr [cancel] auto;
+	margin-bottom: var(--s-0);
 }
 .project-explorer .filters fieldset {
-	border: 0;
 	display: contents;
 	grid-column: 1 / -1;
-	margin: 0;
-	padding: 0;
 }
 .project-explorer .filters legend,
 .project-explorer .result-details {
-	font-family: var(--fh);
-	font-size: var(--font-scale-1);
-	font-weight: 500;
-	line-height: 47px; /* HACK(riley): Matches the button size. */
+	line-height: 40px; /* HACK(riley): Matches the button size. */
 }
 .project-explorer .filters legend {
-	font-weight: 900;
 	grid-column: legends / span 1;
-	margin: 0;
 }
 .project-explorer .filters .inputs {
 	align-items: center;
@@ -40,31 +33,21 @@
 .project-explorer .filters .labs-clear {
 	grid-column: cancel / span 1;
 }
-.project-explorer-hide-filters,
 .project-explorer .filters label,
 .project-explorer .filters button {
 	background: var(--color-bg);
-	border: 1px solid var(--color-fg);
-	box-shadow: 2px 2px var(--color-fg);
+	border: 1px solid var(--color-fg-ultramute);
 	cursor: pointer;
 	display: inline-block;
-	font-family: var(--fh);
-	font-size: var(--font-scale--1);
-	font-weight: 500;
-	margin: 0 0 var(--grid-gap) 16px;
-	padding: 10px 20px;
-}
-.project-explorer-hide-filters {
-	margin-left: 0;
-	width: 100%;
+	font-size: var(--fs--2);
+	font-weight: 700;
+	margin: var(--s--4);
+	padding: var(--s--4) var(--s--2);
 }
 .project-explorer button:active,
 .project-explorer .filters :checked + label {
-	background: var(--grey);
-	box-shadow: none;
-	font-weight: 900;
-	text-decoration: underline 2px;
-	transform: translate(3px, 3px);
+	background: var(--color-bg-selected);
+	border-color: var(--color-fg);
 }
 .project-explorer .filters header button {
 	margin: 0 0 0 auto;

@@ -1,4 +1,3 @@
-import {cssColorProperty} from './src/util/_util';
 import {
 	DIRECT_COLORS,
 	STORAGE_KEYS,
@@ -9,26 +8,46 @@ import React from 'react';
 
 export * from './wrap-root-elements';
 
-const execString_manageInitialTheme = `(function() {
-	var stored = JSON.parse(
-		window.localStorage.getItem('${STORAGE_KEYS.theme}')
-	);
-	if (stored && stored.value !== 'system') {
-		(${applyTheme})(stored.value);
-	}
-})()`;
+const cssColorProperty = (color, variant) =>
+	`--color-${color}${variant ? `-${variant}` : ''}`;
 
-const colorObjectToCss = (colorObject, rgbWrap) =>
-	Object.entries(colorObject)
-		.flatMap(([name, _o]) =>
-			Object.entries(_o).map(
-				([variant, value]) =>
-					`${cssColorProperty(name, variant)}: ${
-						rgbWrap ? `rgb(${value})` : value
-					};`,
-			),
-		)
-		.join('\n\t');
+const directColorsString = Object.entries(DIRECT_COLORS)
+	.flatMap(([colorName, colorVariants]) =>
+		Object.entries(colorVariants).map(
+			([variant, value]) =>
+				`${cssColorProperty(colorName, variant)}: ${value};`,
+		),
+	)
+	.join('\n\t');
+
+const abstractColorsStrings = {};
+Object.entries(ABSTRACT_COLOR_PROPERTIES).forEach(
+	([themeName, themeColors]) => {
+		abstractColorsStrings[themeName] = Object.entries(themeColors)
+			.map(
+				([abstractName, value]) =>
+					`${cssColorProperty(abstractName)}: ${value};`,
+			)
+			.join('\n\t');
+	},
+);
+
+const rawString_headCss = `
+:root {
+	color-scheme: light dark;
+	${directColorsString}
+	${abstractColorsStrings.light}
+}
+@media (prefers-color-scheme: dark) {
+	html:not([data-theme="light"]) {
+		color-scheme: dark light;
+		${abstractColorsStrings.dark}
+	}
+}
+html[data-theme="dark"] {
+	color-scheme: dark light;
+	${abstractColorsStrings.dark}
+}`;
 
 export const onRenderBody = ({
 	setHeadComponents,
@@ -44,24 +63,7 @@ export const onRenderBody = ({
 		<style
 			key="color-custom-properties"
 			dangerouslySetInnerHTML={{
-				__html: `
-:root {
-	color-scheme: light dark;
-	${colorObjectToCss(DIRECT_COLORS.light, true)}
-	${colorObjectToCss(ABSTRACT_COLOR_PROPERTIES.light)}
-}
-html[data-theme="dark"] {
-	color-scheme: dark light;
-	${colorObjectToCss(DIRECT_COLORS.dark, true)}
-	${colorObjectToCss(ABSTRACT_COLOR_PROPERTIES.dark)}
-}
-@media (prefers-color-scheme: dark) {
-html:not([data-theme="light"]) {
-	color-scheme: dark light;
-	${colorObjectToCss(DIRECT_COLORS.dark, true)}
-	${colorObjectToCss(ABSTRACT_COLOR_PROPERTIES.dark)}
-}
-}`,
+				__html: rawString_headCss,
 			}}
 		/>,
 	);
@@ -70,7 +72,7 @@ html:not([data-theme="light"]) {
 		<script
 			key="set-initial-theme"
 			dangerouslySetInnerHTML={{
-				__html: execString_manageInitialTheme,
+				__html: rawString_manageInitialTheme,
 			}}
 		/>,
 	);
@@ -79,13 +81,22 @@ html:not([data-theme="light"]) {
 		<script
 			key="love"
 			dangerouslySetInnerHTML={{
-				__html: `console.log(\`${loveYou}\`)`,
+				__html: rawString_loveYou,
 			}}
 		/>,
 	);
 };
 
-const loveYou = `
+const rawString_manageInitialTheme = `(function() {
+	var stored = JSON.parse(
+		window.localStorage.getItem('${STORAGE_KEYS.theme}')
+	);
+	if (stored && stored.value !== 'system') {
+		(${applyTheme})(stored.value);
+	}
+})()`;
+
+const rawString_loveYou = `console.log(\`
 '▀█║────────────▄▄───────────​─▄──▄_
 ──█║───────▄─▄─█▄▄█║──────▄▄──​█║─█║
 ──█║───▄▄──█║█║█║─▄║▄──▄║█║─█║​█║▄█║
@@ -95,5 +106,4 @@ const loveYou = `
 ───────▄▄─▄▄▀▀▄▀▀▄──▀▄▄▀
 ──────███████───▄▀
 ──────▀█████▀▀▄▀
-────────▀█▀
-`;
+────────▀█▀\`);`;

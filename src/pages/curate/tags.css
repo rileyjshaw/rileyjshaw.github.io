@@ -9,7 +9,7 @@
 	width: 100vw;
 }
 .curate-tags-page .untagged-counter {
-	font: 500 var(--font-scale-1) var(--fh);
+	font-weight: 700;
 	left: 12px;
 	position: absolute;
 	top: 0;
@@ -23,10 +23,6 @@
 	flex-shrink: 1;
 	margin: 0 10vw;
 	overflow: auto;
-}
-.curate-tags-page .tag-select,
-.curate-tags-page button {
-	color: var(--color-black);
 }
 .curate-tags-page .tag-select {
 	width: 800px;

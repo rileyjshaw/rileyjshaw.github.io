@@ -1,6 +1,6 @@
 import SEO from '../components/SEO';
 import './Post.css';
-import {Link, graphql} from 'gatsby';
+import {graphql} from 'gatsby';
 import React from 'react';
 
 export function Head({data, ...props}) {

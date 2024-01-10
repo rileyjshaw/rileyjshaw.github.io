@@ -1,11 +1,8 @@
-.subscribe-page hr {
-	margin: var(--font-scale-4) 0;
-}
 .subscribe-page .rss-feeds {
 	display: grid;
-	gap: var(--font-scale-2) var(--font-scale-1);
+	gap: var(--grid-gap);
 	grid-template-columns: max-content auto;
-	margin-top: var(--font-scale-2);
+	margin-top: var(--s-0);
 }
 .subscribe-page .rss-feeds dt {
 	grid-column-start: 1;
@@ -15,12 +12,15 @@
 	margin: 0;
 }
 
-@media only screen and (width <= 600px) {
+@media only screen and (width <= 1000px) {
 	.subscribe-page .rss-feeds {
 		grid-template-columns: 1fr;
 	}
 	.subscribe-page .rss-feeds dt,
 	.subscribe-page .rss-feeds dd {
 		grid-column: 1 / -1;
+	}
+	.subscribe-page .rss-feeds dd {
+		padding-bottom: var(--s-0);
 	}
 }

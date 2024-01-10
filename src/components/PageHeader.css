@@ -1,13 +1,12 @@
 .page-header {
 	align-items: center;
-	color: var(--color-fg);
+	box-sizing: content-box;
 	display: grid;
-	font-family: var(--fh);
 	grid-column: left-column / span 2;
 	grid-template-columns: subgrid;
-	height: 120px;
-	margin-top: var(--font-scale-1);
-	padding-bottom: 60px;
+	height: var(--s-2);
+	margin-top: var(--s--3);
+	padding-bottom: var(--s-3);
 }
 .page-header .home-link {
 	display: block;
@@ -22,14 +21,13 @@
 	top: 25%;
 }
 .page-header .title {
-	font: inherit;
-	font-size: var(--font-scale-2);
+	font-weight: 700;
+	letter-spacing: 0.05em;
 	margin: 0;
-	position: relative;
-	top: 1px;
+	text-transform: uppercase;
 }
 .page-header a {
-	color: var(--color-fg);
+	color: inherit;
 	text-decoration: none;
 }
 

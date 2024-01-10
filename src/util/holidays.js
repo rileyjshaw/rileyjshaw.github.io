@@ -19,15 +19,18 @@ const holidays = [
 		name: 'Halloween',
 		date: [9, 31],
 		style: {
-			color: 'var(--color-yellow)',
-			backgroundColor: 'var(--color-red)',
-			fontWeight: 'bold',
+			color: 'var(--color-yellow-200)',
+			backgroundColor: 'var(--color-red-800)',
 		},
 	},
 	{
 		name: 'Black Friday',
 		date: year => {
 			return [10, getAmericanThanksgivingDate(year) + 1];
+		},
+		style: {
+			color: 'var(--color-grey-950)',
+			backgroundColor: 'var(--color-yellow-300)',
 		},
 		link: 'https://www.monbiot.com/2012/12/10/the-gift-of-death/',
 	},
@@ -37,8 +40,8 @@ const holidays = [
 			return [10, getAmericanThanksgivingDate(year) + 4];
 		},
 		style: {
-			color: 'var(--color-black)',
-			backgroundColor: 'var(--color-yellow)',
+			color: 'var(--color-grey-950)',
+			backgroundColor: 'var(--color-yellow-300)',
 		},
 		link: 'https://www.monbiot.com/2012/12/10/the-gift-of-death/',
 	},

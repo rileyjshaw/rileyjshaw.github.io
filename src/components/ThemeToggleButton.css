@@ -3,14 +3,7 @@
 	border: 0;
 	cursor: pointer;
 	flex: 1 1 0;
-	font: 500 1em var(--fss);
+	font: 1em var(--ff-sans);
 	height: 100%;
 	width: max-content;
-}
-.page-header > .theme-toggle-button {
-	height: 120px;
-	position: absolute;
-	right: 0;
-	top: 0;
-	width: 120px;
 }

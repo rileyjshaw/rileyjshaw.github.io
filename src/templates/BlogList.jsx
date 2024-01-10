@@ -64,7 +64,13 @@ const BlogList = ({data, pageContext: {currentPage, numPages}}) => {
 
 										<div className="subheading">
 											<time dateTime={date}>
-												{date.replace(/-/g, '.')}
+												{new Date(
+													date.replace(/-/g, '/'),
+												).toLocaleString('en-us', {
+													month: 'long',
+													day: 'numeric',
+													year: 'numeric',
+												})}
 											</time>
 											{repo && (
 												<>
@@ -83,10 +89,13 @@ const BlogList = ({data, pageContext: {currentPage, numPages}}) => {
 										className={
 											post.more ? 'excerpt' : null
 										}
-										dangerouslySetInnerHTML={{
-											__html: post.description,
-										}}
-									/>
+									>
+										<p
+											dangerouslySetInnerHTML={{
+												__html: post.description,
+											}}
+										/>
+									</section>
 									{post.more && (
 										<p className="continue-reading">
 											<AutoLink to={link}>
@@ -102,13 +111,13 @@ const BlogList = ({data, pageContext: {currentPage, numPages}}) => {
 				<div className="page-navigation">
 					{!isFirst && (
 						<Link to={prevPage} rel="prev">
-							⬅&#xFE0E;
+							←&#xFE0E;
 						</Link>
 					)}
 					{nearbyPages}
 					{!isLast && (
 						<Link to={nextPage} rel="next">
-							➡&#xFE0E;
+							→&#xFE0E;
 						</Link>
 					)}
 				</div>

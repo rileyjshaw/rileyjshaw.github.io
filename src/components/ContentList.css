@@ -1,9 +1,8 @@
 ul.content-list {
 	display: grid;
-	font-size: var(--font-scale-1);
 	grid-gap: 0.5em;
 	grid-template-columns: min-content 1fr;
-	padding-top: 1em;
+	padding-block: var(--s-0);
 }
 .content-list li {
 	align-items: baseline;

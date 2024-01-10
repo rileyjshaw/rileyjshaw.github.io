@@ -12,7 +12,7 @@
 	margin: -0.2em 0;
 }
 .fit-3-child {
-	font-family: var(--fh);
+	font-family: var(--ff-heading);
 	margin: 0;
 	text-align: center;
 	white-space: nowrap;

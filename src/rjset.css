@@ -1,21 +1,61 @@
 :root {
-	--fss: 'Protest Grotesk', arial, 'Helvetica Neue', helvetica, sans-serif;
-	--fs: charter, georgia, palatino, 'Palatino Linotype', times,
+	/* Font family */
+	--ff-sans: 'Mint Grotesk', system-ui, sans-serif;
+	--ff-serif: charter, georgia, palatino, 'Palatino Linotype', times,
 		'Times New Roman', 'Century Schoolbook L', serif;
-	--fh: 'Protest Grotesk', 'Proxima Nova', 'Montserrat', 'Arial Black',
-		'Arial Bold', gadget, sans-serif;
-	--fm: 'Courier New', courier, 'Lucida Sans Typewriter', 'Lucida Typewriter',
-		monospace;
+	--ff-heading: 'Mint Grotesk Display', 'Mint Grotesk', system-ui, sans-serif;
+	--ff-mono: 'Courier New', courier, 'Lucida Sans Typewriter',
+		'Lucida Typewriter', monospace;
+	/* Font size */
+	--fs--4: 0.5625rem; /* 9px */
+	--fs--3: 0.75rem; /*  12px */
+	--fs--2: 0.875rem; /* 14px */
+	--fs--1: 1rem; /*      16px */
+	--fs-0: 1.125rem; /*  18px */
+	--fs-1: 1.25rem; /*   20px */
+	--fs-2: 1.5rem; /*    24px */
+	--fs-3: 1.875rem; /*  30px */
+	--fs-4: 2.25rem; /*   36px */
+	--fs-5: 3rem; /*      48px */
+	--fs-6: 3.75rem; /*   60px */
+	--fs-7: 4.5rem; /*    72px */
+	/* Spacing */
+	--s--4: 0.25rem; /*  4px */
+	--s--3: 0.5rem; /*   8px */
+	--s--2: 0.75rem; /* 12px */
+	--s--1: 1rem; /*     16px */
+	--s-0: 1.5rem; /*   24px */
+	--s-1: 2rem; /*     32px */
+	--s-2: 3rem; /*     48px */
+	--s-3: 4rem; /*     64px */
+	--s-4: 6rem; /*     96px */
+	--s-5: 8rem; /*    128px */
+	--s-6: 12rem; /*   192px */
+	--s-7: 16rem; /*   256px */
+	--s-8: 24rem; /*   384px */
+	--s-9: 32rem; /*  512px */
+	--s-10: 40rem; /*  640px */
+	--s-11: 48rem; /*  768px */
+	/* Shadows */
+	--shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 5%);
+	--shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px -1px rgb(0 0 0 / 10%);
+	--shadow-md: 0 4px 6px -1px rgb(0 0 0 / 10%),
+		0 2px 4px -2px rgb(0 0 0 / 10%);
+	--shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 10%),
+		0 4px 6px -4px rgb(0 0 0 / 10%);
+	/* Transitions */
+	--transition-t: 150ms;
+	--transition-t-fast: 75ms;
+	--transition-t-slow: 0.5s;
+	--transition-easing: ease-in-out;
 }
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
-	transition: all 0.2s ease-in-out;
-	transition-property: background-color, border-color, color, opacity;
 }
 ::selection {
-	background: var(--color-s3);
+	background: var(--color-yellow-500);
 }
 html,
 body {
@@ -32,6 +72,7 @@ blockquote,
 figure,
 dl,
 dd {
+	font-size: inherit;
 	margin: 0;
 }
 ul[class],
@@ -55,6 +96,16 @@ code {
 }
 input[type='text'] {
 	background: var(--color-bg-bold);
+	color: var(--color-fg);
+}
+input[type='text']:focus {
+	border-color: var(--color-blue-500);
+	box-shadow: inset 0 0 0 1px
+		color-mix(in srgb, var(--color-blue-500) 50%, transparent);
+	outline: none;
+}
+::placeholder {
+	color: var(--color-grey-500);
 }
 button {
 	cursor: pointer;
@@ -62,8 +113,11 @@ button {
 html {
 	background: var(--color-bg);
 	color: var(--color-fg);
-	font: 18px/1.7 var(--fss);
+	font: 16px/1.7 var(--ff-sans);
 	scroll-behavior: smooth;
+	transition:
+		background-color var(--transition-t) var(--transition-easing),
+		color var(--transition-t) var(--transition-easing);
 }
 
 @media (prefers-reduced-motion) {
@@ -80,50 +134,27 @@ h1,
 h2,
 h3,
 h4 {
-	font-family: var(--fh);
-	font-weight: 500;
+	font-family: var(--ff-heading);
+	font-weight: unset;
 }
-/* TODO(riley): I wanted to delete these rules at some point. Starting here… */
-h1 {
-	font-size: var(--font-scale-4);
-	margin: var(--font-scale--1) 0 var(--font-scale--4);
-}
-h2 {
-	font-size: var(--font-scale-3);
-	margin: var(--font-scale-0) 0 0;
-}
-h3,
-h4 {
-	font-size: var(--font-scale-1);
-	margin: var(--font-scale-2) 0 var(--font-scale--1);
-}
-p,
-dd {
-	margin-bottom: var(--font-scale-1);
-	margin-top: 1em;
-}
-/* …and ending here. */
 code,
 pre {
-	font-family: var(--fm);
+	font-family: var(--ff-mono);
 	overflow: auto;
 }
 a {
-	color: var(--color-blue);
+	color: inherit;
 }
 a[target='_blank'] {
 	cursor: alias;
 }
 a[target='_blank']::after {
 	content: '\202F\279A';
-	font-family: var(--fs);
+	font-family: var(--ff-serif);
 }
 a[target='_blank'].gatsby-resp-image-link::after {
 	content: none;
 }
 .dark-theme ul {
 	list-style: disc;
-}
-.dark-theme ::selection {
-	background: var(--color-p2);
 }

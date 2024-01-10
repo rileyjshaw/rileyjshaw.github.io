@@ -19,7 +19,7 @@ const GalleryImage = ({ThumbnailImage, FullImage, aspectRatio}) => (
 				{FullImage}
 				<Dialog.Close asChild>
 					<button className="icon-button" aria-label="Close">
-						𝘅
+						✖
 					</button>
 				</Dialog.Close>
 			</Dialog.Content>

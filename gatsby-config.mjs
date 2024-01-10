@@ -2,6 +2,7 @@ import {format} from './src/util/all-projects-query.mjs';
 import {dirname} from 'path';
 import remarkGfm from 'remark-gfm';
 import {fileURLToPath} from 'url';
+import {ABSTRACT_COLORS} from './src/util/constants.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -121,10 +122,10 @@ export default {
 				name: 'The personal website of rileyjshaw',
 				short_name: 'rileyjshaw',
 				start_url: '/',
-				background_color: '#4ccbab',
-				theme_color: '#4ccbab',
+				background_color: ABSTRACT_COLORS.dark.bg,
+				theme_color: ABSTRACT_COLORS.dark.accent,
 				display: 'minimal-ui',
-				icon: 'icons/rjs-f.svg',
+				icon: 'icons/rjs-logo.svg',
 			},
 		},
 		{

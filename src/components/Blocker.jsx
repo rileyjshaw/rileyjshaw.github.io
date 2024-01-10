@@ -2,18 +2,19 @@ import {useInterval} from '../util/hooks';
 import './Blocker.css';
 import React, {useState} from 'react';
 
-export const Time = ({format = t => t}) => {
+export const CurrentTime = () => {
 	const [date, setDate] = useState(null);
 	useInterval(() => {
 		setDate(new Date());
 	}, 1000);
-	if (date === null) return '';
+	if (date === null) return null;
 	const hour = date.getHours();
-	const time = `${hour % 12 || 12}:${date
-		.getMinutes()
-		.toString()
-		.padStart(2, '0')}${hour < 12 ? 'am' : 'pm'}`;
-	return format(time);
+	return (
+		<span className="current-time">
+			{hour % 12 || 12}:{date.getMinutes().toString().padStart(2, '0')}
+			{hour < 12 ? 'am' : 'pm'}
+		</span>
+	);
 };
 
 export default ({onClose}) => {
@@ -23,7 +24,7 @@ export default ({onClose}) => {
 			{mode === 'open' ? (
 				<>
 					<p>
-						<Time format={t => `It is now: ${t}.`} />
+						It is <CurrentTime />.
 					</p>
 					<p>Do you still want to be on the internet?</p>
 					<ul className="options">
@@ -58,9 +59,9 @@ export default ({onClose}) => {
 					</ul>
 				</>
 			) : mode === 'response' ? (
-				'Okay.'
+				<p>Okay.</p>
 			) : mode === 'bye' ? (
-				'BYE!'
+				<p>BYE!</p>
 			) : null}
 		</div>
 	);

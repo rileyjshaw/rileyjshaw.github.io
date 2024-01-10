@@ -1,5 +1,5 @@
 import {ExternalLink} from '../components/AutoLink';
-import {Time} from '../components/Blocker';
+import {CurrentTime} from '../components/Blocker';
 import SEO from '../components/SEO';
 import './404.css';
 import {Link} from 'gatsby';
@@ -57,8 +57,8 @@ function NotFoundPage({location}) {
 						</li>
 						<li>
 							<p>
-								Get off the Internet.{' '}
-								<Time format={t => `It’s already ${t}.`} />
+								Get off the Internet. It’s already{' '}
+								<CurrentTime />.
 							</p>
 						</li>
 					</ul>

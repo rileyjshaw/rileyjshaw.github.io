@@ -1,12 +1,12 @@
 .banner {
 	align-items: center;
-	background: var(--color-fg);
+	background-color: var(--color-fg);
 	color: var(--color-bg);
 	display: flex;
-	height: var(--font-scale-6);
+	font-weight: 700;
+	height: var(--s-2);
 	padding: 0 1em;
 	text-align: center;
-	width: 100%;
 }
 .banner > * {
 	flex-grow: 1;
@@ -18,10 +18,7 @@
 	color: inherit;
 }
 .banner button {
-	background: none;
-	border: 0;
-	color: inherit;
+	all: unset;
 	flex-grow: 0;
-	font-size: var(--font-scale-1);
 	margin-left: auto;
 }

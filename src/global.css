@@ -1,33 +1,36 @@
 @import url('./rjset.css');
 @import url('./typography.css');
 :root {
-	--font-scale--5: 0.328em;
-	--font-scale--4: 0.41em;
-	--font-scale--3: 0.512em;
-	--font-scale--2: 0.64em;
-	--font-scale--1: 0.8em;
-	--font-scale-0: 1em;
-	--font-scale-1: 1.25em;
-	--font-scale-2: 1.563em;
-	--font-scale-3: 1.953em;
-	--font-scale-4: 2.441em;
-	--font-scale-5: 3.052em;
-	--font-scale-6: 3.815em;
-	--grid-gap: 18px;
+	--fs-pretty-big: var(--fs-3);
+	--grid-gap: var(--s-0);
+}
+
+@media screen and (width <= 1000px) {
+	:root {
+		--fs-pretty-big: var(--fs-2);
+		--grid-gap: var(--fs--2);
+	}
+}
+body {
+	font-size: var(--fs-0);
+}
+h2 {
+	font-size: var(--fs-pretty-big);
+	margin: 2em 0 0.5em;
+}
+h3 {
+	font-size: var(--fs-2);
+	margin: var(--s-0) 0 var(--s--3);
 }
 p,
 dd {
-	margin-bottom: var(--font-scale-1);
-}
-pre {
-	font-size: var(--font-scale--1);
+	margin-bottom: 1em;
 }
 .default-button {
 	background: var(--color-bg);
-	border: 6px solid var(--color-fg);
-	font-family: var(--fh);
-	font-size: var(--font-scale--1);
-	font-weight: 900;
+	border: 1px solid var(--color-fg);
+	font-size: var(--fs--4);
+	font-weight: 700;
 	letter-spacing: 2px;
 	padding: 6px 12px;
 	text-align: center;
@@ -86,9 +89,20 @@ h5 .anchor:focus svg,
 h6 .anchor:focus svg {
 	opacity: 1;
 }
-
-@media screen and (width <= 1000px) {
-	:root {
-		--grid-gap: 12px;
-	}
+hr {
+	background-image: linear-gradient(
+		to right,
+		transparent,
+		var(--color-fg-mute),
+		transparent
+	);
+	border: 0;
+	height: 1px;
+	margin: var(--s-2) 0;
+}
+:has(+ hr) {
+	margin-bottom: 0;
+}
+:has(+ hr) > :last-child {
+	margin-bottom: 0;
 }

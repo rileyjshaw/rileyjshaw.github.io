@@ -1,3 +1,6 @@
+.site-outer-wrapper {
+	min-height: 100dvh;
+}
 .site-wrapper {
 	--gutter-size: max(var(--grid-gap), (100vw - 1500px) / 2);
 
@@ -8,6 +11,7 @@
 		[middle-column] 3fr
 		[right-column] 1fr
 		[right-gutter] var(--gutter-size);
+	height: 100%;
 	max-width: 100%;
 }
 .site-content,
@@ -42,10 +46,6 @@
 			[middle-column] 1fr
 			[right-column] minmax(60px, 120px)
 			[right-gutter] var(--grid-gap);
-	}
-	.site-content {
-		grid-row: 2 / span 1;
-		position: relative;
 	}
 	.site-content > :not(main) {
 		grid-column: left-column / span 3;

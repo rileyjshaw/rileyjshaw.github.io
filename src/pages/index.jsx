@@ -13,8 +13,10 @@ import GalleryImage from '../components/GalleryImage';
 import {StaticImage} from 'gatsby-plugin-image';
 import {ExternalLink} from '../components/AutoLink';
 import BackgroundGenerator from '../components/doodles/BackgroundGenerator';
-import GameOver from '../components/doodles/GameOver';
 import Riot from '../components/doodles/Riot';
+import CircleConstrainedLines from '../components/doodles/CircleConstrainedLines';
+import PinkNoise from '../components/PinkNoise';
+import {DIRECT_COLORS} from '../util/constants.mjs';
 
 export const Head = SEO;
 
@@ -36,7 +38,6 @@ const IndexPage = ({featuredProjects = []}) => {
 					</Link>
 				</div>
 				<div className="main-projects">
-					{/* TODO: Turn this more into a Bento Grid: https://bentogrids.com/ */}
 					<ul className="main-gallery">
 						<li className="project">
 							<ExternalLink
@@ -44,32 +45,33 @@ const IndexPage = ({featuredProjects = []}) => {
 								className="image-link"
 							>
 								<StaticImage
-									src="../../content/images/projects/stargazer-2.svg"
-									alt="An instrument, comprised of a colourful grid of buttons."
+									src="../../content/images/projects/stargazer.svg"
+									alt="A logo with the word “Stargazer”"
 									width={500}
 									aspectRatio={1}
 									backgroundColor="rgb(1, 6, 25)"
 								/>
 							</ExternalLink>
 						</li>
-						<li>
-							<ul className="bento-half-y">
-								<li className="project deletion-day">
-									<ExternalLink to="https://deletionday.com">
-										4/04
-									</ExternalLink>
-								</li>
-								<li>
-									<ul className="bento-half-x">
-										<li className="project">
-											<Riot />
-										</li>
-										<li className="project">
-											<BackgroundGenerator />
-										</li>
-									</ul>
-								</li>
-							</ul>
+						<li className="project">
+							<GalleryImage
+								ThumbnailImage={
+									<StaticImage
+										src="../../content/images/projects/multicolor.png"
+										alt="A technicolour fractal pattern."
+										width={500}
+										aspectRatio={1}
+									/>
+								}
+								FullImage={
+									<StaticImage
+										src="../../content/images/projects/multicolor.png"
+										alt="A technicolour fractal pattern."
+										aspectRatio={1}
+									/>
+								}
+								aspectRatio={1}
+							/>
 						</li>
 						<li className="project">
 							<ExternalLink
@@ -86,42 +88,103 @@ const IndexPage = ({featuredProjects = []}) => {
 						</li>
 						<li className="project">
 							<GalleryImage
-								ThumbnailImage={
-									<StaticImage
-										src="../../content/images/projects/ds-2.png"
-										alt="A technicolour fractal pattern."
-										width={500}
-										aspectRatio={1}
-									/>
-								}
-								FullImage={
-									<StaticImage
-										src="../../content/images/projects/ds-2.png"
-										alt="A technicolour fractal pattern."
-										aspectRatio={1}
-									/>
-								}
 								aspectRatio={1}
+								ThumbnailImage={<PinkNoise />}
+								FullImage={
+									<PinkNoise
+										width="2400px"
+										height="2400px"
+									/>
+								}
 							/>
 						</li>
-						<li className="project">
-							<GalleryImage
-								ThumbnailImage={
-									<StaticImage
-										src="../../content/images/projects/ds-1.png"
-										alt="A dreamy pink and blue pattern."
-										width={500}
+						<li className="project no-zoom">
+							<CircleConstrainedLines />
+						</li>
+						<li>
+							<ul className="bento-half-x">
+								<li className="project">
+									<GalleryImage
+										ThumbnailImage={
+											<StaticImage
+												src="../../content/images/projects/city.png"
+												alt="A pixellated, visually processed, sci-fi cityscape."
+												width={500}
+												aspectRatio={1}
+											/>
+										}
+										FullImage={
+											<StaticImage
+												src="../../content/images/projects/city.png"
+												alt="A pixellated, visually processed, sci-fi cityscape."
+											/>
+										}
 										aspectRatio={1}
 									/>
-								}
-								FullImage={
-									<StaticImage
-										src="../../content/images/projects/ds-1.png"
-										alt="A dreamy pink and blue pattern."
-									/>
-								}
-								aspectRatio={1}
-							/>
+								</li>
+								<li>
+									<ul className="bento-half-y">
+										<li className="project">
+											<GalleryImage
+												ThumbnailImage={
+													<StaticImage
+														src="../../content/images/projects/quantized.jpg"
+														alt="An abstract image. It’s shiny, grainy, lo-fi, and looks a bit 3D."
+														width={500}
+														aspectRatio={1}
+													/>
+												}
+												FullImage={
+													<StaticImage
+														src="../../content/images/projects/quantized.jpg"
+														alt="An abstract image. It’s shiny, grainy, lo-fi, and looks a bit 3D."
+													/>
+												}
+												aspectRatio={1}
+											/>
+										</li>
+										<li className="project">
+											<ExternalLink
+												to="https://vimeo.com/377116426"
+												className="image-link"
+											>
+												<StaticImage
+													src="../../content/images/projects/timestamped.png"
+													alt="A geometric pattern with the text “1:57am” overlayed."
+													width={500}
+													aspectRatio={1}
+												/>
+											</ExternalLink>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<ul className="bento-half-y">
+								<li className="project deletion-day">
+									<ExternalLink to="https://deletionday.com">
+										4/04
+									</ExternalLink>
+								</li>
+								<li>
+									<ul className="bento-half-x">
+										<li className="project no-zoom">
+											<Riot word="ROLL" />
+										</li>
+										<li className="project no-zoom">
+											<BackgroundGenerator
+												fgColor={
+													DIRECT_COLORS.red[500]
+												}
+												bgColor={
+													DIRECT_COLORS.blue[900]
+												}
+											/>
+										</li>
+									</ul>
+								</li>
+							</ul>
 						</li>
 						<li className="project">
 							<ExternalLink
@@ -136,60 +199,6 @@ const IndexPage = ({featuredProjects = []}) => {
 								/>
 							</ExternalLink>
 						</li>
-						<li className="project">
-							<ExternalLink
-								to="https://vimeo.com/377116426"
-								className="image-link"
-							>
-								<StaticImage
-									src="../../content/images/projects/timestamped.png"
-									alt="A geometric pattern with the text “1:57am” overlayed."
-									width={500}
-									aspectRatio={1}
-								/>
-							</ExternalLink>
-						</li>
-						<li className="project">
-							<GalleryImage
-								ThumbnailImage={
-									<StaticImage
-										src="../../content/images/projects/3.png"
-										alt="A pixellated, visually processed, sci-fi cityscape."
-										width={500}
-										aspectRatio={1}
-									/>
-								}
-								FullImage={
-									<StaticImage
-										src="../../content/images/projects/3.png"
-										alt="A pixellated, visually processed, sci-fi cityscape."
-									/>
-								}
-								aspectRatio={1}
-							/>
-						</li>
-						{/* <li>
-							<GalleryImage
-								ThumbnailImage={
-									<StaticImage
-										src="../../content/images/projects/pixels.png"
-										alt="A low-resolution pattern of black and white pixels."
-										width={600}
-										aspectRatio={1}
-									/>
-								}
-								FullImage={
-									<StaticImage
-										src="../../content/images/projects/pixels.png"
-										alt="A low-resolution pattern of black and white pixels."
-									/>
-								}
-								aspectRatio={1}
-							/>
-						</li> */}
-						{/* <li>
-							<GameOver />
-						</li> */}
 					</ul>
 				</div>
 				<div className="main-recent">

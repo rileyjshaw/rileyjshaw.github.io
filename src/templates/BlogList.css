@@ -4,15 +4,28 @@
 	padding: 0;
 }
 .blog-page .blog-post {
-	margin-bottom: 5em;
+	margin-bottom: var(--s-4);
 	padding-bottom: 0;
 }
 .blog-page .blog-post h1 {
-	font-size: var(--font-scale-4);
-	margin-top: var(--font-scale--2);
+	font: 900 var(--fs-4) var(--ff-heading);
+}
+.blog-page .blog-post:first-child h1 {
+	margin-top: 0;
+}
+.blog-page h1 a {
+	text-decoration: none;
+}
+/* TODO: Conflicting subheading styles should be cleaned up. */
+.blog-page .blog-post .subheading {
+	font-size: var(--fs--3);
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	margin: 0;
+	padding-top: var(--s--3);
 }
 .blog-page .blog-post section {
-	padding: 1em 0 0;
+	padding: var(--s-0) 0 0;
 }
 .blog-page .blog-post section > :first-child {
 	margin-top: 0;
@@ -20,17 +33,19 @@
 .blog-page .page-navigation {
 	align-items: center;
 	display: flex;
-	font-size: var(--font-scale-2);
 	justify-content: space-between;
 	margin: auto;
 	max-width: 100%;
-	padding: 1.5em 0;
+	padding: 0 0 var(--s-1);
 	width: 12em;
 }
 .blog-page .page-navigation a {
-	font-weight: 500;
+	font-weight: 700;
 	text-decoration: none;
 }
 .blog-page .page-navigation .current-page {
-	color: var(--color-fg);
+	color: var(--color-fg-selected);
+}
+.blog-page h1 a:hover {
+	text-decoration: underline;
 }

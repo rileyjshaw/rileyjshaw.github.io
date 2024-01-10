@@ -1,6 +1,4 @@
 .about-page .page-content {
-	font-size: var(--font-scale-1);
-	margin-top: -1em;
 	overflow: hidden;
 }
 .about-page .currently {
@@ -16,12 +14,9 @@
 	position: relative;
 }
 .about-page .timeline li:first-child h3 {
-	margin-top: var(--font-scale--1);
-}
-.about-page .timeline .logo {
-	height: 42px !important;
-	width: 42px !important;
+	margin-top: var(--s--1);
 }
 .about-page .timeline .job-title {
-	font-size: var(--font-scale--2);
+	font-size: var(--fs--1);
+	padding-left: var(--s--2);
 }

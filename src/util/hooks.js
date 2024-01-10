@@ -127,7 +127,7 @@ export function useRect({resize = false} = {}) {
 
 			if (!resize) return;
 
-			const resizeHandler = throttle(updateRect, 100);
+			const resizeHandler = throttle(updateRect, 250);
 			if (typeof ResizeObserver === 'function') {
 				const resizeObserver = new ResizeObserver(resizeHandler);
 				resizeObserver.observe(el);
@@ -331,9 +331,9 @@ export function useStickyState(
 			stickyValue &&
 			stickyValue.hasOwnProperty?.('value') &&
 			stickyValue.version === version
-		)
+		) {
 			setInitializedValue(stickyValue.value);
-		else {
+		} else {
 			const evaluatedDefault =
 				typeof defaultValue === 'function'
 					? defaultValue()

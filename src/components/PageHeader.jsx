@@ -1,7 +1,7 @@
 import './PageHeader.css';
 import {Link} from 'gatsby';
 import React from 'react';
-import Rjs from '../icons/RjsF';
+import RjsLogo from '../icons/RjsLogo';
 import {SITE_PAGES} from '../util/constants';
 
 const getPageName = pathname => {
@@ -16,7 +16,7 @@ export default ({location}) => {
 	return (
 		<header className="page-header" id="page-header" tabIndex="-1">
 			<Link to="/" className="home-link">
-				<Rjs
+				<RjsLogo
 					title="Site home"
 					titleId="site-home-title"
 					width={null}

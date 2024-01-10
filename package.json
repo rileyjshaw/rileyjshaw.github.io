@@ -87,11 +87,11 @@
     "serve": "gatsby serve",
     "size": "size-limit",
     "start": "npm run develop",
-    "generate-icons": "npx @svgr/cli --icon --svg-props fill=\"currentColor\" --title-prop --ext jsx --out-dir src/icons -- icons"
+    "generate-icons": "svgr --config-file ./svgr.config.js --icon --svg-props fill=\"currentColor\" --title-prop --ext jsx --out-dir src/icons -- icons"
   },
   "size-limit": [
     {
-      "limit": "1.5 MB",
+      "limit": "0.5 MB",
       "path": "public/*.js"
     }
   ],

@@ -2,10 +2,10 @@ import {useViewport, useRect} from '../../util/hooks';
 import './Riot.css';
 import React, {useMemo} from 'react';
 
-function Riot({className}, ref) {
+function Riot({className, word = 'RIOT!'}, ref) {
 	const [riotRef, _inView, boundingClientRect, windowHeight = 0] =
 		useViewport({updateOnScroll: true});
-	const [oRef, oBoundingClientRect] = useRect();
+	const [centerCharRef, centerCharBoundingClientRect] = useRect();
 	let factor = boundingClientRect
 		? (0.98 -
 				boundingClientRect.top /
@@ -17,22 +17,28 @@ function Riot({className}, ref) {
 
 	const transformOrigin = useMemo(
 		() =>
-			oBoundingClientRect
+			centerCharBoundingClientRect
 				? [
-						(oBoundingClientRect.left +
-							oBoundingClientRect.width / 2 -
+						(centerCharBoundingClientRect.left +
+							centerCharBoundingClientRect.width / 2 -
 							boundingClientRect.left) /
-							boundingClientRect.width +
-							0.01, // Fudge, since the O is not centered.
-						(oBoundingClientRect.top +
-							oBoundingClientRect.height / 2 -
+							boundingClientRect.width,
+						(centerCharBoundingClientRect.top +
+							centerCharBoundingClientRect.height / 2 -
 							boundingClientRect.top) /
-							boundingClientRect.height -
-							0.02, // Fudge, since the O is not centered.,
+							boundingClientRect.height,
 					]
 				: [0.5, 0.5],
-		[oBoundingClientRect],
+		[centerCharBoundingClientRect],
 	);
+
+	let centerCharIdx = word.indexOf('O');
+	if (centerCharIdx === -1) centerCharIdx = Math.floor(word.length / 2);
+	const wordParts = [
+		word.slice(0, centerCharIdx),
+		word[centerCharIdx],
+		word.slice(centerCharIdx + 1),
+	];
 
 	return (
 		<div
@@ -49,11 +55,13 @@ function Riot({className}, ref) {
 							.map(p => `${p * 100}%`)
 							.join(' '),
 						transform: `translate(-50%, -50%) rotate(${
-							i * factor * 30
+							i * factor * 40
 						}deg)`,
 					}}
 				>
-					RI<span ref={i ? null : oRef}>O</span>T!
+					{wordParts[0]}
+					<span ref={i ? null : centerCharRef}>{wordParts[1]}</span>
+					{wordParts[2]}
 				</p>
 			))}
 		</div>
