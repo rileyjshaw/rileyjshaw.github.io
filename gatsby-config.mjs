@@ -37,7 +37,7 @@ export default {
 	siteMetadata: {
 		title: 'Riley J. Shaw',
 		description:
-			'Riley J. Shaw is a programmer and interface designer. Focused on accessibility, mentorship, and community, Riley questions who “digital literacy” serves.',
+			'Riley J. Shaw is a programmer and designer. Rooted in repair and craft, he creates transparent, remixable tools for a sustainable and accessible future.',
 		author: '@rileyjshaw',
 		siteUrl: 'https://rileyjshaw.com',
 	},
