@@ -71,6 +71,7 @@
   "license": "GNU GPLv3",
   "scripts": {
     "build": "gatsby build",
+    "clean": "gatsby clean",
     "cm": "cz",
     "curate": "concurrently \"npm run develop-everywhere\" \"nodemon -w project-scraper/curation/server.mjs project-scraper/curation/server.mjs\"",
     "deploy": "npm run format && gatsby build && gh-pages -d public -b main",
