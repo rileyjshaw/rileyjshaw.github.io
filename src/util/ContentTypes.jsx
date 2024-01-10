@@ -211,7 +211,6 @@ export const ScreenshotContent = ({body, link, contentType, extraData}) => {
 		case 'video':
 			innerContent = (
 				<video
-					autoPlay
 					controls
 					height={extraData[1] || 'auto'}
 					loop
