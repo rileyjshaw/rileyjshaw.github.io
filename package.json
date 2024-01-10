@@ -41,7 +41,7 @@
     "@commitlint/cli": "^18.4.4",
     "@commitlint/config-conventional": "^18.4.4",
     "@size-limit/file": "^11.0.1",
-    "@svgr/cli": "^6.5.1",
+    "@svgr/cli": "^8.1.0",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "babel-preset-gatsby": "^3.13.0",
     "commitizen": "^4.3.0",
