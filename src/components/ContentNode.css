@@ -166,7 +166,8 @@
 	margin: auto;
 	width: 100px;
 }
-.content-node .screenshot-content img {
+.content-node .screenshot-content img,
+.content-node .screenshot-content video {
 	height: auto;
 	width: 100%;
 }

@@ -215,7 +215,8 @@ export const ScreenshotContent = ({body, link, contentType, extraData}) => {
 					height={extraData[1] || 'auto'}
 					loop
 					muted
-					src={body}
+					// HACK: `#t=0.001` enables video thumbnails in iOS.
+					src={`${body}#t=0.001`}
 					width={extraData[0]}
 				/>
 			);

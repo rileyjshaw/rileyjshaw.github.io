@@ -3,7 +3,7 @@
 	background: var(--color-grey-1000);
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
+	height: 100dvh;
 	justify-content: center;
 	left: 0;
 	overflow: hidden;

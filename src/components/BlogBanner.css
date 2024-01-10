@@ -70,7 +70,9 @@
 	}
 	.blog-banner-title {
 		border: 0;
+		display: block;
 		margin-bottom: 0;
+		text-align: left;
 		text-decoration: underline;
 	}
 }

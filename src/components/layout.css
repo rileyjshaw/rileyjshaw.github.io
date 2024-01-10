@@ -42,9 +42,9 @@
 	.site-wrapper {
 		grid-template-columns:
 			[left-gutter] var(--grid-gap)
-			[left-column] minmax(60px, 120px)
+			[left-column] minmax(var(--s-3), var(--s-4))
 			[middle-column] 1fr
-			[right-column] minmax(60px, 120px)
+			[right-column] minmax(var(--s-3), var(--s-4))
 			[right-gutter] var(--grid-gap);
 	}
 	.site-content > :not(main) {
