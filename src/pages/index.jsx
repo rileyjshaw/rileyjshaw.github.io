@@ -57,7 +57,7 @@ const IndexPage = ({featuredProjects = []}) => {
 							<GalleryImage
 								ThumbnailImage={
 									<StaticImage
-										src="../../content/images/projects/multicolor.png"
+										src="../../content/images/projects/multicolor.jpg"
 										alt="A technicolour fractal pattern."
 										width={500}
 										aspectRatio={1}
@@ -65,7 +65,7 @@ const IndexPage = ({featuredProjects = []}) => {
 								}
 								FullImage={
 									<StaticImage
-										src="../../content/images/projects/multicolor.png"
+										src="../../content/images/projects/multicolor.jpg"
 										alt="A technicolour fractal pattern."
 										aspectRatio={1}
 									/>
