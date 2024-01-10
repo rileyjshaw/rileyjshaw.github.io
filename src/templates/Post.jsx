@@ -1,6 +1,6 @@
 import SEO from '../components/SEO';
 import './Post.css';
-import {Link, graphql} from 'gatsby';
+import {graphql} from 'gatsby';
 import React from 'react';
 
 export function Head({data, ...props}) {
@@ -12,8 +12,8 @@ export default function Template({data, children}) {
 	const {mdx} = data;
 	const {fields} = mdx;
 	return (
-		<>
-			<main>
+		<main>
+			<div className="page-content">
 				<article className="blog-post-content" role="article">
 					<header>
 						<h1>{fields.title}</h1>
@@ -24,8 +24,8 @@ export default function Template({data, children}) {
 					{/* TODO(riley): Replace this: replace(/↩/g, '↩&#xFE0E;') */}
 					<div className="blog-post-markdown">{children}</div>
 				</article>
-			</main>
-		</>
+			</div>
+		</main>
 	);
 }
 

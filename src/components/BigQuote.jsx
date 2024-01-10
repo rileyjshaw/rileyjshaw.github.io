@@ -5,7 +5,7 @@ import './BigQuote.css';
 import {graphql, useStaticQuery} from 'gatsby';
 import React, {useState} from 'react';
 
-function BigQuote({quoteId, showRefreshButton = true}) {
+function BigQuote({quoteId}) {
 	const {
 		allCombinedQuotesJson: {nodes: quotes},
 	} = useStaticQuery(graphql`
@@ -57,30 +57,23 @@ function BigQuote({quoteId, showRefreshButton = true}) {
 	}
 	const lines = content.split('\n');
 	return (
-		<div
-			className={`big-quote ${showRefreshButton ? '' : 'no-refresh'}`}
-			id={showRefreshButton && 'big-quote'}
-		>
+		<div className="big-quote" id="big-quote">
 			<blockquote cite={cite}>
 				{lines.map((line, i) => (
 					<p key={i}>{line}</p>
 				))}
 				{source && <footer>{source}</footer>}
 			</blockquote>
-			{showRefreshButton && (
-				<a
-					href="#big-quote"
-					aria-label="Load new quote"
-					className="refresh"
-					onClick={() =>
-						setQuoteIndex(
-							prevIndex => (prevIndex + 1) % quotes.length,
-						)
-					}
-				>
-					<Repeat />
-				</a>
-			)}
+			<a
+				href="#big-quote"
+				aria-label="Load new quote"
+				className="refresh"
+				onClick={() =>
+					setQuoteIndex(prevIndex => (prevIndex + 1) % quotes.length)
+				}
+			>
+				<Repeat />
+			</a>
 		</div>
 	);
 }

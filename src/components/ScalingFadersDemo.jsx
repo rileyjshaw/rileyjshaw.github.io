@@ -136,7 +136,7 @@ const Demo = ({players}) => {
 				checked={simple}
 				onChange={() => setSimple(x => !x)}
 			/>
-			<label for="simple-toggle">Simple mode</label>
+			<label htmlFor="simple-toggle">Simple mode</label>
 		</>
 	) : (
 		<button

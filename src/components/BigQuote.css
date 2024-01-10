@@ -2,49 +2,38 @@
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	font-family: var(--fs);
-	font-size: var(--font-scale-2);
-	justify-content: space-between;
-	margin: 0;
-	min-height: 100vh;
+	font: var(--fs-pretty-big) var(--ff-heading);
+	grid-column: 1 / -1;
+	justify-content: center;
+	margin: var(--s-4) 0;
+	min-height: 100dvh;
 	position: relative;
-}
-.big-quote::before {
-	content: '';
-	margin-top: 120px;
-}
-.big-quote.no-refresh::after {
-	content: '';
-	margin-bottom: 120px;
 }
 .big-quote::before,
 .big-quote::after,
 .big-quote .refresh {
-	font-size: 60px;
+	font-size: var(--fs-6);
 }
 .big-quote blockquote {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	margin: 0 auto;
-	max-width: 800px; /* TODO(riley): Add breakpoint variables. */
-	padding-bottom: 2em;
+	max-width: var(--s-11);
+	min-height: 50dvh;
+	padding-bottom: var(--s-2);
 	width: 90%;
 }
 .big-quote p {
-	margin: 0 0 15px;
+	margin: 0 0 var(--s--1);
 	text-align: justify;
 }
 .big-quote footer {
-	margin-top: 30px;
+	margin-top: var(--s-0);
 	text-align: right;
 }
 .big-quote .refresh {
 	background: none;
 	border: 0;
 	color: var(--color-fg);
-	margin-bottom: 120px;
-}
-/* TODO(riley): Share these breakpoints. */
-@media only screen and (width <= 800px) {
-	.big-quote {
-		font-size: var(--font-scale-0);
-	}
 }

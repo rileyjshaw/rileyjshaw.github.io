@@ -1,13 +1,3 @@
-.not-found-main {
-	font-size: var(--font-scale-1);
-	margin: auto;
-	max-width: 90%;
-	padding: var(--font-scale-1) var(--font-scale-2);
-	width: 40em;
-}
-/* TODO(riley): Share these breakpoints. */
-@media only screen and (width <= 800px) {
-	.not-found-main {
-		padding: 0;
-	}
+.not-found h2 {
+	margin-top: -0.5rem;
 }

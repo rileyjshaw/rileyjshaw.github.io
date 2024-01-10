@@ -1,33 +1,40 @@
-.idle-blocker,
-.idle-blocker button {
-	background: var(--color-black);
-	color: var(--color-white);
-	font-family: var(--fs);
-}
 .idle-blocker {
 	align-items: center;
+	background: var(--color-grey-1000);
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
+	height: 100dvh;
 	justify-content: center;
 	left: 0;
 	overflow: hidden;
 	overscroll-behavior: contain;
+	padding: var(--s-1);
 	position: fixed;
+	text-align: center;
 	top: 0;
 	width: 100vw;
 	z-index: 10;
+}
+.idle-blocker p,
+.idle-blocker button {
+	color: var(--color-grey-500);
+	font: var(--fs-pretty-big) var(--ff-heading);
 }
 .idle-blocker ul.options {
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
-	margin: var(--font-scale--1) 0;
+	margin-block: var(--s-0);
 	padding: 0;
 }
 .idle-blocker button {
+	background: none;
 	border: 0;
-	font-size: inherit;
-	margin: 0 var(--font-scale-1);
+	padding-inline: var(--s-0);
 	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.25em;
+}
+.current-time {
+	font-variant-numeric: tabular-nums;
 }

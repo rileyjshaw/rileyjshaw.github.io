@@ -1,37 +1,82 @@
-import {getThemeColor} from '../../util/util';
+import {ABSTRACT_COLORS} from '../../util/constants';
 import {withSettings} from '../SettingsProvider';
 import './CircleConstrainedLines.css';
-import React, {useRef, useState, useEffect, useContext, useMemo} from 'react';
+import React, {useRef, useState, useEffect, useMemo} from 'react';
 
-const {PI, cos, sin, pow} = Math;
+const {PI, cos, sin, tan, pow} = Math;
 const L = 800;
-const R = L / 3;
+const R = L / 2.5;
 
 // Derived.
 const C = L / 2;
 
 const variants = [
 	{
+		getOffset: (i, nLines) => tan((i / nLines) * PI * 2) * PI * 10,
+		nLines: 360,
+		lineWidth: 1,
+		globalCompositeOperation: 'source-over',
+	},
+	{
 		getOffset: (i, nLines) =>
 			sin((i / nLines) * PI * 2) * cos((i / nLines) * PI * 2) * PI * 10,
-		nLines: 800,
+		nLines: 2000,
 		lineWidth: 1,
 		globalCompositeOperation: 'overlay',
 	},
 	{
+		getOffset: (i, nLines) => (i / nLines) * 2 * PI * 5,
+		nLines: 500,
+		lineWidth: 1,
+		globalCompositeOperation: 'source-over',
+	},
+	{
+		getOffset: (i, nLines) => (((i % 100) * 3) / nLines) * PI,
+		nLines: 300,
+		lineWidth: 3,
+		globalCompositeOperation: 'difference',
+	},
+	{
 		getOffset: (i, nLines) =>
-			pow(sin((i / nLines) * 2 * PI) * cos((i / nLines) * 2 * PI), 2) *
+			pow(sin((i / nLines) * 2 * PI) * cos((i / nLines) * 3 * PI), 2) *
+			4 *
+			PI,
+		nLines: 400,
+		lineWidth: 1,
+		globalCompositeOperation: 'source-over',
+	},
+	{
+		getOffset: (i, nLines) => (i / nLines) * PI * 6,
+		nLines: 800,
+		lineWidth: 3,
+		globalCompositeOperation: 'soft-light',
+	},
+	{
+		getOffset: (i, nLines) => (i / nLines) * PI * 100,
+		nLines: 400,
+		lineWidth: 1,
+		globalCompositeOperation: 'source-over',
+	},
+	{
+		getOffset: (i, nLines) => i * Math.random() * 2 * PI,
+		nLines: 1000,
+		lineWidth: 2,
+		globalCompositeOperation: 'soft-light',
+	},
+	{
+		getOffset: (i, nLines) => (i / nLines) * PI * 20,
+		nLines: 180,
+		lineWidth: 1,
+		globalCompositeOperation: 'source-over',
+	},
+	{
+		getOffset: (i, nLines) =>
+			pow(sin((i / nLines) * 3 * PI) * cos((i / nLines) * 3 * PI), 2) *
 			2 *
 			PI *
 			2,
-		nLines: 800,
+		nLines: 300,
 		lineWidth: 1,
-		globalCompositeOperation: 'overlay',
-	},
-	{
-		getOffset: (i, nLines) => (i / nLines) * 2 * PI * 1.5,
-		nLines: 100,
-		lineWidth: 2,
 		globalCompositeOperation: 'source-over',
 	},
 ];
@@ -42,7 +87,7 @@ const CircleConstrainedLines = React.forwardRef(
 		const [variant, setVariant] = useState(
 			Math.floor(Math.random() * variants.length),
 		);
-		const getColor = useMemo(() => getThemeColor(theme), [theme]);
+		const themeColors = useMemo(() => ABSTRACT_COLORS[theme], [theme]);
 		useEffect(() => {
 			const canvas = canvasRef.current;
 			if (!canvas) return;
@@ -56,8 +101,8 @@ const CircleConstrainedLines = React.forwardRef(
 			ctx.beginPath();
 			ctx.globalCompositeOperation = globalCompositeOperation;
 			ctx.lineWidth = lineWidth;
-			ctx.strokeStyle = getColor('fg')();
-			ctx.fillStyle = getColor('bg', 'mute')();
+			ctx.strokeStyle = themeColors.fg;
+			ctx.fillStyle = themeColors.bg;
 			ctx.arc(C, C, R * 1.03, 0, 2 * PI);
 			ctx.fill();
 

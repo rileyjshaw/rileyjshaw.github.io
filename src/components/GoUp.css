@@ -2,9 +2,10 @@
 	align-items: center;
 	display: flex;
 	/* TODO(riley): Cross-platform option? */
-	font-family: Menlo, var(--fss);
+	font-family: Menlo, var(--ff-sans);
 	font-size: 600px;
-	height: 100vh;
+	grid-column: 1 / -1;
+	height: 100dvh;
 	justify-content: center;
 	overflow: hidden;
 	width: 100%;

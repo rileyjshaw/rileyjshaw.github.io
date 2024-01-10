@@ -8,22 +8,22 @@
 }
 .doodle-game-over p {
 	flex-basis: 0;
-	font-family: var(--fss);
+	font-family: var(--ff-sans);
 }
 .doodle-game-over .main-text {
-	font-weight: 500;
+	font-weight: 700;
 	letter-spacing: 2px;
 	margin: 1.5em 0 0;
 }
 .doodle-game-over .play-again {
-	font-size: var(--font-scale--1);
+	font-size: var(--fs--2);
 	margin: 0 0 1.5em;
 	max-height: 0;
 	opacity: 0;
 	pointer-events: none;
 	transition:
-		opacity 0.4s 0.4s,
-		max-height 0.4s 0.8s;
+		opacity var(--transition-t-slow) var(--transition-t-slow),
+		max-height var(--transition-t-slow) 1s;
 	will-change: max-height;
 }
 .doodle-game-over .play-again.show {
@@ -31,8 +31,8 @@
 	opacity: 1;
 	pointer-events: auto;
 	transition:
-		opacity 0.4s 0.8s,
-		max-height 0.4s 0.4s;
+		opacity var(--transition-t-slow) 1s,
+		max-height var(--transition-t-slow) var(--transition-t-slow);
 }
 .doodle-game-over button {
 	background: none;

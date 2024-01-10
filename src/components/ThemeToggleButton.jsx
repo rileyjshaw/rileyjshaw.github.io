@@ -177,7 +177,7 @@ function ThemeToggleButton({uid, settings: {themeKey, setThemeKey}}) {
 							href={`#${eyelidsId}`}
 							strokeWidth={0}
 							startOffset="25%"
-							style={{textAnchor: 'middle'}}
+							style={{textAnchor: 'middle', letterSpacing: -0.2}}
 						>
 							Site theme:
 						</textPath>

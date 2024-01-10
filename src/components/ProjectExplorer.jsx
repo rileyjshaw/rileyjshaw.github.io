@@ -19,7 +19,6 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 		return [nodeTypes, `${nodeTypes.join('')}${sortingMethods.length}`];
 	}, [props.nodes]);
 
-	const [drawerOpen, setDrawerOpen] = useState(false);
 	const [ascending, setAscending] = useStickyState(
 		false,
 		STORAGE_KEYS.labAscending,
@@ -45,7 +44,7 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 			checkedTypeNames.length
 				? props.nodes.filter(node =>
 						checkedTypeNames.includes(node.type),
-				  )
+					)
 				: props.nodes
 		).reduce(
 			(partitions, node) => {
@@ -73,23 +72,10 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 	return (
 		nodes && (
 			<div className="project-explorer">
-				<button
-					className="project-explorer-hide-filters"
-					onClick={() => setDrawerOpen(openState => !openState)}
-				>
-					{drawerOpen ? 'Hide filters ▲' : 'Show filters ▼'}
-				</button>
-				<div className="filters">
-					{drawerOpen && (
-						/* TODO(riley): Once display: contents or display:
-				subgrid have good support, replace <p.legend> with
-				<legend>, get rid of the .inputs wrappers, and nest
-				<fieldset>s (display: contents) around each <legend> /
-				.inputs / button set. Until then, the children need to
-				be direct descendents of the grid, and a11y takes a
-				hit. */
-						<div className="controls">
-							<p className="legend">Show:</p>
+				<div className="filters-wrapper">
+					<div className="filters">
+						<fieldset>
+							<legend>Show:</legend>
 							<div className="inputs">
 								{nodeTypes.map((type, i) => (
 									<Fragment key={type}>
@@ -116,7 +102,7 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 											}}
 										/>
 										<label htmlFor={`labs-types-${type}`}>
-											{contentTypes[type].readableType}s
+											{`${contentTypes[type].readableType}s`}
 										</label>
 									</Fragment>
 								))}
@@ -133,7 +119,9 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 							>
 								✖
 							</button>
-							<p className="legend">Sort by:</p>
+						</fieldset>
+						<fieldset>
+							<legend>Sort by:</legend>
 							<div className="inputs">
 								{sortingMethods.map(({title}, i) => (
 									<Fragment key={title}>
@@ -152,7 +140,9 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 									</Fragment>
 								))}
 							</div>
-							<p className="legend">Order:</p>
+						</fieldset>
+						<fieldset>
+							<legend>Order:</legend>
 							<div className="inputs">
 								<input
 									className="visually-hidden"
@@ -172,14 +162,14 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 								Shuffle
 							</button> */}
 							</div>
-						</div>
-					)}
+						</fieldset>
+					</div>
+					<p className="result-details">
+						Found <strong>{nodes.length}</strong> entries from{' '}
+						<strong>{nSources}</strong> source
+						{nSources === 1 ? '' : 's'}:
+					</p>
 				</div>
-				<p className="result-details">
-					Found <strong>{nodes.length}</strong> entries from{' '}
-					<strong>{nSources}</strong> source
-					{nSources === 1 ? '' : 's'}:
-				</p>
 				<LazyGrid
 					nodes={nodes}
 					setIsFullyLoaded={props.setIsFullyLoaded}
@@ -237,7 +227,10 @@ const ProjectExplorerWrapper = React.memo(props => {
 			}
 		}
 	`);
-	const allProjects = allProjectsQuery();
+	const hiddenTypes = ['post', 'tumblr', 'commit'];
+	const allProjects = allProjectsQuery().filter(
+		project => !hiddenTypes.includes(project.type),
+	);
 	const nodes = useMemo(
 		() =>
 			allProjects.concat(
@@ -272,7 +265,7 @@ export default ProjectExplorerWrapper;
 		// …then for the render:
 		// …
 
-		<p className="legend">Match:</p>
+		<legend>Match:</legend>
 		<div className="inputs">
 			<input
 				type="radio"
@@ -294,7 +287,7 @@ export default ProjectExplorerWrapper;
 			/>
 			<label htmlFor="labs-filter-all">All</label>
 		</div>
-		<p className="legend">Of:</p>
+		<legend>Of:</legend>
 		<div className="inputs">
 			{tags.map((tag, i) => (
 				<Fragment key={tag.name}>

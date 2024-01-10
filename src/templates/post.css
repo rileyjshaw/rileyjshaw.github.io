@@ -1,48 +1,33 @@
-.blog-post-page .site-content {
-	font-size: var(--font-scale-1);
-	margin: auto;
-	max-width: 90%;
-	width: 36em;
-}
 .blog-post-page .blog-post-content {
-	padding-bottom: 3em;
+	grid-column: middle-column / span 1;
+	padding-bottom: var(--s-3);
 }
 .blog-post-content header {
 	line-height: 1;
 }
 .blog-post-page .blog-post-content h1 {
-	font-family: var(--fh);
-	font-size: var(--font-scale-5);
-	margin-bottom: 0;
+	font: 900 var(--fs-6) var(--ff-heading);
+	margin: 0;
 }
 /* TODO(riley): Duplicate. */
 .blog-post-content header .subheading {
-	font-family: var(--fss);
-	font-size: var(--font-scale--2);
-	font-style: italic;
-	font-weight: 500;
-	margin-left: 0.2em;
-	margin-top: 1.5em;
-}
-.blog-post-content header + p {
-	margin-top: 3em;
+	font-size: var(--fs--2);
+	letter-spacing: 0.05em;
+	margin: var(--s--2) 0 var(--s-2);
 }
 .blog-post-content ol,
 .blog-post-content ul {
-	margin: var(--font-scale-1) 0;
+	margin: var(--s-0) 0;
 }
 .blog-post-content li {
-	margin-bottom: var(--font-scale--2);
+	margin-bottom: var(--s--2);
 }
-.blog-post-content .footnote-ref {
-	color: inherit;
-	font-size: var(--font-scale--1);
-	font-style: normal;
-	font-weight: bold;
+.blog-post-content [data-footnote-ref] {
+	color: var(--color-link);
+	font-size: var(--fs--3);
+	font-weight: 700;
 	margin-left: 0.2em;
-}
-.blog-post-content .footnotes li {
-	margin-bottom: var(--font-scale--1);
+	text-decoration: none;
 }
 .blog-post-content .footnotes p {
 	display: inline;
@@ -61,8 +46,9 @@
 	margin-bottom: 0;
 }
 .blog-post-content figcaption {
-	font-size: var(--font-scale--2);
+	font-size: var(--fs--2);
 	font-style: italic;
+	margin-top: var(--s--2);
 }
 .blog-post-content table {
 	border-collapse: collapse;
@@ -86,16 +72,22 @@
 .blog-post-content cite::before {
 	content: '– ';
 }
-.blog-post-content hr {
-	border: 0;
-	border-top: 1px solid rgb(0 0 0 / 30%);
+.blog-post-content pre {
+	margin-top: var(--s-3);
 }
 .blog-post-content blockquote {
 	border-left: 4px solid var(--color-fg);
 	padding-left: 1em;
 }
+
 @media only screen and (width <= 800px) {
 	.blog-post-content pre {
 		font-size: 0.75em;
+	}
+}
+
+@media only screen and (width < 1000px) {
+	.blog-post-page .blog-post-content {
+		grid-column: left-column / span 3;
 	}
 }

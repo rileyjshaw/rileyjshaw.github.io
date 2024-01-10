@@ -42,8 +42,8 @@ const BlogList = ({data, pageContext: {currentPage, numPages}}) => {
 		));
 
 	return (
-		<>
-			<main className="blog-list">
+		<main className="blog-list">
+			<div className="page-content">
 				<ul className="blog-posts">
 					{posts.map(post => {
 						const uid = post.uid || post.fields?.uid;
@@ -53,7 +53,7 @@ const BlogList = ({data, pageContext: {currentPage, numPages}}) => {
 						const {repo} = post;
 
 						return (
-							<li className="blog-post content-node" key={uid}>
+							<li className="blog-post" key={uid}>
 								<article className="blog-post-content">
 									<header>
 										<h1>
@@ -64,7 +64,13 @@ const BlogList = ({data, pageContext: {currentPage, numPages}}) => {
 
 										<div className="subheading">
 											<time dateTime={date}>
-												{date.replace(/-/g, '.')}
+												{new Date(
+													date.replace(/-/g, '/'),
+												).toLocaleString('en-us', {
+													month: 'long',
+													day: 'numeric',
+													year: 'numeric',
+												})}
 											</time>
 											{repo && (
 												<>
@@ -83,10 +89,13 @@ const BlogList = ({data, pageContext: {currentPage, numPages}}) => {
 										className={
 											post.more ? 'excerpt' : null
 										}
-										dangerouslySetInnerHTML={{
-											__html: post.description,
-										}}
-									/>
+									>
+										<p
+											dangerouslySetInnerHTML={{
+												__html: post.description,
+											}}
+										/>
+									</section>
 									{post.more && (
 										<p className="continue-reading">
 											<AutoLink to={link}>
@@ -99,22 +108,21 @@ const BlogList = ({data, pageContext: {currentPage, numPages}}) => {
 						);
 					})}
 				</ul>
-				{/* TODO(riley): Consider replacing arrows with - and + in final design. */}
 				<div className="page-navigation">
 					{!isFirst && (
 						<Link to={prevPage} rel="prev">
-							⬅&#xFE0E;
+							←&#xFE0E;
 						</Link>
 					)}
 					{nearbyPages}
 					{!isLast && (
 						<Link to={nextPage} rel="next">
-							➡&#xFE0E;
+							→&#xFE0E;
 						</Link>
 					)}
 				</div>
-			</main>
-		</>
+			</div>
+		</main>
 	);
 };
 
@@ -142,7 +150,7 @@ export const blogListQuery = graphql`query blogListQuery($internalLimit: Int!, $
 		}
 	}
 	allCombinedProjectsJson(
-		filter: {type: {in: ["tumblr", "commit"]}}
+		filter: {type: {in: ["tumblr"]}}
 		sort: [{date: DESC}, {title: ASC}]
 		limit: $externalLimit
 		skip: $externalSkip

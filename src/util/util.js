@@ -1,17 +1,5 @@
-import {ABSTRACT_COLORS} from './constants';
-
 export function applyTheme(activeTheme) {
 	document.documentElement.setAttribute('data-theme', activeTheme);
-}
-
-// Usage example: getThemeColor('light')('fg')();
-export function getThemeColor(activeTheme) {
-	const themeColors = ABSTRACT_COLORS[activeTheme];
-	return (color, variant = 'main') => {
-		const rgb = themeColors[color][variant];
-		return (alpha = 1) =>
-			alpha === 1 ? `rgb(${rgb})` : `rgba(${rgb.concat(alpha)})`;
-	};
 }
 
 // Capitalize the first letter of a string.

@@ -2,6 +2,7 @@ import {format} from './src/util/all-projects-query.mjs';
 import {dirname} from 'path';
 import remarkGfm from 'remark-gfm';
 import {fileURLToPath} from 'url';
+import {ABSTRACT_COLORS} from './src/util/constants.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -37,7 +38,7 @@ export default {
 	siteMetadata: {
 		title: 'Riley J. Shaw',
 		description:
-			'Riley J. Shaw is a programmer and interface designer. Focused on accessibility, mentorship, and community, Riley questions who “digital literacy” serves.',
+			'Riley J. Shaw is a programmer and designer. Rooted in repair and craft, he creates transparent, remixable tools for a sustainable and accessible future.',
 		author: '@rileyjshaw',
 		siteUrl: 'https://rileyjshaw.com',
 	},
@@ -112,32 +113,19 @@ export default {
 				path: `${__dirname}/content/images`,
 			},
 		},
-		'gatsby-transformer-sharp',
+		'gatsby-plugin-image',
 		'gatsby-plugin-sharp',
+		'gatsby-transformer-sharp',
 		{
 			resolve: 'gatsby-plugin-manifest',
 			options: {
 				name: 'The personal website of rileyjshaw',
 				short_name: 'rileyjshaw',
 				start_url: '/',
-				background_color: '#4ccbab',
-				theme_color: '#4ccbab',
+				background_color: ABSTRACT_COLORS.dark.bg,
+				theme_color: ABSTRACT_COLORS.dark.accent,
 				display: 'minimal-ui',
-				include_favicon: false,
-				// TODO(riley): Currently manual mode. Consider automatic mode
-				// 	            once you’ve updated the favicon.
-				icons: [
-					{
-						src: '/android-chrome-192x192.png',
-						sizes: '192x192',
-						type: 'image/png',
-					},
-					{
-						src: '/android-chrome-512x512.png',
-						sizes: '512x512',
-						type: 'image/png',
-					},
-				],
+				icon: 'icons/rjs-logo.svg',
 			},
 		},
 		{
@@ -307,7 +295,7 @@ export default {
 								}
 
 								allCombinedProjectsJson(
-									filter: {type: {in: ["tumblr", "commit"]}}
+									filter: {type: {in: ["tumblr"]}}
 									sort: {date: DESC}
 								) {
 									nodes {
@@ -456,6 +444,7 @@ export default {
 						: undefined,
 			},
 		},
+		'gatsby-plugin-webpack-bundle-analyser-v2',
 		// TODO(riley)
 		// this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.dev/offline

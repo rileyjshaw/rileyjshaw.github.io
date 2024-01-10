@@ -12,8 +12,7 @@
 	box-shadow: 3px 3px var(--color-fg);
 	display: flex;
 	flex: 1 1 0;
-	font-family: var(--fh);
-	font-size: var(--font-scale-4);
+	font-family: var(--ff-heading);
 	font-weight: 900;
 	height: 200px;
 	justify-content: center;

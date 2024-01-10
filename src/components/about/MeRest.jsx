@@ -8,8 +8,8 @@ function MeRest() {
 				Throughout my career, I have developed software tools for
 				education and live collaboration, with my work gaining
 				recognition on platforms like NPR, CBC, HuffPost, and Canadian
-				Business. Beyond software, I also find joy in the tangible
-				creativity of hardware design.
+				Business. Beyond software, I also enjoy the tangible creativity
+				of hardware design.
 			</p>
 			<p>
 				A commitment to mentorship and community has been a guiding
@@ -22,11 +22,8 @@ function MeRest() {
 					School for Poetic Computation
 				</AutoLink>
 				. I have a Bachelor of Science in Electrical Engineering, with
-				a focus on human-computer interaction.
-			</p>
-			<p>
-				I have the dubious honor of being recognized as one of Canada’s
-				30 Under 30 developers.
+				a focus on human-computer interaction. I have the dubious honor
+				of being recognized as one of Canada’s 30 Under 30 developers.
 			</p>
 			<p>
 				If you care to follow along, please{' '}

@@ -1,38 +1,38 @@
 .page-header {
 	align-items: center;
-	color: var(--color-fg);
-	display: flex;
-	font-family: var(--fh);
-	justify-content: space-between;
-	margin-bottom: var(--font-scale-6);
-	margin-top: var(--font-scale-1);
-	padding: 0 var(--half-grid-gap);
+	box-sizing: content-box;
+	display: grid;
+	grid-column: left-column / span 2;
+	grid-template-columns: subgrid;
+	height: var(--s-2);
+	margin-top: var(--s--3);
+	padding-bottom: var(--s-3);
+}
+.page-header .home-link {
+	display: block;
+	height: 100%;
+	position: relative;
+}
+.page-header .home-icon {
+	display: block;
+	height: 50%;
+	left: 0;
+	position: absolute;
+	top: 25%;
 }
 .page-header .title {
-	align-items: baseline;
-	display: flex;
-	font: inherit;
-	font-size: var(--font-scale-2);
-	font-weight: 900;
+	font-weight: 700;
+	letter-spacing: 0.05em;
 	margin: 0;
+	text-transform: uppercase;
 }
 .page-header a {
-	color: var(--color-fg);
+	color: inherit;
 	text-decoration: none;
 }
-.page-header h1 {
-	margin: 0;
-}
-.page-header h1,
-.page-header .subpage {
-	display: inline;
-	font: inherit;
-}
-.page-header .subpage {
-	font-weight: 400;
-	padding-left: 0.33em;
-}
-.page-header .subpage a:hover,
-.page-header .subpage a:focus {
-	color: var(--color-blue);
+
+@media screen and (width <= 1000px) {
+	.page-header .title {
+		text-align: center;
+	}
 }

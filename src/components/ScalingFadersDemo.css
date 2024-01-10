@@ -1,8 +1,5 @@
 :root {
-	--color-fg-bold-rgb: 0, 0, 0;
-	--cui: var(--color-s3);
-	--cui-bold: #dbbe00;
-	--cui-error: var(--color-p1);
+	--color-error: var(--color-red-500);
 	--fader-height: 200px;
 	--fader-width: 6px;
 }
@@ -20,13 +17,13 @@
 .scaling-faders-demo {
 	color: var(--color-fg);
 	flex-direction: column;
-	font: 500 24px var(--fss);
+	font: 700 var(--fs-1) var(--ff-sans);
 	height: 400px;
-	margin-bottom: var(--font-scale-4);
+	margin-bottom: var(--s-3);
 	max-width: 100%;
 }
 .scaling-faderbanks {
-	margin: 0 calc(var(--fader-width) * 2) var(--font-scale-2);
+	margin: 0 calc(var(--fader-width) * 2) var(--s-1);
 	width: 100%;
 }
 .scaling-faderbank {
@@ -91,7 +88,7 @@
 }
 .scaling-fader::-webkit-slider-thumb {
 	appearance: none;
-	background: var(--cui);
+	background: var(--color-accent-1);
 	border: var(--fader-width) solid var(--color-fg);
 	border-radius: 50%;
 	box-sizing: content-box;
@@ -101,11 +98,11 @@
 	width: calc(var(--fader-width) * 3);
 }
 .scaling-fader-locked .scaling-fader::-webkit-slider-thumb {
-	background: var(--cui-error) !important;
+	background: var(--color-error) !important;
 }
 .scaling-fader::-moz-range-thumb {
 	appearance: none;
-	background: var(--cui);
+	background: var(--color-accent-1);
 	border: var(--fader-width) solid var(--color-fg);
 	border-radius: 50%;
 	cursor: pointer;
@@ -113,11 +110,11 @@
 	width: calc(var(--fader-width) * 3);
 }
 .scaling-fader-locked .scaling-fader::-moz-range-thumb {
-	background: var(--cui-error) !important;
+	background: var(--color-error) !important;
 }
 .scaling-fader::-ms-thumb {
 	appearance: none;
-	background: var(--cui);
+	background: var(--color-accent-1);
 	border: var(--fader-width) solid var(--color-fg);
 	border-radius: 50%;
 	cursor: pointer;
@@ -126,7 +123,7 @@
 	width: calc(var(--fader-width) * 3);
 }
 .scaling-fader-locked .scaling-fader::-ms-thumb {
-	background: var(--cui-error) !important;
+	background: var(--color-error) !important;
 }
 .scaling-fader::-ms-track {
 	background: transparent;
@@ -144,13 +141,13 @@
 	border-radius: calc(var(--fader-width) / 2);
 }
 .scaling-fader:active::-webkit-slider-thumb {
-	background: var(--cui-bold);
+	background: var(--color-accent-2);
 }
 .scaling-fader:active::-moz-range-thumb {
-	background: var(--cui-bold);
+	background: var(--color-accent-2);
 }
 .scaling-fader:active::-ms-thumb {
-	background: var(--cui-bold);
+	background: var(--color-accent-2);
 }
 .scaling-fader:focus,
 .scaling-fader:hover {
@@ -170,7 +167,8 @@
 	background: var(--color-fg-bold);
 }
 .scaling-fader:focus {
-	box-shadow: 0 0 2px rgb(var(--color-fg-bold-rgb) 0.5);
+	box-shadow: 0 0 2px
+		color-mix(in srgb, var(--color-fg-bold) 50%, transparent);
 }
 
 @supports (-ms-ime-align: auto) {
@@ -184,16 +182,17 @@
 	padding: 0;
 }
 .scaling-fader-button {
-	background: var(--cui);
+	background: var(--color-accent-1);
 	border: 6px solid var(--color-fg);
 	border-radius: 8px;
 	cursor: pointer;
 	font: inherit;
+	font-weight: 700;
 	margin: auto;
 	padding: 1em 1em 0.9em;
 }
 .scaling-fader-button:active {
-	background: var(--cui-bold);
+	background: var(--color-accent-2);
 }
 .scaling-faders-loading {
 	margin: auto;
@@ -214,17 +213,18 @@
 	width: calc(var(--fader-width) * 3);
 }
 .scaling-fader-mode-toggle:checked + label::before {
-	background: var(--cui);
+	background: var(--color-accent-1);
 }
 .scaling-fader-mode-toggle:active + label::before {
-	background: var(--cui-bold);
+	background: var(--color-accent-2);
 }
+
 @media only screen and (width <= 600px) {
 	:root {
 		--fader-height: 160px;
 		--fader-width: 4px;
 	}
 	.scaling-faders-demo {
-		font-size: 18px;
+		font-size: var(--fs-0);
 	}
 }

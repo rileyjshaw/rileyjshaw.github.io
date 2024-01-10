@@ -2,40 +2,48 @@ import {useViewport, useRect} from '../../util/hooks';
 import './Riot.css';
 import React, {useMemo} from 'react';
 
-function Riot(_, ref) {
+function Riot({className, word = 'RIOT!'}, ref) {
 	const [riotRef, _inView, boundingClientRect, windowHeight = 0] =
 		useViewport({updateOnScroll: true});
-	const [oRef, oBoundingClientRect] = useRect();
+	const [centerCharRef, centerCharBoundingClientRect] = useRect();
 	let factor = boundingClientRect
-		? (1 -
+		? (0.98 -
 				boundingClientRect.top /
 					(windowHeight - boundingClientRect.height) -
 				0.5) *
-		  2
+			2
 		: 0;
 	if (factor) factor *= Math.sqrt(Math.abs(factor));
 
 	const transformOrigin = useMemo(
 		() =>
-			oBoundingClientRect
+			centerCharBoundingClientRect
 				? [
-						(oBoundingClientRect.left +
-							oBoundingClientRect.width / 2 -
+						(centerCharBoundingClientRect.left +
+							centerCharBoundingClientRect.width / 2 -
 							boundingClientRect.left) /
 							boundingClientRect.width,
-						(oBoundingClientRect.top +
-							oBoundingClientRect.height / 2 -
+						(centerCharBoundingClientRect.top +
+							centerCharBoundingClientRect.height / 2 -
 							boundingClientRect.top) /
 							boundingClientRect.height,
-				  ]
+					]
 				: [0.5, 0.5],
-		[oBoundingClientRect],
+		[centerCharBoundingClientRect],
 	);
+
+	let centerCharIdx = word.indexOf('O');
+	if (centerCharIdx === -1) centerCharIdx = Math.floor(word.length / 2);
+	const wordParts = [
+		word.slice(0, centerCharIdx),
+		word[centerCharIdx],
+		word.slice(centerCharIdx + 1),
+	];
 
 	return (
 		<div
 			{...(ref?.hasOwnProperty('current') ? {ref} : {})}
-			className="content-node doodle doodle-riot"
+			className={`doodle doodle-riot${className ? ` ${className}` : ''}`}
 		>
 			{Array.from({length: 6}, (_, i) => (
 				<p
@@ -47,11 +55,13 @@ function Riot(_, ref) {
 							.map(p => `${p * 100}%`)
 							.join(' '),
 						transform: `translate(-50%, -50%) rotate(${
-							i * factor * 30
+							i * factor * 40
 						}deg)`,
 					}}
 				>
-					RI<span ref={i ? null : oRef}>O</span>T!
+					{wordParts[0]}
+					<span ref={i ? null : centerCharRef}>{wordParts[1]}</span>
+					{wordParts[2]}
 				</p>
 			))}
 		</div>

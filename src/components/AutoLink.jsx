@@ -13,13 +13,13 @@ const ExternalLink = ({href, to = href, children, ...rest}) => (
 );
 const AutoLink = props => {
 	const {to = props.href} = props;
-	return (to.startsWith('/') && !to.startsWith('//')) ||
-		to.match(/^(https?:)?\/\/(www\.)?rileyjshaw\.com(?![^/?#])/i) ? (
+	return to.startsWith('/') && !to.startsWith('//') ? (
 		<Link {...props} to={to} />
-	) : to.match(/^(https?:)?\/\//i) ? (
-		<ExternalLink {...props} />
-	) : (
+	) : to.match(/^(https?:)?\/\/(www\.)?rileyjshaw\.com(?![^/?#])/i) ||
+	  !to.match(/^(https?:)?\/\//i) ? (
 		<UncontrolledLink {...props} />
+	) : (
+		<ExternalLink {...props} />
 	);
 };
 

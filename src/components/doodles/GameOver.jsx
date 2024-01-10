@@ -7,7 +7,7 @@ const textOptions = {
 	win: 'You win',
 };
 
-function GameOver(_, ref) {
+function GameOver({className}, ref) {
 	const activeTimeout = useRef(null);
 	const [gameState, setGameState] = useState('game-over');
 	const mainText =
@@ -39,7 +39,9 @@ function GameOver(_, ref) {
 	return (
 		<div
 			{...(ref?.hasOwnProperty('current') ? {ref} : {})}
-			className="content-node doodle doodle-game-over"
+			className={`doodle doodle-game-over${
+				className ? ` ${className}` : ''
+			}`}
 		>
 			<p className="main-text">{mainText}</p>
 			<p

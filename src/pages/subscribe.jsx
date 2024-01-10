@@ -12,8 +12,8 @@ export function Head(props) {
 }
 
 const SubscribePage = () => (
-	<>
-		<div className="inner">
+	<main>
+		<div className="page-content">
 			<Newsletter />
 			<hr />
 			<p>This website has RSS feeds for more frequent updates:</p>
@@ -137,7 +137,7 @@ const SubscribePage = () => (
 		</div>
 		<BigQuote quoteId="MAKING_NOTHING" />
 		<GoUp />
-	</>
+	</main>
 );
 
 export default SubscribePage;
