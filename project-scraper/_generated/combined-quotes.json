@@ -48,6 +48,13 @@
 		"uid": "BAD_ART"
 	},
 	{
+		"author": "E.E. Cummings",
+		"cite": "https://cummings.ee/book/new-poems/",
+		"content": "Always the beautiful answer who asks a more beautiful question.",
+		"source": "New Poems",
+		"uid": "BEAUTIFUL_ANSWER"
+	},
+	{
 		"author": "Thomas Edison",
 		"cite": "https://quoteinvestigator.com/2012/02/15/books-obsolete",
 		"content": "Books will soon be obsolete in the public schools.",
@@ -123,6 +130,11 @@
 		"uid": "DATA_IMMUNE"
 	},
 	{
+		"author": "Manfred Mohr",
+		"content": "People accused me of degrading art, because I was employing capitalistic instruments of war - computer was a word non grata!",
+		"uid": "DEGRADING_ART"
+	},
+	{
 		"cite": "https://deletionday.com",
 		"content": "Deletion Day challenges the prevailing notion that “more is more”. In a culture that strives for permanence, we celebrate ephemerality, growth, and change. On April 4th, a chorus of Delete keys will ring out across the world. We hope you’ll join us.",
 		"source": "Deletion Day",
@@ -169,6 +181,12 @@
 		"content": "Can you imagine schools whose epistemological story does not aim at producing a flotilla of fanatics, but, rather, people who proceed to learn with full consciousness of their own fallibility, as well as the fallibility of others?",
 		"source": "The End of Education",
 		"uid": "FLOTILLA_OF_FANATICS"
+	},
+	{
+		"author": "Gerhard Richter",
+		"content": "I’m often astonished to find how much better chance is than I am.",
+		"source": "Interview with Benjamin H. D. Buchloh, 1986",
+		"uid": "GOOD_CHANCE"
 	},
 	{
 		"author": "Marissa Mayer",
@@ -412,6 +430,11 @@
 		"content": "Openwashing: n., having an appearance of open-source and open-licensing for marketing purposes, while continuing proprietary practices.",
 		"source": "The Monsters of Education Technology",
 		"uid": "OPENWASHING"
+	},
+	{
+		"author": "Mariame Kaba",
+		"content": "Everything worthwhile is done with other people.",
+		"uid": "OTHER_PEOPLE"
 	},
 	{
 		"author": "Frieder Nake",
@@ -741,7 +764,7 @@
 	{
 		"author": "Tim Berners-Lee",
 		"cite": "https://www.w3.org/People/Berners-Lee/Kids.html",
-		"content": "Let's use the web to create neat new exciting things.\nLet's use the Web to help people understand each other.",
+		"content": "Let’s use the web to create neat new exciting things.\nLet’s use the Web to help people understand each other.",
 		"source": "Answers for Young People",
 		"uid": "UNDERSTANDING"
 	},
