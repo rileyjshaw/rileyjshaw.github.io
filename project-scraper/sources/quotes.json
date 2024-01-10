@@ -577,5 +577,11 @@
 	"DEGRADING_ART": {
 		"content": "People accused me of degrading art, because I was employing capitalistic instruments of war - computer was a word non grata!",
 		"author": "Manfred Mohr"
+	},
+	"BEAUTIFUL_ANSWER": {
+		"content": "Always the beautiful answer who asks a more beautiful question.",
+		"author": "E.E. Cummings",
+		"source": "New Poems",
+		"cite": "https://cummings.ee/book/new-poems/"
 	}
 }
