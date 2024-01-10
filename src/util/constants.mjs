@@ -97,6 +97,8 @@ const themes = {
 		'fg-ultramute': ['grey', 400],
 		'fg-selected': ['grey', 400],
 		link: ['blue', 700],
+		'accent-1': ['yellow', 300],
+		'accent-2': ['yellow', 400],
 	},
 	dark: {
 		bg: ['grey', 950],
@@ -112,6 +114,8 @@ const themes = {
 		'fg-ultramute': ['grey', 500],
 		'fg-selected': ['grey', 500],
 		link: ['blue', 200],
+		'accent-1': ['yellow', 500],
+		'accent-2': ['yellow', 600],
 	},
 };
 

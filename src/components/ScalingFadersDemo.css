@@ -1,7 +1,5 @@
 :root {
-	--color-ui: var(--color-yellow-500);
-	--color-ui-bold: var(--color-yellow-600);
-	--color-ui-error: var(--color-red-500);
+	--color-error: var(--color-red-500);
 	--fader-height: 200px;
 	--fader-width: 6px;
 }
@@ -90,8 +88,8 @@
 }
 .scaling-fader::-webkit-slider-thumb {
 	appearance: none;
-	background: var(--color-ui);
-	border: var(--fader-width) solid var(--color-fg-100);
+	background: var(--color-accent-1);
+	border: var(--fader-width) solid var(--color-fg);
 	border-radius: 50%;
 	box-sizing: content-box;
 	cursor: pointer;
@@ -100,11 +98,11 @@
 	width: calc(var(--fader-width) * 3);
 }
 .scaling-fader-locked .scaling-fader::-webkit-slider-thumb {
-	background: var(--color-ui-error) !important;
+	background: var(--color-error) !important;
 }
 .scaling-fader::-moz-range-thumb {
 	appearance: none;
-	background: var(--color-ui);
+	background: var(--color-accent-1);
 	border: var(--fader-width) solid var(--color-fg);
 	border-radius: 50%;
 	cursor: pointer;
@@ -112,11 +110,11 @@
 	width: calc(var(--fader-width) * 3);
 }
 .scaling-fader-locked .scaling-fader::-moz-range-thumb {
-	background: var(--color-ui-error) !important;
+	background: var(--color-error) !important;
 }
 .scaling-fader::-ms-thumb {
 	appearance: none;
-	background: var(--color-ui);
+	background: var(--color-accent-1);
 	border: var(--fader-width) solid var(--color-fg);
 	border-radius: 50%;
 	cursor: pointer;
@@ -125,7 +123,7 @@
 	width: calc(var(--fader-width) * 3);
 }
 .scaling-fader-locked .scaling-fader::-ms-thumb {
-	background: var(--color-ui-error) !important;
+	background: var(--color-error) !important;
 }
 .scaling-fader::-ms-track {
 	background: transparent;
@@ -143,13 +141,13 @@
 	border-radius: calc(var(--fader-width) / 2);
 }
 .scaling-fader:active::-webkit-slider-thumb {
-	background: var(--color-ui-bold);
+	background: var(--color-accent-2);
 }
 .scaling-fader:active::-moz-range-thumb {
-	background: var(--color-ui-bold);
+	background: var(--color-accent-2);
 }
 .scaling-fader:active::-ms-thumb {
-	background: var(--color-ui-bold);
+	background: var(--color-accent-2);
 }
 .scaling-fader:focus,
 .scaling-fader:hover {
@@ -184,7 +182,7 @@
 	padding: 0;
 }
 .scaling-fader-button {
-	background: var(--color-ui);
+	background: var(--color-accent-1);
 	border: 6px solid var(--color-fg);
 	border-radius: 8px;
 	cursor: pointer;
@@ -194,7 +192,7 @@
 	padding: 1em 1em 0.9em;
 }
 .scaling-fader-button:active {
-	background: var(--color-ui-bold);
+	background: var(--color-accent-2);
 }
 .scaling-faders-loading {
 	margin: auto;
@@ -215,10 +213,10 @@
 	width: calc(var(--fader-width) * 3);
 }
 .scaling-fader-mode-toggle:checked + label::before {
-	background: var(--color-ui);
+	background: var(--color-accent-1);
 }
 .scaling-fader-mode-toggle:active + label::before {
-	background: var(--color-ui-bold);
+	background: var(--color-accent-2);
 }
 
 @media only screen and (width <= 600px) {
