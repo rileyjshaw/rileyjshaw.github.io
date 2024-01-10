@@ -128,7 +128,7 @@ export const excerptify = body => {
 			})
 			.join('');
 	} else {
-		description = excerpt.map(el => el.outerHTML).join(' ');
+		description = excerpt.map(el => el.outerHTML).join('');
 	}
 
 	// TODO(riley): Use charCount to slice the textContent of the final node?
