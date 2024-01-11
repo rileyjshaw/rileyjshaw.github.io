@@ -277,12 +277,11 @@ async function getCommitBlog() {
 }
 
 function getSFPCTumblr() {
-	const client = tumblr.createClient({
-		credentials: {
-			consumer_key: process.env.TUMBLR_KEY,
-			consumer_secret: process.env.TUMBLR_SECRET,
-		},
-		returnPromises: true,
+	const client = new tumblr.Client({
+		consumer_key: process.env.TUMBLR_CONSUMER_KEY,
+		consumer_secret: process.env.TUMBLR_CONSUMER_SECRET,
+		token: process.env.TUMBLR_TOKEN,
+		token_secret: process.env.TUMBLR_TOKEN_SECRET,
 	});
 
 	let allPosts = [];
@@ -363,12 +362,11 @@ function getSFPCTumblr() {
 }
 
 function getScreenshotsTumblr() {
-	const client = tumblr.createClient({
-		credentials: {
-			consumer_key: process.env.TUMBLR_KEY,
-			consumer_secret: process.env.TUMBLR_SECRET,
-		},
-		returnPromises: true,
+	const client = new tumblr.Client({
+		consumer_key: process.env.TUMBLR_CONSUMER_KEY,
+		consumer_secret: process.env.TUMBLR_CONSUMER_SECRET,
+		token: process.env.TUMBLR_TOKEN,
+		token_secret: process.env.TUMBLR_TOKEN_SECRET,
 	});
 
 	let allPosts = [];
