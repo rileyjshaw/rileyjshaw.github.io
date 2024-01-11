@@ -149,8 +149,7 @@ a[target='_blank'] {
 	cursor: alias;
 }
 a[target='_blank']::after {
-	content: '\202F\279A';
-	font-family: var(--ff-serif);
+	content: '\202F\2197';
 }
 a[target='_blank'].gatsby-resp-image-link::after {
 	content: none;
