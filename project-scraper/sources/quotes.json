@@ -583,5 +583,9 @@
 		"author": "E.E. Cummings",
 		"source": "New Poems",
 		"cite": "https://cummings.ee/book/new-poems/"
+	},
+	"DO_NOT_WANT": {
+		"content": "We can never have enough of that which we really do not want.",
+		"author": "Eric Hoffer"
 	}
 }
