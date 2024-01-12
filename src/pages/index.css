@@ -33,6 +33,7 @@
 	box-shadow: var(--shadow-md);
 	overflow: hidden;
 	position: relative;
+	user-select: none;
 }
 .main-gallery > .project {
 	aspect-ratio: 1;
