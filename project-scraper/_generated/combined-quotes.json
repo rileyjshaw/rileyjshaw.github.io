@@ -141,6 +141,11 @@
 		"uid": "DELETION_DAY"
 	},
 	{
+		"author": "Eric Hoffer",
+		"content": "We can never have enough of that which we really do not want.",
+		"uid": "DO_NOT_WANT"
+	},
+	{
 		"author": "Alan C. Kay",
 		"cite": "http://www.bitsavers.org/pdf/xerox/smalltalk/Kay__A_Personal_Computer_For_Children_Of_All_Ages_Aug72.pdf",
 		"content": "It is now within the reach of current technology to give all the Beths and their dads a “DynaBook” to use anytime, anywhere as they may wish. Although it can be used to communicate with others through the “knowledge utilities” of the future such as a school “library” (or business information system), we think that a large fraction of its use will involve reflexive communication of the owner with himself through this personal medium, much as paper and notebooks are currently used.",
