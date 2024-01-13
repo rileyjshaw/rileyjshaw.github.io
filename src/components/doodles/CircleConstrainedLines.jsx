@@ -12,23 +12,28 @@ const C = L / 2;
 
 const variants = [
 	{
+		getOffset: () => PI,
+		nLines: 96,
+		lineWidth: 5,
+	},
+	{
 		getOffset: (i, nLines) => tan((i / nLines) * PI * 2) * PI * 10,
 		nLines: 360,
-		lineWidth: 1,
-		globalCompositeOperation: 'source-over',
 	},
 	{
 		getOffset: (i, nLines) =>
 			sin((i / nLines) * PI * 2) * cos((i / nLines) * PI * 2) * PI * 10,
-		nLines: 2000,
-		lineWidth: 1,
+		nLines: 1200,
 		globalCompositeOperation: 'overlay',
 	},
 	{
 		getOffset: (i, nLines) => (i / nLines) * 2 * PI * 5,
 		nLines: 500,
-		lineWidth: 1,
-		globalCompositeOperation: 'source-over',
+	},
+	{
+		getOffset: (i, nLines) => (i * (-4 * PI)) / nLines,
+		nLines: 81,
+		lineWidth: 5,
 	},
 	{
 		getOffset: (i, nLines) => (((i % 100) * 3) / nLines) * PI,
@@ -42,8 +47,6 @@ const variants = [
 			4 *
 			PI,
 		nLines: 400,
-		lineWidth: 1,
-		globalCompositeOperation: 'source-over',
 	},
 	{
 		getOffset: (i, nLines) => (i / nLines) * PI * 6,
@@ -54,11 +57,15 @@ const variants = [
 	{
 		getOffset: (i, nLines) => (i / nLines) * PI * 100,
 		nLines: 400,
-		lineWidth: 1,
-		globalCompositeOperation: 'source-over',
 	},
 	{
-		getOffset: (i, nLines) => i * Math.random() * 2 * PI,
+		getOffset: (i, nLines) =>
+			pow(cos((i / nLines) * PI), 1 / 40) * PI * 16,
+		nLines: 480,
+		lineWidth: 3,
+	},
+	{
+		getOffset: i => i * Math.random() * 2 * PI,
 		nLines: 1000,
 		lineWidth: 2,
 		globalCompositeOperation: 'soft-light',
@@ -66,8 +73,6 @@ const variants = [
 	{
 		getOffset: (i, nLines) => (i / nLines) * PI * 20,
 		nLines: 180,
-		lineWidth: 1,
-		globalCompositeOperation: 'source-over',
 	},
 	{
 		getOffset: (i, nLines) =>
@@ -76,8 +81,6 @@ const variants = [
 			PI *
 			2,
 		nLines: 300,
-		lineWidth: 1,
-		globalCompositeOperation: 'source-over',
 	},
 ];
 
@@ -92,8 +95,12 @@ const CircleConstrainedLines = React.forwardRef(
 			const canvas = canvasRef.current;
 			if (!canvas) return;
 
-			const {getOffset, nLines, lineWidth, globalCompositeOperation} =
-				variants[variant];
+			const {
+				getOffset,
+				nLines,
+				lineWidth = 1,
+				globalCompositeOperation = 'source-over',
+			} = variants[variant];
 
 			const angleStep = (2 * PI) / nLines;
 			const ctx = canvas.getContext('2d');
