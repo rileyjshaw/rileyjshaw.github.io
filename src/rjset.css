@@ -47,7 +47,8 @@
 	--transition-t: 150ms;
 	--transition-t-fast: 75ms;
 	--transition-t-slow: 0.5s;
-	--transition-easing: ease-in-out;
+	--transition-t-xslow: 1s;
+	--transition-easing: ease;
 }
 *,
 *::before,

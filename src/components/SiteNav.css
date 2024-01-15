@@ -56,8 +56,9 @@
 	.site-nav a,
 	.settings svg {
 		animation:
-			fade-in 1s var(--transition-easing),
-			slide-right 1s var(--transition-easing);
+			fade-in var(--transition-t-xslow) var(--transition-easing) forwards,
+			slide-right var(--transition-t-xslow) var(--transition-easing)
+				forwards;
 	}
 	.site-nav .site-nav-menu-button {
 		background: transparent;
@@ -119,5 +120,14 @@
 		animation-delay:
 			0s,
 			-0.1s;
+	}
+}
+
+@keyframes slide-right {
+	from {
+		transform: translate3d(-24px, 0, 0);
+	}
+	to {
+		transform: none;
 	}
 }

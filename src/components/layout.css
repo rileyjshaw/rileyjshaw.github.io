@@ -32,7 +32,8 @@
 	margin-top: 0;
 }
 .page-content {
-	animation: 1s fade-in ease;
+	animation: var(--transition-t-xslow) fade-in var(--transition-easing)
+		forwards;
 }
 .page-content > * {
 	grid-column: middle-column / span 1;
@@ -61,14 +62,5 @@
 	}
 	to {
 		opacity: 1;
-	}
-}
-
-@keyframes slide-right {
-	from {
-		transform: translate3d(-24px, 0, 0);
-	}
-	to {
-		transform: none;
 	}
 }
