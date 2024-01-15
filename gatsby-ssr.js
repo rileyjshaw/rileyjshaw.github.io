@@ -38,15 +38,17 @@ const rawString_headCss = `
 	${directColorsString}
 	${abstractColorsStrings.light}
 }
-@media (prefers-color-scheme: dark) {
+@media screen and (prefers-color-scheme: dark) {
 	html:not([data-theme="light"]) {
 		color-scheme: dark light;
 		${abstractColorsStrings.dark}
 	}
 }
-html[data-theme="dark"] {
-	color-scheme: dark light;
-	${abstractColorsStrings.dark}
+@media screen {
+	html[data-theme="dark"] {
+		color-scheme: dark light;
+		${abstractColorsStrings.dark}
+	}
 }`;
 
 export const onRenderBody = ({

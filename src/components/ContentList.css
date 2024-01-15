@@ -20,3 +20,10 @@ ul.content-list {
 	font-variant-numeric: tabular-nums;
 	letter-spacing: -0.1em;
 }
+
+@media screen and (width <= 800px) {
+	.content-list li {
+		display: block;
+		text-wrap: pretty;
+	}
+}

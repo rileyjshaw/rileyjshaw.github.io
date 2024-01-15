@@ -50,6 +50,22 @@
 	--transition-t-xslow: 1s;
 	--transition-easing: ease;
 }
+
+@media print {
+	:root {
+		--color-bg: #fff;
+		--color-bg-bold: #fff;
+		--color-grey-25: #fff;
+		--color-grey-50: #fff;
+		--color-grey-100: #fff;
+		--color-fg: #000;
+		--color-fg-bold: #000;
+		--color-grey-900: #000;
+		--color-grey-925: #000;
+		--color-grey-950: #000;
+		--color-grey-975: #000;
+	}
+}
 *,
 *::before,
 *::after {
@@ -77,9 +93,7 @@ dd {
 	margin: 0;
 }
 ul[class],
-ol[class],
-.dark-theme ul[class],
-.dark-theme ol[class] {
+ol[class] {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -137,6 +151,7 @@ h3,
 h4 {
 	font-family: var(--ff-heading);
 	font-weight: unset;
+	text-wrap: pretty;
 }
 code,
 pre {
@@ -149,12 +164,6 @@ a {
 a[target='_blank'] {
 	cursor: alias;
 }
-a[target='_blank']::after {
+a[target='_blank']:not(.gatsby-resp-image-link)::after {
 	content: '\202F\2197';
-}
-a[target='_blank'].gatsby-resp-image-link::after {
-	content: none;
-}
-.dark-theme ul {
-	list-style: disc;
 }
