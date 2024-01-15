@@ -24,6 +24,20 @@
 		"todo": true
 	},
 	{
+		"title": "Split scroll columns",
+		"description": ["When one goes up, the other comes down."],
+		"date": "2024-01-14",
+		"coolness": 25,
+		"link": "https://codepen.io/rileyjshaw/full/ExMZPdQ"
+	},
+	{
+		"title": "Spiral out",
+		"description": ["A simple text spiral."],
+		"date": "2023-11-28",
+		"coolness": 30,
+		"link": "https://codepen.io/rileyjshaw/pen/yLZxNPG"
+	},
+	{
 		"title": "10 PRXXT",
 		"description": ["A remix of 10 PRINT using an even messier grid."],
 		"date": "2023-03-24",
