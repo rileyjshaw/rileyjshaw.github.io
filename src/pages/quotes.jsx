@@ -12,7 +12,7 @@ const Quotes = () => {
 		allCombinedQuotesJson: {nodes: quotes},
 	} = useStaticQuery(graphql`
 		{
-			allCombinedQuotesJson(sort: {fields: [author], order: ASC}) {
+			allCombinedQuotesJson(sort: {author: ASC}) {
 				nodes {
 					uid
 					content
