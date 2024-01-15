@@ -8,19 +8,28 @@ import allProjectsQuery from '../util/all-projects-query';
 import {sortByDate} from '../util/sorting-methods';
 import './index.css';
 import {Link} from 'gatsby';
-import React from 'react';
+import React, {useCallback, useState} from 'react';
 import GalleryImage from '../components/GalleryImage';
 import {StaticImage} from 'gatsby-plugin-image';
 import {ExternalLink} from '../components/AutoLink';
 import BackgroundGenerator from '../components/doodles/BackgroundGenerator';
 import Riot from '../components/doodles/Riot';
 import CircleConstrainedLines from '../components/doodles/CircleConstrainedLines';
+import Propellers from '../components/doodles/Propellers';
 import PinkNoise from '../components/PinkNoise';
 import {DIRECT_COLORS} from '../util/constants.mjs';
 
 export const Head = SEO;
 
+const DOODLES = [CircleConstrainedLines, Propellers];
+
 const IndexPage = ({featuredProjects = []}) => {
+	const [featuredDoodleIdx, setFeaturedDoodleIdx] = useState(0);
+	const incrementFeaturedDoodleIdx = useCallback(() => {
+		setFeaturedDoodleIdx(i => (i + 1) % DOODLES.length);
+	}, []);
+	const FeaturedDoodle = DOODLES[featuredDoodleIdx];
+
 	return (
 		<main>
 			<div className="page-content">
@@ -99,7 +108,9 @@ const IndexPage = ({featuredProjects = []}) => {
 							/>
 						</li>
 						<li className="project no-zoom">
-							<CircleConstrainedLines />
+							<FeaturedDoodle
+								onFullCycle={incrementFeaturedDoodleIdx}
+							/>
 						</li>
 						<li>
 							<ul className="bento-half-x">

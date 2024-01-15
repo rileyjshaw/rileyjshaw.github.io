@@ -4,11 +4,11 @@ import './CircleConstrainedLines.css';
 import React, {useRef, useState, useEffect, useMemo} from 'react';
 
 const {PI, cos, sin, tan, pow} = Math;
-const L = 800;
-const R = L / 2.5;
+const SIZE_UNSCALED = 800;
+const R_UNSCALED = SIZE_UNSCALED / 2.5;
 
 // Derived.
-const C = L / 2;
+const C_UNSCALED = SIZE_UNSCALED / 2;
 
 const variants = [
 	{
@@ -85,12 +85,34 @@ const variants = [
 ];
 
 const CircleConstrainedLines = React.forwardRef(
-	function CircleConstrainedLines({El = 'div', settings: {theme}}, ref) {
+	function CircleConstrainedLines(
+		{El = 'div', settings: {theme}, onFullCycle},
+		ref,
+	) {
 		const canvasRef = useRef(null);
-		const [variant, setVariant] = useState(
+		const initialVariantIdxOffset = useRef(
 			Math.floor(Math.random() * variants.length),
 		);
+		const [variantIdxOffset, setVariantIdxOffset] = useState(0);
 		const themeColors = useMemo(() => ABSTRACT_COLORS[theme], [theme]);
+
+		useEffect(() => {
+			if (
+				variantIdxOffset > 0 &&
+				variantIdxOffset % variants.length === 0
+			) {
+				onFullCycle?.();
+			}
+		}, [variantIdxOffset]);
+
+		const variantIdx =
+			(initialVariantIdxOffset.current + variantIdxOffset) %
+			variants.length;
+
+		const SIZE = SIZE_UNSCALED * window.devicePixelRatio;
+		const R = R_UNSCALED * window.devicePixelRatio;
+		const C = C_UNSCALED * window.devicePixelRatio;
+
 		useEffect(() => {
 			const canvas = canvasRef.current;
 			if (!canvas) return;
@@ -100,14 +122,14 @@ const CircleConstrainedLines = React.forwardRef(
 				nLines,
 				lineWidth = 1,
 				globalCompositeOperation = 'source-over',
-			} = variants[variant];
+			} = variants[variantIdx];
 
 			const angleStep = (2 * PI) / nLines;
 			const ctx = canvas.getContext('2d');
 			ctx.clearRect(0, 0, canvas.width, canvas.height);
 			ctx.beginPath();
 			ctx.globalCompositeOperation = globalCompositeOperation;
-			ctx.lineWidth = lineWidth;
+			ctx.lineWidth = window.devicePixelRatio * lineWidth;
 			ctx.strokeStyle = themeColors.fg;
 			ctx.fillStyle = themeColors.bg;
 			ctx.arc(C, C, R * 1.03, 0, 2 * PI);
@@ -130,17 +152,18 @@ const CircleConstrainedLines = React.forwardRef(
 				ctx.lineTo(C + x2, C + y2);
 				ctx.stroke();
 			}
-		}, [variant, theme]);
+		}, [variantIdx, theme]);
+
 		return (
 			<El
 				{...(ref?.hasOwnProperty('current') ? {ref} : {})}
 				className="content-node doodle doodle-constrained-lines"
 			>
 				<canvas
-					height={L}
-					width={L}
+					height={SIZE}
+					width={SIZE}
 					ref={canvasRef}
-					onClick={() => setVariant(v => (v + 1) % variants.length)}
+					onClick={() => setVariantIdxOffset(v => v + 1)}
 				/>
 			</El>
 		);

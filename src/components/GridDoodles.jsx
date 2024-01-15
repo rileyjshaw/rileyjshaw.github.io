@@ -1,5 +1,6 @@
 import CycleText from './CycleText';
 import BackgroundGenerator from './doodles/BackgroundGenerator';
+import Propellers from './doodles/Propellers';
 import CircleConstrainedLines from './doodles/CircleConstrainedLines';
 import GameOver from './doodles/GameOver';
 import Riot from './doodles/Riot';
@@ -14,6 +15,7 @@ export default [
 		)),
 		0.8,
 	],
+	[React.forwardRef((_, ref) => <Propellers El="li" ref={ref} />), 0.8],
 	[
 		React.forwardRef((_, ref) => (
 			<CircleConstrainedLines El="li" ref={ref} />
