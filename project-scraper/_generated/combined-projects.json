@@ -5773,6 +5773,30 @@
 	},
 	{
 		"coolness": 30,
+		"date": "2023-11-28",
+		"descriptionList": [
+			"A simple text spiral."
+		],
+		"link": "https://codepen.io/rileyjshaw/pen/yLZxNPG",
+		"timestamp": 1701129600000,
+		"title": "Spiral out",
+		"type": "project",
+		"uid": "PROJECT_SPIRAL_OUT"
+	},
+	{
+		"coolness": 25,
+		"date": "2024-01-14",
+		"descriptionList": [
+			"When one goes up, the other comes down."
+		],
+		"link": "https://codepen.io/rileyjshaw/full/ExMZPdQ",
+		"timestamp": 1705190400000,
+		"title": "Split scroll columns",
+		"type": "project",
+		"uid": "PROJECT_SPLIT_SCROLL_COLUMNS"
+	},
+	{
+		"coolness": 30,
 		"date": "2016-06-03",
 		"descriptionList": [
 			"Geometric patterns created from straight lines cutting through a circle."
