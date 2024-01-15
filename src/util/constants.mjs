@@ -146,6 +146,7 @@ export const SITE_PAGES = [
 	['blog', 'blog-page', 'Blog', 'Blog'],
 	['blog/post', 'blog-post-page', null, 'Blog'],
 	['subscribe', 'subscribe-page', 'Subscribe', 'Subscribe'],
+	['quotes', 'quotes-page', null, 'All quotes'],
 	['uses', 'uses-page', null, 'Inventory'],
 ];
 

@@ -1,0 +1,13 @@
+.site-quote {
+	flex-direction: column;
+	justify-content: center;
+	padding-bottom: var(--s-2);
+}
+.site-quote p {
+	margin: 0 0 var(--s--1);
+	text-align: justify;
+}
+.site-quote footer {
+	margin-top: var(--s-0);
+	text-align: right;
+}

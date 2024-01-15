@@ -9,31 +9,49 @@
 	min-height: 100dvh;
 	position: relative;
 }
-.big-quote::before,
-.big-quote::after,
-.big-quote .refresh {
-	font-size: var(--fs-6);
-}
+.big-quote-controls,
 .big-quote blockquote {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	margin: 0 auto;
 	max-width: var(--s-11);
-	min-height: 50dvh;
-	padding-bottom: var(--s-2);
 	width: 90%;
 }
-.big-quote p {
-	margin: 0 0 var(--s--1);
-	text-align: justify;
+.big-quote-controls {
+	font-size: var(--fs-6);
+	justify-content: space-around;
 }
-.big-quote footer {
-	margin-top: var(--s-0);
-	text-align: right;
+.big-quote-control-container {
+	display: grid;
+	flex-basis: 0;
+	overflow: hidden;
+	place-items: center;
+	text-align: center;
 }
-.big-quote .refresh {
-	background: none;
-	border: 0;
-	color: var(--color-fg);
+.big-quote-controls a {
+	display: flex;
+	text-decoration: none;
+}
+.big-quote-control-container.refresh {
+	flex-grow: 1;
+}
+.big-quote-control-container.browse {
+	animation:
+		var(--transition-t-slow) big-quote-control-animate-in
+			var(--transition-easing) forwards,
+		var(--transition-t-xslow) var(--transition-t-fast) fade-in
+			var(--transition-easing) forwards;
+	font-size: var(--fs-5);
+	opacity: 0;
+}
+.big-quote .site-quote {
+	min-height: 50dvh;
+}
+
+@keyframes big-quote-control-animate-in {
+	0% {
+		flex-grow: 0.0001;
+	}
+	100% {
+		flex-grow: 1;
+	}
 }
