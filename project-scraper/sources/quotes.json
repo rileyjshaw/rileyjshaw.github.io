@@ -587,5 +587,11 @@
 	"DO_NOT_WANT": {
 		"content": "We can never have enough of that which we really do not want.",
 		"author": "Eric Hoffer"
+	},
+	"TECH_SHAPE": {
+		"content": "Take care of what technologies you use, because your consciousness will come to be shaped by them.",
+		"author": "Johann Hari",
+		"source": "Stolen Focus",
+		"cite": "https://stolenfocusbook.com/"
 	}
 }
