@@ -158,13 +158,9 @@ const CircleConstrainedLines = React.forwardRef(
 			<El
 				{...(ref?.hasOwnProperty('current') ? {ref} : {})}
 				className="content-node doodle doodle-constrained-lines"
+				onClick={() => setVariantIdxOffset(v => v + 1)}
 			>
-				<canvas
-					height={SIZE}
-					width={SIZE}
-					ref={canvasRef}
-					onClick={() => setVariantIdxOffset(v => v + 1)}
-				/>
+				<canvas height={SIZE} width={SIZE} ref={canvasRef} />
 			</El>
 		);
 	},

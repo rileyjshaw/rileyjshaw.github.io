@@ -1,12 +1,12 @@
 .doodle-constrained-lines {
 	align-items: center;
 	background: var(--color-grey-500);
+	cursor: pointer;
 	display: flex;
 	grid-area: span 3 / span 3;
 	justify-content: center;
 }
 .doodle-constrained-lines canvas {
-	cursor: pointer;
 	max-height: 100%;
 	max-width: 100%;
 }

@@ -17,7 +17,6 @@ ul.content-list {
 	grid-column: 2;
 }
 .content-list time {
-	font-variant-numeric: tabular-nums;
 	letter-spacing: -0.1em;
 }
 

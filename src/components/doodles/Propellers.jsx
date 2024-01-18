@@ -150,13 +150,9 @@ const Propellers = React.forwardRef(function Propellers(
 		<El
 			{...(ref?.hasOwnProperty('current') ? {ref} : {})}
 			className="content-node doodle doodle-propellers"
+			onClick={() => setVariantIdxOffset(i => i + 1)}
 		>
-			<canvas
-				height={SIZE}
-				width={SIZE}
-				ref={canvasRef}
-				onClick={() => setVariantIdxOffset(i => i + 1)}
-			/>
+			<canvas height={SIZE} width={SIZE} ref={canvasRef} />
 		</El>
 	);
 });

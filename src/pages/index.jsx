@@ -107,7 +107,7 @@ const IndexPage = ({featuredProjects = []}) => {
 								}
 							/>
 						</li>
-						<li className="project no-zoom">
+						<li className="project no-zoom featured-doodle">
 							<FeaturedDoodle
 								onFullCycle={incrementFeaturedDoodleIdx}
 							/>

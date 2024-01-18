@@ -1,5 +1,7 @@
 .blog-post-page .blog-post-content {
+	font-size: var(--fs-2);
 	grid-column: middle-column / span 1;
+	min-width: 0;
 	padding-bottom: var(--s-3);
 }
 .blog-post-content header {
@@ -7,7 +9,15 @@
 }
 .blog-post-page .blog-post-content h1 {
 	font: 900 var(--fs-6) var(--ff-heading);
+	line-height: 1;
 	margin: 0;
+}
+.blog-post-page .blog-post-content h2 {
+	font-size: var(--fs-4);
+}
+.blog-post-page .blog-post-content h3 {
+	font-size: var(--fs-3);
+	margin: var(--s-3) 0 var(--s-0);
 }
 /* TODO(riley): Duplicate. */
 .blog-post-content header .subheading {
@@ -73,7 +83,11 @@
 	content: '– ';
 }
 .blog-post-content pre {
-	margin-top: var(--s-3);
+	margin-block: var(--s-3);
+}
+/* TODO: Why are pres double-wrapped? */
+.blog-post-content pre > pre {
+	margin: 0;
 }
 .blog-post-content blockquote {
 	border-left: 4px solid var(--color-fg);
@@ -81,6 +95,15 @@
 }
 
 @media only screen and (width <= 800px) {
+	.blog-post-page .blog-post-content h1 {
+		font-size: var(--fs-5);
+	}
+	.blog-post-page .blog-post-content h2 {
+		font-size: var(--fs-3);
+	}
+	.blog-post-page .blog-post-content h3 {
+		font-size: var(--fs-2);
+	}
 	.blog-post-content pre {
 		font-size: 0.75em;
 	}

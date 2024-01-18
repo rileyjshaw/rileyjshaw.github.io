@@ -64,7 +64,10 @@
 	color: inherit;
 	text-decoration: none;
 }
-.main-gallery .doodle-constrained-lines {
+.main-gallery .featured-doodle {
+	background: var(--color-grey-500);
+}
+.main-gallery .featured-doodle .doodle {
 	border: none;
 }
 .main-gallery .image-link {
