@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog feed: internal posts only]]></title><description><![CDATA[Riley J. Shaw is a programmer and designer. Rooted in repair and craft, he creates transparent, remixable tools for a sustainable and accessible future.]]></description><link>https://rileyjshaw.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 18 Jan 2024 18:44:49 GMT</lastBuildDate><item><title><![CDATA[Scaling faders: do these exist?]]></title><description><![CDATA[Occasionally, clumsily, I make music. I had a drum kit when I was growing up. Making music looked like this:
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog feed: internal posts only]]></title><description><![CDATA[Riley J. Shaw is a programmer and designer. Rooted in repair and craft, he creates transparent, remixable tools for a sustainable and accessible future.]]></description><link>https://rileyjshaw.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 18 Jan 2024 18:51:58 GMT</lastBuildDate><item><title><![CDATA[Scaling faders: do these exist?]]></title><description><![CDATA[Occasionally, clumsily, I make music. I had a drum kit when I was growing up. Making music looked like this:
 
 Sit down.Hit drums for an hour.
 
@@ -72,19 +72,7 @@ Steve Reich’s Music for 18 Musicians:
 
 Kill the Noise remix of KOAN Sound’s Talk Box:
 
-These first tones were generated using the powerful, free, cross-platform audio software Audacity and a cool lisp-y language called Nyquist. Since Audacity lets you run Nyquist scripts on hand-selected audio segments, this first bit was quick and dirty:…]]></description><link>https://rileyjshaw.com/blog/taking-the-average-tone</link><guid isPermaLink="false">POST_TAKING_THE_AVERAGE_TONE</guid><pubDate>Mon, 17 Mar 2014 00:00:00 GMT</pubDate></item><item><title><![CDATA[Iron blogger]]></title><description><![CDATA[A few days ago a fellow Hacker-Schooler proposed Iron Blogger to our batch. The rules are simple: Get a blogWrite on said blog at least once a weekFailing completion of #2, be humiliated and ostracized. Also, forfeit $5.
-
-I don’t think that we’ve decided on where the money is going yet; I’m hoping for giant Iron Blogger belt buckles.
-
-Of course I’ll do that!
-
-At the start of the batch I vowed to avoid any projects focusing on front-end design work, including a personal site.
-
-Oops.
-
-I also vowed to try my hand at blogging; breaking one vow to fulfill the other can’t be that bad, right? I made an addendum, stating that I could spend exactly two days making a site… and here we are!
-
-It had to…]]></description><link>https://rileyjshaw.com/blog/iron-blogger</link><guid isPermaLink="false">POST_IRON_BLOGGER</guid><pubDate>Mon, 10 Mar 2014 00:00:00 GMT</pubDate></item><item><title><![CDATA[window.clusterFuck]]></title><description><![CDATA[I started a project called Terra a few weeks ago. I added a conditional to  that would complain if I’d already defined the library: (function (exports) {
+These first tones were generated using the powerful, free, cross-platform audio software Audacity and a cool lisp-y language called Nyquist. Since Audacity lets you run Nyquist scripts on hand-selected audio segments, this first bit was quick and dirty:…]]></description><link>https://rileyjshaw.com/blog/taking-the-average-tone</link><guid isPermaLink="false">POST_TAKING_THE_AVERAGE_TONE</guid><pubDate>Mon, 17 Mar 2014 00:00:00 GMT</pubDate></item><item><title><![CDATA[window.clusterFuck]]></title><description><![CDATA[I started a project called Terra a few weeks ago. I added a conditional to  that would complain if I’d already defined the library: (function (exports) {
 	function init() {
 		if (!exports.terra) {
 			// do initialization things
@@ -103,4 +91,16 @@ I’ll admit that this is a really ugly pattern for handling namespaces, but eve
 
 I ran the code and the console yelled at me.
 
-Strange… but maybe I forgot a  somewhere. I set some…]]></description><link>https://rileyjshaw.com/blog/window.clusterfuck</link><guid isPermaLink="false">POST_WINDOW_CLUSTERFUCK</guid><pubDate>Mon, 10 Mar 2014 00:00:00 GMT</pubDate></item></channel></rss>
+Strange… but maybe I forgot a  somewhere. I set some…]]></description><link>https://rileyjshaw.com/blog/window.clusterfuck</link><guid isPermaLink="false">POST_WINDOW_CLUSTERFUCK</guid><pubDate>Mon, 10 Mar 2014 00:00:00 GMT</pubDate></item><item><title><![CDATA[Iron blogger]]></title><description><![CDATA[A few days ago a fellow Hacker-Schooler proposed Iron Blogger to our batch. The rules are simple: Get a blogWrite on said blog at least once a weekFailing completion of #2, be humiliated and ostracized. Also, forfeit $5.
+
+I don’t think that we’ve decided on where the money is going yet; I’m hoping for giant Iron Blogger belt buckles.
+
+Of course I’ll do that!
+
+At the start of the batch I vowed to avoid any projects focusing on front-end design work, including a personal site.
+
+Oops.
+
+I also vowed to try my hand at blogging; breaking one vow to fulfill the other can’t be that bad, right? I made an addendum, stating that I could spend exactly two days making a site… and here we are!
+
+It had to…]]></description><link>https://rileyjshaw.com/blog/iron-blogger</link><guid isPermaLink="false">POST_IRON_BLOGGER</guid><pubDate>Mon, 10 Mar 2014 00:00:00 GMT</pubDate></item></channel></rss>
