@@ -449,6 +449,13 @@
 		"uid": "OUTSIDERS"
 	},
 	{
+		"author": "Herbert Bayer",
+		"cite": "https://medium.com/@digitalonetwo/on-typography-9ab8548946e5",
+		"content": "Overfed with reading as we are, the practice of reading must be activated… The effort of seeing contributes a large share to physical tiredness.",
+		"source": "On Typography",
+		"uid": "OVERFED"
+	},
+	{
 		"author": "Oli Mould",
 		"cite": "https://www.versobooks.com/books/2852-against-creativity",
 		"content": "individualization is a key factor in the contemporary rhetoric of creativity. But the rhetoric demands even more; you have to be a particular kind of individual.",
@@ -737,6 +744,13 @@
 		"content": "The technological formula may be stated as follows: Only war makes it possible to mobilize all of today’s technical resources while maintaining the property system.",
 		"source": "The Work of Art in the Age of Mechanical Reproduction",
 		"uid": "TECHNOLOGICAL_FORMULA"
+	},
+	{
+		"author": "Herbert Bayer",
+		"cite": "https://medium.com/@digitalonetwo/on-typography-9ab8548946e5",
+		"content": "Exploration of the potentialities of the book of true text-picture integration has only begun and will, by itself, become of utmost importance to universal understanding.",
+		"source": "On Typography",
+		"uid": "TEXT_PICTURE"
 	},
 	{
 		"author": "Isaac Asimov",
