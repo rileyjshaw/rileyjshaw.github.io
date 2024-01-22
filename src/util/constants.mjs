@@ -84,18 +84,18 @@ export const DIRECT_COLORS = {
 
 const themes = {
 	light: {
-		bg: ['grey', 50],
+		bg: ['grey', 100],
 		'bg-bold': ['grey', 25],
 		'bg-ultrabold': ['grey', 0],
 		'bg-mute': ['grey', 500],
-		'bg-ultramute': ['grey', 300],
+		'bg-ultramute': ['grey', 400],
 		'bg-selected': ['yellow', 300],
 		fg: ['grey', 950],
 		'fg-bold': ['grey', 975],
 		'fg-ultrabold': ['grey', 1000],
 		'fg-mute': ['grey', 700],
-		'fg-ultramute': ['grey', 400],
-		'fg-selected': ['grey', 400],
+		'fg-ultramute': ['grey', 500],
+		'fg-selected': ['grey', 500],
 		link: ['blue', 700],
 		'accent-1': ['yellow', 300],
 		'accent-2': ['yellow', 400],

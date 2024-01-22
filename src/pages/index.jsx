@@ -56,7 +56,7 @@ const IndexPage = ({featuredProjects = []}) => {
 								<StaticImage
 									src="../../content/images/projects/stargazer.svg"
 									alt="A logo with the word “Stargazer”"
-									width={500}
+									width={600}
 									aspectRatio={1}
 									backgroundColor="rgb(1, 6, 25)"
 								/>
@@ -68,7 +68,7 @@ const IndexPage = ({featuredProjects = []}) => {
 									<StaticImage
 										src="../../content/images/projects/multicolor.jpg"
 										alt="A technicolour fractal pattern."
-										width={500}
+										width={600}
 										aspectRatio={1}
 									/>
 								}
@@ -82,6 +82,42 @@ const IndexPage = ({featuredProjects = []}) => {
 								aspectRatio={1}
 							/>
 						</li>
+						<li>
+							<ul className="bento-half-y">
+								<li className="project deletion-day">
+									<ExternalLink to="https://deletionday.com">
+										4/04
+									</ExternalLink>
+								</li>
+								<li>
+									<ul className="bento-half-x">
+										<li className="project color-mute">
+											<ExternalLink
+												to="https://vimeo.com/377116426"
+												className="image-link"
+											>
+												<StaticImage
+													src="../../content/images/projects/timestamped.jpg"
+													alt="A geometric pattern with the text “4:40am” overlayed."
+													width={300}
+													aspectRatio={1}
+												/>
+											</ExternalLink>
+										</li>
+										<li className="project no-zoom">
+											<BackgroundGenerator
+												fgColor={
+													DIRECT_COLORS.red[500]
+												}
+												bgColor={
+													DIRECT_COLORS.blue[900]
+												}
+											/>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
 						<li className="project">
 							<ExternalLink
 								to="https://youtu.be/Ow5A2BGH1m4"
@@ -90,7 +126,7 @@ const IndexPage = ({featuredProjects = []}) => {
 								<StaticImage
 									src="../../content/images/projects/jambo.jpg"
 									alt="An instrument made of bare electronics, with two knobs, two alphanumeric displays, and a fader."
-									width={500}
+									width={600}
 									aspectRatio={1}
 								/>
 							</ExternalLink>
@@ -107,11 +143,6 @@ const IndexPage = ({featuredProjects = []}) => {
 								}
 							/>
 						</li>
-						<li className="project no-zoom featured-doodle">
-							<FeaturedDoodle
-								onFullCycle={incrementFeaturedDoodleIdx}
-							/>
-						</li>
 						<li>
 							<ul className="bento-half-x">
 								<li className="project">
@@ -120,7 +151,7 @@ const IndexPage = ({featuredProjects = []}) => {
 											<StaticImage
 												src="../../content/images/projects/city.png"
 												alt="A pixellated, visually processed, sci-fi cityscape."
-												width={500}
+												width={300}
 												aspectRatio={1}
 											/>
 										}
@@ -141,7 +172,7 @@ const IndexPage = ({featuredProjects = []}) => {
 													<StaticImage
 														src="../../content/images/projects/quantized.jpg"
 														alt="An abstract image. It’s shiny, grainy, lo-fi, and looks a bit 3D."
-														width={500}
+														width={300}
 														aspectRatio={1}
 													/>
 												}
@@ -154,48 +185,17 @@ const IndexPage = ({featuredProjects = []}) => {
 												aspectRatio={1}
 											/>
 										</li>
-										<li className="project">
-											<ExternalLink
-												to="https://vimeo.com/377116426"
-												className="image-link"
-											>
-												<StaticImage
-													src="../../content/images/projects/timestamped.png"
-													alt="A geometric pattern with the text “1:57am” overlayed."
-													width={500}
-													aspectRatio={1}
-												/>
-											</ExternalLink>
+										<li className="project no-zoom">
+											<Riot word="ROLL" />
 										</li>
 									</ul>
 								</li>
 							</ul>
 						</li>
-						<li>
-							<ul className="bento-half-y">
-								<li className="project deletion-day">
-									<ExternalLink to="https://deletionday.com">
-										4/04
-									</ExternalLink>
-								</li>
-								<li>
-									<ul className="bento-half-x">
-										<li className="project no-zoom">
-											<Riot word="ROLL" />
-										</li>
-										<li className="project no-zoom">
-											<BackgroundGenerator
-												fgColor={
-													DIRECT_COLORS.red[500]
-												}
-												bgColor={
-													DIRECT_COLORS.blue[900]
-												}
-											/>
-										</li>
-									</ul>
-								</li>
-							</ul>
+						<li className="project no-zoom featured-doodle">
+							<FeaturedDoodle
+								onFullCycle={incrementFeaturedDoodleIdx}
+							/>
 						</li>
 						<li className="project">
 							<ExternalLink
@@ -205,7 +205,7 @@ const IndexPage = ({featuredProjects = []}) => {
 								<StaticImage
 									src="../../content/images/projects/depression.jpg"
 									alt="A small device with exposed wires and a single knob."
-									width={500}
+									width={600}
 									aspectRatio={1}
 								/>
 							</ExternalLink>

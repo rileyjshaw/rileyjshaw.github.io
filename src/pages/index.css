@@ -17,14 +17,17 @@
 	font-family: Menlo, var(--ff-sans);
 	width: 1ch;
 }
-.main-projects,
+.main-projects {
+	grid-column: left-column / span 3;
+}
 .main-recent {
 	grid-column: middle-column / span 2;
+	margin-top: var(--s-0);
 }
 .main-gallery {
 	display: grid;
 	gap: var(--grid-gap);
-	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
 	position: relative;
 }
 .main-gallery .project {
@@ -59,6 +62,13 @@
 	height: 100%;
 	place-content: center;
 	position: relative;
+}
+.main-gallery .color-mute {
+	filter: grayscale(75%);
+	transition: filter var(--transition-t-slow) var(--transition-easing);
+}
+.main-gallery .color-mute:hover {
+	filter: grayscale(0%);
 }
 .deletion-day a {
 	color: inherit;
@@ -95,7 +105,6 @@
 		margin: auto;
 		max-width: 800px;
 	}
-	.main-projects,
 	.main-recent {
 		grid-column: left-column / span 3;
 	}
