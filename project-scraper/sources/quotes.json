@@ -593,5 +593,17 @@
 		"author": "Johann Hari",
 		"source": "Stolen Focus",
 		"cite": "https://stolenfocusbook.com/"
+	},
+	"OVERFED": {
+		"content": "Overfed with reading as we are, the practice of reading must be activated… The effort of seeing contributes a large share to physical tiredness.",
+		"author": "Herbert Bayer",
+		"source": "On Typography",
+		"cite": "https://medium.com/@digitalonetwo/on-typography-9ab8548946e5"
+	},
+	"TEXT_PICTURE": {
+		"content": "Exploration of the potentialities of the book of true text-picture integration has only begun and will, by itself, become of utmost importance to universal understanding.",
+		"author": "Herbert Bayer",
+		"source": "On Typography",
+		"cite": "https://medium.com/@digitalonetwo/on-typography-9ab8548946e5"
 	}
 }
