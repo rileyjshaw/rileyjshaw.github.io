@@ -3,6 +3,7 @@
 	"extends": ["stylelint-config-standard"],
 	"rules": {
 		"prettier/prettier": true,
+		"no-descending-specificity": null,
 		"no-duplicate-selectors": true,
 		"color-hex-length": "short",
 		"selector-attribute-quotes": "always",
