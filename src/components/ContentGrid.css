@@ -5,7 +5,6 @@
 	grid-auto-flow: row dense;
 	grid-template-columns: repeat(auto-fit, minmax(60px, max-content));
 	justify-content: space-around;
-	list-style: none;
 	width: 100%;
 }
 .project-explorer .content-grid {

@@ -8,64 +8,146 @@ A tweak for the display fonts to remove more features and characters:
 
 pyftsubset "$file" --output-file="${file%.*}-Subset.${file##*.}" --flavor=woff2 --unicodes=U+A,U+20-7E,U+A0,U+A2,U+A9,U+AE,U+B0,U+B7,U+C0,U+C2,U+C6-CA,U+CE,U+D4,U+D7,U+D9,U+DB,U+E0,U+E2,U+E6-EA,U+EE,U+F4,U+F9,U+FB,U+2013,U+2014,U+2018-201A,U+201C,U+201D,U+2026,U+2122,U+2190,U+2192,U+2197,U+2212,U+221E,U+25BC
 */
-:root {
-	--unicode-range: 'U+A,U+20-7E,U+A0,U+A2,U+A9,U+AE,U+B0-B3,U+B7,U+B9,U+C0,U+C2,U+C6-CA,U+CE,U+D4,U+D7,U+D9,U+DB,U+E0,U+E2,U+E6-EA,U+EE,U+F4,U+F7,U+F9,U+FB,U+394,U+3A0,U+3A9,U+2013,U+2014,U+2018-201A,U+201C,U+201D,U+2022,U+2026,U+2070,U+2074-2079,U+2122,U+2190,U+2192,U+2197,U+21BA,U+2206,U+2212,U+221E,U+2248,U+2260,U+2264,U+2265,U+25B2,U+25B6,U+25BC,U+25C0,U+25C9,U+25CB,U+25CE-25D3,U+FE0E';
-	--unicode-range-display: 'U+A,U+20-7E,U+A0,U+A2,U+A9,U+AE,U+B0,U+B7,U+C0,U+C2,U+C6-CA,U+CE,U+D4,U+D7,U+D9,U+DB,U+E0,U+E2,U+E6-EA,U+EE,U+F4,U+F9,U+FB,U+2013,U+2014,U+2018-201A,U+201C,U+201D,U+2026,U+2122,U+2190,U+2192,U+2197,U+2212,U+221E,U+25BC';
-}
+@layer typography {
+	:root {
+		--unicode-range: 'U+A,U+20-7E,U+A0,U+A2,U+A9,U+AE,U+B0-B3,U+B7,U+B9,U+C0,U+C2,U+C6-CA,U+CE,U+D4,U+D7,U+D9,U+DB,U+E0,U+E2,U+E6-EA,U+EE,U+F4,U+F7,U+F9,U+FB,U+394,U+3A0,U+3A9,U+2013,U+2014,U+2018-201A,U+201C,U+201D,U+2022,U+2026,U+2070,U+2074-2079,U+2122,U+2190,U+2192,U+2197,U+21BA,U+2206,U+2212,U+221E,U+2248,U+2260,U+2264,U+2265,U+25B2,U+25B6,U+25BC,U+25C0,U+25C9,U+25CB,U+25CE-25D3,U+FE0E';
+		--unicode-range-display: 'U+A,U+20-7E,U+A0,U+A2,U+A9,U+AE,U+B0,U+B7,U+C0,U+C2,U+C6-CA,U+CE,U+D4,U+D7,U+D9,U+DB,U+E0,U+E2,U+E6-EA,U+EE,U+F4,U+F9,U+FB,U+2013,U+2014,U+2018-201A,U+201C,U+201D,U+2026,U+2122,U+2190,U+2192,U+2197,U+2212,U+221E,U+25BC';
+	}
 
-@font-face {
-	font-display: fallback;
-	font-family: 'Mint Grotesk';
-	font-feature-settings:
-		'ss02' 1,
-		'ss03' 1,
-		'ss04' 1;
-	font-style: normal;
-	font-weight: 400;
-	src: url('/fonts/MintGrotesk-Regular-Subset.woff2') format('woff2');
-	unicode-range: var(--unicode-range);
-}
+	@font-face {
+		font-display: fallback;
+		font-family: 'Mint Grotesk';
+		font-feature-settings:
+			'ss02' 1,
+			'ss03' 1,
+			'ss04' 1;
+		font-style: normal;
+		font-weight: 400;
+		src: url('/fonts/MintGrotesk-Regular-Subset.woff2') format('woff2');
+		unicode-range: var(--unicode-range);
+	}
 
-@font-face {
-	font-display: fallback;
-	font-family: 'Mint Grotesk';
-	font-feature-settings:
-		'ss02' 1,
-		'ss03' 1,
-		'ss04' 1;
-	font-style: italic;
-	font-weight: 400;
-	src: url('/fonts/MintGrotesk-Italic-Subset.woff2') format('woff2');
-	unicode-range: var(--unicode-range);
-}
+	@font-face {
+		font-display: fallback;
+		font-family: 'Mint Grotesk';
+		font-feature-settings:
+			'ss02' 1,
+			'ss03' 1,
+			'ss04' 1;
+		font-style: italic;
+		font-weight: 400;
+		src: url('/fonts/MintGrotesk-Italic-Subset.woff2') format('woff2');
+		unicode-range: var(--unicode-range);
+	}
 
-@font-face {
-	font-display: fallback;
-	font-family: 'Mint Grotesk';
-	font-feature-settings:
-		'ss02' 1,
-		'ss03' 1,
-		'ss04' 1;
-	font-style: normal;
-	font-weight: 700;
-	src: url('/fonts/MintGrotesk-Bold-Subset.woff2') format('woff2');
-	unicode-range: var(--unicode-range);
-}
+	@font-face {
+		font-display: fallback;
+		font-family: 'Mint Grotesk';
+		font-feature-settings:
+			'ss02' 1,
+			'ss03' 1,
+			'ss04' 1;
+		font-style: normal;
+		font-weight: 700;
+		src: url('/fonts/MintGrotesk-Bold-Subset.woff2') format('woff2');
+		unicode-range: var(--unicode-range);
+	}
 
-@font-face {
-	font-display: fallback;
-	font-family: 'Mint Grotesk Display';
-	font-style: normal;
-	font-weight: 400;
-	src: url('/fonts/MintGroteskDisplay-Regular-Subset.woff2') format('woff2');
-	unicode-range: var(--unicode-range-display);
-}
+	@font-face {
+		font-display: fallback;
+		font-family: 'Mint Grotesk Display';
+		font-style: normal;
+		font-weight: 400;
+		src: url('/fonts/MintGroteskDisplay-Regular-Subset.woff2')
+			format('woff2');
+		unicode-range: var(--unicode-range-display);
+	}
 
-@font-face {
-	font-display: fallback;
-	font-family: 'Mint Grotesk Display';
-	font-style: normal;
-	font-weight: 900;
-	src: url('/fonts/MintGroteskDisplay-Heavy-Subset.woff2') format('woff2');
-	unicode-range: var(--unicode-range-display);
+	@font-face {
+		font-display: fallback;
+		font-family: 'Mint Grotesk Display';
+		font-style: normal;
+		font-weight: 900;
+		src: url('/fonts/MintGroteskDisplay-Heavy-Subset.woff2')
+			format('woff2');
+		unicode-range: var(--unicode-range-display);
+	}
+	body {
+		font-size: var(--fs-0);
+	}
+	h2 {
+		font-size: var(--fs-pretty-big);
+		margin: 2em 0 0.5em;
+	}
+	h3 {
+		font-size: var(--fs-2);
+		margin: var(--s-0) 0 var(--s--3);
+	}
+	p,
+	dd {
+		margin-bottom: 1em;
+	}
+	.prose {
+		& :is(ol, ul) {
+			margin-block: var(--s-0);
+		}
+		& li {
+			margin-bottom: var(--s--2);
+		}
+		& pre {
+			font-size: var(--fs--1);
+			margin-block: var(--s-1);
+		}
+		& figure {
+			text-align: center;
+		}
+		& figcaption {
+			font-size: var(--fs--2);
+			font-style: italic;
+			margin-top: var(--s--2);
+		}
+		& table {
+			border-collapse: collapse;
+			border-spacing: 0;
+			margin: 1.5em 24px;
+			text-align: left;
+		}
+		& tr:nth-child(2n) {
+			background-color: var(--color-bg-mute);
+		}
+		& :is(th, td) {
+			border: 1px solid var(--color-fg-mute);
+			margin: 0;
+			padding: 6px 24px 6px 13px;
+		}
+		& blockquote {
+			border-left: 4px solid var(--color-fg-mute);
+			margin-bottom: 1em;
+			padding-left: var(--s-0);
+		}
+		& cite {
+			display: block;
+			text-align: right;
+		}
+		& cite::before {
+			content: '– ';
+		}
+	}
+
+	@media only screen and (width >= 800px) {
+		.prose-lg {
+			font-size: var(--fs-2);
+			& h2 {
+				font-size: var(--fs-4);
+			}
+			& h3 {
+				font-size: var(--fs-3);
+				margin: var(--s-3) 0 var(--s-0);
+			}
+			& pre {
+				font-size: var(--fs-1);
+				margin-block: var(--s-2);
+			}
+		}
+	}
 }

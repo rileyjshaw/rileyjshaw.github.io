@@ -1,17 +1,5 @@
-.about-page .currently {
-	color: var(--color-fg);
-}
-.about-page .timeline {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
 .about-page .timeline li {
-	margin: 0;
 	position: relative;
-}
-.about-page .timeline li:first-child h3 {
-	margin-top: var(--s--1);
 }
 .about-page .timeline .job-title {
 	font-size: var(--fs--1);

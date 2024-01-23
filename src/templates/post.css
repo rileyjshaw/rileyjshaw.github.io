@@ -1,5 +1,4 @@
 .blog-post-page .blog-post-content {
-	font-size: var(--fs-2);
 	grid-column: middle-column / span 1;
 	min-width: 0;
 	padding-bottom: var(--s-3);
@@ -10,27 +9,12 @@
 .blog-post-page .blog-post-content h1 {
 	font: 900 var(--fs-6) var(--ff-heading);
 	line-height: 1;
-	margin: 0;
-}
-.blog-post-page .blog-post-content h2 {
-	font-size: var(--fs-4);
-}
-.blog-post-page .blog-post-content h3 {
-	font-size: var(--fs-3);
-	margin: var(--s-3) 0 var(--s-0);
 }
 /* TODO(riley): Duplicate. */
 .blog-post-content header .subheading {
 	font-size: var(--fs--2);
 	letter-spacing: 0.05em;
 	margin: var(--s--2) 0 var(--s-2);
-}
-.blog-post-content ol,
-.blog-post-content ul {
-	margin: var(--s-0) 0;
-}
-.blog-post-content li {
-	margin-bottom: var(--s--2);
 }
 .blog-post-content [data-footnote-ref] {
 	color: var(--color-link);
@@ -42,9 +26,6 @@
 .blog-post-content .footnotes p {
 	display: inline;
 }
-.blog-post-content figure {
-	text-align: center;
-}
 .blog-post-content .gatsby-resp-image-wrapper {
 	margin: 2.5em auto;
 	max-width: 100%;
@@ -55,62 +36,16 @@
 .blog-post-content .blog-figure .gatsby-resp-image-wrapper {
 	margin-bottom: 0;
 }
-.blog-post-content figcaption {
-	font-size: var(--fs--2);
-	font-style: italic;
-	margin-top: var(--s--2);
-}
-.blog-post-content table {
-	border-collapse: collapse;
-	border-spacing: 0;
-	margin: 1.5em 24px;
-	text-align: left;
-}
-.blog-post-content tr:nth-child(2n) {
-	background-color: var(--color-bg-mute);
-}
-.blog-post-content th,
-.blog-post-content td {
-	border: 1px solid var(--color-fg-mute);
-	margin: 0;
-	padding: 6px 24px 6px 13px;
-}
-.blog-post-content cite {
-	display: block;
-	text-align: right;
-}
-.blog-post-content cite::before {
-	content: '– ';
-}
-.blog-post-content pre {
-	margin-block: var(--s-3);
-}
 /* TODO: Why are pres double-wrapped? */
 .blog-post-content pre > pre {
 	margin: 0;
-}
-.blog-post-content blockquote {
-	border-left: 4px solid var(--color-fg);
-	padding-left: 1em;
-}
-
-@media only screen and (width <= 800px) {
-	.blog-post-page .blog-post-content h1 {
-		font-size: var(--fs-5);
-	}
-	.blog-post-page .blog-post-content h2 {
-		font-size: var(--fs-3);
-	}
-	.blog-post-page .blog-post-content h3 {
-		font-size: var(--fs-2);
-	}
-	.blog-post-content pre {
-		font-size: 0.75em;
-	}
 }
 
 @media only screen and (width < 1000px) {
 	.blog-post-page .blog-post-content {
 		grid-column: left-column / span 3;
+		& h1 {
+			font-size: var(--fs-5);
+		}
 	}
 }

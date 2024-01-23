@@ -1,9 +1,7 @@
 .currently {
 	display: flex;
 	justify-content: space-between;
-	list-style: none;
 	margin: 0 30px 30px 0;
-	padding: 0;
 }
 .currently li {
 	align-items: center;

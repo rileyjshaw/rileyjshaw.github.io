@@ -2,13 +2,13 @@
 	min-height: 100dvh;
 }
 .site-wrapper {
-	--gutter-size: max(var(--grid-gap), (100vw - 1500px) / 2);
+	--gutter-size: max(var(--grid-gap), (100vw - 1440px) / 2);
 
 	display: grid;
 	grid-template-columns:
 		[left-gutter] var(--gutter-size)
 		[left-column] 1fr
-		[middle-column] 3fr
+		[middle-column] 4fr
 		[right-column] 1fr
 		[right-gutter] var(--gutter-size);
 	height: 100%;

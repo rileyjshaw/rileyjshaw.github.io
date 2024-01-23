@@ -54,7 +54,7 @@ const BlogList = ({data, pageContext: {currentPage, numPages}}) => {
 
 						return (
 							<li className="blog-post" key={uid}>
-								<article className="blog-post-content">
+								<article className="blog-post-content prose">
 									<header>
 										<h1>
 											<AutoLink to={link}>

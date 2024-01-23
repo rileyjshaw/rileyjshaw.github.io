@@ -1,10 +1,7 @@
 .doodle-background-generator {
-	align-items: center;
 	cursor: pointer;
-	display: flex;
 	grid-area: span 2 / span 3;
 	height: 100%;
 	image-rendering: pixelated;
 	image-rendering: crisp-edges;
-	justify-content: center;
 }

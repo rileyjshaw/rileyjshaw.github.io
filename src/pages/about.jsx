@@ -29,7 +29,7 @@ function AboutPage() {
 	return (
 		<main>
 			<div className="page-content">
-				<div className="blog-post-content">
+				<div className="prose prose-lg">
 					<MeIntro />
 					<MeRest />
 					{/* TODO(riley): <UpTo /> */}

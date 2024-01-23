@@ -4,7 +4,7 @@
 	padding-bottom: var(--s-2);
 }
 .site-quote p {
-	margin: 0 0 var(--s--1);
+	margin-bottom: var(--s--1);
 	text-align: justify;
 }
 .site-quote footer {

@@ -1,108 +1,55 @@
+@layer reset, typography, global, utility;
+
 @import url('./rjset.css');
 @import url('./typography.css');
-:root {
-	--fs-pretty-big: var(--fs-3);
-	--grid-gap: var(--s-0);
-}
+@import url('./utility.css');
 
-@media screen and (width <= 1000px) {
+@layer global {
 	:root {
-		--fs-pretty-big: var(--fs-2);
-		--grid-gap: var(--fs--2);
+		--fs-pretty-big: var(--fs-3);
+		--grid-gap: var(--s-0);
 	}
-}
-body {
-	font-size: var(--fs-0);
-}
-h2 {
-	font-size: var(--fs-pretty-big);
-	margin: 2em 0 0.5em;
-}
-h3 {
-	font-size: var(--fs-2);
-	margin: var(--s-0) 0 var(--s--3);
-}
-p,
-dd {
-	margin-bottom: 1em;
-}
-.default-button {
-	background: var(--color-bg);
-	border: 1px solid var(--color-fg);
-	font-size: var(--fs--4);
-	font-weight: 700;
-	letter-spacing: 2px;
-	padding: 6px 12px;
-	text-align: center;
-	text-transform: uppercase;
-}
-.visually-hidden {
-	border: 0 !important;
-	clip: rect(0 0 0 0) !important;
-	height: 1px !important;
-	margin: -1px !important;
-	overflow: hidden !important;
-	padding: 0 !important;
-	position: absolute !important;
-	width: 1px !important;
-}
-.visually-hidden img,
-.visually-hidden video {
-	display: none;
-}
-.transparent {
-	opacity: 0;
-}
-/* HACK(riley): From gatsby-remark-autolink-headers. Why isn’t this added
-                automatically? TODO: Ensure the rest of the plugins are working
-                as expected. */
-.anchor.before {
-	left: 0;
-	padding-right: 4px;
-	position: absolute;
-	top: 0;
-	transform: translateX(-100%);
-}
-.anchor.after {
-	display: inline-block;
-	padding-left: 4px;
-}
-h1 .anchor svg,
-h2 .anchor svg,
-h3 .anchor svg,
-h4 .anchor svg,
-h5 .anchor svg,
-h6 .anchor svg {
-	opacity: 0;
-}
-h1:hover .anchor svg,
-h2:hover .anchor svg,
-h3:hover .anchor svg,
-h4:hover .anchor svg,
-h5:hover .anchor svg,
-h6:hover .anchor svg,
-h1 .anchor:focus svg,
-h2 .anchor:focus svg,
-h3 .anchor:focus svg,
-h4 .anchor:focus svg,
-h5 .anchor:focus svg,
-h6 .anchor:focus svg {
-	opacity: 1;
-}
-hr {
-	background-image: linear-gradient(
-		to right,
-		transparent,
-		var(--color-fg-mute),
-		transparent
-	);
-	border: 0;
-	height: 1px;
-	margin: var(--s-2) 0;
-}
-:has(+ hr) {
-	margin-bottom: 0;
-}
-:has(+ hr) > :last-child {
-	margin-bottom: 0;
+
+	@media screen and (width <= 1000px) {
+		:root {
+			--fs-pretty-big: var(--fs-2);
+			--grid-gap: var(--fs--2);
+		}
+	}
+	.default-button {
+		background: var(--color-bg);
+		border: 1px solid var(--color-fg);
+		font-size: var(--fs--4);
+		font-weight: 700;
+		letter-spacing: 2px;
+		padding: 6px 12px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.anchor {
+		display: flex;
+		width: 1em;
+	}
+	.anchor svg {
+		fill: currentcolor;
+		height: 50%;
+		width: auto;
+	}
+	hr {
+		background-image: linear-gradient(
+			to right,
+			transparent,
+			var(--color-fg-mute),
+			transparent
+		);
+		border: 0;
+		height: 1px;
+		margin: var(--s-2) 0;
+	}
+	:has(+ hr) {
+		margin-bottom: 0;
+	}
+	:has(+ hr) > :last-child {
+		margin-bottom: 0;
+	}
 }

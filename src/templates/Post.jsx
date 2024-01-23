@@ -14,7 +14,10 @@ export default function Template({data, children}) {
 	return (
 		<main>
 			<div className="page-content">
-				<article className="blog-post-content" role="article">
+				<article
+					className="blog-post-content prose prose-lg"
+					role="article"
+				>
 					<header>
 						<h1>{fields.title}</h1>
 						<div className="subheading">

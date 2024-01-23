@@ -5,7 +5,7 @@
 }
 .pick-one p {
 	font: inherit;
-	margin: 0 0.5em;
+	margin-inline: 0.5em;
 }
 .pick-one .question {
 	align-items: center;

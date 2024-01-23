@@ -122,9 +122,7 @@ const BackgroundGenerator = React.forwardRef(function BackgroundGenerator(
 				}
 			}
 			{...(ref?.hasOwnProperty('current') ? {ref} : {})}
-		>
-			{/* {clicked || <span className="default-button">Click?</span>} */}
-		</El>
+		/>
 	);
 });
 
