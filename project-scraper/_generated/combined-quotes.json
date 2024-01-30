@@ -153,6 +153,12 @@
 		"uid": "DYNABOOK_REFLEXIVE"
 	},
 	{
+		"author": "Arthur C. Clarke",
+		"content": "The greatest single occupation of the future will be education. The second greatest occupation will be entertainment. I think the two should be synonymous.",
+		"source": "The Hartford Courant, 1972",
+		"uid": "EDUTAINMENT"
+	},
+	{
 		"author": "Sara Wachter-Boettcher",
 		"cite": "https://www.indiebound.org/book/9780393356045",
 		"content": "But time and again, the conversation turned away from how to make the program useful, and toward that word I find so empty: “delight.”",
@@ -475,6 +481,12 @@
 		"content": "I used to think “Software Design” is an art form. I now believe that I was half-right: it is indeed an art, but it has a rather short half-life. Software is merely a performance art!",
 		"source": "Software is merely a Performance Art",
 		"uid": "PERFORMANCE_ART"
+	},
+	{
+		"author": "Arthur C. Clarke",
+		"content": "The goal of the future is full unemployment, so we can play. That’s why we have to destroy the present politico-economic system.",
+		"source": "Los Angeles Free Press interview, 1969",
+		"uid": "PLAY"
 	},
 	{
 		"author": "James Bridle",
