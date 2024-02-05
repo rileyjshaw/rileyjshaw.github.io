@@ -70,7 +70,8 @@
 	width: 90vw;
 	z-index: 1;
 }
-@media screen and (max-width: 1000px) {
+
+@media screen and (width <= 1000px) {
 	.dialog-note-title {
 		font-size: var(--fs-4);
 	}
