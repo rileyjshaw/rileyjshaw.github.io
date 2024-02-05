@@ -38,6 +38,85 @@
 .page-content > * {
 	grid-column: middle-column / span 1;
 }
+/* TODO: Delete once application is finished. */
+.dialog-note-overlay {
+	backdrop-filter: blur(2px);
+	background-color: rgb(0 0 0 / 50%);
+	inset: 0;
+	position: fixed;
+	z-index: 1;
+}
+.dialog-note-title {
+	font-family: var(--ff-heading);
+	font-size: var(--fs-5);
+	font-weight: 900;
+	margin-top: 0;
+}
+.dialog-note-content {
+	animation: content-show 150ms cubic-bezier(0.16, 1, 0.3, 1);
+	background: var(--color-blue-800);
+	border-radius: 24px;
+	box-shadow: var(--shadow-lg);
+	font-size: var(--fs-2);
+	height: max-content;
+	left: 50%;
+	max-height: 90vh;
+	max-width: 1000px;
+	min-width: 0;
+	padding: var(--s-4) var(--s-2) var(--s-2);
+	position: fixed;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 90vw;
+	z-index: 1;
+}
+@media screen and (max-width: 1000px) {
+	.dialog-note-title {
+		font-size: var(--fs-4);
+	}
+	.dialog-note-content {
+		padding: var(--s-2) var(--s-0) var(--s-1);
+	}
+}
+.dialog-note-content:focus {
+	outline: none;
+}
+.dialog-note-button {
+	all: unset;
+	border: 2px solid var(--color-grey-0);
+	border-radius: 99px;
+	cursor: pointer;
+	padding: var(--s--1) var(--s-0);
+}
+.dialog-note-icon-button {
+	all: unset;
+	background-color: color-mix(
+		in srgb,
+		var(--color-grey-50) 25%,
+		transparent
+	);
+	border-radius: 99px;
+	box-shadow: var(--shadow-sm);
+	color: var(--color-grey-950);
+	cursor: pointer;
+	display: grid;
+	font-family: inherit;
+	font-size: var(--fs--2);
+	height: 24px;
+	place-items: center;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	transition: background-color var(--transition-t) var(--transition-easing);
+	width: 24px;
+}
+.dialog-note-icon-button:hover {
+	background-color: color-mix(
+		in srgb,
+		var(--color-grey-50) 50%,
+		transparent
+	);
+}
 
 @media screen and (width <= 1000px) {
 	.site-wrapper {
@@ -62,5 +141,16 @@
 	}
 	to {
 		opacity: 1;
+	}
+}
+
+@keyframes content-show {
+	from {
+		opacity: 0;
+		transform: translate(-50%, -48%) scale(0.96);
+	}
+	to {
+		opacity: 1;
+		transform: translate(-50%, -50%) scale(1);
 	}
 }

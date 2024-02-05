@@ -1,3 +1,4 @@
+import * as Dialog from '@radix-ui/react-dialog';
 import PageHeader from './PageHeader';
 import SiteNav from './SiteNav';
 import NotFoundPage from '../pages/404';
@@ -12,7 +13,46 @@ import ClientOnly from './ClientOnly';
 import './layout.css';
 import {SettingsContext} from './SettingsProvider';
 import cn from 'cnz';
-import React, {useContext, useState, Children} from 'react';
+import React, {useContext, useState, Children, useEffect} from 'react';
+
+function NoteDialog({open, onOpenChange, title, description}) {
+	return (
+		<Dialog.Root open={open} onOpenChange={onOpenChange}>
+			<Dialog.Portal>
+				<Dialog.Overlay className="dialog-note-overlay" />
+				<Dialog.Content className="dialog-note-content">
+					<Dialog.Title className="dialog-note-title">
+						{title}
+					</Dialog.Title>
+					<Dialog.Description className="dialog-note-description">
+						{description}
+					</Dialog.Description>
+					<div
+						style={{
+							display: 'flex',
+							marginTop: 25,
+							justifyContent: 'flex-end',
+						}}
+					>
+						<Dialog.Close asChild>
+							<button className="dialog-note-button">
+								Continue
+							</button>
+						</Dialog.Close>
+					</div>
+					<Dialog.Close asChild>
+						<button
+							className="dialog-note-icon-button"
+							aria-label="Close"
+						>
+							✖
+						</button>
+					</Dialog.Close>
+				</Dialog.Content>
+			</Dialog.Portal>
+		</Dialog.Root>
+	);
+}
 
 const Layout = ({children, location}) => {
 	const {theme, reducedMotion, contrastPreference} =
@@ -36,9 +76,15 @@ const Layout = ({children, location}) => {
 		setActiveHoliday(nextHoliday.daysUntil <= 3 ? nextHoliday : null);
 	}, 60000);
 
-	let {pathname} = location;
+	const [isNoteOpen, setNoteOpen] = useState(false);
+
+	let {pathname, search} = location;
 	if (pathname.endsWith('/')) pathname = pathname.slice(1, -1);
 	else pathname = pathname.slice(1);
+
+	useEffect(() => {
+		if (search?.includes('note=gh')) setNoteOpen(true);
+	}, [search]);
 
 	let is404;
 	try {
@@ -74,6 +120,12 @@ const Layout = ({children, location}) => {
 					}}
 				/>
 			)}
+			<NoteDialog
+				open={isNoteOpen}
+				onOpenChange={setNoteOpen}
+				title="Hello, GitHub!"
+				description="I’m so excited about this role. I use GitHub every day, and Primer Prism at least once a week. I would love to contribute to the team that makes so many of my favourite tools ✨"
+			/>
 			<ClientOnly>
 				{activeHoliday && isHolidayBannerOpen && (
 					<Banner
