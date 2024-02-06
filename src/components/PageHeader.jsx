@@ -1,8 +1,10 @@
-import './PageHeader.css';
 import {Link} from 'gatsby';
 import React from 'react';
+
 import RjsLogo from '../icons/RjsLogo';
 import {SITE_PAGES} from '../util/constants';
+
+import './PageHeader.css';
 
 const getPageName = pathname => {
 	const match = pathname.match(/^\/([^\/]*)/);

@@ -1,7 +1,9 @@
+import React, {useRef, useState, useEffect, useMemo} from 'react';
+
 import {ABSTRACT_COLORS} from '../../util/constants';
 import {withSettings} from '../SettingsProvider';
+
 import './CircleConstrainedLines.css';
-import React, {useRef, useState, useEffect, useMemo} from 'react';
 
 const {PI, cos, sin, tan, pow} = Math;
 const SIZE_UNSCALED = 800;

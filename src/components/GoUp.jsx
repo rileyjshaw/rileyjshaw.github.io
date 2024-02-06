@@ -1,6 +1,8 @@
-import CycleText from '../components/CycleText';
-import './GoUp.css';
 import React from 'react';
+
+import CycleText from '../components/CycleText';
+
+import './GoUp.css';
 
 export default () => (
 	<div className="go-up">

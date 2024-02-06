@@ -1,6 +1,7 @@
 // Flexbox justified.
-import './Fit2.css';
 import React from 'react';
+
+import './Fit2.css';
 
 export default ({children, className = ''}) => (
 	<div className={`fit-2 ${className}`}>

@@ -1,23 +1,26 @@
-import AboutIntro from '../components/about/MeIntro';
+import {Link} from 'gatsby';
+import React, {useCallback, useState} from 'react';
+
+import {StaticImage} from 'gatsby-plugin-image';
+
+import {ExternalLink} from '../components/AutoLink';
 import BigQuote from '../components/BigQuote';
 import ContentList from '../components/ContentList';
 import CycleText from '../components/CycleText';
-import GoUp from '../components/GoUp';
-import SEO from '../components/SEO';
-import allProjectsQuery from '../util/all-projects-query';
-import {sortByDate} from '../util/sorting-methods';
-import './index.css';
-import {Link} from 'gatsby';
-import React, {useCallback, useState} from 'react';
 import GalleryImage from '../components/GalleryImage';
-import {StaticImage} from 'gatsby-plugin-image';
-import {ExternalLink} from '../components/AutoLink';
+import GoUp from '../components/GoUp';
+import PinkNoise from '../components/PinkNoise';
+import SEO from '../components/SEO';
+import AboutIntro from '../components/about/MeIntro';
 import BackgroundGenerator from '../components/doodles/BackgroundGenerator';
-import Riot from '../components/doodles/Riot';
 import CircleConstrainedLines from '../components/doodles/CircleConstrainedLines';
 import Propellers from '../components/doodles/Propellers';
-import PinkNoise from '../components/PinkNoise';
+import Riot from '../components/doodles/Riot';
+import allProjectsQuery from '../util/all-projects-query';
 import {DIRECT_COLORS} from '../util/constants.mjs';
+import {sortByDate} from '../util/sorting-methods';
+
+import './index.css';
 
 export const Head = SEO;
 

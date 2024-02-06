@@ -1,8 +1,11 @@
-import {useViewport} from '../util/hooks';
-import './ColorChannelSplitter.css';
-import {SettingsContext} from './SettingsProvider';
-import cn from 'cnz';
 import React, {cloneElement, isValidElement, useContext} from 'react';
+
+import cn from 'cnz';
+
+import {useViewport} from '../util/hooks';
+import {SettingsContext} from './SettingsProvider';
+
+import './ColorChannelSplitter.css';
 
 const deepCloneChildren = (children, propsFn = null) =>
 	React.Children.map(children, child =>

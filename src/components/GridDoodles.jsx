@@ -1,12 +1,14 @@
+import React from 'react';
+
 import CycleText from './CycleText';
+import TextGrid from './TextGrid';
 import BackgroundGenerator from './doodles/BackgroundGenerator';
-import Propellers from './doodles/Propellers';
 import CircleConstrainedLines from './doodles/CircleConstrainedLines';
 import GameOver from './doodles/GameOver';
+import Propellers from './doodles/Propellers';
 import Riot from './doodles/Riot';
+
 import './GridDoodles.css';
-import TextGrid from './TextGrid';
-import React from 'react';
 
 export default [
 	[

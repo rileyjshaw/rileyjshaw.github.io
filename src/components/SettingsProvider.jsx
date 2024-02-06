@@ -1,9 +1,11 @@
+import React, {createContext, useEffect} from 'react';
+
 import {useMedia} from 'react-use';
+
 import {STORAGE_KEYS} from '../util/constants';
 import {useStickyState} from '../util/hooks';
 import {applyTheme} from '../util/util';
 import ClientOnly from './ClientOnly';
-import React, {createContext, useEffect} from 'react';
 
 export const SettingsContext = createContext();
 

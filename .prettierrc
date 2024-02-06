@@ -5,6 +5,15 @@
 	"singleQuote": true,
 	"tabWidth": 4,
 	"useTabs": true,
+	"importOrder": [
+		"^(react|gatsby)(/.+)?$",
+		"^(?!.*\\.css$)([a-zA-Z]|@[a-zA-Z]).*$",
+		"^(?!.*\\.css$)@/(.*)$",
+		"^(?!.*\\.css$).+",
+		".css$"
+	],
+	"importOrderSeparation": true,
+	"plugins": ["@trivago/prettier-plugin-sort-imports"],
 	"overrides": [
 		{
 			"files": "*.mdx",

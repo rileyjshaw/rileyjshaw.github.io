@@ -1,10 +1,12 @@
-import AutoLink, {ExternalLink} from '../components/AutoLink';
-import '../components/ContentNode.css';
-import SEO from '../components/SEO';
-import './BlogList.css';
-import './Post.css';
 import {Link, graphql} from 'gatsby';
 import React from 'react';
+
+import AutoLink, {ExternalLink} from '../components/AutoLink';
+import SEO from '../components/SEO';
+
+import '../components/ContentNode.css';
+import './BlogList.css';
+import './Post.css';
 
 const urlFrom = page => `/blog${page === 1 ? '' : `/${page}`}`;
 

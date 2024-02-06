@@ -1,7 +1,9 @@
+import React, {useRef, useState, useEffect, useMemo} from 'react';
+
 import {ABSTRACT_COLORS} from '../../util/constants';
 import {withSettings} from '../SettingsProvider';
+
 import './Propellers.css';
-import React, {useRef, useState, useEffect, useMemo} from 'react';
 
 const SIZE_UNSCALED = 520;
 

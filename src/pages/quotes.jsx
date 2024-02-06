@@ -1,7 +1,8 @@
-import Quote from '../components/Quote';
-import SEO from '../components/SEO';
 import {graphql, useStaticQuery} from 'gatsby';
 import React from 'react';
+
+import Quote from '../components/Quote';
+import SEO from '../components/SEO';
 
 export function Head(props) {
 	return <SEO {...props} title="All quotes" />;

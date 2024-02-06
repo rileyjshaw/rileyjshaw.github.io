@@ -1,6 +1,8 @@
-import {useViewport, useRect} from '../../util/hooks';
-import './Riot.css';
 import React, {useMemo} from 'react';
+
+import {useViewport, useRect} from '../../util/hooks';
+
+import './Riot.css';
 
 function Riot({className, word = 'RIOT!'}, ref) {
 	const [riotRef, _inView, boundingClientRect, windowHeight = 0] =

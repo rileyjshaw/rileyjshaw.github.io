@@ -1,5 +1,7 @@
 import React from 'react';
+
 import {Highlight} from 'prism-react-renderer';
+
 import '../prism-nord.css';
 
 function CodeBlock({children, className}) {

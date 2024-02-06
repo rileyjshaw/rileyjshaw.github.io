@@ -1,5 +1,6 @@
-import './CheatCodeInput.css';
 import React, {useState} from 'react';
+
+import './CheatCodeInput.css';
 
 const EXTENDED_CHARS = {
 	UP: '⬆',

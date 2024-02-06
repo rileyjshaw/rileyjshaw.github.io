@@ -1,10 +1,12 @@
+import {graphql, useStaticQuery, Link} from 'gatsby';
+import React, {useState, useRef} from 'react';
+
 import List from '../icons/List';
 import Repeat from '../icons/Repeat';
 import {shuffle} from '../util/sorting-methods';
 import Quote from './Quote';
+
 import './BigQuote.css';
-import {graphql, useStaticQuery, Link} from 'gatsby';
-import React, {useState, useRef} from 'react';
 
 function BigQuote({quoteId}) {
 	const {

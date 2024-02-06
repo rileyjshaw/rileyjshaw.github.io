@@ -1,5 +1,6 @@
-import AutoLink, {ExternalLink} from '../components/AutoLink';
 import React, {useState} from 'react';
+
+import AutoLink, {ExternalLink} from '../components/AutoLink';
 
 const BlockEmbedButton = ({type, onClick}) => (
 	<button className="block-embed-button default-button" onClick={onClick}>

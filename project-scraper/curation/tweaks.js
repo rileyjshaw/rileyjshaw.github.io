@@ -1,9 +1,10 @@
 // NOTE: Functions accepting an `n` (content node) argument modify the node
 //       *in place*. This whole file is a hack.
-import {idify} from '../scraper-utils.js';
 import fs from 'fs';
 import stableStringify from 'json-stable-stringify';
 import {URL} from 'url';
+
+import {idify} from '../scraper-utils.js';
 
 function loadJsonFile(relPath) {
 	return JSON.parse(

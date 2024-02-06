@@ -1,6 +1,8 @@
-import {useKeyPresses, useTypedText} from '../util/hooks';
-import './PickOne.css';
 import React, {useMemo, useState} from 'react';
+
+import {useKeyPresses, useTypedText} from '../util/hooks';
+
+import './PickOne.css';
 
 const UNCHOSEN = [false, false];
 function PickOne({question = '', left, right, answer, onPick}) {

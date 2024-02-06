@@ -1,10 +1,11 @@
+import React from 'react';
+
 import {
 	DIRECT_COLORS,
 	STORAGE_KEYS,
 	ABSTRACT_COLOR_PROPERTIES,
 } from './src/util/constants';
 import {applyTheme} from './src/util/util';
-import React from 'react';
 
 export * from './wrap-root-elements';
 

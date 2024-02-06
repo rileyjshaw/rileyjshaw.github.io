@@ -1,3 +1,9 @@
+import React from 'react';
+
+import AutoLink from '../components/AutoLink';
+import BigQuote from '../components/BigQuote';
+import GoUp from '../components/GoUp';
+import SEO from '../components/SEO';
 import MeIntro from '../components/about/MeIntro';
 import MeRest from '../components/about/MeRest';
 import {
@@ -13,13 +19,9 @@ import {
 	SFPC,
 	Signal,
 } from '../components/about/Work';
-import AutoLink from '../components/AutoLink';
-import BigQuote from '../components/BigQuote';
-import GoUp from '../components/GoUp';
-import SEO from '../components/SEO';
+
 import '../templates/Post.css';
 import './about.css';
-import React from 'react';
 
 export function Head(props) {
 	return <SEO {...props} title="About" />;

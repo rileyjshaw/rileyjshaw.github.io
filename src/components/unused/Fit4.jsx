@@ -1,5 +1,6 @@
-import Wrap from './Wrap';
 import React from 'react';
+
+import Wrap from './Wrap';
 
 export default ({children, text, scale = 100, className = '', ...props}) => {
 	if (!text) {

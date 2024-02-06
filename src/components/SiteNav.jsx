@@ -1,10 +1,12 @@
+import {Link} from 'gatsby';
+import React, {useLayoutEffect, useMemo, useState} from 'react';
+
 import MenuIcon from '../icons/Menu';
 import {SITE_PAGES} from '../util/constants';
 import {useKeyPresses} from '../util/hooks';
-import './SiteNav.css';
 import ThemeToggleButton from './ThemeToggleButton';
-import {Link} from 'gatsby';
-import React, {useLayoutEffect, useMemo, useState} from 'react';
+
+import './SiteNav.css';
 
 export default ({location}) => {
 	const [open, setOpen] = useState(false);

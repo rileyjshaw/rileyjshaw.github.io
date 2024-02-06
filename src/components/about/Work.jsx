@@ -1,5 +1,6 @@
-import AutoLink from '../AutoLink';
 import React from 'react';
+
+import AutoLink from '../AutoLink';
 
 function Job({at, role, children, isCurrent}) {
 	return (

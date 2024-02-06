@@ -1,7 +1,8 @@
-import {format} from './src/util/all-projects-query.mjs';
 import {dirname} from 'path';
 import remarkGfm from 'remark-gfm';
 import {fileURLToPath} from 'url';
+
+import {format} from './src/util/all-projects-query.mjs';
 import {ABSTRACT_COLORS} from './src/util/constants.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));

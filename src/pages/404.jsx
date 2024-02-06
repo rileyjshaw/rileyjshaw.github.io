@@ -1,9 +1,11 @@
+import {Link} from 'gatsby';
+import React, {useEffect, useState} from 'react';
+
 import {ExternalLink} from '../components/AutoLink';
 import {CurrentTime} from '../components/Blocker';
 import SEO from '../components/SEO';
+
 import './404.css';
-import {Link} from 'gatsby';
-import React, {useEffect, useState} from 'react';
 
 export function Head(props) {
 	return <SEO {...props} title="404: Not found" />;

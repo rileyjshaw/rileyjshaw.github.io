@@ -1,8 +1,9 @@
+import React, {useState} from 'react';
+
 import BigQuote from '../components/BigQuote';
 import GoUp from '../components/GoUp';
 import ProjectExplorer from '../components/ProjectExplorer';
 import SEO from '../components/SEO';
-import React, {useState} from 'react';
 
 export function Head(props) {
 	return <SEO {...props} title="Lab" />;

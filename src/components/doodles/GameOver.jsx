@@ -1,6 +1,8 @@
-import {useKeyPresses, useTypedText} from '../../util/hooks';
-import './GameOver.css';
 import React, {useCallback, useEffect, useRef, useState} from 'react';
+
+import {useKeyPresses, useTypedText} from '../../util/hooks';
+
+import './GameOver.css';
 
 const textOptions = {
 	loading: 'Loading…',

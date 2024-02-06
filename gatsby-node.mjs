@@ -1,7 +1,8 @@
-import {idify} from './project-scraper/scraper-utils.js';
 import {createFilePath} from 'gatsby-source-filesystem';
 import path, {dirname} from 'path';
 import {fileURLToPath} from 'url';
+
+import {idify} from './project-scraper/scraper-utils.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 

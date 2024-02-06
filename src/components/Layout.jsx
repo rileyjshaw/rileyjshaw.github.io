@@ -1,7 +1,9 @@
+import React, {useContext, useState, Children, useEffect} from 'react';
+
 import * as Dialog from '@radix-ui/react-dialog';
+import cn from 'cnz';
 import {useIdle} from 'react-use';
-import PageHeader from './PageHeader';
-import SiteNav from './SiteNav';
+
 import NotFoundPage from '../pages/404';
 import {SITE_PAGES, STORAGE_KEYS} from '../util/constants';
 import {getNextHoliday} from '../util/holidays';
@@ -11,11 +13,12 @@ import AutoLink from './AutoLink';
 import Banner from './Banner';
 import Blocker from './Blocker';
 import ClientOnly from './ClientOnly';
-import './layout.css';
 import {DialogContext} from './DialogProvider';
+import PageHeader from './PageHeader';
 import {SettingsContext} from './SettingsProvider';
-import cn from 'cnz';
-import React, {useContext, useState, Children, useEffect} from 'react';
+import SiteNav from './SiteNav';
+
+import './layout.css';
 
 function NoteDialog({open, onOpenChange, title, description}) {
 	return (

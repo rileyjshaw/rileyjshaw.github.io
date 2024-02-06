@@ -1,5 +1,6 @@
-import {throttle} from './util';
 import {useCallback, useEffect, useRef, useState} from 'react';
+
+import {throttle} from './util';
 
 // setInterval with auto drift-correction and dynamic callback / timing props.
 export function useInterval(

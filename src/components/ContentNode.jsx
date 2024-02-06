@@ -1,9 +1,12 @@
+import React from 'react';
+
+import cn from 'cnz';
+
 import contentTypes from '../util/ContentTypes';
 import {useRect} from '../util/hooks';
 import AutoLink, {ExternalLink} from './AutoLink';
+
 import './ContentNode.css';
-import cn from 'cnz';
-import React from 'react';
 
 // TODO: Break this component and the grid fitting component out into separate
 //       files.

@@ -1,6 +1,9 @@
 import React, {useContext, useState} from 'react';
+
 import * as Dialog from '@radix-ui/react-dialog';
+
 import {DialogContext} from './DialogProvider';
+
 import './GalleryImage.css';
 
 const Thumbnail = React.forwardRef(({children, ...props}, ref) => (

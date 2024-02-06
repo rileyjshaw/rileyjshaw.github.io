@@ -1,7 +1,9 @@
-import './ContentGrid.css';
+import React, {useContext} from 'react';
+
 import ContentNode from './ContentNode';
 import {SettingsContext} from './SettingsProvider';
-import React, {useContext} from 'react';
+
+import './ContentGrid.css';
 
 export default React.memo(
 	({nodes, hiddenNodes = [], masonry, lazyLoadRef}) => {

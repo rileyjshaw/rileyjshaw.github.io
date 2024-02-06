@@ -1,6 +1,7 @@
+import {useEffect} from 'react';
+
 import {isRenderingOnClient} from '../util/constants';
 import {useMousePosition, useWindowSize} from '../util/hooks';
-import {useEffect} from 'react';
 
 const MAX_SPREAD_PX = 6;
 export default () => {

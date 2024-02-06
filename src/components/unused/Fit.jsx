@@ -1,6 +1,8 @@
-import {useWindowSize} from 'react-use';
-import './Fit.css';
 import React, {useState, useEffect, useRef} from 'react';
+
+import {useWindowSize} from 'react-use';
+
+import './Fit.css';
 
 export default ({children, className = ''}) => {
 	const {width: windowWidth} = useWindowSize();

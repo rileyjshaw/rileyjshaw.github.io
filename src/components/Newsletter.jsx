@@ -1,6 +1,8 @@
-import {isRenderingOnClient} from '../util/constants';
-import './Newsletter.css';
 import React from 'react';
+
+import {isRenderingOnClient} from '../util/constants';
+
+import './Newsletter.css';
 
 export const Form = () => (
 	<form

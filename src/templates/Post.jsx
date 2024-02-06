@@ -1,7 +1,9 @@
-import SEO from '../components/SEO';
-import './Post.css';
 import {graphql} from 'gatsby';
 import React from 'react';
+
+import SEO from '../components/SEO';
+
+import './Post.css';
 
 export function Head({data, ...props}) {
 	return <SEO {...props} title={data.mdx.fields.title} />;

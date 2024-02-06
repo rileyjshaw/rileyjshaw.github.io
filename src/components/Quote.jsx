@@ -1,6 +1,8 @@
-import AutoLink from './AutoLink';
-import './Quote.css';
 import React from 'react';
+
+import AutoLink from './AutoLink';
+
+import './Quote.css';
 
 function Quote({quote}) {
 	const {content, cite} = quote;

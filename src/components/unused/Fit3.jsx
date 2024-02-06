@@ -1,7 +1,9 @@
 // transform: scale
-import {useRect} from '../../util/hooks';
-import './Fit3.css';
 import React from 'react';
+
+import {useRect} from '../../util/hooks';
+
+import './Fit3.css';
 
 export default ({children, x, y}) => {
 	const [parentRef, parentRect] = useRect({resize: true});

@@ -1,8 +1,10 @@
+import React, {useState, useEffect, useMemo} from 'react';
+
 import {ABSTRACT_COLORS} from '../../util/constants';
 import {randSequence, lcm} from '../../util/util';
 import {withSettings} from '../SettingsProvider';
+
 import './BackgroundGenerator.css';
-import React, {useState, useEffect, useMemo} from 'react';
 
 const minWidth = 100; // Tiling width. Height is calculated dynamically.
 const maxWidth = 200;

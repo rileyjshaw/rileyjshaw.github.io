@@ -1,8 +1,10 @@
-import './ContentList.css';
 import {Link} from 'gatsby';
-import AutoLink from './AutoLink';
-import contentTypes from '../util/ContentTypes';
 import React from 'react';
+
+import contentTypes from '../util/ContentTypes';
+import AutoLink from './AutoLink';
+
+import './ContentList.css';
 
 const blogTypes = ['post', 'commit', 'tumblr', 'screenshotsTumblr'];
 export default React.memo(({nodes}) => (

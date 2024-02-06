@@ -1,7 +1,9 @@
+import React, {useCallback, useMemo, useRef} from 'react';
+
 import ClientOnly from './ClientOnly';
 import {withSettings} from './SettingsProvider';
+
 import './ThemeToggleButton.css';
-import React, {useCallback, useMemo, useRef} from 'react';
 
 // TODO: Eye should definitely follow the mouse.
 

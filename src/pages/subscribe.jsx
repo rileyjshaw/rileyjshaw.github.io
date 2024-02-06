@@ -1,11 +1,13 @@
+import {Link} from 'gatsby';
+import React from 'react';
+
 import {UncontrolledLink, ExternalLink} from '../components/AutoLink';
 import BigQuote from '../components/BigQuote';
 import GoUp from '../components/GoUp';
 import Newsletter from '../components/Newsletter';
 import SEO from '../components/SEO';
+
 import './subscribe.css';
-import {Link} from 'gatsby';
-import React from 'react';
 
 export function Head(props) {
 	return <SEO {...props} title="Subscribe" />;
