@@ -1,61 +1,5 @@
-import {isRenderingOnClient, isRenderingOnServer} from './constants';
-import {debounce, throttle} from './util';
+import {throttle} from './util';
 import {useCallback, useEffect, useRef, useState} from 'react';
-
-export function useWindowSize(cb) {
-	const [size, setSize] = useState(() =>
-		isRenderingOnClient
-			? [
-					window.innerWidth,
-					window.innerHeight,
-					Math.hypot(window.innerWidth, window.innerHeight),
-				]
-			: [1000, 1000],
-	);
-	useEffect(() => {
-		const handleResize = debounce(
-			() =>
-				setSize([
-					window.innerWidth,
-					window.innerHeight,
-					Math.hypot(window.innerWidth, window.innerHeight),
-				]),
-			300,
-		);
-		window.addEventListener('resize', handleResize);
-		return () => {
-			window.removeEventListener('resize', handleResize);
-		};
-	}, []);
-	useEffect(() => {
-		cb && cb(size);
-	}, [cb, size]);
-	return size;
-}
-
-export function useMousePosition(el) {
-	const [mousePosition, setMousePosition] = useState([null, null]);
-	useEffect(() => {
-		// TODO(riley): Will this work for anything other than window?
-		const handleMouseMove = e => setMousePosition([e.clientX, e.clientY]);
-		if (el) {
-			el.addEventListener('mousemove', handleMouseMove, false);
-			return () => {
-				el.removeEventListener('mousemove', handleMouseMove);
-			};
-		}
-	}, [el]);
-	return mousePosition;
-}
-
-export function useDebounce(value, delay) {
-	const [debouncedValue, setDebouncedValue] = useState(value);
-	useEffect(() => {
-		const timeout = setTimeout(() => setDebouncedValue(value), delay);
-		return () => clearTimeout(timeout);
-	}, [value]);
-	return debouncedValue;
-}
 
 // setInterval with auto drift-correction and dynamic callback / timing props.
 export function useInterval(
@@ -180,49 +124,6 @@ export function useKeyPresses(keyHandlers) {
 	}, []);
 
 	return keysPressed;
-}
-
-const interactionEventNames = [
-	'mousemove',
-	'keydown',
-	'wheel',
-	'DOMMouseScroll',
-	'mouseWheel',
-	'mousedown',
-	'touchstart',
-	'touchmove',
-	'MSPointerDown',
-	'MSPointerMove',
-];
-export function useIdle(delay, onIdle) {
-	if (isRenderingOnServer) return false;
-	const [isIdle, setIdle] = useState(false);
-	const [idleTimeout, setIdleTimeout] = useState(null);
-	const resetIdleTimeout = () =>
-		setIdleTimeout(idleTimeout => {
-			window.clearTimeout(idleTimeout);
-			return window.setTimeout(() => {
-				setIdle(true);
-				onIdle && onIdle();
-			}, delay);
-		});
-	const handleInteraction = () => {
-		setIdle(false);
-		resetIdleTimeout();
-	};
-	useEffect(() => {
-		interactionEventNames.forEach(name =>
-			window.addEventListener(name, handleInteraction),
-		);
-		resetIdleTimeout();
-		return () => {
-			window.clearTimeout(idleTimeout);
-			interactionEventNames.forEach(name =>
-				window.removeEventListener(name, handleInteraction),
-			);
-		};
-	}, [delay]);
-	return isIdle;
 }
 
 // TODO(riley): Add check for active tab.
@@ -364,23 +265,6 @@ export function useStickyState(
 		return () => window.removeEventListener('storage', updateValue);
 	}, [key, version]);
 	return [value, setInitializedValue];
-}
-
-export function useMediaQuery(query) {
-	const [queryResult, setQueryResult] = useState(
-		() => isRenderingOnClient && window.matchMedia(query).matches,
-	);
-	useEffect(() => {
-		const mediaQueryList = window.matchMedia(query);
-		const listener = event => {
-			setQueryResult(event.matches);
-		};
-		mediaQueryList.addListener(listener);
-		return () => {
-			mediaQueryList.removeListener(listener);
-		};
-	}, [query]);
-	return queryResult;
 }
 
 export function useTypedText(text, {delay = 6} = {}) {

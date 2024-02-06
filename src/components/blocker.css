@@ -9,6 +9,7 @@
 	overflow: hidden;
 	overscroll-behavior: contain;
 	padding: var(--s-1);
+	pointer-events: auto;
 	position: fixed;
 	text-align: center;
 	top: 0;
@@ -19,6 +20,9 @@
 .idle-blocker button {
 	color: var(--color-grey-500);
 	font: var(--fs-pretty-big) var(--ff-heading);
+}
+.idle-blocker p {
+	text-wrap: balance;
 }
 .idle-blocker ul.options {
 	display: flex;

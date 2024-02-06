@@ -1,16 +1,18 @@
 import * as Dialog from '@radix-ui/react-dialog';
+import {useIdle} from 'react-use';
 import PageHeader from './PageHeader';
 import SiteNav from './SiteNav';
 import NotFoundPage from '../pages/404';
 import {SITE_PAGES, STORAGE_KEYS} from '../util/constants';
 import {getNextHoliday} from '../util/holidays';
-import {useIdle, useInterval, useStickyState} from '../util/hooks';
+import {useInterval, useStickyState} from '../util/hooks';
 import {capitalize} from '../util/util';
 import AutoLink from './AutoLink';
 import Banner from './Banner';
 import Blocker from './Blocker';
 import ClientOnly from './ClientOnly';
 import './layout.css';
+import {DialogContext} from './DialogProvider';
 import {SettingsContext} from './SettingsProvider';
 import cn from 'cnz';
 import React, {useContext, useState, Children, useEffect} from 'react';
@@ -54,16 +56,19 @@ function NoteDialog({open, onOpenChange, title, description}) {
 	);
 }
 
+const ONE_MINUTE = 60e3;
 const Layout = ({children, location}) => {
+	const {isDialogOpen} = useContext(DialogContext);
 	const {theme, reducedMotion, contrastPreference} =
 		useContext(SettingsContext);
 	const [isBlockerOpen, setIsBlockerOpen] = useState(false);
+	const [isNoteOpen, setNoteOpen] = useState(false);
 	const [nTimesClosed, setNTimesClosed] = useStickyState(
 		0,
 		STORAGE_KEYS.nTimesClosedBlocker,
 		{scope: 'session', serverState: 0},
 	);
-	useIdle(60000 * 4 * (nTimesClosed + 1), () => setIsBlockerOpen(true));
+	const isIdle = useIdle(ONE_MINUTE * (nTimesClosed * 5 || 1));
 	const [activeHoliday, setActiveHoliday] = useState(null);
 	const [isHolidayBannerOpen, setIsHolidayBannerOpen] = useStickyState(
 		true,
@@ -71,12 +76,16 @@ const Layout = ({children, location}) => {
 		{scope: 'session'},
 	);
 
+	useEffect(() => {
+		if (isIdle && !isDialogOpen && !isNoteOpen) {
+			setIsBlockerOpen(true);
+		}
+	}, [isIdle, isDialogOpen, isNoteOpen]);
+
 	useInterval(() => {
 		const nextHoliday = getNextHoliday();
 		setActiveHoliday(nextHoliday.daysUntil <= 3 ? nextHoliday : null);
-	}, 60000);
-
-	const [isNoteOpen, setNoteOpen] = useState(false);
+	}, ONE_MINUTE);
 
 	let {pathname, search} = location;
 	if (pathname.endsWith('/')) pathname = pathname.slice(1, -1);

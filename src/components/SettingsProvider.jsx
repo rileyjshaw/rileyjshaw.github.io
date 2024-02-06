@@ -1,5 +1,6 @@
+import {useMedia} from 'react-use';
 import {STORAGE_KEYS} from '../util/constants';
-import {useMediaQuery, useStickyState} from '../util/hooks';
+import {useStickyState} from '../util/hooks';
 import {applyTheme} from '../util/util';
 import ClientOnly from './ClientOnly';
 import React, {createContext, useEffect} from 'react';
@@ -11,7 +12,7 @@ const SettingsProvider = ({children}) => {
 		'system',
 		STORAGE_KEYS.theme,
 	);
-	const systemTheme = useMediaQuery('(prefers-color-scheme: dark)')
+	const systemTheme = useMedia('(prefers-color-scheme: dark)')
 		? 'dark'
 		: 'light';
 	const theme = themeKey === 'system' ? systemTheme : themeKey;
@@ -21,9 +22,7 @@ const SettingsProvider = ({children}) => {
 		'system',
 		STORAGE_KEYS.reducedMotion,
 	);
-	const systemReducedMotion = useMediaQuery(
-		'(prefers-reduced-motion: reduce)',
-	);
+	const systemReducedMotion = useMedia('(prefers-reduced-motion: reduce)');
 	const reducedMotion =
 		reducedMotionKey === 'system' ? systemReducedMotion : reducedMotionKey;
 
@@ -32,9 +31,9 @@ const SettingsProvider = ({children}) => {
 		STORAGE_KEYS.contrastPreference,
 	);
 	const systemHighContrastPreference =
-		useMediaQuery('(prefers-contrast: more)') && 'more';
+		useMedia('(prefers-contrast: more)') && 'more';
 	const systemLowContrastPreference =
-		useMediaQuery('(prefers-contrast: less)') && 'less';
+		useMedia('(prefers-contrast: less)') && 'less';
 	const systemContrastPreference =
 		systemHighContrastPreference ||
 		systemLowContrastPreference ||

@@ -1,9 +1,9 @@
-import {useWindowSize} from '../../util/hooks';
+import {useWindowSize} from 'react-use';
 import './Fit.css';
 import React, {useState, useEffect, useRef} from 'react';
 
 export default ({children, className = ''}) => {
-	const [windowWidth] = useWindowSize();
+	const {width: windowWidth} = useWindowSize();
 	const [size, setSize] = useState([0, 0]);
 	const [yAccumulator, setYAccumulator] = useState(0);
 	const textEl = useRef(null);

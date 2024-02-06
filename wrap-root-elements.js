@@ -6,6 +6,7 @@ import React from 'react';
 import bashLang from 'refractor/lang/bash';
 import lispLang from 'refractor/lang/lisp';
 import pythonLang from 'refractor/lang/python';
+import DialogProvider from './src/components/DialogProvider';
 import SettingsProvider from './src/components/SettingsProvider';
 import {MDXProvider} from '@mdx-js/react';
 
@@ -19,9 +20,11 @@ const mdxComponents = {
 };
 
 export const wrapRootElement = ({element}) => (
-	<SettingsProvider>
-		<MDXProvider components={mdxComponents}>{element}</MDXProvider>
-	</SettingsProvider>
+	<DialogProvider>
+		<SettingsProvider>
+			<MDXProvider components={mdxComponents}>{element}</MDXProvider>
+		</SettingsProvider>
+	</DialogProvider>
 );
 
 export const wrapPageElement = ({props, element}) => (
