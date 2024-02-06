@@ -183,7 +183,9 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 
 const LazyGrid = React.memo(({nodes, setIsFullyLoaded}) => {
 	const [renderLimit, setRenderLimit] = useState(20);
-	const [ref, inView, boundingClientRect] = useViewport();
+	const [ref, inView, boundingClientRect] = useViewport({
+		trackPosition: true,
+	});
 
 	// If the last node is on or above the viewport, load the next 20 nodes.
 	// Note that the “last” node might be higher up on the page, eg. if it has

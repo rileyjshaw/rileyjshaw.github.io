@@ -129,77 +129,77 @@ export function useKeyPresses(keyHandlers) {
 
 // TODO(riley): Add check for active tab.
 export const useViewport = (() => {
-	if (typeof window === 'undefined')
-		return ({initialInView = false} = {}) => {
-			return [null, initialInView];
-		};
+	if (isRenderingOnServer) {
+		return ({initialInView = false} = {}) => [null, initialInView];
+	}
 
 	const entryCallbacks = new Map();
-	const scrollingEntries = new Set();
+	const scrollCallbacks = new Map();
 	const intersectionObserver = new IntersectionObserver(entries => {
 		entries.forEach(({target, isIntersecting}) =>
 			entryCallbacks.get(target)?.(isIntersecting),
 		);
 	});
+	function handleScroll() {
+		scrollCallbacks.forEach(cb => cb());
+	}
 
 	return function useViewport({
-		updateOnScroll,
+		trackPosition,
 		initialInView = false,
 		ms = 33,
 	} = {}) {
 		const [inView, setInView] = useState(initialInView);
 		const [measurements, setMeasurements] = useState([]);
+
 		// We’re using useCallback here instead of useEffect, since it works
 		// better with changing `ref` values. But… it’s less convenient at
 		// cleaning up its side-effects.
-		const nodeRef = useRef(null);
+		const prevNodeRef = useRef(null);
 
-		const ref = useCallback(node => {
-			const prevNode = nodeRef.current;
-			nodeRef.current = node;
-			if (prevNode) {
-				entryCallbacks.delete(prevNode);
-				scrollingEntries.delete(prevNode);
-				intersectionObserver.unobserve(prevNode);
-				// TODO(riley): What was this supposed to do?
-				// if (!scrollingEntries.size)
-				// 	window.removeEventListener('scroll', handleScroll);
-				if (!entryCallbacks.size) intersectionObserver.disconnect();
-			}
-			setInView(initialInView);
-			if (node === null) return;
+		const ref = useCallback(
+			node => {
+				const prevNode = prevNodeRef.current;
 
-			const handleScroll = throttle(function handleScroll() {
-				setMeasurements([
-					node.getBoundingClientRect(),
-					window.innerHeight,
-					window.innerWidth,
-				]);
-			}, ms);
-			handleScroll();
+				if (prevNode) {
+					entryCallbacks.delete(prevNode);
+					intersectionObserver.unobserve(prevNode);
+					scrollCallbacks.delete(prevNode);
+					if (scrollCallbacks.size === 0) {
+						window.removeEventListener('scroll', handleScroll);
+					}
+				}
 
-			if (!entryCallbacks.size) {
-				intersectionObserver.observe;
-			}
-			entryCallbacks.set(node, inView => {
-				setInView(inView);
-				if (inView && updateOnScroll) {
-					if (!scrollingEntries.size) {
+				prevNodeRef.current = node;
+
+				if (node === null) {
+					setInView(false);
+					return;
+				}
+
+				entryCallbacks.set(node, inView => setInView(inView));
+
+				if (trackPosition) {
+					function measureNode() {
+						setMeasurements([
+							node.getBoundingClientRect(),
+							window.innerHeight,
+							window.innerWidth,
+						]);
+					}
+					measureNode();
+					if (scrollCallbacks.size === 0) {
 						window.addEventListener('scroll', handleScroll, {
 							passive: true,
 						});
 					}
-					scrollingEntries.add(node);
-				} else {
-					scrollingEntries.delete(node);
-					if (!scrollingEntries.size) {
-						window.removeEventListener('scroll', handleScroll);
-					}
+					scrollCallbacks.set(node, throttle(measureNode, ms));
 				}
-			});
 
-			intersectionObserver.observe(node);
-		}, []);
+				intersectionObserver.observe(node);
+			},
+			[trackPosition, ms],
+		);
 
 		return [ref, inView, ...measurements];
 	};

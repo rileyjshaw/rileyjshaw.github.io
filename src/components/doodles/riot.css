@@ -3,6 +3,7 @@
 	color: var(--color-red-500);
 	grid-area: span 1 / span 2;
 	height: 100%;
+	overflow-anchor: none;
 	position: relative;
 }
 .doodle-riot .riot-overlay {

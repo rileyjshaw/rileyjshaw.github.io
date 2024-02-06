@@ -6,7 +6,7 @@ import './Riot.css';
 
 function Riot({className, word = 'RIOT!'}, ref) {
 	const [riotRef, _inView, boundingClientRect, windowHeight = 0] =
-		useViewport({updateOnScroll: true});
+		useViewport({trackPosition: true});
 	const [centerCharRef, centerCharBoundingClientRect] = useRect();
 	let factor = boundingClientRect
 		? (0.98 -
