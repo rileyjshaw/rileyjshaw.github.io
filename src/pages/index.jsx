@@ -24,7 +24,7 @@ import './index.css';
 
 export const Head = SEO;
 
-const DOODLES = [CircleConstrainedLines, Propellers];
+const DOODLES = [Propellers, CircleConstrainedLines];
 
 const IndexPage = ({featuredProjects = []}) => {
 	const [featuredDoodleIdx, setFeaturedDoodleIdx] = useState(0);
@@ -62,6 +62,19 @@ const IndexPage = ({featuredProjects = []}) => {
 									width={600}
 									aspectRatio={1}
 									backgroundColor="rgb(1, 6, 25)"
+								/>
+							</ExternalLink>
+						</li>
+						<li className="project">
+							<ExternalLink
+								to="https://sort.tools"
+								className="image-link sort-tools-link"
+							>
+								<StaticImage
+									src="../../content/images/projects/sort-tools.png"
+									alt="A logo with the title “Sort Tools”"
+									className="sort-tools-logo"
+									width={500}
 								/>
 							</ExternalLink>
 						</li>
@@ -134,18 +147,6 @@ const IndexPage = ({featuredProjects = []}) => {
 								/>
 							</ExternalLink>
 						</li>
-						<li className="project">
-							<GalleryImage
-								aspectRatio={1}
-								ThumbnailImage={<PinkNoise />}
-								FullImage={
-									<PinkNoise
-										width="2400px"
-										height="2400px"
-									/>
-								}
-							/>
-						</li>
 						<li>
 							<ul className="bento-half-x">
 								<li className="project">
@@ -169,23 +170,11 @@ const IndexPage = ({featuredProjects = []}) => {
 								</li>
 								<li>
 									<ul className="bento-half-y">
-										<li className="project">
-											<GalleryImage
-												ThumbnailImage={
-													<StaticImage
-														src="../../content/images/projects/quantized.jpg"
-														alt="An abstract image. It’s shiny, grainy, lo-fi, and looks a bit 3D."
-														width={300}
-														aspectRatio={1}
-													/>
+										<li className="project no-zoom featured-doodle">
+											<FeaturedDoodle
+												onFullCycle={
+													incrementFeaturedDoodleIdx
 												}
-												FullImage={
-													<StaticImage
-														src="../../content/images/projects/quantized.jpg"
-														alt="An abstract image. It’s shiny, grainy, lo-fi, and looks a bit 3D."
-													/>
-												}
-												aspectRatio={1}
 											/>
 										</li>
 										<li className="project no-zoom">
@@ -195,10 +184,39 @@ const IndexPage = ({featuredProjects = []}) => {
 								</li>
 							</ul>
 						</li>
-						<li className="project no-zoom featured-doodle">
-							<FeaturedDoodle
-								onFullCycle={incrementFeaturedDoodleIdx}
-							/>
+						<li>
+							<ul className="bento-half-y">
+								<li className="project">
+									<GalleryImage
+										ThumbnailImage={
+											<StaticImage
+												src="../../content/images/projects/quantized.jpg"
+												alt="An abstract image. It’s shiny, grainy, lo-fi, and looks a bit 3D."
+												width={300}
+											/>
+										}
+										FullImage={
+											<StaticImage
+												src="../../content/images/projects/quantized.jpg"
+												alt="An abstract image. It’s shiny, grainy, lo-fi, and looks a bit 3D."
+											/>
+										}
+										aspectRatio={1}
+									/>
+								</li>
+								<li className="project">
+									<GalleryImage
+										aspectRatio={1}
+										ThumbnailImage={<PinkNoise />}
+										FullImage={
+											<PinkNoise
+												width="2400px"
+												height="2400px"
+											/>
+										}
+									/>
+								</li>
+							</ul>
 						</li>
 						<li className="project">
 							<ExternalLink

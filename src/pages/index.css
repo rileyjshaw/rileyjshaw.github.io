@@ -57,6 +57,9 @@
 	grid-template-rows: 1fr 1fr;
 	height: 100%;
 }
+.main-gallery .sort-tools-logo {
+	max-width: 75%;
+}
 .main-gallery .deletion-day {
 	background: var(--color-grey-975);
 	color: var(--color-yellow-300);
@@ -85,7 +88,14 @@
 }
 .main-gallery .image-link {
 	display: block;
+	height: 100%;
 	position: relative;
+	width: 100%;
+}
+.main-gallery .sort-tools-link {
+	background: var(--color-yellow-200);
+	display: grid;
+	place-items: center;
 }
 .deletion-day a::after,
 .main-gallery .image-link::after {
