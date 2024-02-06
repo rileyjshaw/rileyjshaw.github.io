@@ -88,6 +88,9 @@ pyftsubset "$file" --output-file="${file%.*}-Subset.${file##*.}" --flavor=woff2 
 		margin-bottom: 1em;
 	}
 	.prose {
+		& :is(p, li, dd) {
+			text-wrap: pretty;
+		}
 		& :is(ol, ul) {
 			margin-block: var(--s-0);
 		}

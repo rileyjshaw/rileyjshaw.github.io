@@ -1,5 +1,6 @@
 import {useCallback, useEffect, useRef, useState} from 'react';
 
+import {isRenderingOnServer} from './constants.mjs';
 import {throttle} from './util';
 
 // setInterval with auto drift-correction and dynamic callback / timing props.

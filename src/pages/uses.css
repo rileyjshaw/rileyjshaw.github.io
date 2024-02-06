@@ -1,0 +1,7 @@
+.uses-lists li > div {
+	align-items: center;
+	display: flex;
+}
+.uses-lists svg {
+	margin-left: var(--s--2);
+}

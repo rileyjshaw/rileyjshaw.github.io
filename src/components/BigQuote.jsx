@@ -1,8 +1,7 @@
 import {graphql, useStaticQuery, Link} from 'gatsby';
 import React, {useState, useRef} from 'react';
 
-import List from '../icons/List';
-import Repeat from '../icons/Repeat';
+import {List, Repeat} from '../icons';
 import {shuffle} from '../util/sorting-methods';
 import Quote from './Quote';
 

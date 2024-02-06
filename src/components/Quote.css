@@ -11,4 +11,5 @@
 .site-quote footer {
 	margin-top: var(--s-0);
 	text-align: right;
+	text-wrap: balance;
 }

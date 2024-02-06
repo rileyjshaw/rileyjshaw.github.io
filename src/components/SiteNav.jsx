@@ -1,7 +1,7 @@
 import {Link} from 'gatsby';
 import React, {useLayoutEffect, useMemo, useState} from 'react';
 
-import MenuIcon from '../icons/Menu';
+import {Menu} from '../icons';
 import {SITE_PAGES} from '../util/constants';
 import {useKeyPresses} from '../util/hooks';
 import ThemeToggleButton from './ThemeToggleButton';
@@ -49,7 +49,7 @@ export default ({location}) => {
 				onClick={() => setOpen(o => !o)}
 				type="button"
 			>
-				{open ? '✖' : <MenuIcon />}
+				{open ? '✖' : <Menu />}
 			</button>
 			<ul
 				aria-labelledby="site_nav_menu_button"

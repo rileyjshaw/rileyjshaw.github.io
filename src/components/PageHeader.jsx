@@ -1,7 +1,7 @@
 import {Link} from 'gatsby';
 import React from 'react';
 
-import RjsLogo from '../icons/RjsLogo';
+import {RjsLogo} from '../icons';
 import {SITE_PAGES} from '../util/constants';
 
 import './PageHeader.css';
