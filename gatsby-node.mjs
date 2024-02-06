@@ -22,7 +22,7 @@ export const createPages = async ({actions, graphql, reporter}) => {
 	// TODO(riley): Import this query from a common place.
 	const result = await graphql(`
 		{
-			allMdx(
+			internalPosts: allMdx(
 				filter: {
 					internal: {
 						contentFilePath: {
@@ -50,7 +50,7 @@ export const createPages = async ({actions, graphql, reporter}) => {
 					}
 				}
 			}
-			allCombinedProjectsJson(
+			externalPosts: allCombinedProjectsJson(
 				filter: {type: {in: ["tumblr"]}}
 				limit: 1000
 			) {
@@ -70,8 +70,8 @@ export const createPages = async ({actions, graphql, reporter}) => {
 		return;
 	}
 
-	const internalPosts = result.data.allMdx.nodes;
-	const externalPosts = result.data.allCombinedProjectsJson.nodes;
+	const internalPosts = result.data.internalPosts.nodes;
+	const externalPosts = result.data.externalPosts.nodes;
 	const allPosts = internalPosts
 		.map(p => ({
 			type: 'internal',
