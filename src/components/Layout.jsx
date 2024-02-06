@@ -124,7 +124,17 @@ const Layout = ({children, location}) => {
 				open={isNoteOpen}
 				onOpenChange={setNoteOpen}
 				title="Hello, GitHub!"
-				description="I’m so excited about this role. I use GitHub every day, and Primer Prism at least once a week. I would love to contribute to the team that makes so many of my favourite tools ✨"
+				description={
+					<>
+						I’m so excited about this role. I use GitHub every day,
+						and{' '}
+						<AutoLink to="https://primer.style/prism/">
+							Primer Prism
+						</AutoLink>{' '}
+						at least once a week. I would love to contribute to the
+						team that makes so many of my favourite tools ✨
+					</>
+				}
 			/>
 			<ClientOnly>
 				{activeHoliday && isHolidayBannerOpen && (
