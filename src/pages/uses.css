@@ -1,7 +1,12 @@
-.uses-lists li > div {
+.uses-item {
 	align-items: center;
 	display: flex;
 }
-.uses-lists svg {
+.uses-icons {
+	align-items: center;
+	display: flex;
+	flex-shrink: 0;
+}
+.uses-icons > * {
 	margin-left: var(--s--2);
 }
