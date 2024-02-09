@@ -626,5 +626,17 @@
 		"author": "Jo Freeman",
 		"source": "The Tyranny of Structurelessness",
 		"cite": "https://www.jofreeman.com/joreen/tyranny.htm"
+	},
+	"CHANGE_FOREVER": {
+		"content": "The problem with the requirement for each year to be more profitable than the last is that once you reach the peak, once it’s not possible to actually improve your product any more, you still have to change something.",
+		"author": "Andrew Kelley",
+		"source": "Why We Can’t Have Nice Software",
+		"cite": "https://andrewkelley.me/post/why-we-cant-have-nice-software.html"
+	},
+	"ENDLESS_GROWTH": {
+		"content": "Technology… offers us a chance to work together on something beautiful; to achieve perfection by ratcheting improvements over time. In the end, this opportunity is squandered in a doomed quest for endless growth.",
+		"author": "Andrew Kelley",
+		"source": "Why We Can’t Have Nice Software",
+		"cite": "https://andrewkelley.me/post/why-we-cant-have-nice-software.html"
 	}
 }
