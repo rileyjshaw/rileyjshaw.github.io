@@ -71,7 +71,7 @@ const Layout = ({children, location}) => {
 		STORAGE_KEYS.nTimesClosedBlocker,
 		{scope: 'session', serverState: 0},
 	);
-	const isIdle = useIdle(ONE_MINUTE * (nTimesClosed * 5 || 1));
+	const isIdle = useIdle(ONE_MINUTE * (nTimesClosed * 3 || 1) * 5); // 5, 15, 30, 45…
 	const [activeHoliday, setActiveHoliday] = useState(null);
 	const [isHolidayBannerOpen, setIsHolidayBannerOpen] = useStickyState(
 		true,
