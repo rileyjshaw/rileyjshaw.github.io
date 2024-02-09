@@ -75,6 +75,7 @@ const IndexPage = ({featuredProjects = []}) => {
 									alt="A logo with the title “Sort Tools”"
 									className="sort-tools-logo"
 									width={500}
+									placeholder="none"
 								/>
 							</ExternalLink>
 						</li>
