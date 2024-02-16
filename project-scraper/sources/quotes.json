@@ -268,7 +268,7 @@
 	},
 	"TROUBLE_WITH_CYBORGS": {
 		"content": "The main trouble with cyborgs, of course, is that they are the illegitimate offspring of militarism and patriarchal capitalism, not to mention state socialism. But illegitimate offspring are often exceedingly unfaithful to their origins.",
-		"author": "Donna Haraway",
+		"author": "Donna J. Haraway",
 		"source": "A Cyborg Manifesto",
 		"cite": "https://faculty.uca.edu/rnovy/Haraway--A%20Cyborg%20Manifesto.htm"
 	},
@@ -638,5 +638,20 @@
 		"author": "Andrew Kelley",
 		"source": "Why We Can’t Have Nice Software",
 		"cite": "https://andrewkelley.me/post/why-we-cant-have-nice-software.html"
+	},
+	"INTERFACE": {
+		"content": "Whatever “lies between” is called interface. Whatever allows us to link to different elements, to reconcile them, to put them into communication.",
+		"author": "Giancarlo Barbacetto",
+		"source": "Design Interface",
+		"cite": "https://readings.design/PDF/Design-Interface.pdf"
+	},
+	"WBCD": {
+		"content": "Work, buy, consume, die."
+	},
+	"SURVIVE": {
+		"content": "Work to survive, survive by consuming, survive to consume",
+		"author": "Raoul Vaneigem",
+		"source": "The Revolution of Everyday Life",
+		"cite": "https://theanarchistlibrary.org/library/raoul-vaneigem-the-revolution-of-everyday-life"
 	}
 }
