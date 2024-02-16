@@ -24,6 +24,22 @@
 		"todo": true
 	},
 	{
+		"title": "Rippling scroll delay",
+		"description": [
+			"Scrolling any column will update the rest, but with a delay."
+		],
+		"date": "2024-02-14",
+		"coolness": 30,
+		"link": "https://codepen.io/rileyjshaw/full/mdoaxzQ"
+	},
+	{
+		"title": "Pulley",
+		"description": ["A fun way to display an ordered list. CSS only."],
+		"date": "2024-02-14",
+		"coolness": 32,
+		"link": "https://codepen.io/rileyjshaw/pen/OJqrQrv"
+	},
+	{
 		"title": "Split scroll columns",
 		"description": ["When one goes up, the other comes down."],
 		"date": "2024-01-14",

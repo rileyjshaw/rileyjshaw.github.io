@@ -5050,6 +5050,18 @@
 		"uid": "PROJECT_PROPELLERS"
 	},
 	{
+		"coolness": 32,
+		"date": "2024-02-14",
+		"descriptionList": [
+			"A fun way to display an ordered list. CSS only."
+		],
+		"link": "https://codepen.io/rileyjshaw/pen/OJqrQrv",
+		"timestamp": 1707868800000,
+		"title": "Pulley",
+		"type": "project",
+		"uid": "PROJECT_PULLEY"
+	},
+	{
 		"coolness": 12,
 		"date": "2012-10-30",
 		"lastTagged": 1564709007492,
@@ -5279,6 +5291,18 @@
 		"title": "Rings",
 		"type": "project",
 		"uid": "PROJECT_RINGS"
+	},
+	{
+		"coolness": 30,
+		"date": "2024-02-14",
+		"descriptionList": [
+			"Scrolling any column will update the rest, but with a delay."
+		],
+		"link": "https://codepen.io/rileyjshaw/full/mdoaxzQ",
+		"timestamp": 1707868800000,
+		"title": "Rippling scroll delay",
+		"type": "project",
+		"uid": "PROJECT_RIPPLING_SCROLL_DELAY"
 	},
 	{
 		"coolness": 40,
