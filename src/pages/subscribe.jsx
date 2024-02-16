@@ -135,6 +135,11 @@ const SubscribePage = () => (
 						Vimeo
 					</ExternalLink>
 				</li>
+				<li>
+					<ExternalLink to="https://www.last.fm/user/rileyjshaw">
+						Last.fm
+					</ExternalLink>
+				</li>
 			</ul>
 		</div>
 		<BigQuote quoteId="MAKING_NOTHING" />
