@@ -248,6 +248,13 @@
 		"uid": "INTERDEPENDENCY"
 	},
 	{
+		"author": "Giancarlo Barbacetto",
+		"cite": "https://readings.design/PDF/Design-Interface.pdf",
+		"content": "Whatever “lies between” is called interface. Whatever allows us to link to different elements, to reconcile them, to put them into communication.",
+		"source": "Design Interface",
+		"uid": "INTERFACE"
+	},
+	{
 		"author": "Walter Benjamin",
 		"cite": "https://www.marxists.org/reference/subject/philosophy/works/ge/benjamin.htm",
 		"content": "Earlier much futile thought had been devoted to the question of whether photography is an art. The primary question – whether the very invention of photography had not transformed the entire nature of art – was not raised.",
@@ -750,6 +757,13 @@
 		"uid": "STRUCTURELESS"
 	},
 	{
+		"author": "Raoul Vaneigem",
+		"cite": "https://theanarchistlibrary.org/library/raoul-vaneigem-the-revolution-of-everyday-life",
+		"content": "Work to survive, survive by consuming, survive to consume",
+		"source": "The Revolution of Everyday Life",
+		"uid": "SURVIVE"
+	},
+	{
 		"author": "Adrienne LaFrance, The Atlantic",
 		"cite": "https://www.theatlantic.com/technology/archive/2016/10/is-silicon-valley-a-meritocracy/503948/",
 		"content": "Men were three times as likely as women to say Silicon Valley is a meritocracy.",
@@ -820,7 +834,7 @@
 		"uid": "TRAP"
 	},
 	{
-		"author": "Donna Haraway",
+		"author": "Donna J. Haraway",
 		"cite": "https://faculty.uca.edu/rnovy/Haraway--A%20Cyborg%20Manifesto.htm",
 		"content": "The main trouble with cyborgs, of course, is that they are the illegitimate offspring of militarism and patriarchal capitalism, not to mention state socialism. But illegitimate offspring are often exceedingly unfaithful to their origins.",
 		"source": "A Cyborg Manifesto",
@@ -852,6 +866,10 @@
 		"content": "I am bereft of two human things\nTwo things that a cyborg can never do\nTwo things that I strive for\nTwo things between myself and mankind\nDeath\nAnd to vomit.",
 		"source": "Han-Tyumi, the Confused Cyborg",
 		"uid": "VOMIT_COFFIN"
+	},
+	{
+		"content": "Work, buy, consume, die.",
+		"uid": "WBCD"
 	},
 	{
 		"author": "Seymour Papert",
