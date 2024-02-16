@@ -1,13 +1,5 @@
 @layer reset {
 	:root {
-		/* Font family */
-		--ff-sans: 'Mint Grotesk', system-ui, sans-serif;
-		--ff-serif: charter, georgia, palatino, 'Palatino Linotype', times,
-			'Times New Roman', 'Century Schoolbook L', serif;
-		--ff-heading: 'Mint Grotesk Display', 'Mint Grotesk', system-ui,
-			sans-serif;
-		--ff-mono: 'Courier New', courier, 'Lucida Sans Typewriter',
-			'Lucida Typewriter', monospace;
 		/* Font size */
 		--fs--4: 0.5625rem; /* 9px */
 		--fs--3: 0.75rem; /*  12px */
