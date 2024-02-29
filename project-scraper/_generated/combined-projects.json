@@ -2428,6 +2428,18 @@
 		"uid": "PROJECT_CANVAS_SPECTRUM"
 	},
 	{
+		"coolness": 20,
+		"date": "2024-02-26",
+		"descriptionList": [
+			"A simple ShaderToy cellular automaton."
+		],
+		"link": "https://www.shadertoy.com/view/43XSzn",
+		"timestamp": 1708905600000,
+		"title": "Cell spread",
+		"type": "project",
+		"uid": "PROJECT_CELL_SPREAD"
+	},
+	{
 		"coolness": 81,
 		"date": "2015-02-19",
 		"descriptionList": [
@@ -2832,6 +2844,15 @@
 		"title": "Cyber pilot (with controls)",
 		"type": "project",
 		"uid": "PROJECT_CYBER_PILOT_14WITH_CONTROLS15"
+	},
+	{
+		"coolness": 34,
+		"date": "2020-10-12",
+		"link": "https://www.shadertoy.com/view/wsKczm",
+		"timestamp": 1602460800000,
+		"title": "Cycle",
+		"type": "project",
+		"uid": "PROJECT_CYCLE"
 	},
 	{
 		"coolness": 40,

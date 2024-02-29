@@ -154,6 +154,11 @@
 		"uid": "DELETION_DAY"
 	},
 	{
+		"author": "Dieter Rams",
+		"content": "Design should not dominate things, should not dominate people. It should help people. That’s its role.",
+		"uid": "DESIGN_HELP"
+	},
+	{
 		"author": "Eric Hoffer",
 		"content": "We can never have enough of that which we really do not want.",
 		"uid": "DO_NOT_WANT"
@@ -164,6 +169,11 @@
 		"content": "It is now within the reach of current technology to give all the Beths and their dads a “DynaBook” to use anytime, anywhere as they may wish. Although it can be used to communicate with others through the “knowledge utilities” of the future such as a school “library” (or business information system), we think that a large fraction of its use will involve reflexive communication of the owner with himself through this personal medium, much as paper and notebooks are currently used.",
 		"source": "A Personal Computer for Children of All Ages ",
 		"uid": "DYNABOOK_REFLEXIVE"
+	},
+	{
+		"author": "Alanis Obomsawin",
+		"content": "When the last tree is cut, the last fish is caught, and the last river is polluted; when to breathe the air is sickening, you will realize, too late, that wealth is not in bank accounts and that you can’t eat money.",
+		"uid": "EAT_MONEY"
 	},
 	{
 		"author": "Arthur C. Clarke",
