@@ -24,6 +24,13 @@
 		"todo": true
 	},
 	{
+		"title": "Cell spread",
+		"description": ["A simple ShaderToy cellular automaton."],
+		"date": "2024-02-26",
+		"coolness": 20,
+		"link": "https://www.shadertoy.com/view/43XSzn"
+	},
+	{
 		"title": "Rippling scroll delay",
 		"description": [
 			"Scrolling any column will update the rest, but with a delay."
@@ -312,6 +319,12 @@
 		"date": "2020-10-30",
 		"coolness": 34,
 		"link": "https://github.com/rileyjshaw/Seg16"
+	},
+	{
+		"title": "Cycle",
+		"date": "2020-10-12",
+		"coolness": 34,
+		"link": "https://www.shadertoy.com/view/wsKczm"
 	},
 	{
 		"title": "canvas b/w image effects",
