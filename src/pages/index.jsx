@@ -187,23 +187,45 @@ const IndexPage = ({featuredProjects = []}) => {
 						</li>
 						<li>
 							<ul className="bento-half-y">
-								<li className="project">
-									<GalleryImage
-										ThumbnailImage={
-											<StaticImage
-												src="../../content/images/projects/quantized.jpg"
-												alt="An abstract image. It’s shiny, grainy, lo-fi, and looks a bit 3D."
-												width={300}
+								<li>
+									<ul className="bento-half-x">
+										<li className="project">
+											<GalleryImage
+												ThumbnailImage={
+													<StaticImage
+														src="../../content/images/projects/quantized.jpg"
+														alt="An abstract image. It’s shiny, grainy, lo-fi, and looks a bit 3D."
+														width={300}
+													/>
+												}
+												FullImage={
+													<StaticImage
+														src="../../content/images/projects/quantized.jpg"
+														alt="An abstract image. It’s shiny, grainy, lo-fi, and looks a bit 3D."
+													/>
+												}
+												aspectRatio={1}
 											/>
-										}
-										FullImage={
-											<StaticImage
-												src="../../content/images/projects/quantized.jpg"
-												alt="An abstract image. It’s shiny, grainy, lo-fi, and looks a bit 3D."
+										</li>
+										<li className="project">
+											<GalleryImage
+												ThumbnailImage={
+													<StaticImage
+														src="../../content/images/projects/CA.png"
+														alt="An abstract image. It’s green and layered, like a psychedelic rock formation."
+														weight={300}
+													/>
+												}
+												FullImage={
+													<StaticImage
+														src="../../content/images/projects/CA.png"
+														alt="An abstract image. It’s green and layered, like a psychedelic rock formation."
+													/>
+												}
+												aspectRatio={1}
 											/>
-										}
-										aspectRatio={1}
-									/>
+										</li>
+									</ul>
 								</li>
 								<li className="project">
 									<GalleryImage
