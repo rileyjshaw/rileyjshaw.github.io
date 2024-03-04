@@ -47,6 +47,15 @@
 		"link": "https://codepen.io/rileyjshaw/pen/OJqrQrv"
 	},
 	{
+		"title": "FFmpeg slit-scan",
+		"description": [
+			"Create an ultra-wide photograph out of a slow dolly shot video using the command line."
+		],
+		"date": "2024-01-24",
+		"coolness": 28,
+		"link": "https://gist.github.com/rileyjshaw/afe98fce6e6988bf3ce7a09b26e5e120"
+	},
+	{
 		"title": "Split scroll columns",
 		"description": ["When one goes up, the other comes down."],
 		"date": "2024-01-14",
