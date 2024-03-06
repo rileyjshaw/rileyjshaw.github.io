@@ -24,6 +24,15 @@
 		"todo": true
 	},
 	{
+		"title": "CA Finder: GPU Edition",
+		"description": [
+			"Caution: it flashes! A generalized cellular automaton simulator that runs on your GPU."
+		],
+		"date": "2024-03-05",
+		"coolness": 80,
+		"link": "/ca-finder/"
+	},
+	{
 		"title": "Cell spread",
 		"description": ["A simple ShaderToy cellular automaton."],
 		"date": "2024-02-26",
