@@ -28,6 +28,10 @@
 		"priority": 0.1
 	},
 	{
+		"path": "/ca-finder/",
+		"priority": 0.5
+	},
+	{
 		"path": "/canvas/",
 		"priority": 0.6
 	},

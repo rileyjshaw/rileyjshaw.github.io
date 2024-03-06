@@ -2337,6 +2337,18 @@
 		"uid": "PROJECT_CA_FINDER"
 	},
 	{
+		"coolness": 80,
+		"date": "2024-03-05",
+		"descriptionList": [
+			"Caution: it flashes! A generalized cellular automaton simulator that runs on your GPU."
+		],
+		"link": "/ca-finder/",
+		"timestamp": 1709596800000,
+		"title": "CA Finder: GPU Edition",
+		"type": "project",
+		"uid": "PROJECT_CA_FINDER1M_GPU_EDITION"
+	},
+	{
 		"coolness": 70,
 		"date": "2017-10-07",
 		"descriptionList": [
@@ -2565,7 +2577,7 @@
 		"descriptionList": [
 			"Compare two images in a variety of ways."
 		],
-		"link": "https://rileyjshaw.com/compare-images/",
+		"link": "/compare-images/",
 		"timestamp": 1669248000000,
 		"title": "Compare images",
 		"type": "project",
@@ -3203,6 +3215,18 @@
 		"title": "February calendar",
 		"type": "project",
 		"uid": "PROJECT_FEBRUARY_CALENDAR"
+	},
+	{
+		"coolness": 28,
+		"date": "2024-01-24",
+		"descriptionList": [
+			"Create an ultra-wide photograph out of a slow dolly shot video using the command line."
+		],
+		"link": "https://gist.github.com/rileyjshaw/afe98fce6e6988bf3ce7a09b26e5e120",
+		"timestamp": 1706054400000,
+		"title": "FFmpeg slit-scan",
+		"type": "project",
+		"uid": "PROJECT_FFMPEG_SLIT_SCAN"
 	},
 	{
 		"coolness": 9,
@@ -4853,7 +4877,7 @@
 		"descriptionList": [
 			"A SASS template based on the golden ratio."
 		],
-		"link": "https://rileyjshaw.com/phi_fo_fum",
+		"link": "/phi_fo_fum",
 		"timestamp": 1374364800000,
 		"title": "Phi fo fum",
 		"type": "project",
@@ -5037,7 +5061,7 @@
 		"descriptionList": [
 			"Searches your favorite Spotify tracks for a running “Power Song”. A Power Song matches your target cadence, and pumps you up during a tough point in the run."
 		],
-		"link": "https://rileyjshaw.com/power-song-finder/",
+		"link": "/power-song-finder/",
 		"timestamp": 1619740800000,
 		"title": "Power Song Finder",
 		"type": "project",
@@ -5331,7 +5355,7 @@
 		"descriptionList": [
 			"Roll a D6."
 		],
-		"link": "https://rileyjshaw.com/roll/",
+		"link": "/roll/",
 		"timestamp": 1674777600000,
 		"title": "Roll",
 		"type": "project",
@@ -5417,7 +5441,7 @@
 		"descriptionList": [
 			"Combine many types of lines into a single line."
 		],
-		"link": "https://rileyjshaw.com/scribbler",
+		"link": "/scribbler",
 		"timestamp": 1616544000000,
 		"title": "Scribbler",
 		"type": "project",
@@ -8346,6 +8370,38 @@
 		"uid": "SCREENSHOTS_TUMBLR_735896245743288320"
 	},
 	{
+		"body": "https://64.media.tumblr.com/e17e76f3f22e3c5611e842a1471815d3/3a9889696d39b2f1-8b/s640x960/5762963895136c0339327a6158e0421efe1c97b8.png",
+		"contentType": "photo",
+		"coolness": 3,
+		"date": "2024-02-29",
+		"extraData": [
+			1728,
+			1080,
+			1
+		],
+		"link": "https://screenshots.rileyjshaw.com/post/743626061571670016",
+		"timestamp": 1709164800000,
+		"title": "2024-02-28 at 22.24.35.png",
+		"type": "screenshotsTumblr",
+		"uid": "SCREENSHOTS_TUMBLR_743626061571670016"
+	},
+	{
+		"body": "https://64.media.tumblr.com/c2b477b5f06c33cc649016caaf27620f/e17947028ff8fa90-5b/s640x960/618be41157eb1637237ba0bbf2310f253a15b62b.png",
+		"contentType": "photo",
+		"coolness": 3,
+		"date": "2024-03-04",
+		"extraData": [
+			3456,
+			2160,
+			1
+		],
+		"link": "https://screenshots.rileyjshaw.com/post/744047668439957504",
+		"timestamp": 1709510400000,
+		"title": "2024-03-04 at 14.05.51.png",
+		"type": "screenshotsTumblr",
+		"uid": "SCREENSHOTS_TUMBLR_744047668439957504"
+	},
+	{
 		"body": "<p>it was silly to write all of this down but i  created this blog today and i’m still editing the layout, so i want more words to work with.<br/></p><hr><p>create a few distinct sounds, for example:</p><ul><li>cup/table tap</li><li>cup/table scrape</li><li>ball/table tap</li><li>ball/table scrape</li><li>cup/ball tap</li></ul><p>these examples are unambiguous and easy to perform rapidly by someone keeping the cup in one hand &amp; ball in the other. i&rsquo;ll refer to each performed sound as a &ldquo;bit&rdquo; from here on out.</p><p>for n bits, you have (number of sounds)^n options. with the examples above that&rsquo;s 5^n, which is plenty.</p><p>so what&rsquo;s important to convey?</p><p>the shapes are curvy and strange, so it&rsquo;s easier to share a limited reference table of basic + advanced shapes instead of deriving each part of the bear from scratch. three bits could cover 125 shapes, which is  ample for bear and bear-like drawings.</p><p>shapes are more reusable if they can be drawn at different sizes. let&rsquo;s use one bit to indicate size:</p><p>0: smallest<br/>1: smaller<br/>2: as shown on reference table<br/>3: larger<br/>4: largest</p><p>we&rsquo;re trying to convey a cohesive bear, so the relative position between shapes is more important than their absolute position on the page. two bits can express position in relation to the last shape drawn, for example:</p><p>0: draw in any open space<br/>1: draw connected to the north-most edge of the previous shape<br/>2: draw connected to the northeast-most edge of the previous shape<br/>3: draw connected to the east-most edge of the previous shape<br/>4: draw connected to the southeast-most edge of the previous shape<br/>5: draw connected to the south-most edge of the previous shape<br/>&hellip;<br/>9: continue from shape&rsquo;s final pen position<br/>10: continue from shape&rsquo;s initial pen position<br/>&hellip;<br/>15: draw within the previous shape<br/>16: draw surrounding the previous shape<br/>&hellip;<br/>etc.</p><p>since pen position is a factor, the shape reference table should imply direction.</p><p>to save time, a bit could be added to indicate how many shapes should be drawn at the specified position. for example, there are four toes in each bear foot.</p><hr><p>when ordering the bits, it makes sense to think of what information is most useful to the receiver at each step. my intuition is that this is a good order:</p><p>•• position<br/>• number<br/>• size<br/>••• shape</p><p>so each shape takes seven sounds from the sender.</p><hr><p>update: i ran this by phil; they made the point that since there&rsquo;s no acknowledgment channel from the receiver, redundancy would help reduce errors. let&rsquo;s add a bit at the beginning to indicate whether this is the initial message or a confirmation message. the following 7 bits will then be identical.</p><hr><p>update 2: in the above system, a single missed bit would be catastrophic; it would corrupt the receiver&rsquo;s understanding of all future communication. the (initial | confirmation) sound should be unique so it always marks the start of a new shape. dragging the (cup | ball) in a double circle works.</p>",
 		"contentType": "text",
 		"date": "2018-02-21",
@@ -8630,7 +8686,7 @@
 		"uid": "SONG_954986224"
 	},
 	{
-		"body": "<iframe src=\"https://player.vimeo.com/video/377116426?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=198113\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" title=\"timestamped\"></iframe>",
+		"body": "<iframe src=\"https://player.vimeo.com/video/377116426?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=198113\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write\" title=\"timestamped\"></iframe>",
 		"contentType": "vimeo",
 		"date": "2019-12-03",
 		"description": "This video played behind me during my Winter 2018 School for Poetic Computation intro. The following is a transcript of my talk:",
@@ -8803,7 +8859,7 @@
 		"body": "ytyOffQuA5o",
 		"contentType": "youtube",
 		"date": "2022-01-03",
-		"description": "New instrument!",
+		"description": "I made a new instrument!",
 		"image": {
 			"height": 720,
 			"url": "https://i.ytimg.com/vi/ytyOffQuA5o/maxresdefault.jpg",
