@@ -95,14 +95,14 @@
 		"description": ["Roll a D6."],
 		"date": "2023-01-27",
 		"coolness": 40,
-		"link": "https://rileyjshaw.com/roll/"
+		"link": "/roll/"
 	},
 	{
 		"title": "Compare images",
 		"description": ["Compare two images in a variety of ways."],
 		"date": "2022-11-24",
 		"coolness": 80,
-		"link": "https://rileyjshaw.com/compare-images/"
+		"link": "/compare-images/"
 	},
 	{
 		"title": "cnz",
@@ -212,7 +212,7 @@
 		],
 		"date": "2021-04-30",
 		"coolness": 65,
-		"link": "https://rileyjshaw.com/power-song-finder/"
+		"link": "/power-song-finder/"
 	},
 	{
 		"title": "Pocket calculator",
@@ -257,7 +257,7 @@
 		"description": ["Combine many types of lines into a single line."],
 		"date": "2021-03-24",
 		"coolness": 30,
-		"link": "https://rileyjshaw.com/scribbler"
+		"link": "/scribbler"
 	},
 	{
 		"title": "Minimal SVG dark mode icon",
@@ -2042,7 +2042,7 @@
 	{
 		"title": "Mean tone",
 		"description": [
-			"Supporting code for my <a href=\"https://rileyjshaw.com/blog/taking-the-average-tone/\">“Taking the average tone”</a> blog post."
+			"Supporting code for my <a href=\"/blog/taking-the-average-tone/\">“Taking the average tone”</a> blog post."
 		],
 		"date": "2014-03-17",
 		"coolness": 20,
@@ -2468,7 +2468,7 @@
 		"description": ["A SASS template based on the golden ratio."],
 		"date": "2013-07-21",
 		"coolness": 12,
-		"link": "https://rileyjshaw.com/phi_fo_fum"
+		"link": "/phi_fo_fum"
 	},
 	{
 		"title": "Sass tooltips",
