@@ -661,5 +661,11 @@
 	"EAT_MONEY": {
 		"content": "When the last tree is cut, the last fish is caught, and the last river is polluted; when to breathe the air is sickening, you will realize, too late, that wealth is not in bank accounts and that you can’t eat money.",
 		"author": "Alanis Obomsawin"
+	},
+	"PLAY_VS_USE": {
+		"content": "Just because you can play your instrument doesn’t mean you’ve got a good idea about how to use it.",
+		"author": "Ian Anderson",
+		"source": "A to Z of The Designers Republic",
+		"cite": "https://thamesandhudson.com/a-to-z-of-the-designers-republic-9780500027356"
 	}
 }
