@@ -667,5 +667,77 @@
 		"author": "Ian Anderson",
 		"source": "A to Z of The Designers Republic",
 		"cite": "https://thamesandhudson.com/a-to-z-of-the-designers-republic-9780500027356"
+	},
+	"INFORMALIZED_WORK": {
+		"content": "Microwork exemplifies the way that AI tends to informalize rather than fully automate work. It betokens a future in which growing numbers of workers are not erased by machines but squeezed to the point of vanishing.",
+		"author": "Philip Jones",
+		"source": "Work Without the Worker",
+		"cite": "https://www.versobooks.com/products/2518-work-without-the-worker"
+	},
+	"FANTASTIC_WAYS": {
+		"content": "But what if the meaning of AI is not to be found in the way it competes with, supersedes, or supplants us? What if, like the emergence of network theory, its purpose is to open our eyes and minds to the reality of intelligence as something doable in all kinds of fantastic ways, many of them beyond our own rational understanding?",
+		"author": "James Bridle",
+		"source": "Ways of Being",
+		"cite": "https://jamesbridle.com/books/ways-of-being"
+	},
+	"DECOMPOSE": {
+		"content": "The composer, in the traditional sense, might no longer be necessary. Let the planets and spheres spin.",
+		"author": "David Byrne",
+		"source": "How Music Works",
+		"cite": "https://davidbyrne.com/explore/how-music-works"
+	},
+	"FURNITURE_MUSIC": {
+		"content": "“We must bring about a music which is like furniture, a music which will be part of the noises of the environment… softening the noises of the knives and forks, not dominating them, not imposing itself.”",
+		"author": "Erik Satie",
+		"source": "Cage’s Place in the Reception of Satie",
+		"cite": "https://www.shlom.com/?p=cagesatie"
+	},
+	"HOME_COOKED_APP": {
+		"content": "The exhortation “learn to code” has its foundations in market value… But let’s substitute a different phrase: “learn to cook”. People don’t only learn to cook so they can become chefs.",
+		"author": "Robin Sloan",
+		"source": "An app can be a home-cooked meal",
+		"cite": "https://www.robinsloan.com/notes/home-cooked-app/"
+	},
+	"SPECULATIVE_INTERFACE": {
+		"content": "Interface design is an explicitly speculative exercise, and so when looking at interfaces from the past we see what the present was supposed to look like.",
+		"author": "David Reinfurt",
+		"source": "A New Program for Graphic Design",
+		"cite": "https://a-new-program-for-graphic-design.org/"
+	},
+	"SCHOOL_AD": {
+		"content": "School is the advertising agency which makes you believe that you need the society as it is.",
+		"author": "Ivan Illich",
+		"source": "Deschooling Society",
+		"cite": "https://learning.media.mit.edu/courses/mas713/readings/DESCHOOLING.pdf"
+	},
+	"PERSONAL_BRAND": {
+		"content": "Good brands are immune to fundamental transformation. Conceding to having become one at age thirty would have meant foreclosing on what I saw as my prerogative to change, evolve, and hopefully improve. It would have locked me into performing this particular version of me, indefinitely.",
+		"author": "Naomi Klein",
+		"source": "Doppelganger",
+		"cite": "https://www.penguinrandomhouse.ca/books/720893/untitled-by-knopf-canada/9781039006898"
+	},
+	"MARIO_64": {
+		"content": "Mario Kart 64 was released in 1996. Since then, my cartridge hasn’t received any patches/updates/DLC. It continues to make me smile… modern software devs aren’t really allowed to complete anything.",
+		"author": "taylor.town",
+		"source": "I hereby pardon all junior engineers",
+		"cite": "https://taylor.town/pardon-2023#together"
+	},
+	"BLURRED_LINE": {
+		"content": "I was convinced that the line between reproduction tools and design would blur when information became electronic and that the lines between designer and artist, author and designer, professional and amateur, would also dissolve.",
+		"author": "Muriel Cooper",
+		"source": "Conversation with Steven Heller",
+		"cite": "https://eyeondesign.aiga.org/muriel-coopers-visions-of-a-future/"
+	},
+	"PRINTED_PAGE": {
+		"content": "This website doesn’t collect any information about you or your reading. It aspires to the speed and privacy of the printed page.",
+		"author": "Robin Sloan",
+		"source": "Website footer",
+		"cite": "https://www.robinsloan.com/"
+	},
+	"SITUATED_SOFTWARE": {
+		"content": "We’re starting to see a new software niche, where communities get form-fit tools for very particular needs, tools that fail most previous test of design quality or success, but which nevertheless function well, because they are so well situated in the community that uses them.",
+		"author": "Clay Shirky",
+		"source": "Situated Software",
+		"cite": "https://wiki.p2pfoundation.net/Situated_Software"
 	}
 }

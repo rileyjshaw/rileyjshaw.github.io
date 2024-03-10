@@ -61,6 +61,13 @@
 		"uid": "BECOME"
 	},
 	{
+		"author": "Muriel Cooper",
+		"cite": "https://eyeondesign.aiga.org/muriel-coopers-visions-of-a-future/",
+		"content": "I was convinced that the line between reproduction tools and design would blur when information became electronic and that the lines between designer and artist, author and designer, professional and amateur, would also dissolve.",
+		"source": "Conversation with Steven Heller",
+		"uid": "BLURRED_LINE"
+	},
+	{
 		"author": "Thomas Edison",
 		"cite": "https://quoteinvestigator.com/2012/02/15/books-obsolete",
 		"content": "Books will soon be obsolete in the public schools.",
@@ -143,6 +150,13 @@
 		"uid": "DATA_IMMUNE"
 	},
 	{
+		"author": "David Byrne",
+		"cite": "https://davidbyrne.com/explore/how-music-works",
+		"content": "The composer, in the traditional sense, might no longer be necessary. Let the planets and spheres spin.",
+		"source": "How Music Works",
+		"uid": "DECOMPOSE"
+	},
+	{
 		"author": "Manfred Mohr",
 		"content": "People accused me of degrading art, because I was employing capitalistic instruments of war - computer was a word non grata!",
 		"uid": "DEGRADING_ART"
@@ -217,11 +231,25 @@
 		"uid": "FAMOUS_DRESSES"
 	},
 	{
+		"author": "James Bridle",
+		"cite": "https://jamesbridle.com/books/ways-of-being",
+		"content": "But what if the meaning of AI is not to be found in the way it competes with, supersedes, or supplants us? What if, like the emergence of network theory, its purpose is to open our eyes and minds to the reality of intelligence as something doable in all kinds of fantastic ways, many of them beyond our own rational understanding?",
+		"source": "Ways of Being",
+		"uid": "FANTASTIC_WAYS"
+	},
+	{
 		"author": "Neil Postman",
 		"cite": "https://www.penguinrandomhouse.com/books/132786/the-end-of-education-by-neil-postman/",
 		"content": "Can you imagine schools whose epistemological story does not aim at producing a flotilla of fanatics, but, rather, people who proceed to learn with full consciousness of their own fallibility, as well as the fallibility of others?",
 		"source": "The End of Education",
 		"uid": "FLOTILLA_OF_FANATICS"
+	},
+	{
+		"author": "Erik Satie",
+		"cite": "https://www.shlom.com/?p=cagesatie",
+		"content": "“We must bring about a music which is like furniture, a music which will be part of the noises of the environment… softening the noises of the knives and forks, not dominating them, not imposing itself.”",
+		"source": "Cage’s Place in the Reception of Satie",
+		"uid": "FURNITURE_MUSIC"
 	},
 	{
 		"author": "Gerhard Richter",
@@ -237,11 +265,25 @@
 		"uid": "GOOGLE_EDITORIALIZED"
 	},
 	{
+		"author": "Robin Sloan",
+		"cite": "https://www.robinsloan.com/notes/home-cooked-app/",
+		"content": "The exhortation “learn to code” has its foundations in market value… But let’s substitute a different phrase: “learn to cook”. People don’t only learn to cook so they can become chefs.",
+		"source": "An app can be a home-cooked meal",
+		"uid": "HOME_COOKED_APP"
+	},
+	{
 		"author": "Brian Eno",
 		"cite": "https://www.wired.com/1999/01/eno/",
 		"content": "I’m struck by the insidious, computer-driven tendency to take things out of the domain of muscular activity and put them into the domain of mental activity… The trouble begins with a design philosophy that equates “more options” with “greater freedom.”",
 		"source": "The Revenge of the Intuitive",
 		"uid": "INFINITE_OPTIONS"
+	},
+	{
+		"author": "Philip Jones",
+		"cite": "https://www.versobooks.com/products/2518-work-without-the-worker",
+		"content": "Microwork exemplifies the way that AI tends to informalize rather than fully automate work. It betokens a future in which growing numbers of workers are not erased by machines but squeezed to the point of vanishing.",
+		"source": "Work Without the Worker",
+		"uid": "INFORMALIZED_WORK"
 	},
 	{
 		"author": "Ted Chiang",
@@ -353,6 +395,13 @@
 		"content": "Artists have always known that you can pair a medium with many materials. Software makers seem to doubt that. They seem to think that you can only use code to make software. They seem to think that, in the future, most software will be made with code.",
 		"source": "Good stuff, faster",
 		"uid": "MANY_MATERIALS"
+	},
+	{
+		"author": "taylor.town",
+		"cite": "https://taylor.town/pardon-2023#together",
+		"content": "Mario Kart 64 was released in 1996. Since then, my cartridge hasn’t received any patches/updates/DLC. It continues to make me smile… modern software devs aren’t really allowed to complete anything.",
+		"source": "I hereby pardon all junior engineers",
+		"uid": "MARIO_64"
 	},
 	{
 		"author": "Ronald Purser",
@@ -520,10 +569,31 @@
 		"uid": "PERFORMANCE_ART"
 	},
 	{
+		"author": "Naomi Klein",
+		"cite": "https://www.penguinrandomhouse.ca/books/720893/untitled-by-knopf-canada/9781039006898",
+		"content": "Good brands are immune to fundamental transformation. Conceding to having become one at age thirty would have meant foreclosing on what I saw as my prerogative to change, evolve, and hopefully improve. It would have locked me into performing this particular version of me, indefinitely.",
+		"source": "Doppelganger",
+		"uid": "PERSONAL_BRAND"
+	},
+	{
 		"author": "Arthur C. Clarke",
 		"content": "The goal of the future is full unemployment, so we can play. That’s why we have to destroy the present politico-economic system.",
 		"source": "Los Angeles Free Press interview, 1969",
 		"uid": "PLAY"
+	},
+	{
+		"author": "Ian Anderson",
+		"cite": "https://thamesandhudson.com/a-to-z-of-the-designers-republic-9780500027356",
+		"content": "Just because you can play your instrument doesn’t mean you’ve got a good idea about how to use it.",
+		"source": "A to Z of The Designers Republic",
+		"uid": "PLAY_VS_USE"
+	},
+	{
+		"author": "Robin Sloan",
+		"cite": "https://www.robinsloan.com/",
+		"content": "This website doesn’t collect any information about you or your reading. It aspires to the speed and privacy of the printed page.",
+		"source": "Website footer",
+		"uid": "PRINTED_PAGE"
 	},
 	{
 		"author": "James Bridle",
@@ -599,6 +669,13 @@
 		"content": "The greater part of human activity is designed to make permanent those experiences and joys which are only lovable because they are changing.",
 		"source": "The Wisdom of Insecurity",
 		"uid": "RHYTHM_OF_JOY"
+	},
+	{
+		"author": "Ivan Illich",
+		"cite": "https://learning.media.mit.edu/courses/mas713/readings/DESCHOOLING.pdf",
+		"content": "School is the advertising agency which makes you believe that you need the society as it is.",
+		"source": "Deschooling Society",
+		"uid": "SCHOOL_AD"
 	},
 	{
 		"cite": "https://www.sfu.ca/~andrewf/books/critbio.pdf",
@@ -733,6 +810,13 @@
 		"uid": "SIMPLE_TOOLS"
 	},
 	{
+		"author": "Clay Shirky",
+		"cite": "https://wiki.p2pfoundation.net/Situated_Software",
+		"content": "We’re starting to see a new software niche, where communities get form-fit tools for very particular needs, tools that fail most previous test of design quality or success, but which nevertheless function well, because they are so well situated in the community that uses them.",
+		"source": "Situated Software",
+		"uid": "SITUATED_SOFTWARE"
+	},
+	{
 		"author": "Mark Kennedy",
 		"cite": "https://sevencamels.blogspot.com/2007/03/carrying-sketchbook-part-one.html",
 		"content": "I don’t know what people expect to see what they look in a sketchbook but they always seem mighty disappointed. I think people expect to see what they would see in a Hollywood version of a sketchbook. Whenever someone is sketching from life in a movie, it’s always supposed to look tossed off and effortless but it’s really some totally finished and labored-over drawing that some artist spent hours rendering. Any real sketchbook is full of misfires, false starts and stumbles, with a few successes sprinkled here and there.",
@@ -752,6 +836,13 @@
 		"content": "The glorification of social media as a tool of revolution obscures the simple fact that revolutions predate the Internet and that movements are about actual grievances, demands, and aspirations.",
 		"source": "Networked Publics and Digital Contention",
 		"uid": "SOCIAL_MEDIA_REVOLUTION"
+	},
+	{
+		"author": "David Reinfurt",
+		"cite": "https://a-new-program-for-graphic-design.org/",
+		"content": "Interface design is an explicitly speculative exercise, and so when looking at interfaces from the past we see what the present was supposed to look like.",
+		"source": "A New Program for Graphic Design",
+		"uid": "SPECULATIVE_INTERFACE"
 	},
 	{
 		"author": "Feral Kid",
