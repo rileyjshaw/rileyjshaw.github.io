@@ -4109,6 +4109,15 @@
 		"uid": "PROJECT_JOY_DIVISION1M_UNKNOWN_PLEASURES"
 	},
 	{
+		"coolness": 82,
+		"date": "2024-03-12",
+		"link": "/julia/",
+		"timestamp": 1710201600000,
+		"title": "Julia set fractal explorer",
+		"type": "project",
+		"uid": "PROJECT_JULIA_SET_FRACTAL_EXPLORER"
+	},
+	{
 		"coolness": 30,
 		"date": "2013-02-05",
 		"descriptionList": [
