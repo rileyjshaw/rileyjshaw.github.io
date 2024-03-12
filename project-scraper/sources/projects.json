@@ -24,6 +24,12 @@
 		"todo": true
 	},
 	{
+		"title": "Julia set fractal explorer",
+		"date": "2024-03-12",
+		"coolness": 82,
+		"link": "/julia/"
+	},
+	{
 		"title": "CA Finder: GPU Edition",
 		"description": [
 			"Caution: it flashes! A generalized cellular automaton simulator that runs on your GPU."
