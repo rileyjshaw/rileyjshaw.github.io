@@ -1,5 +1,6 @@
 .go-up {
 	align-items: center;
+	background: var(--color-bg-footer);
 	display: flex;
 	/* TODO(riley): Cross-platform option? */
 	font-family: Menlo, var(--ff-sans);
