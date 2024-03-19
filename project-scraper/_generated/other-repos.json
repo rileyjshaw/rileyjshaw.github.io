@@ -72,12 +72,12 @@
 		"priority": 0.1
 	},
 	{
-		"path": "/glorious-pattern-matcher/",
-		"priority": 0.5
-	},
-	{
 		"path": "/fractal/",
 		"priority": 0.7
+	},
+	{
+		"path": "/glorious-pattern-matcher/",
+		"priority": 0.5
 	},
 	{
 		"path": "/life/",

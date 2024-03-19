@@ -3512,6 +3512,15 @@
 		"uid": "PROJECT_FONT_COMPARISON_TOOL"
 	},
 	{
+		"coolness": 82,
+		"date": "2024-03-12",
+		"link": "/fractal/",
+		"timestamp": 1710201600000,
+		"title": "Fractal explorer",
+		"type": "project",
+		"uid": "PROJECT_FRACTAL_EXPLORER"
+	},
+	{
 		"coolness": 60,
 		"date": "2016-05-24",
 		"descriptionList": [
@@ -4107,15 +4116,6 @@
 		"title": "Joy Division: Unknown Pleasures",
 		"type": "project",
 		"uid": "PROJECT_JOY_DIVISION1M_UNKNOWN_PLEASURES"
-	},
-	{
-		"coolness": 82,
-		"date": "2024-03-12",
-		"link": "/fractal/",
-		"timestamp": 1710201600000,
-		"title": "Fractal explorer",
-		"type": "project",
-		"uid": "PROJECT_FRACTAL_EXPLORER"
 	},
 	{
 		"coolness": 30,
