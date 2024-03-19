@@ -57,6 +57,12 @@
 	grid-template-rows: 1fr 1fr;
 	height: 100%;
 }
+.main-gallery .bento-half-x > * {
+	min-width: 0;
+}
+.main-gallery .bento-half-y > * {
+	min-height: 0;
+}
 .main-gallery .sort-tools-logo {
 	max-width: 75%;
 }
@@ -70,7 +76,7 @@
 	position: relative;
 }
 .main-gallery .color-mute {
-	filter: grayscale(75%);
+	filter: grayscale(60%);
 	transition: filter var(--transition-t-slow) var(--transition-easing);
 }
 .main-gallery .color-mute:hover {
@@ -91,6 +97,10 @@
 	height: 100%;
 	position: relative;
 	width: 100%;
+}
+.main-gallery .featured-raw-img {
+	width: 100%;
+	height: 100%;
 }
 .main-gallery .sort-tools-link {
 	background: var(--color-yellow-200);

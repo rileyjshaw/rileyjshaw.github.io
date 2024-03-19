@@ -1,6 +1,6 @@
 .doodle-propellers {
 	align-items: center;
-	background: var(--color-grey-500);
+	background: var(--color-bg-bold);
 	cursor: pointer;
 	display: flex;
 	grid-area: span 3 / span 3;
