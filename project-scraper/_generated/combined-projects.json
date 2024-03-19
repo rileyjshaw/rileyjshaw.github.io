@@ -4111,11 +4111,11 @@
 	{
 		"coolness": 82,
 		"date": "2024-03-12",
-		"link": "/julia/",
+		"link": "/fractal/",
 		"timestamp": 1710201600000,
-		"title": "Julia set fractal explorer",
+		"title": "Fractal explorer",
 		"type": "project",
-		"uid": "PROJECT_JULIA_SET_FRACTAL_EXPLORER"
+		"uid": "PROJECT_FRACTAL_EXPLORER"
 	},
 	{
 		"coolness": 30,
