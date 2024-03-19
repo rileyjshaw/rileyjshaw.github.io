@@ -39,6 +39,8 @@
 	box-shadow: var(--shadow-md);
 	overflow: hidden;
 	position: relative;
+}
+.main-gallery .project:not(.selectable) {
 	user-select: none;
 }
 .main-gallery > .project {
@@ -87,7 +89,7 @@
 	text-decoration: none;
 }
 .main-gallery .featured-doodle {
-	background: var(--color-grey-500);
+	background: var(--color-bg-bold);
 }
 .main-gallery .featured-doodle .doodle {
 	border: none;
@@ -117,6 +119,20 @@
 }
 .main-gallery .project:not(.no-zoom) > :hover {
 	transform: scale(1.04);
+}
+.mess-is-more {
+	background: var(--color-red-700);
+	color: var(--color-grey-0);
+	display: flex;
+	flex-direction: column;
+	font: 900 var(--fs-pretty-big) var(--ff-heading);
+	height: 100%;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+}
+.mess-is-more p {
+	margin: 0;
 }
 .explore-more {
 	margin-top: var(--s-1);

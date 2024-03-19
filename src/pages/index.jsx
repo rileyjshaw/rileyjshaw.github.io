@@ -68,15 +68,13 @@ const IndexPage = ({featuredProjects = []}) => {
 						</li>
 						<li className="project">
 							<ExternalLink
-								to="https://sort.tools"
-								className="image-link sort-tools-link"
+								to="/fractal/#R=0.36_I=0.4_C=s7_E=2_X=-0.05471340852756047_Y=-0.25617551945643696_Z=6.4_F=0_P=1_D=-1_H=1"
+								className="image-link"
 							>
-								<StaticImage
-									src="../../content/images/projects/sort-tools.png"
-									alt="A logo with the title “Sort Tools”"
-									className="sort-tools-logo"
-									width={500}
-									placeholder="none"
+								<img
+									className="featured-raw-img"
+									src={fractalImgSrc}
+									alt="An animated fractal spiral."
 								/>
 							</ExternalLink>
 						</li>
@@ -107,26 +105,19 @@ const IndexPage = ({featuredProjects = []}) => {
 										4/04
 									</ExternalLink>
 								</li>
-								<li>
-									<ul className="bento-half-x">
-										<li className="project no-zoom featured-doodle">
-											<FeaturedDoodle
-												onFullCycle={
-													incrementFeaturedDoodleIdx
-												}
-											/>
-										</li>
-										<li className="project no-zoom">
-											<BackgroundGenerator
-												fgColor={
-													DIRECT_COLORS.yellow[500]
-												}
-												bgColor={
-													DIRECT_COLORS.yellow[800]
-												}
-											/>
-										</li>
-									</ul>
+								<li className="project">
+									<ExternalLink
+										to="https://sort.tools"
+										className="image-link sort-tools-link"
+									>
+										<StaticImage
+											src="../../content/images/projects/sort-tools.png"
+											alt="A logo with the title “Sort Tools”"
+											className="sort-tools-logo"
+											width={500}
+											placeholder="none"
+										/>
+									</ExternalLink>
 								</li>
 							</ul>
 						</li>
@@ -138,6 +129,84 @@ const IndexPage = ({featuredProjects = []}) => {
 								<StaticImage
 									src="../../content/images/projects/jambo.jpg"
 									alt="An instrument made of bare electronics, with two knobs, two alphanumeric displays, and a fader."
+									width={600}
+									aspectRatio={1}
+								/>
+							</ExternalLink>
+						</li>
+						<li>
+							<ul className="bento-half-x">
+								<li className="project">
+									<GalleryImage
+										ThumbnailImage={
+											<StaticImage
+												src="../../content/images/projects/CA.png"
+												alt="An abstract image. It’s green and layered, like a psychedelic rock formation."
+												width={300}
+											/>
+										}
+										FullImage={
+											<StaticImage
+												src="../../content/images/projects/CA.png"
+												alt="An abstract image. It’s green and layered, like a psychedelic rock formation."
+											/>
+										}
+										aspectRatio={1}
+									/>
+								</li>
+								<li className="project">
+									<GalleryImage
+										aspectRatio={1}
+										ThumbnailImage={<PinkNoise />}
+										FullImage={
+											<PinkNoise
+												width="2400px"
+												height="2400px"
+											/>
+										}
+									/>
+								</li>
+							</ul>
+						</li>
+						<li className="project">
+							<GalleryImage
+								ThumbnailImage={
+									<StaticImage
+										src="../../content/images/projects/quantized.jpg"
+										alt="An abstract image. It’s shiny, grainy, lo-fi, and looks a bit 3D."
+										width={600}
+									/>
+								}
+								FullImage={
+									<StaticImage
+										src="../../content/images/projects/quantized.jpg"
+										alt="An abstract image. It’s shiny, grainy, lo-fi, and looks a bit 3D."
+									/>
+								}
+								aspectRatio={1}
+							/>
+						</li>
+						<li className="project">
+							<ExternalLink
+								to="https://www.tumblr.com/sfpc/182905537092/final-showcase-project-depression"
+								className="image-link"
+							>
+								<StaticImage
+									src="../../content/images/projects/depression.jpg"
+									alt="A small device with exposed wires and a single knob."
+									width={600}
+									aspectRatio={1}
+								/>
+							</ExternalLink>
+						</li>
+						<li className="project color-mute">
+							<ExternalLink
+								to="https://vimeo.com/377116426"
+								className="image-link"
+							>
+								<StaticImage
+									src="../../content/images/projects/timestamped.jpg"
+									alt="A geometric pattern with the text “4:40am” overlayed."
 									width={600}
 									aspectRatio={1}
 								/>
@@ -166,18 +235,15 @@ const IndexPage = ({featuredProjects = []}) => {
 								</li>
 								<li>
 									<ul className="bento-half-y">
-										<li className="project color-mute">
-											<ExternalLink
-												to="https://vimeo.com/377116426"
-												className="image-link"
-											>
-												<StaticImage
-													src="../../content/images/projects/timestamped.jpg"
-													alt="A geometric pattern with the text “4:40am” overlayed."
-													width={300}
-													aspectRatio={1}
-												/>
-											</ExternalLink>
+										<li className="project no-zoom">
+											<BackgroundGenerator
+												fgColor={
+													DIRECT_COLORS.yellow[500]
+												}
+												bgColor={
+													DIRECT_COLORS.yellow[800]
+												}
+											/>
 										</li>
 										<li className="project no-zoom">
 											<Riot word="ROLL" />
@@ -186,91 +252,16 @@ const IndexPage = ({featuredProjects = []}) => {
 								</li>
 							</ul>
 						</li>
-						<li>
-							<ul className="bento-half-y">
-								<li>
-									<ul className="bento-half-x">
-										<li className="project">
-											<ExternalLink
-												to="/fractal/#R=0.36_I=0.4_C=s7_E=2_X=-0.05471340852756047_Y=-0.25617551945643696_Z=6.4_F=0_P=1_D=-1"
-												className="image-link"
-											>
-												<img
-													className="featured-raw-img"
-													src={fractalImgSrc}
-													width={300}
-													alt="An animated fractal spiral."
-												/>
-											</ExternalLink>
-										</li>
-										<li className="project">
-											<GalleryImage
-												ThumbnailImage={
-													<StaticImage
-														src="../../content/images/projects/CA.png"
-														alt="An abstract image. It’s green and layered, like a psychedelic rock formation."
-														width={300}
-													/>
-												}
-												FullImage={
-													<StaticImage
-														src="../../content/images/projects/CA.png"
-														alt="An abstract image. It’s green and layered, like a psychedelic rock formation."
-													/>
-												}
-												aspectRatio={1}
-											/>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<ul className="bento-half-x">
-										<li className="project">
-											<GalleryImage
-												ThumbnailImage={
-													<StaticImage
-														src="../../content/images/projects/quantized.jpg"
-														alt="An abstract image. It’s shiny, grainy, lo-fi, and looks a bit 3D."
-														width={300}
-													/>
-												}
-												FullImage={
-													<StaticImage
-														src="../../content/images/projects/quantized.jpg"
-														alt="An abstract image. It’s shiny, grainy, lo-fi, and looks a bit 3D."
-													/>
-												}
-												aspectRatio={1}
-											/>
-										</li>
-										<li className="project">
-											<GalleryImage
-												aspectRatio={1}
-												ThumbnailImage={<PinkNoise />}
-												FullImage={
-													<PinkNoise
-														width="2400px"
-														height="2400px"
-													/>
-												}
-											/>
-										</li>
-									</ul>
-								</li>
-							</ul>
+						<li className="project no-zoom featured-doodle">
+							<FeaturedDoodle
+								onFullCycle={incrementFeaturedDoodleIdx}
+							/>
 						</li>
-						<li className="project">
-							<ExternalLink
-								to="https://www.tumblr.com/sfpc/182905537092/final-showcase-project-depression"
-								className="image-link"
-							>
-								<StaticImage
-									src="../../content/images/projects/depression.jpg"
-									alt="A small device with exposed wires and a single knob."
-									width={600}
-									aspectRatio={1}
-								/>
-							</ExternalLink>
+						<li className="project selectable">
+							<div className="mess-is-more">
+								<p>Less is bore.</p>
+								<p>Mess is more!</p>
+							</div>
 						</li>
 					</ul>
 				</div>
