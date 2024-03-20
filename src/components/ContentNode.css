@@ -173,6 +173,7 @@
 	position: relative;
 }
 .excerpt::after {
+	/* TODO: Mask-image instead like https://css-tricks.com/websites-we-like-md-nichrome/ */
 	background: linear-gradient(
 		transparent,
 		color-mix(in srgb, var(--color-bg) 75%, transparent)

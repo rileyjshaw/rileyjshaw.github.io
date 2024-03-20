@@ -1,9 +1,10 @@
-import formatProps from './format-props.mjs';
 import {useStaticQuery, graphql} from 'gatsby';
 
+import formatProps from './format-props.mjs';
+
 export function format({
-	allMdx: {nodes: posts} = {nodes: []},
-	allCombinedProjectsJson: {nodes: projects} = {nodes: []},
+	posts: {nodes: posts} = {nodes: []},
+	combinedProjects: {nodes: projects} = {nodes: []},
 }) {
 	return [
 		...posts.map(p => ({
@@ -14,10 +15,10 @@ export function format({
 	].map(formatProps);
 }
 
-export default () =>
+const allProjectsQuery = () =>
 	format(
 		useStaticQuery(graphql`{
-	allMdx(
+	posts: allMdx(
 		filter: {internal: {contentFilePath: {regex: "//data/markdown/posts/.*\\.mdx?$/"}}}
 		sort: {fields: {date: DESC}}
 	) {
@@ -36,7 +37,7 @@ export default () =>
 			}
 		}
 	}
-	allCombinedProjectsJson {
+	combinedProjects: allCombinedProjectsJson {
 		nodes {
 			uid
 			type
@@ -63,3 +64,5 @@ export default () =>
 	}
 }`),
 	);
+
+export default allProjectsQuery;

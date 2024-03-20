@@ -3,6 +3,21 @@ import {useCallback, useEffect, useRef, useState} from 'react';
 import {isRenderingOnServer} from './constants.mjs';
 import {throttle} from './util';
 
+// Takes multiple refs and merges them into a single ref, to allow attaching
+// multiple refs to the same element.
+export function useMergedRef(refs) {
+	const mergedRef = useCallback(el => {
+		refs.filter(Boolean).forEach(ref => {
+			if (typeof ref === 'function') {
+				ref(el);
+			} else {
+				ref.current = el;
+			}
+		});
+	}, refs);
+	return mergedRef;
+}
+
 // setInterval with auto drift-correction and dynamic callback / timing props.
 export function useInterval(
 	cb,
@@ -53,6 +68,7 @@ export function useInterval(
 	}, []);
 }
 
+// TODO: Replace with https://github.com/maslianok/react-resize-detector?
 export function useRect({resize = false} = {}) {
 	const [rect, setRect] = useState(null);
 	const cleanupFn = useRef();
