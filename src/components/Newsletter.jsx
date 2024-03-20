@@ -7,13 +7,13 @@ import './Newsletter.css';
 export const Form = () => (
 	<form
 		className="newsletter-form"
-		action="https://tinyletter.com/changelog"
+		action="https://buttondown.email/api/emails/embed-subscribe/changelog"
 		method="post"
 		target="popupwindow"
 		onSubmit={() => {
 			if (isRenderingOnClient) {
 				window.open(
-					'https://tinyletter.com/changelog',
+					'https://buttondown.email/changelog',
 					'popupwindow',
 					'scrollbars=yes,width=800,height=600',
 				);
@@ -26,12 +26,11 @@ export const Form = () => (
 		</label>
 		<div className="bottom-row">
 			<input
-				type="text"
+				type="email"
 				name="email"
 				placeholder="you@email.com"
 				id="newsletter-email"
 			/>
-			<input type="hidden" value="1" name="embed" />
 			<input type="submit" value="Subscribe" />
 		</div>
 	</form>
