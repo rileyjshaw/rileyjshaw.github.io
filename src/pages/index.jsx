@@ -246,7 +246,9 @@ const IndexPage = ({featuredProjects = []}) => {
 											/>
 										</li>
 										<li className="project no-zoom">
-											<Riot word="ROLL" />
+											<Link to="/about">
+												<Riot word="ABOUT" />
+											</Link>
 										</li>
 									</ul>
 								</li>

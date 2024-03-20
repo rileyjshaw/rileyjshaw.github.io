@@ -1,6 +1,6 @@
 .doodle-riot {
-	background: var(--color-blue-900);
-	color: var(--color-grey-300);
+	background: var(--color-red-700);
+	color: var(--color-yellow-200);
 	grid-area: span 1 / span 2;
 	height: 100%;
 	overflow-anchor: none;

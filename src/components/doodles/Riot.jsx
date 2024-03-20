@@ -4,7 +4,7 @@ import {useViewport, useRect} from '../../util/hooks';
 
 import './Riot.css';
 
-function Riot({className, word = 'RIOT!'}, ref) {
+function Riot({className, word = 'RIOT!', nCopies = 8}, ref) {
 	const [riotRef, _inView, boundingClientRect, windowHeight = 0] =
 		useViewport({trackPosition: true});
 	const [centerCharRef, centerCharBoundingClientRect] = useRect();
@@ -47,7 +47,7 @@ function Riot({className, word = 'RIOT!'}, ref) {
 			{...(ref?.hasOwnProperty('current') ? {ref} : {})}
 			className={`doodle doodle-riot${className ? ` ${className}` : ''}`}
 		>
-			{Array.from({length: 6}, (_, i) => (
+			{Array.from({length: nCopies}, (_, i) => (
 				<p
 					ref={i ? null : riotRef}
 					key={`riot-${i}`}
@@ -57,7 +57,7 @@ function Riot({className, word = 'RIOT!'}, ref) {
 							.map(p => `${p * 100}%`)
 							.join(' '),
 						transform: `translate(-50%, -50%) rotate(${
-							i * factor * 40
+							(i * factor * 240) / nCopies
 						}deg)`,
 					}}
 				>
