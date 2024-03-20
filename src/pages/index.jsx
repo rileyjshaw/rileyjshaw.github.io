@@ -151,20 +151,36 @@ const IndexPage = ({featuredProjects = []}) => {
 												alt="An abstract image. It’s green and layered, like a psychedelic rock formation."
 											/>
 										}
-										aspectRatio={1}
 									/>
 								</li>
-								<li className="project">
-									<GalleryImage
-										aspectRatio={1}
-										ThumbnailImage={<PinkNoise />}
-										FullImage={
-											<PinkNoise
-												width="2400px"
-												height="2400px"
+								<li>
+									<ul className="bento-half-y">
+										<li className="project">
+											<GalleryImage
+												aspectRatio={1}
+												ThumbnailImage={<PinkNoise />}
+												FullImage={
+													<PinkNoise
+														width="2400px"
+														height="2400px"
+													/>
+												}
 											/>
-										}
-									/>
+										</li>
+										<li className="project">
+											<ExternalLink
+												to="/ribbon"
+												className="image-link"
+											>
+												<StaticImage
+													src="../../content/images/projects/ribbon.png"
+													alt="A folded papercraft ribbon."
+													width={300}
+													aspectRatio={1}
+												/>
+											</ExternalLink>
+										</li>
+									</ul>
 								</li>
 							</ul>
 						</li>

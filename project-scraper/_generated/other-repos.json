@@ -120,6 +120,10 @@
 		"priority": 0.5
 	},
 	{
+		"path": "/ribbon/",
+		"priority": 0.5
+	},
+	{
 		"path": "/roll/",
 		"priority": 0.5
 	},

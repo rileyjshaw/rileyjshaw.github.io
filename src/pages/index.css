@@ -59,11 +59,10 @@
 	grid-template-rows: 1fr 1fr;
 	height: 100%;
 }
-.main-gallery .bento-half-x > * {
-	min-width: 0;
-}
+.main-gallery .bento-half-x > *,
 .main-gallery .bento-half-y > * {
 	min-height: 0;
+	min-width: 0;
 }
 .main-gallery .sort-tools-logo {
 	max-width: 75%;
