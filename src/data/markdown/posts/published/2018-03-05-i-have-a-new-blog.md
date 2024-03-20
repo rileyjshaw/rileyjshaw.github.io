@@ -1,5 +1,4 @@
 ---
-layout: post
 title: I have a new blog
 tags: ['life', 'meta']
 ---

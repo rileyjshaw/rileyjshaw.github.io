@@ -26,7 +26,6 @@ const allProjectsQuery = () =>
 			more
 			description
 			frontmatter {
-				layout
 				tags
 			}
 			fields {

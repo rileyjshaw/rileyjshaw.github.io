@@ -283,7 +283,6 @@ export default {
 									nodes {
 										description
 										frontmatter {
-											layout
 											tags
 										}
 										fields {
@@ -334,7 +333,6 @@ export default {
 									nodes {
 										description
 										frontmatter {
-											layout
 											tags
 										}
 										fields {
@@ -393,7 +391,6 @@ export default {
 									nodes {
 										description
 										frontmatter {
-											layout
 											tags
 										}
 										fields {

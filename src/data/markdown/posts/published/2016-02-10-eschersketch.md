@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Escher Sketch!
 tags: ['gallery']
 ---

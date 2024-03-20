@@ -1,5 +1,4 @@
 ---
-layout: post
 tags: ['c', 'db', 'quote']
 ---
 

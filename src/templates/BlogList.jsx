@@ -140,7 +140,6 @@ export const blogListQuery = graphql`query blogListQuery($internalLimit: Int!, $
 			description
 			more
 			frontmatter {
-				layout
 				tags
 			}
 			fields {

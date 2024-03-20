@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Repair Matters on CBC Radio
 tags: ['life', 'repair']
 ---

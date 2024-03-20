@@ -37,7 +37,6 @@ export const createPages = async ({actions, graphql, reporter}) => {
 					id
 					excerpt
 					frontmatter {
-						layout
 						tags
 					}
 					fields {

@@ -1,5 +1,4 @@
 ---
-layout: post
 tags: ['meta', 'build', 'web', 'hackerschool']
 ---
 

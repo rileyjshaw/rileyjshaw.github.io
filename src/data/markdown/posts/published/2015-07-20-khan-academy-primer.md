@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Khan Academy: a new employee’s primer'
 tags: ['education', 'life', 'web']
 ---

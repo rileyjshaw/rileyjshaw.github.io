@@ -1,5 +1,4 @@
 ---
-layout: post
 tags: ['howto', 'web']
 title: How to generate a static site from a folder of assets using Gulp
 ---

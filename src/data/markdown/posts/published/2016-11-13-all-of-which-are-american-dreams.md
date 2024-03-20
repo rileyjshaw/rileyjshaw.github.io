@@ -1,5 +1,4 @@
 ---
-layout: post
 title: All of which are American dreams
 tags: ['build', 'web', 'tools']
 ---
