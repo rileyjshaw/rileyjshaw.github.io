@@ -68,7 +68,7 @@ const IndexPage = ({featuredProjects = []}) => {
 						</li>
 						<li className="project">
 							<ExternalLink
-								to="/fractal/#R=0.36_I=0.4_C=s7_E=2_X=-0.05471340852756047_Y=-0.25617551945643696_Z=6.4_F=0_P=1_D=-1_H=1"
+								to="/fractal/#R=0.36_I=0.4_C=y54_E=2_X=-0.05471340852756047_Y=-0.25617551945643696_Z=6.4_F=0_P=1_D=-1_H=1"
 								className="image-link"
 							>
 								<img
