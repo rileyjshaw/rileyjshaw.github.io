@@ -24,10 +24,10 @@ function MeIntro() {
 		<p>
 			I am a programmer, interface designer, and {thirdThings[2]}. Rooted
 			in repair and craft, I strive to create transparent, remixable
-			digital tools for a sustainable and accessible future. I run a
-			studio called{' '}
-			<AutoLink to="https://misery.co">Misery & Co.</AutoLink> and am
-			taking commissions.
+			digital tools for a sustainable and accessible future. I do my best
+			work on projects that combine high-performance engineering with
+			ambitious design. If you have an idea for a project, I run a studio
+			called <AutoLink to="https://misery.co">Misery & Co.</AutoLink>
 		</p>
 	);
 }

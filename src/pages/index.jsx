@@ -39,17 +39,27 @@ const IndexPage = ({featuredProjects = []}) => {
 			<div className="page-content">
 				<div className="about-stub">
 					<AboutIntro />{' '}
-					<Link to="/about" className="about-link">
-						More{' '}
-						<CycleText
-							className="about-arrow"
-							OuterElement="span"
-							ms={100}
-						>
-							➫➯➱➬–
-						</CycleText>
-					</Link>
+					<p>
+						I learn by making, so this website collects tiny
+						experiments that I’ve built in service of learning or
+						teaching. If you want to read about bigger projects
+						I’ve been involved with,{' '}
+						<Link to="/about">
+							there’s more{' '}
+							<span className="about-link-end">
+								here{' '}
+								<CycleText
+									className="about-arrow"
+									OuterElement="span"
+									ms={100}
+								>
+									➫➯➱➬–
+								</CycleText>
+							</span>
+						</Link>
+					</p>
 				</div>
+
 				<div className="main-projects">
 					<ul className="main-gallery">
 						<li className="project">

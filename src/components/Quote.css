@@ -6,7 +6,6 @@
 .site-quote p {
 	margin-bottom: var(--s--1);
 	text-align: justify;
-	text-wrap: pretty;
 }
 .site-quote footer {
 	margin-top: var(--s-0);
