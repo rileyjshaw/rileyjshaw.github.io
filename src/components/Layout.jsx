@@ -9,7 +9,7 @@ import {SITE_PAGES, STORAGE_KEYS} from '../util/constants';
 import {getNextHoliday} from '../util/holidays';
 import {useInterval, useStickyState} from '../util/hooks';
 import {capitalize} from '../util/util';
-import AutoLink from './AutoLink';
+import AutoLink, {ExternalLink} from './AutoLink';
 import Banner from './Banner';
 import Blocker from './Blocker';
 import ClientOnly from './ClientOnly';
@@ -20,7 +20,7 @@ import SiteNav from './SiteNav';
 
 import './layout.css';
 
-function NoteDialog({open, onOpenChange, title, description}) {
+function NoteDialog({open, onOpenChange, title, Description}) {
 	return (
 		<Dialog.Root open={open} onOpenChange={onOpenChange}>
 			<Dialog.Portal>
@@ -29,8 +29,11 @@ function NoteDialog({open, onOpenChange, title, description}) {
 					<Dialog.Title className="dialog-note-title">
 						{title}
 					</Dialog.Title>
-					<Dialog.Description className="dialog-note-description">
-						{description}
+					<Dialog.Description
+						asChild
+						className="dialog-note-description"
+					>
+						<Description />
 					</Dialog.Description>
 					<div
 						style={{
@@ -65,7 +68,7 @@ const Layout = ({children, location}) => {
 	const {theme, reducedMotion, contrastPreference} =
 		useContext(SettingsContext);
 	const [isBlockerOpen, setIsBlockerOpen] = useState(false);
-	const [isNoteOpen, setNoteOpen] = useState(false);
+	const [isNoteOpen, setIsNoteOpen] = useState(false);
 	const [nTimesClosed, setNTimesClosed] = useStickyState(
 		0,
 		STORAGE_KEYS.nTimesClosedBlocker,
@@ -95,7 +98,7 @@ const Layout = ({children, location}) => {
 	else pathname = pathname.slice(1);
 
 	useEffect(() => {
-		if (search?.includes('note=gh')) setNoteOpen(true);
+		if (search?.includes('hi=tw')) setIsNoteOpen(true);
 	}, [search]);
 
 	let is404;
@@ -134,19 +137,23 @@ const Layout = ({children, location}) => {
 			)}
 			<NoteDialog
 				open={isNoteOpen}
-				onOpenChange={setNoteOpen}
-				title="Hello, GitHub!"
-				description={
-					<>
-						I’m so excited about this role. I use GitHub every day,
-						and{' '}
-						<AutoLink to="https://primer.style/prism/">
-							Primer Prism
-						</AutoLink>{' '}
-						at least once a week. I would love to contribute to the
-						team that makes so many of my favourite tools ✨
-					</>
-				}
+				onOpenChange={setIsNoteOpen}
+				title="Hello, Tailwind!"
+				Description={props => (
+					<div {...props}>
+						<p>
+							I’m so excited about your Design Engineer role. I
+							use Tailwind every day, and working to improve it
+							for others would be an absolute dream ✨
+						</p>
+						<p>
+							In case you haven’t seen it yet,{' '}
+							<ExternalLink to="https://tailwind.rileyjshaw.com">
+								I made a mini-site just for you
+							</ExternalLink>
+						</p>
+					</div>
+				)}
 			/>
 			<ClientOnly>
 				{activeHoliday && isHolidayBannerOpen && (

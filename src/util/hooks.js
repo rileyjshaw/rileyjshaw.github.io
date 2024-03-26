@@ -234,12 +234,16 @@ export function useStickyState(
 	});
 
 	// Basically setValue, but adds `initialized: true` for the client.
-	const setInitializedValue = useCallback(newValue =>
-		setValue(({value: oldValue}) => ({
-			initialized: true,
-			value:
-				typeof newValue === 'function' ? newValue(oldValue) : newValue,
-		})),
+	const setInitializedValue = useCallback(
+		newValue =>
+			setValue(({value: oldValue}) => ({
+				initialized: true,
+				value:
+					typeof newValue === 'function'
+						? newValue(oldValue)
+						: newValue,
+			})),
+		[],
 	);
 
 	// On the client, check if there’s a preexisting value and apply that.
