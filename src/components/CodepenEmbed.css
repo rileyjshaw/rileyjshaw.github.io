@@ -1,0 +1,9 @@
+.codepen {
+	align-items: center;
+	border: 1px solid;
+	display: flex;
+	height: 300px;
+	justify-content: center;
+	margin: 1em 0;
+	padding: 1em;
+}

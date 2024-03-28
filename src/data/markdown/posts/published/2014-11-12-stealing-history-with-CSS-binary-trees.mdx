@@ -5,6 +5,7 @@ tags: ['security', 'css', 'build']
 
 import BlogBanner from 'components/BlogBanner';
 import Figure from 'components/Figure';
+import CodepenEmbed from 'components/CodepenEmbed';
 
 <BlogBanner type="update" date="2015-01-21">
 	Since writing this post, Chrome and Firefox have changed their
@@ -54,32 +55,7 @@ With just the first two tricks we have a [functioning game](/visited-vectors/rea
 
 [This paper](http://lcamtuf.coredump.cx/css_calc/) builds an n-input OR gate in CSS using alpha-blending rounding errors. I’ve embedded my own cross-browser version below; click Result to see it in action:
 
-<p
-	className="codepen"
-	data-height="265"
-	data-theme-id="5323"
-	data-default-tab="css,result"
-	data-user="rileyjshaw"
-	data-slug-hash="CjiKf"
-	data-pen-title="n-input OR gate in CSS"
-	style={{
-		height: 265,
-		boxSizing: 'border-box',
-		display: 'flex',
-		alignItems: 'center',
-		justifyContent: 'center',
-		border: '2px solid',
-		margin: '1em 0',
-		padding: '1em',
-	}}
->
-	<span>
-		See the Pen <a href="https://codepen.io/rileyjshaw/pen/CjiKf">n-input OR gate in CSS</a>
-		by Riley Shaw (<a href="https://codepen.io/rileyjshaw">@rileyjshaw</a>)
-		on <a href="https://codepen.io">CodePen</a>.
-	</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<CodepenEmbed slug="CjiKf" title="n-input OR gate in CSS" defaultTab="css,result" />
 
 An OR gate is on if any of its inputs are on. We can use this to probe n links[^3] at once by stacking them together. Now if a user sees red and hits the spacebar we know that one of the links in the group has been visited.
 
