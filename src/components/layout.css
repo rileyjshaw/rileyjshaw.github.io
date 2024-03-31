@@ -64,6 +64,7 @@
 	max-height: 90vh;
 	max-width: 1000px;
 	min-width: 0;
+	overflow: auto;
 	padding: var(--s-4) var(--s-2) var(--s-2);
 	position: fixed;
 	top: 50%;
