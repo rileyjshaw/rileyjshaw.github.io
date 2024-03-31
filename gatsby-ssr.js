@@ -79,15 +79,6 @@ export const onRenderBody = ({
 			}}
 		/>,
 	);
-
-	setPostBodyComponents(
-		<script
-			key="love"
-			dangerouslySetInnerHTML={{
-				__html: rawString_loveYou,
-			}}
-		/>,
-	);
 };
 
 const rawString_manageInitialTheme = `(function() {
@@ -98,15 +89,3 @@ const rawString_manageInitialTheme = `(function() {
 		(${applyTheme})(stored.value);
 	}
 })()`;
-
-const rawString_loveYou = `console.log(\`
-'▀█║────────────▄▄───────────​─▄──▄_
-──█║───────▄─▄─█▄▄█║──────▄▄──​█║─█║
-──█║───▄▄──█║█║█║─▄║▄──▄║█║─█║​█║▄█║
-──█║──█║─█║█║█║─▀▀──█║─█║█║─█║​─▀─▀
-──█║▄║█║─█║─▀───────█║▄█║─▀▀
-──▀▀▀──▀▀────────────▀─█║
-───────▄▄─▄▄▀▀▄▀▀▄──▀▄▄▀
-──────███████───▄▀
-──────▀█████▀▀▄▀
-────────▀█▀\`);`;
