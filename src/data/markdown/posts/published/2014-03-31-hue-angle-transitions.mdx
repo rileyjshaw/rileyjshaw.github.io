@@ -3,15 +3,22 @@ title: Hue-angle transitions
 tags: ['color', 'css', 'javascript', 'web']
 ---
 
-import BlogBanner from 'components/BlogBanner';
+import BlogBanner, {BlogBannerGroup} from 'components/BlogBanner';
+import {ExternalLink} from 'components/AutoLink';
 import Figure from 'components/Figure';
 import CodepenEmbed from 'components/CodepenEmbed';
 
+<BlogBannerGroup>
 <BlogBanner type="update" date="2014-06-25">
-
-I created a library called [sweep.js](http://rileyjshaw.com/sweep/) that addresses this problem.
-
+	I created a library called [sweep.js](http://rileyjshaw.com/sweep/) that addresses this problem.
 </BlogBanner>
+<BlogBanner type="edit" date="2018-01-22">
+	HUSL has been renamed to <ExternalLink to="https://www.hsluv.org">HSLuv</ExternalLink>. References have been updated.
+</BlogBanner>
+<BlogBanner type="update" date="2023-05-28">
+Many problems described in this post can now be solved using <ExternalLink to="https://developer.mozilla.org/en-US/docs/Web/CSS/color-interpolation-method"><code>color-interpolation-method</code></ExternalLink>.
+</BlogBanner>
+</BlogBannerGroup>
 
 I was recently browsing a beautiful red monochrome[^1] site. There were a few call-to-action buttons on the page that transitioned to green on hover.
 
@@ -75,13 +82,13 @@ And here’s the associated lightness values based on [CIE’s definition of lig
 
 This is why color pairs require custom timing functions. Our eyes try to find a pattern when they notice changes in lightness. In RGB, we get consistently lighter or darker, so the linear shift is easy for our eyes to comprehend. In HSL, we ride a wonky, inconsistent wave of light/dark patches until we arrive at our destination. Since our eyes can’t discern a pattern, the transition between color-groups feels springy.[^2]
 
-## HUSL to the rescue?
+## HSLuv to the rescue?
 
-Plenty of discussions on the inconsistencies of HSL lightness already exist, so I’ve thrown some of my favorite links into the [references](#references). One particularly awesome project is [HUSL](http://www.boronine.com/husl/), which uses CIE’s definition of lightness to smooth out the space. In HUSL, large-angle transitions appear less jumpy; check it out!
+Plenty of discussions on the inconsistencies of HSL lightness already exist, so I’ve thrown some of my favorite links into the [references](#references). One particularly awesome project is [HSLuv](https://www.hsluv.org), which uses CIE’s definition of lightness to smooth out the space. In HSLuv, large-angle transitions appear less jumpy; check it out!
 
 <CodepenEmbed slug="ArhLK" title="HUSL to the rescue" />
 
-HUSL gets us very close to perceptually linear hue-angle transitions. It also puts a ceiling on our saturation, dragging us closer to the sludgy colors that we’ve been avoiding all along. Some transitions like cyan to violet end up looking awesome. Others, such as our original example of red to green, look far worse than they would in RGB or HSL.
+HSLuv gets us very close to perceptually linear hue-angle transitions. It also puts a ceiling on our saturation, dragging us closer to the sludgy colors that we’ve been avoiding all along. Some transitions like cyan to violet end up looking awesome. Others, such as our original example of red to green, look far worse than they would in RGB or HSL.
 
 <CodepenEmbed slug="Lexkg" title="HUSL Transitions: A good one and a bad one" />
 
@@ -91,7 +98,7 @@ We’ve come all this way, we’ve systematically solved all of our problems wit
 
 It turns out that there’s no _one best way_ to transition between colors. Sometimes we need overlaying text to remain readable, so consistency of lightness is the primary concern. Sometimes, we just want consistently pretty colors. A summary of the benefits and shortcomings found is shown below:
 
-|                            | RGB   | HSL   | HUSL  |
+|                            | RGB   | HSL   | HSLuv |
 | -------------------------- | ----- | ----- | ----- |
 | Browser support            | Best  | Okay  | Worst |
 | Lightness consistency      | Okay  | Worst | Best  |
@@ -100,14 +107,14 @@ It turns out that there’s no _one best way_ to transition between colors. Some
 | Simplicity                 | Okay  | Best  | Worst |
 | True colors                | Best  | Best  | Worst |
 
-It’s all contextual and boils down to choosing a method that’s suited to your application. Use HUSL for text containers to ensure that everything remains readable. Use HSL when you need to transition from grey to full-juice saturation. For a design-heavy red website, maybe the _real_ answer is to forgo red-green transitions altogether and [choose a different link effect](http://tympanus.net/Development/CreativeLinkEffects/).
+It’s all contextual and boils down to choosing a method that’s suited to your application. Use HSLuv for text containers to ensure that everything remains readable. Use HSL when you need to transition from grey to full-juice saturation. For a design-heavy red website, maybe the _real_ answer is to forgo red-green transitions altogether and [choose a different link effect](http://tympanus.net/Development/CreativeLinkEffects/).
 
 Remember, since _browsers only support transitions through RGB_ right now they should be your go-to on the web for all but the most special cases. I hope that [the spec](http://www.w3.org/TR/css3-transitions/#animation-of-property-types-) will start supporting hue-angle transitions as the default between two HSL colors, but it’s a long way away. For now, be conscious of the color paths that your transitions are taking. If you don’t like them, experiment!
 
 ## References
 
 - [A Closer Look at Color Lightness](http://robots.thoughtbot.com/closer-look-color-lightness)
-- [HUSL](http://www.boronine.com/husl/)
+- [HSLuv](https://www.hsluv.org)
 - [Color Spaces for Human Beings](http://www.boronine.com/2012/03/26/Color-Spaces-for-Human-Beings/)
 - [HSP Color Model — Alternative to HSV (HSB) and HSL](http://alienryderflex.com/hsp.html)
 - [CIELUV](http://en.wikipedia.org/wiki/CIELUV)
