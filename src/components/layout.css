@@ -61,7 +61,7 @@
 	font-size: var(--fs-2);
 	height: max-content;
 	left: 50%;
-	max-height: 90vh;
+	max-height: 90dvh;
 	max-width: 1000px;
 	min-width: 0;
 	overflow: auto;
