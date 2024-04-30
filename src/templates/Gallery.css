@@ -1,0 +1,51 @@
+.gallery-post-page .gallery-content {
+	grid-column: middle-column / span 1;
+	min-width: 0;
+	padding-bottom: var(--s-3);
+}
+.gallery-content header {
+	line-height: 1;
+}
+.gallery-post-page .gallery-content h1 {
+	font: 900 var(--fs-6) var(--ff-heading);
+	line-height: 1;
+}
+/* TODO(riley): Duplicate. */
+.gallery-content header .subheading {
+	font-size: var(--fs--2);
+	letter-spacing: 0.05em;
+	margin: var(--s--2) 0 var(--s-2);
+}
+.gallery-content [data-footnote-ref] {
+	color: var(--color-link);
+	font-size: var(--fs--3);
+	font-weight: 700;
+	margin-left: 0.2em;
+	text-decoration: none;
+}
+.gallery-content .footnotes p {
+	display: inline;
+}
+.gallery-content .gatsby-resp-image-wrapper {
+	margin: 2.5em auto;
+	max-width: 100%;
+}
+.gallery-content .blog-figure {
+	margin-bottom: 2.5em;
+}
+.gallery-content .blog-figure .gatsby-resp-image-wrapper {
+	margin-bottom: 0;
+}
+/* TODO: Why are pres double-wrapped? */
+.gallery-content pre > pre {
+	margin: 0;
+}
+
+@media only screen and (width < 1000px) {
+	.gallery-post-page .gallery-content {
+		grid-column: left-column / span 3;
+		& h1 {
+			font-size: var(--fs-5);
+		}
+	}
+}

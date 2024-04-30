@@ -18,6 +18,7 @@ export const createPages = async ({actions, graphql, reporter}) => {
 
 	const blogListTemplate = path.resolve('./src/templates/BlogList.jsx');
 	const blogPostTemplate = path.resolve('./src/templates/Post.jsx');
+	const galleryTemplate = path.resolve('./src/templates/Gallery.jsx');
 
 	// TODO(riley): Import this query from a common place.
 	const result = await graphql(`
@@ -55,6 +56,32 @@ export const createPages = async ({actions, graphql, reporter}) => {
 			) {
 				nodes {
 					date
+				}
+			}
+			galleries: allMdx(
+				filter: {
+					internal: {
+						contentFilePath: {
+							regex: "//data/markdown/galleries/.*.mdx?$/"
+						}
+					}
+				}
+				sort: {fields: {date: DESC}}
+				limit: 1000
+			) {
+				nodes {
+					id
+					frontmatter {
+						tags
+					}
+					fields {
+						slug
+						title
+						date(formatString: "YYYY-MM-DD")
+					}
+					internal {
+						contentFilePath
+					}
 				}
 			}
 		}
@@ -120,17 +147,40 @@ export const createPages = async ({actions, graphql, reporter}) => {
 			},
 		});
 	});
+
+	// Create a post page for each gallery.
+	const galleries = result.data.galleries.nodes;
+	galleries.forEach((gallery, i) => {
+		createPage({
+			path: gallery.fields.slug,
+			component: `${galleryTemplate}?__contentFilePath=${gallery.internal.contentFilePath}`,
+			context: {
+				id: gallery.id,
+				prevId: galleries[i - 1]?.id,
+				nextId: galleries[i + 1]?.id,
+			},
+		});
+	});
 };
 
 export const onCreateNode = ({node, getNode, actions}) => {
 	const {createNodeField} = actions;
 
-	if (
-		node.internal.type === 'Mdx' &&
-		node.internal.contentFilePath.includes('/data/markdown/posts/')
-	) {
+	if (node.internal.type === 'Mdx') {
+		const isPost = node.internal.contentFilePath.includes(
+			'/data/markdown/posts/',
+		);
+		const isGallery = node.internal.contentFilePath.includes(
+			'/data/markdown/galleries/',
+		);
+		if (!isPost && !isGallery) return;
+
 		let {title, slug} = node.frontmatter;
-		const fileName = createFilePath({node, getNode, basePath: `posts`});
+		const fileName = createFilePath({
+			node,
+			getNode,
+			basePath: isPost ? 'posts' : 'galleries',
+		});
 		const [, date, fileNameSlug] = fileName.match(
 			/^\/(?:published|drafts)\/([\d]{4}-[\d]{2}-[\d]{2})-{1}(.+)\/$/,
 		);
@@ -138,7 +188,7 @@ export const onCreateNode = ({node, getNode, actions}) => {
 		createNodeField({
 			node,
 			name: 'slug',
-			value: `/blog/${encodeURI(slug)}`,
+			value: `/${isPost ? 'blog' : 'gallery'}/${encodeURI(slug)}`,
 		});
 
 		if (!title) {
@@ -151,7 +201,11 @@ export const onCreateNode = ({node, getNode, actions}) => {
 		createNodeField({node, name: 'title', value: title});
 		createNodeField({node, name: 'date', value: date});
 
-		const uid = idify(`POST_${slug.toUpperCase().replace(/-/g, '_')}`);
+		const uid = idify(
+			`${isPost ? 'POST' : 'GALLERY'}_${slug
+				.toUpperCase()
+				.replace(/-/g, '_')}`,
+		);
 		createNodeField({node, name: 'uid', value: uid});
 	}
 };

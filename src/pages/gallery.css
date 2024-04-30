@@ -1,0 +1,18 @@
+.gallery-list time {
+	font-size: var(--fs--1);
+	font-variant-numeric: tabular-nums;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	padding-right: var(--s-0);
+}
+.gallery-list h1 {
+	display: inline;
+	font: 900 var(--fs-4) var(--ff-heading);
+}
+.gallery-list a {
+	text-decoration: none;
+}
+.gallery-list a:hover h1,
+.gallery-list a:focus h1 {
+	text-decoration: underline;
+}

@@ -3,7 +3,7 @@ import React from 'react';
 
 import SEO from '../components/SEO';
 
-import './Post.css';
+import './Gallery.css';
 
 export function Head({data, ...props}) {
 	return <SEO {...props} title={data.mdx.fields.title} />;
@@ -16,7 +16,7 @@ export default function Template({data, children}) {
 		<main>
 			<div className="page-content">
 				<article
-					className="blog-post-content prose prose-lg"
+					className="gallery-content prose prose-lg"
 					role="article"
 				>
 					<header>
@@ -25,8 +25,7 @@ export default function Template({data, children}) {
 							<time>Posted {fields.date}</time>
 						</div>
 					</header>
-					{/* TODO(riley): Replace this: replace(/↩/g, '↩&#xFE0E;') */}
-					<div className="blog-post-markdown">{children}</div>
+					<div className="gallery-markdown">{children}</div>
 				</article>
 			</div>
 		</main>
@@ -34,7 +33,7 @@ export default function Template({data, children}) {
 }
 
 export const pageQuery = graphql`
-	query PostTemplate($id: String!) {
+	query GalleryTemplate($id: String!) {
 		mdx(id: {eq: $id}) {
 			fields {
 				date(formatString: "MMMM DD, YYYY")

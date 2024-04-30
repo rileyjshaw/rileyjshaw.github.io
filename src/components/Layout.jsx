@@ -108,9 +108,17 @@ const Layout = ({children, location}) => {
 		is404 = false;
 	}
 
-	const isBlogPost = !is404 && pathname.match(/blog\/.*[^0-9/]/);
-	if (!is404 && pathname.startsWith('blog'))
-		pathname = isBlogPost ? 'blog/post' : 'blog';
+	if (!is404) {
+		if (pathname.startsWith('blog')) {
+			pathname = pathname.match(/blog\/.*[^0-9/]/)
+				? 'blog/post'
+				: 'blog';
+		} else if (pathname.startsWith('gallery')) {
+			pathname = pathname.match(/gallery\/.*[^0-9/]/)
+				? 'gallery/post'
+				: 'gallery';
+		}
+	}
 
 	const showPageHeader = is404 || !pathname.startsWith('/curate/');
 

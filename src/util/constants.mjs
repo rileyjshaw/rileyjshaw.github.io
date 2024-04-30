@@ -145,6 +145,8 @@ export const SITE_PAGES = [
 	['', 'index-page', 'Home', 'Riley J. Shaw'],
 	['about', 'about-page', 'About', 'About'],
 	['lab', 'lab-page', 'Lab', 'Lab'],
+	['gallery', 'gallery-page', null, 'Gallery'], // TODO: Make gallery public.
+	['gallery/post', 'gallery-post-page', null, 'Gallery'],
 	['blog', 'blog-page', 'Blog', 'Blog'],
 	['blog/post', 'blog-post-page', null, 'Blog'],
 	['subscribe', 'subscribe-page', 'Subscribe', 'Subscribe'],
