@@ -138,6 +138,7 @@
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 		min-height: 100dvh;
+		text-rendering: optimizelegibility;
 	}
 	h1,
 	h2,
