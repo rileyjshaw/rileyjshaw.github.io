@@ -98,7 +98,8 @@ const Layout = ({children, location}) => {
 	else pathname = pathname.slice(1);
 
 	useEffect(() => {
-		if (search?.includes('hi=tw')) setIsNoteOpen(true);
+		if (search?.includes('hi=tw')) setIsNoteOpen('TW');
+		else if (search?.includes('hi=ws')) setIsNoteOpen('WS');
 	}, [search]);
 
 	let is404;
@@ -144,7 +145,7 @@ const Layout = ({children, location}) => {
 				/>
 			)}
 			<NoteDialog
-				open={isNoteOpen}
+				open={isNoteOpen === 'TW'}
 				onOpenChange={setIsNoteOpen}
 				title="Hello, Tailwind!"
 				Description={props => (
@@ -159,6 +160,20 @@ const Layout = ({children, location}) => {
 							<ExternalLink to="https://tailwind.rileyjshaw.com">
 								I made a mini-site just for you
 							</ExternalLink>
+						</p>
+					</div>
+				)}
+			/>
+			<NoteDialog
+				open={isNoteOpen === 'WS'}
+				onOpenChange={setIsNoteOpen}
+				title="Hello, Watershed!"
+				Description={props => (
+					<div {...props}>
+						<p>
+							I’m so excited about your Full-Stack Engineer role.
+							I can think of no greater challenge, or use of my
+							time, than contributing to Watershed’s 2030 goal 🌱
 						</p>
 					</div>
 				)}
