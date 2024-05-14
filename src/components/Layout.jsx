@@ -98,8 +98,7 @@ const Layout = ({children, location}) => {
 	else pathname = pathname.slice(1);
 
 	useEffect(() => {
-		if (search?.includes('hi=tw')) setIsNoteOpen('TW');
-		else if (search?.includes('hi=ws')) setIsNoteOpen('WS');
+		if (search?.includes('hi=ws')) setIsNoteOpen('WS');
 	}, [search]);
 
 	let is404;
@@ -144,26 +143,6 @@ const Layout = ({children, location}) => {
 					}}
 				/>
 			)}
-			<NoteDialog
-				open={isNoteOpen === 'TW'}
-				onOpenChange={setIsNoteOpen}
-				title="Hello, Tailwind!"
-				Description={props => (
-					<div {...props}>
-						<p>
-							I’m so excited about your Design Engineer role. I
-							use Tailwind every day, and working to improve it
-							for others would be an absolute dream ✨
-						</p>
-						<p>
-							In case you haven’t seen it yet,{' '}
-							<ExternalLink to="https://tailwind.rileyjshaw.com">
-								I made a mini-site just for you
-							</ExternalLink>
-						</p>
-					</div>
-				)}
-			/>
 			<NoteDialog
 				open={isNoteOpen === 'WS'}
 				onOpenChange={setIsNoteOpen}
