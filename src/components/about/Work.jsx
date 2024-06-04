@@ -338,3 +338,19 @@ export function Signal() {
 		</Job>
 	);
 }
+
+export function Watershed() {
+	return (
+		<Job at="Watershed" role="Software Engineer" isCurrent={true}>
+			<p>
+				I’m currently developing reporting tools to help companies
+				understand and reduce their carbon emissions.{' '}
+				<AutoLink to="https://watershed.com/">Watershed’s</AutoLink>{' '}
+				mission is to accelerate the climate economy, and our 2030 goal
+				is to work with our customers to reduce or remove 500
+				megatonnes of CO2 equivalent—approximately 1% of annual global
+				emissions.
+			</p>
+		</Job>
+	);
+}

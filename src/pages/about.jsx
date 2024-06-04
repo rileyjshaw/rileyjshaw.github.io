@@ -18,6 +18,7 @@ import {
 	RepairMatters,
 	SFPC,
 	Signal,
+	Watershed,
 } from '../components/about/Work';
 
 import '../templates/Post.css';
@@ -37,6 +38,7 @@ function AboutPage() {
 					{/* TODO(riley): <UpTo /> */}
 					<h2>Where I’ve been</h2>
 					<ul className="timeline">
+						<Watershed />
 						<Misery />
 						<MischiefMakers />
 						<Mozilla />
