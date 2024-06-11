@@ -26,9 +26,9 @@ function MeIntro() {
 			in repair and craft, I strive to create transparent, remixable
 			digital tools for a sustainable and accessible future. I do my best
 			work on projects that combine high-performance engineering with
-			ambitious design. I’m currently building climate software at{' '}
-			<AutoLink to="https://watershed.com/">Watershed</AutoLink>. I also
-			run a studio called{' '}
+			ambitious design. I build climate software at{' '}
+			<AutoLink to="https://watershed.com/">Watershed</AutoLink> and run
+			a studio called{' '}
 			<AutoLink to="https://misery.co">Misery & Co.</AutoLink>
 		</p>
 	);
