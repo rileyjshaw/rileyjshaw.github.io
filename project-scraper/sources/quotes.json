@@ -756,5 +756,16 @@
 		"content": "A computer is a device for making mistakes really fast",
 		"author": "Anders Hoff (inconvergent)",
 		"cite": "https://inconvergent.net/"
+	},
+	"PROFLIGATE": {
+		"author": "Annie Dillard",
+		"content": "Nature is, above all, profligate. Don’t believe them when they tell you how economical and thrifty nature is, whose leaves return to the soil. Wouldn’t it be cheaper to leave them on the tree in the first place?",
+		"source": "Pilgrim at Tinker Creek",
+		"cite": "https://bookshop.org/p/books/pilgrim-at-tinker-creek-annie-dillard/8922929"
+	},
+	"SIMPLICITY": {
+		"content": "Craving simplicity, finding it nowhere.",
+		"author": "Surma",
+		"cite": "https://surma.dev/"
 	}
 }
