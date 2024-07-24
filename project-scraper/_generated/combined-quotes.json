@@ -238,6 +238,12 @@
 		"uid": "FANTASTIC_WAYS"
 	},
 	{
+		"author": "Anders Hoff (inconvergent)",
+		"cite": "https://inconvergent.net/",
+		"content": "A computer is a device for making mistakes really fast",
+		"uid": "FAST_MISTAKES"
+	},
+	{
 		"author": "Neil Postman",
 		"cite": "https://www.penguinrandomhouse.com/books/132786/the-end-of-education-by-neil-postman/",
 		"content": "Can you imagine schools whose epistemological story does not aim at producing a flotilla of fanatics, but, rather, people who proceed to learn with full consciousness of their own fallibility, as well as the fallibility of others?",
@@ -617,6 +623,13 @@
 		"uid": "PRO_MARKET_STEM"
 	},
 	{
+		"author": "Annie Dillard",
+		"cite": "https://bookshop.org/p/books/pilgrim-at-tinker-creek-annie-dillard/8922929",
+		"content": "Nature is, above all, profligate. Don’t believe them when they tell you how economical and thrifty nature is, whose leaves return to the soil. Wouldn’t it be cheaper to leave them on the tree in the first place?",
+		"source": "Pilgrim at Tinker Creek",
+		"uid": "PROFLIGATE"
+	},
+	{
 		"author": "Alessandro Ludovico",
 		"cite": "https://archive.org/details/LudovicoAlessandroPostDigitalPrint.TheMutationOfPublishingSince1894",
 		"content": "The main concern here is neither commercial success nor the aesthetic purity of the printed experiment, nor even the archiving of works. Rather this kind of publishing is all about fostering and spreading ideas among like-minded people.",
@@ -822,6 +835,12 @@
 		"content": "Private ownership of tools, a basis of freedom when tools are simple, becomes a basis of enslavement when tools are complex.",
 		"source": "I, Governor of California and How I Ended Poverty",
 		"uid": "SIMPLE_TOOLS"
+	},
+	{
+		"author": "Surma",
+		"cite": "https://surma.dev/",
+		"content": "Craving simplicity, finding it nowhere.",
+		"uid": "SIMPLICITY"
 	},
 	{
 		"author": "Clay Shirky",

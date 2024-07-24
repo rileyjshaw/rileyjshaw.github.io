@@ -188,7 +188,15 @@
 		"priority": 0.5
 	},
 	{
+		"path": "/watershed/",
+		"priority": 0
+	},
+	{
 		"path": "/write/",
 		"priority": 0.6
+	},
+	{
+		"path": "/ws-logo/",
+		"priority": 0.1
 	}
 ]
