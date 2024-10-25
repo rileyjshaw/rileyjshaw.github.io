@@ -1,5 +1,5 @@
 <!-- TODO(riley): Re-add favicon images -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -62,7 +62,9 @@
 				margin: 0;
 				padding: 0.2em 0.6em;
 				/*border: 8px solid;*/
-				font: 800 72px Roboto, sans-serif;
+				font:
+					800 72px Roboto,
+					sans-serif;
 				text-align: center;
 				letter-spacing: 6px;
 				/*box-shadow: 5px 10px 12px -4px #bdc5cc;*/
@@ -70,7 +72,9 @@
 			}
 
 			h1 {
-				text-shadow: 1px 2px 6px #fff, 0 0 0 rgba(32, 16, 32, 0.2),
+				text-shadow:
+					1px 2px 6px #fff,
+					0 0 0 rgba(32, 16, 32, 0.2),
 					1px 2px 6px #fff;
 			}
 
@@ -99,7 +103,7 @@
 		</a>
 		<div class="hearts"></div>
 		<script>
-			(function() {
+			(function () {
 				var SECONDS_PER_MINUTE = 60;
 				var SECONDS_PER_HOUR = SECONDS_PER_MINUTE * 60;
 				var SECONDS_PER_DAY = SECONDS_PER_HOUR * 24;
@@ -138,13 +142,13 @@
 				function durationFromSeconds(totalSeconds) {
 					var days = Math.floor(totalSeconds / SECONDS_PER_DAY);
 					var hours = Math.floor(
-						(totalSeconds % SECONDS_PER_DAY) / SECONDS_PER_HOUR
+						(totalSeconds % SECONDS_PER_DAY) / SECONDS_PER_HOUR,
 					);
 					var minutes = Math.floor(
-						(totalSeconds % SECONDS_PER_HOUR) / SECONDS_PER_MINUTE
+						(totalSeconds % SECONDS_PER_HOUR) / SECONDS_PER_MINUTE,
 					);
 					var seconds = Math.floor(
-						totalSeconds % SECONDS_PER_MINUTE
+						totalSeconds % SECONDS_PER_MINUTE,
 					);
 
 					return {days, hours, minutes, seconds};
@@ -155,9 +159,8 @@
 						return ':)';
 					}
 
-					var {days, hours, minutes, seconds} = durationFromSeconds(
-						totalSeconds
-					);
+					var {days, hours, minutes, seconds} =
+						durationFromSeconds(totalSeconds);
 					var paddedMinutes = pad(minutes, 2);
 					var paddedSeconds = pad(seconds, 2);
 
@@ -165,10 +168,10 @@
 						(days
 							? days + ':' + hours + ':' + paddedMinutes + ':'
 							: hours
-							? hours + ':' + paddedMinutes + ':'
-							: minutes
-							? minutes + ':'
-							: '') + paddedSeconds
+								? hours + ':' + paddedMinutes + ':'
+								: minutes
+									? minutes + ':'
+									: '') + paddedSeconds
 					);
 				}
 
@@ -184,7 +187,7 @@
 								duration: 40000,
 								callback: cycle,
 								space: space,
-							}
+							},
 						);
 					};
 				}
@@ -192,7 +195,7 @@
 				cycleGen(b, 0.4, 'HUSL')();
 				cycleGen(c, 0.6, 'HSL')();
 
-				var stepHearts = (function() {
+				var stepHearts = (function () {
 					var container = document.querySelector('.hearts');
 					var hearts = [];
 					var H = window.innerHeight;
@@ -205,7 +208,7 @@
 								0.5 +
 									Math.min(
 										remaining / SECONDS_PER_DAY / 10,
-										0.98
+										0.98,
 									) *
 										0.5
 						) {
@@ -222,7 +225,7 @@
 							hearts.push(heart);
 							container.appendChild(el);
 						}
-						hearts = hearts.filter(function(heart) {
+						hearts = hearts.filter(function (heart) {
 							var x =
 								heart.x +
 								Math.sin(heart.age / 30 + heart.xOffset) * 150;
@@ -241,7 +244,7 @@
 
 				return function timer() {
 					var remaining = Math.floor(
-						(soon - new Date().getTime()) / 1000
+						(soon - new Date().getTime()) / 1000,
 					);
 					stepHearts(Math.max(remaining, 0));
 					var now = formatTimeDisplay(remaining);
