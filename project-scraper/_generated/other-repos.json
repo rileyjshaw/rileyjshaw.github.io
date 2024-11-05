@@ -56,6 +56,10 @@
 		"priority": 0.7
 	},
 	{
+		"path": "/curve-lab/",
+		"priority": 0.4
+	},
+	{
 		"path": "/dmsp/",
 		"priority": 0.1
 	},
@@ -164,6 +168,10 @@
 		"priority": 0.8
 	},
 	{
+		"path": "/tempo-tracker/",
+		"priority": 0.8
+	},
+	{
 		"path": "/terra/",
 		"priority": 0.8
 	},
@@ -189,7 +197,7 @@
 	},
 	{
 		"path": "/watershed/",
-		"priority": 0
+		"priority": 0.2
 	},
 	{
 		"path": "/write/",

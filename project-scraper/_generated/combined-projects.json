@@ -6251,6 +6251,18 @@
 		"uid": "PROJECT_TAPPY_GAME"
 	},
 	{
+		"coolness": 64,
+		"date": "2024-11-05",
+		"descriptionList": [
+			"A simple tap tempo app with drift tracking over time."
+		],
+		"link": "/tempo-tracker/",
+		"timestamp": 1730764800000,
+		"title": "Tempo tracker",
+		"type": "project",
+		"uid": "PROJECT_TEMPO_TRACKER"
+	},
+	{
 		"coolness": 23,
 		"date": "2012-10-23",
 		"descriptionList": [
@@ -6567,7 +6579,7 @@
 		"uid": "PROJECT_TOUCHTONE_MATH_FACTS"
 	},
 	{
-		"coolness": 61,
+		"coolness": 67,
 		"date": "2024-03-20",
 		"link": "https://codepen.io/rileyjshaw/full/ZEZearO",
 		"timestamp": 1710892800000,
