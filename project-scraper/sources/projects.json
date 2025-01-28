@@ -42,6 +42,12 @@
 		"link": "https://github.com/rileyjshaw/shaderpad"
 	},
 	{
+		"title": "trig stacked shaders",
+		"date": "2025-01-23",
+		"coolness": 66,
+		"link": "https://codepen.io/collection/wkaOPQ"
+	},
+	{
 		"title": "Tempo tracker",
 		"description": [
 			"A simple tap tempo app with drift tracking over time."
@@ -49,6 +55,12 @@
 		"date": "2024-11-05",
 		"coolness": 64,
 		"link": "/tempo-tracker/"
+	},
+	{
+		"title": "Spore growth",
+		"date": "2024-04-20",
+		"coolness": 50,
+		"link": "https://codepen.io/rileyjshaw/pen/qBwQyEQ?editors=0010"
 	},
 	{
 		"title": "Two spirals",
