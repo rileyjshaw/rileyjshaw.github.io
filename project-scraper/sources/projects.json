@@ -24,6 +24,24 @@
 		"todo": true
 	},
 	{
+		"title": "Harmonics",
+		"description": [
+			"Caution: sometimes flashes! Generates a new randomized shader composed of stacked trigonometric functions on each page refresh."
+		],
+		"date": "2025-01-24",
+		"coolness": 73,
+		"link": "/harmonics"
+	},
+	{
+		"title": "ShaderPad",
+		"description": [
+			"A lightweight, dependency-free library to reduce boilerplate when writing fragment shaders."
+		],
+		"date": "2025-01-23",
+		"coolness": 78,
+		"link": "https://github.com/rileyjshaw/shaderpad"
+	},
+	{
 		"title": "Tempo tracker",
 		"description": [
 			"A simple tap tempo app with drift tracking over time."
