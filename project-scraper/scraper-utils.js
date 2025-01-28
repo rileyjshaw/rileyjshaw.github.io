@@ -62,7 +62,12 @@ const processSong = deleteKeys([
 	'user',
 	'track_authorization',
 ]);
-const processTumblrPost = deleteKeys(['blog']);
+
+function processTumblrPosts(posts) {
+	return posts
+		.filter(post => post.state !== 'private')
+		.map(post => deleteKeys(['blog'])(post));
+}
 
 export const idify = uid =>
 	uid
@@ -294,7 +299,7 @@ function getSFPCTumblr() {
 				if (allPosts.length < total_posts) {
 					return getPage({offset: allPosts.length});
 				} else {
-					allPosts.forEach(processTumblrPost);
+					allPosts = processTumblrPosts(allPosts);
 					raw.sfpcTumblr = allPosts;
 					allPosts.forEach(post => {
 						const uid = idify(`SFPC_TUMBLR_${post.id}`);
@@ -379,7 +384,7 @@ function getScreenshotsTumblr() {
 				if (allPosts.length < total_posts) {
 					return getPage({offset: allPosts.length});
 				} else {
-					allPosts.forEach(processTumblrPost);
+					allPosts = processTumblrPosts(allPosts);
 					raw.screenshotsTumblr = allPosts;
 					allPosts.forEach(post => {
 						const uid = idify(`SCREENSHOTS_TUMBLR_${post.id}`);

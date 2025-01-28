@@ -32,7 +32,7 @@
 		"title": "hw",
 		"type": "arenaChannel",
 		"uid": "ARENA_HW_U1LMOISDNYU",
-		"updatedAt": "2023-06-08"
+		"updatedAt": "2025-01-13"
 	},
 	{
 		"body": "<p>Makes page loads snappier, and lets folks opt into Google’s tracking empire</p>",
@@ -3844,6 +3844,18 @@
 		"uid": "PROJECT_HACKERS_COOL"
 	},
 	{
+		"coolness": 73,
+		"date": "2025-01-24",
+		"descriptionList": [
+			"Caution: sometimes flashes! Generates a new randomized shader composed of stacked trigonometric functions on each page refresh."
+		],
+		"link": "/harmonics",
+		"timestamp": 1737676800000,
+		"title": "Harmonics",
+		"type": "project",
+		"uid": "PROJECT_HARMONICS"
+	},
+	{
 		"coolness": 39,
 		"date": "2016-05-04",
 		"descriptionList": [
@@ -5508,6 +5520,18 @@
 		"title": "Servo",
 		"type": "project",
 		"uid": "PROJECT_SERVO"
+	},
+	{
+		"coolness": 78,
+		"date": "2025-01-23",
+		"descriptionList": [
+			"A lightweight, dependency-free library to reduce boilerplate when writing fragment shaders."
+		],
+		"link": "https://github.com/rileyjshaw/shaderpad",
+		"timestamp": 1737590400000,
+		"title": "ShaderPad",
+		"type": "project",
+		"uid": "PROJECT_SHADERPAD"
 	},
 	{
 		"coolness": 22,
@@ -8113,86 +8137,6 @@
 		"uid": "SCREENSHOTS_TUMBLR_673613013882929152"
 	},
 	{
-		"body": "https://64.media.tumblr.com/c4596f0736cf42e4268c6b78edda3aa9/cc0ca28776ae3396-c7/s1280x1920/1275171e0ff51808301d39b28d52a72e015444f0.png",
-		"contentType": "photo",
-		"coolness": 3,
-		"date": "2022-02-02",
-		"extraData": [
-			1024,
-			746,
-			10
-		],
-		"link": "https://screenshots.rileyjshaw.com/post/675112835087499264",
-		"timestamp": 1643760000000,
-		"title": "2022-02-02 at 16.36.11.png",
-		"type": "screenshotsTumblr",
-		"uid": "SCREENSHOTS_TUMBLR_675112835087499264"
-	},
-	{
-		"body": "https://64.media.tumblr.com/2046e768d3b05bdc0cdcc75fe127a3ce/fc88a92ded337664-b5/s1280x1920/e3243d55b61595ed59ff8eff4116894318695ba3.png",
-		"contentType": "photo",
-		"coolness": 3,
-		"date": "2022-02-02",
-		"extraData": [
-			1024,
-			746,
-			10
-		],
-		"link": "https://screenshots.rileyjshaw.com/post/675113121046822912",
-		"timestamp": 1643760000000,
-		"title": "2022-02-02 at 16.40.44.png",
-		"type": "screenshotsTumblr",
-		"uid": "SCREENSHOTS_TUMBLR_675113121046822912"
-	},
-	{
-		"body": "https://64.media.tumblr.com/e9597d7eb8af5ec06c1fe61019759546/7f81fbe188fdb707-e3/s1280x1920/13c8a86d1389a4b65698ef5b2f5b07712420f8ff.png",
-		"contentType": "photo",
-		"coolness": 3,
-		"date": "2022-02-03",
-		"extraData": [
-			1024,
-			746,
-			7
-		],
-		"link": "https://screenshots.rileyjshaw.com/post/675192537579978752",
-		"timestamp": 1643846400000,
-		"title": "2022-02-03 at 13.43.01.png",
-		"type": "screenshotsTumblr",
-		"uid": "SCREENSHOTS_TUMBLR_675192537579978752"
-	},
-	{
-		"body": "https://64.media.tumblr.com/e65281bfa02358db9b3a43e000f78654/714d2ed70d8905ca-5e/s1280x1920/cfd9425cdf116a24dc4d240151d512dc4c95f087.png",
-		"contentType": "photo",
-		"coolness": 3,
-		"date": "2022-02-03",
-		"extraData": [
-			1024,
-			746,
-			8
-		],
-		"link": "https://screenshots.rileyjshaw.com/post/675196394530848768",
-		"timestamp": 1643846400000,
-		"title": "2022-02-03 at 14.44.19.png",
-		"type": "screenshotsTumblr",
-		"uid": "SCREENSHOTS_TUMBLR_675196394530848768"
-	},
-	{
-		"body": "https://64.media.tumblr.com/55d8a2788956dfa705e712efefbfc881/3f2cbebf58dba643-10/s1280x1920/75265396c50c1ca331614270f9005f38991ea9c3.png",
-		"contentType": "photo",
-		"coolness": 3,
-		"date": "2022-02-07",
-		"extraData": [
-			1024,
-			746,
-			1
-		],
-		"link": "https://screenshots.rileyjshaw.com/post/675555731299319809",
-		"timestamp": 1644192000000,
-		"title": "2022-02-07 at 13.55.50.png",
-		"type": "screenshotsTumblr",
-		"uid": "SCREENSHOTS_TUMBLR_675555731299319809"
-	},
-	{
 		"body": "https://64.media.tumblr.com/0531ba7bb04f0e0238d90b3f019c8ba0/0b0a190028cd6232-c0/s1280x1920/f256fc24d86fcbdc91f997b58ac78c812d01cafb.png",
 		"contentType": "photo",
 		"coolness": 3,
@@ -8446,6 +8390,70 @@
 		"title": "2024-04-21 at 14.25.47.png",
 		"type": "screenshotsTumblr",
 		"uid": "SCREENSHOTS_TUMBLR_748393802476158976"
+	},
+	{
+		"body": "https://64.media.tumblr.com/57f7109b63874eed43fea830e7fd5360/cebf9106ebe34a8b-3a/s640x960/24868bc9338bc1097a6ce7472f9a81b877c0f76e.png",
+		"contentType": "photo",
+		"coolness": 3,
+		"date": "2024-11-29",
+		"extraData": [
+			2000,
+			2000,
+			1
+		],
+		"link": "https://screenshots.rileyjshaw.com/post/768524682042490880",
+		"timestamp": 1732838400000,
+		"title": "2024-11-29 at 18.17.30.png",
+		"type": "screenshotsTumblr",
+		"uid": "SCREENSHOTS_TUMBLR_768524682042490880"
+	},
+	{
+		"body": "https://64.media.tumblr.com/ebc5d1a35151f124f9d49cf80622964b/ae44f1419f68e849-99/s640x960/f5effe7ecd2b39343c4e1235ebbd6ccd9373fafc.png",
+		"contentType": "photo",
+		"coolness": 3,
+		"date": "2024-12-03",
+		"extraData": [
+			1512,
+			2016,
+			1
+		],
+		"link": "https://screenshots.rileyjshaw.com/post/768816855703076864",
+		"timestamp": 1733184000000,
+		"title": "2024-12-02 at 23.41.29.png",
+		"type": "screenshotsTumblr",
+		"uid": "SCREENSHOTS_TUMBLR_768816855703076864"
+	},
+	{
+		"body": "https://64.media.tumblr.com/6917c3f318d870598f7b8de67f07384a/ec241d3ff892d63f-f0/s640x960/ba1992b3ffa8b2c2c8e66df8f17dbe8487019ec5.png",
+		"contentType": "photo",
+		"coolness": 3,
+		"date": "2024-12-06",
+		"extraData": [
+			3199,
+			2399,
+			1
+		],
+		"link": "https://screenshots.rileyjshaw.com/post/769117662804672512",
+		"timestamp": 1733443200000,
+		"title": "2024-12-06 at 07.22.41.png",
+		"type": "screenshotsTumblr",
+		"uid": "SCREENSHOTS_TUMBLR_769117662804672512"
+	},
+	{
+		"body": "https://64.media.tumblr.com/78923df681d800f7f0715acf654b9728/546a6c1ae3c26901-e4/s640x960/469780e8e9ae0e55cb8fc53c48f254d032b6b966.png",
+		"contentType": "photo",
+		"coolness": 3,
+		"date": "2025-01-24",
+		"extraData": [
+			3456,
+			1992,
+			1
+		],
+		"link": "https://screenshots.rileyjshaw.com/post/773530166457663489",
+		"timestamp": 1737676800000,
+		"title": "2025-01-24 at 00.17.32.png",
+		"type": "screenshotsTumblr",
+		"uid": "SCREENSHOTS_TUMBLR_773530166457663489"
 	},
 	{
 		"body": "<p>it was silly to write all of this down but i  created this blog today and i’m still editing the layout, so i want more words to work with.<br/></p><hr><p>create a few distinct sounds, for example:</p><ul><li>cup/table tap</li><li>cup/table scrape</li><li>ball/table tap</li><li>ball/table scrape</li><li>cup/ball tap</li></ul><p>these examples are unambiguous and easy to perform rapidly by someone keeping the cup in one hand &amp; ball in the other. i&rsquo;ll refer to each performed sound as a &ldquo;bit&rdquo; from here on out.</p><p>for n bits, you have (number of sounds)^n options. with the examples above that&rsquo;s 5^n, which is plenty.</p><p>so what&rsquo;s important to convey?</p><p>the shapes are curvy and strange, so it&rsquo;s easier to share a limited reference table of basic + advanced shapes instead of deriving each part of the bear from scratch. three bits could cover 125 shapes, which is  ample for bear and bear-like drawings.</p><p>shapes are more reusable if they can be drawn at different sizes. let&rsquo;s use one bit to indicate size:</p><p>0: smallest<br/>1: smaller<br/>2: as shown on reference table<br/>3: larger<br/>4: largest</p><p>we&rsquo;re trying to convey a cohesive bear, so the relative position between shapes is more important than their absolute position on the page. two bits can express position in relation to the last shape drawn, for example:</p><p>0: draw in any open space<br/>1: draw connected to the north-most edge of the previous shape<br/>2: draw connected to the northeast-most edge of the previous shape<br/>3: draw connected to the east-most edge of the previous shape<br/>4: draw connected to the southeast-most edge of the previous shape<br/>5: draw connected to the south-most edge of the previous shape<br/>&hellip;<br/>9: continue from shape&rsquo;s final pen position<br/>10: continue from shape&rsquo;s initial pen position<br/>&hellip;<br/>15: draw within the previous shape<br/>16: draw surrounding the previous shape<br/>&hellip;<br/>etc.</p><p>since pen position is a factor, the shape reference table should imply direction.</p><p>to save time, a bit could be added to indicate how many shapes should be drawn at the specified position. for example, there are four toes in each bear foot.</p><hr><p>when ordering the bits, it makes sense to think of what information is most useful to the receiver at each step. my intuition is that this is a good order:</p><p>•• position<br/>• number<br/>• size<br/>••• shape</p><p>so each shape takes seven sounds from the sender.</p><hr><p>update: i ran this by phil; they made the point that since there&rsquo;s no acknowledgment channel from the receiver, redundancy would help reduce errors. let&rsquo;s add a bit at the beginning to indicate whether this is the initial message or a confirmation message. the following 7 bits will then be identical.</p><hr><p>update 2: in the above system, a single missed bit would be catastrophic; it would corrupt the receiver&rsquo;s understanding of all future communication. the (initial | confirmation) sound should be unique so it always marks the start of a new shape. dragging the (cup | ball) in a double circle works.</p>",
@@ -8732,7 +8740,7 @@
 		"uid": "SONG_954986224"
 	},
 	{
-		"body": "<iframe src=\"https://player.vimeo.com/video/377116426?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=198113\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write\" title=\"timestamped\"></iframe>",
+		"body": "<iframe src=\"https://player.vimeo.com/video/377116426?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=198113\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media\" title=\"timestamped\"></iframe>",
 		"contentType": "vimeo",
 		"date": "2019-12-03",
 		"description": "This video played behind me during my Winter 2018 School for Poetic Computation intro. The following is a transcript of my talk:",

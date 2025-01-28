@@ -88,6 +88,10 @@
 		"priority": 0.5
 	},
 	{
+		"path": "/harmonics/",
+		"priority": 0.7
+	},
+	{
 		"path": "/life/",
 		"priority": 0.2
 	},
