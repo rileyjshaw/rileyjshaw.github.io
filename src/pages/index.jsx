@@ -194,23 +194,39 @@ const IndexPage = ({featuredProjects = []}) => {
 								</li>
 							</ul>
 						</li>
-						<li className="project">
-							<GalleryImage
-								ThumbnailImage={
-									<StaticImage
-										src="../../content/images/projects/quantized.jpg"
-										alt="An abstract image. It’s shiny, grainy, lo-fi, and looks a bit 3D."
-										width={600}
+						<li>
+							<ul className="bento-half-y">
+								<li className="project">
+									<ExternalLink
+										to="/harmonics"
+										className="image-link"
+									>
+										<StaticImage
+											src="../../content/images/projects/harmonics.png"
+											alt="A technicolour abstract image. It looks like a vibrant oil spill."
+											width={600}
+										/>
+									</ExternalLink>
+								</li>
+								<li className="project">
+									<GalleryImage
+										ThumbnailImage={
+											<StaticImage
+												src="../../content/images/projects/quantized.jpg"
+												alt="An abstract image. It’s shiny, grainy, lo-fi, and looks a bit 3D."
+												width={600}
+											/>
+										}
+										FullImage={
+											<StaticImage
+												src="../../content/images/projects/quantized.jpg"
+												alt="An abstract image. It’s shiny, grainy, lo-fi, and looks a bit 3D."
+											/>
+										}
+										aspectRatio={1}
 									/>
-								}
-								FullImage={
-									<StaticImage
-										src="../../content/images/projects/quantized.jpg"
-										alt="An abstract image. It’s shiny, grainy, lo-fi, and looks a bit 3D."
-									/>
-								}
-								aspectRatio={1}
-							/>
+								</li>
+							</ul>
 						</li>
 						<li className="project">
 							<ExternalLink
