@@ -5915,6 +5915,15 @@
 		"uid": "PROJECT_SPOKES18_ETC"
 	},
 	{
+		"coolness": 50,
+		"date": "2024-04-20",
+		"link": "https://codepen.io/rileyjshaw/pen/qBwQyEQ?editors=0010",
+		"timestamp": 1713571200000,
+		"title": "Spore growth",
+		"type": "project",
+		"uid": "PROJECT_SPORE_GROWTH"
+	},
+	{
 		"coolness": 64,
 		"date": "2016-06-01",
 		"descriptionList": [
@@ -6601,6 +6610,15 @@
 		"title": "Touchtone math facts",
 		"type": "project",
 		"uid": "PROJECT_TOUCHTONE_MATH_FACTS"
+	},
+	{
+		"coolness": 66,
+		"date": "2025-01-23",
+		"link": "https://codepen.io/collection/wkaOPQ",
+		"timestamp": 1737590400000,
+		"title": "trig stacked shaders",
+		"type": "project",
+		"uid": "PROJECT_TRIG_STACKED_SHADERS"
 	},
 	{
 		"coolness": 67,
