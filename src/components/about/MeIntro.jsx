@@ -17,6 +17,7 @@ const thirdThings = [
 	'fixer',
 	'remixer',
 	'drummer',
+	'technomancer',
 ];
 
 function MeIntro() {
