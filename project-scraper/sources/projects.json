@@ -24,6 +24,13 @@
 		"todo": true
 	},
 	{
+		"title": "Egg calendar",
+		"description": ["A calendar that looks like eggs"],
+		"date": "2025-03-12",
+		"coolness": 60,
+		"link": "/egg-calendar/"
+	},
+	{
 		"title": "Harmonics",
 		"description": [
 			"Caution: sometimes flashes! Generates a new randomized shader composed of stacked trigonometric functions on each page refresh."
