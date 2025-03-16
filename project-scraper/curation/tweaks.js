@@ -101,6 +101,11 @@ const typeTransformers = {
 	project: [
 		n => {
 			if (n.descriptionList) {
+				if (typeof n.descriptionList === 'string') {
+					console.error(
+						`Project “${n.title}” has a string description. It should be an array.`,
+					);
+				}
 				n.descriptionList = n.descriptionList.map(fixLinks);
 			}
 		},
