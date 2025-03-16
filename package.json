@@ -32,7 +32,7 @@
     "react-use": "^17.6.0",
     "refractor": "^4.9.0",
     "remark-gfm": "^3.0.1",
-    "tone": "^14.9.17"
+    "tone": "^15.0.4"
   },
   "devDependencies": {
     "@babel/core": "^7.26.10",

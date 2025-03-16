@@ -1,6 +1,12 @@
 import React, {useEffect, useState} from 'react';
 
-import * as Tone from 'tone';
+import {
+	gainToDb,
+	getDestination,
+	getTransport,
+	start as startTone,
+	Player,
+} from 'tone';
 
 import './ScalingFadersDemo.css';
 
@@ -18,6 +24,9 @@ const nTracks = loops.length;
 
 const add = (a, b) => a + b;
 const bound = (n, lo, hi) => Math.max(lo, Math.min(hi, n)) || lo;
+
+const Transport = getTransport();
+const Destination = getDestination();
 
 const Fader = ({onChange, value}) => (
 	<div className="scaling-fader-container">
@@ -100,13 +109,13 @@ const Demo = ({players}) => {
 	// Update track volume.
 	useEffect(() => {
 		linkedFaders.tracks.forEach((volume, i) => {
-			players[i].volume.value = Tone.gainToDb(volume);
+			players[i].volume.value = gainToDb(volume);
 		});
 	}, linkedFaders.tracks);
 
 	// Update master gain.
 	useEffect(() => {
-		Tone.Destination.volume.value = Tone.gainToDb(gain);
+		Destination.volume.value = gainToDb(gain);
 	}, [gain]);
 
 	return started ? (
@@ -145,8 +154,8 @@ const Demo = ({players}) => {
 			className="scaling-fader-button"
 			onClick={() => {
 				setStarted(true);
-				Tone.start();
-				Tone.Transport.start();
+				startTone();
+				Transport.start();
 			}}
 		>
 			Start demo
@@ -162,11 +171,10 @@ export default () => {
 		const playerPromises = loops.map(
 			({file, initialVolume}) =>
 				new Promise(resolve => {
-					const player = new Tone.Player(
-						`/mp3/loops/${file}.mp3`,
-						() => resolve(player),
+					const player = new Player(`/mp3/loops/${file}.mp3`, () =>
+						resolve(player),
 					).toDestination();
-					player.volume.value = Tone.gainToDb(initialVolume);
+					player.volume.value = gainToDb(initialVolume);
 				}),
 		);
 		Promise.all(playerPromises).then(players => {
@@ -175,10 +183,10 @@ export default () => {
 				player.sync();
 				player.start();
 			});
-			Tone.Transport.bpm.value = 100;
-			Tone.Transport.loop = true;
-			Tone.Transport.loopStart = 0;
-			Tone.Transport.loopEnd = '8:0:0';
+			Transport.bpm.value = 100;
+			Transport.loop = true;
+			Transport.loopStart = 0;
+			Transport.loopEnd = '8:0:0';
 			setPlayers(players);
 		});
 		return () => {
