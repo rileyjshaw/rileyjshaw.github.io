@@ -15,6 +15,8 @@
 	"compare-images": 0.7,
 	"curve-lab": 0.4,
 	"do-it": 0.2,
+	"dmsp": 0.5,
+	"egg-calendar": 0.5,
 	"face": 0.6,
 	"fastdraw": 0.1,
 	"fitter-happier-text": 0.1,
@@ -49,5 +51,6 @@
 	"visited-vectors": 0.5,
 	"watercolor": 0.5,
 	"watershed": 0.2,
-	"write": 0.6
+	"write": 0.6,
+	"ws-logo": 0.1
 }

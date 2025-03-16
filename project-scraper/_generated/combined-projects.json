@@ -3076,6 +3076,18 @@
 		"uid": "PROJECT_EASY_INBOX_ZERO"
 	},
 	{
+		"coolness": 60,
+		"date": "2025-03-12",
+		"descriptionList": [
+			"A calendar that looks like eggs"
+		],
+		"link": "/egg-calendar/",
+		"timestamp": 1741737600000,
+		"title": "Egg calendar",
+		"type": "project",
+		"uid": "PROJECT_EGG_CALENDAR"
+	},
+	{
 		"coolness": 30,
 		"date": "2014-09-14",
 		"descriptionList": [
@@ -7574,7 +7586,7 @@
 			624,
 			4
 		],
-		"link": "https://screenshots.rileyjshaw.com/post/629378686096982016/perfect-tiling",
+		"link": "https://screenshots.rileyjshaw.com/post/629378686096982016/perfect-tiling-width-15-seq",
 		"timestamp": 1600214400000,
 		"title": "2020-09-15 at 22.11.28.png",
 		"type": "screenshotsTumblr",
@@ -8474,6 +8486,22 @@
 		"uid": "SCREENSHOTS_TUMBLR_773530166457663489"
 	},
 	{
+		"body": "https://64.media.tumblr.com/7cd2a44e91badf4b5bce25ab6b66f6a9/4e98a65023e1edda-f9/s640x960/fa85d86e1faee6c90e5fc7c889a164b1fe55717d.png",
+		"contentType": "photo",
+		"coolness": 3,
+		"date": "2025-02-22",
+		"extraData": [
+			3452,
+			1992,
+			1
+		],
+		"link": "https://screenshots.rileyjshaw.com/post/776195362294759424",
+		"timestamp": 1740182400000,
+		"title": "2025-02-22 at 10.19.41.png",
+		"type": "screenshotsTumblr",
+		"uid": "SCREENSHOTS_TUMBLR_776195362294759424"
+	},
+	{
 		"body": "<p>it was silly to write all of this down but i  created this blog today and i’m still editing the layout, so i want more words to work with.<br/></p><hr><p>create a few distinct sounds, for example:</p><ul><li>cup/table tap</li><li>cup/table scrape</li><li>ball/table tap</li><li>ball/table scrape</li><li>cup/ball tap</li></ul><p>these examples are unambiguous and easy to perform rapidly by someone keeping the cup in one hand &amp; ball in the other. i&rsquo;ll refer to each performed sound as a &ldquo;bit&rdquo; from here on out.</p><p>for n bits, you have (number of sounds)^n options. with the examples above that&rsquo;s 5^n, which is plenty.</p><p>so what&rsquo;s important to convey?</p><p>the shapes are curvy and strange, so it&rsquo;s easier to share a limited reference table of basic + advanced shapes instead of deriving each part of the bear from scratch. three bits could cover 125 shapes, which is  ample for bear and bear-like drawings.</p><p>shapes are more reusable if they can be drawn at different sizes. let&rsquo;s use one bit to indicate size:</p><p>0: smallest<br/>1: smaller<br/>2: as shown on reference table<br/>3: larger<br/>4: largest</p><p>we&rsquo;re trying to convey a cohesive bear, so the relative position between shapes is more important than their absolute position on the page. two bits can express position in relation to the last shape drawn, for example:</p><p>0: draw in any open space<br/>1: draw connected to the north-most edge of the previous shape<br/>2: draw connected to the northeast-most edge of the previous shape<br/>3: draw connected to the east-most edge of the previous shape<br/>4: draw connected to the southeast-most edge of the previous shape<br/>5: draw connected to the south-most edge of the previous shape<br/>&hellip;<br/>9: continue from shape&rsquo;s final pen position<br/>10: continue from shape&rsquo;s initial pen position<br/>&hellip;<br/>15: draw within the previous shape<br/>16: draw surrounding the previous shape<br/>&hellip;<br/>etc.</p><p>since pen position is a factor, the shape reference table should imply direction.</p><p>to save time, a bit could be added to indicate how many shapes should be drawn at the specified position. for example, there are four toes in each bear foot.</p><hr><p>when ordering the bits, it makes sense to think of what information is most useful to the receiver at each step. my intuition is that this is a good order:</p><p>•• position<br/>• number<br/>• size<br/>••• shape</p><p>so each shape takes seven sounds from the sender.</p><hr><p>update: i ran this by phil; they made the point that since there&rsquo;s no acknowledgment channel from the receiver, redundancy would help reduce errors. let&rsquo;s add a bit at the beginning to indicate whether this is the initial message or a confirmation message. the following 7 bits will then be identical.</p><hr><p>update 2: in the above system, a single missed bit would be catastrophic; it would corrupt the receiver&rsquo;s understanding of all future communication. the (initial | confirmation) sound should be unique so it always marks the start of a new shape. dragging the (cup | ball) in a double circle works.</p>",
 		"contentType": "text",
 		"date": "2018-02-21",
@@ -8764,7 +8792,7 @@
 		"description": "This video played behind me during my Winter 2018 School for Poetic Computation intro. The following is a transcript of my talk:",
 		"image": {
 			"height": 1080,
-			"url": "https://i.vimeocdn.com/video/836440996-b03c76d6f9e8cbb016001bcc4bf3e72d3322cd2565c7e179fb8283009a4861ee-d_1920x1080?r=pad",
+			"url": "https://i.vimeocdn.com/video/836440996-b03c76d6f9e8cbb016001bcc4bf3e72d3322cd2565c7e179fb8283009a4861ee-d_1920x1080?&r=pad",
 			"width": 1920
 		},
 		"link": "https://vimeo.com/377116426",

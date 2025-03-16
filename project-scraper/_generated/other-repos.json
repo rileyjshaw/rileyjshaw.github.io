@@ -68,6 +68,10 @@
 		"priority": 0.2
 	},
 	{
+		"path": "/egg-calendar/",
+		"priority": 0.4
+	},
+	{
 		"path": "/face/",
 		"priority": 0.6
 	},
