@@ -8,8 +8,8 @@ code[class*='language-'],
 pre[class*='language-'] {
 	background: none;
 	color: #f8f8f2;
-	font-family: 'Fira Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono',
-		monospace;
+	font-family:
+		'Fira Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	hyphens: none;
 	line-height: 1.5;
 	tab-size: 4;

@@ -30,11 +30,11 @@ directory. It’s just a few JS files!
 Gatsby stores requests made through its source plugins in the `.cache`
 directory by default. The `.cache` directory is deleted after:
 
--   `gatsby clean` is called.
--   `package.json` changes, for example a dependency is updated or added.
--   `gatsby-config.js` changes, for example a plugin is added or modified.
--   `gatsby-node.js` changes, for example if a new Node API is invoked.
--   …etc.
+- `gatsby clean` is called.
+- `package.json` changes, for example a dependency is updated or added.
+- `gatsby-config.js` changes, for example a plugin is added or modified.
+- `gatsby-node.js` changes, for example if a new Node API is invoked.
+- …etc.
 
 I found I was frequently triggering `.cache` wipes during development. At best
 this meant I was pinging APIs and atom feeds more than necessary. At worst, it

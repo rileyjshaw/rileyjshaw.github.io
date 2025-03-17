@@ -123,11 +123,19 @@ So take this post as an organizational diff. If something seems healthy, merge i
 I’ve personally had a wonderful time getting to know the KA team, and am still as unbelievably excited to be here as I was on day one.
 
 [^1]: For reference, this isn’t the first time that Andy has [gone over the top](http://bjk5.com/post/92617394126/going-over-the-top).
+
 [^2]: My heels were injured at the time but the walk seemed important so I didn’t mention it.
+
 [^3]: Eventually I discovered that sitting was also an option and that I didn’t have to damage my body to talk to people.
+
 [^4]: …without breaking everything.
+
 [^5]: Of course, you can also delegate it to support if it’s a doozy.
+
 [^6]: We also send a small group out to Castro Street every Friday on opt-in lunch dates. This is far less common as far as I’m aware.
+
 [^7]: This post is almost two years old. Since then we’ve released a [full mobile app](https://itunes.apple.com/us/app/khan-academy-learn-math-biology/id469863705?mt=8) and quintupled our [computer programming content](https://www.khanacademy.org/computing/computer-programming)! Looks like this “shipping” thing is working out pretty well.
+
 [^8]: Our webapp actually used to be [completely open](https://code.google.com/p/khanacademy/source/browse/trunk/?r=2)!
+
 [^9]: For example, our first commit using [React](https://facebook.github.io/react/) landed one week after the first public commit of React itself.

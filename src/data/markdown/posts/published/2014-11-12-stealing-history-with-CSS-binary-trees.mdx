@@ -100,14 +100,22 @@ And if you made it this far, just [play the damn game already][demo]!
 [demo]: /visited-vectors/reaction/
 
 [^1]: A noble effort, but it’s difficult to plug all the [holes](http://arstechnica.com/security/2014/06/theyre-ba-ack-browser-sniffing-ghosts-return-to-haunt-chrome-ie-firefox/).
+
 [^2]: True under the assumption that the dataset is sparsely populated with <code className="language-css">:visited</code> links. If there is a high percentage of <code className="language-css">:visited</code> links in the set you’re actually better off with the linear algorithm. Good news: counting on a sparse dataset is a very safe bet.
+
 [^3]: I settled on n = 16 unique links per stack. Adding more links gives a performance hit, as it’s not easy for the browser to composite that many layers (each unique link requires 256 elements). 16 seems to be a sweet-spot.
+
 [^4]: We can win the same O(logn) complexity with a small optimization: if spacebar is hit on level n and then _not_ on the left branch of level n + 1, we can immediately skip to level n + 2 since we know that our result is on the right side. This works because we only need to check for existence.
+
 [^5]: Average human reaction time is just over 250ms, so we can safely budget 1s per frame-change.
+
 [^6]:
     <code className="language-javascript">getComputedStyle</code> could process [200k-3.4M URLs/min][getcomputedstyle benchmark]. Our test is lucky to get 800 URLs/min.
 
 [^7]: Some history-sniffing attacks focus on entirely different vectors; a common example is to [request external resources and time the response][fast and somewhat reliable cache timing], probabilistically determining whether the result was cached. All current approaches that I’ve found (including the ones discussed above) are timing attacks.
+
 [^8]: I created a quick demo [here](https://gist.github.com/rileyjshaw/abc13bd2d456669c7d5c) to inspect painting times in DevTools.
+
 [^9]: The coolest part of this paper is the second half; they implement OCR for cross-origin iframes using SVG filters. If you enjoyed my article at all (I assume you did since you made it this far) I _highly_ recommend giving [Pixel perfect timing attacks with HTML5][] a read. It’s at least 2 orders of magnitude cooler than my article.
+
 [^10]: …but just wait until you see the next one.

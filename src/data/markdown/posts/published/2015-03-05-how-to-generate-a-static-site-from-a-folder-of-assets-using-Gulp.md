@@ -156,12 +156,17 @@ There are still some goodies that we can throw into our task runner[^6], but I�
 
 ## References
 
--   <a href="https://github.com/rileyjshaw/nature-of-code/" rel="noopener noreferrer" target="_blank">GitHub repository</a>
--   <a href="http://rileyjshaw.com/nature-of-code/" rel="noopener noreferrer" target="_blank">Live demo</a>
+- <a href="https://github.com/rileyjshaw/nature-of-code/" rel="noopener noreferrer" target="_blank">GitHub repository</a>
+- <a href="http://rileyjshaw.com/nature-of-code/" rel="noopener noreferrer" target="_blank">Live demo</a>
 
 [^1]: If you’re looking to make something more complicated than simple linked pages, <a href="https://www.staticgen.com/" rel="noopener noreferrer" target="_blank">go here</a>.
+
 [^2]: Doing this felt yucky initially, but I came to really like having a strict naming convention. Opening the demos directory and having your app’s structure immediately apparent is very handy.
+
 [^3]: One of my biggest concerns with this: once i’d written demos `1.5`, `1.6`, and `1.7`, how could I add anything between `1.5` and `1.6` without renaming a whole cascade of files? This turned out to not be a concern. Since we’re just using the numbers for sorting in Gulp, `1.51` is perfectly valid for an input. We can name the output `1.6` and shift the rest accordingly.
+
 [^4]: There are about as many ways to get a list of filenames in Node as there are Node modules. Glob is a simple option, but anything will do.
+
 [^5]: Likewise, there is no magical reason to use jade over anything else so feel free to use your preferred templating language. I chose jade mainly because it was already installed on my computer and I had no internet connection.
+
 [^6]: Most importantly, <a href="https://github.com/rileyjshaw/nature-of-code/blob/0d70ea473eca2267d5c8413c3a7f2bd8e79b806b/gulpfile.js#L87" rel="noopener noreferrer" target="_blank">transferring static assets into the `dist` folder</a> and <a href="https://github.com/rileyjshaw/nature-of-code/blob/0d70ea473eca2267d5c8413c3a7f2bd8e79b806b/gulpfile.js#L98" rel="noopener noreferrer" target="_blank">watching files for changes</a>.
