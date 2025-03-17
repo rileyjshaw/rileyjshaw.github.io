@@ -2,9 +2,9 @@ import React from 'react';
 
 import {MDXProvider} from '@mdx-js/react';
 import {Prism} from 'prism-react-renderer';
-import bashLang from 'refractor/lang/bash';
-import lispLang from 'refractor/lang/lisp';
-import pythonLang from 'refractor/lang/python';
+import bashLang from 'refractor/bash';
+import lispLang from 'refractor/lisp';
+import pythonLang from 'refractor/python';
 
 import AutoLink from './src/components/AutoLink';
 import CodeBlock from './src/components/CodeBlock';
