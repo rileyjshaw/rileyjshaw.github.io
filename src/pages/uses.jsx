@@ -327,6 +327,23 @@ function UsesPage() {
 						{/* Ride symbol */}
 					</ul>
 
+					<h2>Photography</h2>
+					<ul>
+						<li>
+							<div className="uses-item">
+								<div className="uses-text">
+									<ExternalLink to="https://en.wikipedia.org/wiki/Olympus_OM-1">
+										Olympus OM-1 (1973)
+									</ExternalLink>
+								</div>
+								<div className="uses-icons">
+									<Repair />
+									<Star />
+								</div>
+							</div>
+						</li>
+					</ul>
+
 					<h2>Games</h2>
 					<ul>
 						<li>
