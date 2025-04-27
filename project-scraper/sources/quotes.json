@@ -767,5 +767,23 @@
 		"content": "Craving simplicity, finding it nowhere.",
 		"author": "Surma",
 		"cite": "https://surma.dev/"
+	},
+	"APPROACHING": {
+		"content": "When the artist approaches science and the machine, will the machine perhaps approach the complexity and surprise which we associate with the human artist?",
+		"author": "J.R. Pierce",
+		"source": "Portrait of the Machine as a Young Artist",
+		"cite": "https://monoskop.org/images/6/63/Pierce_JR_1965_Portrait_of_the_Machine_as_a_Young_Artist.pdf"
+	},
+	"THAT_BOX": {
+		"context": "Wonderful things could come out of that box if only we knew how to evoke them.",
+		"author": "J.R. Pierce",
+		"source": "Portrait of the Machine as a Young Artist",
+		"cite": "https://monoskop.org/images/6/63/Pierce_JR_1965_Portrait_of_the_Machine_as_a_Young_Artist.pdf"
+	},
+	"COLLAB": {
+		"context": "We must decide whether men and machines should work together gravely or wackily to produce works that are portentous or delicious. The choice is open, and I hope it won't be made too solemnly.",
+		"author": "J.R. Pierce",
+		"source": "Portrait of the Machine as a Young Artist",
+		"cite": "https://monoskop.org/images/6/63/Pierce_JR_1965_Portrait_of_the_Machine_as_a_Young_Artist.pdf"
 	}
 }
