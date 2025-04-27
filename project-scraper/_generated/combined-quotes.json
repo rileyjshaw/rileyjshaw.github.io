@@ -110,7 +110,7 @@
 	{
 		"author": "J.R. Pierce",
 		"cite": "https://monoskop.org/images/6/63/Pierce_JR_1965_Portrait_of_the_Machine_as_a_Young_Artist.pdf",
-		"context": "We must decide whether men and machines should work together gravely or wackily to produce works that are portentous or delicious. The choice is open, and I hope it won't be made too solemnly.",
+		"content": "We must decide whether men and machines should work together gravely or wackily to produce works that are portentous or delicious. The choice is open, and I hope it won't be made too solemnly.",
 		"source": "Portrait of the Machine as a Young Artist",
 		"uid": "COLLAB"
 	},
@@ -956,7 +956,7 @@
 	{
 		"author": "J.R. Pierce",
 		"cite": "https://monoskop.org/images/6/63/Pierce_JR_1965_Portrait_of_the_Machine_as_a_Young_Artist.pdf",
-		"context": "Wonderful things could come out of that box if only we knew how to evoke them.",
+		"content": "Wonderful things could come out of that box if only we knew how to evoke them.",
 		"source": "Portrait of the Machine as a Young Artist",
 		"uid": "THAT_BOX"
 	},
