@@ -24,6 +24,12 @@
 		"todo": true
 	},
 	{
+		"title": "toobs",
+		"date": "2025-04-27",
+		"coolness": 80,
+		"link": "/toobs/"
+	},
+	{
 		"title": "Egg calendar",
 		"description": ["A calendar that looks like eggs"],
 		"date": "2025-03-12",
