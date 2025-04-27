@@ -7,6 +7,13 @@
 		"uid": "ACTUAL_DRAGON"
 	},
 	{
+		"author": "J.R. Pierce",
+		"cite": "https://monoskop.org/images/6/63/Pierce_JR_1965_Portrait_of_the_Machine_as_a_Young_Artist.pdf",
+		"content": "When the artist approaches science and the machine, will the machine perhaps approach the complexity and surprise which we associate with the human artist?",
+		"source": "Portrait of the Machine as a Young Artist",
+		"uid": "APPROACHING"
+	},
+	{
 		"author": "Sol LeWitt",
 		"content": "The idea becomes the machine that makes the art.",
 		"source": "Paragraphs on Conceptual Art",
@@ -99,6 +106,13 @@
 		"content": "I’ve used the analogy of what would happen if you put a piano in every classroom. If there is no other context, you will get a “chopsticks” culture, and maybe even a pop culture. And this is pretty much what is happening. In other words, “the music is not in the piano”.",
 		"source": "An Interview with Computing Pioneer Alan Kay",
 		"uid": "CHOPSTICKS_CULTURE"
+	},
+	{
+		"author": "J.R. Pierce",
+		"cite": "https://monoskop.org/images/6/63/Pierce_JR_1965_Portrait_of_the_Machine_as_a_Young_Artist.pdf",
+		"context": "We must decide whether men and machines should work together gravely or wackily to produce works that are portentous or delicious. The choice is open, and I hope it won't be made too solemnly.",
+		"source": "Portrait of the Machine as a Young Artist",
+		"uid": "COLLAB"
 	},
 	{
 		"author": "Fredy Perlman",
@@ -938,6 +952,13 @@
 		"content": "Exploration of the potentialities of the book of true text-picture integration has only begun and will, by itself, become of utmost importance to universal understanding.",
 		"source": "On Typography",
 		"uid": "TEXT_PICTURE"
+	},
+	{
+		"author": "J.R. Pierce",
+		"cite": "https://monoskop.org/images/6/63/Pierce_JR_1965_Portrait_of_the_Machine_as_a_Young_Artist.pdf",
+		"context": "Wonderful things could come out of that box if only we knew how to evoke them.",
+		"source": "Portrait of the Machine as a Young Artist",
+		"uid": "THAT_BOX"
 	},
 	{
 		"author": "Isaac Asimov",

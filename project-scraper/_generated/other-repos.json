@@ -192,6 +192,10 @@
 		"priority": 0.5
 	},
 	{
+		"path": "/toobs/",
+		"priority": 0.8
+	},
+	{
 		"path": "/typing-for-two/",
 		"priority": 0.4
 	},
