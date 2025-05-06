@@ -24,6 +24,15 @@
 		"todo": true
 	},
 	{
+		"title": "Mandy’s",
+		"description": [
+			"A salad dressing index for the book “Mandy’s Gourmet Salads”"
+		],
+		"date": "2025-05-01",
+		"coolness": 63,
+		"link": "/mandys/"
+	},
+	{
 		"title": "toobs",
 		"date": "2025-04-27",
 		"coolness": 80,
