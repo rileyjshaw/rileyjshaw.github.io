@@ -104,6 +104,10 @@
 		"priority": 0.6
 	},
 	{
+		"path": "/mandys/",
+		"priority": 0.3
+	},
+	{
 		"path": "/nature-of-code/",
 		"priority": 0.6
 	},
