@@ -2504,6 +2504,18 @@
 		"uid": "PROJECT_CHESHIRE_CAT_LOADER"
 	},
 	{
+		"coolness": 60,
+		"date": "2025-03-01",
+		"descriptionList": [
+			"Some fun demos of emoji choreography using spatial indexing."
+		],
+		"link": "/choreography/",
+		"timestamp": 1740787200000,
+		"title": "Choreography",
+		"type": "project",
+		"uid": "PROJECT_CHOREOGRAPHY"
+	},
+	{
 		"coolness": 70,
 		"date": "2016-05-03",
 		"descriptionList": [
@@ -8829,7 +8841,7 @@
 		"description": "This video played behind me during my Winter 2018 School for Poetic Computation intro. The following is a transcript of my talk:",
 		"image": {
 			"height": 1080,
-			"url": "https://i.vimeocdn.com/video/836440996-b03c76d6f9e8cbb016001bcc4bf3e72d3322cd2565c7e179fb8283009a4861ee-d_1920x1080?&r=pad",
+			"url": "https://i.vimeocdn.com/video/836440996-b03c76d6f9e8cbb016001bcc4bf3e72d3322cd2565c7e179fb8283009a4861ee-d_1920x1080?&r=pad&region=us",
 			"width": 1920
 		},
 		"link": "https://vimeo.com/377116426",
