@@ -46,6 +46,16 @@
 		"link": "/egg-calendar/"
 	},
 	{
+		"title": "Choreography",
+		"description": [
+			"Some fun demos of emoji choreography using spatial indexing."
+		],
+		"date": "2025-03-01",
+		"coolness": 60,
+		"link": "/choreography/"
+	},
+
+	{
 		"title": "Harmonics",
 		"description": [
 			"Caution: sometimes flashes! Generates a new randomized shader composed of stacked trigonometric functions on each page refresh."
