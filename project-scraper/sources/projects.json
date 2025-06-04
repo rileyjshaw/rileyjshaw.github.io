@@ -24,6 +24,15 @@
 		"todo": true
 	},
 	{
+		"title": "One-shot sample generator",
+		"description": [
+			"Render per-note audio samples from a local VST or AU instrument plugin."
+		],
+		"date": "2025-06-04",
+		"coolness": 50,
+		"link": "https://github.com/rileyjshaw/one-shot-sample-generator"
+	},
+	{
 		"title": "Mandy’s",
 		"description": [
 			"A salad dressing index for the book “Mandy’s Gourmet Salads”"
