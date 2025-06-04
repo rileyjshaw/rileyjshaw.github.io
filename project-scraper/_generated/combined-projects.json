@@ -4812,6 +4812,18 @@
 		"uid": "PROJECT_NSA_IPSUM"
 	},
 	{
+		"coolness": 50,
+		"date": "2025-06-04",
+		"descriptionList": [
+			"Render per-note audio samples from a local VST or AU instrument plugin."
+		],
+		"link": "https://github.com/rileyjshaw/one-shot-sample-generator",
+		"timestamp": 1748995200000,
+		"title": "One-shot sample generator",
+		"type": "project",
+		"uid": "PROJECT_ONE_SHOT_SAMPLE_GENERATOR"
+	},
+	{
 		"coolness": 65,
 		"date": "2015-02-20",
 		"descriptionList": [
