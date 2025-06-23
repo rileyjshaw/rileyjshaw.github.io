@@ -341,10 +341,14 @@ export function Signal() {
 
 export function Watershed() {
 	return (
-		<Job at="Watershed" role="Software Engineer" isCurrent={true}>
+		<Job at="Watershed" role="Staff Software Engineer" isCurrent={false}>
 			<p>
-				I’m currently developing reporting tools to help companies
-				understand and reduce their carbon emissions.{' '}
+				I built reporting tools to help companies understand and reduce
+				their carbon emissions. On the Finance team, I focused on
+				scaling the product to support some of the world’s largest
+				banks and investment funds.
+			</p>
+			<p>
 				<AutoLink to="https://watershed.com/">Watershed’s</AutoLink>{' '}
 				mission is to accelerate the climate economy, and our 2030 goal
 				is to work with our customers to reduce or remove 500

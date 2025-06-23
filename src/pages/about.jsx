@@ -38,8 +38,8 @@ function AboutPage() {
 					{/* TODO(riley): <UpTo /> */}
 					<h2>Where I’ve been</h2>
 					<ul className="timeline">
-						<Watershed />
 						<Misery />
+						<Watershed />
 						<MischiefMakers />
 						<Mozilla />
 						<RepairMatters />
