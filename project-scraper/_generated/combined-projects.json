@@ -6220,6 +6220,18 @@
 		"uid": "PROJECT_SVG_TEXT1M_SUBTRACTIVE_COLOR_BLEND_WITH_1OCODE1QMIX_BLEND_MODE1M_MULTIPLY1O1BCODE1Q"
 	},
 	{
+		"coolness": 50,
+		"date": "2025-06-19",
+		"descriptionList": [
+			"Variations on <a href=\"https://codepen.io/rileyjshaw/pen/vGzYyR\" rel=\"noopener noreferrer\" target=\"_blank\">an old CSS animation I made,</a> rewritten as a shader. Use arrow keys or swipe to change the scene."
+		],
+		"link": "/sway",
+		"timestamp": 1750291200000,
+		"title": "Sway",
+		"type": "project",
+		"uid": "PROJECT_SWAY"
+	},
+	{
 		"coolness": 69,
 		"date": "2016-04-25",
 		"descriptionList": [

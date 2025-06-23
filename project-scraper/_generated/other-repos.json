@@ -168,6 +168,10 @@
 		"priority": 0.5
 	},
 	{
+		"path": "/sway/",
+		"priority": 0.5
+	},
+	{
 		"path": "/sweep/",
 		"priority": 0.7
 	},
