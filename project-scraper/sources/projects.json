@@ -24,6 +24,15 @@
 		"todo": true
 	},
 	{
+		"title": "Sway",
+		"description": [
+			"Variations on <a href=\"https://codepen.io/rileyjshaw/pen/vGzYyR\" target=\"_blank\" rel=\"noopener noreferrer\">an old CSS animation I made,</a> rewritten as a shader. Use arrow keys or swipe to change the scene."
+		],
+		"date": "2025-06-19",
+		"coolness": 50,
+		"link": "/sway"
+	},
+	{
 		"title": "One-shot sample generator",
 		"description": [
 			"Render per-note audio samples from a local VST or AU instrument plugin."
