@@ -40,6 +40,10 @@
 		"priority": 0.8
 	},
 	{
+		"path": "/chianti/",
+		"priority": 0.1
+	},
+	{
 		"path": "/choreography/",
 		"priority": 0.6
 	},
@@ -158,6 +162,10 @@
 	{
 		"path": "/scribbler/",
 		"priority": 0.4
+	},
+	{
+		"path": "/shifter/",
+		"priority": 0.3
 	},
 	{
 		"path": "/sorta/",
