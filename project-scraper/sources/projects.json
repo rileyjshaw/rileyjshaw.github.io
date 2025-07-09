@@ -24,12 +24,25 @@
 		"todo": true
 	},
 	{
+		"title": "Shifter",
+		"description": ["Move yr head."],
+		"date": "2025-07-09",
+		"coolness": 52,
+		"link": "/shifter"
+	},
+	{
+		"title": "Chianti",
+		"date": "2025-07-02",
+		"coolness": 30,
+		"link": "/chianti/"
+	},
+	{
 		"title": "Sway",
 		"description": [
 			"Variations on <a href=\"https://codepen.io/rileyjshaw/pen/vGzYyR\" target=\"_blank\" rel=\"noopener noreferrer\">an old CSS animation I made,</a> rewritten as a shader. Use arrow keys or swipe to change the scene."
 		],
 		"date": "2025-06-19",
-		"coolness": 50,
+		"coolness": 56,
 		"link": "/sway"
 	},
 	{
