@@ -24,6 +24,13 @@
 		"todo": true
 	},
 	{
+		"title": "Cutup",
+		"description": ["A grid symmetry shader and camera."],
+		"date": "2025-10-21",
+		"coolness": 73,
+		"link": "/cutup"
+	},
+	{
 		"title": "Shifter",
 		"description": ["Move yr head."],
 		"date": "2025-07-09",
