@@ -68,6 +68,10 @@
 		"priority": 0.4
 	},
 	{
+		"path": "/cutup/",
+		"priority": 0.7
+	},
+	{
 		"path": "/dmsp/",
 		"priority": 0.1
 	},
