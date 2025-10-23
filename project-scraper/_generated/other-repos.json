@@ -68,8 +68,12 @@
 		"priority": 0.4
 	},
 	{
+		"path": "/cut-glass/",
+		"priority": 0.5
+	},
+	{
 		"path": "/cutup/",
-		"priority": 0.7
+		"priority": 0.6
 	},
 	{
 		"path": "/dmsp/",
