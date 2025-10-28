@@ -5001,6 +5001,15 @@
 		"uid": "PROJECT_PHOTO_EXPERIMENT"
 	},
 	{
+		"coolness": 55,
+		"date": "2025-10-28",
+		"link": "/pixelquilt",
+		"timestamp": 1761609600000,
+		"title": "Pixel quilt",
+		"type": "project",
+		"uid": "PROJECT_PIXEL_QUILT"
+	},
+	{
 		"coolness": 60,
 		"date": "2014-08-25",
 		"descriptionList": [
