@@ -24,6 +24,12 @@
 		"todo": true
 	},
 	{
+		"title": "Pixel quilt",
+		"date": "2025-10-28",
+		"coolness": 55,
+		"link": "/pixelquilt"
+	},
+	{
 		"title": "Cut glass",
 		"date": "2025-10-23",
 		"coolness": 60,
