@@ -24,6 +24,13 @@
 		"todo": true
 	},
 	{
+		"title": "Channel delay",
+		"description": ["RGB channel delay video shader."],
+		"date": "2025-11-02",
+		"coolness": 55,
+		"link": "/channel-delay"
+	},
+	{
 		"title": "Pixel quilt",
 		"date": "2025-10-28",
 		"coolness": 55,
