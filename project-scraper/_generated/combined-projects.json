@@ -2489,6 +2489,18 @@
 		"uid": "PROJECT_CHAMBER"
 	},
 	{
+		"coolness": 55,
+		"date": "2025-11-02",
+		"descriptionList": [
+			"RGB channel delay video shader."
+		],
+		"link": "/channel-delay",
+		"timestamp": 1762041600000,
+		"title": "Channel delay",
+		"type": "project",
+		"uid": "PROJECT_CHANNEL_DELAY"
+	},
+	{
 		"coolness": 2,
 		"date": "2013-12-08",
 		"lastTagged": 1564708938863,

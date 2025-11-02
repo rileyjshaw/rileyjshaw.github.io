@@ -40,6 +40,10 @@
 		"priority": 0.8
 	},
 	{
+		"path": "/channel-delay/",
+		"priority": 0.5
+	},
+	{
 		"path": "/chianti/",
 		"priority": 0.1
 	},
