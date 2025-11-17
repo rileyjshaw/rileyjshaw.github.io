@@ -86,11 +86,6 @@ const SubscribePage = () => (
 					</ExternalLink>
 				</li>
 				<li>
-					<ExternalLink to="https://twitter.com/rileyjshaw">
-						Twitter
-					</ExternalLink>
-				</li>
-				<li>
 					<ExternalLink to="https://www.linkedin.com/in/rileyjshaw/">
 						LinkedIn
 					</ExternalLink>
@@ -101,23 +96,8 @@ const SubscribePage = () => (
 					</ExternalLink>
 				</li>
 				<li>
-					<ExternalLink to="https://glitch.com/@rileyjshaw">
-						Glitch
-					</ExternalLink>
-				</li>
-				<li>
 					<ExternalLink to="https://www.are.na/riley-shaw">
 						Are.na
-					</ExternalLink>
-				</li>
-				<li>
-					<ExternalLink to="http://rileyjshaw.commit--blog.com/">
-						commit--blog
-					</ExternalLink>
-				</li>
-				<li>
-					<ExternalLink to="https://www.instagram.com/rileyjshaw">
-						Instagram
 					</ExternalLink>
 				</li>
 				<li>
@@ -139,6 +119,32 @@ const SubscribePage = () => (
 					<ExternalLink to="https://www.last.fm/user/rileyjshaw">
 						Last.fm
 					</ExternalLink>
+				</li>
+				<li>
+					<ExternalLink to="https://www.instagram.com/rileyjshaw">
+						Instagram
+					</ExternalLink>
+				</li>
+				<li>
+					<s>
+						<ExternalLink to="https://twitter.com/rileyjshaw">
+							Twitter
+						</ExternalLink>
+					</s>
+				</li>
+				<li>
+					<s>
+						<ExternalLink to="http://rileyjshaw.commit--blog.com/">
+							commit--blog
+						</ExternalLink>
+					</s>
+				</li>
+				<li>
+					<s>
+						<ExternalLink to="https://glitch.com/@rileyjshaw">
+							Glitch
+						</ExternalLink>
+					</s>
 				</li>
 			</ul>
 		</div>
