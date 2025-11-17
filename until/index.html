@@ -214,7 +214,11 @@
 						) {
 							var el = document.createElement('span');
 							el.textContent =
-								Math.random() < 0.99 ? '💖' : '👽';
+								Math.random() < 0.99
+									? Math.random() < 0.9
+										? '💖'
+										: '💍'
+									: '👽';
 							el.className = 'heart';
 							var heart = {
 								age: 0,
