@@ -127,8 +127,8 @@
 			"A lightweight, dependency-free library to reduce boilerplate when writing fragment shaders."
 		],
 		"date": "2025-01-23",
-		"coolness": 78,
-		"link": "https://github.com/rileyjshaw/shaderpad"
+		"coolness": 82,
+		"link": "/shaderpad/"
 	},
 	{
 		"title": "trig stacked shaders",
