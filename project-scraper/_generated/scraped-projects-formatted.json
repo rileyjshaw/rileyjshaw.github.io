@@ -2604,6 +2604,22 @@
 		"uid": "VIDEO_Y_2FAZHBVHDTY"
 	},
 	{
+		"body": "4bpcCMY7-OE",
+		"contentType": "youtube",
+		"date": "2025-12-12",
+		"description": "A little sketch using two new instruments I made.",
+		"image": {
+			"height": 720,
+			"url": "https://i.ytimg.com/vi/4bpcCMY7-OE/maxresdefault.jpg",
+			"width": 1280
+		},
+		"link": "https://youtube.com/watch?v=4bpcCMY7-OE",
+		"more": true,
+		"title": "sick day",
+		"type": "video",
+		"uid": "VIDEO_Y_4BPCCMY7_OE"
+	},
+	{
 		"body": "7UM6fZ8ibF4",
 		"contentType": "youtube",
 		"date": "2020-10-16",

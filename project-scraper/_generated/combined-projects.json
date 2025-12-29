@@ -5115,7 +5115,7 @@
 			"A drum sample loader for my Pocket Operator K.O."
 		],
 		"lastTagged": 0,
-		"link": "https://glitch.com/edit/#!/po-33?path=README.md",
+		"link": "/po-33",
 		"tags": [
 			"audio",
 			"external",
@@ -5621,12 +5621,12 @@
 		"uid": "PROJECT_SERVO"
 	},
 	{
-		"coolness": 78,
+		"coolness": 82,
 		"date": "2025-01-23",
 		"descriptionList": [
 			"A lightweight, dependency-free library to reduce boilerplate when writing fragment shaders."
 		],
-		"link": "https://github.com/rileyjshaw/shaderpad",
+		"link": "/shaderpad/",
 		"timestamp": 1737590400000,
 		"title": "ShaderPad",
 		"type": "project",
@@ -6417,6 +6417,18 @@
 		"title": "Tempo tracker",
 		"type": "project",
 		"uid": "PROJECT_TEMPO_TRACKER"
+	},
+	{
+		"coolness": 64,
+		"date": "2025-12-29",
+		"descriptionList": [
+			"A playful contribution to <a href=\"https://10kdrummachines.com/\" rel=\"noopener noreferrer\" target=\"_blank\">10k Drum Machines</a> based on the <a href=\"/blog/graphing-depth\">Collatz conjecture</a>."
+		],
+		"link": "/terminal-1/",
+		"timestamp": 1766966400000,
+		"title": "Terminal 1",
+		"type": "project",
+		"uid": "PROJECT_TERMINAL_1"
 	},
 	{
 		"coolness": 23,
@@ -8970,6 +8982,23 @@
 		"title": "Glitch More",
 		"type": "video",
 		"uid": "VIDEO_Y_2FAZHBVHDTY"
+	},
+	{
+		"body": "4bpcCMY7-OE",
+		"contentType": "youtube",
+		"date": "2025-12-12",
+		"description": "A little sketch using two new instruments I made.",
+		"image": {
+			"height": 720,
+			"url": "https://i.ytimg.com/vi/4bpcCMY7-OE/maxresdefault.jpg",
+			"width": 1280
+		},
+		"link": "https://youtube.com/watch?v=4bpcCMY7-OE",
+		"more": true,
+		"timestamp": 1765497600000,
+		"title": "sick day",
+		"type": "video",
+		"uid": "VIDEO_Y_4BPCCMY7_OE"
 	},
 	{
 		"body": "7UM6fZ8ibF4",

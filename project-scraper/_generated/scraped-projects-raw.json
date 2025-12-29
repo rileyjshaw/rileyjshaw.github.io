@@ -905,6 +905,7 @@
 			"id": "6077122",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/cyclic-repair-6077122/",
@@ -967,6 +968,7 @@
 			"id": "6077121",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2024-06-24 12:54:41",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/repair-6077121/",
@@ -1024,6 +1026,7 @@
 			"id": "5707115",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2025-09-26 23:50:53",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/repair-5707115/",
@@ -1086,6 +1089,7 @@
 			"id": "2154767",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/dropper-2154767/",
@@ -1148,6 +1152,7 @@
 			"id": "295649",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2025-10-14 02:59:14",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/hamburger-295649/",
@@ -1235,6 +1240,7 @@
 			"id": "295647",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2025-04-28 17:27:04",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/spring-295647/",
@@ -1322,6 +1328,7 @@
 			"id": "295645",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2025-10-30 17:18:20",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/spring-295645/",
@@ -1409,6 +1416,7 @@
 			"id": "294472",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2022-01-06 02:19:00",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/upper-left-294472/",
@@ -1491,6 +1499,7 @@
 			"id": "294471",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2021-05-28 18:48:10",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/left-294471/",
@@ -1573,6 +1582,7 @@
 			"id": "294470",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2020-02-22 21:29:13",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/right-294470/",
@@ -1655,6 +1665,7 @@
 			"id": "294469",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/up-294469/",
@@ -1742,6 +1753,7 @@
 			"id": "294468",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2023-01-12 17:31:51",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/down-294468/",
@@ -1829,6 +1841,7 @@
 			"id": "294467",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2023-07-13 16:35:50",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/upper-right-294467/",
@@ -1911,6 +1924,7 @@
 			"id": "294466",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2024-12-06 18:03:39",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/lower-left-294466/",
@@ -1988,6 +2002,7 @@
 			"id": "294465",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2022-02-15 05:55:41",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/lower-right-294465/",
@@ -2070,6 +2085,7 @@
 			"id": "215555",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2022-06-16 02:52:41",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/map-marker-215555/",
@@ -2162,6 +2178,7 @@
 			"id": "79596",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2025-08-28 00:52:25",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/share-79596/",
@@ -2214,6 +2231,7 @@
 			"id": "79595",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2021-05-23 02:43:15",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/shuffle-79595/",
@@ -2286,6 +2304,7 @@
 			"id": "79594",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2017-04-06 19:12:01",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/pause-79594/",
@@ -2363,6 +2382,7 @@
 			"id": "79593",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2025-01-19 11:50:34",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/play-79593/",
@@ -2450,6 +2470,7 @@
 			"id": "79592",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2023-10-20 18:40:52",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/rewind-79592/",
@@ -2547,6 +2568,7 @@
 			"id": "79591",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2025-06-26 08:20:08",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/repeat-79591/",
@@ -2624,6 +2646,7 @@
 			"id": "79590",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2023-12-06 20:28:37",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/fast-forward-79590/",
@@ -2716,6 +2739,7 @@
 			"id": "79589",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/back-79589/",
@@ -2788,6 +2812,7 @@
 			"id": "74002",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2021-11-11 11:25:12",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/video-camera-74002/",
@@ -2880,6 +2905,7 @@
 			"id": "11588",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/close-11588/",
@@ -2942,6 +2968,7 @@
 			"id": "11587",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/right-arrow-11587/",
@@ -3024,6 +3051,7 @@
 			"id": "11586",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/close-11586/",
@@ -3086,6 +3114,7 @@
 			"id": "11585",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2025-12-22 18:35:32.627354",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/arrow-up-11585/",
@@ -3116,7 +3145,7 @@
 			"term": "Arrow Up",
 			"term_id": 4025,
 			"term_slug": "arrow-up",
-			"updated_at": "2019-04-22 19:22:17",
+			"updated_at": "2025-12-22 18:35:33",
 			"uploader": {
 				"location": "Toronto, Ontario, CA",
 				"name": "Riley Shaw",
@@ -3133,6 +3162,7 @@
 			"id": "11584",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/arrow-down-11584/",
@@ -3210,6 +3240,7 @@
 			"id": "11544",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2025-07-24 14:33:57",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/nut-11544/",
@@ -3297,6 +3328,7 @@
 			"id": "11543",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2022-10-26 15:55:46",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/clock-11543/",
@@ -3374,6 +3406,7 @@
 			"id": "11542",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/happy-11542/",
@@ -3441,6 +3474,7 @@
 			"id": "11541",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "2021-06-15 04:52:33",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/calendar-11541/",
@@ -3528,6 +3562,7 @@
 			"id": "11539",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "",
 			"license_description": "creative-commons-attribution",
 			"nounji_free": "0",
 			"permalink": "/icon/arrow-left-11539/",
@@ -3594,6 +3629,7 @@
 			"id": "3164",
 			"is_active": "1",
 			"is_explicit": "0",
+			"last_purchased_at": "",
 			"license_description": "public-domain",
 			"nounji_free": "0",
 			"permalink": "/icon/no-trash-3164/",
@@ -3684,10 +3720,10 @@
 			],
 			"comment_count": 0,
 			"created_at": "2023-03-07T00:53:23+00:00",
-			"download_count": 169,
+			"download_count": 181,
 			"excerpt": "This is a free, touchscreen version of my Stargazer MIDI controller. The default layout for...",
 			"id": 165102,
-			"like_count": 7,
+			"like_count": 8,
 			"link": "https://patchstorage.com/stargazer-touch/",
 			"platform": {
 				"id": 7828,
@@ -3781,7 +3817,7 @@
 			],
 			"comment_count": 4,
 			"created_at": "2021-05-17T19:27:18+00:00",
-			"download_count": 99,
+			"download_count": 103,
 			"excerpt": "Set and toggle 16 independent LFOs. You can cross-modulate them if you want, but by...",
 			"id": 140563,
 			"like_count": 22,
@@ -3913,7 +3949,7 @@
 			],
 			"comment_count": 0,
 			"created_at": "2021-03-13T21:32:42+00:00",
-			"download_count": 38,
+			"download_count": 40,
 			"excerpt": "This is a creative MIDI delay that physically models incoming notes based on their velocity...",
 			"id": 137434,
 			"like_count": 6,
@@ -4005,7 +4041,7 @@
 			],
 			"comment_count": 2,
 			"created_at": "2021-03-13T21:27:21+00:00",
-			"download_count": 58,
+			"download_count": 61,
 			"excerpt": "This is a creative MIDI delay that physically models incoming notes based on their velocity...",
 			"id": 137431,
 			"like_count": 9,
@@ -4087,7 +4123,7 @@
 			],
 			"comment_count": 1,
 			"created_at": "2021-01-10T22:24:56+00:00",
-			"download_count": 35,
+			"download_count": 36,
 			"excerpt": "Shifts the MIDI Channel of incoming MIDI messages. Knob 1: Channel shift amount, from -15...",
 			"id": 134431,
 			"like_count": 3,
@@ -4149,7 +4185,7 @@
 			],
 			"comment_count": 1,
 			"created_at": "2020-12-30T00:19:26+00:00",
-			"download_count": 37,
+			"download_count": 39,
 			"excerpt": "Dedupe prevents consecutive MIDI Note On messages from occurring on the same note &amp; channel...",
 			"id": 133788,
 			"like_count": 5,
@@ -4231,7 +4267,7 @@
 			],
 			"comment_count": 0,
 			"created_at": "2020-12-12T02:57:37+00:00",
-			"download_count": 42,
+			"download_count": 43,
 			"excerpt": "This demo rack uses a few Math modules to convert an integer MIDI note number...",
 			"id": 133014,
 			"like_count": 3,
@@ -4303,7 +4339,7 @@
 			],
 			"comment_count": 0,
 			"created_at": "2020-12-12T02:36:30+00:00",
-			"download_count": 37,
+			"download_count": 38,
 			"excerpt": "This is a MIDI panic rack. I've been using Drambo more and more to sequence...",
 			"id": 133008,
 			"like_count": 6,
@@ -4385,7 +4421,7 @@
 			],
 			"comment_count": 1,
 			"created_at": "2020-11-27T04:17:14+00:00",
-			"download_count": 98,
+			"download_count": 100,
 			"excerpt": "A first pass at recreating my favourite parts of Alex Matheu's lovely GlitchCore app in...",
 			"id": 132469,
 			"like_count": 7,
@@ -4467,7 +4503,7 @@
 			],
 			"comment_count": 4,
 			"created_at": "2020-11-09T17:08:14+00:00",
-			"download_count": 26,
+			"download_count": 28,
 			"excerpt": "A simple MIDI mapping for my Jambo hardware controller. The DIY guide is up at...",
 			"id": 131668,
 			"like_count": 2,
@@ -4559,7 +4595,7 @@
 			],
 			"comment_count": 1,
 			"created_at": "2020-10-16T00:17:04+00:00",
-			"download_count": 87,
+			"download_count": 89,
 			"excerpt": "A parameter-lockable, MIDI-mappable converter from a single MIDI note to 8 configurable chords. For my...",
 			"id": 130675,
 			"like_count": 11,
@@ -5959,15 +5995,15 @@
 			"note_count": 0,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-6906e1e2b6738725451521' class='crt-video crt-skin-default' width='250' height='250' poster='https://64.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":3,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_rox1pblECQ1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-6952fb28189f2843757884' class='crt-video crt-skin-default' width='250' height='250' poster='https://64.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":3,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_rox1pblECQ1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-6906e1e2b6738725451521' class='crt-video crt-skin-default' width='400' height='400' poster='https://64.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":3,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_rox1pblECQ1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-6952fb28189f2843757884' class='crt-video crt-skin-default' width='400' height='400' poster='https://64.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":3,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_rox1pblECQ1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-6906e1e2b6738725451521' class='crt-video crt-skin-default' width='500' height='500' poster='https://64.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":3,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_rox1pblECQ1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-6952fb28189f2843757884' class='crt-video crt-skin-default' width='500' height='500' poster='https://64.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":3,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_rox1pblECQ1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_rox1pblECQ1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -9703,15 +9739,15 @@
 			"note_count": 0,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-6906e1e2e4bed164128668' class='crt-video crt-skin-default' width='250' height='251' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-6952fb28a9cad640209299' class='crt-video crt-skin-default' width='250' height='251' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-6906e1e2e4bed164128668' class='crt-video crt-skin-default' width='400' height='402' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-6952fb28a9cad640209299' class='crt-video crt-skin-default' width='400' height='402' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-6906e1e2e4bed164128668' class='crt-video crt-skin-default' width='500' height='502' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-6952fb28a9cad640209299' class='crt-video crt-skin-default' width='500' height='502' poster='https://64.media.tumblr.com/tumblr_qru31pj8501yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":7,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qru31pj8501yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qru31pj8501yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -16252,15 +16288,15 @@
 			"note_count": 0,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-6906e1e347aea553963051' class='crt-video crt-skin-default' width='250' height='141' poster='https://64.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":19,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hyeqpaJK1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-6952fb2941a60666907555' class='crt-video crt-skin-default' width='250' height='141' poster='https://64.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":19,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hyeqpaJK1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-6906e1e347aea553963051' class='crt-video crt-skin-default' width='400' height='225' poster='https://64.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":19,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hyeqpaJK1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-6952fb2941a60666907555' class='crt-video crt-skin-default' width='400' height='225' poster='https://64.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":19,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hyeqpaJK1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-6906e1e347aea553963051' class='crt-video crt-skin-default' width='500' height='281' poster='https://64.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":19,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hyeqpaJK1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-6952fb2941a60666907555' class='crt-video crt-skin-default' width='500' height='281' poster='https://64.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":19,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hyeqpaJK1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hyeqpaJK1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -17192,15 +17228,15 @@
 			"note_count": 0,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-6906e1e35e94f802322252' class='crt-video crt-skin-default' width='250' height='141' poster='https://64.media.tumblr.com/tumblr_q5hzbneImv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":22,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hzbneImv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hzbneImv1yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-6952fb2965f41552606960' class='crt-video crt-skin-default' width='250' height='141' poster='https://64.media.tumblr.com/tumblr_q5hzbneImv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":22,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hzbneImv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hzbneImv1yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-6906e1e35e94f802322252' class='crt-video crt-skin-default' width='400' height='225' poster='https://64.media.tumblr.com/tumblr_q5hzbneImv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":22,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hzbneImv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hzbneImv1yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-6952fb2965f41552606960' class='crt-video crt-skin-default' width='400' height='225' poster='https://64.media.tumblr.com/tumblr_q5hzbneImv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":22,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hzbneImv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hzbneImv1yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-6906e1e35e94f802322252' class='crt-video crt-skin-default' width='500' height='282' poster='https://64.media.tumblr.com/tumblr_q5hzbneImv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":22,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hzbneImv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hzbneImv1yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-6952fb2965f41552606960' class='crt-video crt-skin-default' width='500' height='282' poster='https://64.media.tumblr.com/tumblr_q5hzbneImv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":22,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q5hzbneImv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"112\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q5hzbneImv1yat6uy.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -18110,15 +18146,15 @@
 			"parent_post_url": "https://sfpc.rileyjshaw.com/post/189455640174",
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-6906e1e361b83002602261' class='crt-video crt-skin-default' width='250' height='142' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-6952fb2969664064766624' class='crt-video crt-skin-default' width='250' height='142' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-6906e1e361b83002602261' class='crt-video crt-skin-default' width='400' height='228' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-6952fb2969664064766624' class='crt-video crt-skin-default' width='400' height='228' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-6906e1e361b83002602261' class='crt-video crt-skin-default' width='500' height='285' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-6952fb2969664064766624' class='crt-video crt-skin-default' width='500' height='285' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -18324,7 +18360,7 @@
 							"width": 250
 						},
 						{
-							"height": 63,
+							"height": 62,
 							"url": "https://64.media.tumblr.com/6f774d951c9116c18df3d88f901803b5/b30da118d885ccf4-c9/s100x200/02f7e6b93fcdd9231fbbb87a9fd6c6a2aee08f3b.png",
 							"width": 100
 						},
@@ -18397,15 +18433,15 @@
 			"note_count": 2,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-6906e1e3630a5050655956' class='crt-video crt-skin-default' width='250' height='250' poster='https://64.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":12,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qgs0vsE7hv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-6952fb296b261450061120' class='crt-video crt-skin-default' width='250' height='250' poster='https://64.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":12,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qgs0vsE7hv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-6906e1e3630a5050655956' class='crt-video crt-skin-default' width='400' height='400' poster='https://64.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":12,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qgs0vsE7hv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-6952fb296b261450061120' class='crt-video crt-skin-default' width='400' height='400' poster='https://64.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":12,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qgs0vsE7hv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-6906e1e3630a5050655956' class='crt-video crt-skin-default' width='500' height='500' poster='https://64.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":12,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qgs0vsE7hv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-6952fb296b261450061120' class='crt-video crt-skin-default' width='500' height='500' poster='https://64.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":12,\"hdUrl\":\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_720.mp4\",\"filmstrip\":{\"url\":\"https://64.media.tumblr.com/previews/tumblr_qgs0vsE7hv1yat6uy_filmstrip.jpg\",\"width\":\"200\",\"height\":\"200\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_qgs0vsE7hv1yat6uy_480.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -19011,15 +19047,15 @@
 			"note_count": 1,
 			"player": [
 				{
-					"embed_code": "\n<video  id='embed-6906e1e334d77604126687' class='crt-video crt-skin-default' width='250' height='142' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-6952fb2785748155161418' class='crt-video crt-skin-default' width='250' height='142' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 250
 				},
 				{
-					"embed_code": "\n<video  id='embed-6906e1e334d77604126687' class='crt-video crt-skin-default' width='400' height='228' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-6952fb2785748155161418' class='crt-video crt-skin-default' width='400' height='228' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 400
 				},
 				{
-					"embed_code": "\n<video  id='embed-6906e1e334d77604126687' class='crt-video crt-skin-default' width='500' height='285' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
+					"embed_code": "\n<video  id='embed-6952fb2785748155161418' class='crt-video crt-skin-default' width='500' height='285' poster='https://64.media.tumblr.com/tumblr_q1y946EcM71x6ewqu_smart1.jpg' preload='none' muted data-crt-video data-crt-options='{\"autoheight\":null,\"duration\":14,\"hdUrl\":false,\"filmstrip\":{\"url\":\"https://66.media.tumblr.com/previews/tumblr_q1y946EcM71x6ewqu_filmstrip.jpg\",\"width\":\"200\",\"height\":\"113\"}}' crossOrigin='anonymous' controls>\n    <source src=\"https://va.media.tumblr.com/tumblr_q1y946EcM71x6ewqu.mp4\" type=\"video/mp4\">\n</video>\n",
 					"width": 500
 				}
 			],
@@ -20132,7 +20168,7 @@
 							"width": 250
 						},
 						{
-							"height": 63,
+							"height": 62,
 							"url": "https://64.media.tumblr.com/6f774d951c9116c18df3d88f901803b5/b30da118d885ccf4-c9/s100x200/02f7e6b93fcdd9231fbbb87a9fd6c6a2aee08f3b.png",
 							"width": 100
 						},
@@ -25119,9 +25155,51 @@
 			{
 				"channelId": "UCV09P32tImJ8etTRcRNUKNw",
 				"channelTitle": "Riley Shaw",
-				"description": "more tenori-on practice",
+				"description": "A little sketch using two new instruments I made.\n\nRover is a tiny 4-button BLE sequencer, built on a Raspberry Pi Pico W. It’s open-source and you can build one yourself, no soldering required.\n\nThe one I’m more excited about is the grid controller, built with two Intech Studio modules. It runs a custom isomorphic config that I wrote. The keys dynamically self-organize based on the module layout; you can see them adjust at 2:30. I haven’t seen another instrument that works quite like this. I only have 2 modules to test on, but the interaction feels great.\n\n---\n\nThe song is called “sick day” because I have a cold and stayed inside all day 😪",
 				"playlistId": "UUV09P32tImJ8etTRcRNUKNw",
 				"position": 0,
+				"publishedAt": "2025-12-12T02:04:17Z",
+				"resourceId": {
+					"kind": "youtube#video",
+					"videoId": "4bpcCMY7-OE"
+				},
+				"thumbnails": {
+					"default": {
+						"height": 90,
+						"url": "https://i.ytimg.com/vi/4bpcCMY7-OE/default.jpg",
+						"width": 120
+					},
+					"high": {
+						"height": 360,
+						"url": "https://i.ytimg.com/vi/4bpcCMY7-OE/hqdefault.jpg",
+						"width": 480
+					},
+					"maxres": {
+						"height": 720,
+						"url": "https://i.ytimg.com/vi/4bpcCMY7-OE/maxresdefault.jpg",
+						"width": 1280
+					},
+					"medium": {
+						"height": 180,
+						"url": "https://i.ytimg.com/vi/4bpcCMY7-OE/mqdefault.jpg",
+						"width": 320
+					},
+					"standard": {
+						"height": 480,
+						"url": "https://i.ytimg.com/vi/4bpcCMY7-OE/sddefault.jpg",
+						"width": 640
+					}
+				},
+				"title": "sick day",
+				"videoOwnerChannelId": "UCV09P32tImJ8etTRcRNUKNw",
+				"videoOwnerChannelTitle": "Riley Shaw"
+			},
+			{
+				"channelId": "UCV09P32tImJ8etTRcRNUKNw",
+				"channelTitle": "Riley Shaw",
+				"description": "more tenori-on practice",
+				"playlistId": "UUV09P32tImJ8etTRcRNUKNw",
+				"position": 1,
 				"publishedAt": "2025-07-24T20:17:22Z",
 				"resourceId": {
 					"kind": "youtube#video",
@@ -25163,7 +25241,7 @@
 				"channelTitle": "Riley Shaw",
 				"description": "tenori-on practice. acid sounds are played in drambo, sequenced by pika blue’s rain mode.",
 				"playlistId": "UUV09P32tImJ8etTRcRNUKNw",
-				"position": 1,
+				"position": 2,
 				"publishedAt": "2025-07-23T21:34:15Z",
 				"resourceId": {
 					"kind": "youtube#video",
@@ -25205,7 +25283,7 @@
 				"channelTitle": "Riley Shaw",
 				"description": "linnstrument 128 + tenori-on",
 				"playlistId": "UUV09P32tImJ8etTRcRNUKNw",
-				"position": 2,
+				"position": 3,
 				"publishedAt": "2025-07-16T00:14:25Z",
 				"resourceId": {
 					"kind": "youtube#video",
@@ -25242,7 +25320,7 @@
 				"channelTitle": "Riley Shaw",
 				"description": "https://en.wikipedia.org/wiki/As_Slow_as_Possible#Halberstadt_performance\n\nDate: October 16, 2022\nTime: 17:09:52 to 17:11:07 CEST (GMT+2) \nLocation: St. Burchardi Church, Halberstadt, Germany",
 				"playlistId": "UUV09P32tImJ8etTRcRNUKNw",
-				"position": 3,
+				"position": 4,
 				"publishedAt": "2022-10-17T10:52:16Z",
 				"resourceId": {
 					"kind": "youtube#video",
@@ -25284,7 +25362,7 @@
 				"channelTitle": "Riley Shaw",
 				"description": "“Hey, listen!” 🧚‍♀️\n\nI unearthed my childhood N64 a few months ago and have been playing some of my favourite games. This song is from The Legend of Zelda: Ocarina of Time. Video game music can get stuck in your head like nothing else, since you might listen to the same 45-second loop for hours on end. For instance, this song has been stuck in my head since I was seven years old.\n\nHope you enjoy!",
 				"playlistId": "UUV09P32tImJ8etTRcRNUKNw",
-				"position": 4,
+				"position": 5,
 				"publishedAt": "2022-01-11T15:35:13Z",
 				"resourceId": {
 					"kind": "youtube#video",
@@ -25326,7 +25404,7 @@
 				"channelTitle": "Riley Shaw",
 				"description": "A quick doodle after work today.\n\nSomething nice about playing music on a grid is that chords are always the same shape. A major triad looks like a triangle pointing up. A minor triad looks like a triangle pointing down. And apparently a minor 9th looks like this! I had to look up what kind of chord it was after recording.\n\nI still don’t know any theory, but it’s satisfying how often my random guesses sound decent! Still a ways to go before I can jam with people, but it’s a fun instrument already.",
 				"playlistId": "UUV09P32tImJ8etTRcRNUKNw",
-				"position": 5,
+				"position": 6,
 				"publishedAt": "2022-01-07T23:06:42Z",
 				"resourceId": {
 					"kind": "youtube#video",
@@ -25368,7 +25446,7 @@
 				"channelTitle": "Riley Shaw",
 				"description": "I made a new instrument!\n\n---\n\nAs a drummer, I’ve always felt out of my depth coming up with a melody or chord progression. Playing music feels great, and I still have so much fun sitting down with a keyboard or guitar and stumbling along, sometimes for hours at a time. But I have no idea what I’m doing. It takes too long to translate what’s playing in my head to the instrument, so I wind up taking random guesses at the next note and adjusting if it sounds wrong. It’s fun, but I miss the immediacy and fluency I feel when I’m playing the drums. I just wanna jam.\n\nI’ve tried to teach myself a bit of piano, but any effort to learn scales or theory has left me frustrated and bored. Why are there black keys?? So I spent a bunch of time that I could have put towards learning the piano, and built this grid thing instead.\n\nSometimes when I finish a project I realize that building it was the fun part, and I don’t end up using it once it’s done. But I built this a few months ago and am still having so much fun with it. The layout makes intuitive sense to me; I still have no idea what chords I’m playing, but seeing the notes in space helps me work out what might sound nice. I eventually want to learn some proper theory around harmony, and I think it’s going to be much easier for me to learn using this instrument.\n\nStill a proud and lifelong member of the Bad Musicians Club, but I’m slightly more confident to play notes in front of people now.\n\n---\n\nSome specifics for those interested:\n\nThe default layout for this keyboard is chromatic, arranged like a bass guitar. Steps to the right increase by 1 semitone and steps up increase by 5 semitones. The yellow key at the top left functions as a Shift key, and can change the layout, assign different functional zones, etc. For instance: the leftmost column is in ‘‘performance mode” right now, which means I can use the black key on the bottom left as a sustain pedal.\n\nThe closest thing to this that I know of is the Linnstrument, which is out of my price range but looks brilliant. Keyboards like this are sometimes referred to as “isomorphic” or ‘‘2-D”.\n\nThis is only half of the full keyboard that I built, but it can work on its own and is easier to fit on my messy desk (not pictured).",
 				"playlistId": "UUV09P32tImJ8etTRcRNUKNw",
-				"position": 6,
+				"position": 7,
 				"publishedAt": "2022-01-03T16:15:12Z",
 				"resourceId": {
 					"kind": "youtube#video",
@@ -25410,7 +25488,7 @@
 				"channelTitle": "Riley Shaw",
 				"description": "A quick demo of three Mozaic plugins I wrote in December 2020: “Gravity delay”, “Panning gravity delay”, and “Dedupe”. Download them for free on Patchstorage:\n\nhttps://patchstorage.com/gravity-delay/\nhttps://patchstorage.com/panning-gravity-delay/\nhttps://patchstorage.com/dedupe/\n\nTimestamps:\n\n0:00 – Set up two instances of Mozaic (Gravity delay and Dedupe), and Beathawk as a grand piano rompler\n0:47 – Set up the signal chain: AUM keyboard → Gravity delay → Dedupe → Beathawk → Audio out\n1:00 – Start making sounds with Gravity delay\n4:35 – Replace Gravity delay with an instance of Panning gravity delay\n5:44 – Play a single note through Panning gravity delay\n\nThere’s a ton of info about the plugins on their respective Patchstorage pages, so follow those links for a thorough description. As always, let me know if you use this on anything you’re working on. I’d love to hear it!",
 				"playlistId": "UUV09P32tImJ8etTRcRNUKNw",
-				"position": 7,
+				"position": 8,
 				"publishedAt": "2021-03-13T21:16:23Z",
 				"resourceId": {
 					"kind": "youtube#video",
@@ -25452,7 +25530,7 @@
 				"channelTitle": "Riley Shaw",
 				"description": "Bit of progress as I work on the settings menu :)",
 				"playlistId": "UUV09P32tImJ8etTRcRNUKNw",
-				"position": 8,
+				"position": 9,
 				"publishedAt": "2020-12-17T00:49:40Z",
 				"resourceId": {
 					"kind": "youtube#video",
@@ -25494,7 +25572,7 @@
 				"channelTitle": "Riley Shaw",
 				"description": "This is a MIDI panic rack.\n\nI've been using Drambo more and more to sequence external devices, and sometimes you get a stuck note. Especially after today's AU host update, I thought this might be useful to folks.\n\nThis MIDI rack rapidly sends a MIDI On/MIDI Off combo (both with Velocity of 0) for MIDI notes 0-127. It also sends the standard MIDI CC 120 and 123.\n\nThere's an embedded MIDI pass-through mixer, so you can route your usual MIDI chain through this without losing anything.\n\nYou can download it at https://patchstorage.com/midi-panic.",
 				"playlistId": "UUV09P32tImJ8etTRcRNUKNw",
-				"position": 9,
+				"position": 10,
 				"publishedAt": "2020-12-12T02:33:26Z",
 				"resourceId": {
 					"kind": "youtube#video",
@@ -25536,7 +25614,7 @@
 				"channelTitle": "Riley Shaw",
 				"description": "A first pass at recreating my favourite parts of Alex Matheu's lovely GlitchCore app in Drambo. You can download it on PatchStorage here: https://patchstorage.com/glitch-more/\n\nFor this to really be useful to me, I would need the sample buffer to continuously update, overwriting itself instead of overdubbing. Fingers crossed that's on its way in the looper module.\n\nGet GlitchCore here: https://apps.apple.com/ca/app/glitchcore/id1499237784\nGet Drambo here: https://apps.apple.com/us/app/drambo/id1469365718",
 				"playlistId": "UUV09P32tImJ8etTRcRNUKNw",
-				"position": 10,
+				"position": 11,
 				"publishedAt": "2020-11-27T04:19:43Z",
 				"resourceId": {
 					"kind": "youtube#video",
@@ -25578,7 +25656,7 @@
 				"channelTitle": "Riley Shaw",
 				"description": "sfpc spring 2018 showcase project\n\nhttps://sfpc.rileyjshaw.com",
 				"playlistId": "UUV09P32tImJ8etTRcRNUKNw",
-				"position": 11,
+				"position": 12,
 				"publishedAt": "2020-11-16T04:11:25Z",
 				"resourceId": {
 					"kind": "youtube#video",
@@ -25620,7 +25698,7 @@
 				"channelTitle": "Riley Shaw",
 				"description": "This is a demo video for my Drambo “Chorder!” rack, a parameter-lockable, MIDI-mappable converter from a single MIDI note to 8 configurable chords.\n\nFor my setup, I wanted to map separate MIDI CC control numbers to a variety of chord types. When MIDI mapping the N-to-1 switch component, it expects messages via the same CC control number with different values. So in this video, I'm also using a rack to surface 8 individual triggers and make the conversion internally. It's all included in the demo project on Patch Storage: https://patchstorage.com/chorder/\n\nShout out @SpiderIceMidas for the fantastic Kaspar presets! This one is “Ariel”, sent through Modley for a bit of extra delay.",
 				"playlistId": "UUV09P32tImJ8etTRcRNUKNw",
-				"position": 12,
+				"position": 13,
 				"publishedAt": "2020-10-16T00:15:11Z",
 				"resourceId": {
 					"kind": "youtube#video",
@@ -25662,7 +25740,7 @@
 				"channelTitle": "Riley Shaw",
 				"description": "UPDATE: I created an 18-page handwritten DIY guide. It’s for sale at https://gum.co/jambo.\n\nI built a new instrument! Jambo is a tiny MIDI controller for Drambo morph/scenes. Operation is pretty simple: two knobs control the active scenes, and a fader slides between them. Now I can skip buying an Octatrack.\n\nThe demo in this video is a live cover of A New Error by Moderat. I didn't edit or master it, sorry about the levels.\n\nHardware: iPad, Jambo\nSoftware: Drambo, DRC (https://youtu.be/XayBW9xP3BQ was super helpful for the synth design)",
 				"playlistId": "UUV09P32tImJ8etTRcRNUKNw",
-				"position": 13,
+				"position": 14,
 				"publishedAt": "2020-10-06T21:37:21Z",
 				"resourceId": {
 					"kind": "youtube#video",
