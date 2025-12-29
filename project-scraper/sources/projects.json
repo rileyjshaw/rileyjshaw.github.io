@@ -24,6 +24,15 @@
 		"todo": true
 	},
 	{
+		"title": "Terminal 1",
+		"description": [
+			"A playful contribution to <a href=\"https://10kdrummachines.com/\" target=\"_blank\" rel=\"noopener noreferrer\">10k Drum Machines</a> based on the <a href=\"/blog/graphing-depth\">Collatz conjecture</a>."
+		],
+		"date": "2025-12-29",
+		"coolness": 64,
+		"link": "/terminal-1/"
+	},
+	{
 		"title": "Channel delay",
 		"description": ["RGB channel delay video shader."],
 		"date": "2025-11-02",

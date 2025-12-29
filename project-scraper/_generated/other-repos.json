@@ -216,6 +216,10 @@
 		"priority": 0.8
 	},
 	{
+		"path": "/terminal-1/",
+		"priority": 0.7
+	},
+	{
 		"path": "/terra/",
 		"priority": 0.8
 	},
