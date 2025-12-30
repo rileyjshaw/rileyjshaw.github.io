@@ -38,12 +38,15 @@ const IndexPage = ({featuredProjects = []}) => {
 		<main>
 			<div className="page-content">
 				<div className="about-stub">
-					<AboutIntro />{' '}
+					<AboutIntro />
 					<p>
-						I learn by making, so this website collects tiny
-						experiments that I’ve built in service of learning or
-						teaching. If you want to read about bigger projects
-						I’ve been involved with,{' '}
+						This website is a collection of prototypes,
+						experiments, and ideas. It is equal parts digital
+						sketchbook and digital landfill. Some of these ideas
+						have contributed to more fully realized projects. Most
+						of them were just built for the fun of exploring. If
+						you want to read about bigger projects I’ve been
+						involved with,{' '}
 						<Link to="/about">
 							there’s more{' '}
 							<span className="about-link-end">
