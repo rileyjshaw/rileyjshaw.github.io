@@ -24,6 +24,10 @@
 		"priority": 0.1
 	},
 	{
+		"path": "/big-dipper/",
+		"priority": 0.7
+	},
+	{
 		"path": "/buster-test/",
 		"priority": 0.1
 	},
