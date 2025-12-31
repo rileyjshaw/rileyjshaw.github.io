@@ -20,8 +20,13 @@
 		"todo": true
 	},
 	{
-		"title": "Font comparison tool",
-		"todo": true
+		"title": "Big Dipper",
+		"description": [
+			"I built a hardware sequencer out of DIP switches in 2018. Now it’s playable on the web."
+		],
+		"date": "2025-12-31",
+		"coolness": 80,
+		"link": "/big-dipper/"
 	},
 	{
 		"title": "Terminal 1",
