@@ -1,5 +1,6 @@
 import React, {useContext, useState, Children, useEffect} from 'react';
 
+import * as Dialog from '@radix-ui/react-dialog';
 import cn from 'cnz';
 import {useIdle} from 'react-use';
 
@@ -8,7 +9,7 @@ import {SITE_PAGES, STORAGE_KEYS} from '../util/constants';
 import {getNextHoliday} from '../util/holidays';
 import {useInterval, useStickyState} from '../util/hooks';
 import {capitalize} from '../util/util';
-import AutoLink from './AutoLink';
+import AutoLink, {ExternalLink} from './AutoLink';
 import Banner from './Banner';
 import Blocker from './Blocker';
 import ClientOnly from './ClientOnly';
@@ -19,12 +20,55 @@ import SiteNav from './SiteNav';
 
 import './layout.css';
 
+function NoteDialog({open, onOpenChange, title, Description}) {
+	return (
+		<Dialog.Root open={open} onOpenChange={onOpenChange}>
+			<Dialog.Portal>
+				<Dialog.Overlay className="dialog-note-overlay" />
+				<Dialog.Content className="dialog-note-content">
+					<Dialog.Title className="dialog-note-title">
+						{title}
+					</Dialog.Title>
+					<Dialog.Description
+						asChild
+						className="dialog-note-description"
+					>
+						<Description />
+					</Dialog.Description>
+					<div
+						style={{
+							display: 'flex',
+							marginTop: 25,
+							justifyContent: 'flex-end',
+						}}
+					>
+						<Dialog.Close asChild>
+							<button className="dialog-note-button">
+								Continue
+							</button>
+						</Dialog.Close>
+					</div>
+					<Dialog.Close asChild>
+						<button
+							className="dialog-note-icon-button"
+							aria-label="Close"
+						>
+							✖
+						</button>
+					</Dialog.Close>
+				</Dialog.Content>
+			</Dialog.Portal>
+		</Dialog.Root>
+	);
+}
+
 const ONE_MINUTE = 60e3;
 const Layout = ({children, location}) => {
 	const {isDialogOpen} = useContext(DialogContext);
 	const {theme, reducedMotion, contrastPreference} =
 		useContext(SettingsContext);
 	const [isBlockerOpen, setIsBlockerOpen] = useState(false);
+	const [isNoteOpen, setIsNoteOpen] = useState(false);
 	const [nTimesClosed, setNTimesClosed] = useStickyState(
 		0,
 		STORAGE_KEYS.nTimesClosedBlocker,
@@ -39,10 +83,10 @@ const Layout = ({children, location}) => {
 	);
 
 	useEffect(() => {
-		if (isIdle && !isDialogOpen) {
+		if (isIdle && !isDialogOpen && !isNoteOpen) {
 			setIsBlockerOpen(true);
 		}
-	}, [isIdle, isDialogOpen]);
+	}, [isIdle, isDialogOpen, isNoteOpen]);
 
 	useInterval(() => {
 		const nextHoliday = getNextHoliday();
@@ -52,6 +96,10 @@ const Layout = ({children, location}) => {
 	let {pathname, search} = location;
 	if (pathname.endsWith('/')) pathname = pathname.slice(1, -1);
 	else pathname = pathname.slice(1);
+
+	useEffect(() => {
+		if (search?.includes('hi=ws')) setIsNoteOpen('WS');
+	}, [search]);
 
 	let is404;
 	try {
@@ -95,6 +143,20 @@ const Layout = ({children, location}) => {
 					}}
 				/>
 			)}
+			<NoteDialog
+				open={isNoteOpen === 'WS'}
+				onOpenChange={setIsNoteOpen}
+				title="Hello, Watershed!"
+				Description={props => (
+					<div {...props}>
+						<p>
+							I’m so excited about your Full-Stack Engineer role.
+							I can think of no greater challenge, or use of my
+							time, than contributing to Watershed’s 2030 goal 🌱
+						</p>
+					</div>
+				)}
+			/>
 			<ClientOnly>
 				{activeHoliday && isHolidayBannerOpen && (
 					<Banner
