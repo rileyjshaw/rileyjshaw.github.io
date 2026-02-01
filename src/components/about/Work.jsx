@@ -339,6 +339,26 @@ export function Signal() {
 	);
 }
 
+export function StepUp() {
+	return (
+		<Job at="Step Up Tutoring" role="Platform Engineer" isCurrent={true}>
+			<p>
+				<AutoLink to="https://www.stepuptutoring.org/">
+					Step Up Tutoring
+				</AutoLink>{' '}
+				is mobilizing a national network of tutors to provide free,
+				one-on-one online tutoring and mentorship to 2nd–6th grade
+				students from underserved communities.
+			</p>
+			<p>
+				I work directly alongside the CTO to scale the platform to
+				support the organization’s growing number of tutors and
+				students.
+			</p>
+		</Job>
+	);
+}
+
 export function Watershed() {
 	return (
 		<Job at="Watershed" role="Staff Software Engineer" isCurrent={false}>

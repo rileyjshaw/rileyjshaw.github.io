@@ -18,6 +18,7 @@ import {
 	RepairMatters,
 	SFPC,
 	Signal,
+	StepUp,
 	Watershed,
 } from '../components/about/Work';
 
@@ -39,6 +40,7 @@ function AboutPage() {
 					<h2>Where I’ve been</h2>
 					<ul className="timeline">
 						<Misery />
+						<StepUp />
 						<Watershed />
 						<MischiefMakers />
 						<Mozilla />
