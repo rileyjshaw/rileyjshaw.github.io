@@ -1,6 +1,6 @@
 .doodle-constrained-lines {
 	align-items: center;
-	background: var(--color-bg-bold);
+	background: var(--color-bg-mute);
 	cursor: pointer;
 	display: flex;
 	grid-area: span 3 / span 3;

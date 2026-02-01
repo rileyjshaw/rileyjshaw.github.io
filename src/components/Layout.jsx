@@ -9,7 +9,7 @@ import {SITE_PAGES, STORAGE_KEYS} from '../util/constants';
 import {getNextHoliday} from '../util/holidays';
 import {useInterval, useStickyState} from '../util/hooks';
 import {capitalize} from '../util/util';
-import AutoLink, {ExternalLink} from './AutoLink';
+import AutoLink from './AutoLink';
 import Banner from './Banner';
 import Blocker from './Blocker';
 import ClientOnly from './ClientOnly';
@@ -20,7 +20,7 @@ import SiteNav from './SiteNav';
 
 import './layout.css';
 
-function NoteDialog({open, onOpenChange, title, Description}) {
+function NoteDialog({open, onOpenChange, title, Description, buttonText}) {
 	return (
 		<Dialog.Root open={open} onOpenChange={onOpenChange}>
 			<Dialog.Portal>
@@ -44,7 +44,7 @@ function NoteDialog({open, onOpenChange, title, Description}) {
 					>
 						<Dialog.Close asChild>
 							<button className="dialog-note-button">
-								Continue
+								{buttonText || 'Continue'}
 							</button>
 						</Dialog.Close>
 					</div>
@@ -68,7 +68,7 @@ const Layout = ({children, location}) => {
 	const {theme, reducedMotion, contrastPreference} =
 		useContext(SettingsContext);
 	const [isBlockerOpen, setIsBlockerOpen] = useState(false);
-	const [isNoteOpen, setIsNoteOpen] = useState(false);
+	const [noteContents, setNoteContents] = useState(null);
 	const [nTimesClosed, setNTimesClosed] = useStickyState(
 		0,
 		STORAGE_KEYS.nTimesClosedBlocker,
@@ -83,23 +83,38 @@ const Layout = ({children, location}) => {
 	);
 
 	useEffect(() => {
-		if (isIdle && !isDialogOpen && !isNoteOpen) {
+		if (isIdle && !isDialogOpen && !noteContents) {
 			setIsBlockerOpen(true);
 		}
-	}, [isIdle, isDialogOpen, isNoteOpen]);
+	}, [isIdle, isDialogOpen, noteContents]);
 
 	useInterval(() => {
 		const nextHoliday = getNextHoliday();
 		setActiveHoliday(nextHoliday.daysUntil <= 3 ? nextHoliday : null);
 	}, ONE_MINUTE);
 
-	let {pathname, search} = location;
+	let {pathname} = location;
 	if (pathname.endsWith('/')) pathname = pathname.slice(1, -1);
 	else pathname = pathname.slice(1);
 
 	useEffect(() => {
-		if (search?.includes('hi=ws')) setIsNoteOpen('WS');
-	}, [search]);
+		const hi = new URLSearchParams(location.search).get('hi');
+		if (!hi) return;
+		let cancelled = false;
+		(async () => {
+			try {
+				const res = await fetch(
+					`https://rileyjshaw--7497bef2ff8c11f08df142dde27851f2.web.val.run?hi=${encodeURIComponent(hi)}`,
+				);
+				if (cancelled || !res.ok) return;
+				const {title, body, buttonText} = await res.json();
+				if (!cancelled) setNoteContents({title, body, buttonText});
+			} catch (_) {}
+		})();
+		return () => {
+			cancelled = true;
+		};
+	}, [location.search]);
 
 	let is404;
 	try {
@@ -143,20 +158,25 @@ const Layout = ({children, location}) => {
 					}}
 				/>
 			)}
-			<NoteDialog
-				open={isNoteOpen === 'WS'}
-				onOpenChange={setIsNoteOpen}
-				title="Hello, Watershed!"
-				Description={props => (
-					<div {...props}>
-						<p>
-							I’m so excited about your Full-Stack Engineer role.
-							I can think of no greater challenge, or use of my
-							time, than contributing to Watershed’s 2030 goal 🌱
-						</p>
-					</div>
-				)}
-			/>
+			{noteContents && (
+				<NoteDialog
+					open={!!noteContents}
+					onOpenChange={open => {
+						if (!open) setNoteContents(null);
+					}}
+					title={noteContents?.title}
+					Description={props => (
+						<div {...props}>
+							<p
+								dangerouslySetInnerHTML={{
+									__html: noteContents?.body,
+								}}
+							/>
+						</div>
+					)}
+					buttonText={noteContents?.buttonText}
+				/>
+			)}
 			<ClientOnly>
 				{activeHoliday && isHolidayBannerOpen && (
 					<Banner

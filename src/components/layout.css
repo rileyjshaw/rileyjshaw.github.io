@@ -46,18 +46,12 @@
 	position: fixed;
 	z-index: 1;
 }
-.dialog-note-title {
-	font-family: var(--ff-heading);
-	font-size: var(--fs-5);
-	font-weight: 900;
-	margin-top: 0;
-	text-decoration: wavy underline;
-}
 .dialog-note-content {
 	animation: content-show 150ms cubic-bezier(0.16, 1, 0.3, 1);
 	background: var(--color-blue-800);
 	border-radius: 24px;
 	box-shadow: var(--shadow-lg);
+	color: var(--color-grey-50);
 	font-size: var(--fs-2);
 	height: max-content;
 	left: 50%;
@@ -71,6 +65,15 @@
 	transform: translate(-50%, -50%);
 	width: 90vw;
 	z-index: 1;
+}
+.dialog-note-title {
+	font-family: var(--ff-heading);
+	font-size: var(--fs-5);
+	font-weight: 900;
+	margin-top: 0;
+	text-shadow:
+		4px 4px 0 rgba(0, 0, 0, 0.66),
+		8px 8px 0 rgba(0, 0, 0, 0.33);
 }
 .dialog-note-description a {
 	color: inherit;

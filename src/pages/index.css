@@ -85,7 +85,7 @@
 	text-decoration: none;
 }
 .main-gallery .featured-doodle {
-	background: var(--color-bg-bold);
+	background: var(--color-bg-mute);
 }
 .main-gallery .featured-doodle .doodle {
 	border: none;
