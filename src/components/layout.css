@@ -72,8 +72,8 @@
 	font-weight: 900;
 	margin-top: 0;
 	text-shadow:
-		4px 4px 0 rgba(0, 0, 0, 0.66),
-		8px 8px 0 rgba(0, 0, 0, 0.33);
+		4px 4px 0 rgb(0 0 0 / 66%),
+		8px 8px 0 rgb(0 0 0 / 33%);
 }
 .dialog-note-description a {
 	color: inherit;

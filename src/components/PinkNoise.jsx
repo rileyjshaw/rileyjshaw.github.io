@@ -7,7 +7,6 @@ const PinkNoise = props => (
 		width="1000px"
 		height="1000px"
 		style={{
-			aspectRatio: 1,
 			height: '100%',
 			width: '100%',
 		}}
