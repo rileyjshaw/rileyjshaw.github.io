@@ -67,17 +67,40 @@ const IndexPage = ({featuredProjects = []}) => {
 					<ul className="main-gallery">
 						<li className="project">
 							<ExternalLink
-								to="https://youtu.be/ytyOffQuA5o"
+								to="https://strange.cam"
 								className="image-link"
 							>
 								<StaticImage
-									src="../../content/images/projects/stargazer.svg"
-									alt="A logo with the word “Stargazer”"
+									src="../../content/images/projects/strange-camera.svg"
+									alt="A logo for “Strange Camera”"
 									width={600}
 									aspectRatio={1}
-									backgroundColor="rgb(1, 6, 25)"
+									backgroundColor="#bbff35"
 								/>
 							</ExternalLink>
+						</li>
+						<li>
+							<ul className="bento-half-y">
+								<li className="project deletion-day">
+									<ExternalLink to="https://deletionday.com">
+										4/04
+									</ExternalLink>
+								</li>
+								<li className="project">
+									<ExternalLink
+										to="https://sort.tools"
+										className="image-link sort-tools-link"
+									>
+										<StaticImage
+											src="../../content/images/projects/sort-tools.png"
+											alt="A logo with the title “Sort Tools”"
+											className="sort-tools-logo"
+											width={600}
+											placeholder="none"
+										/>
+									</ExternalLink>
+								</li>
+							</ul>
 						</li>
 						<li className="project">
 							<ExternalLink
@@ -88,6 +111,18 @@ const IndexPage = ({featuredProjects = []}) => {
 									className="featured-raw-img"
 									src={fractalImgSrc}
 									alt="An animated fractal spiral."
+								/>
+							</ExternalLink>
+						</li>
+						<li className="project">
+							<ExternalLink
+								to="/shaderpad"
+								className="image-link"
+							>
+								<StaticImage
+									src="../../content/images/projects/shaderpad-square.webp"
+									alt="A logo with the title “ShaderPad”"
+									width={600}
 								/>
 							</ExternalLink>
 						</li>
@@ -111,29 +146,6 @@ const IndexPage = ({featuredProjects = []}) => {
 								aspectRatio={1}
 							/>
 						</li>
-						<li>
-							<ul className="bento-half-y">
-								<li className="project deletion-day">
-									<ExternalLink to="https://deletionday.com">
-										4/04
-									</ExternalLink>
-								</li>
-								<li className="project">
-									<ExternalLink
-										to="https://sort.tools"
-										className="image-link sort-tools-link"
-									>
-										<StaticImage
-											src="../../content/images/projects/sort-tools.png"
-											alt="A logo with the title “Sort Tools”"
-											className="sort-tools-logo"
-											width={500}
-											placeholder="none"
-										/>
-									</ExternalLink>
-								</li>
-							</ul>
-						</li>
 						<li className="project">
 							<ExternalLink
 								to="https://youtu.be/Ow5A2BGH1m4"
@@ -146,6 +158,34 @@ const IndexPage = ({featuredProjects = []}) => {
 									aspectRatio={1}
 								/>
 							</ExternalLink>
+						</li>
+						<li className="project">
+							<ExternalLink
+								to="https://youtu.be/ytyOffQuA5o"
+								className="image-link"
+							>
+								<StaticImage
+									src="../../content/images/projects/stargazer-neo.svg"
+									alt="A logo with the word “Stargazer”"
+									width={600}
+									aspectRatio={1}
+									backgroundColor="rgb(1, 6, 25)"
+								/>
+							</ExternalLink>
+						</li>
+						<li>
+							<li className="project">
+								<ExternalLink
+									to="/harmonics"
+									className="image-link"
+								>
+									<StaticImage
+										src="../../content/images/projects/harmonics-square.png"
+										alt="A technicolour abstract image. It looks like a vibrant oil spill."
+										width={600}
+									/>
+								</ExternalLink>
+							</li>
 						</li>
 						<li>
 							<ul className="bento-half-x">
@@ -166,62 +206,16 @@ const IndexPage = ({featuredProjects = []}) => {
 										}
 									/>
 								</li>
-								<li>
-									<ul className="bento-half-y">
-										<li className="project">
-											<GalleryImage
-												aspectRatio={1}
-												ThumbnailImage={<PinkNoise />}
-												FullImage={
-													<PinkNoise
-														width="2400px"
-														height="2400px"
-													/>
-												}
+								<li className="project">
+									<GalleryImage
+										ThumbnailImage={<PinkNoise />}
+										FullImage={
+											<PinkNoise
+												width="2400px"
+												height="2400px"
 											/>
-										</li>
-										<li className="project">
-											<ExternalLink
-												to="/ribbon"
-												className="image-link"
-											>
-												<StaticImage
-													src="../../content/images/projects/ribbon.png"
-													alt="A folded papercraft ribbon."
-													width={300}
-													aspectRatio={1}
-												/>
-											</ExternalLink>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<ul className="bento-half-y">
-								<li className="project">
-									<ExternalLink
-										to="/shaderpad"
-										className="image-link"
-									>
-										<StaticImage
-											src="../../content/images/projects/shaderpad.png"
-											alt="A logo with the title “ShaderPad”"
-											width={600}
-										/>
-									</ExternalLink>
-								</li>
-								<li className="project">
-									<ExternalLink
-										to="/harmonics"
-										className="image-link"
-									>
-										<StaticImage
-											src="../../content/images/projects/harmonics.png"
-											alt="A technicolour abstract image. It looks like a vibrant oil spill."
-											width={600}
-										/>
-									</ExternalLink>
+										}
+									/>
 								</li>
 							</ul>
 						</li>
@@ -253,6 +247,29 @@ const IndexPage = ({featuredProjects = []}) => {
 						</li>
 						<li>
 							<ul className="bento-half-x">
+								<li>
+									<ul className="bento-half-y">
+										<li className="project no-zoom">
+											<BackgroundGenerator
+												fgColor="#d48ed9"
+												bgColor="#d86462"
+											/>
+										</li>
+										<li className="project">
+											<ExternalLink
+												to="/ribbon"
+												className="image-link"
+											>
+												<StaticImage
+													src="../../content/images/projects/ribbon.png"
+													alt="A folded papercraft ribbon."
+													width={300}
+													aspectRatio={1}
+												/>
+											</ExternalLink>
+										</li>
+									</ul>
+								</li>
 								<li className="project">
 									<GalleryImage
 										ThumbnailImage={
@@ -272,17 +289,36 @@ const IndexPage = ({featuredProjects = []}) => {
 										aspectRatio={1}
 									/>
 								</li>
+							</ul>
+						</li>
+						<li>
+							<ul className="bento-half-y">
+								<li className="project color-mute">
+									<ExternalLink
+										to="/big-dipper"
+										className="image-link"
+									>
+										<StaticImage
+											src="../../content/images/projects/dips.png"
+											alt="An illustrated DIP switch."
+											width={600}
+										/>
+									</ExternalLink>
+								</li>
 								<li>
-									<ul className="bento-half-y">
-										<li className="project no-zoom">
-											<BackgroundGenerator
-												fgColor={
-													DIRECT_COLORS.yellow[500]
-												}
-												bgColor={
-													DIRECT_COLORS.yellow[800]
-												}
-											/>
+									<ul className="bento-half-x">
+										<li className="project">
+											<ExternalLink
+												to="https://codepen.io/rileyjshaw/full/ZEZearO"
+												className="image-link"
+											>
+												<StaticImage
+													src="../../content/images/projects/spirals.png"
+													alt="A poem, written as 2 opposing spirals."
+													width={300}
+													aspectRatio={1}
+												/>
+											</ExternalLink>
 										</li>
 										<li className="project no-zoom">
 											<Link to="/about">
@@ -298,33 +334,29 @@ const IndexPage = ({featuredProjects = []}) => {
 								onFullCycle={incrementFeaturedDoodleIdx}
 							/>
 						</li>
-						<li>
-							<ul className="bento-half-y">
-								<li className="project">
-									<GalleryImage
-										ThumbnailImage={
-											<StaticImage
-												src="../../content/images/projects/quantized.jpg"
-												alt="An abstract image. It’s shiny, grainy, lo-fi, and looks a bit 3D."
-												width={600}
-											/>
-										}
-										FullImage={
-											<StaticImage
-												src="../../content/images/projects/quantized.jpg"
-												alt="An abstract image. It’s shiny, grainy, lo-fi, and looks a bit 3D."
-											/>
-										}
-										aspectRatio={1}
+						<li className="project">
+							<GalleryImage
+								ThumbnailImage={
+									<StaticImage
+										src="../../content/images/projects/quantized.jpg"
+										alt="An abstract image. It’s shiny, grainy, lo-fi, and looks a bit 3D."
+										width={600}
 									/>
-								</li>
-								<li className="project selectable">
-									<div className="mess-is-more">
-										<p>Less is bore.</p>
-										<p>Mess is more!</p>
-									</div>
-								</li>
-							</ul>
+								}
+								FullImage={
+									<StaticImage
+										src="../../content/images/projects/quantized.jpg"
+										alt="An abstract image. It’s shiny, grainy, lo-fi, and looks a bit 3D."
+									/>
+								}
+								aspectRatio={1}
+							/>
+						</li>
+						<li className="project selectable">
+							<div className="mess-is-more">
+								<p>Less is bore.</p>
+								<p>Mess is more!</p>
+							</div>
 						</li>
 					</ul>
 				</div>

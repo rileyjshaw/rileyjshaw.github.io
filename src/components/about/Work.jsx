@@ -364,7 +364,7 @@ export function Watershed() {
 		<Job at="Watershed" role="Staff Software Engineer" isCurrent={false}>
 			<p>
 				<AutoLink to="https://watershed.com/">Watershed’s</AutoLink>{' '}
-				mission is to accelerate the climate economy, and our 2030 goal
+				mission is to accelerate the climate economy, with a 2030 goal
 				is to work with our customers to reduce or remove 500
 				megatonnes of CO2 equivalent—approximately 1% of annual global
 				emissions.
