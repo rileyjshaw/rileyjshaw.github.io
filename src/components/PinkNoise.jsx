@@ -4,7 +4,7 @@ const PinkNoise = props => (
 	<svg
 		version="1.1"
 		xmlns="http://www.w3.org/2000/svg"
-		width="1000px"
+		width="auto"
 		height="1000px"
 		style={{
 			height: '100%',

@@ -210,10 +210,7 @@ const IndexPage = ({featuredProjects = []}) => {
 									<GalleryImage
 										ThumbnailImage={<PinkNoise />}
 										FullImage={
-											<PinkNoise
-												width="2400px"
-												height="2400px"
-											/>
+											<PinkNoise height="2400px" />
 										}
 									/>
 								</li>
