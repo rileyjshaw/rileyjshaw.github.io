@@ -2027,7 +2027,7 @@
 			"An ascii rock garden. Rake with touch / mouse."
 		],
 		"lastTagged": 1564773957386,
-		"link": "https://ascii-garden.glitch.me/",
+		"link": "/glitch-archive/projects/ascii-garden/",
 		"tags": [
 			"online",
 			"pretty"
@@ -2334,10 +2334,10 @@
 		"coolness": 76,
 		"date": "2019-03-09",
 		"descriptionList": [
-			"Caution: it flashes! <a href=\"https://glitch.com/edit/#!/ca-finder?path=README.md:1:0\" rel=\"noopener noreferrer\" target=\"_blank\">Controls listed in the README.</a>"
+			"Caution: it flashes! <a href=\"/glitch-archive/projects/ca-finder/\" target=\"_blank\" rel=\"noopener noreferrer\">Controls listed in the README.</a>"
 		],
 		"lastTagged": 1552433253008,
-		"link": "https://ca-finder.glitch.me/",
+		"link": "/glitch-archive/projects/ca-finder/",
 		"tags": [
 			"game",
 			"online",
@@ -4434,7 +4434,7 @@
 			"Used as part of an online treasure hunt I made."
 		],
 		"lastTagged": 1564772210294,
-		"link": "https://marqueee.glitch.me/",
+		"link": "/glitch-archive/projects/marqueee/",
 		"tags": [
 			"online",
 			"reusable"
@@ -4448,9 +4448,9 @@
 		"coolness": 40,
 		"date": "2021-06-08",
 		"descriptionList": [
-			"A remix of <a href=\"https://glitch.com/edit/#!/marqueee\" rel=\"noopener noreferrer\" target=\"_blank\">Marqueee</a>, with a <code>rotate</code> parameter added."
+			"A remix of <a href=\"/glitch-archive/projects/marqueee/\" target=\"_blank\" rel=\"noopener noreferrer\">Marqueee</a>, with a <code>rotate</code> parameter added."
 		],
-		"link": "https://marqueee-rotated.glitch.me/",
+		"link": "/glitch-archive/projects/marqueee-rotated/",
 		"timestamp": 1623110400000,
 		"title": "Marqueee (rotated)",
 		"type": "project",
@@ -5014,7 +5014,7 @@
 			"Each row is placed to line up visually with the row above it, which causes a subtle shearing effect."
 		],
 		"lastTagged": 1564624404415,
-		"link": "https://photo-experiment.glitch.me",
+		"link": "/glitch-archive/projects/photo-experiment/",
 		"tags": [
 			"online",
 			"pretty"
@@ -5459,7 +5459,7 @@
 			"A quick visual built during lunch, inspired by the base of the lunch table."
 		],
 		"lastTagged": 1564708715719,
-		"link": "https://rings.glitch.me/",
+		"link": "/glitch-archive/projects/rings/",
 		"tags": [
 			"online",
 			"pretty"
@@ -6792,7 +6792,7 @@
 			"A garden of emoji that slowly climbs your screen."
 		],
 		"lastTagged": 1564773945787,
-		"link": "https://txt-flowers.glitch.me/",
+		"link": "/glitch-archive/projects/txt-flowers/",
 		"tags": [
 			"online",
 			"pretty"
@@ -6849,7 +6849,7 @@
 			"This was a proof-of-concept for a keyboard glove, which was implemented in hardware by <a href=\"https://github.com/rileyjshaw/english-words-directory-trie\" rel=\"noopener noreferrer\" target=\"_blank\">mapping the trie to a directory tree</a>."
 		],
 		"lastTagged": 1564775565269,
-		"link": "https://typing-lazy.glitch.me/",
+		"link": "/glitch-archive/projects/typing-lazy/",
 		"tags": [
 			"external",
 			"online",
@@ -8724,6 +8724,54 @@
 		"title": "2026-01-23 at 16.24.41.png",
 		"type": "screenshotsTumblr",
 		"uid": "SCREENSHOTS_TUMBLR_806568309366636544"
+	},
+	{
+		"body": "https://64.media.tumblr.com/46f00db8c0aadc366e1c7285858ba785/417cb5237ba03e5e-67/s640x960/25975894ea50a4f60d8123306810e95adc52d934.png",
+		"contentType": "photo",
+		"coolness": 3,
+		"date": "2026-02-04",
+		"extraData": [
+			3354,
+			3214,
+			1
+		],
+		"link": "https://screenshots.rileyjshaw.com/post/807588974831009792",
+		"timestamp": 1770163200000,
+		"title": "2026-02-03 at 22.47.43.png",
+		"type": "screenshotsTumblr",
+		"uid": "SCREENSHOTS_TUMBLR_807588974831009792"
+	},
+	{
+		"body": "https://64.media.tumblr.com/badd39f2d2099fe308e4c8db41e09c5d/2a083be65872ad7d-1c/s640x960/07134d121c26bb4b9dd07eaf48d29a4be5c475a6.png",
+		"contentType": "photo",
+		"coolness": 3,
+		"date": "2026-02-07",
+		"extraData": [
+			3002,
+			3206,
+			1
+		],
+		"link": "https://screenshots.rileyjshaw.com/post/807909682332286976",
+		"timestamp": 1770422400000,
+		"title": "2026-02-07 at 11.45.13.png",
+		"type": "screenshotsTumblr",
+		"uid": "SCREENSHOTS_TUMBLR_807909682332286976"
+	},
+	{
+		"body": "https://64.media.tumblr.com/24969b09e1c9861d0fdfb809ca0c4847/2d8df58dd726566a-a2/s640x960/964fcac1c779ae108fdbc3863737e1c2d7dada37.jpg",
+		"contentType": "photo",
+		"coolness": 3,
+		"date": "2026-02-07",
+		"extraData": [
+			4032,
+			3024,
+			1
+		],
+		"link": "https://screenshots.rileyjshaw.com/post/807910353435508736",
+		"timestamp": 1770422400000,
+		"title": "2026-02-07 at 11.55.54.png",
+		"type": "screenshotsTumblr",
+		"uid": "SCREENSHOTS_TUMBLR_807910353435508736"
 	},
 	{
 		"body": "<p>it was silly to write all of this down but i  created this blog today and i’m still editing the layout, so i want more words to work with.<br/></p><hr><p>create a few distinct sounds, for example:</p><ul><li>cup/table tap</li><li>cup/table scrape</li><li>ball/table tap</li><li>ball/table scrape</li><li>cup/ball tap</li></ul><p>these examples are unambiguous and easy to perform rapidly by someone keeping the cup in one hand &amp; ball in the other. i&rsquo;ll refer to each performed sound as a &ldquo;bit&rdquo; from here on out.</p><p>for n bits, you have (number of sounds)^n options. with the examples above that&rsquo;s 5^n, which is plenty.</p><p>so what&rsquo;s important to convey?</p><p>the shapes are curvy and strange, so it&rsquo;s easier to share a limited reference table of basic + advanced shapes instead of deriving each part of the bear from scratch. three bits could cover 125 shapes, which is  ample for bear and bear-like drawings.</p><p>shapes are more reusable if they can be drawn at different sizes. let&rsquo;s use one bit to indicate size:</p><p>0: smallest<br/>1: smaller<br/>2: as shown on reference table<br/>3: larger<br/>4: largest</p><p>we&rsquo;re trying to convey a cohesive bear, so the relative position between shapes is more important than their absolute position on the page. two bits can express position in relation to the last shape drawn, for example:</p><p>0: draw in any open space<br/>1: draw connected to the north-most edge of the previous shape<br/>2: draw connected to the northeast-most edge of the previous shape<br/>3: draw connected to the east-most edge of the previous shape<br/>4: draw connected to the southeast-most edge of the previous shape<br/>5: draw connected to the south-most edge of the previous shape<br/>&hellip;<br/>9: continue from shape&rsquo;s final pen position<br/>10: continue from shape&rsquo;s initial pen position<br/>&hellip;<br/>15: draw within the previous shape<br/>16: draw surrounding the previous shape<br/>&hellip;<br/>etc.</p><p>since pen position is a factor, the shape reference table should imply direction.</p><p>to save time, a bit could be added to indicate how many shapes should be drawn at the specified position. for example, there are four toes in each bear foot.</p><hr><p>when ordering the bits, it makes sense to think of what information is most useful to the receiver at each step. my intuition is that this is a good order:</p><p>•• position<br/>• number<br/>• size<br/>••• shape</p><p>so each shape takes seven sounds from the sender.</p><hr><p>update: i ran this by phil; they made the point that since there&rsquo;s no acknowledgment channel from the receiver, redundancy would help reduce errors. let&rsquo;s add a bit at the beginning to indicate whether this is the initial message or a confirmation message. the following 7 bits will then be identical.</p><hr><p>update 2: in the above system, a single missed bit would be catastrophic; it would corrupt the receiver&rsquo;s understanding of all future communication. the (initial | confirmation) sound should be unique so it always marks the start of a new shape. dragging the (cup | ball) in a double circle works.</p>",

@@ -2647,14 +2647,14 @@
 		],
 		"date": "2013-04-02",
 		"coolness": 30,
-		"link": "/portfolio/old/instaframedemo/"
+		"link": "https://v14.rileyjshaw.com/portfolio/old/instaframedemo/"
 	},
 	{
 		"title": "Peek",
 		"description": ["Scrolling gallery view for Tumblr."],
 		"date": "2013-03-25",
 		"coolness": 60,
-		"link": "/portfolio/old/peekdemo.html"
+		"link": "https://v14.rileyjshaw.com/portfolio/old/peekdemo"
 	},
 	{
 		"title": "Zenwall",
@@ -2709,7 +2709,7 @@
 		"description": ["My former personal brand mark."],
 		"date": "2012-01-05",
 		"coolness": 24,
-		"link": "/portfolio/old/cssonly/infiniteye.html"
+		"link": "https://v14.rileyjshaw.com/portfolio/old/cssonly/infiniteye"
 	},
 	{
 		"title": "That’s nuts!",

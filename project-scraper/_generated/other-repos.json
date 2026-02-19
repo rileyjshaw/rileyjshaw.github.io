@@ -37,7 +37,7 @@
 	},
 	{
 		"path": "/canvas/",
-		"priority": 0.6
+		"priority": 0.7
 	},
 	{
 		"path": "/challenger/",
@@ -110,6 +110,10 @@
 	{
 		"path": "/fractal/",
 		"priority": 0.7
+	},
+	{
+		"path": "/glitch-archive/",
+		"priority": 0.6
 	},
 	{
 		"path": "/glorious-pattern-matcher/",
