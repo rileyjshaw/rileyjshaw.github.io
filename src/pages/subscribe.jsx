@@ -141,7 +141,7 @@ const SubscribePage = () => (
 				</li>
 				<li>
 					<s>
-						<ExternalLink to="https://glitch.com/@rileyjshaw">
+						<ExternalLink to="/glitch-archive/">
 							Glitch
 						</ExternalLink>
 					</s>

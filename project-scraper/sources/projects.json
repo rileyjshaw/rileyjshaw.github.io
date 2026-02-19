@@ -335,11 +335,11 @@
 	{
 		"title": "Marqueee (rotated)",
 		"description": [
-			"A remix of <a href=\"https://glitch.com/edit/#!/marqueee\" target=\"_blank\" rel=\"noopener noreferrer\">Marqueee</a>, with a <code>rotate</code> parameter added."
+			"A remix of <a href=\"/glitch-archive/projects/marqueee/\" target=\"_blank\" rel=\"noopener noreferrer\">Marqueee</a>, with a <code>rotate</code> parameter added."
 		],
 		"date": "2021-06-08",
 		"coolness": 40,
-		"link": "https://marqueee-rotated.glitch.me/"
+		"link": "/glitch-archive/projects/marqueee-rotated/"
 	},
 	{
 		"title": "CSV to GPX",
@@ -621,7 +621,7 @@
 		],
 		"date": "2019-06-01",
 		"coolness": 36,
-		"link": "https://marqueee.glitch.me/"
+		"link": "/glitch-archive/projects/marqueee/"
 	},
 	{
 		"title": "Servo",
@@ -637,14 +637,14 @@
 		"description": ["A garden of emoji that slowly climbs your screen."],
 		"date": "2019-03-17",
 		"coolness": 41,
-		"link": "https://txt-flowers.glitch.me/"
+		"link": "/glitch-archive/projects/txt-flowers/"
 	},
 	{
 		"title": "ascii garden",
 		"description": ["An ascii rock garden. Rake with touch / mouse."],
 		"date": "2019-03-17",
 		"coolness": 41,
-		"link": "https://ascii-garden.glitch.me/"
+		"link": "/glitch-archive/projects/ascii-garden/"
 	},
 	{
 		"title": "typing lazy (desktop only)",
@@ -653,17 +653,17 @@
 			"This was a proof-of-concept for a keyboard glove, which was implemented in hardware by <a href=\"https://github.com/rileyjshaw/english-words-directory-trie\" target=\"_blank\" rel=\"noopener noreferrer\">mapping the trie to a directory tree</a>."
 		],
 		"date": "2019-03-10",
-		"link": "https://typing-lazy.glitch.me/",
+		"link": "/glitch-archive/projects/typing-lazy/",
 		"coolness": 80
 	},
 	{
 		"title": "CA finder",
 		"description": [
-			"Caution: it flashes! <a href=\"https://glitch.com/edit/#!/ca-finder?path=README.md:1:0\" target=\"_blank\" rel=\"noopener noreferrer\">Controls listed in the README.</a>"
+			"Caution: it flashes! <a href=\"/glitch-archive/projects/ca-finder/\" target=\"_blank\" rel=\"noopener noreferrer\">Controls listed in the README.</a>"
 		],
 		"date": "2019-03-09",
 		"coolness": 76,
-		"link": "https://ca-finder.glitch.me/"
+		"link": "/glitch-archive/projects/ca-finder/"
 	},
 	{
 		"title": "1.618 tests",
@@ -752,7 +752,7 @@
 		],
 		"date": "2017-09-30",
 		"coolness": 33,
-		"link": "https://photo-experiment.glitch.me"
+		"link": "/glitch-archive/projects/photo-experiment/"
 	},
 	{
 		"title": "hologram",
@@ -1589,7 +1589,7 @@
 		],
 		"date": "2015-09-10",
 		"coolness": 39,
-		"link": "https://rings.glitch.me/"
+		"link": "/glitch-archive/projects/rings/"
 	},
 	{
 		"title": ".supermac",
