@@ -365,9 +365,8 @@ export function Watershed() {
 			<p>
 				<AutoLink to="https://watershed.com/">Watershed’s</AutoLink>{' '}
 				mission is to accelerate the climate economy, with a 2030 goal
-				is to work with our customers to reduce or remove 500
-				megatonnes of CO2 equivalent—approximately 1% of annual global
-				emissions.
+				to reduce or remove 500 megatonnes of CO2
+				equivalent—approximately 1% of annual global emissions.
 			</p>
 			<p>
 				I built reporting tools to help companies understand and reduce
