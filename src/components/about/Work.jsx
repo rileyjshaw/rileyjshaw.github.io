@@ -21,9 +21,9 @@ function Job({at, role, children, isCurrent}) {
 
 export function CLC() {
 	return (
-		<Job at="Canada Learning Code">
+		<Job at="Canada Learning Code" role="Instructor / mentor">
 			<p>
-				I spent years as a volunteer mentor and instructor with{' '}
+				I spent years as a volunteer with{' '}
 				<AutoLink to="https://www.canadalearningcode.ca/">
 					Canada Learning Code
 				</AutoLink>
@@ -56,7 +56,7 @@ export function CLC() {
 
 export function D30U30() {
 	return (
-		<Job at="Developer 30 Under 30">
+		<Job at="Developer 30 Under 30" role="Recipient">
 			<p>
 				I won this award in early 2017.{' '}
 				<AutoLink to="/blog/D30U30">I wrote about it here.</AutoLink>
@@ -67,7 +67,7 @@ export function D30U30() {
 
 export function KhanAcademy() {
 	return (
-		<Job at="Khan Academy">
+		<Job at="Khan Academy" role="Senior Software Engineer">
 			<p>
 				I spent three years on the Engineering team at{' '}
 				<AutoLink to="https://khanacademy.org">Khan Academy</AutoLink>.
@@ -103,19 +103,23 @@ export function KhanAcademy() {
 }
 
 export function Listn() {
-	<Job at="Listn">
-		<p>
-			I co-created{' '}
-			<AutoLink to="https://listn.co/">a popular mobile app</AutoLink>{' '}
-			during university. We sold it to
-			<AutoLink to="https://www.beatport.com/">Beatport</AutoLink>.
-		</p>
-	</Job>;
+	return (
+		<Job at="Listn" role="Co-founder">
+			<p>
+				I co-created{' '}
+				<AutoLink to="https://listn.co/">
+					a popular mobile app
+				</AutoLink>{' '}
+				during university. We sold it to{' '}
+				<AutoLink to="https://www.beatport.com/">Beatport</AutoLink>.
+			</p>
+		</Job>
+	);
 }
 
 export function MischiefMakers() {
 	return (
-		<Job at="Mischief Makers" isCurrent={true}>
+		<Job at="Mischief Makers" isCurrent={true} role="Volunteer">
 			<p>
 				I volunteer at{' '}
 				<AutoLink to="https://mischiefmakers.ca/">
@@ -181,7 +185,11 @@ export function Mozilla() {
 
 export function RecurseCenter() {
 	return (
-		<Job at="Recurse Center" isCurrent={true}>
+		<Job
+			at="Recurse Center"
+			isCurrent={true}
+			role="Contractor / interviewer / attendee"
+		>
 			<p>
 				I attended{' '}
 				<AutoLink to="https://www.recurse.com/scout/click?t=4bdcd56dfdb6c80c7832262c0bb8007b">
@@ -204,18 +212,6 @@ export function RecurseCenter() {
 					</AutoLink>
 				</li>
 				<li>
-					<AutoLink to="http://ushld.rileyjshaw.com">Fun</AutoLink>{' '}
-					<AutoLink to="https://github.com/rileyjshaw/own-this-website">
-						goofy
-					</AutoLink>{' '}
-					<AutoLink to="https://github.com/rileyjshaw/boxes">
-						web
-					</AutoLink>{' '}
-					<AutoLink to="https://github.com/rileyjshaw/filesupply">
-						apps
-					</AutoLink>
-				</li>
-				<li>
 					<AutoLink to="https://github.com/neerajwahi/pairjam">
 						A real-time collaborative coding environment
 					</AutoLink>
@@ -232,7 +228,7 @@ export function RecurseCenter() {
 					</AutoLink>
 				</li>
 				<li>
-					<AutoLink to="https://v2.rileyjshaw.com/">
+					<AutoLink to="https://v14.rileyjshaw.com/">
 						A personal website
 					</AutoLink>
 				</li>
@@ -261,7 +257,7 @@ export function RecurseCenter() {
 
 export function RepairMatters() {
 	return (
-		<Job at="Repair Matters">
+		<Job at="Repair Matters" role="Fixer">
 			<p>
 				I used to volunteer with{' '}
 				<AutoLink to="https://repairmatters.ca">
@@ -280,7 +276,7 @@ export function RepairMatters() {
 
 export function SFPC() {
 	return (
-		<Job at="School for Poetic Computation">
+		<Job at="School for Poetic Computation" role="Resident">
 			<p>
 				I attended the{' '}
 				<AutoLink to="https://sfpc.io">
@@ -322,7 +318,7 @@ export function SFPC() {
 
 export function Signal() {
 	return (
-		<Job at="Signal Desktop">
+		<Job at="Signal Desktop" role="Developer">
 			<p>
 				Duing the{' '}
 				<AutoLink to="/blog/the-pool-on-the-roof-must-have-a-leak">
