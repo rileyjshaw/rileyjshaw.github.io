@@ -27,11 +27,14 @@ const SubscribePage = () => (
 				</dt>
 				<dd>
 					New featured projects, as well as significant changes to
-					the website posted to my{' '}
-					<ExternalLink to="http://rileyjshaw.commit--blog.com/">
-						commit--blog
-					</ExternalLink>
-					.
+					the website posted to{' '}
+					<s>
+						my{' '}
+						<ExternalLink to="http://rileyjshaw.commit--blog.com/">
+							commit--blog
+						</ExternalLink>
+						.
+					</s>
 				</dd>
 				<dt>
 					<UncontrolledLink to="/blog.xml">
@@ -48,11 +51,14 @@ const SubscribePage = () => (
 				</dt>
 				<dd>
 					New posts from the <Link to="/blog">blog</Link> page, minus
-					external blogs like Tumblrs or the{' '}
-					<ExternalLink to="http://rileyjshaw.commit--blog.com/">
-						commit--blog
-					</ExternalLink>
-					.
+					external blogs like Tumblrs or{' '}
+					<s>
+						the{' '}
+						<ExternalLink to="http://rileyjshaw.commit--blog.com/">
+							commit--blog
+						</ExternalLink>
+						.
+					</s>
 				</dd>
 				<dt>
 					<UncontrolledLink to="/lab.xml">
@@ -81,8 +87,8 @@ const SubscribePage = () => (
 					</ExternalLink>
 				</li>
 				<li>
-					<ExternalLink to="https://keybase.io/rileyjshaw">
-						Keybase
+					<ExternalLink to="https://codepen.io/rileyjshaw">
+						Codepen
 					</ExternalLink>
 				</li>
 				<li>
@@ -91,8 +97,18 @@ const SubscribePage = () => (
 					</ExternalLink>
 				</li>
 				<li>
-					<ExternalLink to="https://codepen.io/rileyjshaw">
-						Codepen
+					<ExternalLink to="https://www.youtube.com/channel/UCV09P32tImJ8etTRcRNUKNw">
+						YouTube
+					</ExternalLink>
+				</li>
+				<li>
+					<ExternalLink to="https://keybase.io/rileyjshaw">
+						Keybase
+					</ExternalLink>
+				</li>
+				<li>
+					<ExternalLink to="https://www.instagram.com/rileyjshaw">
+						Instagram
 					</ExternalLink>
 				</li>
 				<li>
@@ -106,11 +122,6 @@ const SubscribePage = () => (
 					</ExternalLink>
 				</li>
 				<li>
-					<ExternalLink to="https://www.youtube.com/channel/UCV09P32tImJ8etTRcRNUKNw">
-						YouTube
-					</ExternalLink>
-				</li>
-				<li>
 					<ExternalLink to="https://vimeo.com/rileyjshaw">
 						Vimeo
 					</ExternalLink>
@@ -118,11 +129,6 @@ const SubscribePage = () => (
 				<li>
 					<ExternalLink to="https://www.last.fm/user/rileyjshaw">
 						Last.fm
-					</ExternalLink>
-				</li>
-				<li>
-					<ExternalLink to="https://www.instagram.com/rileyjshaw">
-						Instagram
 					</ExternalLink>
 				</li>
 				<li>

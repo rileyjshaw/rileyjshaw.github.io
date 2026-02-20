@@ -66,12 +66,11 @@ function AboutPage() {
 						This website aggregates content that I’ve littered
 						across the Internet; think of it like a digital
 						landfill. I wrote a{' '}
-						<AutoLink to="https://rileyjshaw.commit--blog.com/rileyjshaw/rileyjshaw-new/2488bcd5e5610f692773e7815fabdb247ece55f5">
-							small utility to scrape the web
-						</AutoLink>{' '}
-						which runs daily. I structured my website this way to
-						regain ownership of the collection and presentaton of
-						my data.
+						{/* <AutoLink to="https://rileyjshaw.commit--blog.com/rileyjshaw/rileyjshaw-new/2488bcd5e5610f692773e7815fabdb247ece55f5"> */}
+						small utility to scrape the web
+						{/* </AutoLink> */} which runs daily. I structured my
+						website this way to regain ownership of the collection
+						and presentaton of my data.
 					</p>
 					<p>
 						If you like the idea of website-as-API, I have{' '}
