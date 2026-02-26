@@ -9262,6 +9262,23 @@
 		"uid": "VIDEO_Y_Q3LQT3TJFXG"
 	},
 	{
+		"body": "tSbBlCLxI9w",
+		"contentType": "youtube",
+		"date": "2026-02-26",
+		"description": "I found these cellular automata using https://rileyjshaw.com/ca-finder",
+		"image": {
+			"height": 720,
+			"url": "https://i.ytimg.com/vi/tSbBlCLxI9w/maxresdefault.jpg",
+			"width": 1280
+		},
+		"link": "https://youtube.com/watch?v=tSbBlCLxI9w",
+		"more": true,
+		"timestamp": 1772064000000,
+		"title": "A few interesting rules",
+		"type": "video",
+		"uid": "VIDEO_Y_TSBBLCLXI9W"
+	},
+	{
 		"body": "Vgyj4DNHfvM",
 		"contentType": "youtube",
 		"date": "2020-12-12",
