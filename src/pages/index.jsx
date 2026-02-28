@@ -173,19 +173,17 @@ const IndexPage = ({featuredProjects = []}) => {
 								/>
 							</ExternalLink>
 						</li>
-						<li>
-							<li className="project">
-								<ExternalLink
-									to="/harmonics"
-									className="image-link"
-								>
-									<StaticImage
-										src="../../content/images/projects/harmonics-square.png"
-										alt="A technicolour abstract image. It looks like a vibrant oil spill."
-										width={600}
-									/>
-								</ExternalLink>
-							</li>
+						<li className="project">
+							<ExternalLink
+								to="/harmonics"
+								className="image-link"
+							>
+								<StaticImage
+									src="../../content/images/projects/harmonics-square.png"
+									alt="A technicolour abstract image. It looks like a vibrant oil spill."
+									width={600}
+								/>
+							</ExternalLink>
 						</li>
 						<li>
 							<ul className="bento-half-x">
