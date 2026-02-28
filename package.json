@@ -8,7 +8,7 @@
     "@mdx-js/react": "^3.1.1",
     "@radix-ui/react-dialog": "^1.1.15",
     "cnz": "^1.1.1",
-    "gatsby": "^5.16.0",
+    "gatsby": "^5.16.1",
     "gatsby-plugin-feed": "^5.16.0",
     "gatsby-plugin-image": "^3.16.0",
     "gatsby-plugin-manifest": "^5.16.0",
