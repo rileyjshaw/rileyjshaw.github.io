@@ -17,7 +17,7 @@ pre[class*='language-'] {
 	white-space: pre;
 	word-break: normal;
 	word-spacing: normal;
-	word-wrap: normal;
+	overflow-wrap: normal;
 }
 /* Code blocks */
 pre[class*='language-'] {

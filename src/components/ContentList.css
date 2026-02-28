@@ -1,6 +1,6 @@
 ul.content-list {
 	display: grid;
-	grid-gap: 0.5em;
+	gap: 0.5em;
 	grid-template-columns: min-content 1fr;
 	padding-block: var(--s-0);
 }
