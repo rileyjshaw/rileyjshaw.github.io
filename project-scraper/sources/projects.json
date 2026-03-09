@@ -20,6 +20,13 @@
 		"todo": true
 	},
 	{
+		"title": "Rephase",
+		"description": ["Reframe a tiling image by picking a new origin."],
+		"date": "2026-03-08",
+		"coolness": 38,
+		"link": "/rephase"
+	},
+	{
 		"title": "Big Dipper",
 		"description": [
 			"I built a hardware sequencer out of DIP switches in 2018. Now it’s playable on the web."
