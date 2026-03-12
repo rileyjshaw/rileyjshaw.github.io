@@ -456,14 +456,14 @@
 		"link": "https://github.com/rileyjshaw/palette-test-tool"
 	},
 	{
-		"title": "Font comparison tool",
+		"title": "Font scout",
 		"description": [
 			"A tool for comparing local / web fonts side-by-side.",
 			"This wasn’t designed for public consumption, but the code is open-source if you want to remix it with your own fonts. I recorded <a href=\"https://youtu.be/TRGodGOu3Ww\" target=\"_blank\" rel=\"noopener noreferrer\">a quick session of myself using it</a> if you’re curious."
 		],
 		"date": "2021-01-26",
 		"coolness": 73,
-		"link": "https://github.com/rileyjshaw/font-comparison-tool"
+		"link": "https://fonts.sort.tools"
 	},
 	{
 		"title": "Canvas smudge effect demos",
