@@ -12,12 +12,12 @@ pre[class*='language-'] {
 		'Fira Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	hyphens: none;
 	line-height: 1.5;
+	overflow-wrap: normal;
 	tab-size: 4;
 	text-align: left;
 	white-space: pre;
 	word-break: normal;
 	word-spacing: normal;
-	overflow-wrap: normal;
 }
 /* Code blocks */
 pre[class*='language-'] {
