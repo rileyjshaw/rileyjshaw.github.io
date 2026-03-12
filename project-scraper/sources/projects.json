@@ -20,6 +20,12 @@
 		"todo": true
 	},
 	{
+		"title": "Recolor",
+		"date": "2026-03-10",
+		"coolness": 38,
+		"link": "/recolor"
+	},
+	{
 		"title": "Rephase",
 		"description": ["Reframe a tiling image by picking a new origin."],
 		"date": "2026-03-08",
