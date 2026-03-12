@@ -445,6 +445,13 @@
 		"uid": "MODEL_FOR_ART"
 	},
 	{
+		"author": "Allen Ginsberg",
+		"cite": "https://www.poetryfoundation.org/poems/49303/howl",
+		"content": "What sphinx of cement and aluminum bashed open their skulls and ate up their brains and imagination?",
+		"source": "Howl",
+		"uid": "MOLOCH"
+	},
+	{
 		"author": "Audrey Watters",
 		"cite": "http://monsters.hackeducation.com/",
 		"content": "It supports a prevailing narrative about innovation – where innovation comes from (according to this narrative, it comes from private industry, and not from public institutions; from Silicon Valley, that is, not from elsewhere in the world) and when it comes (there’s this fiercely myopic fixation on the future). The lack of knowledge about history matters too because it reflects and even enables a powerful strain in American ideology and in the ideology of the technology industry: that the past is irrelevant, that the past is a monolithic block of brokenness.",

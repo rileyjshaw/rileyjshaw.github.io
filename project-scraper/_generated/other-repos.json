@@ -172,6 +172,14 @@
 		"priority": 0.5
 	},
 	{
+		"path": "/recolor/",
+		"priority": 0.5
+	},
+	{
+		"path": "/rephase/",
+		"priority": 0.5
+	},
+	{
 		"path": "/ribbon/",
 		"priority": 0.5
 	},

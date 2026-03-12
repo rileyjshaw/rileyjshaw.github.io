@@ -3577,17 +3577,16 @@
 			"This wasn’t designed for public consumption, but the code is open-source if you want to remix it with your own fonts. I recorded <a href=\"https://youtu.be/TRGodGOu3Ww\" rel=\"noopener noreferrer\" target=\"_blank\">a quick session of myself using it</a> if you’re curious."
 		],
 		"lastTagged": 0,
-		"link": "https://github.com/rileyjshaw/font-comparison-tool",
+		"link": "https://fonts.sort.tools",
 		"tags": [
 			"online",
-			"pretty",
 			"reusable",
 			"tool"
 		],
 		"timestamp": 1611619200000,
-		"title": "Font comparison tool",
+		"title": "Font scout",
 		"type": "project",
-		"uid": "PROJECT_FONT_COMPARISON_TOOL"
+		"uid": "PROJECT_FONT_SCOUT"
 	},
 	{
 		"coolness": 82,
@@ -5392,6 +5391,18 @@
 		"title": "render",
 		"type": "project",
 		"uid": "PROJECT_RENDER"
+	},
+	{
+		"coolness": 38,
+		"date": "2026-03-08",
+		"descriptionList": [
+			"Reframe a tiling image by picking a new origin."
+		],
+		"link": "/rephase",
+		"timestamp": 1772928000000,
+		"title": "Rephase",
+		"type": "project",
+		"uid": "PROJECT_REPHASE"
 	},
 	{
 		"coolness": 38,
@@ -9265,7 +9276,7 @@
 		"body": "tSbBlCLxI9w",
 		"contentType": "youtube",
 		"date": "2026-02-26",
-		"description": "I found these cellular automata using https://rileyjshaw.com/ca-finder",
+		"description": "I found these patterns using https://rileyjshaw.com/ca-finder. No AI, just simple cellular automata.",
 		"image": {
 			"height": 720,
 			"url": "https://i.ytimg.com/vi/tSbBlCLxI9w/maxresdefault.jpg",
