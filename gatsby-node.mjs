@@ -16,6 +16,12 @@ export const createPages = async ({actions, graphql, reporter}) => {
 		redirectInBrowser: true,
 	});
 
+	createRedirect({
+		fromPath: '/shaderpad',
+		toPath: 'https://misery.co/shaderpad',
+		redirectInBrowser: true,
+	});
+
 	const blogListTemplate = path.resolve('./src/templates/BlogList.jsx');
 	const blogPostTemplate = path.resolve('./src/templates/Post.jsx');
 	const galleryTemplate = path.resolve('./src/templates/Gallery.jsx');
