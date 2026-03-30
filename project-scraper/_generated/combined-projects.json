@@ -5649,7 +5649,7 @@
 		"descriptionList": [
 			"A lightweight, dependency-free library to reduce boilerplate when writing fragment shaders."
 		],
-		"link": "/shaderpad/",
+		"link": "https://misery.co/shaderpad/",
 		"timestamp": 1737590400000,
 		"title": "ShaderPad",
 		"type": "project",

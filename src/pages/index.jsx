@@ -116,7 +116,7 @@ const IndexPage = ({featuredProjects = []}) => {
 						</li>
 						<li className="project">
 							<ExternalLink
-								to="/shaderpad"
+								to="https://misery.co/shaderpad"
 								className="image-link"
 							>
 								<StaticImage

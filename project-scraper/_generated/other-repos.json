@@ -196,10 +196,6 @@
 		"priority": 0.4
 	},
 	{
-		"path": "/shaderpad/",
-		"priority": 0.8
-	},
-	{
 		"path": "/shifter/",
 		"priority": 0.3
 	},
