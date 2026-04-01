@@ -6,20 +6,42 @@ import {idify} from './project-scraper/scraper-utils.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
+const createBrowserRedirectVariants = ({
+	createRedirect,
+	fromPath,
+	...options
+}) => {
+	// Gatsby browser redirects match exact pathnames, so register both forms.
+	const redirectPaths = new Set([
+		fromPath,
+		fromPath.endsWith('/') ? fromPath.slice(0, -1) || '/' : `${fromPath}/`,
+	]);
+
+	for (const redirectPath of redirectPaths) {
+		createRedirect({
+			...options,
+			fromPath: redirectPath,
+			redirectInBrowser: true,
+		});
+	}
+};
+
 export const createPages = async ({actions, graphql, reporter}) => {
 	const {createPage, createRedirect} = actions;
 
 	// Create some redirects.
-	createRedirect({
+	createBrowserRedirectVariants({
+		createRedirect,
 		fromPath: '/contact',
 		toPath: '/subscribe',
-		redirectInBrowser: true,
+		isPermanent: true,
 	});
 
-	createRedirect({
+	createBrowserRedirectVariants({
+		createRedirect,
 		fromPath: '/shaderpad',
 		toPath: 'https://misery.co/shaderpad',
-		redirectInBrowser: true,
+		isPermanent: true,
 	});
 
 	const blogListTemplate = path.resolve('./src/templates/BlogList.jsx');
