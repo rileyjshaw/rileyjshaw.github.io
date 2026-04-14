@@ -5358,6 +5358,15 @@
 		"uid": "PROJECT_REACTION"
 	},
 	{
+		"coolness": 38,
+		"date": "2026-03-10",
+		"link": "/recolor",
+		"timestamp": 1773100800000,
+		"title": "Recolor",
+		"type": "project",
+		"uid": "PROJECT_RECOLOR"
+	},
+	{
 		"coolness": 30,
 		"date": "2014-07-03",
 		"descriptionList": [

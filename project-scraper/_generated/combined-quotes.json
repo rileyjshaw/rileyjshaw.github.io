@@ -272,6 +272,13 @@
 		"uid": "FLOTILLA_OF_FANATICS"
 	},
 	{
+		"author": "Annie Dillard",
+		"cite": "https://bookshop.org/p/books/pilgrim-at-tinker-creek-annie-dillard/8922929",
+		"content": "If you can’t see the forest for the trees, then look at the trees; when you’ve looked at enough trees, you’ve seen a forest, you’ve got it.",
+		"source": "Pilgrim at Tinker Creek",
+		"uid": "FOREST_TREES"
+	},
+	{
 		"author": "Erik Satie",
 		"cite": "https://www.shlom.com/?p=cagesatie",
 		"content": "“We must bring about a music which is like furniture, a music which will be part of the noises of the environment… softening the noises of the knives and forks, not dominating them, not imposing itself.”",
@@ -603,6 +610,13 @@
 		"uid": "PARTING_WATERS"
 	},
 	{
+		"author": "Charles Baudelaire",
+		"cite": "https://ia803101.us.archive.org/1/items/howtoreadafilmDVDROM2000/How%20To%20Read%20A%20Film/RESOURCE/RAF/RAF01/RAF0104.pdf",
+		"content": "A little later a thousand hungry eyes were bending over the peepholes of the stereoscope, as though they were the attic-windows of the infinite.",
+		"source": "The Modern Public and Photography",
+		"uid": "PEEPHOLES"
+	},
+	{
 		"author": "Kai Krause",
 		"cite": "https://www.edge.org/response-detail/10113",
 		"content": "I used to think “Software Design” is an art form. I now believe that I was half-right: it is indeed an art, but it has a rather short half-life. Software is merely a performance art!",
@@ -615,6 +629,13 @@
 		"content": "Good brands are immune to fundamental transformation. Conceding to having become one at age thirty would have meant foreclosing on what I saw as my prerogative to change, evolve, and hopefully improve. It would have locked me into performing this particular version of me, indefinitely.",
 		"source": "Doppelganger",
 		"uid": "PERSONAL_BRAND"
+	},
+	{
+		"author": "Charles Baudelaire",
+		"cite": "https://ia803101.us.archive.org/1/items/howtoreadafilmDVDROM2000/How%20To%20Read%20A%20Film/RESOURCE/RAF/RAF01/RAF0104.pdf",
+		"content": "As the photographic industry was the refuge of every would-be painter, every painter too ill-endowed or too lazy to complete his studies, this universal infatuation bore not only the mark of a blindness, an imbecility, but had also the air of a vengeance.",
+		"source": "The Modern Public and Photography",
+		"uid": "PHOTO_VENGEANCE"
 	},
 	{
 		"author": "Arthur C. Clarke",
@@ -703,6 +724,13 @@
 		"author": "Charles Simic",
 		"content": "Every morning I forget how it is.\nI watch the smoke mount\nIn great strides above the city.\nI belong to no one.\n\nThen, I remember my shoes,\nHow I have to put them on,\nHow bending over to tie them up\nI will look into the earth.",
 		"uid": "REMEMBER_SHOES"
+	},
+	{
+		"author": "Annie Dillard",
+		"cite": "https://bookshop.org/p/books/pilgrim-at-tinker-creek-annie-dillard/8922929",
+		"content": "You decide to make a replica of one tree, the longleaf pine your great-grandfather planted—just a replica—it doesn’t have to work. How are you going to do it? How long do you think you might live, how good is your glue?",
+		"source": "Pilgrim at Tinker Creek",
+		"uid": "REPLICA_TREE"
 	},
 	{
 		"author": "Athanasius Kircher",
