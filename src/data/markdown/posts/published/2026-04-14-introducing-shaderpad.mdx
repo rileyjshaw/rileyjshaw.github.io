@@ -1,0 +1,50 @@
+---
+title: 'Introducing: ShaderPad'
+tags: ['web', 'javascript', 'build']
+---
+
+import BlogBanner from 'components/BlogBanner';
+
+Today I’m releasing [ShaderPad](https://misery.co/shaderpad/). It is the library I wish I had a few years ago: a small, focused way to put a shader on a website without rebuilding the same graphics scaffolding every time. If you want to experiment with writing shaders, I think this is one of the best ways to get started.
+
+<BlogBanner type="note">
+
+Want to jump right in? [The documentation site is live!](https://misery.co/shaderpad/)
+
+</BlogBanner>
+
+## Motivation
+
+If you’ve spent much time on this website, you know I mainly use my computer to doodle. Shaders are an expressive way to sketch with code. There are many shader sandboxes online, most notably [ShaderToy](https://www.shadertoy.com/), that make it easy to write shaders. But platform lock-in makes moving these sketches onto your own website a repetitive hassle.
+
+After wiring up the same graphics boilerplate dozens of times, I started writing a library to make it easier. Over the years, I added features that are useful to me, from autosizing and simple save/share utils, to history buffers, to full-blown MediaPipe integrations. At this point, ShaderPad is extremely useful to me. So I open sourced it, wrote some docs, and now I’m sharing it with you.
+
+There are a lot of artists and creative coders, especially people coming from ShaderToy and TouchDesigner, who already know what they want to make. Hopefully ShaderPad can help put more of those ideas online.
+
+## Smaller than your favicon
+
+Lots of big companies (ahem, [Stripe](https://stripe.com)) bundle Three.js into their landing page just to render a single fullscreen shader. At 5.8kb gzipped, ShaderPad is over 30x smaller than Three.js. That equates to noticibly faster page loads.
+
+There’s a reason for that size discrepancy. Three.js does _wayyyy_ more than ShaderPad can. If you want to build a full 3D scene, use Three.js. But if all you want is a funky interactive graphic, the cost in bundle size, complexity, and setup is much smaller with ShaderPad.
+
+The main work of designing ShaderPad was deciding what to leave out. I’m happy with where the core API landed; it’s simple enough to learn over a single cup of tea.
+
+## Fast by default
+
+I designed ShaderPad to keep as much work as possible on the GPU. Graphics performance problems often come from plumbing, not from the visible shader code, so I tried to make the defaults as performant as possible.
+
+If you chain multiple shaders together, ShaderPad keeps that work in the same pipeline instead of taking expensive trips to the CPU. If several passes need the same face or pose tracking result, the library caches detection results. The goal here was to make you think less about the plumbing and more about the fun stuff.
+
+## Writing a library in 2026
+
+This is a weird moment for programming, so I wanted to share how I built ShaderPad.
+
+I started building it before AI tools were very useful. I took my time designing the API around real needs I was encountering, and grew the library slowly as I needed it. AI is far more capable now than when I started this, and could probably one-shot some of the core functionality. But the challenge for a project like this is not generating more code; it’s deciding what to leave out. By default, AI still doesn’t care about a small bundle size, a tight API, or the kind of restraint that keeps a library from spreading in every direction. It usually wants to add more than I do.
+
+But AI has helped with everything outside of the core. [The docs site](https://misery.co/shaderpad) is the most thorough documentation I’ve ever written, and AI was a huge help scaffolding it. I rewrote every section for clarity, but getting such a thorough first pass is something I would not have done on my own. AI has also helped with restructuring explanations and reflecting changes across the docs, README, and examples. As a former technical writer, I’m stoked to see AI take over the boring parts of writing documentation.
+
+And the AI [wrote docs for itself!](https://misery.co/shaderpad/docs/getting-started/ai-agent-guide/) Now that it has a good reference, I’ve found AI to be a useful creative collaborator. I’m building [Strange Camera](https://strange.cam) to test ideas and push on ShaderPad’s edges. Early on, I hand-coded every filter. Now I can point an agent to the docs, describe an idea, and often get a working result back. It feels like a wide open version of Snapchat’s new “Imagine Lens”. Extremely fun.
+
+## Try it out
+
+ShaderPad gives you something steady to build on, then disappears into the background. To get started, check out the [docs](https://misery.co/shaderpad/), the [quickstart](https://misery.co/shaderpad/docs/getting-started/quickstart/), or the [interactive examples](https://misery.co/shaderpad/examples/). I’m really excited to see the creative doodles you make with it.
