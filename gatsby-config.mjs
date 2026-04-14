@@ -276,7 +276,7 @@ export default {
 						serialize: ({query}) => rssify(query),
 						query: `
 							{
-								allMdx(
+								posts: allMdx(
 									filter: {internal: {contentFilePath: {regex: "//data/markdown/posts/published/.*\.mdx?$/"}}}
 									sort: {fields: {date: DESC}}
 								) {
@@ -326,7 +326,7 @@ export default {
 						serialize: ({query}) => rssify(query),
 						query: `
 							{
-								allMdx(
+								posts: allMdx(
 									filter: {internal: {contentFilePath: {regex: "//data/markdown/posts/published/.*\.mdx?$/"}}}
 									sort: {fields: {date: DESC}}
 								) {
@@ -384,7 +384,7 @@ export default {
 						serialize: ({query}) => rssify(query),
 						query: `
 							{
-								allMdx(
+								posts: allMdx(
 									filter: {internal: {contentFilePath: {regex: "//data/markdown/posts/published/.*\.mdx?$/"}}}
 									sort: {fields: {date: DESC}}
 								) {
