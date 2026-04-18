@@ -302,6 +302,17 @@ export const onCreateWebpackConfig = ({stage, loaders, actions}) => {
 	const config = {
 		resolve: {
 			modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+			alias: {
+				content: path.resolve(__dirname, 'content'),
+			},
+		},
+		module: {
+			rules: [
+				{
+					test: /\.glsl$/,
+					type: 'asset/source',
+				},
+			],
 		},
 	};
 
