@@ -32,7 +32,7 @@
 		"link": "https://codepen.io/editor/rileyjshaw/pen/019d96b3-eb0c-7c62-9718-4c81caadd92d"
 	},
 	{
-		"title": "Surface tension",
+		"title": "Froth",
 		"date": "2026-04-16",
 		"coolness": 65,
 		"link": "https://codepen.io/editor/rileyjshaw/pen/019d96a2-7275-741d-a822-731eccd87a2c"
@@ -61,6 +61,30 @@
 		"date": "2026-03-08",
 		"coolness": 38,
 		"link": "/rephase"
+	},
+	{
+		"title": "butterfly 3000",
+		"date": "2026-01-28",
+		"coolness": 65,
+		"link": "https://www.shadertoy.com/view/33VcRV"
+	},
+	{
+		"title": "Meiosis",
+		"date": "2026-01-27",
+		"coolness": 66,
+		"link": "https://www.shadertoy.com/view/33yyRV"
+	},
+	{
+		"title": "Hypnos",
+		"date": "2026-01-27",
+		"coolness": 65,
+		"link": "https://www.shadertoy.com/view/33KyRV"
+	},
+	{
+		"title": "Surface tension",
+		"date": "2026-01-27",
+		"coolness": 70,
+		"link": "https://www.shadertoy.com/view/3XGyRV"
 	},
 	{
 		"title": "Big Dipper",
