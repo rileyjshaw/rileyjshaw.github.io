@@ -204,7 +204,15 @@
 		"coolness": 60,
 		"link": "/choreography/"
 	},
-
+	{
+		"title": "Moiré shader",
+		"description": [
+			"An interesting illusion occurs when moving two overlapping instances of white noise. Move your cursor to see the effect."
+		],
+		"date": "2025-01-31",
+		"coolness": 50,
+		"link": "https://codepen.io/rileyjshaw/pen/RNbdjvg?editors=0010"
+	},
 	{
 		"title": "Harmonics",
 		"description": [
