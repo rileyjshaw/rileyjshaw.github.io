@@ -2331,6 +2331,15 @@
 		"uid": "PROJECT_BUBBLE"
 	},
 	{
+		"coolness": 65,
+		"date": "2026-01-28",
+		"link": "https://www.shadertoy.com/view/33VcRV",
+		"timestamp": 1769558400000,
+		"title": "butterfly 3000",
+		"type": "project",
+		"uid": "PROJECT_BUTTERFLY_3000"
+	},
+	{
 		"coolness": 76,
 		"date": "2019-03-09",
 		"descriptionList": [
@@ -2615,6 +2624,15 @@
 		"title": "Color screen",
 		"type": "project",
 		"uid": "PROJECT_COLOR_SCREEN"
+	},
+	{
+		"coolness": 65,
+		"date": "2026-04-15",
+		"link": "https://codepen.io/collection/OyjqMb",
+		"timestamp": 1776211200000,
+		"title": "Colour loops",
+		"type": "project",
+		"uid": "PROJECT_COLOUR_LOOPS"
 	},
 	{
 		"coolness": 80,
@@ -3462,6 +3480,15 @@
 		"uid": "PROJECT_FLEXIN6C9_DONUT"
 	},
 	{
+		"coolness": 65,
+		"date": "2026-04-21",
+		"link": "https://codepen.io/editor/rileyjshaw/pen/019db15f-4373-7daf-8efd-aca3f8ffbd55?show=preview",
+		"timestamp": 1776729600000,
+		"title": "Floaties",
+		"type": "project",
+		"uid": "PROJECT_FLOATIES"
+	},
+	{
 		"coolness": 54,
 		"date": "2013-11-25",
 		"descriptionList": [
@@ -3632,6 +3659,15 @@
 		"title": "Frequency bar visualizer",
 		"type": "project",
 		"uid": "PROJECT_FREQUENCY_BAR_VISUALIZER"
+	},
+	{
+		"coolness": 65,
+		"date": "2026-04-16",
+		"link": "https://codepen.io/editor/rileyjshaw/pen/019d96a2-7275-741d-a822-731eccd87a2c",
+		"timestamp": 1776297600000,
+		"title": "Froth",
+		"type": "project",
+		"uid": "PROJECT_FROTH"
 	},
 	{
 		"coolness": 33,
@@ -4018,6 +4054,15 @@
 		"title": "Huertbeat",
 		"type": "project",
 		"uid": "PROJECT_HUERTBEAT"
+	},
+	{
+		"coolness": 65,
+		"date": "2026-01-27",
+		"link": "https://www.shadertoy.com/view/33KyRV",
+		"timestamp": 1769472000000,
+		"title": "Hypnos",
+		"type": "project",
+		"uid": "PROJECT_HYPNOS"
 	},
 	{
 		"coolness": 86,
@@ -4510,6 +4555,15 @@
 		"uid": "PROJECT_MECHANICAL_WAVES"
 	},
 	{
+		"coolness": 66,
+		"date": "2026-01-27",
+		"link": "https://www.shadertoy.com/view/33yyRV",
+		"timestamp": 1769472000000,
+		"title": "Meiosis",
+		"type": "project",
+		"uid": "PROJECT_MEIOSIS"
+	},
+	{
 		"coolness": 43,
 		"date": "2015-02-01",
 		"descriptionList": [
@@ -4578,6 +4632,27 @@
 		"title": "Mirror",
 		"type": "project",
 		"uid": "PROJECT_MIRROR"
+	},
+	{
+		"coolness": 65,
+		"date": "2026-04-17",
+		"link": "https://codepen.io/editor/rileyjshaw/pen/019d9bd2-5c16-73e1-a0ea-52d76f936f4a?show=preview",
+		"timestamp": 1776384000000,
+		"title": "Mitosis",
+		"type": "project",
+		"uid": "PROJECT_MITOSIS"
+	},
+	{
+		"coolness": 50,
+		"date": "2025-01-31",
+		"descriptionList": [
+			"An interesting illusion occurs when moving two overlapping instances of white noise. Move your cursor to see the effect."
+		],
+		"link": "https://codepen.io/rileyjshaw/pen/RNbdjvg?editors=0010",
+		"timestamp": 1738281600000,
+		"title": "Moiré shader",
+		"type": "project",
+		"uid": "PROJECT_MOIR6H_SHADER"
 	},
 	{
 		"coolness": 12,
@@ -4994,6 +5069,15 @@
 		"uid": "PROJECT_PERSPECTIVE_BUTTONS"
 	},
 	{
+		"coolness": 45,
+		"date": "2025-12-06",
+		"link": "https://codepen.io/rileyjshaw/pen/xbVQQGr?editors=0010",
+		"timestamp": 1764979200000,
+		"title": "petals",
+		"type": "project",
+		"uid": "PROJECT_PETALS"
+	},
+	{
 		"coolness": 12,
 		"date": "2013-07-21",
 		"descriptionList": [
@@ -5367,6 +5451,15 @@
 		"uid": "PROJECT_RECOLOR"
 	},
 	{
+		"coolness": 65,
+		"date": "2026-04-16",
+		"link": "https://codepen.io/editor/rileyjshaw/pen/019d96b3-eb0c-7c62-9718-4c81caadd92d",
+		"timestamp": 1776297600000,
+		"title": "Red spiral",
+		"type": "project",
+		"uid": "PROJECT_RED_SPIRAL"
+	},
+	{
 		"coolness": 30,
 		"date": "2014-07-03",
 		"descriptionList": [
@@ -5567,6 +5660,15 @@
 		"title": "Sass tooltips",
 		"type": "project",
 		"uid": "PROJECT_SASS_TOOLTIPS"
+	},
+	{
+		"coolness": 40,
+		"date": "2025-12-06",
+		"link": "https://codepen.io/rileyjshaw/pen/myPQKvK?editors=0010",
+		"timestamp": 1764979200000,
+		"title": "scales",
+		"type": "project",
+		"uid": "PROJECT_SCALES"
 	},
 	{
 		"coolness": 70,
@@ -6270,6 +6372,15 @@
 		"title": "Superformula explorer",
 		"type": "project",
 		"uid": "PROJECT_SUPERFORMULA_EXPLORER"
+	},
+	{
+		"coolness": 70,
+		"date": "2026-01-27",
+		"link": "https://www.shadertoy.com/view/3XGyRV",
+		"timestamp": 1769472000000,
+		"title": "Surface tension",
+		"type": "project",
+		"uid": "PROJECT_SURFACE_TENSION"
 	},
 	{
 		"coolness": 14,
