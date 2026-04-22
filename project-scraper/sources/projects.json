@@ -105,6 +105,18 @@
 		"link": "/terminal-1/"
 	},
 	{
+		"title": "petals",
+		"date": "2025-12-06",
+		"coolness": 45,
+		"link": "https://codepen.io/rileyjshaw/pen/xbVQQGr?editors=0010"
+	},
+	{
+		"title": "scales",
+		"date": "2025-12-06",
+		"coolness": 40,
+		"link": "https://codepen.io/rileyjshaw/pen/myPQKvK?editors=0010"
+	},
+	{
 		"title": "Channel delay",
 		"description": ["RGB channel delay video shader."],
 		"date": "2025-11-02",
