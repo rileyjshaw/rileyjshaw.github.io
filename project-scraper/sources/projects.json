@@ -20,6 +20,12 @@
 		"todo": true
 	},
 	{
+		"title": "Charms",
+		"date": "2026-04-23",
+		"coolness": 65,
+		"link": "https://codepen.io/editor/rileyjshaw/pen/019dbc5d-4dd6-7cfa-b702-01f8722d8b15?file=%2Fshader.glsl&orientation=left&panel=files&show=split"
+	},
+	{
 		"title": "Floaties",
 		"date": "2026-04-21",
 		"coolness": 65,
