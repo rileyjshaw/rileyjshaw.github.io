@@ -2,18 +2,18 @@ import React from 'react';
 
 import {isRenderingOnClient} from '../util/constants';
 
-import './Newsletter.css';
+import './newsletter.css';
 
 export const Form = () => (
 	<form
 		className="newsletter-form"
-		action="https://buttondown.email/api/emails/embed-subscribe/changelog"
+		action="https://buttondown.com/api/emails/embed-subscribe/changelog"
 		method="post"
 		target="popupwindow"
 		onSubmit={() => {
 			if (isRenderingOnClient) {
 				window.open(
-					'https://buttondown.email/changelog',
+					'https://buttondown.com/changelog',
 					'popupwindow',
 					'scrollbars=yes,width=800,height=600',
 				);
@@ -30,6 +30,7 @@ export const Form = () => (
 				name="email"
 				placeholder="you@email.com"
 				id="newsletter-email"
+				required
 			/>
 			<input type="submit" value="Subscribe" />
 		</div>
