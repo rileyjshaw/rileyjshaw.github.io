@@ -175,7 +175,7 @@ const IndexPage = ({featuredProjects = []}) => {
 						</li>
 						<li className="project">
 							<ExternalLink
-								to="/harmonics"
+								to="/harmonics/#2AdwgAAAAAAAAAAAAAAAAAAAAAD9i3JKvQPkAtg6c2luZSgoeHggLSB5eSksIHQgKiB0KSAtIHRyaWFuZ2xlKHVfc3FydDIsIHQgKyAoeHggLSB5eSkpAoMbe5tLcylDG3uZQ6r7owupAVEDm0txQUPDwQFZA8vJSQFZAUPDwQFZA8vJSUlJYQOhAVEDm8FJAWkDG3ubS3MpQ6r7owupYQOhAVEBkXFI"
 								className="image-link"
 							>
 								<StaticImage
