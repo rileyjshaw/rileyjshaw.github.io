@@ -252,6 +252,10 @@
 		"priority": 0.8
 	},
 	{
+		"path": "/txt/",
+		"priority": 0.2
+	},
+	{
 		"path": "/typing-for-two/",
 		"priority": 0.4
 	},

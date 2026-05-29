@@ -2522,6 +2522,15 @@
 		"uid": "PROJECT_CHANNEL_DELAY"
 	},
 	{
+		"coolness": 65,
+		"date": "2026-04-23",
+		"link": "https://codepen.io/editor/rileyjshaw/pen/019dbc5d-4dd6-7cfa-b702-01f8722d8b15?file=%2Fshader.glsl&orientation=left&panel=files&show=split",
+		"timestamp": 1776902400000,
+		"title": "Charms",
+		"type": "project",
+		"uid": "PROJECT_CHARMS"
+	},
+	{
 		"coolness": 2,
 		"date": "2013-12-08",
 		"lastTagged": 1564708938863,
@@ -3962,7 +3971,7 @@
 		"descriptionList": [
 			"Caution: sometimes flashes! Generates a new randomized shader composed of stacked trigonometric functions on each page refresh."
 		],
-		"link": "/harmonics",
+		"link": "/harmonics/#2UNEgAAAAAAAAAAAAAAAAAAAAAD-tXGHKknWe2FGNvc2luZSh1X3BpLCB0ICogeSkCG6MLczsrc6FDw8EBWQPLyWEDoQFZA6r7g0lJAWkDo5NLC3M7YylDqvuDSQFpA6MLcUPDwQFZA8vJSWEDoQFZA8PBSA",
 		"timestamp": 1737676800000,
 		"title": "Harmonics",
 		"type": "project",
