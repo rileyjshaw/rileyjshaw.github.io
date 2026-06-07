@@ -3845,6 +3845,15 @@
 		"uid": "PROJECT_GLASS_RINGS"
 	},
 	{
+		"coolness": 53,
+		"date": "2022-11-25",
+		"link": "/globe",
+		"timestamp": 1669334400000,
+		"title": "Globe",
+		"type": "project",
+		"uid": "PROJECT_GLOBE"
+	},
+	{
 		"coolness": 85,
 		"date": "2014-05-20",
 		"descriptionList": [

@@ -354,6 +354,12 @@
 		"link": "/roll/"
 	},
 	{
+		"title": "Globe",
+		"date": "2022-11-25",
+		"coolness": 53,
+		"link": "/globe"
+	},
+	{
 		"title": "Compare images",
 		"description": ["Compare two images in a variety of ways."],
 		"date": "2022-11-24",
