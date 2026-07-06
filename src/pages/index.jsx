@@ -1,4 +1,4 @@
-import {Link} from 'gatsby';
+import {graphql, Link} from 'gatsby';
 import React, {useCallback, useState} from 'react';
 
 import {StaticImage} from 'gatsby-plugin-image';
@@ -17,7 +17,6 @@ import BackgroundGenerator from '../components/doodles/BackgroundGenerator';
 import CircleConstrainedLines from '../components/doodles/CircleConstrainedLines';
 import Propellers from '../components/doodles/Propellers';
 import Riot from '../components/doodles/Riot';
-import allProjectsQuery from '../util/all-projects-query';
 import {DIRECT_COLORS} from '../util/constants.mjs';
 import {sortByDate} from '../util/sorting-methods';
 
@@ -27,7 +26,7 @@ export const Head = SEO;
 
 const DOODLES = [Propellers, CircleConstrainedLines];
 
-const IndexPage = ({featuredProjects = []}) => {
+const IndexPage = ({data, featuredProjects = []}) => {
 	const [featuredDoodleIdx, setFeaturedDoodleIdx] = useState(0);
 	const incrementFeaturedDoodleIdx = useCallback(() => {
 		setFeaturedDoodleIdx(i => (i + 1) % DOODLES.length);
@@ -364,17 +363,64 @@ const IndexPage = ({featuredProjects = []}) => {
 					</p>
 				</div>
 			</div>
-			<BigQuote quoteId="SPUTTERED_AND_STOPPED" />
+			<BigQuote quote={data.bigQuote} />
 			<GoUp />
 		</main>
 	);
 };
 
 const IndexPageWrapper = props => {
-	const featuredProjects = sortByDate(allProjectsQuery())
-		.filter(project => (project.coolness ?? 100) > 40)
-		.slice(0, 8);
+	const {recentProjects, recentPosts} = props.data;
+	// Both sources are pre-filtered and pre-sorted at build time, so this
+	// merge only ever sees 8 nodes from each.
+	const featuredProjects = sortByDate([
+		...recentProjects.nodes,
+		...recentPosts.nodes.map(({fields: {slug, ...fields}}) => ({
+			...fields,
+			type: 'post',
+			link: slug,
+		})),
+	]).slice(0, 8);
 	return <IndexPage {...props} featuredProjects={featuredProjects} />;
 };
+
+export const query = graphql`
+	query {
+		recentProjects: allCombinedProjectsJson(
+			filter: {coolness: {gt: 40}}
+			sort: {date: DESC}
+			limit: 8
+		) {
+			nodes {
+				uid
+				type
+				title
+				date
+				link
+			}
+		}
+		recentPosts: allMdx(
+			filter: {
+				internal: {
+					contentFilePath: {regex: "//data/markdown/posts/.*\\.mdx?$/"}
+				}
+			}
+			sort: {fields: {date: DESC}}
+			limit: 8
+		) {
+			nodes {
+				fields {
+					uid
+					slug
+					title
+					date(formatString: "YYYY-MM-DD")
+				}
+			}
+		}
+		bigQuote: combinedQuotesJson(uid: {eq: "SPUTTERED_AND_STOPPED"}) {
+			...BigQuoteFields
+		}
+	}
+`;
 
 export default IndexPageWrapper;

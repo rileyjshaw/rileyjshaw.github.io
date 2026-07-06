@@ -248,6 +248,7 @@ export const createSchemaCustomization = ({actions}) => {
 			title: String
 			description: String
 			descriptionList: [String]
+			coolness: Int
 		}
 	`;
 
@@ -256,6 +257,15 @@ export const createSchemaCustomization = ({actions}) => {
 
 export const createResolvers = ({createResolvers}) =>
 	createResolvers({
+		// Some scraped projects have no coolness rating. Everything the
+		// scraper doesn’t rank is assumed to be cool, so queries can filter
+		// on this field without dropping unrated nodes.
+		CombinedProjectsJson: {
+			coolness: {
+				type: 'Int',
+				resolve: source => source.coolness ?? 100,
+			},
+		},
 		// HACK(riley): Currently, excerpt is called twice for each node.
 		Mdx: {
 			description: {

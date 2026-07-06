@@ -1,3 +1,4 @@
+import {graphql} from 'gatsby';
 import React from 'react';
 
 import AutoLink from '../components/AutoLink';
@@ -29,7 +30,7 @@ export function Head(props) {
 	return <SEO {...props} title="About" />;
 }
 
-function AboutPage() {
+function AboutPage({data}) {
 	return (
 		<main>
 			<div className="page-content">
@@ -101,10 +102,18 @@ function AboutPage() {
 					</p>
 				</div>
 			</div>
-			<BigQuote quoteId="DANCES_GAMES_AND_FEASTS" />
+			<BigQuote quote={data.bigQuote} />
 			<GoUp />
 		</main>
 	);
 }
+
+export const query = graphql`
+	query {
+		bigQuote: combinedQuotesJson(uid: {eq: "DANCES_GAMES_AND_FEASTS"}) {
+			...BigQuoteFields
+		}
+	}
+`;
 
 export default AboutPage;

@@ -3,7 +3,6 @@ import {useStaticQuery, graphql} from 'gatsby';
 import React, {Fragment, useState, useEffect, useMemo} from 'react';
 
 import contentTypes from '../util/ContentTypes';
-import allProjectsQuery from '../util/all-projects-query';
 import {STORAGE_KEYS} from '../util/constants';
 import {useViewport, useStickyState} from '../util/hooks';
 import sortingMethods, {shuffle} from '../util/sorting-methods';
@@ -221,6 +220,7 @@ const LazyGrid = React.memo(({nodes, setIsFullyLoaded}) => {
 const ProjectExplorerWrapper = React.memo(props => {
 	const {
 		allTagsJson: {nodes: tags},
+		labProjects: {nodes: allProjects},
 	} = useStaticQuery(graphql`
 		{
 			allTagsJson {
@@ -229,12 +229,36 @@ const ProjectExplorerWrapper = React.memo(props => {
 					readable
 				}
 			}
+			# Types that only belong on the blog are excluded at build time.
+			labProjects: allCombinedProjectsJson(
+				filter: {type: {nin: ["tumblr", "commit"]}}
+				sort: {date: DESC}
+			) {
+				nodes {
+					uid
+					type
+					title
+					coolness
+					date
+					link
+					description
+					descriptionList
+					tags
+					repo
+					updatedAt
+					length
+					contentType
+					body
+					image {
+						height
+						width
+						url
+					}
+					extraData
+				}
+			}
 		}
 	`);
-	const hiddenTypes = ['post', 'tumblr', 'commit'];
-	const allProjects = allProjectsQuery().filter(
-		project => !hiddenTypes.includes(project.type),
-	);
 	const nodes = useMemo(
 		() =>
 			allProjects.concat(

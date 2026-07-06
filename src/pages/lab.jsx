@@ -1,3 +1,4 @@
+import {graphql} from 'gatsby';
 import React, {useState} from 'react';
 
 import BigQuote from '../components/BigQuote';
@@ -9,7 +10,7 @@ export function Head(props) {
 	return <SEO {...props} title="Lab" />;
 }
 
-const LabPage = () => {
+const LabPage = ({data}) => {
 	const [isFullyLoaded, setIsFullyLoaded] = useState(false);
 
 	return (
@@ -19,12 +20,20 @@ const LabPage = () => {
 			</div>
 			{isFullyLoaded && (
 				<>
-					<BigQuote quoteId="VOLTAIRE_BORING" />
+					<BigQuote quote={data.bigQuote} />
 					<GoUp />
 				</>
 			)}
 		</main>
 	);
 };
+
+export const query = graphql`
+	query {
+		bigQuote: combinedQuotesJson(uid: {eq: "VOLTAIRE_BORING"}) {
+			...BigQuoteFields
+		}
+	}
+`;
 
 export default LabPage;

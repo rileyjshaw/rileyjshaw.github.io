@@ -1,4 +1,4 @@
-import {Link} from 'gatsby';
+import {graphql, Link} from 'gatsby';
 import React from 'react';
 
 import {UncontrolledLink, ExternalLink} from '../components/AutoLink';
@@ -13,7 +13,7 @@ export function Head(props) {
 	return <SEO {...props} title="Subscribe" />;
 }
 
-const SubscribePage = () => (
+const SubscribePage = ({data}) => (
 	<main>
 		<div className="page-content">
 			<Newsletter />
@@ -154,9 +154,17 @@ const SubscribePage = () => (
 				</li>
 			</ul>
 		</div>
-		<BigQuote quoteId="MAKING_NOTHING" />
+		<BigQuote quote={data.bigQuote} />
 		<GoUp />
 	</main>
 );
+
+export const query = graphql`
+	query {
+		bigQuote: combinedQuotesJson(uid: {eq: "MAKING_NOTHING"}) {
+			...BigQuoteFields
+		}
+	}
+`;
 
 export default SubscribePage;
