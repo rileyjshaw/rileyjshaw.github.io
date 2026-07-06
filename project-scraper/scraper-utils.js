@@ -235,7 +235,7 @@ async function getArena() {
 					title: channel.title,
 					date: channel.created_at.slice(0, 10),
 					link: `https://are.na/riley-shaw/${channel.slug}`,
-					description: channel.metadata?.description,
+					description: channel.metadata?.description || undefined,
 					updatedAt: channel.updated_at.slice(0, 10),
 					length: channel.length,
 				};

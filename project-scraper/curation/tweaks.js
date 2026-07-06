@@ -33,19 +33,19 @@ const repoTags = {
 	'rileyjshaw/rileyjshaw.github.io': ['meta'],
 	'rileyjshaw/rileyjshaw-new': ['meta'],
 	'rileyjshaw/rileyjshaw.github.io-v14': ['meta'],
-	'rileyjshaw/font-comparison-tool': ['tools'],
-	'rileyjshaw/palette-test-tool': ['tools'],
-	'rileyjshaw/write': ['tools'],
-	'rileyjshaw/.supermac': ['tools'],
+	'rileyjshaw/font-comparison-tool': ['tool'],
+	'rileyjshaw/palette-test-tool': ['tool'],
+	'rileyjshaw/write': ['tool'],
+	'rileyjshaw/.supermac': ['tool'],
 	'rileyjshaw/tech-ethics-yvr': ['untech'],
-	'rileyjshaw/plop': ['tools'],
+	'rileyjshaw/plop': ['tool'],
 	'rileyjshaw/xoxo-bingo': ['game'],
 	'rileyjshaw/canvas': ['visual', 'pretty', 'collection'],
-	'rileyjshaw/Servo': ['tools', 'hardware'],
+	'rileyjshaw/Servo': ['tool', 'hardware'],
 	'miseryco/curriculum': ['untech'],
 	'herlifeinpixels/voxels': ['visual', 'pretty'],
-	'rileyjshaw/average-color': ['tools', 'visual'],
-	'rileyjshaw/node-timsort-async': ['tools'],
+	'rileyjshaw/average-color': ['tool', 'visual'],
+	'rileyjshaw/node-timsort-async': ['tool'],
 	'rileyjshaw/LineMenuStyles': ['visual', 'golf'],
 	'rileyjshaw/dark-theme-everywhere': ['browserextension', 'tool', 'visual'],
 };
@@ -58,7 +58,7 @@ const typeTransformers = {
 	],
 	commit: [
 		n => {
-			addTags(n, ['readable', ...(repoTags[n.repo] ?? [])]);
+			addTags(n, ['reading', ...(repoTags[n.repo] ?? [])]);
 			n.body = fixLinks(n.body);
 			n.description = fixLinks(n.description);
 		},
@@ -70,7 +70,7 @@ const typeTransformers = {
 	],
 	post: [
 		n => {
-			addTags(n, ['readable']);
+			addTags(n, ['reading']);
 		},
 	],
 	screenshotsTumblr: [
