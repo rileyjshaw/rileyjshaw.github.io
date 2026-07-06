@@ -1728,9 +1728,7 @@
 	{
 		"coolness": 89,
 		"date": "2015-09-07",
-		"descriptionList": [
-			"A collection of dotfiles that I use + some scripts to keep ’em in sync."
-		],
+		"description": "<p>A collection of dotfiles that I use + some scripts to keep ’em in sync.</p>",
 		"lastTagged": 1564708739903,
 		"link": "https://github.com/rileyjshaw/.supermac",
 		"tags": [
@@ -1744,9 +1742,7 @@
 	{
 		"coolness": 22,
 		"date": "2019-02-02",
-		"descriptionList": [
-			"After watching some <a href=\"https://asknature.org/resource/doodling-in-math-spirals-fibonacci-and-being-a-plant\" rel=\"noopener noreferrer\" target=\"_blank\">Vi Hart videos</a>, I started thinking a lot about Fibonacci Hashing and made some simple visualizations to test ideas."
-		],
+		"description": "<p>After watching some <a href=\"https://asknature.org/resource/doodling-in-math-spirals-fibonacci-and-being-a-plant\" rel=\"noopener noreferrer\" target=\"_blank\">Vi Hart videos</a>, I started thinking a lot about Fibonacci Hashing and made some simple visualizations to test ideas.</p>",
 		"lastTagged": 0,
 		"link": "https://codepen.io/rileyjshaw/pen/pGPaKQ",
 		"tags": [
@@ -1775,9 +1771,7 @@
 	{
 		"coolness": 24,
 		"date": "2023-03-24",
-		"descriptionList": [
-			"Remixes of 10 PRINT using messy grids."
-		],
+		"description": "<p>Remixes of 10 PRINT using messy grids.</p>",
 		"link": "https://codepen.io/collection/PYrLLW",
 		"timestamp": 1679616000000,
 		"title": "10 PRINT variations",
@@ -1787,9 +1781,7 @@
 	{
 		"coolness": 24,
 		"date": "2023-03-24",
-		"descriptionList": [
-			"A remix of 10 PRINT using an even messier grid."
-		],
+		"description": "<p>A remix of 10 PRINT using an even messier grid.</p>",
 		"link": "https://codepen.io/rileyjshaw/pen/NWLeMdp",
 		"timestamp": 1679616000000,
 		"title": "10 PRXXT",
@@ -1799,9 +1791,7 @@
 	{
 		"coolness": 5,
 		"date": "2014-03-13",
-		"descriptionList": [
-			"A terrible clone of a terrible clone of a game."
-		],
+		"description": "<p>A terrible clone of a terrible clone of a game.</p>",
 		"lastTagged": 1564708885721,
 		"link": "/2048",
 		"tags": [
@@ -1816,9 +1806,7 @@
 	{
 		"coolness": 71,
 		"date": "2015-01-29",
-		"descriptionList": [
-			"A Pebble watchface that divides the week into six 28-hour days instead of the standard 24/7."
-		],
+		"description": "<p>A Pebble watchface that divides the week into six 28-hour days instead of the standard 24/7.</p>",
 		"lastTagged": 1564708780643,
 		"link": "https://apps.getpebble.com/en_US/application/54cadfd211e375bdc5000048",
 		"tags": [
@@ -1834,9 +1822,7 @@
 	{
 		"coolness": 44,
 		"date": "2015-12-19",
-		"descriptionList": [
-			"Attempts to make a believable enough 3d ball-rolling effect using 2d canvas primitives."
-		],
+		"description": "<p>Attempts to make a believable enough 3d ball-rolling effect using 2d canvas primitives.</p>",
 		"link": "https://codepen.io/collection/aMqEjR",
 		"timestamp": 1450483200000,
 		"title": "2d roll effect experiments",
@@ -1846,9 +1832,7 @@
 	{
 		"coolness": 83,
 		"date": "2013-11-11",
-		"descriptionList": [
-			"Snake for 2 players on the same keyboard?! Saucy."
-		],
+		"description": "<p>Snake for 2 players on the same keyboard?! Saucy.</p>",
 		"lastTagged": 1564708965315,
 		"link": "/2p-snake",
 		"tags": [
@@ -1878,9 +1862,7 @@
 	{
 		"coolness": 13,
 		"date": "2013-12-15",
-		"descriptionList": [
-			"BYOG (glasses)."
-		],
+		"description": "<p>BYOG (glasses).</p>",
 		"lastTagged": 1564708937835,
 		"link": "https://codepen.io/rileyjshaw/details/rEhdF/",
 		"tags": [
@@ -1896,9 +1878,7 @@
 	{
 		"coolness": 64,
 		"date": "2016-03-28",
-		"descriptionList": [
-			"Blend modes + simplex noise."
-		],
+		"description": "<p>Blend modes + simplex noise.</p>",
 		"lastTagged": 1564707876975,
 		"link": "https://codepen.io/rileyjshaw/pen/oxwVNw",
 		"tags": [
@@ -1913,9 +1893,7 @@
 	{
 		"coolness": 16,
 		"date": "2014-09-01",
-		"descriptionList": [
-			"I was designing an app with a rainbow interface, so I threw this page together to see how the palette looked together."
-		],
+		"description": "<p>I was designing an app with a rainbow interface, so I threw this page together to see how the palette looked together.</p>",
 		"lastTagged": 1564624449407,
 		"link": "https://codepen.io/rileyjshaw/full/JvdrG/",
 		"tags": [
@@ -1930,9 +1908,7 @@
 	{
 		"coolness": 74,
 		"date": "2016-03-13",
-		"descriptionList": [
-			"Variations on <a href=\"https://codepen.io/rileyjshaw/pen/dMpJre\" rel=\"noopener noreferrer\" target=\"_blank\">Stone</a> with controlled line angles across the circle."
-		],
+		"description": "<p>Variations on <a href=\"https://codepen.io/rileyjshaw/pen/dMpJre\" rel=\"noopener noreferrer\" target=\"_blank\">Stone</a> with controlled line angles across the circle.</p>",
 		"lastTagged": 1564707890990,
 		"link": "https://codepen.io/rileyjshaw/full/mPrXxb/",
 		"tags": [
@@ -1947,9 +1923,7 @@
 	{
 		"coolness": 30,
 		"date": "2014-05-09",
-		"descriptionList": [
-			"How I like to think of myself."
-		],
+		"description": "<p>How I like to think of myself.</p>",
 		"lastTagged": 1564708829946,
 		"link": "https://codepen.io/rileyjshaw/full/acjvs/",
 		"tags": [
@@ -1964,10 +1938,7 @@
 	{
 		"coolness": 70,
 		"date": "2015-08-20",
-		"descriptionList": [
-			"Maintains its default font-size until it is too wide to fit on the page. If it starts overflowing, it will adjust to take up 100% of the page width.",
-			"Requires a bit of JS on page load. Just CSS and SVG after that."
-		],
+		"description": "<p>Maintains its default font-size until it is too wide to fit on the page. If it starts overflowing, it will adjust to take up 100% of the page width.</p><p>Requires a bit of JS on page load. Just CSS and SVG after that.</p>",
 		"lastTagged": 1564708741980,
 		"link": "https://codepen.io/rileyjshaw/pen/eNwGjw",
 		"tags": [
@@ -1984,10 +1955,7 @@
 	{
 		"coolness": 36,
 		"date": "2016-03-11",
-		"descriptionList": [
-			"A little doodle with a lot of circles.",
-			"Could be done far more efficiently by scaling / translating a fixed amount of concentric circles, but math-ing it was more fun :)"
-		],
+		"description": "<p>A little doodle with a lot of circles.</p><p>Could be done far more efficiently by scaling / translating a fixed amount of concentric circles, but math-ing it was more fun :)</p>",
 		"lastTagged": 1564707893272,
 		"link": "https://codepen.io/rileyjshaw/full/yOJzoP/",
 		"tags": [
@@ -2018,9 +1986,7 @@
 	{
 		"coolness": 41,
 		"date": "2019-03-17",
-		"descriptionList": [
-			"An ascii rock garden. Rake with touch / mouse."
-		],
+		"description": "<p>An ascii rock garden. Rake with touch / mouse.</p>",
 		"lastTagged": 1564773957386,
 		"link": "/glitch-archive/projects/ascii-garden/",
 		"tags": [
@@ -2035,9 +2001,7 @@
 	{
 		"coolness": 21,
 		"date": "2013-10-08",
-		"descriptionList": [
-			"Geeky loading animations using ASCII characters."
-		],
+		"description": "<p>Geeky loading animations using ASCII characters.</p>",
 		"lastTagged": 1564708976938,
 		"link": "https://codepen.io/rileyjshaw/full/ABzsc",
 		"tags": [
@@ -2053,9 +2017,7 @@
 	{
 		"coolness": 79,
 		"date": "2016-03-06",
-		"descriptionList": [
-			"Small canvas demo using Lissajous curves."
-		],
+		"description": "<p>Small canvas demo using Lissajous curves.</p>",
 		"lastTagged": 1564707896427,
 		"link": "https://codepen.io/rileyjshaw/full/PNPVmK/",
 		"tags": [
@@ -2071,9 +2033,7 @@
 	{
 		"coolness": 30,
 		"date": "2016-06-16",
-		"descriptionList": [
-			"Returns the average color from a list of HSL arrays."
-		],
+		"description": "<p>Returns the average color from a list of HSL arrays.</p>",
 		"lastTagged": 1564707813397,
 		"link": "https://github.com/rileyjshaw/average-color",
 		"tags": [
@@ -2102,9 +2062,7 @@
 	{
 		"coolness": 20,
 		"date": "2019-02-01",
-		"descriptionList": [
-			"Testing the limits of the illusion that R+G+B = grey"
-		],
+		"description": "<p>Testing the limits of the illusion that R+G+B = grey</p>",
 		"lastTagged": 0,
 		"link": "https://codepen.io/rileyjshaw/pen/XOMNwX",
 		"tags": [
@@ -2118,9 +2076,7 @@
 	{
 		"coolness": 32,
 		"date": "2013-12-03",
-		"descriptionList": [
-			"Simple animation in three.js."
-		],
+		"description": "<p>Simple animation in three.js.</p>",
 		"lastTagged": 1564708942431,
 		"link": "https://codepen.io/rileyjshaw/details/fzhDk/",
 		"tags": [
@@ -2135,9 +2091,7 @@
 	{
 		"coolness": 40,
 		"date": "2016-03-06",
-		"descriptionList": [
-			"Hey! It’s a normal distribution!"
-		],
+		"description": "<p>Hey! It’s a normal distribution!</p>",
 		"lastTagged": 1564707897855,
 		"link": "https://codepen.io/rileyjshaw/details/ONyGxM/",
 		"tags": [
@@ -2152,11 +2106,7 @@
 	{
 		"coolness": 78,
 		"date": "2014-04-29",
-		"descriptionList": [
-			"A multiplayer shark-frenzy controlled with your phone.",
-			"Created with friends at Hacker School. I was in charge of the mobile + WebSocket controller framework and the server.",
-			"This used to be on Chrome Experiments but it’s offline now :("
-		],
+		"description": "<p>A multiplayer shark-frenzy controlled with your phone.</p><p>Created with friends at Hacker School. I was in charge of the mobile + WebSocket controller framework and the server.</p><p>This used to be on Chrome Experiments but it’s offline now :(</p>",
 		"lastTagged": 1564708847602,
 		"link": "https://github.com/ben-eath/the-surf-ace",
 		"tags": [
@@ -2173,9 +2123,7 @@
 	{
 		"coolness": 80,
 		"date": "2025-12-31",
-		"descriptionList": [
-			"I built a hardware sequencer out of DIP switches in 2018. Now it’s playable on the web."
-		],
+		"description": "<p>I built a hardware sequencer out of DIP switches in 2018. Now it’s playable on the web.</p>",
 		"link": "/big-dipper/",
 		"timestamp": 1767139200000,
 		"title": "Big Dipper",
@@ -2213,9 +2161,7 @@
 	{
 		"coolness": 46,
 		"date": "2016-08-08",
-		"descriptionList": [
-			"It resizes!"
-		],
+		"description": "<p>It resizes!</p>",
 		"lastTagged": 1564608423548,
 		"link": "https://codepen.io/rileyjshaw/full/kXQXAo/",
 		"tags": [
@@ -2244,9 +2190,7 @@
 	{
 		"coolness": 50,
 		"date": "2016-08-08",
-		"descriptionList": [
-			"Threw this together to help with color inspiration for another project."
-		],
+		"description": "<p>Threw this together to help with color inspiration for another project.</p>",
 		"lastTagged": 1564608428261,
 		"link": "https://codepen.io/rileyjshaw/full/pbQEoA/",
 		"tags": [
@@ -2275,10 +2219,7 @@
 	{
 		"coolness": 50,
 		"date": "2015-11-15",
-		"descriptionList": [
-			"A cross-browser WebExtension to declutter busy pages and make them readable again.",
-			"Written originally as a bookmarklet in 2013."
-		],
+		"description": "<p>A cross-browser WebExtension to declutter busy pages and make them readable again.</p><p>Written originally as a bookmarklet in 2013.</p>",
 		"lastTagged": 1564708725840,
 		"link": "https://github.com/rileyjshaw/boom",
 		"tags": [
@@ -2292,10 +2233,7 @@
 	{
 		"coolness": 16,
 		"date": "2021-03-03",
-		"descriptionList": [
-			"A quick experiment to see if SVG <code>&lt;animateTransform&gt;</code> declarations can be copied and reused (they can).",
-			"Inhale for 4 seconds, hold for 7 seconds, exhale for 9 seconds."
-		],
+		"description": "<p>A quick experiment to see if SVG <code>&lt;animateTransform&gt;</code> declarations can be copied and reused (they can).</p><p>Inhale for 4 seconds, hold for 7 seconds, exhale for 9 seconds.</p>",
 		"lastTagged": 0,
 		"link": "https://codepen.io/rileyjshaw/full/bGBKmZp",
 		"tags": [
@@ -2311,9 +2249,7 @@
 	{
 		"coolness": 52,
 		"date": "2016-09-10",
-		"descriptionList": [
-			"Follows your mouse."
-		],
+		"description": "<p>Follows your mouse.</p>",
 		"lastTagged": 1564608412735,
 		"link": "https://codepen.io/rileyjshaw/full/ozjEoK/",
 		"tags": [
@@ -2337,9 +2273,7 @@
 	{
 		"coolness": 76,
 		"date": "2019-03-09",
-		"descriptionList": [
-			"Caution: it flashes! <a href=\"/glitch-archive/projects/ca-finder/\" target=\"_blank\" rel=\"noopener noreferrer\">Controls listed in the README.</a>"
-		],
+		"description": "<p>Caution: it flashes! <a href=\"/glitch-archive/projects/ca-finder/\" target=\"_blank\" rel=\"noopener noreferrer\">Controls listed in the README.</a></p>",
 		"lastTagged": 1552433253008,
 		"link": "/glitch-archive/projects/ca-finder/",
 		"tags": [
@@ -2355,9 +2289,7 @@
 	{
 		"coolness": 80,
 		"date": "2024-03-05",
-		"descriptionList": [
-			"Caution: it flashes! A generalized cellular automaton simulator that runs on your GPU."
-		],
+		"description": "<p>Caution: it flashes! A generalized cellular automaton simulator that runs on your GPU.</p>",
 		"link": "/ca-finder/",
 		"timestamp": 1709596800000,
 		"title": "CA Finder: GPU Edition",
@@ -2367,10 +2299,7 @@
 	{
 		"coolness": 70,
 		"date": "2017-10-07",
-		"descriptionList": [
-			"THIRTY-EIGHT rough visual experiments in alphabetical order.",
-			"Each experiment was built using a web tool I created in the spirit of OpenFrameworks and TouchDesigner. I wanted libraries close at hand with a simple API for drawing to &lt;canvas&gt;, SVG, etc."
-		],
+		"description": "<p>THIRTY-EIGHT rough visual experiments in alphabetical order.</p><p>Each experiment was built using a web tool I created in the spirit of OpenFrameworks and TouchDesigner. I wanted libraries close at hand with a simple API for drawing to &lt;canvas&gt;, SVG, etc.</p>",
 		"lastTagged": 1565142493873,
 		"link": "/canvas/",
 		"tags": [
@@ -2387,9 +2316,7 @@
 	{
 		"coolness": 13,
 		"date": "2020-10-10",
-		"descriptionList": [
-			"A few quick doodles that I eventually ported to WebGL."
-		],
+		"description": "<p>A few quick doodles that I eventually ported to WebGL.</p>",
 		"lastTagged": 0,
 		"link": "https://codepen.io/collection/DRdKOb",
 		"tags": [
@@ -2404,9 +2331,7 @@
 	{
 		"coolness": 20,
 		"date": "2016-03-23",
-		"descriptionList": [
-			"A quick look into some of the options for context.globalCompositeOperation."
-		],
+		"description": "<p>A quick look into some of the options for context.globalCompositeOperation.</p>",
 		"lastTagged": 1564707884368,
 		"link": "https://codepen.io/rileyjshaw/full/remdxj/",
 		"tags": [
@@ -2422,9 +2347,7 @@
 	{
 		"coolness": 55,
 		"date": "2021-01-12",
-		"descriptionList": [
-			"Reusable functions that accept an HTML canvas and re-draw it slightly smudged. The CMY version separates cyan/magenta/yellow color channels and adds an offset."
-		],
+		"description": "<p>Reusable functions that accept an HTML canvas and re-draw it slightly smudged. The CMY version separates cyan/magenta/yellow color channels and adds an offset.</p>",
 		"lastTagged": 0,
 		"link": "https://codepen.io/collection/DaxrqQ",
 		"tags": [
@@ -2440,9 +2363,7 @@
 	{
 		"coolness": 24,
 		"date": "2013-12-21",
-		"descriptionList": [
-			"lol these variable names…"
-		],
+		"description": "<p>lol these variable names…</p>",
 		"lastTagged": 1564708933870,
 		"link": "https://codepen.io/rileyjshaw/pen/bzeqL?editors=0010",
 		"tags": [
@@ -2458,9 +2379,7 @@
 	{
 		"coolness": 20,
 		"date": "2024-02-26",
-		"descriptionList": [
-			"A simple ShaderToy cellular automaton."
-		],
+		"description": "<p>A simple ShaderToy cellular automaton.</p>",
 		"link": "https://www.shadertoy.com/view/43XSzn",
 		"timestamp": 1708905600000,
 		"title": "Cell spread",
@@ -2470,9 +2389,7 @@
 	{
 		"coolness": 81,
 		"date": "2015-02-19",
-		"descriptionList": [
-			"Pop-up programming challenges in your browser."
-		],
+		"description": "<p>Pop-up programming challenges in your browser.</p>",
 		"lastTagged": 1564708774349,
 		"link": "/challenger",
 		"tags": [
@@ -2490,9 +2407,7 @@
 	{
 		"coolness": 35,
 		"date": "2013-12-03",
-		"descriptionList": [
-			"Random mutations of a polyhedron."
-		],
+		"description": "<p>Random mutations of a polyhedron.</p>",
 		"lastTagged": 1564708940474,
 		"link": "https://codepen.io/rileyjshaw/full/wKvfk",
 		"tags": [
@@ -2507,9 +2422,7 @@
 	{
 		"coolness": 55,
 		"date": "2025-11-02",
-		"descriptionList": [
-			"RGB channel delay video shader."
-		],
+		"description": "<p>RGB channel delay video shader.</p>",
 		"link": "/channel-delay",
 		"timestamp": 1762041600000,
 		"title": "Channel delay",
@@ -2552,9 +2465,7 @@
 	{
 		"coolness": 60,
 		"date": "2025-03-01",
-		"descriptionList": [
-			"Some fun demos of emoji choreography using spatial indexing."
-		],
+		"description": "<p>Some fun demos of emoji choreography using spatial indexing.</p>",
 		"link": "/choreography/",
 		"timestamp": 1740787200000,
 		"title": "Choreography",
@@ -2564,10 +2475,7 @@
 	{
 		"coolness": 70,
 		"date": "2016-05-03",
-		"descriptionList": [
-			"Very simple rule applied to a bunch of particles for a smooth ripple effect.",
-			"Changing the timing function on this one is extremely satisfying."
-		],
+		"description": "<p>Very simple rule applied to a bunch of particles for a smooth ripple effect.</p><p>Changing the timing function on this one is extremely satisfying.</p>",
 		"lastTagged": 1564707849539,
 		"link": "https://codepen.io/rileyjshaw/full/xVQBLG/",
 		"tags": [
@@ -2583,9 +2491,7 @@
 	{
 		"coolness": 50,
 		"date": "2022-10-19",
-		"descriptionList": [
-			"A really tiny library that generates classname strings."
-		],
+		"description": "<p>A really tiny library that generates classname strings.</p>",
 		"link": "https://www.npmjs.com/package/cnz",
 		"timestamp": 1666137600000,
 		"title": "cnz",
@@ -2595,10 +2501,7 @@
 	{
 		"coolness": 14,
 		"date": "2013-09-29",
-		"descriptionList": [
-			"Sass mixin: jump from x to y in z steps.",
-			"This was my first CodePen to hit the front page :)"
-		],
+		"description": "<p>Sass mixin: jump from x to y in z steps.</p><p>This was my first CodePen to hit the front page :)</p>",
 		"lastTagged": 1564708977786,
 		"link": "https://codepen.io/rileyjshaw/pen/Ijtgr",
 		"tags": [
@@ -2615,9 +2518,7 @@
 	{
 		"coolness": 10,
 		"date": "2017-01-05",
-		"descriptionList": [
-			"Full-screen hex, hsl, and rgb color picker & converter"
-		],
+		"description": "<p>Full-screen hex, hsl, and rgb color picker & converter</p>",
 		"lastTagged": 1564608387197,
 		"link": "/color-screen/",
 		"tags": [
@@ -2641,9 +2542,7 @@
 	{
 		"coolness": 80,
 		"date": "2022-11-24",
-		"descriptionList": [
-			"Compare two images in a variety of ways."
-		],
+		"description": "<p>Compare two images in a variety of ways.</p>",
 		"link": "/compare-images/",
 		"timestamp": 1669248000000,
 		"title": "Compare images",
@@ -2653,9 +2552,7 @@
 	{
 		"coolness": 72,
 		"date": "2014-03-12",
-		"descriptionList": [
-			"Generate frequencies, chords, and songs."
-		],
+		"description": "<p>Generate frequencies, chords, and songs.</p>",
 		"lastTagged": 1564708887783,
 		"link": "https://github.com/rileyjshaw/composer",
 		"tags": [
@@ -2670,9 +2567,7 @@
 	{
 		"coolness": 72,
 		"date": "2014-12-21",
-		"descriptionList": [
-			"Functional JavaScript terminal using my TinyTerm library."
-		],
+		"description": "<p>Functional JavaScript terminal using my TinyTerm library.</p>",
 		"lastTagged": 1564708788771,
 		"link": "/tinyterm",
 		"tags": [
@@ -2687,9 +2582,7 @@
 	{
 		"coolness": 29,
 		"date": "2013-12-19",
-		"descriptionList": [
-			"Recreating a popular clothing brand’s logo in CSS."
-		],
+		"description": "<p>Recreating a popular clothing brand’s logo in CSS.</p>",
 		"lastTagged": 1564708936373,
 		"link": "https://codepen.io/rileyjshaw/pen/blCIq/",
 		"tags": [
@@ -2705,9 +2598,7 @@
 	{
 		"coolness": 5,
 		"date": "2016-08-18",
-		"descriptionList": [
-			"Autoplay is a scourge…"
-		],
+		"description": "<p>Autoplay is a scourge…</p>",
 		"lastTagged": 0,
 		"link": "https://codepen.io/rileyjshaw/pen/akxdvp",
 		"tags": [
@@ -2737,10 +2628,7 @@
 	{
 		"coolness": 90,
 		"date": "2016-12-27",
-		"descriptionList": [
-			"Improve your online privacy and security over the 12 days of Cryptmas.",
-			"I was interviewed for this work by NPR, the CBC, and PCMag."
-		],
+		"description": "<p>Improve your online privacy and security over the 12 days of Cryptmas.</p><p>I was interviewed for this work by NPR, the CBC, and PCMag.</p>",
 		"lastTagged": 1564608389110,
 		"link": "https://xmas.rileyjshaw.com/",
 		"tags": [
@@ -2756,9 +2644,7 @@
 	{
 		"coolness": 27,
 		"date": "2013-09-06",
-		"descriptionList": [
-			"Geeky loading animations using ASCII characters."
-		],
+		"description": "<p>Geeky loading animations using ASCII characters.</p>",
 		"lastTagged": 1564708985741,
 		"link": "https://codepen.io/rileyjshaw/details/GsotD/",
 		"tags": [
@@ -2774,9 +2660,7 @@
 	{
 		"coolness": 4,
 		"date": "2014-01-03",
-		"descriptionList": [
-			"Using a repeating pattern to give the illusion of semi-transparency."
-		],
+		"description": "<p>Using a repeating pattern to give the illusion of semi-transparency.</p>",
 		"lastTagged": 1564708922967,
 		"link": "https://codepen.io/rileyjshaw/full/uvcyE/",
 		"tags": [
@@ -2792,9 +2676,7 @@
 	{
 		"coolness": 55,
 		"date": "2013-11-20",
-		"descriptionList": [
-			"Are the base lines straight or at an angle?"
-		],
+		"description": "<p>Are the base lines straight or at an angle?</p>",
 		"lastTagged": 1564708953257,
 		"link": "https://codepen.io/rileyjshaw/pen/vzwsu/",
 		"tags": [
@@ -2811,9 +2693,7 @@
 	{
 		"coolness": 14,
 		"date": "2014-09-12",
-		"descriptionList": [
-			"For Pairjam."
-		],
+		"description": "<p>For Pairjam.</p>",
 		"lastTagged": 1564624440228,
 		"link": "https://codepen.io/rileyjshaw/pen/iIjcp/",
 		"tags": [
@@ -2830,9 +2710,7 @@
 	{
 		"coolness": 26,
 		"date": "2020-02-22",
-		"descriptionList": [
-			"An adaptive ruleset for vertical rhythm, responsive to the font-size of the parent container."
-		],
+		"description": "<p>An adaptive ruleset for vertical rhythm, responsive to the font-size of the parent container.</p>",
 		"lastTagged": 0,
 		"link": "https://codepen.io/rileyjshaw/pen/KKpNvew",
 		"tags": [
@@ -2862,9 +2740,7 @@
 	{
 		"coolness": 10,
 		"date": "2021-05-21",
-		"descriptionList": [
-			"Converts a CSV file to a Garmin-flavored <code>.gpx</code> file."
-		],
+		"description": "<p>Converts a CSV file to a Garmin-flavored <code>.gpx</code> file.</p>",
 		"link": "https://github.com/rileyjshaw/csv-to-gpx",
 		"timestamp": 1621555200000,
 		"title": "CSV to GPX",
@@ -2874,9 +2750,7 @@
 	{
 		"coolness": 14,
 		"date": "2013-10-23",
-		"descriptionList": [
-			"Ugly implementation of something pretty."
-		],
+		"description": "<p>Ugly implementation of something pretty.</p>",
 		"lastTagged": 1564708969978,
 		"link": "https://codepen.io/rileyjshaw/full/IkfJn/",
 		"tags": [
@@ -2900,9 +2774,7 @@
 	{
 		"coolness": 73,
 		"date": "2025-10-21",
-		"descriptionList": [
-			"A grid symmetry shader and camera."
-		],
+		"description": "<p>A grid symmetry shader and camera.</p>",
 		"link": "/cutup",
 		"timestamp": 1761004800000,
 		"title": "Cutup",
@@ -2912,10 +2784,7 @@
 	{
 		"coolness": 82,
 		"date": "2016-03-28",
-		"descriptionList": [
-			"Title screen born of nostalgia for the pictures we used to draw on oscilloscopes.",
-			"n͖͙͍͔o̴̰̤͈͙̘̥w͉̮ ̩w̺̘i̠̲͉̘̪t̟̜͉͓͈͞h̩͚̺̕ ̧͉̹̮̠ͅm̻̰͔̜͚o̲̥̘r̶͕̟͇͇̟̭e̠ ̩̺̖̟g̪̬̰̺̟̪͈͜l͇͉͚̬͞i̡ṭ̠̲̰̦ͅc̨̣ͅh̰̲̯̺͕̼͈͜e̷͕̜͎̱s̢̩"
-		],
+		"description": "<p>Title screen born of nostalgia for the pictures we used to draw on oscilloscopes.</p><p>n͖͙͍͔o̴̰̤͈͙̘̥w͉̮ ̩w̺̘i̠̲͉̘̪t̟̜͉͓͈͞h̩͚̺̕ ̧͉̹̮̠ͅm̻̰͔̜͚o̲̥̘r̶͕̟͇͇̟̭e̠ ̩̺̖̟g̪̬̰̺̟̪͈͜l͇͉͚̬͞i̡ṭ̠̲̰̦ͅc̨̣ͅh̰̲̯̺͕̼͈͜e̷͕̜͎̱s̢̩</p>",
 		"lastTagged": 1564707880139,
 		"link": "https://codepen.io/rileyjshaw/full/eZRLaP",
 		"tags": [
@@ -2930,9 +2799,7 @@
 	{
 		"coolness": 86,
 		"date": "2016-09-28",
-		"descriptionList": [
-			"Play this one in a small window. Arrow keys to move around."
-		],
+		"description": "<p>Play this one in a small window. Arrow keys to move around.</p>",
 		"lastTagged": 1564608407776,
 		"link": "https://codepen.io/rileyjshaw/pen/YGQVqK?editors=1000",
 		"tags": [
@@ -2973,9 +2840,7 @@
 	{
 		"coolness": 39,
 		"date": "2016-05-05",
-		"descriptionList": [
-			"Independently oscillating points that form a greater picture together."
-		],
+		"description": "<p>Independently oscillating points that form a greater picture together.</p>",
 		"lastTagged": 1564707847474,
 		"link": "https://codepen.io/rileyjshaw/full/bpOoyW/",
 		"tags": [
@@ -2990,9 +2855,7 @@
 	{
 		"coolness": 80,
 		"date": "2015-10-29",
-		"descriptionList": [
-			"A forcefully applied dark theme for the web."
-		],
+		"description": "<p>A forcefully applied dark theme for the web.</p>",
 		"lastTagged": 1564708732408,
 		"link": "https://github.com/rileyjshaw/dark-theme-everywhere",
 		"tags": [
@@ -3007,9 +2870,7 @@
 	{
 		"coolness": 99,
 		"date": "2020-04-04",
-		"descriptionList": [
-			"Deletion Day challenges the prevailing notion that “more is more”. In a culture that strives for permanence, we celebrate ephemerality, growth, and change."
-		],
+		"description": "<p>Deletion Day challenges the prevailing notion that “more is more”. In a culture that strives for permanence, we celebrate ephemerality, growth, and change.</p>",
 		"lastTagged": 0,
 		"link": "https://deletionday.com",
 		"tags": [
@@ -3025,9 +2886,7 @@
 	{
 		"coolness": 70,
 		"date": "2016-04-04",
-		"descriptionList": [
-			"Remix of <a href=\"https://codepen.io/rileyjshaw/pen/oxwVNw\" rel=\"noopener noreferrer\" target=\"_blank\">~~~</a> using angles &amp; moving agents instead of absolute positions."
-		],
+		"description": "<p>Remix of <a href=\"https://codepen.io/rileyjshaw/pen/oxwVNw\" rel=\"noopener noreferrer\" target=\"_blank\">~~~</a> using angles &amp; moving agents instead of absolute positions.</p>",
 		"lastTagged": 1564707868594,
 		"link": "https://codepen.io/rileyjshaw/full/mPBZNj/",
 		"tags": [
@@ -3056,9 +2915,7 @@
 	{
 		"coolness": 60,
 		"date": "2023-02-06",
-		"descriptionList": [
-			"A simple dark theme for Firefox."
-		],
+		"description": "<p>A simple dark theme for Firefox.</p>",
 		"link": "https://addons.mozilla.org/en-CA/firefox/addon/dim-a-simple-dark-theme/",
 		"timestamp": 1675641600000,
 		"title": "Dim",
@@ -3068,9 +2925,7 @@
 	{
 		"coolness": 60,
 		"date": "2016-11-13",
-		"descriptionList": [
-			"Create a private Twitter list out of someone else’s feed so you can read it."
-		],
+		"description": "<p>Create a private Twitter list out of someone else’s feed so you can read it.</p>",
 		"lastTagged": 1564608392569,
 		"link": "https://gist.github.com/rileyjshaw/fab2c01b9bb85e598fffba130ca28d0a",
 		"tags": [
@@ -3084,9 +2939,7 @@
 	{
 		"coolness": 25,
 		"date": "2013-10-28",
-		"descriptionList": [
-			"Hover over “DNS”."
-		],
+		"description": "<p>Hover over “DNS”.</p>",
 		"lastTagged": 1564708969001,
 		"link": "https://codepen.io/rileyjshaw/details/eAEya/",
 		"tags": [
@@ -3113,9 +2966,7 @@
 	{
 		"coolness": 30,
 		"date": "2020-05-26",
-		"descriptionList": [
-			"Recursive illustration of the loci of points on a moving circle."
-		],
+		"description": "<p>Recursive illustration of the loci of points on a moving circle.</p>",
 		"lastTagged": 0,
 		"link": "https://codepen.io/rileyjshaw/full/mdegGpa",
 		"tags": [
@@ -3131,9 +2982,7 @@
 	{
 		"coolness": 10,
 		"date": "2015-02-08",
-		"descriptionList": [
-			"Two versions of a canvas util function."
-		],
+		"description": "<p>Two versions of a canvas util function.</p>",
 		"lastTagged": 1564708775492,
 		"link": "https://codepen.io/collection/nYwRVL/",
 		"tags": [
@@ -3149,9 +2998,7 @@
 	{
 		"coolness": 50,
 		"date": "2015-12-20",
-		"descriptionList": [
-			"A browser extension that removes the unread count from your Gmail inbox and title bar."
-		],
+		"description": "<p>A browser extension that removes the unread count from your Gmail inbox and title bar.</p>",
 		"lastTagged": 1564707914672,
 		"link": "https://github.com/rileyjshaw/easy-inbox-zero",
 		"tags": [
@@ -3166,9 +3013,7 @@
 	{
 		"coolness": 60,
 		"date": "2025-03-12",
-		"descriptionList": [
-			"A calendar that looks like eggs"
-		],
+		"description": "<p>A calendar that looks like eggs</p>",
 		"link": "/egg-calendar/",
 		"timestamp": 1741737600000,
 		"title": "Egg calendar",
@@ -3178,9 +3023,7 @@
 	{
 		"coolness": 30,
 		"date": "2014-09-14",
-		"descriptionList": [
-			"Initial pass at the menu system for Pairjam."
-		],
+		"description": "<p>Initial pass at the menu system for Pairjam.</p>",
 		"lastTagged": 1564624447769,
 		"link": "https://codepen.io/rileyjshaw/full/DplJB",
 		"tags": [
@@ -3197,10 +3040,7 @@
 	{
 		"coolness": 9,
 		"date": "2014-09-12",
-		"descriptionList": [
-			"For Pairjam.",
-			"Bad interaction tbh."
-		],
+		"description": "<p>For Pairjam.</p><p>Bad interaction tbh.</p>",
 		"lastTagged": 1564624442669,
 		"link": "https://codepen.io/rileyjshaw/pen/zIpqi/",
 		"tags": [
@@ -3217,9 +3057,7 @@
 	{
 		"coolness": 44,
 		"date": "2015-12-15",
-		"descriptionList": [
-			"These used to be pokéballs."
-		],
+		"description": "<p>These used to be pokéballs.</p>",
 		"lastTagged": 1564707916616,
 		"link": "https://codepen.io/rileyjshaw/full/dGGGZZ",
 		"tags": [
@@ -3234,9 +3072,7 @@
 	{
 		"coolness": 10,
 		"date": "2014-09-07",
-		"descriptionList": [
-			"Displays a random ASCII face."
-		],
+		"description": "<p>Displays a random ASCII face.</p>",
 		"lastTagged": 1564624445152,
 		"link": "/face",
 		"tags": [
@@ -3250,9 +3086,7 @@
 	{
 		"coolness": 44,
 		"date": "2016-02-24",
-		"descriptionList": [
-			"CSS technique to make a semi-transparent background fade in perfectly with its box-shadow."
-		],
+		"description": "<p>CSS technique to make a semi-transparent background fade in perfectly with its box-shadow.</p>",
 		"lastTagged": 1564707904919,
 		"link": "https://codepen.io/rileyjshaw/details/obKdzW",
 		"tags": [
@@ -3269,9 +3103,7 @@
 	{
 		"coolness": 30,
 		"date": "2016-05-22",
-		"descriptionList": [
-			"Looping CSS animation."
-		],
+		"description": "<p>Looping CSS animation.</p>",
 		"lastTagged": 1564707836594,
 		"link": "https://codepen.io/rileyjshaw/pen/PNMZVG?editors=1100",
 		"tags": [
@@ -3287,9 +3119,7 @@
 	{
 		"coolness": 20,
 		"date": "2014-04-14",
-		"descriptionList": [
-			"Checks how quickly you can navigate to other sites in a new tab. Only works in Firefox."
-		],
+		"description": "<p>Checks how quickly you can navigate to other sites in a new tab. Only works in Firefox.</p>",
 		"lastTagged": 1564708862840,
 		"link": "/fastdraw",
 		"tags": [
@@ -3319,9 +3149,7 @@
 	{
 		"coolness": 28,
 		"date": "2024-01-24",
-		"descriptionList": [
-			"Create an ultra-wide photograph out of a slow dolly shot video using the command line."
-		],
+		"description": "<p>Create an ultra-wide photograph out of a slow dolly shot video using the command line.</p>",
 		"link": "https://gist.github.com/rileyjshaw/afe98fce6e6988bf3ce7a09b26e5e120",
 		"timestamp": 1706054400000,
 		"title": "FFmpeg slit-scan",
@@ -3331,9 +3159,7 @@
 	{
 		"coolness": 9,
 		"date": "2013-11-08",
-		"descriptionList": [
-			"Ha."
-		],
+		"description": "<p>Ha.</p>",
 		"lastTagged": 1564708964844,
 		"link": "https://codepen.io/rileyjshaw/full/KcILg/",
 		"tags": [
@@ -3347,9 +3173,7 @@
 	{
 		"coolness": 41,
 		"date": "2014-05-19",
-		"descriptionList": [
-			"WebRTC file sharing concept thrown together in ~40 minutes (or your pizza’s free!)"
-		],
+		"description": "<p>WebRTC file sharing concept thrown together in ~40 minutes (or your pizza’s free!)</p>",
 		"lastTagged": 1564708828018,
 		"link": "https://github.com/rileyjshaw/filesupply",
 		"tags": [
@@ -3365,9 +3189,7 @@
 	{
 		"coolness": 60,
 		"date": "2016-04-04",
-		"descriptionList": [
-			"Cliché vector “field” “diagram”."
-		],
+		"description": "<p>Cliché vector “field” “diagram”.</p>",
 		"lastTagged": 1564707866386,
 		"link": "https://codepen.io/rileyjshaw/pen/ONxKVd?editors=0010",
 		"tags": [
@@ -3382,9 +3204,7 @@
 	{
 		"coolness": 45,
 		"date": "2014-10-12",
-		"descriptionList": [
-			"Warning: contains a blocking loop that may cause browsers to hang briefly."
-		],
+		"description": "<p>Warning: contains a blocking loop that may cause browsers to hang briefly.</p>",
 		"lastTagged": 1564624420398,
 		"link": "https://codepen.io/rileyjshaw/pen/enfkc",
 		"tags": [
@@ -3401,9 +3221,7 @@
 	{
 		"coolness": 78,
 		"date": "2014-12-09",
-		"descriptionList": [
-			"In-browser keystroke dynamics demo using Tappy."
-		],
+		"description": "<p>In-browser keystroke dynamics demo using Tappy.</p>",
 		"lastTagged": 1564708792923,
 		"link": "/tappy-fingerprint",
 		"tags": [
@@ -3420,9 +3238,7 @@
 	{
 		"coolness": 85,
 		"date": "2013-03-02",
-		"descriptionList": [
-			"A fitness form trainer using an Xbox Kinect."
-		],
+		"description": "<p>A fitness form trainer using an Xbox Kinect.</p>",
 		"lastTagged": 1564708999688,
 		"link": "https://github.com/uniphil/FitHub",
 		"tags": [
@@ -3452,10 +3268,7 @@
 	{
 		"coolness": 33,
 		"date": "2015-01-12",
-		"descriptionList": [
-			"Responsive chat interface using CSS flexbox.",
-			"Created as a proof of concept for TextSecure’s browser extension layout."
-		],
+		"description": "<p>Responsive chat interface using CSS flexbox.</p><p>Created as a proof of concept for TextSecure’s browser extension layout.</p>",
 		"lastTagged": 1564708783154,
 		"link": "https://codepen.io/rileyjshaw/full/LExqQE/",
 		"tags": [
@@ -3495,9 +3308,7 @@
 	{
 		"coolness": 54,
 		"date": "2013-11-25",
-		"descriptionList": [
-			"Sass flower with variable number of petals."
-		],
+		"description": "<p>Sass flower with variable number of petals.</p>",
 		"lastTagged": 1564708950723,
 		"link": "https://codepen.io/rileyjshaw/pen/HBDtd",
 		"tags": [
@@ -3514,9 +3325,7 @@
 	{
 		"coolness": 40,
 		"date": "2016-06-19",
-		"descriptionList": [
-			"Nobody’s perfect! Takes a MIDI file and messes up a few of the notes."
-		],
+		"description": "<p>Nobody’s perfect! Takes a MIDI file and messes up a few of the notes.</p>",
 		"lastTagged": 1564707806856,
 		"link": "https://github.com/rileyjshaw/flubber",
 		"tags": [
@@ -3532,9 +3341,7 @@
 	{
 		"coolness": 65,
 		"date": "2015-03-01",
-		"descriptionList": [
-			"Jeff Thomas’s Fluid Simulation, ported to Khan Academy’s CS platform."
-		],
+		"description": "<p>Jeff Thomas’s Fluid Simulation, ported to Khan Academy’s CS platform.</p>",
 		"lastTagged": 1564708761419,
 		"link": "https://www.khanacademy.org/computer-programming/fluid-simulation/6333748830011392",
 		"tags": [
@@ -3549,9 +3356,7 @@
 	{
 		"coolness": 34,
 		"date": "2016-10-04",
-		"descriptionList": [
-			"If you make a pin out of this please send me one."
-		],
+		"description": "<p>If you make a pin out of this please send me one.</p>",
 		"lastTagged": 1564608403981,
 		"link": "https://codepen.io/rileyjshaw/pen/bwYRbw",
 		"tags": [
@@ -3566,9 +3371,7 @@
 	{
 		"coolness": 29,
 		"date": "2013-11-20",
-		"descriptionList": [
-			"Linear gradient, animation, and background-clip"
-		],
+		"description": "<p>Linear gradient, animation, and background-clip</p>",
 		"lastTagged": 1564708955045,
 		"link": "https://codepen.io/rileyjshaw/full/gtLGi/",
 		"tags": [
@@ -3584,9 +3387,7 @@
 	{
 		"coolness": 75,
 		"date": "2014-11-13",
-		"descriptionList": [
-			"UI experiment for line-by-line tutorials. Annotations can be turned off to expose a complete code example."
-		],
+		"description": "<p>UI experiment for line-by-line tutorials. Annotations can be turned off to expose a complete code example.</p>",
 		"lastTagged": 1564708799379,
 		"link": "https://codepen.io/rileyjshaw/full/raNLdL/",
 		"tags": [
@@ -3603,10 +3404,7 @@
 	{
 		"coolness": 73,
 		"date": "2021-01-26",
-		"descriptionList": [
-			"A tool for comparing local / web fonts side-by-side.",
-			"This wasn’t designed for public consumption, but the code is open-source if you want to remix it with your own fonts. I recorded <a href=\"https://youtu.be/TRGodGOu3Ww\" rel=\"noopener noreferrer\" target=\"_blank\">a quick session of myself using it</a> if you’re curious."
-		],
+		"description": "<p>A tool for comparing local / web fonts side-by-side.</p><p>This wasn’t designed for public consumption, but the code is open-source if you want to remix it with your own fonts. I recorded <a href=\"https://youtu.be/TRGodGOu3Ww\" rel=\"noopener noreferrer\" target=\"_blank\">a quick session of myself using it</a> if you’re curious.</p>",
 		"lastTagged": 0,
 		"link": "https://fonts.sort.tools",
 		"tags": [
@@ -3631,9 +3429,7 @@
 	{
 		"coolness": 60,
 		"date": "2016-05-24",
-		"descriptionList": [
-			"Poster? Coaster?"
-		],
+		"description": "<p>Poster? Coaster?</p>",
 		"lastTagged": 1564707834778,
 		"link": "https://codepen.io/rileyjshaw/full/ZOzGKq/",
 		"tags": [
@@ -3648,10 +3444,7 @@
 	{
 		"coolness": 16,
 		"date": "2013-09-12",
-		"descriptionList": [
-			"A simple frequency bar visualizer for audio in Processing.",
-			"Features a terrible mash-up of Watermelon Man and Mos Def’s Beef freestyle that I threw together in Audacity…"
-		],
+		"description": "<p>A simple frequency bar visualizer for audio in Processing.</p><p>Features a terrible mash-up of Watermelon Man and Mos Def’s Beef freestyle that I threw together in Audacity…</p>",
 		"lastTagged": 1564708981557,
 		"link": "https://github.com/rileyjshaw/basic_visualizer",
 		"tags": [
@@ -3676,9 +3469,7 @@
 	{
 		"coolness": 33,
 		"date": "2013-10-31",
-		"descriptionList": [
-			"Recreating a nice hover effect in CSS."
-		],
+		"description": "<p>Recreating a nice hover effect in CSS.</p>",
 		"lastTagged": 1564708966191,
 		"link": "https://codepen.io/rileyjshaw/full/FBsmA/",
 		"tags": [
@@ -3694,9 +3485,7 @@
 	{
 		"coolness": 40,
 		"date": "2020-03-02",
-		"descriptionList": [
-			"Typesetting experiments in stretching, smooshing, and justification."
-		],
+		"description": "<p>Typesetting experiments in stretching, smooshing, and justification.</p>",
 		"lastTagged": 0,
 		"link": "https://codepen.io/collection/AaZmYv?cursor=ZD0wJm89MSZwPTEmdj0yOTM4MjE2",
 		"tags": [
@@ -3712,9 +3501,7 @@
 	{
 		"coolness": 54,
 		"date": "2016-04-11",
-		"descriptionList": [
-			"Simple visualizations of sinusoidal functions."
-		],
+		"description": "<p>Simple visualizations of sinusoidal functions.</p>",
 		"lastTagged": 1564707863361,
 		"link": "https://codepen.io/collection/DmyjQv/",
 		"tags": [
@@ -3729,9 +3516,7 @@
 	{
 		"coolness": 45,
 		"date": "2014-10-12",
-		"descriptionList": [
-			"Warning: contains a blocking loop that may cause browsers to hang briefly."
-		],
+		"description": "<p>Warning: contains a blocking loop that may cause browsers to hang briefly.</p>",
 		"lastTagged": 1564624409730,
 		"link": "https://codepen.io/rileyjshaw/pen/EdAeq",
 		"tags": [
@@ -3747,9 +3532,7 @@
 	{
 		"coolness": 50,
 		"date": "2014-10-12",
-		"descriptionList": [
-			"Warning: contains a blocking loop that may cause browsers to hang briefly."
-		],
+		"description": "<p>Warning: contains a blocking loop that may cause browsers to hang briefly.</p>",
 		"lastTagged": 1564624415014,
 		"link": "https://codepen.io/rileyjshaw/pen/tmGxj",
 		"tags": [
@@ -3765,9 +3548,7 @@
 	{
 		"coolness": 62,
 		"date": "2017-03-27",
-		"descriptionList": [
-			"A collection of string matching algorithms designed with React Select in mind."
-		],
+		"description": "<p>A collection of string matching algorithms designed with React Select in mind.</p>",
 		"lastTagged": 1564608377140,
 		"link": "https://github.com/Khan/fuzzy-match-utils",
 		"tags": [
@@ -3796,9 +3577,7 @@
 	{
 		"coolness": 66,
 		"date": "2013-09-18",
-		"descriptionList": [
-			"A quick reference for before your morning coffee."
-		],
+		"description": "<p>A quick reference for before your morning coffee.</p>",
 		"lastTagged": 1564708978237,
 		"link": "https://github.com/rileyjshaw/git-cheatsheet",
 		"tags": [
@@ -3812,9 +3591,7 @@
 	{
 		"coolness": 30,
 		"date": "2016-10-06",
-		"descriptionList": [
-			"Git CLI to tidy up a working directory with too much going on."
-		],
+		"description": "<p>Git CLI to tidy up a working directory with too much going on.</p>",
 		"lastTagged": 1564608401800,
 		"link": "https://github.com/rileyjshaw/git-tidy-up",
 		"tags": [
@@ -3829,10 +3606,7 @@
 	{
 		"coolness": 31,
 		"date": "2022-02-27",
-		"descriptionList": [
-			"More explorations with SVG.",
-			"In these demos, SVG noise is used as a filter to distort geometric canvas animations."
-		],
+		"description": "<p>More explorations with SVG.</p><p>In these demos, SVG noise is used as a filter to distort geometric canvas animations.</p>",
 		"link": "https://codepen.io/collection/YypZxG",
 		"timestamp": 1645920000000,
 		"title": "Glass rings",
@@ -3851,9 +3625,7 @@
 	{
 		"coolness": 85,
 		"date": "2014-05-20",
-		"descriptionList": [
-			"Takes a series of characters and a series of words and checks if they match the same sequence. Words need not be delimited."
-		],
+		"description": "<p>Takes a series of characters and a series of words and checks if they match the same sequence. Words need not be delimited.</p>",
 		"lastTagged": 1564708826658,
 		"link": "/glorious-pattern-matcher/",
 		"tags": [
@@ -3870,9 +3642,7 @@
 	{
 		"coolness": 30,
 		"date": "2015-12-15",
-		"descriptionList": [
-			"Riffing on pokéball wave."
-		],
+		"description": "<p>Riffing on pokéball wave.</p>",
 		"lastTagged": 1564707917359,
 		"link": "https://codepen.io/rileyjshaw/full/bEEVra/",
 		"tags": [
@@ -3903,10 +3673,7 @@
 	{
 		"coolness": 80,
 		"date": "2014-07-31",
-		"descriptionList": [
-			"Pretty images from math.",
-			"Supports my <a href=\"/blog/graphing-depth/\">blog post</a> of the same name."
-		],
+		"description": "<p>Pretty images from math.</p><p>Supports my <a href=\"/blog/graphing-depth/\">blog post</a> of the same name.</p>",
 		"lastTagged": 1564708820940,
 		"link": "https://codepen.io/collection/amDJo/",
 		"tags": [
@@ -3923,9 +3690,7 @@
 	{
 		"coolness": 78,
 		"date": "2016-03-05",
-		"descriptionList": [
-			"Animated lava lamps with simple non-rectangular collision detection and metaballs for wax clumps."
-		],
+		"description": "<p>Animated lava lamps with simple non-rectangular collision detection and metaballs for wax clumps.</p>",
 		"lastTagged": 1564707898615,
 		"link": "https://codepen.io/rileyjshaw/full/MyaGbE/",
 		"tags": [
@@ -3954,10 +3719,7 @@
 	{
 		"coolness": 82,
 		"date": "2015-01-08",
-		"descriptionList": [
-			"Retro command line emulator using my TinyTerm library.",
-			"Type “help” for command list."
-		],
+		"description": "<p>Retro command line emulator using my TinyTerm library.</p><p>Type “help” for command list.</p>",
 		"lastTagged": 1564708786127,
 		"link": "http://hackers.cool/~rileyjshaw/",
 		"tags": [
@@ -3972,9 +3734,7 @@
 	{
 		"coolness": 73,
 		"date": "2025-01-24",
-		"descriptionList": [
-			"Caution: sometimes flashes! Generates a new randomized shader composed of stacked trigonometric functions on each page refresh."
-		],
+		"description": "<p>Caution: sometimes flashes! Generates a new randomized shader composed of stacked trigonometric functions on each page refresh.</p>",
 		"link": "/harmonics/#2UNEgAAAAAAAAAAAAAAAAAAAAAD-tXGHKknWe2FGNvc2luZSh1X3BpLCB0ICogeSkCG6MLczsrc6FDw8EBWQPLyWEDoQFZA6r7g0lJAWkDo5NLC3M7YylDqvuDSQFpA6MLcUPDwQFZA8vJSWEDoQFZA8PBSA",
 		"timestamp": 1737676800000,
 		"title": "Harmonics",
@@ -3984,9 +3744,7 @@
 	{
 		"coolness": 39,
 		"date": "2016-05-04",
-		"descriptionList": [
-			"It’s hard to see the ship… :/"
-		],
+		"description": "<p>It’s hard to see the ship… :/</p>",
 		"lastTagged": 1564707848382,
 		"link": "https://codepen.io/rileyjshaw/full/BKvWBP/",
 		"tags": [
@@ -4001,9 +3759,7 @@
 	{
 		"coolness": 60,
 		"date": "2017-05-29",
-		"descriptionList": [
-			"Cuts a hologram out of acrylic using the Hacklab TO laser cutter."
-		],
+		"description": "<p>Cuts a hologram out of acrylic using the Hacklab TO laser cutter.</p>",
 		"lastTagged": 1564608370682,
 		"link": "https://github.com/rileyjshaw/hologram",
 		"tags": [
@@ -4017,9 +3773,7 @@
 	{
 		"coolness": 14,
 		"date": "2012-06-22",
-		"descriptionList": [
-			"A quine is a non-empty computer program which takes no input and produces a copy of its own source code as its only output."
-		],
+		"description": "<p>A quine is a non-empty computer program which takes no input and produces a copy of its own source code as its only output.</p>",
 		"lastTagged": 1564709008266,
 		"link": "https://codepen.io/rileyjshaw/pen/iGjgs",
 		"tags": [
@@ -4034,9 +3788,7 @@
 	{
 		"coolness": 70,
 		"date": "2017-12-14",
-		"descriptionList": [
-			"Control your Philips Hue lights with MIDI triggers."
-		],
+		"description": "<p>Control your Philips Hue lights with MIDI triggers.</p>",
 		"lastTagged": 1564608358786,
 		"link": "https://github.com/rileyjshaw/huemidity",
 		"tags": [
@@ -4052,9 +3804,7 @@
 	{
 		"coolness": 70,
 		"date": "2018-01-10",
-		"descriptionList": [
-			"Pulse available Philips hue lights to whatever is playing on Spotify."
-		],
+		"description": "<p>Pulse available Philips hue lights to whatever is playing on Spotify.</p>",
 		"lastTagged": 1564608357834,
 		"link": "https://github.com/rileyjshaw/huertbeat",
 		"tags": [
@@ -4080,9 +3830,7 @@
 	{
 		"coolness": 86,
 		"date": "2014-03-13",
-		"descriptionList": [
-			"Scrapes Wikipedia to find the most important births and deaths of each year by word count."
-		],
+		"description": "<p>Scrapes Wikipedia to find the most important births and deaths of each year by word count.</p>",
 		"lastTagged": 1564708882272,
 		"link": "https://github.com/rileyjshaw/important-people",
 		"tags": [
@@ -4096,9 +3844,7 @@
 	{
 		"coolness": 18,
 		"date": "2013-10-29",
-		"descriptionList": [
-			"Pure Sass hamburger. Sesame-seed bun, lettuce, tomato, fresh cheddar, and infinity perfectly cooked Angus beef patties."
-		],
+		"description": "<p>Pure Sass hamburger. Sesame-seed bun, lettuce, tomato, fresh cheddar, and infinity perfectly cooked Angus beef patties.</p>",
 		"lastTagged": 1564708966698,
 		"link": "https://codepen.io/rileyjshaw/full/HdeEF",
 		"tags": [
@@ -4128,9 +3874,7 @@
 	{
 		"coolness": 24,
 		"date": "2012-01-05",
-		"descriptionList": [
-			"My former personal brand mark."
-		],
+		"description": "<p>My former personal brand mark.</p>",
 		"lastTagged": 1564709009404,
 		"link": "https://v14.rileyjshaw.com/portfolio/old/cssonly/infiniteye",
 		"tags": [
@@ -4146,9 +3890,7 @@
 	{
 		"coolness": 30,
 		"date": "2013-04-02",
-		"descriptionList": [
-			"Buggy proof of concept exploring the CSS background-attachment property and a 3rd-party Instagram API."
-		],
+		"description": "<p>Buggy proof of concept exploring the CSS background-attachment property and a 3rd-party Instagram API.</p>",
 		"lastTagged": 1564708997115,
 		"link": "https://v14.rileyjshaw.com/portfolio/old/instaframedemo/",
 		"tags": [
@@ -4174,9 +3916,7 @@
 	{
 		"coolness": 32,
 		"date": "2015-03-13",
-		"descriptionList": [
-			"Sticky headers cover internally-linked content by default. The most robust solutions I’ve seen use JS, but these 4 lines of CSS seem to do the trick."
-		],
+		"description": "<p>Sticky headers cover internally-linked content by default. The most robust solutions I’ve seen use JS, but these 4 lines of CSS seem to do the trick.</p>",
 		"lastTagged": 1564708757219,
 		"link": "https://codepen.io/rileyjshaw/pen/OPBBGK?editors=110",
 		"tags": [
@@ -4192,10 +3932,7 @@
 	{
 		"coolness": 80,
 		"date": "2015-03-26",
-		"descriptionList": [
-			"Animated shapes with wavelike edges.",
-			"Includes an audio visualizer built with the Web Audio API."
-		],
+		"description": "<p>Animated shapes with wavelike edges.</p><p>Includes an audio visualizer built with the Web Audio API.</p>",
 		"lastTagged": 1564708755914,
 		"link": "https://codepen.io/collection/DkNEVG/",
 		"tags": [
@@ -4211,9 +3948,7 @@
 	{
 		"coolness": 80,
 		"date": "2016-04-28",
-		"descriptionList": [
-			"Added a linear ramp and smoothing function to v1 to make the lowest frequency bin match up with the highest frequency bin in both position and derivative. The effect is a continuous circle, versus the <a href=\"https://codepen.io/rileyjshaw/full/ogVNgW/\" rel=\"noopener noreferrer\" target=\"_blank\">“speech-bubble” notch effect of v1</a>."
-		],
+		"description": "<p>Added a linear ramp and smoothing function to v1 to make the lowest frequency bin match up with the highest frequency bin in both position and derivative. The effect is a continuous circle, versus the <a href=\"https://codepen.io/rileyjshaw/full/ogVNgW/\" rel=\"noopener noreferrer\" target=\"_blank\">“speech-bubble” notch effect of v1</a>.</p>",
 		"lastTagged": 1564707851729,
 		"link": "https://codepen.io/rileyjshaw/full/oxaxqX/",
 		"tags": [
@@ -4230,9 +3965,7 @@
 	{
 		"coolness": 84,
 		"date": "2016-05-05",
-		"descriptionList": [
-			"V1 -&gt; V2 contained the <em>tiniest</em> tweak perceptually (smooth line all ’round), but it was a technical challenge. V2 -&gt; V3 contains the tiniest code tweaks, but is perceptually very different. Uses canvas transform logic from <a href=\"https://codepen.io/rileyjshaw/pen/ONrdoM\" rel=\"noopener noreferrer\" target=\"_blank\">zonin’</a>."
-		],
+		"description": "<p>V1 -&gt; V2 contained the <em>tiniest</em> tweak perceptually (smooth line all ’round), but it was a technical challenge. V2 -&gt; V3 contains the tiniest code tweaks, but is perceptually very different. Uses canvas transform logic from <a href=\"https://codepen.io/rileyjshaw/pen/ONrdoM\" rel=\"noopener noreferrer\" target=\"_blank\">zonin’</a>.</p>",
 		"lastTagged": 1564707845485,
 		"link": "https://codepen.io/rileyjshaw/full/NNeoMR/",
 		"tags": [
@@ -4248,10 +3981,7 @@
 	{
 		"coolness": 88,
 		"date": "2016-02-23",
-		"descriptionList": [
-			"Iconic album art, animated with a Gaussian function and some simplex noise.",
-			"Drag your mouse over it, and click for something special."
-		],
+		"description": "<p>Iconic album art, animated with a Gaussian function and some simplex noise.</p><p>Drag your mouse over it, and click for something special.</p>",
 		"lastTagged": 1564707906457,
 		"link": "https://codepen.io/rileyjshaw/pen/RrXjGa",
 		"tags": [
@@ -4267,9 +3997,7 @@
 	{
 		"coolness": 30,
 		"date": "2013-02-05",
-		"descriptionList": [
-			"Word-search puzzle generator."
-		],
+		"description": "<p>Word-search puzzle generator.</p>",
 		"lastTagged": 1564709005490,
 		"link": "https://github.com/rileyjshaw/jumble-puzzle",
 		"tags": [
@@ -4283,10 +4011,7 @@
 	{
 		"coolness": 57,
 		"date": "2014-04-28",
-		"descriptionList": [
-			"A super-efficient memoized key generator in JavaScript.",
-			"Lowercase alphanumeric, length [1, 198)."
-		],
+		"description": "<p>A super-efficient memoized key generator in JavaScript.</p><p>Lowercase alphanumeric, length [1, 198).</p>",
 		"lastTagged": 1564708851648,
 		"link": "https://codepen.io/rileyjshaw/full/olzJI/",
 		"tags": [
@@ -4302,10 +4027,7 @@
 	{
 		"coolness": 60,
 		"date": "2016-05-28",
-		"descriptionList": [
-			"Use a MIDI keyboard as your laptop keyboard.",
-			"Hard press = UPPERCASE, soft press = lowercase."
-		],
+		"description": "<p>Use a MIDI keyboard as your laptop keyboard.</p><p>Hard press = UPPERCASE, soft press = lowercase.</p>",
 		"lastTagged": 1564707826462,
 		"link": "https://github.com/rileyjshaw/keyboard-keyboard",
 		"tags": [
@@ -4322,9 +4044,7 @@
 	{
 		"coolness": 66,
 		"date": "2016-03-29",
-		"descriptionList": [
-			"Lines + circles."
-		],
+		"description": "<p>Lines + circles.</p>",
 		"lastTagged": 1564707874575,
 		"link": "https://codepen.io/collection/DYwLBM/",
 		"tags": [
@@ -4339,9 +4059,7 @@
 	{
 		"coolness": 68,
 		"date": "2016-03-30",
-		"descriptionList": [
-			"A tricker, more generalized case of Lattice implemented on a trangular grid."
-		],
+		"description": "<p>A tricker, more generalized case of Lattice implemented on a trangular grid.</p>",
 		"lastTagged": 1564707873027,
 		"link": "https://codepen.io/rileyjshaw/pen/oxewYe/?editors=0010",
 		"tags": [
@@ -4356,9 +4074,7 @@
 	{
 		"coolness": 70,
 		"date": "2014-08-15",
-		"descriptionList": [
-			"An audiovisual experiment that generates landscapes from sound waves."
-		],
+		"description": "<p>An audiovisual experiment that generates landscapes from sound waves.</p>",
 		"lastTagged": 1564708815678,
 		"link": "/linescapes",
 		"tags": [
@@ -4375,9 +4091,7 @@
 	{
 		"coolness": 81,
 		"date": "2016-05-12",
-		"descriptionList": [
-			"A CLI tool to update your favorite text editor theme. Emphasizes comments and mutes everything else."
-		],
+		"description": "<p>A CLI tool to update your favorite text editor theme. Emphasizes comments and mutes everything else.</p>",
 		"lastTagged": 1564707843448,
 		"link": "https://github.com/rileyjshaw/literate-theme",
 		"tags": [
@@ -4393,9 +4107,7 @@
 	{
 		"coolness": 36,
 		"date": "2013-10-28",
-		"descriptionList": [
-			"Each one’s only a single element."
-		],
+		"description": "<p>Each one’s only a single element.</p>",
 		"lastTagged": 1564708967845,
 		"link": "https://codepen.io/rileyjshaw/details/AgGbs",
 		"tags": [
@@ -4411,9 +4123,7 @@
 	{
 		"coolness": 63,
 		"date": "2013-10-28",
-		"descriptionList": [
-			"An attempt to give flat buttons some depth. Collection of inputs including radio buttons, checkboxes, and text inputs."
-		],
+		"description": "<p>An attempt to give flat buttons some depth. Collection of inputs including radio buttons, checkboxes, and text inputs.</p>",
 		"lastTagged": 1564708967302,
 		"link": "https://codepen.io/collection/EJveu",
 		"tags": [
@@ -4431,9 +4141,7 @@
 	{
 		"coolness": 55,
 		"date": "2016-04-04",
-		"descriptionList": [
-			"CSS-only typography experiment."
-		],
+		"description": "<p>CSS-only typography experiment.</p>",
 		"lastTagged": 1564707869979,
 		"link": "https://codepen.io/rileyjshaw/pen/ZWXdBN",
 		"tags": [
@@ -4449,9 +4157,7 @@
 	{
 		"coolness": 35,
 		"date": "2021-05-14",
-		"descriptionList": [
-			"A quick experiment with variable fonts. Responds to mouse or touch."
-		],
+		"description": "<p>A quick experiment with variable fonts. Responds to mouse or touch.</p>",
 		"link": "https://codepen.io/rileyjshaw/full/WNpwGZx",
 		"timestamp": 1620950400000,
 		"title": "LOUDER",
@@ -4474,9 +4180,7 @@
 	{
 		"coolness": 63,
 		"date": "2025-05-01",
-		"descriptionList": [
-			"A salad dressing index for the book “Mandy’s Gourmet Salads”"
-		],
+		"description": "<p>A salad dressing index for the book “Mandy’s Gourmet Salads”</p>",
 		"link": "/mandys/",
 		"timestamp": 1746057600000,
 		"title": "Mandy’s",
@@ -4486,10 +4190,7 @@
 	{
 		"coolness": 36,
 		"date": "2019-06-01",
-		"descriptionList": [
-			"A quick experiment to render an efficient marquee / ticker tape on a canvas.",
-			"Used as part of an online treasure hunt I made."
-		],
+		"description": "<p>A quick experiment to render an efficient marquee / ticker tape on a canvas.</p><p>Used as part of an online treasure hunt I made.</p>",
 		"lastTagged": 1564772210294,
 		"link": "/glitch-archive/projects/marqueee/",
 		"tags": [
@@ -4504,9 +4205,7 @@
 	{
 		"coolness": 40,
 		"date": "2021-06-08",
-		"descriptionList": [
-			"A remix of <a href=\"/glitch-archive/projects/marqueee/\" target=\"_blank\" rel=\"noopener noreferrer\">Marqueee</a>, with a <code>rotate</code> parameter added."
-		],
+		"description": "<p>A remix of <a href=\"/glitch-archive/projects/marqueee/\" target=\"_blank\" rel=\"noopener noreferrer\">Marqueee</a>, with a <code>rotate</code> parameter added.</p>",
 		"link": "/glitch-archive/projects/marqueee-rotated/",
 		"timestamp": 1623110400000,
 		"title": "Marqueee (rotated)",
@@ -4516,9 +4215,7 @@
 	{
 		"coolness": 13,
 		"date": "2014-10-12",
-		"descriptionList": [
-			"I needed this for <a href=\"/tappy-game\">tappy</a> before there were 1000 libraries to choose from."
-		],
+		"description": "<p>I needed this for <a href=\"/tappy-game\">tappy</a> before there were 1000 libraries to choose from.</p>",
 		"lastTagged": 1564708813922,
 		"link": "https://codepen.io/rileyjshaw/pen/uiJqo",
 		"tags": [
@@ -4534,9 +4231,7 @@
 	{
 		"coolness": 20,
 		"date": "2014-03-17",
-		"descriptionList": [
-			"Supporting code for my <a href=\"/blog/taking-the-average-tone/\">“Taking the average tone”</a> blog post."
-		],
+		"description": "<p>Supporting code for my <a href=\"/blog/taking-the-average-tone/\">“Taking the average tone”</a> blog post.</p>",
 		"lastTagged": 1564708879145,
 		"link": "https://github.com/rileyjshaw/mean-tone",
 		"tags": [
@@ -4551,10 +4246,7 @@
 	{
 		"coolness": 78,
 		"date": "2016-02-25",
-		"descriptionList": [
-			"Possible header for “Mechanical waves and sound” for Khan Academy’s new content redesign.",
-			"Includes a few variations."
-		],
+		"description": "<p>Possible header for “Mechanical waves and sound” for Khan Academy’s new content redesign.</p><p>Includes a few variations.</p>",
 		"lastTagged": 1564707904033,
 		"link": "https://codepen.io/collection/XWQERV/",
 		"tags": [
@@ -4579,9 +4271,7 @@
 	{
 		"coolness": 43,
 		"date": "2015-02-01",
-		"descriptionList": [
-			"The letters [A-z], composed of smaller versions of themselves."
-		],
+		"description": "<p>The letters [A-z], composed of smaller versions of themselves.</p>",
 		"lastTagged": 1564708777392,
 		"link": "https://codepen.io/rileyjshaw/full/zxEGxK/",
 		"tags": [
@@ -4596,9 +4286,7 @@
 	{
 		"coolness": 38,
 		"date": "2013-11-29",
-		"descriptionList": [
-			"Two very small implementations of Fizzbuzz: one in JavaScript (74B) and one in Stylus (126B)."
-		],
+		"description": "<p>Two very small implementations of Fizzbuzz: one in JavaScript (74B) and one in Stylus (126B).</p>",
 		"lastTagged": 1564708944793,
 		"link": "https://codepen.io/rileyjshaw/pen/bCkBo",
 		"tags": [
@@ -4613,10 +4301,7 @@
 	{
 		"coolness": 44,
 		"date": "2021-03-03",
-		"descriptionList": [
-			"An attempt to fit a few difficult SVG requirements (SMIL animation, resizable with fixed stroke width, fits within container bounds) into the same icon.",
-			"It’s a different icon than the one I created for this site."
-		],
+		"description": "<p>An attempt to fit a few difficult SVG requirements (SMIL animation, resizable with fixed stroke width, fits within container bounds) into the same icon.</p><p>It’s a different icon than the one I created for this site.</p>",
 		"lastTagged": 0,
 		"link": "https://codepen.io/rileyjshaw/pen/LYbrEGb",
 		"tags": [
@@ -4631,9 +4316,7 @@
 	{
 		"coolness": 24,
 		"date": "2014-04-24",
-		"descriptionList": [
-			"Small demo of live translation synchronization."
-		],
+		"description": "<p>Small demo of live translation synchronization.</p>",
 		"lastTagged": 1564708856993,
 		"link": "https://codepen.io/rileyjshaw/full/BvKni",
 		"tags": [
@@ -4658,9 +4341,7 @@
 	{
 		"coolness": 50,
 		"date": "2025-01-31",
-		"descriptionList": [
-			"An interesting illusion occurs when moving two overlapping instances of white noise. Move your cursor to see the effect."
-		],
+		"description": "<p>An interesting illusion occurs when moving two overlapping instances of white noise. Move your cursor to see the effect.</p>",
 		"link": "https://codepen.io/rileyjshaw/pen/RNbdjvg?editors=0010",
 		"timestamp": 1738281600000,
 		"title": "Moiré shader",
@@ -4670,9 +4351,7 @@
 	{
 		"coolness": 12,
 		"date": "2014-11-04",
-		"descriptionList": [
-			"Utils for <a href=\"/terra\">Terra</a>."
-		],
+		"description": "<p>Utils for <a href=\"/terra\">Terra</a>.</p>",
 		"lastTagged": 1564708805462,
 		"link": "https://codepen.io/rileyjshaw/full/chaJe/",
 		"tags": [
@@ -4688,10 +4367,7 @@
 	{
 		"coolness": 60,
 		"date": "2014-11-22",
-		"descriptionList": [
-			"UI pattern for nested spoilers.",
-			"Demo involved patching Adobe Web Platform’s balance-text polyfill."
-		],
+		"description": "<p>UI pattern for nested spoilers.</p><p>Demo involved patching Adobe Web Platform’s balance-text polyfill.</p>",
 		"lastTagged": 1564708797294,
 		"link": "https://codepen.io/rileyjshaw/pen/oggBxz",
 		"tags": [
@@ -4737,9 +4413,7 @@
 	{
 		"coolness": 60,
 		"date": "2021-06-20",
-		"descriptionList": [
-			"The layout I use for my <a href=\"https://www.zsa.io/moonlander/\" rel=\"noopener noreferrer\" target=\"_blank\">Moonlander</a> keyboard."
-		],
+		"description": "<p>The layout I use for my <a href=\"https://www.zsa.io/moonlander/\" rel=\"noopener noreferrer\" target=\"_blank\">Moonlander</a> keyboard.</p>",
 		"link": "https://configure.zsa.io/moonlander/layouts/30wmY/latest",
 		"timestamp": 1624147200000,
 		"title": "My keyboard layout",
@@ -4763,9 +4437,7 @@
 	{
 		"coolness": 60,
 		"date": "2018-11-11",
-		"descriptionList": [
-			"A house built collaboratively in <a href=\"https://ephtracy.github.io/\" rel=\"noopener noreferrer\" target=\"_blank\">MagicaVoxel</a> with my friend Hannah."
-		],
+		"description": "<p>A house built collaboratively in <a href=\"https://ephtracy.github.io/\" rel=\"noopener noreferrer\" target=\"_blank\">MagicaVoxel</a> with my friend Hannah.</p>",
 		"lastTagged": 0,
 		"link": "https://twitter.com/herlifeinpixels/status/1061891927312805888",
 		"tags": [
@@ -4779,10 +4451,7 @@
 	{
 		"coolness": 60,
 		"date": "2014-06-26",
-		"descriptionList": [
-			"Used to work. Doesn’t anymore.",
-			"Part of <a href=\"/blog/stealing-history-with-CSS-binary-trees/\">“Stealing history with CSS binary trees”</a>."
-		],
+		"description": "<p>Used to work. Doesn’t anymore.</p><p>Part of <a href=\"/blog/stealing-history-with-CSS-binary-trees/\">“Stealing history with CSS binary trees”</a>.</p>",
 		"lastTagged": 1564708823299,
 		"link": "https://codepen.io/rileyjshaw/pen/CjiKf",
 		"tags": [
@@ -4800,9 +4469,7 @@
 	{
 		"coolness": 42,
 		"date": "2013-08-27",
-		"descriptionList": [
-			"Semantic vertical menu using nested radio buttons and CSS."
-		],
+		"description": "<p>Semantic vertical menu using nested radio buttons and CSS.</p>",
 		"lastTagged": 1564708991379,
 		"link": "https://codepen.io/rileyjshaw/full/jDCty/",
 		"tags": [
@@ -4819,9 +4486,7 @@
 	{
 		"coolness": 20,
 		"date": "2020-02-11",
-		"descriptionList": [
-			"Hopping on the bandwagon…"
-		],
+		"description": "<p>Hopping on the bandwagon…</p>",
 		"lastTagged": 0,
 		"link": "https://codepen.io/rileyjshaw/full/oNXjLOV",
 		"tags": [
@@ -4836,10 +4501,7 @@
 	{
 		"coolness": 7,
 		"date": "2017-03-06",
-		"descriptionList": [
-			"Decided to finally try out material design.",
-			"(Subtle effect on mousemove)"
-		],
+		"description": "<p>Decided to finally try out material design.</p><p>(Subtle effect on mousemove)</p>",
 		"lastTagged": 0,
 		"link": "https://codepen.io/rileyjshaw/full/pebMaM",
 		"tags": [
@@ -4853,9 +4515,7 @@
 	{
 		"coolness": 8,
 		"date": "2014-12-11",
-		"descriptionList": [
-			"Web typography experiment: drop cap + justify."
-		],
+		"description": "<p>Web typography experiment: drop cap + justify.</p>",
 		"lastTagged": 1564708791889,
 		"link": "https://codepen.io/rileyjshaw/details/ByKKyG/",
 		"tags": [
@@ -4870,9 +4530,7 @@
 	{
 		"coolness": 20,
 		"date": "2014-01-13",
-		"descriptionList": [
-			"Recreating Soulwax’s album art in CSS."
-		],
+		"description": "<p>Recreating Soulwax’s album art in CSS.</p>",
 		"lastTagged": 1564708920950,
 		"link": "https://codepen.io/rileyjshaw/full/sDrLJ/",
 		"tags": [
@@ -4903,9 +4561,7 @@
 	{
 		"coolness": 30,
 		"date": "2017-02-26",
-		"descriptionList": [
-			"Asynchronous TimSort implementation for Node.js."
-		],
+		"description": "<p>Asynchronous TimSort implementation for Node.js.</p>",
 		"lastTagged": 1564608382989,
 		"link": "https://github.com/rileyjshaw/node-timsort-async",
 		"tags": [
@@ -4919,9 +4575,7 @@
 	{
 		"coolness": 66,
 		"date": "2016-02-26",
-		"descriptionList": [
-			"CSS Flexbox solution to prevent tooltips from overflowing their container at the edges."
-		],
+		"description": "<p>CSS Flexbox solution to prevent tooltips from overflowing their container at the edges.</p>",
 		"lastTagged": 1564707901096,
 		"link": "https://codepen.io/rileyjshaw/pen/wGwOWz",
 		"tags": [
@@ -4937,9 +4591,7 @@
 	{
 		"coolness": 27,
 		"date": "2016-06-27",
-		"descriptionList": [
-			"An NPM module containing words from the NSA Analyst’s Desktop Binder, Section 2.13: “Key Words & Search Terms”."
-		],
+		"description": "<p>An NPM module containing words from the NSA Analyst’s Desktop Binder, Section 2.13: “Key Words & Search Terms”.</p>",
 		"lastTagged": 1564772210294,
 		"link": "https://www.npmjs.com/package/nsa-ipsum",
 		"tags": [
@@ -4955,9 +4607,7 @@
 	{
 		"coolness": 50,
 		"date": "2025-06-04",
-		"descriptionList": [
-			"Render per-note audio samples from a local VST or AU instrument plugin."
-		],
+		"description": "<p>Render per-note audio samples from a local VST or AU instrument plugin.</p>",
 		"link": "https://github.com/rileyjshaw/one-shot-sample-generator",
 		"timestamp": 1748995200000,
 		"title": "One-shot sample generator",
@@ -4967,9 +4617,7 @@
 	{
 		"coolness": 65,
 		"date": "2015-02-20",
-		"descriptionList": [
-			"A game: hit space over the red dots to earn points."
-		],
+		"description": "<p>A game: hit space over the red dots to earn points.</p>",
 		"lastTagged": 1564708766604,
 		"link": "/orbit",
 		"tags": [
@@ -4984,9 +4632,7 @@
 	{
 		"coolness": 65,
 		"date": "2014-03-19",
-		"descriptionList": [
-			"An experimental online game of King of the Hill, on this very website."
-		],
+		"description": "<p>An experimental online game of King of the Hill, on this very website.</p>",
 		"lastTagged": 1564708868615,
 		"link": "https://github.com/rileyjshaw/own-this-website",
 		"tags": [
@@ -5004,9 +4650,7 @@
 	{
 		"coolness": 83,
 		"date": "2014-09-15",
-		"descriptionList": [
-			"Realtime web-based collaborative coding."
-		],
+		"description": "<p>Realtime web-based collaborative coding.</p>",
 		"lastTagged": 1564624438020,
 		"link": "https://github.com/neerajwahi/pairjam",
 		"tags": [
@@ -5024,10 +4668,7 @@
 	{
 		"coolness": 40,
 		"date": "2021-02-12",
-		"descriptionList": [
-			"Bikeshedding (noun): <em>Futile investment of time and energy in discussion of marginal technical issues. Procrastination.</em>",
-			"A bespoke developer tool that I created to choose the additive (dark theme) and subtractive (light theme) color palettes for this website."
-		],
+		"description": "<p>Bikeshedding (noun): <em>Futile investment of time and energy in discussion of marginal technical issues. Procrastination.</em></p><p>A bespoke developer tool that I created to choose the additive (dark theme) and subtractive (light theme) color palettes for this website.</p>",
 		"lastTagged": 0,
 		"link": "https://github.com/rileyjshaw/palette-test-tool",
 		"tags": [
@@ -5043,9 +4684,7 @@
 	{
 		"coolness": 60,
 		"date": "2013-03-25",
-		"descriptionList": [
-			"Scrolling gallery view for Tumblr."
-		],
+		"description": "<p>Scrolling gallery view for Tumblr.</p>",
 		"lastTagged": 1564709001360,
 		"link": "https://v14.rileyjshaw.com/portfolio/old/peekdemo",
 		"tags": [
@@ -5062,11 +4701,7 @@
 	{
 		"coolness": 74,
 		"date": "2013-08-31",
-		"descriptionList": [
-			"Buttons that maintain linear perspective from the screen’s vertical midpoint.",
-			"The perspective effect can be added to anything; a site where each content block was extruded could look interesting.",
-			"Chrome only as of 2018."
-		],
+		"description": "<p>Buttons that maintain linear perspective from the screen’s vertical midpoint.</p><p>The perspective effect can be added to anything; a site where each content block was extruded could look interesting.</p><p>Chrome only as of 2018.</p>",
 		"lastTagged": 1564708989446,
 		"link": "https://codepen.io/rileyjshaw/full/ebokj/",
 		"tags": [
@@ -5093,9 +4728,7 @@
 	{
 		"coolness": 12,
 		"date": "2013-07-21",
-		"descriptionList": [
-			"A SASS template based on the golden ratio."
-		],
+		"description": "<p>A SASS template based on the golden ratio.</p>",
 		"link": "/phi_fo_fum",
 		"timestamp": 1374364800000,
 		"title": "Phi fo fum",
@@ -5105,10 +4738,7 @@
 	{
 		"coolness": 33,
 		"date": "2017-09-30",
-		"descriptionList": [
-			"Combines two images by alternating them row-by-row.",
-			"Each row is placed to line up visually with the row above it, which causes a subtle shearing effect."
-		],
+		"description": "<p>Combines two images by alternating them row-by-row.</p><p>Each row is placed to line up visually with the row above it, which causes a subtle shearing effect.</p>",
 		"lastTagged": 1564624404415,
 		"link": "/glitch-archive/projects/photo-experiment/",
 		"tags": [
@@ -5132,9 +4762,7 @@
 	{
 		"coolness": 60,
 		"date": "2014-08-25",
-		"descriptionList": [
-			"A minimal New Tab page for Chrome"
-		],
+		"description": "<p>A minimal New Tab page for Chrome</p>",
 		"lastTagged": 1564624451247,
 		"link": "https://chrome.google.com/webstore/detail/placid-tab/mjcblgoejhkkkhgeadejhkpldglnfmcj",
 		"tags": [
@@ -5152,9 +4780,7 @@
 	{
 		"coolness": 70,
 		"date": "2013-11-15",
-		"descriptionList": [
-			"Pure Sass animated solar system."
-		],
+		"description": "<p>Pure Sass animated solar system.</p>",
 		"lastTagged": 1564708963195,
 		"link": "https://codepen.io/rileyjshaw/pen/yenLw",
 		"tags": [
@@ -5171,9 +4797,7 @@
 	{
 		"coolness": 65,
 		"date": "2016-06-15",
-		"descriptionList": [
-			"I’ve got plaster swirls on my ceiling. This began as a recreation of that and turned into something else."
-		],
+		"description": "<p>I’ve got plaster swirls on my ceiling. This began as a recreation of that and turned into something else.</p>",
 		"lastTagged": 1564707816646,
 		"link": "https://codepen.io/rileyjshaw/full/RRajov/",
 		"tags": [
@@ -5202,9 +4826,7 @@
 	{
 		"coolness": 60,
 		"date": "2019-09-13",
-		"descriptionList": [
-			"A scriptable text expansion microtool."
-		],
+		"description": "<p>A scriptable text expansion microtool.</p>",
 		"lastTagged": 1564772210294,
 		"link": "https://github.com/rileyjshaw/plop",
 		"tags": [
@@ -5219,9 +4841,7 @@
 	{
 		"coolness": 60,
 		"date": "2020-02-07",
-		"descriptionList": [
-			"A drum sample loader for my Pocket Operator K.O."
-		],
+		"description": "<p>A drum sample loader for my Pocket Operator K.O.</p>",
 		"lastTagged": 0,
 		"link": "/po-33",
 		"tags": [
@@ -5239,9 +4859,7 @@
 	{
 		"coolness": 50,
 		"date": "2021-04-01",
-		"descriptionList": [
-			"Scrapes your unread and archived Pocket content and provides basic stats."
-		],
+		"description": "<p>Scrapes your unread and archived Pocket content and provides basic stats.</p>",
 		"link": "https://github.com/rileyjshaw/pocket-calculator",
 		"timestamp": 1617235200000,
 		"title": "Pocket calculator",
@@ -5251,9 +4869,7 @@
 	{
 		"coolness": 44,
 		"date": "2015-12-15",
-		"descriptionList": [
-			"Animated demo written alongside a new programmer who was really into Pokémon."
-		],
+		"description": "<p>Animated demo written alongside a new programmer who was really into Pokémon.</p>",
 		"lastTagged": 1564708718062,
 		"link": "https://codepen.io/rileyjshaw/full/MKKKvw/",
 		"tags": [
@@ -5268,9 +4884,7 @@
 	{
 		"coolness": 80,
 		"date": "2015-10-12",
-		"descriptionList": [
-			"An ASCII art pond ripple animation."
-		],
+		"description": "<p>An ASCII art pond ripple animation.</p>",
 		"lastTagged": 1564708733322,
 		"link": "https://codepen.io/rileyjshaw/full/vNgJPQ/",
 		"tags": [
@@ -5286,9 +4900,7 @@
 	{
 		"coolness": 65,
 		"date": "2021-04-30",
-		"descriptionList": [
-			"Searches your favorite Spotify tracks for a running “Power Song”. A Power Song matches your target cadence, and pumps you up during a tough point in the run."
-		],
+		"description": "<p>Searches your favorite Spotify tracks for a running “Power Song”. A Power Song matches your target cadence, and pumps you up during a tough point in the run.</p>",
 		"link": "/power-song-finder/",
 		"timestamp": 1619740800000,
 		"title": "Power Song Finder",
@@ -5298,10 +4910,7 @@
 	{
 		"coolness": 50,
 		"date": "2015-12-12",
-		"descriptionList": [
-			"Pride and Prejudice in its entirety, sorted by the visual weight of its characters.",
-			"I was hoping for a more convincing gradient; the weight calculation could use some work."
-		],
+		"description": "<p>Pride and Prejudice in its entirety, sorted by the visual weight of its characters.</p><p>I was hoping for a more convincing gradient; the weight calculation could use some work.</p>",
 		"lastTagged": 1564708720327,
 		"link": "https://github.com/rileyjshaw/pride-and-prejudice",
 		"tags": [
@@ -5325,9 +4934,7 @@
 	{
 		"coolness": 32,
 		"date": "2024-02-14",
-		"descriptionList": [
-			"A fun way to display an ordered list. CSS only."
-		],
+		"description": "<p>A fun way to display an ordered list. CSS only.</p>",
 		"link": "https://codepen.io/rileyjshaw/pen/OJqrQrv",
 		"timestamp": 1707868800000,
 		"title": "Pulley",
@@ -5354,9 +4961,7 @@
 	{
 		"coolness": 11,
 		"date": "2014-03-17",
-		"descriptionList": [
-			"CSS animation with no additional HTML or JS."
-		],
+		"description": "<p>CSS animation with no additional HTML or JS.</p>",
 		"lastTagged": 1564708872623,
 		"link": "https://codepen.io/rileyjshaw/pen/Klvon?editors=0100",
 		"tags": [
@@ -5385,10 +4990,7 @@
 	{
 		"coolness": 83,
 		"date": "2014-10-15",
-		"descriptionList": [
-			"3D race-to-the-finish game.",
-			"Built with a custom raycaster / collision engine."
-		],
+		"description": "<p>3D race-to-the-finish game.</p><p>Built with a custom raycaster / collision engine.</p>",
 		"lastTagged": 1564708811317,
 		"link": "/racer",
 		"tags": [
@@ -5404,9 +5006,7 @@
 	{
 		"coolness": 52,
 		"date": "2017-11-25",
-		"descriptionList": [
-			"Rainbow remix of <a href=\"https://codepen.io/rileyjshaw/full/ozjEoK/\" rel=\"noopener noreferrer\" target=\"_blank\">Bubble</a>."
-		],
+		"description": "<p>Rainbow remix of <a href=\"https://codepen.io/rileyjshaw/full/ozjEoK/\" rel=\"noopener noreferrer\" target=\"_blank\">Bubble</a>.</p>",
 		"lastTagged": 1564608361275,
 		"link": "https://codepen.io/rileyjshaw/full/VrBZoK/",
 		"tags": [
@@ -5435,10 +5035,7 @@
 	{
 		"coolness": 90,
 		"date": "2014-10-27",
-		"descriptionList": [
-			"Reaction game that steals your history*. It exploits alpha-rounding to create an n-input OR gate for CSS :visited states, then probes links in sequential binary trees.",
-			"*This is a proof-of-concept and won’t actually steal anything."
-		],
+		"description": "<p>Reaction game that steals your history*. It exploits alpha-rounding to create an n-input OR gate for CSS :visited states, then probes links in sequential binary trees.</p><p>*This is a proof-of-concept and won’t actually steal anything.</p>",
 		"lastTagged": 1564708809571,
 		"link": "/visited-vectors/reaction",
 		"tags": [
@@ -5475,9 +5072,7 @@
 	{
 		"coolness": 30,
 		"date": "2014-07-03",
-		"descriptionList": [
-			"A Chrome extension to preserve the background color between page loads."
-		],
+		"description": "<p>A Chrome extension to preserve the background color between page loads.</p>",
 		"lastTagged": 1564708822603,
 		"link": "https://github.com/rileyjshaw/reduce-background-flicker",
 		"tags": [
@@ -5492,9 +5087,7 @@
 	{
 		"coolness": 70,
 		"date": "2016-02-22",
-		"descriptionList": [
-			"A color-theory game completed as a bonus project for Khan Academy’s 2016 Hackathon. Built with a friend using Unity 3D."
-		],
+		"description": "<p>A color-theory game completed as a bonus project for Khan Academy’s 2016 Hackathon. Built with a friend using Unity 3D.</p>",
 		"lastTagged": 1564765055195,
 		"link": "https://github.com/askew1312/render",
 		"tags": [
@@ -5510,9 +5103,7 @@
 	{
 		"coolness": 38,
 		"date": "2026-03-08",
-		"descriptionList": [
-			"Reframe a tiling image by picking a new origin."
-		],
+		"description": "<p>Reframe a tiling image by picking a new origin.</p>",
 		"link": "/rephase",
 		"timestamp": 1772928000000,
 		"title": "Rephase",
@@ -5522,9 +5113,7 @@
 	{
 		"coolness": 38,
 		"date": "2022-03-15",
-		"descriptionList": [
-			"A doodle I made while eating Fruit by the Foot."
-		],
+		"description": "<p>A doodle I made while eating Fruit by the Foot.</p>",
 		"link": "https://codepen.io/rileyjshaw/full/BaJyMMj",
 		"timestamp": 1647302400000,
 		"title": "Ribbon",
@@ -5534,9 +5123,7 @@
 	{
 		"coolness": 50,
 		"date": "2022-03-22",
-		"descriptionList": [
-			"An interactive version of my <a href=\"https://codepen.io/rileyjshaw/full/BaJyMMj\" rel=\"noopener noreferrer\" target=\"_blank\">Ribbon doodle</a>."
-		],
+		"description": "<p>An interactive version of my <a href=\"https://codepen.io/rileyjshaw/full/BaJyMMj\" rel=\"noopener noreferrer\" target=\"_blank\">Ribbon doodle</a>.</p>",
 		"link": "https://codepen.io/rileyjshaw/full/zYpKMWB",
 		"timestamp": 1647907200000,
 		"title": "Ribbon creator",
@@ -5546,9 +5133,7 @@
 	{
 		"coolness": 80,
 		"date": "2016-10-27",
-		"descriptionList": [
-			"A single program that outputs my name when you run it through three separate programming languages."
-		],
+		"description": "<p>A single program that outputs my name when you run it through three separate programming languages.</p>",
 		"lastTagged": 1564608398380,
 		"link": "https://gist.github.com/rileyjshaw/216af3d73b16e35d462ea5a29da4bcd4",
 		"tags": [
@@ -5564,9 +5149,7 @@
 	{
 		"coolness": 82,
 		"date": "2016-09-26",
-		"descriptionList": [
-			"It was left here by the aliens."
-		],
+		"description": "<p>It was left here by the aliens.</p>",
 		"lastTagged": 1564608411208,
 		"link": "https://codepen.io/rileyjshaw/full/YGVKgV/",
 		"tags": [
@@ -5581,9 +5164,7 @@
 	{
 		"coolness": 39,
 		"date": "2015-09-10",
-		"descriptionList": [
-			"A quick visual built during lunch, inspired by the base of the lunch table."
-		],
+		"description": "<p>A quick visual built during lunch, inspired by the base of the lunch table.</p>",
 		"lastTagged": 1564708715719,
 		"link": "/glitch-archive/projects/rings/",
 		"tags": [
@@ -5598,9 +5179,7 @@
 	{
 		"coolness": 30,
 		"date": "2024-02-14",
-		"descriptionList": [
-			"Scrolling any column will update the rest, but with a delay."
-		],
+		"description": "<p>Scrolling any column will update the rest, but with a delay.</p>",
 		"link": "https://codepen.io/rileyjshaw/full/mdoaxzQ",
 		"timestamp": 1707868800000,
 		"title": "Rippling scroll delay",
@@ -5610,9 +5189,7 @@
 	{
 		"coolness": 40,
 		"date": "2023-01-27",
-		"descriptionList": [
-			"Roll a D6."
-		],
+		"description": "<p>Roll a D6.</p>",
 		"link": "/roll/",
 		"timestamp": 1674777600000,
 		"title": "Roll",
@@ -5622,10 +5199,7 @@
 	{
 		"coolness": 42,
 		"date": "2016-03-07",
-		"descriptionList": [
-			"There’s nothing like driving by a field of trees in the passenger seat.",
-			"Super quick demo trying (failing, mostly) to capture the perspective effect."
-		],
+		"description": "<p>There’s nothing like driving by a field of trees in the passenger seat.</p><p>Super quick demo trying (failing, mostly) to capture the perspective effect.</p>",
 		"lastTagged": 1564707895541,
 		"link": "https://codepen.io/rileyjshaw/full/Rarobr/",
 		"tags": [
@@ -5640,9 +5214,7 @@
 	{
 		"coolness": 80,
 		"date": "2013-11-11",
-		"descriptionList": [
-			"Collection of Sass animations."
-		],
+		"description": "<p>Collection of Sass animations.</p>",
 		"lastTagged": 1564708963876,
 		"link": "https://codepen.io/rileyjshaw/full/zGnlq",
 		"tags": [
@@ -5659,9 +5231,7 @@
 	{
 		"coolness": 24,
 		"date": "2013-07-13",
-		"descriptionList": [
-			"Sass speech bubble mixin."
-		],
+		"description": "<p>Sass speech bubble mixin.</p>",
 		"lastTagged": 1564708992197,
 		"link": "https://codepen.io/rileyjshaw/pen/dAFiu",
 		"tags": [
@@ -5686,10 +5256,7 @@
 	{
 		"coolness": 70,
 		"date": "2020-11-09",
-		"descriptionList": [
-			"I dread mixing audio. I tend to make the drums a little louder, then the lead, then the bass, then the drums again, and on and on until I’m clipping everywhere.",
-			"I made this demo UI to show how a mixer might help keep your levels in check. Does this exist yet?"
-		],
+		"description": "<p>I dread mixing audio. I tend to make the drums a little louder, then the lead, then the bass, then the drums again, and on and on until I’m clipping everywhere.</p><p>I made this demo UI to show how a mixer might help keep your levels in check. Does this exist yet?</p>",
 		"lastTagged": 0,
 		"link": "https://codepen.io/rileyjshaw/full/ZEOqdPM",
 		"tags": [
@@ -5705,9 +5272,7 @@
 	{
 		"coolness": 30,
 		"date": "2021-03-24",
-		"descriptionList": [
-			"Combine many types of lines into a single line."
-		],
+		"description": "<p>Combine many types of lines into a single line.</p>",
 		"link": "/scribbler",
 		"timestamp": 1616544000000,
 		"title": "Scribbler",
@@ -5717,10 +5282,7 @@
 	{
 		"coolness": 40,
 		"date": "2020-01-08",
-		"descriptionList": [
-			"Prototype for a scrollable full-screen gallery using CSS <code>scroll-snap-</code> properties.",
-			"Works with touch, touchpad, mouse, and arrow keys."
-		],
+		"description": "<p>Prototype for a scrollable full-screen gallery using CSS <code>scroll-snap-</code> properties.</p><p>Works with touch, touchpad, mouse, and arrow keys.</p>",
 		"lastTagged": 0,
 		"link": "https://codepen.io/rileyjshaw/details/ExaQLqa",
 		"tags": [
@@ -5736,9 +5298,7 @@
 	{
 		"coolness": 34,
 		"date": "2020-10-30",
-		"descriptionList": [
-			"A simple Arduino library for driving 16-segment displays with a HT16K33."
-		],
+		"description": "<p>A simple Arduino library for driving 16-segment displays with a HT16K33.</p>",
 		"lastTagged": 0,
 		"link": "https://github.com/rileyjshaw/Seg16",
 		"tags": [
@@ -5753,9 +5313,7 @@
 	{
 		"coolness": 42,
 		"date": "2019-04-05",
-		"descriptionList": [
-			"A fork of the official Arduino Servo library, improved to match standard R/C pulse widths."
-		],
+		"description": "<p>A fork of the official Arduino Servo library, improved to match standard R/C pulse widths.</p>",
 		"lastTagged": 1564772210294,
 		"link": "https://github.com/rileyjshaw/Servo/tree/min-max-improvements",
 		"tags": [
@@ -5770,9 +5328,7 @@
 	{
 		"coolness": 82,
 		"date": "2025-01-23",
-		"descriptionList": [
-			"A lightweight, dependency-free library to reduce boilerplate when writing fragment shaders."
-		],
+		"description": "<p>A lightweight, dependency-free library to reduce boilerplate when writing fragment shaders.</p>",
 		"link": "https://misery.co/shaderpad/",
 		"timestamp": 1737590400000,
 		"title": "ShaderPad",
@@ -5782,9 +5338,7 @@
 	{
 		"coolness": 22,
 		"date": "2013-10-09",
-		"descriptionList": [
-			"Sass 3D text-shadow mixin."
-		],
+		"description": "<p>Sass 3D text-shadow mixin.</p>",
 		"lastTagged": 1564708975996,
 		"link": "https://codepen.io/rileyjshaw/pen/DmCyc",
 		"tags": [
@@ -5800,9 +5354,7 @@
 	{
 		"coolness": 20,
 		"date": "2016-05-16",
-		"descriptionList": [
-			"Stumbled upon this on my way to making <a href=\"https://codepen.io/rileyjshaw/full/YqbGKK/\" rel=\"noopener noreferrer\" target=\"_blank\">swirls</a>."
-		],
+		"description": "<p>Stumbled upon this on my way to making <a href=\"https://codepen.io/rileyjshaw/full/YqbGKK/\" rel=\"noopener noreferrer\" target=\"_blank\">swirls</a>.</p>",
 		"lastTagged": 1564707841219,
 		"link": "https://codepen.io/rileyjshaw/full/RamaYJ/",
 		"tags": [
@@ -5817,10 +5369,7 @@
 	{
 		"coolness": 69,
 		"date": "2015-03-03",
-		"descriptionList": [
-			"Auditory illusion of a tone that continually descends in pitch. It has been described as a “sonic barber’s pole”.",
-			"Implemented with the Web Audio API using custom oscillators."
-		],
+		"description": "<p>Auditory illusion of a tone that continually descends in pitch. It has been described as a “sonic barber’s pole”.</p><p>Implemented with the Web Audio API using custom oscillators.</p>",
 		"lastTagged": 1564708758541,
 		"link": "https://codepen.io/rileyjshaw/pen/OPwROr?editors=001",
 		"tags": [
@@ -5837,9 +5386,7 @@
 	{
 		"coolness": 52,
 		"date": "2025-07-09",
-		"descriptionList": [
-			"Move yr head."
-		],
+		"description": "<p>Move yr head.</p>",
 		"link": "/shifter",
 		"timestamp": 1752019200000,
 		"title": "Shifter",
@@ -5849,9 +5396,7 @@
 	{
 		"coolness": 55,
 		"date": "2014-09-16",
-		"descriptionList": [
-			"Search for emoji domains and short domains."
-		],
+		"description": "<p>Search for emoji domains and short domains.</p>",
 		"lastTagged": 1564624426575,
 		"link": "https://github.com/rileyjshaw/domains",
 		"tags": [
@@ -5866,9 +5411,7 @@
 	{
 		"coolness": 16,
 		"date": "2013-12-27",
-		"descriptionList": [
-			"Slide-out footer with semantic markup."
-		],
+		"description": "<p>Slide-out footer with semantic markup.</p>",
 		"lastTagged": 1564708931950,
 		"link": "https://codepen.io/rileyjshaw/details/GlBHC/",
 		"tags": [
@@ -5899,10 +5442,7 @@
 	{
 		"coolness": 97,
 		"date": "2016-05-18",
-		"descriptionList": [
-			"Tiling patterns from a single spiral with a fixed modulation signal.",
-			"Though the line’s formula stays consistent as it spirals out, the tile grid doesn’t increase in size."
-		],
+		"description": "<p>Tiling patterns from a single spiral with a fixed modulation signal.</p><p>Though the line’s formula stays consistent as it spirals out, the tile grid doesn’t increase in size.</p>",
 		"lastTagged": 1564707838057,
 		"link": "https://codepen.io/collection/nYWPBp/",
 		"tags": [
@@ -5918,9 +5458,7 @@
 	{
 		"coolness": 69,
 		"date": "2016-04-26",
-		"descriptionList": [
-			"Playing with bg gradient dots, CSS only."
-		],
+		"description": "<p>Playing with bg gradient dots, CSS only.</p>",
 		"lastTagged": 1564707853866,
 		"link": "https://codepen.io/collection/XGpwzE/",
 		"tags": [
@@ -5936,10 +5474,7 @@
 	{
 		"coolness": 21,
 		"date": "2015-01-18",
-		"descriptionList": [
-			"A quick ~10m demo to demonstrate some animation concepts.",
-			"Probably doesn’t work cross-browser."
-		],
+		"description": "<p>A quick ~10m demo to demonstrate some animation concepts.</p><p>Probably doesn’t work cross-browser.</p>",
 		"lastTagged": 1564708782164,
 		"link": "https://codepen.io/rileyjshaw/full/emWJPW/",
 		"tags": [
@@ -5956,9 +5491,7 @@
 	{
 		"coolness": 21,
 		"date": "2015-04-30",
-		"descriptionList": [
-			"A sliding menu concept using just radio buttons and CSS."
-		],
+		"description": "<p>A sliding menu concept using just radio buttons and CSS.</p>",
 		"lastTagged": 1564708753213,
 		"link": "https://codepen.io/rileyjshaw/pen/Nqqxaj?editors=001",
 		"tags": [
@@ -5974,10 +5507,7 @@
 	{
 		"coolness": 50,
 		"date": "2016-03-08",
-		"descriptionList": [
-			"If the window is wider than it is tall, it’ll split into columns. Otherwise, it’ll give you two rows.",
-			"This layout was rather difficult before flexbox came along."
-		],
+		"description": "<p>If the window is wider than it is tall, it’ll split into columns. Otherwise, it’ll give you two rows.</p><p>This layout was rather difficult before flexbox came along.</p>",
 		"lastTagged": 1564707894644,
 		"link": "https://codepen.io/rileyjshaw/pen/vGLvVo",
 		"tags": [
@@ -5993,9 +5523,7 @@
 	{
 		"coolness": 10,
 		"date": "2018-04-06",
-		"descriptionList": [
-			"Created in 99B of Javascript."
-		],
+		"description": "<p>Created in 99B of Javascript.</p>",
 		"lastTagged": 1564608355968,
 		"link": "https://codepen.io/rileyjshaw/pen/rdQxOa",
 		"tags": [
@@ -6010,9 +5538,7 @@
 	{
 		"coolness": 20,
 		"date": "2016-03-17",
-		"descriptionList": [
-			"Async/await ftw"
-		],
+		"description": "<p>Async/await ftw</p>",
 		"lastTagged": 1564707886487,
 		"link": "https://codepen.io/rileyjshaw/full/yOgKvp/",
 		"tags": [
@@ -6027,10 +5553,7 @@
 	{
 		"coolness": 76,
 		"date": "2015-06-06",
-		"descriptionList": [
-			"A visual demo using typed arrays.",
-			"Creates a shadow based on mouse position."
-		],
+		"description": "<p>A visual demo using typed arrays.</p><p>Creates a shadow based on mouse position.</p>",
 		"lastTagged": 1564708744959,
 		"link": "https://codepen.io/rileyjshaw/pen/zGwNzw",
 		"tags": [
@@ -6045,10 +5568,7 @@
 	{
 		"coolness": 56,
 		"date": "2017-02-27",
-		"descriptionList": [
-			"Manually sort a list of items using Timsort.",
-			"Abandoned UI experiment; seeing a large list is useful for large sets. Also, quicksort would work better here."
-		],
+		"description": "<p>Manually sort a list of items using Timsort.</p><p>Abandoned UI experiment; seeing a large list is useful for large sets. Also, quicksort would work better here.</p>",
 		"lastTagged": 1564608381908,
 		"link": "/sorta/",
 		"tags": [
@@ -6063,9 +5583,7 @@
 	{
 		"coolness": 26,
 		"date": "2014-02-13",
-		"descriptionList": [
-			"Thx Mary :)"
-		],
+		"description": "<p>Thx Mary :)</p>",
 		"lastTagged": 1564708893630,
 		"link": "https://codepen.io/rileyjshaw/pen/CErAF",
 		"tags": [
@@ -6080,9 +5598,7 @@
 	{
 		"coolness": 40,
 		"date": "2015-05-10",
-		"descriptionList": [
-			"A speedometer that travels through time with Doc Brown."
-		],
+		"description": "<p>A speedometer that travels through time with Doc Brown.</p>",
 		"lastTagged": 1564708746328,
 		"link": "https://codepen.io/rileyjshaw/pen/bdEvaQ",
 		"tags": [
@@ -6098,10 +5614,7 @@
 	{
 		"coolness": 20,
 		"date": "2013-12-03",
-		"descriptionList": [
-			"Block pointer events on scroll to reach 60fps.",
-			"A follow-up article has since been written to show more robust techniques."
-		],
+		"description": "<p>Block pointer events on scroll to reach 60fps.</p><p>A follow-up article has since been written to show more robust techniques.</p>",
 		"lastTagged": 1564708943908,
 		"link": "https://codepen.io/rileyjshaw/details/ruGFo/",
 		"tags": [
@@ -6116,9 +5629,7 @@
 	{
 		"coolness": 40,
 		"date": "2020-01-10",
-		"descriptionList": [
-			"A WIP / DOA sandbox for exploring <a href=\"https://codepen.io/collection/nYWPBp\" rel=\"noopener noreferrer\" target=\"_blank\">single-line, tiling spirals</a>."
-		],
+		"description": "<p>A WIP / DOA sandbox for exploring <a href=\"https://codepen.io/collection/nYWPBp\" rel=\"noopener noreferrer\" target=\"_blank\">single-line, tiling spirals</a>.</p>",
 		"lastTagged": 1564772210294,
 		"link": "https://github.com/rileyjshaw/spiral-explorer",
 		"tags": [
@@ -6134,9 +5645,7 @@
 	{
 		"coolness": 30,
 		"date": "2023-11-28",
-		"descriptionList": [
-			"A simple text spiral."
-		],
+		"description": "<p>A simple text spiral.</p>",
 		"link": "https://codepen.io/rileyjshaw/pen/yLZxNPG",
 		"timestamp": 1701129600000,
 		"title": "Spiral out",
@@ -6146,9 +5655,7 @@
 	{
 		"coolness": 25,
 		"date": "2024-01-14",
-		"descriptionList": [
-			"When one goes up, the other comes down."
-		],
+		"description": "<p>When one goes up, the other comes down.</p>",
 		"link": "https://codepen.io/rileyjshaw/full/ExMZPdQ",
 		"timestamp": 1705190400000,
 		"title": "Split scroll columns",
@@ -6158,9 +5665,7 @@
 	{
 		"coolness": 30,
 		"date": "2016-06-03",
-		"descriptionList": [
-			"Geometric patterns created from straight lines cutting through a circle."
-		],
+		"description": "<p>Geometric patterns created from straight lines cutting through a circle.</p>",
 		"lastTagged": 1564707822822,
 		"link": "https://codepen.io/collection/DmZZVV/",
 		"tags": [
@@ -6184,9 +5689,7 @@
 	{
 		"coolness": 64,
 		"date": "2016-06-01",
-		"descriptionList": [
-			"Move your mouse / finger. Remix of <a href=\"https://codepen.io/rileyjshaw/pen/ONxKVd?editors=0010\" rel=\"noopener noreferrer\" target=\"_blank\">“filings”</a>."
-		],
+		"description": "<p>Move your mouse / finger. Remix of <a href=\"https://codepen.io/rileyjshaw/pen/ONxKVd?editors=0010\" rel=\"noopener noreferrer\" target=\"_blank\">“filings”</a>.</p>",
 		"lastTagged": 1564707825199,
 		"link": "https://codepen.io/rileyjshaw/pen/aZzKGa",
 		"tags": [
@@ -6201,9 +5704,7 @@
 	{
 		"coolness": 50,
 		"date": "2016-04-28",
-		"descriptionList": [
-			"Trying out CSS animation steps()."
-		],
+		"description": "<p>Trying out CSS animation steps().</p>",
 		"lastTagged": 1564707852961,
 		"link": "https://codepen.io/rileyjshaw/full/LNgLBj",
 		"tags": [
@@ -6235,10 +5736,7 @@
 	{
 		"coolness": 34,
 		"date": "2018-10-03",
-		"descriptionList": [
-			"I wanted to see what stippling sounded like applied to musical chords.",
-			"Adapted from <a href=\"https://github.com/rileyjshaw/virtuoso\" rel=\"noopener noreferrer\" target=\"_blank\">Virtuoso</a>."
-		],
+		"description": "<p>I wanted to see what stippling sounded like applied to musical chords.</p><p>Adapted from <a href=\"https://github.com/rileyjshaw/virtuoso\" rel=\"noopener noreferrer\" target=\"_blank\">Virtuoso</a>.</p>",
 		"lastTagged": 1564772210294,
 		"link": "https://github.com/rileyjshaw/stipphonic",
 		"tags": [
@@ -6254,10 +5752,7 @@
 	{
 		"coolness": 75,
 		"date": "2016-03-13",
-		"descriptionList": [
-			"Sphere effect arising from random lines across a circle.",
-			"I’m sure someone else discovered this effect long before I did."
-		],
+		"description": "<p>Sphere effect arising from random lines across a circle.</p><p>I’m sure someone else discovered this effect long before I did.</p>",
 		"lastTagged": 1564707892058,
 		"link": "https://codepen.io/rileyjshaw/pen/dMpJre",
 		"tags": [
@@ -6272,9 +5767,7 @@
 	{
 		"coolness": 70,
 		"date": "2016-03-14",
-		"descriptionList": [
-			"Sine waves shifting sinusoidally."
-		],
+		"description": "<p>Sine waves shifting sinusoidally.</p>",
 		"lastTagged": 1564707889498,
 		"link": "https://codepen.io/rileyjshaw/full/reMdZE/",
 		"tags": [
@@ -6289,9 +5782,7 @@
 	{
 		"coolness": 71,
 		"date": "2016-03-14",
-		"descriptionList": [
-			"A version of Stormy Green that doesn’t drift out of phase."
-		],
+		"description": "<p>A version of Stormy Green that doesn’t drift out of phase.</p>",
 		"lastTagged": 1564707888292,
 		"link": "https://codepen.io/rileyjshaw/full/dMpmRY/",
 		"tags": [
@@ -6306,9 +5797,7 @@
 	{
 		"coolness": 1,
 		"date": "2014-02-15",
-		"descriptionList": [
-			"Boring."
-		],
+		"description": "<p>Boring.</p>",
 		"lastTagged": 1564708891840,
 		"link": "https://codepen.io/rileyjshaw/details/pcKCj/",
 		"tags": [
@@ -6350,10 +5839,7 @@
 	{
 		"coolness": 81,
 		"date": "2014-10-04",
-		"descriptionList": [
-			"No jQuery dependency, section progress shown in headers, click to scroll, resizable with scrollbar on window. Inspired by Slinky.js and DesignWall.",
-			"Currently doesn’t work on iOS &lt; 8 since they mess with scroll events. If you use this in production, look into iScroll."
-		],
+		"description": "<p>No jQuery dependency, section progress shown in headers, click to scroll, resizable with scrollbar on window. Inspired by Slinky.js and DesignWall.</p><p>Currently doesn’t work on iOS &lt; 8 since they mess with scroll events. If you use this in production, look into iScroll.</p>",
 		"lastTagged": 1564624423924,
 		"link": "https://codepen.io/rileyjshaw/full/pIFly/",
 		"tags": [
@@ -6370,10 +5856,7 @@
 	{
 		"coolness": 36,
 		"date": "2016-10-04",
-		"descriptionList": [
-			"“…the formula can be used to describe many complex shapes and curves that are found in nature. Gielis <em>holds a patent</em> related to the synthesis of patterns generated by the superformula.”",
-			":facepalm:"
-		],
+		"description": "<p>“…the formula can be used to describe many complex shapes and curves that are found in nature. Gielis <em>holds a patent</em> related to the synthesis of patterns generated by the superformula.”</p><p>:facepalm:</p>",
 		"lastTagged": 1564608405055,
 		"link": "https://codepen.io/rileyjshaw/pen/jrayWL",
 		"tags": [
@@ -6398,9 +5881,7 @@
 	{
 		"coolness": 14,
 		"date": "2021-03-04",
-		"descriptionList": [
-			"Even more tiny tests while learning SVG’s SMIL specification."
-		],
+		"description": "<p>Even more tiny tests while learning SVG’s SMIL specification.</p>",
 		"lastTagged": 0,
 		"link": "https://codepen.io/rileyjshaw/pen/rNWKPOW",
 		"tags": [
@@ -6415,9 +5896,7 @@
 	{
 		"coolness": 73,
 		"date": "2022-01-27",
-		"descriptionList": [
-			"The SVG specification has built-in noise and lighting, so I tried them out. Infinitely scalable, non-repeating patterns in much less than a kilobyte."
-		],
+		"description": "<p>The SVG specification has built-in noise and lighting, so I tried them out. Infinitely scalable, non-repeating patterns in much less than a kilobyte.</p>",
 		"link": "https://codepen.io/collection/QWKQYQ",
 		"timestamp": 1643241600000,
 		"title": "SVG filters",
@@ -6441,9 +5920,7 @@
 	{
 		"coolness": 56,
 		"date": "2025-06-19",
-		"descriptionList": [
-			"Variations on <a href=\"https://codepen.io/rileyjshaw/pen/vGzYyR\" rel=\"noopener noreferrer\" target=\"_blank\">an old CSS animation I made,</a> rewritten as a shader. Use arrow keys or swipe to change the scene."
-		],
+		"description": "<p>Variations on <a href=\"https://codepen.io/rileyjshaw/pen/vGzYyR\" rel=\"noopener noreferrer\" target=\"_blank\">an old CSS animation I made,</a> rewritten as a shader. Use arrow keys or swipe to change the scene.</p>",
 		"link": "/sway",
 		"timestamp": 1750291200000,
 		"title": "Sway",
@@ -6453,9 +5930,7 @@
 	{
 		"coolness": 69,
 		"date": "2016-04-25",
-		"descriptionList": [
-			"Playing with bg gradient stripes, CSS only."
-		],
+		"description": "<p>Playing with bg gradient stripes, CSS only.</p>",
 		"lastTagged": 1564707854423,
 		"link": "https://codepen.io/collection/nmyQRj/",
 		"tags": [
@@ -6471,9 +5946,7 @@
 	{
 		"coolness": 60,
 		"date": "2014-03-24",
-		"descriptionList": [
-			"A JavaScript library for smoother color transitions"
-		],
+		"description": "<p>A JavaScript library for smoother color transitions</p>",
 		"lastTagged": 1564708866431,
 		"link": "/sweep",
 		"tags": [
@@ -6490,9 +5963,7 @@
 	{
 		"coolness": 50,
 		"date": "2016-05-16",
-		"descriptionList": [
-			"Abandoned background generator. Pattern is played out."
-		],
+		"description": "<p>Abandoned background generator. Pattern is played out.</p>",
 		"lastTagged": 1564707839982,
 		"link": "https://codepen.io/rileyjshaw/full/YqbGKK/",
 		"tags": [
@@ -6507,9 +5978,7 @@
 	{
 		"coolness": 54,
 		"date": "2016-06-05",
-		"descriptionList": [
-			"Synthesizer synesthesia. Turn MIDI notes into colors."
-		],
+		"description": "<p>Synthesizer synesthesia. Turn MIDI notes into colors.</p>",
 		"lastTagged": 1564707820422,
 		"link": "https://github.com/rileyjshaw/synthesia",
 		"tags": [
@@ -6526,9 +5995,7 @@
 	{
 		"coolness": 77,
 		"date": "2014-11-23",
-		"descriptionList": [
-			"A JavaScript library for recording and comparing rhythms"
-		],
+		"description": "<p>A JavaScript library for recording and comparing rhythms</p>",
 		"lastTagged": 1564708795522,
 		"link": "/tappy",
 		"tags": [
@@ -6545,9 +6012,7 @@
 	{
 		"coolness": 76,
 		"date": "2014-10-13",
-		"descriptionList": [
-			"Tap the rhythm of the lyrics displayed."
-		],
+		"description": "<p>Tap the rhythm of the lyrics displayed.</p>",
 		"lastTagged": 1564708812602,
 		"link": "/tappy-game",
 		"tags": [
@@ -6565,9 +6030,7 @@
 	{
 		"coolness": 64,
 		"date": "2024-11-05",
-		"descriptionList": [
-			"A simple tap tempo app with drift tracking over time."
-		],
+		"description": "<p>A simple tap tempo app with drift tracking over time.</p>",
 		"link": "/tempo-tracker/",
 		"timestamp": 1730764800000,
 		"title": "Tempo tracker",
@@ -6577,9 +6040,7 @@
 	{
 		"coolness": 64,
 		"date": "2025-12-29",
-		"descriptionList": [
-			"A playful contribution to <a href=\"https://10kdrummachines.com/\" rel=\"noopener noreferrer\" target=\"_blank\">10k Drum Machines</a> based on the <a href=\"/blog/graphing-depth\">Collatz conjecture</a>."
-		],
+		"description": "<p>A playful contribution to <a href=\"https://10kdrummachines.com/\" rel=\"noopener noreferrer\" target=\"_blank\">10k Drum Machines</a> based on the <a href=\"/blog/graphing-depth\">Collatz conjecture</a>.</p>",
 		"link": "/terminal-1/",
 		"timestamp": 1766966400000,
 		"title": "Terminal 1",
@@ -6589,9 +6050,7 @@
 	{
 		"coolness": 23,
 		"date": "2012-10-23",
-		"descriptionList": [
-			"Used to promote <strike>qhack.ca (defunct)</strike> “hack nights” at my university</a>."
-		],
+		"description": "<p>Used to promote <strike>qhack.ca (defunct)</strike> “hack nights” at my university</a>.</p>",
 		"lastTagged": 1564709012522,
 		"link": "https://codepen.io/rileyjshaw/full/FLpJk/",
 		"tags": [
@@ -6607,9 +6066,7 @@
 	{
 		"coolness": 86,
 		"date": "2014-03-09",
-		"descriptionList": [
-			"A JavaScript library for simple biological simulations and cellular automata."
-		],
+		"description": "<p>A JavaScript library for simple biological simulations and cellular automata.</p>",
 		"lastTagged": 1564708889063,
 		"link": "/terra",
 		"tags": [
@@ -6641,9 +6098,7 @@
 	{
 		"coolness": 23,
 		"date": "2014-11-08",
-		"descriptionList": [
-			"A bit of an anti-pattern, but people seemed to like it."
-		],
+		"description": "<p>A bit of an anti-pattern, but people seemed to like it.</p>",
 		"lastTagged": 1564708803286,
 		"link": "https://codepen.io/rileyjshaw/full/azoLwb/",
 		"tags": [
@@ -6674,9 +6129,7 @@
 	{
 		"coolness": 11,
 		"date": "2011-11-26",
-		"descriptionList": [
-			"Settings reveal concept where a nut unscrews itself then drops a curtain."
-		],
+		"description": "<p>Settings reveal concept where a nut unscrews itself then drops a curtain.</p>",
 		"lastTagged": 1564709010796,
 		"link": "https://codepen.io/rileyjshaw/details/fKmuI",
 		"tags": [
@@ -6707,10 +6160,7 @@
 	{
 		"coolness": 18,
 		"date": "2014-04-24",
-		"descriptionList": [
-			"CSS gradient rule for thin diagonal lines.",
-			"Cross-device, cross-browser."
-		],
+		"description": "<p>CSS gradient rule for thin diagonal lines.</p><p>Cross-device, cross-browser.</p>",
 		"lastTagged": 1564708854160,
 		"link": "https://codepen.io/rileyjshaw/full/dBygE",
 		"tags": [
@@ -6727,9 +6177,7 @@
 	{
 		"coolness": 85,
 		"date": "2014-05-31",
-		"descriptionList": [
-			"Democratic billboard for sharing the pulse of a community. Popular thoughts will be displayed on the billboard for all to see."
-		],
+		"description": "<p>Democratic billboard for sharing the pulse of a community. Popular thoughts will be displayed on the billboard for all to see.</p>",
 		"lastTagged": 1564708825898,
 		"link": "https://github.com/Queens-Hacks/thoughtboard",
 		"tags": [
@@ -6743,10 +6191,7 @@
 	{
 		"coolness": 80,
 		"date": "2014-11-03",
-		"descriptionList": [
-			"Rapidfire, turnless tic-tac-toe with a custom websocket lobby.",
-			"Inspired by Kung-Fu Chess."
-		],
+		"description": "<p>Rapidfire, turnless tic-tac-toe with a custom websocket lobby.</p><p>Inspired by Kung-Fu Chess.</p>",
 		"lastTagged": 1564708806792,
 		"link": "https://github.com/rileyjshaw/tic-attack-toe",
 		"tags": [
@@ -6777,9 +6222,7 @@
 	{
 		"coolness": 5,
 		"date": "2014-11-29",
-		"descriptionList": [
-			"Web typography experiment using CSS transforms and SVG."
-		],
+		"description": "<p>Web typography experiment using CSS transforms and SVG.</p>",
 		"lastTagged": 1564708794443,
 		"link": "https://codepen.io/rileyjshaw/full/gbapBa/",
 		"tags": [
@@ -6795,9 +6238,7 @@
 	{
 		"coolness": 70,
 		"date": "2014-03-19",
-		"descriptionList": [
-			"Chat through happenstance. The interface adapts to meet demand."
-		],
+		"description": "<p>Chat through happenstance. The interface adapts to meet demand.</p>",
 		"lastTagged": 1564708867142,
 		"link": "https://github.com/rileyjshaw/boxes",
 		"tags": [
@@ -6815,9 +6256,7 @@
 	{
 		"coolness": 37,
 		"date": "2014-03-17",
-		"descriptionList": [
-			"Really little chat server written in Node.js."
-		],
+		"description": "<p>Really little chat server written in Node.js.</p>",
 		"lastTagged": 1564708870888,
 		"link": "https://github.com/rileyjshaw/tiny-tcp",
 		"tags": [
@@ -6831,9 +6270,7 @@
 	{
 		"coolness": 72,
 		"date": "2014-12-16",
-		"descriptionList": [
-			"A tiny in-browser terminal."
-		],
+		"description": "<p>A tiny in-browser terminal.</p>",
 		"lastTagged": 1564708789475,
 		"link": "https://github.com/rileyjshaw/tinyterm",
 		"tags": [
@@ -6848,9 +6285,7 @@
 	{
 		"coolness": 60,
 		"date": "2016-01-06",
-		"descriptionList": [
-			"Contribution to the publication “Codrops” for their Line Menu Styles collection."
-		],
+		"description": "<p>Contribution to the publication “Codrops” for their Line Menu Styles collection.</p>",
 		"lastTagged": 1564707907104,
 		"link": "https://tympanus.net/Development/LineMenuStyles/#Titania",
 		"tags": [
@@ -6867,10 +6302,7 @@
 	{
 		"coolness": 10,
 		"date": "2015-10-29",
-		"descriptionList": [
-			"Nothing gonna stop you, there’s nothing that strong ♫",
-			"An excuse to write git push it to-the-limit into the console."
-		],
+		"description": "<p>Nothing gonna stop you, there’s nothing that strong ♫</p><p>An excuse to write git push it to-the-limit into the console.</p>",
 		"lastTagged": 1564708730063,
 		"link": "https://github.com/rileyjshaw/tony-montana",
 		"tags": [
@@ -6894,10 +6326,7 @@
 	{
 		"coolness": 92,
 		"date": "2015-06-13",
-		"descriptionList": [
-			"A math facts app that you can play from a payphone.",
-			"Used to live at the epic phone numbers <s>+1.480.360.MATH (US)</s> and <s>+1.647.360.MATH (Canada)</s>."
-		],
+		"description": "<p>A math facts app that you can play from a payphone.</p><p>Used to live at the epic phone numbers <s>+1.480.360.MATH (US)</s> and <s>+1.647.360.MATH (Canada)</s>.</p>",
 		"lastTagged": 1564708744196,
 		"link": "https://github.com/rileyjshaw/touchtone-math-facts",
 		"tags": [
@@ -6932,9 +6361,7 @@
 	{
 		"coolness": 41,
 		"date": "2019-03-17",
-		"descriptionList": [
-			"A garden of emoji that slowly climbs your screen."
-		],
+		"description": "<p>A garden of emoji that slowly climbs your screen.</p>",
 		"lastTagged": 1564773945787,
 		"link": "/glitch-archive/projects/txt-flowers/",
 		"tags": [
@@ -6949,9 +6376,7 @@
 	{
 		"coolness": 74,
 		"date": "2016-04-16",
-		"descriptionList": [
-			"Repeatedly apply a set of transformations to text."
-		],
+		"description": "<p>Repeatedly apply a set of transformations to text.</p>",
 		"lastTagged": 1564707857033,
 		"link": "https://codepen.io/rileyjshaw/full/eZrzbK/",
 		"tags": [
@@ -6968,9 +6393,7 @@
 	{
 		"coolness": 50,
 		"date": "2016-05-28",
-		"descriptionList": [
-			"A competitive typing tutor. Two players type different paragraphs on the same keyboard, simultaneously."
-		],
+		"description": "<p>A competitive typing tutor. Two players type different paragraphs on the same keyboard, simultaneously.</p>",
 		"lastTagged": 1564707830808,
 		"link": "https://github.com/rileyjshaw/typing-for-two",
 		"tags": [
@@ -6988,10 +6411,7 @@
 	{
 		"coolness": 80,
 		"date": "2019-03-10",
-		"descriptionList": [
-			"Try touch-typing an English word without moving your fingers from their resting position on the keyboard.",
-			"This was a proof-of-concept for a keyboard glove, which was implemented in hardware by <a href=\"https://github.com/rileyjshaw/english-words-directory-trie\" rel=\"noopener noreferrer\" target=\"_blank\">mapping the trie to a directory tree</a>."
-		],
+		"description": "<p>Try touch-typing an English word without moving your fingers from their resting position on the keyboard.</p><p>This was a proof-of-concept for a keyboard glove, which was implemented in hardware by <a href=\"https://github.com/rileyjshaw/english-words-directory-trie\" rel=\"noopener noreferrer\" target=\"_blank\">mapping the trie to a directory tree</a>.</p>",
 		"lastTagged": 1564775565269,
 		"link": "/glitch-archive/projects/typing-lazy/",
 		"tags": [
@@ -7007,10 +6427,7 @@
 	{
 		"coolness": 80,
 		"date": "2014-12-14",
-		"descriptionList": [
-			"Since I made a fancy headline for <a href=\"https://codepen.io/rileyjshaw/full/OPNvzN/\" rel=\"noopener noreferrer\" target=\"_blank\">Terra</a> I figured it was only fair to make one for <a href=\"/sweep\">sweep</a>.",
-			"Never used."
-		],
+		"description": "<p>Since I made a fancy headline for <a href=\"https://codepen.io/rileyjshaw/full/OPNvzN/\" rel=\"noopener noreferrer\" target=\"_blank\">Terra</a> I figured it was only fair to make one for <a href=\"/sweep\">sweep</a>.</p><p>Never used.</p>",
 		"lastTagged": 1564708791130,
 		"link": "https://codepen.io/rileyjshaw/full/jEqvLp/",
 		"tags": [
@@ -7025,9 +6442,7 @@
 	{
 		"coolness": 16,
 		"date": "2013-10-28",
-		"descriptionList": [
-			"Loading bar concept."
-		],
+		"description": "<p>Loading bar concept.</p>",
 		"lastTagged": 1564708969478,
 		"link": "https://codepen.io/rileyjshaw/full/dIniD",
 		"tags": [
@@ -7043,9 +6458,7 @@
 	{
 		"coolness": 52,
 		"date": "2014-02-28",
-		"descriptionList": [
-			"Tell people on the internet what they should do."
-		],
+		"description": "<p>Tell people on the internet what they should do.</p>",
 		"lastTagged": 1564708889861,
 		"link": "http://ushld.rileyjshaw.com",
 		"tags": [
@@ -7060,9 +6473,7 @@
 	{
 		"coolness": 26,
 		"date": "2013-12-08",
-		"descriptionList": [
-			"Sass vanishing point mixin."
-		],
+		"description": "<p>Sass vanishing point mixin.</p>",
 		"lastTagged": 1564708939620,
 		"link": "https://codepen.io/rileyjshaw/pen/inyzb",
 		"tags": [
@@ -7079,9 +6490,7 @@
 	{
 		"coolness": 36,
 		"date": "2021-05-19",
-		"descriptionList": [
-			"Another quick experiment with variable fonts following <a href=\"https://codepen.io/rileyjshaw/full/WNpwGZx\" rel=\"noopener noreferrer\" target=\"_blank\">LOUDER</a>. The heading text grows in response to hover or touch proximity."
-		],
+		"description": "<p>Another quick experiment with variable fonts following <a href=\"https://codepen.io/rileyjshaw/full/WNpwGZx\" rel=\"noopener noreferrer\" target=\"_blank\">LOUDER</a>. The heading text grows in response to hover or touch proximity.</p>",
 		"link": "https://codepen.io/rileyjshaw/full/xxqRmjg",
 		"timestamp": 1621382400000,
 		"title": "Variable font: headings grow on hover",
@@ -7091,9 +6500,7 @@
 	{
 		"coolness": 32,
 		"date": "2016-10-24",
-		"descriptionList": [
-			"wallpaper…?"
-		],
+		"description": "<p>wallpaper…?</p>",
 		"lastTagged": 1564608401800,
 		"link": "https://codepen.io/rileyjshaw/pen/ozmymE/",
 		"tags": [
@@ -7108,10 +6515,7 @@
 	{
 		"coolness": 80,
 		"date": "2016-06-17",
-		"descriptionList": [
-			"Play a .mid file at your own speed using a MIDI keyboard!",
-			"Works best with MIDI keyboards, but you can use your computer keyboard too."
-		],
+		"description": "<p>Play a .mid file at your own speed using a MIDI keyboard!</p><p>Works best with MIDI keyboards, but you can use your computer keyboard too.</p>",
 		"lastTagged": 1564707810842,
 		"link": "https://github.com/rileyjshaw/virtuoso",
 		"tags": [
@@ -7130,9 +6534,7 @@
 	{
 		"coolness": 80,
 		"date": "2016-08-28",
-		"descriptionList": [
-			"Short narrative experiment written for the PICO-8 fantasy console."
-		],
+		"description": "<p>Short narrative experiment written for the PICO-8 fantasy console.</p>",
 		"lastTagged": 1564608417415,
 		"link": "https://www.lexaloffle.com/bbs/?tid=27571",
 		"tags": [
@@ -7166,9 +6568,7 @@
 	{
 		"coolness": 40,
 		"date": "2013-11-20",
-		"descriptionList": [
-			"Used this as my 404 page for a while."
-		],
+		"description": "<p>Used this as my 404 page for a while.</p>",
 		"lastTagged": 1564708957259,
 		"link": "https://codepen.io/rileyjshaw/pen/mcaCi",
 		"tags": [
@@ -7184,9 +6584,7 @@
 	{
 		"coolness": 40,
 		"date": "2013-12-29",
-		"descriptionList": [
-			"Uses Chrome’s canvas compositing algorithm (circa 2013) to simulate watercolor painting in the browser."
-		],
+		"description": "<p>Uses Chrome’s canvas compositing algorithm (circa 2013) to simulate watercolor painting in the browser.</p>",
 		"lastTagged": 1564708930039,
 		"link": "/watercolor/",
 		"tags": [
@@ -7202,9 +6600,7 @@
 	{
 		"coolness": 30,
 		"date": "2015-03-29",
-		"descriptionList": [
-			"Boring minimal audio visualizer."
-		],
+		"description": "<p>Boring minimal audio visualizer.</p>",
 		"lastTagged": 1564708754661,
 		"link": "https://codepen.io/rileyjshaw/full/VYRPzy/",
 		"tags": [
@@ -7220,10 +6616,7 @@
 	{
 		"coolness": 80,
 		"date": "2015-12-31",
-		"descriptionList": [
-			"My contribution to a collection of poems.",
-			"From the project page: “there is confusion in the mixed layers of metaphors. This is not an obfuscated code repository; not really. In some ways, it is the opposite.”"
-		],
+		"description": "<p>My contribution to a collection of poems.</p><p>From the project page: “there is confusion in the mixed layers of metaphors. This is not an obfuscated code repository; not really. In some ways, it is the opposite.”</p>",
 		"lastTagged": 1564707910272,
 		"link": "https://raw.githubusercontent.com/eliawry/poetics/master/whoami.py",
 		"tags": [
@@ -7239,9 +6632,7 @@
 	{
 		"coolness": 68,
 		"date": "2014-05-07",
-		"descriptionList": [
-			"Only wakes you up if the wind is howling. An alarm for kiteboarders."
-		],
+		"description": "<p>Only wakes you up if the wind is howling. An alarm for kiteboarders.</p>",
 		"lastTagged": 1564708846185,
 		"link": "https://github.com/rileyjshaw/wind-alarm",
 		"tags": [
@@ -7256,9 +6647,7 @@
 	{
 		"coolness": 70,
 		"date": "2015-05-05",
-		"descriptionList": [
-			"A Chrome extension: count and list all page-defined global variables."
-		],
+		"description": "<p>A Chrome extension: count and list all page-defined global variables.</p>",
 		"lastTagged": 1564708751214,
 		"link": "https://chrome.google.com/webstore/detail/window-shopper-log-any-pa/mhfpgolappjpepejmfpomfpemdidpkng",
 		"tags": [
@@ -7272,10 +6661,7 @@
 	{
 		"coolness": 38,
 		"date": "2021-03-03",
-		"descriptionList": [
-			"A raw SVG animation using no external libraries. It’s also cute. Click to animate.",
-			"Used as an initial test for this site’s theme picker icon."
-		],
+		"description": "<p>A raw SVG animation using no external libraries. It’s also cute. Click to animate.</p><p>Used as an initial test for this site’s theme picker icon.</p>",
 		"lastTagged": 0,
 		"link": "https://codepen.io/rileyjshaw/pen/abBKOmE",
 		"tags": [
@@ -7291,10 +6677,7 @@
 	{
 		"coolness": 50,
 		"date": "2013-10-13",
-		"descriptionList": [
-			"Some Javascript that I threw together for a friend to 1) solve his problem, 2) explain some hacky JS tricks, and 3) attempt to show him that they aren’t always great to use since they obfuscate your code.",
-			"There’s actually some cool stuff going on in here, so I’ve commented it thoroughly."
-		],
+		"description": "<p>Some Javascript that I threw together for a friend to 1) solve his problem, 2) explain some hacky JS tricks, and 3) attempt to show him that they aren’t always great to use since they obfuscate your code.</p><p>There’s actually some cool stuff going on in here, so I’ve commented it thoroughly.</p>",
 		"lastTagged": 1564708974879,
 		"link": "https://codepen.io/rileyjshaw/pen/cKiDn?editors=0010",
 		"tags": [
@@ -7311,9 +6694,7 @@
 	{
 		"coolness": 80,
 		"date": "2017-01-17",
-		"descriptionList": [
-			"A chill place to write things."
-		],
+		"description": "<p>A chill place to write things.</p>",
 		"lastTagged": 1564608384406,
 		"link": "/write",
 		"tags": [
@@ -7329,9 +6710,7 @@
 	{
 		"coolness": 60,
 		"date": "2016-04-11",
-		"descriptionList": [
-			"Accidentally discovered this 2d water effect by stacking sine waves. Simple but convincing!"
-		],
+		"description": "<p>Accidentally discovered this 2d water effect by stacking sine waves. Simple but convincing!</p>",
 		"lastTagged": 1564707862027,
 		"link": "https://codepen.io/rileyjshaw/pen/vGdgWG",
 		"tags": [
@@ -7346,10 +6725,7 @@
 	{
 		"coolness": 84,
 		"date": "2015-09-13",
-		"descriptionList": [
-			"Bingo cards generated from the attendance list of XOXOFest. The first person to meet enough attendees “won” the party.",
-			"Built hastily between speakers on the last day of the festival; requires login with Twitter to protect attendees’ identity."
-		],
+		"description": "<p>Bingo cards generated from the attendance list of XOXOFest. The first person to meet enough attendees “won” the party.</p><p>Built hastily between speakers on the last day of the festival; requires login with Twitter to protect attendees’ identity.</p>",
 		"lastTagged": 1564708738919,
 		"link": "https://github.com/rileyjshaw/xoxo-bingo",
 		"tags": [
@@ -7380,10 +6756,7 @@
 	{
 		"coolness": 50,
 		"date": "2013-03-22",
-		"descriptionList": [
-			"A depth-sensing grafitti wall for touch-screens &amp; pen tablets.",
-			"Demo built for web browsers and Wacom tablets. Installation involved creating a large infrared plane behind a flexible display and sensing deformations using Community Core Vision."
-		],
+		"description": "<p>A depth-sensing grafitti wall for touch-screens &amp; pen tablets.</p><p>Demo built for web browsers and Wacom tablets. Installation involved creating a large infrared plane behind a flexible display and sensing deformations using Community Core Vision.</p>",
 		"lastTagged": 1564709003258,
 		"link": "https://youtu.be/zQ5tKU3z1fc",
 		"tags": [
@@ -7400,10 +6773,7 @@
 	{
 		"coolness": 40,
 		"date": "2014-01-03",
-		"descriptionList": [
-			"CSS only.",
-			"Fun with gradients and background-clip: text."
-		],
+		"description": "<p>CSS only.</p><p>Fun with gradients and background-clip: text.</p>",
 		"lastTagged": 1564708924925,
 		"link": "https://codepen.io/rileyjshaw/full/waeqK",
 		"tags": [
@@ -7420,9 +6790,7 @@
 	{
 		"coolness": 56,
 		"date": "2016-05-05",
-		"descriptionList": [
-			"Efficiently scales and rotates canvas image data <em>seemingly</em> in-place using two overlapping canvas elements."
-		],
+		"description": "<p>Efficiently scales and rotates canvas image data <em>seemingly</em> in-place using two overlapping canvas elements.</p>",
 		"lastTagged": 1564707846623,
 		"link": "https://codepen.io/rileyjshaw/pen/ONrdoM",
 		"tags": [

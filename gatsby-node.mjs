@@ -242,12 +242,9 @@ export const onCreateNode = ({node, getNode, actions}) => {
 export const createSchemaCustomization = ({actions}) => {
 	const {createTypes} = actions;
 	const typeDefs = `
-		# TODO(riley): Consider merging description and descriptionList.
-		# https://github.com/graphql/graphql-spec/issues/215
 		type CombinedProjectsJson implements Node {
 			title: String
 			description: String
-			descriptionList: [String]
 			coolness: Int
 		}
 	`;

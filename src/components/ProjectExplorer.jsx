@@ -242,7 +242,6 @@ const ProjectExplorerWrapper = React.memo(props => {
 					date
 					link
 					description
-					descriptionList
 					tags
 					repo
 					updatedAt

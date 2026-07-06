@@ -13,9 +13,7 @@ const rssify = (query, filter = () => true) => {
 		.filter(filter)
 		.map(node => ({
 			title: node.title,
-			description: node.descriptionList
-				? node.descriptionList.join('\n')
-				: node.description || '',
+			description: node.description || '',
 			url: (node.link.startsWith('/') ? siteUrl : '') + node.link,
 			date: node.date,
 			guid: node.uid,

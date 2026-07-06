@@ -100,7 +100,7 @@ export function runTests() {
 	// Ensure there aren’t any unnecessarily included empty fields.
 	check('No empty optional fields', () =>
 		projects.flatMap(p =>
-			['description', 'tags', 'descriptionList']
+			['description', 'tags']
 				.filter(field => field in p && !p[field]?.length)
 				.map(field => `${p.uid} has an empty “${field}” field`),
 		),

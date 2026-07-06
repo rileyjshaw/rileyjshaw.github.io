@@ -100,14 +100,7 @@ const typeTransformers = {
 	],
 	project: [
 		n => {
-			if (n.descriptionList) {
-				if (typeof n.descriptionList === 'string') {
-					console.error(
-						`Project “${n.title}” has a string description. It should be an array.`,
-					);
-				}
-				n.descriptionList = n.descriptionList.map(fixLinks);
-			}
+			n.description = fixLinks(n.description);
 		},
 	],
 };
@@ -191,11 +184,22 @@ export function runTweaks() {
 		...listedProjects
 			.filter(n => !n.todo)
 			.map(p => {
-				const {description, ...rest} = p;
+				let {description, ...rest} = p;
+				if (description && !Array.isArray(description)) {
+					console.error(
+						`Project “${p.title}” has a string description. It should be an array.`,
+					);
+					description = [description];
+				}
 				return {
 					...rest,
-					// HACK(riley): Array for projects, string for other things.
-					descriptionList: description,
+					// Authored as an array of paragraphs; flattened to an
+					// HTML string like every other type’s description.
+					...(description && {
+						description: description
+							.map(d => `<p>${d}</p>`)
+							.join(''),
+					}),
 					type: 'project',
 					uid: `PROJECT_${idify(p.title)}`,
 				};

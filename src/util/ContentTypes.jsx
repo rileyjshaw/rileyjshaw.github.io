@@ -9,14 +9,10 @@ const BlockEmbedButton = ({type, onClick}) => (
 );
 
 export const TitleOnly = () => null;
-export const ProjectContent = ({descriptionList}) =>
-	descriptionList && (
-		<main>
-			{descriptionList.map((d, i) => (
-				<p key={i} dangerouslySetInnerHTML={{__html: d}} />
-			))}
-		</main>
-	);
+export const ProjectContent = ({description}) =>
+	description ? (
+		<main dangerouslySetInnerHTML={{__html: description}} />
+	) : null;
 export const PostContent = ({description, link, more}) =>
 	description ? (
 		<main>
