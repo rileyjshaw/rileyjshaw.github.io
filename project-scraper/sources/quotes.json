@@ -832,5 +832,17 @@
 		"author": "Ryan Geiss",
 		"source": "At a glance: GEISS",
 		"cite": "https://www.geisswerks.com/about_geiss.html"
+	},
+	"FORCE_COMPUTER_IDEAS": {
+		"content": "I try to force the computer almost to do stuff that gives me ideas, and then work from there.",
+		"author": "Mr. Bill",
+		"source": "Mr. Bill Masterclass @ KMGLife Inc.",
+		"cite": "https://youtu.be/uovt93Sq24M?t=4245"
+	},
+	"VERIFICATION_STANDARD": {
+		"content": "When production is infinitely fast, the verification standard becomes the only compressible variable in the system, and every incentive in sight pushes you to compress it",
+		"author": "Airing",
+		"source": "After AI Takes Everything",
+		"cite": "https://ursb.me/en/posts/after-ai-takes-everything/"
 	}
 }

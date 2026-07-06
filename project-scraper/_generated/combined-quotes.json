@@ -279,6 +279,13 @@
 		"uid": "FLOTILLA_OF_FANATICS"
 	},
 	{
+		"author": "Mr. Bill",
+		"cite": "https://youtu.be/uovt93Sq24M?t=4245",
+		"content": "I try to force the computer almost to do stuff that gives me ideas, and then work from there.",
+		"source": "Mr. Bill Masterclass @ KMGLife Inc.",
+		"uid": "FORCE_COMPUTER_IDEAS"
+	},
+	{
 		"author": "Annie Dillard",
 		"cite": "https://bookshop.org/p/books/pilgrim-at-tinker-creek-annie-dillard/8922929",
 		"content": "If you can’t see the forest for the trees, then look at the trees; when you’ve looked at enough trees, you’ve seen a forest, you’ve got it.",
@@ -1063,6 +1070,13 @@
 		"content": "why are u so woried? ur a egg!",
 		"source": "everyone’s a aliebn when ur a aliebn too",
 		"uid": "UR_A_EGG"
+	},
+	{
+		"author": "Airing",
+		"cite": "https://ursb.me/en/posts/after-ai-takes-everything/",
+		"content": "When production is infinitely fast, the verification standard becomes the only compressible variable in the system, and every incentive in sight pushes you to compress it",
+		"source": "After AI Takes Everything",
+		"uid": "VERIFICATION_STANDARD"
 	},
 	{
 		"author": "Voltaire",
