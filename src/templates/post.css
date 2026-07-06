@@ -36,11 +36,6 @@
 .blog-post-content .blog-figure .gatsby-resp-image-wrapper {
 	margin-bottom: 0;
 }
-/* TODO: Why are pres double-wrapped? */
-.blog-post-content pre > pre {
-	margin: 0;
-}
-
 @media only screen and (width < 1000px) {
 	.blog-post-page .blog-post-content {
 		grid-column: left-column / span 3;

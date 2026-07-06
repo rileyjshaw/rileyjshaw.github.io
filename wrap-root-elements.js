@@ -19,6 +19,16 @@ pythonLang(Prism);
 const mdxComponents = {
 	a: AutoLink,
 	code: CodeBlock,
+	// MDX wraps fenced code blocks in <pre><code>. For language-tagged blocks,
+	// CodeBlock renders its own <pre> via prism-react-renderer, so drop the
+	// redundant outer <pre>. Language-less blocks render as inline <code> and
+	// still need the wrapper to display as a block.
+	pre: ({children, ...props}) =>
+		children?.props?.className?.includes('language-') ? (
+			children
+		) : (
+			<pre {...props}>{children}</pre>
+		),
 };
 
 export const wrapRootElement = ({element}) => (
