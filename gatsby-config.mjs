@@ -7,18 +7,10 @@ import {ABSTRACT_COLORS} from './src/util/constants.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const rssify = query => {
+const rssify = (query, filter = () => true) => {
 	const {siteUrl} = query.site.siteMetadata;
-	// HACK(riley): Support for OR is limited, and this was quicker.
-	if (query.b) {
-		query.allCombinedProjectsJson.nodes.push(...query.b.nodes);
-		delete query.b;
-	}
-	if (query.c) {
-		query.allCombinedProjectsJson.nodes.push(...query.c.nodes);
-		delete query.c;
-	}
 	return format(query)
+		.filter(filter)
 		.map(node => ({
 			title: node.title,
 			description: node.descriptionList
@@ -28,12 +20,56 @@ const rssify = query => {
 			date: node.date,
 			guid: node.uid,
 		}))
-		.sort(
-			(a, b) =>
-				new Date(b.date || b.fields.date) -
-				new Date(a.date || a.fields.date),
-		);
+		.sort((a, b) => new Date(b.date) - new Date(a.date));
 };
+
+// Gatsby's GraphQL filters can't express OR across different fields, so every
+// feed shares this query and does its own filtering in JS via rssify's
+// `filter` argument.
+const FEED_QUERY = `
+	{
+		posts: allMdx(
+			filter: {internal: {contentFilePath: {regex: "//data/markdown/posts/published/.*\.mdx?$/"}}}
+			sort: {fields: {date: DESC}}
+		) {
+			nodes {
+				description
+				frontmatter {
+					tags
+				}
+				fields {
+					uid
+					slug
+					title
+					date(formatString: "YYYY-MM-DD")
+				}
+			}
+		}
+		combinedProjects: allCombinedProjectsJson(sort: {date: DESC}) {
+			nodes {
+				uid
+				type
+				title
+				date
+				link
+				description
+				updatedAt
+				length
+				contentType
+				body
+				image {
+					height
+					width
+					url
+				}
+				extraData
+				tags
+				repo
+				timestamp
+			}
+		}
+	}
+`;
 
 export default {
 	siteMetadata: {
@@ -199,233 +235,54 @@ export default {
 				`,
 				feeds: [
 					{
-						serialize: ({query}) => rssify(query),
-						query: `
-							{
-								allCombinedProjectsJson(filter: {tags: {in: ["starred"]}}, sort: {date: DESC}) {
-									nodes {
-									uid
-									type
-									title
-									date
-									link
-									description
-									updatedAt
-									length
-									contentType
-									body
-									image {
-										height
-										width
-										url
-									}
-									extraData
-									}
-								}
-								b: allCombinedProjectsJson(
-									filter: {tags: {nin: ["starred"]}, repo: {eq: "rileyjshaw/rileyjshaw-new"}}
-									sort: {date: DESC}
-								) {
-									nodes {
-									uid
-									type
-									title
-									date
-									link
-									description
-									updatedAt
-									length
-									contentType
-									body
-									image {
-										height
-										width
-										url
-									}
-									extraData
-									}
-								}
-								c: allCombinedProjectsJson(
-									filter: {tags: {nin: ["starred"]}, repo: {eq: "rileyjshaw/rileyjshaw.github.io"}, timestamp: {gt: 1577833572562}}
-									sort: {date: DESC}
-								) {
-									nodes {
-									uid
-									type
-									title
-									date
-									link
-									description
-									updatedAt
-									length
-									contentType
-									body
-									image {
-										height
-										width
-										url
-									}
-									extraData
-									}
-								}
-							}`,
+						serialize: ({query}) =>
+							rssify(
+								query,
+								node =>
+									node.type !== 'post' &&
+									(node.tags?.includes('starred') ||
+										node.repo ===
+											'rileyjshaw/rileyjshaw-new' ||
+										(node.repo ===
+											'rileyjshaw/rileyjshaw.github.io' &&
+											node.timestamp > 1577833572562)),
+							),
+						query: FEED_QUERY,
 						output: '/highlights.xml',
 						title: 'Highlights feed',
 					},
 					{
-						serialize: ({query}) => rssify(query),
-						query: `
-							{
-								posts: allMdx(
-									filter: {internal: {contentFilePath: {regex: "//data/markdown/posts/published/.*\.mdx?$/"}}}
-									sort: {fields: {date: DESC}}
-								) {
-									nodes {
-										description
-										frontmatter {
-											tags
-										}
-										fields {
-											uid
-											slug
-											title
-											date(formatString: "YYYY-MM-DD")
-										}
-									}
-								}
-
-								allCombinedProjectsJson(
-									filter: {type: {in: ["tumblr"]}}
-									sort: {date: DESC}
-								) {
-									nodes {
-										uid
-										type
-										title
-										date
-										link
-										description
-										updatedAt
-										length
-										contentType
-										body
-										image {
-											height
-											width
-											url
-										}
-										extraData
-									}
-								}
-							}
-						`,
+						serialize: ({query}) =>
+							rssify(query, node =>
+								['post', 'tumblr'].includes(node.type),
+							),
+						query: FEED_QUERY,
 						output: '/blog.xml',
 						title: 'Blog feed',
 					},
 					{
-						serialize: ({query}) => rssify(query),
-						query: `
-							{
-								posts: allMdx(
-									filter: {internal: {contentFilePath: {regex: "//data/markdown/posts/published/.*\.mdx?$/"}}}
-									sort: {fields: {date: DESC}}
-								) {
-									nodes {
-										description
-										frontmatter {
-											tags
-										}
-										fields {
-											uid
-											slug
-											title
-											date(formatString: "YYYY-MM-DD")
-										}
-									}
-								}
-							}
-						`,
+						serialize: ({query}) =>
+							rssify(query, node => node.type === 'post'),
+						query: FEED_QUERY,
 						output: '/blog-internal.xml',
 						title: 'Blog feed: internal posts only',
 					},
 					{
-						serialize: ({query}) => rssify(query),
-						query: `
-							{
-								allCombinedProjectsJson(
-									filter: {type: {nin: ["tumblr", "commit"]}}
-									sort: {date: DESC}
-								) {
-									nodes {
-									uid
-									type
-									title
-									date
-									link
-									description
-									updatedAt
-									length
-									contentType
-									body
-									image {
-										height
-										width
-										url
-									}
-									extraData
-									}
-								}
-							}
-						`,
+						serialize: ({query}) =>
+							rssify(
+								query,
+								node =>
+									!['post', 'tumblr', 'commit'].includes(
+										node.type,
+									),
+							),
+						query: FEED_QUERY,
 						output: '/lab.xml',
 						title: 'Lab projects feed',
 					},
 					{
 						serialize: ({query}) => rssify(query),
-						query: `
-							{
-								posts: allMdx(
-									filter: {internal: {contentFilePath: {regex: "//data/markdown/posts/published/.*\.mdx?$/"}}}
-									sort: {fields: {date: DESC}}
-								) {
-									nodes {
-										description
-										frontmatter {
-											tags
-										}
-										fields {
-											uid
-											slug
-											title
-											date(formatString: "YYYY-MM-DD")
-										}
-									}
-								}
-
-								allCombinedProjectsJson(
-									sort: {date: DESC}
-								) {
-									nodes {
-										uid
-										type
-										title
-										date
-										link
-										description
-										updatedAt
-										length
-										contentType
-										body
-										image {
-											height
-											width
-											url
-										}
-										extraData
-									}
-								}
-							}
-						`,
+						query: FEED_QUERY,
 						output: '/index.xml',
 						title: 'Firehose feed',
 					},
