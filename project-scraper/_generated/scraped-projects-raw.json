@@ -2702,6 +2702,90 @@
 	"screenshotsTumblr": [
 		{
 			"blog_name": "screeenshots",
+			"body": "<div class=\"npf_row\"><figure class=\"tmblr-full\" data-orig-height=\"540\" data-orig-width=\"720\"><img src=\"https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s640x960/f18b7984727b3043a382385428484f490d7795ed.png\" data-orig-height=\"540\" data-orig-width=\"720\" srcset=\"https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s75x75_c1/c4a18ece1cf2c1f139b8243426a9f73609610ea7.png 75w, https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s100x200/cf6ca0be8d04a8e17ec069f056adfefbee7839ca.png 100w, https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s250x400/cfbd6f55cb704050951f6f36c28a129ecc191999.png 250w, https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s400x600/5ce77c7ac80c5cfab17921031c07f9f5a35ca874.png 400w, https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s500x750/74a3cf17e7e4c2acae12c1e792314b77e92dffc3.png 500w, https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s540x810/50fd02af9abaffd49032d532b4a86ca5d69d6428.png 540w, https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s640x960/f18b7984727b3043a382385428484f490d7795ed.png 640w, https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s1280x1920/7ad8c92e4170c3686b8dd428fbe5cdef8a611394.png 720w\" sizes=\"(max-width: 720px) 100vw, 720px\"/></figure></div>",
+			"can_blaze": false,
+			"can_ignite": false,
+			"can_like": true,
+			"can_mute": true,
+			"can_reblog": true,
+			"can_reply": true,
+			"can_send_in_message": true,
+			"date": "2026-07-06 19:00:22 GMT",
+			"display_avatar": true,
+			"followed": true,
+			"format": "html",
+			"id": "821417132334186496",
+			"id_string": "821417132334186496",
+			"interactability_blaze": "everyone",
+			"interactability_reblog": "everyone",
+			"is_blaze_pending": false,
+			"is_blazed": false,
+			"is_blocks_post_format": true,
+			"liked": false,
+			"mute_end_timestamp": 0,
+			"muted": false,
+			"post_url": "https://screenshots.rileyjshaw.com/post/821417132334186496",
+			"reblog": {
+				"comment": "<p><div class=\"npf_row\"><figure class=\"tmblr-full\" data-orig-height=\"540\" data-orig-width=\"720\"><img src=\"https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s640x960/f18b7984727b3043a382385428484f490d7795ed.png\" data-orig-height=\"540\" data-orig-width=\"720\" srcset=\"https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s75x75_c1/c4a18ece1cf2c1f139b8243426a9f73609610ea7.png 75w, https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s100x200/cf6ca0be8d04a8e17ec069f056adfefbee7839ca.png 100w, https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s250x400/cfbd6f55cb704050951f6f36c28a129ecc191999.png 250w, https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s400x600/5ce77c7ac80c5cfab17921031c07f9f5a35ca874.png 400w, https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s500x750/74a3cf17e7e4c2acae12c1e792314b77e92dffc3.png 500w, https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s540x810/50fd02af9abaffd49032d532b4a86ca5d69d6428.png 540w, https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s640x960/f18b7984727b3043a382385428484f490d7795ed.png 640w, https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s1280x1920/7ad8c92e4170c3686b8dd428fbe5cdef8a611394.png 720w\" sizes=\"(max-width: 720px) 100vw, 720px\"></figure></div></p>",
+				"tree_html": ""
+			},
+			"reblog_key": "C9l6MUOr",
+			"recommended_color": null,
+			"recommended_source": null,
+			"short_url": "https://tmblr.co/ZZz9eVjcGeUXCm00",
+			"should_open_in_legacy": false,
+			"slug": "",
+			"state": "published",
+			"summary": "",
+			"tags": [
+				"digital8",
+				"s-video"
+			],
+			"timestamp": 1783364422,
+			"title": "",
+			"trail": [
+				{
+					"blog": {
+						"active": true,
+						"can_be_followed": true,
+						"name": "screeenshots",
+						"share_following": false,
+						"share_likes": false,
+						"theme": {
+							"avatar_shape": "square",
+							"background_color": "#FAFAFA",
+							"body_font": "Helvetica Neue",
+							"header_bounds": "",
+							"header_full_height": 1055,
+							"header_full_width": 3000,
+							"header_image": "https://64.media.tumblr.com/11e252ac48a565f7f747f091cb11de09/c363cb07991c3337-bb/s3000x1055/9c3b6198cfba84ddf4933cde599cf95f590df615.png",
+							"header_image_focused": "https://64.media.tumblr.com/11e252ac48a565f7f747f091cb11de09/c363cb07991c3337-bb/s2048x3072/355821cf548091a8ede852c640fb10815fbe9216.png",
+							"header_image_poster": "",
+							"header_image_scaled": "https://64.media.tumblr.com/11e252ac48a565f7f747f091cb11de09/c363cb07991c3337-bb/s2048x3072/355821cf548091a8ede852c640fb10815fbe9216.png",
+							"header_stretch": true,
+							"link_color": "#529ECC",
+							"show_avatar": true,
+							"show_description": true,
+							"show_header_image": true,
+							"show_title": true,
+							"title_color": "#444444",
+							"title_font": "Gibson",
+							"title_font_weight": "bold"
+						}
+					},
+					"content": "<p><figure class=\"tmblr-full\"><img src=\"https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s640x960/f18b7984727b3043a382385428484f490d7795ed.png\" alt=\"image\" class=\"\"/></figure></p>",
+					"content_raw": "<p><div class=\"npf_row\"><figure class=\"tmblr-full\" data-orig-height=\"540\" data-orig-width=\"720\"><img src=\"https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s640x960/f18b7984727b3043a382385428484f490d7795ed.png\" data-orig-height=\"540\" data-orig-width=\"720\" srcset=\"https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s75x75_c1/c4a18ece1cf2c1f139b8243426a9f73609610ea7.png 75w, https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s100x200/cf6ca0be8d04a8e17ec069f056adfefbee7839ca.png 100w, https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s250x400/cfbd6f55cb704050951f6f36c28a129ecc191999.png 250w, https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s400x600/5ce77c7ac80c5cfab17921031c07f9f5a35ca874.png 400w, https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s500x750/74a3cf17e7e4c2acae12c1e792314b77e92dffc3.png 500w, https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s540x810/50fd02af9abaffd49032d532b4a86ca5d69d6428.png 540w, https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s640x960/f18b7984727b3043a382385428484f490d7795ed.png 640w, https://64.media.tumblr.com/81b6c532e0781b0791a07a52cbe34d6b/a247e1ab5a091863-57/s1280x1920/7ad8c92e4170c3686b8dd428fbe5cdef8a611394.png 720w\" sizes=\"(max-width: 720px) 100vw, 720px\"></figure></div></p>",
+					"is_current_item": true,
+					"is_root_item": true,
+					"post": {
+						"id": "821417132334186496"
+					}
+				}
+			],
+			"type": "text"
+		},
+		{
+			"blog_name": "screeenshots",
 			"body": "<div class=\"npf_row\"><figure class=\"tmblr-full\" data-orig-height=\"3024\" data-orig-width=\"4032\"><img src=\"https://64.media.tumblr.com/24969b09e1c9861d0fdfb809ca0c4847/2d8df58dd726566a-a2/s640x960/964fcac1c779ae108fdbc3863737e1c2d7dada37.jpg\" data-orig-height=\"3024\" data-orig-width=\"4032\" srcset=\"https://64.media.tumblr.com/24969b09e1c9861d0fdfb809ca0c4847/2d8df58dd726566a-a2/s75x75_c1/d835e59357cf9171f94200398ecd0f6076dd7f69.jpg 75w, https://64.media.tumblr.com/24969b09e1c9861d0fdfb809ca0c4847/2d8df58dd726566a-a2/s100x200/c43daef5a21bd715c92b3a395e48af0e385feb1e.jpg 100w, https://64.media.tumblr.com/24969b09e1c9861d0fdfb809ca0c4847/2d8df58dd726566a-a2/s250x400/627274a2f1dd6e516d24ef117db66a4f63e217dc.jpg 250w, https://64.media.tumblr.com/24969b09e1c9861d0fdfb809ca0c4847/2d8df58dd726566a-a2/s400x600/1c8a84836a219ea208a2e117b9737ba6ee54d6b6.jpg 400w, https://64.media.tumblr.com/24969b09e1c9861d0fdfb809ca0c4847/2d8df58dd726566a-a2/s500x750/950e8a0d27f35f5db61e5f200c54ff35652f7530.jpg 500w, https://64.media.tumblr.com/24969b09e1c9861d0fdfb809ca0c4847/2d8df58dd726566a-a2/s540x810/e47513b0d41059aa8eab1c83ffce6052afb1d6f9.jpg 540w, https://64.media.tumblr.com/24969b09e1c9861d0fdfb809ca0c4847/2d8df58dd726566a-a2/s640x960/964fcac1c779ae108fdbc3863737e1c2d7dada37.jpg 640w, https://64.media.tumblr.com/24969b09e1c9861d0fdfb809ca0c4847/2d8df58dd726566a-a2/s1280x1920/2c0edd6ecbd82aac5eb7004cd43f0c68e7f705b2.jpg 1280w, https://64.media.tumblr.com/24969b09e1c9861d0fdfb809ca0c4847/2d8df58dd726566a-a2/s2048x3072/1de0140f16ecf691146d0e0cd65668d34cb6063e.jpg 2048w\" sizes=\"(max-width: 1280px) 100vw, 1280px\"/></figure></div>",
 			"can_blaze": false,
 			"can_ignite": false,
@@ -23534,6 +23618,124 @@
 			}
 		],
 		"youtube": [
+			{
+				"channelId": "UCV09P32tImJ8etTRcRNUKNw",
+				"channelTitle": "Riley Shaw",
+				"description": "waves will wash it away\n\n---\n\nDCR-TRV350 ⟿ janky s-video cable, no post-processing",
+				"playlistId": "UUV09P32tImJ8etTRcRNUKNw",
+				"publishedAt": "2026-07-06T19:20:05Z",
+				"resourceId": {
+					"kind": "youtube#video",
+					"videoId": "rGSegvitixI"
+				},
+				"thumbnails": {
+					"default": {
+						"height": 90,
+						"url": "https://i.ytimg.com/vi/rGSegvitixI/default.jpg",
+						"width": 120
+					},
+					"high": {
+						"height": 360,
+						"url": "https://i.ytimg.com/vi/rGSegvitixI/hqdefault.jpg",
+						"width": 480
+					},
+					"medium": {
+						"height": 180,
+						"url": "https://i.ytimg.com/vi/rGSegvitixI/mqdefault.jpg",
+						"width": 320
+					},
+					"standard": {
+						"height": 480,
+						"url": "https://i.ytimg.com/vi/rGSegvitixI/sddefault.jpg",
+						"width": 640
+					}
+				},
+				"title": "bowen.mov",
+				"videoOwnerChannelId": "UCV09P32tImJ8etTRcRNUKNw",
+				"videoOwnerChannelTitle": "Riley Shaw"
+			},
+			{
+				"channelId": "UCV09P32tImJ8etTRcRNUKNw",
+				"channelTitle": "Riley Shaw",
+				"description": "A quick walkthrough of my Gridstrument config for the Intech Grid BU16 and VSN1 modules.\n\nBU16: grid-editor://?config-link=R8adbrWIyNGzXtcQM8s4\nVSN1: grid-editor://?config-link=PppZ21KxBROKk4It37TS",
+				"playlistId": "UUV09P32tImJ8etTRcRNUKNw",
+				"publishedAt": "2026-06-08T03:06:11Z",
+				"resourceId": {
+					"kind": "youtube#video",
+					"videoId": "KWv29smnyLQ"
+				},
+				"thumbnails": {
+					"default": {
+						"height": 90,
+						"url": "https://i.ytimg.com/vi/KWv29smnyLQ/default.jpg",
+						"width": 120
+					},
+					"high": {
+						"height": 360,
+						"url": "https://i.ytimg.com/vi/KWv29smnyLQ/hqdefault.jpg",
+						"width": 480
+					},
+					"maxres": {
+						"height": 720,
+						"url": "https://i.ytimg.com/vi/KWv29smnyLQ/maxresdefault.jpg",
+						"width": 1280
+					},
+					"medium": {
+						"height": 180,
+						"url": "https://i.ytimg.com/vi/KWv29smnyLQ/mqdefault.jpg",
+						"width": 320
+					},
+					"standard": {
+						"height": 480,
+						"url": "https://i.ytimg.com/vi/KWv29smnyLQ/sddefault.jpg",
+						"width": 640
+					}
+				},
+				"title": "Gridstrument tutorial",
+				"videoOwnerChannelId": "UCV09P32tImJ8etTRcRNUKNw",
+				"videoOwnerChannelTitle": "Riley Shaw"
+			},
+			{
+				"channelId": "UCV09P32tImJ8etTRcRNUKNw",
+				"channelTitle": "Riley Shaw",
+				"description": "I wrote some firmware for the Intech BU16. You can find it under the public \"Gridstrument\" folder, or by using this link: grid-editor://?config-link=R8adbrWIyNGzXtcQM8s4",
+				"playlistId": "UUV09P32tImJ8etTRcRNUKNw",
+				"publishedAt": "2026-06-07T22:03:13Z",
+				"resourceId": {
+					"kind": "youtube#video",
+					"videoId": "DKjYyKGubu8"
+				},
+				"thumbnails": {
+					"default": {
+						"height": 90,
+						"url": "https://i.ytimg.com/vi/DKjYyKGubu8/default.jpg",
+						"width": 120
+					},
+					"high": {
+						"height": 360,
+						"url": "https://i.ytimg.com/vi/DKjYyKGubu8/hqdefault.jpg",
+						"width": 480
+					},
+					"maxres": {
+						"height": 720,
+						"url": "https://i.ytimg.com/vi/DKjYyKGubu8/maxresdefault.jpg",
+						"width": 1280
+					},
+					"medium": {
+						"height": 180,
+						"url": "https://i.ytimg.com/vi/DKjYyKGubu8/mqdefault.jpg",
+						"width": 320
+					},
+					"standard": {
+						"height": 480,
+						"url": "https://i.ytimg.com/vi/DKjYyKGubu8/sddefault.jpg",
+						"width": 640
+					}
+				},
+				"title": "Gridstrument preview",
+				"videoOwnerChannelId": "UCV09P32tImJ8etTRcRNUKNw",
+				"videoOwnerChannelTitle": "Riley Shaw"
+			},
 			{
 				"channelId": "UCV09P32tImJ8etTRcRNUKNw",
 				"channelTitle": "Riley Shaw",
