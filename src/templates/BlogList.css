@@ -26,6 +26,13 @@
 		margin-top: 0;
 	}
 }
+.blog-page .site-wrapper {
+	grid-template-rows: auto 1fr;
+	min-height: 100dvh;
+}
+.blog-page .page-content {
+	grid-template-rows: 1fr auto;
+}
 .blog-page .page-navigation {
 	align-items: center;
 	display: flex;
