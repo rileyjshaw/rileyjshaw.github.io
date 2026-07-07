@@ -1,8 +1,7 @@
-.cache
+.*/
 package.json
 package-lock.json
 public
-.vscode
 project-scraper/_generated/*.json
 font-preload-cache.json
 src/data/markdown/posts/published/2014-12-04-graphing-depth.mdx
