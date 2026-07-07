@@ -32,6 +32,7 @@
 .guide-page .answer a:hover::after {
 	background-color: var(--color-p1);
 }
+
 @keyframes underline {
 	from {
 		transform: scale(0, 1);

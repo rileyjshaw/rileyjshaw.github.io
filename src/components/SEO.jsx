@@ -7,7 +7,15 @@
 import {useStaticQuery, graphql} from 'gatsby';
 import React from 'react';
 
-function SEO({description = '', title: pageTitle, children}) {
+function SEO({
+	description = '',
+	image,
+	imageAlt,
+	location,
+	title: pageTitle,
+	type = 'website',
+	children,
+}) {
 	const {site} = useStaticQuery(graphql`
 		query {
 			site {
@@ -15,34 +23,45 @@ function SEO({description = '', title: pageTitle, children}) {
 					title
 					description
 					author
+					siteUrl
 				}
 			}
 		}
 	`);
 
-	const title = `${pageTitle ? `${pageTitle} · ` : ''}${
-		site.siteMetadata.title
-	}`;
-	const metaDescription = description || site.siteMetadata.description;
+	const {siteMetadata} = site;
+	const title = `${pageTitle ? `${pageTitle} · ` : ''}${siteMetadata.title}`;
+	const metaDescription = description || siteMetadata.description;
+	const url = new URL(
+		location?.pathname || '/',
+		siteMetadata.siteUrl,
+	).toString();
+	const metaImage = image && new URL(image, siteMetadata.siteUrl).toString();
 
 	return (
 		<>
 			<title>{title}</title>
 			<meta name="description" content={metaDescription} />
-			<meta name="og:title" content={title} />
-			<meta name="og:description" content={metaDescription} />
-			<meta name="og:type" content="website" />
+			<meta property="og:title" content={title} />
+			<meta property="og:description" content={metaDescription} />
+			<meta property="og:type" content={type} />
+			<meta property="og:url" content={url} />
+			{metaImage && <meta property="og:image" content={metaImage} />}
+			{metaImage && imageAlt && (
+				<meta property="og:image:alt" content={imageAlt} />
+			)}
+			<meta name="twitter:url" content={url} />
 			<meta name="twitter:title" content={title} />
 			<meta name="twitter:description" content={metaDescription} />
-			<meta name="twitter:card" content="summary" />
-			<meta name="twitter:creator" content={site.siteMetadata.author} />
-			{/* TODO: Update properties to include:
-
-		<meta name="image" content={seo.image} />
-		<meta name="twitter:url" content={seo.url} />
-		<meta name="twitter:image" content={seo.image} />
-
-		*/}
+			<meta
+				name="twitter:card"
+				content={metaImage ? 'summary_large_image' : 'summary'}
+			/>
+			<meta name="twitter:creator" content={siteMetadata.author} />
+			{metaImage && <meta name="twitter:image" content={metaImage} />}
+			{metaImage && imageAlt && (
+				<meta name="twitter:image:alt" content={imageAlt} />
+			)}
 			{children}
 		</>
 	);

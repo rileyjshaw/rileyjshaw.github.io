@@ -6,7 +6,7 @@ import SEO from '../components/SEO';
 import './Post.css';
 
 export function Head({data, ...props}) {
-	return <SEO {...props} title={data.mdx.fields.title} />;
+	return <SEO {...props} title={data.mdx.fields.title} type="article" />;
 }
 
 export default function Template({data, children}) {

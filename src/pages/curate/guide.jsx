@@ -1,8 +1,10 @@
-import PickOne from '../../components/PickOne';
-import SEO from '../../components/SEO';
-import './guide.css';
 import {Link} from 'gatsby';
 import React, {useMemo, useState} from 'react';
+
+import PickOne from '../../components/PickOne';
+import SEO from '../../components/SEO';
+
+import './guide.css';
 
 const mellowMovies = {
 	question: 'I want to watch something…',
@@ -51,6 +53,10 @@ const root = {
 	branches: [mellowMovies, excitingMovies],
 };
 
+export function Head(props) {
+	return <SEO {...props} title="Guide" />;
+}
+
 const GuidePage = () => {
 	const [step, setStep] = useState(root);
 
@@ -67,7 +73,6 @@ const GuidePage = () => {
 	}, [step]);
 	return (
 		<div className="guide-page">
-			<SEO title="Guide" />
 			<Link className="exit" to="/lab">
 				𝘅
 			</Link>
