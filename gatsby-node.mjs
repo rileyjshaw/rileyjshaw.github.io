@@ -244,14 +244,38 @@ export const onCreateNode = ({node, getNode, actions}) => {
 	}
 };
 
-// TODO(riley): Flesh this out.
+// Nearly every scraped field is optional, so without explicit types the
+// schema would depend on inference from whatever the scraper last emitted:
+// a scrape where no node sets e.g. `repo` or `more` would break every query
+// that mentions the field. Declaring all queried fields keeps them stable.
+// (`timestamp` and `lastTagged` are epoch milliseconds, which overflow Int.)
 export const createSchemaCustomization = ({actions}) => {
 	const {createTypes} = actions;
 	const typeDefs = `
 		type CombinedProjectsJson implements Node {
+			uid: String
+			type: String
 			title: String
+			date: String
+			link: String
 			description: String
+			body: String
+			more: Boolean
+			repo: String
+			tags: [String]
 			coolness: Int
+			length: Int
+			contentType: String
+			updatedAt: String
+			timestamp: Float
+			lastTagged: Float
+			extraData: [Int]
+			image: CombinedProjectsJsonImage
+		}
+		type CombinedProjectsJsonImage {
+			height: Int
+			width: Int
+			url: String
 		}
 	`;
 
