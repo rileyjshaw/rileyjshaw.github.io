@@ -70,8 +70,17 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 		return ordered;
 	}, [ascending, sortIdx, typeStates, props.nodes]);
 
+	const [shuffleId, setShuffleId] = useState(0);
+	// Changing the sort or filters recomputes `nodes`, which clears the
+	// shuffle.
+	useEffect(() => setShuffleId(0), [nodes]);
+	const displayNodes = useMemo(
+		() => (shuffleId && nodes ? shuffle(nodes) : nodes),
+		[nodes, shuffleId],
+	);
+
 	return (
-		nodes && (
+		displayNodes && (
 			<div className="project-explorer">
 				<div className="filters-wrapper">
 					<div className="filters">
@@ -157,22 +166,22 @@ const ProjectExplorer = React.memo(function ProjectExplorer(props) {
 									}
 								/>
 								<label htmlFor="labs-order">Reverse</label>
-								{/* TODO: Add the shuffle button back here!
-
-							<button onClick={this.shuffleDisplayNodes}>
-								Shuffle
-							</button> */}
+								<button
+									onClick={() => setShuffleId(id => id + 1)}
+								>
+									Shuffle
+								</button>
 							</div>
 						</fieldset>
 					</div>
 					<p className="result-details">
-						Found <strong>{nodes.length}</strong> entries from{' '}
-						<strong>{nSources}</strong> source
+						Found <strong>{displayNodes.length}</strong> entries
+						from <strong>{nSources}</strong> source
 						{nSources === 1 ? '' : 's'}:
 					</p>
 				</div>
 				<LazyGrid
-					nodes={nodes}
+					nodes={displayNodes}
 					setIsFullyLoaded={props.setIsFullyLoaded}
 				/>
 			</div>
