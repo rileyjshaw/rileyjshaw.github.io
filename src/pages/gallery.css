@@ -2,7 +2,7 @@
 	font-size: var(--fs--1);
 	font-variant-numeric: tabular-nums;
 	font-weight: 400;
-	letter-spacing: 0.05em;
+	letter-spacing: -0.1em;
 	padding-right: var(--s-0);
 }
 .gallery-list h1 {

@@ -21,7 +21,7 @@
 		border: 1px solid var(--color-fg);
 		font-size: var(--fs--4);
 		font-weight: 700;
-		letter-spacing: 2px;
+		letter-spacing: 1px;
 		padding: 6px 12px;
 		text-align: center;
 		text-transform: uppercase;

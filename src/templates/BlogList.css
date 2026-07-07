@@ -14,11 +14,9 @@
 		text-decoration: underline;
 	}
 }
-/* TODO: Conflicting subheading styles should be cleaned up. */
 .blog-page .blog-post .subheading {
 	font-size: var(--fs--3);
 	font-weight: 700;
-	letter-spacing: 0.05em;
 	margin: 0;
 	padding-top: var(--s--3);
 }

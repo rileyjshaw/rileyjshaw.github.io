@@ -82,7 +82,6 @@
 }
 .content-node .subheading {
 	font-size: var(--fs--3);
-	letter-spacing: 0.05em;
 	padding-bottom: var(--s--2);
 }
 .content-node main {

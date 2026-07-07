@@ -1,4 +1,4 @@
-.blog-post-page .blog-post-content {
+:is(.blog-post-page, .gallery-post-page) .blog-post-content {
 	grid-column: middle-column / span 1;
 	min-width: 0;
 	padding-bottom: var(--s-3);
@@ -6,14 +6,13 @@
 .blog-post-content header {
 	line-height: 1;
 }
-.blog-post-page .blog-post-content h1 {
+:is(.blog-post-page, .gallery-post-page) .blog-post-content h1 {
 	font: 900 var(--fs-6) var(--ff-heading);
 	line-height: 1;
 }
-/* TODO(riley): Duplicate. */
-.blog-post-content header .subheading {
+/* Page-scoped so the blog list's own .subheading style applies there. */
+:is(.blog-post-page, .gallery-post-page) .blog-post-content .subheading {
 	font-size: var(--fs--2);
-	letter-spacing: 0.05em;
 	margin: var(--s--2) 0 var(--s-2);
 }
 .blog-post-content [data-footnote-ref] {
@@ -38,7 +37,7 @@
 }
 
 @media only screen and (width < 1000px) {
-	.blog-post-page .blog-post-content {
+	:is(.blog-post-page, .gallery-post-page) .blog-post-content {
 		grid-column: left-column / span 3;
 		& h1 {
 			font-size: var(--fs-5);

@@ -14,7 +14,6 @@ export function Head(props) {
 	return <SEO {...props} title="All posts" />;
 }
 
-// TODO(riley): Style with same stylesheet as blog posts.
 const BlogList = ({data, pageContext: {currentPage, numPages, pageUids}}) => {
 	// The canonical post order is computed at build time in gatsby-node and
 	// passed in as `pageUids`; the queries below just hydrate those posts.

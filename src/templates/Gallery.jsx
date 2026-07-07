@@ -3,7 +3,7 @@ import React from 'react';
 
 import SEO from '../components/SEO';
 
-import './Gallery.css';
+import './Post.css';
 
 export function Head({data, ...props}) {
 	return <SEO {...props} title={data.mdx.fields.title} />;
@@ -16,7 +16,7 @@ export default function Template({data, children}) {
 		<main>
 			<div className="page-content">
 				<article
-					className="gallery-content prose prose-lg"
+					className="blog-post-content prose prose-lg"
 					role="article"
 				>
 					<header>
@@ -25,7 +25,7 @@ export default function Template({data, children}) {
 							<time>Posted {fields.date}</time>
 						</div>
 					</header>
-					<div className="gallery-markdown">{children}</div>
+					<div className="blog-post-markdown">{children}</div>
 				</article>
 			</div>
 		</main>
