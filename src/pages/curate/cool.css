@@ -1,0 +1,53 @@
+.curate-cool-page {
+	height: 100vh;
+	overflow: hidden;
+	width: 100vw;
+}
+.curate-cool-page .progress {
+	font-weight: 700;
+	left: 12px;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+}
+.curate-cool-page .progress strong {
+	font-size: 36px;
+	margin-right: 0.2em;
+	text-decoration: underline;
+}
+.curate-cool-page .progress .comparisons {
+	font-weight: 400;
+}
+/* The cards are content, not giant choice labels. */
+.curate-cool-page .choices-container {
+	font: inherit;
+	gap: 2vw;
+}
+.curate-cool-page .project-card {
+	max-height: 65vh;
+	max-width: 44vw;
+	overflow: auto;
+}
+.curate-cool-page .missing-project {
+	border: 1px dashed var(--color-fg);
+	padding: 2em;
+	text-align: center;
+}
+.curate-cool-page .buttons {
+	bottom: 12px;
+	display: flex;
+	gap: 2em;
+	justify-content: center;
+	left: 0;
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+.curate-cool-page .all-done {
+	align-items: center;
+	display: flex;
+	font: 900 5vh var(--ff-heading);
+	height: 100%;
+	justify-content: center;
+	margin: 0;
+}

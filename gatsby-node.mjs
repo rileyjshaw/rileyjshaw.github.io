@@ -197,6 +197,18 @@ export const createPages = async ({actions, graphql, reporter}) => {
 	});
 };
 
+// The pages under /curate are local-only curation tools (they depend on the
+// curation server started by `npm run curate`, and write to the repo). Keep
+// them out of production builds so they never ship with the live site.
+export const onCreatePage = ({page, actions}) => {
+	if (
+		process.env.NODE_ENV !== 'development' &&
+		/^\/curate([/?#]|$)/.test(page.path)
+	) {
+		actions.deletePage(page);
+	}
+};
+
 export const onCreateNode = ({node, getNode, actions}) => {
 	const {createNodeField} = actions;
 

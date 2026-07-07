@@ -1,0 +1,42 @@
+.guide-page .exit {
+	color: var(--color-fg);
+	font-size: var(--font-scale-4);
+	font-weight: bold;
+	position: fixed;
+	right: 12px;
+	text-decoration: none;
+	top: -12px;
+}
+.guide-page .answer a {
+	color: var(--color-fg);
+	position: relative;
+	text-decoration: none;
+	transition: color 0.8s;
+}
+.guide-page .answer a::after {
+	animation: 0.4s ease-in-out 0.8s forwards underline;
+	background-color: var(--color-fg);
+	bottom: 0.5vw;
+	content: '';
+	display: block;
+	height: 0.5vw;
+	left: 0;
+	position: absolute;
+	right: 0;
+	transform: scale(0, 1);
+	transition: background-color 0.8s;
+}
+.guide-page .answer a:hover {
+	color: var(--color-p1);
+}
+.guide-page .answer a:hover::after {
+	background-color: var(--color-p1);
+}
+@keyframes underline {
+	from {
+		transform: scale(0, 1);
+	}
+	to {
+		transform: scale(0.98, 1);
+	}
+}

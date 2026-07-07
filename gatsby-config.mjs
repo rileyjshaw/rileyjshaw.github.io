@@ -252,7 +252,7 @@ export default {
 	proxy: [
 		{
 			prefix: '/_curate',
-			url: 'http://localhost:5000',
+			url: 'http://localhost:5050',
 		},
 	],
 	trailingSlash: 'never',
