@@ -347,9 +347,8 @@ export function StepUp() {
 				students from underserved communities.
 			</p>
 			<p>
-				I work directly alongside the CTO to scale the platform to
-				support the organization’s growing number of tutors and
-				students.
+				I’m the lead Engineer, scaling the platform to support the
+				organization’s growing number of tutors and students.
 			</p>
 		</Job>
 	);
