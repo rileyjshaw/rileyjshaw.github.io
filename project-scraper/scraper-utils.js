@@ -32,6 +32,7 @@ const scrapedQuotes = JSON.parse(
 // Special characters can be combined. For instance: 'posts[author.id'.
 const deleteKeys = keys => initialObject => {
 	function processKey(key, obj) {
+		if (!obj) return;
 		const nextSpecialCharacter = key.match(/[.[]/);
 		if (!nextSpecialCharacter) {
 			delete obj[key];
@@ -53,8 +54,17 @@ const deleteKeys = keys => initialObject => {
 };
 
 const processArena = deleteKeys(['contents', 'added_to_at', 'user']);
-const processIcon = deleteKeys(['icon_url']);
-const processPatch = deleteKeys(['view_count']);
+const processIcon = deleteKeys([
+	'icon_url',
+	'last_purchased_at',
+	'tags',
+	'uploader',
+]);
+const processPatch = deleteKeys([
+	'view_count',
+	'download_count',
+	'like_count',
+]);
 const processSong = deleteKeys([
 	'monetization_model',
 	'policy',
@@ -62,11 +72,18 @@ const processSong = deleteKeys([
 	'user',
 	'track_authorization',
 ]);
+const processVimeoVideo = deleteKeys([
+	'pictures.data[sizes[link_with_play_button',
+]);
+const processYoutubeVideo = deleteKeys(['position']);
+// Tumblr video players regenerate a random embed ID on every request, so we
+// drop them from the raw data once formatting has pulled out what it needs.
+const processTumblrPostForStorage = deleteKeys(['player']);
 
 function processTumblrPosts(posts) {
 	return posts
 		.filter(post => post.state !== 'private')
-		.map(post => deleteKeys(['blog'])(post));
+		.map(post => deleteKeys(['blog', 'header_cta', 'note_count'])(post));
 }
 
 export const idify = uid =>
@@ -358,6 +375,7 @@ function getSFPCTumblr() {
 								else formatted.push(textResult);
 						}
 					});
+					allPosts.forEach(processTumblrPostForStorage);
 				}
 			})
 			.catch(err => {
@@ -482,6 +500,7 @@ function getScreenshotsTumblr() {
 						if (textIndex !== -1) formatted[textIndex] = result;
 						else formatted.push(result);
 					});
+					allPosts.forEach(processTumblrPostForStorage);
 				}
 			})
 			.catch(err => {
@@ -606,7 +625,9 @@ async function getYoutube() {
 				youtube.playlistItems.list.bind(youtube),
 			)(requestConfig);
 			console.log(`Got ${data.items.length} YouTube videos.`);
-			videos = videos.concat(data.items.map(v => v.snippet));
+			videos = videos.concat(
+				data.items.map(v => processYoutubeVideo(v.snippet)),
+			);
 			requestConfig.pageToken = data.nextPageToken;
 		} while (requestConfig.pageToken);
 		return videos;
@@ -643,10 +664,10 @@ async function getVimeo() {
 									method: 'GET',
 									path: metadata.connections.pictures.uri,
 								});
-								return {
+								return processVimeoVideo({
 									...video,
 									pictures,
-								};
+								});
 							}),
 					);
 					console.log(`Got ${newVideos.length} Vimeo videos.`);
