@@ -3,6 +3,10 @@ import path, {dirname} from 'path';
 import {fileURLToPath} from 'url';
 
 import {idify} from './project-scraper/scraper-utils.js';
+import {
+	GALLERIES_PATH_REGEX,
+	POSTS_PATH_REGEX,
+} from './src/util/all-projects-query.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -48,15 +52,15 @@ export const createPages = async ({actions, graphql, reporter}) => {
 	const blogPostTemplate = path.resolve('./src/templates/Post.jsx');
 	const galleryTemplate = path.resolve('./src/templates/Gallery.jsx');
 
-	// TODO(riley): Import this query from a common place.
+	// Both queries here must stay in sync with the page query in
+	// src/templates/BlogList.jsx (same filters and sorts), since the
+	// pagination below slices into the same lists with skip/limit.
 	const result = await graphql(`
 		{
 			internalPosts: allMdx(
 				filter: {
 					internal: {
-						contentFilePath: {
-							regex: "//data/markdown/posts/.*.mdx?$/"
-						}
+						contentFilePath: {regex: "${POSTS_PATH_REGEX}"}
 					}
 				}
 				sort: {fields: {date: DESC}}
@@ -64,13 +68,9 @@ export const createPages = async ({actions, graphql, reporter}) => {
 			) {
 				nodes {
 					id
-					excerpt
-					frontmatter {
-						tags
-					}
 					fields {
+						uid
 						slug
-						title
 						date(formatString: "YYYY-MM-DD")
 					}
 					internal {
@@ -80,18 +80,18 @@ export const createPages = async ({actions, graphql, reporter}) => {
 			}
 			externalPosts: allCombinedProjectsJson(
 				filter: {type: {in: ["tumblr"]}}
+				sort: [{date: DESC}, {title: ASC}]
 				limit: 1000
 			) {
 				nodes {
+					uid
 					date
 				}
 			}
 			galleries: allMdx(
 				filter: {
 					internal: {
-						contentFilePath: {
-							regex: "//data/markdown/galleries/.*.mdx?$/"
-						}
+						contentFilePath: {regex: "${GALLERIES_PATH_REGEX}"}
 					}
 				}
 				sort: {fields: {date: DESC}}
@@ -99,13 +99,8 @@ export const createPages = async ({actions, graphql, reporter}) => {
 			) {
 				nodes {
 					id
-					frontmatter {
-						tags
-					}
 					fields {
 						slug
-						title
-						date(formatString: "YYYY-MM-DD")
 					}
 					internal {
 						contentFilePath
@@ -124,17 +119,23 @@ export const createPages = async ({actions, graphql, reporter}) => {
 		return;
 	}
 
+	// Merge both post sources into one date-sorted list. This is the
+	// canonical post order: each page's slice of it is passed to the
+	// template as `pageUids`, and the stable sort below preserves each
+	// source's GraphQL order so the skip/limit windows line up with it.
 	const internalPosts = result.data.internalPosts.nodes;
 	const externalPosts = result.data.externalPosts.nodes;
 	const allPosts = internalPosts
 		.map(p => ({
 			type: 'internal',
 			date: p.fields.date,
+			uid: p.fields.uid,
 		}))
 		.concat(
 			externalPosts.map(p => ({
 				type: 'external',
 				date: p.date,
+				uid: p.uid,
 			})),
 		)
 		.sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -145,9 +146,13 @@ export const createPages = async ({actions, graphql, reporter}) => {
 	let internalSkip = 0;
 	let externalSkip = 0;
 	for (let page = 0; page < numPages; ++page) {
-		const internalLimit = allPosts
-			.slice(page * postsPerPage, (page + 1) * postsPerPage)
-			.filter(p => p.type === 'internal').length;
+		const pagePosts = allPosts.slice(
+			page * postsPerPage,
+			(page + 1) * postsPerPage,
+		);
+		const internalLimit = pagePosts.filter(
+			p => p.type === 'internal',
+		).length;
 		const externalLimit = postsPerPage - internalLimit;
 		createPage({
 			path: `/blog${page ? `/${page + 1}` : ''}/`,
@@ -159,6 +164,7 @@ export const createPages = async ({actions, graphql, reporter}) => {
 				externalSkip,
 				numPages,
 				currentPage: page + 1,
+				pageUids: pagePosts.map(p => p.uid),
 			},
 		});
 		internalSkip += internalLimit;
@@ -252,7 +258,33 @@ export const createSchemaCustomization = ({actions}) => {
 	createTypes(typeDefs);
 };
 
-export const createResolvers = ({createResolvers}) =>
+export const createResolvers = ({createResolvers}) => {
+	// `description` and `more` both derive from the same pruned excerpt, so
+	// compute it once per node version and share the promise between them.
+	// Keyed by contentDigest so edits invalidate the cache during develop.
+	const excerptCache = new Map();
+	const getExcerpt = (source, args, context, info) => {
+		const key = source.internal.contentDigest;
+		if (!excerptCache.has(key)) {
+			const resolver = info.schema.getType('Mdx').getFields().excerpt
+				.resolve;
+			excerptCache.set(
+				key,
+				resolver(
+					source,
+					{
+						...args,
+						pruneLength: 700,
+						truncate: false,
+					},
+					context,
+					info,
+				),
+			);
+		}
+		return excerptCache.get(key);
+	};
+
 	createResolvers({
 		// Some scraped projects have no coolness rating. Everything the
 		// scraper doesn’t rank is assumed to be cool, so queries can filter
@@ -263,45 +295,26 @@ export const createResolvers = ({createResolvers}) =>
 				resolve: source => source.coolness ?? 100,
 			},
 		},
-		// HACK(riley): Currently, excerpt is called twice for each node.
 		Mdx: {
 			description: {
 				type: 'String',
-				resolve: async (source, args, context, info) => {
-					const resolver = info.schema.getType('Mdx').getFields()
-						.excerpt.resolve;
-					return await resolver(
-						source,
-						{
-							...args,
-							pruneLength: 700,
-							truncate: false,
-						},
-						context,
-						info,
-					);
-				},
+				resolve: getExcerpt,
 			},
 			more: {
 				type: 'Boolean',
 				resolve: async (source, args, context, info) => {
-					const resolver = info.schema.getType('Mdx').getFields()
-						.excerpt.resolve;
-					const excerpt = await resolver(
+					const excerpt = await getExcerpt(
 						source,
-						{
-							...args,
-							pruneLength: 700,
-							truncate: false,
-						},
+						args,
 						context,
 						info,
 					);
-					return excerpt.charAt(excerpt.length - 1) === '…';
+					return excerpt.endsWith('…');
 				},
 			},
 		},
 	});
+};
 
 // Allows components to be imported from the absolute path "components/etc"
 // instead of the relative "../../components/etc". This is necessary for MDX.

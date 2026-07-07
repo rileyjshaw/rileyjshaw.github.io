@@ -15,17 +15,15 @@ export function Head(props) {
 }
 
 // TODO(riley): Style with same stylesheet as blog posts.
-const BlogList = ({data, pageContext: {currentPage, numPages}}) => {
-	// TODO(riley): Unfortunate that we're re-sorting this client-side instead
-	//              of collecting + sorting it with GraphQL.
-	const posts = [
-		...data.allMdx.nodes,
-		...data.allCombinedProjectsJson.nodes,
-	].sort(
-		(a, b) =>
-			new Date(b.date || b.fields.date) -
-			new Date(a.date || a.fields.date),
+const BlogList = ({data, pageContext: {currentPage, numPages, pageUids}}) => {
+	// The canonical post order is computed at build time in gatsby-node and
+	// passed in as `pageUids`; the queries below just hydrate those posts.
+	const postsByUid = new Map(
+		[...data.allMdx.nodes, ...data.allCombinedProjectsJson.nodes].map(
+			node => [node.uid ?? node.fields?.uid, node],
+		),
 	);
+	const posts = pageUids.map(uid => postsByUid.get(uid)).filter(Boolean);
 
 	const isFirst = currentPage === 1;
 	const isLast = currentPage === numPages;
@@ -128,44 +126,54 @@ const BlogList = ({data, pageContext: {currentPage, numPages}}) => {
 	);
 };
 
-// TODO(riley): Standardize this format.
-export const blogListQuery = graphql`query blogListQuery($internalLimit: Int!, $internalSkip: Int!, $externalLimit: Int!, $externalSkip: Int!) {
-	allMdx(
-		filter: {internal: {contentFilePath: {regex: "//data/markdown/posts/.*\\.mdx?$/"}}}
-		sort: {fields: {date: DESC}}
-		limit: $internalLimit
-		skip: $internalSkip
+// This query must stay in sync with the one in gatsby-node's createPages
+// (same filters and sorts), since the skip/limit windows are computed there.
+// The path regex is inlined because Gatsby extracts page queries statically.
+export const blogListQuery = graphql`
+	query blogListQuery(
+		$internalLimit: Int!
+		$internalSkip: Int!
+		$externalLimit: Int!
+		$externalSkip: Int!
 	) {
-		nodes {
-			description
-			more
-			frontmatter {
-				tags
+		allMdx(
+			filter: {
+				internal: {
+					contentFilePath: {regex: "//data/markdown/posts/.*\\.mdx?$/"}
+				}
 			}
-			fields {
+			sort: {fields: {date: DESC}}
+			limit: $internalLimit
+			skip: $internalSkip
+		) {
+			nodes {
+				description
+				more
+				fields {
+					uid
+					slug
+					title
+					date(formatString: "YYYY-MM-DD")
+				}
+			}
+		}
+		allCombinedProjectsJson(
+			filter: {type: {in: ["tumblr"]}}
+			sort: [{date: DESC}, {title: ASC}]
+			limit: $externalLimit
+			skip: $externalSkip
+		) {
+			nodes {
 				uid
-				slug
 				title
-				date(formatString: "YYYY-MM-DD")
+				date
+				link
+				repo
+				description
+				more
 			}
 		}
 	}
-	allCombinedProjectsJson(
-		filter: {type: {in: ["tumblr"]}}
-		sort: [{date: DESC}, {title: ASC}]
-		limit: $externalLimit
-		skip: $externalSkip
-	) {
-		nodes {
-			uid
-			title
-			date
-			link
-			repo
-			description
-			more
-		}
-	}
-}`;
+`;
 
 export default BlogList;

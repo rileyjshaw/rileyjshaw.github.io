@@ -2,7 +2,7 @@ import {dirname} from 'path';
 import remarkGfm from 'remark-gfm';
 import {fileURLToPath} from 'url';
 
-import {format} from './src/util/all-projects-query.mjs';
+import {ALL_PROJECTS_QUERY, format} from './src/util/all-projects-query.mjs';
 import {ABSTRACT_COLORS} from './src/util/constants.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -20,54 +20,6 @@ const rssify = (query, filter = () => true) => {
 		}))
 		.sort((a, b) => new Date(b.date) - new Date(a.date));
 };
-
-// Gatsby's GraphQL filters can't express OR across different fields, so every
-// feed shares this query and does its own filtering in JS via rssify's
-// `filter` argument.
-const FEED_QUERY = `
-	{
-		posts: allMdx(
-			filter: {internal: {contentFilePath: {regex: "//data/markdown/posts/published/.*\.mdx?$/"}}}
-			sort: {fields: {date: DESC}}
-		) {
-			nodes {
-				description
-				frontmatter {
-					tags
-				}
-				fields {
-					uid
-					slug
-					title
-					date(formatString: "YYYY-MM-DD")
-				}
-			}
-		}
-		combinedProjects: allCombinedProjectsJson(sort: {date: DESC}) {
-			nodes {
-				uid
-				type
-				title
-				date
-				link
-				description
-				updatedAt
-				length
-				contentType
-				body
-				image {
-					height
-					width
-					url
-				}
-				extraData
-				tags
-				repo
-				timestamp
-			}
-		}
-	}
-`;
 
 export default {
 	siteMetadata: {
@@ -214,8 +166,6 @@ export default {
 				},
 			},
 		},
-		// TODO(riley): So much redundancy between here, gatsby-node, and
-		//              all-projects-query. Do better!
 		{
 			resolve: 'gatsby-plugin-feed',
 			options: {
@@ -245,7 +195,7 @@ export default {
 											'rileyjshaw/rileyjshaw.github.io' &&
 											node.timestamp > 1577833572562)),
 							),
-						query: FEED_QUERY,
+						query: ALL_PROJECTS_QUERY,
 						output: '/highlights.xml',
 						title: 'Highlights feed',
 					},
@@ -254,14 +204,14 @@ export default {
 							rssify(query, node =>
 								['post', 'tumblr'].includes(node.type),
 							),
-						query: FEED_QUERY,
+						query: ALL_PROJECTS_QUERY,
 						output: '/blog.xml',
 						title: 'Blog feed',
 					},
 					{
 						serialize: ({query}) =>
 							rssify(query, node => node.type === 'post'),
-						query: FEED_QUERY,
+						query: ALL_PROJECTS_QUERY,
 						output: '/blog-internal.xml',
 						title: 'Blog feed: internal posts only',
 					},
@@ -274,13 +224,13 @@ export default {
 										node.type,
 									),
 							),
-						query: FEED_QUERY,
+						query: ALL_PROJECTS_QUERY,
 						output: '/lab.xml',
 						title: 'Lab projects feed',
 					},
 					{
 						serialize: ({query}) => rssify(query),
-						query: FEED_QUERY,
+						query: ALL_PROJECTS_QUERY,
 						output: '/index.xml',
 						title: 'Firehose feed',
 					},
