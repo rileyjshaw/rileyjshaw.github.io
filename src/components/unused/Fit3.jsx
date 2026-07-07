@@ -1,16 +1,21 @@
 // transform: scale
 import React from 'react';
 
-import {useRect} from '../../util/hooks';
+import {useMeasure} from 'react-use';
 
 import './Fit3.css';
 
 export default ({children, x, y}) => {
-	const [parentRef, parentRect] = useRect({resize: true});
-	const [childRef, childRect] = useRect();
+	const [parentRef, parentRect] = useMeasure();
+	const [childRef, childRect] = useMeasure();
 
 	const style = {};
-	if (parentRect && childRect) {
+	if (
+		parentRect.width &&
+		parentRect.height &&
+		childRect.width &&
+		childRect.height
+	) {
 		style.transform = `scale(${
 			x ? parentRect.width / childRect.width : 1
 		}, ${y ? parentRect.height / childRect.height : 1})`;

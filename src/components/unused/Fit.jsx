@@ -17,7 +17,7 @@ export default ({children, className = ''}) => {
 		const {width, height, y} = el.getBBox();
 		const newSize = [width, height];
 		setYAccumulator(yAccumulator - y);
-		if (newSize.some((d, i) => size[d] !== i)) {
+		if (newSize.some((d, i) => size[i] !== d)) {
 			setSize(newSize);
 		}
 	}, [children, windowWidth]);

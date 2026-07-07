@@ -135,7 +135,7 @@ const Layout = ({children, location}) => {
 		}
 	}
 
-	const showPageHeader = is404 || !pathname.startsWith('/curate/');
+	const showPageHeader = is404 || !/^curate(\/|$)/.test(pathname);
 
 	return (
 		<div

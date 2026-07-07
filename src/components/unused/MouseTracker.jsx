@@ -1,12 +1,15 @@
-import {useEffect} from 'react';
+import {useEffect, useState} from 'react';
 
-import {isRenderingOnClient} from '../util/constants';
-import {useMousePosition, useWindowSize} from '../util/hooks';
+import {useEvent, useWindowSize} from 'react-use';
 
 const MAX_SPREAD_PX = 6;
 export default () => {
-	const mousePosition = useMousePosition(isRenderingOnClient && window);
-	const [windowWidth, windowHeight, windowHypot] = useWindowSize();
+	const [mousePosition, setMousePosition] = useState([0, 0]);
+	useEvent('mousemove', ({clientX, clientY}) =>
+		setMousePosition([clientX, clientY]),
+	);
+	const {width: windowWidth, height: windowHeight} = useWindowSize();
+	const windowHypot = Math.hypot(windowWidth, windowHeight);
 
 	const windowCenter = [windowWidth / 2, windowHeight / 2, windowHypot / 2];
 	const angle = Math.atan2(

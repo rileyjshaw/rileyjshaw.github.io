@@ -1,9 +1,8 @@
-import React from 'react';
+import React, {useCallback, useState} from 'react';
 
 import cn from 'cnz';
 
 import contentTypes from '../util/ContentTypes';
-import {useRect} from '../util/hooks';
 import AutoLink, {ExternalLink} from './AutoLink';
 
 import './ContentNode.css';
@@ -38,9 +37,17 @@ export default React.memo(
 		if (!contentType) return null;
 		const {className = '', readableType, shortType, Inner} = contentType;
 
-		let innerRef, innerRect, span;
+		let innerRef, innerHeight, span;
 		if (masonry) {
-			[innerRef, innerRect] = useRect();
+			// Once the node is `measured`, .inner stretches to fill the
+			// spanned rows (min-height: 100%), so a live ResizeObserver would
+			// feed its own span back into itself and grow forever. Measure
+			// the natural height once, on mount, before the stretch applies.
+			let setInnerHeight;
+			[innerHeight, setInnerHeight] = useState(0);
+			innerRef = useCallback(el => {
+				if (el) setInnerHeight(el.getBoundingClientRect().height);
+			}, []);
 			// Inner: Math.ceil((height + 27) / (27 * 2))
 			//                            ^ "+ 27" accounts for height falling within gap.
 			//     (27 * 2) is the row + gap height ^
@@ -48,7 +55,7 @@ export default React.memo(
 			//                    = Math.ceil(height / 54) + 1
 			// TODO(riley): Was this with the new design system.
 			// const span = height && Math.ceil((height + 19) / 54) + 1;
-			span = innerRect && Math.ceil((innerRect.height + 82) / 130);
+			span = innerHeight && Math.ceil((innerHeight + 82) / 130);
 		}
 
 		return (
@@ -60,7 +67,7 @@ export default React.memo(
 						.split(/(?=[A-Z])/)
 						.join('-')
 						.toLowerCase(),
-					masonry && (innerRect ? 'measured' : 'transparent'),
+					masonry && (innerHeight ? 'measured' : 'transparent'),
 					hidden && 'visually-hidden',
 				)}
 				key={uid}

@@ -68,44 +68,6 @@ export function useInterval(
 	}, []);
 }
 
-// TODO: Replace with https://github.com/maslianok/react-resize-detector?
-export function useRect({resize = false} = {}) {
-	const [rect, setRect] = useState(null);
-	const cleanupFn = useRef();
-
-	const callbackRef = useCallback(
-		el => {
-			cleanupFn.current?.();
-
-			if (!el) {
-				setRect(null);
-				return;
-			}
-
-			function updateRect() {
-				setRect(el.getBoundingClientRect());
-			}
-			updateRect();
-
-			if (!resize) return;
-
-			const resizeHandler = throttle(updateRect, 250);
-			if (typeof ResizeObserver === 'function') {
-				const resizeObserver = new ResizeObserver(resizeHandler);
-				resizeObserver.observe(el);
-				cleanupFn.current = () => resizeObserver.disconnect();
-			} else {
-				window.addEventListener('resize', resizeHandler);
-				cleanupFn.current = () =>
-					window.removeEventListener('resize', resizeHandler);
-			}
-		},
-		[resize],
-	);
-
-	return [callbackRef, rect];
-}
-
 // `keyHandlers` example: {Escape: {onDown: () => setOpen(false)}}.
 export function useKeyPresses(keyHandlers) {
 	const [keysPressed, setKeysPressed] = useState({});
@@ -144,21 +106,51 @@ export function useKeyPresses(keyHandlers) {
 	return keysPressed;
 }
 
-// TODO(riley): Add check for active tab.
+// Every consumer shares one IntersectionObserver and one set of window
+// listeners; callbacks are keyed by observed node.
 export const useViewport = (() => {
 	if (isRenderingOnServer) {
 		return ({initialInView = false} = {}) => [null, initialInView];
 	}
 
-	const entryCallbacks = new Map();
+	const entries = new Map(); // node -> {setInView, isIntersecting}
 	const scrollCallbacks = new Map();
-	const intersectionObserver = new IntersectionObserver(entries => {
-		entries.forEach(({target, isIntersecting}) =>
-			entryCallbacks.get(target)?.(isIntersecting),
+	const intersectionObserver = new IntersectionObserver(observed => {
+		observed.forEach(({target, isIntersecting}) => {
+			const entry = entries.get(target);
+			if (!entry) return;
+			entry.isIntersecting = isIntersecting;
+			entry.setInView(isIntersecting && !document.hidden);
+		});
+	});
+
+	// A node intersecting the viewport of a hidden tab isn’t really in view;
+	// report it as out of view so `inView`-driven animations pause until the
+	// user returns to the tab.
+	document.addEventListener('visibilitychange', () => {
+		entries.forEach(({setInView, isIntersecting}) =>
+			setInView(isIntersecting && !document.hidden),
 		);
 	});
-	function handleScroll() {
+
+	function handleScrollOrResize() {
 		scrollCallbacks.forEach(cb => cb());
+	}
+	function addScrollCallback(node, cb) {
+		if (scrollCallbacks.size === 0) {
+			window.addEventListener('scroll', handleScrollOrResize, {
+				passive: true,
+			});
+			window.addEventListener('resize', handleScrollOrResize);
+		}
+		scrollCallbacks.set(node, cb);
+	}
+	function removeScrollCallback(node) {
+		scrollCallbacks.delete(node);
+		if (scrollCallbacks.size === 0) {
+			window.removeEventListener('scroll', handleScrollOrResize);
+			window.removeEventListener('resize', handleScrollOrResize);
+		}
 	}
 
 	return function useViewport({
@@ -179,12 +171,9 @@ export const useViewport = (() => {
 				const prevNode = prevNodeRef.current;
 
 				if (prevNode) {
-					entryCallbacks.delete(prevNode);
+					entries.delete(prevNode);
 					intersectionObserver.unobserve(prevNode);
-					scrollCallbacks.delete(prevNode);
-					if (scrollCallbacks.size === 0) {
-						window.removeEventListener('scroll', handleScroll);
-					}
+					removeScrollCallback(prevNode);
 				}
 
 				prevNodeRef.current = node;
@@ -194,7 +183,7 @@ export const useViewport = (() => {
 					return;
 				}
 
-				entryCallbacks.set(node, inView => setInView(inView));
+				entries.set(node, {setInView, isIntersecting: false});
 
 				if (trackPosition) {
 					function measureNode() {
@@ -205,12 +194,7 @@ export const useViewport = (() => {
 						]);
 					}
 					measureNode();
-					if (scrollCallbacks.size === 0) {
-						window.addEventListener('scroll', handleScroll, {
-							passive: true,
-						});
-					}
-					scrollCallbacks.set(node, throttle(measureNode, ms));
+					addScrollCallback(node, throttle(measureNode, ms));
 				}
 
 				intersectionObserver.observe(node);

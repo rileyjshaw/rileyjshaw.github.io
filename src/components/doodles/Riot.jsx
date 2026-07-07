@@ -1,13 +1,16 @@
-import React, {useMemo} from 'react';
+import React, {useRef, useState} from 'react';
 
-import {useViewport, useRect} from '../../util/hooks';
+import {useIsomorphicLayoutEffect} from 'react-use';
+
+import {useViewport} from '../../util/hooks';
 
 import './Riot.css';
 
 function Riot({className, word = 'RIOT!', nCopies = 8}, ref) {
 	const [riotRef, _inView, boundingClientRect, windowHeight = 0] =
 		useViewport({trackPosition: true});
-	const [centerCharRef, centerCharBoundingClientRect] = useRect();
+	const centerCharRef = useRef(null);
+	const [transformOrigin, setTransformOrigin] = useState([0.5, 0.5]);
 	let factor = boundingClientRect
 		? (0.98 -
 				boundingClientRect.top /
@@ -17,22 +20,21 @@ function Riot({className, word = 'RIOT!', nCopies = 8}, ref) {
 		: 0;
 	if (factor) factor *= Math.sqrt(Math.abs(factor));
 
-	const transformOrigin = useMemo(
-		() =>
-			centerCharBoundingClientRect
-				? [
-						(centerCharBoundingClientRect.left +
-							centerCharBoundingClientRect.width / 2 -
-							boundingClientRect.left) /
-							boundingClientRect.width,
-						(centerCharBoundingClientRect.top +
-							centerCharBoundingClientRect.height / 2 -
-							boundingClientRect.top) /
-							boundingClientRect.height,
-					]
-				: [0.5, 0.5],
-		[centerCharBoundingClientRect],
-	);
+	// Find where the center character sits within its line, as a fraction,
+	// so every copy rotates around it. Both rects are read in the same frame
+	// so the shared scroll offset cancels out.
+	useIsomorphicLayoutEffect(() => {
+		const centerChar = centerCharRef.current;
+		if (!centerChar) return;
+		const lineRect = centerChar.parentElement.getBoundingClientRect();
+		const charRect = centerChar.getBoundingClientRect();
+		setTransformOrigin([
+			(charRect.left + charRect.width / 2 - lineRect.left) /
+				lineRect.width,
+			(charRect.top + charRect.height / 2 - lineRect.top) /
+				lineRect.height,
+		]);
+	}, [word]);
 
 	let centerCharIdx = word.indexOf('O');
 	if (centerCharIdx === -1) centerCharIdx = Math.floor(word.length / 2);
