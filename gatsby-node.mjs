@@ -266,8 +266,8 @@ export const createResolvers = ({createResolvers}) => {
 	const getExcerpt = (source, args, context, info) => {
 		const key = source.internal.contentDigest;
 		if (!excerptCache.has(key)) {
-			const resolver = info.schema.getType('Mdx').getFields().excerpt
-				.resolve;
+			const resolver = info.schema.getType('Mdx').getFields()
+				.excerpt.resolve;
 			excerptCache.set(
 				key,
 				resolver(
