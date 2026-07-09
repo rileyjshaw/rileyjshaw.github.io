@@ -7,13 +7,13 @@ import './newsletter.css';
 export const Form = () => (
 	<form
 		className="newsletter-form"
-		action="https://buttondown.com/api/emails/embed-subscribe/changelog"
+		action="https://buttondown.com/api/emails/embed-subscribe/updates"
 		method="post"
 		target="popupwindow"
 		onSubmit={() => {
 			if (isRenderingOnClient) {
 				window.open(
-					'https://buttondown.com/changelog',
+					'https://buttondown.com/updates',
 					'popupwindow',
 					'scrollbars=yes,width=800,height=600',
 				);
