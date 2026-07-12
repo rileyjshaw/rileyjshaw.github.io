@@ -180,13 +180,21 @@ export const VideoContent = ({
 		</main>
 	);
 };
-export const ScreenshotContent = ({body, link, contentType, extraData}) => {
+export const ScreenshotContent = ({
+	blockEmbeds,
+	body,
+	link,
+	contentType,
+	extraData,
+}) => {
 	let innerContent;
 	switch (contentType) {
 		case 'photo':
-			// TODO: If embeds are turned off, make innerContent something like:
-			// <ExternalLink to={link}>See ${extraData[2]} images</ExternalLink>
-			innerContent = (
+			innerContent = blockEmbeds ? (
+				<ExternalLink to={link}>
+					See {extraData[2]} image{extraData[2] === 1 ? '' : 's'}
+				</ExternalLink>
+			) : (
 				<>
 					<ExternalLink className="image-link" to={link}>
 						<img
