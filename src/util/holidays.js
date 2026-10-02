@@ -4,6 +4,7 @@ function getAmericanThanksgivingDate(year) {
 }
 
 // Note: the first entry in `date` (month) is 0-indexed. The second (day) is 1-indexed.
+// An optional third entry limits the date to a particular year.
 const holidays = [
 	{
 		name: 'Deletion Day',
@@ -15,6 +16,17 @@ const holidays = [
 		date: [9, 5],
 		specialMessages: ['It’s my birthday! 🎈'],
 	},
+	...[
+		[9, 2, 2026],
+		[10, 6, 2026],
+		[11, 4, 2026],
+	].map(date => ({
+		name: 'Bandcamp Friday',
+		date,
+		style: {backgroundColor: '#9cdae9', color: '#222'},
+		link: 'https://meathouse.bandcamp.com/album/ep',
+		linkText: 'Check out my band’s EP!',
+	})),
 	{
 		name: 'Halloween',
 		date: [9, 31],
@@ -53,17 +65,16 @@ export function getNextHoliday() {
 	const nextYear = currentYear + 1;
 	return holidays
 		.map(holiday => {
-			let month, day;
-			if (typeof holiday.date === 'function') {
-				[month, day] = holiday.date(currentYear);
-			} else {
-				[month, day] = holiday.date;
-			}
+			let [month, day, year] =
+				typeof holiday.date === 'function'
+					? holiday.date(currentYear)
+					: holiday.date;
 
 			// Add a day in case the holiday is today; we want to ensure it
 			// still looks like it’s in the future.
-			let msUntil = new Date(currentYear, month, day + 1) - today;
-			if (msUntil < 0) {
+			let msUntil =
+				new Date(year ?? currentYear, month, day + 1) - today;
+			if (msUntil < 0 && year == null) {
 				if (typeof holiday.date === 'function') {
 					[month, day] = holiday.date(nextYear);
 				}
@@ -75,6 +86,7 @@ export function getNextHoliday() {
 				daysUntil: Math.floor(msUntil / 86400000),
 			};
 		})
+		.filter(holiday => holiday.daysUntil >= 0)
 		.reduce((closest, current) =>
 			current.daysUntil < closest.daysUntil ? current : closest,
 		);

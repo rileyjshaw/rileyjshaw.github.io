@@ -195,7 +195,8 @@ const Layout = ({children, location}) => {
 													: 's'
 											} until `
 										: null}
-									{activeHoliday.link ? (
+									{activeHoliday.link &&
+									!activeHoliday.linkText ? (
 										<AutoLink to={activeHoliday.link}>
 											{activeHoliday.daysUntil === 0
 												? capitalize(
@@ -209,8 +210,16 @@ const Layout = ({children, location}) => {
 										activeHoliday.name
 									)}
 									{activeHoliday.daysUntil === 0
-										? ' is today!'
+										? ` is today${activeHoliday.linkText ? '.' : '!'}`
 										: '.'}
+								</>
+							)}
+							{activeHoliday.linkText && (
+								<>
+									{' '}
+									<AutoLink to={activeHoliday.link}>
+										{activeHoliday.linkText}
+									</AutoLink>
 								</>
 							)}
 						</p>
