@@ -12,7 +12,9 @@
 	flex-grow: 1;
 }
 .banner p {
+	line-height: 1;
 	margin: 0;
+	text-wrap: balance;
 }
 .banner a {
 	color: inherit;
