@@ -78,9 +78,7 @@ export default React.memo(
 			https://stackoverflow.com/questions/12866008/html5-semantic-markup-for-blog-post-tags-and-categories
 			https://html.spec.whatwg.org/multipage/links.html#link-type-tag */}
 				<div className="inner" ref={innerRef}>
-					<div className="content-type">
-						{shortType ?? readableType}
-					</div>
+					<p className="content-type">{shortType ?? readableType}</p>
 					<header>
 						{link ? (
 							<h1>

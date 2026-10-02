@@ -45,7 +45,6 @@
 	width: 100%;
 }
 /* TODO(riley): Share these styles and bring link style out to root node. */
-/* TODO(riley): Move this into a semantic element, since it means something. */
 .content-node .content-type {
 	align-items: center;
 	background: var(--color-bg);

@@ -11,7 +11,6 @@ export default function HTML(props) {
 					content="width=device-width, initial-scale=1, shrink-to-fit=no"
 				/>
 				{props.headComponents}
-				{/* TODO: Get `gatsby-plugin-preload-fonts` working again. See https://github.com/gatsbyjs/gatsby/issues/32127. */}
 				<link
 					as="font"
 					href="/fonts/MintGrotesk-Regular-Subset.woff2"

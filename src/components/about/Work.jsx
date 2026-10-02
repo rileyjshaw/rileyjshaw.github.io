@@ -143,8 +143,7 @@ export function Misery() {
 	);
 }
 
-// TODO: Link this: https://www.politico.eu/article/apple-whistleblower-calls-for-privacy-probes-into-big-tech-voice-assistants-siri/
-// And this: https://youtu.be/sGQy0r_icWc
+// TODO: Link this: https://youtu.be/sGQy0r_icWc
 export function Mozilla() {
 	return (
 		<Job at="Mozilla" role="Staff Software Engineer">
@@ -157,9 +156,12 @@ export function Mozilla() {
 				</AutoLink>
 				. Common Voice is a landmark consent-driven dataset for human
 				speech of all types, spanning over 60 languages. Common Voice
-				is an open, inclusive, and privacy-conscious standard for a
-				technology that is rapidly becoming ubiquitous. Here are some
-				highlights of my time there:
+				is an open, inclusive, and{' '}
+				<AutoLink to="https://www.politico.eu/article/apple-whistleblower-calls-for-privacy-probes-into-big-tech-voice-assistants-siri/">
+					privacy-conscious
+				</AutoLink>{' '}
+				standard for a technology that is rapidly becoming ubiquitous.
+				Here are some highlights of my time there:
 			</p>
 			<ul>
 				<li>

@@ -94,6 +94,7 @@ export const idify = uid =>
 
 export const excerptify = body => {
 	if (!body) return {};
+	const maxLength = 700;
 
 	function processNode(node) {
 		if (
@@ -107,21 +108,41 @@ export const excerptify = body => {
 		Array.from(node.children).forEach(processNode);
 		return node;
 	}
+	function truncateNode(node, charsRemaining) {
+		for (const child of Array.from(node.childNodes)) {
+			if (charsRemaining === 0) {
+				child.remove();
+				continue;
+			}
+			if (child.nodeType === 3) {
+				if (child.textContent.length > charsRemaining) {
+					child.textContent = child.textContent.slice(
+						0,
+						charsRemaining,
+					);
+				}
+				charsRemaining -= child.textContent.length;
+			} else {
+				charsRemaining = truncateNode(child, charsRemaining);
+			}
+		}
+		return charsRemaining;
+	}
 	const processed = Array.from(
 		processNode(JSDOM.fragment(body)).children,
 	).reduce(
-		// Limit the excerpt to 700 characters.
-		({charCount, els}, el) => {
-			if (charCount > 700) return {charCount, els, more: true};
-			// TODO:
-			// if (charCount + el.textContent.length > 700) {
-			// Recursively go through Array.from(el.children).reverse(), and delete
-			// nodes until it’s under 700 characters.
-			// }
+		// Limit the excerpt to maxLength characters while preserving its markup.
+		({charCount, els, more}, el) => {
+			if (charCount === maxLength) return {charCount, els, more: true};
+			const elLength = el.textContent.length;
+			if (charCount + elLength > maxLength) {
+				truncateNode(el, maxLength - charCount);
+				return {charCount: maxLength, els: [...els, el], more: true};
+			}
 			return {
-				charCount: charCount + el.textContent.length,
+				charCount: charCount + elLength,
 				els: [...els, el],
-				more: false,
+				more,
 			};
 		},
 		{charCount: 0, els: [], more: false},
@@ -153,7 +174,6 @@ export const excerptify = body => {
 		description = excerpt.map(el => el.outerHTML).join('');
 	}
 
-	// TODO(riley): Use charCount to slice the textContent of the final node?
 	return {description, more};
 };
 

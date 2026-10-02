@@ -1,13 +1,14 @@
-import React, {useCallback, useMemo, useRef} from 'react';
+import React, {useCallback, useMemo, useRef, useState} from 'react';
+
+import {useEvent} from 'react-use';
 
 import ClientOnly from './ClientOnly';
 import {withSettings} from './SettingsProvider';
 
 import './ThemeToggleButton.css';
 
-// TODO: Eye should definitely follow the mouse.
-
 const THEME_NAMES = ['system', 'light', 'dark'];
+const MAX_PUPIL_OFFSET = 6;
 const THEME_ATTRIBUTES = {
 	system: {
 		name: 'System',
@@ -53,8 +54,30 @@ const THEME_ATTRIBUTES = {
 	},
 };
 
-function ThemeToggleButton({uid, settings: {themeKey, setThemeKey}}) {
+function ThemeToggleButton({
+	uid,
+	settings: {reducedMotion, themeKey, setThemeKey},
+}) {
 	const mainAnimationRef = useRef(null);
+	const svgRef = useRef(null);
+	const [pupilOffset, setPupilOffset] = useState({x: 0, y: 0});
+
+	useEvent('pointermove', ({clientX, clientY}) => {
+		if (themeKey !== 'system' || reducedMotion) return;
+
+		const bounds = svgRef.current?.getBoundingClientRect();
+		if (!bounds) return;
+
+		const deltaX = clientX - (bounds.left + bounds.width / 2);
+		const deltaY = clientY - (bounds.top + bounds.height / 2);
+		const distance = Math.hypot(deltaX, deltaY);
+		const offset = Math.min(MAX_PUPIL_OFFSET, distance / 20);
+
+		setPupilOffset({
+			x: distance ? (deltaX / distance) * offset : 0,
+			y: distance ? (deltaY / distance) * offset : 0,
+		});
+	});
 
 	const refCallback = useCallback(node => {
 		mainAnimationRef.current = node;
@@ -71,6 +94,14 @@ function ThemeToggleButton({uid, settings: {themeKey, setThemeKey}}) {
 		];
 	const themeAttributes = THEME_ATTRIBUTES[themeKey];
 	const pastThemeAttributes = THEME_ATTRIBUTES[pastThemeKey];
+	const pupilAttributes =
+		themeKey === 'system' && !reducedMotion
+			? {
+					...themeAttributes.pupil,
+					cx: themeAttributes.pupil.cx + pupilOffset.x,
+					cy: themeAttributes.pupil.cy + pupilOffset.y,
+				}
+			: themeAttributes.pupil;
 
 	const gearSize = themeAttributes.gear.size;
 	const prevGearSize = pastThemeAttributes.gear.size;
@@ -94,6 +125,7 @@ function ThemeToggleButton({uid, settings: {themeKey, setThemeKey}}) {
 				}}
 			>
 				<svg
+					ref={svgRef}
 					version="1.1"
 					xmlns="http://www.w3.org/2000/svg"
 					xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -137,7 +169,7 @@ function ThemeToggleButton({uid, settings: {themeKey, setThemeKey}}) {
 						<mask id={eyemaskId}>
 							<rect height="100" width="100" fill="#fff" />
 							<circle
-								{...themeAttributes.pupil}
+								{...pupilAttributes}
 								fill="#000"
 								stroke="none"
 							>

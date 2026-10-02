@@ -25,7 +25,6 @@ export default function Template({data, children}) {
 							<time>Posted {fields.date}</time>
 						</div>
 					</header>
-					{/* TODO(riley): Replace this: replace(/↩/g, '↩&#xFE0E;') */}
 					<div className="blog-post-markdown">{children}</div>
 				</article>
 			</div>

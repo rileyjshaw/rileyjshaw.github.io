@@ -4,7 +4,8 @@ import React, {useLayoutEffect, useMemo, useState} from 'react';
 import {Menu} from '../icons';
 import {SITE_PAGES} from '../util/constants';
 import {useKeyPresses} from '../util/hooks';
-import ThemeToggleButton from './ThemeToggleButton';
+
+// import ThemeToggleButton from './ThemeToggleButton';
 
 import './SiteNav.css';
 
