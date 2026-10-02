@@ -12,6 +12,7 @@ import {
 	D30U30,
 	KhanAcademy,
 	Listn,
+	Meathouse,
 	MischiefMakers,
 	Misery,
 	Mozilla,
@@ -43,6 +44,7 @@ function AboutPage({data}) {
 						<Misery />
 						<StepUp />
 						<Watershed />
+						<Meathouse />
 						<MischiefMakers />
 						<Mozilla />
 						<RepairMatters />

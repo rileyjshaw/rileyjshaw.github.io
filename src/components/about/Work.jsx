@@ -117,9 +117,23 @@ export function Listn() {
 	);
 }
 
+export function Meathouse() {
+	return (
+		<Job at="Meathouse" role="Drummer" isCurrent={true}>
+			<p>
+				I’m the drummer for a garage rock two-piece called{' '}
+				<AutoLink to="https://meathouse.bandcamp.com">
+					Meathouse
+				</AutoLink>
+				.
+			</p>
+		</Job>
+	);
+}
+
 export function MischiefMakers() {
 	return (
-		<Job at="Mischief Makers" isCurrent={true} role="Volunteer">
+		<Job at="Mischief Makers" role="Volunteer">
 			<p>
 				I volunteer at{' '}
 				<AutoLink to="https://mischiefmakers.ca/">
