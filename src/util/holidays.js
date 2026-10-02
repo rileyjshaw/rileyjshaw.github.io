@@ -24,7 +24,7 @@ const holidays = [
 		name: 'Bandcamp Friday',
 		date,
 		style: {backgroundColor: '#9cdae9', color: '#222'},
-		link: 'https://meathouse.bandcamp.com/album/ep',
+		link: 'https://meathouse.bandcamp.com/album/the-overlayer-ep',
 		linkText: 'Check out my band’s EP!',
 	})),
 	{
