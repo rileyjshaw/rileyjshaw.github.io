@@ -1868,6 +1868,7 @@
 				"url": "https://patchstorage.com/wp-content/uploads/2021/05/IMG_84BB431AF0F2-1-1024x404.jpeg"
 			},
 			"author": {
+				"avatar_url": "https://patchstorage.com/wp-content/uploads/2021/05/result-1-avatar.png",
 				"id": 6265,
 				"name": "orchid",
 				"slug": "orchid"
@@ -1993,6 +1994,7 @@
 				"url": "https://patchstorage.com/wp-content/uploads/2021/03/IMG_982CB22FA219-1-1024x406.jpeg"
 			},
 			"author": {
+				"avatar_url": "https://patchstorage.com/wp-content/uploads/2021/05/result-1-avatar.png",
 				"id": 6265,
 				"name": "orchid",
 				"slug": "orchid"
@@ -2083,6 +2085,7 @@
 				"url": "https://patchstorage.com/wp-content/uploads/2021/03/IMG_C21CC29E6C00-1-1024x406.jpeg"
 			},
 			"author": {
+				"avatar_url": "https://patchstorage.com/wp-content/uploads/2021/05/result-1-avatar.png",
 				"id": 6265,
 				"name": "orchid",
 				"slug": "orchid"
@@ -2173,6 +2176,7 @@
 				"url": "https://patchstorage.com/wp-content/uploads/2021/01/IMG_31AF88A65BBA-1-1024x418.jpeg"
 			},
 			"author": {
+				"avatar_url": "https://patchstorage.com/wp-content/uploads/2021/05/result-1-avatar.png",
 				"id": 6265,
 				"name": "orchid",
 				"slug": "orchid"
@@ -2233,6 +2237,7 @@
 				"url": "https://patchstorage.com/wp-content/uploads/2020/12/IMG_28134351FC1D-1-1024x408.jpeg"
 			},
 			"author": {
+				"avatar_url": "https://patchstorage.com/wp-content/uploads/2021/05/result-1-avatar.png",
 				"id": 6265,
 				"name": "orchid",
 				"slug": "orchid"
@@ -2308,6 +2313,7 @@
 				"url": "https://patchstorage.com/wp-content/uploads/2020/12/F95193B2-7B06-46AE-BDC9-8E0E846ACFE5-1024x320.jpeg"
 			},
 			"author": {
+				"avatar_url": "https://patchstorage.com/wp-content/uploads/2021/05/result-1-avatar.png",
 				"id": 6265,
 				"name": "orchid",
 				"slug": "orchid"
@@ -2383,6 +2389,7 @@
 				"url": "https://patchstorage.com/wp-content/uploads/2020/12/51CE9F68-C596-4AAE-A58E-DF601D72C650-1024x202.jpeg"
 			},
 			"author": {
+				"avatar_url": "https://patchstorage.com/wp-content/uploads/2021/05/result-1-avatar.png",
 				"id": 6265,
 				"name": "orchid",
 				"slug": "orchid"
@@ -2458,6 +2465,7 @@
 				"url": "https://patchstorage.com/wp-content/uploads/2020/11/IMG_7D32E2F38FF2-1-1024x226.jpeg"
 			},
 			"author": {
+				"avatar_url": "https://patchstorage.com/wp-content/uploads/2021/05/result-1-avatar.png",
 				"id": 6265,
 				"name": "orchid",
 				"slug": "orchid"
@@ -2543,6 +2551,7 @@
 				"url": "https://patchstorage.com/wp-content/uploads/2020/11/IMG_0410-1024x768.jpg"
 			},
 			"author": {
+				"avatar_url": "https://patchstorage.com/wp-content/uploads/2021/05/result-1-avatar.png",
 				"id": 6265,
 				"name": "orchid",
 				"slug": "orchid"
@@ -2628,6 +2637,7 @@
 				"url": "https://patchstorage.com/wp-content/uploads/2020/10/IMG_FB05629F5B7A-1-1024x248.jpeg"
 			},
 			"author": {
+				"avatar_url": "https://patchstorage.com/wp-content/uploads/2021/05/result-1-avatar.png",
 				"id": 6265,
 				"name": "orchid",
 				"slug": "orchid"
@@ -23612,6 +23622,7 @@
 					"comments": "anybody",
 					"download": false,
 					"embed": "public",
+					"offline_viewing": false,
 					"view": "anybody"
 				},
 				"uri": "/videos/377116426"
@@ -23689,6 +23700,11 @@
 						"height": 480,
 						"url": "https://i.ytimg.com/vi/KWv29smnyLQ/sddefault.jpg",
 						"width": 640
+					},
+					"uhd": {
+						"height": 2160,
+						"url": "https://i.ytimg.com/vi/KWv29smnyLQ/uhddefault.jpg",
+						"width": 3840
 					}
 				},
 				"title": "Gridstrument tutorial",
@@ -23730,6 +23746,11 @@
 						"height": 480,
 						"url": "https://i.ytimg.com/vi/DKjYyKGubu8/sddefault.jpg",
 						"width": 640
+					},
+					"uhd": {
+						"height": 2160,
+						"url": "https://i.ytimg.com/vi/DKjYyKGubu8/uhddefault.jpg",
+						"width": 3840
 					}
 				},
 				"title": "Gridstrument preview",

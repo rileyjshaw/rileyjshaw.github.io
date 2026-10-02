@@ -1,136 +1,10 @@
 [
 	{
-		"created": 1524688680270,
-		"description": "A collection of projects I wanted to put a gold star on.",
-		"isPublic": true,
-		"name": "starred",
-		"readable": "Featured"
-	},
-	{
-		"created": 1524688697797,
-		"description": "Projects you can see and interact with just by clicking the link (no installation or setup required).",
-		"isPublic": true,
-		"name": "online",
-		"readable": "Easy to demo"
-	},
-	{
-		"created": 1526020590158,
-		"description": "Projects that use obscure APIs or run on hardware in the real world.",
-		"isPublic": true,
-		"name": "external",
-		"readable": "External parts"
-	},
-	{
-		"created": 1524688707204,
-		"description": "It’s a game.",
-		"isPublic": true,
-		"name": "game",
-		"readable": "Game"
-	},
-	{
-		"created": 1524688711340,
-		"description": "It’s pretty.",
-		"isPublic": true,
-		"name": "pretty",
-		"readable": "Pretty"
-	},
-	{
-		"created": 1524688714309,
-		"description": "Audio tools, or audible tools, or music.",
-		"isPublic": true,
-		"name": "audio",
-		"readable": "Audio"
-	},
-	{
-		"created": 1524688717555,
-		"description": "These projects require maintenance. I do my best to find maintainers or support projects personally, but sometimes it makes most sense to just let a domain expire.",
-		"isPublic": true,
-		"name": "extinct",
-		"readable": "Extinct"
-	},
-	{
-		"created": 1525753826119,
-		"description": "Everything on this page is open source and reusable to some extent. Some projects were built with reuse as a primary goal; that's what this tag represents.",
-		"isPublic": true,
-		"name": "reusable",
-		"readable": "Reusable"
-	},
-	{
-		"created": 1525753826119,
-		"description": "Some projects were built with education as a primary goal; that's what this tag represents.",
-		"isPublic": true,
-		"name": "instructional",
-		"readable": "Instructional"
-	},
-	{
-		"created": 1525916289357,
-		"description": "A free browser extension, usually available on the Firefox and/or Chrome web stores.",
-		"isPublic": true,
-		"name": "browserextension",
-		"readable": "Browser extension"
-	},
-	{
-		"created": 1526009645610,
-		"description": "Challenging myself to build systems within constraints, like code golf or only using CSS.",
-		"isPublic": true,
-		"name": "golf",
-		"readable": "Code golf"
-	},
-	{
-		"created": 1615509016231,
-		"description": "Not one thing, but many!",
-		"isPublic": true,
-		"name": "collection",
-		"readable": "Collection"
-	},
-	{
-		"created": 1615510168494,
-		"description": "Words that you can read.",
-		"isPublic": true,
-		"name": "reading",
-		"readable": "Reading"
-	},
-	{
-		"created": 1615510335739,
-		"description": "Physical stuff in real life.",
-		"isPublic": true,
-		"name": "hardware",
-		"readable": "Hardware"
-	},
-	{
-		"created": 1615510415825,
-		"description": "Things to look at.",
-		"isPublic": true,
-		"name": "visual",
-		"readable": "Visual"
-	},
-	{
-		"created": 1615510542672,
-		"description": "The luddites would approve.",
-		"isPublic": true,
-		"name": "untech",
-		"readable": "Untech"
-	},
-	{
-		"created": 1615510855670,
-		"description": "Posts, features, or announcements about this website (rileyjshaw.com).",
-		"isPublic": true,
-		"name": "meta",
-		"readable": "Meta"
-	},
-	{
-		"created": 1615511132040,
-		"description": "Something that aids in accomplishing a task. I’m using this term loosely to mean anything someone might wanna use without digging into details of how it was made.",
-		"isPublic": true,
-		"name": "tool",
-		"readable": "Tool"
-	},
-	{
-		"created": 1615591822254,
-		"description": "A demo that requires a physical keyboard and/or mouse, or maybe just a big screen.",
-		"isPublic": true,
-		"name": "desktop",
-		"readable": "Desktop only"
+		"created": 1615704896785,
+		"description": "Uses 3d graphics, or fakes the appearance of something three-dimensional.",
+		"isPublic": false,
+		"name": "3d",
+		"readable": "3d"
 	},
 	{
 		"created": 1615702950750,
@@ -140,18 +14,11 @@
 		"readable": "Animated"
 	},
 	{
-		"created": 1615702989760,
-		"description": "Bright and cheery. You got those crayola books? Oh yaa – technicolor rainbow.",
-		"isPublic": false,
-		"name": "colorful",
-		"readable": "Colorful"
-	},
-	{
-		"created": 1615704689830,
-		"description": "Content that you can interact with, beyond just reading, watching, or listening.",
+		"created": 1524688714309,
+		"description": "Audio tools, or audible tools, or music.",
 		"isPublic": true,
-		"name": "interactive",
-		"readable": "Interactive"
+		"name": "audio",
+		"readable": "Audio"
 	},
 	{
 		"created": 1615704793982,
@@ -161,18 +28,60 @@
 		"readable": "Automata"
 	},
 	{
-		"created": 1615704837978,
-		"description": "…or voxelated.",
-		"isPublic": false,
-		"name": "pixelated",
-		"readable": "Pixelated"
+		"created": 1525916289357,
+		"description": "A free browser extension, usually available on the Firefox and/or Chrome web stores.",
+		"isPublic": true,
+		"name": "browserextension",
+		"readable": "Browser extension"
 	},
 	{
-		"created": 1615704896785,
-		"description": "Uses 3d graphics, or fakes the appearance of something three-dimensional.",
+		"created": 1615509016231,
+		"description": "Not one thing, but many!",
+		"isPublic": true,
+		"name": "collection",
+		"readable": "Collection"
+	},
+	{
+		"created": 1615702989760,
+		"description": "Bright and cheery. You got those crayola books? Oh yaa – technicolor rainbow.",
 		"isPublic": false,
-		"name": "3d",
-		"readable": "3d"
+		"name": "colorful",
+		"readable": "Colorful"
+	},
+	{
+		"created": 1615591822254,
+		"description": "A demo that requires a physical keyboard and/or mouse, or maybe just a big screen.",
+		"isPublic": true,
+		"name": "desktop",
+		"readable": "Desktop only"
+	},
+	{
+		"created": 1526020590158,
+		"description": "Projects that use obscure APIs or run on hardware in the real world.",
+		"isPublic": true,
+		"name": "external",
+		"readable": "External parts"
+	},
+	{
+		"created": 1524688717555,
+		"description": "These projects require maintenance. I do my best to find maintainers or support projects personally, but sometimes it makes most sense to just let a domain expire.",
+		"isPublic": true,
+		"name": "extinct",
+		"readable": "Extinct"
+	},
+	{
+		"created": 1524688707204,
+		"description": "It’s a game.",
+		"isPublic": true,
+		"name": "game",
+		"readable": "Game"
+	},
+	{
+		"created": 1615709175784,
+		"description": "An artwork or process that creates varied results by following simple rules.",
+		"isPublic": true,
+		"name": "generative",
+		"readable": "Generative"
 	},
 	{
 		"created": 1615706754621,
@@ -182,10 +91,101 @@
 		"readable": "Glitch"
 	},
 	{
-		"created": 1615709175784,
-		"description": "An artwork or process that creates varied results by following simple rules.",
+		"created": 1526009645610,
+		"description": "Challenging myself to build systems within constraints, like code golf or only using CSS.",
 		"isPublic": true,
-		"name": "generative",
-		"readable": "Generative"
+		"name": "golf",
+		"readable": "Code golf"
+	},
+	{
+		"created": 1615510335739,
+		"description": "Physical stuff in real life.",
+		"isPublic": true,
+		"name": "hardware",
+		"readable": "Hardware"
+	},
+	{
+		"created": 1525753826119,
+		"description": "Some projects were built with education as a primary goal; that's what this tag represents.",
+		"isPublic": true,
+		"name": "instructional",
+		"readable": "Instructional"
+	},
+	{
+		"created": 1615704689830,
+		"description": "Content that you can interact with, beyond just reading, watching, or listening.",
+		"isPublic": true,
+		"name": "interactive",
+		"readable": "Interactive"
+	},
+	{
+		"created": 1615510855670,
+		"description": "Posts, features, or announcements about this website (rileyjshaw.com).",
+		"isPublic": true,
+		"name": "meta",
+		"readable": "Meta"
+	},
+	{
+		"created": 1524688697797,
+		"description": "Projects you can see and interact with just by clicking the link (no installation or setup required).",
+		"isPublic": true,
+		"name": "online",
+		"readable": "Easy to demo"
+	},
+	{
+		"created": 1615704837978,
+		"description": "…or voxelated.",
+		"isPublic": false,
+		"name": "pixelated",
+		"readable": "Pixelated"
+	},
+	{
+		"created": 1524688711340,
+		"description": "It’s pretty.",
+		"isPublic": true,
+		"name": "pretty",
+		"readable": "Pretty"
+	},
+	{
+		"created": 1615510168494,
+		"description": "Words that you can read.",
+		"isPublic": true,
+		"name": "reading",
+		"readable": "Reading"
+	},
+	{
+		"created": 1525753826119,
+		"description": "Everything on this page is open source and reusable to some extent. Some projects were built with reuse as a primary goal; that's what this tag represents.",
+		"isPublic": true,
+		"name": "reusable",
+		"readable": "Reusable"
+	},
+	{
+		"created": 1524688680270,
+		"description": "A collection of projects I wanted to put a gold star on.",
+		"isPublic": true,
+		"name": "starred",
+		"readable": "Featured"
+	},
+	{
+		"created": 1615511132040,
+		"description": "Something that aids in accomplishing a task. I’m using this term loosely to mean anything someone might wanna use without digging into details of how it was made.",
+		"isPublic": true,
+		"name": "tool",
+		"readable": "Tool"
+	},
+	{
+		"created": 1615510542672,
+		"description": "The luddites would approve.",
+		"isPublic": true,
+		"name": "untech",
+		"readable": "Untech"
+	},
+	{
+		"created": 1615510415825,
+		"description": "Things to look at.",
+		"isPublic": true,
+		"name": "visual",
+		"readable": "Visual"
 	}
 ]
