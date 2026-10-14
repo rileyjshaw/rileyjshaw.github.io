@@ -2,8 +2,7 @@
 	align-items: center;
 	background: var(--color-bg-footer);
 	display: flex;
-	/* TODO(riley): Cross-platform option? */
-	font-family: Menlo, var(--ff-sans);
+	font-family: var(--ff-mono);
 	font-size: 600px;
 	grid-column: 1 / -1;
 	height: 100dvh;
