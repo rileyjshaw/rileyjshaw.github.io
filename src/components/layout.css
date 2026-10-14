@@ -38,7 +38,6 @@
 .page-content > * {
 	grid-column: middle-column / span 1;
 }
-/* TODO: Delete once application is finished. */
 .dialog-note-overlay {
 	backdrop-filter: blur(2px);
 	background-color: rgb(0 0 0 / 50%);
