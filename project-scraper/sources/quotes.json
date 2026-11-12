@@ -231,7 +231,7 @@
 		"cite": "http://monsters.hackeducation.com/"
 	},
 	"BOOKS_OBSOLETE": {
-		"content": "Books will soon be obsolete in the public schools.",
+		"content": "Books will soon be obsolete in the public schools… Our school system will be completely changed inside of ten years.",
 		"author": "Thomas Edison",
 		"source": "The New York Dramatic Mirror, 1913",
 		"cite": "https://quoteinvestigator.com/2012/02/15/books-obsolete"
@@ -856,5 +856,11 @@
 		"author": "Joshua Reich",
 		"source": "AI Shader Insanity",
 		"cite": "https://youtu.be/Ig2gYmOTuug?si=rCY9Dd87JGZybvD8&t=951"
+	},
+	"SWITCHBOARD": {
+		"content": "Mr. Edison says\nThat the radio will supplant the teacher.\nAlready one may learn languages by means\nOf Victrola records.\nThe moving picture will visualize\nWhat the radio fails to get across.\nTeachers will be relegated to the backwoods.\nWith fire-horses,\nAnd long-haired women;\nOr, perhaps shown in museums.\nEducation will become a matter\nOf pressing the button.\nPerhaps I can get a position at the switchboard.",
+		"author": "Larry Cuban",
+		"source": "Teachers and Machines: The Use of Technology Since 1920",
+		"cite": "https://archive.org/details/teachersmachines0000cuba"
 	}
 }
