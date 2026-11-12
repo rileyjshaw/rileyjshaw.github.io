@@ -1,5 +1,5 @@
 // Checks generated project and quote files. Run directly with
-// `npm test`, or via `run-scraper.js` after each scrape.
+// `pnpm test`, or via `run-scraper.js` after each scrape.
 import {execSync} from 'child_process';
 import fs from 'fs';
 import path from 'path';

@@ -9,7 +9,7 @@
 // ranked, orders the rest from low → high coolness (old scraped rankings),
 // then binary-inserts them one at a time. Each comparison asks “Which is
 // cooler?”; each placement is written straight to disk by the curation
-// server, so progress is never lost. Requires `npm run curate`.
+// server, so progress is never lost. Requires `pnpm curate`.
 import React, {useCallback, useEffect, useMemo, useState} from 'react';
 
 import ContentNode from '../../components/ContentNode';

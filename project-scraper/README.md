@@ -96,7 +96,7 @@ curation/
 		A simple express server that allows devtools like the project tagger to
 		directly edit JSON files (eg. `../sources/tags.json`). Curation tools
 		are currently located in /src/pages/curate/, and can be accessed from
-		localhost:8000/curate/<tool> after running `npm run curate`.
+		localhost:8000/curate/<tool> after running `pnpm curate`.
 
 sources/
 	Offline data files and collections to compliment the online data cached in

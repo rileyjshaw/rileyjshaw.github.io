@@ -7,7 +7,7 @@ Gatsby’s [SVGR](https://react-svgr.com/) integration is sketchy, and [SVGR has
 At some point it would be nice to switch back to using a Gatsby plugin, if a good one surfaces. But I barely use icons on this site, so having an extra build step really isn’t a big deal.
 
 1. Add the SVG to this folder (`/icons/`).
-2. Run `npm run generate-icons` to convert the SVG to a React component.
+2. Run `pnpm generate-icons` to convert the SVG to a React component.
 3. Import the icon from `src/icons/`.
 
 ## Style tag stripping

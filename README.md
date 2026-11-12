@@ -5,11 +5,12 @@ You can read more about me _and_ my site [here](https://rileyjshaw.com/about).
 ## Setup
 
 ```
-npm i -g gatsby-cli commitizen
+pnpm add -g gatsby-cli commitizen
 gatsby telemetry --disable  # optional
 git clone --single-branch --branch dev https://github.com/rileyjshaw/rileyjshaw.github.io rileyjshaw
 cd rileyjshaw
-npm i
+pnpm install
+pnpm --dir project-scraper install
 BABEL_ENV=test gatsby build
 gatsby develop
 ```

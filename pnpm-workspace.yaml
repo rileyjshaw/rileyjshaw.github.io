@@ -1,0 +1,18 @@
+# The same flat node_modules npm made, so Gatsby finds packages where it always has.
+nodeLinker: hoisted
+
+# Don't add peer dependencies that npm left out (TypeScript 7 and babel-eslint).
+autoInstallPeers: false
+
+# Install scripts pnpm may run. sharp downloads libvips. The others are banners,
+# update checks, or source builds of binaries that ship prebuilt.
+allowBuilds:
+  sharp: true
+  '@parcel/watcher': false
+  core-js: false
+  core-js-pure: false
+  fsevents: false
+  gatsby: false
+  gatsby-cli: false
+  lmdb: false
+  msgpackr-extract: false

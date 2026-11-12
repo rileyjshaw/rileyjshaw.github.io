@@ -13,7 +13,7 @@ if (currentMajor !== wantedMajor) {
 	console.error(
 		`\nThis project needs Node ${wanted} (you’re on ${process.versions.node}).` +
 			'\nGatsby’s lmdb/msgpackr dependencies crash on other majors.' +
-			'\n\nFix:  nvm use\n',
+			'\n\nFix:  switch Node with mise or nvm (both read .nvmrc)\n',
 	);
 	process.exit(1);
 }
